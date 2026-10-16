@@ -4,12 +4,15 @@ Controlled experiments on duplicated, near-duplicated and complementary reports
 in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`; the user performs the push.
 
-**Research status:** the Qwen3 development pilot is complete; a second model family
-is undergoing competence qualification. This is not a completed
+**Status at 2026-10-16 06:45 UTC:** the Qwen3 development pilot is complete;
+Qwen3 and Phi-4 passed the competence and summary gates. The frozen validation
+pipeline is executing. At this checkpoint, this is not a completed
 held-out study. See `DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
 and the actual `results/*/analysis.json` files. A compiled anonymous working draft
 is in `manuscript/main.pdf`; it is explicitly incomplete and not human-reviewed.
 Do not present implemented controls as completed experiments.
+Later stage completion is recorded in `records/study-report-status.json` and,
+only after complete raw-output audits and PDF checks, `records/review-package.json`.
 
 ## Layout
 
@@ -63,8 +66,8 @@ python -m venv --system-site-packages .venv
   'huggingface-hub==0.34.4' 'openai==1.109.1' 'matplotlib==3.10.7' 'pytest==8.4.2'
 .venv/bin/python scripts/download_models.py qwen3
 .venv/bin/python scripts/check_model_snapshot.py qwen3
-.venv/bin/python scripts/download_models.py mistral24
-.venv/bin/python scripts/check_model_snapshot.py mistral24
+.venv/bin/python scripts/download_models.py phi4
+.venv/bin/python scripts/check_model_snapshot.py phi4
 ```
 
 Exact resolved dependencies are in `records/environment/pip-freeze-gpu.txt`.
@@ -73,10 +76,13 @@ by Transformers. Run `scripts/prepare_mistral_tokenizer.py` after downloading it
 the derived directory preserves bytes and records its aliases and checksums. Public access
 uses no private token. Qwen2.5-7B's reproducible weight cache was removed after its
 completed check to make room for newer weights; all its raw experiment data remain.
-Current candidates are Qwen3-14B (BF16, non-thinking) and the pinned Red Hat AI
-INT8 Mistral-Small-24B checkpoint. The latter must still qualify before main
-evaluation. Historical Mistral/Nemo checks contain a tokenizer-interface limitation;
-they are development diagnostics, not a clean model ranking.
+The selected families are Qwen3-14B (BF16, non-thinking) and Microsoft Phi-4
+(BF16). Both passed the unchanged development competence gate and summary check;
+their pinned revisions and native chat templates are recorded under
+`records/models/`. Mistral-Small-24B INT8 failed the gate and its reproducible
+weight cache was evicted. Historical Mistral/Nemo checks contain a
+tokenizer-interface limitation; they are development diagnostics, not a clean
+model ranking.
 
 ## Development, pilot and validation
 
@@ -84,7 +90,7 @@ they are development diagnostics, not a clean model ranking.
 .venv/bin/python scripts/resume_archived.py \
   artifacts/runs/competence-qwen3-v7 --model qwen3
 # For a new run, snapshot the current source before launching:
-.venv/bin/python scripts/launch_snapshot.py --entry development_gate -- --model mistral24
+.venv/bin/python scripts/launch_snapshot.py --entry development_gate -- --model phi4
 ```
 
 Only one inference process should occupy the GPU. Re-running an accepted request
@@ -104,22 +110,24 @@ The v5 Qwen3 competence check met its initial gate. The v7 semantic correction
 separates predicate criteria from applicability and requires fresh development
 validation; earlier runs remain archived. `pilot-v7.json` is the
 24-pair development pilot with benchmark v2, two policies, two repetitions, and
-value-free ancestry metadata at the summary-only root. Validation must be frozen
-after pilot output-cap and runtime checks. `validation-candidate-v7.json` and `main-provisional.json` are designs,
+value-free ancestry metadata at the summary-only root. Validation was frozen after
+pilot output-cap and runtime checks in `configs/frozen/validation-v7.json`.
+`validation-candidate-v7.json` and `main-provisional.json` are design inputs,
 not evidence of completed execution. The main runner rejects provisional designs.
 To execute a scientifically frozen replacement, use:
 
 ```bash
 .venv/bin/python scripts/resume_archived.py artifacts/runs/pilot-v7 --model qwen3
-PYTHONPATH=src .venv/bin/python -m rep_sensitivity.cli run \
-  --config configs/ACTUAL-FROZEN-VALIDATION.json --model SELECTED_MODEL
+.venv/bin/python scripts/resume_archived.py artifacts/runs/validation-v7 --model phi4
 PYTHONPATH=src .venv/bin/python -m rep_sensitivity.cli run \
   --config configs/ACTUAL-FROZEN-MAIN.json --model SELECTED_MODEL
 ```
 
-These uppercase paths are explicitly pending artifacts, not commands falsely
-claimed to run now. Freeze sample size, model allocation, templates, policies and
-analysis before held-out inference; never edit a frozen artifact in place.
+The uppercase main path is an explicitly pending artifact. The active controller
+creates `configs/frozen/main-v7.json` after completed validation. Freeze sample
+size, model allocation, templates, policies and analysis before held-out inference;
+never edit a frozen artifact in place. Do not start these commands concurrently
+with the active controller.
 
 ## Supporting controls and live workers
 
@@ -144,9 +152,11 @@ this token budget does not assert equal FLOPs, latency or independent errors.
 ```bash
 bash scripts/sync.sh pull
 PYTHONPATH=src MPLCONFIGDIR=artifacts/matplotlib .venv/bin/python -m rep_sensitivity.analysis \
-  artifacts/runs/competence-v2 results/competence-v2 --bootstrap 10000
-.venv/bin/python scripts/audit_runs.py artifacts/runs/competence-v2
+  artifacts/runs/pilot-v7 results/pilot-v7 --bootstrap 10000
+.venv/bin/python scripts/audit_runs.py artifacts/runs/pilot-v7
+.venv/bin/python scripts/build_study_figures.py
 .venv/bin/python scripts/build_manuscript_tables.py
+.venv/bin/python scripts/build_study_report.py
 (cd manuscript && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)
 .venv/bin/python scripts/check_manuscript.py
 ```
@@ -206,3 +216,23 @@ labeled resource displacement. No report is silently discarded. End-to-end accur
 is distinguished from a root choice supported by its delivered assertions.
 Use `scripts/export_mutations.py RUN_DIRECTORY` to export typed mutation records
 that distinguish dependent verification checks from predicates whose truth changes.
+
+The live-worker development check exposed an underspecified objective instruction.
+Its failed `live-development-v7` results are preserved. The successor controller
+`scripts/run_corrected_live_study.py` retains replay snapshot
+`77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122` exactly, and uses
+a separately archived live implementation with explicit predicate definitions.
+It finishes both corrected development checks before any held-out call, then
+prospectively supersedes the unused live-v7 plan with `live-v8`. Poor live baseline
+competence limits live interpretation; it does not change the qualified replay.
+The active successor snapshot/process is recorded in `records/execution/`.
+`scripts/resume_archived.py` also restores supporting and live runs from their
+own archived code and configuration.
+
+The local mirror can run for a bounded duration with
+`MIRROR_ITERATIONS=4320 FINALIZE_COMMIT=1 bash scripts/mirror_loop.sh`.
+After all main/supporting/live analyses complete, the completion hook verifies
+local raw-output inventories, regenerates tables, compiles and checks the PDF,
+and commits compact generated records on `main`. It does not push or submit.
+Existing staged changes block automatic committing. A completed package still
+requires the scientific review listed in `SCIENTIFIC_REVIEW.md`.

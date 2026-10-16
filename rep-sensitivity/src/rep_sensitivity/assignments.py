@@ -14,6 +14,23 @@ class Assignment:
     output_cap: int
 
 
+def worker_instruction(family):
+    """State the executable predicate, without supplying its evaluated value."""
+    rules={
+        'precedence_release':('Return true exactly when every job starts at or after its release time and every precedence edge [u,v] '
+            'satisfies start[u]+duration[u] <= start[v]. Check both releases and edges for each candidate.'),
+        'resource':('For each candidate and assigned resource, sum the demands of ALL simultaneously active jobs. '
+            'Job j is active when start[j] <= t < start[j]+duration[j]. Return true exactly when this SUM is at most '
+            'the resource capacity at every time. Checking each job demand separately is insufficient.'),
+        'deadline_downtime':('Return true exactly when all jobs meet their non-null deadlines (start+duration <= deadline) '
+            'and no job with positive demand on a resource overlaps any downtime [a,b) for that resource. '
+            'Overlap means start < b and start+duration > a; touching endpoints is allowed. Null deadlines impose no limit.'),
+        'objective':('Compute the numerical MAKESPAN for each candidate: max over all jobs j of (start[j]+duration[j]). '
+            'Use absolute completion time, including any release delay or idle gaps. Return this number in time units; '
+            'never return a Boolean feasibility judgment for objective.')}
+    return rules[family]
+
+
 def assign(world, policy, allowance='added', total_output_allowance=4096):
     if world['kind']!='schedule': raise ValueError('Live study is scheduling only')
     if policy not in ('nonoverlap','exact_overlap','near_overlap'): raise ValueError(policy)

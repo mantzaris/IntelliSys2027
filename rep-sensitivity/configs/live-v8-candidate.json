@@ -1,0 +1,33 @@
+{
+  "name": "live-v8",
+  "interface_version": 7,
+  "status": "PROVISIONAL_DO_NOT_EXECUTE",
+  "generated_pairs": 24,
+  "worlds": [
+    0
+  ],
+  "stochastic_repetitions": 2,
+  "models": [
+    "qwen3",
+    "phi4"
+  ],
+  "manager_policy": "ordinary",
+  "worker_total_output_allowance": 4096,
+  "max_output_tokens": 2304,
+  "max_context_tokens": 12288,
+  "temperature": 0.3,
+  "top_p": 0.95,
+  "batch_size": 32,
+  "model_settings": {},
+  "note": "Four essential worker assignments are retained. Fixed arms first bound worker inputs plus output caps to the baseline worker allowance. After workers finish, unused allowance can fund the root: actual worker tokens plus root input and output allowance may not exceed the corresponding baseline's worker allowance plus baseline root input and root output cap. A root that cannot fit is explicitly scored as resource displacement, without truncating input or fabricating a call. This bounded token allowance is not equal FLOPs or elapsed compute.",
+  "enforce_eager": false,
+  "gpu_memory_utilization": 0.92,
+  "root_ancestry_registry": true,
+  "worker_interface_version": 2,
+  "benchmark_version": 2,
+  "bootstrap_strata": [
+    "family",
+    "decision_changed"
+  ],
+  "development_adequacy_rule": "At least 85% baseline exact accuracy over six new development scheduling bases, two repetitions; failures limit live interpretation and do not change frozen replay."
+}

@@ -23,9 +23,11 @@ for name,text in source.items():
     path=destination/name
     if path.exists() and path.read_text()!=text:raise RuntimeError('Changed archived implementation')
     path.write_text(text)
-manifest=json.loads((root/'manifest.json').read_text())
+manifest=json.loads((root/'manifest.json').read_text()) if (root/'manifest.json').exists() else None
+config=manifest['config'] if manifest else json.loads((root/'config.json').read_text())
+command='run' if manifest and 'manager_calls' in manifest else 'live' if manifest else 'controls'
 config_path=destination.parent/'config.json'
-config_path.write_text(json.dumps(manifest['config'],indent=2)+'\n')
+config_path.write_text(json.dumps(config,indent=2)+'\n')
 environment=dict(os.environ,PYTHONPATH=str(destination.parent.resolve()))
-subprocess.run([sys.executable,'-m','rep_sensitivity.cli','run','--config',str(config_path),
+subprocess.run([sys.executable,'-m','rep_sensitivity.cli',command,'--config',str(config_path),
                 '--model',a.model],env=environment,check=True)

@@ -1,0 +1,315 @@
+{
+  "suite": "controls-development-v7",
+  "complete": false,
+  "excluded_or_missing": [
+    {
+      "model": "qwen3",
+      "pair": "all"
+    }
+  ],
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "distinct_scope_branch_absolute_report_load_change",
+      "clusters": 1,
+      "observations": 4,
+      "cluster_weighted_mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "exact_admission_distinct_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "exact_admission_fraction_of_required_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "neutral_minus_repeat_manager_prompt_tokens",
+      "clusters": 1,
+      "observations": 4,
+      "cluster_weighted_mean": 1.5,
+      "minimum": 0.0,
+      "maximum": 3.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "packaging_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.28581432016941355,
+      "minimum": 0.2858068837187153,
+      "maximum": 0.2858217566201118
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "packaging_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "packaging_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 35.0,
+      "minimum": 35.0,
+      "maximum": 35.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "similarity_admission_distinct_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 14.0,
+      "minimum": 14.0,
+      "maximum": 14.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "similarity_admission_fraction_of_required_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.7777777777777778,
+      "minimum": 0.7777777777777778,
+      "maximum": 0.7777777777777778
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_decisive_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.14570674764265262,
+      "minimum": 0.1393834129396439,
+      "maximum": 0.15203008234566134
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_decisive_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_decisive_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 35.0,
+      "minimum": 35.0,
+      "maximum": 35.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_harmless_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.14925132336767946,
+      "minimum": 0.14647256438969758,
+      "maximum": 0.15203008234566134
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_harmless_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "metric": "unique_harmless_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 35.0,
+      "minimum": 35.0,
+      "maximum": 35.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "distinct_scope_branch_absolute_report_load_change",
+      "clusters": 1,
+      "observations": 4,
+      "cluster_weighted_mean": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "exact_admission_distinct_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "exact_admission_fraction_of_required_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "neutral_minus_repeat_manager_prompt_tokens",
+      "clusters": 1,
+      "observations": 4,
+      "cluster_weighted_mean": 1.5,
+      "minimum": 0.0,
+      "maximum": 3.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "packaging_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.2173443761112152,
+      "minimum": 0.21693434322337918,
+      "maximum": 0.21775440899905124
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "packaging_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "packaging_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 24.0,
+      "minimum": 24.0,
+      "maximum": 24.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "similarity_admission_distinct_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 9.0,
+      "minimum": 9.0,
+      "maximum": 9.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "similarity_admission_fraction_of_required_claims_lost",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.75,
+      "minimum": 0.75,
+      "maximum": 0.75
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_decisive_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.19708918389258948,
+      "minimum": 0.15848813209494328,
+      "maximum": 0.23569023569023567
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_decisive_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_decisive_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 27.0,
+      "minimum": 27.0,
+      "maximum": 27.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_harmless_character_similarity_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.2699852034370921,
+      "minimum": 0.2636676038737894,
+      "maximum": 0.27630280300039484
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_harmless_report_slot_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "metric": "unique_harmless_report_token_difference_high_minus_low",
+      "clusters": 1,
+      "observations": 2,
+      "cluster_weighted_mean": 27.0,
+      "minimum": 27.0,
+      "maximum": 27.0
+    }
+  ],
+  "source_records_sha256": "ae03aefe4aab9e239b36fb49b910d84449ccfe4352573983254df89918daf929",
+  "analysis_source_sha256": "0cafb9bd3030e8eb798cfccfcbcdd9a5732f5485027636d3fbdfcd596368fb2a",
+  "interpretation": "Descriptive matching residuals; equal weighting of base-cluster means, no inferential intervals. Branch observations and repetitions are not independent samples. Full root lengths depend on generated summaries; only pre-generation report/manager matching is assessed here."
+}

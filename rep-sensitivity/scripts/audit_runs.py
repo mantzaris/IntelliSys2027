@@ -9,15 +9,39 @@ import statistics
 from rep_sensitivity.resources import measure_telemetry
 
 parser=argparse.ArgumentParser();parser.add_argument('directory');a=parser.parse_args()
-root=Path(a.directory);manifest=json.loads((root/'manifest.json').read_text())
+root=Path(a.directory)
+manifest=json.loads((root/'manifest.json').read_text()) if (root/'manifest.json').exists() else None
+config=manifest['config'] if manifest else json.loads((root/'config.json').read_text())
+kind='replay' if manifest and 'manager_calls' in manifest else 'live' if manifest else 'controls'
+planned={}
+for model in config['models']:
+    if kind=='replay':
+        per_pair=len(config['worlds'])*len(config['policies'])*len(config['organizations'])*len(config['repetition_conditions'])*config['stochastic_repetitions']
+        pairs=json.loads((root/'pairs.json').read_text())
+        planned[model]={'trajectories':manifest['trajectories']//len(config['models']),
+                        'calls':manifest['manager_calls']//len(config['models']),
+                        'pairs':{p['pair_id']:per_pair for p in pairs}}
+    elif kind=='live':
+        pairs=json.loads((root/'pairs.json').read_text())
+        per_pair=len(config['worlds'])*5*config['stochastic_repetitions']
+        planned[model]={'trajectories':manifest['trajectories'],'calls':manifest['calls'],
+                        'pairs':{p['pair_id']:per_pair for p in pairs}}
+    else:
+        path=root/model/'run-manifest.json'
+        if not path.exists():continue
+        m=json.loads(path.read_text())
+        planned[model]={'trajectories':m['trajectories'],'calls':m['calls'],
+            'pairs':{p.stem:json.loads(p.read_text())['trajectories'] for p in (root/model/'manifests').glob('*.json')}}
 telemetry=[]
 for path in Path('artifacts/runs/telemetry').glob('*.jsonl'):
     for line in path.read_text().splitlines():
         try:telemetry.append(json.loads(line))
         except json.JSONDecodeError:raise RuntimeError('Partial telemetry record; refresh the mirror before auditing')
-result={'suite':manifest['config']['name'],'planned_trajectories':manifest['trajectories'],
-        'planned_calls':manifest['manager_calls'],'models':{}}
-for model in manifest['config']['models']:
+result={'suite':config['name'],'kind':kind,'planned_trajectories':sum(p['trajectories'] for p in planned.values()),
+        'planned_calls':sum(p['calls'] for p in planned.values()),
+        'planned_call_interpretation':'Maximum before explicit resource displacement' if kind=='live' else 'Exact planned calls',
+        'models_without_manifest':sorted(set(config['models'])-set(planned)), 'models':{}}
+for model in config['models']:
     (root/model).mkdir(parents=True,exist_ok=True)
     records=[];inventory=[]
     for p in sorted((root/model/'calls').glob('*.json.gz')):
@@ -37,8 +61,17 @@ for model in manifest['config']['models']:
     latencies=[r['latency_seconds'] for r in responses if r.get('latency_seconds') is not None]
     wall=sum(r['allocated_inference_seconds'] for r in responses)
     output_tokens=sum(r['output_tokens'] for r in responses)
+    scores=[]
+    for p in (root/model/'scores').glob('*.json'):
+        s=json.loads(p.read_text());scores.extend(s if isinstance(s,list) else [s])
+    cluster_counts=Counter(s['pair_id'] for s in scores)
+    score_requests={key for s in scores for key in s['request_hashes']}
+    expected=planned.get(model,{'pairs':{},'trajectories':None,'calls':None})
+    complete_clusters=sum(cluster_counts[pid]==count for pid,count in expected['pairs'].items())
     result['models'][model]={'accepted_calls':len(records),'unique_request_hashes':len(accepted),
-        'started_without_accepted':len(started-accepted),'complete_clusters':len(list((root/model/'scores').glob('*.json'))),
+        'started_without_accepted':len(started-accepted),'complete_clusters':complete_clusters,
+        'scored_trajectories':len(scores),'planned_trajectories':expected['trajectories'],'planned_calls':expected['calls'],
+        'accepted_calls_match_completed_scores':score_requests==accepted,
         'run_complete':any(e['event']=='run_complete' for e in events),
         'finish_reasons':dict(Counter(r['finish_reason'] for r in responses)),
         'input_tokens':sum(r['input_tokens'] for r in responses),'output_tokens':output_tokens,
@@ -55,5 +88,5 @@ for model in manifest['config']['models']:
     # Inventory is durable and small relative to raw prompts; not necessary to commit all rows.
     (root/model/'inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
 out=Path('records/audits');out.mkdir(parents=True,exist_ok=True)
-(out/(manifest['config']['name']+'.json')).write_text(json.dumps(result,indent=2)+'\n')
+(out/(config['name']+'.json')).write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

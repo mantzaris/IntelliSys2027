@@ -1,7 +1,7 @@
 """Smaller live-worker study with logged access and preserved essential coverage."""
 from dataclasses import asdict, replace
 from pathlib import Path
-from .assignments import assign, access_view, coverage, allocate_total_tokens,bind_executions
+from .assignments import assign, access_view, coverage, allocate_total_tokens,bind_executions,worker_instruction
 from .generation import generate
 from .metrics import parse, score_root,same_value
 from .models import reuse_or_load
@@ -11,6 +11,13 @@ from .schema import canonical,digest,Report
 from .storage import Ledger,immutable_json
 from .replay import execute_requests
 from .information import possible_decisions
+
+WORKER_CONTRACT=('Return one JSON object in this field order: assertions, unresolved, candidate_assessments, choice, probabilities. '
+    'assertions contains one object for each assigned registry key: key is that exact scope key, value is your computed '
+    'Boolean predicate result or numerical makespan, and reports is a list containing assignment.source_identifier. '
+    'The source identifier names the supplied data; there are no precomputed reports. '
+    'unresolved lists only assigned scope keys whose result cannot be determined from the data. '
+    'Set candidate_assessments=[], choice=null, probabilities={}. Do not select a candidate, emit extra prose, or provide private reasoning. ')
 
 
 def run_live(config,alias,model=None):
@@ -50,6 +57,10 @@ def run_live(config,alias,model=None):
                         prompt=('Verify only your assigned scope using the supplied task data. Compute every assigned finding; '
                                 'do not choose a final candidate. Use choice=null and probabilities={}. '
                                 'Cite your assigned source identifier in reports. '+CONTRACT+'\n'+canonical({
+                                    'assignment':asdict(task),'access':view}))
+                        if config.get('worker_interface_version',1)==2:
+                            prompt=('You are a verification worker computing findings from job data. '+worker_instruction(task.family)+' '
+                                'Execution is non-preemptive and intervals are half-open. '+WORKER_CONTRACT+'\n'+canonical({
                                     'assignment':asdict(task),'access':view}))
                         return {'trial':trial,'stage':task.identifier,'prompt':prompt,'max_output_tokens':task.output_cap},view
                     def prompt_tokens(task):

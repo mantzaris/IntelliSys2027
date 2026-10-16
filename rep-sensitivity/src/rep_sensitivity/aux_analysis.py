@@ -1,12 +1,14 @@
 """Offline, cluster-paired analysis of supporting controls and live assignments."""
 from collections import defaultdict
 import csv
+import gzip
 import json
 from pathlib import Path
 from .analysis import average,bootstrap
 from .schema import digest
+from .metrics import parse
 
-OPTIONAL_METRICS=('unique_clause_retained','false_assertion_adopted','superseded_assertions_emitted',
+OPTIONAL_METRICS=('unique_clause_retained','false_assertion_adopted','false_assertion_emitted','superseded_assertions_emitted',
                  'choice_matches_superseded_when_distinct','superseded_choice_with_historical_assertion',
                  'epistemically_appropriate_choice','root_supported_correct','unsupported_truth_hit',
                  'delivered_claims','required_claims','root_resource_displacement','worker_incorrect_claims',
@@ -56,6 +58,12 @@ def summarize(directory,output,replicates=10000):
                     meta=pair_meta[pid]
                     r.update(contrast='live',arm=r['allocation']+'_'+r['allowance'],kind=meta['kind'],family=meta['family'],decision_changed=meta['decision_changed'])
                     r['root_resource_displacement']=r['root_not_executed'] is not None
+                if r.get('contrast')=='corruption' and 'injected_scope' in r.get('audit',{}):
+                    calls=[json.loads(gzip.decompress((model_dir/'calls'/(key+'.json.gz')).read_bytes())) for key in r['request_hashes']]
+                    response=next(c['response'] for c in calls if c['stage']=='root')
+                    obj,status=parse(response['text'],[r['choice']] if r['choice'] is not None else [])
+                    if response['finish_reason']=='length':obj=None
+                    r.update(false_finding_metrics(obj,r['audit']['injected_scope'],r['audit']['true_value']))
                 accepted.append(r)
     groups=defaultdict(list)
     for r in accepted:groups[(r['kind'],r['model'],r['contrast'],r['arm'])].append(r)
@@ -117,9 +125,18 @@ def summarize(directory,output,replicates=10000):
             'bootstrap_strata':config.get('bootstrap_strata',['family','decision_changed']),
             'summary':summary,'contrasts':contrasts,'metric_contrasts':metric_contrasts,
             'analysis_source_sha256':digest(Path(__file__).read_text()),
+            'false_finding_definition':'Adopted means an explicit false root finding with neither a contrary true assertion nor that scope listed as unresolved. Emission alone is separate; neither metric establishes hidden belief or a causal reasoning path.',
             'interpretation':'Exploratory paired base-cluster estimates; no confirmatory p-values. Optional metric contrasts use only cells observed in both arms; denominators are explicit.'}
     (output/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
     return result
+
+
+def false_finding_metrics(obj,key,true_value):
+    if obj is None:return {'false_assertion_emitted':None,'false_assertion_adopted':None}
+    values=[v for k,v,refs in obj['assertions'] if k==key and type(v) is bool]
+    emitted=(not true_value) in values
+    return {'false_assertion_emitted':emitted,
+            'false_assertion_adopted':emitted and true_value not in values and key not in obj['unresolved']}
 
 
 def unique_clause_interaction(rows,metric):

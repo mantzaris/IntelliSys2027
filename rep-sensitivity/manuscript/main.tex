@@ -5,6 +5,7 @@
 \usepackage{amssymb}
 \usepackage{mathptmx}
 \usepackage{booktabs}
+\usepackage{longtable}
 \setlength{\emergencystretch}{2em}
 \def\UrlFont{\rmfamily}
 \begin{document}
@@ -17,36 +18,13 @@
 \maketitle
 
 \begin{abstract}
-Similar agent reports can restate one observation, describe independent executions,
-or contain complementary requirements whose differences determine a decision.
-We develop a controlled benchmark for studying these distinctions in hierarchical
-language-model systems. The primary task is to select the feasible candidate
-schedule with minimum makespan from a supplied set. Executable verifiers determine
-constraint satisfaction and the correct decision, and an independently implemented
-checker validates small integer instances. Paired interventions change numerical
-limits, scoped identities, or dependencies; a separate rule-workflow population
-tests quantifiers, conditions, and explicit revisions. Frozen reports support
-comparisons between single presentations, exact copies, and claim-preserving
-paraphrases under flat and summary-only hierarchical aggregation. The protocol
-compares ordinary synthesis, required-task checklists, and scope-aware consolidation
-with common information access and output contracts. This working manuscript
-currently reports development and interface validation rather than completed
-held-out hypothesis tests. Initial execution exposed formatting failures and
-insufficient baseline task competence. After interface validation, the completed
-one-model pilot showed ceiling flat scheduling accuracy and beneficial repetition
-effects in hierarchical scheduling, with mixed secondary-workflow findings.
-We document these limitations, preserve unsuccessful outputs, and
-specify paired cluster-level analyses and additional controls needed to distinguish
-repetition effects from information loss, missing coverage, and resource changes.
-Human scientific review and the remaining experimental stages are required before
-submission.
+\input{generated/abstract.tex}
 \keywords{multi-agent systems, information integration, duplication, scheduling, behavioral evaluation}
 \end{abstract}
 
 \section{Status and Research Question}
 \textbf{Working research draft; not ready for submission.}
-The implemented benchmark and executed development runs are distinguished below
-from planned, unexecuted confirmatory comparisons. No held-out result is claimed.
+\input{generated/status.tex}
 The human author's scientific review is pending. The title is provisional until
 the findings justify a final contribution.
 
@@ -241,6 +219,9 @@ claims; Boolean truth remains distinct from numeric one. Claim-score corrections
 are recomputed from immutable responses with a versioned scorer. An incompatible
 scope-citation metric records assertions supported by multiple reports whose
 scopes do not all bind that assertion; this is an emitted-attribution measure.
+False-assertion emission is separated from an uncontested false finding: the latter
+requires the false value, absence of the contrary true value, and no unresolved
+flag for that scope. Neither establishes a hidden belief or causal reasoning path.
 
 \section{Development Results and Current Limits}
 \input{generated/competence.tex}
@@ -280,7 +261,11 @@ precision/runtime assessment, before inspecting held-out outcomes. No favorable
 significance threshold justifies stopping. A model that fails the competence gate
 is a documented limitation, not a candidate selected for a desirable failure rate.
 
-\section{Remaining Controls and Threats to Validity}
+\input{generated/main-results.tex}
+\input{generated/supporting-results.tex}
+\input{generated/live-results.tex}
+
+\section{Supporting Design and Threats to Validity}
 The supporting design contrasts overlapping and less-overlapping presentations
 with identical distinct claims, exact removal versus similarity removal,
 scope-aware consolidation, branch placement, raw-report bypass, and global
@@ -288,7 +273,7 @@ reviewers matched to the hierarchy's call count. Neutral material controls for
 length; ancestry withholding and corrupted relationships test provenance use.
 Instruction-only controls separate metadata from additional prompting. Distinct
 information, ordering and report slots are held fixed where possible, with residual
-token differences recorded. These controls are not reported as executed here.
+token differences recorded. The result sections explicitly identify execution status.
 Placement of distinct scoped reports and placement of exact copies are separate
 contrasts. Moving a report changes branch load, which is recorded as a residual
 difference. Similarity removal currently uses character overlap, so its findings
@@ -296,7 +281,7 @@ cannot be generalized to learned semantic deduplication.
 
 Corrupted reports require visible authoritative evidence or an allowed
 insufficient-information answer. False favorable assertions and false objections
-must be separated. Live workers will receive role-specific task data without peer
+must be separated. Live workers receive role-specific task data without peer
 reports; four essential assignments remain in principal comparisons. Redundant
 fresh execution differs from frozen copying. Fixed output allowances alone do not
 match total computation, and coverage displacement requires its own label.
@@ -327,6 +312,10 @@ This working draft has not yet undergone the author's scientific review. This
 disclosure must be updated truthfully after review; no AI is an author. The
 conference's limits on AI involvement require human assessment before submission.
 
+\clearpage
 \bibliographystyle{spmpsci}
 \bibliography{references}
+\clearpage
+\appendix
+\input{generated/supplementary-results.tex}
 \end{document}

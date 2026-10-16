@@ -50,3 +50,5 @@ __pycache__/
 /results/competence-*/overview.png
 # Full held-out trial rows remain in the mirrored artifact package; curate aggregates.
 /results/main-*/decisions.csv
+# Vector figures are sufficient in Git; PNG previews are reproducible.
+/results/*/figures/*.png

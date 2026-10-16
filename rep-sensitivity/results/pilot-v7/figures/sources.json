@@ -1,0 +1,7 @@
+{
+  "suite": "pilot-v7",
+  "population": "primary scheduling",
+  "analysis_sha256": "402f26d577a42c4dd434b0c338552950df4de16e153ea1fe34a331009cca8c75",
+  "plot_script_sha256": "aa876a67e3951dbb6663311aadadd8be16f13999e5ade4d564feeb3104fc03fd",
+  "inference": "No new tests; displays the existing prespecified contrasts and descriptive resource summaries."
+}

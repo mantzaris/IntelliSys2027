@@ -37,7 +37,9 @@ if pilot:
                 table+=' & '.join([kind,organization,policy,*[f"{100*r['accuracy']:.1f}" for r in cells]])+r'\\'+'\n'
                 for r in cells:trace.append({'source':str(path),'field':'summary','record':r})
     table+='\\hline\n\\end{tabular}\n\\end{table}\n'
-    table+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/pilot-v7/overview.pdf}\n\\caption{Development-only paired estimates and resource summaries. Interval units are base-instance clusters; workflow results are separate.}\n\\label{fig:pilot}\n\\end{figure}\n'
+    if not any(r['suite']=='main-v7' and r.get('complete') for p,r in records):
+        for figure in ('repetition','hierarchy','retention','resource'):
+            table+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/pilot-v7/figures/'+figure+'.pdf}\n\\caption{Development-only primary scheduling: '+figure+'. Intervals, where shown, resample base-instance clusters.}\n\\label{fig:pilot-'+figure+'}\n\\end{figure}\n'
     (out/'pilot.tex').write_text(table)
     for r in result['contrasts']:trace.append({'source':str(path),'field':'contrasts','record':r})
 (out/'numerical_traceability.json').write_text(json.dumps(trace,indent=2)+'\n')

@@ -1,0 +1,7 @@
+{
+  "replay_source_matches_active_validation_and_controls": true,
+  "common_output_schemas_identical": true,
+  "development_prompt_equality_checks": 12,
+  "gpu_calls": 0,
+  "live_instruction_revision_is_separate": true
+}

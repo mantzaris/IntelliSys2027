@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-16T06:26:30.792100+00:00",
+  "successor_pid": 91966,
+  "waits_for_pid": 82840,
+  "successor_snapshot": "69fa1831720a79bbca0735f5b5d4272b08929185e90d2241504e3e772c1fce65",
+  "unchanged_replay_snapshot": "77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122",
+  "replay_protocol": "v7",
+  "live_protocol": "v8",
+  "status_at_recording": "Waiting for current Phi-4 validation stage; no held-out inference",
+  "controller_log": "logs/study-controller-v8.log",
+  "failure_records": "artifacts/runs/study-execution-v8/"
+}

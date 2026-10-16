@@ -258,3 +258,47 @@ analysis reports the high-minus-low overlap effect for decisive clauses minus th
 same effect for harmless clauses, pairing all four cells within base/world/repetition.
 The original primary contrasts are unchanged. Supporting optional metrics retain
 explicit observed-cell denominators; unavailable metrics are not imputed.
+
+## 2026-10-16: separate live-worker interface correction
+
+The first Phi-4 live-development run returned incorrect baseline decisions and
+Boolean objective assertions. Audit found that the worker prompt did not define
+which scheduling objective to compute, and reused aggregation instructions about
+existing reports. This is an interface limitation, not evidence of duplication harm.
+Preserve `live-development-v7` and its raw outputs. Do not run held-out live v7.
+
+Worker interface 2 states the assigned mathematical predicate and makespan formula
+explicitly, uses the same public output fields, and cites the supplied source. It
+does not provide evaluated predicates, objective answers, or other workers' reports.
+The independent occupancy checker now verifies that each restricted access view
+contains enough data to recover its assigned result. No frozen replay prompt or
+model configuration changes.
+
+A successor controller retains the exact archived replay package for both models
+and loads the corrected live package under a separate namespace. Existing Phi-4
+replay validation finishes without interruption. Corrected live development uses
+six new scheduling bases, two repetitions, before any held-out call; baseline
+accuracy below the unchanged 85% adequacy threshold limits live interpretation
+to task/interface diagnostics. It does not change the separately qualified replay.
+No further live prompt optimization is permitted after this freeze. The main
+resource rule, primary contrasts, supporting subset, and live held-out allocation
+remain unchanged. A prospective live-v8 freeze supersedes the unused live-v7 plan.
+
+## 2026-10-16: emitted findings and local review-package completion
+
+Before held-out inference, `configs/analysis-emitted-findings-v2.json` clarifies a
+secondary corruption metric. Emitting an injected false value while also reporting
+its contradiction is not the same as an uncontested false finding. Record both:
+the latter requires the false value, absence of the true counterpart, and no
+unresolved flag for that scope. This measures explicit emitted findings, not hidden
+belief or causal reasoning. Preserve raw responses and original score files;
+recompute the secondary fields offline with the scorer hash. No primary contrast,
+model prompt, allocation, or decision correctness changes.
+
+The bounded local mirror now invokes a completion hook only after main, supporting,
+and corrected live analyses are complete. It audits locally copied raw inventories,
+regenerates traceable tables and figures, compiles the anonymous PDF, checks layout,
+and commits compact generated records on `main`. It does not push or submit. An
+unrelated staged change blocks the automatic commit. This is execution automation,
+not scientific review; interpretation, the provisional title, and conference
+eligibility remain human review items.

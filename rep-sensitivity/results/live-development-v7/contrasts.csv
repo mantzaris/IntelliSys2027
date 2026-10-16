@@ -1,0 +1,5 @@
+kind,model,contrast,difference,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap
+schedule,phi4,live,exact_overlap_fixed - nonoverlap_added,0.0,0.0,0.0,1,,True
+schedule,phi4,live,near_overlap_fixed - nonoverlap_added,0.0,0.0,0.0,1,,True
+schedule,phi4,live,exact_overlap_added - nonoverlap_added,0.0,0.0,0.0,1,,True
+schedule,phi4,live,near_overlap_added - nonoverlap_added,0.0,0.0,0.0,1,,True

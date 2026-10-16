@@ -1,0 +1,8 @@
+{
+  "status": "prospective_secondary_metric_clarification_before_heldout_inference",
+  "primary_analysis": "configs/analysis.json; all primary contrasts unchanged",
+  "false_assertion_emitted": "Valid root output contains the injected false scoped value.",
+  "false_assertion_adopted": "False value is emitted, the corresponding true value is not emitted, and the scope is not listed as unresolved. This is explicit uncontested finding adoption, not a hidden belief or causal reasoning measure.",
+  "denominator": "Valid completed root outputs with a defined injected scope; malformed or truncated roots are unavailable for this secondary metric and remain primary trajectory errors.",
+  "immutable_outputs": "Preserve original responses and score files; derive these fields during offline analysis and record its source hash."
+}

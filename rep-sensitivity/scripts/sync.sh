@@ -6,7 +6,7 @@ remote_dir="${RUNPOD_PROJECT:-/workspace/rep-sensitivity}"
 port="${RUNPOD_PORT:-19997}"
 key="${RUNPOD_KEY:-$HOME/.ssh/id_rsa}"
 known="${RUNPOD_KNOWN_HOSTS:-/tmp/intellisys-runpod-known-hosts}"
-transport="ssh -i $key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known -p $port"
+transport="ssh -i $key -o IdentitiesOnly=yes -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=15 -o ServerAliveCountMax=3 -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$known -p $port"
 case "${1:-pull}" in
   push-source)
     rsync -az -e "$transport" --exclude='.venv/' --exclude='artifacts/' --exclude='logs/' \

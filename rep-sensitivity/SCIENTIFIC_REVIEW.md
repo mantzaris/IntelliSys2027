@@ -1,7 +1,9 @@
 # Points requiring human scientific review
 
-This is an implementation and development checkpoint. It is not a completed
-conference submission or a claim that H1–H4 are supported.
+This is a research package for human scientific review. Execution status is in
+`records/study-report-status.json`; only `records/review-package.json` records a
+completed experimental package. Neither is a conference submission or a claim
+that H1–H4 are supported.
 
 1. Confirm the remaining novelty relative to *Copies or Sources?*, especially
    restricted-summary integration of complementary requirements. Duplication,
@@ -23,8 +25,8 @@ conference submission or a claim that H1–H4 are supported.
 7. Validate supporting controls end-to-end, including whole-prompt token matching,
    branch placement, bypass, global reviewers, corruption resolvability and genuine
    ancestry changes. Do not treat deterministic preprocessing audits as model results.
-8. Finalize validation precision and measured GPU-hour planning, then freeze the
-   main sample and allocation. Main effects need complete paired clusters and
+8. Verify that validation precision and measured GPU-hour planning preceded the
+   frozen main sample and allocation. Main effects need complete paired clusters and
    model-specific uncertainty. Two repetitions do not create independent problems.
 9. Review live-worker budget accounting, worker-error scoring, lost delivery and
    fresh-execution dependence. Equal combined token allowance is not equal compute.

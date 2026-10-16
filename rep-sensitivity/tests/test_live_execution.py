@@ -45,7 +45,7 @@ class LiveFixture:
 class LiveExecutionTests(unittest.TestCase):
     def test_worker_errors_delivery_budget_and_resume(self):
         config=json.loads((Path(__file__).resolve().parents[1]/'configs/live-provisional.json').read_text())
-        config.update(name='live-fixture',status='development_live',generated_pairs=1,models=['fixture'])
+        config.update(name='live-fixture',status='development_live',generated_pairs=1,models=['fixture'],worker_interface_version=2)
         LiveFixture.accepted=0;LiveFixture.root_prompts=[];previous=Path.cwd()
         try:
             with tempfile.TemporaryDirectory() as d:
