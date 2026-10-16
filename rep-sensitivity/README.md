@@ -5,27 +5,44 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
-**Status at 2026-10-16 18:30 UTC:** the Qwen3 pilot (24 independent pairs,
-1,152 trajectories) and both original validation runs (36 shared pairs,
-2,592 trajectories/model) are complete. Original Qwen3 held-out main is running;
-Phi-4 main remains queued. The pilot's hierarchical scheduling exact-copy effect
-reproduces: 81.25% → 94.79%, +13.54 points [95% clustered interval 4.17, 22.92],
-from 12 scheduling bases and 96 trajectories per arm. Seven of 14 improved cells
-come from one base; leaving it out gives +6.82 points. See
-[PILOT_INTERPRETATION.md](PILOT_INTERPRETATION.md) for complete denominators,
-strata, paired-world performance and observable failure locations.
+**Status at 2026-10-16 19:57 UTC:** new offline analysis of both completed
+original validation runs is available in
+[VALIDATION_REPETITION_RESULTS.md](VALIDATION_REPETITION_RESULTS.md). On 18
+scheduling pairs with the pilot-matched ordinary/checklist policies (144 decisions
+per arm/model), exact repetition changes Qwen3 accuracy from 79.86% to 76.39%
+(−3.47 points, 95% cluster interval −10.42 to +2.78), and Phi-4 from 72.22% to
+73.61% (+1.39, −4.17 to +6.25). The large pilot mean benefit does not reproduce in
+this validation aggregate. These are exploratory validation estimates, not new
+GPU executions or completed held-out confirmation.
 
-The frozen 514-trajectory development extension, 30-trajectory fresh diagnostic,
-fresh validation and eligible 24/48-pair confirmation remain queued. A separately
-frozen **192-root-call diagnostic on six reused development pairs** now follows
-both original model stages. It fixes incoming summaries and repeats each
-candidate objective in turn, with lossless, neutral and position controls.
-Native-token checks fit all inputs and match padding exactly; 60 integrity tests
-pass. No new-extension GPU outcome is claimed. The 13-page anonymous manuscript
-compiles with 12 cited verified references and still requires scientific review.
-Current counts, measured projections and immutable source mappings are in
-`records/execution/current-runtime.json`, `records/planning/continuation-v2.json`
-and `records/execution/source-git-map.json`.
+The 24-pair, 1,152-trajectory pilot and all its original results remain preserved.
+The influential pair's repeated report favors C64 (objective 9), while C39 (8) is
+correct; all eight baseline summaries replaced objectives with Boolean `true`.
+Its complete trace audit is in `results/pilot-interpretation-v2/influential-pair-audit.json`.
+
+Original Qwen3 main is active at 72/192 completed pairs (5,184/13,824 trajectories);
+no partial main choices were inspected. Original Phi-4 remains protected in the
+sequential queue. The unchanged 192-call root diagnostic now runs at the first
+safe natural boundary after Qwen3 main/support/live, before the previously frozen
+514-trajectory development, 30-trajectory fresh-verification, fresh validation and
+eligible conditional confirmation. The active runner has no supported mid-run
+handoff; no running inference was interrupted or restarted.
+
+A separate **24 fresh scheduling-pair, 480-trajectory, two-model objective
+confirmation** follows original Phi-4. It compares selective and balanced exact
+and verified-paraphrase repetition; measured batch projections are 77–95 minutes,
+including loading allowances, within a hard shared two-hour new-GPU budget.
+No new dose exploration is added. See [PROTOCOL_CONTINUATION_V3.md](PROTOCOL_CONTINUATION_V3.md),
+`records/freezes/objective-confirmation-v1.json`, and
+`records/execution/continuation-venv-correction-v3.json` for the current controller
+PIDs, environment and exact recovery commands. The earlier handoff records remain
+as history. Completed stages are analyzed and mirrored automatically.
+
+**69 integrity tests pass.** Four new validation figures and the updated anonymous
+14-page manuscript are available. Root, mechanism and fresh-confirmation results
+remain pending; human scientific review is required. Current runtime and counts
+are in `records/execution/current-runtime.json`; source/config/model revisions are
+recorded per immutable run and freeze.
 See `PILOT_MECHANISM_AUDIT.md`, `PROTOCOL_AMENDMENT_V1.md`, the preserved
 `DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
 and the actual `results/*/analysis.json` files. A compiled anonymous working draft
@@ -396,3 +413,21 @@ resuming its immutable snapshot. The exact command and source snapshot are in th
 handoff record. The local completion hook reanalyzes only complete mirrored
 outputs and waits for the diagnostic before assembling a review package. Raw
 outputs, request caches, model files and detailed trace rows stay outside Git.
+
+## Latest continuation commands
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/analyze_validation_repetition.py
+PYTHONPATH=src .venv/bin/python scripts/audit_influential_pair.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_empirical_update.py
+# Called by the mirror hook only after the standalone diagnostic is complete:
+PYTHONPATH=src .venv/bin/python scripts/audit_root_information_v2.py
+# Analyzes each complete model; incomplete models remain explicitly incomplete:
+PYTHONPATH=src .venv/bin/python scripts/analyze_objective_confirmation.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_completed_extensions.py
+```
+
+The confirmation recovery command in the execution record uses the absolute
+`.venv/bin/python` entry path, not its resolved symlink to system Python. Never
+start it alongside the active coordinator. Both controllers hold writer locks;
+the new budget journal conservatively charges ambiguous attempts on restart.

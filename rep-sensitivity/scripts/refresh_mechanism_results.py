@@ -34,10 +34,17 @@ for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-
         old=json.loads(destination.read_text())
         supplementary_current=True
         if suite.startswith('root-'):
-            extra=destination.parent/'visible-information.json'
-            supplementary_current=extra.exists() and json.loads(extra.read_text()).get('analysis_source_sha256')==digest(Path('scripts/audit_root_information.py').read_text())
+            extra=destination.parent/'visible-information-v2.json'
+            supplementary_current=extra.exists() and json.loads(extra.read_text()).get('analysis_source_sha256')==digest(Path('scripts/audit_root_information_v2.py').read_text()) and json.loads(extra.read_text()).get('scorer_source_sha256')==digest(Path('scripts/visible_information_v2.py').read_text())
         if old.get('complete') and old.get('analysis_source_sha256')==source and supplementary_current:continue
     analyze(root,destination.parent);changed.append(suite)
-    if suite.startswith('root-'):subprocess.run([sys.executable,'scripts/audit_root_information.py'],check=True)
+    if suite.startswith('root-'):
+        subprocess.run([sys.executable,'scripts/audit_root_information.py'],check=True)
+        subprocess.run([sys.executable,'scripts/audit_root_information_v2.py'],check=True)
 if changed:subprocess.run([sys.executable,'scripts/build_mechanism_report.py'],check=True)
 print(json.dumps({'refreshed_complete_suites':changed}))
+
+if Path('artifacts/runs/objective-confirmation-v1/manifest.json').exists():
+    subprocess.run([sys.executable,'scripts/analyze_objective_confirmation.py'],check=True)
+
+subprocess.run([sys.executable,'scripts/build_completed_extensions.py'],check=True)

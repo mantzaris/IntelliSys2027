@@ -1,0 +1,25 @@
+model,kind,organization,condition,policy,base_pairs,trajectories,necessary_fact_omitted,necessary_value_wrong_or_conflicted,necessary_fact_unresolved,summary_scope_miscitation,visible_false_constraint_ignored,complete_constraints_delivered_invalid_choice,feasible_but_not_preferred,strictly_suboptimal_objective,tie_break_error,correct_choice_erroneous_support,response_contract_failure,root_error_despite_sufficient_visible_truth,any_truncation
+qwen3,schedule,flat,single,equal ordinary/checklist/scope,18,216,0,0,0,0,4,4,5,0,5,35,0,16,0
+qwen3,schedule,flat,exact,equal ordinary/checklist/scope,18,216,0,0,0,0,10,10,6,0,6,38,0,19,0
+qwen3,schedule,flat,paraphrase,equal ordinary/checklist/scope,18,216,0,0,0,0,11,11,4,0,4,37,0,17,0
+qwen3,schedule,hierarchical,single,equal ordinary/checklist/scope,18,216,12,8,1,25,9,9,17,6,11,36,0,24,0
+qwen3,schedule,hierarchical,exact,equal ordinary/checklist/scope,18,216,12,7,1,9,11,11,16,7,9,20,0,25,0
+qwen3,schedule,hierarchical,paraphrase,equal ordinary/checklist/scope,18,216,13,8,1,11,12,12,17,8,9,24,0,24,0
+qwen3,workflow,flat,single,equal ordinary/checklist/scope,18,216,0,0,0,0,4,4,8,0,8,13,0,12,0
+qwen3,workflow,flat,exact,equal ordinary/checklist/scope,18,216,0,0,0,0,19,19,10,0,10,14,0,29,0
+qwen3,workflow,flat,paraphrase,equal ordinary/checklist/scope,18,216,0,0,0,0,18,18,12,0,12,18,0,30,0
+qwen3,workflow,hierarchical,single,equal ordinary/checklist/scope,18,216,20,4,0,10,22,22,2,2,0,18,1,21,0
+qwen3,workflow,hierarchical,exact,equal ordinary/checklist/scope,18,216,21,3,0,9,27,27,2,2,0,20,6,27,0
+qwen3,workflow,hierarchical,paraphrase,equal ordinary/checklist/scope,18,216,21,5,0,12,23,23,4,4,0,27,3,23,0
+phi4,schedule,flat,single,equal ordinary/checklist/scope,18,216,0,0,0,0,10,10,3,0,3,41,0,19,0
+phi4,schedule,flat,exact,equal ordinary/checklist/scope,18,216,0,0,0,0,11,11,4,0,4,34,0,27,0
+phi4,schedule,flat,paraphrase,equal ordinary/checklist/scope,18,216,0,0,0,0,13,13,4,0,4,41,0,28,0
+phi4,schedule,hierarchical,single,equal ordinary/checklist/scope,18,216,7,32,50,27,15,12,23,23,0,33,0,15,0
+phi4,schedule,hierarchical,exact,equal ordinary/checklist/scope,18,216,10,32,50,26,15,13,21,21,0,41,0,16,0
+phi4,schedule,hierarchical,paraphrase,equal ordinary/checklist/scope,18,216,5,29,46,42,13,13,23,23,0,39,0,21,0
+phi4,workflow,flat,single,equal ordinary/checklist/scope,18,216,0,0,0,0,0,0,1,0,1,37,0,8,0
+phi4,workflow,flat,exact,equal ordinary/checklist/scope,18,216,0,0,0,0,4,4,1,1,0,61,0,17,0
+phi4,workflow,flat,paraphrase,equal ordinary/checklist/scope,18,216,0,0,0,0,5,5,1,1,0,45,0,14,0
+phi4,workflow,hierarchical,single,equal ordinary/checklist/scope,18,216,7,29,10,22,14,14,22,22,0,34,0,17,0
+phi4,workflow,hierarchical,exact,equal ordinary/checklist/scope,18,216,7,37,14,39,10,10,19,19,0,60,0,11,0
+phi4,workflow,hierarchical,paraphrase,equal ordinary/checklist/scope,18,216,6,44,13,45,12,12,26,26,0,69,0,11,0

@@ -1,0 +1,1 @@
+{"analysis_source_sha256":"8f4fe0fa0be87d497196829e6df45aad0d0d581599913113ae3792a9658f8c2d","reason":"Support script invocation from PYTHONPATH=src as used by the mirror hook; semantic scorer unchanged.","root_calls":0,"scorer_source_sha256":"026623670e02a0da3305e9a97a4f26e99b7b9d7a91d81a7cc06480fa65c2d342","semantic_change":false,"utc":"2026-10-16T19:49:50.807842+00:00"}

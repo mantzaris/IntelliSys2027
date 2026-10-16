@@ -1,9 +1,12 @@
 """Compare immutable raw-file hashes on the existing pod and local mirror."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
 import subprocess
 from datetime import datetime, timezone
+
+parser=argparse.ArgumentParser();parser.add_argument('--output',default='records/execution/mirror-verification-v2.json');args=parser.parse_args()
 
 # No response content is printed or evaluated. Use existing verified SSH host key.
 code = '''import hashlib,json
@@ -34,6 +37,6 @@ for suite, files in remote.items():
         'identical_local_files': matches, 'not_yet_local': missing, 'different_content': different})
 record = {'utc': datetime.now(timezone.utc).isoformat(), 'comparisons': comparisons,
           'interpretation': 'No held-out choices inspected. Additional remote calls after the snapshot are expected; a lag is not a content conflict.'}
-Path('records/execution/mirror-verification-v2.json').write_text(json.dumps(record, indent=2)+'\n')
+Path(args.output).write_text(json.dumps(record, indent=2)+'\n')
 print(json.dumps(record))
 if any(r['different_content'] for r in comparisons): raise SystemExit('Immutable content mismatch')

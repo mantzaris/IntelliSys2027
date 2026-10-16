@@ -1,0 +1,1 @@
+{"command":"PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -q","log_sha256":"ccf8233f1172490d6441762203cd9681439bdce3ec688e2eb14c7a3fc3a240f3","passed":true,"scientific_review":"pending","source_sha256":"a29b898aff31ff7c3c1193ad3344aeca6eb2234367c99f2ed36b9d0a1c6acb22","tests":69,"utc":"2026-10-16T19:58:39.920339+00:00"}

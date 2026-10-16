@@ -1,0 +1,13 @@
+{
+  "stages": [
+    {
+      "stage": "root-diagnostic-v1",
+      "status": "pending"
+    },
+    {
+      "stage": "objective-confirmation-v1",
+      "status": "pending"
+    }
+  ],
+  "human_scientific_review": "pending"
+}

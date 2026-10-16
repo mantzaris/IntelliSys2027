@@ -13,7 +13,7 @@ now = datetime.now(timezone.utc)
 rows = []
 for suite in ('pilot-v7', 'validation-v7', 'main-v7', 'supporting-v7', 'live-v8',
               'controls-development-v7', 'live-development-v8', 'mechanism-development-v1',
-              'fresh-probe-v1', 'mechanism-validation-v1', 'mechanism-heldout-v1', 'root-diagnostic-v1'):
+              'fresh-probe-v1', 'mechanism-validation-v1', 'mechanism-heldout-v1', 'root-diagnostic-v1', 'objective-confirmation-v1'):
     root = Path('artifacts/runs')/suite
     if not (root/'manifest.json').exists() and not (root/'config.json').exists():
         rows.append({'suite': suite, 'status': 'not_initialized'}); continue

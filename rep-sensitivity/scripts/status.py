@@ -54,6 +54,18 @@ for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-
         'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),'completion_event':complete,
         'status':'complete checkpoint' if complete and scored==manifest['trajectories'] else 'incomplete checkpoint'})
 
+
+path=runs/'objective-confirmation-v1'
+if (path/'manifest.json').exists():
+    manifest=read(path/'manifest.json')
+    for model,planned in manifest['per_model_trajectories'].items():
+        model_path=path/model;scored=sum(len(read(p)) for p in (model_path/'scores').glob('*.json'))
+        complete=completed_event(model_path/'events.jsonl')
+        progress.append({'suite':'objective-confirmation-v1','model':model,'independent_base_pairs':manifest['base_pairs'],
+            'scored_trajectories':scored,'planned_trajectories':planned,'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),
+            'completion_event':complete,'status':'complete checkpoint' if complete and scored==planned else 'incomplete checkpoint'})
+else:progress.append({'suite':'objective-confirmation-v1','status':'frozen; queued after original Phi-4; shared 7200-second new-compute cap'})
+
 mirror=root/'artifacts/last-successful-mirror.txt'
 mirror_utc=mirror.read_text().strip() if mirror.exists() else None
 age=(datetime.now(timezone.utc)-datetime.fromisoformat(mirror_utc.replace('Z','+00:00'))).total_seconds() if mirror_utc else None

@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-16T19:42:11Z",
+  "pid": 348803,
+  "replaced_waiting_controllers": [
+    {
+      "pid": 274522,
+      "waiting_kernel_state": "hrtimer_nanosleep",
+      "children": "",
+      "command_sha256": "699212017fd7ecd1726fd44c6cae274a7f1700bceebbf7ab35cb5defc901f6b4"
+    },
+    {
+      "pid": 325441,
+      "waiting_kernel_state": "hrtimer_nanosleep",
+      "children": "",
+      "command_sha256": "ec5d850c7cd1fc47609d944dd6d1248d2d8561248804c11a843e4cd3ff7cb1d6"
+    }
+  ],
+  "active_gpu_process_interrupted": false,
+  "root_calls_at_handoff": 0,
+  "spec": {
+    "active_stage_changed": false,
+    "after_pid": 91966,
+    "original_phi_protection": "Only the already-frozen 192-call diagnostic is advanced. Additional confirmation must follow original Phi; no further exploratory queue jumps.",
+    "reason": "User requests short root diagnostic at first safe boundary. Existing runner has no cooperative mid-run handoff. Do not kill or restart valid GPU inference.",
+    "root_experiment_changed": false,
+    "stages": [
+      {
+        "arguments": [
+          "artifacts/implementations/2bd83d20c3664e3b13251201b58fa5b93c946c904eda5a8c6991916ac766a211/execute_frozen_root_at_boundary.py"
+        ],
+        "continue_on_failure": true,
+        "log": "logs/root-diagnostic-boundary-v3.log",
+        "name": "root-diagnostic",
+        "snapshot": "artifacts/implementations/c7a406d9fab424f8beb03059f79bd909cc3950d8d730fd3a10bc33c915d896f6"
+      },
+      {
+        "arguments": [
+          "artifacts/implementations/5fa3645d0019830fd944b0dfd29c6e53d0826bed9ba419e180128063a82bfdc9/runner.py",
+          "--templates",
+          "artifacts/implementations/5fa3645d0019830fd944b0dfd29c6e53d0826bed9ba419e180128063a82bfdc9/configuration",
+          "--original-snapshot",
+          "artifacts/implementations/69fa1831720a79bbca0735f5b5d4272b08929185e90d2241504e3e772c1fce65",
+          "--replay-snapshot",
+          "artifacts/implementations/77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122"
+        ],
+        "continue_on_failure": false,
+        "log": "logs/mechanism-boundary-v3.log",
+        "name": "mechanism-and-original-phi",
+        "snapshot": "artifacts/implementations/5fa3645d0019830fd944b0dfd29c6e53d0826bed9ba419e180128063a82bfdc9"
+      }
+    ],
+    "utc": "2026-10-16T19:38:21.692697+00:00",
+    "version": "natural-boundary-v3",
+    "wrapper_snapshot": "artifacts/implementations/2bd83d20c3664e3b13251201b58fa5b93c946c904eda5a8c6991916ac766a211"
+  },
+  "resume_command": [
+    "/usr/bin/python3.12",
+    "artifacts/implementations/2bd83d20c3664e3b13251201b58fa5b93c946c904eda5a8c6991916ac766a211/run_safe_continuation.py",
+    "--config",
+    "configs/execution-boundary-v3.json"
+  ]
+}

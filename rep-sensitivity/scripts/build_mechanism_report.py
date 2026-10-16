@@ -222,16 +222,16 @@ for suite in suites:
         continue
     extension+='\\textbf{'+label+':} '+str(result.get('analyzed_trajectories',result.get('trajectories')))+' completed trajectories. '
     if suite.startswith('root-'):
-        extension+='This six-base development diagnostic holds incoming summaries fixed while varying root-level repetition. Every candidate objective is targeted in turn. Lossless transport preserves supplied propositions without exposing the answer. Small stratum counts preclude interval estimates. World correctness is an end-to-end outcome; it must not penalize the root for unavailable truth. The separate input-warranted score expects INSUFFICIENT when visible values do not determine a choice.\\par\n'
-        information=Path('results',suite,'visible-information.json')
+        extension+='This six-base development diagnostic holds incoming summaries fixed while varying root-level repetition. Every candidate objective is targeted in turn. Lossless transport preserves supplied propositions without exposing the answer. Frozen stratified intervals are unavailable; a separately declared unstratified six-base diagnostic interval is descriptive only. World correctness is an end-to-end outcome; it must not penalize the root for unavailable truth. The strict input audit distinguishes incomplete, contradictory and ill-typed information. Agreement is reported only for inputs supporting a unique decision; this denominator is explicit.\\par\n'
+        information=Path('results',suite,'visible-information-v2.json')
         visible=json.loads(information.read_text()) if information.exists() else None
-        extension+='\\begin{center}\\small\\begin{tabular}{llrr}\\toprule Transport & Arm & World (\\%) & Input (\\%)\\\\\\midrule\n'
+        extension+='\\begin{center}\\small\\begin{tabular}{llrrr}\\toprule Transport & Arm & World (\\%) & Supported n & Agreement (\\%)\\\\\\midrule\n'
         for row in result['aggregate']:
             vr=next((r for r in visible['aggregate'] if (r['transport'],r['arm'])==(row['transport'],row['arm'])),None) if visible else None
-            score=f"{100*vr['correct_given_visible_information']/vr['trajectories']:.2f}" if vr else '--'
-            extension+=row['transport'].replace('_',' ')+' & '+row['arm'].replace('_',' ')+' & '+f"{100*row['accuracy']:.2f}"+' & '+score+'\\\\\n'
+            score=f"{100*vr['unique_agreement_rate']:.2f}" if vr and vr['unique_agreement_rate'] is not None else '--'
+            extension+=row['transport'].replace('_',' ')+' & '+row['arm'].replace('_',' ')+' & '+f"{100*row['accuracy']:.2f}"+' & '+str(vr['unique_supported_decisions'] if vr else '--')+' & '+score+'\\\\\n'
             trace.append({'source':'results/'+suite+'/analysis.json','row':row})
-            if vr:trace.append({'source':'results/'+suite+'/visible-information.json','row':vr})
+            if vr:trace.append({'source':'results/'+suite+'/visible-information-v2.json','row':vr})
         extension+='\\bottomrule\\end{tabular}\\end{center}\n'
         continue
     if suite.startswith('fresh'):
