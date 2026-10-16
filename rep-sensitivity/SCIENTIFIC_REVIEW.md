@@ -5,6 +5,17 @@ This is a research package for human scientific review. Execution status is in
 completed experimental package. Neither is a conference submission or a claim
 that H1–H4 are supported.
 
+The dated mechanism amendment is tracked separately in
+`records/mechanism-report-status.json` and `PROTOCOL_AMENDMENT_V1.md`. Original
+held-out execution began before that amendment. Its preservation and a disjoint
+future extension are mandatory; the original hypotheses are not retrospectively
+replaced. Review the pilot's numerical-objective failures, the distinction between
+Boolean-critical and decision-necessary retention, and the new within-world
+sharing of identical manager computations. Review the failed full live baselines
+(Qwen3 4/12; Phi-4 3/12) before interpreting the narrower fresh-execution diagnostic.
+The new held-out extension has only one model and at most 48 base pairs; even a
+completed run may leave broad intervals and cannot establish generality.
+
 1. Confirm the remaining novelty relative to *Copies or Sources?*, especially
    restricted-summary integration of complementary requirements. Duplication,
    summaries, provenance and hierarchy themselves are prior work.

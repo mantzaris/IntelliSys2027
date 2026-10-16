@@ -1,0 +1,5 @@
+kind,model,comparison,provisional_margin,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap
+schedule,phi4,scope - checklist error on preserving pairs,0.05,0.055555555555555566,-0.0787037037037037,0.1759259259259259,9,0.23011168785806793,False
+schedule,qwen3,scope - checklist error on preserving pairs,0.05,-0.037037037037037035,-0.11574074074074076,0.041666666666666664,9,0.13572791865063932,False
+workflow,phi4,scope - checklist error on preserving pairs,0.05,0.05555555555555555,-0.037037037037037035,0.1574074074074074,9,0.1875,False
+workflow,qwen3,scope - checklist error on preserving pairs,0.05,0.09722222222222224,0.027777777777777776,0.16203703703703703,9,0.13975424859373686,False

@@ -1,0 +1,5 @@
+model,kind,n,accuracy,passes_85_percent
+phi4,schedule,72,0.9305555555555556,True
+phi4,workflow,72,1.0,True
+qwen3,schedule,72,0.9583333333333334,True
+qwen3,workflow,72,0.9444444444444444,True

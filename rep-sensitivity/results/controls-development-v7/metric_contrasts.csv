@@ -31,6 +31,38 @@ schedule,phi4,unique_clause,unique_clause_retained,harmless_high - harmless_low,
 schedule,phi4,unique_clause,required_claims,harmless_high - harmless_low,2,0.0,0.0,0.0,1,,True
 schedule,phi4,unique_clause,decision_error,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,-0.5,-0.5,-0.5,1,,True
 schedule,phi4,unique_clause,unique_clause_retained,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,0.5,0.5,0.5,1,,True
+schedule,qwen3,access,required_claims,summaries_and_reports - summaries_only,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,ancestry,required_claims,withheld - authentic,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,ancestry,required_claims,corrupted_relationships - authentic,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,branch_placement,required_claims,different_branch - same_branch,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,call_count,required_claims,global_reviewers - partition_managers,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,copy_branch_placement,required_claims,different_branch - same_branch,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,ordinary_false_favorable_with_world - ordinary_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,ordinary_false_objection_with_world - ordinary_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,checklist_false_favorable_with_world - checklist_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,checklist_false_objection_with_world - checklist_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,scope_false_favorable_with_world - scope_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,scope_false_objection_with_world - scope_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,scope_all_correct_with_world - checklist_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,false_assertion_adopted,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,false_assertion_emitted,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,false_assertion_adopted,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,false_assertion_emitted,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,corruption,required_claims,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,deduplication,epistemically_appropriate_choice,similarity_removal - exact_removal,2,0.5,0.5,0.5,1,,True
+schedule,qwen3,deduplication,required_claims,similarity_removal - exact_removal,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,deduplication,epistemically_appropriate_choice,scope_consolidation - similarity_removal,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,deduplication,required_claims,scope_consolidation - similarity_removal,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,instruction,required_claims,scope_without_ancestry - ordinary_without_ancestry,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,length,required_claims,evidential_repetition - neutral_padding,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,packaging,required_claims,high_overlap - low_overlap,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,unique_clause,unique_clause_retained,decisive_high - decisive_low,2,0.5,0.5,0.5,1,,True
+schedule,qwen3,unique_clause,required_claims,decisive_high - decisive_low,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,unique_clause,unique_clause_retained,harmless_high - harmless_low,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,unique_clause,required_claims,harmless_high - harmless_low,2,0.0,0.0,0.0,1,,True
+schedule,qwen3,unique_clause,decision_error,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,0.0,0.0,0.0,1,,True
+schedule,qwen3,unique_clause,unique_clause_retained,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,0.5,0.5,0.5,1,,True
 workflow,phi4,access,required_claims,summaries_and_reports - summaries_only,2,0.0,0.0,0.0,1,,True
 workflow,phi4,ancestry,required_claims,withheld - authentic,2,0.0,0.0,0.0,1,,True
 workflow,phi4,ancestry,required_claims,corrupted_relationships - authentic,2,0.0,0.0,0.0,1,,True
@@ -67,3 +99,39 @@ workflow,phi4,version_admission,superseded_assertions_emitted,current_and_supers
 workflow,phi4,version_admission,choice_matches_superseded_when_distinct,current_and_superseded - current_only,1,1.0,1.0,1.0,1,,True
 workflow,phi4,version_admission,superseded_choice_with_historical_assertion,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True
 workflow,phi4,version_admission,required_claims,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,access,required_claims,summaries_and_reports - summaries_only,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,ancestry,required_claims,withheld - authentic,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,ancestry,required_claims,corrupted_relationships - authentic,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,branch_placement,required_claims,different_branch - same_branch,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,call_count,required_claims,global_reviewers - partition_managers,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,copy_branch_placement,required_claims,different_branch - same_branch,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,ordinary_false_favorable_with_world - ordinary_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,ordinary_false_objection_with_world - ordinary_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,checklist_false_favorable_with_world - checklist_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,checklist_false_objection_with_world - checklist_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,scope_false_favorable_with_world - scope_all_correct_with_world,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,scope_false_objection_with_world - scope_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,scope_all_correct_with_world - checklist_all_correct_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,false_assertion_adopted,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,1.0,1.0,1.0,1,,True
+workflow,qwen3,corruption,false_assertion_emitted,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,1.0,1.0,1.0,1,,True
+workflow,qwen3,corruption,required_claims,scope_false_favorable_with_world - checklist_false_favorable_with_world,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,false_assertion_adopted,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,false_assertion_emitted,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,corruption,required_claims,scope_false_objection_with_world - checklist_false_objection_with_world,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,deduplication,epistemically_appropriate_choice,similarity_removal - exact_removal,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,deduplication,required_claims,similarity_removal - exact_removal,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,deduplication,epistemically_appropriate_choice,scope_consolidation - similarity_removal,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,deduplication,required_claims,scope_consolidation - similarity_removal,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,instruction,required_claims,scope_without_ancestry - ordinary_without_ancestry,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,length,required_claims,evidential_repetition - neutral_padding,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,packaging,required_claims,high_overlap - low_overlap,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,unique_clause_retained,decisive_high - decisive_low,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,required_claims,decisive_high - decisive_low,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,unique_clause_retained,harmless_high - harmless_low,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,required_claims,harmless_high - harmless_low,2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,decision_error,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,0.0,0.0,0.0,1,,True
+workflow,qwen3,unique_clause,unique_clause_retained,(decisive_high - decisive_low) - (harmless_high - harmless_low),2,0.0,0.0,0.0,1,,True
+workflow,qwen3,version_admission,superseded_assertions_emitted,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,version_admission,choice_matches_superseded_when_distinct,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,version_admission,superseded_choice_with_historical_assertion,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True
+workflow,qwen3,version_admission,required_claims,current_and_superseded - current_only,1,0.0,0.0,0.0,1,,True

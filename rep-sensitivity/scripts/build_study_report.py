@@ -201,7 +201,7 @@ if main:
     supplement+='\\section{Secondary Workflow Results}\n'+replay_tables(main,'workflow')
     average_rows={r['contrast']:r for r in main['contrasts'] if r['kind']=='schedule' and r['model']=='equal_model_average'}
     h1=average_rows['H1_exact'];h3=average_rows['H3']
-    abstract='''Similar agent reports can restate one observation, describe independent executions,
+    abstract='''Similar agent reports can restate one observation, describe fresh executions,
 or contain complementary requirements whose differences determine a decision.
 We develop a controlled benchmark for these distinctions in hierarchical
 language-model systems. The primary task selects the minimum-makespan feasible

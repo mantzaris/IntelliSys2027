@@ -1,0 +1,14 @@
+--- a/src/rep_sensitivity/targeted_analysis.py
++++ b/src/rep_sensitivity/targeted_analysis.py
+@@ -76,0 +77,8 @@
++def contrast_rows(rows,label):
++    if not label.startswith('dose_'):return rows
++    # Four presentations also appear in the broad core. Its dose-response
++    # estimate must use the same world-0 subset as 2/8/16, not all core worlds.
++    eligible={(r['pair_id'],r['world'],r['repetition']) for r in rows if r['arm']=='dose2'}
++    return [r for r in rows if (r['pair_id'],r['world'],r['repetition']) in eligible]
++
++
+@@ -115 +123 @@
+-                values,n=cluster_values(selected,terms,metric)
++                values,n=cluster_values(contrast_rows(selected,label),terms,metric)

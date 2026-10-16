@@ -4,10 +4,16 @@ Controlled experiments on duplicated, near-duplicated and complementary reports
 in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`; the user performs the push.
 
-**Status at 2026-10-16 06:45 UTC:** the Qwen3 development pilot is complete;
-Qwen3 and Phi-4 passed the competence and summary gates. The frozen validation
-pipeline is executing. At this checkpoint, this is not a completed
-held-out study. See `DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
+**Status at 2026-10-16 15:57 UTC:** the Qwen3 pilot and both original model
+validation runs are complete. Original Qwen3 held-out main is running; its
+supporting/live stages and original Phi-4 held-out stage remain queued. A dated
+mechanism amendment has completed pilot diagnosis, 51 integrity checks and native
+token preflight. Its 514-trajectory development extension and 30-trajectory fresh
+diagnostic are frozen and queued after the current original Qwen3 stage. New
+validation and the conditional 24/48-pair held-out extension follow, before
+resuming original Phi-4. No new-extension GPU result is claimed yet.
+See `PILOT_MECHANISM_AUDIT.md`, `PROTOCOL_AMENDMENT_V1.md`, the preserved
+`DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
 and the actual `results/*/analysis.json` files. A compiled anonymous working draft
 is in `manuscript/main.pdf`; it is explicitly incomplete and not human-reviewed.
 Do not present implemented controls as completed experiments.
@@ -254,3 +260,92 @@ local raw-output inventories, regenerates tables, compiles and checks the PDF,
 and commits compact generated records on `main`. It does not push or submit.
 Existing staged changes block automatic committing. A completed package still
 requires the scientific review listed in `SCIENTIFIC_REVIEW.md`.
+## Mechanism amendment (16 October 2026)
+
+The current scientific direction and execution constraints are in
+[PROTOCOL_AMENDMENT_V1.md](PROTOCOL_AMENDMENT_V1.md). The completed exploratory
+[pilot mechanism audit](PILOT_MECHANISM_AUDIT.md) distinguishes objective/summary
+loss from root integration errors. The original frozen study and its hypotheses
+remain preserved. New GPU results must not be inferred from implementation or
+CPU preflight records.
+
+Inspect locally mirrored counts without reading held-out choices:
+
+```bash
+.venv/bin/python scripts/status.py
+cat records/mechanism-report-status.json
+cat records/execution/mechanism-handoff-v1.json
+```
+
+Reproduce the pilot and its dated mechanism analysis from the mirrored raw outputs:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m rep_sensitivity.analysis artifacts/runs/pilot-v7 artifacts/analyses/pilot-reproduction-20261016 --bootstrap 10000
+PYTHONPATH=src .venv/bin/python scripts/audit_pilot_mechanisms.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_mechanism_report.py
+```
+
+On the existing pod, CPU-only preflight uses the cached model tokenizer; it does
+not load an inference engine. The freeze requires the matching passing-test and
+preflight records. Do not overwrite an existing freeze after changing code.
+The commands below record the initial freeze procedure. The current working
+analyzer has the dated dose-subset correction in
+`records/amendments/mechanism-analysis-correction1.json`; inference still uses
+the archived source snapshot. Resume that snapshot rather than refreezing the
+current tree. Its sole package difference is preserved as a reversible `.patch`
+beside the correction record. The local completion hook applies the corrected
+analysis without modifying any accepted call or original protocol.
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/preflight_mechanisms.py --config configs/mechanism-development-v1.json
+PYTHONPATH=src .venv/bin/python scripts/preflight_fresh_probe.py --config configs/fresh-probe-v1.json
+PYTHONPATH=src .venv/bin/python scripts/freeze_mechanisms.py
+```
+
+The already queued controller is identified by
+`records/execution/mechanism-handoff-v1.json`. It waits for the original Qwen3
+main/support/live stage, runs targeted development and the fresh diagnostic, then
+validation and the eligible bounded held-out extension. It then resumes original
+Phi-4 using the unchanged archived implementation. Do not launch a second
+controller while that process is alive. The STOP_AFTER_CURRENT_STAGE marker stops
+only the old controller's *next* stage after the current stage completes; its
+expected stop record is preserved and explained by the handoff record.
+
+If that controller has exited, resume with the exact `resume_command` in the
+handoff record on the pod. Each run also stores its immutable implementation,
+configuration, request hashes and score checkpoints. Accepted malformed responses
+are reused, not resampled. No push, submission, additional infrastructure or paid
+API is part of the controller. Local mirroring continues independently.
+
+After each new suite completes, deterministic offline analysis is:
+
+```bash
+PYTHONPATH=src .venv/bin/python -m rep_sensitivity.targeted_analysis artifacts/runs/mechanism-development-v1 results/mechanism-development-v1
+PYTHONPATH=src .venv/bin/python -m rep_sensitivity.fresh_analysis artifacts/runs/fresh-probe-v1 results/fresh-probe-v1
+PYTHONPATH=src .venv/bin/python -m rep_sensitivity.targeted_analysis artifacts/runs/mechanism-validation-v1 results/mechanism-validation-v1
+# Only if the prospective allocation gate launched and completed this suite:
+PYTHONPATH=src .venv/bin/python -m rep_sensitivity.targeted_analysis artifacts/runs/mechanism-heldout-v1 results/mechanism-heldout-v1
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_mechanism_report.py
+```
+
+Compact analyses, native-token matching audits, protocol freezes and vector
+figures belong in Git. Raw calls, detailed trace packets, run manifests with full
+inputs, model files and logs remain in ignored `artifacts/` and `logs/`, mirrored
+locally. Physical call inventories count shared computations once; trajectory
+resource summaries describe logical decision graphs. Small-subset intervals are
+withheld when a bootstrap stratum has only one base.
+
+The automatic local finalizer now waits for the amendment's completed analyses or
+an explicit allocation-gate decision, as well as original main/support/live. It
+does not declare human review or submission readiness. The working manuscript can
+be rebuilt before that point, with pending stages explicitly marked:
+
+```bash
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_manuscript_tables.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_study_report.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_mechanism_report.py
+cd manuscript
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+cd ..
+.venv/bin/python scripts/check_manuscript.py
+```

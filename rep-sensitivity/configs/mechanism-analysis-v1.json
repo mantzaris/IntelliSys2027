@@ -1,0 +1,23 @@
+{
+  "status": "prospective_before_new_experiments",
+  "amendment": "records/amendments/mechanism-v1.json",
+  "primary_population": "Scheduling; Boolean workflow results separately labeled secondary.",
+  "development": "All new analyses of pilot and development experiments are exploratory.",
+  "primary_contrasts": [
+    {"id": "P1", "contrast": "hier_A4 - hier_common4", "outcome": "exact correctness", "meaning": "Repetition target specificity, decisive versus a limited favorable/nondecisive finding."},
+    {"id": "P2", "contrast": "hier_common4 - hier_F", "outcome": "unrepeated necessary-claim retention", "meaning": "Preservation or loss of decision-necessary distinctions while another finding is emphasized."},
+    {"id": "P3", "contrast": "(hier_common4 - hier_F) - (bypass_common4 - bypass_F)", "outcome": "exact correctness", "meaning": "Summary-access interaction, with additional root input length reported."}
+  ],
+  "secondary": ["Accuracy and selected/necessary-claim retention for each target", "Uniform versus selective repetition", "Paired original-modified correctness", "Changed versus preserving pairs", "Dose and neutral/position controls", "Repetition by overlap by clause relevance", "Deduplication and policy contrasts", "False and superseded emitted findings", "Valid-distribution Brier and log loss", "Actual calls, tokens and allocated inference seconds"],
+  "retention_definitions": {
+    "boolean_critical": "Isolated truth-value flip changes the complete-information answer.",
+    "necessary": "Removing this scoped assertion makes the choice underdetermined; includes objective values.",
+    "retained": "Correct scoped value explicitly present without a contrary value or unresolved flag. Incorrect citation of an otherwise retained claim is measured separately.",
+    "unrepeated_necessary": "Necessary scopes excluding the selected repeated scope; denominator counts eligible scopes, including failures as losses.",
+    "root_integration_diagnostic": "Incorrect root choice despite summary values alone uniquely determining the oracle choice; not a claim about internal reasoning."
+  },
+  "inference": "Within-world/repetition paired effects, equal base-cluster averages, family by change-status stratified 10000-replicate percentile bootstrap with seed 20271015. Report model-specific results. No confirmatory p-values; collapsed or wide intervals do not establish robustness.",
+  "eligibility": "Oracle relevance and report availability only; never model correctness. Missing targets remain explicit and contrasts use common eligible cells.",
+  "fresh_execution": "Narrow fresh-verification comparisons are diagnostic because both existing whole-live baselines failed competence. Different seeds/procedures/worker identifiers do not create new evidence sources. Witnesses are not measured unless explicitly emitted and checked.",
+  "independence": "Worlds, renderings, repetition counts, architectures and policies from one base pair are dependent. Existing-world facts are a shared source."
+}

@@ -15,15 +15,35 @@ from datetime import datetime,timezone
 root=Path(__file__).resolve().parents[1]
 os.chdir(root)
 parser=argparse.ArgumentParser();parser.add_argument('--commit',action='store_true');args=parser.parse_args()
+env=dict(os.environ,PYTHONPATH=str(root/'src'),MPLCONFIGDIR=str(root/'artifacts/matplotlib'))
+if Path('records/amendments/mechanism-v1.json').exists():
+    subprocess.run([sys.executable,'scripts/refresh_mechanism_results.py'],env=env,check=True)
 suites=('main-v7','supporting-v7','live-v8')
 paths=[Path('results',suite,'analysis.json') for suite in suites]
 if not all(p.exists() and json.loads(p.read_text()).get('complete') for p in paths):
     raise SystemExit(0)
+extension_suites=('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1')
+if Path('records/amendments/mechanism-v1.json').exists():
+    extension_stage=Path('artifacts/runs/mechanism-execution/extension-stage.json')
+    if not extension_stage.exists() or json.loads(extension_stage.read_text()).get('returncode')!=0:
+        raise SystemExit(0)  # Original completion does not complete the amendment.
+    if not all(Path('results',s,'analysis.json').exists() and
+            json.loads(Path('results',s,'analysis.json').read_text()).get('complete') for s in extension_suites):
+        raise SystemExit(0)
+    heldout=Path('results/mechanism-heldout-v1/analysis.json')
+    if heldout.exists() and json.loads(heldout.read_text()).get('complete'):
+        extension_suites+=('mechanism-heldout-v1',)
+    elif not Path('artifacts/runs/mechanism-execution/heldout-not-launched.json').exists():
+        raise SystemExit(0)
+else:extension_suites=()
 identity_inputs=sorted(p for suite in ('validation-v7',*suites,'live-development-v8')
                        for p in Path('artifacts/runs',suite).glob('*/scores/*.json'))
 identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('manuscript/abstract-development.tex'),
     *[Path('scripts',name) for name in ('build_manuscript_tables.py','build_study_figures.py','build_study_report.py','audit_runs.py','check_manuscript.py','analyze_control_matching.py')],
     *[Path('src/rep_sensitivity',name) for name in ('analysis.py','aux_analysis.py','metrics.py')]]
+identity_inputs += [p for suite in extension_suites for p in Path('artifacts/runs',suite).glob('*/scores/*.json')]
+identity_inputs += [Path('scripts/build_mechanism_report.py'),*[Path('src/rep_sensitivity',name) for name in
+    ('targeted_analysis.py','targeted_audit.py','fresh_analysis.py','mechanism.py')]]
 identity=hashlib.sha256(b''.join(hashlib.sha256(p.read_bytes()).digest() for p in identity_inputs)).hexdigest()
 marker=Path('records/review-package.json')
 commit_marker=Path('artifacts/review-package-commit.json')
@@ -43,13 +63,20 @@ for suite in ('validation-v7',*suites):
         raise RuntimeError('Raw outputs are not yet fully mirrored and audited: '+suite)
 for script in ('build_study_figures.py','build_manuscript_tables.py','build_study_report.py'):
     subprocess.run([sys.executable,'scripts/'+script],env=env,check=True)
+for suite in extension_suites:
+    module='fresh_analysis' if suite.startswith('fresh') else 'targeted_analysis'
+    subprocess.run([sys.executable,'-m','rep_sensitivity.'+module,'artifacts/runs/'+suite,'results/'+suite],env=env,check=True)
+    audit=json.loads(Path('results',suite,'analysis.json').read_text())['physical_resource_inventory']
+    if audit['unscored_accepted_calls']:raise RuntimeError('Incomplete raw inventory: '+suite)
+subprocess.run([sys.executable,'scripts/build_mechanism_report.py'],env=env,check=True)
 subprocess.run(['latexmk','-pdf','-interaction=nonstopmode','-halt-on-error','main.tex'],cwd='manuscript',env=env,check=True)
 subprocess.run([sys.executable,'scripts/check_manuscript.py'],env=env,check=True)
 files=sorted(p for folder in ('results','records/audits','records/freezes','manuscript/generated')
              for p in Path(folder).rglob('*') if p.is_file() and 'interim' not in str(p))
 files+=[Path('manuscript/main.pdf'),Path('manuscript/main.tex')]
 record={'assembled_utc':datetime.now(timezone.utc).isoformat(),'completion_input_sha256':identity,
-        'completed_analysis_stages':list(suites),'human_scientific_review':'pending','submission_ready':False,
+        'completed_analysis_stages':list(suites)+list(extension_suites),'human_scientific_review':'pending','submission_ready':False,
+        'amendment_heldout_not_launched':Path('artifacts/runs/mechanism-execution/heldout-not-launched.json').exists(),
         'raw_completeness_checked':True,
         'compiled_pdf':'manuscript/main.pdf','review_points':'SCIENTIFIC_REVIEW.md',
         'raw_artifacts':'artifacts/runs/; locally mirrored, excluded from Git',
@@ -62,7 +89,8 @@ if args.commit:
         raise RuntimeError('Existing staged user changes; package is built but its commit requires review')
     paths=['results','configs/frozen','records/freezes','records/manifests','records/environment',
            'records/audits','records/study-report-status.json','records/review-package.json',
-           'records/manuscript-checks.json','manuscript/generated','manuscript/main.pdf']
+           'records/manuscript-checks.json','records/mechanism-report-status.json','records/planning',
+           'manuscript/generated','manuscript/main.pdf','PILOT_MECHANISM_AUDIT.md']
     # Restrict staging to compact, generated study records. Source/user edits remain untouched.
     subprocess.run(['git','add','--',*paths],check=True)
     subprocess.run(['git','diff','--cached','--check'],check=True)

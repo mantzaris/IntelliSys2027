@@ -1,0 +1,12 @@
+{
+  "name": "mechanism-development-v1", "status": "candidate", "phase": "development",
+  "amendment": "mechanism-v1", "model": "qwen3", "split": "development",
+  "pair_start": 0, "base_pairs": 24, "worlds": [0, 1], "stochastic_repetitions": 1,
+  "targeted_subset_indices": [0, 7, 2, 9, 4, 11],
+  "dose_presentations": [1, 2, 4, 8, 16],
+  "max_output_tokens": 2304, "max_context_tokens": 16384,
+  "temperature": 0.3, "top_p": 0.95, "batch_size": 32,
+  "guided_decoding": true, "enforce_eager": false, "gpu_memory_utilization": 0.92,
+  "manager_coupling": "Reuse exactly identical manager requests within the same world, stage and stochastic repetition. Bypass sees exactly the same summaries. Do not share across stochastic repetitions. Record physical accepted calls separately from logical decision-graph calls.",
+  "note": "One model, one stochastic repetition, reused development base pairs. Target A is a correct Boolean constraint whose isolated flip changes the oracle answer; B is a nondecisive Boolean finding; C is a true favorable result about an infeasible candidate; COMMON is C if eligible, otherwise B. Target labels never enter prompts. All required reports remain. D repeats an injected false assertion while the true assertion and authoritative world are visible. E repeats every required report four times. No fresh evidence is acquired."
+}

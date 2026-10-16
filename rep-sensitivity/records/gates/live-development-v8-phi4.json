@@ -1,0 +1,1 @@
+{"baseline_accuracy":0.25,"baseline_clusters":6,"baseline_decisions":12,"interpretation":"Below-threshold live results describe task/interface limitations, not an identified redundancy mechanism. This does not alter the independently qualified frozen-report replay.","model":"phi4","passed":false,"suite":"live-development-v8","threshold":0.85}

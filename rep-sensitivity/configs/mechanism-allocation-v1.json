@@ -1,0 +1,13 @@
+{
+  "status": "prospective_before_extension_development",
+  "validation": {"split": "validation", "pair_start": 36, "base_pairs": 24},
+  "heldout": {"split": "heldout", "pair_start": 384, "candidate_base_pairs": [24, 48]},
+  "model": "qwen3",
+  "primary_contrasts": ["P1", "P2", "P3"],
+  "precision_target_halfwidth": 0.10,
+  "heldout_inference_hour_planning_bound": 6,
+  "allocation_rule": "Use 24 if every primary scheduling contrast has nondegenerate validation variation and estimated 95% half-width at 12 primary clusters at most 0.10. Otherwise prefer 48. Reduce to 24 only when measured projection for 48 exceeds six inference hours. If even 24 exceeds six hours, keep the extension unlaunched and report the measured limitation. These are planning bounds, not changes to RunPod billing. Report remaining imprecision. Do not choose by effect direction or significance.",
+  "gate": "First new development and validation complete, ordinary unrepeated FLAT primary scheduling accuracy at least 85%, no context-overflow or corpus-integrity error; completed malformed outputs remain errors. Hierarchical baseline errors are the bottleneck under investigation, not a separate competence exclusion. No tuning new held-out cases.",
+  "comparison_set": "Hierarchical unrepeated, decisive-four, common-four, uniform-four; bypass unrepeated and common-four. Both worlds, one repetition. All other new development contrasts remain exploratory.",
+  "worker_scale": "Do not launch optional 8/16-worker scaling while the whole-live baseline is inadequate; preserve and report its diagnostic results."
+}

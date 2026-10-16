@@ -43,6 +43,17 @@ for suite in ('pilot-v7','controls-development-v7','live-development-v8',
             'planned_trajectories':planned,'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),
             'completion_event':completed,'status':'complete checkpoint' if completed and scored==planned else 'incomplete checkpoint'})
 
+for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1'):
+    path=runs/suite;manifest_path=path/'manifest.json'
+    if not manifest_path.exists():
+        progress.append({'suite':suite,'status':'not initialized locally; check mechanism handoff record'});continue
+    manifest=read(manifest_path);model=manifest['config']['model'];model_path=path/model
+    scored=sum(len(read(p)) for p in (model_path/'scores').glob('*.json'))
+    complete=completed_event(model_path/'events.jsonl')
+    progress.append({'suite':suite,'model':model,'scored_trajectories':scored,'planned_trajectories':manifest['trajectories'],
+        'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),'completion_event':complete,
+        'status':'complete checkpoint' if complete and scored==manifest['trajectories'] else 'incomplete checkpoint'})
+
 mirror=root/'artifacts/last-successful-mirror.txt'
 mirror_utc=mirror.read_text().strip() if mirror.exists() else None
 age=(datetime.now(timezone.utc)-datetime.fromisoformat(mirror_utc.replace('Z','+00:00'))).total_seconds() if mirror_utc else None

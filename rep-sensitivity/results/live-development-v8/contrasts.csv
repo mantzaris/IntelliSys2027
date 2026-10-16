@@ -1,0 +1,9 @@
+kind,model,contrast,difference,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap
+schedule,phi4,live,exact_overlap_fixed - nonoverlap_added,0.25,0.25,0.25,6,0.27386127875258304,True
+schedule,phi4,live,near_overlap_fixed - nonoverlap_added,0.0,0.0,0.0,6,0.31622776601683794,True
+schedule,phi4,live,exact_overlap_added - nonoverlap_added,-0.08333333333333333,-0.08333333333333333,-0.08333333333333333,6,0.4915960401250875,True
+schedule,phi4,live,near_overlap_added - nonoverlap_added,0.0,0.0,0.0,6,0.31622776601683794,True
+schedule,qwen3,live,exact_overlap_fixed - nonoverlap_added,0.3333333333333333,0.3333333333333333,0.3333333333333333,6,0.5163977794943222,True
+schedule,qwen3,live,near_overlap_fixed - nonoverlap_added,0.3333333333333333,0.3333333333333333,0.3333333333333333,6,0.5163977794943222,True
+schedule,qwen3,live,exact_overlap_added - nonoverlap_added,0.0,0.0,0.0,6,0.0,True
+schedule,qwen3,live,near_overlap_added - nonoverlap_added,0.0,0.0,0.0,6,0.0,True
