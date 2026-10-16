@@ -1,0 +1,310 @@
+{
+  "suite": "competence-phi4-v7",
+  "manifest_sha256": "fa754f41ba064cacfa81ee3c4320c959aa6ad5d2dc04614456855966ebb90c2f",
+  "planned_trajectories": 96,
+  "analyzed_trajectories": 96,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "051a9001eca33f6580a009694a0faf82d4d779cd235d691c7d70504cbd61bc7a",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 48,
+      "accuracy": 1.0,
+      "invalid_selection_rate": 0.0,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.9791666666666666,
+      "calibration_denominator": 47,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 0,
+      "emitted_claim_denominator": 863,
+      "scope_transfer_count": 4,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 1,
+      "mean_brier": 0.031914893617021274,
+      "mean_log_loss": 0.058991249409357044,
+      "input_tokens_per_decision": 2958.5416666666665,
+      "output_tokens_per_decision": 762.875,
+      "allocated_seconds_per_decision": 2.812334548637106,
+      "tokens_per_correct": 3721.4166666666665,
+      "changed_scope_retention_on_consequential_pairs": null,
+      "summary_retention": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 45,
+      "accuracy": 0.9375,
+      "invalid_selection_rate": 0.0,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.8125,
+      "calibration_denominator": 39,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 0,
+      "emitted_claim_denominator": 576,
+      "scope_transfer_count": 3,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.1794871794871795,
+      "mean_log_loss": 1.5236134696209427,
+      "input_tokens_per_decision": 2379.6666666666665,
+      "output_tokens_per_decision": 566.125,
+      "allocated_seconds_per_decision": 2.771353423116428,
+      "tokens_per_correct": 3142.177777777778,
+      "changed_scope_retention_on_consequential_pairs": null,
+      "summary_retention": null
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "competence": [
+    {
+      "model": "phi4",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 1.0,
+      "passes_85_percent": true
+    },
+    {
+      "model": "phi4",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.9375,
+      "passes_85_percent": true
+    }
+  ],
+  "paired_correctness": [
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 12,
+      "paired_accuracy": 1.0
+    },
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 12,
+      "paired_accuracy": 1.0
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 9,
+      "paired_accuracy": 0.75
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 12,
+      "paired_accuracy": 1.0
+    }
+  ],
+  "confidence_changes": [],
+  "guardrails": [
+    {
+      "kind": "schedule",
+      "model": "phi4",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "phi4",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "interval_caution": "A degenerate empirical bootstrap interval indicates no sampled variation in the contrast; it does not prove zero population effect.",
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null,
+    "claim_scoring_version": 2,
+    "claim_scoring_source_sha256": "c3a7686efa3938be43aa12a9e1b2d29c3bc766b7e01857b5ad260c74953e5f05",
+    "analysis_source_sha256": "e8393b49c3f5d246b7b851cbc28dabb863301a522e3b26747414d74c3a2b2ca4",
+    "dependencies": {
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.7"
+    }
+  }
+}

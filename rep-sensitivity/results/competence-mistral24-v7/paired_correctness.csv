@@ -1,0 +1,5 @@
+kind,model,organization,policy,condition,decision_changed,paired_cells,clusters,both_worlds_correct,paired_accuracy
+schedule,mistral24,flat,ordinary,single,False,12,6,9,0.75
+schedule,mistral24,flat,ordinary,single,True,12,6,4,0.3333333333333333
+workflow,mistral24,flat,ordinary,single,False,12,6,4,0.3333333333333333
+workflow,mistral24,flat,ordinary,single,True,12,6,6,0.5

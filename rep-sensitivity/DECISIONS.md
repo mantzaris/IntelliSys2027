@@ -224,3 +224,37 @@ access; unsupported worker source citations are separately counted.
 Checkpoint publication is atomic and fsynced. Request hashes include per-call
 output allowances. Coarse GPU telemetry is integrated only over accepted batch
 windows, with sampling coverage reported; it is not a kernel-time measurement.
+
+## 2026-10-16: completed pilot and second-family qualification failure
+
+The complete Qwen3 v7 pilot is analyzed in `results/pilot-v7/analysis.json` and
+audited in `records/audits/pilot-v7.json`. Its scheduling repetition estimates are
+beneficial, with ceiling flat accuracy; workflow effects are mixed. These are
+development results, not held-out confirmation. Preserve and report them without
+selecting a model or modifying held-out cases to reverse their direction.
+
+Mistral Small 24B INT8 failed the unchanged development competence gate with native
+chat-template token IDs (`records/gates/competence-mistral24-v7.json`). The queued
+controller stopped before validation; failure records remain in the mirrored raw
+artifact package. No held-out inference has occurred.
+
+Select Microsoft Phi-4 as the next competence candidate before seeing its outcomes,
+because it is a distinct family with a reasoning-oriented text model, a supported
+Phi3ForCausalLM architecture, a native chat template, MIT license, and BF16 weights
+that fit this GPU. Directly inspected the official card and pinned configuration:
+https://huggingface.co/microsoft/phi-4/tree/2db69c1c3e91a05d2c64a3185acfbaf36f744e25 .
+Use the existing common temperature 0.3, top-p 0.95 and output/context limits.
+Do not alter task data, prompt interface, correctness rules, or the 85% gate.
+Evict only the reproducible failed Mistral24 cache after retaining its checksums,
+metadata and results. Phi-4 qualification uses immutable implementation snapshot
+`cff4b3a0b1a2b0f42a8a0ff63afa7d9eebbf6deb65c6b8b18ff5851713349c7e`.
+
+Phi-4 passed both development populations and the summary contract check, as recorded
+in `records/gates/`. Validation was frozen at the timestamp in
+`records/freezes/validation-v7.json` for Qwen3 and Phi-4. The sequential controller
+now uses immutable snapshot `77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122`.
+No held-out outcomes were used in this model substitution. Additional exploratory
+analysis reports the high-minus-low overlap effect for decisive clauses minus the
+same effect for harmless clauses, pairing all four cells within base/world/repetition.
+The original primary contrasts are unchanged. Supporting optional metrics retain
+explicit observed-cell denominators; unavailable metrics are not imputed.

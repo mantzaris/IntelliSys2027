@@ -1,0 +1,17 @@
+kind,model,organization,policy,condition,matched_cells,same_choice_cells,valid_same_choice_distributions,mean_confidence_delta_same_choice,interpretation
+schedule,qwen3,flat,checklist,exact,48,48,48,-0.006944444444444445,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,flat,checklist,paraphrase,48,48,48,0.0,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,flat,ordinary,exact,48,48,46,0.014492753623188408,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,flat,ordinary,paraphrase,48,48,46,0.0,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,hierarchical,checklist,exact,48,42,39,0.004273504273504272,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,hierarchical,checklist,paraphrase,48,43,40,0.07916666666666668,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,hierarchical,ordinary,exact,48,39,37,0.004504504504504506,Descriptive conditioning on unchanged choice; not a primary causal contrast
+schedule,qwen3,hierarchical,ordinary,paraphrase,48,39,36,0.04629629629629631,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,flat,checklist,exact,48,48,46,-0.02391304347826087,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,flat,checklist,paraphrase,48,46,45,-0.04592592592592593,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,flat,ordinary,exact,48,46,46,0.018115942028985504,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,flat,ordinary,paraphrase,48,44,44,-0.018939393939393943,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,hierarchical,checklist,exact,48,45,42,-0.03174603174603175,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,hierarchical,checklist,paraphrase,48,46,43,-0.014713178294573644,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,hierarchical,ordinary,exact,48,43,42,0.019841269841269844,Descriptive conditioning on unchanged choice; not a primary causal contrast
+workflow,qwen3,hierarchical,ordinary,paraphrase,48,44,43,0.01937984496124031,Descriptive conditioning on unchanged choice; not a primary causal contrast

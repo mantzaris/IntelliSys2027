@@ -9,7 +9,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 from huggingface_hub import HfApi, snapshot_download
 
-MODELS = {"qwen": "Qwen/Qwen2.5-7B-Instruct", "qwen14": "Qwen/Qwen2.5-14B-Instruct", "qwen3": "Qwen/Qwen3-14B", "mistral": "mistralai/Mistral-7B-Instruct-v0.3", "nemo": "mistralai/Mistral-Nemo-Instruct-2407", "mistral24":"RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8"}
+MODELS = {"qwen": "Qwen/Qwen2.5-7B-Instruct", "qwen14": "Qwen/Qwen2.5-14B-Instruct", "qwen3": "Qwen/Qwen3-14B", "mistral": "mistralai/Mistral-7B-Instruct-v0.3", "nemo": "mistralai/Mistral-Nemo-Instruct-2407", "mistral24":"RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8", "phi4":"microsoft/phi-4"}
 parser = argparse.ArgumentParser()
 parser.add_argument("model", choices=MODELS)
 parser.add_argument('--metadata-only',action='store_true')
@@ -22,7 +22,7 @@ if record.exists():
 else:
     info = api.model_info(MODELS[args.model], files_metadata=True)
     metadata = {"model": info.id, "revision": info.sha, "tokenizer_revision": info.sha,
-                "checked_utc": datetime.now(timezone.utc).isoformat(), "license": "apache-2.0",
+                "checked_utc": datetime.now(timezone.utc).isoformat(), "license": info.card_data.get('license') if info.card_data else None,
                 "model_card": "https://huggingface.co/" + info.id + "/blob/" + info.sha + "/README.md",
                 "files": [{"name": f.rfilename, "size": f.size, "lfs_sha256": f.lfs.sha256 if f.lfs else None}
                           for f in info.siblings if f.rfilename.endswith((".safetensors", ".json", ".jinja", ".model", ".model.v3"))]}

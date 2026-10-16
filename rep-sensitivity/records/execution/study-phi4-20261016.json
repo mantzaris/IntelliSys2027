@@ -1,0 +1,22 @@
+{
+  "launch_utc": "2026-10-16T05:47:42Z",
+  "implementation_snapshot": "77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122",
+  "controller_pid": 82840,
+  "models": [
+    "qwen3",
+    "phi4"
+  ],
+  "validation_freeze": "records/freezes/validation-v7.json",
+  "status_at_recording": "development_controls_running_before_full_validation",
+  "stages": [
+    "secondary_validation",
+    "primary_main",
+    "secondary_main"
+  ],
+  "telemetry_pid": 81598,
+  "telemetry_duration_seconds": 259200,
+  "local_mirror_duration_minutes": 4320,
+  "no_additional_infrastructure": true,
+  "no_paid_model_apis": true,
+  "recorded_utc": "2026-10-16T05:51:46.744903+00:00"
+}

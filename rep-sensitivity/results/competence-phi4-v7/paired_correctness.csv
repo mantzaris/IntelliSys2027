@@ -1,0 +1,5 @@
+kind,model,organization,policy,condition,decision_changed,paired_cells,clusters,both_worlds_correct,paired_accuracy
+schedule,phi4,flat,ordinary,single,False,12,6,12,1.0
+schedule,phi4,flat,ordinary,single,True,12,6,12,1.0
+workflow,phi4,flat,ordinary,single,False,12,6,9,0.75
+workflow,phi4,flat,ordinary,single,True,12,6,12,1.0

@@ -5,7 +5,7 @@ from pathlib import Path
 from rep_sensitivity.replay import run
 from rep_sensitivity.storage import immutable_json
 
-p=argparse.ArgumentParser();p.add_argument('--model',choices=['nemo','qwen3','mistral24'],required=True)
+p=argparse.ArgumentParser();p.add_argument('--model',choices=['nemo','qwen3','mistral24','phi4'],required=True)
 p.add_argument('--pilot',action='store_true');a=p.parse_args()
 def config(name):return json.loads(Path('configs',name+'.json').read_text())
 def rows(name):

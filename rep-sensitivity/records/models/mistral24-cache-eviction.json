@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-16T05:39:24.681939+00:00",
+  "alias": "mistral24",
+  "path": "/workspace/rep-sensitivity/artifacts/models/models--RedHatAI--Mistral-Small-24B-Instruct-2501-quantized.w8a8",
+  "revision": "bac3f41f782dcb17680584f32a5a2a4d180775a4",
+  "reason": "Failed fixed development competence gate. Reclaim reproducible weight cache for Phi-4; retain all raw outputs, metadata and checksums."
+}

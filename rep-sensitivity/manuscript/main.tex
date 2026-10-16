@@ -32,8 +32,10 @@ compares ordinary synthesis, required-task checklists, and scope-aware consolida
 with common information access and output contracts. This working manuscript
 currently reports development and interface validation rather than completed
 held-out hypothesis tests. Initial execution exposed formatting failures and
-insufficient baseline task competence, making unqualified duplication conclusions
-inappropriate. We document these limitations, preserve unsuccessful outputs, and
+insufficient baseline task competence. After interface validation, the completed
+one-model pilot showed ceiling flat scheduling accuracy and beneficial repetition
+effects in hierarchical scheduling, with mixed secondary-workflow findings.
+We document these limitations, preserve unsuccessful outputs, and
 specify paired cluster-level analyses and additional controls needed to distinguish
 repetition effects from information loss, missing coverage, and resource changes.
 Human scientific review and the remaining experimental stages are required before
@@ -259,6 +261,14 @@ from the implemented code alone.
 \IfFileExists{generated/pilot.tex}{\input{generated/pilot.tex}}{
 The current development pilot is still running; no completed pilot contrast is
 reported in this version.}
+In the completed Qwen3 pilot, flat scheduling accuracy reached the ceiling across
+both policies and all repetition conditions. Hierarchical scheduling accuracy
+improved with copies and paraphrases under both policies. The negative hierarchy
+interaction therefore describes a larger repetition benefit in the hierarchy; it
+is not harmful amplification. Workflow estimates were mixed, and the paired
+responsiveness interaction remained imprecise. These development findings neither
+confirm a general harmful-duplication mechanism nor establish robustness.
+Scope-aware consolidation was not included in this pilot, so it cannot answer H4.
 The frozen development prefix contains ties but no NONE worlds; validation
 introduces that stratum. Its competence gate therefore does not establish
 performance on no-feasible-candidate decisions.

@@ -85,15 +85,23 @@ correctly; root-only correctness is retained separately.
 
 ## Inference and integrity
 
-Only the existing RTX 6000 Ada allocation is authorized. Public Qwen2.5-7B-Instruct
-and Mistral-7B-Instruct-v0.3 model cards were inspected; both use Apache-2.0 licenses.
-These are reproducible, modest-size models, not representatives of frontier systems.
-Model repository commits and tokenizer/chat-template hashes are recorded. vLLM
-0.10.2 runs BF16, without quantization, using the native tokenizer template. Initial
-settings: temperature 0.3, top-p 0.95, 1,536 output tokens, 12,288 context tokens,
-batch size 32; no hidden reasoning channel or guided JSON decoding. All settings
-are fixed within a comparison. Output and context caps are checked using actual
-token lengths. No truncation of model input is allowed.
+Only the existing RTX 6000 Ada allocation is authorized. Current v7 candidates are
+Qwen3-14B (Apache-2.0) and Phi-4 (MIT), following fixed development competence
+qualification; validation performance is still required. Both use BF16 weights
+without quantization in vLLM 0.10.2. Qwen thinking is explicitly disabled; Phi-4
+has no separate reasoning setting. Native chat-template token IDs avoid an extra
+BOS token. Repository revisions, checksums and tokenizer/template hashes are logged.
+Temperature is 0.3, top-p 0.95, output allowance 2,304 tokens, context 12,288 tokens,
+and maximum batch size 32, with the common schema-guided output contract. Settings
+are fixed within comparisons. Actual token lengths are checked; inputs are never
+silently truncated. Recorded batch composition and sampling seeds aid reproduction,
+but do not promise bitwise-invariant inference under different GPU batching.
+
+Historical development runs used smaller Qwen2.5 and Mistral models, different
+interface versions, and initially unguided JSON with a 1,536-token cap. Those runs
+remain separately archived. The INT8 Mistral Small check also remains recorded;
+its failed competence gate is not reinterpreted as evidence about duplication.
+These selected local models are not representatives of all contemporary systems.
 
 Offline engine errors stop execution. There is no transport retry in this adapter.
 Accepted response files are immutable compressed JSON; events append with fsync.

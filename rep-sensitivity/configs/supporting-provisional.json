@@ -24,7 +24,7 @@
   "temperature": 0.3,
   "top_p": 0.95,
   "batch_size": 16,
-  "model_settings": {"mistral24": {"temperature": 0.15}},
+  "model_settings": {},
   "contrasts": {
     "packaging": [
       "low_overlap",

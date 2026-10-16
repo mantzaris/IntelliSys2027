@@ -6,11 +6,28 @@
   "benchmark_version": 2,
   "split": "validation",
   "base_pairs": 36,
-  "models": ["qwen3", "mistral24"],
-  "policies": ["ordinary", "checklist", "scope"],
-  "organizations": ["flat", "hierarchical"],
-  "repetition_conditions": ["single", "exact", "paraphrase"],
-  "worlds": [0, 1],
+  "models": [
+    "qwen3",
+    "phi4"
+  ],
+  "policies": [
+    "ordinary",
+    "checklist",
+    "scope"
+  ],
+  "organizations": [
+    "flat",
+    "hierarchical"
+  ],
+  "repetition_conditions": [
+    "single",
+    "exact",
+    "paraphrase"
+  ],
+  "worlds": [
+    0,
+    1
+  ],
   "stochastic_repetitions": 2,
   "max_output_tokens": 2304,
   "max_context_tokens": 12288,
@@ -22,8 +39,11 @@
   "enforce_eager": false,
   "gpu_memory_utilization": 0.92,
   "root_ancestry_registry": true,
-  "model_settings": {"mistral24": {"temperature": 0.15}},
+  "model_settings": {},
   "expected_trajectories": 5184,
   "expected_manager_calls": 10368,
-  "freeze_conditions": ["Completed pilot output and resource audit", "Both selected models pass development competence and summary-contract gates"]
+  "freeze_conditions": [
+    "Completed pilot output and resource audit",
+    "Both selected models pass development competence and summary-contract gates"
+  ]
 }

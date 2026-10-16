@@ -6,6 +6,12 @@ from pathlib import Path
 from .analysis import average,bootstrap
 from .schema import digest
 
+OPTIONAL_METRICS=('unique_clause_retained','false_assertion_adopted','superseded_assertions_emitted',
+                 'choice_matches_superseded_when_distinct','superseded_choice_with_historical_assertion',
+                 'epistemically_appropriate_choice','root_supported_correct','unsupported_truth_hit',
+                 'delivered_claims','required_claims','root_resource_displacement','worker_incorrect_claims',
+                 'worker_unknown_scope_assertions','worker_unsupported_source_assertions')
+
 COMPARISONS={
     'packaging':[('high_overlap','low_overlap')],
     'deduplication':[('similarity_removal','exact_removal'),('scope_consolidation','similarity_removal')],
@@ -49,6 +55,7 @@ def summarize(directory,output,replicates=10000):
                 if live:
                     meta=pair_meta[pid]
                     r.update(contrast='live',arm=r['allocation']+'_'+r['allowance'],kind=meta['kind'],family=meta['family'],decision_changed=meta['decision_changed'])
+                    r['root_resource_displacement']=r['root_not_executed'] is not None
                 accepted.append(r)
     groups=defaultdict(list)
     for r in accepted:groups[(r['kind'],r['model'],r['contrast'],r['arm'])].append(r)
@@ -60,14 +67,13 @@ def summarize(directory,output,replicates=10000):
              'operational_failure_rate':average(r['operational_failure'] for r in rs),
              'input_tokens':sum(r['input_tokens'] for r in rs),'output_tokens':sum(r['output_tokens'] for r in rs),
              'inference_seconds_allocated':sum(r['inference_seconds_allocated'] for r in rs),
+             'calls_per_decision':sum(len(r['request_hashes']) for r in rs)/len(rs),
              'tokens_per_correct':sum(r['input_tokens']+r['output_tokens'] for r in rs)/correct if correct else None}
-        for key in ('unique_clause_retained','false_assertion_adopted','superseded_assertions_emitted',
-                    'choice_matches_superseded_when_distinct','superseded_choice_with_historical_assertion',
-                    'epistemically_appropriate_choice','root_supported_correct','unsupported_truth_hit','delivered_claims','required_claims'):
+        for key in OPTIONAL_METRICS:
             available=[r[key] for r in rs if key in r and r[key] is not None]
             row[key+'_denominator']=len(available);row[key+'_mean']=average(available)
         summary.append(row)
-    contrasts=[]
+    contrasts=[];metric_contrasts=[]
     for kind,model,contrast in sorted({(r['kind'],r['model'],r['contrast']) for r in accepted}):
         rs=[r for r in accepted if (r['kind'],r['model'],r['contrast'])==(kind,model,contrast)]
         for a,b in COMPARISONS[contrast]:
@@ -80,17 +86,53 @@ def summarize(directory,output,replicates=10000):
             strata={r['pair_id']:tuple(r[field] for field in config.get('bootstrap_strata',['family','decision_changed'])) for r in rs}
             contrasts.append({'kind':kind,'model':model,'contrast':contrast,'difference':a+' - '+b,
                               **bootstrap(values,strata,replicates=replicates)})
-    for filename,rows in [('summary.csv',summary),('contrasts.csv',contrasts)]:
+            for metric in OPTIONAL_METRICS:
+                observed=defaultdict(dict)
+                for r in rs:
+                    if r.get(metric) is not None:
+                        observed[(r['pair_id'],r['world'],r['repetition'])][r['arm']]=r[metric]
+                paired_metric=defaultdict(list)
+                for (pid,wi,rep),arms in observed.items():
+                    if a in arms and b in arms:paired_metric[pid].append(float(arms[a])-float(arms[b]))
+                if paired_metric:
+                    metric_contrasts.append({'kind':kind,'model':model,'contrast':contrast,'metric':metric,
+                        'difference':a+' - '+b,'paired_cell_denominator':sum(map(len,paired_metric.values())),
+                        **bootstrap({pid:average(v) for pid,v in paired_metric.items()},strata,replicates=replicates)})
+        if contrast=='unique_clause':
+            for metric in ('decision_error','unique_clause_retained'):
+                values,denominator=unique_clause_interaction(rs,metric)
+                if values:
+                    metric_contrasts.append({'kind':kind,'model':model,'contrast':contrast,'metric':metric,
+                        'difference':'(decisive_high - decisive_low) - (harmless_high - harmless_low)',
+                        'paired_cell_denominator':denominator,
+                        **bootstrap(values,strata,replicates=replicates)})
+    for filename,rows in [('summary.csv',summary),('contrasts.csv',contrasts),('metric_contrasts.csv',metric_contrasts)]:
         if rows:
             with (output/filename).open('w',newline='') as f:
                 w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
+    missing=sorted(set(config.get('models',[]))-{r['model'] for r in accepted})
     result={'suite':config['name'],'config_sha256':digest(config),'source_records_sha256':digest(accepted),
             'analyzed_trajectories':len(accepted),'excluded_incomplete_clusters':excluded,
-            'missing_models':sorted(set(config.get('models',[]))-{r['model'] for r in accepted}),
+            'missing_models':missing,'complete':bool(accepted) and not excluded and not missing,
             'bootstrap_strata':config.get('bootstrap_strata',['family','decision_changed']),
-            'summary':summary,'contrasts':contrasts,'interpretation':'Exploratory paired base-cluster estimates; no confirmatory p-values.'}
+            'summary':summary,'contrasts':contrasts,'metric_contrasts':metric_contrasts,
+            'analysis_source_sha256':digest(Path(__file__).read_text()),
+            'interpretation':'Exploratory paired base-cluster estimates; no confirmatory p-values. Optional metric contrasts use only cells observed in both arms; denominators are explicit.'}
     (output/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
     return result
+
+
+def unique_clause_interaction(rows,metric):
+    """Overlap effect on decisive versus harmless clauses, paired within worlds."""
+    cells=defaultdict(dict)
+    for r in rows:
+        value=1-int(r['correct']) if metric=='decision_error' else r.get(metric)
+        if value is not None:cells[(r['pair_id'],r['world'],r['repetition'])][r['arm']]=float(value)
+    paired=defaultdict(list)
+    for (pid,wi,rep),a in cells.items():
+        if all(k in a for k in ('decisive_high','decisive_low','harmless_high','harmless_low')):
+            paired[pid].append(a['decisive_high']-a['decisive_low']-a['harmless_high']+a['harmless_low'])
+    return {pid:average(v) for pid,v in paired.items()},sum(map(len,paired.values()))
 
 
 if __name__=='__main__':

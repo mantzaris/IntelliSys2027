@@ -10,7 +10,7 @@ from rep_sensitivity.study_execution import execute_stage
 from rep_sensitivity.storage import immutable_json,utcnow
 
 p=argparse.ArgumentParser();p.add_argument('--templates',required=True)
-p.add_argument('--stage',choices=['all','mistral_validation','qwen_main','mistral_main'],default='all')
+p.add_argument('--stage',choices=['all','secondary_validation','primary_main','secondary_main'],default='all')
 p.add_argument('--after-pid',type=int);a=p.parse_args()
 while a.after_pid:
     try:os.kill(a.after_pid,0)
@@ -19,7 +19,7 @@ while a.after_pid:
 root=Path('artifacts/runs/study-execution');root.mkdir(parents=True,exist_ok=True)
 try:
     if a.stage=='all':
-        for stage in ('mistral_validation','qwen_main','mistral_main'):
+        for stage in ('secondary_validation','primary_main','secondary_main'):
             if (root/'STOP_AFTER_CURRENT_STAGE').exists():raise RuntimeError('Explicit stop file present')
             path=Path('logs')/('study-'+stage+'.log');path.parent.mkdir(parents=True,exist_ok=True)
             with path.open('a') as log:

@@ -1,0 +1,80 @@
+{
+  "model": "microsoft/phi-4",
+  "revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "tokenizer_revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "checked_utc": "2026-10-16T05:39:25.088000+00:00",
+  "license": "mit",
+  "model_card": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/README.md",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "size": 2495,
+      "lfs_sha256": null
+    },
+    {
+      "name": "config.json",
+      "size": 802,
+      "lfs_sha256": null
+    },
+    {
+      "name": "generation_config.json",
+      "size": 184,
+      "lfs_sha256": null
+    },
+    {
+      "name": "model-00001-of-00006.safetensors",
+      "size": 4933656472,
+      "lfs_sha256": "cafbe72210c39b19270cbfce27996afc4383c8a487087bcb91a6290d5ceb8f18"
+    },
+    {
+      "name": "model-00002-of-00006.safetensors",
+      "size": 4954690712,
+      "lfs_sha256": "9f87a5897162ed988cfb0fac13879634b4bab3da5a756b4f9dd2437ef8145e20"
+    },
+    {
+      "name": "model-00003-of-00006.safetensors",
+      "size": 4902241352,
+      "lfs_sha256": "19537df78a263aa0c0b2dc12dbce5908021e30a25e528699b08642c3999eeb05"
+    },
+    {
+      "name": "model-00004-of-00006.safetensors",
+      "size": 4771169120,
+      "lfs_sha256": "d4f17100a39c19d352f2e8108eef6fb975afb86808e50d78a075e162f1edfc93"
+    },
+    {
+      "name": "model-00005-of-00006.safetensors",
+      "size": 4771169120,
+      "lfs_sha256": "a72666b6001d76e7a9dc3ebe0d05a2c3316f546a8c6779c87343f296bdf82e50"
+    },
+    {
+      "name": "model-00006-of-00006.safetensors",
+      "size": 4986116216,
+      "lfs_sha256": "a9bfeeea354e31503d09a864e6cd5bd0f1230664065b6a2988b05e22b3228d77"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 20364,
+      "lfs_sha256": null
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 95,
+      "lfs_sha256": null
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 4253055,
+      "lfs_sha256": null
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 17737,
+      "lfs_sha256": null
+    },
+    {
+      "name": "vocab.json",
+      "size": 1612637,
+      "lfs_sha256": null
+    }
+  ]
+}

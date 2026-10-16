@@ -40,6 +40,13 @@ def complete(name,alias,kind='replay'):
 def read(path):return json.loads(Path(path).read_text())
 
 
+def selected_models(templates):
+    models=read(Path(templates)/'validation-candidate-v7.json')['models']
+    if len(models)!=2 or len(set(models))!=2 or models[0]!='qwen3':
+        raise RuntimeError('Two distinct model aliases, with the completed pilot family first, are required')
+    return models
+
+
 def publish(config,reason,evidence):
     FROZEN.mkdir(parents=True,exist_ok=True)
     path=FROZEN/(config['name']+'.json')
@@ -59,7 +66,7 @@ def freeze_validation(templates):
     if path.exists():return read(path)
     if not complete('pilot-v7','qwen3'):raise RuntimeError('Full pilot is not complete')
     gates={}
-    for alias in ('qwen3','mistral24'):
+    for alias in selected_models(templates):
         a=read(Path('records/gates')/('competence-'+alias+'-v7.json'))
         b=read(Path('records/gates')/('summary-smoke-'+alias+'-v7.json'))
         if not a['passed'] or not b['contract_valid']:raise RuntimeError('Selected model is not qualified: '+alias)
@@ -74,7 +81,7 @@ def freeze_validation(templates):
 
 def freeze_main(templates):
     if (FROZEN/'main-v7.json').exists():return read(FROZEN/'main-v7.json')
-    if not all(complete('validation-v7',m) for m in ('qwen3','mistral24')):
+    if not all(complete('validation-v7',m) for m in selected_models(templates)):
         raise RuntimeError('Both complete validation models are required before held-out inference')
     validation=summarize('artifacts/runs/validation-v7','results/validation-v7')
     if not validation['complete']:raise RuntimeError('Validation has incomplete clusters')
@@ -98,9 +105,11 @@ def freeze_main(templates):
     if free<projected_bytes:raise RuntimeError('Insufficient local pod storage for conservative artifact projection')
     evidence={'allocation_rule':rule,'validation_analysis_sha256':digest(validation),'projections':projections,
               'available_storage_bytes':free,'projected_artifact_bytes_with_margin':projected_bytes,
+              'analysis_manifest_sha256':digest(read(Path(templates)/'analysis.json')),
               'secondary_competence':[r for r in validation['competence'] if r['kind']=='workflow']}
     manifest,pairs,corpus=prepare(candidate,Path('artifacts/runs/main-v7'))
     immutable_json(Path('artifacts/runs/main-v7/mutation-records-v1.json'),[describe(p) for p in pairs.values()])
+    immutable_json(Path('artifacts/runs/main-v7/analysis-plan.json'),read(Path(templates)/'analysis.json'))
     common={k:candidate[k] for k in ('models','model_settings','max_context_tokens','max_output_tokens','temperature','top_p',
                                     'batch_size','enforce_eager','gpu_memory_utilization','root_ancestry_registry')}
     supporting=read(Path(templates)/'supporting-provisional.json')
@@ -137,15 +146,17 @@ def development_extensions(alias,templates,model=None):
 def execute_stage(stage,templates):
     for package,version in (('vllm','0.10.2'),('transformers','4.55.4')):
         if importlib.metadata.version(package)!=version:raise RuntimeError('Inference environment changed: '+package)
-    if stage=='mistral_validation':
-        model=qualify('mistral24',templates)
+    primary_model,secondary_model=selected_models(templates)
+    if stage=='secondary_validation':
+        model=qualify(secondary_model,templates)
         config=freeze_validation(templates)
-        model=development_extensions('mistral24',templates,model)
-        if not complete(config['name'],'mistral24'):run(config,'mistral24',model=model)
+        model=development_extensions(secondary_model,templates,model)
+        if not complete(config['name'],secondary_model):run(config,secondary_model,model=model)
         return
-    alias='qwen3' if stage=='qwen_main' else 'mistral24'
+    if stage not in ('primary_main','secondary_main'):raise ValueError('Unknown study stage: '+stage)
+    alias=primary_model if stage=='primary_main' else secondary_model
     model=None
-    if alias=='qwen3':
+    if alias==primary_model:
         model=development_extensions(alias,templates,model)
         validation=read(FROZEN/'validation-v7.json')
         if not complete(validation['name'],alias):model=run(validation,alias,model=model)
@@ -155,7 +166,7 @@ def execute_stage(stage,templates):
     if not complete(controls['name'],alias,'controls'):model=run_controls(controls,alias,model)
     live=read(FROZEN/'live-v7.json')
     if not complete(live['name'],alias,'live'):run_live(live,alias,model)
-    if all(complete('main-v7',m) for m in ('qwen3','mistral24')):
+    if all(complete('main-v7',m) for m in selected_models(templates)):
         summarize('artifacts/runs/main-v7','results/main-v7')
         for name in ('supporting-v7','live-v7','controls-development-v7','live-development-v7'):
             summarize_aux(Path('artifacts/runs')/name,Path('results')/name)

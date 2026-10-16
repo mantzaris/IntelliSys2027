@@ -13,7 +13,7 @@ for p,result in records:
     by_model={r['model']:{} for r in result['competence']}
     for r in result['competence']:by_model[r['model']][r['kind']]=r
     for model, values in by_model.items():
-        label={'qwen':'Qwen2.5-7B','qwen14':'Qwen2.5-14B','qwen3':'Qwen3-14B','mistral':'Mistral-7B','nemo':'Mistral-Nemo-12B','mistral24':'Mistral-Small-24B (INT8)'}[model]
+        label={'qwen':'Qwen2.5-7B','qwen14':'Qwen2.5-14B','qwen3':'Qwen3-14B','mistral':'Mistral-7B','nemo':'Mistral-Nemo-12B','mistral24':'Mistral-Small-24B (INT8)','phi4':'Phi-4 (BF16)'}[model]
         version=re.search(r'v\d+$',result['suite']).group()
         columns=[]
         for kind in ('schedule','workflow'):

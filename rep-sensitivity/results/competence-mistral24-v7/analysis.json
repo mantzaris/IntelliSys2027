@@ -1,0 +1,310 @@
+{
+  "suite": "competence-mistral24-v7",
+  "manifest_sha256": "7173da27da0ce20dbd16f0aa068d8efae298aff1c447ce2fb777561b9b4a6139",
+  "planned_trajectories": 96,
+  "analyzed_trajectories": 96,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "66b41279058461e41c582aa917b6ab7e2e57d47f114ab458e3b1bb1224cefbf4",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 33,
+      "accuracy": 0.6875,
+      "invalid_selection_rate": 0.041666666666666664,
+      "operational_failure_rate": 0.22916666666666666,
+      "valid_probability_rate": 0.5625,
+      "calibration_denominator": 27,
+      "candidate_selection_denominator": 37,
+      "invalid_selected_candidates": 2,
+      "emitted_claim_denominator": 664,
+      "scope_transfer_count": 0,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.14814814814814814,
+      "mean_log_loss": 2.046742304883596,
+      "input_tokens_per_decision": 3841.5416666666665,
+      "output_tokens_per_decision": 656.4375,
+      "allocated_seconds_per_decision": 1.977264429283726,
+      "tokens_per_correct": 6542.515151515152,
+      "changed_scope_retention_on_consequential_pairs": null,
+      "summary_retention": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 32,
+      "accuracy": 0.6666666666666666,
+      "invalid_selection_rate": 0.0,
+      "operational_failure_rate": 0.25,
+      "valid_probability_rate": 0.4375,
+      "calibration_denominator": 21,
+      "candidate_selection_denominator": 36,
+      "invalid_selected_candidates": 0,
+      "emitted_claim_denominator": 429,
+      "scope_transfer_count": 5,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.11904761904761904,
+      "mean_log_loss": 1.3487699188804043,
+      "input_tokens_per_decision": 3024.3333333333335,
+      "output_tokens_per_decision": 459.875,
+      "allocated_seconds_per_decision": 1.9692910963434163,
+      "tokens_per_correct": 5226.3125,
+      "changed_scope_retention_on_consequential_pairs": null,
+      "summary_retention": null
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "competence": [
+    {
+      "model": "mistral24",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.6875,
+      "passes_85_percent": false
+    },
+    {
+      "model": "mistral24",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.6666666666666666,
+      "passes_85_percent": false
+    }
+  ],
+  "paired_correctness": [
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 9,
+      "paired_accuracy": 0.75
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 4,
+      "paired_accuracy": 0.3333333333333333
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 4,
+      "paired_accuracy": 0.3333333333333333
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 6,
+      "paired_accuracy": 0.5
+    }
+  ],
+  "confidence_changes": [],
+  "guardrails": [
+    {
+      "kind": "schedule",
+      "model": "mistral24",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral24",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "interval_caution": "A degenerate empirical bootstrap interval indicates no sampled variation in the contrast; it does not prove zero population effect.",
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null,
+    "claim_scoring_version": 2,
+    "claim_scoring_source_sha256": "c3a7686efa3938be43aa12a9e1b2d29c3bc766b7e01857b5ad260c74953e5f05",
+    "analysis_source_sha256": "e8393b49c3f5d246b7b851cbc28dabb863301a522e3b26747414d74c3a2b2ca4",
+    "dependencies": {
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.7"
+    }
+  }
+}

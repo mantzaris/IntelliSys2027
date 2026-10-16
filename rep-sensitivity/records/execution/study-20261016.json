@@ -1,0 +1,13 @@
+{
+  "launch_utc": "2026-10-16T05:33:17.273992+00:00",
+  "source_commit": "1c3630b",
+  "implementation_snapshot": "469854ecad1edee50f650afc4e2edd30ac26a41fb660c6d6e11db36f4a4312fb",
+  "controller_pid": 77110,
+  "waits_for_existing_qualification_controller_pid": 49148,
+  "status_at_recording": "waiting_for_qualification",
+  "project_on_pod": "/workspace/rep-sensitivity",
+  "allocation_rule": "configs/allocation-rule-v1.json",
+  "failure_records": "artifacts/runs/study-execution/",
+  "logs": "logs/study-*.log",
+  "network_policy": "Existing RunPod only; no additional provisioning, billing changes, or paid inference APIs."
+}

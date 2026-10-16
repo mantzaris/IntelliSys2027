@@ -4,7 +4,8 @@ Controlled experiments on duplicated, near-duplicated and complementary reports
 in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`; the user performs the push.
 
-**Research status:** development and competence validation, not a completed
+**Research status:** the Qwen3 development pilot is complete; a second model family
+is undergoing competence qualification. This is not a completed
 held-out study. See `DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
 and the actual `results/*/analysis.json` files. A compiled anonymous working draft
 is in `manuscript/main.pdf`; it is explicitly incomplete and not human-reviewed.
@@ -176,7 +177,7 @@ automated; human scientific and layout review remains necessary. See
 
 To run a fresh v7 development gate and summary check while reusing a loaded
 engine, use `.venv/bin/python scripts/launch_snapshot.py --entry development_gate -- --model qwen3 --pilot`
-(or `--model mistral24` without `--pilot`). A failed gate prevents pilot execution.
+(or `--model phi4` without `--pilot`). A failed gate prevents further study execution.
 To resume an archived protocol after source changes, use
 `.venv/bin/python scripts/resume_archived.py artifacts/runs/RUN_NAME --model MODEL`;
 this restores its immutable source snapshot in an ignored directory.

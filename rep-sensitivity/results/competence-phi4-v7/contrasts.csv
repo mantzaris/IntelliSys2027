@@ -1,0 +1,13 @@
+kind,model,contrast,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap
+schedule,phi4,H1_exact,,,,0,,
+schedule,phi4,H1_paraphrase,,,,0,,
+schedule,phi4,H2,,,,0,,
+schedule,phi4,H3,,,,0,,
+schedule,phi4,H4_error,,,,0,,
+schedule,phi4,H4_retention,,,,0,,
+workflow,phi4,H1_exact,,,,0,,
+workflow,phi4,H1_paraphrase,,,,0,,
+workflow,phi4,H2,,,,0,,
+workflow,phi4,H3,,,,0,,
+workflow,phi4,H4_error,,,,0,,
+workflow,phi4,H4_retention,,,,0,,
