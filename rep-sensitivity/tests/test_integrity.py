@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from rep_sensitivity.schema import Candidate, Claim, Job, Report, ScheduleWorld, digest
 from rep_sensitivity.verification import verify, reference_verify, validate_world
@@ -19,6 +20,7 @@ from rep_sensitivity.controls import corrupt_ancestry, semantic_inventory, linea
 from rep_sensitivity.assignments import assign, access_view, coverage,bind_executions
 from rep_sensitivity.information import possible_decisions
 from rep_sensitivity.planning import prospective_precision
+from rep_sensitivity.mutations import describe
 
 
 class IntegrityTests(unittest.TestCase):
@@ -74,6 +76,16 @@ class IntegrityTests(unittest.TestCase):
                     if not p['evaluation']['decision_changed']:
                         self.assertEqual(p['evaluation']['affected_predicates'],[])
 
+    def test_affected_checks_are_distinct_from_changed_truth_values(self):
+        for p in generate('development',24,2):
+            record=describe(p)
+            self.assertTrue(record['preconditions_verified'])
+            self.assertTrue(record['dependent_scoped_predicates'])
+            self.assertEqual(record['decision_changed'],p['evaluation']['decision_changed'])
+            if record['family']=='numeric' and not record['decision_changed']:
+                self.assertEqual(record['truth_changed_predicates'],[])
+                self.assertEqual(len(record['dependent_scoped_predicates']),3)
+
     def test_shared_claim_unique_clause_and_versions(self):
         counts={'decisive':0,'harmless':0}
         for p in generate('development',24,2):
@@ -86,7 +98,10 @@ class IntegrityTests(unittest.TestCase):
                     if high is None:
                         self.assertIsNone(low);continue
                     counts[relevance]+=1
-                    self.assertEqual(a,b)
+                    self.assertEqual({k:v for k,v in a.items() if k!='rendering_audit'},
+                                     {k:v for k,v in b.items() if k!='rendering_audit'})
+                    self.assertGreater(a['rendering_audit']['target_anchor_character_similarity'],
+                                       b['rendering_audit']['target_anchor_character_similarity'])
                     self.assertEqual(semantic_inventory(high),semantic_inventory(low))
                     self.assertEqual(semantic_inventory(high),semantic_inventory(reports))
                     self.assertEqual([r.identifier for r in high],[r.identifier for r in reports])
@@ -220,6 +235,9 @@ class IntegrityTests(unittest.TestCase):
         self.assertEqual(score['incompatible_scope_merge_count'],1)
         boolean=Report('c',Claim('resource','C1','m','resource',True,'Boolean'),'text')
         self.assertEqual(score_assertions({'assertions':[[boolean.claim.key,1,['c']]]},[boolean])['retained_count'],0)
+        copied=replace(boolean,identifier='copy',parent_report_identifiers=('c',))
+        cited={'assertions':[[boolean.claim.key,True,['copy']]]}
+        self.assertEqual(score_assertions(cited,[boolean],reference_reports=[boolean,copied])['unsupported_reference_count'],0)
 
     def test_immutable_cache_and_repetitions(self):
         with tempfile.TemporaryDirectory() as d:
@@ -235,6 +253,16 @@ class IntegrityTests(unittest.TestCase):
             immutable_json(Path(d)/'immutable.json',{'a':1})
             with self.assertRaises(RuntimeError): immutable_json(Path(d)/'immutable.json',{'a':2})
 
+    def test_failed_checkpoint_publication_remains_resumable(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/'checkpoint.json'
+            with patch('rep_sensitivity.storage.os.fsync',side_effect=OSError('simulated persistence failure')):
+                with self.assertRaises(OSError):immutable_json(path,{'complete':True})
+            self.assertFalse(path.exists())
+            immutable_json(path,{'complete':True})
+            self.assertEqual(json.loads(path.read_text()),{'complete':True})
+            self.assertFalse(list(Path(d).glob('*.partial')))
+
     def test_resume_does_not_resample_malformed(self):
         class FakeModel:
             settings={}; batch_size=4; calls=0
@@ -246,6 +274,8 @@ class IntegrityTests(unittest.TestCase):
             m=FakeModel(); ledger=Ledger(d)
             a=execute_requests([request],m,ledger); b=execute_requests([request],m,ledger)
             self.assertEqual(m.calls,1); self.assertEqual(a,b)
+            execute_requests([{**request,'max_output_tokens':128}],m,ledger)
+            self.assertEqual(m.calls,2)  # A changed generation allowance is a different request.
 
     def test_cluster_statistics_and_contrast_signs(self):
         rows=[]

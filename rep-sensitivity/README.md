@@ -189,3 +189,19 @@ is scored separately so an appropriate INSUFFICIENT answer after lossy admission
 is not described as a failure to recover unavailable truth.
 Distinct-scope branch placement and exact-copy branch placement are separate
 controls. The former records branch-load changes explicitly.
+
+The sequential controller is `scripts/run_study.py`, launched from an immutable
+snapshot with `scripts/launch_snapshot.py --entry study`. It qualifies the second
+family, runs development checks for controls/live workers, completes validation,
+and freezes the remaining protocols under `configs/frozen/` using
+`configs/allocation-rule-v1.json`. A failed gate or engine exception stops execution
+and leaves a record under `artifacts/runs/study-execution/`. The current snapshot
+identifier and launch process are recorded separately; do not run a second GPU
+controller concurrently. These controls do not assert that later stages have run.
+
+Fixed live arms bound the complete trajectory token allowance, including the root.
+If all reports cannot be admitted within that allowance, the result is explicitly
+labeled resource displacement. No report is silently discarded. End-to-end accuracy
+is distinguished from a root choice supported by its delivered assertions.
+Use `scripts/export_mutations.py RUN_DIRECTORY` to export typed mutation records
+that distinguish dependent verification checks from predicates whose truth changes.

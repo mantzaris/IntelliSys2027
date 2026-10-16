@@ -63,7 +63,7 @@ def summarize(directory,output,replicates=10000):
              'tokens_per_correct':sum(r['input_tokens']+r['output_tokens'] for r in rs)/correct if correct else None}
         for key in ('unique_clause_retained','false_assertion_adopted','superseded_assertions_emitted',
                     'choice_matches_superseded_when_distinct','superseded_choice_with_historical_assertion',
-                    'epistemically_appropriate_choice','delivered_claims','required_claims'):
+                    'epistemically_appropriate_choice','root_supported_correct','unsupported_truth_hit','delivered_claims','required_claims'):
             available=[r[key] for r in rs if key in r and r[key] is not None]
             row[key+'_denominator']=len(available);row[key+'_mean']=average(available)
         summary.append(row)
@@ -77,7 +77,7 @@ def summarize(directory,output,replicates=10000):
             for (pid,wi,rep),arms in cells.items():
                 if a in arms and b in arms:paired[pid].append(arms[a]-arms[b])
             values={pid:average(v) for pid,v in paired.items()}
-            strata={r['pair_id']:(r['family'],r['decision_changed']) for r in rs}
+            strata={r['pair_id']:tuple(r[field] for field in config.get('bootstrap_strata',['family','decision_changed'])) for r in rs}
             contrasts.append({'kind':kind,'model':model,'contrast':contrast,'difference':a+' - '+b,
                               **bootstrap(values,strata,replicates=replicates)})
     for filename,rows in [('summary.csv',summary),('contrasts.csv',contrasts)]:
@@ -86,6 +86,8 @@ def summarize(directory,output,replicates=10000):
                 w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
     result={'suite':config['name'],'config_sha256':digest(config),'source_records_sha256':digest(accepted),
             'analyzed_trajectories':len(accepted),'excluded_incomplete_clusters':excluded,
+            'missing_models':sorted(set(config.get('models',[]))-{r['model'] for r in accepted}),
+            'bootstrap_strata':config.get('bootstrap_strata',['family','decision_changed']),
             'summary':summary,'contrasts':contrasts,'interpretation':'Exploratory paired base-cluster estimates; no confirmatory p-values.'}
     (output/'analysis.json').write_text(json.dumps(result,indent=2)+'\n')
     return result

@@ -3,6 +3,7 @@ import gzip
 import json
 import os
 import fcntl
+import uuid
 from pathlib import Path
 from datetime import datetime, timezone
 from .schema import canonical, digest
@@ -19,8 +20,21 @@ def immutable_json(path, value):
     if path.exists():
         if path.read_bytes() != data: raise RuntimeError("Refusing to change immutable artifact: " + str(path))
         return
-    with path.open("xb") as f:
-        f.write(data); f.flush(); os.fsync(f.fileno())
+    temporary=path.with_name('.'+path.name+'.'+uuid.uuid4().hex+'.partial')
+    try:
+        with temporary.open('xb') as f:
+            f.write(data);f.flush();os.fsync(f.fileno())
+        try:os.link(temporary,path)  # Atomic publication without overwriting a winner.
+        except FileExistsError:
+            if path.read_bytes()!=data:raise RuntimeError('Conflicting immutable artifact: '+str(path))
+        fsync_directory(path.parent)
+    finally:temporary.unlink(missing_ok=True)
+
+
+def fsync_directory(path):
+    fd=os.open(path,os.O_DIRECTORY)
+    try:os.fsync(fd)
+    finally:os.close(fd)
 
 
 class Ledger:
@@ -68,6 +82,7 @@ class Ledger:
                 z.write((canonical(value) + "\n").encode())
             f.flush(); os.fsync(f.fileno())
         os.replace(temp, path)
+        fsync_directory(path.parent)
         self.event("accepted", request_hash=key, trial_id=value["trial_id"], stage=value["stage"],
                    response_sha256=digest(value["response"]))
 

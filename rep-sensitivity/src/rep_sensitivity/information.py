@@ -14,7 +14,9 @@ def possible_decisions(world,required_reports,delivered_reports):
     for r in delivered_reports:
         if r.operation_type=='administrative':continue
         for c in r.claims():
-            if c.key in values:values[c.key].add((type(c.asserted_value).__name__,c.asserted_value))
+            if c.key in values:
+                kind='number' if type(c.asserted_value) in (int,float) else type(c.asserted_value).__name__
+                values[c.key].add((kind,c.asserted_value))
     states={};objectives={}
     for cid in world['tie_order']:
         mandatory=[];objective=None
@@ -22,13 +24,13 @@ def possible_decisions(world,required_reports,delivered_reports):
             if c.candidate_identifier!=cid:continue
             seen=values[key]
             if c.task_identifier=='objective':
-                if len(seen)==1 and next(iter(seen))[0] in ('int','float'):objective=next(iter(seen))[1]
+                if len(seen)==1 and next(iter(seen))[0]=='number':objective=next(iter(seen))[1]
             else:
                 mandatory.append(next(iter(seen))[1] if len(seen)==1 and next(iter(seen))[0]=='bool' else None)
         states[cid]=[False] if False in mandatory else ([True] if mandatory and all(v is True for v in mandatory) else [False,True])
         objectives[cid]=objective
     known=sorted({v for v in objectives.values() if v is not None})
-    representatives=sorted({0,*known,(max(known)+1 if known else 1),
+    representatives=sorted({0,*known,(min(known)-1 if known else -1),(max(known)+1 if known else 1),
                             *((a+b)/2 for a,b in zip(known,known[1:]))})
     candidates=world['tie_order'];answers=set()
     for feasibility in product(*(states[c] for c in candidates)):

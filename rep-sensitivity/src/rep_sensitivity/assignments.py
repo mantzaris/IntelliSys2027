@@ -46,9 +46,14 @@ def access_view(world,assignment):
         resources=[assignment.resource] if assignment.resource else list(world['capacities'])
         view['capacities']={r:world['capacities'][r] for r in resources}
         for v,j in zip(view['jobs'],world['jobs']): v['demands']={r:j['demands'].get(r,0) for r in resources}
+        if assignment.resource is not None:
+            view['jobs']=[j for j in view['jobs'] if j['demands'][assignment.resource]>0]
+            relevant={j['identifier'] for j in view['jobs']}
+            view['candidates']=[{**c,'starts':{j:t for j,t in c['starts'].items() if j in relevant}} for c in view['candidates']]
     elif assignment.family=='deadline_downtime':
         view['downtime']=world['downtime']
-        for v,j in zip(view['jobs'],world['jobs']): v.update(deadline=j['deadline'],demands=j['demands'])
+        for v,j in zip(view['jobs'],world['jobs']):
+            v.update(deadline=j['deadline'],demands={r:q for r,q in j['demands'].items() if r in world['downtime']})
     return view
 
 

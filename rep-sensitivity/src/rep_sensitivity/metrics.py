@@ -53,6 +53,8 @@ def score_assertions(obj, reports, reference_reports=None):
     retained = {k for k, v, refs in emitted if k in expected and same_value(v,expected[k])}
     known = {k for k, _, _ in emitted if k in expected}
     mismatches = sum(k not in expected or not same_value(v,expected[k]) for k, v, _ in emitted)
+    unknown_scopes=sum(k not in expected for k,v,refs in emitted)
+    incorrect_known=sum(k in expected and not same_value(v,expected[k]) for k,v,refs in emitted)
     scope_transfers = sum(any(ref in reference and k not in reference[ref] for ref in refs) for k, _, refs in emitted)
     source_errors = sum(any(ref not in reference for ref in refs) for _, _, refs in emitted)
     duplicate_emissions = len(emitted) - len({(k, 'Boolean' if type(v) is bool else 'number',v) for k, v, _ in emitted})
@@ -65,6 +67,7 @@ def score_assertions(obj, reports, reference_reports=None):
     return {"required_claims": len(expected), "emitted_claims": len(emitted), "coverage_count": len(known),
             "retained_count": len(retained), "retained_keys": sorted(retained),
             "incorrect_emitted_claims": mismatches, "scope_transfer_count": scope_transfers,
+            "unknown_scope_assertions":unknown_scopes,"incorrect_known_scope_assertions":incorrect_known,
             "unsupported_reference_count": source_errors, "unconsolidated_equivalent_count": duplicate_emissions,
             "incompatible_scope_merge_count":incompatible_merges}
 

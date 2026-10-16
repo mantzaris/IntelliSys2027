@@ -1,0 +1,19 @@
+{
+  "status": "prespecified_before_validation_and_heldout_outcomes",
+  "preferred_heldout_base_pairs": 192,
+  "reduced_heldout_base_pairs": 96,
+  "main_inference_planning_threshold_hours": 48,
+  "selection_rule": "Use 192 unless measured validation extrapolation exceeds 48 inference hours on the existing GPU; then use 96. This is an operational planning heuristic, not a user billing limit. Never stop a frozen run because of significance or an effect direction.",
+  "primary_validation_competence_threshold": 0.85,
+  "secondary_validation_rule": "Report secondary workflow competence separately; a decline limits secondary interpretation and does not invalidate a qualified primary scheduling population.",
+  "precision_rule": "Export stratified prospective half-width approximations at both sizes. Do not invent power or claim adequate precision from zero observed variation. If the resource-limited size is imprecise, retain that limitation.",
+  "supporting_pair_indices": [0, 1, 2, 3, 4, 5, 6, 11, 20, 21, 31, 34],
+  "supporting_stochastic_repetitions": 1,
+  "supporting_bootstrap_strata": ["decision_changed"],
+  "supporting_sampling_note": "One consequential and one preserving base per family. Preserving cases include regular, tie and NONE structures. Change-class strata pool families in this small exploratory subset; no family-specific inferential claims.",
+  "live_generated_pairs": 24,
+  "live_worlds": [0],
+  "live_stochastic_repetitions": 2,
+  "live_bootstrap_strata": ["family", "decision_changed"],
+  "dose_response": "Omitted exploratory extension to preserve the core paired design and reduce GPU use."
+}

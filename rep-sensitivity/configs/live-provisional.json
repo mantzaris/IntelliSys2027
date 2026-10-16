@@ -19,5 +19,5 @@
   "top_p": 0.95,
   "batch_size": 16,
   "model_settings": {"mistral24": {"temperature": 0.15}},
-  "note": "Four essential scopes are retained. Fixed comparisons bound combined tokenized worker inputs plus output caps to the baseline total. This is a token resource allowance, not equal FLOPs or elapsed compute. Actual input/output tokens and elapsed inference are recorded."
+  "note": "Four essential worker assignments are retained. Fixed arms first bound worker inputs plus output caps to the baseline worker allowance. After workers finish, unused allowance can fund the root: actual worker tokens plus root input and output allowance may not exceed the corresponding baseline's worker allowance plus baseline root input and root output cap. A root that cannot fit is explicitly scored as resource displacement, without truncating input or fabricating a call. This bounded token allowance is not equal FLOPs or elapsed compute."
 }

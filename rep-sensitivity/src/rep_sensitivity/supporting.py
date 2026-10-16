@@ -6,7 +6,7 @@ from .controls import packaging,corrupt_ancestry,dedup_audit,neutral_report_cont
 from .generation import oracle
 from .graphs import partition
 from .metrics import parse,score_root,score_assertions
-from .models import LocalModel
+from .models import reuse_or_load
 from .policies import make_prompt
 from .reports import thaw,repeat,registry,deduplicate,corrupt_report,ancestry_registry
 from .schema import canonical,digest
@@ -15,7 +15,7 @@ from .replay import execute_requests
 from .information import possible_decisions
 
 
-def run_controls(config,alias):
+def run_controls(config,alias,model=None):
     if config.get('status') not in ('frozen','development_controls') or config.get('interface_version')!=7:
         raise ValueError('Supporting protocol must be frozen before held-out outcomes')
     source=Path(config['source_corpus'])
@@ -27,10 +27,10 @@ def run_controls(config,alias):
     directory=Path('artifacts/runs')/config['name'];ledger=Ledger(directory/alias)
     immutable_json(directory/'config.json',config)
     immutable_json(directory/'implementation.json',{p.name:p.read_text() for p in Path(__file__).parent.glob('*.py')})
-    inference={**config,**config.get('model_settings',{}).get(alias,{})}
-    model=LocalModel(alias,inference['max_context_tokens'],inference['max_output_tokens'],
-                     inference['temperature'],inference['top_p'],inference['batch_size'],True,
-                     enforce_eager=inference.get('enforce_eager',True),gpu_memory_utilization=inference.get('gpu_memory_utilization',0.85))
+    model,loaded_here=reuse_or_load(alias,config,model)
+    ledger.event('run_start',settings=model.settings,model_load_seconds=model.load_seconds if loaded_here else 0,
+                 engine_reused=not loaded_here)
+    planned_blocks=[]
     for pair in pairs:
         jobs=[]
         for wi in (0,1):
@@ -95,13 +95,22 @@ def run_controls(config,alias):
                             branches,placement=place_near_reports(rs,pair['seed'],arm=='different_branch')
                             audit.update(placement)
                         if arm=='global_reviewers':branches=[rs,rs]
+                        audit['report_slots']=len(rs)
+                        audit['report_text_tokens']=sum(len(model.tokenizer.encode(r.text,add_special_tokens=False)) for r in rs)
                         jobs.append({'trial':trial,'world':world,'wi':wi,'original':original,'rs':rs,
                                      'contrast':contrast,'arm':arm,'policy':policy,'ancestry':ancestry,
                                      'extra':extra,'audit':audit,'task_context':task_context,'branches':branches})
-        requests=[]
         immutable_json(directory/alias/'manifests'/(pair['pair_id']+'.json'),
                        {'trials':[j['trial'] for j in jobs],
                         'trajectories':len(jobs),'calls':sum(1 if j['contrast']=='dose' else 3 for j in jobs)})
+        planned_blocks.append((pair,jobs))
+    immutable_json(directory/alias/'run-manifest.json',{
+        'base_pairs':len(pairs),'config_sha256':digest(config),
+        'trajectories':sum(len(jobs) for pair,jobs in planned_blocks),
+        'calls':sum(1 if j['contrast']=='dose' else 3 for pair,jobs in planned_blocks for j in jobs),
+        'per_pair_manifest_sha256':{pair['pair_id']:digest([j['trial'] for j in jobs]) for pair,jobs in planned_blocks}})
+    for pair,jobs in planned_blocks:
+        requests=[]
         for j in jobs:
             if j['contrast']=='dose':continue
             requests.extend({'trial':j['trial'],'stage':'manager'+str(i),
@@ -130,7 +139,7 @@ def run_controls(config,alias):
                 j[k] for k in ('trial','world','wi','original','rs','contrast','arm','policy','ancestry','extra','audit','task_context','branches','summaries'))
             calls={key:value for key,value in all_calls.items() if key[0]==trial['trial_id']}
             raw=calls[(trial['trial_id'],'root')]['response']
-            score=score_root(raw,world,pair['evaluation']['oracle'][wi],original)
+            score=score_root(raw,world,pair['evaluation']['oracle'][wi],original,reference_reports=rs)
             if contrast=='deduplication':
                 possible=possible_decisions(world,original,rs)
                 score['information_available_for_unique_answer']=len(possible)==1
@@ -167,3 +176,4 @@ def run_controls(config,alias):
         ledger.event('control_cluster_complete',pair_id=pair['pair_id'],trajectories=len(jobs))
     ledger.event('run_complete',base_pairs=len(pairs))
     ledger.close()
+    return model

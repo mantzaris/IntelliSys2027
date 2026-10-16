@@ -48,3 +48,5 @@ __pycache__/
 # Competence-only plots contain no repetition contrasts; regenerate on demand.
 /results/competence-*/overview.pdf
 /results/competence-*/overview.png
+# Full held-out trial rows remain in the mirrored artifact package; curate aggregates.
+/results/main-*/decisions.csv

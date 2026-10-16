@@ -1,0 +1,40 @@
+{
+  "suite": "summary-smoke-qwen3-v7",
+  "planned_trajectories": 12,
+  "planned_calls": 36,
+  "models": {
+    "qwen3": {
+      "accepted_calls": 36,
+      "unique_request_hashes": 36,
+      "started_without_accepted": 0,
+      "complete_clusters": 6,
+      "run_complete": true,
+      "finish_reasons": {
+        "stop": 36
+      },
+      "input_tokens": 76879,
+      "output_tokens": 17701,
+      "measured_inference_wall_seconds": 88.06340444227686,
+      "amortized_output_tokens_per_second": 201.0029036704176,
+      "mean_input_tokens": 2135.527777777778,
+      "mean_output_tokens": 491.69444444444446,
+      "maximum_input_tokens": 3345,
+      "maximum_output_tokens": 999,
+      "observed_request_latency_calls": 0,
+      "median_observed_request_latency_seconds": null,
+      "device_telemetry": {
+        "accepted_batch_window_seconds": 88.06340456008911,
+        "telemetry_covered_seconds": 88.06340456008911,
+        "temporal_coverage_fraction": 1.0,
+        "active_samples": 9,
+        "sampled_peak_vram_mib": 45992.0,
+        "sampled_mean_gpu_utilization_percent": 98.22222222222223,
+        "sampled_multiple_compute_processes": false,
+        "gross_device_energy_joules_on_covered_intervals": 26374.838859619515,
+        "interpretation": "Coarse nvidia-smi samples, linearly interpolated with gaps at most 30 seconds. Device energy is not incremental model energy or a kernel-time measurement. Unaccepted interrupted work is excluded."
+      },
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "3a38241d52a9b8edc1f240f34feb7acbf0e41b0bcb34387cf998a9cde431e896"
+    }
+  }
+}

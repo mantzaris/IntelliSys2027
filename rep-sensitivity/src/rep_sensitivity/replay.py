@@ -46,8 +46,10 @@ def seed_for(trial, stage):
 def execute_requests(requests, model, ledger):
     out, pending = {}, []
     for request in requests:
-        key = ledger.key(request["prompt"], model.settings, request["trial"], request["stage"])
-        request = {**request, "request_hash": key, "seed": seed_for(request["trial"], request["stage"])}
+        effective_settings={**model.settings,'request_max_output_tokens':request.get('max_output_tokens',model.settings.get('max_output_tokens'))}
+        key = ledger.key(request["prompt"], effective_settings, request["trial"], request["stage"])
+        request = {**request, "request_hash": key, "effective_settings":effective_settings,
+                   "seed": seed_for(request["trial"], request["stage"])}
         saved = ledger.get(key)
         if saved is None: pending.append(request)
         else: out[(request["trial"]["trial_id"], request["stage"])] = saved
@@ -58,13 +60,14 @@ def execute_requests(requests, model, ledger):
         # A crash before acceptance can be retried on resume, explicitly journaled.
         try:
             responses = model.run(batch)
+            if len(responses)!=len(batch):raise RuntimeError('Model returned an incomplete response batch')
         except Exception as error:
             ledger.event("batch_failed", requests=[r["request_hash"] for r in batch], error=repr(error))
             raise
         for request, response in zip(batch, responses):
             saved = {"request_hash": request["request_hash"], "trial_id": request["trial"]["trial_id"],
                      "trial": request["trial"], "stage": request["stage"], "seed": request["seed"],
-                     "settings": model.settings, "prompt": request["prompt"], "response": response,
+                     "settings": request['effective_settings'], "prompt": request["prompt"], "response": response,
                      "accepted_utc": utcnow()}
             ledger.accept(request["request_hash"], saved)
             out[(saved["trial_id"], saved["stage"])] = saved
@@ -85,6 +88,7 @@ def run(config, alias, root="artifacts/runs", model=None):
     immutable_json(directory / "implementation.json",source)
     manifest, pairs, corpus = prepare(config, directory)
     inference={**config,**config.get('model_settings',{}).get(alias,{})}
+    loaded_here=model is None
     if model is None:
         model = LocalModel(alias, inference["max_context_tokens"], inference["max_output_tokens"],
                            inference["temperature"], inference["top_p"], inference["batch_size"], inference.get("guided_decoding",False),
@@ -97,7 +101,8 @@ def run(config, alias, root="artifacts/runs", model=None):
         if model.alias!=alias or any(model.settings[k]!=v for k,v in required.items()):
             raise ValueError('A reused engine must have exactly the requested inference settings')
     ledger = Ledger(directory / alias)
-    ledger.event("run_start", settings=model.settings, model_load_seconds=model.load_seconds)
+    ledger.event("run_start", settings=model.settings, model_load_seconds=model.load_seconds if loaded_here else 0,
+                 engine_reused=not loaded_here)
     trials = [t for t in manifest["trials"] if t["model"] == alias]
     # Keep a complete base cluster near each checkpoint; bounded-memory batches.
     pair_list=list(pairs.values())

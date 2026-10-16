@@ -16,6 +16,8 @@ case "${1:-pull}" in
     rsync -az -e "$transport" --exclude='*.partial' "$remote:$remote_dir/artifacts/runs/" artifacts/runs/
     # Local analyses and manuscript checks may be newer than the source snapshot
     # on a running pod. Do not replace these with older remote records.
-    rsync -auz -e "$transport" "$remote:$remote_dir/records/" records/ ;;
+    rsync -auz -e "$transport" "$remote:$remote_dir/records/" records/
+    rsync -auz -e "$transport" --include='frozen/' --include='frozen/***' --exclude='*' "$remote:$remote_dir/configs/" configs/
+    rsync -auz -e "$transport" "$remote:$remote_dir/results/" results/ ;;
   *) printf 'Usage: bash scripts/sync.sh push-source|pull\n' >&2; exit 2 ;;
 esac

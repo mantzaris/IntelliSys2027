@@ -22,6 +22,7 @@ class ModelFixture:
     prompts=[]
     def __init__(self,*args,**kwargs):
         self.tokenizer=TokenizerFixture();self.batch_size=32
+        self.load_seconds=0
         self.settings={'fixture':'unit-test-only'}
     def prepare(self,prompt):return prompt
     def run(self,requests):
@@ -53,7 +54,7 @@ class ControlExecutionTests(unittest.TestCase):
             with tempfile.TemporaryDirectory() as d:
                 os.chdir(d)
                 prepare(source,'source')
-                with patch('rep_sensitivity.supporting.LocalModel',ModelFixture),redirect_stdout(io.StringIO()):
+                with patch('rep_sensitivity.models.LocalModel',ModelFixture),redirect_stdout(io.StringIO()):
                     run_controls(config,'fixture')
                     count=ModelFixture.accepted
                     run_controls(config,'fixture')

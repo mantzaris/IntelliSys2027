@@ -95,20 +95,25 @@ def unique_clause_control(world,reports,split,arm,seed):
     if not eligible:return None,{'ineligible':'No clause of requested relevance in this world'}
     target=sorted(eligible,key=lambda r:r.identifier)[seed%len(eligible)]
     common=next(r for r in reports if r.identifier!=target.identifier and r.claim.task_identifier=='objective')
+    common_index=next(i for i,r in enumerate(reports) if r.identifier==common.identifier)
     high=arm.endswith('high')
     changed=[]
     for index,r in enumerate(reports):
         variant=0 if high else index%4
         text=render(r.claim,split,variant)
         if r.identifier==target.identifier:
-            text=render(common.claim,split,0 if high else 3)+' '+text
+            text=render(common.claim,split,0 if high else (common_index+1)%4)+' '+text
             r=replace(r,additional_claims=(common.claim,),parent_report_identifiers=(common.identifier,),operation_type='partial_overlap')
         changed.append(replace(r,text=text))
     assert semantic_inventory(changed)==semantic_inventory(reports)
+    target_text=next(r.text for r in changed if r.identifier==target.identifier)
+    anchor_text=next(r.text for r in changed if r.identifier==common.identifier)
     return changed,{'unique_scope':target.claim.key,'shared_scope':common.claim.key,
                     'counterfactual_flip_changes_answer':consequential,'reference_answer':baseline,
                     'decisive_harmless_family_entity_matched':bool(matching),
-                    'target_report':target.identifier,'shared_anchor':common.identifier}
+                    'target_report':target.identifier,'shared_anchor':common.identifier,
+                    'rendering_audit':{'target_anchor_character_similarity':SequenceMatcher(None,target_text,anchor_text).ratio(),
+                                       'target_characters':len(target_text),'anchor_characters':len(anchor_text)}}
 
 
 def superseded_reports(current,old):

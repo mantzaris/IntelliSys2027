@@ -184,3 +184,43 @@ an interpretation threshold requiring scientific review, not a sample-size or
 significance target. A wide or degenerate small-sample interval cannot establish
 acceptable loss. Main harmless-pair and supporting false-objection comparisons
 are reported even if scope-aware prompting improves another metric.
+
+## 2026-10-16: prospective resource allocation and unattended execution
+
+Before any validation or held-out model outcome, fix `configs/allocation-rule-v1.json`.
+Keep the requested 192-pair target unless measured validation extrapolates to more
+than 48 inference hours for the main replay on this GPU; use 96 if it does. This
+two-day planning heuristic is an implementation choice, not a user billing cap,
+and does not stop a frozen run early. Export precision estimates at both sizes and
+report any precision limitation. The primary scheduling population is half of
+these totals. Main execution requires completed validation and adequate ordinary
+primary-task performance for both families. Secondary workflow performance is
+reported separately, including limitations.
+
+The targeted held-out subset has 12 prespecified pairs: one consequential and one
+preserving case per family, with regular, tied and NONE preserving structures.
+Use one stochastic repetition for these exploratory controls, retaining both
+worlds. Bootstrap these small supporting populations by change class, pooling
+families within each task population; family-specific inference is unsupported.
+The main bootstrap remains stratified by family and change class. Live evaluation
+retains two repetitions and twelve new scheduling bases. Omit optional dose response.
+
+The sequential controller uses immutable code/configuration snapshots, checks
+qualification before validation, and freezes main, supporting and live protocols
+before the first held-out call. Model calls use only this pod. Completed calls and
+failures are never resampled for a better answer. Offline engine errors stop the
+controller with an explicit failure record. A failing gate is not silently relaxed.
+
+Live fixed-budget accounting now includes the root. Workers retain the baseline
+worker allowance; after their outputs are available, the root's output allowance
+is bounded by the remaining corresponding baseline trajectory allowance, including
+its input. A root that cannot fit is recorded as resource displacement without a
+fabricated model call or shortened input. Exact end-to-end accuracy and input-supported
+root success are separate: a lucky truth match on unresolved worker claims is not
+evidence of successful root integration. Worker access excludes jobs irrelevant to
+a single-resource assignment. Report ancestry comes from logged orchestration
+access; unsupported worker source citations are separately counted.
+
+Checkpoint publication is atomic and fsynced. Request hashes include per-call
+output allowances. Coarse GPU telemetry is integrated only over accepted batch
+windows, with sampling coverage reported; it is not a kernel-time measurement.
