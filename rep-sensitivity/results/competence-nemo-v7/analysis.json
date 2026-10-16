@@ -1,0 +1,281 @@
+{
+  "suite": "competence-nemo-v7",
+  "manifest_sha256": "d5a9e6812c11b0a526a2180f0226a19bf4df7b7188685ea01a3624a0a76ee421",
+  "planned_trajectories": 96,
+  "analyzed_trajectories": 96,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "dc508e4f43ec60df6afab968e377e1182e779568ae6e36e73a4e76dc61307d4c",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 39,
+      "accuracy": 0.8125,
+      "invalid_selection_rate": 0.041666666666666664,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.3125,
+      "calibration_denominator": 15,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 2,
+      "emitted_claim_denominator": 848,
+      "scope_transfer_count": 42,
+      "incompatible_scope_merge_count": 1,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.6175925925925926,
+      "mean_log_loss": 7.514753936070027,
+      "input_tokens_per_decision": 3668.5416666666665,
+      "output_tokens_per_decision": 922.9791666666666,
+      "allocated_seconds_per_decision": 2.346314235779573,
+      "tokens_per_correct": 5651.102564102564,
+      "summary_retention": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 41,
+      "accuracy": 0.8541666666666666,
+      "invalid_selection_rate": 0.0,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.10416666666666667,
+      "calibration_denominator": 5,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 0,
+      "emitted_claim_denominator": 565,
+      "scope_transfer_count": 37,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.0,
+      "mean_log_loss": 0.0,
+      "input_tokens_per_decision": 2851.3333333333335,
+      "output_tokens_per_decision": 669.3958333333334,
+      "allocated_seconds_per_decision": 2.3363524756229404,
+      "tokens_per_correct": 4121.829268292683,
+      "summary_retention": null
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "competence": [
+    {
+      "model": "nemo",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.8125,
+      "passes_85_percent": false
+    },
+    {
+      "model": "nemo",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.8541666666666666,
+      "passes_85_percent": true
+    }
+  ],
+  "paired_correctness": [
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 11,
+      "paired_accuracy": 0.9166666666666666
+    },
+    {
+      "kind": "schedule",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 4,
+      "paired_accuracy": 0.3333333333333333
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 10,
+      "paired_accuracy": 0.8333333333333334
+    },
+    {
+      "kind": "workflow",
+      "model": "nemo",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 10,
+      "paired_accuracy": 0.8333333333333334
+    }
+  ],
+  "confidence_changes": [],
+  "interval_caution": "A degenerate empirical bootstrap interval indicates no sampled variation in the contrast; it does not prove zero population effect.",
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null,
+    "claim_scoring_version": 2,
+    "claim_scoring_source_sha256": "76cf59d0b53de67f8f437aa7a03d79e48cd2161ea231b7082353f377fde16a26",
+    "dependencies": {
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.7"
+    }
+  }
+}

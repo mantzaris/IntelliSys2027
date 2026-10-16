@@ -15,8 +15,10 @@ from rep_sensitivity.metrics import parse, probability_metrics, score_assertions
 from rep_sensitivity.storage import Ledger, immutable_json
 from rep_sensitivity.replay import prepare, execute_requests
 from rep_sensitivity.analysis import bootstrap, repetition_values
-from rep_sensitivity.controls import corrupt_ancestry, semantic_inventory, lineage_edges, packaging, unique_clause_control, superseded_reports, decision_from_claims
-from rep_sensitivity.assignments import assign, access_view, coverage
+from rep_sensitivity.controls import corrupt_ancestry, semantic_inventory, lineage_edges, packaging, unique_clause_control, superseded_reports, decision_from_claims, place_near_reports
+from rep_sensitivity.assignments import assign, access_view, coverage,bind_executions
+from rep_sensitivity.information import possible_decisions
+from rep_sensitivity.planning import prospective_precision
 
 
 class IntegrityTests(unittest.TestCase):
@@ -100,6 +102,40 @@ class IntegrityTests(unittest.TestCase):
                 self.assertEqual({c.effective_time_or_version for r in admitted for c in r.claims()},{'1','2'})
         self.assertTrue(all(counts.values()))
 
+    def test_missing_evidence_does_not_leak_evaluator_truth(self):
+        p=generate_pair('development',0,2);w=p['worlds'][0]
+        rs=make_reports(w,'development',p['seed'])
+        self.assertEqual(possible_decisions(w,rs,rs),{oracle(w)['answer']})
+        possible=possible_decisions(w,rs,[])
+        self.assertEqual(possible,set(w['tie_order'])|{'NONE'})
+        # Changing evaluator values of missing scopes cannot change availability.
+        altered=[replace(r,claim=replace(r.claim,asserted_value=not r.claim.asserted_value))
+                 if type(r.claim.asserted_value) is bool else r for r in rs]
+        self.assertEqual(possible_decisions(w,altered,[]),possible)
+
+    def test_failed_criterion_still_applies_and_legacy_keys_survive(self):
+        p=generate_pair('development',0,2)
+        reports=make_reports(p['worlds'][0],'development',p['seed'])
+        failed=[r for r in reports if r.claim.asserted_value is False]
+        self.assertTrue(failed)
+        self.assertTrue(all(r.claim.applicability_condition=='always' for r in failed))
+        resource=next(r for r in failed if r.claim.task_identifier=='resource')
+        self.assertIn('peak_demand_at_most',resource.claim.predicate_parameters)
+        self.assertIn('Applicability: always',resource.text)
+        self.assertIn('Checked criterion:',resource.text)
+        old=Claim('resource','P','m','resource',False,'Boolean',
+                  'peak_demand <= capacity 1','current',identifier_format='descriptive_v4')
+        self.assertEqual(old.key,'P/resource/m/current/4ba4')
+        self.assertNotIn('predicate_parameters',old.scope())
+
+    def test_live_executions_are_distinct_across_repetitions(self):
+        w=generate_pair('live',0,2)['worlds'][0]
+        tasks=assign(w,'exact_overlap')
+        first=bind_executions(tasks,{'pair_id':'p','repetition':0})
+        second=bind_executions(tasks,{'pair_id':'p','repetition':1})
+        self.assertFalse({a.execution_identifier for a in first}&{a.execution_identifier for a in second})
+        self.assertEqual({a.source_identifier for a in first},{a.source_identifier for a in second})
+
     def test_determinism_split_separation(self):
         self.assertEqual(generate('development',24),generate('development',24))
         dev=generate('development',24); val=generate('validation',36)
@@ -151,6 +187,22 @@ class IntegrityTests(unittest.TestCase):
         self.assertEqual(len(graphs),5)
         self.assertFalse(any(b=='root' and a.startswith('r') for a,b in graphs['communication_access']))
 
+    def test_distinct_scopes_can_cross_branches_without_changing_information(self):
+        p=generate_pair('development',0,2);f=freeze(p)
+        rs=repeat(thaw(f['reports'][0]),f['selected'],'exact','development')
+        same,audit=place_near_reports(rs,p['seed'])
+        different,other=place_near_reports(rs,p['seed'],True)
+        self.assertEqual(audit['relevant_scope_keys'],other['relevant_scope_keys'])
+        self.assertEqual(len(set(audit['relevant_scope_keys'])),2)
+        first,second=audit['relevant_report_identifiers']
+        def owner(branches,rid):return next(i for i,b in enumerate(branches) if any(r.identifier==rid for r in b))
+        self.assertEqual(owner(same,first),owner(same,second))
+        self.assertNotEqual(owner(different,first),owner(different,second))
+        self.assertEqual(semantic_inventory(rs),semantic_inventory([r for b in different for r in b]))
+        for branch in different:
+            for r in branch:
+                for parent in r.parent_report_identifiers:self.assertIn(parent,[x.identifier for x in branch])
+
     def test_output_and_scope_metrics(self):
         obj,status=parse('{"choice":"C1","probabilities":{"C1":0.8,"NONE":0.2},"assertions":[],"unresolved":[]}', ['C1','NONE'])
         self.assertEqual(status,'valid')
@@ -158,6 +210,16 @@ class IntegrityTests(unittest.TestCase):
         self.assertEqual(parse('not json',['C1'])[1],'json')
         r=Report('r1',Claim('t','C1','m','p',True,'Boolean'),'text')
         self.assertEqual(score_assertions({'assertions':[[r.claim.key,False,['r1']]]},[r])['retained_count'],0)
+
+    def test_numeric_equivalence_and_incompatible_scope_merge(self):
+        a=Report('a',Claim('objective','C1','all','objective',4,'time_units'),'text')
+        b=Report('b',Claim('objective','C2','all','objective',4,'time_units'),'text')
+        obj={'assertions':[[a.claim.key,4.0,['a','b']]]}
+        score=score_assertions(obj,[a,b])
+        self.assertEqual(score['retained_count'],1)
+        self.assertEqual(score['incompatible_scope_merge_count'],1)
+        boolean=Report('c',Claim('resource','C1','m','resource',True,'Boolean'),'text')
+        self.assertEqual(score_assertions({'assertions':[[boolean.claim.key,1,['c']]]},[boolean])['retained_count'],0)
 
     def test_immutable_cache_and_repetitions(self):
         with tempfile.TemporaryDirectory() as d:
@@ -199,6 +261,17 @@ class IntegrityTests(unittest.TestCase):
         res=bootstrap(h,{p:('family',True) for p in h},replicates=100)
         self.assertEqual((res['estimate'],res['lower'],res['upper'],res['clusters']),(1,1,1,3))
         self.assertEqual(repetition_values(rows*10,interaction=True),h)
+
+    def test_precision_accounts_for_change_control_group_sizes(self):
+        strata={};values={}
+        for family in ('numeric','identity','dependency'):
+            for changed in (False,True):
+                for i in (0,1):
+                    pid=(family,changed,i);strata[pid]=(family,changed);values[pid]=float(i)
+        simple=prospective_precision(values,strata,48)
+        interaction=prospective_precision(values,strata,48,True)
+        self.assertAlmostEqual(interaction['standard_error_approximation'],2*simple['standard_error_approximation'])
+        self.assertFalse(prospective_precision({p:0.0 for p in values},strata,48)['precision_identified'])
 
     def test_partial_overlap_and_real_lineage_corruption(self):
         p=generate_pair('development',0); f=freeze(p)

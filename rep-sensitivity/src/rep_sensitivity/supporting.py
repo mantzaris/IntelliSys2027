@@ -2,7 +2,7 @@
 from dataclasses import asdict
 from pathlib import Path
 import json
-from .controls import packaging,corrupt_ancestry,dedup_audit,neutral_report_control,unique_clause_control,superseded_reports
+from .controls import packaging,corrupt_ancestry,dedup_audit,neutral_report_control,unique_clause_control,superseded_reports,place_near_reports
 from .generation import oracle
 from .graphs import partition
 from .metrics import parse,score_root,score_assertions
@@ -12,10 +12,11 @@ from .reports import thaw,repeat,registry,deduplicate,corrupt_report,ancestry_re
 from .schema import canonical,digest
 from .storage import immutable_json,Ledger
 from .replay import execute_requests
+from .information import possible_decisions
 
 
 def run_controls(config,alias):
-    if config.get('status') not in ('frozen','development_controls') or config.get('interface_version')!=5:
+    if config.get('status') not in ('frozen','development_controls') or config.get('interface_version')!=7:
         raise ValueError('Supporting protocol must be frozen before held-out outcomes')
     source=Path(config['source_corpus'])
     pairs=json.loads((source/'pairs.json').read_text())
@@ -25,9 +26,13 @@ def run_controls(config,alias):
         raise ValueError('Development controls may not use held-out instances')
     directory=Path('artifacts/runs')/config['name'];ledger=Ledger(directory/alias)
     immutable_json(directory/'config.json',config)
-    model=LocalModel(alias,config['max_context_tokens'],config['max_output_tokens'],
-                     config['temperature'],config['top_p'],config['batch_size'],True)
+    immutable_json(directory/'implementation.json',{p.name:p.read_text() for p in Path(__file__).parent.glob('*.py')})
+    inference={**config,**config.get('model_settings',{}).get(alias,{})}
+    model=LocalModel(alias,inference['max_context_tokens'],inference['max_output_tokens'],
+                     inference['temperature'],inference['top_p'],inference['batch_size'],True,
+                     enforce_eager=inference.get('enforce_eager',True),gpu_memory_utilization=inference.get('gpu_memory_utilization',0.85))
     for pair in pairs:
+        jobs=[]
         for wi in (0,1):
             world=pair['worlds'][wi];original=thaw(corpus[pair['pair_id']]['reports'][wi])
             selected=corpus[pair['pair_id']]['selected']
@@ -38,7 +43,7 @@ def run_controls(config,alias):
                                'contrast':contrast,'arm':arm,'repetition':repetition}
                         trial['trial_id']=digest(trial)[:24]
                         rs=list(original);policy='ordinary';ancestry=True;extra=None;audit={};task_context=''
-                        if contrast in ('deduplication','branch_placement','access','call_count','ancestry','instruction','length'):
+                        if contrast in ('deduplication','branch_placement','copy_branch_placement','access','call_count','ancestry','instruction','length'):
                             rs=repeat(rs,selected,'exact',pair['split'])
                         if contrast=='packaging': rs,audit=packaging(rs,pair['split'],arm,model.tokenizer)
                         if contrast=='unique_clause':
@@ -75,8 +80,9 @@ def run_controls(config,alias):
                         if contrast=='dose':rs=repeat(rs,selected,'exact',pair['split'],{'one':1,'two':2,'four':4,'eight':8}[arm])
                         if contrast=='corruption':
                             extra=world
-                            if arm!='all_correct_with_world':
-                                wanted=arm=='false_objection_with_world'
+                            policy,corruption_case=arm.split('_',1)
+                            if corruption_case!='all_correct_with_world':
+                                wanted=corruption_case=='false_objection_with_world'
                                 eligible=[r for r in rs if type(r.claim.asserted_value) is bool and r.claim.asserted_value==wanted]
                                 if not eligible:
                                     ledger.event('control_ineligible',trial=trial,reason='No report with required truth polarity');continue
@@ -84,48 +90,80 @@ def run_controls(config,alias):
                                 audit={'injected_scope':target.claim.key,'true_value':wanted}
                                 rs=corrupt_report(rs,target.identifier)
                         # Controls focus on the summary boundary, with a flat dose supplement.
-                        branches=partition(rs,pair['seed'],spread_copies=arm=='different_branch')
+                        branches=partition(rs,pair['seed'],spread_copies=contrast=='copy_branch_placement' and arm=='different_branch')
+                        if contrast=='branch_placement':
+                            branches,placement=place_near_reports(rs,pair['seed'],arm=='different_branch')
+                            audit.update(placement)
                         if arm=='global_reviewers':branches=[rs,rs]
-                        calls={};summaries=[]
-                        if contrast!='dose':
-                            requests=[{'trial':trial,'stage':'manager'+str(i),
-                                       'prompt':task_context+make_prompt(world,b,policy,role='manager',ancestry=ancestry,extra_evidence=extra)} for i,b in enumerate(branches)]
-                            calls=execute_requests(requests,model,ledger)
-                            for i in range(2):
-                                raw=calls[(trial['trial_id'],'manager'+str(i))]['response']
-                                obj,status=parse(raw['text'],world['tie_order']+['NONE'],manager=True)
-                                if raw['finish_reason']=='length':obj=None;status='truncated'
-                                summaries.append({'manager':i,'summary':obj if obj else raw['text'],'parse_status':status})
-                        root_reports=rs if contrast=='dose' or arm=='summaries_and_reports' else []
-                        prompt=task_context+make_prompt(world,root_reports,policy,summaries=summaries or None,
-                                           ancestry=ancestry,public_registry=registry(rs if contrast=='version_admission' else original),extra_evidence=extra,
-                                           public_ancestry=ancestry_registry(rs) if config.get('root_ancestry_registry',False) else None)
-                        calls.update(execute_requests([{'trial':trial,'stage':'root','prompt':prompt}],model,ledger))
-                        raw=calls[(trial['trial_id'],'root')]['response']
-                        score=score_root(raw,world,pair['evaluation']['oracle'][wi],original)
-                        if any(s['parse_status']!='valid' for s in summaries):score['correct']=False;score['operational_failure']=True
-                        obj,_=parse(raw['text'],world['tie_order']+['NONE'])
-                        if contrast=='corruption' and 'injected_scope' in audit:
-                            score['false_assertion_adopted']=any(k==audit['injected_scope'] and v!=audit['true_value'] for k,v,refs in obj['assertions']) if obj else False
-                        if contrast=='unique_clause':
-                            key=audit['unique_scope']
-                            truth=next(c.asserted_value for r in rs for c in r.claims() if c.key==key)
-                            retained=[any(k==key and type(v)==type(truth) and v==truth for k,v,refs in s['summary']['assertions'])
-                                      for s in summaries if isinstance(s['summary'],dict)]
-                            score['unique_clause_retained']=any(retained)
-                            score['unique_clause_denominator']=1
-                        if contrast=='version_admission':
-                            score['superseded_assertions_emitted']=sum(k in audit['superseded_scopes'] for k,v,refs in obj['assertions']) if obj else 0
-                            # Emitting a historical claim is not necessarily adopting it for a decision.
-                            old_choice=pair['evaluation']['oracle'][1-wi]['answer']
-                            score['choice_matches_superseded_when_distinct']=(score['choice']==old_choice) if old_choice!=pair['evaluation']['oracle'][wi]['answer'] else None
-                        result={**trial,**score,'kind':pair['evaluation']['kind'],'family':pair['evaluation']['family'],
-                                'decision_changed':pair['evaluation']['decision_changed'],'audit':audit,
-                                'summary_scores':[{**score_assertions(s['summary'] if isinstance(s['summary'],dict) else None,b),
-                                                   'parse_status':s['parse_status']} for s,b in zip(summaries,branches)],
-                                'delivered_reports':len(rs),'retained_distinct_scopes':len(registry(rs)),
-                                'input_tokens':sum(c['response']['input_tokens'] for c in calls.values()),
-                                'output_tokens':sum(c['response']['output_tokens'] for c in calls.values()),
-                                'inference_seconds_allocated':sum(c['response']['allocated_inference_seconds'] for c in calls.values()),
-                                'request_hashes':[c['request_hash'] for c in calls.values()]}
-                        immutable_json(directory/alias/'scores'/(trial['trial_id']+'.json'),result)
+                        jobs.append({'trial':trial,'world':world,'wi':wi,'original':original,'rs':rs,
+                                     'contrast':contrast,'arm':arm,'policy':policy,'ancestry':ancestry,
+                                     'extra':extra,'audit':audit,'task_context':task_context,'branches':branches})
+        requests=[]
+        immutable_json(directory/alias/'manifests'/(pair['pair_id']+'.json'),
+                       {'trials':[j['trial'] for j in jobs],
+                        'trajectories':len(jobs),'calls':sum(1 if j['contrast']=='dose' else 3 for j in jobs)})
+        for j in jobs:
+            if j['contrast']=='dose':continue
+            requests.extend({'trial':j['trial'],'stage':'manager'+str(i),
+                             'prompt':j['task_context']+make_prompt(j['world'],b,j['policy'],role='manager',
+                                       ancestry=j['ancestry'],extra_evidence=j['extra'])}
+                            for i,b in enumerate(j['branches']))
+        all_calls=execute_requests(requests,model,ledger)
+        roots=[]
+        for j in jobs:
+            summaries=[]
+            if j['contrast']!='dose':
+                for i in range(2):
+                    raw=all_calls[(j['trial']['trial_id'],'manager'+str(i))]['response']
+                    obj,status=parse(raw['text'],j['world']['tie_order']+['NONE'],manager=True)
+                    if raw['finish_reason']=='length':obj=None;status='truncated'
+                    summaries.append({'manager':i,'summary':obj if obj else raw['text'],'parse_status':status})
+            j['summaries']=summaries
+            root_reports=j['rs'] if j['contrast']=='dose' or j['arm']=='summaries_and_reports' else []
+            prompt=j['task_context']+make_prompt(j['world'],root_reports,j['policy'],summaries=summaries or None,
+                     ancestry=j['ancestry'],public_registry=registry(j['rs'] if j['contrast']=='version_admission' else j['original']),
+                     extra_evidence=j['extra'],public_ancestry=ancestry_registry(j['rs']) if config.get('root_ancestry_registry',False) else None)
+            roots.append({'trial':j['trial'],'stage':'root','prompt':prompt})
+        all_calls.update(execute_requests(roots,model,ledger))
+        for j in jobs:
+            trial,world,wi,original,rs,contrast,arm,policy,ancestry,extra,audit,task_context,branches,summaries=(
+                j[k] for k in ('trial','world','wi','original','rs','contrast','arm','policy','ancestry','extra','audit','task_context','branches','summaries'))
+            calls={key:value for key,value in all_calls.items() if key[0]==trial['trial_id']}
+            raw=calls[(trial['trial_id'],'root')]['response']
+            score=score_root(raw,world,pair['evaluation']['oracle'][wi],original)
+            if contrast=='deduplication':
+                possible=possible_decisions(world,original,rs)
+                score['information_available_for_unique_answer']=len(possible)==1
+                score['possible_answers_after_admission']=sorted(possible)
+                score['epistemically_appropriate_choice']=score['choice']==(next(iter(possible)) if len(possible)==1 else 'INSUFFICIENT')
+            if any(s['parse_status']!='valid' for s in summaries):score['correct']=False;score['operational_failure']=True
+            obj,_=parse(raw['text'],world['tie_order']+['NONE'])
+            if raw['finish_reason']=='length':obj=None
+            if contrast=='corruption' and 'injected_scope' in audit:
+                score['false_assertion_adopted']=any(k==audit['injected_scope'] and type(v) is bool and v== (not audit['true_value']) for k,v,refs in obj['assertions']) if obj else None
+            if contrast=='unique_clause':
+                key=audit['unique_scope']
+                truth=next(c.asserted_value for r in rs for c in r.claims() if c.key==key)
+                retained=[any(k==key and type(v)==type(truth) and v==truth for k,v,refs in s['summary']['assertions'])
+                          for s in summaries if isinstance(s['summary'],dict)]
+                score['unique_clause_retained']=any(retained)
+                score['unique_clause_denominator']=1
+            if contrast=='version_admission':
+                score['superseded_assertions_emitted']=sum(k in audit['superseded_scopes'] for k,v,refs in obj['assertions']) if obj else None
+                # Emitting a historical claim is not necessarily adopting it for a decision.
+                old_choice=pair['evaluation']['oracle'][1-wi]['answer']
+                score['choice_matches_superseded_when_distinct']=(score['choice']==old_choice) if obj and old_choice!=pair['evaluation']['oracle'][wi]['answer'] else None
+                score['superseded_choice_with_historical_assertion']=(score['choice_matches_superseded_when_distinct'] and score['superseded_assertions_emitted']>0) if score['choice_matches_superseded_when_distinct'] is not None else None
+            result={**trial,**score,'kind':pair['evaluation']['kind'],'family':pair['evaluation']['family'],
+                    'decision_changed':pair['evaluation']['decision_changed'],'audit':audit,
+                    'summary_scores':[{**score_assertions(s['summary'] if isinstance(s['summary'],dict) else None,b),
+                                       'parse_status':s['parse_status']} for s,b in zip(summaries,branches)],
+                    'delivered_reports':len(rs),'retained_distinct_scopes':len(registry(rs)),
+                    'input_tokens':sum(c['response']['input_tokens'] for c in calls.values()),
+                    'output_tokens':sum(c['response']['output_tokens'] for c in calls.values()),
+                    'inference_seconds_allocated':sum(c['response']['allocated_inference_seconds'] for c in calls.values()),
+                    'request_hashes':[c['request_hash'] for c in calls.values()]}
+            immutable_json(directory/alias/'scores'/(trial['trial_id']+'.json'),result)
+        ledger.event('control_cluster_complete',pair_id=pair['pair_id'],trajectories=len(jobs))
+    ledger.event('run_complete',base_pairs=len(pairs))
+    ledger.close()

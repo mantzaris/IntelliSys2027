@@ -20,6 +20,13 @@
       "invalid_selection_rate": 0.3333333333333333,
       "operational_failure_rate": 0.0,
       "valid_probability_rate": 0.9583333333333334,
+      "calibration_denominator": 46,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 16,
+      "emitted_claim_denominator": 849,
+      "scope_transfer_count": 11,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 3,
       "mean_brier": 0.855072463768116,
       "mean_log_loss": 10.931553076740313,
       "input_tokens_per_decision": 2737.0833333333335,
@@ -41,6 +48,13 @@
       "invalid_selection_rate": 0.25,
       "operational_failure_rate": 0.0,
       "valid_probability_rate": 1.0,
+      "calibration_denominator": 48,
+      "candidate_selection_denominator": 48,
+      "invalid_selected_candidates": 12,
+      "emitted_claim_denominator": 560,
+      "scope_transfer_count": 26,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 5,
       "mean_brier": 0.736125013888889,
       "mean_log_loss": 9.831783001009482,
       "input_tokens_per_decision": 2170.0,
@@ -58,7 +72,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "schedule",
@@ -67,7 +83,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "schedule",
@@ -76,7 +94,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "schedule",
@@ -85,7 +105,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "schedule",
@@ -94,7 +116,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "schedule",
@@ -103,7 +127,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -112,7 +138,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -121,7 +149,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -130,7 +160,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -139,7 +171,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -148,7 +182,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     },
     {
       "kind": "workflow",
@@ -157,7 +193,9 @@
       "estimate": null,
       "lower": null,
       "upper": null,
-      "clusters": 0
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
     }
   ],
   "competence": [
@@ -176,11 +214,65 @@
       "passes_85_percent": false
     }
   ],
+  "paired_correctness": [
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 8,
+      "paired_accuracy": 0.6666666666666666
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 0,
+      "paired_accuracy": 0.0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": false,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 8,
+      "paired_accuracy": 0.6666666666666666
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 12,
+      "clusters": 6,
+      "both_worlds_correct": 0,
+      "paired_accuracy": 0.0
+    }
+  ],
+  "confidence_changes": [],
+  "interval_caution": "A degenerate empirical bootstrap interval indicates no sampled variation in the contrast; it does not prove zero population effect.",
   "analysis_settings": {
     "bootstrap_replicates": 10000,
     "seed": 20271015,
     "cluster": "base_pair",
     "p_values": null,
+    "claim_scoring_version": 2,
+    "claim_scoring_source_sha256": "76cf59d0b53de67f8f437aa7a03d79e48cd2161ea231b7082353f377fde16a26",
     "dependencies": {
       "numpy": "2.2.6",
       "matplotlib": "3.10.7"

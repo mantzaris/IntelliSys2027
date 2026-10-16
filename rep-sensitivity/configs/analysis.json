@@ -32,8 +32,14 @@
     "cost_per_correct": "total measured cost including malformed outputs and retries divided by correct decisions"
   },
   "log_loss_floor": 1e-12,
+  "H4_guardrails": {
+    "comparisons": ["scope minus checklist decision error on decision-preserving main pairs", "scope minus checklist decision error on resolvable false objections"],
+    "provisional_practical_error_margin": 0.05,
+    "interpretation": "Report paired estimates and intervals. Do not claim acceptable loss when the upper interval exceeds the margin, or when small-sample/degenerate uncertainty cannot support that inference. Human review must assess the practical margin; small supporting controls may remain inconclusive."
+  },
   "stopping": "freeze sample size from validation before held-out inference; no outcome-based early stopping",
   "competence_gate": "at least 85% exact accuracy on development flat-single ordinary trajectories, operational failures included; otherwise report task limitation and revise only development protocol",
   "precision": "report pilot cluster discordance and SD; prospective half-width 1.96*SD/sqrt(N) is an approximation, not power",
+  "degenerate_interval": "Explicitly flag collapsed empirical bootstrap intervals; absence of observed variation is not proof of zero population effect or a reliable prospective precision estimate.",
   "mediation": "summary-retention associations exploratory; bypass is an intervention, not evidence of faithful hidden reasoning"
 }

@@ -142,14 +142,19 @@ The full workflow is incomplete until held-out inference, supporting controls,
 live evaluation, analysis regeneration, manuscript compilation and human scientific
 review are complete. No submission or claim of human review is authorized.
 
-## Current development interface (v5)
+## Current development interface (v7)
 
 See `DECISIONS.md` for preserved v1–v4 failures and revisions. The current common
 contract uses descriptive scope identifiers, schema-guided JSON, and a short
 model-generated feasibility/objective assessment before final selection. This
 scaffolds ordinary synthesis too, narrowing its difference from the checklist.
-Qwen3 uses its native non-thinking template. The v5 pilot gives every root the
+Qwen3 uses its native non-thinking template. The v7 pilot gives every root the
 same value-free orchestration ancestry registry; raw texts and assertion values
 still cross the boundary only in managers’ summaries. Benchmark v2 fixes harmless
 numeric controls to the matched capacity 1↔2 change. Run manifests, rather than
 the historical initial settings above, specify the actual engine and caps.
+
+Predicate criteria are separate from report applicability in v7. The final adapter
+uses native token IDs and records a fixed template date. Historical Mistral checks
+with extra BOS tokens are interface diagnostics; exact settings and corrections
+are in `DECISIONS.md` and `records/models/*-tokenizer-audit.json`.

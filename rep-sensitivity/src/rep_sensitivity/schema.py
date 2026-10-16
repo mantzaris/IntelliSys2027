@@ -55,14 +55,19 @@ class Claim:
     verification_execution_identifier: str = ""
     operation_type: str = "verification"
     identifier_format: str = "opaque_v1"
+    predicate_parameters: dict[str, Any] = field(default_factory=dict)
 
     def scope(self) -> dict:
         excluded = {"asserted_value", "source_identifiers", "parent_report_identifiers",
                     "verification_execution_identifier", "operation_type", "identifier_format"}
-        return {k: v for k, v in asdict(self).items() if k not in excluded}
+        return {k: v for k, v in asdict(self).items() if k not in excluded and
+                not (k=='predicate_parameters' and not v)}
 
     @property
     def key(self) -> str:
+        if self.identifier_format == "descriptive_v7":
+            return "/".join([self.candidate_identifier,self.predicate_identifier,self.entity_identifier,
+                             self.effective_time_or_version,digest([self.applicability_condition,self.units,self.predicate_parameters])[:8]])
         if self.identifier_format == "descriptive_v4":
             return "/".join([self.candidate_identifier,self.predicate_identifier,self.entity_identifier,
                              self.effective_time_or_version,digest([self.applicability_condition,self.units])[:4]])

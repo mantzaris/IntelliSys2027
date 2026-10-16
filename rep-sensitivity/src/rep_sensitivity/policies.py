@@ -1,6 +1,7 @@
 """Common information/output contract; policies differ only in instructions."""
 from .schema import canonical
 from .reports import registry
+from copy import deepcopy
 
 POLICIES = {
     "ordinary": "Synthesize the supplied reports and make the required decision. Emit the explicit findings supporting your synthesis.",
@@ -38,6 +39,13 @@ OUTPUT_SCHEMA = {
     }, "required": ["assertions", "unresolved", "candidate_assessments", "choice", "probabilities"]
 }
 
+# The same fields have role-appropriate types, fixed for every aggregation policy.
+# These constraints contain no finding values or choice labels.
+MANAGER_OUTPUT_SCHEMA=deepcopy(OUTPUT_SCHEMA)
+MANAGER_OUTPUT_SCHEMA['properties']['choice']={'type':'null'}
+MANAGER_OUTPUT_SCHEMA['properties']['probabilities']={'type':'object','maxProperties':0}
+MANAGER_OUTPUT_SCHEMA['properties']['candidate_assessments']={'type':'array','maxItems':0}
+
 
 def task_header(world):
     metric = "makespan (maximum completion time)" if world["kind"] == "schedule" else "cost"
@@ -56,7 +64,8 @@ def make_prompt(world, reports, policy, role="root", summaries=None, ancestry=Tr
     reg = public_registry if public_registry is not None else registry(reports)
     instructions = task_header(world) + "\n" + POLICIES[policy] + "\n" + CONTRACT
     if role == "manager":
-        instructions += "\nYou are an intermediate manager. Summarize only the received findings; do not choose a final candidate. The root will see your summary and the scope registry, not the raw reports."
+        instructions = ("Your role is intermediate manager: summarize only the received findings. The decision rule below is for the root.\n"+
+                        instructions+"\nDo not choose a final candidate or assess whole-candidate feasibility. Use candidate_assessments=[], choice=null, probabilities={}. The root will see your summary and the scope registry, not the raw reports.")
     payload = {"scope_registry": reg, "reports": [r.visible(ancestry) for r in reports]}
     if summaries is not None: payload["intermediate_summaries"] = summaries
     if ancestry and public_ancestry is not None: payload["report_ancestry_registry"] = public_ancestry

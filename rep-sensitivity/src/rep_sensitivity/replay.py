@@ -73,9 +73,10 @@ def execute_requests(requests, model, ledger):
     return out
 
 
-def run(config, alias, root="artifacts/runs"):
-    if config.get("interface_version") != 5:
-        raise ValueError("Archived v1-v4 protocols require their recorded implementation, not the current v5 output contract")
+def run(config, alias, root="artifacts/runs", model=None):
+    if alias not in config['models']:raise ValueError('Model is not part of this run manifest')
+    if config.get("interface_version") != 7:
+        raise ValueError("Archived v1-v6 protocols require their recorded implementation, not the v7 criterion/applicability schema")
     if config.get("freeze_required") or config.get("status", "").startswith("PROVISIONAL"):
         raise ValueError("Held-out protocol is not frozen; execution blocked")
     from .models import LocalModel
@@ -83,9 +84,18 @@ def run(config, alias, root="artifacts/runs"):
     source={p.name:p.read_text() for p in Path(__file__).parent.glob("*.py")}
     immutable_json(directory / "implementation.json",source)
     manifest, pairs, corpus = prepare(config, directory)
-    model = LocalModel(alias, config["max_context_tokens"], config["max_output_tokens"],
-                       config["temperature"], config["top_p"], config["batch_size"], config.get("guided_decoding",False),
-                       enforce_eager=config.get('enforce_eager',True),gpu_memory_utilization=config.get('gpu_memory_utilization',0.85))
+    inference={**config,**config.get('model_settings',{}).get(alias,{})}
+    if model is None:
+        model = LocalModel(alias, inference["max_context_tokens"], inference["max_output_tokens"],
+                           inference["temperature"], inference["top_p"], inference["batch_size"], inference.get("guided_decoding",False),
+                           enforce_eager=inference.get('enforce_eager',True),gpu_memory_utilization=inference.get('gpu_memory_utilization',0.85))
+    else:
+        required={'max_model_len':inference['max_context_tokens'],'max_output_tokens':inference['max_output_tokens'],
+                  'temperature':inference['temperature'],'top_p':inference['top_p'],'batch_size':inference['batch_size'],
+                  'guided_decoding':inference.get('guided_decoding',False),'enforce_eager':inference.get('enforce_eager',True),
+                  'gpu_memory_utilization':inference.get('gpu_memory_utilization',0.85)}
+        if model.alias!=alias or any(model.settings[k]!=v for k,v in required.items()):
+            raise ValueError('A reused engine must have exactly the requested inference settings')
     ledger = Ledger(directory / alias)
     ledger.event("run_start", settings=model.settings, model_load_seconds=model.load_seconds)
     trials = [t for t in manifest["trials"] if t["model"] == alias]
@@ -158,3 +168,5 @@ def run(config, alias, root="artifacts/runs"):
             ledger.event("cluster_complete", pair_id=p["pair_id"], trajectories=len(cluster_rows))
             print(canonical({"cluster_complete": p["pair_id"], "trajectories": len(cluster_rows)}), flush=True)
     ledger.event("run_complete", trajectories=len(trials))
+    ledger.close()
+    return model

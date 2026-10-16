@@ -1,0 +1,23 @@
+{
+  "suite": "competence-nemo-benchmark2-v6",
+  "planned_trajectories": 96,
+  "planned_calls": 96,
+  "models": {
+    "nemo": {
+      "accepted_calls": 0,
+      "unique_request_hashes": 0,
+      "started_without_accepted": 32,
+      "complete_clusters": 0,
+      "run_complete": false,
+      "finish_reasons": {},
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "measured_inference_wall_seconds": 0,
+      "amortized_output_tokens_per_second": null,
+      "mean_input_tokens": null,
+      "mean_output_tokens": null,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  }
+}

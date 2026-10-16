@@ -1,0 +1,25 @@
+{
+  "suite": "competence-mistral-v5",
+  "planned_trajectories": 96,
+  "planned_calls": 96,
+  "models": {
+    "mistral": {
+      "accepted_calls": 96,
+      "unique_request_hashes": 96,
+      "started_without_accepted": 0,
+      "complete_clusters": 24,
+      "run_complete": true,
+      "finish_reasons": {
+        "stop": 96
+      },
+      "input_tokens": 314312,
+      "output_tokens": 37229,
+      "measured_inference_wall_seconds": 159.92673531314358,
+      "amortized_output_tokens_per_second": 232.78784455334488,
+      "mean_input_tokens": 3274.0833333333335,
+      "mean_output_tokens": 387.8020833333333,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "c117c9abd8720172309900429b5d13069c9b0882d5fdd94284122f3b9589cad5"
+    }
+  }
+}

@@ -7,7 +7,7 @@ from .verification import verify, reference_verify
 from .workflow import verify_workflow
 
 MUTATIONS = ("numeric", "identity", "dependency", "quantifier", "condition", "version")
-SPLITS = {"development": 101, "validation": 202, "heldout": 303, "live": 404}
+SPLITS = {"development": 101, "validation": 202, "heldout": 303, "live": 404, "live_development":505}
 
 
 def oracle(world: dict) -> dict:
@@ -31,6 +31,7 @@ def field_changes(a, b, path="") -> list[dict]:
 
 
 def schedule_pair(rng: random.Random, family: str, consequential: bool, split: str, index: int, benchmark_version=1):
+    if split=='live_development':split='live'
     n = rng.choice({"development": [4, 5], "validation": [5, 6], "heldout": [6, 7, 8], "live": [4, 6, 8]}[split])
     d = rng.choice({"development": [2, 3], "validation": [4, 5], "heldout": [3, 5, 7], "live": [2, 4, 6]}[split])
     offset = rng.randrange(3)

@@ -1,6 +1,6 @@
 {
-  "name": "supporting-provisional-v5",
-  "interface_version": 5,
+  "name": "supporting-provisional-v7",
+  "interface_version": 7,
   "status": "PROVISIONAL_DO_NOT_EXECUTE",
   "source_corpus": "artifacts/runs/main-frozen",
   "pair_indices": [
@@ -24,6 +24,7 @@
   "temperature": 0.3,
   "top_p": 0.95,
   "batch_size": 16,
+  "model_settings": {"mistral24": {"temperature": 0.15}},
   "contrasts": {
     "packaging": [
       "low_overlap",
@@ -35,6 +36,10 @@
       "scope_consolidation"
     ],
     "branch_placement": [
+      "same_branch",
+      "different_branch"
+    ],
+    "copy_branch_placement": [
       "same_branch",
       "different_branch"
     ],
@@ -60,9 +65,15 @@
       "scope_without_ancestry"
     ],
     "corruption": [
-      "all_correct_with_world",
-      "false_favorable_with_world",
-      "false_objection_with_world"
+      "ordinary_all_correct_with_world",
+      "ordinary_false_favorable_with_world",
+      "ordinary_false_objection_with_world",
+      "checklist_all_correct_with_world",
+      "checklist_false_favorable_with_world",
+      "checklist_false_objection_with_world",
+      "scope_all_correct_with_world",
+      "scope_false_favorable_with_world",
+      "scope_false_objection_with_world"
     ],
     "unique_clause": [
       "decisive_high",

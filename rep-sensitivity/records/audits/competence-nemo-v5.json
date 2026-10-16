@@ -1,0 +1,25 @@
+{
+  "suite": "competence-nemo-v5",
+  "planned_trajectories": 96,
+  "planned_calls": 96,
+  "models": {
+    "nemo": {
+      "accepted_calls": 96,
+      "unique_request_hashes": 96,
+      "started_without_accepted": 0,
+      "complete_clusters": 24,
+      "run_complete": true,
+      "finish_reasons": {
+        "stop": 96
+      },
+      "input_tokens": 288416,
+      "output_tokens": 70096,
+      "measured_inference_wall_seconds": 289.4523256700486,
+      "amortized_output_tokens_per_second": 242.1676862942313,
+      "mean_input_tokens": 3004.3333333333335,
+      "mean_output_tokens": 730.1666666666666,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "45353f10425b0e985bd4a09c2f985dd9fb952fe8686f248b9a0d996b753d1385"
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "suite": "summary-smoke-qwen3-v7",
+  "manifest_sha256": "7aff8b9bba61ed0a81a57a82582b99cc34a0e02b60dd4c44c349285a55cc8618",
+  "planned_trajectories": 12,
+  "analyzed_trajectories": 12,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "acda328dcf4311e004314e60416791ee543a982390352307015ad831494f9635",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "organization": "hierarchical",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 6,
+      "clusters": 3,
+      "correct": 5,
+      "accuracy": 0.8333333333333334,
+      "invalid_selection_rate": 0.16666666666666666,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 1.0,
+      "calibration_denominator": 6,
+      "candidate_selection_denominator": 6,
+      "invalid_selected_candidates": 1,
+      "emitted_claim_denominator": 108,
+      "scope_transfer_count": 0,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.3333333333333333,
+      "mean_log_loss": 4.605170185988091,
+      "input_tokens_per_decision": 7184.5,
+      "output_tokens_per_decision": 1832.0,
+      "allocated_seconds_per_decision": 7.338617036856399,
+      "tokens_per_correct": 10819.8,
+      "changed_scope_retention_on_consequential_pairs": 1.0,
+      "summary_retention": 0.9722222222222222
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "organization": "hierarchical",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 6,
+      "clusters": 3,
+      "correct": 6,
+      "accuracy": 1.0,
+      "invalid_selection_rate": 0.0,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 1.0,
+      "calibration_denominator": 6,
+      "candidate_selection_denominator": 6,
+      "invalid_selected_candidates": 0,
+      "emitted_claim_denominator": 72,
+      "scope_transfer_count": 2,
+      "incompatible_scope_merge_count": 0,
+      "unconsolidated_equivalent_count": 0,
+      "mean_brier": 0.0,
+      "mean_log_loss": 0.0,
+      "input_tokens_per_decision": 5628.666666666667,
+      "output_tokens_per_decision": 1118.1666666666667,
+      "allocated_seconds_per_decision": 7.338617036856399,
+      "tokens_per_correct": 6746.833333333333,
+      "changed_scope_retention_on_consequential_pairs": 1.0,
+      "summary_retention": 1.0
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "competence": [
+    {
+      "model": "qwen3",
+      "kind": "schedule",
+      "n": 0,
+      "accuracy": null,
+      "passes_85_percent": null
+    },
+    {
+      "model": "qwen3",
+      "kind": "workflow",
+      "n": 0,
+      "accuracy": null,
+      "passes_85_percent": null
+    }
+  ],
+  "paired_correctness": [
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "organization": "hierarchical",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 3,
+      "clusters": 3,
+      "both_worlds_correct": 2,
+      "paired_accuracy": 0.6666666666666666
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "organization": "hierarchical",
+      "policy": "ordinary",
+      "condition": "single",
+      "decision_changed": true,
+      "paired_cells": 3,
+      "clusters": 3,
+      "both_worlds_correct": 3,
+      "paired_accuracy": 1.0
+    }
+  ],
+  "confidence_changes": [],
+  "guardrails": [
+    {
+      "kind": "schedule",
+      "model": "qwen3",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen3",
+      "comparison": "scope - checklist error on preserving pairs",
+      "provisional_margin": 0.05,
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0,
+      "cluster_sd": null,
+      "degenerate_bootstrap": null
+    }
+  ],
+  "interval_caution": "A degenerate empirical bootstrap interval indicates no sampled variation in the contrast; it does not prove zero population effect.",
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null,
+    "claim_scoring_version": 2,
+    "claim_scoring_source_sha256": "76cf59d0b53de67f8f437aa7a03d79e48cd2161ea231b7082353f377fde16a26",
+    "dependencies": {
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.7"
+    }
+  }
+}

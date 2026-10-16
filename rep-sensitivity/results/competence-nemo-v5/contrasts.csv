@@ -1,0 +1,13 @@
+kind,model,contrast,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap
+schedule,nemo,H1_exact,,,,0,,
+schedule,nemo,H1_paraphrase,,,,0,,
+schedule,nemo,H2,,,,0,,
+schedule,nemo,H3,,,,0,,
+schedule,nemo,H4_error,,,,0,,
+schedule,nemo,H4_retention,,,,0,,
+workflow,nemo,H1_exact,,,,0,,
+workflow,nemo,H1_paraphrase,,,,0,,
+workflow,nemo,H2,,,,0,,
+workflow,nemo,H3,,,,0,,
+workflow,nemo,H4_error,,,,0,,
+workflow,nemo,H4_retention,,,,0,,

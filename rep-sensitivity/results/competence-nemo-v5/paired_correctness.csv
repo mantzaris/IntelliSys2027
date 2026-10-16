@@ -1,0 +1,5 @@
+kind,model,organization,policy,condition,decision_changed,paired_cells,clusters,both_worlds_correct,paired_accuracy
+schedule,nemo,flat,ordinary,single,False,12,6,12,1.0
+schedule,nemo,flat,ordinary,single,True,12,6,4,0.3333333333333333
+workflow,nemo,flat,ordinary,single,False,12,6,9,0.75
+workflow,nemo,flat,ordinary,single,True,12,6,12,1.0

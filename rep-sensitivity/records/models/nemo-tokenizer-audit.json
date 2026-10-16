@@ -1,0 +1,7 @@
+{
+  "checked_calls": 96,
+  "recorded_minus_native_token_count_deltas": [
+    1
+  ],
+  "interpretation": "Historical text-retokenization adapter; review BOS handling before interpreting model competence."
+}

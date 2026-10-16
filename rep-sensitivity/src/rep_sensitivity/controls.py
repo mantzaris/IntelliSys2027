@@ -10,12 +10,14 @@ CONTROL_ARMS = {
     "packaging": ["low_overlap", "high_overlap"],
     "deduplication": ["exact_removal", "similarity_removal", "scope_consolidation"],
     "branch_placement": ["same_branch", "different_branch"],
+    "copy_branch_placement": ["same_branch", "different_branch"],
     "access": ["summaries_only", "summaries_and_reports"],
     "call_count": ["partition_managers", "global_reviewers"],
     "length": ["neutral_padding", "evidential_repetition"],
     "ancestry": ["authentic", "withheld", "corrupted_relationships"],
     "instruction": ["ordinary_without_ancestry", "scope_without_ancestry"],
-    "corruption": ["all_correct_with_world", "false_favorable_with_world", "false_objection_with_world"],
+    "corruption": [policy+'_'+case for policy in ('ordinary','checklist','scope')
+                   for case in ('all_correct_with_world','false_favorable_with_world','false_objection_with_world')],
     "unique_clause": ["decisive_high", "decisive_low", "harmless_high", "harmless_low"],
     "version_admission": ["current_only", "current_and_superseded"],
     "dose": ["one", "two", "four", "eight"]
@@ -24,6 +26,42 @@ CONTROL_ARMS = {
 
 def semantic_inventory(reports):
     return sorted({canonical([c.scope(), c.asserted_value]) for r in reports for c in r.claims()})
+
+
+def place_near_reports(reports, seed, separate=False):
+    """Move a prespecified distinct scope, keeping its copies with their parent.
+
+    Prefer reports for different machines of the same candidate. Selection uses
+    scope and identifiers, never truth or final-decision relevance. The changed
+    branch load is recorded rather than treated as a perfectly matched control.
+    """
+    originals=sorted((r for r in reports if not r.parent_report_identifiers),key=lambda r:r.identifier)
+    eligible=[(a,b) for i,a in enumerate(originals) for b in originals[i+1:]
+              if a.claim.task_identifier==b.claim.task_identifier and a.claim.key!=b.claim.key]
+    preferred=[(a,b) for a,b in eligible if a.claim.task_identifier=='resource' and
+               a.claim.candidate_identifier==b.claim.candidate_identifier and
+               a.claim.entity_identifier!=b.claim.entity_identifier]
+    choices=preferred or eligible
+    if not choices:raise ValueError('No distinct scopes in a shared task family')
+    first,second=choices[seed%len(choices)]
+    branches=partition(reports,seed)
+    owner=next(i for i,rs in enumerate(branches) if any(r.identifier==first.identifier for r in rs))
+    moved={second.identifier}
+    # Include descendants even if a later corpus permits more than one copy hop.
+    while True:
+        expanded=moved|{r.identifier for r in reports if moved.intersection(r.parent_report_identifiers)}
+        if expanded==moved:break
+        moved=expanded
+    if separate:
+        assignment={r.identifier:i for i,rs in enumerate(branches) for r in rs}
+        branches=[[],[]]
+        for r in reports:
+            branches[1-owner if r.identifier in moved else assignment[r.identifier]].append(r)
+    return branches,{'relevant_report_identifiers':[first.identifier,second.identifier],
+                     'relevant_scope_keys':[first.claim.key,second.claim.key],
+                     'distinct_scopes':True,'same_candidate_different_resource':bool(preferred),
+                     'branch_report_counts':list(map(len,branches)),
+                     'moved_report_identifiers':sorted(moved) if separate else []}
 
 
 def decision_from_claims(world, reports, override=None):
@@ -47,8 +85,13 @@ def unique_clause_control(world,reports,split,arm,seed):
     """
     baseline=decision_from_claims(world,reports)
     consequential=arm.startswith('decisive')
-    eligible=[r for r in reports if type(r.claim.asserted_value) is bool and
-              (decision_from_claims(world,reports,{r.claim.key:not r.claim.asserted_value})!=baseline)==consequential]
+    decisive=[r for r in reports if type(r.claim.asserted_value) is bool and
+              decision_from_claims(world,reports,{r.claim.key:not r.claim.asserted_value})!=baseline]
+    harmless=[r for r in reports if type(r.claim.asserted_value) is bool and r not in decisive]
+    anchor=sorted(decisive,key=lambda r:r.identifier)[seed%len(decisive)] if decisive else None
+    matching=[r for r in harmless if anchor and r.claim.task_identifier==anchor.claim.task_identifier and
+              r.claim.entity_identifier==anchor.claim.entity_identifier]
+    eligible=decisive if consequential else (matching or harmless)
     if not eligible:return None,{'ineligible':'No clause of requested relevance in this world'}
     target=sorted(eligible,key=lambda r:r.identifier)[seed%len(eligible)]
     common=next(r for r in reports if r.identifier!=target.identifier and r.claim.task_identifier=='objective')
@@ -64,6 +107,7 @@ def unique_clause_control(world,reports,split,arm,seed):
     assert semantic_inventory(changed)==semantic_inventory(reports)
     return changed,{'unique_scope':target.claim.key,'shared_scope':common.claim.key,
                     'counterfactual_flip_changes_answer':consequential,'reference_answer':baseline,
+                    'decisive_harmless_family_entity_matched':bool(matching),
                     'target_report':target.identifier,'shared_anchor':common.identifier}
 
 

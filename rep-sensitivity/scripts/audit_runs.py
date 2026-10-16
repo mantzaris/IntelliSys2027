@@ -12,6 +12,7 @@ root=Path(a.directory);manifest=json.loads((root/'manifest.json').read_text())
 result={'suite':manifest['config']['name'],'planned_trajectories':manifest['trajectories'],
         'planned_calls':manifest['manager_calls'],'models':{}}
 for model in manifest['config']['models']:
+    (root/model).mkdir(parents=True,exist_ok=True)
     records=[];inventory=[]
     for p in sorted((root/model/'calls').glob('*.json.gz')):
         r=json.loads(gzip.decompress(p.read_bytes()))

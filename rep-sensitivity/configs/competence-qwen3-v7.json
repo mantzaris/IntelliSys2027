@@ -1,0 +1,36 @@
+{
+  "name": "competence-qwen3-v7",
+  "split": "development",
+  "base_pairs": 24,
+  "models": [
+    "qwen3"
+  ],
+  "policies": [
+    "ordinary"
+  ],
+  "organizations": [
+    "flat"
+  ],
+  "repetition_conditions": [
+    "single"
+  ],
+  "stochastic_repetitions": 2,
+  "worlds": [
+    0,
+    1
+  ],
+  "max_output_tokens": 2304,
+  "temperature": 0.3,
+  "top_p": 0.95,
+  "max_context_tokens": 12288,
+  "batch_size": 32,
+  "guided_decoding": true,
+  "expected_trajectories": 96,
+  "expected_manager_calls": 96,
+  "status": "development_criterion_applicability_correction",
+  "interface_version": 7,
+  "benchmark_version": 2,
+  "enforce_eager": false,
+  "gpu_memory_utilization": 0.92,
+  "cluster_batch_pairs": 8
+}

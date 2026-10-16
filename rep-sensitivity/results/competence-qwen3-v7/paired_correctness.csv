@@ -1,0 +1,5 @@
+kind,model,organization,policy,condition,decision_changed,paired_cells,clusters,both_worlds_correct,paired_accuracy
+schedule,qwen3,flat,ordinary,single,False,12,6,12,1.0
+schedule,qwen3,flat,ordinary,single,True,12,6,11,0.9166666666666666
+workflow,qwen3,flat,ordinary,single,False,12,6,8,0.6666666666666666
+workflow,qwen3,flat,ordinary,single,True,12,6,12,1.0

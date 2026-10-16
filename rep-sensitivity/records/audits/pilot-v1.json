@@ -1,0 +1,26 @@
+{
+  "suite": "pilot-v1",
+  "planned_trajectories": 1152,
+  "planned_calls": 2304,
+  "models": {
+    "qwen": {
+      "accepted_calls": 416,
+      "unique_request_hashes": 416,
+      "started_without_accepted": 32,
+      "complete_clusters": 4,
+      "run_complete": false,
+      "finish_reasons": {
+        "stop": 412,
+        "length": 4
+      },
+      "input_tokens": 766708,
+      "output_tokens": 123481,
+      "measured_inference_wall_seconds": 328.5582359354012,
+      "amortized_output_tokens_per_second": 375.8268291417231,
+      "mean_input_tokens": 1843.048076923077,
+      "mean_output_tokens": 296.8293269230769,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "57fd0f00e657ca861eb3af72c6ca27ecd75176977ab489ba8fde082a425add45"
+    }
+  }
+}

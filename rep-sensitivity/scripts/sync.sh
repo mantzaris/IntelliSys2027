@@ -14,6 +14,8 @@ case "${1:-pull}" in
   pull)
     mkdir -p artifacts/runs records
     rsync -az -e "$transport" --exclude='*.partial' "$remote:$remote_dir/artifacts/runs/" artifacts/runs/
-    rsync -az -e "$transport" "$remote:$remote_dir/records/" records/ ;;
+    # Local analyses and manuscript checks may be newer than the source snapshot
+    # on a running pod. Do not replace these with older remote records.
+    rsync -auz -e "$transport" "$remote:$remote_dir/records/" records/ ;;
   *) printf 'Usage: bash scripts/sync.sh push-source|pull\n' >&2; exit 2 ;;
 esac

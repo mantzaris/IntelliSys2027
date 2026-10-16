@@ -1,0 +1,13 @@
+trial_id,pair_id,kind,family,decision_changed,model,world,condition,organization,policy,repetition,correct,choice,oracle_choice,operational_failure,input_tokens,output_tokens,inference_seconds_allocated
+8245462da7bf7ed634cb6d45,03bb3afaf52de4c3,schedule,identity,True,qwen3,0,single,hierarchical,ordinary,0,True,C34,C34,False,7229,1882,7.3386170368564
+3186d1c58e967b80a8008fc6,03bb3afaf52de4c3,schedule,identity,True,qwen3,1,single,hierarchical,ordinary,0,True,C37,C37,False,7211,1882,7.3386170368564
+fe107d1daa66a713438513b9,319832d2a013062e,workflow,version,True,qwen3,0,single,hierarchical,ordinary,0,True,C74,C74,False,5672,1087,7.3386170368564
+0f1de8ffd5e26413da25c278,319832d2a013062e,workflow,version,True,qwen3,1,single,hierarchical,ordinary,0,True,C26,C26,False,5684,1105,7.3386170368564
+51aebcdf42142d96d2b6c3c1,52fe97b8e122440d,workflow,quantifier,True,qwen3,0,single,hierarchical,ordinary,0,True,C49,C49,False,5612,1167,7.3386170368564
+4ce981cce17267ae0c4080c1,52fe97b8e122440d,workflow,quantifier,True,qwen3,1,single,hierarchical,ordinary,0,True,C30,C30,False,5582,1156,7.3386170368564
+f259268a0dbfdcf8c1088e9c,d1dfa05c059ec4b4,schedule,numeric,True,qwen3,0,single,hierarchical,ordinary,0,False,C94,C97,False,7147,1796,7.3386170368564
+7b5fb20e7e91373916bcb03e,d1dfa05c059ec4b4,schedule,numeric,True,qwen3,1,single,hierarchical,ordinary,0,True,C94,C94,False,7204,1820,7.3386170368564
+590de61e328a6e5dfd3d91fe,d875d0de865444e5,workflow,condition,True,qwen3,0,single,hierarchical,ordinary,0,True,C12,C12,False,5578,1098,7.3386170368564
+fea4720d50e74d6797d9c89f,d875d0de865444e5,workflow,condition,True,qwen3,1,single,hierarchical,ordinary,0,True,C11,C11,False,5644,1096,7.3386170368564
+b592bd0f74d88763421aa96a,f2f1daa873bd7684,schedule,dependency,True,qwen3,0,single,hierarchical,ordinary,0,True,C18,C18,False,7146,1751,7.3386170368564
+508801c0a212ffe51eb4283f,f2f1daa873bd7684,schedule,dependency,True,qwen3,1,single,hierarchical,ordinary,0,True,C11,C11,False,7170,1861,7.3386170368564

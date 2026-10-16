@@ -1,0 +1,75 @@
+{
+  "model": "RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8",
+  "revision": "bac3f41f782dcb17680584f32a5a2a4d180775a4",
+  "tokenizer_revision": "bac3f41f782dcb17680584f32a5a2a4d180775a4",
+  "checked_utc": "2026-10-16T03:57:17.553719+00:00",
+  "license": "apache-2.0",
+  "model_card": "https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8/blob/bac3f41f782dcb17680584f32a5a2a4d180775a4/README.md",
+  "files": [
+    {
+      "name": "config.json",
+      "size": 1747,
+      "lfs_sha256": null
+    },
+    {
+      "name": "generation_config.json",
+      "size": 155,
+      "lfs_sha256": null
+    },
+    {
+      "name": "model-00001-of-00006.safetensors",
+      "size": 4898056368,
+      "lfs_sha256": "bc32b2bab92804d315eb42d4e03f796596c2b24b2d9b34636e57eaeba2e22c9a"
+    },
+    {
+      "name": "model-00002-of-00006.safetensors",
+      "size": 4835544720,
+      "lfs_sha256": "98e29a90c01f9e217b5c101d68f157e84e20464867c10b7d453710dd207f0c77"
+    },
+    {
+      "name": "model-00003-of-00006.safetensors",
+      "size": 4982400728,
+      "lfs_sha256": "bd955b7feb43181e3c0495bb057b969c0d10264775f6ce944a526f5b7eb0d4bb"
+    },
+    {
+      "name": "model-00004-of-00006.safetensors",
+      "size": 4998137560,
+      "lfs_sha256": "03ccad2ea3c2bfe86e9d27f52a5a087140543a3f263ae49e8a45b0ff774476b4"
+    },
+    {
+      "name": "model-00005-of-00006.safetensors",
+      "size": 3865305096,
+      "lfs_sha256": "42c03c7ac1003499657d8ec94242e04a122828a1033f19721577c385e4222fa0"
+    },
+    {
+      "name": "model-00006-of-00006.safetensors",
+      "size": 1342177408,
+      "lfs_sha256": "58034435463df5dfb748849bb5002d84b1ad1a1b308dfe26f5420e3e0a340cba"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 54304,
+      "lfs_sha256": null
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 21311,
+      "lfs_sha256": null
+    },
+    {
+      "name": "tekken.json",
+      "size": 14801223,
+      "lfs_sha256": "c4b90a968dbc67ef3975129d0b78a2e3cbb6bea340ab9205f22e8a0308b1ffc5"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 17078037,
+      "lfs_sha256": "b76085f9923309d873994d444989f7eb6ec074b06f25b58f1e8d7b7741070949"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 199699,
+      "lfs_sha256": null
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "pilot-v6",
+  "split": "development",
+  "base_pairs": 24,
+  "models": [
+    "qwen3"
+  ],
+  "policies": [
+    "ordinary",
+    "checklist"
+  ],
+  "organizations": [
+    "flat",
+    "hierarchical"
+  ],
+  "repetition_conditions": [
+    "single",
+    "exact",
+    "paraphrase"
+  ],
+  "stochastic_repetitions": 2,
+  "worlds": [
+    0,
+    1
+  ],
+  "max_output_tokens": 2304,
+  "temperature": 0.3,
+  "top_p": 0.95,
+  "max_context_tokens": 12288,
+  "batch_size": 32,
+  "guided_decoding": true,
+  "expected_trajectories": 1152,
+  "expected_manager_calls": 2304,
+  "status": "frozen_development_pilot",
+  "interface_version": 6,
+  "benchmark_version": 2,
+  "root_ancestry_registry": true,
+  "enforce_eager": false,
+  "gpu_memory_utilization": 0.92,
+  "cluster_batch_pairs": 2
+}

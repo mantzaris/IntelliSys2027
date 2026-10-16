@@ -32,3 +32,16 @@ conference submission or a claim that H1–H4 are supported.
     execution, analysis and drafting, not only language editing. Human responsibility
     and scientific development must be accurately described. No submission or
     organizer contact has been made.
+
+## Additional checks from the development audit
+
+- The frozen 24-pair pilot has ties but no NONE cases. Validation includes NONE;
+  development competence alone does not establish competence in that stratum.
+- Conditional workflow rules are evaluated predicates. Their report applicability
+  is unconditional unless an explicit version-admission control restricts it.
+  Avoid claiming broad coverage of arbitrary conditional natural-language reports.
+- Similarity removal uses a character-overlap heuristic. Its failures do not
+  establish a failure rate for embedding-based or learned semantic deduplication.
+- Claim retention accepts equal integer/float values, distinguishes Boolean values,
+  and reports incompatible cited scopes separately. These observable outputs do
+  not identify an internal reasoning or causal mediation path.

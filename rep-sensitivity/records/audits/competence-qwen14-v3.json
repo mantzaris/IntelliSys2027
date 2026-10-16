@@ -1,0 +1,26 @@
+{
+  "suite": "competence-qwen14-v3",
+  "planned_trajectories": 96,
+  "planned_calls": 96,
+  "models": {
+    "qwen14": {
+      "accepted_calls": 96,
+      "unique_request_hashes": 96,
+      "started_without_accepted": 0,
+      "complete_clusters": 24,
+      "run_complete": true,
+      "finish_reasons": {
+        "stop": 90,
+        "length": 6
+      },
+      "input_tokens": 237172,
+      "output_tokens": 51814,
+      "measured_inference_wall_seconds": 745.0963265816681,
+      "amortized_output_tokens_per_second": 69.54000194540055,
+      "mean_input_tokens": 2470.5416666666665,
+      "mean_output_tokens": 539.7291666666666,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "a4d3a0252115af77412173ef266f9cea39c87533e96184354da9641533481433"
+    }
+  }
+}

@@ -44,6 +44,72 @@
     }
   },
   {
+    "source": "results/competence-nemo-benchmark2-v6/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.8333333333333334,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-nemo-benchmark2-v6/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.9375,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-nemo-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.8333333333333334,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-nemo-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.9375,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-nemo-v7/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.8125,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-nemo-v7/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "nemo",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.8541666666666666,
+      "passes_85_percent": true
+    }
+  },
+  {
     "source": "results/competence-qwen14-v2/analysis.json",
     "field": "competence",
     "record": {
@@ -144,6 +210,28 @@
   },
   {
     "source": "results/competence-qwen3-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.875,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v7/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.9791666666666666,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v7/analysis.json",
     "field": "competence",
     "record": {
       "model": "qwen3",

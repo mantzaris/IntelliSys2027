@@ -24,12 +24,15 @@ TEMPLATES["live"] = TEMPLATES["validation"]
 
 def render(claim: Claim, split: str, variant: int = 0) -> str:
     val = ("PASS" if claim.asserted_value else "FAIL") if type(claim.asserted_value) is bool else str(claim.asserted_value) + " " + claim.units
-    return TEMPLATES[split][variant % 4].format(candidate=claim.candidate_identifier,
+    text = TEMPLATES[split][variant % 4].format(candidate=claim.candidate_identifier,
         task=claim.predicate_identifier, entity=claim.entity_identifier, value=val,
         condition=claim.applicability_condition, version=claim.effective_time_or_version)
+    if claim.predicate_parameters:
+        text+=' Checked criterion: '+canonical(claim.predicate_parameters)+'.'
+    return text
 
 
-def make_reports(world: dict, split: str, order_seed: int, identifier_format="descriptive_v4") -> list[Report]:
+def make_reports(world: dict, split: str, order_seed: int, identifier_format="descriptive_v7") -> list[Report]:
     results = oracle(world)
     source = "s" + digest(world)[:8]
     out = []
@@ -38,16 +41,17 @@ def make_reports(world: dict, split: str, order_seed: int, identifier_format="de
             task, _, entity = predicate.partition(":")
             entity = entity or "all"
             condition = "always"
+            parameters = {}
             version = str(world.get("version", "current"))
             if task == "resource":
-                condition = "peak_demand <= capacity " + str(world["capacities"][entity])
+                parameters = {'peak_demand_at_most':world['capacities'][entity]}
             if world["kind"] == "workflow" and task != "objective":
-                # Rule is public scope; it is not an oracle truth label.
-                condition = canonical(world["rules"][task])
+                # Predicate criterion and report applicability are distinct.
+                parameters = {'rule':world['rules'][task]}
             claim = Claim(task, cid, entity, predicate.split(":")[0], value,
                           ("time_units" if world["kind"] == "schedule" else "cost_units") if task == "objective" else "Boolean",
                           condition, version, (source,), (), "e" + digest([source, task])[:8],
-                          identifier_format=identifier_format)
+                          identifier_format=identifier_format,predicate_parameters=parameters)
             rid = "r" + digest([order_seed, claim.key])[:7]
             out.append(Report(rid, claim, render(claim, split)))
     random.Random(order_seed).shuffle(out)
@@ -130,7 +134,12 @@ def overlap_render(reports: list[Report], split: str, level: str) -> list[Report
 
 
 def registry(reports: list[Report]) -> dict:
-    return {c.key: c.scope() for r in reports for c in r.claims()}
+    out={}
+    for r in reports:
+        for c in r.claims():
+            if c.key in out and out[c.key]!=c.scope():raise ValueError('Scope identifier collision')
+            out[c.key]=c.scope()
+    return out
 
 
 def ancestry_registry(reports: list[Report]) -> dict:

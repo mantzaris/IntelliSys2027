@@ -27,6 +27,12 @@ def assign(world, policy, allowance='added', total_output_allowance=4096):
                        'execute_'+digest([source,policy,allowance,i])[:12],cap) for i,(f,r) in enumerate(tasks)]
 
 
+def bind_executions(assignments,trial):
+    """Fresh accepted calls in different repetitions have different execution IDs."""
+    identity={k:v for k,v in trial.items() if k!='trial_id'}
+    return [replace(a,execution_identifier='execute_'+digest([identity,a.identifier])[:12]) for a in assignments]
+
+
 def access_view(world,assignment):
     """Do not give workers peer reports, evaluator labels, or irrelevant task data."""
     ids=set(assignment.candidates)

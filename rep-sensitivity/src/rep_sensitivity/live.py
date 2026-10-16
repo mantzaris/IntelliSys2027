@@ -1,9 +1,9 @@
 """Smaller live-worker study with logged access and preserved essential coverage."""
 from dataclasses import asdict, replace
 from pathlib import Path
-from .assignments import assign, access_view, coverage, allocate_total_tokens
+from .assignments import assign, access_view, coverage, allocate_total_tokens,bind_executions
 from .generation import generate
-from .metrics import parse, score_root
+from .metrics import parse, score_root,same_value
 from .models import LocalModel
 from .policies import CONTRACT, make_prompt
 from .reports import make_reports, registry, render
@@ -13,13 +13,20 @@ from .replay import execute_requests
 
 
 def run_live(config,alias):
-    if config.get('status') not in ('frozen','development_live') or config.get('interface_version')!=5:
+    if config.get('status') not in ('frozen','development_live') or config.get('interface_version')!=7:
         raise ValueError('Live protocol must be frozen after replay validation')
-    model=LocalModel(alias,config['max_context_tokens'],config['max_output_tokens'],
-                     config['temperature'],config['top_p'],config['batch_size'],True)
+    inference={**config,**config.get('model_settings',{}).get(alias,{})}
+    model=LocalModel(alias,inference['max_context_tokens'],inference['max_output_tokens'],
+                     inference['temperature'],inference['top_p'],inference['batch_size'],True,
+                     enforce_eager=inference.get('enforce_eager',True),gpu_memory_utilization=inference.get('gpu_memory_utilization',0.85))
     directory=Path('artifacts/runs')/config['name'];ledger=Ledger(directory/alias)
-    pairs=[p for p in generate('live',config['generated_pairs']) if p['evaluation']['kind']=='schedule']
+    split='live_development' if config['status']=='development_live' else 'live'
+    pairs=[p for p in generate(split,config['generated_pairs'],config.get('benchmark_version',2)) if p['evaluation']['kind']=='schedule']
     immutable_json(directory/'pairs.json',pairs);immutable_json(directory/'config.json',config)
+    immutable_json(directory/'implementation.json',{p.name:p.read_text() for p in Path(__file__).parent.glob('*.py')})
+    immutable_json(directory/'manifest.json',{'config':config,'pairs_sha256':digest(pairs),
+                   'trajectories':len(pairs)*len(config['worlds'])*5*config['stochastic_repetitions'],
+                   'calls':len(pairs)*len(config['worlds'])*33*config['stochastic_repetitions']})
     for pair in pairs:
         for world_index in config['worlds']:
             world=pair['worlds'][world_index]
@@ -30,7 +37,7 @@ def run_live(config,alias):
                     trial={'pair_id':pair['pair_id'],'world':world_index,'allocation':allocation,'allowance':allowance,
                            'model':alias,'repetition':repetition,'suite':config['name']}
                     trial['trial_id']=digest(trial)[:24]
-                    tasks=assign(world,allocation,allowance,config['worker_total_output_allowance'])
+                    tasks=bind_executions(assign(world,allocation,allowance,config['worker_total_output_allowance']),trial)
                     def worker_request(task):
                         scopes=[r for r in truth_reports if r.claim.task_identifier==task.family and
                                 (task.resource is None or r.claim.entity_identifier==task.resource)]
@@ -44,7 +51,8 @@ def run_live(config,alias):
                     def prompt_tokens(task):
                         request,_=worker_request(task)
                         return len(model.tokenizer.encode(model.prepare(request['prompt']),add_special_tokens=False))
-                    baseline=assign(world,'nonoverlap','added',config['worker_total_output_allowance'])
+                    baseline=bind_executions(assign(world,'nonoverlap','added',config['worker_total_output_allowance']),
+                                             {**trial,'allocation':'nonoverlap','allowance':'added'})
                     total_budget=sum(prompt_tokens(a)+a.output_cap for a in baseline)
                     if allowance=='fixed':
                         for _ in range(5):
@@ -56,7 +64,7 @@ def run_live(config,alias):
                     for task in tasks:
                         request,view=worker_request(task);requests.append(request);views[task.identifier]=view
                     worker_calls=execute_requests(requests,model,ledger)
-                    reports=[];failures=[]
+                    reports=[];failures=[];unknown_scope_assertions=0
                     for task in tasks:
                         call=worker_calls[(trial['trial_id'],task.identifier)]
                         obj,status=parse(call['response']['text'],world['tie_order']+['NONE'],manager=True)
@@ -65,7 +73,9 @@ def run_live(config,alias):
                         scopes={r.claim.key:r.claim for r in truth_reports if r.claim.task_identifier==task.family and
                                 (task.resource is None or r.claim.entity_identifier==task.resource)}
                         for i,(key,value,refs) in enumerate(obj['assertions']):
-                            if key not in scopes: continue  # Log unknown claims in raw output; no scope fabrication.
+                            if key not in scopes:
+                                unknown_scope_assertions+=1
+                                continue  # Count and retain in raw output; no invented scope is admitted.
                             claim=replace(scopes[key],asserted_value=value,source_identifiers=(task.source_identifier,),
                                           verification_execution_identifier=task.execution_identifier)
                             rid=task.identifier+'_'+str(i)
@@ -78,6 +88,9 @@ def run_live(config,alias):
                     if failures:score['correct']=False;score['operational_failure']=True
                     calls=list(worker_calls.values())+[root_call]
                     result={**trial,**score,'assignment_coverage':coverage(tasks,world),
+                            'worker_unknown_scope_assertions':unknown_scope_assertions,
+                            'worker_incorrect_claims':sum(not same_value(r.claim.asserted_value,t.claim.asserted_value)
+                                for r in reports for t in truth_reports if r.claim.key==t.claim.key),
                             'baseline_total_worker_token_allowance':total_budget,
                             'allocated_total_worker_token_allowance':sum(prompt_tokens(a)+a.output_cap for a in tasks),
                             'delivered_claims':len({r.claim.key for r in reports}),
@@ -89,3 +102,5 @@ def run_live(config,alias):
                             'inference_seconds_allocated':sum(c['response']['allocated_inference_seconds'] for c in calls)}
                     immutable_json(directory/alias/'scores'/(trial['trial_id']+'.json'),result)
                     ledger.event('live_trial_complete',trial_id=trial['trial_id'])
+    ledger.event('run_complete',base_pairs=len(pairs))
+    ledger.close()

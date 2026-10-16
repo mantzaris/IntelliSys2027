@@ -19,6 +19,7 @@ not a completed novelty assessment.
 | [*Do Metadata and Appearance of the Retrieved Webpages Affect LLM's Reasoning in Retrieval-Augmented Generation?*](https://aclanthology.org/2024.blackboxnlp-1.24/), BlackboxNLP 2024 workshop proceedings | Conflicting webpages with metadata and appearance changes | Source/time cues can alter conflict resolution. Our explicit version rules separate legitimate revision from mere timestamp preference. |
 | [Liu et al., *Lost in the Middle*](https://aclanthology.org/2024.tacl-1.9/), TACL 2024 | Multi-document QA and key-value retrieval with evidence position/context-length manipulations | Context position and length are alternative explanations. Frozen ordering, padding and summary bypass are needed before attributing effects to duplication itself. |
 
-Remaining verification: inspect full conference PDFs for secondary additions before
-final bibliography inclusion; human scientific review of novelty and interpretation
-is pending. None of these studies is treated as evidence that our hypotheses hold.
+Available primary full texts and official bibliographic metadata were inspected;
+human scientific review of novelty and interpretation remains pending. The scaling
+paper's peer-reviewed identity remains unverified. None of these studies is treated
+as evidence that our hypotheses hold.

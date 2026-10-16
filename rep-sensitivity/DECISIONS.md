@@ -82,3 +82,105 @@ numeric cases to the same capacity 1↔2 edit as consequential cases, with seque
 resource demand that never exceeds one. Historical v1 worlds are unchanged. Both
 versions are checked independently against the reference verifier. No held-out
 model outcome informed this correction.
+
+## 2026-10-16: role-specific schema enforcement (v6)
+
+The first full v5 pilot cluster exposed managers filling final assessment/choice
+fields despite instructions to leave them empty. All initial hierarchical
+trajectories were therefore operational failures under the declared strict parser.
+Stop this development run and retain the failures. Constrain intermediate choice
+to null and intermediate assessments/probabilities to empty collections in the
+common decoder; clarify the manager role before giving the root decision rule.
+This enforces an already-declared interface and gives no policy privileged values.
+Root prompts and schemas are unchanged from the successful v5 competence check.
+The v6 pilot uses a new immutable run; v5 results are not repaired or replaced.
+
+Mistral-Nemo-12B (official Apache-2.0 model card, pinned revision and verified
+weights) is the larger second-family fallback. Its initial benchmark-v1 scheduling
+check missed the unchanged gate. A separately labeled check will use the final
+benchmark v2 and execution settings, as Qwen3's pilot does. These development
+checks reuse base structures and are not independent confirmations. No held-out
+outcomes have been evaluated.
+
+## 2026-10-16: separate checked criterion from applicability (v7)
+
+A schema audit found that resource limits and workflow expressions had been put
+in `applicability_condition`. That could imply a failed check is inapplicable,
+although its result remains mandatory. Store these expressions separately in
+`predicate_parameters`; a report's applicability remains `always` unless the task
+defines a true applicability restriction. Render the checked criterion explicitly.
+This is a semantic correction, not a claim that it caused earlier model errors.
+Preserve old scope keys and old corpora for historical analysis. Cancel the queued
+v6 full pilot before it starts; completed development checks remain unsuccessful
+or successful under their original interfaces. Validate v7 competence and summary
+contracts on development before allocating the full pilot. No held-out outcomes
+have been inspected, and the 85% criterion is unchanged.
+
+## 2026-10-16: larger second-family fallback
+
+Nemo did not meet the primary scheduling competence threshold under the corrected
+interface. Select Mistral-Small-24B-Instruct-2501 in Red Hat AI's published W8A8
+checkpoint as a larger fallback that fits the existing GPU. Inspect both the
+[official base card](https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501)
+and the [quantizer's card](https://huggingface.co/RedHatAI/Mistral-Small-24B-Instruct-2501-quantized.w8a8).
+The actual pinned config identifies MistralForCausalLM and INT8 linear weights
+(per-channel) and dynamic per-token INT8 activations. The quantizer's card has
+inconsistent architecture/evaluation boilerplate; do not rely on its benchmark
+claims. Record the downloaded quantized revision, rather than inventing a revision
+for its unrecorded pre-quantization source. No calibration uses our benchmark.
+The official base card recommends low temperature: fix 0.15 for this model before
+its first outcome, with 0.3 retained for Qwen3. Report model-specific settings and
+results. Completed smaller-model caches are reproducible and evicted to free space;
+all outputs, manifests and checksums remain locally mirrored.
+
+## 2026-10-16: native token-ID adapter and frozen template date
+
+Before Mistral-Small inference, compare Hugging Face and official Mistral-common
+encodings with identical system/user messages: token IDs agree. Its native template
+also inserts a default system message and current date; freeze that date at
+2026-10-16 and record the complete template/default system text. Sending the
+formatted string through a second tokenizer can add another BOS token. The audit
+of all 96 archived Nemo-v7 calls confirms one extra token; do not interpret those
+checks as clean comparisons of model competence. They remain original outcomes.
+All 96 Qwen3-v7 token counts match native encoding, so its running pilot is retained.
+The updated adapter submits explicit native token IDs, verifies the engine did not
+change them, and records their hash plus the formatted-prompt hash. Earlier Mistral
+checks belong in the development/interface record, not the final model ranking.
+
+New queued work runs from immutable source snapshots so local edits cannot change
+the implementation between stages of a long-lived process. The existing Qwen run's
+remote source has remained unchanged since its v7 launch.
+
+## 2026-10-16: analysis audit and supporting-control completeness
+
+The branch-placement contrast now distinguishes placement of two similar reports
+with different scopes from placement of exact copies. Both preserve the full
+report set; the distinct-scope contrast records changes in branch load. Scope
+selection uses identifiers and task fields, never the correct decision. The
+supporting harness remains unexecuted on held-out data.
+
+Claim scoring version 2 treats an integer and the equal integral float as the same
+numeric finding, while Boolean truth remains distinct from 0/1. It adds a visible
+incompatible-scope citation metric: an assertion cites at least two known reports,
+their scopes differ, and at least one citation does not bind the asserted scope.
+This measures emitted attribution, not a hidden merge operation. Offline analysis
+recomputes claim scores from immutable responses, recording the scorer hash;
+original scores and final-choice outcomes are preserved. Precision projections now
+use separate stratum variances and target group sizes, especially for H2's two
+change classes. A collapsed empirical interval is never presented as proof of
+robustness or adequate prospective precision.
+
+The deterministic development-corpus audit shows balanced repeated task families
+in scheduling and both feasible and infeasible fastest candidates. The 24-pair
+development prefix includes ties but no NONE worlds; NONE is present in the
+36-pair validation prefix. Do not generalize the development competence gate to
+that untested stratum. Preserve the frozen pilot and evaluate that limitation in
+validation. All corpus-audit counts are in `records/benchmark/development-v2.json`.
+
+Supporting corruption contrasts include all three policies under the same visible
+authoritative world, so H4's false-objection guardrail can actually be evaluated.
+The provisional practical error-increase margin is five percentage points; it is
+an interpretation threshold requiring scientific review, not a sample-size or
+significance target. A wide or degenerate small-sample interval cannot establish
+acceptable loss. Main harmless-pair and supporting false-objection comparisons
+are reported even if scope-aware prompting improves another metric.

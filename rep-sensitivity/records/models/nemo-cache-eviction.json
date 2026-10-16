@@ -1,0 +1,6 @@
+{
+  "reason": "Completed development model below primary competence threshold; free reproducible cache for larger Mistral model",
+  "cache": "artifacts/models/models--mistralai--Mistral-Nemo-Instruct-2407",
+  "checksummed_shards": 5,
+  "results_preserved": true
+}

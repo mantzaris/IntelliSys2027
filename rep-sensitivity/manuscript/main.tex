@@ -182,6 +182,18 @@ Markdown fences and incorrect field types. Those outputs remain failures under
 that protocol. A second development interface uses named assertion fields and a
 common JSON schema decoder for all policies. This is an interface revision, not a
 repair that retrospectively changes the initial run's primary scores.
+Subsequent development revisions make scope identifiers descriptive, map objective
+labels explicitly to makespan or cost, and elicit a short feasibility/objective
+assessment for each candidate before the final choice. These assessments are model
+outputs, not oracle values. This common scaffold narrows the difference between
+ordinary synthesis and the checklist. A role-specific schema constrains managers'
+choice to null and their final-assessment fields to empty collections, enforcing
+their summary-only contract. The failed earlier manager outputs remain recorded. Predicate criteria are
+recorded separately from applicability: a failed resource check still applies.
+A tokenizer audit also found an extra beginning-of-sequence token in historical
+Nemo calls. Those checks characterize their original interface, not clean model
+rankings. Subsequent inference submits native token IDs directly and freezes
+dates inserted by chat templates.
 
 \section{Execution Integrity and Analysis}
 Model revisions, tokenizer revisions, chat-template hashes, precision, dependency
@@ -212,6 +224,8 @@ family and consequence, retaining dependence across worlds, arms, models and
 stochastic repetitions. Model-specific results are mandatory; a pooled estimate
 uses equal model weights. Scheduling and workflow estimates remain separate.
 No confirmatory significance claim is based on the development runs.
+Collapsed empirical bootstrap intervals are flagged: no observed variation in a
+small sample does not establish zero population effect or justify a power claim.
 
 Malformed completed trajectories count as operational failures in primary
 accuracy. Calibration uses valid complete probability vectors and reports their
@@ -220,6 +234,11 @@ and delivery coverage, summary retention, scope transfer, copied-claim consolida
 false-assertion adoption and resource use. Input/output tokens and elapsed batch
 time are measured. Allocating batch time across requests is a cost-accounting
 convention, not a direct measurement of per-request GPU kernel time.
+Equal integer and integral-float objective values count as equivalent numeric
+claims; Boolean truth remains distinct from numeric one. Claim-score corrections
+are recomputed from immutable responses with a versioned scorer. An incompatible
+scope-citation metric records assertions supported by multiple reports whose
+scopes do not all bind that assertion; this is an emitted-attribution measure.
 
 \section{Development Results and Current Limits}
 \input{generated/competence.tex}
@@ -237,6 +256,13 @@ competence checks determine the next experimental allocation. Main held-out
 comparisons, targeted model controls and live-worker results must not be inferred
 from the implemented code alone.
 
+\IfFileExists{generated/pilot.tex}{\input{generated/pilot.tex}}{
+The current development pilot is still running; no completed pilot contrast is
+reported in this version.}
+The frozen development prefix contains ties but no NONE worlds; validation
+introduces that stratum. Its competence gate therefore does not establish
+performance on no-feasible-candidate decisions.
+
 The provisional design includes separate pilot, validation and held-out splits,
 two stochastic repetitions, and two model families. Actual manifests verify call
 counts. Final held-out allocation must be frozen after development and validation
@@ -253,6 +279,10 @@ length; ancestry withholding and corrupted relationships test provenance use.
 Instruction-only controls separate metadata from additional prompting. Distinct
 information, ordering and report slots are held fixed where possible, with residual
 token differences recorded. These controls are not reported as executed here.
+Placement of distinct scoped reports and placement of exact copies are separate
+contrasts. Moving a report changes branch load, which is recorded as a residual
+difference. Similarity removal currently uses character overlap, so its findings
+cannot be generalized to learned semantic deduplication.
 
 Corrupted reports require visible authoritative evidence or an allowed
 insufficient-information answer. False favorable assertions and false objections

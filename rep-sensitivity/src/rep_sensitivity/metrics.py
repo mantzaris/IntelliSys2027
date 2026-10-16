@@ -3,6 +3,12 @@ import json
 import math
 
 
+def same_value(actual, expected):
+    """Boolean truth is not numeric 0/1; integral floats are valid numeric claims."""
+    if type(expected) is bool:return type(actual) is bool and actual==expected
+    return type(actual) in (int,float) and math.isfinite(actual) and actual==expected
+
+
 def parse(text, choices, manager=False):
     try:
         obj = json.loads(text.strip())
@@ -44,16 +50,23 @@ def score_assertions(obj, reports, reference_reports=None):
     expected = {c.key: c.asserted_value for r in reports for c in r.claims()}
     reference = {r.identifier: {c.key for c in r.claims()} for r in (reports if reference_reports is None else reference_reports)}
     emitted = obj["assertions"] if obj else []
-    retained = {k for k, v, refs in emitted if k in expected and type(v) is type(expected[k]) and v == expected[k]}
+    retained = {k for k, v, refs in emitted if k in expected and same_value(v,expected[k])}
     known = {k for k, _, _ in emitted if k in expected}
-    mismatches = sum(k not in expected or type(v) is not type(expected.get(k)) or v != expected.get(k) for k, v, _ in emitted)
+    mismatches = sum(k not in expected or not same_value(v,expected[k]) for k, v, _ in emitted)
     scope_transfers = sum(any(ref in reference and k not in reference[ref] for ref in refs) for k, _, refs in emitted)
     source_errors = sum(any(ref not in reference for ref in refs) for _, _, refs in emitted)
-    duplicate_emissions = len(emitted) - len({(k, json.dumps(v)) for k, v, _ in emitted})
+    duplicate_emissions = len(emitted) - len({(k, 'Boolean' if type(v) is bool else 'number',v) for k, v, _ in emitted})
+    incompatible_merges=0
+    for key,_,refs in emitted:
+        known_refs={r for r in refs if r in reference}
+        if (len(known_refs)>=2 and any(key not in reference[r] for r in known_refs)
+                and len(set().union(*(reference[r] for r in known_refs)))>1):
+            incompatible_merges+=1
     return {"required_claims": len(expected), "emitted_claims": len(emitted), "coverage_count": len(known),
             "retained_count": len(retained), "retained_keys": sorted(retained),
             "incorrect_emitted_claims": mismatches, "scope_transfer_count": scope_transfers,
-            "unsupported_reference_count": source_errors, "unconsolidated_equivalent_count": duplicate_emissions}
+            "unsupported_reference_count": source_errors, "unconsolidated_equivalent_count": duplicate_emissions,
+            "incompatible_scope_merge_count":incompatible_merges}
 
 
 def score_root(response, world, truth, reports, reference_reports=None):
