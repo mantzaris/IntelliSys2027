@@ -6,6 +6,7 @@
 \usepackage{mathptmx}
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{placeins}
 \setlength{\emergencystretch}{2em}
 \def\UrlFont{\rmfamily}
 \begin{document}
@@ -79,6 +80,12 @@ resolution~\cite{metadata} motivates explicit version-authority rules, while
 position effects in long contexts~\cite{middle} motivate length and ordering
 controls. These alternatives must be considered before attributing failures to
 duplication itself.
+
+Beneficial repetition also has direct precedent: Leviathan et al.~\cite{promptrepeat}
+study whole-prompt repetition with padding and order controls. Our selective
+report interventions distinguish transmission through summaries from application
+at a root, while holding distinct propositions fixed. Their measured API latency
+does not establish the cost of local inference in this study.
 
 \section{Benchmark and Executable Truth}
 \subsection{Candidate Schedule Selection}
@@ -252,19 +259,26 @@ is not harmful amplification. Workflow estimates were mixed, and the paired
 responsiveness interaction remained imprecise. These development findings neither
 confirm a general harmful-duplication mechanism nor establish robustness.
 Scope-aware consolidation was not included in this pilot, so it cannot answer H4.
+Figures~\ref{fig:pilot-hierarchy} and~\ref{fig:pilot-resource} show the original
+hierarchy interaction and resource comparison; Figure~\ref{fig:mechanism-pilot}
+adds the exploratory retention contrasts.
 The frozen development prefix contains ties but no NONE worlds; validation
 introduces that stratum. Its competence gate therefore does not establish
 performance on no-feasible-candidate decisions.
 
 \input{generated/mechanism-pilot.tex}
+\input{generated/pilot-interpretation.tex}
 
-The provisional design includes separate pilot, validation and held-out splits,
+The original design has separate pilot, validation and held-out splits,
 two stochastic repetitions, and two model families. Actual manifests verify call
-counts. Final held-out allocation must be frozen after development and validation
-precision/runtime assessment, before inspecting held-out outcomes. No favorable
+counts. Its held-out allocation was frozen after completed validation and
+precision/runtime assessment, before held-out inference. The later mechanism
+amendments preserve that design and use separate validation for new confirmation.
+No favorable
 significance threshold justifies stopping. A model that fails the competence gate
 is a documented limitation, not a candidate selected for a desirable failure rate.
 
+\FloatBarrier
 \input{generated/main-results.tex}
 \input{generated/supporting-results.tex}
 \input{generated/live-results.tex}

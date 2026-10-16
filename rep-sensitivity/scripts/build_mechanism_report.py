@@ -183,12 +183,13 @@ the pilot does not identify a single retention mechanism.
 \\begin{figure}[ht]
 \\centering
 \\includegraphics[width=\\textwidth]{../results/pilot-mechanism-v1/figures/retention-and-decisions.pdf}
-\\caption{Exploratory pilot: paired changes in correctness and explicit retention.
-Intervals resample independent base pairs, stratified by mutation family and
-change status. Necessary scopes include numerical objectives; Boolean-critical
-scopes use a truth-value-flip definition. These metrics do not observe hidden reasoning.}
+\\caption{Exploratory pilot: correctness and explicit retention effects.}
 \\label{fig:mechanism-pilot}
 \\end{figure}
+
+Intervals resample base pairs within mutation-family and edit-status strata.
+Necessary scopes include objectives; Boolean-critical scopes use isolated
+truth-value flips. These metrics do not observe hidden reasoning.
 
 Unexposed-manager prompts and requested seeds matched in 192 paired comparisons
 per population. Normalized findings nevertheless differed in two workflow
@@ -198,8 +199,9 @@ a new coupling intervention, not a retrospective repair of pilot outputs.
 '''
 (OUT/'mechanism-pilot.tex').write_text(tex)
 
-suites=('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1')
+suites=('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1','root-diagnostic-v1')
 available={}
+not_launched=[]
 for suite in suites:
     path=Path('results',suite,'analysis.json')
     if path.exists():
@@ -212,9 +214,26 @@ for suite in suites:
     result=available.get(suite)
     label=suite.replace('-',' ')
     if result is None:
+        if suite=='mechanism-heldout-v1' and Path('artifacts/runs/mechanism-execution/heldout-not-launched.json').exists():
+            not_launched.append(suite)
+            extension+='\\textbf{'+label+':} not launched under the prespecified validation/resource gate. No held-out extension result is claimed.\\par\n'
+            continue
         extension+='\\textbf{'+label+':} no complete model analysis is available; no numerical result is claimed.\\par\n'
         continue
-    extension+='\\textbf{'+label+':} '+str(result['analyzed_trajectories'])+' completed trajectories. '
+    extension+='\\textbf{'+label+':} '+str(result.get('analyzed_trajectories',result.get('trajectories')))+' completed trajectories. '
+    if suite.startswith('root-'):
+        extension+='This six-base development diagnostic holds incoming summaries fixed while varying root-level repetition. Every candidate objective is targeted in turn. Lossless transport preserves supplied propositions without exposing the answer. Small stratum counts preclude interval estimates. World correctness is an end-to-end outcome; it must not penalize the root for unavailable truth. The separate input-warranted score expects INSUFFICIENT when visible values do not determine a choice.\\par\n'
+        information=Path('results',suite,'visible-information.json')
+        visible=json.loads(information.read_text()) if information.exists() else None
+        extension+='\\begin{center}\\small\\begin{tabular}{llrr}\\toprule Transport & Arm & World (\\%) & Input (\\%)\\\\\\midrule\n'
+        for row in result['aggregate']:
+            vr=next((r for r in visible['aggregate'] if (r['transport'],r['arm'])==(row['transport'],row['arm'])),None) if visible else None
+            score=f"{100*vr['correct_given_visible_information']/vr['trajectories']:.2f}" if vr else '--'
+            extension+=row['transport'].replace('_',' ')+' & '+row['arm'].replace('_',' ')+' & '+f"{100*row['accuracy']:.2f}"+' & '+score+'\\\\\n'
+            trace.append({'source':'results/'+suite+'/analysis.json','row':row})
+            if vr:trace.append({'source':'results/'+suite+'/visible-information.json','row':vr})
+        extension+='\\bottomrule\\end{tabular}\\end{center}\n'
+        continue
     if suite.startswith('fresh'):
         extension+='This is a six-base development diagnostic; singleton-stratum confidence intervals are unavailable.\\par\n'
         continue
@@ -245,7 +264,8 @@ for suite in suites:
 (OUT/'mechanism_numerical_traceability.json').write_text(json.dumps({'pilot_analysis_sha256':digest(audit),
     'figure_data_sha256':digest(effects),'entries':trace},indent=2)+'\n')
 status={'amendment':'mechanism-v1','complete_extension_analyses':list(available),
-        'pending_extension_analyses':[s for s in suites if s not in available],
+        'pending_extension_analyses':[s for s in suites if s not in available and s not in not_launched],
+        'not_launched_under_prespecified_gate':not_launched,
         'human_scientific_review':'pending','submission_ready':False}
 Path('records/mechanism-report-status.json').write_text(json.dumps(status,indent=2)+'\n')
 print(json.dumps(status))

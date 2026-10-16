@@ -6,12 +6,12 @@ import os
 from pathlib import Path
 import sys
 
-p=argparse.ArgumentParser();p.add_argument('--entry',choices=['cli','development_gate','study','live_revision_study','mechanism_study'],default='cli')
+p=argparse.ArgumentParser();p.add_argument('--entry',choices=['cli','development_gate','study','live_revision_study','mechanism_study','root_diagnostic'],default='cli')
 p.add_argument('--snapshot-only',action='store_true')
 a,arguments=p.parse_known_args()
 if arguments[:1]==['--']:arguments=arguments[1:]
 source={p.name:p.read_text() for p in Path('src/rep_sensitivity').glob('*.py')}
-runner=Path('scripts',{'development_gate':'development_gate.py','study':'run_study.py','live_revision_study':'run_corrected_live_study.py','mechanism_study':'run_mechanism_study.py'}[a.entry]).read_text() if a.entry!='cli' else None
+runner=Path('scripts',{'development_gate':'development_gate.py','study':'run_study.py','live_revision_study':'run_corrected_live_study.py','mechanism_study':'run_mechanism_study.py','root_diagnostic':'run_root_diagnostic.py'}[a.entry]).read_text() if a.entry!='cli' else None
 configuration={p.name:p.read_text() for p in Path('configs').glob('*.json')} if a.entry in ('study','live_revision_study','mechanism_study') else {}
 identity=hashlib.sha256(json.dumps({'source':source,'runner':runner,'configuration':configuration},sort_keys=True).encode()).hexdigest()
 root=Path('artifacts/implementations')/identity

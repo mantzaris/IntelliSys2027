@@ -12,15 +12,17 @@ from pathlib import Path
 from rep_sensitivity.schema import digest
 from rep_sensitivity.targeted_analysis import load,summarize
 from rep_sensitivity.fresh_analysis import summarize as summarize_fresh
+from rep_sensitivity.root_diagnostic import analyze as summarize_root
 
 changed=[]
-for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1'):
+for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1','root-diagnostic-v1'):
     root=Path('artifacts/runs',suite)
     if not (root/'manifest.json').exists():continue
     manifest=json.loads((root/'manifest.json').read_text());model=manifest['config']['model']
-    if suite.startswith('fresh'):
+    if suite.startswith(('fresh','root-')):
         rows=[r for p in sorted((root/model/'scores').glob('*.json')) for r in json.loads(p.read_text())]
         complete=len(rows)==manifest['trajectories'];module='fresh_analysis.py';analyze=summarize_fresh
+        if suite.startswith('root-'):module='root_diagnostic.py';analyze=summarize_root
     else:
         _,rows,incomplete=load(root);complete=not incomplete;module='targeted_analysis.py';analyze=summarize
     if not complete:continue
@@ -30,7 +32,12 @@ for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-
     source=digest(Path('src/rep_sensitivity',module).read_text())
     if destination.exists():
         old=json.loads(destination.read_text())
-        if old.get('complete') and old.get('analysis_source_sha256')==source:continue
+        supplementary_current=True
+        if suite.startswith('root-'):
+            extra=destination.parent/'visible-information.json'
+            supplementary_current=extra.exists() and json.loads(extra.read_text()).get('analysis_source_sha256')==digest(Path('scripts/audit_root_information.py').read_text())
+        if old.get('complete') and old.get('analysis_source_sha256')==source and supplementary_current:continue
     analyze(root,destination.parent);changed.append(suite)
+    if suite.startswith('root-'):subprocess.run([sys.executable,'scripts/audit_root_information.py'],check=True)
 if changed:subprocess.run([sys.executable,'scripts/build_mechanism_report.py'],check=True)
 print(json.dumps({'refreshed_complete_suites':changed}))

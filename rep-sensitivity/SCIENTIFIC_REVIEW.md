@@ -58,3 +58,25 @@ completed run may leave broad intervals and cannot establish generality.
 - Claim retention accepts equal integer/float values, distinguishes Boolean values,
   and reports incompatible cited scopes separately. These observable outputs do
   not identify an internal reasoning or causal mediation path.
+
+Continuation review points (16 October, amendment v2):
+
+- Verify the pilot effect's concentration: 7/14 improvements come from one of 12
+  scheduling bases. Leave-one-base-out estimates are descriptive, not extra tests.
+- The typed failure labels describe emitted messages. Wrong or absent objectives,
+  ignored failed constraints, and erroneous support can overlap; none identifies
+  an internal attention or reasoning process.
+- V1 lossless transport consolidates copies into references. The separate root
+  diagnostic repeats assertions themselves and has only six independent bases.
+  It must not be presented as powered confirmation or a pure mediation estimate.
+- Root diagnostic objectives cover all candidates: 12 correct-choice and 24
+  other-candidate target contexts, including six infeasible-candidate contexts.
+  Fixed model summaries retain their original errors; lossless transport uses
+  only assertions supplied by workers.
+- Whole-prompt repetition already has direct primary literature. The contribution
+  must depend on complementary scope integration and observed transport/application
+  distinctions, not the mere existence of beneficial repetition.
+- The official AI policy was rechecked on 16 October. The disclosure describes
+  automated implementation, execution, analysis and drafting truthfully. Human
+  responsibility for scientific development and eligibility remains unresolved
+  until the author reviews it; the PDF is not submission-ready.

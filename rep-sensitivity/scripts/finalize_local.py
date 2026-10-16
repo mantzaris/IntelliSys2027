@@ -36,6 +36,11 @@ if Path('records/amendments/mechanism-v1.json').exists():
     elif not Path('artifacts/runs/mechanism-execution/heldout-not-launched.json').exists():
         raise SystemExit(0)
 else:extension_suites=()
+if Path('configs/frozen/root-diagnostic-v1.json').exists():
+    root_result=Path('results/root-diagnostic-v1/analysis.json')
+    if not root_result.exists() or not json.loads(root_result.read_text()).get('complete'):
+        raise SystemExit(0)
+    extension_suites+=('root-diagnostic-v1',)
 identity_inputs=sorted(p for suite in ('validation-v7',*suites,'live-development-v8')
                        for p in Path('artifacts/runs',suite).glob('*/scores/*.json'))
 identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('manuscript/abstract-development.tex'),
@@ -43,7 +48,8 @@ identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('manuscript/
     *[Path('src/rep_sensitivity',name) for name in ('analysis.py','aux_analysis.py','metrics.py')]]
 identity_inputs += [p for suite in extension_suites for p in Path('artifacts/runs',suite).glob('*/scores/*.json')]
 identity_inputs += [Path('scripts/build_mechanism_report.py'),*[Path('src/rep_sensitivity',name) for name in
-    ('targeted_analysis.py','targeted_audit.py','fresh_analysis.py','mechanism.py')]]
+    ('targeted_analysis.py','targeted_audit.py','fresh_analysis.py','mechanism.py','root_diagnostic.py','pilot_interpretation.py')]]
+identity_inputs += [Path('scripts/build_pilot_interpretation.py'),Path('scripts/audit_root_information.py')]
 identity=hashlib.sha256(b''.join(hashlib.sha256(p.read_bytes()).digest() for p in identity_inputs)).hexdigest()
 marker=Path('records/review-package.json')
 commit_marker=Path('artifacts/review-package-commit.json')
@@ -65,10 +71,16 @@ for script in ('build_study_figures.py','build_manuscript_tables.py','build_stud
     subprocess.run([sys.executable,'scripts/'+script],env=env,check=True)
 for suite in extension_suites:
     module='fresh_analysis' if suite.startswith('fresh') else 'targeted_analysis'
-    subprocess.run([sys.executable,'-m','rep_sensitivity.'+module,'artifacts/runs/'+suite,'results/'+suite],env=env,check=True)
+    if suite.startswith('root-'):
+        from rep_sensitivity.root_diagnostic import analyze
+        analyze('artifacts/runs/'+suite,'results/'+suite)
+        subprocess.run([sys.executable,'scripts/audit_root_information.py'],env=env,check=True)
+    else:subprocess.run([sys.executable,'-m','rep_sensitivity.'+module,'artifacts/runs/'+suite,'results/'+suite],env=env,check=True)
     audit=json.loads(Path('results',suite,'analysis.json').read_text())['physical_resource_inventory']
     if audit['unscored_accepted_calls']:raise RuntimeError('Incomplete raw inventory: '+suite)
 subprocess.run([sys.executable,'scripts/build_mechanism_report.py'],env=env,check=True)
+subprocess.run([sys.executable,'scripts/interpret_pilot.py'],env=env,check=True)
+subprocess.run([sys.executable,'scripts/build_pilot_interpretation.py'],env=env,check=True)
 subprocess.run(['latexmk','-pdf','-interaction=nonstopmode','-halt-on-error','main.tex'],cwd='manuscript',env=env,check=True)
 subprocess.run([sys.executable,'scripts/check_manuscript.py'],env=env,check=True)
 files=sorted(p for folder in ('results','records/audits','records/freezes','manuscript/generated')
@@ -90,7 +102,7 @@ if args.commit:
     paths=['results','configs/frozen','records/freezes','records/manifests','records/environment',
            'records/audits','records/study-report-status.json','records/review-package.json',
            'records/manuscript-checks.json','records/mechanism-report-status.json','records/planning',
-           'manuscript/generated','manuscript/main.pdf','PILOT_MECHANISM_AUDIT.md']
+           'manuscript/generated','manuscript/main.pdf','PILOT_MECHANISM_AUDIT.md','PILOT_INTERPRETATION.md']
     # Restrict staging to compact, generated study records. Source/user edits remain untouched.
     subprocess.run(['git','add','--',*paths],check=True)
     subprocess.run(['git','diff','--cached','--check'],check=True)

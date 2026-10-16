@@ -2,16 +2,30 @@
 
 Controlled experiments on duplicated, near-duplicated and complementary reports
 in hierarchical LLM systems. Everything for this study lives in this directory.
-Work and commits stay on `main`; the user performs the push.
+Work and commits stay on `main`. The latest continuation request authorizes pushing
+completed changes; background completion automation still only commits locally.
 
-**Status at 2026-10-16 15:57 UTC:** the Qwen3 pilot and both original model
-validation runs are complete. Original Qwen3 held-out main is running; its
-supporting/live stages and original Phi-4 held-out stage remain queued. A dated
-mechanism amendment has completed pilot diagnosis, 51 integrity checks and native
-token preflight. Its 514-trajectory development extension and 30-trajectory fresh
-diagnostic are frozen and queued after the current original Qwen3 stage. New
-validation and the conditional 24/48-pair held-out extension follow, before
-resuming original Phi-4. No new-extension GPU result is claimed yet.
+**Status at 2026-10-16 18:30 UTC:** the Qwen3 pilot (24 independent pairs,
+1,152 trajectories) and both original validation runs (36 shared pairs,
+2,592 trajectories/model) are complete. Original Qwen3 held-out main is running;
+Phi-4 main remains queued. The pilot's hierarchical scheduling exact-copy effect
+reproduces: 81.25% → 94.79%, +13.54 points [95% clustered interval 4.17, 22.92],
+from 12 scheduling bases and 96 trajectories per arm. Seven of 14 improved cells
+come from one base; leaving it out gives +6.82 points. See
+[PILOT_INTERPRETATION.md](PILOT_INTERPRETATION.md) for complete denominators,
+strata, paired-world performance and observable failure locations.
+
+The frozen 514-trajectory development extension, 30-trajectory fresh diagnostic,
+fresh validation and eligible 24/48-pair confirmation remain queued. A separately
+frozen **192-root-call diagnostic on six reused development pairs** now follows
+both original model stages. It fixes incoming summaries and repeats each
+candidate objective in turn, with lossless, neutral and position controls.
+Native-token checks fit all inputs and match padding exactly; 60 integrity tests
+pass. No new-extension GPU outcome is claimed. The 13-page anonymous manuscript
+compiles with 12 cited verified references and still requires scientific review.
+Current counts, measured projections and immutable source mappings are in
+`records/execution/current-runtime.json`, `records/planning/continuation-v2.json`
+and `records/execution/source-git-map.json`.
 See `PILOT_MECHANISM_AUDIT.md`, `PROTOCOL_AMENDMENT_V1.md`, the preserved
 `DECISIONS.md`, `PROTOCOL.md`, the machine-readable manifests
 and the actual `results/*/analysis.json` files. A compiled anonymous working draft
@@ -132,18 +146,16 @@ To execute a scientifically frozen replacement, use:
 .venv/bin/python scripts/resume_archived.py artifacts/runs/main-v7 --model qwen3
 ```
 
-The main run directory is pending until the active controller freezes and
-initializes it after completed validation. Its configuration will be
-`configs/frozen/main-v7.json`. Freeze sample
+The original main run is initialized and frozen in
+`configs/frozen/main-v7.json`. For any new confirmation, freeze sample
 size, model allocation, templates, policies and analysis before held-out inference;
 never edit a frozen artifact in place. Do not start these commands concurrently
 with the active controller.
 
 ## Supporting controls and live workers
 
-The provisional configurations enumerate targeted contrasts and their unresolved
-limitations. Execution is blocked until a frozen replacement is created following
-replay validation. The commands once frozen are:
+Original supporting and live configurations are now frozen; execution follows
+main replay under the sequential controller. Their commands are:
 
 ```bash
 .venv/bin/python scripts/resume_archived.py artifacts/runs/supporting-v7 --model qwen3
@@ -349,3 +361,38 @@ latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 cd ..
 .venv/bin/python scripts/check_manuscript.py
 ```
+
+## Fixed-input root diagnostic and continuation audit
+
+[PROTOCOL_AMENDMENT_V2.md](PROTOCOL_AMENDMENT_V2.md) preserves the original and
+v1 confirmation analyses. New pilot interpretation and the root-only diagnostic
+are exploratory; original held-out choices were not inspected to choose them.
+The latter is frozen in `configs/frozen/root-diagnostic-v1.json` and queued as
+recorded in `records/execution/root-diagnostic-handoff-v1.json`. It waits behind
+the existing controller and verifies completion of both original model stages.
+Do not launch competing inference. No optional boundary investigation is selected
+ahead of the core development results.
+
+The diagnostic reports world-oracle accuracy separately from correctness given
+the actually visible summaries. A consistent but erroneous summary may warrant
+a different answer; missing decision-critical information warrants INSUFFICIENT.
+The pre-inference supplement `scripts/audit_root_information.py` scores this
+without repairing inputs using hidden truth and leaves the inference freeze intact.
+
+```bash
+# Offline reproduction and review figures:
+PYTHONPATH=src .venv/bin/python scripts/interpret_pilot.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_pilot_interpretation.py
+# Progress, provenance and measured runtime, without evaluating held-out choices:
+PYTHONPATH=src .venv/bin/python scripts/study_runtime.py
+.venv/bin/python scripts/check_mirror.py
+# CPU-only initial preflight/freezing procedure (already completed; do not refreeze):
+PYTHONPATH=src .venv/bin/python scripts/preflight_root_diagnostic.py
+PYTHONPATH=src .venv/bin/python scripts/freeze_root_diagnostic.py
+```
+
+If the queued diagnostic controller exits, inspect its log/blocked record before
+resuming its immutable snapshot. The exact command and source snapshot are in the
+handoff record. The local completion hook reanalyzes only complete mirrored
+outputs and waits for the diagnostic before assembling a review package. Raw
+outputs, request caches, model files and detailed trace rows stay outside Git.

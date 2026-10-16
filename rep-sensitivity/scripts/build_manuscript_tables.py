@@ -9,7 +9,7 @@ records=[(p,json.loads(p.read_text())) for p in files if 'interim' not in str(p)
 rows=[]
 trace=[]
 for p,result in records:
-    if not result['suite'].startswith('competence') or not result.get('complete'): continue
+    if not result.get('suite','').startswith('competence') or not result.get('complete'): continue
     by_model={r['model']:{} for r in result['competence']}
     for r in result['competence']:by_model[r['model']][r['kind']]=r
     for model, values in by_model.items():
@@ -25,7 +25,7 @@ table='\\begin{table}[ht]\n\\centering\n\\caption{Completed development checks: 
 table+='\n'.join(rows) if rows else '\\multicolumn{4}{c}{No complete competence run available at build time.}\\\\'
 table+='\n\\hline\n\\end{tabular}\n\\end{table}\n'
 (out/'competence.tex').write_text(table)
-pilot=next(((p,r) for p,r in records if r['suite']=='pilot-v7' and r.get('complete')),None)
+pilot=next(((p,r) for p,r in records if r.get('suite')=='pilot-v7' and r.get('complete')),None)
 if pilot:
     path,result=pilot
     table='\\begin{table}[ht]\n\\centering\n\\caption{Completed development pilot accuracy (percent); not a held-out hypothesis test. Each cell retains both worlds and both stochastic repetitions.}\n\\label{tab:pilot}\n\\small\n\\begin{tabular}{lllrrr}\n\\hline\nTask & Organization & Policy & Single & Exact & Paraphrase\\\\\n\\hline\n'
@@ -37,9 +37,10 @@ if pilot:
                 table+=' & '.join([kind,organization,policy,*[f"{100*r['accuracy']:.1f}" for r in cells]])+r'\\'+'\n'
                 for r in cells:trace.append({'source':str(path),'field':'summary','record':r})
     table+='\\hline\n\\end{tabular}\n\\end{table}\n'
-    if not any(r['suite']=='main-v7' and r.get('complete') for p,r in records):
-        for figure in ('repetition','hierarchy','retention','resource'):
-            table+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/pilot-v7/figures/'+figure+'.pdf}\n\\caption{Development-only primary scheduling: '+figure+'. Intervals, where shown, resample base-instance clusters.}\n\\label{fig:pilot-'+figure+'}\n\\end{figure}\n'
+    # The interpretation figure now combines absolute accuracy and paired
+    # effects; preserve the original figures on disk without repeating them.
+    for figure in ('hierarchy','resource'):
+        table+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/pilot-v7/figures/'+figure+'.pdf}\n\\caption{Development-only primary scheduling: '+figure+'. Intervals, where shown, resample base-instance clusters.}\n\\label{fig:pilot-'+figure+'}\n\\end{figure}\n'
     (out/'pilot.tex').write_text(table)
     for r in result['contrasts']:trace.append({'source':str(path),'field':'contrasts','record':r})
 (out/'numerical_traceability.json').write_text(json.dumps(trace,indent=2)+'\n')

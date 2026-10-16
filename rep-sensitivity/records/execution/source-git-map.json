@@ -1,0 +1,33 @@
+{
+  "package_source_revisions": [
+    {
+      "git_commit": "599d2ec39c16c85def6592b4e69ead877b95384d",
+      "source_sha256": "9e7d108117bff258d7a582c83dc29f389a9dd268ab940571b9b4dad6eb932bf9"
+    },
+    {
+      "git_commit": "06fcbf482a8c9e454edea45e9df59652e09fa746",
+      "source_sha256": "f44cf7309ca2f26f856c18a9611e8e25e94edeb1d79ba72a7174aea6aad21008"
+    },
+    {
+      "git_commit": "f689b297619901812ffda876bfb496ab82db7f66",
+      "source_sha256": "3d52eca1b17a7552f5fd4ee269de651f428da8709fd45a015218f31a9f811f17"
+    },
+    {
+      "git_commit": "1c3630b0d4a824b28bc66245fd1bebe584a2f318",
+      "source_sha256": "c8f1bb6a8983a1990c33976ce97ab9c79f78952c108f16182955b0b3736b830c"
+    },
+    {
+      "git_commit": "b03ed9ef4575045c94c8b78c9ee8dd916cf87e3a",
+      "source_sha256": "1b0f8196c61273cbbe9b33485310ba8def2ef3854fe46ecceb75548dab8836b6"
+    },
+    {
+      "git_commit": "375c83832531534e00fb091e3a9b0f33977b7ecb",
+      "source_sha256": "52d72831eb3312d3f89499f129db2173b6a15cdc6cfe8dbd4fc3a6e1319d67f6"
+    },
+    {
+      "git_commit": "a90bf209735f815c24649458e9d2659779ff807f",
+      "source_sha256": "56a35942a185622d97e5a60c93b554ae1fa2259405d1a09972a3e475226d00dd"
+    }
+  ],
+  "note": "Content-based mapping. Runs use immutable package/snapshot hashes, not the later documentation commit."
+}

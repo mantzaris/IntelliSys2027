@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-16T18:28:16.362554+00:00",
+  "comparisons": [
+    {
+      "suite": "pilot-v7",
+      "remote_immutable_files_at_snapshot": 2332,
+      "identical_local_files": 2332,
+      "not_yet_local": [],
+      "different_content": []
+    },
+    {
+      "suite": "validation-v7",
+      "remote_immutable_files_at_snapshot": 10444,
+      "identical_local_files": 10444,
+      "not_yet_local": [],
+      "different_content": []
+    },
+    {
+      "suite": "main-v7",
+      "remote_immutable_files_at_snapshot": 8284,
+      "identical_local_files": 8252,
+      "not_yet_local": [
+        "qwen3/calls/b81e2ee3c75fe4f87b44cb3137c8cc4fb485250a7ae10c27996bb01948b99d49.json.gz",
+        "qwen3/calls/3b78d1767ba7c0e382ce2f4ea109ab9f3515429d484c4e9215b3ca78ff71f94a.json.gz",
+        "qwen3/calls/3df1474b56896681f3aec43bd7e943301f44d2924fb4d456176ec040cc4e8bc3.json.gz",
+        "qwen3/calls/fd3e57b05d27cfd6b2072ec22b53f47eb0783150eaa2f35c60be4e6f2a225e19.json.gz",
+        "qwen3/calls/beee982c0041f321a31063e5d726a0aa9079b62a4542c8e4ecb48ddc1ae093cf.json.gz",
+        "qwen3/calls/37592b91847356b4214e721d04fce53c094de45f32ab6eb1e6598de484ec6f55.json.gz",
+        "qwen3/calls/0fc57eb2b90edfe8823164539289ff3b8031cee1824fc3b2c33d9ea2612e090c.json.gz",
+        "qwen3/calls/1d2724bf26ea1b8d4abd92dcd25f54d2f02a005efbe99dc77c9df37bf9d0ecae.json.gz",
+        "qwen3/calls/8c90dc3239ac7fb96e8b5e526bcea34e536e971b944c86116bac70bc5c0fead2.json.gz",
+        "qwen3/calls/1564ed7c31b5093aec26b334b5bd5eb951355e8574b13f048e0f841d326a8232.json.gz",
+        "qwen3/calls/18f7be26b225e7cf6a90060670a590adcd7b31fd06ba43582bc779cd98032f1c.json.gz",
+        "qwen3/calls/3dea9670d7255d7fadfe9c1afc05dbe6e8b56ae81467320e550931801f496453.json.gz",
+        "qwen3/calls/9963a938425d1da090bc397b5f85b419614b376bcb52b9bbc0f3ee0627d8feb1.json.gz",
+        "qwen3/calls/94e7eac7e4096c87c1cba2e51a230700dc92e8993b417efb7b9ef3e3940c2323.json.gz",
+        "qwen3/calls/bdb93206b979721c31a8bdb8ed0d2957285068a1dd8f362083894475b1fbcee8.json.gz",
+        "qwen3/calls/91aa8bd90267f4a474b1c3ccdef8e277179fc0f024921c2bd14e794aab272b70.json.gz",
+        "qwen3/calls/448afcaae599ce78f4bb11fa3e8730d95554ae0117fd7049448d8644c094766f.json.gz",
+        "qwen3/calls/35b3eca15dc3a5437543909a2d783eb51ccda2d9fed738e0221447d8dd851571.json.gz",
+        "qwen3/calls/6a2a1e3a90d343d8b320c5c246d18eb8bbc6a47b6dc2c3be55e17629945fa363.json.gz",
+        "qwen3/calls/90b0b74438e00bf299347eb22c0a0a1b408008262ae309018ca90a86e2a65fe4.json.gz",
+        "qwen3/calls/92c54f661e2efb48d8cceee156053cf89c1d93c1f0d32ff987b466724b7819f5.json.gz",
+        "qwen3/calls/45368b0b28b79e3b0274e826a2a1f50eed4399d16ddb1cc8b26106402836580f.json.gz",
+        "qwen3/calls/6237c6df0bbe4b57d30df77c4318f503920f0e0ca9dab5fabe3120f65651ec97.json.gz",
+        "qwen3/calls/07a4a0302c33326f12c60cac5d4766e77d7501dd55ba11a083b9a94eec109e1c.json.gz",
+        "qwen3/calls/191aa1baf1a2e1f16d541f165b5f277c2d6d299b8fcc6096909dfab3f38a70e9.json.gz",
+        "qwen3/calls/8deed6fc63712d23b04e590e175d32ea2b31852e0284876fd1fa0f4341d98f66.json.gz",
+        "qwen3/calls/6f54b4b4974694de3d207f4f1a314aa76f446f68cb9fa28960fc07a0ad1c3abf.json.gz",
+        "qwen3/calls/ae354b5bdcce9888312806e9a4cc3c68625882a48ecdf47c58ff4113a9f13967.json.gz",
+        "qwen3/calls/41809860e95ba1924c61cdfc752eed17f966f54c30dc37bf18f8c0d5c9348aee.json.gz",
+        "qwen3/calls/b493f379fa3b83655d6f704df4c548faef094f53445cf07835d0047179c30059.json.gz",
+        "qwen3/calls/6ea49fac6a0571b42f9d553ba5328049f01d466c3286bc084adbeb90ac4b701e.json.gz",
+        "qwen3/calls/91c46e2243073a076617ff0e82f8582932737176663ba02df6bb2994c52eee46.json.gz"
+      ],
+      "different_content": []
+    }
+  ],
+  "interpretation": "No held-out choices inspected. Additional remote calls after the snapshot are expected; a lag is not a content conflict."
+}

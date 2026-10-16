@@ -18,8 +18,16 @@ not a completed novelty assessment.
 | [Zhang, Baldridge and He, *PAWS*](https://aclanthology.org/N19-1131/), NAACL-HLT 2019 | High lexical-overlap sentence pairs constructed by scrambling and paraphrasing | Surface overlap does not establish meaning equivalence. Our additional scope/ancestry fields support controlled complementary requirements. |
 | [*Do Metadata and Appearance of the Retrieved Webpages Affect LLM's Reasoning in Retrieval-Augmented Generation?*](https://aclanthology.org/2024.blackboxnlp-1.24/), BlackboxNLP 2024 workshop proceedings | Conflicting webpages with metadata and appearance changes | Source/time cues can alter conflict resolution. Our explicit version rules separate legitimate revision from mere timestamp preference. |
 | [Liu et al., *Lost in the Middle*](https://aclanthology.org/2024.tacl-1.9/), TACL 2024 | Multi-document QA and key-value retrieval with evidence position/context-length manipulations | Context position and length are alternative explanations. Frozen ordering, padding and summary bypass are needed before attributing effects to duplication itself. |
+| [Leviathan, Kalman and Matias, *Prompt Repetition Improves Non-Reasoning LLMs*](https://arxiv.org/html/2512.14982v1), arXiv v1, 17 December 2025; preprint | Seven models and seven benchmarks; entire-prompt repetition, triple repetition, question/option order and padding, with a smaller reasoning-enabled comparison | Beneficial repetition already has direct precedent. Their intervention repeats the whole prompt; ours selectively emphasizes complementary scoped findings and tests transmission separately from root application. Their API-latency measurements do not establish local GPU cost. |
 
 Available primary full texts and official bibliographic metadata were inspected;
 human scientific review of novelty and interpretation remains pending. The scaling
 paper's peer-reviewed identity remains unverified. None of these studies is treated
 as evidence that our hypotheses hold.
+
+Continuation check on 16 October 2026: the arXiv history still lists only v1 for
+both *Copies or Sources?* and *Prompt Repetition*. The former's Section 3 T3
+explicitly supplies the roster and full log to the aggregator. This supports a
+restricted-summary distinction, but does not establish novelty by itself. The
+primary full text of *Prompt Repetition* (Sections 1–3 and Appendix A.4), rather
+than third-party summaries, informs the comparison above.

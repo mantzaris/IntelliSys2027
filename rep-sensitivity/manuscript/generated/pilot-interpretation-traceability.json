@@ -1,0 +1,13 @@
+{
+  "source": "results/pilot-interpretation-v2/analysis.json",
+  "fields": [
+    "comparisons",
+    "paired_world",
+    "failure_locations"
+  ],
+  "generated": [
+    "pilot-interpretation.tex",
+    "PILOT_INTERPRETATION.md"
+  ],
+  "human_review": "pending"
+}

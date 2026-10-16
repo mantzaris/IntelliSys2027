@@ -1,0 +1,106 @@
+{
+  "additional_planning": [
+    {
+      "base_pairs": 24,
+      "estimated_allocated_hours_from_validation_stage_means": 0.7151274006353595,
+      "physical_calls": 1116,
+      "projection_not_measurement": true,
+      "suite": "mechanism-development-v1",
+      "trajectories": 514
+    },
+    {
+      "base_pairs": 24,
+      "estimated_allocated_hours_from_validation_stage_means": 0.41011445663107293,
+      "physical_calls": 624,
+      "projection_not_measurement": true,
+      "suite": "mechanism-validation-v1",
+      "trajectories": 336
+    },
+    {
+      "base_pairs": 24,
+      "estimated_allocated_hours_from_validation_stage_means": 0.37389126060547795,
+      "physical_calls": 576,
+      "projection_not_measurement": true,
+      "suite": "mechanism-heldout-v1-24",
+      "trajectories": 288
+    },
+    {
+      "base_pairs": 48,
+      "estimated_allocated_hours_from_validation_stage_means": 0.7477825212109559,
+      "physical_calls": 1152,
+      "projection_not_measurement": true,
+      "suite": "mechanism-heldout-v1-48",
+      "trajectories": 576
+    },
+    {
+      "base_pairs": 6,
+      "estimated_allocated_hours_from_validation_stage_means": 0.14489278410238007,
+      "physical_calls": 192,
+      "projection_not_measurement": true,
+      "suite": "root-diagnostic-v1",
+      "trajectories": 192
+    },
+    {
+      "base_pairs": 6,
+      "estimated_allocated_hours_from_live_stage_means": 0.06408159265951124,
+      "physical_calls_max": 72,
+      "projection_not_measurement": true,
+      "suite": "fresh-probe-v1",
+      "trajectories": 30
+    },
+    {
+      "estimated_allocated_hours_from_development_totals": 1.6962258237882304,
+      "model": "qwen3",
+      "projection_not_measurement": true,
+      "scaling": {
+        "supporting_bases": [
+          2,
+          12
+        ],
+        "supporting_ratio": 6.0,
+        "live_generated_before_schedule_filter": [
+          12,
+          24
+        ],
+        "live_repetitions": [
+          2,
+          2
+        ],
+        "live_ratio": 2.0
+      },
+      "suite": "original-supporting-and-live",
+      "caution": "Supporting proxy is based on only two development bases; family mix and eligibility differ."
+    },
+    {
+      "estimated_allocated_hours_from_development_totals": 1.537984544892485,
+      "model": "phi4",
+      "projection_not_measurement": true,
+      "scaling": {
+        "supporting_bases": [
+          2,
+          12
+        ],
+        "supporting_ratio": 6.0,
+        "live_generated_before_schedule_filter": [
+          12,
+          24
+        ],
+        "live_repetitions": [
+          2,
+          2
+        ],
+        "live_ratio": 2.0
+      },
+      "suite": "original-supporting-and-live",
+      "caution": "Supporting proxy is based on only two development bases; family mix and eligibility differ."
+    }
+  ],
+  "caveats": "Stage-specific measured proxies; actual batching, prompt lengths, malformed output lengths and resource displacement may alter rates. These are planning estimates, not measured future inference, kernel GPU time, costs, or guaranteed completion times. Model loading and I/O excluded. Existing independent v1 confirmation gate retains its own six-hour planning bound.",
+  "original_main_remaining_qwen_hours_at_snapshot": 12.8904854555364,
+  "original_phi4_main_projected_hours": 15.770685817384058,
+  "protected_order": "Original Qwen3 main/support/live, already frozen mechanism development/fresh/validation/eligible confirmation, original Phi-4 main/support/live, then root-only diagnostic. No additional boundary investigations selected before core results.",
+  "resource_source": "records/execution/current-runtime.json",
+  "resource_source_sha256": "0c50d483a865d83beef6d187cc9130a75bb8df17df2bb88e7b085fa0a67e368b",
+  "utc": "2026-10-16T18:31:23.579348+00:00",
+  "audit_note": "Final pre-commit audit derives scaling from configurations: supporting 2 to 12 bases; live 6 to 12 selected scheduling bases with two repetitions in both. A draft hand calculation had used wrong scaling; no experiment or allocation depended on it."
+}

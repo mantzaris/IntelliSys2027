@@ -43,7 +43,7 @@ for suite in ('pilot-v7','controls-development-v7','live-development-v8',
             'planned_trajectories':planned,'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),
             'completion_event':completed,'status':'complete checkpoint' if completed and scored==planned else 'incomplete checkpoint'})
 
-for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1'):
+for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1','root-diagnostic-v1'):
     path=runs/suite;manifest_path=path/'manifest.json'
     if not manifest_path.exists():
         progress.append({'suite':suite,'status':'not initialized locally; check mechanism handoff record'});continue
