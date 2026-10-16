@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rep-sensitivity"
+version = "0.1.0"
+description = "Controlled report integration experiments with executable oracles"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+gpu = ["vllm==0.10.2", "transformers==4.55.4", "huggingface-hub==0.34.4", "openai==1.109.1"]
+analysis = ["numpy>=1.24,<3", "matplotlib>=3.7,<4"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+rep-study = "rep_sensitivity.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

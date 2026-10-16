@@ -1,0 +1,39 @@
+{
+  "version": "analysis-v1", "status": "initial_prespecification_before_pilot",
+  "primary_population": "scheduling; workflow estimates separately labeled secondary",
+  "cluster": "base_pair_id across worlds, renderings, arms, repetitions, models",
+  "strata": ["benchmark_kind", "mutation_family", "decision_changed"],
+  "bootstrap": {"replicates": 10000, "seed": 20271015, "method": "percentile stratified cluster resampling"},
+  "model_averaging": "equal weight per model after averaging repetitions and worlds within base pair; always report each model separately",
+  "primary_contrasts": [
+    {"id": "H1_exact", "outcome": "decision_error", "contrast": "exact - single", "average_over": ["world", "organization", "policy", "model", "repetition"]},
+    {"id": "H1_paraphrase", "outcome": "decision_error", "contrast": "paraphrase - single", "average_over": ["world", "organization", "policy", "model", "repetition"]},
+    {"id": "H2", "outcome": "1 - both_worlds_correct", "contrast": "mean(exact,paraphrase)-single on consequential pairs minus same on preserving pairs"},
+    {"id": "H3", "outcome": "decision_error", "contrast": "(mean(exact,paraphrase)-single)_hierarchical - (mean(exact,paraphrase)-single)_flat"},
+    {"id": "H4_error", "outcome": "decision_error", "contrast": "scope - checklist", "condition": "repeated consequential pairs"},
+    {"id": "H4_retention", "outcome": "changed_scope_retention", "contrast": "scope - checklist", "condition": "hierarchical consequential pairs"}
+  ],
+  "p_values": "not reported in initial analysis; if added, Holm-adjust all six primary tests",
+  "denominators": {
+    "decision_error": "all planned completed trajectories, including malformed completed outputs as errors; interrupted transport calls remain visibly incomplete",
+    "invalid_selection": "all completed trajectories; separate conditional rate among candidate selections",
+    "pair_correctness": "all complete paired cells with both worlds; malformed completed answers count incorrect",
+    "responsiveness": "both worlds correctly answered among decision-changing pairs",
+    "stability": "both worlds correctly answered among decision-preserving pairs",
+    "summary_coverage": "required distinct scoped assertions delivered to managers",
+    "changed_scope_retention": "scoped assertions changed in value or applicability between paired worlds, on consequential pairs",
+    "unique_clause_loss": "delivered designated unique scoped assertions absent or wrong in summary",
+    "scope_transfer": "emitted assertions whose supporting report binds a different scope",
+    "incorrect_merge": "emitted assertions citing reports from incompatible scopes",
+    "failure_to_consolidate": "extra emitted equivalent scope-value assertions; not hidden internal reasoning",
+    "superseded_adoption": "version-control trajectories with explicitly inapplicable old results",
+    "false_adoption": "corrupted-report trajectories with resolvable injected false assertion",
+    "calibration": "completed final answers with valid full distributions; report valid-distribution fraction",
+    "cost_per_correct": "total measured cost including malformed outputs and retries divided by correct decisions"
+  },
+  "log_loss_floor": 1e-12,
+  "stopping": "freeze sample size from validation before held-out inference; no outcome-based early stopping",
+  "competence_gate": "at least 85% exact accuracy on development flat-single ordinary trajectories, operational failures included; otherwise report task limitation and revise only development protocol",
+  "precision": "report pilot cluster discordance and SD; prospective half-width 1.96*SD/sqrt(N) is an approximation, not power",
+  "mediation": "summary-retention associations exploratory; bypass is an intervention, not evidence of faithful hidden reasoning"
+}

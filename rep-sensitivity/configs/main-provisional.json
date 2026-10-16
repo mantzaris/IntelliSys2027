@@ -1,0 +1,11 @@
+{
+  "name": "main-provisional-v1", "split": "heldout", "base_pairs": 192,
+  "models": ["qwen", "mistral"], "policies": ["ordinary", "checklist", "scope"],
+  "organizations": ["flat", "hierarchical"],
+  "repetition_conditions": ["single", "exact", "paraphrase"],
+  "stochastic_repetitions": 2, "worlds": [0, 1],
+  "max_output_tokens": 1536, "temperature": 0.3, "top_p": 0.95,
+  "max_context_tokens": 12288, "batch_size": 32,
+  "expected_trajectories": 27648, "expected_manager_calls": 55296,
+  "status": "PROVISIONAL_DO_NOT_EXECUTE", "freeze_required": true
+}

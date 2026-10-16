@@ -1,0 +1,34 @@
+"""Pin authoritative repository revisions before downloading public weights."""
+import argparse
+import hashlib
+import json
+import os
+os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "0"
+os.environ["HF_HUB_DISABLE_XET"] = "1"
+from pathlib import Path
+from datetime import datetime, timezone
+from huggingface_hub import HfApi, snapshot_download
+
+MODELS = {"qwen": "Qwen/Qwen2.5-7B-Instruct", "mistral": "mistralai/Mistral-7B-Instruct-v0.3"}
+parser = argparse.ArgumentParser()
+parser.add_argument("model", choices=MODELS)
+args = parser.parse_args()
+record = Path("records/models") / (args.model + ".json")
+record.parent.mkdir(parents=True, exist_ok=True)
+api = HfApi()
+if record.exists():
+    metadata = json.loads(record.read_text())
+else:
+    info = api.model_info(MODELS[args.model], files_metadata=True)
+    metadata = {"model": info.id, "revision": info.sha, "tokenizer_revision": info.sha,
+                "checked_utc": datetime.now(timezone.utc).isoformat(), "license": "apache-2.0",
+                "model_card": "https://huggingface.co/" + info.id + "/blob/" + info.sha + "/README.md",
+                "files": [{"name": f.rfilename, "size": f.size, "lfs_sha256": f.lfs.sha256 if f.lfs else None}
+                          for f in info.siblings if f.rfilename.endswith((".safetensors", ".json", ".jinja", ".model"))]}
+    record.write_text(json.dumps(metadata, indent=2) + "\n")
+path = snapshot_download(MODELS[args.model], revision=metadata["revision"],
+                         cache_dir="artifacts/models", max_workers=4,
+                         allow_patterns=["model*.safetensors", "*.json", "tokenizer*", "*.jinja", "README.md", "LICENSE*"],
+                         ignore_patterns=["consolidated.safetensors", "*.bin"])
+Path("artifacts/models/" + args.model + "_path.txt").write_text(str(Path(path).resolve()))
+print(json.dumps({"model": metadata["model"], "revision": metadata["revision"], "path": path}), flush=True)
