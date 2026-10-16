@@ -1,0 +1,255 @@
+{
+  "split": "heldout",
+  "benchmark_version": 2,
+  "independent_base_pairs": 96,
+  "pairs_sha256": "1754995125373470b7fa98238fb8ebb1ec8d2a477c467d91ba26c47b44544024",
+  "selected_report_invariance": {
+    "selected_scope_and_value_unchanged": 80
+  },
+  "selected_task_counts": [
+    {
+      "kind": "schedule",
+      "task": "deadline_downtime",
+      "pairs": 12
+    },
+    {
+      "kind": "schedule",
+      "task": "objective",
+      "pairs": 12
+    },
+    {
+      "kind": "schedule",
+      "task": "precedence_release",
+      "pairs": 12
+    },
+    {
+      "kind": "schedule",
+      "task": "resource",
+      "pairs": 12
+    },
+    {
+      "kind": "workflow",
+      "task": "audit",
+      "pairs": 4
+    },
+    {
+      "kind": "workflow",
+      "task": "delivery",
+      "pairs": 20
+    },
+    {
+      "kind": "workflow",
+      "task": "objective",
+      "pairs": 20
+    },
+    {
+      "kind": "workflow",
+      "task": "screening",
+      "pairs": 4
+    }
+  ],
+  "report_sizes": [
+    {
+      "kind": "schedule",
+      "original_reports": 18,
+      "worlds": 96
+    },
+    {
+      "kind": "workflow",
+      "original_reports": 12,
+      "worlds": 96
+    }
+  ],
+  "strata": [
+    {
+      "kind": "schedule",
+      "family": "dependency",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 6,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "0": 8,
+        "2": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "schedule",
+      "family": "dependency",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 0,
+      "fastest_all_infeasible": 16,
+      "winning_tie_priority_rank_counts": {
+        "1": 4,
+        "2": 7,
+        "0": 5
+      }
+    },
+    {
+      "kind": "schedule",
+      "family": "identity",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "2": 8,
+        "0": 2,
+        "1": 2
+      }
+    },
+    {
+      "kind": "schedule",
+      "family": "identity",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 8,
+      "fastest_all_infeasible": 8,
+      "winning_tie_priority_rank_counts": {
+        "2": 3,
+        "1": 6,
+        "0": 7
+      }
+    },
+    {
+      "kind": "schedule",
+      "family": "numeric",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "0": 10,
+        "1": 2
+      }
+    },
+    {
+      "kind": "schedule",
+      "family": "numeric",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 8,
+      "fastest_all_infeasible": 8,
+      "winning_tie_priority_rank_counts": {
+        "2": 7,
+        "1": 4,
+        "0": 5
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "condition",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 6,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "0": 10,
+        "1": 2
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "condition",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 8,
+      "fastest_all_infeasible": 8,
+      "winning_tie_priority_rank_counts": {
+        "1": 7,
+        "2": 7,
+        "0": 2
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "quantifier",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 6,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "1": 2,
+        "0": 10
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "quantifier",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 8,
+      "fastest_all_infeasible": 8,
+      "winning_tie_priority_rank_counts": {
+        "0": 6,
+        "2": 6,
+        "1": 4
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "version",
+      "decision_changed": false,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 4,
+      "tied_best_feasible": 6,
+      "at_least_one_fastest_feasible": 12,
+      "fastest_all_infeasible": 4,
+      "winning_tie_priority_rank_counts": {
+        "2": 2,
+        "1": 8,
+        "0": 2
+      }
+    },
+    {
+      "kind": "workflow",
+      "family": "version",
+      "decision_changed": true,
+      "worlds": 16,
+      "base_pairs": 8,
+      "none": 0,
+      "tied_best_feasible": 0,
+      "at_least_one_fastest_feasible": 8,
+      "fastest_all_infeasible": 8,
+      "winning_tie_priority_rank_counts": {
+        "2": 5,
+        "1": 7,
+        "0": 4
+      }
+    }
+  ],
+  "interpretation": "Deterministic corpus audit, not model performance; the generator has limited structural diversity."
+}

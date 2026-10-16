@@ -12,8 +12,9 @@ case "${1:-pull}" in
     rsync -az -e "$transport" --exclude='.venv/' --exclude='artifacts/' --exclude='logs/' \
       --exclude='results/' --exclude='__pycache__/' --exclude='.git/' ./ "$remote:$remote_dir/" ;;
   pull)
-    mkdir -p artifacts/runs records
+    mkdir -p artifacts/runs artifacts/implementations records
     rsync -az -e "$transport" --exclude='*.partial' "$remote:$remote_dir/artifacts/runs/" artifacts/runs/
+    rsync -az -e "$transport" --exclude='__pycache__/' "$remote:$remote_dir/artifacts/implementations/" artifacts/implementations/
     # Local analyses and manuscript checks may be newer than the source snapshot
     # on a running pod. Do not replace these with older remote records.
     rsync -auz -e "$transport" "$remote:$remote_dir/records/" records/

@@ -302,3 +302,10 @@ and commits compact generated records on `main`. It does not push or submit. An
 unrelated staged change blocks the automatic commit. This is execution automation,
 not scientific review; interpretation, the provisional title, and conference
 eligibility remain human review items.
+
+The validation and both prospective held-out allocations have separate oracle-only
+balance audits under `records/benchmark/`. These check the generated worlds and
+report-preserving interventions before held-out inference; they do not select
+cases using model outcomes or change the frozen generator. Immutable controller
+snapshots are now mirrored locally as well as each run's archived implementation.
+`scripts/status.py` reports checkpoint counts without analyzing held-out choices.

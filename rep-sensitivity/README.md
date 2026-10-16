@@ -24,6 +24,8 @@ only after complete raw-output audits and PDF checks, `records/review-package.js
 - `results/`: compact regenerated tables, decision records and exported figures.
 - `artifacts/runs/`: ignored immutable raw prompts/responses, frozen corpora and events;
   synchronized between RunPod and this local project. Never include bulk artifacts in Git.
+- `artifacts/implementations/`: locally mirrored immutable execution snapshots,
+  including controller code and its configuration inputs.
 - `artifacts/models/`, `.venv/`, `logs/`: ignored reproducible caches and operational files.
 
 ## Local setup and integrity checks
@@ -55,6 +57,8 @@ bash scripts/sync.sh push-source
 bash scripts/sync.sh pull
 # Optional bounded hourly mirror, copies once per minute:
 bash scripts/mirror_loop.sh
+# Read mirrored progress without examining held-out model choices:
+.venv/bin/python scripts/status.py
 ```
 
 For reproducing the isolated GPU environment on the same existing pod:
@@ -119,12 +123,12 @@ To execute a scientifically frozen replacement, use:
 ```bash
 .venv/bin/python scripts/resume_archived.py artifacts/runs/pilot-v7 --model qwen3
 .venv/bin/python scripts/resume_archived.py artifacts/runs/validation-v7 --model phi4
-PYTHONPATH=src .venv/bin/python -m rep_sensitivity.cli run \
-  --config configs/ACTUAL-FROZEN-MAIN.json --model SELECTED_MODEL
+.venv/bin/python scripts/resume_archived.py artifacts/runs/main-v7 --model qwen3
 ```
 
-The uppercase main path is an explicitly pending artifact. The active controller
-creates `configs/frozen/main-v7.json` after completed validation. Freeze sample
+The main run directory is pending until the active controller freezes and
+initializes it after completed validation. Its configuration will be
+`configs/frozen/main-v7.json`. Freeze sample
 size, model allocation, templates, policies and analysis before held-out inference;
 never edit a frozen artifact in place. Do not start these commands concurrently
 with the active controller.
@@ -136,13 +140,13 @@ limitations. Execution is blocked until a frozen replacement is created followin
 replay validation. The commands once frozen are:
 
 ```bash
-PYTHONPATH=src .venv/bin/python -m rep_sensitivity.cli controls \
-  --config configs/ACTUAL-FROZEN-CONTROLS.json --model SELECTED_MODEL
-PYTHONPATH=src .venv/bin/python -m rep_sensitivity.cli live \
-  --config configs/ACTUAL-FROZEN-LIVE.json --model SELECTED_MODEL
+.venv/bin/python scripts/resume_archived.py artifacts/runs/supporting-v7 --model qwen3
+.venv/bin/python scripts/resume_archived.py artifacts/runs/live-v8 --model qwen3
 ```
 
 Live workers receive minimal role-specific data with actual access recorded.
+These resume commands require the corresponding initialized run directory. Use
+`--model phi4` for the second family and run families sequentially.
 Four essential verification scopes remain present. Fixed-resource arms bound
 combined tokenized inputs plus output allowances to the four-worker baseline;
 this token budget does not assert equal FLOPs, latency or independent errors.
@@ -228,6 +232,20 @@ competence limits live interpretation; it does not change the qualified replay.
 The active successor snapshot/process is recorded in `records/execution/`.
 `scripts/resume_archived.py` also restores supporting and live runs from their
 own archived code and configuration.
+
+If the controller stops, inspect its failure record and resolve the cause before
+resuming; do not start a second process alongside active inference. After Phi-4
+validation completes, the exact successor can be recovered on the pod with:
+
+```bash
+study_snapshot=artifacts/implementations/69fa1831720a79bbca0735f5b5d4272b08929185e90d2241504e3e772c1fce65
+replay_snapshot=artifacts/implementations/77e005c5428fb32bb54df2166d0d2341076ca56422f1b5fad7e3a84957ec3122
+PYTHONPATH="$study_snapshot" .venv/bin/python "$study_snapshot/runner.py" \
+  --templates "$study_snapshot/configuration" --replay-snapshot "$replay_snapshot"
+```
+
+This controller reuses accepted calls. A recorded model or competence failure
+requires investigation; the recovery command does not waive any gate.
 
 The local mirror can run for a bounded duration with
 `MIRROR_ITERATIONS=4320 FINALIZE_COMMIT=1 bash scripts/mirror_loop.sh`.
