@@ -1,0 +1,3 @@
+kind,model,organization,policy,condition,n,clusters,correct,accuracy,invalid_selection_rate,operational_failure_rate,valid_probability_rate,mean_brier,mean_log_loss,input_tokens_per_decision,output_tokens_per_decision,allocated_seconds_per_decision,tokens_per_correct,summary_retention
+schedule,qwen3,flat,ordinary,single,48,12,48,1.0,0.0,0.0,0.9166666666666666,0.0,0.0,3030.0833333333335,886.3541666666666,3.4022819002711913,3916.4375,
+workflow,qwen3,flat,ordinary,single,48,12,42,0.875,0.0,0.0,1.0,0.125,0.17328679513998632,2373.25,625.9791666666666,3.335061471671603,3427.690476190476,

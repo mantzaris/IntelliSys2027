@@ -1,0 +1,21 @@
+"""Compile-output checks: abstract length, references, margins and anonymization."""
+import json
+from pathlib import Path
+import re
+import subprocess
+tex=Path('manuscript/main.tex').read_text(); log=Path('manuscript/main.log').read_text()
+abstract=tex.split(r'\begin{abstract}',1)[1].split(r'\keywords',1)[0]
+words=re.findall(r"[A-Za-z]+(?:[-'][A-Za-z]+)*",abstract)
+assert 150<=len(words)<=250,len(words)
+assert not re.search(r'Overfull \\[hv]box|undefined on input|There were undefined references',log)
+cited=set(x for group in re.findall(r'\\cite\{([^}]+)\}',tex) for x in group.split(','))
+entries=set(re.findall(r'@\w+\{([^,]+),',Path('manuscript/references.bib').read_text()))
+assert cited==entries,(cited-entries,entries-cited)
+info=subprocess.check_output(['pdfinfo','manuscript/main.pdf'],text=True)
+pages=int(re.search(r'Pages:\s+(\d+)',info).group(1));assert pages<=25
+assert r'\author{Anonymous}' in tex
+result={'abstract_words':len(words),'pages':pages,'bibliography_entries':len(entries),
+        'all_entries_cited':True,'undefined_references':False,'overfull_boxes':False,
+        'human_scientific_review':'pending','submission_ready':False}
+Path('records/manuscript-checks.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result))

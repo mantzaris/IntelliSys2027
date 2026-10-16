@@ -49,7 +49,7 @@ will receive distinct execution identifiers but shared world-source identifiers.
 Fresh calls do not imply independent evidence or independent errors.
 
 Models receive no mutation labels, oracle decisions, or evaluator correctness
-flags. The public registry maps opaque scope keys to orchestration-known scope
+flags. The public registry maps versioned scope keys to orchestration-known scope
 fields and units, without assertion values. Both ordinary and proposed policies
 receive this same registry. This structured interface assists the baseline and
 limits conclusions to this interface. A deterministic consolidation reference is
@@ -141,3 +141,15 @@ destructive concurrent effects are outside scope.
 The full workflow is incomplete until held-out inference, supporting controls,
 live evaluation, analysis regeneration, manuscript compilation and human scientific
 review are complete. No submission or claim of human review is authorized.
+
+## Current development interface (v5)
+
+See `DECISIONS.md` for preserved v1–v4 failures and revisions. The current common
+contract uses descriptive scope identifiers, schema-guided JSON, and a short
+model-generated feasibility/objective assessment before final selection. This
+scaffolds ordinary synthesis too, narrowing its difference from the checklist.
+Qwen3 uses its native non-thinking template. The v5 pilot gives every root the
+same value-free orchestration ancestry registry; raw texts and assertion values
+still cross the boundary only in managers’ summaries. Benchmark v2 fixes harmless
+numeric controls to the matched capacity 1↔2 change. Run manifests, rather than
+the historical initial settings above, specify the actual engine and caps.

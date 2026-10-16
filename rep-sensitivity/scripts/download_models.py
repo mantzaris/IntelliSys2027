@@ -9,13 +9,13 @@ from pathlib import Path
 from datetime import datetime, timezone
 from huggingface_hub import HfApi, snapshot_download
 
-MODELS = {"qwen": "Qwen/Qwen2.5-7B-Instruct", "mistral": "mistralai/Mistral-7B-Instruct-v0.3"}
+MODELS = {"qwen": "Qwen/Qwen2.5-7B-Instruct", "qwen14": "Qwen/Qwen2.5-14B-Instruct", "qwen3": "Qwen/Qwen3-14B", "mistral": "mistralai/Mistral-7B-Instruct-v0.3", "nemo": "mistralai/Mistral-Nemo-Instruct-2407"}
 parser = argparse.ArgumentParser()
 parser.add_argument("model", choices=MODELS)
 args = parser.parse_args()
 record = Path("records/models") / (args.model + ".json")
 record.parent.mkdir(parents=True, exist_ok=True)
-api = HfApi()
+api = HfApi(token=False)
 if record.exists():
     metadata = json.loads(record.read_text())
 else:
@@ -24,11 +24,14 @@ else:
                 "checked_utc": datetime.now(timezone.utc).isoformat(), "license": "apache-2.0",
                 "model_card": "https://huggingface.co/" + info.id + "/blob/" + info.sha + "/README.md",
                 "files": [{"name": f.rfilename, "size": f.size, "lfs_sha256": f.lfs.sha256 if f.lfs else None}
-                          for f in info.siblings if f.rfilename.endswith((".safetensors", ".json", ".jinja", ".model"))]}
+                          for f in info.siblings if f.rfilename.endswith((".safetensors", ".json", ".jinja", ".model", ".model.v3"))]}
     record.write_text(json.dumps(metadata, indent=2) + "\n")
 path = snapshot_download(MODELS[args.model], revision=metadata["revision"],
-                         cache_dir="artifacts/models", max_workers=4,
-                         allow_patterns=["model*.safetensors", "*.json", "tokenizer*", "*.jinja", "README.md", "LICENSE*"],
+                         cache_dir="artifacts/models", max_workers=4, token=False,
+                         allow_patterns=["model-*.safetensors", "model.safetensors.index.json", "config.json",
+                                         "generation_config.json", "tokenizer.json", "tokenizer_config.json",
+                                         "special_tokens_map.json", "vocab.json", "merges.txt", "chat_template.jinja",
+                                         "tokenizer.model.v3", "README.md", "LICENSE"],
                          ignore_patterns=["consolidated.safetensors", "*.bin"])
 Path("artifacts/models/" + args.model + "_path.txt").write_text(str(Path(path).resolve()))
 print(json.dumps({"model": metadata["model"], "revision": metadata["revision"], "path": path}), flush=True)

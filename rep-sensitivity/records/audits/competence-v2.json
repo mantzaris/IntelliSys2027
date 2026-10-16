@@ -1,0 +1,25 @@
+{
+  "suite": "competence-v2",
+  "planned_trajectories": 96,
+  "planned_calls": 96,
+  "models": {
+    "qwen": {
+      "accepted_calls": 96,
+      "unique_request_hashes": 96,
+      "started_without_accepted": 0,
+      "complete_clusters": 24,
+      "run_complete": true,
+      "finish_reasons": {
+        "stop": 96
+      },
+      "input_tokens": 231844,
+      "output_tokens": 36282,
+      "measured_inference_wall_seconds": 258.401557280682,
+      "amortized_output_tokens_per_second": 140.40937052321868,
+      "mean_input_tokens": 2415.0416666666665,
+      "mean_output_tokens": 377.9375,
+      "latency_definition": "vLLM request elapsed; inference wall excludes model loading, disk writes and software setup",
+      "raw_inventory_sha256": "a796035911055720445760d57045f350e0a33507ea87b5ec117d2a4dc74e4c93"
+    }
+  }
+}

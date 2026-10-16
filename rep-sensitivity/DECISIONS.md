@@ -1,0 +1,84 @@
+# Decisions and deviations
+
+## 2026-10-16: initial environment and model choices
+
+Reused the provided pod. Verified RTX 6000 Ada Generation (49,140 MiB), driver
+595.91.07, existing PyTorch 2.8.0+cu128, and no unrelated GPU processes. Installed
+vLLM 0.10.2 in a project-local environment. Its unbounded dependency resolver first
+selected Transformers 5.20.0; pinned compatible Transformers 4.55.4 and Hub 0.34.4
+before any model calls. Public weight downloads needed the inherited hf-transfer
+flag disabled. No new infrastructure or paid APIs were used.
+
+## 2026-10-16: stop development pilot v1 for interface failure
+
+The first inspected complete cluster had Markdown-fenced replies rejected by the
+strict JSON contract. The run was stopped for interface validation, not for a
+favorable research effect. Local immutable records contain 192 complete trajectories
+plus accepted calls from an incomplete next cluster. The initial interface also
+elicited wrong assertion types and repeated-output truncation. A diagnostic that
+only removes a surrounding JSON code fence does not establish adequate task
+competence. Do not interpret these operational failures as evidence of duplication
+harm, summary amplification, or robustness. Original failures remain primary v1
+failures; they are never silently replaced or re-sampled.
+
+## 2026-10-16: interface v2 competence check
+
+Before any held-out evaluation, replace triple-array output instructions with
+named assertion fields, an explicit type example, and a common schema-constrained
+JSON decoder for every policy. The schema contains no answers, claim values, scope
+truth or permitted correct candidates. The output cap increases to 2,048 for this
+development check. This constrains formatting in the baseline and must be disclosed.
+Only flat, single-presentation, ordinary synthesis is evaluated initially: 24 pairs,
+two worlds and two repetitions (96 calls). Scope instructions are not selected on
+held-out outcomes. A larger public model is a possible competence fallback, not an
+attempt to maximize repetition failures. The original 85% competence gate remains.
+
+Qwen2.5-14B-Instruct's official card was inspected as a possible fallback; its
+Apache-2.0 license and native Qwen chat template are suitable for sequential BF16
+inference on the allocated GPU. Mistral downloads initially returned expired
+download-credential errors; unauthenticated public-model access will be retried
+without requesting or exposing private tokens.
+
+## 2026-10-16: explicit objective semantics and assertion-first output (v3)
+
+Development errors include selecting a feasible candidate with a worse objective,
+not just accepting invalid schedules. The v2 header specified minimum makespan but
+did not explicitly map the reports' generic `objective` label to makespan/cost.
+Clarify this mapping, state that priority applies only after numerical minimization,
+and place explicit supporting assertions before the choice in the common schema.
+This is a baseline-fairness and interface development change, applied to every
+policy. It is not a held-out intervention or evidence for H1-H4. Preserve all v1/v2
+outputs and evaluate a separate v3 competence manifest on the development split.
+
+## 2026-10-16: descriptive scope identifiers (v4)
+
+Several development traces reproduce every assertion correctly but select an
+infeasible candidate. Before attributing any behavior to duplication, test whether
+opaque identifiers add avoidable binding difficulty. Replace hashed scope keys
+with candidate/predicate/entity/version identifiers and a condition hash. Every
+policy gets the same identifiers; they reveal scope, never truth or the answer.
+Archived claims retain their original identifier convention. This development
+revision does not establish a causal explanation of earlier errors. Qwen3-14B is
+tested in its officially supported non-thinking mode, with that setting recorded.
+
+Mistral's official v3 SentencePiece file is provided under the filename expected
+by the pinned Transformers loader through a derived tokenizer directory. The bytes
+and vocabulary are unchanged; the alias and file checksums are recorded. This
+resolves a tokenizer initialization error, not an accepted inference failure.
+
+## 2026-10-16: candidate assessment fields (v5) and matched capacity controls
+
+Descriptive identifiers alone did not meet the competence criterion in the
+development check. Add a short public assessment per candidate (conjunctive
+feasibility and objective) before the final choice. These are model outputs,
+not evaluator-computed answers or private reasoning. Every policy has this same
+contract; it gives ordinary synthesis a stronger scaffold and narrows its
+difference from the checklist policy. Evaluate this change on development only.
+The threshold and all unsuccessful measurements are preserved. New competence
+runs retain benchmark v1 for interface comparison.
+
+Benchmark v2, separately versioned for subsequent experiments, changes harmless
+numeric cases to the same capacity 1↔2 edit as consequential cases, with sequential
+resource demand that never exceeds one. Historical v1 worlds are unchanged. Both
+versions are checked independently against the reference verifier. No held-out
+model outcome informed this correction.

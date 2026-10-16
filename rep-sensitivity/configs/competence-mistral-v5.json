@@ -1,0 +1,32 @@
+{
+  "name": "competence-mistral-v5",
+  "split": "development",
+  "base_pairs": 24,
+  "models": [
+    "mistral"
+  ],
+  "policies": [
+    "ordinary"
+  ],
+  "organizations": [
+    "flat"
+  ],
+  "repetition_conditions": [
+    "single"
+  ],
+  "stochastic_repetitions": 2,
+  "worlds": [
+    0,
+    1
+  ],
+  "max_output_tokens": 2304,
+  "temperature": 0.3,
+  "top_p": 0.95,
+  "max_context_tokens": 12288,
+  "batch_size": 16,
+  "guided_decoding": true,
+  "expected_trajectories": 96,
+  "expected_manager_calls": 96,
+  "status": "development_candidate_assessment_interface_check",
+  "interface_version": 5
+}

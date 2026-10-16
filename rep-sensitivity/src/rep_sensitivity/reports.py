@@ -29,7 +29,7 @@ def render(claim: Claim, split: str, variant: int = 0) -> str:
         condition=claim.applicability_condition, version=claim.effective_time_or_version)
 
 
-def make_reports(world: dict, split: str, order_seed: int) -> list[Report]:
+def make_reports(world: dict, split: str, order_seed: int, identifier_format="descriptive_v4") -> list[Report]:
     results = oracle(world)
     source = "s" + digest(world)[:8]
     out = []
@@ -46,7 +46,8 @@ def make_reports(world: dict, split: str, order_seed: int) -> list[Report]:
                 condition = canonical(world["rules"][task])
             claim = Claim(task, cid, entity, predicate.split(":")[0], value,
                           ("time_units" if world["kind"] == "schedule" else "cost_units") if task == "objective" else "Boolean",
-                          condition, version, (source,), (), "e" + digest([source, task])[:8])
+                          condition, version, (source,), (), "e" + digest([source, task])[:8],
+                          identifier_format=identifier_format)
             rid = "r" + digest([order_seed, claim.key])[:7]
             out.append(Report(rid, claim, render(claim, split)))
     random.Random(order_seed).shuffle(out)
@@ -78,9 +79,9 @@ def repeat(reports: list[Report], selected: str, condition: str, split: str, dos
     pos = out.index(chosen) + 1
     copies = []
     for i in range(dose - 1):
-        text = chosen.text if condition == "exact" else render(chosen.claim, split, 1+i)
+        text = chosen.text if condition == "exact" else " ".join(render(c, split, 1+i) for c in chosen.claims())
         copies.append(Report("r" + digest([chosen.identifier, "copy", i])[:7], chosen.claim,
-                             text, (chosen.identifier,), "copy" if condition == "exact" else "paraphrase"))
+                             text, (chosen.identifier,), "copy" if condition == "exact" else "paraphrase",chosen.additional_claims))
     out[pos:pos] = copies
     return out
 
@@ -89,12 +90,13 @@ def scope_consolidate(reports: list[Report]) -> list[dict]:
     """Orchestration reference, not the model policy: never consult world truth."""
     groups = {}
     for r in reports:
-        identity = canonical([r.claim.scope(), r.claim.asserted_value])
-        group = groups.setdefault(identity, {"scope": r.claim.scope(), "value": r.claim.asserted_value,
-                                             "reports": [], "sources": set(), "executions": set()})
-        group["reports"].append(r.identifier)
-        group["sources"].update(r.claim.source_identifiers)
-        group["executions"].add(r.claim.verification_execution_identifier)
+        for claim in r.claims():
+            identity = canonical([claim.scope(), claim.asserted_value])
+            group = groups.setdefault(identity, {"scope": claim.scope(), "value": claim.asserted_value,
+                                                 "reports": [], "sources": set(), "executions": set()})
+            group["reports"].append(r.identifier)
+            group["sources"].update(claim.source_identifiers)
+            group["executions"].add(claim.verification_execution_identifier)
     return [{**g, "sources": sorted(g["sources"]), "executions": sorted(g["executions"])} for g in groups.values()]
 
 
@@ -128,7 +130,15 @@ def overlap_render(reports: list[Report], split: str, level: str) -> list[Report
 
 
 def registry(reports: list[Report]) -> dict:
-    return {r.claim.key: r.claim.scope() for r in reports}
+    return {c.key: c.scope() for r in reports for c in r.claims()}
+
+
+def ancestry_registry(reports: list[Report]) -> dict:
+    """Orchestrator metadata for summary-only roots: no texts or asserted values."""
+    return {r.identifier:{'parents':list(r.parent_report_identifiers),'operation':r.operation_type,
+                          'claims':{c.key:{'sources':list(c.source_identifiers),
+                                          'execution':c.verification_execution_identifier} for c in r.claims()}}
+            for r in reports}
 
 
 def freeze(pair: dict) -> dict:
@@ -139,9 +149,12 @@ def freeze(pair: dict) -> dict:
 
 
 def thaw(records: list[dict]) -> list[Report]:
+    def claim(value):
+        c=dict(value)
+        for key in ("source_identifiers", "parent_report_identifiers"): c[key] = tuple(c[key])
+        return Claim(**c)
     out = []
     for r in records:
-        c = dict(r["claim"])
-        for key in ("source_identifiers", "parent_report_identifiers"): c[key] = tuple(c[key])
-        out.append(Report(r["identifier"], Claim(**c), r["text"], tuple(r["parent_report_identifiers"]), r["operation_type"]))
+        out.append(Report(r["identifier"], claim(r["claim"]), r["text"], tuple(r["parent_report_identifiers"]),
+                          r["operation_type"],tuple(claim(c) for c in r.get("additional_claims",[]))))
     return out

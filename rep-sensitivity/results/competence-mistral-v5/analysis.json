@@ -1,0 +1,189 @@
+{
+  "suite": "competence-mistral-v5",
+  "manifest_sha256": "73c1e1b72183c8d9333b54f52890beae5f07be89ef94e99ea8f260295ac95444",
+  "planned_trajectories": 96,
+  "analyzed_trajectories": 96,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "f25fd6ccf610a187e38a7f1c0f2af88af39e697f3912f260f2aea4ac2fbf3983",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 31,
+      "accuracy": 0.6458333333333334,
+      "invalid_selection_rate": 0.125,
+      "operational_failure_rate": 0.020833333333333332,
+      "valid_probability_rate": 0.8541666666666666,
+      "mean_brier": 0.6219512195121952,
+      "mean_log_loss": 6.386891158716444,
+      "input_tokens_per_decision": 3658.7916666666665,
+      "output_tokens_per_decision": 406.75,
+      "allocated_seconds_per_decision": 1.653831644890791,
+      "tokens_per_correct": 6295.032258064516,
+      "summary_retention": null
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 33,
+      "accuracy": 0.6875,
+      "invalid_selection_rate": 0.020833333333333332,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.875,
+      "mean_brier": 0.5132275132275133,
+      "mean_log_loss": 4.320342400223252,
+      "input_tokens_per_decision": 2889.375,
+      "output_tokens_per_decision": 368.8541666666667,
+      "allocated_seconds_per_decision": 1.6779753407997002,
+      "tokens_per_correct": 4739.242424242424,
+      "summary_retention": null
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "mistral",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "mistral",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    }
+  ],
+  "competence": [
+    {
+      "model": "mistral",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.6458333333333334,
+      "passes_85_percent": false
+    },
+    {
+      "model": "mistral",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.6875,
+      "passes_85_percent": false
+    }
+  ],
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null,
+    "dependencies": {
+      "numpy": "2.2.6",
+      "matplotlib": "3.10.7"
+    }
+  }
+}

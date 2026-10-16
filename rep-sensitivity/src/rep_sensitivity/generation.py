@@ -30,7 +30,7 @@ def field_changes(a, b, path="") -> list[dict]:
     return [] if a == b else [{"path": path, "before": a, "after": b}]
 
 
-def schedule_pair(rng: random.Random, family: str, consequential: bool, split: str, index: int):
+def schedule_pair(rng: random.Random, family: str, consequential: bool, split: str, index: int, benchmark_version=1):
     n = rng.choice({"development": [4, 5], "validation": [5, 6], "heldout": [6, 7, 8], "live": [4, 6, 8]}[split])
     d = rng.choice({"development": [2, 3], "validation": [4, 5], "heldout": [3, 5, 7], "live": [2, 4, 6]}[split])
     offset = rng.randrange(3)
@@ -53,6 +53,11 @@ def schedule_pair(rng: random.Random, family: str, consequential: bool, split: s
         starts = [{A: offset, B: offset, C: offset + d},
                   {A: offset, B: offset+d, C: offset+2*d},
                   {A: offset+1, B: offset+d+1, C: offset+2*d+1}]
+    if benchmark_version >= 2 and family == "numeric" and not consequential:
+        # Matched 1 <-> 2 capacity control: no candidate ever overlaps A and B.
+        # Different idle gaps preserve distinct objectives without approaching capacity.
+        starts = [{A: offset+gap, B: offset+gap+d, C: offset+gap+2*d}
+                  for gap in (0, 1, 2)]
     # A known valid tail; evaluation reserves a fork-join motif, not just seeds.
     tail_anchor = C
     for i, name in enumerate(names[3:]):
@@ -70,7 +75,7 @@ def schedule_pair(rng: random.Random, family: str, consequential: bool, split: s
             duration_anchor = next(j.duration for j in jobs if j.identifier == tail_anchor)
             for st in starts: st[name] = st[tail_anchor] + duration_anchor
         tail_anchor = name
-    if family == "numeric" and not consequential:
+    if benchmark_version == 1 and family == "numeric" and not consequential:
         caps[r] = 2  # capacity 2 -> 3; the same overlap is strictly below the new bound.
     if family == "identity" and not consequential:
         jobs[1] = Job(B, d, {s: 1})
@@ -92,7 +97,8 @@ def schedule_pair(rng: random.Random, family: str, consequential: bool, split: s
     after = deepcopy(before)
     if family == "numeric":
         after["capacities"][r] += 1
-        precondition = "selected capacity is 1 (binding) or 2 (slack); all starts and durations fixed"
+        precondition = ("selected capacity is 1; binding overlap or non-overlapping demand; all starts and durations fixed"
+                        if benchmark_version >= 2 else "selected capacity is 1 (binding) or 2 (slack); all starts and durations fixed")
     elif family == "identity":
         after["jobs"][1]["demands"] = {s if consequential else t: 1}
         precondition = "selected job switches one resource identity; its duration and demand stay fixed"
@@ -103,7 +109,7 @@ def schedule_pair(rng: random.Random, family: str, consequential: bool, split: s
     return before, after, precondition
 
 
-def workflow_pair(rng: random.Random, family: str, consequential: bool, split: str, index: int):
+def workflow_pair(rng: random.Random, family: str, consequential: bool, split: str, index: int, benchmark_version=1):
     names = rng.sample(["C" + str(i) for i in range(11, 99)], 3)
     fact = lambda name: {"op": "fact", "name": name}
     rules = {"screening": {"op": "all", "args": [fact("safety"), fact("permit")]},
@@ -144,13 +150,14 @@ def workflow_pair(rng: random.Random, family: str, consequential: bool, split: s
     return before, after, precondition
 
 
-def generate_pair(split: str, index: int) -> dict:
+def generate_pair(split: str, index: int, benchmark_version=1) -> dict:
+    if benchmark_version not in (1, 2): raise ValueError("Unknown benchmark version")
     family = MUTATIONS[index % 6]
     consequential = (index // 6) % 2 == 0
     seed = SPLITS[split] * 100000 + index
     rng = random.Random(seed)
     generator = schedule_pair if family in MUTATIONS[:3] else workflow_pair
-    before, after, precondition = generator(rng, family, consequential, split, index)
+    before, after, precondition = generator(rng, family, consequential, split, index, benchmark_version)
     # Counterbalance intervention direction independently of semantic class.
     if (index // 12) % 2:
         before, after = after, before
@@ -172,7 +179,7 @@ def generate_pair(split: str, index: int) -> dict:
         for p, val in v["mandatory"].items():
             if answers[1]["candidates"][c]["mandatory"][p] != val:
                 changed_predicates.append([c, p])
-    return {"pair_id": digest(["benchmark-v1", seed])[:16], "split": split,
+    return {"pair_id": digest(["benchmark-v"+str(benchmark_version), seed])[:16], "split": split,
             "seed": seed, "index": index, "worlds": [before, after],
             "evaluation": {"family": family, "kind": before["kind"], "decision_changed": actual_changed,
                            "preconditions": precondition, "changed_fields": field_changes(before, after),
@@ -181,6 +188,6 @@ def generate_pair(split: str, index: int) -> dict:
                            "graph_pattern": "fork_join" if split == "heldout" else "chain"}}
 
 
-def generate(split: str, count: int) -> list[dict]:
+def generate(split: str, count: int, benchmark_version=1) -> list[dict]:
     if split not in SPLITS: raise ValueError(split)
-    return [generate_pair(split, i) for i in range(count)]
+    return [generate_pair(split, i, benchmark_version) for i in range(count)]

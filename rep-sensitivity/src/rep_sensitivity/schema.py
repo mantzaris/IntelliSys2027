@@ -54,14 +54,18 @@ class Claim:
     parent_report_identifiers: tuple[str, ...] = ()
     verification_execution_identifier: str = ""
     operation_type: str = "verification"
+    identifier_format: str = "opaque_v1"
 
     def scope(self) -> dict:
         excluded = {"asserted_value", "source_identifiers", "parent_report_identifiers",
-                    "verification_execution_identifier", "operation_type"}
+                    "verification_execution_identifier", "operation_type", "identifier_format"}
         return {k: v for k, v in asdict(self).items() if k not in excluded}
 
     @property
     def key(self) -> str:
+        if self.identifier_format == "descriptive_v4":
+            return "/".join([self.candidate_identifier,self.predicate_identifier,self.entity_identifier,
+                             self.effective_time_or_version,digest([self.applicability_condition,self.units])[:4]])
         return "k" + digest(self.scope())[:7]
 
 
@@ -72,13 +76,22 @@ class Report:
     text: str
     parent_report_identifiers: tuple[str, ...] = ()
     operation_type: str = "verification"
+    additional_claims: tuple[Claim, ...] = ()
+
+    def claims(self) -> tuple[Claim, ...]:
+        return (self.claim,) + self.additional_claims
 
     def visible(self, ancestry: bool = True) -> dict:
         out = {"report": self.identifier, "key": self.claim.key, "text": self.text}
+        if self.additional_claims:
+            out["keys"] = [c.key for c in self.claims()]
         if ancestry:
             out.update(sources=list(self.claim.source_identifiers),
                        execution=self.claim.verification_execution_identifier,
                        parents=list(self.parent_report_identifiers), operation=self.operation_type)
+            if self.additional_claims:
+                out['claim_ancestry']={c.key:{'sources':list(c.source_identifiers),
+                                      'execution':c.verification_execution_identifier} for c in self.claims()}
         return out
 
 

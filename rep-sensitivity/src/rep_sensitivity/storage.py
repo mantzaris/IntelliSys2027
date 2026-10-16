@@ -2,6 +2,7 @@
 import gzip
 import json
 import os
+import fcntl
 from pathlib import Path
 from datetime import datetime, timezone
 from .schema import canonical, digest
@@ -26,6 +27,21 @@ class Ledger:
     def __init__(self, directory):
         self.path = Path(directory)
         (self.path / "calls").mkdir(parents=True, exist_ok=True)
+        self._lock=(self.path/".writer.lock").open("a")
+        try:
+            fcntl.flock(self._lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+        except BlockingIOError:
+            self._lock.close()
+            raise RuntimeError("Another writer owns this run ledger: "+str(self.path))
+
+    def close(self):
+        if not self._lock.closed:
+            fcntl.flock(self._lock, fcntl.LOCK_UN)
+            self._lock.close()
+
+    def __del__(self):
+        if hasattr(self, "_lock"):
+            self.close()
 
     def event(self, kind, **kwargs):
         with (self.path / "events.jsonl").open("a") as f:

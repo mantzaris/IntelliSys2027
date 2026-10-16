@@ -1,0 +1,185 @@
+{
+  "suite": "competence-qwen14-v2",
+  "manifest_sha256": "9566b84fcd1b8149ab754ec31ffcc1a15f9637fb0ee3a03d74adb0c28208c78a",
+  "planned_trajectories": 96,
+  "analyzed_trajectories": 96,
+  "complete": true,
+  "excluded_incomplete_score_files": [],
+  "source_scores_sha256": "ee30d9f1279d4af67eb130950f65e16ff09d3c50f8d500b509acaa7e5947f6f9",
+  "summary": [
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 16,
+      "accuracy": 0.3333333333333333,
+      "invalid_selection_rate": 0.0625,
+      "operational_failure_rate": 0.020833333333333332,
+      "valid_probability_rate": 0.5833333333333334,
+      "mean_brier": 1.2219071428571429,
+      "mean_log_loss": 15.913681897317161,
+      "input_tokens_per_decision": 2696.0833333333335,
+      "output_tokens_per_decision": 366.3958333333333,
+      "allocated_seconds_per_decision": 5.599484838370699,
+      "tokens_per_correct": 9187.4375,
+      "summary_retention": null
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "organization": "flat",
+      "policy": "ordinary",
+      "condition": "single",
+      "n": 48,
+      "clusters": 12,
+      "correct": 37,
+      "accuracy": 0.7708333333333334,
+      "invalid_selection_rate": 0.10416666666666667,
+      "operational_failure_rate": 0.0,
+      "valid_probability_rate": 0.8958333333333334,
+      "mean_brier": 0.402753488372093,
+      "mean_log_loss": 4.070759452325974,
+      "input_tokens_per_decision": 2134.0,
+      "output_tokens_per_decision": 319.7291666666667,
+      "allocated_seconds_per_decision": 4.414387508576813,
+      "tokens_per_correct": 3183.2162162162163,
+      "summary_retention": null
+    }
+  ],
+  "contrasts": [
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "schedule",
+      "model": "qwen14",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H1_exact",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H1_paraphrase",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H2",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H3",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H4_error",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    },
+    {
+      "kind": "workflow",
+      "model": "qwen14",
+      "contrast": "H4_retention",
+      "estimate": null,
+      "lower": null,
+      "upper": null,
+      "clusters": 0
+    }
+  ],
+  "competence": [
+    {
+      "model": "qwen14",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.3333333333333333,
+      "passes_85_percent": false
+    },
+    {
+      "model": "qwen14",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.7708333333333334,
+      "passes_85_percent": false
+    }
+  ],
+  "analysis_settings": {
+    "bootstrap_replicates": 10000,
+    "seed": 20271015,
+    "cluster": "base_pair",
+    "p_values": null
+  }
+}

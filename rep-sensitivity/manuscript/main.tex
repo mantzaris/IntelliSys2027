@@ -1,0 +1,292 @@
+\documentclass{svproc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathptmx}
+\usepackage{booktabs}
+\setlength{\emergencystretch}{2em}
+\def\UrlFont{\rmfamily}
+\begin{document}
+\mainmatter
+\title{Duplication, Near-Duplication, and Constraint Integration in Hierarchical Multi-Agent Systems}
+\titlerunning{Duplication and Constraint Integration}
+\author{Anonymous}
+\authorrunning{Anonymous}
+\institute{Anonymous submission draft}
+\maketitle
+
+\begin{abstract}
+Similar agent reports can restate one observation, describe independent executions,
+or contain complementary requirements whose differences determine a decision.
+We develop a controlled benchmark for studying these distinctions in hierarchical
+language-model systems. The primary task is to select the feasible candidate
+schedule with minimum makespan from a supplied set. Executable verifiers determine
+constraint satisfaction and the correct decision, and an independently implemented
+checker validates small integer instances. Paired interventions change numerical
+limits, scoped identities, or dependencies; a separate rule-workflow population
+tests quantifiers, conditions, and explicit revisions. Frozen reports support
+comparisons between single presentations, exact copies, and claim-preserving
+paraphrases under flat and summary-only hierarchical aggregation. The protocol
+compares ordinary synthesis, required-task checklists, and scope-aware consolidation
+with common information access and output contracts. This working manuscript
+currently reports development and interface validation rather than completed
+held-out hypothesis tests. Initial execution exposed formatting failures and
+insufficient baseline task competence, making unqualified duplication conclusions
+inappropriate. We document these limitations, preserve unsuccessful outputs, and
+specify paired cluster-level analyses and additional controls needed to distinguish
+repetition effects from information loss, missing coverage, and resource changes.
+Human scientific review and the remaining experimental stages are required before
+submission.
+\keywords{multi-agent systems, information integration, duplication, scheduling, behavioral evaluation}
+\end{abstract}
+
+\section{Status and Research Question}
+\textbf{Working research draft; not ready for submission.}
+The implemented benchmark and executed development runs are distinguished below
+from planned, unexecuted confirmatory comparisons. No held-out result is claimed.
+The human author's scientific review is pending. The title is provisional until
+the findings justify a final contribution.
+
+We ask how duplication, partial overlap, and small consequential differences in
+delegated tasks and reports affect decision quality. One possible failure is
+unnecessary sensitivity to repeated information. Another is failure to respond to
+similar information whose scope or value changes a mandatory constraint. Neither
+behavior follows simply from report similarity: two messages can use the same
+words about different resources, while different words can express the same claim
+from the same source.
+
+The candidate contribution is a reproducible, controlled test of complementary
+constraint integration and preservation of scope differences across restricted
+summary boundaries. We do not propose evidence double counting, provenance,
+paraphrase sensitivity, or hierarchical communication as new discoveries.
+Conclusions must remain specific to evaluated models, tasks, interfaces, and
+resource conditions; deployment prevalence and general intelligence are outside
+the study's scope.
+
+\section{Related Work and Remaining Distinction}
+Gao et al.~\cite{copies} are the closest comparison. Their controlled sensing,
+web-document, and agent-written-log experiments measure how restatements affect
+beliefs and decisions. Their hierarchy and summary conditions already address
+communication structure. In their agent-team testbed, the aggregator receives the
+full log. Our proposed distinction is a conjunction of scoped requirements passed
+through managers whose root receives summaries without the raw reports. A generic
+finding that repeated evidence shifts an answer would not establish this distinction.
+
+Bara~\cite{sybil} separates ancestry from report similarity and models correlated
+extraction errors. We therefore distinguish additional verification executions
+from new evidence sources and do not infer independence from fresh model calls.
+HiddenBench~\cite{hidden} examines information distributed among agents and failures
+to elicit unshared facts. Our frozen replay supplies the complete required report
+set before aggregation, allowing delivery failures to be separated from later
+summary loss. MAST~\cite{mast} provides a broad taxonomy of multi-agent failure;
+our deterministic, paired interventions address a narrower mechanism.
+
+The current scaling study's v3~\cite{scaling} examines architecture--task alignment.
+We cite that version without importing numerical claims from earlier versions.
+Hi-Agreement~\cite{distributed} investigates honest and deceptive testimony in
+distributed fact recovery, motivating separate false-assertion controls here.
+D3MAS~\cite{d3mas} is relevant to hierarchical knowledge organization, but its
+arXiv page carries an author-withdrawal notice concerning methodology; we do not
+rely on its reported performance.
+
+Behavioral invariance and directional testing are established by
+CheckList~\cite{checklist}. PAWS~\cite{paws} illustrates the distinction between
+surface overlap and semantic equivalence. Metadata-sensitive conflict
+resolution~\cite{metadata} motivates explicit version-authority rules, while
+position effects in long contexts~\cite{middle} motivate length and ordering
+controls. These alternatives must be considered before attributing failures to
+duplication itself.
+
+\section{Benchmark and Executable Truth}
+\subsection{Candidate Schedule Selection}
+Each primary instance contains jobs with positive integer durations, nonnegative
+resource demands, resource capacities, an acyclic precedence graph, and candidate
+start times. Optional releases, deadlines and downtime are supported. Jobs execute
+non-preemptively on half-open intervals $[s_j,s_j+d_j)$. For each resource $r$,
+\begin{equation}
+ \sum_{j:s_j\leq t<s_j+d_j} q_{jr}\leq C_r
+\end{equation}
+must hold at every event interval. Precedence requires $s_u+d_u\leq s_v$ for every
+edge $(u,v)$. Releases and deadlines bound starts and completions. A positive
+resource demand may not overlap that resource's downtime.
+
+Let $F(c)$ be the conjunction of all mandatory predicates for candidate $c$,
+and $M(c)=\max_j(s_j+d_j)$. The answer minimizes $M(c)$ over supplied candidates
+with $F(c)=1$. A public priority ordering resolves equal objectives; NONE is correct
+when the feasible set is empty. This is candidate selection, not unrestricted
+optimal scheduling. The event-sweep verifier is cross-checked against a separately
+coded integer-time occupancy checker. Tests also cover exact interval boundaries,
+deadline equality, invalid inputs, ties and NONE.
+
+\subsection{Paired Changes and Secondary Workflow}
+Original and modified worlds share candidate identifiers and controlled structure.
+Every pair records changed fields, mutation preconditions, affected predicates,
+oracle intermediate results, and both correct answers. Decision-changing and
+decision-preserving pairs are labeled by executable outcomes rather than intent.
+Scheduling currently implements capacity, resource identity and precedence edits.
+A separate finite Boolean workflow implements quantifiers, conditions and
+explicit version selection. The latter is reported as a secondary task family,
+not as scheduling evidence.
+
+Generation randomizes identifiers, report order, candidate ordering and tie
+priority without consulting a model. Development and validation differ in parameter
+ranges; evaluation additionally reserves fork--join structure and rendering forms.
+All variants of one base problem remain in the same split. The construction is
+deliberately small and controlled; its limited graph and constraint diversity
+restricts external validity.
+
+\subsection{Scope, Truth and Ancestry}
+A typed claim carries task, candidate, entity, predicate, value, units,
+applicability, version, source identifiers, parent reports, verification execution
+and operation type. Scope equivalence excludes ancestry and asserted value, so
+compatible claims can still conflict. Copies preserve the source and execution;
+fresh verification can have a distinct execution while retaining the same source.
+
+The task dependency graph, organizational hierarchy, communication/access graph,
+and report/evidence ancestry graph are stored separately. Scheduling job precedence
+is an additional graph, not the graph of verification assignments. Evaluator-only
+mutation and correctness labels are kept outside model prompts. Shared-state action
+races and destructive concurrent tool effects are excluded.
+
+\section{Replay and Aggregation Protocol}
+\subsection{Reports and Organization}
+Template reports are frozen from typed assertions before inference. The corpus
+contains no model-generated paraphrases. Code review and integrity tests check
+claim preservation; human linguistic review remains an open review item. The
+repetition conditions show a selected report once, four times exactly, or once
+with three templated paraphrases. No required finding is removed. A prespecified
+rotation chooses the repeated candidate/task, preferring an unchanged report
+across worlds. Version changes may require a declared exception.
+
+The flat organization uses one root call with the complete report set. The
+hierarchy uses two managers with frozen partitions and one root; copies initially
+remain in the original branch. The root receives the summaries and a value-free
+registry of required claim scopes. The registry is available to every policy,
+including ordinary synthesis, and must be considered part of the evaluated
+interface. It does not reveal which assertions are true.
+
+\subsection{Policies and Observable Outputs}
+Ordinary synthesis states the same feasibility and optimization rule as the
+checklist and scope-aware policies. The checklist asks for required-task coverage.
+Scope-aware instructions additionally preserve entities, conditions, versions,
+unique findings and unresolved conflicts while consolidating equivalent ancestry.
+A challenge is not an automatic veto; a timestamp alone does not authorize a
+correction. The proposed policy has no privileged truth labels.
+
+Final outputs contain a choice, class probabilities, explicit supporting
+assertions and unresolved scope keys. Intermediate outputs use the same assertion
+contract without a final choice. We score emitted claims, not private reasoning.
+The initial development interface required strict JSON but frequently produced
+Markdown fences and incorrect field types. Those outputs remain failures under
+that protocol. A second development interface uses named assertion fields and a
+common JSON schema decoder for all policies. This is an interface revision, not a
+repair that retrospectively changes the initial run's primary scores.
+
+\section{Execution Integrity and Analysis}
+Model revisions, tokenizer revisions, chat-template hashes, precision, dependency
+versions, sampling settings and output limits are recorded. Inference uses only
+the allocated NVIDIA RTX 6000 Ada GPU. No paid model API is used. Raw requests and
+responses are immutable; accepted calls and base-cluster completions are journaled.
+Cache keys include stochastic repetition identifiers. Resume reuses completed
+malformed outputs instead of sampling until valid. Interrupted, unaccepted calls
+are identifiable and are not silently treated as completed failures or successes.
+Local result mirrors prevent the pod from being the sole copy of completed data.
+
+Let $E_{p,a,r}$ denote decision error averaged within base pair $p$, organization
+$a$ and repetition condition $r$. Repetition harm is
+\begin{equation}
+ H_{a,r}=\mathbb{E}_p[E_{p,a,r}-E_{p,a,\mathrm{single}}].
+\end{equation}
+The hierarchy interaction is $H_{\mathrm{hierarchical},r}-H_{\mathrm{flat},r}$.
+A higher overall hierarchical error rate is not itself amplification of repetition.
+Correct responsiveness and correct stability require both paired answers to be
+correct, respectively on changing and preserving pairs. Merely switching or
+retaining a choice is insufficient.
+
+The initial analysis manifest defines exact-copy and paraphrase effects (H1),
+the difference in pair-failure effects between consequential and harmless edits
+(H2), the hierarchy interaction (H3), and scope-versus-checklist error and retention
+contrasts (H4). Analysis resamples complete base clusters, stratified by mutation
+family and consequence, retaining dependence across worlds, arms, models and
+stochastic repetitions. Model-specific results are mandatory; a pooled estimate
+uses equal model weights. Scheduling and workflow estimates remain separate.
+No confirmatory significance claim is based on the development runs.
+
+Malformed completed trajectories count as operational failures in primary
+accuracy. Calibration uses valid complete probability vectors and reports their
+availability fraction. Additional outcomes include invalid selections, assignment
+and delivery coverage, summary retention, scope transfer, copied-claim consolidation,
+false-assertion adoption and resource use. Input/output tokens and elapsed batch
+time are measured. Allocating batch time across requests is a cost-accounting
+convention, not a direct measurement of per-request GPU kernel time.
+
+\section{Development Results and Current Limits}
+\input{generated/competence.tex}
+Table~\ref{tab:competence} is regenerated from immutable-run analyses. These checks
+use ordinary, flat, single-presentation inputs and therefore do not estimate a
+duplication effect. The prespecified competence gate requires sufficient basic
+task performance before treating repetition failures as informative. Operational
+formatting and decision errors are recorded separately. Incomplete runs are not
+included in the table.
+
+The initial replay was stopped during development after discovering a systematic
+interface failure. Its complete clusters and partial next cluster are retained,
+but it supplies no valid evidence for the scientific hypotheses. The revised
+competence checks determine the next experimental allocation. Main held-out
+comparisons, targeted model controls and live-worker results must not be inferred
+from the implemented code alone.
+
+The provisional design includes separate pilot, validation and held-out splits,
+two stochastic repetitions, and two model families. Actual manifests verify call
+counts. Final held-out allocation must be frozen after development and validation
+precision/runtime assessment, before inspecting held-out outcomes. No favorable
+significance threshold justifies stopping. A model that fails the competence gate
+is a documented limitation, not a candidate selected for a desirable failure rate.
+
+\section{Remaining Controls and Threats to Validity}
+The supporting design contrasts overlapping and less-overlapping presentations
+with identical distinct claims, exact removal versus similarity removal,
+scope-aware consolidation, branch placement, raw-report bypass, and global
+reviewers matched to the hierarchy's call count. Neutral material controls for
+length; ancestry withholding and corrupted relationships test provenance use.
+Instruction-only controls separate metadata from additional prompting. Distinct
+information, ordering and report slots are held fixed where possible, with residual
+token differences recorded. These controls are not reported as executed here.
+
+Corrupted reports require visible authoritative evidence or an allowed
+insufficient-information answer. False favorable assertions and false objections
+must be separated. Live workers will receive role-specific task data without peer
+reports; four essential assignments remain in principal comparisons. Redundant
+fresh execution differs from frozen copying. Fixed output allowances alone do not
+match total computation, and coverage displacement requires its own label.
+
+Major validity threats include small synthetic task diversity, structured scope
+registries that assist all policies, template-based language, restricted model
+families, formatting constraints, limited stochastic repetitions, and output caps.
+Shared weight families and shared source inputs can induce dependent errors.
+Retention associations alone cannot establish faithful internal reasoning or
+causal mediation. Summary bypass offers a direct intervention, but its additional
+input and compute must also be reported. Null effects with wide intervals are
+inconclusive; beneficial hierarchy or sufficient simple checklists must be reported
+with the same prominence as harmful effects.
+
+\section{Conclusion}
+The implemented benchmark makes scope, ancestry, coverage and candidate feasibility
+explicit and auditable. Current development measurements constrain interpretation:
+interface validity and ordinary task competence must be established before the
+proposed duplication comparisons can support a paper. The contribution and final
+title remain conditional on the completed experiments and human scientific review.
+
+\section*{Declaration on Generative AI and Review Status}
+The human author supplied the research direction and experimental requirements.
+An AI coding assistant helped implement and test the benchmark, operate local
+open-weight model experiments, retrieve literature, generate analyses, and draft
+text. Its methodological decisions and interpretations require author verification.
+This working draft has not yet undergone the author's scientific review. This
+disclosure must be updated truthfully after review; no AI is an author. The
+conference's limits on AI involvement require human assessment before submission.
+
+\bibliographystyle{spmpsci}
+\bibliography{references}
+\end{document}

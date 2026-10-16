@@ -34,3 +34,17 @@ __pycache__/
 .DS_Store
 *.swp
 *.swo
+
+# LaTeX intermediate files; the review PDF is intentionally retained
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.synctex.gz
+/results/*-interim/
+# Competence-only plots contain no repetition contrasts; regenerate on demand.
+/results/competence-*/overview.pdf
+/results/competence-*/overview.png

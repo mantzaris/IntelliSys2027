@@ -14,6 +14,9 @@ from rep_sensitivity.policies import make_prompt
 from rep_sensitivity.metrics import parse, probability_metrics, score_assertions
 from rep_sensitivity.storage import Ledger, immutable_json
 from rep_sensitivity.replay import prepare, execute_requests
+from rep_sensitivity.analysis import bootstrap, repetition_values
+from rep_sensitivity.controls import corrupt_ancestry, semantic_inventory, lineage_edges, packaging, unique_clause_control, superseded_reports, decision_from_claims
+from rep_sensitivity.assignments import assign, access_view, coverage
 
 
 class IntegrityTests(unittest.TestCase):
@@ -56,6 +59,46 @@ class IntegrityTests(unittest.TestCase):
                 self.assertTrue(ev['changed_fields'])
                 self.assertEqual(ev['decision_changed'],ev['oracle'][0]['answer']!=ev['oracle'][1]['answer'])
                 self.assertEqual([oracle(w) for w in p['worlds']],ev['oracle'])
+
+    def test_matched_capacity_controls_and_benchmark_version(self):
+        for split,n in [('development',24),('validation',36),('heldout',192),('live',24)]:
+            for p in generate(split,n,benchmark_version=2):
+                self.assertEqual([oracle(w) for w in p['worlds']],p['evaluation']['oracle'])
+                self.assertNotEqual(p['pair_id'],generate_pair(split,p['index'])['pair_id'])
+                if p['evaluation']['family']=='numeric':
+                    edits=p['evaluation']['changed_fields']
+                    self.assertEqual(len(edits),1)
+                    self.assertEqual({edits[0]['before'],edits[0]['after']},{1,2})
+                    if not p['evaluation']['decision_changed']:
+                        self.assertEqual(p['evaluation']['affected_predicates'],[])
+
+    def test_shared_claim_unique_clause_and_versions(self):
+        counts={'decisive':0,'harmless':0}
+        for p in generate('development',24,2):
+            for world in p['worlds']:
+                reports=make_reports(world,'development',p['seed'])
+                self.assertEqual(decision_from_claims(world,reports),oracle(world)['answer'])
+                for relevance in counts:
+                    high,a=unique_clause_control(world,reports,'development',relevance+'_high',p['seed'])
+                    low,b=unique_clause_control(world,reports,'development',relevance+'_low',p['seed'])
+                    if high is None:
+                        self.assertIsNone(low);continue
+                    counts[relevance]+=1
+                    self.assertEqual(a,b)
+                    self.assertEqual(semantic_inventory(high),semantic_inventory(low))
+                    self.assertEqual(semantic_inventory(high),semantic_inventory(reports))
+                    self.assertEqual([r.identifier for r in high],[r.identifier for r in reports])
+                    target=next(r for r in high if r.identifier==a['target_report'])
+                    self.assertEqual(len(target.claims()),2)
+                    obj={'assertions':[[c.key,c.asserted_value,[target.identifier]] for c in target.claims()]}
+                    self.assertEqual(score_assertions(obj,high)['scope_transfer_count'],0)
+            if p['evaluation']['family']=='version':
+                ordered=sorted(p['worlds'],key=lambda w:w['version'])
+                old,current=[make_reports(w,'development',p['seed']) for w in ordered]
+                admitted=superseded_reports(current,old)
+                self.assertEqual(len(admitted),len(old)+len(current))
+                self.assertEqual({c.effective_time_or_version for r in admitted for c in r.claims()},{'1','2'})
+        self.assertTrue(all(counts.values()))
 
     def test_determinism_split_separation(self):
         self.assertEqual(generate('development',24),generate('development',24))
@@ -126,6 +169,7 @@ class IntegrityTests(unittest.TestCase):
             ledger.accept(k0,value)
             self.assertEqual(ledger.get(k0),value)
             with self.assertRaises(RuntimeError): ledger.accept(k0,value)
+            with self.assertRaises(RuntimeError): Ledger(d)
             immutable_json(Path(d)/'immutable.json',{'a':1})
             with self.assertRaises(RuntimeError): immutable_json(Path(d)/'immutable.json',{'a':2})
 
@@ -140,6 +184,43 @@ class IntegrityTests(unittest.TestCase):
             m=FakeModel(); ledger=Ledger(d)
             a=execute_requests([request],m,ledger); b=execute_requests([request],m,ledger)
             self.assertEqual(m.calls,1); self.assertEqual(a,b)
+
+    def test_cluster_statistics_and_contrast_signs(self):
+        rows=[]
+        for p in ('p1','p2','p3'):
+            for org in ('flat','hierarchical'):
+                for cond in ('single','exact','paraphrase'):
+                    for world in (0,1):
+                        rows.append({'pair_id':p,'model':'m','policy':'ordinary','organization':org,
+                            'repetition':0,'world':world,'condition':cond,
+                            'correct':not(org=='hierarchical' and cond!='single')})
+        h=repetition_values(rows,interaction=True)
+        self.assertEqual(h,{'p1':1.0,'p2':1.0,'p3':1.0})
+        res=bootstrap(h,{p:('family',True) for p in h},replicates=100)
+        self.assertEqual((res['estimate'],res['lower'],res['upper'],res['clusters']),(1,1,1,3))
+        self.assertEqual(repetition_values(rows*10,interaction=True),h)
+
+    def test_partial_overlap_and_real_lineage_corruption(self):
+        p=generate_pair('development',0); f=freeze(p)
+        rs=repeat(thaw(f['reports'][0]),f['selected'],'exact','development')
+        corrupted=corrupt_ancestry(rs,7)
+        self.assertEqual(semantic_inventory(rs),semantic_inventory(corrupted))
+        self.assertNotEqual(lineage_edges(rs),lineage_edges(corrupted))
+        lo,_=packaging(rs,'development','low_overlap');hi,_=packaging(rs,'development','high_overlap')
+        self.assertEqual(semantic_inventory(lo),semantic_inventory(hi))
+        self.assertEqual([r.identifier for r in lo],[r.identifier for r in hi])
+
+    def test_live_assignment_coverage_and_restricted_access(self):
+        w=generate_pair('live',0)['worlds'][0]
+        for policy in ('nonoverlap','exact_overlap','near_overlap'):
+            tasks=assign(w,policy,'fixed')
+            self.assertEqual(coverage(tasks,w)['covered_assignments'],12)
+            self.assertLessEqual(sum(a.output_cap for a in tasks),4096)
+            for a in tasks:
+                v=access_view(w,a)
+                self.assertNotIn('oracle',v);self.assertNotIn('reports',v)
+                if a.family=='objective':
+                    self.assertNotIn('capacities',v);self.assertNotIn('precedence',v)
 
 
 if __name__=='__main__': unittest.main()

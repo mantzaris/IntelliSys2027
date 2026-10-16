@@ -1,0 +1,178 @@
+[
+  {
+    "source": "results/competence-mistral-v4/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "mistral",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.4166666666666667,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-mistral-v4/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "mistral",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.4791666666666667,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-mistral-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "mistral",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.6458333333333334,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-mistral-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "mistral",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.6875,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen14-v2/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen14",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.3333333333333333,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen14-v2/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen14",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.7708333333333334,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen14-v3/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen14",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.6666666666666666,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen14-v3/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen14",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.6666666666666666,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v3/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.5416666666666666,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v3/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.625,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v4/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.6666666666666666,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v4/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.6041666666666666,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 1.0,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-qwen3-v5/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen3",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.875,
+      "passes_85_percent": true
+    }
+  },
+  {
+    "source": "results/competence-v2/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen",
+      "kind": "schedule",
+      "n": 48,
+      "accuracy": 0.3125,
+      "passes_85_percent": false
+    }
+  },
+  {
+    "source": "results/competence-v2/analysis.json",
+    "field": "competence",
+    "record": {
+      "model": "qwen",
+      "kind": "workflow",
+      "n": 48,
+      "accuracy": 0.5208333333333334,
+      "passes_85_percent": false
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "live-provisional-v5",
+  "interface_version": 5,
+  "status": "PROVISIONAL_DO_NOT_EXECUTE",
+  "generated_pairs": 24,
+  "worlds": [
+    0
+  ],
+  "stochastic_repetitions": 2,
+  "models": [
+    "qwen14",
+    "mistral"
+  ],
+  "manager_policy": "ordinary",
+  "worker_total_output_allowance": 4096,
+  "max_output_tokens": 2304,
+  "max_context_tokens": 12288,
+  "temperature": 0.3,
+  "top_p": 0.95,
+  "batch_size": 16,
+  "note": "Four essential scopes are retained. Fixed comparisons bound combined tokenized worker inputs plus output caps to the baseline total. This is a token resource allowance, not equal FLOPs or elapsed compute. Actual input/output tokens and elapsed inference are recorded."
+}
