@@ -14,6 +14,17 @@ See [EXPERIMENT_ALLOWANCE_STATUS.md](EXPERIMENT_ALLOWANCE_STATUS.md) for the
 effective controller changes and recovery commands. Older two-hour references
 below describe the original authorization, now superseded prospectively.
 
+**Completion notification:** a local watcher posts back to the requesting Codex
+chat only after the remote queue finishes and the locally audited review package
+has a matching completion commit. It makes no GPU calls. Its local configuration,
+PID, heartbeat and delivery receipts are under
+`artifacts/notifications/study-completion-v1/`, excluded from Git. The computer
+and local Codex server must remain available. After 72 hours without verified
+completion, it requests an incomplete-status update instead. An ambiguous send
+is not automatically repeated. The implementation is
+`scripts/notify_study_completion.py` and uses the documented
+[`codex queue` command](https://learn.chatgpt.com/docs/cli/reference#codex-queue).
+
 **Manuscript consolidation, 17 October 2026 UTC:** the complete research draft is
 in [manuscript/main.tex](manuscript/main.tex) and [manuscript/main.pdf](manuscript/main.pdf).
 The paper has one TeX source, an inline bibliography, and all five figures beside
