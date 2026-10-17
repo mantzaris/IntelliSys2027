@@ -1,9 +1,13 @@
-"""Post-Phi, two-hour maximum GPU allocation for the new confirmation only."""
+"""Post-Phi confirmation under the explicitly authorized cumulative allowance."""
 import argparse,fcntl,json,os,signal,subprocess,sys,time
 from datetime import datetime,timezone
 from pathlib import Path
 from rep_sensitivity.schema import digest
 from rep_sensitivity.storage import immutable_json
+try:
+    from .authorized_gpu_budget import authorized_cap
+except ImportError:
+    from authorized_gpu_budget import authorized_cap
 
 
 def append(path,value):
@@ -47,7 +51,7 @@ def main():
         marker=root/(model+'-complete.json')
         if marker.exists():continue
         events=[json.loads(x) for x in journal.read_text().splitlines() if x]
-        remaining=config['additional_gpu_wall_seconds_cap']-prior_seconds(events)
+        remaining=authorized_cap(config['additional_gpu_wall_seconds_cap'])-prior_seconds(events)
         if remaining<=60:
             append(journal,{'event':'budget_exhausted','remaining_seconds':remaining});break
         if subprocess.check_output(['nvidia-smi','--query-compute-apps=pid','--format=csv,noheader'],text=True).strip():

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-17T17:11:20.832620+00:00",
+  "cumulative_cap_seconds": 28800,
+  "charged_seconds": 500.0315948314965,
+  "remaining_seconds": 28299.968405168504,
+  "routing_manifest_sha256": "8410e153349b92a94b7d4d2689d463f8115ef27ea42e6d714819ef7717baa6d8",
+  "startup_hook": ".venv/lib/python3.12/site-packages/rep_authorized_budget.pth",
+  "startup_hook_sha256": "ffa39e6f8542922589a23066f7baf25711e6f8e4be8a7d26754a704c6ea2078e",
+  "preflight_routes": [
+    {
+      "stage": "objective-confirmation",
+      "returncode": 0
+    },
+    {
+      "stage": "numerical-preservation",
+      "returncode": 0
+    },
+    {
+      "stage": "adjacent-explorations",
+      "returncode": 0
+    }
+  ],
+  "gpu_calls_from_installation": 0,
+  "active_processes_restarted": false,
+  "scientific_design_changed": false
+}

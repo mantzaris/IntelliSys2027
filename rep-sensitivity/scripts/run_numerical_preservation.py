@@ -1,4 +1,4 @@
-"""Last-priority diagnostic sharing the EXISTING cumulative 7200-second ledger."""
+"""Last-priority diagnostic sharing the existing cumulative budget ledger."""
 import argparse
 import fcntl
 import json
@@ -11,6 +11,7 @@ import time
 from rep_sensitivity.schema import digest
 from rep_sensitivity.storage import immutable_json, utcnow
 from run_objective_confirmation import append, prior_seconds
+from authorized_gpu_budget import authorized_cap
 
 
 def main():
@@ -39,7 +40,7 @@ def main():
     # only after its process exits. No cap reset or competing GPU process.
     budget_lock=(shared/'.controller.lock').open('a');fcntl.flock(budget_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     journal=shared/'budget.jsonl';events=[json.loads(x) for x in journal.read_text().splitlines()] if journal.exists() else []
-    remaining=7200-prior_seconds(events)
+    remaining=authorized_cap(config['shared_gpu_wall_seconds_cap'])-prior_seconds(events)
     reasons=[]
     if not Path('artifacts/runs/study-execution-v8/secondary_replay_and_live-complete.json').exists():reasons.append('original Phi-4 incomplete')
     if not all((shared/(m+'-complete.json')).exists() for m in ('phi4','qwen3')):reasons.append('protected objective confirmation incomplete')

@@ -2,9 +2,12 @@
 import json
 from pathlib import Path
 from datetime import datetime, timezone
+from authorized_gpu_budget import authorized_cap, ALLOWANCE_RECORD
+from run_objective_confirmation import prior_seconds
 
 root=Path(__file__).resolve().parents[1]
 runs=root/'artifacts/runs'
+cap=authorized_cap(path=root/ALLOWANCE_RECORD)
 
 
 def read(path):
@@ -48,7 +51,7 @@ for suite in ('mechanism-development-v1','fresh-probe-v1','mechanism-validation-
     if not manifest_path.exists():
         if suite=='numerical-preservation-v1':
             stop=runs/'numerical-preservation-execution/not-launched.json'
-            progress.append({'suite':suite,'status':'not launched' if stop.exists() else 'frozen; last priority after confirmation; same cumulative 7200-second cap',
+            progress.append({'suite':suite,'status':'not launched' if stop.exists() else f'frozen; last priority after confirmation; cumulative {cap}-second cap',
                              'reason':read(stop) if stop.exists() else None});continue
         progress.append({'suite':suite,'status':'not initialized locally; check mechanism handoff record'});continue
     manifest=read(manifest_path);model=manifest['config']['model'];model_path=path/model
@@ -68,7 +71,7 @@ if (path/'manifest.json').exists():
         progress.append({'suite':'objective-confirmation-v1','model':model,'independent_base_pairs':manifest['base_pairs'],
             'scored_trajectories':scored,'planned_trajectories':planned,'accepted_call_files':len(list((model_path/'calls').glob('*.json.gz'))),
             'completion_event':complete,'status':'complete checkpoint' if complete and scored==planned else 'incomplete checkpoint'})
-else:progress.append({'suite':'objective-confirmation-v1','status':'frozen; queued after original Phi-4; shared 7200-second new-compute cap'})
+else:progress.append({'suite':'objective-confirmation-v1','status':f'frozen; queued after original Phi-4; shared {cap}-second additional-compute cap'})
 
 adjacent=runs/'adjacent-explorations-v1'
 if (adjacent/'manifest.json').exists():
@@ -86,7 +89,11 @@ mirror=root/'artifacts/last-successful-mirror.txt'
 mirror_utc=mirror.read_text().strip() if mirror.exists() else None
 age=(datetime.now(timezone.utc)-datetime.fromisoformat(mirror_utc.replace('Z','+00:00'))).total_seconds() if mirror_utc else None
 failures=sorted((runs/'study-execution-v8').glob('failure-*.json'))
+ledger=runs/'objective-confirmation-execution/budget.jsonl'
+charges=[json.loads(line) for line in ledger.read_text().splitlines() if line] if ledger.exists() else []
 report={'checked_utc':datetime.now(timezone.utc).isoformat(),'last_successful_mirror_utc':mirror_utc,
+        'additional_budget':{'cumulative_cap_seconds':cap,'charged_or_reserved_seconds':prior_seconds(charges),
+            'remaining_seconds':cap-prior_seconds(charges),'authorization':str(ALLOWANCE_RECORD)},
         'mirror_age_seconds':round(age,1) if age is not None else None,'progress':progress,
         'successor_failure_records':[str(p.relative_to(root)) for p in failures],
         'review_package_assembled':(root/'records/review-package.json').exists(),

@@ -19,7 +19,7 @@ labels={'feedback':'Feedback','fresh':'Fresh','length_control':'Length',
 tex=[r'\section{Bounded exploratory coordinator studies}',
     'These studies reuse four development base pairs, shared across both experiments. They are not independent confirmation. '
     'They run after the original evaluations, frozen confirmation and numerical-preservation replay. '
-    'The combined ceiling is 104 fresh calls and 15 minutes including loading, within the existing cumulative two-hour allowance. '
+    'The combined ceiling is 104 fresh calls and 15 minutes including loading, within the authorized cumulative allowance. '
     'A prospectively specified budget fallback runs only the 72-call feedback experiment; otherwise neither launches. '
     'No outcome determines sample size or allocation.',
     r'\subsection{Frozen interventions}',

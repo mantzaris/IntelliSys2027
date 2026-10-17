@@ -12,8 +12,10 @@ from rep_sensitivity.schema import digest
 from rep_sensitivity.storage import immutable_json,utcnow
 try:
     from .run_objective_confirmation import append,prior_seconds
+    from .authorized_gpu_budget import authorized_cap
 except ImportError:
     from run_objective_confirmation import append,prior_seconds
+    from authorized_gpu_budget import authorized_cap
 
 
 def choose_allocation(config, remaining):
@@ -49,7 +51,7 @@ def main():
     shared=Path('artifacts/runs/objective-confirmation-execution');shared.mkdir(parents=True,exist_ok=True)
     budget_lock=(shared/'.controller.lock').open('a');fcntl.flock(budget_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     journal=shared/'budget.jsonl';events=[json.loads(x) for x in journal.read_text().splitlines()] if journal.exists() else []
-    remaining=7200-prior_seconds(events);reasons=[]
+    remaining=authorized_cap(config['shared_gpu_wall_seconds_cap'])-prior_seconds(events);reasons=[]
     if not Path('artifacts/runs/study-execution-v8/secondary_replay_and_live-complete.json').exists():reasons.append('Original Phi-4 incomplete')
     if not all((shared/(m+'-complete.json')).exists() for m in ('qwen3','phi4')):reasons.append('Protected confirmation incomplete')
     if not Path('artifacts/runs/numerical-preservation-execution/complete.json').exists():reasons.append('Protected numerical-preservation replay incomplete')

@@ -1,0 +1,19 @@
+{
+  "amendment_id": "additional-gpu-allowance-v2",
+  "utc": "2026-10-17T17:04:59.716081+00:00",
+  "authorization": "User: increase the experimental allowance to 8 hours and then perform it.",
+  "scope": "Cumulative additional-experiment wall-time allowance, including prior charged attempts. Original main evaluations and previously separately authorized stages remain outside this ledger.",
+  "previous_cap_seconds": 7200,
+  "cumulative_cap_seconds": 28800,
+  "charged_seconds_at_amendment": 500.0315948314965,
+  "remaining_seconds_at_amendment": 28299.968405168504,
+  "ledger_path": "artifacts/runs/objective-confirmation-execution/budget.jsonl",
+  "ledger_sha256_at_amendment": "0c6088ae2dd441416885b23dc2ba15b9aec2fc2e69e8d2ca65b3fd082cd27714",
+  "source_git_parent": "8acc9f3",
+  "heldout_outcomes_inspected": false,
+  "scientific_design_changed": false,
+  "queue_order_changed": false,
+  "accounting": "Retain completed elapsed charges and full reservations for ambiguous attempts. Model loading and cleanup remain inside timed attempts. No reset on restart.",
+  "per_study_limits": "Numerical preservation retains its 900-second maximum. Adjacent explorations retain their 900-second maximum, frozen 104/72-call allocation rule, and prerequisite gates. Confirmation samples, models and stopping rules are unchanged.",
+  "deployment": "Versioned budget-only controller derivatives at future process startup. Current controller, model engine, original archives and frozen configurations are not modified."
+}

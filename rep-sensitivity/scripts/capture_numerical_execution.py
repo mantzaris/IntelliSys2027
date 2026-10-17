@@ -4,9 +4,26 @@ from collections import Counter
 from datetime import datetime,timezone
 import gzip,json
 from rep_sensitivity.schema import digest
-from run_objective_confirmation import prior_seconds
+try:
+    from .run_objective_confirmation import prior_seconds
+    from .authorized_gpu_budget import authorized_cap
+except ImportError:
+    from run_objective_confirmation import prior_seconds
+    from authorized_gpu_budget import authorized_cap
 from rep_sensitivity.reports import thaw
 from rep_sensitivity.controls import unique_clause_control
+
+
+def unique_completed_clusters(events):
+    """A resumed run may announce a cached cluster again; count each base once."""
+    unique={}
+    for event in events:
+        if event['event']!='cluster_complete':continue
+        key=event['pair_id']
+        if key in unique and event['trajectories']!=unique[key]['trajectories']:
+            raise RuntimeError('Conflicting completed-cluster sizes')
+        unique.setdefault(key,event)  # Keep the actual first completion timestamp.
+    return sorted(unique.values(),key=lambda event:event['utc'])
 
 
 def pending_counts():
@@ -45,7 +62,7 @@ def capture():
     for line in (root/'events.jsonl').read_text().splitlines():
         try:events.append(json.loads(line))
         except json.JSONDecodeError:pass
-    clusters=[e for e in events if e['event']=='cluster_complete'];accepted=[e for e in events if e['event']=='accepted']
+    clusters=unique_completed_clusters(events);accepted=[e for e in events if e['event']=='accepted']
     starts=[e for e in events if e['event']=='run_start'];start=datetime.fromisoformat(starts[0]['utc'])
     latest=datetime.fromisoformat(clusters[-1]['utc']);elapsed=(latest-start).total_seconds()
     recent_count=min(12,len(clusters)-1)
@@ -77,8 +94,8 @@ def capture():
           'batch_failures':sum(e['event']=='batch_failed' for e in events),
           'repeat_starts':sum(max(0,n-1) for n in starts_by_key.values()),
           'started_not_yet_accepted':len(set(starts_by_key)-accepted_keys),'settings':starts[-1]['settings']},
-        'additional_budget':{'cumulative_cap_seconds':7200,'charged_seconds':prior_seconds(charges),
-          'remaining_seconds':7200-prior_seconds(charges),'ledger_sha256':digest(charges),
+        'additional_budget':{'cumulative_cap_seconds':authorized_cap(),'charged_seconds':prior_seconds(charges),
+          'remaining_seconds':authorized_cap()-prior_seconds(charges),'ledger_sha256':digest(charges),
           'planned_confirmation_p95_seconds':5716.4277032989075,
           'new_preservation_projection_seconds':json.loads(Path('records/freezes/numerical-preservation-v1.json').read_text())['projected_seconds_p95_including_load']},
         'timing_limits':'Allocated inference seconds sum measured accepted batch wall time. Non-inference elapsed combines checkpoint/serialization/scheduling gaps, not an independently measured idle or kernel-time metric. Active unaccepted batches are not failed calls. Loading can be zero in this run when the engine was reused. Recent throughput reflects a changing case mix.',

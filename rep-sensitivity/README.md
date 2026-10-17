@@ -5,6 +5,15 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
+**Allowance amendment, 17 October 2026 UTC:** the user increased the cumulative
+additional-experiment allowance from two to **eight hours (28,800 seconds)**.
+The prior 500.03 seconds remain charged, leaving **28,299.97 seconds** at the
+amendment. The existing queue is running on the RTX 6000 Ada. Samples, prompts,
+inference settings, stage order and individual diagnostic limits are unchanged.
+See [EXPERIMENT_ALLOWANCE_STATUS.md](EXPERIMENT_ALLOWANCE_STATUS.md) for the
+effective controller changes and recovery commands. Older two-hour references
+below describe the original authorization, now superseded prospectively.
+
 **Manuscript consolidation, 17 October 2026 UTC:** the complete research draft is
 in [manuscript/main.tex](manuscript/main.tex) and [manuscript/main.pdf](manuscript/main.pdf).
 The paper has one TeX source, an inline bibliography, and all five figures beside
@@ -23,9 +32,10 @@ An earlier 24 GB RTX 4090 loaded the model with CPU offloading but did not finis
 the bounded compatibility probe. The user then supplied this 48 GB Ada to retain
 the frozen BF16 settings. The original serial queue is restored with explicit
 hardware provenance and unchanged scientific snapshots. No quantized replacement,
-altered research prompt, or new treatment has been introduced. The cumulative
-additional-work allowance has 6,699.97 seconds remaining after the probe and a
-conservative cleanup margin. The original pod's last available
+altered research prompt, or new treatment has been introduced. At restoration,
+the original allowance had 6,699.97 seconds remaining after the probe and a
+conservative cleanup margin. The later eight-hour amendment above preserves
+these charges. The original pod's last available
 mirror was **04:08:59 UTC**. Later output from that pod is unavailable.
 The queue descriptions below are dated history. Current controller identity and
 recovery details are in `records/execution/replacement-ada-handoff-v1.json`.

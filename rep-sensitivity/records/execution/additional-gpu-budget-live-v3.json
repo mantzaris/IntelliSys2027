@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-17T17:13:03.520912+00:00",
+  "heldout_outcomes_inspected": false,
+  "controller_checks": [
+    {
+      "stage": "objective-confirmation",
+      "scientific_source_sha256": "a29b898aff31ff7c3c1193ad3344aeca6eb2234367c99f2ed36b9d0a1c6acb22",
+      "config_sha256": "511da8fe3ffa9425716dc311a91b3fc0d4c6376c785bd8e3c5046aa8473ee50a",
+      "effective_shared_cap_seconds": 28800,
+      "individual_limit_seconds": null,
+      "frozen_configuration_unchanged": true
+    },
+    {
+      "stage": "numerical-preservation",
+      "scientific_source_sha256": "a24ae958d4d0e81fa62424278eee8fb8f5c2dde45245d6632ce81ca3324a3ad4",
+      "config_sha256": "b85f9959f530bd33c31858b14da2dd27f7b1c51e9028e0761a1e40c7a7604c33",
+      "effective_shared_cap_seconds": 28800,
+      "individual_limit_seconds": 900,
+      "frozen_configuration_unchanged": true
+    },
+    {
+      "stage": "adjacent-explorations",
+      "scientific_source_sha256": "f2da39681e4136202bf6b866f42ae791fdaa64bd100dfc329a396e815128317f",
+      "config_sha256": "857b560315b2aa0d84dc6c35f5befe39f833bf60a3e094bb653195e2240221be",
+      "effective_shared_cap_seconds": 28800,
+      "individual_limit_seconds": 900,
+      "frozen_configuration_unchanged": true
+    }
+  ],
+  "controller_pid": 3403,
+  "engine_pid": 3930,
+  "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 45290 MiB, 97 %",
+  "main_qwen3": {
+    "completed_base_pairs": 162,
+    "planned_base_pairs": 192,
+    "completed_trajectories": 11664,
+    "planned_trajectories": 13824,
+    "accepted_calls": 23576,
+    "planned_calls": 27648,
+    "latest_complete_trajectory_utc": "2026-10-17T17:01:10.634326+00:00",
+    "latest_accepted_call_utc": "2026-10-17T17:11:27.188573+00:00",
+    "accepted_calls_since_replacement": 728,
+    "replacement_accepted_calls_per_hour": 1690.3067560395289,
+    "estimated_remaining_main_hours_at_this_rate": 2.4090301866513832,
+    "resumed_cluster_announcements_ignored": 158
+  },
+  "additional_budget": {
+    "cap_seconds": 28800,
+    "charged_seconds": 500.0315948314965,
+    "remaining_seconds": 28299.968405168504
+  },
+  "projection_limit": "Rate uses elapsed time between accepted calls on the replacement GPU. It includes checkpoint and scheduling gaps; case mix and supporting/live stages can differ. No prediction of correctness.",
+  "supersedes_progress_fields_in": "records/execution/additional-gpu-budget-live-v2.json",
+  "correction_utc": "2026-10-17T17:15:03.032121+00:00",
+  "progress_correction": "The original snapshot counted resumed announcements of already completed clusters. Count distinct pair identifiers, retaining their first completion timestamp. Accepted calls, inference settings, scientific scores, source checks and budget charges are unchanged."
+}
