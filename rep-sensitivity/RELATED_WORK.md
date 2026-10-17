@@ -31,3 +31,24 @@ explicitly supplies the roster and full log to the aggregator. This supports a
 restricted-summary distinction, but does not establish novelty by itself. The
 primary full text of *Prompt Repetition* (Sections 1–3 and Appendix A.4), rather
 than third-party summaries, informs the comparison above.
+
+## Focused adjacent-mechanism check, 17 October 2026 UTC
+
+Three additions materially position the bounded exploration. Publisher full texts
+and version histories were inspected; `records/literature-adjacent-v1.json` records
+the sections, publication status and limits. Existing evidence-dependence and
+structured-communication references remain in use.
+
+| Primary publication | Closest result and setting | Our controlled difference and limitation |
+|---|---|---|
+| [Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet*, ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html) | Intrinsic self-correction can degrade reasoning; compares feedback sources and matched response counts. | A varies prior public-decision exposure, then supplies a legitimate versioned task update. It does not claim intrinsic self-correction or generalize to private reasoning. |
+| [H. K. Choi et al., *When Identity Skews Debate*, ACL 2026 main](https://aclanthology.org/2026.acl-long.650/) | Self/peer response labels versus anonymization; measures conformity and persistence across reasoning tasks. | B keeps one verbatim report and explicit ancestry fixed while changing relay labels. It cannot infer internal identity weights. Published PDF is used; older arXiv titles are not mixed. |
+| [J. Choi et al., *Belief in Authority*, Findings of ACL 2026](https://aclanthology.org/2026.findings-acl.1071/) | Twelve-turn ChatEval discussions with role cues; persistent authority positions differ from active conformity. | B removes generated persuasive arguments and actual authority. Executable correctness permits classifying beneficial and harmful changes, but this is a four-base presentation test. |
+
+*Copies or Sources?* already tests shared-origin restatements and protocol
+declarations. HiddenBench's structured exchange addresses surfacing unshared
+facts. Our A/B inputs contain the complete current findings, so they do not
+measure information exploration or autonomous summary fidelity. No-provenance
+conditions are absent: a null B result cannot establish that provenance caused
+protection. Prior conclusions, repeated task facts and new observations are
+different interventions. Scheduling and hierarchy alone do not establish novelty.

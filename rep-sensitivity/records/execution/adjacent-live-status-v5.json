@@ -1,0 +1,116 @@
+{
+  "utc": "2026-10-17T03:28:22.074892+00:00",
+  "heldout_outcomes_inspected": false,
+  "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 46008 MiB, 97 %, 595.91.07",
+  "processes": {
+    "91966": true,
+    "147979": true,
+    "148449": true,
+    "353199": true,
+    "353200": true,
+    "474739": true,
+    "497681": true
+  },
+  "main_qwen3": {
+    "base_pairs_complete": 150,
+    "base_pairs_planned": 192,
+    "trajectories_complete": 10800,
+    "trajectories_planned": 13824,
+    "calls_accepted": 21848,
+    "calls_remaining": 5800,
+    "latest_cluster_utc": "2026-10-17T03:15:56.154434+00:00",
+    "latest_accepted_call_utc": "2026-10-17T03:26:36.874919+00:00",
+    "overall_trajectories_per_hour": 756.0410179238688,
+    "recent_trajectories_per_hour": 761.1340001859213,
+    "remaining_main_hours_mean": 3.999782985722222,
+    "batch_failures": 0,
+    "inference_settings": {
+      "batch_size": 32,
+      "chat_template_date": "2026-10-16",
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "enforce_eager": false,
+      "engine": "vllm",
+      "engine_version": "0.10.2",
+      "gpu_memory_utilization": 0.92,
+      "guided_decoding": true,
+      "manager_output_schema_sha256": "c6c0541f7cd18117014de3ec7e51f11a7c7b4e54d219abd287be1a9f403f5aba",
+      "max_model_len": 12288,
+      "max_output_tokens": 2304,
+      "model": "Qwen/Qwen3-14B",
+      "output_schema_sha256": "ce9ad7fe1c476dd26996ff78395c52f428f93a411cbf43444b2e31533c8fb10e",
+      "precision": "bfloat16",
+      "prefix_caching": false,
+      "prompt_tokenization": "native_chat_template_ids",
+      "quantization": null,
+      "reasoning_mode": "disabled",
+      "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "seed_scheme": "sha256(pair_id,repetition,stage); common across arms",
+      "temperature": 0.3,
+      "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "top_p": 0.95
+    },
+    "implementation_sha256": "3d52eca1b17a7552f5fd4ee269de651f428da8709fd45a015218f31a9f811f17"
+  },
+  "following_stage_status": {
+    "supporting-v7": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "live-v8": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "root-diagnostic-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "mechanism-development-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "fresh-probe-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "mechanism-validation-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "objective-confirmation-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "numerical-preservation-v1": {
+      "initialized": false,
+      "score_files": 0
+    },
+    "adjacent-explorations-v1": {
+      "initialized": false,
+      "score_files": 0
+    }
+  },
+  "cumulative_additional_gpu_seconds": 0,
+  "cumulative_cap_seconds": 7200,
+  "budget_journal_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "new_stage_max_calls": 104,
+  "new_stage_wall_cap_seconds": 900,
+  "new_stage_projection_seconds": {
+    "batches": [
+      24,
+      24,
+      24,
+      32
+    ],
+    "calls": 104,
+    "mean_seconds_with_loading": 595.0131636100512,
+    "minimum_remaining_seconds": 820,
+    "planning_p95_seconds_with_loading": 759.0286431718617,
+    "prospectively_feasible": true
+  },
+  "projected_remaining_queue_hours_mean_range": [
+    26.245064329248986,
+    26.618955589854462
+  ],
+  "projection_limit": "Original/frozen pending-stage estimates retained; remaining main extrapolated from measured cluster throughput. New work uses measured validation root batches, not a measured future runtime. Future loading/I/O uncertainty remains.",
+  "new_gpu_experiments_completed_this_continuation": 0
+}

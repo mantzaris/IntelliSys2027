@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T03:26:37.403190+00:00",
+  "tests": 83,
+  "passed": true,
+  "elapsed_seconds": 39.948,
+  "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+  "source_sha256": "f2da39681e4136202bf6b866f42ae791fdaa64bd100dfc329a396e815128317f",
+  "test_log_sha256": "bd8db2651efe3752ecea0886fdbe9bed14ead6b8104dde424d70ef6c5ebed8e0",
+  "new_tests": 6,
+  "coverage": [
+    "Matched consequential/harmless edits with independent verification and sufficient current evidence",
+    "Prior output isolated from current evidence; neutral control contains no prior decision",
+    "Same claims and ancestry under changed relay identities and roles",
+    "Round-checkpoint resume, accepted-malformed retention, and 104 distinct cache entries",
+    "Correct transitions under changed truth and operational failures",
+    "Prospective budget fallback and cumulative margin"
+  ],
+  "no_test_fixture_is_an_empirical_model_result": true
+}

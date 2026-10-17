@@ -5,6 +5,39 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
+**Adjacent exploration, 17 October 2026 UTC:** the focused primary-literature
+check adds three verified publications on self-correction, identity labels and
+authority roles. [PROTOCOL_ADJACENT_V5.md](PROTOCOL_ADJACENT_V5.md) freezes two
+small studies sharing four reused development bases: 72 feedback/update calls
+and 32 explicit-origin relay/role calls. These are **pending GPU execution**, not
+new empirical findings. Their final-priority controller waits for the original
+evaluations, frozen confirmation and numerical-preservation replay.
+
+Measured validation batches project 9.9–12.7 minutes including loading for both,
+with a hard 15-minute/104-call ceiling inside the **same cumulative two-hour cap**.
+A frozen budget-only fallback retains the complete 72-call feedback study or
+skips both. No sample, model or round is added after observing responses.
+The exact frozen source/config/model hashes and recovery command are in
+`records/freezes/adjacent-explorations-v1.json` and
+`records/execution/adjacent-explorations-handoff-v1.json`.
+
+**83 integrity tests pass.** The 17-page anonymous PDF includes a clearly pending
+exploratory appendix; its changed page and reference layout have been inspected.
+The automatic completion hook analyzes each complete exploration and keeps
+mirroring until its final queue entry resolves. See
+[ADJACENT_EXPLORATIONS_STATUS.md](ADJACENT_EXPLORATIONS_STATUS.md).
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/analyze_adjacent_explorations.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_adjacent_supplement.py
+PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_adjacent_explorations.py -v
+```
+
+Do not start another GPU runner: the archived waiting controller already owns
+this queue entry. Source preparation is CPU-only; `--freeze` refuses conflicting
+immutable artifacts. Later feedback prompt bytes depend on earlier public outputs;
+their construction and dependencies are frozen, and actual prompts are logged.
+
 **Numerical continuation, 2026-10-17 UTC:** [NUMERICAL_PIPELINE_AUDIT.md](NUMERICAL_PIPELINE_AUDIT.md)
 traces 6,336 manager summaries from 3,168 hierarchical pilot/validation trajectories
 (60 independent bases). Boolean objectives originate in raw model output; no

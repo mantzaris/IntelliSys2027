@@ -70,6 +70,18 @@ if (path/'manifest.json').exists():
             'completion_event':complete,'status':'complete checkpoint' if complete and scored==planned else 'incomplete checkpoint'})
 else:progress.append({'suite':'objective-confirmation-v1','status':'frozen; queued after original Phi-4; shared 7200-second new-compute cap'})
 
+adjacent=runs/'adjacent-explorations-v1'
+if (adjacent/'manifest.json').exists():
+    m=read(adjacent/'manifest.json');p=adjacent/m['config']['model']
+    progress.append({'suite':'adjacent-explorations-v1','independent_base_pairs':m['base_pairs'],
+        'planned_calls':m['calls'],'accepted_call_files':len(list((p/'calls').glob('*.json.gz'))),
+        'completion_event':completed_event(p/'events.jsonl'),'execution_mode':m['config']['execution_mode']})
+elif (root/'configs/frozen/adjacent-explorations-v1.json').exists():
+    stop=runs/'adjacent-explorations-execution/not-launched.json'
+    progress.append({'suite':'adjacent-explorations-v1','status':'not launched' if stop.exists() else
+        'queued last after numerical preservation; at most 104 calls/900 seconds in the existing cumulative cap',
+        'reason':read(stop) if stop.exists() else None})
+
 mirror=root/'artifacts/last-successful-mirror.txt'
 mirror_utc=mirror.read_text().strip() if mirror.exists() else None
 age=(datetime.now(timezone.utc)-datetime.fromisoformat(mirror_utc.replace('Z','+00:00'))).total_seconds() if mirror_utc else None

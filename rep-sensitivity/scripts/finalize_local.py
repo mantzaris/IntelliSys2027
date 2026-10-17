@@ -50,6 +50,11 @@ if Path('configs/frozen/numerical-preservation-v1.json').exists():
     numerical_done=numerical_result.exists() and json.loads(numerical_result.read_text()).get('complete')
     if not numerical_done and not Path('artifacts/runs/numerical-preservation-execution/not-launched.json').exists():
         raise SystemExit(0)  # Keep mirroring while the final-priority diagnostic waits/runs.
+if Path('configs/frozen/adjacent-explorations-v1.json').exists():
+    adjacent_result=Path('results/adjacent-explorations-v1/analysis.json')
+    adjacent_done=adjacent_result.exists() and json.loads(adjacent_result.read_text()).get('complete')
+    if not adjacent_done and not Path('artifacts/runs/adjacent-explorations-execution/not-launched.json').exists():
+        raise SystemExit(0)  # Protected work completes first; retain the final mirror until this bounded stage resolves.
 identity_inputs=sorted(p for suite in ('validation-v7',*suites,'live-development-v8')
                        for p in Path('artifacts/runs',suite).glob('*/scores/*.json'))
 identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('manuscript/abstract-development.tex'),
@@ -65,6 +70,8 @@ identity_inputs += list(Path('artifacts/runs/numerical-preservation-v1').glob('*
 identity_inputs += [Path('scripts/analyze_numerical_preservation.py'),Path('scripts/build_numerical_report.py'),
                     Path('results/numerical-pipeline-v1/analysis.json'),Path('scripts/visible_information_v3.py'),
                     Path('scripts/audit_visible_support_v3.py')]
+identity_inputs += list(Path('artifacts/runs/adjacent-explorations-v1').glob('*/scores/*.json'))
+identity_inputs += [Path('scripts/build_adjacent_supplement.py'),Path('src/rep_sensitivity/adjacent_analysis.py')]
 identity=hashlib.sha256(b''.join(hashlib.sha256(p.read_bytes()).digest() for p in identity_inputs)).hexdigest()
 marker=Path('records/review-package.json')
 commit_marker=Path('artifacts/review-package-commit.json')
@@ -99,6 +106,7 @@ subprocess.run([sys.executable,'scripts/interpret_pilot.py'],env=env,check=True)
 subprocess.run([sys.executable,'scripts/build_pilot_interpretation.py'],env=env,check=True)
 subprocess.run([sys.executable,'scripts/build_empirical_update.py'],env=env,check=True)
 subprocess.run([sys.executable,'scripts/build_numerical_report.py'],env=env,check=True)
+subprocess.run([sys.executable,'scripts/build_adjacent_supplement.py'],env=env,check=True)
 subprocess.run(['latexmk','-pdf','-interaction=nonstopmode','-halt-on-error','main.tex'],cwd='manuscript',env=env,check=True)
 subprocess.run([sys.executable,'scripts/check_manuscript.py'],env=env,check=True)
 files=sorted(p for folder in ('results','records/audits','records/freezes','manuscript/generated')

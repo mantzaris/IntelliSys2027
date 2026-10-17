@@ -94,3 +94,25 @@ Continuation review points (16 October, amendment v2):
   automated implementation, execution, analysis and drafting truthfully. Human
   responsibility for scientific development and eligibility remains unresolved
   until the author reviews it; the PDF is not submission-ready.
+
+# Adjacent exploratory studies: points for review
+
+- Four reused development bases are shared by both explorations; rounds and
+  paired worlds are dependent. The frozen 104-call design is not confirmation.
+  A zero-width bootstrap interval when all four observed case effects agree
+  does not establish equivalence or bound effects on unobserved problems.
+- Feedback includes the preceding public choice and candidate assessments.
+  It does not isolate a literal answer anchor from those supporting fields.
+  The harmless edit changes a different nonbinding scope from the consequential
+  edit; all current snapshots are nevertheless sufficient and consistent.
+- Relay copies preserve explicit common origin and do not create independent
+  observations. The output contract does not identify source-counting beliefs.
+  Without a provenance-withheld arm, a null identity/role effect cannot establish
+  that provenance caused protection. Authority labels confer no actual privilege.
+- The added bibliography follows primary published versions. The identity
+  paper's PDF spells its second author Xiaojin Zhu, while anthology metadata
+  uses Jerry Zhu; the recorded bibliography follows the PDF.
+- GPU outputs remain pending at preparation. Any later empirical text must come
+  from complete immutable-call analysis; synthetic integrity fixtures are not
+  study results. The original main, confirmation and preservation work retain
+  priority and the original cumulative additional-compute cap remains in force.

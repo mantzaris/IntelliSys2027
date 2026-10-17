@@ -1,0 +1,134 @@
+{
+  "checked_utc": "2026-10-17T03:27:30.753516+00:00",
+  "last_successful_mirror_utc": "2026-10-17T03:26:28Z",
+  "mirror_age_seconds": 62.8,
+  "progress": [
+    {
+      "suite": "pilot-v7",
+      "model": "qwen3",
+      "scored_trajectories": 1152,
+      "planned_trajectories": 1152,
+      "accepted_call_files": 2304,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "controls-development-v7",
+      "model": "qwen3",
+      "scored_trajectories": 128,
+      "planned_trajectories": 128,
+      "accepted_call_files": 384,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "controls-development-v7",
+      "model": "phi4",
+      "scored_trajectories": 128,
+      "planned_trajectories": 128,
+      "accepted_call_files": 384,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "live-development-v8",
+      "model": "qwen3",
+      "scored_trajectories": 60,
+      "planned_trajectories": 60,
+      "accepted_call_files": 396,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "live-development-v8",
+      "model": "phi4",
+      "scored_trajectories": 60,
+      "planned_trajectories": 60,
+      "accepted_call_files": 396,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "validation-v7",
+      "model": "qwen3",
+      "scored_trajectories": 2592,
+      "planned_trajectories": 2592,
+      "accepted_call_files": 5184,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "validation-v7",
+      "model": "phi4",
+      "scored_trajectories": 2592,
+      "planned_trajectories": 2592,
+      "accepted_call_files": 5184,
+      "completion_event": true,
+      "status": "complete checkpoint"
+    },
+    {
+      "suite": "main-v7",
+      "model": "qwen3",
+      "scored_trajectories": 10800,
+      "planned_trajectories": 13824,
+      "accepted_call_files": 21816,
+      "completion_event": false,
+      "status": "incomplete checkpoint"
+    },
+    {
+      "suite": "main-v7",
+      "model": "phi4",
+      "scored_trajectories": 0,
+      "planned_trajectories": 13824,
+      "accepted_call_files": 0,
+      "completion_event": false,
+      "status": "incomplete checkpoint"
+    },
+    {
+      "suite": "supporting-v7",
+      "status": "not initialized locally"
+    },
+    {
+      "suite": "live-v8",
+      "status": "not initialized locally"
+    },
+    {
+      "suite": "mechanism-development-v1",
+      "status": "not initialized locally; check mechanism handoff record"
+    },
+    {
+      "suite": "fresh-probe-v1",
+      "status": "not initialized locally; check mechanism handoff record"
+    },
+    {
+      "suite": "mechanism-validation-v1",
+      "status": "not initialized locally; check mechanism handoff record"
+    },
+    {
+      "suite": "mechanism-heldout-v1",
+      "status": "not initialized locally; check mechanism handoff record"
+    },
+    {
+      "suite": "root-diagnostic-v1",
+      "status": "not initialized locally; check mechanism handoff record"
+    },
+    {
+      "suite": "numerical-preservation-v1",
+      "status": "frozen; last priority after confirmation; same cumulative 7200-second cap",
+      "reason": null
+    },
+    {
+      "suite": "objective-confirmation-v1",
+      "status": "frozen; queued after original Phi-4; shared 7200-second new-compute cap"
+    },
+    {
+      "suite": "adjacent-explorations-v1",
+      "status": "queued last after numerical preservation; at most 104 calls/900 seconds in the existing cumulative cap",
+      "reason": null
+    }
+  ],
+  "successor_failure_records": [],
+  "review_package_assembled": false,
+  "human_scientific_review": "pending",
+  "note": "Local checkpoint counts may lag the GPU. Completion flags are not a substitute for the final raw-output inventory audit. No decision outcomes are read."
+}

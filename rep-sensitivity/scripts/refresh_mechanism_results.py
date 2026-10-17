@@ -65,3 +65,9 @@ if support_needed:
     subprocess.run([sys.executable,'scripts/build_numerical_report.py'],check=True)
 
 subprocess.run([sys.executable,'scripts/build_completed_extensions.py'],check=True)
+
+if Path('artifacts/runs/adjacent-explorations-v1/manifest.json').exists():
+    subprocess.run([sys.executable,'scripts/analyze_adjacent_explorations.py'],check=True)
+    subprocess.run([sys.executable,'scripts/build_adjacent_supplement.py'],check=True)
+elif Path('artifacts/runs/adjacent-explorations-execution/not-launched.json').exists():
+    subprocess.run([sys.executable,'scripts/build_adjacent_supplement.py'],check=True)

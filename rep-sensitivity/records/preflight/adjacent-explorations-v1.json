@@ -1,0 +1,263 @@
+{
+  "utc": "2026-10-17T03:17:30.394957+00:00",
+  "base_pairs": 4,
+  "pair_ids": [
+    "d1dfa05c059ec4b4",
+    "03bb3afaf52de4c3",
+    "b8f9e62911d4a4c8",
+    "973c791a1ea121ee"
+  ],
+  "source_sha256": "154787d03e076e7a5163e8251167eba22725d417a7c6ed36ea81237dc3291d6d",
+  "config_sha256": "b54909faac60dbb3dafaa48b5dc46accb0c396fb7b422fa3065e0ca067fa4870",
+  "analysis_sha256": "c16eb40f0b2503c3c9db9818c708be782ef8af22f77831dc0fcb59cafbff1745",
+  "input_inventory_sha256": "6a636d89799c96d813b34b19b6d50072234d0c644b54b200603c6e8cbef7eb07",
+  "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "native_prompt_token_range": [
+    3381,
+    3858
+  ],
+  "feedback_padding_residual_range": [
+    0,
+    0
+  ],
+  "identity_token_lengths": [
+    {
+      "pair_id": "d1dfa05c059ec4b4",
+      "world": 0,
+      "single": 3399,
+      "same_worker": 3790,
+      "different_relays": 3790,
+      "authority_labels": 3796
+    },
+    {
+      "pair_id": "d1dfa05c059ec4b4",
+      "world": 1,
+      "single": 3419,
+      "same_worker": 3822,
+      "different_relays": 3822,
+      "authority_labels": 3828
+    },
+    {
+      "pair_id": "03bb3afaf52de4c3",
+      "world": 0,
+      "single": 3407,
+      "same_worker": 3811,
+      "different_relays": 3815,
+      "authority_labels": 3821
+    },
+    {
+      "pair_id": "03bb3afaf52de4c3",
+      "world": 1,
+      "single": 3404,
+      "same_worker": 3791,
+      "different_relays": 3795,
+      "authority_labels": 3801
+    },
+    {
+      "pair_id": "b8f9e62911d4a4c8",
+      "world": 0,
+      "single": 3453,
+      "same_worker": 3849,
+      "different_relays": 3852,
+      "authority_labels": 3858
+    },
+    {
+      "pair_id": "b8f9e62911d4a4c8",
+      "world": 1,
+      "single": 3405,
+      "same_worker": 3801,
+      "different_relays": 3804,
+      "authority_labels": 3810
+    },
+    {
+      "pair_id": "973c791a1ea121ee",
+      "world": 0,
+      "single": 3405,
+      "same_worker": 3805,
+      "different_relays": 3813,
+      "authority_labels": 3819
+    },
+    {
+      "pair_id": "973c791a1ea121ee",
+      "world": 1,
+      "single": 3428,
+      "same_worker": 3825,
+      "different_relays": 3833,
+      "authority_labels": 3839
+    }
+  ],
+  "measured_reference_root_batches": 36,
+  "reference_batch_size": 32,
+  "reference_prompt_max_tokens": 3691,
+  "prompt_length_timing_multiplier": 1.2,
+  "projection": {
+    "both": {
+      "calls": 104,
+      "batches": [
+        24,
+        24,
+        24,
+        32
+      ],
+      "mean_seconds_with_loading": 595.0131636100512,
+      "planning_p95_seconds_with_loading": 759.0286431718617,
+      "minimum_remaining_seconds": 820,
+      "prospectively_feasible": true
+    },
+    "feedback_only": {
+      "calls": 72,
+      "batches": [
+        24,
+        24,
+        24
+      ],
+      "mean_seconds_with_loading": 469.2954200694803,
+      "planning_p95_seconds_with_loading": 592.3070297408383,
+      "minimum_remaining_seconds": 653,
+      "prospectively_feasible": true
+    }
+  },
+  "protected_planning_seconds": 6086.439248465048,
+  "shared_cap_seconds": 7200,
+  "additional_seconds_consumed": 0,
+  "trace_bases": [
+    "03bb3afaf52de4c3",
+    "b8f9e62911d4a4c8"
+  ],
+  "source_pair_ids_reused_not_independent_confirmation": true,
+  "limitation": "Historical batch timings scaled conservatively for prompt length; not a measured future runtime or formal prediction interval. Actual generated feedback lengths logged; no input truncation.",
+  "case_inventory": [
+    {
+      "pair_id": "d1dfa05c059ec4b4",
+      "index": 0,
+      "family": "numeric",
+      "reverse": false,
+      "answers": {
+        "initial": "C97",
+        "consequential": "C94",
+        "harmless": "C97"
+      },
+      "target_candidate": "C94",
+      "edits": {
+        "consequential": [
+          {
+            "path": "/capacities/M5",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "harmless": [
+          {
+            "path": "/capacities/M1",
+            "before": 2,
+            "after": 3
+          }
+        ]
+      }
+    },
+    {
+      "pair_id": "03bb3afaf52de4c3",
+      "index": 1,
+      "family": "identity",
+      "reverse": true,
+      "answers": {
+        "initial": "C37",
+        "consequential": "C34",
+        "harmless": "C37"
+      },
+      "target_candidate": "C37",
+      "edits": {
+        "consequential": [
+          {
+            "path": "/jobs/1/demands/M1",
+            "before": null,
+            "after": 1
+          },
+          {
+            "path": "/jobs/1/demands/M7",
+            "before": 1,
+            "after": null
+          }
+        ],
+        "harmless": [
+          {
+            "path": "/jobs/4/demands/M1",
+            "before": null,
+            "after": 1
+          },
+          {
+            "path": "/jobs/4/demands/M5",
+            "before": 1,
+            "after": null
+          }
+        ]
+      }
+    },
+    {
+      "pair_id": "b8f9e62911d4a4c8",
+      "index": 12,
+      "family": "numeric",
+      "reverse": false,
+      "answers": {
+        "initial": "C51",
+        "consequential": "C38",
+        "harmless": "C51"
+      },
+      "target_candidate": "C51",
+      "edits": {
+        "consequential": [
+          {
+            "path": "/capacities/M6",
+            "before": 2,
+            "after": 1
+          }
+        ],
+        "harmless": [
+          {
+            "path": "/capacities/M5",
+            "before": 2,
+            "after": 1
+          }
+        ]
+      }
+    },
+    {
+      "pair_id": "973c791a1ea121ee",
+      "index": 13,
+      "family": "identity",
+      "reverse": true,
+      "answers": {
+        "initial": "C71",
+        "consequential": "C20",
+        "harmless": "C71"
+      },
+      "target_candidate": "C20",
+      "edits": {
+        "consequential": [
+          {
+            "path": "/jobs/1/demands/M4",
+            "before": null,
+            "after": 1
+          },
+          {
+            "path": "/jobs/1/demands/M5",
+            "before": 1,
+            "after": null
+          }
+        ],
+        "harmless": [
+          {
+            "path": "/jobs/4/demands/M4",
+            "before": null,
+            "after": 1
+          },
+          {
+            "path": "/jobs/4/demands/M9",
+            "before": 1,
+            "after": null
+          }
+        ]
+      }
+    }
+  ]
+}

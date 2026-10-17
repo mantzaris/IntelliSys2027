@@ -1,0 +1,60 @@
+{
+  "checked_utc_date": "2026-10-17",
+  "method": "Direct primary full-text and publisher-page inspection; no numerical claims imported from secondary summaries.",
+  "new_references": [
+    {
+      "key": "selfcorrect",
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "status": "ICLR 2024 conference paper",
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html",
+      "full_text_url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/8b4add8b0aa8749d80a34ca5d941c355-Paper-Conference.pdf",
+      "inspected": "Sections 2–5, experimental setup and transition analysis",
+      "setting": "Intrinsic self-correction versus oracle-feedback variants on GSM8K, CommonSenseQA and HotpotQA; GPT and Llama models; matched-response comparison with self-consistency.",
+      "relevance": "Prior-output feedback does not guarantee error correction. Our current evidence is complete and round 3 supplies a legitimate world update, not a correctness label.",
+      "limit": "Different models, tasks and feedback content; no prediction of our effect direction."
+    },
+    {
+      "key": "identitybias",
+      "title": "When Identity Skews Debate: Anonymization for Bias-Reduced Multi-Agent Reasoning",
+      "status": "ACL 2026 main proceedings, pages 14284–14311",
+      "primary_url": "https://aclanthology.org/2026.acl-long.650/",
+      "full_text_url": "https://aclanthology.org/2026.acl-long.650.pdf",
+      "doi": "10.18653/v1/2026.acl-long.650",
+      "arxiv_checked": "2510.07517v5, 9 April 2026; older v2 has a different title and was not used for final comparison",
+      "author_note": "Publisher PDF spells the second author Xiaojin Zhu; anthology metadata uses Jerry Zhu. Bibliography follows the PDF.",
+      "inspected": "Sections 2–5, public self/peer labels, anonymization intervention, models and datasets",
+      "setting": "Self/peer identity markers versus anonymized debate responses, five listed model configurations and four reasoning benchmarks; conformity and obstinacy metrics.",
+      "relevance": "Identity framing already has experimental precedent. Our B holds verbatim claim content and explicit common ancestry fixed; A uses a deterministic valid update.",
+      "limit": "Our choices cannot identify latent identity weights or validate the paper's Bayesian assumptions."
+    },
+    {
+      "key": "authoritybias",
+      "title": "Belief in Authority: Impact of Authority in Multi-Agent Evaluation Framework",
+      "status": "Findings of ACL 2026, pages 21305–21319",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1071/",
+      "full_text_url": "https://aclanthology.org/2026.findings-acl.1071.pdf",
+      "doi": "10.18653/v1/2026.findings-acl.1071",
+      "arxiv_checked": "2601.04790v1; final comparison uses published PDF",
+      "inspected": "Sections 3–4: nine roles, 12-turn ChatEval, FairEval and Topical-Chat, content-controlled analysis",
+      "setting": "GPT-4o and DeepSeek R1 writing-quality discussions with authority roles; the study distinguishes persistent authority positions from general-agent conformity.",
+      "relevance": "Role labels can matter without proving a source-counting mechanism. Our B has executable correctness and identical relayed evidence, not generated persuasive arguments.",
+      "limit": "No free-form social dynamics or actual role authority is tested here."
+    }
+  ],
+  "reused_references": [
+    {
+      "key": "copies",
+      "url": "https://arxiv.org/html/2610.06192v1",
+      "inspected": "Sections 2–5: restatements, explicit copy declarations, pointers and full-log aggregation",
+      "remaining_distinction": "B isolates messenger identity and role framing under explicit common provenance; it does not introduce evidence double counting as a new phenomenon."
+    },
+    {
+      "key": "hidden",
+      "url": "https://proceedings.mlr.press/v306/li26ej.html",
+      "full_text_url": "https://arxiv.org/html/2505.11556",
+      "inspected": "Sections 6.2–6.4: structured dissent, information access and Exchange-then-Decide communication",
+      "remaining_distinction": "Our explorations begin with all necessary reports delivered. They do not test discovering unshared information or establish an autonomous lossless protocol."
+    }
+  ],
+  "novelty_status": "No new novelty claim; adjacent mechanism probes are exploratory and subordinate to the core study."
+}
