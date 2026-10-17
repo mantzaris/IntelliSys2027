@@ -18,6 +18,11 @@ parser=argparse.ArgumentParser();parser.add_argument('--commit',action='store_tr
 env=dict(os.environ,PYTHONPATH=str(root/'src'),MPLCONFIGDIR=str(root/'artifacts/matplotlib'))
 if Path('records/amendments/mechanism-v1.json').exists():
     subprocess.run([sys.executable,'scripts/refresh_mechanism_results.py'],env=env,check=True)
+# Update only completed evidence blocks even while later frozen stages continue.
+# This also updates the abstract/conclusion after a complete main analysis arrives.
+subprocess.run([sys.executable,'scripts/build_manuscript.py'],env=env,check=True)
+from manuscript_content import compile_if_changed
+compile_if_changed()
 suites=('main-v7','supporting-v7','live-v8')
 paths=[Path('results',suite,'analysis.json') for suite in suites]
 if not all(p.exists() and json.loads(p.read_text()).get('complete') for p in paths):
@@ -57,7 +62,7 @@ if Path('configs/frozen/adjacent-explorations-v1.json').exists():
         raise SystemExit(0)  # Protected work completes first; retain the final mirror until this bounded stage resolves.
 identity_inputs=sorted(p for suite in ('validation-v7',*suites,'live-development-v8')
                        for p in Path('artifacts/runs',suite).glob('*/scores/*.json'))
-identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('manuscript/abstract-development.tex'),
+identity_inputs += [Path(__file__),Path('manuscript/main.tex'),Path('scripts/build_manuscript.py'),Path('scripts/manuscript_content.py'),
     *[Path('scripts',name) for name in ('build_manuscript_tables.py','build_study_figures.py','build_study_report.py','audit_runs.py','check_manuscript.py','analyze_control_matching.py')],
     *[Path('src/rep_sensitivity',name) for name in ('analysis.py','aux_analysis.py','metrics.py')]]
 identity_inputs += [p for suite in extension_suites for p in Path('artifacts/runs',suite).glob('*/scores/*.json')]
@@ -109,9 +114,9 @@ subprocess.run([sys.executable,'scripts/build_numerical_report.py'],env=env,chec
 subprocess.run([sys.executable,'scripts/build_adjacent_supplement.py'],env=env,check=True)
 subprocess.run(['latexmk','-pdf','-interaction=nonstopmode','-halt-on-error','main.tex'],cwd='manuscript',env=env,check=True)
 subprocess.run([sys.executable,'scripts/check_manuscript.py'],env=env,check=True)
-files=sorted(p for folder in ('results','records/audits','records/freezes','manuscript/generated')
+files=sorted(p for folder in ('results','records/audits','records/freezes','records/manuscript-sources')
              for p in Path(folder).rglob('*') if p.is_file() and 'interim' not in str(p))
-files+=[Path('manuscript/main.pdf'),Path('manuscript/main.tex')]
+files+=[Path('manuscript/main.tex'),*Path('manuscript').glob('*.pdf')]
 record={'assembled_utc':datetime.now(timezone.utc).isoformat(),'completion_input_sha256':identity,
         'completed_analysis_stages':list(suites)+list(extension_suites)+(['objective-confirmation-v1'] if Path('results/objective-confirmation-v1/analysis.json').exists() else []),'human_scientific_review':'pending','submission_ready':False,
         'amendment_heldout_not_launched':Path('artifacts/runs/mechanism-execution/heldout-not-launched.json').exists(),
@@ -128,7 +133,9 @@ if args.commit:
     paths=['results','configs/frozen','records/freezes','records/manifests','records/environment',
            'records/audits','records/study-report-status.json','records/review-package.json',
            'records/manuscript-checks.json','records/mechanism-report-status.json','records/completed-extensions-status.json','records/planning',
-           'manuscript/generated','manuscript/main.pdf','PILOT_MECHANISM_AUDIT.md','PILOT_INTERPRETATION.md']
+           'records/manuscript-sources','records/manuscript-content-v6.json',
+           'manuscript/main.tex',*[str(p) for p in Path('manuscript').glob('*.pdf')],
+           'PILOT_MECHANISM_AUDIT.md','PILOT_INTERPRETATION.md']
     # Restrict staging to compact, generated study records. Source/user edits remain untouched.
     subprocess.run(['git','add','--',*paths],check=True)
     subprocess.run(['git','diff','--cached','--check'],check=True)

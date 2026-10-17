@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from rep_sensitivity.schema import digest
 
-OUT=Path('manuscript/generated');OUT.mkdir(parents=True,exist_ok=True)
+OUT=Path('records/manuscript-sources');OUT.mkdir(parents=True,exist_ok=True)
 source=Path('results/pilot-mechanism-v1');audit=json.loads((source/'analysis.json').read_text())
 effects=list(csv.DictReader((source/'effects.csv').open()))
 trace=[]
@@ -197,7 +197,7 @@ comparisons and none in scheduling. New tests share identical manager computatio
 within a world and stochastic repetition, including the bypass control. This is
 a new coupling intervention, not a retrospective repair of pilot outputs.
 '''
-(OUT/'mechanism-pilot.tex').write_text(tex)
+pass  # The one-file paper is refreshed below.
 
 suites=('mechanism-development-v1','fresh-probe-v1','mechanism-validation-v1','mechanism-heldout-v1','root-diagnostic-v1')
 available={}
@@ -260,7 +260,7 @@ for suite in suites:
     ax.set_xlabel('Paired change (percentage points)');ax.legend(frameon=False);fig.tight_layout()
     folder=Path('results',suite,'figures');folder.mkdir(exist_ok=True);fig.savefig(folder/'targets-and-retention.pdf');plt.close(fig)
     trace.append({'source':'results/'+suite+'/analysis.json','figure':'targets-and-retention.pdf','source_sha256':digest(result)})
-(OUT/'mechanism-extension.tex').write_text(extension)
+pass  # The one-file paper is refreshed below.
 (OUT/'mechanism_numerical_traceability.json').write_text(json.dumps({'pilot_analysis_sha256':digest(audit),
     'figure_data_sha256':digest(effects),'entries':trace},indent=2)+'\n')
 status={'amendment':'mechanism-v1','complete_extension_analyses':list(available),
@@ -269,3 +269,7 @@ status={'amendment':'mechanism-v1','complete_extension_analyses':list(available)
         'human_scientific_review':'pending','submission_ready':False}
 Path('records/mechanism-report-status.json').write_text(json.dumps(status,indent=2)+'\n')
 print(json.dumps(status))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

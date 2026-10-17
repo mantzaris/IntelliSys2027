@@ -5,7 +5,36 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
-**Adjacent exploration, 17 October 2026 UTC:** the focused primary-literature
+**Manuscript consolidation, 17 October 2026 UTC:** the complete research draft is
+in [manuscript/main.tex](manuscript/main.tex) and [manuscript/main.pdf](manuscript/main.pdf).
+The paper has one TeX source, an inline bibliography, and all five figures beside
+the source. It contains 14 main-text pages and 19 pages in total, with 21 verified,
+cited references and a 209-word abstract. See [MANUSCRIPT_STATUS.md](MANUSCRIPT_STATUS.md)
+for the evidence boundary, numerical traceability, and scientific review points.
+[REFERENCE_VERIFICATION.md](REFERENCE_VERIFICATION.md) records primary-source checks.
+
+The last successful RunPod mirror was **04:08:59 UTC**. Later direct SSH attempts
+were refused and the RunPod proxy reported **container not found**. The local
+mirror loop remains available to retry, but the remote queue cannot currently be
+verified or advanced. Completed local results and the partial main checkpoint are
+preserved. This writing pass launches no experiments and changes no frozen design.
+The notes below are dated history, not a claim that the remote GPU is still active.
+
+To refresh completed result blocks, compile, and check the single-source paper:
+
+```bash
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_manuscript.py
+(cd manuscript && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)
+.venv/bin/python scripts/check_manuscript.py
+```
+
+Only delimited result blocks are replaced. Authored prose and the inline
+bibliography are preserved. Legacy report commands call the same updater. The
+mirror's local finalizer refreshes and compiles after each completed stage, while
+keeping the separate full-study completion gate. Incomplete analyses never supply
+paper estimates. New results still require scientific and visual review.
+
+**Earlier adjacent exploration, 17 October 2026 UTC:** the focused primary-literature
 check adds three verified publications on self-correction, identity labels and
 authority roles. [PROTOCOL_ADJACENT_V5.md](PROTOCOL_ADJACENT_V5.md) freezes two
 small studies sharing four reused development bases: 72 feedback/update calls
@@ -270,7 +299,7 @@ PYTHONPATH=src MPLCONFIGDIR=artifacts/matplotlib .venv/bin/python -m rep_sensiti
 ```
 
 The analysis exports CSV/JSON and PDF/PNG plots; each result links to a manifest
-hash and source-score hash. Tables include only completed competence runs.
+hash and source-score hash. Manuscript tables use completed analysis records only.
 Main contrasts use complete base clusters, with model-specific reporting and
 separate scheduling/workflow results. Calibration uses valid distributions only
 and records its denominator. Batch-wall allocation is explicitly distinguished
@@ -289,8 +318,9 @@ model evaluation; its development audit explicitly records the absence of NONE
 cases in the 24-pair prefix.
 
 The official `svproc` template files are retained with a source/archive hash.
-The draft's abstract length, bibliography citations and LaTeX overflow checks are
-automated; human scientific and layout review remains necessary. See
+The draft's abstract length, bibliography citations, single-source organization,
+anonymity, and LaTeX overflow checks are automated. All pages of the consolidated
+draft have also been visually inspected. Author scientific review remains necessary. See
 `SCIENTIFIC_REVIEW.md` and `CONFERENCE.md` before considering any submission.
 
 To run a fresh v7 development gate and summary check while reusing a loaded

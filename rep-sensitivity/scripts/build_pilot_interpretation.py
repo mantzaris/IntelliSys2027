@@ -85,7 +85,11 @@ tex += [r'\bottomrule\end{tabular}\end{table}',
     r'Each paired-world row uses six bases and 24 matched world-pair cells per arm. Success requires both correct answers. Merely changing or retaining a choice does not count. Intervals resample bases within family and edit-status strata.',
     r'\begin{figure}[tb]\centering\includegraphics[width=\textwidth]{../results/pilot-interpretation-v2/figures/observable-failure-locations.pdf}\caption{Observable pilot failures; labels overlap.}\label{fig:failure-locations}\end{figure}',
     r'Keyed assertions bind the full public scope, including entity, units, condition, criterion and version. Numerical preservation at another key does not count. These deterministic labels describe messages and choices; they do not identify internal reasoning or causal mediation. Correct final choices can coexist with incorrect supporting assertions. The extension section reports completion status for the transport and root-only interventions.']
-Path('manuscript/generated/pilot-interpretation.tex').write_text('\n'.join(tex) + '\n')
-Path('manuscript/generated/pilot-interpretation-traceability.json').write_text(json.dumps({
+pass  # The one-file paper is refreshed below.
+Path('records/manuscript-sources/pilot-interpretation-traceability.json').write_text(json.dumps({
     'source': str(root / 'analysis.json'), 'fields': ['comparisons', 'paired_world', 'failure_locations'],
     'generated': ['pilot-interpretation.tex', 'PILOT_INTERPRETATION.md'], 'human_review': 'pending'}, indent=2) + '\n')
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

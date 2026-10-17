@@ -99,6 +99,10 @@ tex+=['\\bottomrule\\end{tabular}\\end{table}\\par',
  'All original comparisons, including scope consolidation, remain in the archived analysis. Policy pooling is explicit; validation and pilot aggregates are not interchangeable. Changes in graph size, parameters, rendering and tie/NONE composition limit a direct causal explanation of the difference between splits.',
  '\\begin{figure}[ht]\\centering\\includegraphics[width=\\linewidth]{../results/validation-repetition-v1/figures/base-distribution.pdf}\\caption{Validation effects across all 18 scheduling bases; paired worlds, policies and repetitions stay within each base. No outcome-selected exclusions.}\\end{figure}',
  ('The root-only diagnostic and fresh objective confirmation have separate completion records. ' if root_complete and confirmation_complete else 'The root-only diagnostic and fresh objective confirmation remain partially or wholly pending. ')+'The strict input audit separates contradictory or ill-typed summaries from incomplete consistent information; a correct world answer under inadequate evidence is not evidence of successful integration. The frozen root diagnostic includes selective repetition of each candidate objective and balanced repetition of all objectives, with incoming distinct claims fixed. Its lossless interface is an idealized information-preservation intervention.','']
-Path('manuscript/generated/validation-repetition.tex').write_text('\n'.join(tex))
-Path('manuscript/generated/validation-repetition-traceability.json').write_text(json.dumps({'analysis_sha256':digest(r),'table_rows':focus,'source':'results/validation-repetition-v1/analysis.json'},indent=2)+'\n')
+pass  # The one-file paper is refreshed below.
+Path('records/manuscript-sources/validation-repetition-traceability.json').write_text(json.dumps({'analysis_sha256':digest(r),'table_rows':focus,'source':'results/validation-repetition-v1/analysis.json'},indent=2)+'\n')
 print(json.dumps({'figures':4,'source':str(root/'analysis.json'),'new_gpu_calls':0}))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

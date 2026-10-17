@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-out=Path('manuscript/generated');out.mkdir(parents=True,exist_ok=True)
+out=Path('records/manuscript-sources');out.mkdir(parents=True,exist_ok=True)
 files=sorted(Path('results').glob('*/analysis.json'))
 records=[(p,json.loads(p.read_text())) for p in files if 'interim' not in str(p)]
 rows=[]
@@ -24,7 +24,7 @@ for p,result in records:
 table='\\begin{table}[ht]\n\\centering\n\\caption{Completed development checks: correct/decisions (percent), ordinary, flat, single presentation. Checks reuse development pairs. Historical Mistral-7B/Nemo rows reflect their original tokenizer interface and are not clean model rankings.}\n\\label{tab:competence}\n\\small\n\\begin{tabular}{llrr}\n\\hline\nModel & Interface & Scheduling & Workflow\\\\\n\\hline\n'
 table+='\n'.join(rows) if rows else '\\multicolumn{4}{c}{No complete competence run available at build time.}\\\\'
 table+='\n\\hline\n\\end{tabular}\n\\end{table}\n'
-(out/'competence.tex').write_text(table)
+pass  # The one-file paper is refreshed below.
 pilot=next(((p,r) for p,r in records if r.get('suite')=='pilot-v7' and r.get('complete')),None)
 if pilot:
     path,result=pilot
@@ -41,6 +41,10 @@ if pilot:
     # effects; preserve the original figures on disk without repeating them.
     for figure in ('hierarchy','resource'):
         table+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/pilot-v7/figures/'+figure+'.pdf}\n\\caption{Development-only primary scheduling: '+figure+'. Intervals, where shown, resample base-instance clusters.}\n\\label{fig:pilot-'+figure+'}\n\\end{figure}\n'
-    (out/'pilot.tex').write_text(table)
+    pass  # The one-file paper is refreshed below.
     for r in result['contrasts']:trace.append({'source':str(path),'field':'contrasts','record':r})
 (out/'numerical_traceability.json').write_text(json.dumps(trace,indent=2)+'\n')
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

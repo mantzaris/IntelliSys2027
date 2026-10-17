@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-10-17T04:56:38.804292+00:00",
+  "pdf": "manuscript/main.pdf",
+  "pdf_sha256": "c6c3caa4c17f56961e845a53aceed0e4232d49dc48c16fc65a945def70508af0",
+  "tex_sha256": "c782e6a1700e20b7585668560e77b623aec91ad05cb89ac7e3f675859fbbec5f",
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "method": "Rendered every page at 1400-pixel scale and visually inspected text, tables, figures, metadata and reference layout. Reinspected every changed page after final figure/table edits.",
+  "issues_corrected": [
+    "Architecture text outside box and clipped lower box",
+    "Repetition-effect legend overlapping intervals",
+    "Table column separation",
+    "Orphaned conclusion page",
+    "Numerical revision hashes overflowing text width"
+  ],
+  "remaining_layout_issues_observed": [],
+  "figure_sha256": {
+    "aggregation-architecture.pdf": "c800d22abdbfe75f2fc149ef2d39ecfb2c88579f087118e77915dff3436526c4",
+    "case-level-repetition-effects.pdf": "98baccf3cb3403e12eb355e4feb188836618cbf75a9b07b723c8ff2b181a602d",
+    "numerical-preservation-pipeline.pdf": "06b9d7d7b8f2a0dd116a8f8e76daa2814886febfc6ddac3610684218e989737b",
+    "repetition-accuracy-effects.pdf": "ac57bf5ef9e4972fec6c0ace750c0d04d9e7a5363380f9bf4a51ae72a57033a9",
+    "validation-cost-accuracy.pdf": "709b01396fe325c9c0773e41cfc205a703db1aa188fbeddf3c21b8b8c30fa196"
+  },
+  "automated_checks": {
+    "abstract_words": 209,
+    "pages": 19,
+    "main_text_pages": 14,
+    "appendix_start_page": 15,
+    "references_start_page": 17,
+    "reference_appendix_pages": 5,
+    "figure_count": 5,
+    "bibliography_entries": 21,
+    "all_entries_verified_and_cited": true,
+    "all_figures_and_tables_referenced": true,
+    "single_tex_source": true,
+    "inline_bibliography": true,
+    "figures_beside_source": true,
+    "anonymous_pdf_author": true,
+    "undefined_references": false,
+    "overfull_boxes": false,
+    "disclosure_is_final_prose_section": true,
+    "human_scientific_review": "pending",
+    "submission_ready": false
+  },
+  "integrity_tests": {
+    "full_suite_passed": 87,
+    "latest_report_generation_subset_passed": 5
+  },
+  "legacy_report_entrypoints_passed": 8,
+  "author_scientific_review": "pending",
+  "submission_ready": false
+}

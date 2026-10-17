@@ -1,0 +1,93 @@
+{
+  "checked_utc": "2026-10-17T04:51:01.410038+00:00",
+  "task": "manuscript consolidation; no new experiments",
+  "source_commit": "507358b648b8a8532ac0eeb519342a5aa1577dde",
+  "last_successful_mirror_utc": "2026-10-17T04:08:59Z",
+  "remote_access": {
+    "direct_ssh": "Connection refused",
+    "runpod_proxy": "container not found",
+    "current_model": "unverified",
+    "remote_controller_state": "unverified; existing commands preserved, no restart attempted"
+  },
+  "new_gpu_calls": 0,
+  "new_gpu_seconds": 0,
+  "frozen_design_changed": false,
+  "partial_heldout_outcomes_inspected": false,
+  "completed": [
+    {
+      "suite": "pilot-v7",
+      "model": "qwen3",
+      "complete": true,
+      "trajectories": 1152
+    },
+    {
+      "suite": "validation-v7",
+      "model": "phi4",
+      "complete": true,
+      "trajectories": 2592
+    },
+    {
+      "suite": "validation-v7",
+      "model": "qwen3",
+      "complete": true,
+      "trajectories": 2592
+    },
+    {
+      "suite": "controls-development-v7",
+      "model": "phi4",
+      "complete": true,
+      "trajectories": 128
+    },
+    {
+      "suite": "controls-development-v7",
+      "model": "qwen3",
+      "complete": true,
+      "trajectories": 128
+    },
+    {
+      "suite": "live-development-v8",
+      "model": "phi4",
+      "complete": true,
+      "trajectories": 60
+    },
+    {
+      "suite": "live-development-v8",
+      "model": "qwen3",
+      "complete": true,
+      "trajectories": 60
+    }
+  ],
+  "last_mirrored_main": {
+    "model": "qwen3",
+    "completed_base_pairs": 158,
+    "planned_base_pairs": 192,
+    "completed_trajectories": 11376,
+    "planned_trajectories": 13824,
+    "accepted_calls": 22848,
+    "last_accepted_call_utc": "2026-10-17T04:08:04.766128+00:00",
+    "last_completed_cluster_utc": "2026-10-17T04:04:24.721406+00:00",
+    "complete": false
+  },
+  "pending_stages": [
+    "original main completion (Qwen3 and Phi-4)",
+    "original supporting and live held-out",
+    "root diagnostic",
+    "mechanism development, fresh verification, validation and conditional confirmation",
+    "fresh objective confirmation",
+    "numerical preservation replay",
+    "budget-conditional adjacent explorations"
+  ],
+  "additional_budget": {
+    "cumulative_cap_seconds": 7200,
+    "this_writing_pass_seconds": 0,
+    "last_known_charged_seconds": 0,
+    "current_remote_charge": "unverified after loss of access",
+    "source": "records/execution/numerical-continuation-runtime-v4.json"
+  },
+  "local_mirror_process": {
+    "pid": 1521524,
+    "command": "bash scripts/mirror_loop.sh",
+    "verified_active": true
+  },
+  "remote_main_before_writing_commit": "507358b648b8a8532ac0eeb519342a5aa1577dde"
+}

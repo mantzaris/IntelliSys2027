@@ -67,6 +67,10 @@ for result in models:
         '\\begin{figure}[ht]\\centering\\includegraphics[width=.95\\linewidth]{../results/objective-confirmation-v1/'+model+'/figures/confirmation-effects.pdf}\\caption{Prespecified repetition and balance contrasts for '+model+'. Intervals resample whole base pairs within mutation-family and change-status strata.}\\end{figure}']
     status.append({'stage':'objective-confirmation-v1','model':model,'status':'complete model','independent_base_pairs':24,'trajectories':result['trajectories'],'source_sha256':digest(result)})
 if not models:status.append({'stage':'objective-confirmation-v1','status':'pending'})
-Path('manuscript/generated/completed-extensions.tex').write_text('\n'.join(tex)+'\n')
+pass  # The one-file paper is refreshed below.
 Path('records/completed-extensions-status.json').write_text(json.dumps({'stages':status,'human_scientific_review':'pending'},indent=2)+'\n')
 print(json.dumps({'completed_models':len(models),'root_complete':root.exists()}))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

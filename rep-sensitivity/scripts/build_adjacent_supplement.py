@@ -115,9 +115,13 @@ else:
         tex += [r'\begin{figure}[ht]\centering\includegraphics[width=\linewidth]{../results/adjacent-explorations-v1/figures/paired-effects.pdf}\caption{Exploratory paired effects and all four base effects. Intervals enumerate whole-base bootstrap draws; four clusters provide limited uncertainty information. Numbered lines follow the contrasts from top to bottom.}\end{figure}']
     tex.append('All cases are shown. Raw-trace references use the smallest lexical base ID in each mutation family, selected before outputs. '
                'A trace illustrates observable messages, not a faithful internal reasoning path. The experiment remains exploratory regardless of effect direction.')
-Path('manuscript/generated/adjacent-explorations.tex').write_text('\n\n'.join(tex).rstrip()+'\n')
+pass  # The one-file paper is refreshed below.
 Path('ADJACENT_EXPLORATIONS_STATUS.md').write_text('\n'.join(notes).rstrip()+'\n')
 Path('records/adjacent-report-status.json').write_text(json.dumps({'source_sha256':digest(data) if data else None,
     'experiments':{e:s.get('status','not launched' if stop.exists() else 'pending') for e,s in states.items()},
     'human_scientific_review':'pending'},indent=2)+'\n')
 print(json.dumps({'adjacent_supplement':{e:s.get('complete',False) for e,s in states.items()}}))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

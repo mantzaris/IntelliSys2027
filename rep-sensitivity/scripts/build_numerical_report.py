@@ -135,8 +135,8 @@ tex += [r'\bottomrule\end{tabular}\end{table}',
  'Representation validity is distinct from decision support. In two of the four ill-typed baseline contexts in the fixed diagnostic, uncontested constraints already identify the sole feasible candidate. The remaining two admit multiple choices without objectives. An analysis-only supplement retains the strict invalidity labels while testing whether all admissible completions of the disputed or missing fields yield the same decision. No hidden value is restored. Missing numerical information is therefore not necessarily decision-critical; only one of the two baseline-loss bases in this small diagnostic has decision-relevant numerical uncertainty.',
  'A separate prospective exploratory diagnostic uses six previously fixed development pairs, two with baseline objective loss and four without. Forty-eight fresh root calls cross the original upstream repetition treatment with branch-limited objective repair. Repair preserves source scope and does not add feasibility conclusions or the correct choice. It is an idealized information intervention conditional on cached summaries. '+
  ('Results follow below. ' if new_complete else 'It was not launched under the protected-work/cumulative-budget rule. ' if not_launched else 'Its result is pending. ')+'The existing fresh repetition confirmation does not independently confirm this interaction.','']
-Path('manuscript/generated/numerical-pipeline.tex').write_text('\n\n'.join(tex).rstrip()+'\n')
-Path('manuscript/generated/numerical-pipeline-traceability.json').write_text(json.dumps({'analysis_sha256':digest(r),'table_rows':pooled,'source':'results/numerical-pipeline-v1/analysis.json',
+pass  # The one-file paper is refreshed below.
+Path('records/manuscript-sources/numerical-pipeline-traceability.json').write_text(json.dumps({'analysis_sha256':digest(r),'table_rows':pooled,'source':'results/numerical-pipeline-v1/analysis.json',
     'visible_support_analysis_sha256':digest(support_data) if support_data else None,
     'decision_support_preflight_sha256':digest(json.loads(Path('records/preflight/visible-support-v3.json').read_text()))},indent=2)+'\n')
 
@@ -152,6 +152,9 @@ if new_complete:
     interaction=next(x for x in d['contrasts'] if x['population']=='all' and x['contrast']=='repetition_by_preservation' and x['metric']=='correct')
     text=f"\nCompleted diagnostic: {d['base_pairs']} independent bases, {d['trajectories']} fresh root calls. Accuracy A/B/C/D: "+'/'.join(f"{100*x['accuracy']:.2f}%" for x in absolute)+f". Repetition-by-preservation interaction: {100*interaction['estimate']:+.2f} points [{100*interaction['lower']:.2f}, {100*interaction['upper']:.2f}]. Exploratory six-base uncertainty; no causal-mediation claim.\n"
     Path('NUMERICAL_PRESERVATION_RESULTS.md').write_text(text)
-    with Path('manuscript/generated/numerical-pipeline.tex').open('a') as f:
-        f.write(text.replace('%',r'\%').replace('_',r'\_'))
+    pass  # The one-file paper is refreshed below.
 print(json.dumps({'pipeline_figures':4,'gpu_diagnostic_complete':new_complete}))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

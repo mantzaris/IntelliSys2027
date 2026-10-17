@@ -6,7 +6,7 @@ Missing suites produce explicit pending-status text instead of empty numeric tab
 import json
 from pathlib import Path
 
-OUT=Path('manuscript/generated')
+OUT=Path('records/manuscript-sources')
 OUT.mkdir(parents=True,exist_ok=True)
 TRACE=[]
 LABELS={'qwen3':'Qwen3-14B','phi4':'Phi-4','equal_model_average':'Equal-model mean'}
@@ -188,7 +188,7 @@ status=('The main held-out replay is complete. ' if main else
 status+=('Supporting and live evaluations are complete. ' if not pending else
          'The following study stages do not yet have complete analysis outputs: '+', '.join(tex(n) for n in pending)+'. ')
 status+='Human scientific review, interpretation and submission eligibility remain pending.\n'
-(OUT/'status.tex').write_text(status)
+pass  # The one-file paper is refreshed below.
 supplement=''
 if main:
     text='\\section{Held-Out Replay Results}\n'
@@ -197,7 +197,7 @@ if main:
         text+='\\begin{figure}[ht]\n\\centering\n\\includegraphics[width=\\textwidth]{../results/main-v7/figures/'+figure+'.pdf}\n'
         text+='\\caption{Primary scheduling: '+figure+'. Estimates preserve complete base-instance clusters; an asterisk marks a degenerate empirical interval. Tokens are a measured cost proxy, not FLOPs.}\n\\end{figure}\n'
     text+='Model-specific results and the equal-weight model average are reported together. A higher overall hierarchical error rate alone is not amplification; H3 tests the repetition interaction. Harmless-pair guardrails, calibration and confidence-only changes are retained in the accompanying analysis CSVs.\n'
-    (OUT/'main-results.tex').write_text(text)
+    pass  # The one-file paper is refreshed below.
     supplement+='\\section{Secondary Workflow Results}\n'+replay_tables(main,'workflow')
     average_rows={r['contrast']:r for r in main['contrasts'] if r['kind']=='schedule' and r['model']=='equal_model_average'}
     h1=average_rows['H1_exact'];h3=average_rows['H3']
@@ -222,13 +222,13 @@ communication interfaces. This working manuscript requires human scientific
 review before submission.
 '''
 else:
-    (OUT/'main-results.tex').write_text('\\section{Held-Out Replay Status}\nThe held-out replay does not yet have a complete analysis. No numerical held-out claims are supplied.\n')
-    abstract=Path('manuscript/abstract-development.tex').read_text()
-(OUT/'abstract.tex').write_text(abstract)
+    pass  # The one-file paper is refreshed below.
+    abstract=Path('manuscript/main.tex').read_text().split(r'\begin{abstract}',1)[1].split(r'\keywords',1)[0]
+pass  # The one-file paper is refreshed below.
 if support:
-    (OUT/'supporting-results.tex').write_text('\\section{Targeted Supporting Results}\n'+control_tables(support,'schedule')+control_diagnostics(support))
+    pass  # The one-file paper is refreshed below.
     supplement+='\\section{Secondary Supporting Controls}\n'+control_tables(support,'workflow')
-else:(OUT/'supporting-results.tex').write_text('\\section{Supporting Evaluation Status}\nThe supporting held-out evaluation does not yet have a complete analysis.\n')
+else:pass  # The one-file paper is refreshed below.
 if live:
     text='\\section{Live Worker Results}\n'
     development=load('live-development-v8')
@@ -240,10 +240,14 @@ if live:
             if row['accuracy']<.85:text+='This fails the prespecified adequacy threshold; its live comparisons describe task/interface limitations rather than an identified redundancy mechanism. '
         text+='\n'
     text+=live_tables(live)
-    (OUT/'live-results.tex').write_text(text)
-else:(OUT/'live-results.tex').write_text('\\section{Live Evaluation Status}\nThe live held-out evaluation does not yet have a complete analysis.\n')
-(OUT/'supplementary-results.tex').write_text(supplement)
+    pass  # The one-file paper is refreshed below.
+else:pass  # The one-file paper is refreshed below.
+pass  # The one-file paper is refreshed below.
 (OUT/'study_numerical_traceability.json').write_text(json.dumps(TRACE,indent=2)+'\n')
 Path('records/study-report-status.json').write_text(json.dumps({'complete_analysis_stages':[r['suite'] for r in (main,support,live) if r],
     'pending_analysis_stages':pending,'human_scientific_review':'pending','submission_ready':False},indent=2)+'\n')
 print(json.dumps({'complete_stages':3-len(pending),'pending':pending}))
+
+# Preserve the single-source manuscript under manual and automatic refreshes.
+from manuscript_content import refresh
+refresh()

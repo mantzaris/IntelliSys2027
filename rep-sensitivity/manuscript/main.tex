@@ -1,352 +1,883 @@
 \documentclass{svproc}
 \usepackage{url}
 \usepackage{graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb}
 \usepackage{mathptmx}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{placeins}
 \setlength{\emergencystretch}{2em}
 \def\UrlFont{\rmfamily}
+\pdfinfo{/Title (Repetition, Information Preservation, and Decision Reliability in Hierarchical Language-Model Agents) /Author (Anonymous) /Subject (Anonymous research draft)}
+
 \begin{document}
 \mainmatter
-\title{Duplication, Near-Duplication, and Constraint Integration in Hierarchical Multi-Agent Systems}
-\titlerunning{Duplication and Constraint Integration}
+\title{Repetition, Information Preservation, and Decision Reliability in Hierarchical Language-Model Agents}
+\titlerunning{Repetition and Information Preservation}
 \author{Anonymous}
 \authorrunning{Anonymous}
 \institute{Anonymous submission draft}
 \maketitle
 
 \begin{abstract}
-\input{generated/abstract.tex}
-\keywords{multi-agent systems, information integration, duplication, scheduling, behavioral evaluation}
+% BEGIN AUTO: abstract
+Repeated reports are common in language-model agent systems, but repeating a finding can both preserve it during communication and change how a decision maker uses it. We study these effects with a deterministic benchmark for selecting the best feasible candidate schedule, alongside a separate rule-based workflow task. Frozen worker reports isolate repeated presentation from fresh computation and new evidence. Paired worlds test correct responses to consequential edits and correct stability under harmless changes. Flat aggregation is compared with two intermediate managers whose summaries form the root input. Completed pilot and validation evaluations cover 24 and 36 independent base problems, respectively. On hierarchical scheduling, exact copies improve Qwen3 pilot accuracy from 81.25\% to 94.79\%, but validation effects are -3.47 percentage points for Qwen3 and +1.39 for Phi-4, with both cluster intervals spanning zero. An audit of 6,336 manager summaries locates numerical objectives becoming Boolean values in raw generated summaries, with no subsequent parser or transport changes. This loss does not always make the decision ambiguous, and correct delivery does not guarantee a correct choice. The results motivate separate evaluation of representation fidelity, decision sufficiency, and decision accuracy. Main held-out and intervention results remain pending in this working draft. Conclusions are limited to the evaluated models, tasks, and structured communication interface.
+% END AUTO: abstract
+\keywords{language-model agents, hierarchical aggregation, repetition, information preservation, behavioral evaluation}
 \end{abstract}
 
-\section{Status and Research Question}
-\textbf{Working research draft; not ready for submission.}
-\input{generated/status.tex}
-The human author's scientific review is pending. The title is provisional until
-the findings justify a final contribution.
+\section{Introduction}
+A language-model manager may receive several reports that say nearly the same
+thing. Some are copies of an existing observation. Others add a constraint, refer
+to a different machine, or correct an earlier value. Reliable coordination
+requires the manager to preserve these distinctions while using all the
+information needed for its decision. Repetition creates a useful tension. It may
+help a fact survive summarization, yet it can also give a limited claim more
+influence than its relevance warrants.
 
-We ask when repetition protects information from loss in hierarchical agent
-systems, and when it leads them to overlook contradictions, scope differences,
-exceptions or updates. The revised working hypothesis permits benefits, harms,
-negligible effects and mixtures; it is not a conclusion. One possible failure is
-unnecessary sensitivity to repeated information. Another is failure to respond to
-similar information whose scope or value changes a mandatory constraint. Neither
-behavior follows simply from report similarity: two messages can use the same
-words about different resources, while different words can express the same claim
-from the same source.
+Consider a team choosing among proposed schedules. One worker reports completion
+times, another checks machine capacity, and another checks dependencies. Repeating
+that one plan is fast does not establish that it is feasible. Equally, removing
+every similar sentence could discard the one capacity failure that changes the
+answer. These are integration problems. The reports answer complementary
+questions, so a majority vote over their favorable or unfavorable conclusions is
+not a valid decision rule.
 
-The candidate contribution is a reproducible, controlled test of complementary
-constraint integration and preservation of scope differences across restricted
-summary boundaries. We do not propose evidence double counting, provenance,
-paraphrase sensitivity, or hierarchical communication as new discoveries.
-Conclusions must remain specific to evaluated models, tasks, interfaces, and
-resource conditions; deployment prevalence and general intelligence are outside
-the study's scope.
+Research on repeated evidence already distinguishes sources from restatements
+\cite{copies,sybil}. Research on distributed information shows that agent teams can
+fail to discover or use facts held by their members \cite{hidden}. Our focus is
+the transition between these settings. All required worker findings are initially
+delivered, but a hierarchical decision maker receives summaries rather than the
+original reports. This lets us examine whether a failure occurs during
+communication or after the relevant information has arrived.
 
-\section{Related Work and Remaining Distinction}
-Gao et al.~\cite{copies} are the closest comparison. Their controlled sensing,
-web-document, and agent-written-log experiments measure how restatements affect
-beliefs and decisions. Their hierarchy and summary conditions already address
-communication structure. In their agent-team testbed, the aggregator receives the
-full log. Our proposed distinction is a conjunction of scoped requirements passed
-through managers whose root receives summaries without the raw reports. A generic
-finding that repeated evidence shifts an answer would not establish this distinction.
+We investigate three questions. First, how does repeating a report affect
+decision accuracy in flat and hierarchical organizations? Second, where do
+complete propositions lose their value or scope during aggregation? Third, when
+does such a loss actually prevent a justified decision? The distinction in the
+third question matters. A missing completion time is important when several
+feasible plans compete, but may be irrelevant when only one plan is feasible.
 
-Bara~\cite{sybil} separates ancestry from report similarity and models correlated
-extraction errors. We therefore distinguish additional verification executions
-from new evidence sources and do not infer independence from fresh model calls.
-HiddenBench~\cite{hidden} examines information distributed among agents and failures
-to elicit unshared facts. Our frozen replay supplies the complete required report
-set before aggregation, allowing delivery failures to be separated from later
-summary loss. MAST~\cite{mast} provides a broad taxonomy of multi-agent failure;
-our deterministic, paired interventions address a narrower mechanism.
+The study provides a deterministic benchmark for candidate selection, paired
+worlds with exactly checked changes, and a replay procedure that varies report
+presentation without adding evidence. It also provides a trace audit that follows
+assertions from the original report to the final model input, and an analysis of
+the decisions supported by that input. These components make it possible to
+separate representation fidelity, decision sufficiency, and final accuracy.
 
-The current scaling study's v3~\cite{scaling} examines architecture--task alignment.
-We cite that version without importing numerical claims from earlier versions.
-Hi-Agreement~\cite{distributed} investigates honest and deceptive testimony in
-distributed fact recovery, motivating separate false-assertion controls here.
-D3MAS~\cite{d3mas} is relevant to hierarchical knowledge organization, but its
-arXiv page carries an author-withdrawal notice concerning methodology; we do not
-rely on its reported performance.
+The completed development evidence illustrates this distinction. A substantial
+hierarchical pilot benefit did not consistently carry over to validation.
+Numerical objectives sometimes become Boolean values in raw manager summaries,
+but repetition does not reliably prevent this loss. Some decisions are also wrong
+despite correctly delivered information. Together, these findings locate different
+reliability problems without implying a universal rule for repeating reports.
 
-Behavioral invariance and directional testing are established by
-CheckList~\cite{checklist}. PAWS~\cite{paws} illustrates the distinction between
-surface overlap and semantic equivalence. Metadata-sensitive conflict
-resolution~\cite{metadata} motivates explicit version-authority rules, while
-position effects in long contexts~\cite{middle} motivate length and ordering
-controls. These alternatives must be considered before attributing failures to
-duplication itself.
+\section{Related Work}
+\paragraph{Repeated evidence and additional computation.}
+Gao et al. \cite{copies} measure how aggregators count restated observations in
+controlled logs, web documents, and agent-written communication. Their experiments
+already include summaries and a hierarchy. In their agent-team setting, the
+aggregator sees the roster and full log. Our main hierarchy instead removes raw
+reports from the root's input and requires it to combine mandatory constraints
+with a numerical objective. This is a narrower distinction than claiming that
+evidence double counting or hierarchical communication is new. Bara
+\cite{sybil} formalizes why report multiplicity and evidence multiplicity differ,
+including the possibility of correlated extraction errors.
 
-Beneficial repetition also has direct precedent: Leviathan et al.~\cite{promptrepeat}
-study whole-prompt repetition with padding and order controls. Our selective
-report interventions distinguish transmission through summaries from application
-at a root, while holding distinct propositions fixed. Their measured API latency
-does not establish the cost of local inference in this study.
+Repetition can also be beneficial. Leviathan et al. \cite{promptrepeat} evaluate
+repetition of the whole input prompt in non-reasoning models. We selectively
+repeat a report and track what survives a summary boundary. Neither intervention
+is the same as self-consistency, which samples additional reasoning paths and
+aggregates their answers \cite{selfconsistency}. Fresh verification is additional
+computation. Exact copies are additional presentations of an existing result.
+Neither necessarily supplies a new independent observation.
 
-Prior-output feedback is a distinct intervention. Huang et al.~\cite{selfcorrect}
-show limitations of intrinsic self-correction without external feedback.
-Identity-label experiments~\cite{identitybias} and authority-role
-discussions~\cite{authoritybias} already establish relevant social-presentation
-effects. Our bounded exploratory appendix tests legitimate task updates and
-identical relays with explicit common ancestry. It cannot identify internal
-beliefs, establish a hierarchy effect, or show that provenance causes protection.
+\paragraph{Agent organization and distributed information.}
+Multiagent debate can improve answers by exchanging separately generated
+responses \cite{debate}, but its benefits depend on the protocol and comparison
+budget \cite{smit}. The current version of the scaling study by Kim et al.
+\cite{scaling} examines how architectures interact with task structure. We use its
+third preprint version and do not combine findings from earlier versions.
+HiddenBench \cite{hidden} tests information distributed across agents, including
+failures to elicit unshared facts and a structured communication intervention.
+Our replay begins after the essential reports have been supplied. This isolates
+later aggregation from the problem of discovering missing evidence. The MAST
+taxonomy \cite{mast} places such failures within a broader range of coordination
+problems. Hi-Agreement \cite{distributed} studies fact recovery in the presence
+of misinformation. It motivates keeping incorrect testimony separate from a
+legitimate change in the underlying world.
 
-\section{Benchmark and Executable Truth}
-\subsection{Candidate Schedule Selection}
-Each primary instance contains jobs with positive integer durations, nonnegative
-resource demands, resource capacities, an acyclic precedence graph, and candidate
-start times. Optional releases, deadlines and downtime are supported. Jobs execute
-non-preemptively on half-open intervals $[s_j,s_j+d_j)$. For each resource $r$,
+\paragraph{Faithfulness, scope, and presentation.}
+Summarization research distinguishes a summary's faithfulness to its source from
+its factual correctness \cite{maynez}. We add a task-specific question: does the
+delivered information determine the required choice? Behavioral testing with
+CheckList \cite{checklist} motivates both meaning-preserving and consequential
+changes. PAWS \cite{paws} demonstrates why high word overlap does not establish
+semantic equivalence. Position effects in long contexts \cite{middle} and
+metadata effects in conflicting retrieved evidence \cite{metadata} provide
+alternative explanations for apparent repetition effects. They motivate the
+study's separate ordering, length, scope, and provenance controls.
+
+Prior conclusions and role labels are different interventions. Intrinsic
+self-correction can fail without external feedback \cite{selfcorrect}, while
+identity labels \cite{identitybias} and authority roles \cite{authoritybias} can
+influence multiagent debate or evaluation. These studies motivate separate probes
+of feedback and relayed reports. A changed answer alone does not reveal a model's
+belief about source independence or authority.
+
+\section{Task Setting and a Worked Example}
+\subsection{Choosing Among Supplied Schedules}
+The primary task is to select the feasible candidate with the smallest makespan,
+where makespan is the latest job completion time. The model chooses from a supplied
+set of plans. It does not search for a globally optimal schedule.
+
+Jobs have integer durations and resource demands. They run without interruption
+on half-open intervals $[s_j,s_j+d_j)$, so a job finishing at time 2 does not
+overlap a job starting at time 2. For resource $r$, total simultaneous demand must
+satisfy
 \begin{equation}
- \sum_{j:s_j\leq t<s_j+d_j} q_{jr}\leq C_r
+ \sum_{j:s_j\leq t<s_j+d_j} q_{jr}\leq C_r,
 \end{equation}
-must hold at every event interval. Precedence requires $s_u+d_u\leq s_v$ for every
-edge $(u,v)$. Releases and deadlines bound starts and completions. A positive
-resource demand may not overlap that resource's downtime.
+where $C_r$ is capacity and $q_{jr}$ is job $j$'s demand. A precedence edge from
+$u$ to $v$ requires $s_u+d_u\leq s_v$. Releases, deadlines, and resource downtime
+add mandatory constraints when present.
 
-Let $F(c)$ be the conjunction of all mandatory predicates for candidate $c$,
-and $M(c)=\max_j(s_j+d_j)$. The answer minimizes $M(c)$ over supplied candidates
-with $F(c)=1$. A public priority ordering resolves equal objectives; NONE is correct
-when the feasible set is empty. This is candidate selection, not unrestricted
-optimal scheduling. The event-sweep verifier is cross-checked against a separately
-coded integer-time occupancy checker. Tests also cover exact interval boundaries,
-deadline equality, invalid inputs, ties and NONE.
-
-\subsection{Paired Changes and Secondary Workflow}
-Original and modified worlds share candidate identifiers and controlled structure.
-Every pair records changed fields, mutation preconditions, affected predicates,
-oracle intermediate results, and both correct answers. Decision-changing and
-decision-preserving pairs are labeled by executable outcomes rather than intent.
-Scheduling currently implements capacity, resource identity and precedence edits.
-A separate finite Boolean workflow implements quantifiers, conditions and
-explicit version selection. The latter is reported as a secondary task family,
-not as scheduling evidence.
-
-Generation randomizes identifiers, report order, candidate ordering and tie
-priority without consulting a model. Development and validation differ in parameter
-ranges; evaluation additionally reserves fork--join structure and rendering forms.
-All variants of one base problem remain in the same split. The construction is
-deliberately small and controlled; its limited graph and constraint diversity
-restricts external validity.
-
-\subsection{Scope, Truth and Ancestry}
-A typed claim carries task, candidate, entity, predicate, value, units,
-applicability, version, source identifiers, parent reports, verification execution
-and operation type. Scope equivalence excludes ancestry and asserted value, so
-compatible claims can still conflict. Copies preserve the source and execution;
-fresh verification can have a distinct execution while retaining the same source.
-
-The task dependency graph, organizational hierarchy, communication/access graph,
-and report/evidence ancestry graph are stored separately. Scheduling job precedence
-is an additional graph, not the graph of verification assignments. Evaluator-only
-mutation and correctness labels are kept outside model prompts. Shared-state action
-races and destructive concurrent tool effects are excluded.
-
-\section{Replay and Aggregation Protocol}
-\subsection{Reports and Organization}
-Template reports are frozen from typed assertions before inference. The corpus
-contains no model-generated paraphrases. Code review and integrity tests check
-claim preservation; human linguistic review remains an open review item. The
-repetition conditions show a selected report once, four times exactly, or once
-with three templated paraphrases. No required finding is removed. A prespecified
-rotation chooses the repeated candidate/task, preferring an unchanged report
-across worlds. Version changes may require a declared exception.
-
-The flat organization uses one root call with the complete report set. The
-hierarchy uses two managers with frozen partitions and one root; copies initially
-remain in the original branch. The root receives the summaries and a value-free
-registry of required claim scopes. The registry is available to every policy,
-including ordinary synthesis, and must be considered part of the evaluated
-interface. It does not reveal which assertions are true.
-
-\subsection{Policies and Observable Outputs}
-Ordinary synthesis states the same feasibility and optimization rule as the
-checklist and scope-aware policies. The checklist asks for required-task coverage.
-Scope-aware instructions additionally preserve entities, conditions, versions,
-unique findings and unresolved conflicts while consolidating equivalent ancestry.
-A challenge is not an automatic veto; a timestamp alone does not authorize a
-correction. The proposed policy has no privileged truth labels.
-
-Final outputs contain a choice, class probabilities, explicit supporting
-assertions and unresolved scope keys. Intermediate outputs use the same assertion
-contract without a final choice. We score emitted claims, not private reasoning.
-The initial development interface required strict JSON but frequently produced
-Markdown fences and incorrect field types. Those outputs remain failures under
-that protocol. A second development interface uses named assertion fields and a
-common JSON schema decoder for all policies. This is an interface revision, not a
-repair that retrospectively changes the initial run's primary scores.
-Subsequent development revisions make scope identifiers descriptive, map objective
-labels explicitly to makespan or cost, and elicit a short feasibility/objective
-assessment for each candidate before the final choice. These assessments are model
-outputs, not oracle values. This common scaffold narrows the difference between
-ordinary synthesis and the checklist. A role-specific schema constrains managers'
-choice to null and their final-assessment fields to empty collections, enforcing
-their summary-only contract. The failed earlier manager outputs remain recorded. Predicate criteria are
-recorded separately from applicability: a failed resource check still applies.
-A tokenizer audit also found an extra beginning-of-sequence token in historical
-Nemo calls. Those checks characterize their original interface, not clean model
-rankings. Subsequent inference submits native token IDs directly and freezes
-dates inserted by chat templates.
-
-\section{Execution Integrity and Analysis}
-Model revisions, tokenizer revisions, chat-template hashes, precision, dependency
-versions, sampling settings and output limits are recorded. Inference uses only
-the allocated NVIDIA RTX 6000 Ada GPU. No paid model API is used. Raw requests and
-responses are immutable; accepted calls and base-cluster completions are journaled.
-Cache keys include stochastic repetition identifiers. Resume reuses completed
-malformed outputs instead of sampling until valid. Interrupted, unaccepted calls
-are identifiable and are not silently treated as completed failures or successes.
-Local result mirrors prevent the pod from being the sole copy of completed data.
-
-Let $E_{p,a,r}$ denote decision error averaged within base pair $p$, organization
-$a$ and repetition condition $r$. Repetition harm is
+Write $F(c)$ for the conjunction of mandatory constraints and $M(c)$ for the
+makespan of candidate $c$. The choice is
 \begin{equation}
- H_{a,r}=\mathbb{E}_p[E_{p,a,r}-E_{p,a,\mathrm{single}}].
+ c^*=\mathop{\arg\min}_{c:F(c)=1}\bigl(M(c),\pi(c)\bigr),
 \end{equation}
-The hierarchy interaction is $H_{\mathrm{hierarchical},r}-H_{\mathrm{flat},r}$.
-A higher overall hierarchical error rate is not itself amplification of repetition.
-Correct responsiveness and correct stability require both paired answers to be
-correct, respectively on changing and preserving pairs. Merely switching or
-retaining a choice is insufficient.
+where the public priority rank $\pi(c)$ resolves ties lexicographically. The
+answer is \texttt{NONE} if no supplied candidate is feasible. An attractive
+objective cannot compensate for a failed mandatory constraint.
 
-The initial analysis manifest defines exact-copy and paraphrase effects (H1),
-the difference in pair-failure effects between consequential and harmless edits
-(H2), the hierarchy interaction (H3), and scope-versus-checklist error and retention
-contrasts (H4). Analysis resamples complete base clusters, stratified by mutation
-family and consequence, retaining dependence across worlds, arms, models and
-stochastic repetitions. Model-specific results are mandatory; a pooled estimate
-uses equal model weights. Scheduling and workflow estimates remain separate.
-No confirmatory significance claim is based on the development runs.
-Collapsed empirical bootstrap intervals are flagged: no observed variation in a
-small sample does not establish zero population effect or justify a power claim.
+\subsection{An Illustrative Capacity Change}
+Consider jobs A and B, each requiring one unit of machine M for two time units.
+Job C requires one unit of a different machine N for one time unit and follows
+both A and B. Machine N has capacity one. Table \ref{tab:example} gives two
+candidate plans. This is an illustrative example checked with both benchmark
+verifiers, not an observed model error.
 
-Malformed completed trajectories count as operational failures in primary
-accuracy. Calibration uses valid complete probability vectors and reports their
-availability fraction. Additional outcomes include invalid selections, assignment
-and delivery coverage, summary retention, scope transfer, copied-claim consolidation,
-false-assertion adoption and resource use. Input/output tokens and elapsed batch
-time are measured. Allocating batch time across requests is a cost-accounting
-convention, not a direct measurement of per-request GPU kernel time.
-Equal integer and integral-float objective values count as equivalent numeric
-claims; Boolean truth remains distinct from numeric one. Claim-score corrections
-are recomputed from immutable responses with a versioned scorer. An incompatible
-scope-citation metric records assertions supported by multiple reports whose
-scopes do not all bind that assertion; this is an emitted-attribution measure.
-False-assertion emission is separated from an uncontested false finding: the latter
-requires the false value, absence of the contrary true value, and no unresolved
-flag for that scope. Neither establishes a hidden belief or causal reasoning path.
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Illustrative plans. All intervals are half-open and times use the same unit.}
+\label{tab:example}
+\begin{tabular}{lcccc}
+\toprule
+Plan & A on M & B on M & C on N & Makespan \\
+\midrule
+P & $[0,2)$ & $[0,2)$ & $[2,3)$ & 3 \\
+Q & $[0,2)$ & $[2,4)$ & $[4,5)$ & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-\section{Development Results and Current Limits}
-\input{generated/competence.tex}
-Table~\ref{tab:competence} is regenerated from immutable-run analyses. These checks
-use ordinary, flat, single-presentation inputs and therefore do not estimate a
-duplication effect. The prespecified competence gate requires sufficient basic
-task performance before treating repetition failures as informative. Operational
-formatting and decision errors are recorded separately. Incomplete runs are not
-included in the table.
+With machine M's capacity equal to one, P is infeasible because A and B overlap.
+Q is feasible and is the correct choice. Increasing M's capacity to two makes P
+feasible, so P becomes correct. Precedence and makespan reports remain unchanged.
+Only the resource finding for P changes.
 
-The initial replay was stopped during development after discovering a systematic
-interface failure. Its complete clusters and partial next cluster are retained,
-but it supplies no valid evidence for the scientific hypotheses. The revised
-competence checks determine the next experimental allocation. Main held-out
-comparisons, targeted model controls and live-worker results must not be inferred
-from the implemented code alone.
+An objective worker contributes the statement that P's makespan is 3. A resource
+worker contributes the separate statement that its peak demand on M is 2 and
+whether that meets the applicable capacity. Four exact presentations of the
+objective report still describe one computed result. They cannot establish that
+P is feasible when capacity is one.
 
-\IfFileExists{generated/pilot.tex}{\input{generated/pilot.tex}}{
-The current development pilot is still running; no completed pilot contrast is
-reported in this version.}
-In the completed Qwen3 pilot, flat scheduling accuracy reached the ceiling across
-both policies and all repetition conditions. Hierarchical scheduling accuracy
-improved with copies and paraphrases under both policies. The negative hierarchy
-interaction therefore describes a larger repetition benefit in the hierarchy; it
-is not harmful amplification. Workflow estimates were mixed, and the paired
-responsiveness interaction remained imprecise. These development findings neither
-confirm a general harmful-duplication mechanism nor establish robustness.
-Scope-aware consolidation was not included in this pilot, so it cannot answer H4.
-Figures~\ref{fig:pilot-hierarchy} and~\ref{fig:pilot-resource} show the original
-hierarchy interaction and resource comparison; Figure~\ref{fig:mechanism-pilot}
-adds the exploratory retention contrasts.
-The frozen development prefix contains ties but no NONE worlds; validation
-introduces that stratum. Its competence gate therefore does not establish
-performance on no-feasible-candidate decisions.
+The same example explains decision sufficiency. At capacity one, the feasibility
+findings alone identify Q, even if both numerical objectives disappear. At
+capacity two, both plans are feasible. If their objective values are missing,
+the remaining reports do not determine which is best. A representation error can
+therefore be irrelevant to one decision and decisive for another.
 
-\input{generated/mechanism-pilot.tex}
-\input{generated/pilot-interpretation.tex}
-\input{generated/validation-repetition.tex}
-\input{generated/numerical-pipeline.tex}
+\section{Experimental Design}
+\subsection{Instances, Reports, and Paired Changes}
+The generator builds small schedules from valid structures and controlled
+alterations. The evaluated schedules use three candidates and two or three
+resource types. Candidate identifiers, ordering, and tie priorities are randomized
+without consulting a model. An event-sweep checker evaluates each candidate, and
+a separately implemented integer-time occupancy checker cross-checks its
+feasibility and objective.
 
-The original design has separate pilot, validation and held-out splits,
-two stochastic repetitions, and two model families. Actual manifests verify call
-counts. Its held-out allocation was frozen after completed validation and
-precision/runtime assessment, before held-out inference. The later mechanism
-amendments preserve that design and use separate validation for new confirmation.
-No favorable
-significance threshold justifies stopping. A model that fails the competence gate
-is a documented limitation, not a candidate selected for a desirable failure rate.
+Each independent base problem has an original and a modified world. The pair
+records the changed fields and both correct answers. A consequential edit changes
+the correct choice. A harmless edit leaves it unchanged. Scheduling pairs cover
+capacity, resource identity, and precedence changes. A separate deterministic
+workflow family covers quantification, conditional rules, and explicit version
+selection. Workflow results are reported separately because these edits have a
+different task structure.
 
-\FloatBarrier
-\input{generated/main-results.tex}
-\input{generated/supporting-results.tex}
-\input{generated/live-results.tex}
-\input{generated/mechanism-extension.tex}
-\input{generated/completed-extensions.tex}
+Workers' findings are typed assertions rendered with fixed templates. The replay
+therefore starts with known reports rather than model-generated worker errors.
+Each claim identifies its task, candidate, entity, predicate, value, units,
+applicability, and version. It also records sources, parent reports, and the
+verification execution. Two claims are equivalent only when their meanings and
+scopes agree. A different candidate, resource, condition, or effective version can
+make similar wording express a different proposition.
 
-\section{Supporting Design and Threats to Validity}
-The supporting design contrasts overlapping and less-overlapping presentations
-with identical distinct claims, exact removal versus similarity removal,
-scope-aware consolidation, branch placement, raw-report bypass, and global
-reviewers matched to the hierarchy's call count. Neutral material controls for
-length; ancestry withholding and corrupted relationships test provenance use.
-Instruction-only controls separate metadata from additional prompting. Distinct
-information, ordering and report slots are held fixed where possible, with residual
-token differences recorded. The result sections explicitly identify execution status.
-Placement of distinct scoped reports and placement of exact copies are separate
-contrasts. Moving a report changes branch load, which is recorded as a residual
-difference. Similarity removal currently uses character overlap, so its findings
-cannot be generalized to learned semantic deduplication.
+The changed-world replay regenerates affected reports consistently. Separate
+corrupted-report controls keep the world fixed and introduce a false assertion
+with visible evidence that can resolve it. A contradiction is not automatically a
+valid objection. Likewise, a newer report has authority only when the task defines
+an update rule. These controls must not be pooled with the all-correct-report
+replay as if they were the same intervention.
 
-Corrupted reports require visible authoritative evidence or an allowed
-insufficient-information answer. False favorable assertions and false objections
-must be separated. Live workers receive role-specific task data without peer
-reports; four essential assignments remain in principal comparisons. Redundant
-fresh execution differs from frozen copying. Fixed output allowances alone do not
-match total computation, and coverage displacement requires its own label.
+\subsection{Repetition and Organizational Structure}
+The baseline presents every required result once. Exact repetition adds three
+copies of one selected report. Paraphrasing adds three template-rendered restatements
+of the same claim, retaining its value, scope, and ancestry. Thus the selected
+report has one or four total presentations. Essential reports are never removed
+to make room. A prespecified rotation selects the target, preferring a report
+unchanged across paired worlds. This does not guarantee that the selected report
+is decisive or favors the correct candidate.
 
-Major validity threats include small synthetic task diversity, structured scope
-registries that assist all policies, template-based language, restricted model
-families, formatting constraints, limited stochastic repetitions, and output caps.
-Shared weight families and shared source inputs can induce dependent errors.
-Retention associations alone cannot establish faithful internal reasoning or
-causal mediation. Summary bypass offers a direct intervention, but its additional
-input and compute must also be reported. Null effects with wide intervals are
-inconclusive; beneficial hierarchy or sufficient simple checklists must be reported
-with the same prominence as harmful effects.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{aggregation-architecture.pdf}
+\caption{Flat and hierarchical replay. Copies add presentations, not sources or worker executions.}
+\label{fig:architecture}
+\end{figure}
+
+Figure \ref{fig:architecture} shows the access difference. A flat root reads the
+complete report set in one call. In the hierarchy, two managers receive fixed
+partitions, summarize their reports, and pass the summaries to a root. The root
+receives a registry of required claim scopes but no raw worker reports. This
+registry contains descriptions and ancestry, not evaluator truth values. Copies
+initially stay in their report's branch. Every policy receives the same available
+information within an arm.
+
+Three policies vary the aggregation instructions. Ordinary synthesis asks for a
+decision and its explicit supporting findings. A coverage checklist asks the model
+to account for each mandatory predicate before comparing objectives. Scope-aware
+consolidation additionally asks it to merge equivalent claims while preserving
+different entities, versions, conditions, and unresolved conflicts. Even ordinary
+synthesis receives the full decision rule. The common output contract also asks
+the root for a feasibility and objective assessment of each candidate. This is a
+substantial baseline scaffold, so the comparison concerns incremental instructions
+within a structured interface.
+
+Managers emit keyed assertions and unresolved keys. Roots additionally emit a
+choice, candidate assessments, and probabilities. The study scores these public
+outputs, not private reasoning. The JSON decoder enforces syntax and field
+structure. It does not enforce all semantic relationships between a scope key and
+its value. Section \ref{sec:preservation} examines the consequences of that
+distinction.
+
+\subsection{Models, Stages, and Experimental Integrity}
+We use Qwen3-14B \cite{qwenmodel} with thinking disabled and Phi-4
+\cite{phimodel}. Both run sequentially in bfloat16 without quantization on one
+NVIDIA RTX 6000 Ada Generation GPU. Sampling uses temperature 0.3 and top-$p$
+0.95. The replay has a 12,288-token context limit, a 2,304-token output cap, and
+batches of up to 32 requests. Native chat templates and exact model revisions are
+fixed. Appendix \ref{app:reproducibility} gives implementation details.
+
+% BEGIN AUTO: stage-table
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Completed replay stages. Bases are independent problems, shared across models.}\label{tab:stages}
+\begin{tabular}{llrrr}\toprule
+Stage & Model & \shortstack{All\\bases} & \shortstack{Scheduling\\bases} & Trajectories\\\midrule
+Pilot & Qwen3-14B & 24 & 12 & 1,152\\
+Validation & Qwen3-14B & 36 & 18 & 2,592\\
+Validation & Phi-4 & same 36 & same 18 & 2,592\\
+\bottomrule\end{tabular}
+\end{table}
+% END AUTO: stage-table
+
+Table \ref{tab:stages} separates independent problems from repeated trajectories.
+The pilot uses ordinary synthesis and the checklist. Validation adds the
+scope-aware policy and a second model. To compare stages fairly, the main
+pilot-versus-validation estimates average only the two shared policies. Other
+validation comparisons explicitly average all three. Every cell has two
+stochastic repetitions, with independent cache identities. All variants of a base
+problem stay in the same split. Validation changes parameter ranges and rendering
+conditions, while the main test additionally reserves graph patterns and
+templates. New seeds alone are not treated as sufficient separation.
+
+The original hypotheses asked whether repetition changes error, reduces correct
+responses to consequential edits, interacts with hierarchy, and is better handled
+by scope-aware consolidation than a checklist. After inspecting the pilot, a
+dated amendment broadened the mechanism questions to include beneficial
+information preservation. The original hypotheses and runs remain intact.
+Reanalyses motivated by the pilot are exploratory. Fresh confirmation and
+mechanism interventions remain separate stages, rather than being combined with
+development into a larger apparent sample.
+
+Immutable records identify requests, responses, corpus, prompts, model, and
+inference settings. Resuming a run reuses completed calls, including malformed
+answers, which count as errors. Analyses must be complete before their estimates
+enter the paper.
+
+\subsection{Outcomes and Uncertainty}
+Exact agreement with the executable answer is the primary outcome. We also
+distinguish infeasible selections, feasible but suboptimal selections, and
+incorrect \texttt{NONE} or \texttt{INSUFFICIENT} responses. Paired-world success
+requires both answers to be correct. On consequential pairs this measures correct
+responsiveness, and on harmless pairs it measures correct stability. An answer
+flip alone satisfies neither criterion.
+
+For base problem $b$, let $\bar Y_{b,a,r}$ be accuracy averaged over the specified
+worlds, policies, and stochastic repetitions in organization $a$ and presentation
+condition $r$. We report the accuracy effect
+\begin{equation}
+ \Delta_{a,r}=\frac{1}{B}\sum_{b=1}^{B}
+       (\bar Y_{b,a,r}-\bar Y_{b,a,\mathrm{single}}).
+\end{equation}
+Positive values favor repetition. The original error-based repetition-harm
+contrast is $-\Delta_{a,r}$. We estimate the hierarchy interaction directly as
+$\Delta_{\mathrm{hierarchical},r}-\Delta_{\mathrm{flat},r}$. A lower overall
+hierarchical accuracy does not by itself show that hierarchy amplifies repetition.
+
+Uncertainty uses whole base-problem clusters \cite{clusterbootstrap}. Each
+bootstrap draw retains the associated worlds, arms, policies, and repetitions.
+The displayed exploratory estimates use 10,000 draws stratified by mutation
+family and whether the correct decision changes. Models are reported separately.
+Intervals are percentile 95\% intervals, not multiplicity-adjusted tests. We make
+no confirmatory significance claims from these development analyses. Few clusters
+limit precision, and a zero-width interval at a sample ceiling is not evidence of
+perfect population performance.
+
+\section{Results}
+\subsection{Evidence Available in This Draft}
+% BEGIN AUTO: result-status
+This draft reports the completed pilot, exploratory validation reanalysis, and trace audits. The pilot contains 24 independent base pairs and 1,152 trajectories. Validation contains 36 additional independent pairs shared across two models and 5,184 trajectories. The smaller development controls and live-worker checks are diagnostic rather than confirmation. \textbf{Pending results.} Results remain pending for the main held-out replay, fresh objective confirmation, the root-only diagnostic, the objective-preservation replay, and the remaining frozen supporting evaluations. No partial held-out outcomes enter the results below.
+% END AUTO: result-status
+
+% BEGIN AUTO: completed-main
+
+% END AUTO: completed-main
+
+\subsection{A Pilot Benefit and a More Mixed Validation Result}
+% BEGIN AUTO: accuracy-results
+For hierarchical scheduling, the pilot compares 96 decisions per presentation condition from 12 independent bases. Each base contributes two worlds, two policies, and two stochastic repetitions. Validation contributes 144 decisions per condition and model from 18 bases under the same two-policy average.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Hierarchical scheduling, two shared policies. Changes use paired base-cluster 95\% intervals.}\label{tab:accuracy}
+\begin{tabular}{llrrr}\toprule
+Stage / model & Repeat & Single \% & Repeated \% & Change, pp [95\% CI]\\\midrule
+Pilot Qwen3 & exact & 81.25 & 94.79 & +13.54 [+4.17, +22.92]\\
+Pilot Qwen3 & paraphrase & 81.25 & 91.67 & +10.42 [+1.04, +19.79]\\
+Validation Qwen3 & exact & 79.86 & 76.39 & -3.47 [-10.42, +2.78]\\
+Validation Qwen3 & paraphrase & 79.86 & 78.47 & -1.39 [-5.56, +2.78]\\
+Validation Phi-4 & exact & 72.22 & 73.61 & +1.39 [-4.17, +6.25]\\
+Validation Phi-4 & paraphrase & 72.22 & 72.92 & +0.69 [-4.17, +4.86]\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Paired decision transitions for Table \ref{tab:accuracy}. Unchanged includes correct and incorrect choices.}\label{tab:transitions}
+\begin{tabular}{llrrrr}\toprule
+Stage / model & Repeat & Bases & Corrections & Regressions & Unchanged\\\midrule
+Pilot Qwen3 & exact & 12 & 14 & 1 & 81\\
+Pilot Qwen3 & paraphrase & 12 & 12 & 2 & 82\\
+Validation Qwen3 & exact & 18 & 7 & 12 & 125\\
+Validation Qwen3 & paraphrase & 18 & 7 & 9 & 128\\
+Validation Phi-4 & exact & 18 & 8 & 6 & 130\\
+Validation Phi-4 & paraphrase & 18 & 8 & 7 & 129\\
+\bottomrule\end{tabular}
+\end{table}
+
+Table \ref{tab:transitions} separates corrections from regressions. Exact repetition raises pilot accuracy from 81.25\% to 94.79\%, a gain of 13.54 percentage points (95\% interval 4.17 to 22.92). Paraphrases raise it to 91.67\%, a gain of 10.42 points (1.04 to 19.79). In validation, the corresponding exact-copy effects are -3.47 points for Qwen3 and +1.39 for Phi-4. Both validation intervals span zero. No parsing or truncation change explains these pilot corrections.
+
+Pilot exact-copy effects are positive on six bases, negative on one, and zero on five. One base contributes seven of the 14 corrections. Leaving it out descriptively lowers the gain to 6.82 points, but it remains in every primary estimate. Across all single-base omissions, the pilot exact-copy gain ranges from 6.82 to 15.91 points. Figure \ref{fig:cases} displays every base rather than selecting favorable examples.
+% END AUTO: accuracy-results
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{repetition-accuracy-effects.pdf}
+\caption{Scheduling accuracy effects, repeated minus single. Bars are 95\% base-cluster intervals.}
+\label{fig:repetition}
+\end{figure}
+
+The useful comparison in Figure \ref{fig:repetition} is between the hierarchical
+pilot estimates and the corresponding validation estimates, then between
+organizations within validation. The pilot pattern does not establish a general
+benefit of repetition. Nor do the validation intervals establish equivalence to no
+repetition. They allow small benefits and harms under the tested conditions.
+
+% BEGIN AUTO: organization-results
+The flat pilot scheduling arms all achieve 100\% on these 12 bases, leaving no observed room for improvement. Validation flat accuracy under the shared policies changes from 94.44\% to 90.28\% with exact copies for Qwen3, and from 93.75\% to 90.97\% for Phi-4. The exact-copy hierarchy interactions are Qwen3-14B +0.69 [-6.25, +7.64], and Phi-4 +4.17 [-2.78, +11.11] percentage points. These direct differences of effects do not establish that hierarchy consistently amplifies or suppresses repetition.
+
+The direct hierarchical exact-minus-paraphrase contrasts in validation are Qwen3-14B -2.08 [-9.72, +4.86], and Phi-4 +0.69 [-4.17, +5.56] percentage points. Separate significance judgments for the two repetition arms would not test this difference.
+% END AUTO: organization-results
+
+The validation distribution differs from the pilot in task parameters and case
+composition, including ties and no-feasible-candidate cases. This limits the
+interpretation of the stage comparison. It demonstrates that a promising
+development average need not transfer to the next evaluation set, but does not
+identify which changed feature explains the difference.
+
+\subsection{Responsiveness to Consequential Changes}
+Paired worlds ask a stricter question than average single-world accuracy. A model
+must be right before and after an edit. Table \ref{tab:paired-worlds} separates
+consequential edits from harmless controls and includes all three validation
+policies. It therefore has a different policy denominator from
+Table \ref{tab:accuracy}.
+
+% BEGIN AUTO: paired-world-results
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Both worlds correct in hierarchical validation. Each row has nine bases and 54 paired trials per arm.}\label{tab:paired-worlds}
+\begin{tabular}{llrrr}\toprule
+Model & Edit & Single \% & Exact \% & Change, pp [95\% CI]\\\midrule
+Qwen3-14B & harmless & 68.52 & 64.81 & -3.70 [-12.96, +3.70]\\
+Qwen3-14B & consequential & 79.63 & 72.22 & -7.41 [-14.81, -1.85]\\
+Phi-4 & harmless & 74.07 & 75.93 & +1.85 [-3.70, +7.41]\\
+Phi-4 & consequential & 46.30 & 42.59 & -3.70 [-20.37, +9.26]\\
+\bottomrule\end{tabular}
+\end{table}
+
+Qwen3-14B: the consequential-minus-harmless difference in repetition effects is -3.70 [-14.81, +7.41] percentage points.
+
+Phi-4: the consequential-minus-harmless difference in repetition effects is -5.56 [-24.07, +9.26] percentage points.
+
+Qwen3 has a lower paired-world success rate with exact copies on consequential edits, but the direct contrast with harmless edits remains uncertain. The corresponding Phi-4 contrast is also imprecise. Neither comparison establishes a general selective loss of consequential differences.
+% END AUTO: paired-world-results
+
+These are changed-world tests with consistently regenerated reports. They do not
+by themselves measure whether two similar statements within one input are
+incorrectly merged. The frozen overlap and exception controls address that
+separate question. In particular, a decrease in paired-world success should not
+be renamed exception loss without evidence that the exception disappeared or
+changed scope in the delivered summary.
+
+\subsection{Policy and Resource Comparisons}
+The ordinary policy, checklist, and scope-aware policy share the same explicit
+decision rule and response schema. Differences between them are useful
+tests of additional instructions, but not a comparison with an unstructured
+conversation. Appendix \ref{app:policies} gives policy-specific validation
+accuracy, and Figure \ref{fig:cost} relates accuracy to measured token use.
+No policy is credited with privileged knowledge of the correct answer.
+
+% BEGIN AUTO: policy-results
+In validation, more elaborate consolidation instructions do not produce a uniform ordering across models, organizations, and presentation conditions. The full policy table retains improvements and regressions. The shared structured response contract and the small number of independent bases limit claims about one policy being generally preferable.
+% END AUTO: policy-results
+
+\section{Information Preservation and Decision Sufficiency}
+\label{sec:preservation}
+\subsection{Locating the Numerical Transformation}
+The audit follows the original typed report, actual manager input, raw generated
+summary, parsed assertions, serialized summary, and actual root input. It covers
+6,336 manager summaries from 3,168 hierarchical trajectories across the completed
+pilot and validation. These trajectories come from 60 independent base problems,
+with validation problems shared across models.
+
+Numerical objectives becoming Boolean \texttt{true} first appear in the raw
+model-generated manager summaries. The audit found no value changes introduced
+by parsing, serialization, or root-input assembly, and no disagreement between
+raw final choices and their primary scores. It also found no truncated manager
+outputs. Within the audited pipeline, this is observed model behavior under the
+specified interface, not a downstream transformation defect.
+
+The instructions explicitly require numerical objectives, but the assertion
+schema permits either a Boolean or a number at every scope key. Its illustrative
+assertion uses \texttt{true}. Thus a syntactically valid answer can replace a
+makespan with a truth indicator. The interface permits this semantic error. The
+audit does not establish that the example caused it, and the frequency need not
+generalize to a schema that enforces a numeric type for objective keys.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{numerical-preservation-pipeline.pdf}
+\caption{Objective-field fidelity and an observed transformation. Pilot uses two policies, validation three. Fields within bases are dependent.}
+\label{fig:numerical}
+\end{figure}
+
+% BEGIN AUTO: numerical-results
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Boolean objective fields in hierarchical scheduling. Pilot uses two policies, validation three.}\label{tab:boolean}
+\begin{tabular}{lrrr}\toprule
+Group & Single & Exact & Paraphrase\\\midrule
+Pilot Qwen3 & 60/288 & 9/288 & 24/288\\
+Validation Qwen3 & 53/648 & 64/648 & 69/648\\
+Validation Phi-4 & 156/648 & 156/648 & 150/648\\
+\bottomrule\end{tabular}
+\end{table}
+
+Figure \ref{fig:numerical} separates preserved numerical fields from Boolean replacements and omissions. Table \ref{tab:boolean} counts each candidate objective once per trajectory, regardless of copies. The pilot reduction in Boolean replacements is not repeated in validation: Qwen3 has 53 such fields without repetition and 64 with exact copies, while Phi-4 has 156 in both arms. Every numerical value emitted at a known objective key in the audited summaries matches its source. This does not count omitted, unresolved, or ill-typed values as preserved.
+
+Using the same two policies as Table \ref{tab:accuracy}, exact-copy effects on objective preservation are Pilot Qwen3 +17.71 [+3.12, +32.29], Validation Qwen3 -4.86 [-12.50, +0.69], Validation Phi-4 -1.39 [-6.25, +4.86] percentage points. These are retention effects, not accuracy effects.
+% END AUTO: numerical-results
+
+The influential pilot pair offers a concrete illustration of the observed path.
+All three candidates are feasible and their objectives are 8, 9, and 9. All eight
+unrepeated hierarchical contexts replace those numbers with \texttt{true}, while
+all eight exact-copy contexts preserve them. The repeated objective belongs to
+a candidate with value 9, rather than the correct candidate with value 8. Seven
+of the unrepeated decisions are wrong and all eight repeated decisions are
+correct. This suggests a useful numerical-preservation hypothesis, but does not
+isolate it from changes in attention, summarization, or final integration.
+
+\subsection{What the Delivered Information Supports}
+Representation fidelity asks whether a complete proposition survives with the
+same candidate, value, units, condition, and version. Decision sufficiency asks
+whether the visible information determines a choice. World accuracy asks whether
+the chosen answer matches the executable task. These outcomes can disagree.
+A lucky correct choice after a necessary fact is lost is still correct at the
+world level, but is not evidence of successful integration of that fact.
+
+The visible-information scorer first identifies missing values, invalid types,
+and conflicting assertions. It does not replace them with hidden ground truth.
+For a separate decision-support calculation, it holds uncontested visible
+assertions fixed and varies unknown or disputed predicates and objectives over
+admissible values in the report interface. Boolean predicates can be true or
+false, and objectives are nonnegative integers. A decision is determined only if
+every admissible completion yields the same answer under the public tie rule.
+Being possible under one completion is not enough.
+
+This calculation is an abstraction of the report interface, not an enumeration
+of all underlying job schedules. It can conservatively leave a decision unresolved
+that additional domain relationships would determine. It also does not certify
+that uncontested assertions are true in the world. Contradictions and invalid
+representations remain explicitly labeled even when they concern an irrelevant
+field and the remaining information already fixes the choice.
+
+% BEGIN AUTO: sufficiency-results
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Unrepeated hierarchical scheduling. Violations use the uniquely supported contexts as denominator.}\label{tab:sufficiency}
+\begin{tabular}{lrrrr}\toprule
+Group & Trajectories & Unique choice & With invalid fields & Violations\\\midrule
+Pilot Qwen3 & 96 & 75 & 4 & 2/75\\
+Validation Qwen3 & 216 & 195 & 10 & 24/195\\
+Validation Phi-4 & 216 & 133 & 13 & 15/133\\
+\bottomrule\end{tabular}
+\end{table}
+
+Pilot counts use two policies and validation counts use all three. The invalid-field column is a subset of contexts with a unique supported choice, not a repair of their representation. In validation, Qwen3 violates 24 of 195 uniquely supported choices and Phi-4 violates 15 of 133. These are conditional descriptive counts, not causal mediation estimates.
+% END AUTO: sufficiency-results
+
+Table \ref{tab:sufficiency} separates communication from decision application.
+When the supported answer is unique but the root chooses otherwise, an objective
+repair alone need not solve the failure. Conversely, a numerical omission need
+not change the supported answer when mandatory findings already identify the
+only feasible candidate. This is why raw fidelity counts and final accuracy
+should not substitute for one another.
+
+\subsection{Observable Failure Locations}
+The trace analysis permits several labels per trajectory. A required proposition
+can be omitted, emitted with the wrong type or value, or linked to an incompatible
+scope. At the decision stage, a selected candidate can violate a delivered
+mandatory failure, or be feasible but worse than another feasible candidate.
+A correct choice can also be accompanied by erroneous supporting assertions.
+Contract failure is a separate operational label.
+
+Keyed assertions and executable outcomes support deterministic scoring of these
+cases. An incompatible citation reveals a scope mismatch, but not an internal
+transfer of belief. Shared wording alone cannot establish an incorrect semantic
+merge. The categories describe public outputs, not a faithful record of internal
+reasoning.
+
+% BEGIN AUTO: failure-results
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Unrepeated hierarchical validation failure labels. Each model has 216 trajectories from 18 bases.}\label{tab:failures}
+\begin{tabular}{lrrrrr}\toprule
+Model & Omission & Distortion & FAIL ignored & Suboptimal & Contract\\\midrule
+Qwen3-14B & 12 & 8 & 9 & 6 & 0\\
+Phi-4 & 7 & 32 & 15 & 23 & 0\\
+\bottomrule\end{tabular}
+\end{table}
+
+Table \ref{tab:failures} separates communication and application failures. Omission and distortion concern propositions whose individual removal from the complete report set makes the answer undetermined. FAIL ignored means an infeasible selected candidate has a correctly delivered mandatory failure. Suboptimal means a feasible selection has a strictly worse objective than the best feasible candidate. Labels can overlap and should not be summed.
+% END AUTO: failure-results
+
+% BEGIN AUTO: completed-mechanisms
+
+% END AUTO: completed-mechanisms
+
+\section{Discussion and Limitations}
+\subsection{Designing for Facts and Decisions}
+Repeating a report and preserving its contents are different operations. The
+validation evidence does not justify relying on repetition to preserve numerical
+values consistently. A schema with scope-dependent value types is a plausible
+engineering response, whose effect on accuracy requires controlled evaluation.
+
+Preservation and correct application are also separate goals. Evaluation should
+check both the communicated propositions and the decision rule they support.
+This matters for complementary constraints, where several favorable reports
+cannot cancel one mandatory failure.
+
+Reporting case-level effects reveals concentration that an average can hide.
+The influential pair remains in the pilot analysis. Validation refines the
+question from whether repetition helps to which information and interfaces make
+it useful, without identifying a cause of non-generalization.
+
+\subsection{Scope of the Evidence}
+These synthetic tasks measure controlled candidate selection, not deployment
+failure rates. Scheduling and the workflow share a decision structure, limiting
+claims of transfer across tasks.
+
+Template reports isolate aggregation while omitting real workers' errors.
+Fresh executions using the same model and source can share errors, so additional
+computation need not supply independent evidence.
+
+The hierarchy changes access and call count, requiring bypass and call-matched
+controls to separate them. Deeper hierarchies and feedback dynamics remain outside
+this replay.
+
+The JSON contract and two model configurations constrain generalization.
+Allocated batch time describes this implementation, not individual latency,
+GPU kernel time, or monetary cost.
+
+The audit is observational and cannot identify causal mediation. Deterministic
+preservation is an idealized control, not evidence that an autonomous summarizer
+achieves the same fidelity. Small targeted diagnostics require fresh confirmation
+before supporting broader mechanism claims.
 
 \section{Conclusion}
-The implemented benchmark makes scope, ancestry, coverage and candidate feasibility
-explicit and auditable. Current development measurements constrain interpretation:
-interface validity and ordinary task competence must be established before the
-proposed duplication comparisons can support a paper. The contribution and final
-title remain conditional on the completed experiments and human scientific review.
+% BEGIN AUTO: conclusion
+Controlled replay separates repeated presentation from additional evidence. A large hierarchical pilot benefit is followed by smaller, mixed validation effects. Numerical objectives sometimes become Boolean assertions in manager output, but repetition does not reliably prevent this loss. Delivered information can remain sufficient despite a representation error, and a root can decide incorrectly despite a uniquely supported choice. Separating fidelity, sufficiency, and accuracy gives a more informative account of reliability. It also identifies a practical goal for future interventions. Preserve the required propositions, then verify that the decision follows from them.
+% END AUTO: conclusion
 
-\section*{Declaration on Generative AI and Review Status}
-The human author supplied the research direction and experimental requirements.
-An AI coding assistant helped implement and test the benchmark, operate local
-open-weight model experiments, retrieve literature, generate analyses, and draft
-text. Its methodological decisions and interpretations require author verification.
-This working draft has not yet undergone the author's scientific review. This
-disclosure must be updated truthfully after review; no AI is an author. The
-conference's limits on AI involvement require human assessment before submission.
-
-\clearpage
-\bibliographystyle{spmpsci}
-\bibliography{references}
+\FloatBarrier
 \clearpage
 \appendix
-\input{generated/supplementary-results.tex}
-\input{generated/adjacent-explorations.tex}
+\section{Reproducibility and Output Semantics}
+\label{app:reproducibility}
+All paper tables and figures are generated from completed analysis records linked
+to immutable raw outputs. The reproducibility package contains the generators,
+both scheduling verifiers, report templates, prompt builders, frozen manifests,
+and base-cluster analyses. The anonymous manuscript omits identifying repository
+links. The source file contains the complete paper and bibliography.
+
+The model and tokenizer revisions are identical within each family.
+For Qwen3-14B the revision is
+\begin{quote}\small\texttt{40c069824f4251a91eefaf281ebe4c544efd3e18}\end{quote}
+For Phi-4 it is
+\begin{quote}\small\texttt{2db69c1c3e91a05d2c64a3185acfbaf36f744e25}\end{quote}
+The licenses are Apache 2.0 and MIT, respectively. The environment uses vLLM
+0.10.2, PyTorch 2.8.0 with CUDA 12.8, and Transformers 4.55.4. The GPU is an
+RTX 6000 Ada Generation with 49,140 MiB reported memory and driver 595.91.07.
+Prefix caching is disabled. Native chat-template token IDs are submitted directly,
+and template-inserted dates are pinned to 16 October 2026. Sampling seeds are
+derived from the base identifier, stochastic repetition, and stage. The seed
+scheme is shared across paired arms, but their request hashes remain distinct.
+
+A claim registry contains task, candidate, entity, predicate, units,
+applicability, and version fields. Report ancestry separately records original
+sources, parent reports, operation type, and execution identifiers. The manager
+emits assertions of the form
+\begin{quote}
+\small
+\texttt{\{"key": "scope key", "value": 8, "reports": ["report ID"]\}}.
+\end{quote}
+Its response also lists unresolved keys, with no final choice. The root adds a
+candidate assessment, choice, and probability distribution. A Boolean value at an
+objective key is not accepted as the number one by the evaluator. Valid integral
+floating-point objectives, such as 8.0, remain numerical values.
+
+Full-scope objective-field counts use one required candidate objective per
+trajectory, regardless of how many copies were presented. A field is preserved
+only when its correct scoped value survives without an unresolved conflict.
+Omission, wrong type, conflicting values, and citation mismatch have separate
+indicators and can overlap. Summary counts and trajectory counts are not
+independent sample sizes. The independent unit for uncertainty remains the base
+problem.
+
+\section{Policy and Case-Level Results}
+\label{app:policies}
+% BEGIN AUTO: policy-table
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Validation scheduling accuracy (percent). Each cell has 18 bases and 72 trajectories.}\label{tab:policies}
+\begin{tabular}{lllrrr}\toprule
+Model & Organization & Policy & Single & Exact & Paraphrase\\\midrule
+Qwen3-14B & flat & ordinary & 95.83 & 91.67 & 91.67\\
+Qwen3-14B & flat & checklist & 93.06 & 88.89 & 94.44\\
+Qwen3-14B & flat & scope & 88.89 & 93.06 & 90.28\\
+Qwen3-14B & hierarchy & ordinary & 84.72 & 76.39 & 76.39\\
+Qwen3-14B & hierarchy & checklist & 75.00 & 76.39 & 80.56\\
+Qwen3-14B & hierarchy & scope & 80.56 & 84.72 & 79.17\\
+Phi-4 & flat & ordinary & 93.06 & 91.67 & 91.67\\
+Phi-4 & flat & checklist & 94.44 & 90.28 & 86.11\\
+Phi-4 & flat & scope & 86.11 & 80.56 & 83.33\\
+Phi-4 & hierarchy & ordinary & 76.39 & 76.39 & 77.78\\
+Phi-4 & hierarchy & checklist & 68.06 & 70.83 & 68.06\\
+Phi-4 & hierarchy & scope & 63.89 & 65.28 & 62.50\\
+\bottomrule\end{tabular}
+\end{table}
+% END AUTO: policy-table
+
+Table \ref{tab:policies} reports each policy separately, avoiding an attribution of pooled
+performance to provenance instructions alone. The scope-aware policy adds
+instructions as well as consolidation guidance. A similar accuracy is not an
+equivalence finding, and a difference cannot be assigned solely to ancestry
+handling without the corresponding ablation.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{case-level-repetition-effects.pdf}
+\caption{Exact-copy effects for every scheduling base, in fixed identifier order. No cases are excluded.}
+\label{fig:cases}
+\end{figure}
+
+Figure \ref{fig:cases} exposes concentration that an average can hide. Each bar
+averages both worlds, two policies, and two stochastic repetitions within one
+base. The pilot contains a large positive case, while the validation panels
+contain both corrections and regressions. The case ordering is fixed by
+identifier, not effect size. These plots are descriptive and do not select a
+subpopulation for subsequent confirmation.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{validation-cost-accuracy.pdf}
+\caption{Validation scheduling accuracy and total tokens per decision. Each arm contains 18 independent bases.}
+\label{fig:cost}
+\end{figure}
+
+% BEGIN AUTO: cost-results
+Figure \ref{fig:cost} includes every repetition arm under the three-policy validation average. Hierarchy consumes more tokens per decision and has lower accuracy than the corresponding flat organization in these data. This descriptive comparison combines access, summarization, and call-count changes. For unrepeated hierarchy, allocated batch seconds per correct decision are Qwen3-14B 10.98 and Phi-4 10.62. These values sum the recorded share of inference batch time and divide by correct decisions. They exclude model-loading overhead and are not per-request latency or monetary cost.
+% END AUTO: cost-results
+
+% BEGIN AUTO: completed-supplement
+
+% END AUTO: completed-supplement
+
+\FloatBarrier
+\section*{Declaration on AI Assistance}
+The human author supplied the research direction and experimental requirements.
+An AI coding assistant helped implement and test the benchmark, operate
+open-weight model experiments, retrieve literature, generate analyses, and draft
+the manuscript. This assistance extended beyond language editing. The author has
+not yet completed scientific review of the methods, interpretations, references,
+and conclusions in this working draft. Those contributions require author
+verification and revision before submission. No AI system is listed as an author.
+
+\begin{thebibliography}{21}
+\bibitem{copies}
+Gao, J., Li, R., Yu, T., Ren, L., Chen, B., Wang, Z.:
+Copies or Sources? Measuring How LLM Aggregators Count Restated Evidence in
+Multi-Agent Systems. arXiv:2610.06192v1 (2026). Preprint.
+\url{https://arxiv.org/abs/2610.06192v1}
+
+\bibitem{sybil}
+Bara, M.: Epistemic Sybil Resistance: Multiplying AI Agents Without Multiplying
+Evidence. arXiv:2609.01873v1 (2026). Preprint.
+\url{https://arxiv.org/abs/2609.01873v1}
+
+\bibitem{hidden}
+Li, Y., Naito, A., Shirado, H.: Systematic Failures in Collective Reasoning under
+Distributed Information in Multi-Agent LLMs. In: Proceedings of the 43rd
+International Conference on Machine Learning, PMLR 306, pp. 69250--69268 (2026).
+\url{https://proceedings.mlr.press/v306/li26ej.html}
+
+\bibitem{promptrepeat}
+Leviathan, Y., Kalman, M., Matias, Y.: Prompt Repetition Improves Non-Reasoning
+LLMs. arXiv:2512.14982v1 (2025). Preprint.
+\url{https://arxiv.org/abs/2512.14982v1}
+
+\bibitem{selfconsistency}
+Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E.H., Narang, S., Chowdhery, A.,
+Zhou, D.: Self-Consistency Improves Chain of Thought Reasoning in Language Models.
+In: International Conference on Learning Representations (2023).
+Camera-ready version: \url{https://arxiv.org/abs/2203.11171v4}
+
+\bibitem{debate}
+Du, Y., Li, S., Torralba, A., Tenenbaum, J.B., Mordatch, I.: Improving Factuality
+and Reasoning in Language Models through Multiagent Debate. In: Proceedings of
+the 41st International Conference on Machine Learning, PMLR 235,
+pp. 11733--11763 (2024). \url{https://proceedings.mlr.press/v235/du24e.html}
+
+\bibitem{smit}
+Smit, A.P., Grinsztajn, N., Duckworth, P., Barrett, T.D., Pretorius, A.:
+Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs.
+In: Proceedings of the 41st International Conference on Machine Learning,
+PMLR 235, pp. 45883--45905 (2024).
+\url{https://proceedings.mlr.press/v235/smit24a.html}
+
+\bibitem{scaling}
+Kim, Y., Gu, K., Park, C., Park, C., Schmidgall, S., Heydari, A.A., Yan, Y.,
+Zhang, Z., Zhuang, Y., Liu, Y., Malhotra, M., Liang, P.P., Park, H.W., Yang, Y.,
+Xu, X., Du, Y., Patel, S., Althoff, T., McDuff, D., Liu, X.:
+Towards a Science of Scaling Agent Systems. arXiv:2512.08296v3 (2026).
+Preprint, revised 8 April 2026. \url{https://arxiv.org/abs/2512.08296v3}
+
+\bibitem{mast}
+Cemri, M., Pan, M.Z., Yang, S., Agrawal, L.A., Chopra, B., Tiwari, R., Keutzer,
+K., Parameswaran, A., Klein, D., Ramchandran, K., Zaharia, M., Gonzalez, J.E.,
+Stoica, I.: Why Do Multi-Agent LLM Systems Fail? Advances in Neural Information
+Processing Systems \textbf{38}, Datasets and Benchmarks Track (2025).
+\url{https://papers.nips.cc/paper_files/paper/2025/hash/b1041e52d3be19f0a9bc491657488e4a-Abstract-Datasets_and_Benchmarks_Track.html}
+
+\bibitem{distributed}
+Yan, C., Yue, Z., Zhao, F., Lin, E., Jia, L., Tong, H., Lyu, M., Sun, C., Zeng, Y.:
+When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in
+LLM-Based Multi-Agent Systems. arXiv:2608.03421v1 (2026). Preprint.
+\url{https://arxiv.org/abs/2608.03421v1}
+
+\bibitem{maynez}
+Maynez, J., Narayan, S., Bohnet, B., McDonald, R.: On Faithfulness and Factuality
+in Abstractive Summarization. In: Proceedings of the 58th Annual Meeting of the
+Association for Computational Linguistics, pp. 1906--1919 (2020).
+\url{https://doi.org/10.18653/v1/2020.acl-main.173}
+
+\bibitem{checklist}
+Ribeiro, M.T., Wu, T., Guestrin, C., Singh, S.: Beyond Accuracy: Behavioral
+Testing of NLP Models with CheckList. In: Proceedings of the 58th Annual Meeting
+of the Association for Computational Linguistics, pp. 4902--4912 (2020).
+\url{https://doi.org/10.18653/v1/2020.acl-main.442}
+
+\bibitem{paws}
+Zhang, Y., Baldridge, J., He, L.: PAWS: Paraphrase Adversaries from Word Scrambling.
+In: Proceedings of NAACL-HLT, Volume 1, pp. 1298--1308 (2019).
+\url{https://doi.org/10.18653/v1/N19-1131}
+
+\bibitem{middle}
+Liu, N.F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua, M., Petroni, F.,
+Liang, P.: Lost in the Middle: How Language Models Use Long Contexts.
+Transactions of the Association for Computational Linguistics \textbf{12},
+157--173 (2024). \url{https://doi.org/10.1162/tacl_a_00638}
+
+\bibitem{metadata}
+Chiang, C.H., Lee, H.: Do Metadata and Appearance of the Retrieved Webpages Affect
+LLM's Reasoning in Retrieval-Augmented Generation? In: Proceedings of the 7th
+BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP,
+pp. 389--406 (2024). \url{https://doi.org/10.18653/v1/2024.blackboxnlp-1.24}
+
+\bibitem{selfcorrect}
+Huang, J., Chen, X., Mishra, S., Zheng, H.S., Yu, A.W., Song, X., Zhou, D.:
+Large Language Models Cannot Self-Correct Reasoning Yet. In: International
+Conference on Learning Representations (2024).
+\url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html}
+
+\bibitem{identitybias}
+Choi, H.K., Zhu, X., Li, S.: When Identity Skews Debate: Anonymization for
+Bias-Reduced Multi-Agent Reasoning. In: Proceedings of the 64th Annual Meeting
+of the Association for Computational Linguistics, Volume 1, pp. 14284--14311
+(2026). \url{https://doi.org/10.18653/v1/2026.acl-long.650}
+
+\bibitem{authoritybias}
+Choi, J., Kwon, J., Kim, H., Cho, H., Jung, H., Min, S., Kim, B.:
+Belief in Authority: Impact of Authority in Multi-Agent Evaluation Framework.
+In: Findings of the Association for Computational Linguistics: ACL 2026,
+pp. 21305--21319 (2026).
+\url{https://doi.org/10.18653/v1/2026.findings-acl.1071}
+
+\bibitem{qwenmodel}
+Qwen Team: Qwen3-14B. Official model card, pinned revision listed in
+Appendix \ref{app:reproducibility}. Accessed 17 October 2026.
+\url{https://huggingface.co/Qwen/Qwen3-14B}
+
+\bibitem{phimodel}
+Microsoft: Phi-4. Official model card, pinned revision listed in
+Appendix \ref{app:reproducibility}. Accessed 17 October 2026.
+\url{https://huggingface.co/microsoft/phi-4}
+
+\bibitem{clusterbootstrap}
+Field, C.A., Welsh, A.H.: Bootstrapping clustered data. Journal of the Royal
+Statistical Society: Series B (Statistical Methodology) \textbf{69}(3),
+369--390 (2007). \url{https://doi.org/10.1111/j.1467-9868.2007.00593.x}
+\end{thebibliography}
 \end{document}
