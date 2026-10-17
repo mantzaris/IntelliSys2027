@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-17T02:24:48.996959+00:00",
+  "runtime_sha256": "b00d308854f37f9420066c3c3ddf504882f810cebb80807c13a3432a5bcf0c4e",
+  "original_qwen_remaining_hours": 4.966727442444444,
+  "projected_next_safe_root_boundary_hours": 6.662953266232675,
+  "projected_total_remaining_hours_mean_range": [
+    27.04672735163508,
+    27.420618612240556
+  ],
+  "additional_gpu_seconds_charged": 0,
+  "cap_seconds_cumulative": 7200,
+  "new_preservation_mean_seconds": 301.671762015386,
+  "new_preservation_p95_seconds": 370.0115451661404,
+  "caveat": "Projections from completed validation and current elapsed counts, not future measurements. Original/frozen auxiliary estimates exclude fresh loading/I/O. No partial held-out outcomes were inspected; no new GPU stage completed in this continuation."
+}

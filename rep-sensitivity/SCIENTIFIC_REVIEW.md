@@ -5,6 +5,20 @@ This is a research package for human scientific review. Execution status is in
 completed experimental package. Neither is a conference submission or a claim
 that H1–H4 are supported.
 
+The numerical audit now locates Boolean objective replacement in raw manager
+output, with unchanged parsing and root delivery. Review the permissive shared
+Boolean/number schema and the limits this places on external interpretation.
+The objective-only repair diagnostic is conditional on cached manager draws and
+six previously fixed development bases; only two have baseline loss. It cannot
+establish mediation, autonomous preservation, or fresh generalization. The
+separate 24-pair confirmation does not independently confirm the repair interaction.
+See `PROTOCOL_NUMERICAL_PRESERVATION_V4.md` and `NUMERICAL_PIPELINE_AUDIT.md`.
+Review the v3 distinction between representation validity and decision support:
+invalid objectives do not prevent choosing a uniquely feasible candidate. The
+strict v2 labels remain available, and no disputed field is resolved by hidden
+truth. Only one of the fixed diagnostic's two numerical-loss bases has
+decision-relevant objective uncertainty.
+
 The dated mechanism amendment is tracked separately in
 `records/mechanism-report-status.json` and `PROTOCOL_AMENDMENT_V1.md`. Original
 held-out execution began before that amendment. Its preservation and a disjoint

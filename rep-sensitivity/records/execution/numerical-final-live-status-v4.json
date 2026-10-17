@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T02:44:56.690156+00:00",
+  "qwen_main_base_pairs": 144,
+  "qwen_main_trajectories": 10368,
+  "qwen_main_calls": 20800,
+  "qwen_main_remaining_calls": 6848,
+  "last_complete_cluster_utc": "2026-10-17T02:41:47.147397+00:00",
+  "last_accepted_call_utc": "2026-10-17T02:44:18.025140+00:00",
+  "batch_failures": 0,
+  "active_pids": {
+    "91966": true,
+    "147979": true,
+    "353199": true,
+    "353200": true,
+    "474739": true
+  },
+  "new_budget_events": [],
+  "heldout_outcomes_inspected": false
+}

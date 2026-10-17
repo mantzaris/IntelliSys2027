@@ -1,5 +1,5 @@
 {
-  "utc": "2026-10-16T19:57:11.645939+00:00",
+  "utc": "2026-10-17T02:00:16.742304+00:00",
   "heldout_outcomes_inspected": false,
   "interpretation": "Counts, hashes, settings and timing only. Projections are extrapolations, not measured future runtimes. Allocated seconds sum measured engine batch wall time, not dedicated request latency or GPU kernel time. No monetary billing rate observed.",
   "runs": [
@@ -134,17 +134,17 @@
       "suite": "main-v7",
       "model": "qwen3",
       "status": "running_or_queued",
-      "completed_base_pairs": 72,
+      "completed_base_pairs": 136,
       "planned_base_pairs": 192,
-      "score_files": 72,
-      "accepted_calls_in_journal": 10496,
-      "call_files": 10496,
+      "score_files": 136,
+      "accepted_calls_in_journal": 19616,
+      "call_files": 19616,
       "manifest_sha256": "37002ebad0afa6830986b94819e5702b19d65219fbc3c941e01a1a4ad4cbe046",
       "config_sha256": "97ea863f496b4dfd3ef542c3c7045dcabe806d337edf82bf327434854f418a4a",
       "implementation_sha256": "3d52eca1b17a7552f5fd4ee269de651f428da8709fd45a015218f31a9f811f17",
       "dataset_pairs_sha256": "da86627c4d35817eef06b9b19768173ca1b2fdbd905777804ddd3c1f7f949b11",
       "report_corpus_sha256": "7eaadcab426939ef2cc4fd4dd846af92382966bc39e77ae3a367072560ffb7f5",
-      "score_file_inventory_sha256": "c7515588abc71b45375c39265322115a25aff6e4e77af2a3330f6e3d8aaa3b38",
+      "score_file_inventory_sha256": "5051848b8b16c8b7e90d7893e4e163e82cfc185fce426872033f9baf28bfec12",
       "settings": {
         "batch_size": 32,
         "chat_template_date": "2026-10-16",
@@ -170,8 +170,8 @@
         "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
         "top_p": 0.95
       },
-      "measured_hours_through_last_complete_cluster": 6.870776595833333,
-      "projected_remaining_hours_same_mean_cluster_rate": 11.451294326388888
+      "measured_hours_through_last_complete_cluster": 12.9982828175,
+      "projected_remaining_hours_same_mean_cluster_rate": 5.352234101323529
     },
     {
       "suite": "main-v7",

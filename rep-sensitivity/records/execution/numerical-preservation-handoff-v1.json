@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T02:17:07.687526+00:00",
+  "pid": 474739,
+  "after_pid": 353200,
+  "command": [
+    "/workspace/rep-sensitivity/.venv/bin/python",
+    "/workspace/rep-sensitivity/artifacts/implementations/334ad32ea09d2210209b8e8e19e11f46e2f52d5fd97e49407227f912253658e9/runner.py",
+    "--after-pid",
+    "353200"
+  ],
+  "PYTHONPATH": "/workspace/rep-sensitivity/artifacts/implementations/334ad32ea09d2210209b8e8e19e11f46e2f52d5fd97e49407227f912253658e9",
+  "archive_sha256": "334ad32ea09d2210209b8e8e19e11f46e2f52d5fd97e49407227f912253658e9",
+  "shared_budget_journal": "artifacts/runs/objective-confirmation-execution/budget.jsonl",
+  "cumulative_cap_seconds": 7200,
+  "new_stage_cap_seconds": 900,
+  "priority": "after original Phi and both fresh objective confirmation models",
+  "original_running_processes_untouched": true,
+  "new_inference_calls_at_launch": 0
+}

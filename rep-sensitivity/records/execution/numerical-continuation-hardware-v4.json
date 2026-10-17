@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T02:27:00.946748+00:00",
+  "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 46008 MiB, 100 %, 595.91.07",
+  "compute_processes": "148449, VLLM::EngineCore, 45998 MiB",
+  "workspace_disk": {
+    "total": 80530636800,
+    "used": 63198015488,
+    "free": 17332621312
+  },
+  "running_original_pids": [
+    91966,
+    147979
+  ],
+  "waiting_successors": [
+    353199,
+    353200,
+    474739
+  ]
+}

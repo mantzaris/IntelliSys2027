@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-17T02:40:42.648372+00:00",
+  "tests": 77,
+  "passed": true,
+  "elapsed_seconds": 34.043,
+  "source_sha256": "a24ae958d4d0e81fa62424278eee8fb8f5c2dde45245d6632ce81ca3324a3ad4",
+  "test_log_sha256": "b40ac4cd891ef45be5c7e14238748033563910e573afdb4a566f0ba51ded3a4d",
+  "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+  "new_tests": "Raw Boolean/numeric distinction, complete scope binding, branch-limited repair, no-op float preservation, source contradiction refusal, exact paired input identity and accepted-malformed resume independence.",
+  "new_test_source_sha256": "03b565f3533739e1ff8bac1c05c61d3ffb78f43dd184073a5f3c151f9c45c4e7",
+  "artifact_independent_fixture": true,
+  "decision_support_test_source_sha256": "0cea0ee2629cd7c7b9c4d383bdca5bad0f2cfc501cefbbbfc0de830baa7cdc6f"
+}

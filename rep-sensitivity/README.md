@@ -5,7 +5,43 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
-**Status at 2026-10-16 19:57 UTC:** new offline analysis of both completed
+**Numerical continuation, 2026-10-17 UTC:** [NUMERICAL_PIPELINE_AUDIT.md](NUMERICAL_PIPELINE_AUDIT.md)
+traces 6,336 manager summaries from 3,168 hierarchical pilot/validation trajectories
+(60 independent bases). Boolean objectives originate in raw model output; no
+input, parser, transport or primary-choice scoring discrepancy was found. No new
+GPU rerun is required. Policy/model/task-specific frequencies and paired estimates
+are in `results/numerical-pipeline-v1/`; representative raw traces include intact
+controls. The new objective-only repair replay has six fixed development pairs and
+48 fresh root calls, projected at 5.0–6.2 minutes including loading. It runs last,
+after protected Phi-4 and confirmation, against the **same cumulative two-hour
+allowance**. See [PROTOCOL_NUMERICAL_PRESERVATION_V4.md](PROTOCOL_NUMERICAL_PRESERVATION_V4.md).
+Its implementation is complete; its GPU result is pending.
+**77 integrity tests pass**, including decision support with irrelevant invalid
+objectives and unresolved conflicts.
+The latest count/timing snapshot is `records/execution/numerical-continuation-runtime-v4.json`.
+The 15-page review PDF has been rebuilt and its changed pages/figures inspected.
+`records/execution/numerical-preservation-handoff-v1.json` pins the last-priority
+controller and recovery command; the implementation-only amendment preserves
+valid integral floats without changing any of the 48 frozen prompts.
+
+```bash
+PYTHONPATH=src .venv/bin/python scripts/audit_numerical_pipeline.py
+PYTHONPATH=src .venv/bin/python scripts/audit_visible_support_v3.py
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_numerical_report.py
+PYTHONPATH=src .venv/bin/python scripts/analyze_numerical_preservation.py
+PYTHONPATH=src .venv/bin/python scripts/capture_numerical_execution.py
+```
+
+The analyzer emits GPU results only when all planned cases and raw calls exist.
+Do not launch a second model server: the archived waiting controller already owns
+the queue entry and shares the original cumulative budget journal.
+
+The v3 analysis-only supplement distinguishes invalid fields from decision-relevant
+uncertainty: two fixed diagnostic contexts still identify the sole feasible
+candidate despite Boolean objectives. It preserves v2 classifications and primary
+world scores. No experiment inputs, sample sizes or GPU calls are changed.
+
+**Earlier validation report, 2026-10-16 19:57 UTC:** offline analysis of both completed
 original validation runs is available in
 [VALIDATION_REPETITION_RESULTS.md](VALIDATION_REPETITION_RESULTS.md). On 18
 scheduling pairs with the pilot-matched ordinary/checklist policies (144 decisions
@@ -20,7 +56,7 @@ The influential pair's repeated report favors C64 (objective 9), while C39 (8) i
 correct; all eight baseline summaries replaced objectives with Boolean `true`.
 Its complete trace audit is in `results/pilot-interpretation-v2/influential-pair-audit.json`.
 
-Original Qwen3 main is active at 72/192 completed pairs (5,184/13,824 trajectories);
+At the earlier report, original Qwen3 main had 72/192 completed pairs (5,184/13,824 trajectories);
 no partial main choices were inspected. Original Phi-4 remains protected in the
 sequential queue. The unchanged 192-call root diagnostic now runs at the first
 safe natural boundary after Qwen3 main/support/live, before the previously frozen
@@ -38,8 +74,8 @@ No new dose exploration is added. See [PROTOCOL_CONTINUATION_V3.md](PROTOCOL_CON
 PIDs, environment and exact recovery commands. The earlier handoff records remain
 as history. Completed stages are analyzed and mirrored automatically.
 
-**69 integrity tests pass.** Four new validation figures and the updated anonymous
-14-page manuscript are available. Root, mechanism and fresh-confirmation results
+The prior revision passed 69 integrity tests. Validation figures and an anonymous
+working manuscript are available. Root, mechanism and fresh-confirmation results
 remain pending; human scientific review is required. Current runtime and counts
 are in `records/execution/current-runtime.json`; source/config/model revisions are
 recorded per immutable run and freeze.

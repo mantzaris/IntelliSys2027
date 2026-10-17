@@ -1,0 +1,164 @@
+{
+  "utc": "2026-10-17T02:24:47.614275+00:00",
+  "heldout_outcomes_inspected": false,
+  "main_qwen3": {
+    "completed_base_pairs": 140,
+    "planned_base_pairs": 192,
+    "completed_trajectories": 10080,
+    "planned_trajectories": 13824,
+    "accepted_calls": 20192,
+    "planned_calls": 27648,
+    "remaining_calls": 7456,
+    "latest_completed_trajectory_timestamp": "2026-10-17T02:21:09.423785+00:00",
+    "latest_accepted_call_timestamp": "2026-10-17T02:22:23.673912+00:00",
+    "overall_trajectories_per_hour": 753.8162791065776,
+    "recent_trajectories_per_hour": 763.9585493018882,
+    "recent_window_complete_bases": 12,
+    "projected_remaining_main_hours_overall": 4.966727442444444,
+    "projected_remaining_main_hours_recent": 4.90078945175926,
+    "accepted_allocated_inference_hours": 13.356411919364872,
+    "accepted_batches": 701,
+    "input_tokens": 51219270,
+    "output_tokens": 11740707,
+    "non_inference_elapsed_seconds_through_latest_acceptance": 130.21781328646466,
+    "model_load_seconds_this_run": 0,
+    "batch_failures": 0,
+    "repeat_starts": 0,
+    "started_not_yet_accepted": 32,
+    "settings": {
+      "batch_size": 32,
+      "chat_template_date": "2026-10-16",
+      "chat_template_sha256": "41d5929bf73796beb66809ac700b2cf3ff81694f933e5c14d52b7fd6963c947d",
+      "enforce_eager": false,
+      "engine": "vllm",
+      "engine_version": "0.10.2",
+      "gpu_memory_utilization": 0.92,
+      "guided_decoding": true,
+      "manager_output_schema_sha256": "c6c0541f7cd18117014de3ec7e51f11a7c7b4e54d219abd287be1a9f403f5aba",
+      "max_model_len": 12288,
+      "max_output_tokens": 2304,
+      "model": "Qwen/Qwen3-14B",
+      "output_schema_sha256": "ce9ad7fe1c476dd26996ff78395c52f428f93a411cbf43444b2e31533c8fb10e",
+      "precision": "bfloat16",
+      "prefix_caching": false,
+      "prompt_tokenization": "native_chat_template_ids",
+      "quantization": null,
+      "reasoning_mode": "disabled",
+      "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "seed_scheme": "sha256(pair_id,repetition,stage); common across arms",
+      "temperature": 0.3,
+      "tokenizer_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "top_p": 0.95
+    }
+  },
+  "additional_budget": {
+    "cumulative_cap_seconds": 7200,
+    "charged_seconds": 0,
+    "remaining_seconds": 7200,
+    "ledger_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "planned_confirmation_p95_seconds": 5716.4277032989075,
+    "new_preservation_projection_seconds": 370.0115451661404
+  },
+  "timing_limits": "Allocated inference seconds sum measured accepted batch wall time. Non-inference elapsed combines checkpoint/serialization/scheduling gaps, not an independently measured idle or kernel-time metric. Active unaccepted batches are not failed calls. Loading can be zero in this run when the engine was reused. Recent throughput reflects a changing case mix.",
+  "planned_following_stage_counts": [
+    {
+      "stage": "original supporting",
+      "models": [
+        "qwen3",
+        "phi4"
+      ],
+      "base_pairs_shared": 12,
+      "trajectories_per_model": 757,
+      "calls_per_model": 2271
+    },
+    {
+      "stage": "original live",
+      "models": [
+        "qwen3",
+        "phi4"
+      ],
+      "base_pairs_shared": 12,
+      "trajectories_per_model": 120,
+      "maximum_calls_per_model": 792
+    },
+    {
+      "stage": "frozen root diagnostic",
+      "model": "qwen3",
+      "base_pairs": 6,
+      "trajectories": 192,
+      "calls": 192
+    },
+    {
+      "stage": "mechanism development",
+      "model": "qwen3",
+      "base_pairs": 24,
+      "trajectories": 514,
+      "physical_calls": 1116,
+      "logical_calls": 1446
+    },
+    {
+      "stage": "fresh verification diagnostic",
+      "model": "qwen3",
+      "base_pairs": 6,
+      "trajectories": 30,
+      "maximum_physical_calls": 72
+    },
+    {
+      "stage": "fresh mechanism validation",
+      "model": "qwen3",
+      "base_pairs": 24,
+      "trajectories": 336,
+      "physical_calls": 624
+    },
+    {
+      "stage": "conditional mechanism confirmation",
+      "model": "qwen3",
+      "base_pairs_options": [
+        24,
+        48
+      ],
+      "trajectories_options": [
+        288,
+        576
+      ],
+      "physical_calls_options": [
+        576,
+        1152
+      ],
+      "condition": "unchanged fresh-validation gate; not launched if gate/budget fails"
+    },
+    {
+      "stage": "original Phi-4 main",
+      "model": "phi4",
+      "base_pairs": 192,
+      "trajectories": 13824,
+      "calls": 27648
+    },
+    {
+      "stage": "objective confirmation",
+      "models": [
+        "phi4",
+        "qwen3"
+      ],
+      "base_pairs_shared": 24,
+      "trajectories_total": 480,
+      "physical_calls_total": 1056
+    },
+    {
+      "stage": "numerical preservation",
+      "model": "qwen3",
+      "base_pairs": 6,
+      "trajectories": 48,
+      "calls": 48,
+      "condition": "last priority; sufficient remaining cumulative allowance"
+    }
+  ],
+  "queue_order": [
+    "Qwen3 original main/support/live",
+    "frozen root diagnostic",
+    "frozen mechanism development/fresh/validation/conditional confirmation",
+    "Phi-4 original main/support/live",
+    "objective confirmation Phi-4 then Qwen3",
+    "new numerical preservation if cumulative budget permits"
+  ]
+}

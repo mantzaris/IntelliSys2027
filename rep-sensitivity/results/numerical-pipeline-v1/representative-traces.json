@@ -1,0 +1,4019 @@
+[
+  {
+    "tag": "intact",
+    "pair_id": "03bb3afaf52de4c3",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "identity",
+    "decision_changed": true,
+    "correct": true,
+    "choice": "C34",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "109fde2eed32f61a43eda21b",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 3,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 0,
+    "objective_retention": 1.0,
+    "all_propositions_preserved": true,
+    "sufficient_correct_visible": true,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 1,
+    "violates_sufficient_visible": false,
+    "visible_status": "sufficient_consistent",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": false,
+    "any_boolean_objective": false,
+    "selected_report": "[\"deadline_downtime\",\"C17\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 0,
+        "request_hash": "58c1dbd018fa67fa33e2a8bcf693fe7705b468a5a619e7c57ecb207baf38e91c",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\n      \"key\": \"C17/precedence_release/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"r3a67799\"]\n    },\n    {\n      \"key\": \"C37/precedence_release/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"rf863d05\"]\n    },\n    {\n      \"key\": \"C34/precedence_release/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"r790b36e\"]\n    },\n    {\n      \"key\": \"C17/objective/all/current/591ac1b1\",\n      \"value\": 10,\n      \"reports\": [\"r92b9549\"]\n    },\n    {\n      \"key\": \"C37/objective/all/current/591ac1b1\",\n      \"value\": 6,\n      \"reports\": [\"r3ea61c1\"]\n    },\n    {\n      \"key\": \"C34/objective/all/current/591ac1b1\",\n      \"value\": 9,\n      \"reports\": [\"r70f1339\"]\n    }\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r3ea61c1",
+            "value": 6,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C37",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C37/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e466e447a",
+              "key": "C37/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r3ea61c1",
+              "sources": [
+                "se75c5c6d"
+              ],
+              "text": "For C37, objective on all: 6 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r70f1339",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C34",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C34/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e466e447a",
+              "key": "C34/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r70f1339",
+              "sources": [
+                "se75c5c6d"
+              ],
+              "text": "For C34, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r92b9549",
+            "value": 10,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C17",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C17/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e466e447a",
+              "key": "C17/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r92b9549",
+              "sources": [
+                "se75c5c6d"
+              ],
+              "text": "For C17, objective on all: 10 time_units. Applicability: always; version: current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C17/objective/all/current/591ac1b1",
+            10,
+            [
+              "r92b9549"
+            ]
+          ],
+          [
+            "C37/objective/all/current/591ac1b1",
+            6,
+            [
+              "r3ea61c1"
+            ]
+          ],
+          [
+            "C34/objective/all/current/591ac1b1",
+            9,
+            [
+              "r70f1339"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C17/objective/all/current/591ac1b1",
+            10,
+            [
+              "r92b9549"
+            ]
+          ],
+          [
+            "C37/objective/all/current/591ac1b1",
+            6,
+            [
+              "r3ea61c1"
+            ]
+          ],
+          [
+            "C34/objective/all/current/591ac1b1",
+            9,
+            [
+              "r70f1339"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C17/objective/all/current/591ac1b1",
+            10,
+            [
+              "r92b9549"
+            ]
+          ],
+          [
+            "C37/objective/all/current/591ac1b1",
+            6,
+            [
+              "r3ea61c1"
+            ]
+          ],
+          [
+            "C34/objective/all/current/591ac1b1",
+            9,
+            [
+              "r70f1339"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C37/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C37",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 6,
+            "emitted": [
+              [
+                6,
+                [
+                  "r3ea61c1"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C34/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C34",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                9,
+                [
+                  "r70f1339"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C17/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C17",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 10,
+            "emitted": [
+              [
+                10,
+                [
+                  "r92b9549"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "29a1cf205f16181806076751f45714301113cc0be7be8eeff641ce9d5c76ea31",
+    "root_output_excerpt": {
+      "choice": "C34",
+      "objective_assertions": [
+        [
+          "C17/objective/all/current/591ac1b1",
+          10,
+          [
+            "r92b9549"
+          ]
+        ],
+        [
+          "C37/objective/all/current/591ac1b1",
+          6,
+          [
+            "r3ea61c1"
+          ]
+        ],
+        [
+          "C34/objective/all/current/591ac1b1",
+          9,
+          [
+            "r70f1339"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C17",
+          "all_mandatory_pass": true,
+          "objective": 10
+        },
+        {
+          "candidate": "C37",
+          "all_mandatory_pass": false,
+          "objective": 6
+        },
+        {
+          "candidate": "C34",
+          "all_mandatory_pass": true,
+          "objective": 9
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "41111718e847259226582008f22d0ab4b0bf99e7268e1a238739004367c0fdb2"
+  },
+  {
+    "tag": "boolean",
+    "pair_id": "11ae5573752b03c7",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": false,
+    "correct": false,
+    "choice": "C95",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "b5f78562c1e48ac66b7f1141",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 3,
+    "objective_number_changed": 0,
+    "objective_distorted": 3,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "invalid_values",
+    "feasible_but_not_preferred": true,
+    "any_objective_loss": true,
+    "any_boolean_objective": true,
+    "selected_report": "[\"deadline_downtime\",\"C95\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "9cb4f13642f3ea6797dcbb4f1b5e85d26cb109e6476648f8023366b8e9bde71b",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C51/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r65012c9\"]},\n    {\"key\": \"C95/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"rda22535\"]},\n    {\"key\": \"C86/precedence_release/all/current/b35838c0\", \"value\": true, \"reports\": [\"r9e3a7be\"]},\n    {\"key\": \"C95/precedence_release/all/current/b35838c0\", \"value\": true, \"reports\": [\"r6a55801\"]},\n    {\"key\": \"C51/precedence_release/all/current/b35838c0\", \"value\": true, \"reports\": [\"ra1bccb9\"]},\n    {\"key\": \"C86/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r4e7220d\"]}\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r65012c9",
+            "value": 6,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C51",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C51/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e405ff45b",
+              "key": "C51/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r65012c9",
+              "sources": [
+                "s74f6b6ba"
+              ],
+              "text": "For C51, objective on all: 6 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "rda22535",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C95",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C95/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e405ff45b",
+              "key": "C95/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "rda22535",
+              "sources": [
+                "s74f6b6ba"
+              ],
+              "text": "For C95, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r4e7220d",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C86",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C86/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e405ff45b",
+              "key": "C86/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r4e7220d",
+              "sources": [
+                "s74f6b6ba"
+              ],
+              "text": "For C86, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C51/objective/all/current/591ac1b1",
+            true,
+            [
+              "r65012c9"
+            ]
+          ],
+          [
+            "C95/objective/all/current/591ac1b1",
+            true,
+            [
+              "rda22535"
+            ]
+          ],
+          [
+            "C86/objective/all/current/591ac1b1",
+            true,
+            [
+              "r4e7220d"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C51/objective/all/current/591ac1b1",
+            true,
+            [
+              "r65012c9"
+            ]
+          ],
+          [
+            "C95/objective/all/current/591ac1b1",
+            true,
+            [
+              "rda22535"
+            ]
+          ],
+          [
+            "C86/objective/all/current/591ac1b1",
+            true,
+            [
+              "r4e7220d"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C51/objective/all/current/591ac1b1",
+            true,
+            [
+              "r65012c9"
+            ]
+          ],
+          [
+            "C95/objective/all/current/591ac1b1",
+            true,
+            [
+              "rda22535"
+            ]
+          ],
+          [
+            "C86/objective/all/current/591ac1b1",
+            true,
+            [
+              "r4e7220d"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C51/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C51",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 6,
+            "emitted": [
+              [
+                true,
+                [
+                  "r65012c9"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C95/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C95",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "rda22535"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C86/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C86",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r4e7220d"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "3c9354ec2d4cf4f6de43fc6dbbe21a0856d78f7f1c643936f6f965cf1bcee636",
+    "root_output_excerpt": {
+      "choice": "C95",
+      "objective_assertions": [
+        [
+          "C51/objective/all/current/591ac1b1",
+          true,
+          [
+            "r65012c9"
+          ]
+        ],
+        [
+          "C95/objective/all/current/591ac1b1",
+          true,
+          [
+            "rda22535"
+          ]
+        ],
+        [
+          "C86/objective/all/current/591ac1b1",
+          true,
+          [
+            "r4e7220d"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C51",
+          "all_mandatory_pass": true,
+          "objective": 12345
+        },
+        {
+          "candidate": "C86",
+          "all_mandatory_pass": true,
+          "objective": 11223
+        },
+        {
+          "candidate": "C95",
+          "all_mandatory_pass": true,
+          "objective": 10112
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "872a512fe495a4d526ce77000fada7a76caffbbaaee7832394e4b9bced49be13"
+  },
+  {
+    "tag": "omission",
+    "pair_id": "319832d2a013062e",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 1,
+    "organization": "hierarchical",
+    "kind": "workflow",
+    "family": "version",
+    "decision_changed": true,
+    "correct": false,
+    "choice": "INSUFFICIENT",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "19b8ee0e698870d98404fcb8",
+    "objective_fields": 3,
+    "objective_omitted": 3,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 9,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 9,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "workflow_complete_proposition_check_only",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": false,
+    "selected_report": "[\"objective\",\"C74\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "3e4d43d7fecc33d607dd9dba6a0ad39d39114471577dba06f6cecaed726967da",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\n      \"key\": \"C74/audit/all/1/d67cb618\",\n      \"value\": true,\n      \"reports\": [\"r5b9a606\"]\n    },\n    {\n      \"key\": \"C26/audit/all/1/d67cb618\",\n      \"value\": true,\n      \"reports\": [\"re2cb418\"]\n    },\n    {\n      \"key\": \"C98/audit/all/1/d67cb618\",\n      \"value\": true,\n      \"reports\": [\"ra4de0ae\"]\n    }\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r4c8867b",
+            "value": 7,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C74",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C74/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ec56dbedf",
+              "key": "C74/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "r4c8867b",
+              "sources": [
+                "s705ae764"
+              ],
+              "text": "For C74, objective on all: 7 cost_units. Applicability: always; version: 1."
+            }
+          },
+          {
+            "report": "rf4d07e7",
+            "value": 11,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C98",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C98/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ec56dbedf",
+              "key": "C98/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "rf4d07e7",
+              "sources": [
+                "s705ae764"
+              ],
+              "text": "For C98, objective on all: 11 cost_units. Applicability: always; version: 1."
+            }
+          },
+          {
+            "report": "re0fbe44",
+            "value": 5,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C26",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C26/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ec56dbedf",
+              "key": "C26/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "re0fbe44",
+              "sources": [
+                "s705ae764"
+              ],
+              "text": "For C26, objective on all: 5 cost_units. Applicability: always; version: 1."
+            }
+          }
+        ],
+        "raw_objective_assertions": [],
+        "parsed_objective_assertions": [],
+        "actual_root_objective_assertions": [],
+        "fields": [
+          {
+            "key": "C74/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C74",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 7,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C98/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C98",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 11,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C26/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C26",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 5,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "9ec2779d19f35a2069d98c7bd0336e179fb62e472d8ff088b2c3d20a891fae52",
+    "root_output_excerpt": {
+      "choice": "INSUFFICIENT",
+      "objective_assertions": [],
+      "candidate_assessments": [
+        {
+          "candidate": "C26",
+          "all_mandatory_pass": false,
+          "objective": null
+        },
+        {
+          "candidate": "C98",
+          "all_mandatory_pass": true,
+          "objective": null
+        },
+        {
+          "candidate": "C74",
+          "all_mandatory_pass": true,
+          "objective": null
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "c97da2e23a6c4babfaeca8b2598602a056be486875ea416eba153b47849bc97c"
+  },
+  {
+    "tag": "influential_single",
+    "pair_id": "e765f8bb5f0e2aad",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "numeric",
+    "decision_changed": false,
+    "correct": false,
+    "choice": "C83",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "52d25ff005f858e91a4db9bd",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 3,
+    "objective_number_changed": 0,
+    "objective_distorted": 3,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "invalid_values",
+    "feasible_but_not_preferred": true,
+    "any_objective_loss": true,
+    "any_boolean_objective": true,
+    "selected_report": "[\"objective\",\"C64\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "d3e957aaffd17e246e9bcdea9ad904de6b5a7d707700c3a8762e320f97175a20",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C64/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r24bf3f4\"]},\n    {\"key\": \"C39/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r39ddc0b\"]},\n    {\"key\": \"C64/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r914102c\"]},\n    {\"key\": \"C83/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r2525ab2\"]},\n    {\"key\": \"C83/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r477311e\"]},\n    {\"key\": \"C39/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r43fec9d\"]}\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r24bf3f4",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r24bf3f4",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r39ddc0b",
+            "value": 8,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C39/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C39/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r39ddc0b",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C39, objective on all: 8 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r2525ab2",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C83/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C83/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r2525ab2",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C83, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C64/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r24bf3f4"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C39/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 8,
+            "emitted": [
+              [
+                true,
+                [
+                  "r39ddc0b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C83/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r2525ab2"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "0e743d2fe5cef98a5aaf627b29a05d1c8b84b68cb5325ade9028e072180769be",
+    "root_output_excerpt": {
+      "choice": "C83",
+      "objective_assertions": [
+        [
+          "C39/objective/all/current/591ac1b1",
+          true,
+          [
+            "r39ddc0b"
+          ]
+        ],
+        [
+          "C64/objective/all/current/591ac1b1",
+          true,
+          [
+            "r24bf3f4"
+          ]
+        ],
+        [
+          "C83/objective/all/current/591ac1b1",
+          true,
+          [
+            "r2525ab2"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C39",
+          "all_mandatory_pass": true,
+          "objective": 123
+        },
+        {
+          "candidate": "C64",
+          "all_mandatory_pass": true,
+          "objective": 145
+        },
+        {
+          "candidate": "C83",
+          "all_mandatory_pass": true,
+          "objective": 110
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "45e03d79ef30237ca25b545acce426d862d12d3caadfafccd559ca09f53bc9e7"
+  },
+  {
+    "tag": "influential_exact",
+    "pair_id": "e765f8bb5f0e2aad",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "exact",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "numeric",
+    "decision_changed": false,
+    "correct": true,
+    "choice": "C39",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "0e964c59fff86ca0f067f161",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 3,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 0,
+    "objective_retention": 1.0,
+    "all_propositions_preserved": true,
+    "sufficient_correct_visible": true,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 1,
+    "violates_sufficient_visible": false,
+    "visible_status": "sufficient_consistent",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": false,
+    "any_boolean_objective": false,
+    "selected_report": "[\"objective\",\"C64\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "cac80475f80bc570d395675a03c4e467372fc3426d8080345a796075cb6b2667",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\n      \"key\": \"C64/deadline_downtime/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"r914102c\"]\n    },\n    {\n      \"key\": \"C83/deadline_downtime/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"r477311e\"]\n    },\n    {\n      \"key\": \"C39/deadline_downtime/all/current/b35838c0\",\n      \"value\": true,\n      \"reports\": [\"r43fec9d\"]\n    },\n    {\n      \"key\": \"C64/objective/all/current/591ac1b1\",\n      \"value\": 9,\n      \"reports\": [\"r24bf3f4\", \"rccb6d5a\", \"r2d03598\", \"rfb6c2f7\"]\n    },\n    {\n      \"key\": \"C83/objective/all/current/591ac1b1\",\n      \"value\": 9,\n      \"reports\": [\"r2525ab2\"]\n    },\n    {\n      \"key\": \"C39/objective/all/current/591ac1b1\",\n      \"value\": 8,\n      \"reports\": [\"r39ddc0b\"]\n    }\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r24bf3f4",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r24bf3f4",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "rccb6d5a",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "copy",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "rccb6d5a",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r2d03598",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "copy",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "r2d03598",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "rfb6c2f7",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "copy",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "rfb6c2f7",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r39ddc0b",
+            "value": 8,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C39/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C39/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r39ddc0b",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C39, objective on all: 8 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r2525ab2",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C83/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C83/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r2525ab2",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C83, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            9,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            9,
+            [
+              "r2525ab2"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            8,
+            [
+              "r39ddc0b"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            9,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            9,
+            [
+              "r2525ab2"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            8,
+            [
+              "r39ddc0b"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            9,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            9,
+            [
+              "r2525ab2"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            8,
+            [
+              "r39ddc0b"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C64/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                9,
+                [
+                  "r24bf3f4",
+                  "rccb6d5a",
+                  "r2d03598",
+                  "rfb6c2f7"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C39/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 8,
+            "emitted": [
+              [
+                8,
+                [
+                  "r39ddc0b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C83/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                9,
+                [
+                  "r2525ab2"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "54559b39404afefb4d91e066e4c28237b70d968e5609fd6514bd7f4bfd3dbc05",
+    "root_output_excerpt": {
+      "choice": "C39",
+      "objective_assertions": [
+        [
+          "C39/objective/all/current/591ac1b1",
+          8,
+          [
+            "r39ddc0b"
+          ]
+        ],
+        [
+          "C64/objective/all/current/591ac1b1",
+          9,
+          [
+            "r24bf3f4",
+            "rccb6d5a",
+            "r2d03598",
+            "rfb6c2f7"
+          ]
+        ],
+        [
+          "C83/objective/all/current/591ac1b1",
+          9,
+          [
+            "r2525ab2"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C39",
+          "all_mandatory_pass": true,
+          "objective": 8
+        },
+        {
+          "candidate": "C64",
+          "all_mandatory_pass": true,
+          "objective": 9
+        },
+        {
+          "candidate": "C83",
+          "all_mandatory_pass": true,
+          "objective": 9
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "8235a0a67999f55904f4f3dc69a8ad065081c96aa33b6a25678a6ba7f782c256"
+  },
+  {
+    "tag": "influential_paraphrase",
+    "pair_id": "e765f8bb5f0e2aad",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "paraphrase",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "numeric",
+    "decision_changed": false,
+    "correct": true,
+    "choice": "C39",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "pilot-v7",
+    "trial_id": "e95d2c62e3d6c3c8a3003878",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 3,
+    "objective_number_changed": 0,
+    "objective_distorted": 3,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "invalid_values",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": true,
+    "selected_report": "[\"objective\",\"C64\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "f2f7e34d6db1cc446c2ede994b7a2d22d1a99c2f2267f119edb11cf1455208ac",
+        "raw_response_text": "{\"assertions\":[{\"key\":\"C64/objective/all/current/591ac1b1\",\"value\":true,\"reports\":[\"r24bf3f4\",\"rccb6d5a\",\"r2d03598\",\"rfb6c2f7\"]},{\"key\":\"C39/objective/all/current/591ac1b1\",\"value\":true,\"reports\":[\"r39ddc0b\"]},{\"key\":\"C64/deadline_downtime/all/current/b35838c0\",\"value\":true,\"reports\":[\"r914102c\"]},{\"key\":\"C83/deadline_downtime/all/current/b35838c0\",\"value\":true,\"reports\":[\"r477311e\"]},{\"key\":\"C39/deadline_downtime/all/current/b35838c0\",\"value\":true,\"reports\":[\"r43fec9d\"]},{\"key\":\"C83/objective/all/current/591ac1b1\",\"value\":true,\"reports\":[\"r2525ab2\"]}], \"unresolved\":[], \"candidate_assessments\":[],\"choice\":null,\"probabilities\":{}}",
+        "source_objectives": [
+          {
+            "report": "r24bf3f4",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r24bf3f4",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C64, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "rccb6d5a",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "paraphrase",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "rccb6d5a",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "At version current, candidate C64 has 9 time_units for objective concerning all, under always."
+            }
+          },
+          {
+            "report": "r2d03598",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "paraphrase",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "r2d03598",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "The objective result is 9 time_units; scope is C64/all; condition always; version current."
+            }
+          },
+          {
+            "report": "rfb6c2f7",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C64/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C64/objective/all/current/591ac1b1",
+              "operation": "paraphrase",
+              "parents": [
+                "r24bf3f4"
+              ],
+              "report": "rfb6c2f7",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "Result for all in C64: objective = 9 time_units (version current, condition always)."
+            }
+          },
+          {
+            "report": "r39ddc0b",
+            "value": 8,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C39/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C39/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r39ddc0b",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C39, objective on all: 8 time_units. Applicability: always; version: current."
+            }
+          },
+          {
+            "report": "r2525ab2",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C83/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e8acbdced",
+              "key": "C83/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r2525ab2",
+              "sources": [
+                "sa75e0566"
+              ],
+              "text": "For C83, objective on all: 9 time_units. Applicability: always; version: current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C64/objective/all/current/591ac1b1",
+            true,
+            [
+              "r24bf3f4",
+              "rccb6d5a",
+              "r2d03598",
+              "rfb6c2f7"
+            ]
+          ],
+          [
+            "C39/objective/all/current/591ac1b1",
+            true,
+            [
+              "r39ddc0b"
+            ]
+          ],
+          [
+            "C83/objective/all/current/591ac1b1",
+            true,
+            [
+              "r2525ab2"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C64/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C64",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r24bf3f4",
+                  "rccb6d5a",
+                  "r2d03598",
+                  "rfb6c2f7"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C39/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C39",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 8,
+            "emitted": [
+              [
+                true,
+                [
+                  "r39ddc0b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C83/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C83",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r2525ab2"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "e6265c0ed38a3b410e2dd4793bf9fc6f892d8a29e62240156c53e9e198fefcf4",
+    "root_output_excerpt": {
+      "choice": "C39",
+      "objective_assertions": [
+        [
+          "C39/objective/all/current/591ac1b1",
+          true,
+          [
+            "r39ddc0b"
+          ]
+        ],
+        [
+          "C64/objective/all/current/591ac1b1",
+          true,
+          [
+            "r24bf3f4",
+            "rccb6d5a",
+            "r2d03598",
+            "rfb6c2f7"
+          ]
+        ],
+        [
+          "C83/objective/all/current/591ac1b1",
+          true,
+          [
+            "r2525ab2"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C39",
+          "all_mandatory_pass": true,
+          "objective": 100
+        },
+        {
+          "candidate": "C64",
+          "all_mandatory_pass": true,
+          "objective": 120
+        },
+        {
+          "candidate": "C83",
+          "all_mandatory_pass": true,
+          "objective": 110
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "0b42013890663e114b7e7d19a6f28fcb96277635688d6e6960a935a2d9228906"
+  },
+  {
+    "tag": "intact",
+    "pair_id": "02bd3f851378d4ad",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": true,
+    "correct": true,
+    "choice": "C60",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "a23203e9297394ded5d30de5",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 3,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 0,
+    "objective_retention": 1.0,
+    "all_propositions_preserved": true,
+    "sufficient_correct_visible": true,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 1,
+    "violates_sufficient_visible": false,
+    "visible_status": "sufficient_consistent",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": false,
+    "any_boolean_objective": false,
+    "selected_report": "[\"objective\",\"C43\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 0,
+        "request_hash": "f7c954a32ecad1d2291fdf6b4fa6b9a8cb2902c12e25e3560297bddcce7e7f3a",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C43/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"ra44d342\"]},\n    {\"key\": \"C85/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r2364024\"]},\n    {\"key\": \"C60/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r6a732c2\"]},\n    {\"key\": \"C43/objective/all/current/591ac1b1\", \"value\": 18, \"reports\": [\"ra71d60b\"]},\n    {\"key\": \"C60/objective/all/current/591ac1b1\", \"value\": 18, \"reports\": [\"r7f356e2\"]},\n    {\"key\": \"C85/objective/all/current/591ac1b1\", \"value\": 13, \"reports\": [\"r73b1722\"]}\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r7f356e2",
+            "value": 18,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C60",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C60/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C60/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r7f356e2",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C60; entity all; verification objective; result 18 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r73b1722",
+            "value": 13,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C85",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C85/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C85/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r73b1722",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C85; entity all; verification objective; result 13 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "ra71d60b",
+            "value": 18,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C43",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C43/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C43/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "ra71d60b",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C43; entity all; verification objective; result 18 time_units; applies always at current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C60/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C60",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 18,
+            "emitted": [
+              [
+                18,
+                [
+                  "r7f356e2"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C85/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C85",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 13,
+            "emitted": [
+              [
+                13,
+                [
+                  "r73b1722"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C43/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C43",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 18,
+            "emitted": [
+              [
+                18,
+                [
+                  "ra71d60b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "b86fb278f56eff1fb88c780f5f1c7905a281e2a4e31b31eb6b8c9fc345783040",
+    "root_output_excerpt": {
+      "choice": "C60",
+      "objective_assertions": [
+        [
+          "C43/objective/all/current/591ac1b1",
+          18,
+          [
+            "ra71d60b"
+          ]
+        ],
+        [
+          "C60/objective/all/current/591ac1b1",
+          18,
+          [
+            "r7f356e2"
+          ]
+        ],
+        [
+          "C85/objective/all/current/591ac1b1",
+          13,
+          [
+            "r73b1722"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C43",
+          "all_mandatory_pass": false,
+          "objective": 18
+        },
+        {
+          "candidate": "C60",
+          "all_mandatory_pass": true,
+          "objective": 18
+        },
+        {
+          "candidate": "C85",
+          "all_mandatory_pass": false,
+          "objective": 13
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "a9597e3d677dc3ff8d34a1301393ba386bfe98447a187eb55285c6b514ff2333"
+  },
+  {
+    "tag": "omission",
+    "pair_id": "23c14428f7f45223",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "checklist",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "workflow",
+    "family": "condition",
+    "decision_changed": false,
+    "correct": false,
+    "choice": "INSUFFICIENT",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "e29fa6eaf9bf99933c2257cd",
+    "objective_fields": 3,
+    "objective_omitted": 3,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 9,
+    "constraint_omitted": 3,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 6,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "workflow_complete_proposition_check_only",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": false,
+    "selected_report": "[\"objective\",\"C94\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 0,
+        "request_hash": "3dfb8550501804072e2f5617770e918860e47ed48e8a3f637bc6b4c6c28b1cb7",
+        "raw_response_text": "{\"assertions\":[],\"unresolved\":[],\"candidate_assessments\":[],\"choice\":null,\"probabilities\":{}}",
+        "source_objectives": [
+          {
+            "report": "r86922bb",
+            "value": 10,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C94",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C94/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ea0b97894",
+              "key": "C94/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "r86922bb",
+              "sources": [
+                "sae84e81b"
+              ],
+              "text": "Candidate C94; entity all; verification objective; result 10 cost_units; applies always at 1."
+            }
+          },
+          {
+            "report": "r2878b16",
+            "value": 2,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C49",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C49/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ea0b97894",
+              "key": "C49/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "r2878b16",
+              "sources": [
+                "sae84e81b"
+              ],
+              "text": "Candidate C49; entity all; verification objective; result 2 cost_units; applies always at 1."
+            }
+          },
+          {
+            "report": "r53ae598",
+            "value": 2,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C38",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "key": "C38/objective/all/1/c11e32f7",
+            "actual_manager_input": {
+              "execution": "ea0b97894",
+              "key": "C38/objective/all/1/c11e32f7",
+              "operation": "verification",
+              "parents": [],
+              "report": "r53ae598",
+              "sources": [
+                "sae84e81b"
+              ],
+              "text": "Candidate C38; entity all; verification objective; result 2 cost_units; applies always at 1."
+            }
+          }
+        ],
+        "raw_objective_assertions": [],
+        "parsed_objective_assertions": [],
+        "actual_root_objective_assertions": [],
+        "fields": [
+          {
+            "key": "C94/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C94",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 10,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C49/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C49",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 2,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C38/objective/all/1/c11e32f7",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C38",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "cost_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "1"
+            },
+            "objective": true,
+            "expected_value": 2,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "7796dbc5718365d52fe47c33fdb2da5767674fcbe3bba257ceda364d4f01a53b",
+    "root_output_excerpt": {
+      "choice": "INSUFFICIENT",
+      "objective_assertions": [],
+      "candidate_assessments": [
+        {
+          "candidate": "C38",
+          "all_mandatory_pass": null,
+          "objective": null
+        },
+        {
+          "candidate": "C49",
+          "all_mandatory_pass": null,
+          "objective": null
+        },
+        {
+          "candidate": "C94",
+          "all_mandatory_pass": null,
+          "objective": null
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "717a5b6d6dadcd6dc68996ea4f014bd3671e1398ce43f83f9937fc03684b3f24"
+  },
+  {
+    "tag": "boolean",
+    "pair_id": "428fb569dc9d3537",
+    "model": "qwen3",
+    "world": 0,
+    "policy": "scope",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": true,
+    "correct": true,
+    "choice": "C57",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "62d8405ea2b4072d7d40b1cc",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 3,
+    "objective_number_changed": 0,
+    "objective_distorted": 3,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 0,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 15,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "invalid_values",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": true,
+    "selected_report": "[\"objective\",\"C57\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "f93bdd9737317011a2f8311d8d4907e210f2e30915291d8ea7aebf829c5a8003",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\n      \"key\": \"C76/objective/all/current/591ac1b1\",\n      \"value\": true,\n      \"reports\": [\"r954700a\"]\n    },\n    {\n      \"key\": \"C65/resource/M3/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"r85d31d6\"]\n    },\n    {\n      \"key\": \"C57/objective/all/current/591ac1b1\",\n      \"value\": true,\n      \"reports\": [\"r0e69e3b\"]\n    },\n    {\n      \"key\": \"C76/resource/M1/current/dc593bb0\",\n      \"value\": true,\n      \"reports\": [\"rb893eb1\"]\n    },\n    {\n      \"key\": \"C76/resource/M9/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"rfb0a270\"]\n    },\n    {\n      \"key\": \"C57/resource/M1/current/dc593bb0\",\n      \"value\": true,\n      \"reports\": [\"rf7b67d7\"]\n    },\n    {\n      \"key\": \"C57/resource/M9/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"r826dd43\"]\n    },\n    {\n      \"key\": \"C65/resource/M9/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"r64667e1\"]\n    },\n    {\n      \"key\": \"C76/resource/M3/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"r0cbeec3\"]\n    },\n    {\n      \"key\": \"C57/resource/M3/current/3652000a\",\n      \"value\": true,\n      \"reports\": [\"r475f784\"]\n    },\n    {\n      \"key\": \"C65/resource/M1/current/dc593bb0\",\n      \"value\": false,\n      \"reports\": [\"rcd8b057\"]\n    },\n    {\n      \"key\": \"C65/objective/all/current/591ac1b1\",\n      \"value\": true,\n      \"reports\": [\"r975d394\"]\n    }\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r954700a",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C76",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C76/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e77c6ddb2",
+              "key": "C76/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r954700a",
+              "sources": [
+                "sa49b0858"
+              ],
+              "text": "Candidate C76; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r0e69e3b",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C57",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C57/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e77c6ddb2",
+              "key": "C57/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r0e69e3b",
+              "sources": [
+                "sa49b0858"
+              ],
+              "text": "Candidate C57; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r975d394",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C65",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C65/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e77c6ddb2",
+              "key": "C65/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r975d394",
+              "sources": [
+                "sa49b0858"
+              ],
+              "text": "Candidate C65; entity all; verification objective; result 9 time_units; applies always at current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C76/objective/all/current/591ac1b1",
+            true,
+            [
+              "r954700a"
+            ]
+          ],
+          [
+            "C57/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0e69e3b"
+            ]
+          ],
+          [
+            "C65/objective/all/current/591ac1b1",
+            true,
+            [
+              "r975d394"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C76/objective/all/current/591ac1b1",
+            true,
+            [
+              "r954700a"
+            ]
+          ],
+          [
+            "C57/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0e69e3b"
+            ]
+          ],
+          [
+            "C65/objective/all/current/591ac1b1",
+            true,
+            [
+              "r975d394"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C76/objective/all/current/591ac1b1",
+            true,
+            [
+              "r954700a"
+            ]
+          ],
+          [
+            "C57/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0e69e3b"
+            ]
+          ],
+          [
+            "C65/objective/all/current/591ac1b1",
+            true,
+            [
+              "r975d394"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C76/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C76",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [
+              [
+                true,
+                [
+                  "r954700a"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C57/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C57",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [
+              [
+                true,
+                [
+                  "r0e69e3b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C65/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C65",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r975d394"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "2624abf16ccaab1051b386ac862c5293a43f2ae7815f1409784c55238ef109f7",
+    "root_output_excerpt": {
+      "choice": "C57",
+      "objective_assertions": [
+        [
+          "C76/objective/all/current/591ac1b1",
+          true,
+          [
+            "r954700a"
+          ]
+        ],
+        [
+          "C57/objective/all/current/591ac1b1",
+          true,
+          [
+            "r0e69e3b"
+          ]
+        ],
+        [
+          "C65/objective/all/current/591ac1b1",
+          true,
+          [
+            "r975d394"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C57",
+          "all_mandatory_pass": true,
+          "objective": 591
+        },
+        {
+          "candidate": "C65",
+          "all_mandatory_pass": false,
+          "objective": 591
+        },
+        {
+          "candidate": "C76",
+          "all_mandatory_pass": false,
+          "objective": 591
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "133ab286fcfb6baf77aa8ac26528de9fc72e53763038d2aa11254fe4446f64e5"
+  },
+  {
+    "tag": "intact",
+    "pair_id": "02bd3f851378d4ad",
+    "model": "phi4",
+    "world": 0,
+    "policy": "ordinary",
+    "condition": "single",
+    "repetition": 0,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": true,
+    "correct": true,
+    "choice": "C60",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "96a0d145eb5171d62f2c5b1c",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 3,
+    "constraint_fields": 15,
+    "constraint_omitted": 3,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 3,
+    "constraint_preserved": 12,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 0,
+    "objective_retention": 1.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "incomplete_multiple_answers",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": false,
+    "any_boolean_objective": false,
+    "selected_report": "[\"objective\",\"C43\",\"all\"]",
+    "manager_stages": [
+      {
+        "manager": 0,
+        "request_hash": "c25d1a0ca9e822fe2651f5010ede63de0bbb62ef7cde3b5b2ab2850c828c49e1",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C43/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"ra44d342\"]},\n    {\"key\": \"C60/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r6a732c2\"]},\n    {\"key\": \"C85/deadline_downtime/all/current/b35838c0\", \"value\": true, \"reports\": [\"r2364024\"]},\n    {\"key\": \"C43/objective/all/current/591ac1b1\", \"value\": 18, \"reports\": [\"ra71d60b\"]},\n    {\"key\": \"C60/objective/all/current/591ac1b1\", \"value\": 18, \"reports\": [\"r7f356e2\"]},\n    {\"key\": \"C85/objective/all/current/591ac1b1\", \"value\": 13, \"reports\": [\"r73b1722\"]}\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r7f356e2",
+            "value": 18,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C60",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C60/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C60/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r7f356e2",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C60; entity all; verification objective; result 18 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r73b1722",
+            "value": 13,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C85",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C85/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C85/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r73b1722",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C85; entity all; verification objective; result 13 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "ra71d60b",
+            "value": 18,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C43",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C43/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e06f2d317",
+              "key": "C43/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "ra71d60b",
+              "sources": [
+                "s9891dc02"
+              ],
+              "text": "Candidate C43; entity all; verification objective; result 18 time_units; applies always at current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C43/objective/all/current/591ac1b1",
+            18,
+            [
+              "ra71d60b"
+            ]
+          ],
+          [
+            "C60/objective/all/current/591ac1b1",
+            18,
+            [
+              "r7f356e2"
+            ]
+          ],
+          [
+            "C85/objective/all/current/591ac1b1",
+            13,
+            [
+              "r73b1722"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C60/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C60",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 18,
+            "emitted": [
+              [
+                18,
+                [
+                  "r7f356e2"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C85/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C85",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 13,
+            "emitted": [
+              [
+                13,
+                [
+                  "r73b1722"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C43/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C43",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 18,
+            "emitted": [
+              [
+                18,
+                [
+                  "ra71d60b"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": true,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "e8b1f8384b15c927bb1cdde0dba2bc4c6cc375fed873691b07c56c4d75318f68",
+    "root_output_excerpt": {
+      "choice": "C60",
+      "objective_assertions": [
+        [
+          "C43/objective/all/current/591ac1b1",
+          18,
+          [
+            "ra71d60b"
+          ]
+        ],
+        [
+          "C60/objective/all/current/591ac1b1",
+          18,
+          [
+            "r7f356e2"
+          ]
+        ],
+        [
+          "C85/objective/all/current/591ac1b1",
+          13,
+          [
+            "r73b1722"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C43",
+          "all_mandatory_pass": null,
+          "objective": 18
+        },
+        {
+          "candidate": "C60",
+          "all_mandatory_pass": true,
+          "objective": 18
+        },
+        {
+          "candidate": "C85",
+          "all_mandatory_pass": null,
+          "objective": 13
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "5072a0493afbb813ecc45e6593d6058089547e95d97c8b66ef8033203058dafc"
+  },
+  {
+    "tag": "omission",
+    "pair_id": "1b0dc1a864d0ff87",
+    "model": "phi4",
+    "world": 0,
+    "policy": "checklist",
+    "condition": "single",
+    "repetition": 1,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": true,
+    "correct": true,
+    "choice": "C50",
+    "invalid_selection": false,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "380764eb296d7460fb56508d",
+    "objective_fields": 3,
+    "objective_omitted": 3,
+    "objective_boolean_replacement": 0,
+    "objective_number_changed": 0,
+    "objective_distorted": 0,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 3,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 3,
+    "constraint_preserved": 12,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "incomplete_multiple_answers",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": false,
+    "selected_report": "[\"resource\",\"C53\",\"M2\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "b46f7745d217c32e2fe3cf4988a912de938c84e286c4ba652e2790d184f74507",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C50/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"r8d0b244\"]},\n    {\"key\": \"C50/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r363a22e\"]},\n    {\"key\": \"C50/resource/M8/current/dc593bb0\", \"value\": true, \"reports\": [\"r36a8490\"]},\n    {\"key\": \"C53/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"red6ddf3\"]},\n    {\"key\": \"C53/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r041cf96\"]},\n    {\"key\": \"C92/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"r6617fd9\"]},\n    {\"key\": \"C92/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r1e3df1c\"]},\n    {\"key\": \"C92/resource/M8/current/dc593bb0\", \"value\": true, \"reports\": [\"r9f03169\"]}\n  ],\n  \"unresolved\": [\n    \"C53/resource/M8/current/dc593bb0\"\n  ],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r6085896",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C50",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C50/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e2ce5d9f3",
+              "key": "C50/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r6085896",
+              "sources": [
+                "s606c7291"
+              ],
+              "text": "Candidate C50; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r0304899",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C92",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C92/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e2ce5d9f3",
+              "key": "C92/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r0304899",
+              "sources": [
+                "s606c7291"
+              ],
+              "text": "Candidate C92; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r23c5a31",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C53",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C53/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e2ce5d9f3",
+              "key": "C53/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r23c5a31",
+              "sources": [
+                "s606c7291"
+              ],
+              "text": "Candidate C53; entity all; verification objective; result 9 time_units; applies always at current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [],
+        "parsed_objective_assertions": [],
+        "actual_root_objective_assertions": [],
+        "fields": [
+          {
+            "key": "C50/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C50",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C92/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C92",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C53/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C53",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [],
+            "omitted": true,
+            "unresolved": false,
+            "boolean_replacement": false,
+            "number_changed": false,
+            "distorted": false,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "ffbc88e26cd0493eb20217242c3355077459b0277011e85e237cbca3a202ce41",
+    "root_output_excerpt": {
+      "choice": "C50",
+      "objective_assertions": [],
+      "candidate_assessments": [
+        {
+          "candidate": "C50",
+          "all_mandatory_pass": true,
+          "objective": 10
+        },
+        {
+          "candidate": "C53",
+          "all_mandatory_pass": false,
+          "objective": 12
+        },
+        {
+          "candidate": "C92",
+          "all_mandatory_pass": false,
+          "objective": 15
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "e700ba54002e411c8a6b8bc91c535bfaeae63dac277fb121d2c771df01942f7c"
+  },
+  {
+    "tag": "boolean",
+    "pair_id": "1b0dc1a864d0ff87",
+    "model": "phi4",
+    "world": 1,
+    "policy": "scope",
+    "condition": "exact",
+    "repetition": 1,
+    "organization": "hierarchical",
+    "kind": "schedule",
+    "family": "dependency",
+    "decision_changed": true,
+    "correct": false,
+    "choice": "C53",
+    "invalid_selection": true,
+    "operational_failure": false,
+    "suite": "validation-v7",
+    "trial_id": "302c55c576fef2f6cf48e57a",
+    "objective_fields": 3,
+    "objective_omitted": 0,
+    "objective_boolean_replacement": 3,
+    "objective_number_changed": 0,
+    "objective_distorted": 3,
+    "objective_conflicted": 0,
+    "objective_scope_citation_mismatch": 0,
+    "objective_foreign_objective_value_with_foreign_citation": 0,
+    "objective_unresolved": 0,
+    "objective_preserved": 0,
+    "constraint_fields": 15,
+    "constraint_omitted": 1,
+    "constraint_boolean_replacement": 0,
+    "constraint_number_changed": 0,
+    "constraint_distorted": 0,
+    "constraint_conflicted": 0,
+    "constraint_scope_citation_mismatch": 0,
+    "constraint_foreign_objective_value_with_foreign_citation": 0,
+    "constraint_unresolved": 0,
+    "constraint_preserved": 14,
+    "summaries": 2,
+    "summaries_with_objectives": 1,
+    "summaries_with_objective_loss": 1,
+    "objective_retention": 0.0,
+    "all_propositions_preserved": false,
+    "sufficient_correct_visible": false,
+    "wrong_despite_sufficient_correct_visible": false,
+    "sufficient_visible_denominator": 0,
+    "violates_sufficient_visible": false,
+    "visible_status": "invalid_values",
+    "feasible_but_not_preferred": false,
+    "any_objective_loss": true,
+    "any_boolean_objective": true,
+    "selected_report": "[\"resource\",\"C53\",\"M2\"]",
+    "manager_stages": [
+      {
+        "manager": 1,
+        "request_hash": "4c6d7d1ec7a43602c961bd8d0a712f70ca8623fa81e910d8cd3960ddc9ec4ce6",
+        "raw_response_text": "{\n  \"assertions\": [\n    {\"key\": \"C50/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"r8d0b244\"]},\n    {\"key\": \"C50/resource/M8/current/dc593bb0\", \"value\": true, \"reports\": [\"r36a8490\"]},\n    {\"key\": \"C50/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r363a22e\"]},\n    {\"key\": \"C53/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"r457cfda\", \"rd9b32d6\", \"rc6073c3\"]},\n    {\"key\": \"C53/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r041cf96\"]},\n    {\"key\": \"C53/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r23c5a31\"]},\n    {\"key\": \"C92/resource/M2/current/3652000a\", \"value\": true, \"reports\": [\"r6617fd9\"]},\n    {\"key\": \"C92/resource/M8/current/dc593bb0\", \"value\": true, \"reports\": [\"r9f03169\"]},\n    {\"key\": \"C92/resource/M7/current/3652000a\", \"value\": true, \"reports\": [\"r1e3df1c\"]},\n    {\"key\": \"C92/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r0304899\"]},\n    {\"key\": \"C50/objective/all/current/591ac1b1\", \"value\": true, \"reports\": [\"r6085896\"]}\n  ],\n  \"unresolved\": [],\n  \"candidate_assessments\": [\n    \n    ],\n  \"choice\": null,\n  \"probabilities\": {}\n}",
+        "source_objectives": [
+          {
+            "report": "r6085896",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C50",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C50/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e1780c804",
+              "key": "C50/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r6085896",
+              "sources": [
+                "sebc2734a"
+              ],
+              "text": "Candidate C50; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r0304899",
+            "value": 14,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C92",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C92/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e1780c804",
+              "key": "C92/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r0304899",
+              "sources": [
+                "sebc2734a"
+              ],
+              "text": "Candidate C92; entity all; verification objective; result 14 time_units; applies always at current."
+            }
+          },
+          {
+            "report": "r23c5a31",
+            "value": 9,
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C53",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "key": "C53/objective/all/current/591ac1b1",
+            "actual_manager_input": {
+              "execution": "e1780c804",
+              "key": "C53/objective/all/current/591ac1b1",
+              "operation": "verification",
+              "parents": [],
+              "report": "r23c5a31",
+              "sources": [
+                "sebc2734a"
+              ],
+              "text": "Candidate C53; entity all; verification objective; result 9 time_units; applies always at current."
+            }
+          }
+        ],
+        "raw_objective_assertions": [
+          [
+            "C53/objective/all/current/591ac1b1",
+            true,
+            [
+              "r23c5a31"
+            ]
+          ],
+          [
+            "C92/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0304899"
+            ]
+          ],
+          [
+            "C50/objective/all/current/591ac1b1",
+            true,
+            [
+              "r6085896"
+            ]
+          ]
+        ],
+        "parsed_objective_assertions": [
+          [
+            "C53/objective/all/current/591ac1b1",
+            true,
+            [
+              "r23c5a31"
+            ]
+          ],
+          [
+            "C92/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0304899"
+            ]
+          ],
+          [
+            "C50/objective/all/current/591ac1b1",
+            true,
+            [
+              "r6085896"
+            ]
+          ]
+        ],
+        "actual_root_objective_assertions": [
+          [
+            "C53/objective/all/current/591ac1b1",
+            true,
+            [
+              "r23c5a31"
+            ]
+          ],
+          [
+            "C92/objective/all/current/591ac1b1",
+            true,
+            [
+              "r0304899"
+            ]
+          ],
+          [
+            "C50/objective/all/current/591ac1b1",
+            true,
+            [
+              "r6085896"
+            ]
+          ]
+        ],
+        "fields": [
+          {
+            "key": "C50/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C50",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [
+              [
+                true,
+                [
+                  "r6085896"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C92/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C92",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 14,
+            "emitted": [
+              [
+                true,
+                [
+                  "r0304899"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          },
+          {
+            "key": "C53/objective/all/current/591ac1b1",
+            "scope": {
+              "task_identifier": "objective",
+              "candidate_identifier": "C53",
+              "entity_identifier": "all",
+              "predicate_identifier": "objective",
+              "units": "time_units",
+              "applicability_condition": "always",
+              "effective_time_or_version": "current"
+            },
+            "objective": true,
+            "expected_value": 9,
+            "emitted": [
+              [
+                true,
+                [
+                  "r23c5a31"
+                ]
+              ]
+            ],
+            "omitted": false,
+            "unresolved": false,
+            "boolean_replacement": true,
+            "number_changed": false,
+            "distorted": true,
+            "conflicted": false,
+            "scope_citation_mismatch": false,
+            "preserved": false,
+            "foreign_objective_value_with_foreign_citation": false
+          }
+        ]
+      }
+    ],
+    "root_request_hash": "a6d68d4147eeffafbf6e64e29dad6848021c6ccfece21462705bb9c3fb7d910e",
+    "root_output_excerpt": {
+      "choice": "C53",
+      "objective_assertions": [
+        [
+          "C53/objective/all/current/591ac1b1",
+          true,
+          [
+            "r23c5a31"
+          ]
+        ],
+        [
+          "C92/objective/all/current/591ac1b1",
+          true,
+          [
+            "r0304899"
+          ]
+        ],
+        [
+          "C50/objective/all/current/591ac1b1",
+          true,
+          [
+            "r6085896"
+          ]
+        ]
+      ],
+      "candidate_assessments": [
+        {
+          "candidate": "C50",
+          "all_mandatory_pass": false,
+          "objective": 10
+        },
+        {
+          "candidate": "C53",
+          "all_mandatory_pass": true,
+          "objective": 8
+        },
+        {
+          "candidate": "C92",
+          "all_mandatory_pass": true,
+          "objective": 9
+        }
+      ]
+    },
+    "raw_root_prompt_sha256": "072a4b61dd7d5aa361e925cede63203cfe93e8156a4e9156f9e2e5e63aff38b4"
+  }
+]

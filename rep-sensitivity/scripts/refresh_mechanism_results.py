@@ -47,4 +47,21 @@ print(json.dumps({'refreshed_complete_suites':changed}))
 if Path('artifacts/runs/objective-confirmation-v1/manifest.json').exists():
     subprocess.run([sys.executable,'scripts/analyze_objective_confirmation.py'],check=True)
 
+if Path('artifacts/runs/numerical-preservation-v1/manifest.json').exists():
+    destination=Path('results/numerical-preservation-v1/analysis.json')
+    source=digest(Path('scripts/analyze_numerical_preservation.py').read_text())
+    if not destination.exists() or json.loads(destination.read_text()).get('analysis_source_sha256')!=source:
+        subprocess.run([sys.executable,'scripts/analyze_numerical_preservation.py'],check=True)
+        if destination.exists() and json.loads(destination.read_text()).get('complete'):
+            subprocess.run([sys.executable,'scripts/build_numerical_report.py'],check=True)
+
+support_needed=False
+for suite in ('root-diagnostic-v1','numerical-preservation-v1'):
+    completed=Path('results',suite,'analysis.json');support=Path('results',suite,'visible-support-v3.json')
+    if completed.exists() and json.loads(completed.read_text()).get('complete'):
+        support_needed |= (not support.exists() or json.loads(support.read_text()).get('scorer_source_sha256')!=digest(Path('scripts/visible_information_v3.py').read_text()))
+if support_needed:
+    subprocess.run([sys.executable,'scripts/audit_visible_support_v3.py'],check=True)
+    subprocess.run([sys.executable,'scripts/build_numerical_report.py'],check=True)
+
 subprocess.run([sys.executable,'scripts/build_completed_extensions.py'],check=True)
