@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-17T16:42:55.481618+00:00",
+  "pid": 3403,
+  "controller": "/workspace/rep-sensitivity/artifacts/runtime-adapters/a48cad2217aa692805e9ae807c3a839492b6111e61338b885b740983dadbab5a/resume_replacement_pod.py",
+  "runtime_manifest": "records/execution/replacement-ada-v1.json",
+  "status": "launched; completion must be checked from accepted calls and stage markers",
+  "queue_order": [
+    "primary-replay-and-live",
+    "frozen-boundary-and-secondary",
+    "objective-confirmation",
+    "numerical-preservation",
+    "adjacent-explorations"
+  ]
+}

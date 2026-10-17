@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-17T16:44:57.611871+00:00",
+  "comparisons": [
+    {
+      "suite": "pilot-v7",
+      "remote_immutable_files_at_snapshot": 2332,
+      "identical_local_files": 2332,
+      "not_yet_local": [],
+      "different_content": []
+    },
+    {
+      "suite": "validation-v7",
+      "remote_immutable_files_at_snapshot": 10444,
+      "identical_local_files": 10444,
+      "not_yet_local": [],
+      "different_content": []
+    },
+    {
+      "suite": "main-v7",
+      "remote_immutable_files_at_snapshot": 23010,
+      "identical_local_files": 23010,
+      "not_yet_local": [],
+      "different_content": []
+    }
+  ],
+  "interpretation": "No held-out choices inspected. Additional remote calls after the snapshot are expected; a lag is not a content conflict."
+}

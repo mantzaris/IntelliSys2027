@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 from datetime import datetime, timezone
@@ -20,10 +21,11 @@ for suite in ('pilot-v7','validation-v7','main-v7'):
   for f in p.glob(pattern)}
 print(json.dumps(out))
 '''
-command = ['ssh', '-i', str(Path.home()/'.ssh/id_rsa'), '-o', 'IdentitiesOnly=yes', '-o', 'BatchMode=yes',
+command = ['ssh', '-i', os.environ.get('RUNPOD_KEY', str(Path.home()/'.ssh/id_rsa')), '-o', 'IdentitiesOnly=yes', '-o', 'BatchMode=yes',
     '-o', 'ConnectTimeout=15', '-o', 'StrictHostKeyChecking=yes',
-    '-o', 'UserKnownHostsFile=/tmp/intellisys-runpod-known-hosts', '-p', '19997',
-    'root@195.26.233.32', 'python -']
+    '-o', 'UserKnownHostsFile='+os.environ.get('RUNPOD_KNOWN_HOSTS', '/tmp/intellisys-runpod-known-hosts'),
+    '-p', os.environ.get('RUNPOD_PORT', '19604'),
+    os.environ.get('RUNPOD_HOST', 'root@195.26.233.98'), 'python -']
 remote = json.loads(subprocess.check_output(command, input=code, text=True))
 comparisons = []
 for suite, files in remote.items():

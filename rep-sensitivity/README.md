@@ -13,12 +13,22 @@ cited references and a 209-word abstract. See [MANUSCRIPT_STATUS.md](MANUSCRIPT_
 for the evidence boundary, numerical traceability, and scientific review points.
 [REFERENCE_VERIFICATION.md](REFERENCE_VERIFICATION.md) records primary-source checks.
 
-The last successful RunPod mirror was **04:08:59 UTC**. Later direct SSH attempts
-were refused and the RunPod proxy reported **container not found**. The local
-mirror loop remains available to retry, but the remote queue cannot currently be
-verified or advanced. Completed local results and the partial main checkpoint are
-preserved. This writing pass launches no experiments and changes no frozen design.
-The notes below are dated history, not a claim that the remote GPU is still active.
+**Replacement GPU, 17 October 2026 UTC:** the current user-provided pod is verified
+as an RTX 6000 Ada Generation with 48 GB VRAM. Source and checkpoints are restored, and all checked
+pilot, validation, and partial main files match the local copies. The preserved
+main checkpoint has 158 completed Qwen3 base pairs and 11,376 trajectories.
+See [RUNPOD_MIGRATION_STATUS.md](RUNPOD_MIGRATION_STATUS.md).
+
+An earlier 24 GB RTX 4090 loaded the model with CPU offloading but did not finish
+the bounded compatibility probe. The user then supplied this 48 GB Ada to retain
+the frozen BF16 settings. The original serial queue is restored with explicit
+hardware provenance and unchanged scientific snapshots. No quantized replacement,
+altered research prompt, or new treatment has been introduced. The cumulative
+additional-work allowance has 6,699.97 seconds remaining after the probe and a
+conservative cleanup margin. The original pod's last available
+mirror was **04:08:59 UTC**. Later output from that pod is unavailable.
+The queue descriptions below are dated history. Current controller identity and
+recovery details are in `records/execution/replacement-ada-handoff-v1.json`.
 
 To refresh completed result blocks, compile, and check the single-source paper:
 
@@ -181,7 +191,10 @@ uses recursive and stack-based implementations.
 
 ## Existing RunPod environment
 
-The project is `/workspace/rep-sensitivity` on the existing RTX 6000 Ada pod.
+The project is `/workspace/rep-sensitivity` on the replacement RTX 6000 Ada pod.
+The GPU architecture matches the original runs, but the driver and physical
+device are recorded as a new execution segment. Consult the migration status
+before attempting to start another controller.
 `scripts/sync.sh` defaults to the user-provided direct SSH endpoint and the working
 RSA key. Override `RUNPOD_HOST`, `RUNPOD_PORT`, `RUNPOD_KEY`, `RUNPOD_PROJECT`, and
 `RUNPOD_KNOWN_HOSTS` as needed. Host-key checking remains enabled. Never add private
