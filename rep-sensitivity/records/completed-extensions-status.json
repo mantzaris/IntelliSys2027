@@ -2,7 +2,10 @@
   "stages": [
     {
       "stage": "root-diagnostic-v1",
-      "status": "pending"
+      "status": "complete diagnostic",
+      "independent_base_pairs": 6,
+      "trajectories": 192,
+      "source_sha256": "c94b8894d3249d2e5bedbd54e864e818def4877d5f48a8a830ede6549a65482c"
     },
     {
       "stage": "objective-confirmation-v1",

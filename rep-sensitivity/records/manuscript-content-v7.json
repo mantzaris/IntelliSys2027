@@ -1,0 +1,114 @@
+{
+  "version": 7,
+  "evidence_scope": "Completed main replay, original pilot/validation audits, frozen root diagnostic, separate mechanism heldout; unfinished optional stages excluded.",
+  "sources": {
+    "results/main-reproducible-v2/analysis.json": "68513c78930b5efbfe1fec11e674b44b766304df947a21993b7fb9fb7180173c",
+    "results/manuscript-main-v7/analysis.json": "3f0a644a9e6a07582a99e035d82526981290a56af4fa92e840567a14833e5e86",
+    "results/main-transitions-v1/analysis.json": "79eed9b50dd3134be2ba29a971246c63939278d792acfb552111a0999a35a8ac",
+    "records/audits/main-v7.json": "ebbb78096f84e787c5b635512be086af1521d59b8271646309ce26a09c3ff9f6",
+    "results/numerical-pipeline-v1/analysis.json": "430ce5f4845e38adbd3fb5906a63a91f62cfa4681485ff4afbaca4daee1a1be3",
+    "results/numerical-pipeline-v1/visible-support-v3.json": "d139d8f52e2101f52319f97b72a778e4fb7f96220097b375c1bfefd59c5fac5c",
+    "results/root-diagnostic-v1/analysis.json": "4329cb6c95ab0a220e3d1d08bd47021b46287e394a069d2c6bed29dd2c2e6b0a",
+    "results/root-diagnostic-v1/visible-support-v3.json": "f5d6660127c9d95d85b5eccd26fd7e3606d8bf4085f0d83eb1ac966f8efad96a",
+    "results/mechanism-heldout-v1/analysis.json": "74b73239a94b41411f6e438d0e145cb39aef5f7d7651e32568e287e555557cc7",
+    "results/pilot-interpretation-v2/analysis.json": "25b9f7d1880d543b98599bf18cf15136ab55a873579672d8aeff0956dc66598f",
+    "results/validation-repetition-v1/analysis.json": "dc2e4ba595b83d08b0df1d84909f69decc0c5ceeefe5a89f677169b5528fcd2b"
+  },
+  "example": {
+    "1": {
+      "answer": "Q",
+      "candidates": {
+        "P": {
+          "mandatory": {
+            "precedence_release": true,
+            "deadline_downtime": true,
+            "resource:M": false,
+            "resource:N": true
+          },
+          "feasible": false,
+          "objective": 3,
+          "peaks": {
+            "M": 2,
+            "N": 1
+          }
+        },
+        "Q": {
+          "mandatory": {
+            "precedence_release": true,
+            "deadline_downtime": true,
+            "resource:M": true,
+            "resource:N": true
+          },
+          "feasible": true,
+          "objective": 5,
+          "peaks": {
+            "M": 1,
+            "N": 1
+          }
+        }
+      }
+    },
+    "2": {
+      "answer": "P",
+      "candidates": {
+        "P": {
+          "mandatory": {
+            "precedence_release": true,
+            "deadline_downtime": true,
+            "resource:M": true,
+            "resource:N": true
+          },
+          "feasible": true,
+          "objective": 3,
+          "peaks": {
+            "M": 2,
+            "N": 1
+          }
+        },
+        "Q": {
+          "mandatory": {
+            "precedence_release": true,
+            "deadline_downtime": true,
+            "resource:M": true,
+            "resource:N": true
+          },
+          "feasible": true,
+          "objective": 5,
+          "peaks": {
+            "M": 1,
+            "N": 1
+          }
+        }
+      }
+    }
+  },
+  "blocks": {
+    "abstract": "bec8f607e8c884b5adaa54a199dd0c6bfcd4e49ba781e3eb5ece5405350b75b1",
+    "stage-table": "f8ae4108941c0a74e358b41a598de9b83e3efa1bcdd0ccd8f811be7fa6adc547",
+    "main-headline": "23fbe8a322d6e0903163f3713c784a842cf8fe8b3171e8d04d9e06d6b942b73e",
+    "organization-findings": "b35aeffdc8650a4771d217f2fa02761b71c5c404cfadf6c4652193ebf37a0a11",
+    "policy-findings": "dd3c44d5811cee27c627495c35d36a5870ecce0d11be437889b68863d699552a",
+    "paired-results": "7f73a1f0aebffeb67eaa787d13e6cfa3e31e8504c08b1670f80bcb34678ffc60",
+    "transition-results": "f15ddeccea0f835d56dbaa14d28ae005c3b132f4abafa1a883d12b2c2d7fc1cd",
+    "stage-comparison": "a25c55f9e05a19b9e5ad95608c703b85f3983bda631dcb07666a35b5d74836cc",
+    "workflow-results": "26ea23dd0d22be55dda56278fb1dd54ded10cbf9905dbf4bd1dfbb09d978416c",
+    "numeric-results": "fe70843c42b6b28fc65334b3c9e34ecd83ca5f8fa23a01f679109f6d3390872a",
+    "sufficiency-results": "c1c0a7ad2108818723a8a6254804e7024afb3bc934d30370136f4f7dfe14344e",
+    "root-results": "9300c5a71792f80d927773f6ba056829f36a3036da0f4eee194ee79dce5e8196",
+    "mechanism-results": "6f5e7ce52e5576ab8eb3e6e81f28beef5cf8c8feb2266a24ebb1e0179ebee79f",
+    "policy-table": "a119de2ff6514d14d5668aa1a9da9d904c740a1e76e0bc9e04225cef6539b25c",
+    "root-table": "4b94e36c07321012aeb7b4be1bd815a63aa98c638f3b28b57b6a19886137548c",
+    "cost-table": "ca902cb9f36c2bd13ea6d1978cf640d27ae089ee95e897fde621652eff7c60f6",
+    "conclusion": "f2cf2c470fba9c66edc7f9ec3bcb620eb877e10dcceeeff3272f9847d0ebd390"
+  },
+  "figure_files": [
+    "aggregation-architecture.pdf",
+    "heldout-repetition-effects.pdf",
+    "correctness-transitions.pdf",
+    "numerical-fidelity.pdf",
+    "root-delivery-diagnostic.pdf",
+    "heldout-case-effects.pdf"
+  ],
+  "updated_source": true,
+  "human_scientific_review": "pending"
+}

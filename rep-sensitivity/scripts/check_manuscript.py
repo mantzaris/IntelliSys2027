@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
-from manuscript_content import validate_single_source
+from manuscript_content import validate_single_source, reference_record
 
 tex=Path('manuscript/main.tex').read_text()
 log=Path('manuscript/main.log').read_text()
@@ -20,7 +20,7 @@ assert cited==entries,(cited-entries,entries-cited)
 labels=set(re.findall(r'\\label\{((?:fig|tab):[^}]+)\}',tex))
 references=set(re.findall(r'\\ref\{([^}]+)\}',tex))
 assert labels<=references,('Figures/tables not discussed in text',labels-references)
-verification=json.loads(Path('records/reference-verification-v6.json').read_text())
+verification=json.loads(reference_record(tex).read_text())
 assert {e['key'] for e in verification['entries']}==entries
 assert len(entries)>=20
 assert tex.rfind(r'\section')==tex.index(r'\section*{Declaration on AI Assistance}')

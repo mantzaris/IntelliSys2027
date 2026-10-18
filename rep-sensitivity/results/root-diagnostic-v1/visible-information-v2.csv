@@ -1,0 +1,17 @@
+transport,arm,model,kind,policy,trajectories,calls,base_pairs,world_correct,accuracy,unique_supported_decisions,agrees_with_unique_decision,unique_agreement_rate,lucky_world_correct_without_unique_support,invalid_selection,feasible_suboptimal,tie_break_error,output_failure,sufficient_information_violated,input_tokens,output_tokens,inference_seconds_allocated,allocated_seconds_per_correct
+frozen_summaries,F,qwen3,schedule,ordinary,12,12,6,8,0.6666666666666666,8,7,0.875,1,1,2,0,0,1,40001,11719,48.1303776553832,6.0162972069229
+frozen_summaries,constraint,qwen3,schedule,ordinary,12,12,6,9,0.75,8,7,0.875,2,1,2,0,0,1,41081,11720,48.1303776553832,5.347819739487022
+frozen_summaries,end,qwen3,schedule,ordinary,12,12,6,8,0.6666666666666666,8,7,0.875,1,1,2,0,0,1,41075,11722,48.1303776553832,6.0162972069229
+frozen_summaries,neutral,qwen3,schedule,ordinary,12,12,6,9,0.75,8,7,0.875,2,1,2,0,0,1,41075,11879,48.1303776553832,5.347819739487022
+frozen_summaries,objective0,qwen3,schedule,ordinary,12,12,6,9,0.75,8,7,0.875,2,1,2,0,0,1,41093,11719,48.1303776553832,5.347819739487022
+frozen_summaries,objective1,qwen3,schedule,ordinary,12,12,6,9,0.75,8,8,1.0,1,0,2,0,0,0,41057,11721,48.1303776553832,5.347819739487022
+frozen_summaries,objective2,qwen3,schedule,ordinary,12,12,6,9,0.75,8,8,1.0,1,0,2,0,0,0,41063,11667,48.1303776553832,5.347819739487022
+frozen_summaries,uniform_objectives,qwen3,schedule,ordinary,12,12,6,12,1.0,8,8,1.0,4,0,0,0,0,0,43211,11615,48.1303776553832,4.010864804615267
+lossless,F,qwen3,schedule,ordinary,12,12,6,12,1.0,12,12,1.0,0,0,0,0,0,0,40001,11620,48.1303776553832,4.010864804615267
+lossless,constraint,qwen3,schedule,ordinary,12,12,6,12,1.0,12,12,1.0,0,0,0,0,0,0,41081,11699,48.1303776553832,4.010864804615267
+lossless,end,qwen3,schedule,ordinary,12,12,6,11,0.9166666666666666,12,11,0.9166666666666666,0,1,0,0,0,1,41075,11670,48.1303776553832,4.375488877762109
+lossless,neutral,qwen3,schedule,ordinary,12,12,6,11,0.9166666666666666,12,11,0.9166666666666666,0,1,0,0,0,1,41075,11391,48.1303776553832,4.375488877762109
+lossless,objective0,qwen3,schedule,ordinary,12,12,6,11,0.9166666666666666,12,11,0.9166666666666666,0,1,0,0,0,1,41093,11483,48.1303776553832,4.375488877762109
+lossless,objective1,qwen3,schedule,ordinary,12,12,6,12,1.0,12,12,1.0,0,0,0,0,0,0,41057,11650,48.1303776553832,4.010864804615267
+lossless,objective2,qwen3,schedule,ordinary,12,12,6,12,1.0,12,12,1.0,0,0,0,0,0,0,41063,11701,48.1303776553832,4.010864804615267
+lossless,uniform_objectives,qwen3,schedule,ordinary,12,12,6,12,1.0,12,12,1.0,0,0,0,0,0,0,43211,11359,48.1303776553832,4.010864804615267

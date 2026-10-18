@@ -1,16 +1,15 @@
 # IntelliSys 2027 verification
 
-Rechecked 2026-10-17 UTC against the [official call](https://saiconference.com/IntelliSys/CallforPapers).
+Rechecked 2026-10-18 UTC against the [official call](https://saiconference.com/IntelliSys/CallforPapers).
 Rounds close 1 November and 1 December 2026, AoE. Normal limits are 18 main-text
 pages plus up to 7 pages of references/appendices, and a 150–250-word abstract.
 Initial PDF submission is anonymous and uses the supplied template. The downloaded
 [LaTeX archive](https://saiconference.com/Downloads/SAI_Paper_Format_Latex_Conference.zip)
 uses `svproc`; preserve its dimensions. Do not include identities or acknowledgments.
 
-The current official link is unchanged. A new archive download returned HTTP 403
-on 17 October. The previously retrieved 16 October archive remains available
-locally, and its class file matches the retained `svproc.cls`. The archive checksum
-and this distinction are recorded in `records/conference-template.json`. No font
+The current official link is unchanged. A fresh archive downloaded successfully
+on 18 October and its class file matches the retained `svproc.cls`. The archive
+checksum and comparison are recorded in `records/conference-template.json`. No font
 size, page geometry, or template spacing was reduced to fit this draft.
 
 The AI policy requires disclosure and human responsibility, excludes AI authorship,

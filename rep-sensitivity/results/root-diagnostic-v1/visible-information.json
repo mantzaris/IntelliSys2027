@@ -1,0 +1,170 @@
+{
+  "status": "completed_exploratory_input_availability_audit",
+  "source_manifest_sha256": "cb81f2143363e13c98c2e882e166cdcecda5f09dbd4a360845ce6db355b66ffe",
+  "source_scores_sha256": "6fb08377143d36bb836dd954ceea340018650abe0172a90101b814893c802173",
+  "analysis_source_sha256": "efcdee76e0ff24109258226105bf626182f54afe06482d8a77cb1684caf93634",
+  "denominator": "All completed root trajectories, including operational failures. These are separate outcomes; end-to-end world correctness is not evidence of warranted root reasoning.",
+  "rule": "Enumerate answers compatible with visible scoped values only. If several remain, expected choice is INSUFFICIENT. Required scope definitions and tie order are public; hidden values are never filled from truth. A consistent but erroneous summary can warrant a different choice from the world oracle.",
+  "aggregate": [
+    {
+      "transport": "frozen_summaries",
+      "arm": "F",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 8,
+      "correct_given_visible_information": 8,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "constraint",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 9,
+      "correct_given_visible_information": 9,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "end",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 8,
+      "correct_given_visible_information": 8,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "neutral",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 9,
+      "correct_given_visible_information": 9,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "objective0",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 9,
+      "correct_given_visible_information": 9,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "objective1",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 9,
+      "correct_given_visible_information": 9,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "objective2",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 9,
+      "correct_given_visible_information": 9,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "frozen_summaries",
+      "arm": "uniform_objectives",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 10,
+      "visible_information_determines_choice": 10,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "F",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 12,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "constraint",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 12,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "end",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 11,
+      "correct_given_visible_information": 11,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "neutral",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 11,
+      "correct_given_visible_information": 11,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "objective0",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 11,
+      "correct_given_visible_information": 11,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "objective1",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 12,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "objective2",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 12,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    },
+    {
+      "transport": "lossless",
+      "arm": "uniform_objectives",
+      "trajectories": 12,
+      "base_pairs": 6,
+      "world_correct": 12,
+      "correct_given_visible_information": 12,
+      "visible_information_determines_choice": 12,
+      "visible_unique_choice_differs_from_world_truth": 0
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "amendment": "mechanism-v1",
-  "complete_extension_analyses": [],
-  "pending_extension_analyses": [
+  "complete_extension_analyses": [
     "mechanism-development-v1",
     "fresh-probe-v1",
     "mechanism-validation-v1",
     "mechanism-heldout-v1",
     "root-diagnostic-v1"
   ],
+  "pending_extension_analyses": [],
   "not_launched_under_prespecified_gate": [],
   "human_scientific_review": "pending",
   "submission_ready": false

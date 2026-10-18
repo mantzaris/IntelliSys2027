@@ -3,8 +3,8 @@
   "sha256": "d5ed3f489b336450dd98e4f33844c44e842a6d022f84b0ef868dc19dcf84abc8",
   "class": "svproc",
   "retrieved_utc": "2026-10-16",
-  "official_link_rechecked_utc": "2026-10-17",
-  "fresh_archive_download_status": "HTTP 403",
+  "official_link_rechecked_utc": "2026-10-18",
+  "fresh_archive_download_status": "downloaded successfully",
   "retained_class_matches_previously_downloaded_archive": true,
   "policy_source": "https://saiconference.com/IntelliSys/CallforPapers",
   "main_text_limit": 18,
@@ -13,5 +13,14 @@
     150,
     250
   ],
-  "anonymous_initial_submission": true
+  "anonymous_initial_submission": true,
+  "rechecked_utc": "2026-10-18T18:04:01.842680+00:00",
+  "fresh_archive_sha256": "d5ed3f489b336450dd98e4f33844c44e842a6d022f84b0ef868dc19dcf84abc8",
+  "retained_class_matches_current_archive": true,
+  "bibliography_rules": {
+    "minimum_references": 20,
+    "order": "alphabetical preferred; citation order permitted",
+    "author_limit_before_et_al": 6,
+    "numeric_citations_ascending": true
+  }
 }

@@ -1,123 +1,136 @@
-# Consolidated manuscript status
+# Completed-evidence manuscript for scientific review
 
-17 October 2026 UTC. The writing and presentation pass is complete. The scientific
-study remains incomplete and the author has not yet conducted scientific review.
+18 October 2026 UTC. The requested writing and local analysis pass is complete.
+The article describes a complete, explicitly scoped empirical study. The larger
+original experiment queue has not all completed, and human scientific review
+has not yet occurred.
 
-## Draft and organization
+## Review artifacts
 
-- [main.tex](manuscript/main.tex) contains the whole paper, appendices, disclosure,
-  tables, and inline bibliography. It has no `\input`, `\include`, or BibTeX dependency.
-- [main.pdf](manuscript/main.pdf) has **14 main-text pages, 19 total pages, five
-  figures, 21 verified and cited references, and a 209-word abstract**.
-- All five figures are beside `main.tex`. Official template dependencies are retained.
-- The illustrative capacity example passes both independent scheduling checkers.
-- [REFERENCE_VERIFICATION.md](REFERENCE_VERIFICATION.md) links the primary sources.
-  Its machine-readable record preserves full author order, publication status,
-  relevant inspected passages, and the specific supported claims.
-- The sole AI-assistance disclosure is the final prose section before references.
-  It describes implementation, experimental operation, analysis, retrieval, and
-  drafting assistance, and does not claim completed human review.
+- [main.tex](manuscript/main.tex): the entire paper in one ASCII TeX source,
+  including tables, appendices, macros, disclosure, and inline bibliography.
+  There are no input/include or BibTeX dependencies.
+- [main.pdf](manuscript/main.pdf): **17 main-text pages, 22 total pages, six figures,
+  20 verified and cited references, and a 194-word abstract**.
+- All referenced figures are beside the source. The retained official class
+  matches the freshly retrieved conference archive. No template dimensions,
+  body font size, or spacing were reduced.
+- The final prose section is the sole accurate AI-assistance declaration.
+  Source and PDF metadata are anonymous.
+- [Reference verification](REFERENCE_VERIFICATION.md) and its
+  [machine-readable record](records/reference-verification-v7.json) preserve full
+  author order, publication status, primary URLs, inspected material, and claim support.
+  The inline bibliography follows the template's alphabetical order and six-author rule.
+- [Structural checks](records/manuscript-checks.json) and
+  [visual review](records/manuscript-visual-review-v7.json) identify the checked artifact.
 
-The narrative centers on three distinct outcomes: faithful representation,
-information sufficient to determine a decision, and correct final selection.
-The influential pilot pair is included without becoming a general mechanism claim.
-Unfinished supplementary explorations have no result-shaped placeholder tables.
+## Completed evidence used
 
-## Completed evidence and pending results
+| Study | Independent bases | Decisions | Accepted model calls | Role |
+|---|---:|---:|---:|---|
+| Qwen3 pilot | 24, including 12 scheduling | 1,152 | 2,304 | Development |
+| Original validation, two models | 36 shared, including 18 scheduling | 5,184 | 10,368 | Exploratory validation |
+| Main held-out, two models | 192 shared, 96 scheduling and 96 workflow | 27,648 | 55,296 | Primary scheduling and secondary workflow |
+| Qwen3 mechanism held-out | 48 fresh, 24 per task | 576 | 1,152 | Separate prospective extension |
+| Root diagnostic | Six reused development bases | 192 | 192 fresh root calls | Exploratory fixed-summary replay |
+| Fresh-verification diagnostic | Six reused development bases | 30 | 72 | Small supplementary probe |
 
-The draft uses the complete 24-base, 1,152-trajectory pilot and the 36-base
-validation set shared across two models, with 2,592 trajectories per model.
-The main scheduling comparison uses 12 pilot bases and 18 validation bases.
-The numerical audit covers 60 distinct bases, 3,168 hierarchical trajectories,
-and 6,336 manager summaries. These are separate denominators, not independent
-samples of the same size.
+The numerical pipeline audit reuses 60 pilot/validation bases and covers 3,168
+hierarchical trajectories and 6,336 summaries. Those units are not independent
+problems. The mechanism study shares manager calls across access arms, explaining
+its physical-call total. No stage is pooled with another to inflate sample size.
 
-The pilot exact-copy accuracy gain is +13.54 percentage points, with a base-cluster
-95% interval of [+4.17, +22.92]. Comparable validation estimates are -3.47
-[-10.42, +2.78] for Qwen3 and +1.39 [-4.17, +6.25] for Phi-4. These are preserved
-completed analyses, not new GPU experiments. They do not demonstrate equivalence
-or a reliable numerical-preservation effect.
+On main scheduling, averaging both organizations and all three policies, Qwen3
+accuracy is 88.72% without repetition and 88.54% with exact copies, a change of
+-0.17 percentage points [95% base-cluster interval -2.21, +1.74]. Phi-4 changes
+from 80.03% to 78.95%, or -1.09 points [-3.17, +1.00]. Qwen3 has 93 corrections
+and 97 regressions; Phi-4 has 143 and 168. This does not establish equivalence.
+The direct hierarchy interactions also remain uncertain.
 
-Both original validation runs, 128 development-control trajectories per model,
-and 60 live-development trajectories per model are complete. The smaller controls
-are not promoted to confirmation in this paper.
+The new exploratory stochastic comparison uses generation 0 versus 1 within
+each condition. Exact repetition changes answer disagreement by -0.17 points
+[-1.74, +1.39] for Qwen3 and +2.52 [+0.61, +4.51] for Phi-4. This comparison
+is distinct from cross-condition same-index transitions. Each cell has only two
+generations, and all inference resamples complete base clusters.
 
-The last local main checkpoint contains **158/192 Qwen3 base clusters,
-11,376/13,824 trajectories, and 22,848 accepted calls**. The last accepted call is
-04:08:04 UTC and the last successful mirror is 04:08:59 UTC. Partial held-out
-choices were not inspected for this writing pass and supply no paper estimates.
-Phi-4 main completion, held-out controls/live evaluation, root diagnostics,
-mechanism extensions, fresh confirmation, numerical preservation, and the
-budget-conditional adjacent explorations remain unverified as completed.
+The root diagnostic gives 8/12 correct world answers with ordinary frozen
+summaries and 12/12 with lossless delivery. Uniform objective repetition also
+gives 12/12 under frozen summaries, but two contexts still lack a uniquely
+justified answer. Repetition is not information repair. The separate mechanism
+study's workflow uniform-repetition decrease is secondary and does not isolate
+exception handling or context length.
 
-Direct SSH now returns `Connection refused`; the existing RunPod proxy returns
-`container not found`. The local mirror process continues retrying. The remote
-controller and loaded model cannot be inspected, and no new execution or restart
-was attempted. Existing source archives, manifests, queue dependencies, and local
-results are preserved. Restored access to the existing pod is needed to advance
-the queue. No infrastructure or billing setting was changed.
+## Local reproduction and analysis correction
 
-This pass uses **zero new GPU calls and zero additional GPU execution time**.
-The shared additional-experiment cap remains 7,200 seconds. Its last recorded
-charge is zero; current remote consumption cannot be certified after loss of
-access. See [the execution snapshot](records/execution/manuscript-consolidation-v6.json).
+The main decisions and summary aggregates, complete root diagnostic, and mechanism
+study reproduce from locally mirrored raw outputs. The audit is in
+[manuscript-reproduction-v7.json](records/manuscript-reproduction-v7.json).
+The original results remain unchanged. A reproducibility defect in the H3 bootstrap
+iterated an unordered set of base IDs. Sorting those IDs fixes process-dependent
+Monte Carlo interval endpoints. No observations, scores, estimator, strata, seeds,
+or model inputs change. See [the analysis-only amendment](records/amendments/main-bootstrap-order-v2.json).
+The paper uses `results/main-reproducible-v2/analysis.json` for these stable endpoints.
 
-## Numerical traceability
-
-The compact source hashes and generated block hashes are in
-[manuscript-content-v6.json](records/manuscript-content-v6.json). Earlier
-manuscript traceability records were moved intact to `records/manuscript-sources/`.
-Raw outputs and analysis files remain in their existing locations.
-
-| Paper component | Completed source |
-|---|---|
-| Worked example, Table 1 | Both executable verifiers, result embedded in `records/manuscript-content-v6.json` |
-| Stage counts, Table 2 | Pilot and validation manifests and completed analysis inventories |
-| Accuracy, transitions, organization effects, Tables 3-4 and Figure 2 | `results/pilot-interpretation-v2/analysis.json`, `results/validation-repetition-v1/analysis.json` |
-| Paired-world responsiveness and stability, Table 5 | `validation-repetition-v1/analysis.json`, `paired_world` and `consequential_minus_harmless` |
-| Numerical transformation and fidelity, Table 6 and Figure 3 | `results/numerical-pipeline-v1/analysis.json`, `groups`, `comparisons`, and pipeline checks |
-| Decision sufficiency, Table 7 | `results/numerical-pipeline-v1/visible-support-v3.json`, `groups` |
-| Observable failure labels, Table 8 | `validation-repetition-v1/analysis.json`, `failure_locations` |
-| Policy cells, Table 9 | `results/validation-v7/analysis.json`, `summary` |
-| Case effects and token use, Figures 4-5 | Pilot `comparisons[].base_effects`; validation `comparisons` and `absolute` |
-| Influential case | `results/pilot-interpretation-v2/influential-pair-audit.json` |
-| Inference versions and settings | `records/execution/current-runtime.json` and frozen run/environment records |
-
-## Refresh and checks
+From the project directory, with the local raw archive present:
 
 ```bash
+PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python -m rep_sensitivity.analysis artifacts/runs/main-v7 results/main-reproducible-v2
+PYTHONPATH=src .venv/bin/python scripts/analyze_main_transitions.py
+PYTHONPATH=src .venv/bin/python scripts/analyze_manuscript_main.py
 PYTHONPATH=src MPLCONFIGDIR=/tmp/rep-sensitivity-mpl .venv/bin/python scripts/build_manuscript.py
 (cd manuscript && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex)
 .venv/bin/python scripts/check_manuscript.py
 PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v
 ```
 
-Only marked result blocks are replaced. All eight legacy report entry points have
-been exercised successfully against the single-source organization. The local
-finalizer now compiles after a completed stage changes the paper, even while other
-stages remain pending. The full-study completion gate and manual push rule remain
-unchanged. Later completed findings update the abstract and conclusion through
-the same completion checks. A successful build still requires scientific review.
+The current suite passes **105 integrity tests**, including known transition
+fixtures, operational failures, whole-base pairing, and deterministic interaction
+ordering. Completed raw outputs are not committed to Git. Their manifests and
+curated aggregates are retained, and the raw archive remains local as well as in
+the existing checkpoint infrastructure.
 
-The full suite passes **87 tests**. The paper passes abstract length, single-file,
-figure location, citation resolution, table/figure cross-reference, anonymous
-metadata, page limit, and overflow checks. Every page was visually inspected, with
-figure and table layout corrections applied. Rendered pages and test logs remain
-in ignored artifacts rather than Git.
+| Manuscript content | Generated source |
+|---|---|
+| Worked example | Two independent checkers; `records/manuscript-content-v7.json` |
+| Main primary contrasts and hierarchy interactions | `results/main-reproducible-v2/analysis.json` |
+| Absolute cells, policy comparisons, paired-world performance, resource table | `results/manuscript-main-v7/analysis.json` |
+| Corrections, regressions, wrong-to-wrong changes, stochastic comparison | `results/main-transitions-v1/analysis.json` |
+| Matched pilot/validation comparison | `results/pilot-interpretation-v2/analysis.json`, `results/validation-repetition-v1/analysis.json` |
+| Numerical transformations and decision sufficiency | `results/numerical-pipeline-v1/analysis.json`, `visible-support-v3.json` |
+| Fixed-summary and lossless replay | `results/root-diagnostic-v1/analysis.json`, `visible-support-v3.json` |
+| Fresh mechanism test | `results/mechanism-heldout-v1/analysis.json` |
+| Fresh worker probe | `results/fresh-probe-v1/analysis.json` |
 
-## Points for the author's scientific review
+Source and generated-block hashes are in
+[manuscript-content-v7.json](records/manuscript-content-v7.json). Automatic refresh
+updates only marked blocks, never assembles extra TeX sources, and refuses
+incomplete evidence. Unfinished optional suites cannot introduce placeholders into
+this version. Legacy completion hooks continue to call this updater.
 
-1. Assess the claimed distinction from work that already studies restatement,
-   summaries, provenance, and hierarchy. The restricted root interface and
-   complementary constraints define the narrower contribution.
-2. Review the decision-support abstraction and its conservative treatment of
-   unknown or disputed fields. Representation validity and a determined answer
-   must remain separate outcomes.
-3. Review the exploratory status and policy denominators of pilot/validation
-   comparisons. Stage differences do not identify why generalization changed.
-4. Integrate only completed held-out and intervention analyses before making
-   confirmation or mechanism claims. The current draft deliberately leaves those
-   results pending.
-5. Review the actual human scientific contribution and truthful assistance
-   disclosure against the official conference policy in [CONFERENCE.md](CONFERENCE.md).
-   This draft does not certify policy eligibility or submission readiness.
+## Evidence outside this article and author review
+
+The separate balanced-objective confirmation, objective-only preservation replay,
+and adjacent feedback/authority explorations are not completed evidence in this
+paper. The broader supporting/live package is not complete for both models.
+Their frozen records and partial outputs are preserved. Last reported remote
+access failed with `container not found`; this writing task made no recovery
+attempt and does not certify that the queue is running. Existing completion and
+mirroring infrastructure was not interrupted.
+
+This revision used **zero new GPU calls and zero additional GPU execution time**.
+It does not reset the user's cumulative eight-hour allowance or certify unknown
+remote consumption. Historical execution and budget journals remain authoritative.
+
+The author should review the following before submission:
+
+1. The restricted claim of a controlled aggregation benchmark, relative to existing
+   work on restatements, summaries, provenance, and hierarchical communication.
+2. The report-level sufficiency abstraction. Invalid or disputed fields remain
+   flagged even when uncontested information uniquely determines the decision.
+3. Pointwise intervals across related contrasts, the workflow competence decline,
+   and the exploratory status of the new stochastic-variation analysis.
+4. The narrow mechanism evidence. Lossless delivery changes information and
+   presentation; an objective-only repair effect and causal mediation remain untested.
+5. The actual human scientific contribution and assistance disclosure against the
+   current [conference policy](CONFERENCE.md). The draft does not certify
+   submission eligibility or completed human review.

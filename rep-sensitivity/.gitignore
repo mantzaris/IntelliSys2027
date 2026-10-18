@@ -54,3 +54,4 @@ __pycache__/
 /results/validation-*/overview.png
 # Vector figures are sufficient in Git; PNG previews are reproducible.
 /results/*/figures/*.png
+/results/main-*/overview.png

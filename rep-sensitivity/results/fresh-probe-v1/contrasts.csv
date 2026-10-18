@@ -1,0 +1,7 @@
+contrast,metric,paired_cells,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap,interval_available
+copies - original,correct,6,0.0,,,6,0.0,,False
+paraphrases - original,correct,6,0.0,,,6,0.0,,False
+fresh_added - original,correct,6,0.0,,,6,0.0,,False
+fresh_added - copies,correct,6,0.0,,,6,0.0,,False
+fresh_fixed - original,correct,6,0.0,,,6,0.0,,False
+fresh_fixed - copies,correct,6,0.0,,,6,0.0,,False

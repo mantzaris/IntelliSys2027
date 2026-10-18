@@ -1,0 +1,6 @@
+arm,base_pairs,trajectories,correct,accuracy,operational_failures,displaced_trajectories,initial_incorrect_or_invalid,fresh_correct_after_initial_error,additional_incorrect_findings,logical_worker_calls,valid_worker_calls,correct_worker_calls,tokens,inference_seconds,tokens_per_correct
+copies,6,6,6,1.0,0,0,1,0,0,6,6,5,39928,216.6376828327775,6654.666666666667
+fresh_added,6,6,6,1.0,0,0,1,1,1,24,24,22,48819,239.94642025977373,8136.5
+fresh_fixed,6,6,6,1.0,0,0,1,1,1,24,24,22,48711,236.1498840302229,8118.5
+original,6,6,6,1.0,0,0,1,0,0,6,6,5,36678,211.9699642136693,6113.0
+paraphrases,6,6,6,1.0,0,0,1,0,0,6,6,5,40116,222.07406963407993,6686.0

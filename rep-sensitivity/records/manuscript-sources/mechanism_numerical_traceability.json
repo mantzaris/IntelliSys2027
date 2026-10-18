@@ -1009,6 +1009,1039 @@
         "selected_favorable_infeasible": "",
         "jobs": ""
       }
+    },
+    {
+      "source": "results/mechanism-development-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P1",
+        "metric": "correct",
+        "primary": false,
+        "paired_cell_denominator": 24,
+        "estimate": 0.0,
+        "lower": -0.08333333333333333,
+        "upper": 0.08333333333333333,
+        "clusters": 12,
+        "cluster_sd": 0.21320071635561044,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-development-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P2",
+        "metric": "unrepeated_necessary_retention",
+        "primary": false,
+        "paired_cell_denominator": 24,
+        "estimate": -0.010416666666666668,
+        "lower": -0.03125,
+        "upper": 0.010416666666666666,
+        "clusters": 12,
+        "cluster_sd": 0.05858980416006825,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-development-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P3",
+        "metric": "correct",
+        "primary": false,
+        "paired_cell_denominator": 6,
+        "estimate": 0.16666666666666666,
+        "lower": null,
+        "upper": null,
+        "clusters": 3,
+        "cluster_sd": 0.28867513459481287,
+        "degenerate_bootstrap": null,
+        "interval_available": false
+      }
+    },
+    {
+      "source": "results/mechanism-development-v1/analysis.json",
+      "figure": "targets-and-retention.pdf",
+      "source_sha256": "f0f11f4c2b97523e8ef7e39f8164a89d959f9fbc3927eb250587cfa3bc50f650"
+    },
+    {
+      "source": "results/mechanism-validation-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P1",
+        "metric": "correct",
+        "primary": false,
+        "paired_cell_denominator": 24,
+        "estimate": 0.125,
+        "lower": 0.041666666666666664,
+        "upper": 0.20833333333333331,
+        "clusters": 12,
+        "cluster_sd": 0.22613350843332272,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-validation-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P2",
+        "metric": "unrepeated_necessary_retention",
+        "primary": false,
+        "paired_cell_denominator": 24,
+        "estimate": -0.041666666666666664,
+        "lower": -0.08333333333333333,
+        "upper": 0.0,
+        "clusters": 12,
+        "cluster_sd": 0.10089561062020608,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-validation-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P3",
+        "metric": "correct",
+        "primary": false,
+        "paired_cell_denominator": 24,
+        "estimate": -0.125,
+        "lower": -0.25,
+        "upper": 0.0,
+        "clusters": 12,
+        "cluster_sd": 0.3107907802540305,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-validation-v1/analysis.json",
+      "figure": "targets-and-retention.pdf",
+      "source_sha256": "49c00c3fbc9733c4b39b8a8ab36dfc06d1fd1f703271d50af40bcde22d89cba2"
+    },
+    {
+      "source": "results/mechanism-heldout-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P1",
+        "metric": "correct",
+        "primary": true,
+        "paired_cell_denominator": 48,
+        "estimate": -0.020833333333333336,
+        "lower": -0.10416666666666666,
+        "upper": 0.0625,
+        "clusters": 24,
+        "cluster_sd": 0.27501646854509365,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-heldout-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P2",
+        "metric": "unrepeated_necessary_retention",
+        "primary": true,
+        "paired_cell_denominator": 48,
+        "estimate": -0.0026041666666666665,
+        "lower": -0.0078125,
+        "upper": 0.0,
+        "clusters": 24,
+        "cluster_sd": 0.01275775907699572,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-heldout-v1/analysis.json",
+      "row": {
+        "kind": "schedule",
+        "model": "qwen3",
+        "contrast": "P3",
+        "metric": "correct",
+        "primary": true,
+        "paired_cell_denominator": 48,
+        "estimate": 0.041666666666666664,
+        "lower": -0.041666666666666664,
+        "upper": 0.10416666666666666,
+        "clusters": 24,
+        "cluster_sd": 0.2041241452319315,
+        "degenerate_bootstrap": false,
+        "interval_available": true
+      }
+    },
+    {
+      "source": "results/mechanism-heldout-v1/analysis.json",
+      "figure": "targets-and-retention.pdf",
+      "source_sha256": "bfae53c557fbf0c0c5b366078e964b9babfc92cd37f4d38e01cabb6c25a5e1fe"
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "F",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 8,
+        "accuracy": 0.6666666666666666,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 40001,
+        "output_tokens": 11719,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 6.0162972069229
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "F",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 8,
+        "accuracy": 0.6666666666666666,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 7,
+        "unique_agreement_rate": 0.875,
+        "lucky_world_correct_without_unique_support": 1,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 40001,
+        "output_tokens": 11719,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 6.0162972069229
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "constraint",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 9,
+        "accuracy": 0.75,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 2,
+        "operational_failure": 0,
+        "input_tokens": 41081,
+        "output_tokens": 11720,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "constraint",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 9,
+        "accuracy": 0.75,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 7,
+        "unique_agreement_rate": 0.875,
+        "lucky_world_correct_without_unique_support": 2,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41081,
+        "output_tokens": 11720,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "end",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 8,
+        "accuracy": 0.6666666666666666,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 41075,
+        "output_tokens": 11722,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 6.0162972069229
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "end",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 8,
+        "accuracy": 0.6666666666666666,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 7,
+        "unique_agreement_rate": 0.875,
+        "lucky_world_correct_without_unique_support": 1,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41075,
+        "output_tokens": 11722,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 6.0162972069229
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "neutral",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 9,
+        "accuracy": 0.75,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 2,
+        "operational_failure": 0,
+        "input_tokens": 41075,
+        "output_tokens": 11879,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "neutral",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 9,
+        "accuracy": 0.75,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 7,
+        "unique_agreement_rate": 0.875,
+        "lucky_world_correct_without_unique_support": 2,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41075,
+        "output_tokens": 11879,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective0",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 9,
+        "accuracy": 0.75,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 2,
+        "operational_failure": 0,
+        "input_tokens": 41093,
+        "output_tokens": 11719,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective0",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 9,
+        "accuracy": 0.75,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 7,
+        "unique_agreement_rate": 0.875,
+        "lucky_world_correct_without_unique_support": 2,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41093,
+        "output_tokens": 11719,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective1",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 9,
+        "accuracy": 0.75,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 41057,
+        "output_tokens": 11721,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective1",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 9,
+        "accuracy": 0.75,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 8,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 1,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 41057,
+        "output_tokens": 11721,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective2",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 9,
+        "accuracy": 0.75,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 2,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 41063,
+        "output_tokens": 11667,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "objective2",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 9,
+        "accuracy": 0.75,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 8,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 1,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 2,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 41063,
+        "output_tokens": 11667,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 5.347819739487022
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "uniform_objectives",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 2,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 4,
+        "operational_failure": 0,
+        "input_tokens": 43211,
+        "output_tokens": 11615,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "frozen_summaries",
+        "arm": "uniform_objectives",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 8,
+          "invalid_values": 4
+        },
+        "unique_supported_decisions": 8,
+        "agrees_with_unique_decision": 8,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 4,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 43211,
+        "output_tokens": 11615,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "F",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 40001,
+        "output_tokens": 11620,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "F",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 12,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 40001,
+        "output_tokens": 11620,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "constraint",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 3,
+        "operational_failure": 0,
+        "input_tokens": 41081,
+        "output_tokens": 11699,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "constraint",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 12,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 41081,
+        "output_tokens": 11699,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "end",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 11,
+        "accuracy": 0.9166666666666666,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 2,
+        "operational_failure": 0,
+        "input_tokens": 41075,
+        "output_tokens": 11670,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "end",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 11,
+        "accuracy": 0.9166666666666666,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 11,
+        "unique_agreement_rate": 0.9166666666666666,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41075,
+        "output_tokens": 11670,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "neutral",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 11,
+        "accuracy": 0.9166666666666666,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 0,
+        "operational_failure": 0,
+        "input_tokens": 41075,
+        "output_tokens": 11391,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "neutral",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 11,
+        "accuracy": 0.9166666666666666,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 11,
+        "unique_agreement_rate": 0.9166666666666666,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41075,
+        "output_tokens": 11391,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective0",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 11,
+        "accuracy": 0.9166666666666666,
+        "invalid_selection": 1,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 1,
+        "correct_choice_erroneous_support": 1,
+        "operational_failure": 0,
+        "input_tokens": 41093,
+        "output_tokens": 11483,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective0",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 11,
+        "accuracy": 0.9166666666666666,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 11,
+        "unique_agreement_rate": 0.9166666666666666,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 1,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 1,
+        "input_tokens": 41093,
+        "output_tokens": 11483,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.375488877762109
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective1",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 2,
+        "operational_failure": 0,
+        "input_tokens": 41057,
+        "output_tokens": 11650,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective1",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 12,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 41057,
+        "output_tokens": 11650,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective2",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 0,
+        "operational_failure": 0,
+        "input_tokens": 41063,
+        "output_tokens": 11701,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "objective2",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 12,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 41063,
+        "output_tokens": 11701,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/analysis.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "uniform_objectives",
+        "trajectories": 12,
+        "base_pairs": 6,
+        "correct": 12,
+        "accuracy": 1.0,
+        "invalid_selection": 0,
+        "feasible_but_not_preferred": 0,
+        "necessary_fact_omitted": 0,
+        "necessary_value_wrong_or_conflicted": 0,
+        "visible_false_constraint_ignored": 0,
+        "correct_choice_erroneous_support": 0,
+        "operational_failure": 0,
+        "input_tokens": 43211,
+        "output_tokens": 11359,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
+    },
+    {
+      "source": "results/root-diagnostic-v1/visible-information-v2.json",
+      "row": {
+        "transport": "lossless",
+        "arm": "uniform_objectives",
+        "model": "qwen3",
+        "kind": "schedule",
+        "policy": "ordinary",
+        "trajectories": 12,
+        "calls": 12,
+        "base_pairs": 6,
+        "world_correct": 12,
+        "accuracy": 1.0,
+        "information_status_counts": {
+          "sufficient_consistent": 12
+        },
+        "unique_supported_decisions": 12,
+        "agrees_with_unique_decision": 12,
+        "unique_agreement_rate": 1.0,
+        "lucky_world_correct_without_unique_support": 0,
+        "invalid_selection": 0,
+        "feasible_suboptimal": 0,
+        "tie_break_error": 0,
+        "output_failure": 0,
+        "sufficient_information_violated": 0,
+        "input_tokens": 43211,
+        "output_tokens": 11359,
+        "inference_seconds_allocated": 48.1303776553832,
+        "allocated_seconds_per_correct": 4.010864804615267
+      }
     }
   ]
 }

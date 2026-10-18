@@ -5,6 +5,30 @@ in hierarchical LLM systems. Everything for this study lives in this directory.
 Work and commits stay on `main`. The latest continuation request authorizes pushing
 completed changes; background completion automation still only commits locally.
 
+**Completed-evidence manuscript revision, 18 October 2026 UTC:** the draft now
+centers on the complete two-model main evaluation: **192 independent base pairs
+shared across models, 27,648 decision trajectories, and 55,296 accepted calls**.
+The complete [single-file source](manuscript/main.tex) and [review PDF](manuscript/main.pdf)
+contain 17 main-text pages, 22 pages total, six figures, 20 checked references,
+and a 194-word abstract. The whole PDF has been visually inspected.
+
+The main, six-pair root diagnostic, and 48-pair Qwen3 mechanism results reproduce
+from the local archive. A new CPU-only analysis compares treatment transitions
+with existing stochastic repetitions. An analysis-only bootstrap ordering fix is
+versioned separately and preserves the original results. No GPU experiments,
+server recovery, or design changes were made during this writing revision.
+Optional unfinished studies are excluded from the article's evidence, rather
+than represented as pending result tables. Human scientific review remains necessary.
+
+See [MANUSCRIPT_STATUS.md](MANUSCRIPT_STATUS.md) for findings, exact reproduction
+commands, source mappings, and remaining scientific questions, and
+[REFERENCE_VERIFICATION.md](REFERENCE_VERIFICATION.md) for primary-source checks.
+The updater preserves the one-file source and its fixed completed-evidence scope.
+The rest of this README contains dated implementation and execution history.
+Present-tense runtime statements below describe those checkpoints, not live status.
+
+## Historical execution and development notes
+
 **Allowance amendment, 17 October 2026 UTC:** the user increased the cumulative
 additional-experiment allowance from two to **eight hours (28,800 seconds)**.
 The prior 500.03 seconds remain charged, leaving **28,299.97 seconds** at the

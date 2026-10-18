@@ -1,0 +1,21 @@
+transport,model,kind,policy,contrast,estimate,lower,upper,clusters,cluster_sd,degenerate_bootstrap,baseline_accuracy,repeated_accuracy,matched_contexts,trajectories,calls,improvements,regressions,unchanged,movement_denominator
+frozen_summaries,qwen3,schedule,ordinary,objective0 - F,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.6666666666666666,0.75,12,24,24,1,0,11,12
+frozen_summaries,qwen3,schedule,ordinary,objective1 - F,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.6666666666666666,0.75,12,24,24,1,0,11,12
+frozen_summaries,qwen3,schedule,ordinary,objective2 - F,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.6666666666666666,0.75,12,24,24,1,0,11,12
+frozen_summaries,qwen3,schedule,ordinary,constraint - F,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.6666666666666666,0.75,12,24,24,1,0,11,12
+frozen_summaries,qwen3,schedule,ordinary,uniform_objectives - F,0.3333333333333333,0.08333333333333333,0.6666666666666666,6,0.408248290463863,False,0.6666666666666666,1.0,12,24,24,4,0,8,0
+frozen_summaries,qwen3,schedule,ordinary,neutral - F,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.6666666666666666,0.75,12,24,24,1,0,11,0
+frozen_summaries,qwen3,schedule,ordinary,end - F,0.0,0.0,0.0,6,0.0,True,0.6666666666666666,0.6666666666666666,12,24,24,0,0,12,12
+frozen_summaries,qwen3,schedule,ordinary,uniform_objectives - objective0,0.25,0.0,0.5833333333333334,6,0.4183300132670378,False,0.75,1.0,12,24,24,3,0,9,0
+frozen_summaries,qwen3,schedule,ordinary,uniform_objectives - objective1,0.25,0.0,0.5833333333333334,6,0.4183300132670378,False,0.75,1.0,12,24,24,3,0,9,0
+frozen_summaries,qwen3,schedule,ordinary,uniform_objectives - objective2,0.25,0.0,0.5833333333333334,6,0.4183300132670378,False,0.75,1.0,12,24,24,3,0,9,0
+lossless,qwen3,schedule,ordinary,objective0 - F,-0.08333333333333333,-0.25,0.0,6,0.2041241452319315,False,1.0,0.9166666666666666,12,24,24,0,1,11,12
+lossless,qwen3,schedule,ordinary,objective1 - F,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,12
+lossless,qwen3,schedule,ordinary,objective2 - F,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,12
+lossless,qwen3,schedule,ordinary,constraint - F,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,12
+lossless,qwen3,schedule,ordinary,uniform_objectives - F,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,0
+lossless,qwen3,schedule,ordinary,neutral - F,-0.08333333333333333,-0.25,0.0,6,0.2041241452319315,False,1.0,0.9166666666666666,12,24,24,0,1,11,0
+lossless,qwen3,schedule,ordinary,end - F,-0.08333333333333333,-0.25,0.0,6,0.2041241452319315,False,1.0,0.9166666666666666,12,24,24,0,1,11,12
+lossless,qwen3,schedule,ordinary,uniform_objectives - objective0,0.08333333333333333,0.0,0.25,6,0.2041241452319315,False,0.9166666666666666,1.0,12,24,24,1,0,11,0
+lossless,qwen3,schedule,ordinary,uniform_objectives - objective1,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,0
+lossless,qwen3,schedule,ordinary,uniform_objectives - objective2,0.0,0.0,0.0,6,0.0,True,1.0,1.0,12,24,24,0,0,12,0

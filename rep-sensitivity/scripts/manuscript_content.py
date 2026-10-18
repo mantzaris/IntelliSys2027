@@ -82,6 +82,13 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def reference_record(text=None):
+    text = PAPER.read_text() if text is None else text
+    version = re.search(r'^% MANUSCRIPT_VERSION: (\d+)\s*$', text, re.M)
+    number = version.group(1) if version else '6'
+    return ROOT / f'records/reference-verification-v{number}.json'
+
+
 def refresh():
     # Imported lazily so that report builders can keep their existing CPU-only
     # entry points without circular imports or changes to frozen experiment code.
@@ -96,7 +103,7 @@ def compile_if_changed():
     Partial-stage reporting never changes the full-study completion gate.
     """
     assets = [PAPER, *sorted(p for p in PAPER.parent.glob('*.pdf') if p.name != 'main.pdf'),
-              ROOT / 'scripts/check_manuscript.py', ROOT / 'records/reference-verification-v6.json']
+              ROOT / 'scripts/check_manuscript.py', reference_record()]
     signature = hashlib.sha256(''.join(sha(p) for p in assets).encode()).hexdigest()
     marker = ROOT / 'artifacts/manuscript-compiled.json'
     if marker.exists() and (PAPER.parent / 'main.pdf').exists():

@@ -69,7 +69,7 @@ def repetition_values(rows, condition=None, interaction=False, pair_failure=Fals
         else: effects[key[0]].append(harm)
     if interaction:
         return {p: average(effects[(p,"hierarchical")])-average(effects[(p,"flat")])
-                for p in {k[0] for k in effects} if (p,"hierarchical") in effects and (p,"flat") in effects}
+                for p in sorted({k[0] for k in effects}) if (p,"hierarchical") in effects and (p,"flat") in effects}
     return {p: average(v) for p,v in effects.items()}
 
 

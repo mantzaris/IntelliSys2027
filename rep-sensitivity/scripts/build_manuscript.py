@@ -321,6 +321,9 @@ def future_results():
 
 
 def build():
+    if '% MANUSCRIPT_VERSION: 7' in PAPER.read_text():
+        from build_completed_manuscript import build as completed_build
+        return completed_build()
     TRACE.clear()
     p=read('pilot-interpretation-v2')
     v=read('validation-repetition-v1')
