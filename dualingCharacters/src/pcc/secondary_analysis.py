@@ -8,6 +8,7 @@ from .analysis import paired_success
 from .diagnostics import jsonlines, trace_path
 from .environment import make_family
 from .resources import sha256
+from .eligibility import exclusions
 from .study_analysis import write_csv
 
 
@@ -31,12 +32,12 @@ def final_diagnostics(row: dict, horizon: int) -> dict:
 
 def analyze(root: Path):
     tables=root/"reports/tables";tables.mkdir(parents=True,exist_ok=True)
-    transfer=[];diagnostics=[];failures=defaultdict(list);recovery=[];external=[];trace=[]
+    transfer=[];diagnostics=[];failures=defaultdict(list);recovery=[];external=[];trace=[];excluded=exclusions(root)
     freeze_path=root/"configs/freeze.json"
     subset={f"test-{i:04d}" for i in json.loads(freeze_path.read_text())["plan"]["extension_family_numbers"]} if freeze_path.exists() else set()
     for status_path in sorted((root/"artifacts/runs").glob("*/status.json")):
         meta=json.loads(status_path.read_text());run=status_path.parent;name=run.name
-        if meta["status"]!="completed" or meta["config"]["phase"]!="confirmatory":continue
+        if meta["status"]!="completed" or meta["config"]["phase"]!="confirmatory" or name in excluded:continue
         cfg=meta["config"];identity={"run_id":name,"model":cfg["model"],"condition":cfg["condition"],"seed":cfg["seed"]}
         summary=run/"evaluation_summary.json"
         if summary.exists():

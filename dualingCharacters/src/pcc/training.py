@@ -6,6 +6,19 @@ import random
 import time
 from .backend import Backbone
 from .resources import append_json
+from .schemas import defender_schema
+
+
+def serialize_completion(completion: dict) -> str:
+    """Use the public decoding grammar's order, independent of JSONL key order.
+
+    Values and labels are unchanged. Reject extra/missing fields rather than
+    silently dropping supervision outside the actual inference interface.
+    """
+    fields=list(defender_schema()["properties"])
+    if set(completion)!=set(fields):
+        raise ValueError("Training completion fields differ from the inference schema")
+    return json.dumps({field:completion[field] for field in fields},separators=(",",":"))
 
 
 def select_supervision(backbone: Backbone, windows: list[dict], path: Path,
@@ -97,7 +110,7 @@ def train(backbone: Backbone, examples: list[dict], output: Path, steps: int | N
             item=next(stream);key=(item["family_id"],item["world"],item["turn"])
             seen[key]=seen.get(key,0)+1
             prefix=backbone.prompt_ids(item["messages"])
-            completion=json.dumps(item["completion"],separators=(",",":"))
+            completion=serialize_completion(item["completion"])
             suffix=backbone.tokenizer.encode(completion,add_special_tokens=False)+[backbone.tokenizer.eos_token_id]
             ids_buffer.extend(prefix+suffix);labels_buffer.extend([-100]*len(prefix)+suffix)
             segments_buffer.extend([segment_number]*(len(prefix)+len(suffix)))
@@ -144,6 +157,7 @@ def train(backbone: Backbone, examples: list[dict], output: Path, steps: int | N
             "supervised_tokens":supervised_tokens,"unique_windows":len(seen),"reused_windows":sum(v-1 for v in seen.values()),
             "seconds":time.monotonic()-started,"initial_checksums":before,"final_checksums":after,
             "adapter_changed":before.get("adapter_model.safetensors")!=after.get("adapter_model.safetensors"),
+            "completion_serialization":"public_defender_schema_order_v1",
             "pilot_unbalanced_mixture":pilot_allow_unbalanced,
             "packing":"Block-diagonal causal attention isolates windows; prompt loss masked; orphaned suffix loss masked; exact nonpadding input quota"}
     (output/"training_summary.json").write_text(json.dumps(report,indent=2)+"\n")

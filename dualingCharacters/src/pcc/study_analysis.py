@@ -7,6 +7,7 @@ import statistics
 import numpy as np
 from .analysis import paired_success, contrast, holm
 from .resources import sha256
+from .eligibility import exclusions
 
 
 def write_csv(path: Path,rows: list[dict]):
@@ -29,12 +30,13 @@ def family_signflip_p(left: list[dict],right: list[dict],draws: int=20000) -> fl
 def analyze(root: Path):
     out=root/"reports/tables";out.mkdir(parents=True,exist_ok=True)
     groups=defaultdict(list);resources=defaultdict(lambda:defaultdict(float));trace=[]
+    excluded=exclusions(root)
     for status_path in sorted((root/"artifacts/runs").glob("main-*/status.json")):
         status=json.loads(status_path.read_text());cfg=status["config"];key=(cfg["model"],cfg["condition"])
         for field in ("gpu_reserved_seconds","input_tokens","output_tokens","train_tokens"):
             resources[key][field]+=status.get(field,0)
         path=status_path.parent/"evaluation_summary.json"
-        if status["status"]!="completed" or not path.exists():continue
+        if status["status"]!="completed" or not path.exists() or status["run_id"] in excluded:continue
         rows=json.loads(path.read_text());groups[key].extend(rows)
         trace.append({"run_id":status["run_id"],"path":str(path.relative_to(root)),"sha256":sha256(path),
                       "model_revision":status["model_revision"],"code_commit":status["code_commit"],"dataset_hash":status["dataset_hash"]})

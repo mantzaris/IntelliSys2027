@@ -11,7 +11,7 @@ import os
 import random
 import shutil
 import time
-from pcc.campaign import jobs
+from pcc.campaign import jobs, load_overrides
 from pcc.config import RunConfig
 from pcc.environment import OPTIONS, digest, make_family
 from pcc.freeze import verify_freeze
@@ -33,8 +33,7 @@ def specification(root: Path) -> tuple[dict, dict]:
 
 
 def resolved_run(root: Path, original: str) -> str:
-    path=root/"artifacts/campaign_resume.json"
-    overrides=json.loads(path.read_text()) if path.exists() else {}
+    overrides=load_overrides(root)
     return overrides.get(original,{}).get("run_id",original)
 
 

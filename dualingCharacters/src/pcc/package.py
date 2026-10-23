@@ -10,9 +10,11 @@ from .diagnostics import jsonlines
 from .resources import sha256, used_seconds
 from .study_analysis import analyze as main_analysis
 from .secondary_analysis import analyze as secondary_analysis
+from .eligibility import exclusions
 
 
 def regenerate(root: Path):
+    excluded=exclusions(root)
     from .reporting import generate
     from .mechanism_analysis import audit
     from .validation import human_packet
@@ -38,12 +40,12 @@ def regenerate(root: Path):
         path=root/"artifacts/runs"/name/"evaluation_summary.json"
         if path.exists():
             rows=json.loads(path.read_text());pairs=paired_success(rows)
-            pilots.append({"run_id":name,"paired_success":statistics.mean(pairs.values()),"families":len(pairs),"conversation_success":statistics.mean(r["success"] for r in rows),"sha256":sha256(path)})
+            pilots.append({"run_id":name,"paired_success":statistics.mean(pairs.values()),"families":len(pairs),"conversation_success":statistics.mean(r["success"] for r in rows),"sha256":sha256(path),"excluded":name in excluded,"qualification":excluded.get(name,"Untrained pilot reference")})
     (root/"reports/tables/matched_pilots.json").write_text(json.dumps(pilots,indent=2)+"\n")
     c3=root/"artifacts/runs/pilot-v4-qwen-c3-eval/evaluation_summary.json";c5=root/"artifacts/runs/pilot-v4-qwen-c5-eval/evaluation_summary.json"
     effect=contrast(json.loads(c5.read_text()),json.loads(c3.read_text())) if c3.exists() and c5.exists() else None
     if effect:
-        effect["qualification"]="One-seed 16-family pilot at 32 turns; concatenated training packing and pre-final alias history. Not the confirmatory estimand."
+        effect["qualification"]="Excluded intended-method efficacy: saved-target/inference field-order mismatch (amendment 002). Historical engineering measurement only; concatenated packing and pre-final alias history also differ."
         (root/"reports/tables/matched_pilot_contrast.json").write_text(json.dumps(effect,indent=2)+"\n")
     os.environ.setdefault("MPLCONFIGDIR",str(root/"artifacts/matplotlib-cache"))
     import matplotlib
@@ -88,7 +90,7 @@ def regenerate(root: Path):
         for condition in ("C1","C3","C4","C5","C6","A1","A2","A3","C2"):
             points=defaultdict(list)
             for meta in statuses:
-                if not meta["run_id"].startswith(f"main-{model}-") or meta["status"]!="completed" or meta["config"]["condition"]!=condition:continue
+                if not meta["run_id"].startswith(f"main-{model}-") or meta["status"]!="completed" or meta["config"]["condition"]!=condition or meta["run_id"] in excluded:continue
                 path=root/"artifacts/runs"/meta["run_id"]/"training/loss.jsonl"
                 if not path.exists():continue
                 round_index=1 if "-r1-" in meta["run_id"] else 0
@@ -103,9 +105,9 @@ def regenerate(root: Path):
     (root/"reports/tables/main_training_trace.json").write_text(json.dumps(loss_trace,indent=2)+"\n")
     lines=["# Author-review evidence package","","This is not a submission-ready paper. Human scientific review remains required.","",
            f"Measured reservation: {resources['reserved_gpu_hours']:.3f} GPU-hours; inference {resources['inference_input_tokens']:,} input and {resources['generated_output_tokens']:,} output tokens; {resources['training_input_tokens']:,} training input tokens. Actual dollar cost is unknown.","",
-           "## Matched learning pilots (one seed; 32 turns)","","| Run | Paired success | Conversations |","|---|---:|---:|"]
+           "## Historical pilots (trained entries excluded for serialization mismatch)","","| Run | Paired success | Conversations |","|---|---:|---:|"]
     for r in pilots:lines.append(f"| {r['run_id']} | {r['paired_success']:.4f} ({r['families']} families) | {r['conversation_success']:.4f} |")
-    if effect:lines.extend(["",f"Exploratory C5−C3 difference {effect['difference']:+.4f}, 95% family interval [{effect['ci95'][0]:+.4f}, {effect['ci95'][1]:+.4f}]. This does not estimate training-seed variation or establish H1."])
+    if effect:lines.extend(["",f"Excluded-format pilot C5−C3 difference {effect['difference']:+.4f}, 95% family interval [{effect['ci95'][0]:+.4f}, {effect['ci95'][1]:+.4f}]. These trained pilots are invalid intended-method efficacy evidence due to the serialization mismatch; all measurements remain for audit."])
     lines.extend(["","## Main grid","","| Model | Condition | Seeds | Paired success | Status |","|---|---|---:|---:|---|"])
     for r in main:lines.append(f"| {r['model']} | {r['condition']} | {r['executed_seeds']} | {r['paired_success'] if r['paired_success'] is not None else '—'} | {r['status']} |")
     for result in contrasts:lines.append(f"\n{result['model']} {result['contrast']}: {result['difference']:+.4f}, paired seed/family interval {result['ci95']}; {result['seeds']} seeds.")
@@ -115,13 +117,13 @@ def regenerate(root: Path):
                   "Empty tables and panels identify unexecuted requirements. The actual run registry, not queued commands, determines completion.","",
                   "Regenerate: `PYTHONPATH=src .venv/bin/python -m pcc.package`, then `bash scripts/build_paper.sh`."])
     (root/"reports/AUTHOR_REVIEW.md").write_text("\n".join(lines)+"\n")
-    tex=[r"\begin{table}[ht]\centering",r"\caption{Matched engineering pilots: one seed, 16 paired families, 32 turns.}",
+    tex=[r"\begin{table}[ht]\centering",r"\caption{Historical pilots: trained entries excluded for target-serialization mismatch; one seed, 16 paired families, 32 turns.}",
          r"\begin{tabular}{llrr}\toprule Model & Condition & Paired & Per conversation\\\midrule"]
     for r in pilots:
         model="Qwen" if "qwen" in r["run_id"] else "Phi"
         condition="Base" if r["run_id"].endswith("base") else "C3" if "-c3-" in r["run_id"] else "C5"
         tex.append(f"{model} & {condition} & {r['paired_success']:.4f} & {r['conversation_success']:.4f}\\\\")
-    tex.extend([r"\bottomrule\end{tabular}\end{table}","These pilots precede the final packed-attention and source-coverage controls. They are not confirmatory tests."])
+    tex.extend([r"\bottomrule\end{tabular}\end{table}","The trained entries used a target field order incompatible with inference decoding and cannot establish intended-method efficacy. Values remain visible for audit. These runs also precede final packed-attention and source-coverage controls."])
     (root/"paper/generated_matched_pilots.tex").write_text("\n".join(tex)+"\n")
     tex=[r"\begin{table}[ht]\centering",r"\caption{Main grid: missing cells are pending, not zero results.}",
          r"\begin{tabular}{llrrr}\toprule Model & Condition & Seeds & Paired mean & Seed SD\\\midrule"]
@@ -136,7 +138,7 @@ def regenerate(root: Path):
     abstract=(f"The executed primary contrast estimates an absolute paired-success difference of {primary['difference']:+.4f}, with a 95\\% paired seed/family interval [{primary['ci95'][0]:+.4f}, {primary['ci95'][1]:+.4f}]. " if primary else "Confirmatory results remain pending. ")
     (root/"paper/generated_abstract_results.tex").write_text(abstract+"\n")
     frozen=(root/"configs/freeze.json").exists()
-    (root/"paper/generated_design.tex").write_text(("The plan was locally hash-frozen before test access. " if frozen else "The plan has not yet been hash-frozen. ")+"The specified grid uses 240 paired families at 64 turns, three training seeds per main condition, and two fixed-token training rounds.\n")
+    (root/"paper/generated_design.tex").write_text(("The initial plan was locally hash-frozen before test access. Logged amendments repaired archive handling and training-target field order; affected runs were excluded before completed trained-test metrics were inspected. Original freezes and artifacts are retained. " if frozen else "The plan has not yet been hash-frozen. ")+"The specified grid uses 240 paired families at 64 turns, three training seeds per main condition, and two fixed-token training rounds.\n")
     return resources
 
 

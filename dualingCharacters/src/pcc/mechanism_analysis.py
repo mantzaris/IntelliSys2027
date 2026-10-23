@@ -6,6 +6,7 @@ import statistics
 from .analysis import paired_success
 from .diagnostics import jsonlines, trace_path
 from .resources import sha256
+from .eligibility import exclusions
 
 
 def audit(root: Path,run_id: str="mechanism-v3-001") -> dict:
@@ -69,11 +70,11 @@ def main_audit(root: Path) -> list[dict]:
     These are on-policy observational diagnostics, not causal estimates of the
     effect of an action. Differing intervention severity remains a confound.
     """
-    results=[];traces={}
+    results=[];traces={};excluded=exclusions(root)
     for status_path in sorted((root/"artifacts/runs").glob("main-*/status.json")):
         status=json.loads(status_path.read_text());run=status_path.parent
         path=trace_path(run/"collection.jsonl")
-        if status["status"]!="completed" or not path.exists():continue
+        if status["status"]!="completed" or not path.exists() or run.name in excluded:continue
         turns=jsonlines(path);actions=jsonlines(run/"collection_characters.jsonl")
         by_turn={(r["family_id"],r["world"],r["turn"]):r for r in turns}
         grouped=defaultdict(list)

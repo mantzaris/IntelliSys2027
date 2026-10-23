@@ -17,6 +17,43 @@ import fcntl
 from .config import RunConfig
 from .resources import sha256, used_seconds
 from .freeze import verify_freeze
+from .eligibility import exclusions
+
+
+def load_overrides(root: Path) -> dict:
+    """Separate ordinary failure recovery from explicitly excluded completed runs."""
+    path=root/"artifacts/campaign_resume.json"
+    overrides=json.loads(path.read_text()) if path.exists() else {}
+    restart_path=root/"configs/serialization_restarts.json"
+    restarts=json.loads(restart_path.read_text()) if restart_path.exists() else {}
+    excluded=exclusions(root)
+    for original,entry in restarts.items():
+        if original in overrides:raise ValueError("Ambiguous infrastructure/serialization override")
+        if set(entry)!={"run_id","reason","amendment"} or not entry["reason"]:
+            raise ValueError("Serialization restarts require a recorded reason and amendment")
+        if original not in excluded:raise ValueError("Completed scientific restart requires an explicit exclusion")
+        if not (root/entry["amendment"]).is_file():raise ValueError("Missing restart amendment")
+        if entry["run_id"]!=original+"-format2":raise ValueError("Serialization restart may only append its fixed suffix")
+        overrides[original]=entry
+    for original,entry in overrides.items():
+        allowed={"run_id","reason","amendment"} if original in restarts else {"run_id","reason","checkpoint"}
+        if set(entry)-allowed or not entry.get("reason"):
+            raise ValueError("Resume overrides may not change experimental choices")
+        status=root/"artifacts/runs"/original/"status.json"
+        if status.exists() and json.loads(status.read_text())["status"]=="completed" and original not in restarts:
+            raise ValueError("A completed run cannot be replaced through an infrastructure resume")
+    return overrides
+
+
+def resolve_job(job: dict, overrides: dict) -> dict:
+    """Resolve only identifiers and artifact paths; preserve every design field."""
+    resolved=dict(job)
+    resolved["id"]=overrides.get(job["id"],{}).get("run_id",job["id"])
+    for field in ("adapter","supervision","snapshot_source"):
+        if not resolved.get(field):continue
+        for original,entry in overrides.items():
+            resolved[field]=resolved[field].replace(f"artifacts/runs/{original}/",f"artifacts/runs/{entry['run_id']}/")
+    return resolved
 
 
 def jobs(plan: dict):
@@ -102,24 +139,14 @@ def main():
     subprocess.run(["rsync","-az","-e",shlex.join(ssh),str(root/"artifacts/public_assets")+"/",f"root@{host}:{remote}/artifacts/public_assets/"],check=True)
     config_dir=root/"artifacts/campaign_configs";config_dir.mkdir(parents=True,exist_ok=True)
     state_path=root/"artifacts/campaign_state.json"
-    overrides_path=root/"artifacts/campaign_resume.json"
-    overrides=json.loads(overrides_path.read_text()) if overrides_path.exists() else {}
+    overrides=load_overrides(root)
     for job in queue:
         hold=root/"artifacts/campaign_boundary_hold.json"
         if hold.exists():
             raise RuntimeError("Infrastructure hold before another GPU stage: "+json.loads(hold.read_text())["reason"])
         original_id=job["id"]
         override=overrides.get(original_id,{})
-        if set(override)-{"run_id","checkpoint","reason"}:raise ValueError("Resume overrides may not change experimental choices")
-        if override and not override.get("reason"):raise ValueError("Resume requires a logged infrastructure reason")
-        if override:
-            original_status=root/"artifacts/runs"/original_id/"status.json"
-            if original_status.exists() and json.loads(original_status.read_text())["status"]=="completed":raise ValueError("A completed run cannot be replaced through an infrastructure resume")
-            job["id"]=override["run_id"]
-        for field in ("adapter","supervision","snapshot_source"):
-            if not job.get(field):continue
-            for source,replacement in overrides.items():
-                job[field]=job[field].replace(f"artifacts/runs/{source}/",f"artifacts/runs/{replacement['run_id']}/")
+        job=resolve_job(job,overrides)
         if shutil.disk_usage(root).free<3*1024**3:raise RuntimeError("Less than 3 GiB local space remains; preserve artifacts and stop for storage review")
         status=root/"artifacts/runs"/job["id"]/"status.json"
         if status.exists():

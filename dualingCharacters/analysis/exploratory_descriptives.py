@@ -12,6 +12,7 @@ import json
 import statistics
 from pcc.analysis import paired_success
 from pcc.resources import sha256
+from pcc.eligibility import exclusions
 
 
 def write_table(path: Path, rows: list[dict]):
@@ -23,6 +24,7 @@ def write_table(path: Path, rows: list[dict]):
 
 
 def regenerate(root: Path):
+    excluded=exclusions(root)
     out=root/"reports/tables";out.mkdir(parents=True,exist_ok=True)
     inputs={};cells=[];domains=[];exposure=[];resources=[];collections={}
     statuses=[]
@@ -56,7 +58,7 @@ def regenerate(root: Path):
                           "peak_vram_GiB":meta["peak_vram_bytes"]/2**30,
                           "vram_definition":meta.get("vram_measurement","torch allocated peak"),
                           "known_cost_usd":meta.get("known_cost_usd"),"source_commit":meta["code_commit"]})
-        if meta["status"]!="completed" or cfg["phase"]!="confirmatory":continue
+        if meta["status"]!="completed" or cfg["phase"]!="confirmatory" or run.name in excluded:continue
         training=run/"training/training_summary.json"
         if training.exists():
             report=read(training);key=(cfg["model"],cfg["condition"],cfg["seed"],meta.get("supervision_sha256"))

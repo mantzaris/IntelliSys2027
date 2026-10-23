@@ -1,0 +1,22 @@
+{
+  "main-qwen-c1-17-r0-fit": {
+    "run_id": "main-qwen-c1-17-r0-fit-format2",
+    "reason": "CPU-proven saved-target/inference field-order mismatch; same design, original artifacts retained.",
+    "amendment": "reports/SERIALIZATION_AMENDMENT_002.md"
+  },
+  "main-qwen-c1-17-r1-collect": {
+    "run_id": "main-qwen-c1-17-r1-collect-format2",
+    "reason": "CPU-proven saved-target/inference field-order mismatch; same design, original artifacts retained.",
+    "amendment": "reports/SERIALIZATION_AMENDMENT_002.md"
+  },
+  "main-qwen-c1-17-r1-fit": {
+    "run_id": "main-qwen-c1-17-r1-fit-format2",
+    "reason": "CPU-proven saved-target/inference field-order mismatch; same design, original artifacts retained.",
+    "amendment": "reports/SERIALIZATION_AMENDMENT_002.md"
+  },
+  "main-qwen-c1-17-eval": {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "reason": "CPU-proven saved-target/inference field-order mismatch; same design, original artifacts retained.",
+    "amendment": "reports/SERIALIZATION_AMENDMENT_002.md"
+  }
+}

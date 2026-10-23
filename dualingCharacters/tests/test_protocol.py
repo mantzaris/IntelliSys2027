@@ -128,3 +128,59 @@ def test_completed_trace_missing_turns_is_not_archived(tmp_path):
     with pytest.raises(ValueError,match="row count"):
         compact_completed(tmp_path)
     assert source.exists() and not source.with_suffix(".jsonl.gz").exists()
+
+
+def test_persisted_supervision_matches_public_decoding_order(tmp_path):
+    from itertools import permutations
+    from pcc.training import serialize_completion
+    from pcc.resources import append_json
+    from pcc.schemas import defender_schema
+    # Exercise the actual persistence boundary which alphabetizes JSON keys.
+    target={"state":[None]*6,"plan":[None]*8,"evidence":[None]*6,"clarify":[]}
+    path=tmp_path/"supervision.jsonl"
+    append_json(path,{"completion":target})
+    loaded=json.loads(path.read_text())["completion"]
+    assert list(loaded)!=list(defender_schema()["properties"])
+    expected=serialize_completion(target)
+    for order in permutations(target):
+        actual=serialize_completion({key:loaded[key] for key in order})
+        assert actual==expected
+        assert json.loads(actual)==target
+        assert list(json.loads(actual))==list(defender_schema()["properties"])
+    with pytest.raises(ValueError):serialize_completion({**target,"oracle_score":1})
+    with pytest.raises(ValueError):serialize_completion({k:v for k,v in target.items() if k!="evidence"})
+
+
+def test_completed_restart_requires_exclusion_and_preserves_design(tmp_path):
+    from pcc.campaign import load_overrides,resolve_job
+    configs=tmp_path/"configs";configs.mkdir()
+    run=tmp_path/"artifacts/runs/original";run.mkdir(parents=True)
+    (run/"status.json").write_text(json.dumps({"status":"completed"}))
+    entry={"run_id":"original-format2","reason":"audited interface defect","amendment":"amendment.md"}
+    (configs/"serialization_restarts.json").write_text(json.dumps({"original":entry}))
+    (tmp_path/"amendment.md").write_text("Preserved prior attempt; no outcome-based change.")
+    with pytest.raises(ValueError,match="explicit exclusion"):load_overrides(tmp_path)
+    (configs/"run_exclusions.json").write_text(json.dumps({"original":"interface defect"}))
+    overrides=load_overrides(tmp_path)
+    job={"id":"next","model":"qwen","seed":17,"families":240,"horizon":64,"adapter":"artifacts/runs/original/training/final"}
+    result=resolve_job(job,overrides)
+    assert result=={**job,"adapter":"artifacts/runs/original-format2/training/final"}
+    assert resolve_job({**job,"id":"original"},overrides)["id"]=="original-format2"
+    (configs/"serialization_restarts.json").unlink()
+    (tmp_path/"artifacts/campaign_resume.json").write_text(json.dumps({"original":{"run_id":"replacement","reason":"routine retry"}}))
+    with pytest.raises(ValueError,match="completed run"):load_overrides(tmp_path)
+
+
+def test_excluded_result_does_not_enter_primary_but_cost_is_counted(tmp_path):
+    from pcc.study_analysis import analyze
+    (tmp_path/"configs").mkdir()
+    run=tmp_path/"artifacts/runs/main-qwen-c1-17-eval";run.mkdir(parents=True)
+    (tmp_path/"configs/run_exclusions.json").write_text(json.dumps({run.name:"interface defect"}))
+    (run/"status.json").write_text(json.dumps({"run_id":run.name,"status":"completed","config":{"model":"qwen","condition":"C1"},"gpu_reserved_seconds":123,"train_tokens":4096}))
+    # Deliberately invalid metric data must never be read into analysis.
+    (run/"evaluation_summary.json").write_text('not eligible metric data')
+    rows,contrasts=analyze(tmp_path)
+    row=next(x for x in rows if x["model"]=="qwen" and x["condition"]=="C1")
+    assert row["paired_success"] is None and row["executed_seeds"]==0
+    assert row["gpu_reserved_seconds"]==123 and row["train_tokens"]==4096
+    assert not contrasts

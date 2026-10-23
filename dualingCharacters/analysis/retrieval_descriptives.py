@@ -9,16 +9,18 @@ import json
 from pcc.diagnostics import trace_path
 from pcc.analysis import paired_success
 from pcc.resources import sha256
+from pcc.eligibility import exclusions
 from pcc.study_analysis import write_csv
 
 
 def regenerate(root: Path):
+    excluded=exclusions(root)
     rows=[];inputs={};snapshots=[]
     freeze=root/"configs/freeze.json";selected_families={f"test-{i:04d}" for i in json.loads(freeze.read_text())["plan"]["extension_family_numbers"]}
     inputs[str(freeze.relative_to(root))]=sha256(freeze)
     for status in sorted((root/"artifacts/runs").glob("*/status.json")):
         meta=json.loads(status.read_text());run=status.parent;cfg=meta["config"]
-        if meta["status"]!="completed" or cfg["phase"]!="confirmatory":continue
+        if meta["status"]!="completed" or cfg["phase"]!="confirmatory" or run.name in excluded:continue
         summary=run/"evaluation_summary.json"
         if not summary.exists():continue
         summary_rows=json.loads(summary.read_text())

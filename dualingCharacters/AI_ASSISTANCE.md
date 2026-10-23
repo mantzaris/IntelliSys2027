@@ -26,3 +26,5 @@ The IntelliSys AI policy and template were checked against the current official
 site on 2026-10-23; see `paper/CONFERENCE_REQUIREMENTS.md`. This package is an author-review artifact, not an unattended compliant final
 submission. Human authors must own and check scientific ideas, arguments, results,
 and conclusions and accurately disclose AI assistance. No submission is authorized.
+
+| 2026-10-23 | Detected a saved-target/inference JSON order mismatch with a CPU grammar audit before completed trained-test metrics were inspected; held the queue, recorded explicit exclusions and began a serialization-only training repair and pilot verification | Pending |

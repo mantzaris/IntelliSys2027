@@ -35,3 +35,5 @@
 
 Proposed interpretations and implementation decisions are reviewable by the author.
 This log does not imply human endorsement of AI-generated scientific arguments.
+
+| D031 | 2026-10-23 19:59 UTC | Hold the queue after the first C1 test because a CPU grammar audit proves all 1,568 saved targets use a disallowed field order. Repair target serialization, retain all costs and invalid artifacts, rerun affected C1 stages with fixed identifiers, and use pilot-only format gates before resuming the unchanged scientific design. Original C1 round-zero collection and both untrained baselines remain eligible. | Amendment 002; author review pending; decision made before completed trained-test metrics were inspected |
