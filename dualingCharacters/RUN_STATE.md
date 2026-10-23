@@ -5,16 +5,22 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Current phase
 
-Infrastructure amendment in progress during the first two baseline evaluations.
-Qwen base completed; Phi base is running under the original frozen source.
-`reports/INFRASTRUCTURE_AMENDMENT_001.md` records a local stale-prefix compression
-bug; the pod's complete outputs are intact and the Qwen mirror has been restored.
-A temporary directory gate at
-`artifacts/campaign_configs/main-qwen-c1-17-r0-collect.json` prevents the old
-controller starting training after Phi finishes. Do not mistake this for a run.
-The marker `artifacts/campaign_boundary_hold.json` explains the hold. Finish the
-current GPU stage, verify mirrors, remove only the documented gate/marker, and
-restart the controller with the recorded infrastructure amendment.
+Infrastructure amendment 001 is resolved. Both baseline evaluations completed
+under the original frozen scientific code. Their local archives were restored
+from intact pod originals and verified at 30,720 turn records each; see
+`reports/tables/archive_integrity_001.json`. Qwen base paired success is 67/240;
+Phi base is 27/240. These are untrained baselines, not learning effects.
+The old controller ended at the planned stage boundary. The temporary directory
+gate and hold marker were removed after verification; their release record is
+`artifacts/infrastructure_hold_001_released.json`. Resume uses source commit
+`a1f43934d220f0733643daf4aaa26b8891605475` and amended freeze SHA256
+`7a08b91e1e881a9780b30216f18711995fde48c54c1da17402d7688457c4cde2`.
+The original freeze remains in `configs/freeze_original.json`. No experimental
+choices changed. The queue is resuming at `main-qwen-c1-17-r0-collect`.
+The resumed local controller uses unified execution session `67629`; session
+`38552` ended at the documented hold. Its log continues in
+`artifacts/campaign_controller.log`. Inspect the lock/current stage before any
+restart; do not start a duplicate GPU queue.
 
 Phase C: plan hash-frozen; starting the serialized confirmatory campaign. Real GPU inference and LoRA learning have executed in
 both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
@@ -130,3 +136,7 @@ local artifacts using `scripts/sync.sh`. Do not call a partial package submissio
 ## Automatic execution update
 
 2026-10-23T18:10:07Z: Campaign stopped incomplete: [Errno 21] Is a directory: '/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/artifacts/campaign_configs/main-qwen-c1-17-r0-collect.json'. See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.
+
+This was the deliberately installed infrastructure boundary hold, not a GPU run
+failure. Both baselines were preserved. Full archive verification and hold release
+completed at 2026-10-23T18:13:48Z, with 3.217735 reserved GPU-hours consumed.

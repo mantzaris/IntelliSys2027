@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-10-23T18:13:48.240255+00:00",
+  "runs": [
+    {
+      "run_id": "base-qwen-eval",
+      "turn_records": 30720,
+      "families": 240,
+      "paired_successes": 67,
+      "paired_success": 0.2791666666666667,
+      "reserved_minutes": 44.553734082115504,
+      "original_sha256": "6238d5f614790bcd77cc82689d9e2f824358c9fe0211c4346fb58bb02d08bf53",
+      "archive_sha256": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089"
+    },
+    {
+      "run_id": "base-phi-eval",
+      "turn_records": 30720,
+      "families": 240,
+      "paired_successes": 27,
+      "paired_success": 0.1125,
+      "reserved_minutes": 43.580095178447664,
+      "original_sha256": "4079865c3da38034e114b4975042df90f7dc9bfd9a777c07d7304f359e57b01a",
+      "archive_sha256": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86"
+    }
+  ],
+  "reserved_gpu_hours_total": 3.2177347473619093,
+  "scientific_plan_unchanged": true,
+  "infrastructure_amendment": "001"
+}

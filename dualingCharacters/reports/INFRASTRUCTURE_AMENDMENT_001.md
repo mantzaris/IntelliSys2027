@@ -49,3 +49,17 @@ replace them. Maintain the original resource ledger, including all elapsed time.
 The updated freeze records this amendment and exact changed-file hashes. The
 queue, hypotheses, model revisions, datasets, seeds, endpoints, character behavior,
 training quotas, checkpoint rule, exclusions and analysis remain unchanged.
+
+## Resolution
+
+The old controller finished Phi, then stopped at the intended configuration gate
+before training. Its cached old compactor briefly left a 30,464-record Phi prefix
+locally; `artifacts/archive_incident_001.json` preserves that observed manifest.
+The pod's complete Phi archive remained intact. A fresh pull restored it, and at
+2026-10-23T18:13:48Z both local archives verified against original-byte and archive
+hashes, with 30,720 turns and 480 conversations each. The compact verification
+record is `reports/tables/archive_integrity_001.json`. The hold was released;
+neither baseline was rerun. The unchanged queue resumes before its first training
+collection, using the amended infrastructure. Any automatically generated
+intermediate descriptive report from the old controller is superseded by
+regeneration from the restored full traces.
