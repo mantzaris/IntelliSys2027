@@ -1,0 +1,37 @@
+[
+  {
+    "run_id": "pilot-v4-qwen-base",
+    "paired_success": 0.375,
+    "families": 16,
+    "conversation_success": 0.4375,
+    "sha256": "543862edcd5f6bcfe8e9dbec4bd9171a2232318ffd569e354f1e1414061d6f88"
+  },
+  {
+    "run_id": "pilot-v4-qwen-c3-eval",
+    "paired_success": 0.3125,
+    "families": 16,
+    "conversation_success": 0.40625,
+    "sha256": "da0ca7e5623f104a36a30050e3aad9a1ac1fdf6afb27713fea6e493d8f694512"
+  },
+  {
+    "run_id": "pilot-v4-qwen-c5-eval",
+    "paired_success": 0.375,
+    "families": 16,
+    "conversation_success": 0.5,
+    "sha256": "00906f7de77b74322bae505674f08c913d090c70e0a0fbaa26fbc1126dffb07f"
+  },
+  {
+    "run_id": "pilot-v4-phi-base",
+    "paired_success": 0.25,
+    "families": 16,
+    "conversation_success": 0.3125,
+    "sha256": "db082cc3ac8ad2e120baeb2822e05255dd526465ca71c64994d0b839dc29f59d"
+  },
+  {
+    "run_id": "pilot-v4-phi-c5-eval",
+    "paired_success": 0.125,
+    "families": 16,
+    "conversation_success": 0.21875,
+    "sha256": "dc17164fe6330699fbf83dba561b27df13d9112f8ae29eafba8018af30fec2fa"
+  }
+]

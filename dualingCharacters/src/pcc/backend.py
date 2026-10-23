@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 import random
 import time
+import os
 from .config import RunConfig
 from .resources import RunLedger, append_json, sha256
 
@@ -107,8 +108,13 @@ class Backbone:
         self.ledger.metadata.update(loaded_adapter_path=str(path),loaded_adapter_sha256=sha256(path/"adapter_model.safetensors"),trainable_parameters=count,total_parameters=total)
 
     def save_adapter(self,path: Path):
+        temporary=path.with_name(path.name+".tmp")
+        temporary.mkdir(parents=True,exist_ok=True)
+        self.model.save_pretrained(temporary,safe_serialization=True)
+        result={p.name:sha256(p) for p in temporary.iterdir() if p.is_file() and p.name!="checksums.json"}
         path.mkdir(parents=True,exist_ok=True)
-        self.model.save_pretrained(path,safe_serialization=True)
-        result={p.name:sha256(p) for p in path.iterdir() if p.is_file()}
+        for source in sorted(temporary.iterdir()):
+            if source.is_file():os.replace(source,path/source.name)
+        temporary.rmdir()
         (path/"checksums.json").write_text(json.dumps(result,indent=2)+"\n")
         return result

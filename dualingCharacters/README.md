@@ -26,6 +26,8 @@ PCC_CODE_COMMIT=$(git rev-parse HEAD) PYTHONPATH=src python -m pcc.cli pilot \
   --config configs/pilot_c5.json --run-id my-c5-pilot --families 4 --horizon 16
 PYTHONPATH=src python -m pcc.cli analyze
 PYTHONPATH=src python -m pcc.diagnostics
+PYTHONPATH=src python -m pcc.package
+bash scripts/build_paper.sh
 ```
 
 These commands run actual GPU inference and LoRA optimization. They create a
@@ -57,3 +59,30 @@ Main results, ablations, external validation, independent-family confirmation,
 human review and final manuscript evidence remain subject to pilot gates. The
 CLI refuses locked-test evaluation without a hashed freeze record. Never create
 that record simply to bypass a failing gate.
+
+## Resumable execution
+
+`pcc.pilot_campaign` and `pcc.final_pilot_checks` are bounded pilot controllers.
+After the evidence gates, measured allocation and analysis hashes are frozen,
+`PYTHONPATH=src .venv/bin/python -m pcc.campaign --dry-run` prints the exact main
+queue; omit `--dry-run` to execute it using the SSH environment variables above.
+The local controller mirrors artifacts every minute and after each stage. It stops
+on errors, unknown GPU occupants, the reservation ceiling or low local storage.
+
+Failed jobs retain their original IDs and cost. To resume a failed training stage,
+record an infrastructure reason and fresh run ID in ignored
+`artifacts/campaign_resume.json`, with the last valid `training/optimizer.pt` path.
+Only `run_id`, `checkpoint` and `reason` are accepted; experimental settings cannot
+be changed through this mechanism. Downstream adapter paths follow the audited
+alias. A completed run cannot be replaced through infrastructure resume.
+
+Example override (use the actual failed run ID and checkpoint):
+
+```json
+{"main-qwen-c3-17-r0-fit":{"run_id":"main-qwen-c3-17-r0-fit-resume1","checkpoint":"artifacts/runs/main-qwen-c3-17-r0-fit/training/optimizer.pt","reason":"Documented infrastructure interruption"}}
+```
+
+Exact source snapshots, model revisions, dataset hashes, configuration and adapter
+checksums accompany later runs. Identical completed safetensors may share local
+hard links; all named artifacts remain available. Active checkpoint writes are
+atomic. No base model or bulk run trace belongs in Git.

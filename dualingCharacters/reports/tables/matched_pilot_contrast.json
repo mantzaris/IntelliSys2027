@@ -1,0 +1,14 @@
+{
+  "difference": 0.0625,
+  "ci95": [
+    -0.1875,
+    0.3125
+  ],
+  "families": 16,
+  "seeds": 1,
+  "per_seed": {
+    "17": 0.0625
+  },
+  "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+  "qualification": "One-seed 16-family pilot at 32 turns; concatenated training packing and pre-final alias history. Not the confirmatory estimand."
+}

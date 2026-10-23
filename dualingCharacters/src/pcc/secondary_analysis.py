@@ -32,6 +32,8 @@ def final_diagnostics(row: dict, horizon: int) -> dict:
 def analyze(root: Path):
     tables=root/"reports/tables";tables.mkdir(parents=True,exist_ok=True)
     transfer=[];diagnostics=[];failures=defaultdict(list);recovery=[];external=[];trace=[]
+    freeze_path=root/"configs/freeze.json"
+    subset={f"test-{i:04d}" for i in json.loads(freeze_path.read_text())["plan"]["extension_family_numbers"]} if freeze_path.exists() else set()
     for status_path in sorted((root/"artifacts/runs").glob("*/status.json")):
         meta=json.loads(status_path.read_text());run=status_path.parent;name=run.name
         if meta["status"]!="completed" or meta["config"]["phase"]!="confirmatory":continue
@@ -42,6 +44,11 @@ def analyze(root: Path):
             transfer.append({**identity,"setting":meta.get("extension","antagonist-free"),"horizon":rows[0]["horizon"],"families":len(paired),
                              "paired_success":statistics.mean(paired.values()),"conversation_success":statistics.mean(r["success"] for r in rows),
                              "gpu_reserved_seconds":meta["gpu_reserved_seconds"],"input_tokens":meta["input_tokens"],"output_tokens":meta["output_tokens"]})
+            if subset and rows[0]["horizon"]==64 and "extension" not in meta:
+                selected=[r for r in rows if r["family_id"] in subset]
+                transfer.append({**identity,"setting":"horizon64-subset","horizon":64,"families":len(paired_success(selected)),
+                                 "paired_success":statistics.mean(paired_success(selected).values()),"conversation_success":statistics.mean(r["success"] for r in selected),
+                                 "gpu_reserved_seconds":0,"input_tokens":sum(r["input_tokens"] for r in selected),"output_tokens":sum(r["output_tokens"] for r in selected)})
             trace.append({"path":str(summary.relative_to(root)),"sha256":sha256(summary)})
             horizon=rows[0]["horizon"];finals=[r for r in jsonlines(run/"evaluation.jsonl") if r["turn"]==horizon]
             measurements=[final_diagnostics(r,horizon) for r in finals]

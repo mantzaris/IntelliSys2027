@@ -24,6 +24,8 @@ def external_sources(item: dict) -> list[Message]:
 
 def external(model, root: Path, out: Path):
     manifest=json.loads((root/"data/manifests/external.json").read_text())
+    expected=json.loads((root/"data/manifests/external_assets.json").read_text())["longmemeval_s_cleaned.json"]
+    if sha256(root/"artifacts/public_assets/longmemeval_s_cleaned.json")!=expected:raise ValueError("External dataset bytes changed")
     rows=json.loads((root/"artifacts/public_assets/longmemeval_s_cleaned.json").read_text())
     by_id={r["question_id"]:r for r in rows};prompts=[];items=[]
     for qid in manifest["question_ids"]:
@@ -67,7 +69,9 @@ def natural(model,root: Path,out: Path):
 
 def human_packet(root: Path):
     rows=[]
-    for path in sorted((root/"artifacts/runs").glob("extra-qwen-*-17-natural/natural.jsonl")):
+    for path in sorted((root/"artifacts/runs").glob("extra-qwen-*/natural.jsonl")):
+        status=json.loads((path.parent/"status.json").read_text())
+        if status["status"]!="completed" or status["config"]["seed"]!=17 or status["config"]["condition"] not in {"C1","C3","C5"}:continue
         for row in map(json.loads,path.read_text().splitlines()):rows.append((path.parent.name,row))
     rng=random.Random(40719);rng.shuffle(rows)
     out=root/"artifacts/human_review";out.mkdir(parents=True,exist_ok=True)

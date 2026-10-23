@@ -68,6 +68,7 @@ def recovery(model, source: Path, family_ids: set[str], out: Path, attempts: int
 def main():
     p=argparse.ArgumentParser();p.add_argument("task",choices=["horizon32","horizon128","short","larger-memory","unfamiliar","recovery"])
     p.add_argument("--config",type=Path,required=True);p.add_argument("--adapter",type=Path);p.add_argument("--run-id",required=True)
+    p.add_argument("--snapshot-source",type=Path)
     a=p.parse_args();root=Path.cwd();freeze=verify_freeze(root);plan=freeze["plan"]
     cfg=RunConfig.load(a.config)
     if cfg.phase!="confirmatory":raise PermissionError("Extensions require the frozen phase")
@@ -79,7 +80,7 @@ def main():
         model=FastBackbone(cfg,ledger,root/"configs/models.json")
         if a.adapter:model.load_adapter(a.adapter)
         if a.task=="recovery":
-            source=root/f"artifacts/runs/base-{cfg.model}-eval/evaluation.jsonl"
+            source=a.snapshot_source or root/f"artifacts/runs/base-{cfg.model}-eval/evaluation.jsonl"
             recovery(model,source,{f"test-{i:04d}" for i in ids},ledger.run_dir/"recovery.jsonl")
         else:
             run_episodes(model,scenarios,"base",ledger.run_dir/"evaluation.jsonl",unfamiliar_corruption=a.task=="unfamiliar")

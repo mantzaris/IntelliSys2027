@@ -44,7 +44,10 @@ def calibration_rows(root: Path) -> list[dict]:
 def main():
     p=argparse.ArgumentParser();p.add_argument("task",choices=["judge"]);p.add_argument("--config",type=Path,required=True);p.add_argument("--run-id",required=True)
     a=p.parse_args();root=Path.cwd();verify_freeze(root);cfg=RunConfig.load(a.config)
-    prompt_path=root/"artifacts/public_assets/longmemeval_evaluate_qa.py";prompt_function=official_prompt_function(prompt_path)
+    prompt_path=root/"artifacts/public_assets/longmemeval_evaluate_qa.py"
+    expected=json.loads((root/"data/manifests/external_assets.json").read_text())[prompt_path.name]
+    if sha256(prompt_path)!=expected:raise ValueError("Official rubric source bytes changed")
+    prompt_function=official_prompt_function(prompt_path)
     generator="qwen" if cfg.model=="phi" else "phi"
     with RunLedger(root/"artifacts",a.run_id,cfg) as ledger:
         from .fast_backend import FastBackbone
@@ -63,7 +66,8 @@ def main():
                  "descriptive_threshold_passed":(sensitivity+specificity)/2>=.85 and specificity>=.8,
                  "limitation":"Structured-planning calibration does not validate open-ended memory QA judgments; all external scores remain exploratory."}
         (ledger.run_dir/"calibration_summary.json").write_text(json.dumps(quality,indent=2)+"\n")
-        for path in sorted((root/"artifacts/runs").glob(f"extra-{generator}-*-17-external/external.jsonl")):
+        for path in sorted((root/"artifacts/runs").glob(f"extra-{generator}-*/external.jsonl")):
+            if json.loads((path.parent/"status.json").read_text())["status"]!="completed":continue
             rows=jsonlines(path)
             prompts=[[{"role":"user","content":prompt_function(r["question_type"],r["question"],r["answer"],r["generation"]["raw"],abstention="_abs" in r["question_id"])}] for r in rows]
             for start in range(0,len(prompts),cfg.batch_size):

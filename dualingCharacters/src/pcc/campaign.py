@@ -43,7 +43,7 @@ def jobs(plan: dict):
             for seed in ([17] if condition=="base" or task in {"larger-memory","unfamiliar"} else plan["seeds"]):
                 adapter=None if condition=="base" else f"artifacts/runs/main-qwen-{condition.lower()}-{seed}-r1-fit/training/final"
                 yield {"id":f"extra-qwen-{condition.lower()}-{seed}-{task}","model":"qwen","condition":condition,"seed":seed,
-                       "command":task,"module":"pcc.extensions","adapter":adapter}
+                       "command":task,"module":"pcc.extensions","adapter":adapter,"snapshot_source":"artifacts/runs/base-qwen-eval/evaluation.jsonl" if task=="recovery" else None}
     for model in ("qwen","phi"):
         for condition in ("base","C1","C3","C5"):
             adapter=None if condition=="base" else f"artifacts/runs/main-{model}-{condition.lower()}-17-r1-fit/training/final"
@@ -83,6 +83,8 @@ def main():
     key=os.environ.get("PCC_SSH_KEY",str(Path.home()/".ssh/id_rsa"))
     known=os.environ.get("PCC_KNOWN_HOSTS","/tmp/intellisys-runpod-known-hosts")
     ssh=["ssh","-F","/dev/null","-i",key,"-p",port,"-o","BatchMode=yes","-o","IdentitiesOnly=yes", "-o","StrictHostKeyChecking=yes","-o",f"UserKnownHostsFile={known}"]
+    subprocess.run(ssh+[f"root@{host}","mkdir -p "+shlex.quote(remote+"/artifacts/public_assets")],check=True)
+    subprocess.run(["rsync","-az","-e",shlex.join(ssh),str(root/"artifacts/public_assets")+"/",f"root@{host}:{remote}/artifacts/public_assets/"],check=True)
     config_dir=root/"artifacts/campaign_configs";config_dir.mkdir(parents=True,exist_ok=True)
     state_path=root/"artifacts/campaign_state.json"
     overrides_path=root/"artifacts/campaign_resume.json"
@@ -92,8 +94,11 @@ def main():
         override=overrides.get(original_id,{})
         if set(override)-{"run_id","checkpoint","reason"}:raise ValueError("Resume overrides may not change experimental choices")
         if override and not override.get("reason"):raise ValueError("Resume requires a logged infrastructure reason")
-        if override:job["id"]=override["run_id"]
-        for field in ("adapter","supervision"):
+        if override:
+            original_status=root/"artifacts/runs"/original_id/"status.json"
+            if original_status.exists() and json.loads(original_status.read_text())["status"]=="completed":raise ValueError("A completed run cannot be replaced through an infrastructure resume")
+            job["id"]=override["run_id"]
+        for field in ("adapter","supervision","snapshot_source"):
             if not job.get(field):continue
             for source,replacement in overrides.items():
                 job[field]=job[field].replace(f"artifacts/runs/{source}/",f"artifacts/runs/{replacement['run_id']}/")
@@ -127,6 +132,7 @@ def main():
                         "--split","test" if job["command"]=="evaluate" else "train"])
         if job.get("adapter"):cmd.extend(["--adapter",job["adapter"]])
         if job.get("supervision"):cmd.extend(["--supervision",job["supervision"]])
+        if job.get("snapshot_source"):cmd.extend(["--snapshot-source",job["snapshot_source"]])
         if override.get("checkpoint"):
             if job["command"]!="fit":raise ValueError("Only fit jobs have optimizer checkpoints")
             cmd.extend(["--resume-checkpoint",override["checkpoint"]])
@@ -142,9 +148,9 @@ def main():
         deduplicate_completed(root)
         if returncode:raise RuntimeError(f"Job failed and was mirrored: {job['id']}")
     state_path.write_text(json.dumps({"status":"scheduled_grid_complete","jobs":len(queue)},indent=2)+"\n")
-    from .study_analysis import analyze
-    from .validation import human_packet
-    analyze(root);human_packet(root)
+    from .package import regenerate
+    regenerate(root)
+    subprocess.run(["bash",str(root/"scripts/build_paper.sh")],cwd=root,check=True)
 
 
 if __name__=="__main__":main()

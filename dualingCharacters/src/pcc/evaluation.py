@@ -53,8 +53,15 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                         rng=random.Random(f"random:{ep.scenario.family_id}:{cfg.seed}:{turn}")
                         slot=rng.randrange(6); value=rng.choice(OPTIONS[slot])
                         actor=Character("Random","Cache",slot,value,0)
-                        action={"kind":"edit","slot":slot,"value":value,"claim":"Unverified cache recollection","source":None}
-                        record=apply_action(action,actor,[],ep.memory,condition,cfg.history_actions)
+                        communication_slot=ep.intervention_count % 3==0
+                        action={"kind":"pass" if communication_slot else "edit","slot":slot,"value":value,"claim":"Unverified cache recollection","source":None}
+                        before=ep.memory.public()
+                        record=apply_action(action,actor,[],ep.memory,condition,cfg.history_actions,communication_slot)
+                        record.update(turn=turn,family_id=ep.scenario.family_id,world=ep.scenario.world,
+                                      communication_slot=communication_slot,assigned_slot=slot,owned_option=value,
+                                      contrary_to_truth=value!=ep.truth.values[slot],contradictory_source_visible=False,
+                                      contradictory_edit_with_source_access=False,memory_changed=before!=ep.memory.public())
+                        append_json(output.with_name(output.stem+"_characters.jsonl"),record)
                         action_records[id(ep)]=record
                         ep.intervention_count+=1
                     elif ep.actors:

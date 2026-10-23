@@ -46,12 +46,12 @@ try:
 except Exception as exc:
     records.append({"asset":"conference_template","error":str(exc)})
 
-api=json.loads(get("https://huggingface.co/api/datasets/xiaowu0162/longmemeval-cleaned","longmemeval_api.json"))
-revision=api["sha"]
+manifest_path=root/"data/manifests/external.json"
+pinned=json.loads(manifest_path.read_text()) if manifest_path.exists() else None
+revision=pinned["revision"] if pinned else json.loads(get("https://huggingface.co/api/datasets/xiaowu0162/longmemeval-cleaned","longmemeval_api.json"))["sha"]
 get(f"https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/{revision}/README.md","longmemeval_README.md")
 get(f"https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/{revision}/longmemeval_s_cleaned.json","longmemeval_s_cleaned.json")
-gh=json.loads(get("https://api.github.com/repos/xiaowu0162/LongMemEval/commits/main","longmemeval_github_commit.json"))
-commit=gh["sha"]
+commit=pinned["code_commit"] if pinned else json.loads(get("https://api.github.com/repos/xiaowu0162/LongMemEval/commits/main","longmemeval_github_commit.json"))["sha"]
 get(f"https://raw.githubusercontent.com/xiaowu0162/LongMemEval/{commit}/LICENSE","longmemeval_LICENSE")
 get(f"https://raw.githubusercontent.com/xiaowu0162/LongMemEval/{commit}/src/evaluation/evaluate_qa.py","longmemeval_evaluate_qa.py")
 rows=json.loads((out/"longmemeval_s_cleaned.json").read_text())
@@ -60,6 +60,8 @@ selected=sorted(rows,key=lambda r:hashlib.sha256(("pcc-external-v1:"+str(r["ques
 selection={"dataset":"xiaowu0162/longmemeval-cleaned","revision":revision,"code_commit":commit,
            "license":"MIT","subset_rule":"50 lowest SHA256(pcc-external-v1:question_id)",
            "question_ids":[r["question_id"] for r in selected]}
-(root/"data/manifests/external.json").write_text(json.dumps(selection,indent=2)+"\n")
+if pinned:
+    if selection!=pinned:raise ValueError("Pinned external manifest does not match downloaded identifiers")
+else:manifest_path.write_text(json.dumps(selection,indent=2)+"\n")
 (out/"assets.json").write_text(json.dumps({"retrieved_utc":datetime.now(timezone.utc).isoformat(),"records":records},indent=2)+"\n")
 print(json.dumps({"assets":len(records),"external_items":len(rows),"selected":len(selected),"revision":revision,"code_commit":commit}),flush=True)

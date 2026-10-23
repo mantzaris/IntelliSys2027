@@ -58,6 +58,6 @@ def summarize_artifacts(root: Path, output: Path):
                           "gpu_reserved_seconds":meta["gpu_reserved_seconds"],"status":meta["status"]})
     if table:
         with (output/"executed_results.csv").open("w",newline="") as f:
-            writer=csv.DictWriter(f,fieldnames=list(table[0]));writer.writeheader();writer.writerows(table)
+            writer=csv.DictWriter(f,fieldnames=list(table[0]),lineterminator="\n");writer.writeheader();writer.writerows(table)
     (output/"executed_results.json").write_text(json.dumps(table,indent=2)+"\n")
     return table

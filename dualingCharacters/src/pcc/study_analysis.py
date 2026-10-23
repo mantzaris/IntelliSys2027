@@ -12,7 +12,7 @@ from .resources import sha256
 def write_csv(path: Path,rows: list[dict]):
     if not rows:return
     with path.open("w",newline="") as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader();w.writerows(rows)
 
 
 def family_signflip_p(left: list[dict],right: list[dict],draws: int=20000) -> float:
