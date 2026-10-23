@@ -1,0 +1,11 @@
+run_id,model,condition,seed,status,families,paired_success,conversation_success,authorized_update_accepted,hypothetical_falsely_accepted,reserved_gpu_seconds
+supplement-qwen-base-17-unseen-profiles-v1,qwen,base,17,not_executed,,,,,,
+supplement-qwen-c1-17-unseen-profiles-v1,qwen,C1,17,not_executed,,,,,,
+supplement-qwen-c1-29-unseen-profiles-v1,qwen,C1,29,not_executed,,,,,,
+supplement-qwen-c1-43-unseen-profiles-v1,qwen,C1,43,not_executed,,,,,,
+supplement-qwen-c3-17-unseen-profiles-v1,qwen,C3,17,not_executed,,,,,,
+supplement-qwen-c3-29-unseen-profiles-v1,qwen,C3,29,not_executed,,,,,,
+supplement-qwen-c3-43-unseen-profiles-v1,qwen,C3,43,not_executed,,,,,,
+supplement-qwen-c5-17-unseen-profiles-v1,qwen,C5,17,not_executed,,,,,,
+supplement-qwen-c5-29-unseen-profiles-v1,qwen,C5,29,not_executed,,,,,,
+supplement-qwen-c5-43-unseen-profiles-v1,qwen,C5,43,not_executed,,,,,,
