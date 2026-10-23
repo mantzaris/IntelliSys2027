@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--split",default="pilot",choices=["pilot","train","validation","test"])
     parser.add_argument("--adapter",type=Path)
     parser.add_argument("--supervision",type=Path)
+    parser.add_argument("--window-turns",help="Comma-separated predetermined training-window turns")
     args=parser.parse_args();root=args.root.resolve()
     if args.command=="manifests":write_manifests(root/"data/manifests");return
     if args.command=="analyze":
@@ -84,6 +85,9 @@ def main():
             run_episodes(model,heldout,"base",ledger.run_dir/"after.jsonl")
         elif args.command=="collect":
             _,windows=run_episodes(model,scenarios,cfg.condition,ledger.run_dir/"collection.jsonl",True)
+            if args.window_turns:
+                selected={int(x) for x in args.window_turns.split(",")}
+                windows=[w for w in windows if w["turn"] in selected]
             select_supervision(model,windows,ledger.run_dir/"supervision.jsonl")
         elif args.command=="fit":
             if not args.supervision:raise ValueError("--supervision required")

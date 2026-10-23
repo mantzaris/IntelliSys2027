@@ -1,0 +1,28 @@
+{
+  "status": "DRAFT_NOT_FROZEN",
+  "pilot_gates_passed": false,
+  "seeds": [17, 29, 43],
+  "primary_model": "qwen",
+  "primary_conditions": ["C1", "C3", "C4", "C5", "C2", "C6"],
+  "ablations": ["A1", "A2", "A3"],
+  "replication_model": "phi",
+  "replication_conditions": ["C1", "C3", "C5"],
+  "training_families": 300,
+  "rounds": [
+    {"start_family": 0, "families": 150, "horizon": 16, "window_turns": [6, 9, 16]},
+    {"start_family": 150, "families": 150, "horizon": 32, "window_turns": [6, 17, 32]}
+  ],
+  "train_steps_per_round": 64,
+  "train_tokens_per_step": 4096,
+  "training_input_tokens_per_condition_seed": 524288,
+  "training_mixture": "50:50 eligible clean and recovery windows; deterministic cycling, report all reuse",
+  "checkpoint_rule": "Final fixed-token checkpoint after two rounds; no test or validation selection",
+  "test_families": 240,
+  "test_horizon": 64,
+  "engine": "vllm_pending_profile",
+  "batch_size": 32,
+  "gpu_hour_ceiling": 96,
+  "allocated_gpu_hours": null,
+  "known_hourly_rate_usd": null,
+  "notes": "Draft retains target sample counts. Final allocation requires actual accelerated-engine profile and mechanism audit. No test results may be opened under this file."
+}

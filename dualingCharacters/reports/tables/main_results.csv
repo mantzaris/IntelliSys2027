@@ -1,0 +1,13 @@
+model,condition,executed_seeds,paired_success,seed_sd,conversation_success,status,gpu_reserved_seconds,input_tokens,output_tokens,train_tokens
+qwen,C1,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C2,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C3,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C4,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C5,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C6,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,A1,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,A2,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,A3,0,,,,pending,0.0,0.0,0.0,0.0
+phi,C1,0,,,,pending,0.0,0.0,0.0,0.0
+phi,C3,0,,,,pending,0.0,0.0,0.0,0.0
+phi,C5,0,,,,pending,0.0,0.0,0.0,0.0

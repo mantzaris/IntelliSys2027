@@ -31,7 +31,8 @@ def test_authority_and_hypotheticals():
 
 
 def test_dependencies_and_ambiguity():
-    s=make_family("test",7,64)[0];truth=s.truth_at(64)
+    from dataclasses import replace
+    s=make_family("pilot",7,64)[0];s=replace(s,spec=replace(s.spec,online_override=True));truth=s.truth_at(64)
     target=truth.target(s.spec)
     assert target["clarify"]
     assert any(x is None for x in target["plan"][:6])
