@@ -14,6 +14,18 @@ def regenerate(root: Path):
     main=read('main_results.json',[]);effects=read('main_contrasts.json',[])
     transfer=read('transfer.json',[]);external=read('external.json',[])
     unseen=read('unseen_profiles.json',{'results':[]})['results']
+    resources=read('resource_totals.json',{})
+    if resources:
+        execution=(f"At the saved reporting snapshot, all attempts consumed {resources['reserved_gpu_hours']:.3f} reserved GPU-hours "
+                   f"across {resources['runs']} recorded runs, of which {resources['completed']} completed. "
+                   f"The ledger records {resources['inference_input_tokens']:,} inference input tokens, "
+                   f"{resources['generated_output_tokens']:,} generated output tokens and "
+                   f"{resources['training_input_tokens']:,} training input tokens, including failed and excluded attempts. "
+                   f"The observed interval from the earliest logged run to the latest accounted activity is "
+                   f"{resources['observed_pod_wall_hours_first_to_latest_run']:.3f} hours; this is not the pod's total billed lifetime. "
+                   "These are project resource measurements, not counts of scientifically eligible trained models. "
+                   "The actual hourly rate and dollar cost remain unknown.\n")
+        (root/'paper/generated_execution.tex').write_text(execution)
     def number(value):return '--' if value is None else f'{value:.3f}'
     def save(name,caption,columns,header,rows,note):
         lines=[r'\begin{table}[ht]\centering\small',r'\caption{'+caption+'}',
@@ -70,6 +82,6 @@ def regenerate(root: Path):
          'Jekyll is included in the character count. Characters divide a common intervention and generation-token cap. Costs include all recorded attempts, collection, training and primary evaluation; they are realized project costs and do not isolate intrinsic algorithmic efficiency or exactly match FLOPs.')
     inputs['analysis/publication_tables.py']=sha256(Path(__file__))
     (root/'reports/tables/publication_tables_trace.json').write_text(json.dumps({'classification':'Post-baseline mechanical presentation of existing aggregates; no new estimators, tests or condition selection','inputs':inputs},indent=2)+'\n')
-    print(json.dumps({'manuscript_tables_regenerated':4,'all_missing_cells_explicit':True}))
+    print(json.dumps({'manuscript_tables_regenerated':4,'execution_snapshot_regenerated':bool(resources),'all_missing_cells_explicit':True}))
 
 if __name__=='__main__':regenerate(Path(__file__).resolve().parents[1])

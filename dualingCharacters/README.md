@@ -57,6 +57,10 @@ local checkpoint copies are required. Do not rely on the container as the only c
 - [Descriptive reporting extension](analysis/README.md): explicitly post-baseline
   domain/structure, training-exposure and resource tables; no new confirmatory tests.
   `bash analysis/regenerate_all.sh` regenerates both reporting layers and the PDF.
+- [Human-review rubric](paper/HUMAN_REVIEW_RUBRIC.md): the complete 120-output
+  blinded packet is rendered locally as HTML when its generation finishes. Two
+  independent CSV sheets remain blank until humans supply ratings; the reporting
+  command then computes descriptive agreement without automatic adjudication.
 
 Main results, ablations, external validation, independent-family confirmation,
 human review and final manuscript evidence remain subject to pilot gates. The
