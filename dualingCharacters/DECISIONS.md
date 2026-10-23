@@ -9,6 +9,7 @@
 | D005 | 2026-10-23 | Ground truth exists only in environment/evaluator and training-target construction; no oracle fields in policy observations. | Required invariant |
 | D006 | 2026-10-23 | Remote storage is not verified persistent; local ignored mirror is the durability fallback. No base-model copy to space-limited local disk. | Observed storage |
 | D007 | 2026-10-23 | Pilot data are disjoint from training/validation/locked-test families; design changes may use pilot/validation only. | Required invariant |
+| D008 | 2026-10-23 | Initial BF16 profile completed 4 actual LoRA steps, but all 32 rollout responses failed the output schema (six plan entries instead of eight). Clarify schema with explicit array lengths and source-index instructions before interpreting difficulty. Preserve failed profile. | Pilot-only repair |
 
 Proposed interpretations and implementation decisions are reviewable by the author.
 This log does not imply human endorsement of AI-generated scientific arguments.
