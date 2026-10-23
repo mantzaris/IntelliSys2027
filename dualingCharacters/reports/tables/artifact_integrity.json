@@ -61,6 +61,15 @@
       "source_snapshot_sha256": "b30a1aeab9897dc4c15f9e7ce69ae0074dbff90e4aa464f6cb766ac00fa928d9"
     },
     {
+      "run_id": "main-qwen-c1-17-r0-fit",
+      "status_sha256": "2ca39acb5aa1ed32bc3370f248d2e902b0b206d03a4cf08f275df7388e21a559",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "9371611f4b3af2f059594a2f244e024c9b016a0041f0824b1b63ed0c5c409676"
+    },
+    {
       "run_id": "mechanism-final-001",
       "status_sha256": "afd34c1bbc074b0ac43907836229cbc79009829adcd104ab0e2441bf98b89a92",
       "source_files_verified": 31,
@@ -452,10 +461,6 @@
     }
   ],
   "unfinished_runs_excluded": [
-    {
-      "run_id": "main-qwen-c1-17-r0-fit",
-      "status": "running"
-    },
     {
       "run_id": "pilot-c3-001",
       "status": "failed"

@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "run_id": "main-qwen-c1-17-r0-fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "collection_run": "main-qwen-c1-17-r0-collect",
+    "supervision_sha256": "db8ee29b5a5d2623a6f912edbfa6a510333ae0a24b7f07319d20900230bd7011",
+    "optimizer_steps_in_this_process": 256,
+    "training_input_tokens_in_this_process": 1048576,
+    "supervised_target_tokens_in_this_process": 48838,
+    "unique_windows_sampled_into_buffer": 804,
+    "window_reuses_including_replayed_prefix": 168,
+    "attempted_windows": 900,
+    "source_ineligible": 96,
+    "clean_eligible": 486,
+    "failed_eligible": 318,
+    "model_candidates_attempted": 128,
+    "model_candidates_valid": 0,
+    "model_candidates_discarded": 128,
+    "oracle_teacher_examples": 804,
+    "resumed_from_run": null,
+    "adapter_changed": true
+  }
+]

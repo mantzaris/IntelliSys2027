@@ -48,6 +48,57 @@
     }
   },
   {
+    "run_id": "main-qwen-c1-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.43333333333333335,
+      "conversation_success": 0.52,
+      "malformed_rate": 0,
+      "turn_success": 0.5602083333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 96,
+      "clean_valid": 486,
+      "failed_eligible": 318,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 804,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 386.0247828681022,
+      "peak_vram_gib": 39.3046875,
+      "input_tokens": 4778268,
+      "output_tokens": 331083,
+      "generation_seconds": 330.00780759286135,
+      "aggregate_output_tokens_per_second": 1003.2580817253425
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1243.5127089740708,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
     "run_id": "mechanism-final-001",
     "phase": "pilot",
     "condition": "C5",

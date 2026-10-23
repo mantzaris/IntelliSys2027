@@ -84,6 +84,27 @@
     "source_commit": "a1f43934d220f0733643daf4aaa26b8891605475"
   },
   {
+    "run_id": "main-qwen-c1-17-r0-fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "phase": "confirmatory",
+    "status": "completed",
+    "engine": "transformers",
+    "reserved_gpu_seconds": 1243.5127089740708,
+    "sampled_busy_seconds": 1223.626548171509,
+    "sampled_utilization_weighted_seconds": 1210.8106559688038,
+    "model_load_seconds": 1.9182084258645773,
+    "inference_input_tokens": 0,
+    "generated_tokens": 0,
+    "training_input_tokens": 1048576,
+    "generation_requests": 0,
+    "peak_vram_GiB": 16.598361015319824,
+    "vram_definition": "torch allocated peak",
+    "known_cost_usd": null,
+    "source_commit": "a1f43934d220f0733643daf4aaa26b8891605475"
+  },
+  {
     "run_id": "mechanism-final-001",
     "model": "qwen",
     "condition": "C5",

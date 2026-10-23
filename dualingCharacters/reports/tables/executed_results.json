@@ -28,6 +28,20 @@
     "status": "completed"
   },
   {
+    "run_id": "main-qwen-c1-17-r0-collect",
+    "model": "qwen",
+    "training_condition": "C1",
+    "evaluation": "collection_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 150,
+    "paired_success": 0.43333333333333335,
+    "conversation_success": 0.52,
+    "recall_accuracy": 0.9672222222222222,
+    "gpu_reserved_seconds": 386.0247828681022,
+    "status": "completed"
+  },
+  {
     "run_id": "mechanism-final-001",
     "model": "qwen",
     "training_condition": "C5",

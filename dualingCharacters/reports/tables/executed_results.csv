@@ -1,6 +1,7 @@
 run_id,model,training_condition,evaluation,seed,phase,families,paired_success,conversation_success,recall_accuracy,gpu_reserved_seconds,status
 base-phi-eval,phi,base,evaluation_summary,17,confirmatory,240,0.1125,0.22916666666666666,0.8982638888888889,2614.80571070686,completed
 base-qwen-eval,qwen,base,evaluation_summary,17,confirmatory,240,0.2791666666666667,0.40625,0.9840277777777778,2673.22404492693,completed
+main-qwen-c1-17-r0-collect,qwen,C1,collection_summary,17,confirmatory,150,0.43333333333333335,0.52,0.9672222222222222,386.0247828681022,completed
 mechanism-final-001,qwen,C5,A1_summary,17,pilot,8,0.25,0.375,0.9583333333333334,532.5564882769249,completed
 mechanism-final-001,qwen,C5,A2_summary,17,pilot,8,0.375,0.4375,0.9791666666666666,532.5564882769249,completed
 mechanism-final-001,qwen,C5,A3_summary,17,pilot,8,0.25,0.375,0.9375,532.5564882769249,completed

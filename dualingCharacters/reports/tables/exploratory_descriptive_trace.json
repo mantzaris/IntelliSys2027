@@ -10,6 +10,7 @@
     "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
     "artifacts/runs/batch-profile-001/status.json": "b6d001f4d5e728cdbda4cb38f68ea7672e0afffb2ed058f3c5d626f5ca12f8a1",
     "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+    "artifacts/runs/main-qwen-c1-17-r0-fit/status.json": "2ca39acb5aa1ed32bc3370f248d2e902b0b206d03a4cf08f275df7388e21a559",
     "artifacts/runs/mechanism-final-001/status.json": "afd34c1bbc074b0ac43907836229cbc79009829adcd104ab0e2441bf98b89a92",
     "artifacts/runs/mechanism-v2-001/status.json": "73bd116722f7f60f01e8c144fde0e70a823ca0bfbccc1bf4c2a7b56bc8bb910c",
     "artifacts/runs/mechanism-v3-001/status.json": "9977a8a76bbc1fd024fa1a0028e31b1b4079ec2c0560d1699d4d09435fda42a8",
@@ -60,6 +61,7 @@
     "artifacts/runs/profile-phi-isolated-001/supervision.jsonl": "bb897fabe54bb9fed39594567f34ad82fe81225f20f342322b5c46a9d5789678",
     "artifacts/runs/profile-phi-isolated-001/supervision.counts.json": "f48bd5bc3bb812ed68c86a9cb0c0307aa07fe3e0723343fc7d3ce5ef2c121b24",
     "artifacts/runs/base-phi-eval/evaluation_summary.json": "bbced5b150b00b2d8ad1d1eeffc6667659e0890ff3dc9ff6d04b08fb8666a0d5",
-    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088"
+    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+    "artifacts/runs/main-qwen-c1-17-r0-fit/training/training_summary.json": "4a5429d516c0a558228817a06263e1d1f1c84e3fbeff9ff484fcda9348def3d2"
   }
 }

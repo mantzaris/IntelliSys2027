@@ -19,8 +19,10 @@ The original freeze remains in `configs/freeze_original.json`. No experimental
 choices changed. The first 150-family clean collection completed, producing 900
 attempted windows, 804 source-eligible examples, and zero verified model
 recoveries in 128 attempts. The common teacher supplies all 804 labels. The
-first 256-step training round is active; consult `artifacts/campaign_state.json`
-and the mirrored run status for the latest stage rather than restarting it.
+first 256-step training round completed with 1,048,576 input tokens, 48,838
+supervised target tokens and changed adapter SHA256. Round-one collection is
+active on the other 150 families at 32 turns, using that adapter. Consult
+`artifacts/campaign_state.json` and the mirrored status for the latest stage.
 The resumed local controller uses unified execution session `67629`; session
 `38552` ended at the documented hold. Its log continues in
 `artifacts/campaign_controller.log`. Inspect the lock/current stage before any
