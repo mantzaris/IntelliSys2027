@@ -12,5 +12,17 @@
   "artifacts/runs/pilot-format2-qwen-c5-eval/status.json": "73f601b9aa7d2ceeb510dde74155c2efecdddcb6e5be71cffb47b27cf4a635c6",
   "artifacts/runs/pilot-format2-qwen-c5-eval/evaluation_summary.json": "b61c84c7c96c5aa84b490b20ae5b536610ab86efd0ece1b0d3dc34ff49620f67",
   "artifacts/runs/pilot-format2-qwen-c5-eval/evaluation.jsonl.gz": "224bf2118d1d83b43f6e812f71baaa458c28662b3894ff158095e44c29c8cf86",
-  "analysis/serialization_report.py": "2b6058b029c7ec264f83c0d3741c1234a1c3033b5eafd775e1d1e2fec9ea1949"
+  "artifacts/runs/pilot-format2-phi-c5-fit/status.json": "8a9f8fe895c799d37270ef997ccc077c541d20477cf5bd5bd8d0de9aa0b8a035",
+  "artifacts/runs/pilot-format2-phi-c5-fit/training/training_summary.json": "55eb2792271739ee70a5d94ed2a524c8369307810116d7a3b2a59d32d2edce63",
+  "artifacts/runs/pilot-format2-phi-c5-fit/training/final/adapter_model.safetensors": "6c5d194a843bfb9411ec88792ce91d8a9f470ea6a753e804e3b4054909cf70df",
+  "artifacts/runs/pilot-format2-phi-c5-eval/status.json": "35b9b78079266827b0533eaec8b867e55fd110427a89566940e9499e469054ab",
+  "artifacts/runs/pilot-format2-phi-c5-eval/evaluation_summary.json": "bcba778917eabe600e082248b1099ad82084b4033996e07c3385cb686c0bcf10",
+  "artifacts/runs/pilot-format2-phi-c5-eval/evaluation.jsonl.gz": "710d19b3b539c00a642f16df60f2c15c694a9ff363a34a3a15d7e30b90151dc1",
+  "artifacts/runs/pilot-format2-qwen-base/status.json": "eb16c73a2a328da23cf88efa82bfaacd626d7e691785ef8fb30d1261dfa9d19a",
+  "artifacts/runs/pilot-format2-qwen-base/evaluation_summary.json": "9c71695382ebf1eadc86833a9a4cae4c4147e7f0e71e2baf802c17a2f5c1626d",
+  "artifacts/runs/pilot-format2-qwen-base/evaluation.jsonl.gz": "415ae98cacfc3890bf6ef2ade6b5f2fdf12b8383740da7e2d899de012b9fcb62",
+  "artifacts/runs/pilot-format2-phi-base/status.json": "171530c8458a0f1f269c60d5448b1fff2f0ba59413174c6f6fabaf337a233bc3",
+  "artifacts/runs/pilot-format2-phi-base/evaluation_summary.json": "4de21e88ffce99f3baa734ff7d2bb0a165b8499919acac737d242e13684c2c47",
+  "artifacts/runs/pilot-format2-phi-base/evaluation.jsonl.gz": "6a7da23c1f30377184932b045fbdc1c0b93984de85598c7b8db628ce4ceaf3de",
+  "analysis/serialization_report.py": "e07a8c6184cfc3fdba515176bcadd439493222077b2fa96b390acbb1c17769ec"
 }

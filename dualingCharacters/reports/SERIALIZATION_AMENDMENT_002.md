@@ -74,3 +74,29 @@ Reproducibility means pinned code, weights, data, seeds and deterministic scorin
 GPU kernels are not forced into bitwise deterministic operation. Checkpoint and
 trace hashes identify the actual execution, and small numerical differences may
 remain on another hardware/software stack.
+
+## Completed repair gates
+
+All three corrected fits completed 32 optimizer steps and 131,072 input tokens
+with changed adapter checksums, then evaluated every one of 16 paired pilot
+families at 32 turns. The current-source untrained Qwen and Phi references were
+also rerun; their inference/environment source hashes match the corresponding
+trained evaluations. Corrected Qwen C3 and C5 each achieved 7/16 paired successes,
+versus 4/16 for the Qwen reference; Phi C5 achieved 4/16 versus its reference's
+2/16. These are small one-seed engineering observations. The Qwen C5−C3 difference
+is 0, with family-bootstrap 95% interval [−0.25, 0.25]. They do not establish H1.
+
+The corrected Qwen C5 adapter was then used for a fresh four-family, 32-turn
+training-only collection. All 24 chosen windows were source-eligible: 19 clean
+and five failed. Five recovery candidates were attempted, none verified; the
+common oracle supplied all 24 labels. The recorded loaded-adapter checksum matches
+the corrected fit. Character weights remained frozen. This establishes that the
+refresh mechanism operates and retains both sampling pools, not effectiveness.
+
+Exact measurements, source hashes and deterministic regeneration are in
+`tables/serialization_pilots.*`, `tables/serialization_pilot_trace.json`,
+`tables/corrected_serialization_audit.json` and `analysis/serialization_report.py`.
+The amended runtime forecast retains all spent attempts and the entire original
+scientific grid. The additional profile supplement retains its separate fixed
+remaining-budget gate. Source-only tests and `scripts/amend_serialization.py`
+validate the amendment before the main hold is released.

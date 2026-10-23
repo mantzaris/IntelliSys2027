@@ -13,5 +13,50 @@
       "17": 0
     },
     "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably"
+  },
+  {
+    "comparison": "qwen C3-base",
+    "qualification": "Matched current-source engineering before/after; one seed, 16 families, 32 turns",
+    "difference": 0.1875,
+    "ci95": [
+      -0.0625,
+      0.4375
+    ],
+    "families": 16,
+    "seeds": 1,
+    "per_seed": {
+      "17": 0.1875
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably"
+  },
+  {
+    "comparison": "qwen C5-base",
+    "qualification": "Matched current-source engineering before/after; one seed, 16 families, 32 turns",
+    "difference": 0.1875,
+    "ci95": [
+      0,
+      0.375
+    ],
+    "families": 16,
+    "seeds": 1,
+    "per_seed": {
+      "17": 0.1875
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably"
+  },
+  {
+    "comparison": "phi C5-base",
+    "qualification": "Matched current-source engineering before/after; one seed, 16 families, 32 turns",
+    "difference": 0.125,
+    "ci95": [
+      -0.1875,
+      0.4375
+    ],
+    "families": 16,
+    "seeds": 1,
+    "per_seed": {
+      "17": 0.125
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably"
   }
 ]

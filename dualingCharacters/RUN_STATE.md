@@ -168,3 +168,13 @@ The original queue is held by `artifacts/campaign_boundary_hold.json` after the 
 ## Automatic execution update
 
 2026-10-23T20:07:41Z: Campaign stopped incomplete: Infrastructure hold before another GPU stage: Audit confirmed training supervision serializes clarify/evidence/plan/state, while the installed inference grammar starts with state. Hold after the current C1 evaluation for a documented serialization repair; no completed trained-test outcome was inspected to decide this hold.. See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.
+
+The old main controller exited cleanly at the planned boundary (execution session
+67629). Its first C1 evaluation is retained as excluded; it consumed 46.83 minutes.
+Repair source commit `67f8e55` executed three 32-step LoRA pilots in session 36013;
+all three fits and evaluations completed. A subsequent serialized controller in
+session 21162 runs matched current-source Qwen/Phi references and a short updated
+C5 refresh check. Main hold remains installed. The optional supplemental controller
+(session 73013) was stopped while CPU-only waiting so it cannot retain a stale
+freeze; restart it only after amendment 002 is finalized. No supplementary GPU
+job has run. Do not launch a second main or pilot controller.

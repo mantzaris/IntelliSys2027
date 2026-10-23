@@ -125,9 +125,9 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument("--root",type=Path,default=Path.cwd());parser.add_argument("--dry-run",action="store_true")
     args=parser.parse_args();root=args.root.resolve()
     freeze=verify_freeze(root)
-    plan=freeze["plan"];queue=list(jobs(plan))
+    plan=freeze["plan"];queue=list(jobs(plan));overrides=load_overrides(root)
     if args.dry_run:
-        print(json.dumps(queue,indent=2));return
+        print(json.dumps([resolve_job(job,overrides) for job in queue],indent=2));return
     controller_lock=(root/"artifacts/campaign.lock").open("a+")
     fcntl.flock(controller_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     host=os.environ["PCC_SSH_HOST"];port=os.environ["PCC_SSH_PORT"]
@@ -139,7 +139,6 @@ def main():
     subprocess.run(["rsync","-az","-e",shlex.join(ssh),str(root/"artifacts/public_assets")+"/",f"root@{host}:{remote}/artifacts/public_assets/"],check=True)
     config_dir=root/"artifacts/campaign_configs";config_dir.mkdir(parents=True,exist_ok=True)
     state_path=root/"artifacts/campaign_state.json"
-    overrides=load_overrides(root)
     for job in queue:
         hold=root/"artifacts/campaign_boundary_hold.json"
         if hold.exists():

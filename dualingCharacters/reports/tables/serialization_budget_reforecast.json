@@ -1,10 +1,10 @@
 {
   "classification": "Post-amendment runtime forecast; no experimental choice changed",
-  "consumed_reserved_gpu_hours": 5.0911944698477685,
+  "consumed_reserved_gpu_hours": 5.339829181200023,
   "remaining_core_forecast_hours": 87.40273920771146,
-  "total_core_forecast_hours": 92.49393367755923,
+  "total_core_forecast_hours": 92.74256838891148,
   "ceiling_hours": 96.0,
-  "contingency_hours": 3.5060663224407733,
+  "contingency_hours": 3.2574316110885206,
   "supplement_not_in_core_forecast": "Unchanged separate requirement: original queue complete and at least 3.5 hours left",
   "method": "Retain original job forecasts; inflate full-size fit/evaluation stages by the largest observed actual/predicted runtime ratio, at least one; count all consumed attempts, including excluded ones",
   "multipliers": {

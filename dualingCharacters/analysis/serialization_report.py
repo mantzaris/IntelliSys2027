@@ -50,6 +50,15 @@ def regenerate(root: Path):
              'paired_success':None,'families':None,'malformed_turns':None,'reserved_gpu_seconds':None}
         if (run/'status.json').exists() and json.loads((run/'status.json').read_text())['status']=='completed':
             from pcc.diagnostics import jsonlines,trace_path
+            meta=json.loads((run/'status.json').read_text())
+            assert not meta.get('loaded_adapter_sha256'), 'Baseline unexpectedly loaded an adapter'
+            for condition in (('C3','C5') if model=='qwen' else ('C5',)):
+                trained_status=root/'artifacts/runs'/f'pilot-format2-{model}-{condition.lower()}-eval'/'status.json'
+                if not trained_status.exists():continue
+                trained=json.loads(trained_status.read_text())
+                for name in ('environment','evaluation','memory','schemas','backend','fast_backend','config'):
+                    source=f'src/pcc/{name}.py'
+                    assert meta['source_hashes'][source]==trained['source_hashes'][source], 'Pilot baseline interface differs'
             summary=run/'evaluation_summary.json';data=json.loads(summary.read_text());pairs=paired_success(data)
             assert len(pairs)==16 and len(data)==32 and {r['horizon'] for r in data}=={32}
             trace=trace_path(run/'evaluation.jsonl');turns=jsonlines(trace);assert len(turns)==1024
