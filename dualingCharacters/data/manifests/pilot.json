@@ -4,7 +4,7 @@
   "families": [
     {
       "id": "pilot-0000",
-      "graph_hash": "9c15f548476a84910e04b21f26f34d25b50a1da0b70369067904d2f0fec6d962",
+      "graph_hash": "3b81ac358d5edc043fded9b025c21cedbe507dff78133814145aa0e6c9587d58",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -13,13 +13,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "3e16c3806d49d14ca91d91b26ee14c18f93d9ac46ead4a67b2f971c57ee06264",
-        "bc96e92b8dc60d33d5ca3fe5ee4a55b64a1145349f222d4be2ad4e60d38f0817"
+        "ddbf24dd5ecfd033e741a6fa034a575da094cb045588456ad2e8a49840cabce7",
+        "8a2b5d234be1cb347087e4905117a8226328225a6359b7e7ce290cc62962e57c"
       ]
     },
     {
       "id": "pilot-0001",
-      "graph_hash": "e7f91c02a40ad40cbb07c70f67d7cf39a247a05a522b4c876c5614e431c0cef4",
+      "graph_hash": "19314fdc6f041fa17d784f6fbb202ffc56ef8cb6b8d347c799562cfc8b9f47fa",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -28,13 +28,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "7b5ee0a06b8aa12589f8c70295ffd26ae0992c5ae3172a1b838477ee3ae013c6",
-        "33e3044a4127bc82c966219f01014850d9f847d2645cc8c7f4e371628124923e"
+        "517e3570ee6d5840d26ba21c738b22b2dbe530b986330273452a21da154f9190",
+        "d27fdff63955129782870d70e36f33c2af16faa99ad8d0277f66738a17428965"
       ]
     },
     {
       "id": "pilot-0002",
-      "graph_hash": "031de67a9aefa4f46f8c9c6c1bf3d4c39221d3723f58ddda48b6adcd776e55a4",
+      "graph_hash": "493dbbad46dff661d9301842eecfefd833e578c691d71ff6665abfe666f0188b",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -43,13 +43,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "12ba9e8c4a596ef124abc412331ff7100b9c4dcfdd5b87d8660f7647acb6ba8e",
-        "ebc98885be6b068c4a5272d4fd448ebf5a287ab3c30397793ec5c1d9d6aa6d53"
+        "eb3d25cc1231a1d128a8f171bc9f24a9c552419e9a95f7e43169b9c32993307a",
+        "dd47a18525b9cbe88e0d25608edc8a5e33636a222b0a030b2b4382357205443e"
       ]
     },
     {
       "id": "pilot-0003",
-      "graph_hash": "d94cea616d3b9f963e54860a0bb375a71cce81075251d06d9203ff1ec5fdb618",
+      "graph_hash": "a5183bd281193b86c60ac07aac8a4440d9aef73ecd24fd68a82a8b7232a8a5e4",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -58,13 +58,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "d5b8e28156c2c1ce59b13ff08acfc91adec9f9d5361455a0d3f33a8bf37cfe7a",
-        "aad32690a9af5d6a6b16391967d33f7a8ca53e0dad30abdd283d74637d1c86ca"
+        "28b951878bed9fe871e312bf7066cafcaf0972167eda9f97f234f09b1e0728ff",
+        "72691c04c1a63cbc8d4f21497de1380494eb2c9e2460d2a3321f9f8fcbf6b2af"
       ]
     },
     {
       "id": "pilot-0004",
-      "graph_hash": "0be968d3da9dd54fc19fdc708d8d665d6b70d50544962d1fa0e54c41fd5bd745",
+      "graph_hash": "dc54bdc01d9ffb7277d1bb1ffe38445b140fff7e87fdceef4e37f903157fdd31",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -73,13 +73,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "21d37409b3b622fc47ddab3b88adda632c4d91ddb992b66514b4873363c37fc1",
-        "bfe709bfed41659ae28c5ceb809bef52d006008dc54d76ce4b1050267802e131"
+        "c4de5288f48244df8fb061e75fbc8088ad81319f0b0cab6811534f1f80e626e5",
+        "b1b3d884efbdea695668ace0b8cb9206854be073544bb2b73403e5e71422a5f5"
       ]
     },
     {
       "id": "pilot-0005",
-      "graph_hash": "7004cbd8b888cdafb7eb6b1428ec2b45f75e1df36e97ef846b7e45ccf184a46f",
+      "graph_hash": "f097d1e06178d92e05544ef5cfdd3ed863354b0e04280f39b637281530885d3d",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -88,13 +88,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "357e4b7d216eb91421b2593b0169b993cb235a8d992f21b64aa9dcf8fd9ec7eb",
-        "8c0c851c02b7f4ba070746625bf9f207d15739a641545fe7a8ab0bfa2cd847f1"
+        "7bed6607093033d35ef0bd02447eaf72c864420a44c33a6233641f8262230b21",
+        "2066d531e0e3578917ca8f71272ecb1721ad24b6b997f63f2fcf18ee7750fda3"
       ]
     },
     {
       "id": "pilot-0006",
-      "graph_hash": "b1bfe64ff84bbcd4c42e414f2aa466b34d685a2ed9e47b3965d288f1844ef1ec",
+      "graph_hash": "09497938e4937719347126e7bc8e3c8e8f5cd93e8febb59d90048af7623063a1",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -103,13 +103,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "7fbb491b939eae7eecccff59e0ad8c90f58881b9b353e078c8b32577ae885350",
-        "87c141c7c7b0178b922ac5dd3251f2fb400e096936f3f477f1025071effd2ee2"
+        "17c68c064901704539144e9b8911584505dfca6b251debf8e4061108105e35c2",
+        "a623eeb0ecaad3ca54163c057b9c08a71093c464317b0e9530b55fd0677605cd"
       ]
     },
     {
       "id": "pilot-0007",
-      "graph_hash": "dfb470fe7845d242a099fb331d83d3bd12fa9aabb2f1c2b76908a795b2f4a86d",
+      "graph_hash": "0eebe3bc7a053ca8eb4aec72b7a184565ab83fbf9653384154b732077c18c845",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -118,13 +118,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "26e7c4c8f7f8ebfcfd667686413503dadf19132cb25701d98f0a05969500983a",
-        "395b51cd7a2cfbd797d5a9ba3732c000f1d1f45a0175883e30e00ed6bf8e6ed0"
+        "258f1fd80ba3289890ef1e8f7af3fe82c2dbe5f5d6923cfe8b42b957a0bc3018",
+        "0449df10fffbfbd6e9850122e8de4149c94be38e2478c480c91d156f9c0f4aea"
       ]
     },
     {
       "id": "pilot-0008",
-      "graph_hash": "b82f7b18866aaa0f66688f8efb2f561594a5903403732d62febb56319e0db94b",
+      "graph_hash": "606d867bfee1f6374b1c0735d894ff8848bbe1db700545d340a1945316812cc0",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -133,13 +133,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "f40f7044fd7179933b98489799f6aecc5954c3f01b778d06c1cb9bd1d759ffb6",
-        "45a9a222b9a597c6619527113fbd0e2e92aa27906374078083dc6efe23c13774"
+        "bf7654dec6a8bcb5c4b4a758e38eb6e2577d9e2edaae4fc7819ff0f40eb35687",
+        "26c63d32ad5b1cc0d7a39e1f74982240d94c78a5d6bce49ce44bdde31258624c"
       ]
     },
     {
       "id": "pilot-0009",
-      "graph_hash": "bac6de7ef42e76a3a8bfde72f30c4b9db70155a2a99cf30e42e9ca61d0c74a1b",
+      "graph_hash": "423adc64d985c8fa49bc4fbccd74137cebefe8bf2acce1f18519333aae4b3e3f",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -148,13 +148,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "743b3ee4b59c06b2b7109d42ecb26271baee6e4f68708704447f70cf4f91a61e",
-        "b19332dc41a30107a34c96cf3d26c98b1b51036bd9324ca1dd58951b8e3764fe"
+        "56fb865755f25e9aecb2c7fe50910aab292ebfc98da28e06aba186f7b5dacf45",
+        "f6c659f8faf1cd60a4c5b501edc6dab09338230d871a4d63e869df0a13b9ec29"
       ]
     },
     {
       "id": "pilot-0010",
-      "graph_hash": "caccee123c4aa01c984883e33330a95e1bc758a866d66f5876c0fb17558de0e0",
+      "graph_hash": "98c04a5940d52d3da1922c7a60f63d7071d6f97442e14f434b50678643a8b574",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -163,13 +163,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "a585460b8ffca6f745f9d638500c529ee550e6566399309d4368ba1919d27827",
-        "2dc182f502841f17c212d597e661eb7b9c74e68e8cd0950626208c66da5a1bf2"
+        "31cf3603f3e50bd76cbbb48a29e5037f6947b259ef227fa09d325ce7ad93c1da",
+        "7fd725bece111a6da1c8057af6d864b88bf608f7e1f0a84c3449233e1a1fa552"
       ]
     },
     {
       "id": "pilot-0011",
-      "graph_hash": "dd69ef804f524b957521b595aafe6a09bbd67a5daa0217eaa17b22970331d034",
+      "graph_hash": "6461c8d4d9b721f6e4cec5ed0ae5a8d1f2fa834caa969c8986c0818d0023039b",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -178,13 +178,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "f5df1d14153a808412d02a7648acefa9ea828caf8fb4f42e90e581a537da252a",
-        "46e0123906e3bf132790074431e8712f42b75d8833fc2645ad958d8a32ee3749"
+        "f3126386cf86a66fbba8f188b16c7d42ff5b5b41d13237871ecca64dfe22129d",
+        "9b023f8e6c6f2457c9909128c188d29f897a17f2922a5c558c39188295cb55c5"
       ]
     },
     {
       "id": "pilot-0012",
-      "graph_hash": "63cfdbef3a95d22de7ddcc743b9fec3a8d2e80a76585e493194e5ae9218c5096",
+      "graph_hash": "4e27f33b3700acf5feaaf57dcfdc806575b5e98b4bc2390e3f5c4f41d0a4cd1b",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -193,13 +193,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "d0c14f658d10a8108d691185fd271765ad656a92ce403219d32102c162a92a01",
-        "e74575f0a90afc24cb845b2aec1970467cb844c67f14b34fc85f75c37e61a806"
+        "93ced02a0901c8c5f7f8c857277a0d32793577de211d2aa07053966c728796fe",
+        "8ade6bde2c0a95666174ff4c9e745a74b926bd905fa7db790061c96ca4bc3ccd"
       ]
     },
     {
       "id": "pilot-0013",
-      "graph_hash": "81cab816121df30e126808d7487445195db34615125ded0e1fcb8c359cb352e1",
+      "graph_hash": "41382412e61d094ff18b218761d0dfc2f0104b7008b96aefe22de128cccf86c1",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -208,13 +208,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "72ee14df03e3faa21f65a1e4c6e32824db672cd0dbd69dbf84275bc62cc00c21",
-        "13de2df22052e38d6ff97bf1bb9ece6142d5e365e2baca129996b88468bd25d3"
+        "5befc458c85ce06ee87569c3b4789584002c6f9034dfdded31b77494feef66b3",
+        "7c5e1e7a4d04dafde3fbbe4586ef730b0bddb4b12b5f05e343d2fdfc53981d78"
       ]
     },
     {
       "id": "pilot-0014",
-      "graph_hash": "866c43698e37764cae4881b0fcf0e495679998cffcbe51f24ee551ac09d4f08c",
+      "graph_hash": "c885ff9788f7448d93bbf0d920e9b0b37ce444e2e51e24b9ac831443bf849955",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -223,13 +223,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "5e05f398040d9ce855077754688b53e0cc789a313ba6e8b5d5aa1754070ad347",
-        "3140bd89fdeadedc31a07651f138fa0d6cb00119386338757fb976b4ea784cd5"
+        "e883a3e8d9e1cfa6eb5b664e5d4b3e8c28b81b04f507e0ef53bdabba50a97c98",
+        "c7621a7ecf843d66474887341f8964ac9a119a9553617c16613acc648fe8a599"
       ]
     },
     {
       "id": "pilot-0015",
-      "graph_hash": "6bdc42e762c409deb37f3b3f11661344062c0c114eff17f47cd8e9ffab69a620",
+      "graph_hash": "8ab67cbf9eef7dddbd33d83174108c068adcea362d913d579b75b60fa6dea35c",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -238,13 +238,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "1398eb3c63d0cb69fb095842fd488d4f561206f2c2682766c061bbd7dd47d37d",
-        "6d6f27db8184bf597aae41db2fbd53de37f00415f43a687f62b08121ada4b073"
+        "17fa808beaba3323320d0aae341261e89dc4d431894b348cfd995732df3d9b13",
+        "1cfbdb5aaae7617a1e51e31aa6259f5768a465f086b6e455a48ad94b41ad8c34"
       ]
     },
     {
       "id": "pilot-0016",
-      "graph_hash": "bbbb15e25e36bce8151d21a42b071e947e832bec5703c2fa078516e0ed77a566",
+      "graph_hash": "5dd064f56b38ea48c8b592880b33e8fdf37c41fdf4ba8ec298493d00af7163df",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -253,13 +253,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "364f80290dd36620bb751fb4a84d1048a44b5b94963add1d3bd88c6c8d60485f",
-        "eb5ddbd48e287e11d07d235e39d8b3fff2ad8f3d7baf95e39a1ed7f4ad30a310"
+        "d7614fd9a0004d6d236871a3ffda1133f529b51c15947675b918905978cb2778",
+        "c263108fcd318590ecabee18b41953a0e681c82bea50e392e01f8cbd9404b52d"
       ]
     },
     {
       "id": "pilot-0017",
-      "graph_hash": "e4afe478fee3a9574cb7839d52018ddbeadf488e4b4292ecc284125bd22f0803",
+      "graph_hash": "5994ac72e96e572eeabf7486186c7c00a08dd90a6843582688e4c8a8fc9a1f0b",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -268,13 +268,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "d465b94f6369e8609d27bdec448949ad6d46cc6caa5149e38f4fd2b864aa009a",
-        "3a408365bc1e1c280fd845491448987d7b516d5e2ba090b50a99ea95ee59681e"
+        "cce45b5390aef28f1938d09bbd81d55cd921081f55b03c09971815e1f8040ef1",
+        "87e230fc6c02f0efb7d85fb1e877695cfe8fb1988c687ac852064a1febeca8b3"
       ]
     },
     {
       "id": "pilot-0018",
-      "graph_hash": "809c3bffd242ff6e895949de1466d66da013f63ecfc19d5c846bdc5c9742487b",
+      "graph_hash": "05679f8a4b75d58200bc4903bd6a7337b809fbccbe0e01c199666e4766a203fe",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -283,13 +283,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "90198e28d2577e1186dd5505ef3bab0afdae3396c8444440f966d5df907bbb18",
-        "be4fa8b479ec2c212f868c4a8b7d1cc5ff28b38c5e7802e22b35d12ea66bcb26"
+        "cb5751d395b3efa1156b08a5b3d1fdd0fc37ca7eaeb0c1b91178722dfd773007",
+        "7ec2261933af4fe9cdc077456b9c08dd00fbee5814a2f31f049e62aad1155f6b"
       ]
     },
     {
       "id": "pilot-0019",
-      "graph_hash": "03f2807ddbaa2481bd8acbe5294fee058593a6f1bdf0a2fdcc48a8487511dd48",
+      "graph_hash": "1c29b1024007aa6d83ba107669ee82d8435650690ca678ee109d37a9cddfaa46",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -298,13 +298,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "20065b8334d3dc0bb0c5e7a822fe67995e69929ef39af8094461851871d56f36",
-        "ef8c49b2c07c501bf3ad16c4b8b5c95c46a8ea59a64b80c3b2fa2a1d8e0a23ae"
+        "fe9b31d9de8bb9c49c607474afaa6e0beb983c8267dd66ef311406ea1daf7dde",
+        "0ac673e5d9709907584c78c67524358e719956aa0ccbe7cf79618fa0e9aa1fe0"
       ]
     },
     {
       "id": "pilot-0020",
-      "graph_hash": "f6c7ba2ce2f0d51e8759951c740ef10a034c5fbb534e4d900f0d82afa90e48ef",
+      "graph_hash": "15dfe2128fb663163e28ecfb27ededed01f02af6794453d2c8052c2218b48f97",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -313,13 +313,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "191d19ceccd7af9ca145c11df223128c7ea44d3a26f50c8ef096982156a2acf5",
-        "52badff043d64dfa15507dcc5e8128a6f9b451a430b4f7eedcb1ce774ccdec46"
+        "22b67071ff1c2701966314b70886da4b137cedaf47215cc9e1a272ec0a94d4f2",
+        "968277907e45d3ab8f787017d1c7f93dba193d3855618435d280dcf2ef4c7081"
       ]
     },
     {
       "id": "pilot-0021",
-      "graph_hash": "a3ed210783905972a83f818d20de62d2b9cf274bba0d248058ed7cc543beb032",
+      "graph_hash": "52b5231e54b0545db4d5616558b2184b7f8cb247cb3913191af87364a0492bdf",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -328,13 +328,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "faa13a9ea170ba01183058d4767921b89b1c8e33764c92ccc3aafe873c408fe6",
-        "9ac15b4d34f05ceac3b07a73e33ad1f9e3d9cbdbbfe512c03f0333b13eb4b724"
+        "8c366a7ff1f515e8999131ae49b31d923916ec8541200856997e59befaafa6d0",
+        "9d4c880b196b8b2966410ea2656e358de022286b997035f32bcb3be60131afbb"
       ]
     },
     {
       "id": "pilot-0022",
-      "graph_hash": "a5942745e121a92df8a42d14ed96747f9a1d1bbfb902d43a073fce4d2c28feb2",
+      "graph_hash": "422e1eda312055e04a22f325f83ce2c9b2fbf19a72d25e03b8eaa47e201bd2ee",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -343,13 +343,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "20ef3c25f09155baa8cd12cfd26bba8bd3a0bcb8aba26c6b8aba7f5f4f5d0be4",
-        "3b8fcdf5a725a55359ea74dd68211b497cb8e17186bc1397c306eb1dd142fb07"
+        "2f9f66b7bc239adee3441b10f45c20d49d74579668dad070f31b80025042f7fe",
+        "b7c80a579beb80e64521fa40dd4dcbd74ccfde4d76897bc7a2c4ec6aa5841b4a"
       ]
     },
     {
       "id": "pilot-0023",
-      "graph_hash": "155135848f5a3acc3f25860c64ea0f37f3fdfafa859d7346de390babc94940a5",
+      "graph_hash": "44e23fc4486c8bc2c8df20df22f09d4537ee5feea17618282b29ac132d9d8095",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -358,13 +358,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "35af1f4746c99ff87106633ccb07fde0881113b45fbcbfff5b1f30cd744f9ae9",
-        "60d42deec2a71e4b2bdadfcc34d4508267e7835510790ed65110ed33dd6fbc00"
+        "2f72409a4be6e427f9950209d7e20e940426e323f93eebc22a4e54ce6c4ec666",
+        "84380e217fce92b3bfb936bf1602ebaf6ec401479d2db779251120e81423c221"
       ]
     },
     {
       "id": "pilot-0024",
-      "graph_hash": "77097c49b22a41d37d4f024f1fd9c612cf4aab2824170098be5bdbc70f00d3fb",
+      "graph_hash": "08dceef5621416b10cb2b07845d11260fc63bd15a669e81b04ae478c1640a685",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -373,13 +373,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "4548b0784a23f3d32d44a89228f8b92c11d5be5adfcf3351395a6ace9f89c941",
-        "445abf00fee841d0313fd8fc3565dc7a4ab4a5b8c8a4e28dfa852618fec65472"
+        "579759972eea80e75f2ad806eaa3bfa956164e51aedda3b1ed0279d548d416b3",
+        "14a59ad9a914492ffe1987e61f02fa0365f4162e23a04e54d6c4a9b11f90e9a5"
       ]
     },
     {
       "id": "pilot-0025",
-      "graph_hash": "a7c7dfac98053499077ebbcd729e7bb3b1b514fcb802471c2dc3a3240cec3417",
+      "graph_hash": "186c5e0135a055ffeadd45a62e67d0e61d1dc37af8899cd4edd0d6411a62e838",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -388,13 +388,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "56175e8e58b9cfca442cef55ee3368042d3ca0be9a7291200757039742cff24f",
-        "d03a0dc7695af6067312684914bec6d397399c1b25f43657c675d89fc5626f95"
+        "f82a9119fec32d5b72aa4a66a94431f855c6781aa99c80f17c445b045084aa5b",
+        "927a9b288652bd558ada97d169d26e01f3f8f0a5c7f490a13ab757d4ef3c88ea"
       ]
     },
     {
       "id": "pilot-0026",
-      "graph_hash": "c763acf2cd6068ba5ba015ef8256c921b279d15a020d9fbb4460d457a835c3b7",
+      "graph_hash": "522426ae6e22fc755fd1e20f4c7917bf3148fd6636ac53c7c88af36ccf065cfb",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -403,13 +403,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "da7ba0293b45c47c9568d52059faef718a4cb22fc027d7f5081db8e429bf9d8c",
-        "02425a4ce474000857f708655b5d2760ca935fa320af5875c0040766a876dc5b"
+        "4a1125f68605721e9f563d69add68e32627d275c175d302f371cec9a31d41b8d",
+        "9d245d7dc983940c08da71951e03f3a5838f1cf7c291c97a70dee40b5e3cf227"
       ]
     },
     {
       "id": "pilot-0027",
-      "graph_hash": "fbf195aff9bc35f4ab11cd7498abc40d081c61af4d3c18a6fdc5467484228f3b",
+      "graph_hash": "6d139f10f4900710ca29f866797d4328bd106506187aeda1df6d6e3f6581df05",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -418,13 +418,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "4871b8c21d2ef292fccacef32b72d436773590e2c2f532ebe88d9003800dc99a",
-        "f3e9da1cb6736145ee70bec4691782290e1237ed1376fb4bf1689da5e8210458"
+        "56b85e599805b4c13df540cc5ef7d99535b65e4dc5833861ca228b1a44cdcef2",
+        "d564cfcc199dc1979887e8b9792da6f8cc9425d29b0eb67a2fa92561d9cd991f"
       ]
     },
     {
       "id": "pilot-0028",
-      "graph_hash": "bbbb2ae4f46f60bfdbaf1661fdcef68e7fc2119990b8ad3bce0b93fe030cc98d",
+      "graph_hash": "9cdae7699be24f1dd636aee14e742090d0bc33cca9e5b41ced757266b58830f2",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -433,13 +433,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "f20f2740b9f3c210c8ca5530bdfb2de074144372602e157d8a8c5d34a614bff7",
-        "bc3d1e697fc80b398c291965fbea98e9e770c4d6c4d79f3b1232a62efdda8d62"
+        "fed5cf496baebc87525ab407ea814a72fd9e4309cef33c74cd4c3ac363dafd83",
+        "4f9cf74292f968675d98df5d0af35b7c3ca3d9cce3b409a0ba11b10448f6d7bd"
       ]
     },
     {
       "id": "pilot-0029",
-      "graph_hash": "483e6501ecf4eea3ae5b6b0f506844a0b0a74ea2e7a9b5e2500bdb77fac90584",
+      "graph_hash": "bb717b037a424a8c67e7491c390940d8ca4b7c8455658308c5a2cdb51863a7da",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -448,13 +448,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "2bcb251a1980e1339bb5664676afce9ee483fbd3acbb30a449e0c8050fe31caf",
-        "4162204568e65a009d1ad4ad061ee93b687b809af15b9d99eb1611d99ea22165"
+        "fa34c7b59ba366c2cd5c8890b5c471ecbbd36962137aad9c4ba5cdcec13f6459",
+        "59c6740f89051c96b8c7ee65a4252b759ba08d6158b08af6acb53f12a3242285"
       ]
     },
     {
       "id": "pilot-0030",
-      "graph_hash": "a08a4e1982b0509ee4d5a79b54d47915b1d48802eefcdabe3f0ce2827310d5a1",
+      "graph_hash": "95c7a75aa535850e6fd4d83833df7fb3bbcdfe8fc2d3ab50ccb56fb767cf7575",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -463,13 +463,13 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "0bb8d0339cf12adcbeda184f571acd21bfa65144890d35a212ee6221c5284f0d",
-        "1b3972b1b6ca4b36b44932eef61a8fb65a8eb48a165e8bc90e3cefa0f953ea60"
+        "e7e507f034e14a510a69187233e2969febc8e22457abf56181cc2cd5a177c4d7",
+        "a672a81aab28a590dd11297c7d2874d12f8d7ba94eb672e477003a9bd503c674"
       ]
     },
     {
       "id": "pilot-0031",
-      "graph_hash": "d2980da61ab6639d9c2b6456a4d0947bb877ce253aa46aab3118b5fbbadc2d0d",
+      "graph_hash": "a3a30e4a6e8e5c73ed611544eb4b104202ea92e3f81d57a1ef7cf449cb92830f",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -478,11 +478,11 @@
       "horizon": 32,
       "structural_holdout": false,
       "source_hashes": [
-        "19763c9672cc30635f5648e39b4a924cf323a790afc0cb01108c83f33284cf84",
-        "b47d5b5fdf136b4222a00bc69b3fe692baad6b34c328a6cf493e036a24eaf433"
+        "7715d74a0b4498301e7c4cd58ad28f90e216bf919a04e2086c7132b0f9129823",
+        "7d6cb5374dd3097f6124e5fa32a03df8968e26aa2adff278b6c1f446bfd7cf42"
       ]
     }
   ],
   "turn_definition": "one user message followed by one generated assistant response",
-  "sha256": "4cfafc0a8688afd1ea72a20c46ac776238484995a2fdb432e0b861333509e3ca"
+  "sha256": "486488a42ad3460731dfb07a62093c3cacceed33680f44280d74f9dc7b7102cb"
 }

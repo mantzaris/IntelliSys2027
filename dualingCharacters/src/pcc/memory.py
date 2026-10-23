@@ -68,7 +68,7 @@ Replace the nulls with values. state has exactly SIX entries: site, mode, cap, d
 def observation(spec: TaskSpec, transcript: list[Message], memory: WorkingMemory,
                 retrieval_limit: int = 8, recent_limit: int = 4, full_history: bool = False) -> tuple[list[dict], list[Message]]:
     # Query uses only current user text + fixed schema, never hidden gold changes.
-    query = transcript[-1].text + " " + " ".join(FIELDS)
+    query = transcript[-1].text + " " + " ".join(FIELDS) + " " + " ".join(spec.public()["field_descriptions"].values())
     retrieved = transcript[:] if full_history else retrieve(transcript, query, retrieval_limit)
     visible = {m.index:m for m in retrieved + transcript[-recent_limit:]}
     selected = [visible[k] for k in sorted(visible)]

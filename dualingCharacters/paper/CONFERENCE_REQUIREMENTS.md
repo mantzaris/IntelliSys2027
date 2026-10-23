@@ -10,8 +10,10 @@ reference/appendix pages; and its linked template. Remove identifying metadata,
 author/affiliation information, and acknowledgments from the review manuscript.
 Machine Learning / Agents and Multi-agent Systems or NLP are appropriate topics.
 
-The linked LaTeX template must be downloaded and verified before building a
-submission PDF. A scaffold alone does not meet the complete-results requirement.
+The linked LaTeX archive was downloaded and hashed under `artifacts/public_assets/`.
+Its `svproc.cls` and bibliography style build the local anonymized review scaffold
+with `bash scripts/build_paper.sh`. A scaffold alone does not meet the complete-results
+requirement. Generated PDFs and LaTeX build logs remain outside Git.
 
 AI use must be disclosed. Human authors must critically review AI-assisted text
 and own scientific ideas, arguments, results and conclusions. Unedited generated

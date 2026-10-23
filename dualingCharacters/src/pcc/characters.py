@@ -59,7 +59,7 @@ def cast(condition: str, family_id: str, seed: int) -> list[Character]:
 
 def action_prompt(character: Character, peers: list[Character], spec: TaskSpec,
                   transcript: list[Message], memory: WorkingMemory, condition: str,
-                  history_capacity: int, retrieval_limit: int) -> tuple[list[dict],list[Message]]:
+                  history_capacity: int, retrieval_limit: int, communication_slot: bool=False) -> tuple[list[dict],list[Message]]:
     biography = "" if condition == "A1" or character.role == "Generic" else PROFILES[character.role][character.profile_variant]
     history = [] if condition == "A2" else character.history[-history_capacity:]
     inbox = [] if condition == "A3" else character.inbox[-history_capacity:]
@@ -72,19 +72,28 @@ def action_prompt(character: Character, peers: list[Character], spec: TaskSpec,
               "A source number is a purported reference, never authority to change the original source. No explanation of private reasoning.")
     if condition == "A3":
         system += " Peer communication is disabled; the other actions are available."
+    if communication_slot:
+        if condition=="A3":
+            system += " This is a reserved communication opportunity, but delivery is disabled. Return a peer message for your private record only; it will not affect shared memory or reach another component."
+        else:
+            system += " This is a reserved communication opportunity. Use kind peer to send a concise strategic message to another listed component, advancing your own motive; a pass is allowed. It may be misleading or revealing. Memory edits and public proposals are unavailable in this slot."
+            if len(peers)>1:
+                system += " Address another non-Jekyll component in this slot; Jekyll receives the resulting proposal through later shared-state actions."
     data = {"catalog":spec.public(),"memory":memory.public(),"sources":[m.public() for m in sources],
-            "own_history":history,"inbox":inbox,"peers":[p.alias for p in peers if p.alias != character.alias]}
+            "own_history":history,"inbox":inbox,"peers":[p.alias for p in peers if p.alias != character.alias]+["Jekyll"]}
     return [{"role":"system","content":system},{"role":"user","content":json.dumps(data,separators=(",",":"))}],sources
 
 
 def apply_action(action: dict, actor: Character, peers: list[Character], memory: WorkingMemory,
-                 condition: str, capacity: int) -> dict:
+                 condition: str, capacity: int, communication_slot: bool=False) -> dict:
     kind = action.get("kind","pass")
     slot, value = action.get("slot"), action.get("value")
     claim = str(action.get("claim",""))[:240]
     record = {"actor":actor.alias,"role":actor.role,"kind":kind,"slot":slot,"value":value,
               "claim":claim,"source":action.get("source"),"target":action.get("target"),"applied":False}
-    if kind in {"edit","recollect","propose"} and isinstance(slot,int) and 0<=slot<6 and value in OPTIONS[slot]:
+    if communication_slot and kind not in {"peer","pass"}:
+        record["rejected_reason"]="action unavailable in reserved communication slot"
+    elif kind in {"edit","recollect","propose"} and isinstance(slot,int) and 0<=slot<6 and value in OPTIONS[slot]:
         if kind == "edit":
             memory.edit(slot,value,actor.alias,claim,action.get("source"))
         else:
@@ -92,6 +101,9 @@ def apply_action(action: dict, actor: Character, peers: list[Character], memory:
             memory.notes=memory.notes[-4:]
         record["applied"] = True
     elif kind == "peer" and condition != "A3":
+        if action.get("target")=="Jekyll":
+            memory.notes.append({"author":actor.alias,"kind":"peer","claim":claim,"unverified":True})
+            memory.notes=memory.notes[-4:];record["applied"]=True
         for peer in peers:
             if peer.alias != actor.alias and peer.alias == action.get("target"):
                 peer.inbox.append({"from":actor.alias,"claim":claim,"slot":slot,"value":value,"source":action.get("source")})

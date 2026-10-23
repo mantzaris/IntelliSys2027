@@ -59,7 +59,8 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                         ep.intervention_count+=1
                     elif ep.actors:
                         actor=ep.actors[ep.intervention_count % len(ep.actors)]
-                        prompt,visible=action_prompt(actor,ep.actors,ep.scenario.spec,ep.transcript,ep.memory,condition,cfg.history_actions,cfg.retrieval_messages)
+                        communication_slot=ep.intervention_count % 3 == 0
+                        prompt,visible=action_prompt(actor,ep.actors,ep.scenario.spec,ep.transcript,ep.memory,condition,cfg.history_actions,cfg.retrieval_messages,communication_slot)
                         prompts.append(prompt); targets.append((ep,actor));visible_sources.append(visible)
                         # Inbox messages are delivered once. A2 removes accumulated
                         # own history while retaining newly delivered peer messages.
@@ -67,12 +68,14 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                         ep.intervention_count+=1
                 for result,(ep,actor),visible,prompt in zip(backbone.generate(prompts,cfg.character_tokens,frozen=True,sample=True),targets,visible_sources,prompts):
                     before=ep.memory.public()
-                    record=apply_action(result["parsed"],actor,ep.actors,ep.memory,condition,cfg.history_actions)
+                    communication_slot=(ep.intervention_count-1) % 3 == 0
+                    record=apply_action(result["parsed"],actor,ep.actors,ep.memory,condition,cfg.history_actions,communication_slot)
                     # This evaluator-only annotation is NEVER fed back to agents.
                     slot=record.get("slot")
                     contradicts=isinstance(slot,int) and 0<=slot<6 and record.get("value")!=ep.truth.values[slot]
                     contradictory_source_visible=isinstance(slot,int) and 0<=slot<6 and ep.truth.evidence[slot] in {m.index for m in visible}
-                    record.update(turn=turn,family_id=ep.scenario.family_id,world=ep.scenario.world,
+                    record.update(turn=turn,family_id=ep.scenario.family_id,world=ep.scenario.world,communication_slot=communication_slot,
+                                  assigned_slot=actor.slot,owned_option=actor.owned_option,
                                   contrary_to_truth=contradicts,contradictory_source_visible=contradictory_source_visible,
                                   contradictory_edit_with_source_access=bool(contradicts and contradictory_source_visible and record["kind"] in {"edit","recollect"}),
                                   memory_changed=before!=ep.memory.public(),generation=result,prompt=prompt)

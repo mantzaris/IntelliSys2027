@@ -101,3 +101,14 @@ def test_audit_annotations_never_alias_character_history():
     after=action_prompt(actors[0],actors,s.spec,list(s.messages[:3]),mem,"C5",6,8)[0]
     assert before==after
     assert "SECRET" not in json.dumps(after) and "contrary_to_truth" not in json.dumps(after)
+
+
+def test_communication_delivery_and_no_interaction_control():
+    actors=cast("C5","x",17);mem=WorkingMemory()
+    action={"kind":"peer","target":actors[1].alias,"claim":"Support my proposal","slot":0,"value":"Studio"}
+    assert apply_action(action,actors[0],actors,mem,"C5",6,True)["applied"]
+    assert len(actors[1].inbox)==1
+    actors[1].inbox.clear()
+    assert not apply_action(action,actors[0],actors,mem,"A3",6,True)["applied"]
+    assert actors[1].inbox==[]
+    assert not apply_action({"kind":"edit","slot":0,"value":"Studio"},actors[0],actors,mem,"C5",6,True)["applied"]

@@ -11,6 +11,18 @@ import random
 
 FIELDS = ("site", "mode", "cap", "day", "audience", "partner")
 DOMAINS = ("event", "software", "research", "creative")
+DOMAIN_FIELDS = {
+    "event": ("venue", "participation format", "event spending ceiling", "event day", "guest group", "caterer"),
+    "software": ("team base", "collaboration format", "release spending ceiling", "release day", "user cohort", "integration vendor"),
+    "research": ("study location", "participant-session format", "grant spending ceiling", "study day", "recruitment pool", "supplies provider"),
+    "creative": ("production location", "screening format", "production spending ceiling", "premiere day", "intended viewers", "postproduction studio"),
+}
+DOMAIN_TOPICS = {
+    "event": ("invitation wording", "registration flow", "speaker introductions", "accessibility information"),
+    "software": ("release-note wording", "bug-triage process", "onboarding instructions", "support handover"),
+    "research": ("consent-form language", "data dictionary", "analysis documentation", "participant debriefing"),
+    "creative": ("credits wording", "storyboard review", "promotion copy", "caption quality"),
+}
 OPTIONS = (
     ("Harbor", "Garden", "Studio"),
     ("onsite", "hybrid", "online"),
@@ -44,6 +56,7 @@ class TaskSpec:
 
     def public(self) -> dict:
         return {"project": self.domain, "fields": FIELDS, "options": OPTIONS,
+                "field_descriptions": dict(zip(FIELDS,DOMAIN_FIELDS[self.domain])),
                 "rules": {"transport_by_site": dict(zip(OPTIONS[0], self.transport)),
                           "equipment_by_mode": dict(zip(OPTIONS[1], self.equipment)),
                           "online_requires_no_transport": self.online_override}}
@@ -143,38 +156,44 @@ def make_family(split: str, number: int, horizon: int, seed: int = 20261023) -> 
     graph = {"partition": split, "id": family_id, "initial": initial, "slot": slot,
              "alternate": alternate, "other": other, "other_alt": other_alt,
              "spec": spec.public(), "switch_turn": switch_turn}
-    graph_hash = digest(graph)
+    # A structural fingerprint must not be made artificially unique by split/ID.
+    graph_hash = digest({k:v for k,v in graph.items() if k not in {"partition","id"}})
     worlds = []
     for world in ("authorized", "hypothetical"):
         messages, events = [], []
         for t in range(1, horizon + 1):
             event = Event("filler")
-            text = f"Let's review the {domain} project's communication notes, section {t}. Keep the current commitments while we work on wording."
+            topic=DOMAIN_TOPICS[domain][(t+number)%4]
+            filler=(f"Let's turn to {topic}. Give a concise progress check before we return to the main plan.",
+                    f"For {topic}, the team has circulated an unfinished draft. It is background discussion, not an approved revision.",
+                    f"Returning to {topic}, which decisions should the next draft respect?",
+                    f"We have spent some time on {topic}. Summarize our current executable commitments.")
+            text=filler[(t//4+number)%len(filler)]
             if t == 1:
-                text = f"We are planning a {domain} project. My binding choices are " + "; ".join(f"{k}: {v}" for k,v in zip(FIELDS,initial)) + ". Track changes only when I approve them."
+                text = f"We are planning a {domain} project. My binding choices are " + "; ".join(f"{k}: {v}" for k,v in zip(DOMAIN_FIELDS[domain],initial)) + ". Track changes only when I approve them. The catalog contains client-specific transport and equipment requirements; use those exact mappings, even if an ordinary venue would use a different kit."
                 event = Event("set", tuple(enumerate(initial)))
             elif t == 3:
-                text = f"Someone suggested {alternate} for {FIELDS[slot]}. I reject that suggestion for now."
+                text = f"Someone suggested {alternate} for {DOMAIN_FIELDS[domain][slot]}. I reject that suggestion for now."
                 event = Event("reject", ((slot, alternate),))
             elif t == 5:
-                text = f"Could {other_alt} work for {FIELDS[other]}? Compare it as a hypothetical; our decision is unchanged."
+                text = f"Could {other_alt} work for {DOMAIN_FIELDS[domain][other]}? Compare it as a hypothetical; our decision is unchanged."
                 event = Event("consider", ((other, other_alt),))
             elif t == 6:
-                text = _SET_WORDINGS[split][number % 2].format(k=FIELDS[other],v=other_alt)
+                text = _SET_WORDINGS[split][number % 2].format(k=DOMAIN_FIELDS[domain][other],v=other_alt)
                 event = Event("set", ((other, other_alt),))
             elif t == switch_turn:
-                base = f"Revisiting {alternate} for {FIELDS[slot]}: "
+                base = f"Revisiting {alternate} for {DOMAIN_FIELDS[domain][slot]}: "
                 if world == "authorized":
-                    text = base + _SET_WORDINGS[split][(number+1)%2].format(k=FIELDS[slot],v=alternate)
+                    text = base + _SET_WORDINGS[split][(number+1)%2].format(k=DOMAIN_FIELDS[domain][slot],v=alternate)
                     event = Event("set", ((slot, alternate),))
                 else:
                     text = base + f"consider what changing to {alternate} would involve, but I have not authorized it."
                     event = Event("consider", ((slot, alternate),))
             elif t == horizon - 3:
-                text = f"The old suggestion of {initial[other]} for {FIELDS[other]} has come up again. That's only a suggestion; retain the decision I approved."
+                text = f"The old suggestion of {initial[other]} for {DOMAIN_FIELDS[domain][other]} has come up again. That's only a suggestion; retain the decision I approved."
                 event = Event("suggest", ((other, initial[other]),))
             elif t == horizon - 2 and number % 8 == 7:
-                text = f"Set {FIELDS[(slot+2)%6]} to the other option. I haven't specified which of the two alternatives I mean."
+                text = f"Set {DOMAIN_FIELDS[domain][(slot+2)%6]} to the other option. I haven't specified which of the two alternatives I mean."
                 event = Event("ambiguous", (((slot+2)%6, ""),))
             elif t == horizon:
                 text = "Return the executable final plan, the remembered commitments, their source references, and any specific clarification still needed. Include the transport and equipment required by the planning rules."

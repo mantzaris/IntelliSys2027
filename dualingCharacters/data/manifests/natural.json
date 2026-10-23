@@ -4,7 +4,7 @@
   "families": [
     {
       "id": "natural-0000",
-      "graph_hash": "ec6621b4f6f6eb6435e24ed86088446a3213c098734b28ec25da20d1487151f8",
+      "graph_hash": "73d53bd8597756f8f87f7465a1c2bb6a682428f7cb043011fd610d1df8947c5d",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -13,13 +13,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "43fa3e2081775f4ef96d3c617fe725113d8aaa7427feb4e9a4adc7a3fae8220a",
-        "98a6b64e1462f7468f1b98742def0ff500a5542cab5fdd070e5f292100dd46f7"
+        "07c5c4b35d576e3ae6762c15b79be2245b3151e391850b86e5488c502d77b8ff",
+        "49dcaa3b22c39f8faac58080d7e8b6909a9617ae74b8a6a2aef11f1e3b4ced2e"
       ]
     },
     {
       "id": "natural-0001",
-      "graph_hash": "33d47a2b8cc451a5951b3ab743d2d4b180711048244a18544b1fb1cce0283e54",
+      "graph_hash": "9aaa00bc1b04323580037cd00629fe6e89871d57cf6cb2c7c1d3f0b3f7828b78",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -28,13 +28,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "8639c6fa9bcccdda047e505b6000930c7a16cd873f5a3b457df7ca22800326e8",
-        "6e8aa8310a7ee961d554501ce0d57fa01a1ca5311b72343eefb3345666e39763"
+        "5608861884a1a0a905503bf99d8769ff1945d17f31519f133a4de9869d2d07a1",
+        "f9b0848dd64063d0b8db4554ee6fd452c2372de5dfb61d20569836ee13be043c"
       ]
     },
     {
       "id": "natural-0002",
-      "graph_hash": "ece515e006368b9b64a04cc7e4129687407beab3055851a711b9a10d42275f06",
+      "graph_hash": "81aab033fa3409ea9d7c95aff4ea73a7ba59b52d262aaa7fbad9423adc401fbc",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -43,13 +43,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "217b086ba2003c683fd71af603b05d2f03becf3745552fb9bc1fd21ba4973655",
-        "d7a00c9293d40f4908b0a971efdb8c554d373abe965072a662fcd510891bfeb7"
+        "0ce80693cd837db30216bc4af19344dc97cbb460a1e61d4b9b487355c401a40c",
+        "51ca205185597250ff7c1dcadad3efa7758f4d300354361163b57a8032b8dd6b"
       ]
     },
     {
       "id": "natural-0003",
-      "graph_hash": "789a9d629a1554cc096fccda968cec45539c999453cbc53ffe4d2795b140b49d",
+      "graph_hash": "500e68226679d0e76bf9ea6ca5ff8c43f9208c70dad77951c954f4ee4a83101d",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -58,13 +58,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "24c6b0b841ee41ca93b10d311ba1eada2b0783a66e8c48477cf3fd7c916a4f1c",
-        "2e2723aaf46c9e2e3edbb16881b6887a8f638cd8d35528e649b4eb0e644d5832"
+        "0e855f84c96549992eb49c5c0f5b6e0a4dce25a2f05da80d123f9853d1ee5ac9",
+        "3cdf799f490778852abed56a1ed6627209b5ea629029a860473e95dbb6485396"
       ]
     },
     {
       "id": "natural-0004",
-      "graph_hash": "0eb40203d2eff9ca86fd11a3cad2a6b2a9449555c2c9dfe1a33a56381961dc35",
+      "graph_hash": "6db075462948002efce28302ba1d2bf093da83297d97f49baee86d768c6d9d75",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -73,13 +73,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "d410e282b5552cfaeda11c8d6cc18af9b5f6065af0d1f75c437e2310cf2064ab",
-        "916750bf00a0b7a2060cd7b0701133bb3c684bbf90cf9f8ea93feb290041910f"
+        "c544d5039ecda88df93a39a7e91a846bd97c959c8c3b53c4f93494290cacec6e",
+        "6133fd8909ceca9495a75df76d9d2f93ced9e34d2fc5e57796fe8cef5d8f89a1"
       ]
     },
     {
       "id": "natural-0005",
-      "graph_hash": "f6564d14c4cf9170019123e509a07c34a7d726900cbed311970b960a09a86174",
+      "graph_hash": "d88a6035a8722053558148f5055c46459c12a2e2386fb0b48afde6ffa8b10f3e",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -88,13 +88,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "7026410948115a3be5b8c5b7b1864aeec47fb4dae2e50135b198ce8f89365140",
-        "805e818220e1e66b196d5c36fc31df80445c64fab54b3622eb479a19eebc835b"
+        "b8610819eaec10f8d77ac1f745dae151f2f2cb9b5e41ee603a6d1322d130089c",
+        "72ff86f8b930151b294599608e9272df7e486e96f0d8c108781198767b2f0924"
       ]
     },
     {
       "id": "natural-0006",
-      "graph_hash": "a6e94525d2dc40597160ecf3c46cf02bd4ad142346380d4785b4e754fa5faedf",
+      "graph_hash": "d57ec6ea02b43cd6c0ee43a0fa11e41b114344cb25ddf07e21e1aff495e24a70",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -103,13 +103,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "f8cf0abf652ff16a7dc7433b37b22e6559380358850db078884e082dccc61205",
-        "eb6ee76a4ef06061135e21e062b2035a6fb0a4b475b5ac0d327571e18c50ba5b"
+        "0b5d5c777b305e3b6f85763888e9674ce32e05cef498739bd0431bd9cfaffcdd",
+        "c3307b53a80056f7eba7501703b6e67ebf42868f9a425866f556e2c1c19011d5"
       ]
     },
     {
       "id": "natural-0007",
-      "graph_hash": "3046c1d217e61257e36e78a8907ce278d1a51496adc3a93ff29ecdc0ce13eb3b",
+      "graph_hash": "7749a8f29c93d00fc86c99f2baa9cdb54447562ed6078dbe82d2051650e01fa3",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -118,13 +118,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "5e97f0cf8a5d573a7caf768f15182336aeeb65b68fb3bb1a33ea763537efaef7",
-        "2bf5ab057d18f14e8d3d86f72703b63ec1c2b2900372ea0fef44825f12c56fe0"
+        "25c61b9a1cc8885642884751188504cb9a2fb517467f3fd3a76e80d6fbb2d8d3",
+        "f663985551d50eb093a5ac1b4e29ff6bab74781146836a8fd95c8bbba39f6844"
       ]
     },
     {
       "id": "natural-0008",
-      "graph_hash": "3c8c719ff607ccf0c63a008c6e389f0a1a10be0a9cce2f7946968800dd9aebcc",
+      "graph_hash": "787a7730409588e363ceb676992449725f9795be93333e579e2c166659d3a55a",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -133,13 +133,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "6e54164f96a3b37eb14937f171d583e5fc1cc8647a9cc99bca98579328ecd707",
-        "b557a894f7c687740075ee04fb30e1b21b914ce593028f0b2d487f53a7951cd2"
+        "872c6ef8192d09ebbae8a5194edf096843f0850db619b8a4042887475e7b44f1",
+        "a72fd59f6e9250fdb91ca26ff5d82b7362d154ed04bfcf5772b7001938e69e2c"
       ]
     },
     {
       "id": "natural-0009",
-      "graph_hash": "b4ccfdbd309f935dbf069077e7e168d7dfca43931c3e29769dad5be9a1843814",
+      "graph_hash": "22e8f9cf316fd1773973eb9277151a14d86beb52ce9ebdf51b631b045782bd96",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -148,13 +148,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "166fa9c10e98946690d5e6d93aa1cefd73cc03ea314e7241d486b19d41324308",
-        "a928c975f358bd489cc07c0dbaadae8c86a0460c4afb1263482ca8e8690ac3ea"
+        "7b17163a7176113efe3d60b7af683bbe01e9df734525b45851bfd3b7b9c6cf5b",
+        "76d9e09a632b83e375e412c9d943ac115ee73cd129c58db1d7832d09e4b6bb86"
       ]
     },
     {
       "id": "natural-0010",
-      "graph_hash": "23a17c096958a0fbddb61401221e9ed1920dc4380052fefc47bc3561c352796f",
+      "graph_hash": "5f6223f99f487f8b6678f1908eac6f2e4c634fdea88ff60f3863782517485700",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -163,13 +163,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "a545560c0bc48b6408d08484be6b3d4d9998d821b88ccce8a12269a028006e72",
-        "bb8092fd81fb5257cf8d4a826e26d4b3e92b15f40b28d9469456c5583f624851"
+        "c0cd1964efcabb68eba60492065b9fe24d56dbe8641dce6754b1822fd4bacb34",
+        "05595953c088ec9f33341004c93462731a491f483061b5af939882980fc9921d"
       ]
     },
     {
       "id": "natural-0011",
-      "graph_hash": "1d67380f76abfab3e763b52263872dacaaf3f5fdf5eff18c98f46d4acebfe48c",
+      "graph_hash": "b7e7c3207da44adcd19b957f0e80273fb2c206e9742d88a0a4f00c0781b0c087",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -178,13 +178,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "7edf165f64dc9951d4e7777fc9b008103041e989e9851465c5a6ad5fc49f9723",
-        "05420876e9be423725a538b3d61bb355e88a562283326de2f252cccc4d31d0b5"
+        "c486d847fe8f728a38fc40e2034c5a896d168a99f4d8e5e5c5488db3743e55b3",
+        "610f428dbe8e811aaadce05a48be9818048ca127c33846738fb34213cb261bbe"
       ]
     },
     {
       "id": "natural-0012",
-      "graph_hash": "2427bebb09224a34b8c670d478e7dadbd9a35d9dc50d71fcd87d76e2909bfb85",
+      "graph_hash": "00726ff98e7f5a72c49b53040c729785419a33e08f37e79c680b523f946de9a5",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -193,13 +193,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "032b9280cff6e64edfcb05c209f2b8189c6735bfe70a818ee9813ebe12e68009",
-        "01ae45dfe59e43a1bc7573c902a88379fdb4f2799772173441b2233e92d42b92"
+        "7576fa9876f2a5b77cf9bbdcfe997efc0f213de583eafd7643d5fd86565015b5",
+        "615c14970d1943bf94b61856cc837446d5cff715e80b3573061eafd87461b497"
       ]
     },
     {
       "id": "natural-0013",
-      "graph_hash": "a0db6904ce66353da9a2c694e4bd3a17459ec9c3f114ba95c4b902da7e845a59",
+      "graph_hash": "231616c06bc78ecfe25315f1a686102573f51e952c114438a56b90c8a04d3af5",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -208,13 +208,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "69c32e45fed65b36bef35552f139276faf6a92a7099d1db5027ae86a80c5ea28",
-        "cea4b490d45ade7299fb05d58cb4bcded5d909a4f1ba025101def7a0e7ad7467"
+        "9da8a6622b5279ceca25716e8f1b941d256eaea1943d17f0d323a2e40b31a982",
+        "3d4ed8d17479cb1e8e61854e2b997484ef5efc621d0335216891de8ac7da54b1"
       ]
     },
     {
       "id": "natural-0014",
-      "graph_hash": "367253b71815d0815f10ca1e890dfbde55668f562ec93229e0bfa63f83b88dd1",
+      "graph_hash": "ba5611e1b75fd4736d1984261c2a79c71dd66b3b7d484a55f7c4e64e0e44c155",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -223,13 +223,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "8a0c86fbd93cde92f7c45073ba84faa6cc14121b1b5b702bee6df16f70485869",
-        "468e90290f942e0ee42418b063e727f65727c17bbb882103574bbd901c35a30d"
+        "d99565eedcad7cb10a653f678daf4dbc0ecc13d8594219e2250a651f509f0b19",
+        "be88e2c01f0f031729fe0126e058f5da016e73bc8fa8fd43afdf84837719813f"
       ]
     },
     {
       "id": "natural-0015",
-      "graph_hash": "85fd8166ee1d23d50579aff9e8e907eda21a3247fd55d50df11de4139d73325d",
+      "graph_hash": "a363010ce3a14cd4587799fa8fd96c809528790c8b834cc43bd517d5c4fc8095",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -238,13 +238,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "f1b242ff16f56a8e27c12977a95c9784d920ed504ba07a5c8e370239d1724710",
-        "7779ee5875d7a865ce57751e83de9c6eea7f9791e306a588a1f638bc4873eff0"
+        "a3ad1bc9c927597933b201d0871f633586457ed4b7e1cdf5d98b58e3380fc245",
+        "977ac471df5b0b94476204e4ee2371be0a51a106f7573d012b03aca2d87d3714"
       ]
     },
     {
       "id": "natural-0016",
-      "graph_hash": "b788d1cbffd8fbe19345e91f80697ba59f588d688bbb192dc5a58098affd2fc6",
+      "graph_hash": "debc2bd1f3616112a93d641d39c33493bf6875998df5486952fe015a90fc0f21",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -253,13 +253,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "e6a0e6b73dacb18a2905b487559674ec6ba57117cb9391aa3a7989c2ae38f9cb",
-        "46f3413313c98836e3d52cfda4a779edb670b2e5231f7c1ed3cd881624e015ba"
+        "24d7423ab8d51b4f1f5714fcf9783f480603f38a70f47ea831992ead902f946f",
+        "3246d263abee7f1ea55023f2e7dc548f717f58b373de12c5b11be7395ae76364"
       ]
     },
     {
       "id": "natural-0017",
-      "graph_hash": "acbb8fcbdfb95b866e74251420a9cfb839f065207e394e4d825b76d807450b78",
+      "graph_hash": "909eb271b1b90472eb2d3ebf71f0ef32683ea83ffbaed000edf6583cc8c03a99",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -268,13 +268,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "cd0e1cfdb96ffa15108d1ab75f42fa2d53788e276fb4b7f687519a49ae73453f",
-        "19412828f28bf5e94656f9c3a99091109eb21cfba36dbba1da282ac2ba343c72"
+        "7f8c4a96f2262b6c67944b0dc257eac2a04d5c4ae9ae6b24b20d7932684e1748",
+        "2c1ea7313d49a7c2eff41216da6f6eabe369dda0b0e458bb2927bb4e406e28d4"
       ]
     },
     {
       "id": "natural-0018",
-      "graph_hash": "6968e394a9c6da4edf745bc1b3588fc4e2aed1e353cc654bd6dbd405ec2f86c8",
+      "graph_hash": "5823eedcc40a73226b97b2f317553fc8af8a05a1e28163aedd7af914b13ee101",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -283,13 +283,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "82d065ecf462bae753a9f1d575a415239381aba59d2b7161d234a32d0f939244",
-        "4fd47cad62f88bf7ea6af8a42158bfe0e6c24730cf2d7fbaf6b91d89d3b74fe7"
+        "f5727618afaadb14097ccbc750c00915ab8efd1e7faee43249b362da0dd44afa",
+        "8f167fe9b6e390dd3b841794b1c7aefd52ac80bb9a9ac4f9edbc3aed6b8ce02b"
       ]
     },
     {
       "id": "natural-0019",
-      "graph_hash": "ce72b7846d3182406cc962ae725845a18c4cc5881d36c04256325b6bd57f1903",
+      "graph_hash": "22a31dd674cba41930803f6e75ebc27e7f37cfe12ae380264f87c9887b3b5e82",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -298,13 +298,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "e6bb0053e7a7192f468cbe92532cb31f11da2373612c6f0a90ce0a1a36955ed4",
-        "40cfb315c8a21c4643b2ff52372809ab1157418a2f84249a1af4041025165b31"
+        "4afb0ec2711beb37a845813d84a535e171145cb40cff88b9e2f3c74907bd67d9",
+        "b3784bb8d01bff3fadf03d64a722f762714baa1525ebda0cf70f611b616d4fad"
       ]
     },
     {
       "id": "natural-0020",
-      "graph_hash": "8a62a767bd9b2285e8e87430aa38c6b5b90659060a3f89fad3cd98f30b49deeb",
+      "graph_hash": "de7dbb631a0173299e35c897e30e5d2d75d873cd56ce73d182ae73dc53b7a6a6",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -313,13 +313,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "02d6a8995b68249cc934de4f8a1156bceb1b093fb62752996535020def740938",
-        "def6aa9896390f4c9c6e4075bdbc49c0e565af937a008995e88c0a2c27f6ea21"
+        "ba3b09d40327d0abf5c86b1c8bd991d40d9d3487e55a194abdfb47e0ae154788",
+        "544d355c5e39e0280b37011668d1126a6ee44bbe2a3bcb9bb6b335adcf1f0636"
       ]
     },
     {
       "id": "natural-0021",
-      "graph_hash": "56cd4dc417e667631e0f8d9b7ff1650e4bedc1d02ecbe33f682757908b2bd383",
+      "graph_hash": "0631e46f8a92cbb1a3be84a29322ab954d1254b452caa9c1d3e1e9903894295b",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -328,13 +328,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "98b22a29e3a9f399397cd522e0e96223fdee6176408b5460d10c9ee7c8975f6b",
-        "74bb57eb03e1c754535b69640011f1fa6a46914e2aeec362188e9bf7b2cb9f0a"
+        "b79a5ceb70977f030ad9095612cd6e8b37c4dc8c33f614fb4a737f3f57d83cd7",
+        "9d7387f703e279ca8cd595767abeb0c44857d607e17d7cf3c1182b475b6f50a3"
       ]
     },
     {
       "id": "natural-0022",
-      "graph_hash": "d4afc216d6f2e6ab47857ac775653001f9f14b865c761db1b6db3b5551410198",
+      "graph_hash": "933a3c28202f341e4f8ba31a791a2fe4265e15fba3770afca5b488052a4e7a9a",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -343,13 +343,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "cb9fd65049682b0a64bc346efdf64ba2db3155718ed62f66e21836f398577338",
-        "26e240c264e7512938bb475945e376d1dbe98a65db6544ee058a0fb81692391f"
+        "b2013f2be3e92ec44d823c091894362f0e3eb16d86c498193fcb50243d7fb764",
+        "f872bd700268b62330dfac4e50c7f43711a197f83c626ed4edbd0fda35895097"
       ]
     },
     {
       "id": "natural-0023",
-      "graph_hash": "2deb90aae54d4852aec18de45920d65f402f480c73ff1489b52a6d8aeb78aa5d",
+      "graph_hash": "faa5542db5b839c065fef81d9edd7341fd33e576c57a64cc8d50321490fbafe7",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -358,13 +358,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "b1a183f7c157c1d0f291c5231d22f654492c0d25372a87cff759b9382fb2da76",
-        "af85907a4c608e98f8bfed3261d67b3581ee837699fdd20dcfd1f50d5345376b"
+        "15a1a43485beda540ef14437511155c6a20314864e07506391fd553c9b682bee",
+        "2cdc22f2c130df654ac7810f7009bb6c933b1c7f7c5fe5cbf064c270d145f920"
       ]
     },
     {
       "id": "natural-0024",
-      "graph_hash": "45b80903661bfcde4af3c896add7ee79bd99b1c98325464334e25a1c33f05e1a",
+      "graph_hash": "060230f8a600978af7983c19d9df76528b6ba7b970a7a05e60eab3d537c7b5d4",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -373,13 +373,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "8825139e03909bc6def7a63bd2b5f5131b17400be57e8962cb34ce4b8f1b80e0",
-        "d92840bda0843e3e038c33072716360d3d3ad1aab956d4384717f047d38812c4"
+        "8055a9141425340f51d9680206b53e5539eb6ff16d3e5242a564d82970caf912",
+        "6fdc16760b9942e77f49c9d6d723d74629929a040c17b4f758dad7dbf5d0cbf9"
       ]
     },
     {
       "id": "natural-0025",
-      "graph_hash": "f50e62ee9af0a8e9ddec922caebf16094d2b00608606804a629dfe844b30f377",
+      "graph_hash": "a18c3a27bf900bc4c0f22310bdccb6410300fce6ba611de57245bbe5f351f369",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -388,13 +388,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "a15f0ae962cc53fc09604f6a26fe5eefeaafcae304c1c37079a4738e4bbf4007",
-        "db42a92c9105881037ac6ea4c9d52813d9694416ffd7b6407fd4d811f896fa12"
+        "c443274383e92c7061f3a3ecb24c66fbd3ba1decbe66817c466a9b3c98557013",
+        "8a0a3a1cc25caa831030bd6cf6c1bc866ba96fc5712d85d742d0b5269b25eee5"
       ]
     },
     {
       "id": "natural-0026",
-      "graph_hash": "f5c4d6e994ef32dea52364ad6f1416beb8f8240c9ff7d98aedc43b03e870414b",
+      "graph_hash": "c1a3befa1552e11a4955a4a4540dcc8d9f119d76932db3f498ade8e0de4cacf1",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -403,13 +403,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "1eb2613ea9edbb52aec0c2f0853d22f32991277cc635912513cade9f99cdf680",
-        "209a35f8642ae95b96a60dae3a6b3ab4751bd8ffae71ee06f54cc86b2e8b7d2c"
+        "6c3c6863f4516ca6ad057a00e00ad38d367bf7d58f30895c73f021af89a93403",
+        "ea6face99dd14a0b1ce48f2275e3d8cfce983d6861c9d74a90dda5c8e7228a77"
       ]
     },
     {
       "id": "natural-0027",
-      "graph_hash": "6a0710c54ae0d6a33d7cda91df4f53279a0a1ce282131b68d35f3a6a7614d0b9",
+      "graph_hash": "a7edfcdf4cd6252dbe067c0c53ccde221ca508f28150f3020583464e763aa332",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -418,13 +418,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "92230344a278b3d4f9e5867db4adf206c045fa48bd03f53b0b7767aba158f785",
-        "d6af52d80f33e7e3a871896506b3c4323b8919e492392012542f9d7a42e0bacb"
+        "e2d1cd64a12f182b1e3ad9c71663c9fd2e1f13f0ef5b70af00c327ac5fb2be21",
+        "20a6ef350887ea028624ae807c1b45619a1bb7f33b47f7ae27c4c57dd7b905d1"
       ]
     },
     {
       "id": "natural-0028",
-      "graph_hash": "95477c1ab506300b7860108266134caf3ad918fd0eca90c80ce935f4c3fef673",
+      "graph_hash": "46a33604f2ce8cd766996e702754f99e6269b71e665e1c5ec0021ac12f22e200",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -433,13 +433,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "f1be73579bd27233da5ee1af566e77d00ec6085d1d95553dadad595a2ffd78e9",
-        "790bddf0f0f20d985c52e8abef693684dc0136f63d905db8ccd0b8dea43829df"
+        "f437393444833508de55e89c8c0841a422fe394cb74c6f68faba3447e702ee27",
+        "38dba0d85716226baea30c39bd2defd017b23a28f567a46ef0c7b412a8924242"
       ]
     },
     {
       "id": "natural-0029",
-      "graph_hash": "729d25c4630fc5840c894975606ff3e4affa0eeb6aac1c091108cd4e1b69f0a4",
+      "graph_hash": "fb2318896543b82fd472845b0ab5350593a408c0f80c401e0b52a51fd0071baf",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -448,13 +448,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "2ddd7937ae83ae1ecf8200b933484d61f512c59a5f9484456a7e3b2e219c73e6",
-        "f80befbae7c094e74a938f2d2f654e0a37aa3f2362ffd121bf259d1871a3bf16"
+        "89b0ce6315b75c6be56a82e2b40166000f23c517f5ecbf31629d5297d9f45972",
+        "8b423826de69f0c02bd582bfc0f95d2a162f92bef6ffe38ad7ed16806e26bd79"
       ]
     },
     {
       "id": "natural-0030",
-      "graph_hash": "3524023d8edb26d4f13cf0cf26d766ed954174b234ee64acce87f5daad6bb716",
+      "graph_hash": "36042fcbc6dc1dcad3e054e4f6484210f79c984239d7bd0c0aed1f15c939495a",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -463,13 +463,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "f3003361865c8718dabaf1a9b14f44935d1594aff470d0facdfeb69b456d118f",
-        "d0b2628525058275811f9ec5d13d706d58f63367fe458dad4c20fd22d3de904e"
+        "88d4bb95b8ca684992838eaad56d1627123a7c1e414c3e4f1d026ffef0e06b33",
+        "ca755643f354d5207b3dfcd5fcc3f4730ce1db6cbb929a4a0a5b582e9c3c839b"
       ]
     },
     {
       "id": "natural-0031",
-      "graph_hash": "da482a460b26f30d623f6bbe4df388089e43cb4fc2325e83f4b7d9360e8ea915",
+      "graph_hash": "fd85cbb4d0b41fff2bd150a08e8a55bc8f439672dc4ca613d2e1542c2d6ff941",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -478,13 +478,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "38a9e8f2cb763e32a267e48405bb1f12d1d14bb8557066225119c29c56335e03",
-        "9d80f6e3cfadf03c17b1c653b9597e9f8f61ac04e00735b415948810f0fe32a8"
+        "607fafb4e793e397479b9ec2cd30db81ac067f6b7c79bc40350ae51602077b62",
+        "6111a5b5d5cda35fe51d545b6870642845e9d15aff96c17e30e6298e648ba585"
       ]
     },
     {
       "id": "natural-0032",
-      "graph_hash": "8b0526362a8fecc04c34c0bc0d664f3b2c8ea1791076cfd3a88d9327ccc86de3",
+      "graph_hash": "9e2a4f05b4fabfa7072ff66199f999ae210124c22a902643bc32909b5340c88a",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -493,13 +493,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "819d5ecec44a93aae08c1769c72e49ad30082d4e16b52494d84f77898f763ad6",
-        "1c597613a4469e4a014f7689245ddb5b8f0402333136a513dcf88cb863b97dfa"
+        "91a46bda7e990f5fa9e49cf66f53c4ff89a9a7dcbbadad51fc41879c418c246c",
+        "e1fddc46bf3555d196559b17b2455c6a853d27c13e7ee9012757a8f9b0717c84"
       ]
     },
     {
       "id": "natural-0033",
-      "graph_hash": "ecaa586e4ca02d986f2ebb9fdc50b597702728f3295f3fe14e360a8ca2102454",
+      "graph_hash": "f3589c7b4e9dfae1a12136922d1810c9a52ebedb31ca9c5a15a04a86a96d9fd4",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -508,13 +508,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "5ca7513585fb8d96e60c9449f2f8709198186fc6cebf5c3585d789ecf6ab2f54",
-        "b3c8124dbf5a89fee1b6694907a88e1e525fa2cc40f092b285f8abc908a1b88f"
+        "12d28bab36681845356c05d8f6a23724f87b56024cdebd958396a55bc3e22f0e",
+        "3d4d323951d034278ef69d9c8b1db1ca4cc12ef3c85bd88fda773c28e7e459c6"
       ]
     },
     {
       "id": "natural-0034",
-      "graph_hash": "8ba3fcfed67a509e0454853f1a64e17aa4626e870d9f842b2452a94792bb265b",
+      "graph_hash": "29f4f2e796aebb5821a2f0521d9ff741b0aa03396c53ee5aa609a3bb6c974d6d",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -523,13 +523,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "a6ffdeebebb6912dcfdc1cceeef5d2b9feec3a1c638be4e6eaf90bc1e481d91c",
-        "f3488fe26725d389526fab39c15f397ddac8681a153cca123f0f3304bd354995"
+        "c4350662c045e5d3483f829fa987e90e5cab0bde269be6cf19fd556952a19dfc",
+        "50bc8c3d699cff6ee7f0bfd05fdf3d4085036efb63f21e818fa37d8af4c96d59"
       ]
     },
     {
       "id": "natural-0035",
-      "graph_hash": "b243c445cefd6d57eec5234e58c79e1c6cc8048cb3dd0a69f19ba56e0ae43bab",
+      "graph_hash": "02311ad4806c9f27a388d5026830a9efd80841ca3495874efd088f48ff521de3",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -538,13 +538,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "54bdbcadcb2d4622815821cc7327bd6c6b0b1d8918c8dbca858f130b00b23c07",
-        "90d623d2d7b8b2d9a6a89d52623b5ed1aaa85a952f488a753f1a140de867fda2"
+        "74f7c58bd0cec0084946d6d3c1ef98611459ca294197d5bd40740810a3d61db8",
+        "66f8485065dc17e9d4b4dc4ddf9511d3d6c90c99a7fb6270e59aa883a3071d97"
       ]
     },
     {
       "id": "natural-0036",
-      "graph_hash": "9ad2ff1b0f3f4ce500198ce02a556114742a971d5d22157e69786b9bd1bd8d06",
+      "graph_hash": "19a0b0f9d1d9bc49dfcea74ec328d1dbcb9b1045ee6a341b9233e497f574b11f",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -553,13 +553,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "5f1c96c49af50d8e94d914c854000c3a25383e9848ff5e7dd75844ce1688698b",
-        "bb26eeec90d7d16576270af1f819078c0a91f5474aa20cc7d6eef2220bce7af5"
+        "fdcac03ca7195ab8b20c0de127d1410b51c3da0659550ac49497149e947515af",
+        "55bbfdade2399564a56c14af4ef33afe935093ac170a3a162d866e7c602da071"
       ]
     },
     {
       "id": "natural-0037",
-      "graph_hash": "60a0211202f799698f2548f3d6714816d1a2ce45f3367295a66b46d1e46e72c5",
+      "graph_hash": "578c14ce53bbb3ca4b29c5f387282bf5bbc1a8fdf118529a9e3fbcf8d3c66e14",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -568,13 +568,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "747f6fd89c3301a0a8c513fe716222a0a40f14ae9c0e1025183b3101e47e83ce",
-        "57f2366b48bdfa2108f35173702f7bd674bba88a297bb3e93c543ffc4e6f6940"
+        "a183053afd89abc91de10824e5a0f075e999ff5fd5831b645684312cdca5f637",
+        "a09a6bc5a8744050ba98dcddb68a0d1a5bc8f71faf29704a44e8f3338e892665"
       ]
     },
     {
       "id": "natural-0038",
-      "graph_hash": "e7c9c5f696c55942cbc1a4b51247b975136b4bb6da01810c89cc05fd77064c26",
+      "graph_hash": "926db7cf21a1edf939c5261cae0f1e39dc613e5f3fc31b7c8bb6d8ff68f49d2b",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -583,13 +583,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "77cb10cc28332eb2df32d9954f426f3651eff2c1876639429e7966d152bdf400",
-        "7459afaa4c51a87fb21aee3168bbff8c78c321ee6d0da2db4e5ca969e4fc7494"
+        "90c2b72187d21eeafd7098f7f5d7f954c3cffc169c0df0b0fee5d09bb66d0173",
+        "89a21e48a2e4862ba6a6a6631b8a5a844e56230af3767ea3bc69939b6ef28858"
       ]
     },
     {
       "id": "natural-0039",
-      "graph_hash": "0a4a87b4590df186b7f70e8f37e88df1b825ba07d075431e5b4454b22240ae95",
+      "graph_hash": "b41e051cd21b972bfb1c8e788e637b2da680463d5033b392472714e479393704",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -598,13 +598,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "61cfcd8a31cd214e4fd9641f4c237c5912480856a6681000a528f403a442ce0d",
-        "450f2d0afb132191082d5b11d66e2c0d48e96a215977fa4819d204ffcdd67ef3"
+        "3cea19f1c9ff054f39aa7156279d106137306dfd0cfa69a08979b6fbd037fc9b",
+        "2513338a08dc4f18d01bbbdbcc928334aa17cf93c482bc360c37bd37a70f9778"
       ]
     },
     {
       "id": "natural-0040",
-      "graph_hash": "454689a3c8245811a82698b455e3cb4bb7b8c32ed6c5475408890742b779d258",
+      "graph_hash": "d6973189c571ebc3569d675a35ad5bc020579e1fbeeb7d2f7d7a2f9ad5cf87b4",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -613,13 +613,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "2767c9756979ca6f9edb0e89420d25bf77cf21fcb45c69eeeb6b8499733d040e",
-        "bfd96c79ed7c52dd9cf5c8a3aea44232120ed7d8a8fc18ad5d5b271ae35d84c7"
+        "f39a06688edb19b3f7f469e8528bd1614081bf40994cac65b6ecf759373ca180",
+        "c28d852b1ee9e5d3e62a1c4f6b1a020b3ba97a4679a33f76a452a25279f651a5"
       ]
     },
     {
       "id": "natural-0041",
-      "graph_hash": "6b8a5a1ee9630d1bda33be5be882473796acc6d8853220206fa415188d05ed8e",
+      "graph_hash": "820abf0095d117a7bc99b1b2d9aeb10b135cefd42b29de9120a5a7ae8a722ee3",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -628,13 +628,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "e32a069d5067b527276dc488091d896cd12cf82ee60afae7e28e737d8c37aecf",
-        "feee1dfede26dfa362024ef2a5650df25bd75745224e972784080261f1f621f1"
+        "48f8f1eae5fe7fc306dfbfd5395c5de60eddfc651352003839d0295001d20e8e",
+        "9532fe84e7a282fb9c2a865a2ab81b3cddcea9bfe8c2e0e434274adeb30d6ea3"
       ]
     },
     {
       "id": "natural-0042",
-      "graph_hash": "0d7d8cef5b6acb02a39e43f847d50a8e43c5d9f0f5db1f3920cc9306add55d1e",
+      "graph_hash": "336d77f3df2e5392999da6ae877cf009ca3c0b7efb9ecc1e55b0e5a3f166bc10",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -643,13 +643,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "5346182cb59c66bfe2ed19f20513e42c2e7a4dcb9e7c729b503b330765f1d960",
-        "ec633dc39f42c225da731cead057c78ccdd9bba271b70b13ea241f0aa4c532fb"
+        "664e28ba54d062eaafa7f7ffa8402ddbfe5c4da6bf9c84613bfd36eeb5a34f84",
+        "4758d9bd7833147dc82b20d1487356a85809d6e7bea9f99c53edde3863466a74"
       ]
     },
     {
       "id": "natural-0043",
-      "graph_hash": "93f5de6f7ff5ea2b0205b389baf0f987c6b562e9102bf06b7244c26463e3d47a",
+      "graph_hash": "4e420a8c584108c7955aada4646015f84d77ffefca810e1927940bf69a72e2d6",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -658,13 +658,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "cb5684ebcf889c854f4a64d81878b3469fde71d6eb125b57b40add9a63836f07",
-        "40db9b92001cdcfec8e576334c91869b5d693ac9a805c1960b1f13956dfdf8a5"
+        "0f2791beab61c3c4802b6bad115ae03006ee71f0df504b28c27cc7c1cbf342da",
+        "53e037af1146b8d84fade10d3e5a492d5c18395d3739dc43e228583d73423e68"
       ]
     },
     {
       "id": "natural-0044",
-      "graph_hash": "828e9212aae574d74368663dae75c66538d460a6b6a47f242ecc89b9b8cece12",
+      "graph_hash": "c8a20bb9358981c70682c37d891105a9ce1916fd406c9cb1df5500928f728cbf",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -673,13 +673,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "1e89541c2690b56ff91d5e2e50b82707afd0e4e36af977e77f232a0dd050110f",
-        "47d1545d2e9e7e71bfa84d2625f6712d9885a961aa175ce32221bdbdab79073f"
+        "b65de6e048bcf6b867e9d67f9599e0bcfa24e3b488fdd83c76dc8daa4dc4810a",
+        "0084ac325f14a8be763c7b8df6016c8e6093e94bbf069d158233428286831c3d"
       ]
     },
     {
       "id": "natural-0045",
-      "graph_hash": "cdd0d0655c607a26b88045dd1f20c2e25f182971a0f20815a61a5cc16fe98c2f",
+      "graph_hash": "59b2948a210dea41e4c0f3db1c6ee44c54c5be35172619742ca8b63e1a8e6f19",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -688,13 +688,13 @@
       "horizon": 64,
       "structural_holdout": false,
       "source_hashes": [
-        "993a6388d95185e26c9c361312e2412c866cfda57a7cf466440660a6ecdb3010",
-        "624b95dacd9ed8660ffb098296b664f1b8406a9c5c005d66dc454574c095d7e8"
+        "a3e3281e21cacce200e1fbb744174b008cbaf4826fa2fd0b15eca779397e60ac",
+        "02a365dad2d126c668fc370bed11c91a39cb1e03a32eb6710769ddf1b384c22b"
       ]
     },
     {
       "id": "natural-0046",
-      "graph_hash": "3aac60cdc121d9c5e17a455efaa3a705ec342c1a4aaac8e2d72b9331661677fd",
+      "graph_hash": "3b4d8f3c3f1fea6b84ee04726ee6ff2e2b9cdecda8acbf04bf8e2818ac265b1e",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -703,13 +703,13 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "f3ffb9d6f9a66495b853e9ec70e8be04caac784628f114faff52ac8073673473",
-        "187f3c903de7f2ca42bd33f25e3762bdda658272892dc78c6ae3c6130bf76e40"
+        "b08b7a470c387560e0ce4e659eae5ac34ad277d8d078352a932dc979b35a7861",
+        "ffe5a3b7dc93f73af6b35291b6b631400a3657429d5a599f7ccd4e639ea6e506"
       ]
     },
     {
       "id": "natural-0047",
-      "graph_hash": "0976d95b0b320a02970fcb4207588a8d01a3596362744b366ab4f40aa1bb6b44",
+      "graph_hash": "30568acc7119813200bdab9136a1112e91a8113eea8cd71a6529881e9533a756",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -718,11 +718,11 @@
       "horizon": 64,
       "structural_holdout": true,
       "source_hashes": [
-        "9410c582a2e46eca674d1fa1babda83f0d0a65872f8083b094783469b0b40e19",
-        "90dd15caa1411570ea927c0fe2db627c8e19389cb5d6fcde6984c4f737b3b89e"
+        "8df7102b2d6ae6c8bef03b948564a1333bc44b11fc66b3015d5b6cc1b01eb1f7",
+        "ea7d86684d989b3b5ef11d2cf9eed7e36c825984b3a81f8c488187ba9757b7ef"
       ]
     }
   ],
   "turn_definition": "one user message followed by one generated assistant response",
-  "sha256": "19b8ce2ba7c2c001a17e9bd67d0b79bf6de7f1f1a79f20f28dfb8aaddf765831"
+  "sha256": "a1d1f5bf26675455f7e1267896a4544f430f85133b8db015b8f92d55872420ad"
 }

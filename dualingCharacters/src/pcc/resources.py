@@ -58,6 +58,10 @@ class RunLedger(AbstractContextManager):
         self.config.save(self.run_dir/"config.json")
         self.start=time.monotonic(); self.started_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())
         self.code_commit=os.environ.get("PCC_CODE_COMMIT","UNRECORDED")
+        source_root=Path(__file__).resolve().parents[2]
+        source_hashes={str(p.relative_to(source_root)):sha256(p) for p in sorted((source_root/"src").rglob("*.py"))}
+        self.metadata["source_hashes"]=source_hashes
+        self.metadata["process_pid"]=os.getpid()
         self.heartbeat("running")
         return self
 

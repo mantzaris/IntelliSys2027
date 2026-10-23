@@ -1,0 +1,110 @@
+\documentclass{svproc}
+\usepackage{url,graphicx,booktabs,amsmath,mathptmx}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Persistent Character Conflict for Learning Conversational Recovery}}
+\begin{document}
+\mainmatter
+\title{Persistent Character Conflict for Learning Conversational Recovery}
+\titlerunning{Persistent Character Conflict and Conversational Recovery}
+\author{Anonymous author(s)}
+\authorrunning{Anonymous}
+\institute{Author-review draft; identifying information withheld}
+\maketitle
+\begin{abstract}
+Extended planning conversations require assistants to preserve binding requirements,
+accept genuine revisions, and distinguish tentative alternatives from decisions.
+We investigate an author-directed hypothesis: training against persistent software
+characters with conflicting motives may improve later conversational recovery.
+The proposed system shares one language-model backbone across a responsible
+answerer and separately conditioned characters with bounded private histories.
+Characters can propose options, communicate, provide misleading recollections,
+and edit a bounded working memory, while the original attributed transcript remains
+immutable. A private state-machine evaluator supplies training verification and
+scores paired conversations in which closely matched utterances either authorize
+a change or merely consider it. The primary comparison is three-character training
+against equally equipped adaptive generic adversaries, evaluated after removing
+all antagonists. Clean and random-corruption training, two- and five-character
+conditions, and controls for narrative profiles, histories, and peer interaction
+are required to distinguish the proposed mechanism from ordinary adversarial
+supervision. This document records an executable pilot implementation and an
+incomplete evidence package. It does not establish a transferable advantage,
+coalition formation, or a narrative-profile effect. Confirmatory experiments,
+independent-model replication, external validation, and human review must be
+completed before scientific conclusions or submission readiness can be assessed.
+\keywords{conversational state, memory recovery, multi-agent learning, controlled evaluation}
+\end{abstract}
+
+\section{Status and research question}
+\textbf{Author-review scaffold, not a complete submission.} The author supplied
+the research question, hypothesis boundaries and comparison design. Implementation
+choices and proposed analyses require author review. No submission is authorized.
+The main question is whether persistent three-character training improves
+antagonist-free constraint adherence and recovery relative to equally resourced
+clean, generic-adversarial and two-character training. ``Internal'' denotes
+explicit software components sharing a backbone and working state.
+
+\section{Related work and limited novelty hypothesis}
+Persona-based roleplay attacks predate this study~\cite{collu2026}; persona lineage
+evolution with defender updates is a particularly close method~\cite{li2026}.
+Distinct-objective modular reinforcement learning~\cite{dulberg2023}, verified
+injection-and-repair self-play~\cite{wei2026}, and adaptive injection training with
+clean evaluations~\cite{hashmi2026} rule out broad novelty claims about multiple
+selves, adversarial experience or learning from self-generated failures.
+Conversation degradation~\cite{laban2025}, recall--adherence dissociation~\cite{kruthof2026},
+and long-term interactive memory evaluation~\cite{wu2025} motivate the endpoint.
+The unverified distinction is the contribution of stable competing motives and
+episode relationships over direct task disruption, not character naming or count.
+
+\section{Method}
+The state is $(T_t,z_t,m_t,h_{1t},\ldots,h_{nt})$: immutable attributed transcript,
+evaluator-private task truth, bounded mutable memory and private character histories.
+The user controls authorized changes. Character consensus cannot change truth.
+The answering policy produces remembered commitments, executable decisions, source
+references and clarification requests. Frozen character policies condition on
+distinct profiles and observable history; they are not jointly trained opponents.
+
+Hyde values adoption and control, Rival values influence and independent credit,
+the Traditionalist preserves earlier commitments, and the Provocateur favors
+dramatic change. Their shared intervention interface permits one bounded memory
+edit or communication per scheduled opportunity. Two, three and five count the
+responsible answerer. More characters divide a fixed intervention budget.
+
+The outer learner uses parameter-efficient supervised updates on verified recovery
+candidates and common deterministic teacher completions. Gold information is only
+supervision and scoring, never a policy input. Actual retrieved sources, optimizer
+steps and adapter hashes are recorded. Detailed executable limits and remaining
+implementation qualifications are documented in the accompanying method specification.
+
+\section{Evaluation design}
+Primary success requires both members of a scenario pair to have correct final
+structured decisions. Hypothetical-change resistance and legitimate-update acceptance
+are scored jointly. Recall and evidence accuracy are separate secondary measures.
+The intended design has three independent training seeds, paired scenario evaluation,
+family/seed-aware intervals, multiplicity correction for secondary comparisons,
+and an independent model-family confirmation. The test plan is not yet frozen.
+
+\section{Measured evidence}
+\IfFileExists{generated_results.tex}{\input{generated_results.tex}}{
+Measured pilot tables have not yet been regenerated into this scaffold. No primary
+effect estimate or confirmatory uncertainty interval is available.}
+
+\section{Limitations and candidate explanations}
+The initial benchmark uses a compact categorical schema and scripted users.
+Surface domain variation is insufficient for a broad domain-transfer claim.
+Prompt adherence, error severity, teacher supervision and additional generation
+tokens can explain pilot changes without the proposed character mechanism.
+Private-history and interaction controls must function behaviorally before they
+can support a mechanistic interpretation. Human validation is pending; no ratings
+have been fabricated. Memory-task results do not demonstrate consciousness, AGI,
+universal robustness or general long-horizon planning.
+
+\section{Declaration on Generative AI}
+Codex assisted with source retrieval, software implementation, execution tooling,
+analysis code and draft text under an author-supplied research brief. This draft
+has not yet received the human scientific review required by the conference.
+Human authors must verify and own the ideas, arguments, results and conclusions,
+revise the disclosure accurately, and decide whether any submission is justified.
+
+\bibliographystyle{splncs03}
+\bibliography{references}
+\end{document}
