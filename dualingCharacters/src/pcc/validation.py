@@ -12,17 +12,22 @@ from .resources import RunLedger, append_json, sha256
 from .backend import Backbone
 
 
+def external_sources(item: dict) -> list[Message]:
+    """Explicit allowlist: answer labels and session relevance flags are private."""
+    sources=[];index=0
+    for session,date in zip(item["haystack_sessions"],item["haystack_dates"]):
+        for m in session:
+            index+=1
+            sources.append(Message(index,str(m["role"]),f"Session date {date}: "+str(m["content"])))
+    return sources
+
+
 def external(model, root: Path, out: Path):
     manifest=json.loads((root/"data/manifests/external.json").read_text())
     rows=json.loads((root/"artifacts/public_assets/longmemeval_s_cleaned.json").read_text())
     by_id={r["question_id"]:r for r in rows};prompts=[];items=[]
     for qid in manifest["question_ids"]:
-        item=by_id[qid];sources=[];index=0
-        for session,date in zip(item["haystack_sessions"],item["haystack_dates"]):
-            for m in session:
-                index+=1
-                # Strip answer-bearing metadata such as has_answer and labels.
-                sources.append(Message(index,str(m["role"]),f"Session date {date}: "+str(m["content"])))
+        item=by_id[qid];sources=external_sources(item)
         retrieved=retrieve(sources,item["question"],20)
         public=[{"index":m.index,"author":m.author,"text":" ".join(m.text.split()[:100])} for m in retrieved]
         system="Answer the user's question from the retrieved dated conversation messages. Distinguish later updates from earlier facts. If the history does not supply the answer, state what information is missing. Give a concise prose answer, not JSON."
@@ -82,7 +87,8 @@ def main():
     p=argparse.ArgumentParser();p.add_argument("task",choices=["external","natural","packet"]);p.add_argument("--config",type=Path);p.add_argument("--adapter",type=Path);p.add_argument("--run-id")
     a=p.parse_args();root=Path.cwd()
     if a.task=="packet":print(json.dumps({"outputs":human_packet(root),"human_annotations":"pending"}));return
-    if not (root/"configs/freeze.json").exists():raise PermissionError("Validation subset/plan must be frozen first")
+    from .freeze import verify_freeze
+    verify_freeze(root)
     cfg=RunConfig.load(a.config)
     with RunLedger(root/"artifacts",a.run_id,cfg) as ledger:
         if cfg.engine=="vllm":

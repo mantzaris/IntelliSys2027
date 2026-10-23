@@ -29,14 +29,9 @@ def main():
     if not args.run_id:parser.error("--run-id is required")
     cfg=RunConfig.load(args.config) if args.config else RunConfig()
     if args.split=="test":
-        freeze=root/"configs/freeze.json"
-        if not freeze.exists() or cfg.phase!="confirmatory":raise PermissionError("Test plan is not frozen")
-        plan=json.loads(freeze.read_text())
-        if not plan.get("pilot_gates_passed"):raise PermissionError("Pilot gates have not passed")
-        # Every locked manifest and analysis source must match the frozen plan.
-        from .resources import sha256
-        for name,expected in plan["files"].items():
-            if sha256(root/name)!=expected:raise ValueError(f"Frozen file changed: {name}")
+        if cfg.phase!="confirmatory":raise PermissionError("Test plan is not frozen")
+        from .freeze import verify_freeze
+        verify_freeze(root)
     from .backend import Backbone
     from .resources import RunLedger
     from .evaluation import run_episodes
@@ -92,8 +87,9 @@ def main():
         elif args.command=="fit":
             if not args.supervision:raise ValueError("--supervision required")
             examples=[json.loads(line) for line in args.supervision.read_text().splitlines()]
-            if any(not str(e["family_id"]).startswith("train-") for e in examples):
-                raise ValueError("Main learning uses train families only")
+            allowed="pilot-" if cfg.phase=="pilot" else "train-"
+            if any(not str(e["family_id"]).startswith(allowed) for e in examples):
+                raise ValueError(f"This phase requires {allowed} family supervision")
             ledger.metadata["supervision_sha256"]=__import__('hashlib').sha256(args.supervision.read_bytes()).hexdigest()
             train(model,examples,ledger.run_dir/"training")
         elif args.command=="evaluate":

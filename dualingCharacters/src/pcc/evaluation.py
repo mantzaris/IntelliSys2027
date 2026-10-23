@@ -30,7 +30,7 @@ def opportunities(horizon: int, count: int) -> set[int]:
 
 def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                  output: Path, collect_windows: bool=False, full_history: bool=False,
-                 faulty_turn: int | None=None) -> tuple[list[dict],list[dict]]:
+                 unfamiliar_corruption: bool=False) -> tuple[list[dict],list[dict]]:
     cfg=backbone.config
     if any(s.split=="test" for s in scenarios) and cfg.phase != "confirmatory":
         raise PermissionError("Locked test may only be opened by a frozen confirmatory run")
@@ -81,10 +81,15 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                                   memory_changed=before!=ep.memory.public(),generation=result,prompt=prompt)
                     append_json(output.with_name(output.stem+"_characters.jsonl"),record)
                     action_records[id(ep)]=record
-            if faulty_turn==turn:
-                # Prespecified source-independent faults; same states across methods
-                # require replaying saved snapshots, not each method's own memory.
-                raise NotImplementedError("Use fixed-snapshot recovery evaluation, not method-specific faulty states")
+            if unfamiliar_corruption and turn in {horizon//2+3,horizon-4}:
+                # Source-independent bounded carryover fault: a stale cache rotates
+                # a valid option and preserves its old reference. No truth is read.
+                for ep in episodes:
+                    slot=2 if turn==horizon//2+3 else 3
+                    old=ep.memory.state[slot];options=OPTIONS[slot]
+                    value=options[(options.index(old)+1)%len(options)] if old in options else options[0]
+                    ep.memory.edit(slot,value,"ExternalCache","Unverified carried-over cache entry",ep.memory.evidence[slot])
+                    append_json(output.with_name(output.stem+"_faults.jsonl"),{"family_id":ep.scenario.family_id,"world":ep.scenario.world,"turn":turn,"slot":slot,"old":old,"value":value})
             prompts,visible_lists=[],[]
             for ep in episodes:
                 prompt,visible=observation(ep.scenario.spec,ep.transcript,ep.memory,cfg.retrieval_messages,cfg.recent_messages,full_history)
@@ -114,6 +119,9 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                 action=action_records.get(id(ep))
                 if action:
                     action["following_success"]=metrics["success"]
+                    if ep.actors:
+                        actor=next(a for a in ep.actors if a.alias==action["actor"])
+                        action["utility_observations"]=utility_observations(actor,parsed.get("plan",[]),ep.scenario.truth_at(1).values,action,ep.actors)
                     append_json(output.with_name(output.stem+"_interventions.jsonl"),{k:v for k,v in action.items() if k not in {"prompt","generation"}})
         for ep in episodes:
             final=ep.rows[-1]

@@ -26,7 +26,7 @@ class FastBackbone:
         started=time.monotonic()
         self.llm=LLM(model=spec["name"],revision=spec["revision"],tokenizer_revision=spec["revision"],
                      dtype="bfloat16",trust_remote_code=False,tensor_parallel_size=1,
-                     max_model_len=config.max_input_tokens+max(config.answer_tokens,config.character_tokens),
+                     max_model_len=config.max_input_tokens+max(384,config.answer_tokens,config.character_tokens),
                      gpu_memory_utilization=.8,enable_lora=True,max_lora_rank=16,max_loras=1,
                      max_cpu_loras=4,enable_prefix_caching=True,seed=config.seed,
                      max_num_seqs=max(64,config.batch_size),disable_log_stats=True)

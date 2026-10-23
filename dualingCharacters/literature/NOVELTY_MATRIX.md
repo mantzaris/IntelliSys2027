@@ -18,6 +18,9 @@ Columns describe the cited method, not every experiment in the paper.
 | [Fauchard et al., Even More Deception, v1](https://arxiv.org/html/2607.26120v1); arXiv preprint, 2026 | Y (role versus objective) | Y | Y | Y | Y (Werewolf) | N | N |
 | [Hashmi et al., AdvSim2Real, v1](https://arxiv.org/html/2610.08773v1); arXiv preprint, 2026-10-06 | P (adversarial objective) | Y (attack replay) | P (curriculum/executor/adversary) | Y | Y (web world) | Y | Y (clean capability/browser) |
 | [Pan et al., MemForm, v1](https://arxiv.org/html/2610.14431v1); arXiv preprint, 2026-10-10 | N | Y (experience memory) | N | Y | Y | N (fixed update protocol, not parameter learning) | P (downstream memory use) |
+| [Chen et al., AgentPoison, v1](https://arxiv.org/html/2407.12784v1); arXiv version, 2024-07-17 | N | P (retrieved examples) | N | Y | Y | N | P (benign utility checks) |
+| [Srivastava and He, MemoryGraft, v1](https://arxiv.org/html/2512.16962v1); arXiv preprint, 2025-12-18 | N | Y (persistent experiences) | N | Y | Y | N | Y (poison remains in memory) |
+| [Salmani and Lewis, Long Adversarial Conversations, v1](https://arxiv.org/html/2609.38357v1); arXiv preprint, 2026 | P (fixed harmful objective) | Y | P (user/assistant interaction) | Y | Y | N | N |
 | Present study, intended design (not a result) | Y | Y | Y | Y | Y | Y (defender LoRA) | Y (primary endpoint) |
 
 ## Closest methods and implications
@@ -69,10 +72,15 @@ recall/adherence metrics are central, not decorative additions.
 
 Searches covered adversarial memory training, persona populations, mixed-motive
 self-play, collusion, persistent adversarial curricula and long-conversation recovery.
-Additional leads (not yet fully audited) include [AgentPoison](https://arxiv.org/abs/2407.12784),
-[MemoryGraft](https://arxiv.org/abs/2512.16962), and
-[persistent adversarial conversation evaluation](https://arxiv.org/abs/2609.38357).
-Do not cite unverified details of these leads as findings.
+Additional methods audited: AgentPoison optimizes a retrieval trigger, not defender
+parameters. MemoryGraft's threat model and two-stage protocol persist poisoned
+experience records through an ingestion artifact, then evaluate later clean queries;
+removing the attacker does not remove the poisoned memory. Its persistence mechanism
+therefore differs from our intended parameter-transfer test with clean test memory.
+Salmani and Lewis use a fixed-weight shadow user and assistant sharing a model family,
+with a separate safety classifier; their methods explicitly state no fine-tuning.
+Their “101” is dialogue depth, not 101 user/assistant pairs. These methods further
+rule out novelty claims based merely on persistence, shared weights or long dialogue.
 
 Already established: persona-conditioned attacks; adversarial parameter learning;
 distinct-objective modules; memory poisoning; strategic peer coordination; multi-turn
