@@ -28,6 +28,20 @@
     "status": "completed"
   },
   {
+    "run_id": "main-qwen-c1-17-eval",
+    "model": "qwen",
+    "training_condition": "C1",
+    "evaluation": "evaluation_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 240,
+    "paired_success": 0.675,
+    "conversation_success": 0.7145833333333333,
+    "recall_accuracy": 0.984375,
+    "gpu_reserved_seconds": 2809.506673036143,
+    "status": "completed"
+  },
+  {
     "run_id": "main-qwen-c1-17-r0-collect",
     "model": "qwen",
     "training_condition": "C1",
@@ -39,6 +53,20 @@
     "conversation_success": 0.52,
     "recall_accuracy": 0.9672222222222222,
     "gpu_reserved_seconds": 386.0247828681022,
+    "status": "completed"
+  },
+  {
+    "run_id": "main-qwen-c1-17-r1-collect",
+    "model": "qwen",
+    "training_condition": "C1",
+    "evaluation": "collection_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 150,
+    "paired_success": 0.5733333333333334,
+    "conversation_success": 0.66,
+    "recall_accuracy": 0.9405555555555556,
+    "gpu_reserved_seconds": 880.2655778420158,
     "status": "completed"
   },
   {

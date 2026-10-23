@@ -160,3 +160,11 @@ local artifacts using `scripts/sync.sh`. Do not call a partial package submissio
 This was the deliberately installed infrastructure boundary hold, not a GPU run
 failure. Both baselines were preserved. Full archive verification and hold release
 completed at 2026-10-23T18:13:48Z, with 3.217735 reserved GPU-hours consumed.
+
+## Serialization repair hold — 2026-10-23 19:59 UTC
+
+The original queue is held by `artifacts/campaign_boundary_hold.json` after the current C1 evaluation. CPU grammar checks accept 0/1,568 saved training completions in their current order and 1,568/1,568 after schema-order serialization, with identical values. Affected completed training/evaluation and dependent refresh runs are excluded explicitly in `configs/run_exclusions.json`; all artifacts and costs remain. No completed trained-test metric informed this decision. Baselines and the original C1 round-zero collection remain valid. See `reports/SERIALIZATION_AMENDMENT_002.md`. Do not remove the hold until corrected GPU pilot gates, restart aliases and the amended freeze are audited. The supplemental controller remains CPU-only pending the original queue; its cached freeze must be refreshed before execution.
+
+## Automatic execution update
+
+2026-10-23T20:07:41Z: Campaign stopped incomplete: Infrastructure hold before another GPU stage: Audit confirmed training supervision serializes clarify/evidence/plan/state, while the installed inference grammar starts with state. Hold after the current C1 evaluation for a documented serialization repair; no completed trained-test outcome was inspected to decide this hold.. See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.

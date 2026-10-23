@@ -1,0 +1,36 @@
+{
+  "xgrammar_version": "0.1.23",
+  "vllm_version": "0.10.2",
+  "grammar_root": "root ::= ((\"{\" [ \\n\\t]* \"\\\"state\\\"\" [ \\n\\t]* \":\" [ \\n\\t]* root_prop_0 root_part_0 [ \\n\\t]* \"}\"))",
+  "label_orders": {
+    "saved": [
+      "clarify",
+      "evidence",
+      "plan",
+      "state"
+    ],
+    "inference": [
+      "state",
+      "plan",
+      "evidence",
+      "clarify"
+    ]
+  },
+  "checks": [
+    {
+      "run_id": "main-qwen-c1-17-r0-collect",
+      "examples": 804,
+      "serialized_targets_accepted": 0,
+      "schema_order_targets_accepted": 804,
+      "supervision_sha256": "db8ee29b5a5d2623a6f912edbfa6a510333ae0a24b7f07319d20900230bd7011"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-collect",
+      "examples": 764,
+      "serialized_targets_accepted": 0,
+      "schema_order_targets_accepted": 764,
+      "supervision_sha256": "3156430136f5ead66e3dcedeaecd429d2601734826c32d4379cf43f256f5b53d"
+    }
+  ],
+  "gpu_model_calls": 0
+}

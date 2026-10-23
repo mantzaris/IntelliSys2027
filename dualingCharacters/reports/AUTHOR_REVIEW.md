@@ -2,9 +2,9 @@
 
 This is not a submission-ready paper. Human scientific review remains required.
 
-Measured reservation: 3.670 GPU-hours; inference 97,404,649 input and 6,193,931 output tokens; 1,785,856 training input tokens. Actual dollar cost is unknown.
+Measured reservation: 5.050 GPU-hours; inference 136,938,700 input and 8,937,595 output tokens; 2,834,432 training input tokens. Actual dollar cost is unknown.
 
-## Matched learning pilots (one seed; 32 turns)
+## Historical pilots (trained entries excluded for serialization mismatch)
 
 | Run | Paired success | Conversations |
 |---|---:|---:|
@@ -14,7 +14,7 @@ Measured reservation: 3.670 GPU-hours; inference 97,404,649 input and 6,193,931 
 | pilot-v4-phi-base | 0.2500 (16 families) | 0.3125 |
 | pilot-v4-phi-c5-eval | 0.1250 (16 families) | 0.2188 |
 
-Exploratory C5−C3 difference +0.0625, 95% family interval [-0.1875, +0.3125]. This does not estimate training-seed variation or establish H1.
+Excluded-format pilot C5−C3 difference +0.0625, 95% family interval [-0.1875, +0.3125]. These trained pilots are invalid intended-method efficacy evidence due to the serialization mismatch; all measurements remain for audit.
 
 ## Main grid
 
