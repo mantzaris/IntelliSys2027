@@ -96,10 +96,11 @@ class Backbone:
         trainable,total=self.model.get_nb_trainable_parameters()
         self.ledger.metadata.update(trainable_parameters=trainable,total_parameters=total)
 
-    def load_adapter(self,path: Path):
+    def load_adapter(self,path: Path,trainable: bool=False):
         from peft import PeftModel
-        self.model=PeftModel.from_pretrained(self.model,str(path),is_trainable=False)
+        self.model=PeftModel.from_pretrained(self.model,str(path),is_trainable=trainable)
         self.has_adapter=True
+        if trainable:self.model.enable_input_require_grads()
 
     def save_adapter(self,path: Path):
         path.mkdir(parents=True,exist_ok=True)

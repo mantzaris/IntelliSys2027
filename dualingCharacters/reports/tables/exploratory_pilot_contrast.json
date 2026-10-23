@@ -1,0 +1,14 @@
+{
+  "difference": 0.25,
+  "ci95": [
+    0,
+    0.75
+  ],
+  "families": 4,
+  "seeds": 1,
+  "per_seed": {
+    "17": 0.25
+  },
+  "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+  "qualification": "Exploratory engineering pilot only; four families, one training seed, old optional-peer protocol. Not H1 evidence."
+}

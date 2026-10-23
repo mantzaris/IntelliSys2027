@@ -1,0 +1,5 @@
+# Optional isolated inference environment; never replace the training environment.
+vllm==0.10.2
+transformers==4.56.2
+huggingface-hub==0.35.3
+numpy==2.2.6

@@ -3,16 +3,32 @@
     "run_id": "batch-profile-001",
     "phase": "pilot",
     "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 58.35158674092963,
+      "peak_vram_gib": 18.495327472686768,
+      "input_tokens": 98791,
+      "output_tokens": 10758,
+      "generation_seconds": 53.277045333758,
+      "aggregate_output_tokens_per_second": 201.92561228960264
+    }
+  },
+  {
+    "run_id": "mechanism-v2-001",
+    "phase": "pilot",
+    "condition": "C5",
     "status": "running",
     "roles": {},
     "peer_messages": 0,
     "resources": {
-      "gpu_reserved_seconds": 0.001239662989974022,
-      "peak_vram_gib": 0.0,
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "generation_seconds": 0,
-      "aggregate_output_tokens_per_second": 0.0
+      "gpu_reserved_seconds": 171.83589916303754,
+      "peak_vram_gib": 10.108482360839844,
+      "input_tokens": 354320,
+      "output_tokens": 21352,
+      "generation_seconds": 165.69540279638022,
+      "aggregate_output_tokens_per_second": 128.86295962139062
     }
   },
   {
@@ -241,6 +257,33 @@
       "output_tokens": 2747,
       "generation_seconds": 71.93425174057484,
       "aggregate_output_tokens_per_second": 38.18764960406952
+    }
+  },
+  {
+    "run_id": "profile-phi-001",
+    "phase": "pilot",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "supervision": {
+      "attempted_windows": 32,
+      "source_ineligible": 0,
+      "clean_valid": 30,
+      "failed_eligible": 2,
+      "candidate_attempts": 2,
+      "candidate_valid": 0,
+      "candidate_discarded": 2,
+      "gold_teacher_examples": 32,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 47.33350801933557,
+      "peak_vram_gib": 18.78856658935547,
+      "input_tokens": 30808,
+      "output_tokens": 2438,
+      "generation_seconds": 26.65432819444686,
+      "aggregate_output_tokens_per_second": 91.46732126259069
     }
   }
 ]

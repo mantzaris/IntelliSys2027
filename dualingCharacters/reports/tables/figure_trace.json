@@ -1,0 +1,12 @@
+[
+  {
+    "figure": "training_curves",
+    "path": "artifacts/runs/pilot-c3-002/training/loss.jsonl",
+    "sha256": "14ddd3bd18e26924f462337268c7202ed514f87acfed1000286474ccbc035d7d"
+  },
+  {
+    "figure": "training_curves",
+    "path": "artifacts/runs/pilot-c5-001/training/loss.jsonl",
+    "sha256": "ee2d24b67dbc0a17eef79baea7159dc53ef16b5d55ef2efcfc65260f32a764e0"
+  }
+]

@@ -10,7 +10,7 @@ from .environment import make_family, digest
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("command",choices=["manifests","profile","batch-profile","mechanism-pilot","pilot","collect","evaluate","analyze"])
+    parser.add_argument("command",choices=["manifests","profile","batch-profile","mechanism-pilot","pilot","collect","fit","evaluate","analyze"])
     parser.add_argument("--root",type=Path,default=Path.cwd())
     parser.add_argument("--config",type=Path)
     parser.add_argument("--run-id")
@@ -19,6 +19,7 @@ def main():
     parser.add_argument("--horizon",type=int,default=16)
     parser.add_argument("--split",default="pilot",choices=["pilot","train","validation","test"])
     parser.add_argument("--adapter",type=Path)
+    parser.add_argument("--supervision",type=Path)
     args=parser.parse_args();root=args.root.resolve()
     if args.command=="manifests":write_manifests(root/"data/manifests");return
     if args.command=="analyze":
@@ -42,8 +43,12 @@ def main():
     scenarios=[s for i in range(args.start_family,args.start_family+args.families) for s in make_family(args.split,i,args.horizon)]
     with RunLedger(root/"artifacts",args.run_id,cfg) as ledger:
         ledger.metadata["dataset_hash"]=digest([{"id":s.family_id,"world":s.world,"graph":s.graph_hash} for s in scenarios])
-        model=Backbone(cfg,ledger,root/"configs/models.json")
-        if args.adapter:model.load_adapter(args.adapter)
+        if cfg.engine=="vllm":
+            if args.command in {"profile","pilot","fit"}:raise ValueError("Train with transformers in a separate serialized process")
+            from .fast_backend import FastBackbone
+            model=FastBackbone(cfg,ledger,root/"configs/models.json")
+        else:model=Backbone(cfg,ledger,root/"configs/models.json")
+        if args.adapter:model.load_adapter(args.adapter,trainable=args.command=="fit")
         if args.command=="batch-profile":
             from .memory import observation, WorkingMemory
             from .resources import append_json
@@ -80,6 +85,13 @@ def main():
         elif args.command=="collect":
             _,windows=run_episodes(model,scenarios,cfg.condition,ledger.run_dir/"collection.jsonl",True)
             select_supervision(model,windows,ledger.run_dir/"supervision.jsonl")
+        elif args.command=="fit":
+            if not args.supervision:raise ValueError("--supervision required")
+            examples=[json.loads(line) for line in args.supervision.read_text().splitlines()]
+            if any(not str(e["family_id"]).startswith("train-") for e in examples):
+                raise ValueError("Main learning uses train families only")
+            ledger.metadata["supervision_sha256"]=__import__('hashlib').sha256(args.supervision.read_bytes()).hexdigest()
+            train(model,examples,ledger.run_dir/"training")
         elif args.command=="evaluate":
             run_episodes(model,scenarios,"base",ledger.run_dir/"evaluation.jsonl")
 

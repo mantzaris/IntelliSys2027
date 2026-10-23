@@ -10,6 +10,7 @@ class RunConfig:
     condition: str = "C5"
     seed: int = 17
     precision: str = "bf16"
+    engine: str = "transformers"
     batch_size: int = 8
     max_input_tokens: int = 4096
     answer_tokens: int = 256
@@ -32,6 +33,8 @@ class RunConfig:
     def __post_init__(self):
         if self.precision not in {"bf16", "nf4"}:
             raise ValueError("precision must be bf16 or nf4")
+        if self.engine not in {"transformers","vllm"}:
+            raise ValueError("unknown inference engine")
         if self.condition not in {"base", "C1", "C2", "C3", "C4", "C5", "C6", "A1", "A2", "A3"}:
             raise ValueError("unknown condition")
         if not (0 < self.active_gpu_hours_ceiling <= 96):

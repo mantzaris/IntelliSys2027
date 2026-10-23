@@ -10,7 +10,7 @@ PCC_LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 export RSYNC_RSH="ssh -F /dev/null -i $PCC_SSH_KEY -p $PCC_SSH_PORT -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=$PCC_KNOWN_HOSTS"
 case "${1:-pull}" in
   push)
-    rsync -az --exclude='.venv' --exclude='__pycache__' --exclude='.pytest_cache' \
+    rsync -az --exclude='.venv*' --exclude='__pycache__' --exclude='.pytest_cache' \
       --exclude='artifacts' --exclude='data/generated' --exclude='data/external' \
       --exclude='literature/cache' "$PCC_LOCAL_DIR/" "root@$PCC_SSH_HOST:$PCC_REMOTE_DIR/"
     ;;

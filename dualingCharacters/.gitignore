@@ -3,7 +3,7 @@ artifacts/
 data/generated/
 data/external/
 literature/cache/
-.venv/
+.venv*/
 __pycache__/
 *.py[cod]
 .pytest_cache/
