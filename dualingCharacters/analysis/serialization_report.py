@@ -9,6 +9,20 @@ from pcc.study_analysis import write_csv
 
 def regenerate(root: Path):
     rows=[];inputs={};effects=[];evaluations={}
+    baseline_equivalence=[]
+    for name in ('base-qwen-eval','base-phi-eval'):
+        path=root/'artifacts/runs'/name/'status.json'
+        if not path.exists():continue
+        meta=json.loads(path.read_text());shared={}
+        for module in ('backend','fast_backend','config','schemas','memory','evaluation','environment','characters'):
+            source=f'src/pcc/{module}.py';actual=sha256(root/source)
+            assert meta['source_hashes'][source]==actual, 'Retained baseline interface changed'
+            shared[source]=actual
+        baseline_equivalence.append({'run_id':name,'status_sha256':sha256(path),'unchanged_policy_environment_sources':shared,
+                                     'dataset_hash':meta['dataset_hash'],'model_revision':meta['model_revision']})
+    (root/'reports/tables/baseline_interface_equivalence.json').write_text(json.dumps({
+        'purpose':'Verify that retained main untrained baselines use the unchanged inference/environment interface after training-only serialization repair.',
+        'runs':baseline_equivalence},indent=2)+'\n')
     grammar=root/'artifacts/corrected_serialization_audit.json'
     if grammar.exists():
         report=json.loads(grammar.read_text());inputs[str(grammar.relative_to(root))]=sha256(grammar)

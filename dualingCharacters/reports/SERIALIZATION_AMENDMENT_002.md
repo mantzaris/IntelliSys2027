@@ -1,6 +1,6 @@
 # Amendment 002: training completion serialization
 
-Recorded hold: 2026-10-23 19:59:26 UTC. Status: repair and pilot validation in progress.
+Recorded hold: 2026-10-23 19:59:26 UTC. Status: repair gates passed; amended main queue resumed at 20:34:47 UTC.
 
 The first trained C1 evaluation was running when a CPU-only format audit found
 that JSONL persistence alphabetizes completion fields. The fit loader preserved
@@ -100,3 +100,10 @@ The amended runtime forecast retains all spent attempts and the entire original
 scientific grid. The additional profile supplement retains its separate fixed
 remaining-budget gate. Source-only tests and `scripts/amend_serialization.py`
 validate the amendment before the main hold is released.
+
+The completed reproducibility audit also found a descriptive CSV export that
+retained its earlier rows when the regenerated eligible-results JSON became empty.
+The unfrozen reporting wrapper now clears CSV data whose matching JSON table is
+empty, and the descriptive writer does so directly. This is an export-consistency
+repair; no frozen numerical estimator or eligibility rule changes. The canonical
+JSON tables and all original raw measurements remain available.

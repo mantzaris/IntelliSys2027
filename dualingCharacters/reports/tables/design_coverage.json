@@ -132,7 +132,7 @@
   "source_hashes": {
     "src/pcc/environment.py": "26f07456e4b3d9d183d9ab1b556eecdb0107597059eba2fe0ea9c5815cdd7858",
     "src/pcc/validation.py": "cc9d6387c102b56a66c9a0b6852fbb3b593c0ca0456cb1afaf7bf053eb5bf908",
-    "configs/freeze.json": "7a08b91e1e881a9780b30216f18711995fde48c54c1da17402d7688457c4cde2",
+    "configs/freeze.json": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
     "analysis/design_coverage.py": "e21fbe27a73b4e4f39374406a2b0d1f12857295d7c7059ca2bb9b842faca55e5"
   }
 }

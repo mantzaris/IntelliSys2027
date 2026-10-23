@@ -5,39 +5,39 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Current phase
 
-Infrastructure amendment 001 is resolved. Both baseline evaluations completed
-under the original frozen scientific code. Their local archives were restored
-from intact pod originals and verified at 30,720 turn records each; see
-`reports/tables/archive_integrity_001.json`. Qwen base paired success is 67/240;
-Phi base is 27/240. These are untrained baselines, not learning effects.
-The old controller ended at the planned stage boundary. The temporary directory
-gate and hold marker were removed after verification; their release record is
-`artifacts/infrastructure_hold_001_released.json`. Resume uses source commit
-`a1f43934d220f0733643daf4aaa26b8891605475` and amended freeze SHA256
-`7a08b91e1e881a9780b30216f18711995fde48c54c1da17402d7688457c4cde2`.
-The original freeze remains in `configs/freeze_original.json`. No experimental
-choices changed. The first 150-family clean collection completed, producing 900
-attempted windows, 804 source-eligible examples, and zero verified model
-recoveries in 128 attempts. The common teacher supplies all 804 labels. The
-first complete C1/seed-17 learner has completed both rounds: 512 optimizer
-steps, 2,097,152 input tokens and 97,516 supervised target tokens. The final
-adapter SHA256 is `eae858d0bbd117fb02012baf354029f7c7b96dd73b8301f5b4a2dccff4a981e5`.
-Its full antagonist-free 240-family test is active. The refreshed collection
-had 746 clean and 18 failed source-eligible windows; round-one fitting sampled
-503 unique windows with 467 repeated buffer entries. Consult
-`artifacts/campaign_state.json` and mirrored status for the latest stage.
-The resumed local controller uses unified execution session `67629`; session
-`38552` ended at the documented hold. Its log continues in
-`artifacts/campaign_controller.log`. Inspect the lock/current stage before any
-restart; do not start a duplicate GPU queue.
+Phase C is active after the documented serialization amendment 002. The main
+controller is execution session **14639**, currently fitting
+`main-qwen-c1-17-r0-fit-format2`. Read `artifacts/campaign_state.json` and mirrored
+status for live progress; do not launch a duplicate queue. All 241 original jobs,
+models, seeds, endpoints and training budgets remain fixed, with four explicit
+restart aliases for invalid C1 stages. No eligible trained main result exists yet.
 
-Phase C: plan hash-frozen; serialized confirmatory campaign active. Real GPU inference and LoRA learning have executed in
-both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
-than its base. No confirmatory test outcomes existed at the original freeze. `configs/freeze_original.json`
-records 55 scientific-input hashes and all passed pilot gates, scientific source
-commit `c96e8a0c986b8af008c1296a601ec9c881f419ae`, and 241 predetermined GPU stages.
-Freeze SHA256: `3a35d0015e5447de1ca5eb3d6e77ab3c6e12ba3ad54bfcaf07799ad55443e525`.
-Do not change endpoints, seeds, checkpoint rules or scientific inputs using results.
+Scientific source commit: `a62f1881d23df2282b410243ad4575bb11d1d74a`;
+freeze commit `45b79bd`; current freeze SHA256:
+`135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3`.
+Twenty-three CPU tests and 58 frozen-file checks passed. See
+`reports/SERIALIZATION_AMENDMENT_002.md`; original and first-amended freezes remain
+preserved. The current source has already been synchronized and verified on the pod.
+
+Both untrained 240-family baselines remain valid: Qwen 67/240 paired successes,
+Phi 27/240. Their inference/environment source hashes match the amended source.
+The original first C1 collection remains valid (804 eligible windows). Its corrected
+fit reuses identical supervision bytes and the identical initial adapter checksum.
+The original C1 fits, dependent refresh collection and evaluation are excluded for
+saved-target/inference field-order mismatch; every artifact and cost is retained.
+
+Corrected engineering pilots at 32 turns and one seed: Qwen C3 and C5 each 7/16
+paired successes, matched Qwen reference 4/16; Phi C5 4/16 and its reference 2/16.
+The C5−C3 pilot difference is zero, interval [−0.25, 0.25]; this is not H1 evidence.
+All three pilots performed 32 real optimizer steps. Updated-defender refresh
+produced 19 clean and five failed eligible windows. No score improvement was a gate.
+
+The optional unseen-profile controller is session **68875**, CPU-only waiting for
+the entire core queue and its unchanged 3.5-hour remaining-budget gate. At main
+restart, all attempts consumed 5.339829 reserved GPU-hours; the conservative core
+forecast was 92.742568 hours including those attempts. Price is unknown. Human
+ratings and author scientific review remain pending. Nothing has been pushed,
+submitted or published.
 
 ## Hardware and storage
 
@@ -130,10 +130,10 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
    the full integrity audit, frozen analysis, explicitly post-baseline descriptive
    tables and manuscript. Complete scientific author review and the final report.
 4. The supplemental controller is already in a CPU-only wait in execution
-   session `73013`; do not launch another copy. Its state/log are
+   session `68875`; do not launch another copy. Its state/log are
    `artifacts/unseen_profiles_controller_state.json` and
    `artifacts/unseen_profiles_controller.log`. It acquires the shared queue lock
-   after all 241 core stages complete, checks the fixed 3.5-hour remaining-budget
+   after all 241 core stages (including four explicit rerun aliases) complete, checks the fixed 3.5-hour remaining-budget
    gate, then runs the ten declared exploratory profile tests if permitted.
    Otherwise it records the unmet gate. No supplemental GPU job has started.
    See `analysis/UNSEEN_PROFILES.md`; do not alter the primary freeze or queue.
@@ -178,3 +178,29 @@ C5 refresh check. Main hold remains installed. The optional supplemental control
 (session 73013) was stopped while CPU-only waiting so it cannot retain a stale
 freeze; restart it only after amendment 002 is finalized. No supplementary GPU
 job has run. Do not launch a second main or pilot controller.
+
+## Current execution — amendment 002 released
+
+At 2026-10-23 20:34:47 UTC, the serialization hold was released after all gates.
+The active main controller is execution session **14639**, with the same
+`artifacts/campaign_controller.log` and `artifacts/campaign_state.json` paths.
+It resumed at `main-qwen-c1-17-r0-fit-format2`, reusing the original valid
+round-zero supervision. Four fixed `-format2` aliases preserve original invalid
+files and every consumed resource. All other original jobs and scientific choices
+remain fixed. Do not start a duplicate controller.
+
+Scientific source commit: `a62f1881d23df2282b410243ad4575bb11d1d74a`.
+Freeze commit: `45b79bd`; freeze SHA256:
+`135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3`.
+The amendment verifies 58 source/configuration files and passed 23 CPU tests.
+The completed local artifact audit verified 41 runs, 623 recorded source files,
+135 checkpoint files and 36 trace archives. Prior freezes remain preserved.
+
+The restarted supplemental controller is **session 68875**, CPU-only waiting for
+the original queue and its unchanged minimum 3.5-hour remaining-budget gate.
+Its protocol hash is unchanged. Earlier main/pilot controllers (67629, 36013,
+21162) are finished; the earlier supplemental waiter 73013 was stopped before
+any GPU work. At release, all attempts consumed **5.339829 reserved GPU-hours**;
+the conservative amended core forecast is **92.742568 hours total**, including
+those attempts. Actual price remains unknown. Human ratings and author review
+remain pending, and the primary three-seed comparison has no eligible result yet.

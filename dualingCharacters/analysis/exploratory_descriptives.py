@@ -17,7 +17,9 @@ from pcc.eligibility import exclusions
 
 def write_table(path: Path, rows: list[dict]):
     path.with_suffix(".json").write_text(json.dumps(rows,indent=2)+"\n")
-    if not rows:return
+    if not rows:
+        path.with_suffix(".csv").write_text("")
+        return
     with path.with_suffix(".csv").open("w",newline="") as stream:
         writer=csv.DictWriter(stream,fieldnames=list(rows[0]),lineterminator="\n")
         writer.writeheader();writer.writerows(rows)

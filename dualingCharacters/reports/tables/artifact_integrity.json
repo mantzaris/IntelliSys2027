@@ -1,7 +1,7 @@
 {
   "scope": "Completed local runs only; verifies recorded source/checkpoint/archive hashes and summary-based conversational trace counts. Does not establish scientific validity, remote persistence, or completeness of files without recorded hashes.",
-  "frozen_files_verified": 55,
-  "analysis_source_sha256": "007ac53f54f2a7c064ce075223d1a0db2344b537d681ef774eae4d4979990fa4",
+  "frozen_files_verified": 58,
+  "analysis_source_sha256": "65839d5cde79d57f9b99ca4d88b5f75cd9fe2959d27a19b1d2831c31d266975d",
   "completed_runs": [
     {
       "run_id": "base-phi-eval",
@@ -45,6 +45,22 @@
       "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
     },
     {
+      "run_id": "main-qwen-c1-17-eval",
+      "status_sha256": "b7560de07c50a84d35e06b7de1b743c642ab8e41dadf9e58da5e46482767ccd6",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/main-qwen-c1-17-eval/evaluation.jsonl.gz",
+          "records": 30720,
+          "original_sha256": "602949c058a360b350ede81b3bccefe41481090b4f8074363a79d418c3ddadff",
+          "archive_sha256": "05aa7d153631a29597a2746bfe48aaf30f41830f7725e0ab4b635af471977b05"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "6ed0d6e28f6105893bf55b3025438e686d9efe2ecedb89cb894ba47b15dafe05"
+    },
+    {
       "run_id": "main-qwen-c1-17-r0-collect",
       "status_sha256": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
       "source_files_verified": 31,
@@ -68,6 +84,31 @@
       "archives": [],
       "qualifications": [],
       "source_snapshot_sha256": "9371611f4b3af2f059594a2f244e024c9b016a0041f0824b1b63ed0c5c409676"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-collect",
+      "status_sha256": "8391f67c77baff53602ab4892df022bed6859ed477c4d7bb6f8cff006b6e46c4",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/main-qwen-c1-17-r1-collect/collection.jsonl.gz",
+          "records": 9600,
+          "original_sha256": "7860ddff51c70d28708976a1fe73dfbf5179ecaccd53a363b4cded31d25cd3fb",
+          "archive_sha256": "0afc9b633603d1f2ac7ff9ce8ebd39f46283ba11830b6eaa0148ddfe9161f1d4"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "9c2037f6399d652ba0663a1d26b472b306872c51d1bd29874fc5858a47375767"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-fit",
+      "status_sha256": "030a7a478a02e306aeeb8dca8076f98304e3d2666bc996c993d138af06c963a8",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "7b04ac594f003096a33f0fb6b5b162244ea1c66cf7d826b99270508472c2f7ff"
     },
     {
       "run_id": "mechanism-final-001",
@@ -189,6 +230,141 @@
         }
       ],
       "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-format2-phi-base",
+      "status_sha256": "171530c8458a0f1f269c60d5448b1fff2f0ba59413174c6f6fabaf337a233bc3",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-phi-base/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "32881a2b564cca6d25bc96db5bbb9903e42513471efabfe29871d45893c77f85",
+          "archive_sha256": "6a7da23c1f30377184932b045fbdc1c0b93984de85598c7b8db628ce4ceaf3de"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "70d3afa20026c0ae8458dfda3efb754bad54cc307fef9b31f7a0797313342b84"
+    },
+    {
+      "run_id": "pilot-format2-phi-c5-eval",
+      "status_sha256": "35b9b78079266827b0533eaec8b867e55fd110427a89566940e9499e469054ab",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-phi-c5-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "9acd45045fe78e6d6188ac4f200f7dedcfb8090733fd6dc270a6b71a2f8f9296",
+          "archive_sha256": "710d19b3b539c00a642f16df60f2c15c694a9ff363a34a3a15d7e30b90151dc1"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "ab399f58c62f7c2070a2e1adfd62e95e8f676e2df1ac9bc7052e0b78f56983da"
+    },
+    {
+      "run_id": "pilot-format2-phi-c5-fit",
+      "status_sha256": "8a9f8fe895c799d37270ef997ccc077c541d20477cf5bd5bd8d0de9aa0b8a035",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "0b7618fdafedcbd4ad1b9d14aa4547abce0ba97f6ab336b9579691054e157dc5"
+    },
+    {
+      "run_id": "pilot-format2-qwen-base",
+      "status_sha256": "eb16c73a2a328da23cf88efa82bfaacd626d7e691785ef8fb30d1261dfa9d19a",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-qwen-base/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "ce5ec410d6a6d982a5ebe53f39cfc82345fbbc2f440e0b83dc873a218ec8798f",
+          "archive_sha256": "415ae98cacfc3890bf6ef2ade6b5f2fdf12b8383740da7e2d899de012b9fcb62"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "010b3bb9b24a0103e26115870173c4b4914c70f55e0617a4c03e81cf6c6238b0"
+    },
+    {
+      "run_id": "pilot-format2-qwen-c3-eval",
+      "status_sha256": "1e58260dbae04e993b782b561537ac57d40c47b6628458463f74102df5c3bb5d",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-qwen-c3-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "b7f901deadad2f5b5d08fb876be515128bff3c623e8955cd01d9c0ae8b0e132c",
+          "archive_sha256": "1e66631bc2644afa0d984c5608d3957e36973d62b8ad0d0b2d08a5c3b2a99491"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "ae3110deac47563e214da66963d9e4e9e5dd2949d8ab3dd874f9f9c6ae4abee0"
+    },
+    {
+      "run_id": "pilot-format2-qwen-c3-fit",
+      "status_sha256": "1a6e4e40aed70c626273d78cfc1824e7971a992ef8b9bc12d69bbe40baea420f",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "206ea2e85e8efb6cd8f6fad232f935457e97928e81fe38652c71e34fc4cc6842"
+    },
+    {
+      "run_id": "pilot-format2-qwen-c5-eval",
+      "status_sha256": "73f601b9aa7d2ceeb510dde74155c2efecdddcb6e5be71cffb47b27cf4a635c6",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-qwen-c5-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "34d6e7d472b39b86c5564840c33734100cc76f268c2bc115e0e2fb28419cdc55",
+          "archive_sha256": "224bf2118d1d83b43f6e812f71baaa458c28662b3894ff158095e44c29c8cf86"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "b2a9062b9bda022d446112a28ce94cfa320cbf66145699110c5e36fdb381ad42"
+    },
+    {
+      "run_id": "pilot-format2-qwen-c5-fit",
+      "status_sha256": "b6f1588d207e9471ab294065521014dfdad8f8178bdde0170f5305bfea4088e0",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "2497eeffc973f6551733fe6c8661359671f9b54ce06072b91a087ca8b6bbc878"
+    },
+    {
+      "run_id": "pilot-format2-refresh",
+      "status_sha256": "9d9ab497f0d05130dcc30a77f0f7ca6bacd3aedcb8dabefe7b7c023f0a0a9faa",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-format2-refresh/collection.jsonl.gz",
+          "records": 256,
+          "original_sha256": "37b47d0cdba9b90547503dc686ee231ecbe837c28428cd7482dca95ae53af3a3",
+          "archive_sha256": "3b0faf98fc5e467563b5baa1e4371d10e104ad6e7c881b4083fbd3179a0bcafe"
+        },
+        {
+          "path": "artifacts/runs/pilot-format2-refresh/collection_characters.jsonl.gz",
+          "records": 96,
+          "original_sha256": "48b0b5bfd12ae815b97482e7fbcede8abff0a17bd462faf49b3e90a0790d2666",
+          "archive_sha256": "b368de7ce042822107ef93212fd3c196da7ab81dd64c3874e31735792fb5a723"
+        },
+        {
+          "path": "artifacts/runs/pilot-format2-refresh/collection_interventions.jsonl.gz",
+          "records": 96,
+          "original_sha256": "8588d1696ebc0258dd974868f94c60cc3e744a4c6bc37953120d0a39725386d5",
+          "archive_sha256": "4faeb4a6871625c93b5ac7d512f4b92676af42af90cd42527b27bf632c079db8"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "3372a49440b167552239d49ee01307e391defb504004a0eede3bfb8ceea93611"
     },
     {
       "run_id": "pilot-severity-001",

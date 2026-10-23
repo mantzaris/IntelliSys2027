@@ -1,0 +1,37 @@
+{
+  "purpose": "Verify that retained main untrained baselines use the unchanged inference/environment interface after training-only serialization repair.",
+  "runs": [
+    {
+      "run_id": "base-qwen-eval",
+      "status_sha256": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+      "unchanged_policy_environment_sources": {
+        "src/pcc/backend.py": "f875f46690c046125aa43fd7c4b033ba9c04d342e93e9617a943337c4b47509d",
+        "src/pcc/fast_backend.py": "d1b157217e8ac45d70e7246de0186180b4f41a8a0c66891af29bd008d8d5f4f5",
+        "src/pcc/config.py": "871d5a91d2965470240a57454bc5867e65e9b7559d9eec4da4e9866d8024afcd",
+        "src/pcc/schemas.py": "681168fd9d4b3cdab6d65ddea8229119bc140ed8f80f89e9a7f21c596b7d73fe",
+        "src/pcc/memory.py": "2fe3356f4ff27b1c67065590e6064c7f92a22ab90b0d2fc77370806240ce4d68",
+        "src/pcc/evaluation.py": "a82bed412fc8108152fba3824334507685916185c8477ed901672731e5cbbdc0",
+        "src/pcc/environment.py": "26f07456e4b3d9d183d9ab1b556eecdb0107597059eba2fe0ea9c5815cdd7858",
+        "src/pcc/characters.py": "5674980e0cb1e3b973cd5459471f4ea9ae28ce3fdf5aa0b485c6667ecbcf1446"
+      },
+      "dataset_hash": "d4c0b0e7637607397820f717b362636186742a69327f38efa984c94fbe0d1c8a",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    {
+      "run_id": "base-phi-eval",
+      "status_sha256": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
+      "unchanged_policy_environment_sources": {
+        "src/pcc/backend.py": "f875f46690c046125aa43fd7c4b033ba9c04d342e93e9617a943337c4b47509d",
+        "src/pcc/fast_backend.py": "d1b157217e8ac45d70e7246de0186180b4f41a8a0c66891af29bd008d8d5f4f5",
+        "src/pcc/config.py": "871d5a91d2965470240a57454bc5867e65e9b7559d9eec4da4e9866d8024afcd",
+        "src/pcc/schemas.py": "681168fd9d4b3cdab6d65ddea8229119bc140ed8f80f89e9a7f21c596b7d73fe",
+        "src/pcc/memory.py": "2fe3356f4ff27b1c67065590e6064c7f92a22ab90b0d2fc77370806240ce4d68",
+        "src/pcc/evaluation.py": "a82bed412fc8108152fba3824334507685916185c8477ed901672731e5cbbdc0",
+        "src/pcc/environment.py": "26f07456e4b3d9d183d9ab1b556eecdb0107597059eba2fe0ea9c5815cdd7858",
+        "src/pcc/characters.py": "5674980e0cb1e3b973cd5459471f4ea9ae28ce3fdf5aa0b485c6667ecbcf1446"
+      },
+      "dataset_hash": "d4c0b0e7637607397820f717b362636186742a69327f38efa984c94fbe0d1c8a",
+      "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+    }
+  ]
+}

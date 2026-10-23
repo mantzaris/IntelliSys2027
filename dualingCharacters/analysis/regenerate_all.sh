@@ -10,4 +10,5 @@ export PYTHONPATH=src
 .venv/bin/python analysis/exploratory_descriptives.py
 .venv/bin/python analysis/retrieval_descriptives.py
 .venv/bin/python analysis/summarize_unseen_profiles.py
+.venv/bin/python analysis/clear_empty_exports.py
 bash scripts/build_paper.sh

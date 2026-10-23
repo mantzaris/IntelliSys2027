@@ -37,7 +37,12 @@ pilot-c3-002,qwen,C3,collection_summary,17,pilot,4,0,0.25,0.5208333333333334,449
 pilot-c5-001,qwen,C5,after_summary,17,pilot,4,0.5,0.625,1.0,477.0383701482788,completed,
 pilot-c5-001,qwen,C5,before_summary,17,pilot,4,0.25,0.25,0.625,477.0383701482788,completed,
 pilot-c5-001,qwen,C5,collection_summary,17,pilot,4,0,0.25,0.25,477.0383701482788,completed,
+pilot-format2-phi-base,phi,C5,evaluation_summary,17,pilot,16,0.125,0.25,0.90625,113.08908113790676,completed,
+pilot-format2-phi-c5-eval,phi,C5,evaluation_summary,17,pilot,16,0.25,0.375,0.9947916666666666,114.61446542898193,completed,
+pilot-format2-qwen-base,qwen,C5,evaluation_summary,17,pilot,16,0.25,0.375,0.9583333333333334,121.0408291281201,completed,
 pilot-format2-qwen-c3-eval,qwen,C3,evaluation_summary,17,pilot,16,0.4375,0.5625,0.9583333333333334,125.623146279715,completed,
+pilot-format2-qwen-c5-eval,qwen,C5,evaluation_summary,17,pilot,16,0.4375,0.5,0.9375,122.86207774886861,completed,
+pilot-format2-refresh,qwen,C5,collection_summary,17,pilot,4,0.5,0.625,0.9375,109.78469481831416,completed,
 pilot-v4-phi-base,phi,C5,evaluation_summary,17,pilot,16,0.25,0.3125,0.90625,135.16838289564475,completed,
 pilot-v4-phi-c5-collect,phi,C5,collection_summary,17,pilot,16,0.1875,0.3125,0.90625,136.7968744961545,completed,
 pilot-v4-phi-c5-eval,phi,C5,evaluation_summary,17,pilot,16,0.125,0.21875,0.7395833333333334,109.68912236392498,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.

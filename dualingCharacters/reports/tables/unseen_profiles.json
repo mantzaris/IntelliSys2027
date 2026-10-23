@@ -1,6 +1,6 @@
 {
   "classification": "Exploratory supplement specified after untrained baseline outcomes and before any trained-policy test outcome; not part of the original confirmatory freeze",
-  "controller_status": "not_started",
+  "controller_status": "held_for_serialization_amendment",
   "results": [
     {
       "run_id": "supplement-qwen-base-17-unseen-profiles-v1",
