@@ -1,8 +1,8 @@
 {
   "frozen_utc": "2026-10-23T16:39:48.583258+00:00",
-  "code_commit": "c96e8a0c986b8af008c1296a601ec9c881f419ae",
+  "code_commit": "a1f43934d220f0733643daf4aaa26b8891605475",
   "pilot_gates_passed": true,
-  "registration": "Local pre-test hash freeze; not publicly registered",
+  "registration": "Local pre-test design hash freeze, with explicitly recorded post-test infrastructure amendment; not publicly registered",
   "gates": {
     "actual_parameter_updates_both_families": true,
     "isolated_packed_attention_both_families": true,
@@ -195,7 +195,7 @@
     "src/pcc/__init__.py": "da438d59cc5bcb2a4a7b5159375a62995e913db9b1a1cbe1ca3c9a2d8d841fc8",
     "src/pcc/analysis.py": "0d2017acc83daa5bce73f796587f337129c63a18d9506d0cdbac7bf6d8ba0920",
     "src/pcc/backend.py": "f875f46690c046125aa43fd7c4b033ba9c04d342e93e9617a943337c4b47509d",
-    "src/pcc/campaign.py": "7ef6d0531d68a423dfe013f53d9318b7816479f81f4e9b69827de32c59ce697a",
+    "src/pcc/campaign.py": "86f787d9b8e2aa00b557d04c8ddf199618799cf2a3677a200e697df17e8f9ae0",
     "src/pcc/characters.py": "5674980e0cb1e3b973cd5459471f4ea9ae28ce3fdf5aa0b485c6667ecbcf1446",
     "src/pcc/cli.py": "60f6792fff71e48ff450046821d80b340ea9511bbb181ea6fc6a5b5a746168f2",
     "src/pcc/config.py": "871d5a91d2965470240a57454bc5867e65e9b7559d9eec4da4e9866d8024afcd",
@@ -219,12 +219,38 @@
     "src/pcc/schemas.py": "681168fd9d4b3cdab6d65ddea8229119bc140ed8f80f89e9a7f21c596b7d73fe",
     "src/pcc/secondary_analysis.py": "d2be902a316836bb407095c6caac16e374a0b51999179bb0d178e95b6cb0760e",
     "src/pcc/severity.py": "3008375e85038766d81cd65935235cb9b7350d6a8df23c47a42bfab3233a1522",
-    "src/pcc/storage.py": "1ed6e5dbb20a0545d38aa9d780873609433506bf2ef88422fabc72b1fdcbaed9",
+    "src/pcc/storage.py": "d6c32d39b17b47eede68281866b42827836971c7a6436c3f127cecf01036c7e7",
     "src/pcc/study_analysis.py": "7295b82be3ef4e842272d277d73d169e34387ccfe7c84d712e9b1636ce552c55",
     "src/pcc/training.py": "58f92ca1a26a51809ed10ecb4e3bafbf5afbf766a6fc1792ef9e8651ba8566af",
     "src/pcc/validation.py": "cc9d6387c102b56a66c9a0b6852fbb3b593c0ca0456cb1afaf7bf053eb5bf908",
     "tests/test_invariants.py": "457c9b0923f402611b7dd4f6b5ba3f8b52bf5f2d55cd2107b7fead41483c2558",
-    "tests/test_protocol.py": "123264c49fa51699e954a54d55274da4bb75ef748ce8d1e296b2b16d049e55b2"
+    "tests/test_protocol.py": "77feab637f86af7b029b24571592494708aca9d65532ef4bba27df7619dbe698"
   },
-  "human_review": "Pending; author requested packet now and raters later"
+  "human_review": "Pending; author requested packet now and raters later",
+  "original_code_commit": "c96e8a0c986b8af008c1296a601ec9c881f419ae",
+  "original_freeze_sha256": "3a35d0015e5447de1ca5eb3d6e77ab3c6e12ba3ad54bfcaf07799ad55443e525",
+  "amendments": [
+    {
+      "id": "001",
+      "recorded_utc": "2026-10-23T17:32:56.330800+00:00",
+      "reason": "Protect complete local mirrored archives against stale plain prefixes; add boundary hold and row-count integrity checks. No experimental or analysis decisions changed.",
+      "report": "reports/INFRASTRUCTURE_AMENDMENT_001.md",
+      "source_commit": "a1f43934d220f0733643daf4aaa26b8891605475",
+      "test_access_at_amendment": "Qwen base complete and its paired success visible during count audit; Phi base running. No confirmatory trained-condition outcomes exist.",
+      "changed_files": {
+        "src/pcc/campaign.py": {
+          "old": "7ef6d0531d68a423dfe013f53d9318b7816479f81f4e9b69827de32c59ce697a",
+          "new": "86f787d9b8e2aa00b557d04c8ddf199618799cf2a3677a200e697df17e8f9ae0"
+        },
+        "src/pcc/storage.py": {
+          "old": "1ed6e5dbb20a0545d38aa9d780873609433506bf2ef88422fabc72b1fdcbaed9",
+          "new": "d6c32d39b17b47eede68281866b42827836971c7a6436c3f127cecf01036c7e7"
+        },
+        "tests/test_protocol.py": {
+          "old": "123264c49fa51699e954a54d55274da4bb75ef748ce8d1e296b2b16d049e55b2",
+          "new": "77feab637f86af7b029b24571592494708aca9d65532ef4bba27df7619dbe698"
+        }
+      }
+    }
+  ]
 }
