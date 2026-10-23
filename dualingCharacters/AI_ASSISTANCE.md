@@ -18,7 +18,7 @@ citations, model runs, or cost estimates may be inserted.
 | 2026-10-23 | Detected and repaired a stale-prefix local archive race after the first baseline; preserved the original freeze and recorded an explicit infrastructure-only amendment and added integrity tests | Pending |
 | 2026-10-23 | Added explicitly post-baseline descriptive tables for all predefined domain/structure cells, actual supervision exposure and finished-run resource accounting; retained the frozen confirmatory analysis unchanged | Pending |
 | 2026-10-23 | Audited completed local source, checkpoint and trace hashes. Recorded five early pilot manifests with unverifiable self-hash entries while separately verifying all actual checkpoint files; preserved original metadata | Pending |
-| 2026-10-23 | Specified an optional, separately labeled unseen-profile robustness test before trained test outcomes, conditional on completing the full original queue and retaining 3.5 hours within the existing ceiling; scientific author review remains pending | Pending |
+| 2026-10-23 | Specified and implemented an optional, separately labeled unseen-profile robustness test before trained test outcomes; 288 CPU-only public-interface/history checks passed and the incomplete-core guard rejected early execution. No supplemental model calls. Conditional on completing the full original queue and retaining 3.5 hours within the existing ceiling | Pending |
 
 The IntelliSys AI policy and template were checked against the current official
 site on 2026-10-23; see `paper/CONFERENCE_REQUIREMENTS.md`. This package is an author-review artifact, not an unattended compliant final

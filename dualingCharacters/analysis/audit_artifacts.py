@@ -35,6 +35,10 @@ def audit(root: Path) -> dict:
         else:
             assert meta["config"]["phase"]!="confirmatory",(run.name,"confirmatory snapshot missing")
             record["source_qualification"]="Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+        if "supplement_runner_sha256" in meta:
+            assert sha256(run/"unseen_profiles.py")==meta["supplement_runner_sha256"],(run.name,"supplement runner")
+            assert sha256(run/"unseen_profiles_protocol.json")==meta["supplement_protocol_sha256"],(run.name,"supplement protocol")
+            record["supplemental_sources_verified"]=2
         for checksums in sorted(run.glob("training/*/checksums.json")):
             for name,digest in json.loads(checksums.read_text()).items():
                 if name=="checksums.json":
