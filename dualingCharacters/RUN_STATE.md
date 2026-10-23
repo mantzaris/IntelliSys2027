@@ -5,11 +5,13 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Current phase
 
-Phase B final audit complete; preparing the pre-test hash freeze. Real GPU inference and LoRA learning have executed in
+Phase C: plan hash-frozen; starting the serialized confirmatory campaign. Real GPU inference and LoRA learning have executed in
 both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
-than its base. No confirmatory test outcomes exist. `configs/study_plan.json` is
-prepared, but no `configs/freeze.json` exists. Do not unlock tests before the final
-coverage audit, final analysis specification and source hashes are complete.
+than its base. No confirmatory test outcomes existed at freeze. `configs/freeze.json`
+records 55 scientific-input hashes and all passed pilot gates, scientific source
+commit `c96e8a0c986b8af008c1296a601ec9c881f419ae`, and 241 predetermined GPU stages.
+Freeze SHA256: `3a35d0015e5447de1ca5eb3d6e77ab3c6e12ba3ad54bfcaf07799ad55443e525`.
+Do not change endpoints, seeds, checkpoint rules or scientific inputs using results.
 
 ## Hardware and storage
 
@@ -72,8 +74,8 @@ pod hourly rate unknown; dollar cost must remain unknown.
   an anonymized, explicitly incomplete review scaffold compiled locally.
 - `reports/PILOT_RESULTS.md` and figures regenerate from saved evidence.
 
-No `configs/freeze.json` exists. `study_draft.json` is superseded by the still-unfrozen
-`study_plan.json`. Main/ablation/replication cells remain explicitly pending.
+`study_draft.json` is superseded by frozen `study_plan.json`.
+Main/ablation/replication cells remain explicitly pending until actual completion.
 The candidate schedule retains 36 independently trained condition/seed models,
 two refresh rounds, 256 steps × 4096 input tokens per round (2,097,152 total),
 240 paired test families and 64 turns. Optional 32/128-turn sweeps use seed 17;
@@ -93,14 +95,12 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
 
 ## Next actions
 
-1. Commit scientific inputs, then run `scripts/freeze_study.py` and commit the
-   resulting hash freeze. No test outcomes have been generated or inspected.
-2. Synchronize source; run `pcc.campaign` locally with authorized SSH environment.
+1. Synchronize source; run `pcc.campaign` locally with authorized SSH environment.
    It serializes jobs, mirrors every minute, preserves checkpoints, refuses changed
    hashes, compresses completed traces, and regenerates the package at completion.
-3. Monitor infrastructure and the 96-hour ceiling. Keep test choices fixed; inspect
+2. Monitor infrastructure and the 96-hour ceiling. Keep test choices fixed; inspect
    failures without selecting by significance. Audit and document any resume alias.
-4. Complete evidence/manuscript review, exact missing requirements and final report.
+3. Complete evidence/manuscript review, exact missing requirements and final report.
 
 ## Recovery after interruption
 
