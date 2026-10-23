@@ -89,3 +89,19 @@ Exact source snapshots, model revisions, dataset hashes, configuration and adapt
 checksums accompany later runs. Identical completed safetensors may share local
 hard links; all named artifacts remain available. Active checkpoint writes are
 atomic. No base model or bulk run trace belongs in Git.
+
+The recorded [serialization amendment](reports/SERIALIZATION_AMENDMENT_002.md)
+adds a narrowly scoped, frozen restart map for four completed C1 stages found
+scientifically invalid by a CPU grammar audit. This is distinct from ordinary
+infrastructure resume. The original freezes and excluded artifacts remain; all
+spending is counted. `configs/serialization_restarts.json` changes only IDs and
+downstream artifact paths. It cannot alter seeds, samples or training settings.
+
+Repair validation is reproduced with `analysis/audit_serialization.py` in the
+inference environment, the two modes of `analysis/run_serialization_pilots.py`
+(the second takes `--reference-refresh`), and
+`PYTHONPATH=src .venv/bin/python analysis/serialization_report.py` locally.
+These controllers require the main boundary hold and exclusive queue lock.
+They reuse recorded pilot supervision; see the run registry for its exact hashes.
+Malformed or capped responses remain failures and are never retried for a score.
+The amended runtime forecast is diagnostic and does not change the fixed grid.

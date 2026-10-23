@@ -55,3 +55,22 @@ Fresh untrained pilot references will use the same current source and held-out
 pilot families: the older v4 baseline's environment/evaluation source differs,
 so it cannot supply a matched before/after comparison for this repaired pilot.
 No additional training samples or hyperparameter trials are introduced.
+
+The original statistical plan prohibited replacing completed runs through the
+resume mechanism. This amendment makes a narrow, explicit exception for the
+four identified scientifically invalid C1 stages using a separately frozen
+restart mapping; ordinary completed-run retries remain prohibited. This is a
+reviewable change to implementation and eligibility handling, while the numerical
+estimators and scientific design remain unchanged. It must not be described as
+an entirely unchanged analysis protocol.
+
+The original precision simulation used discordance 0.3125 from the historical
+pilot now excluded for serialization mismatch. Retain that simulation as an
+assumption-based sensitivity analysis, not a validated estimate of the repaired
+method's discordance or power. The already frozen sample size and seeds stay
+fixed; repaired pilot scores do not select the study size or checkpoints.
+
+Reproducibility means pinned code, weights, data, seeds and deterministic scoring;
+GPU kernels are not forced into bitwise deterministic operation. Checkpoint and
+trace hashes identify the actual execution, and small numerical differences may
+remain on another hardware/software stack.

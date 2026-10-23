@@ -449,6 +449,70 @@
     }
   },
   {
+    "run_id": "pilot-format2-qwen-c3-eval",
+    "phase": "pilot",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 125.623146279715,
+      "peak_vram_gib": 39.220703125,
+      "input_tokens": 1007848,
+      "output_tokens": 68334,
+      "generation_seconds": 78.70246842876077,
+      "aggregate_output_tokens_per_second": 868.2573922297494
+    }
+  },
+  {
+    "run_id": "pilot-format2-qwen-c3-fit",
+    "phase": "pilot",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 90.77960937190801,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "pilot-format2-qwen-c5-eval",
+    "phase": "pilot",
+    "condition": "C5",
+    "status": "running",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 53.679564086254686,
+      "peak_vram_gib": 38.935546875,
+      "input_tokens": 164515,
+      "output_tokens": 12746,
+      "generation_seconds": 9.84771576197818,
+      "aggregate_output_tokens_per_second": 1294.3103058693098
+    }
+  },
+  {
+    "run_id": "pilot-format2-qwen-c5-fit",
+    "phase": "pilot",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 139.4007220128551,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
     "run_id": "pilot-severity-001",
     "phase": "pilot",
     "condition": "C5",

@@ -1,14 +1,14 @@
 {
-  "reserved_gpu_hours": 5.049500697834236,
-  "observed_pod_wall_hours_first_to_latest_run": 6.322640742527114,
+  "reserved_gpu_hours": 5.163245987209439,
+  "observed_pod_wall_hours_first_to_latest_run": 6.492688767777549,
   "pod_start_time": null,
   "actual_hourly_rate_usd": null,
   "actual_cost_usd": null,
-  "inference_input_tokens": 136938700,
-  "generated_output_tokens": 8937595,
-  "training_input_tokens": 2834432,
-  "generation_requests": 136615,
-  "runs": 33,
-  "completed": 32,
+  "inference_input_tokens": 138111063,
+  "generated_output_tokens": 9018675,
+  "training_input_tokens": 3096576,
+  "generation_requests": 137831,
+  "runs": 37,
+  "completed": 35,
   "qualification": "Reservation includes model load and failed runs. Observed pod interval is not total billed lifetime. Five-second utilization telemetry exists only for later runs."
 }

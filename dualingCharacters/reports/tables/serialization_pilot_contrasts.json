@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "comparison": "Qwen C5-C3",
+    "qualification": "Corrected engineering pilot; one seed, 16 families, 32 turns; not H1 confirmation",
+    "difference": 0,
+    "ci95": [
+      -0.25,
+      0.25
+    ],
+    "families": 16,
+    "seeds": 1,
+    "per_seed": {
+      "17": 0
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably"
+  }
+]

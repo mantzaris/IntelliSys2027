@@ -6,5 +6,11 @@
   "artifacts/runs/pilot-format2-qwen-c3-eval/status.json": "1e58260dbae04e993b782b561537ac57d40c47b6628458463f74102df5c3bb5d",
   "artifacts/runs/pilot-format2-qwen-c3-eval/evaluation_summary.json": "4254a5e3ceb2f8376a88ecd32c2328c7584bf4acf5b7a5064e7765759fb0f874",
   "artifacts/runs/pilot-format2-qwen-c3-eval/evaluation.jsonl.gz": "1e66631bc2644afa0d984c5608d3957e36973d62b8ad0d0b2d08a5c3b2a99491",
-  "analysis/serialization_report.py": "c61f2b1b6fd773e9d510a066bb7fb8611c5ec993e8128a644b2fca04f4320478"
+  "artifacts/runs/pilot-format2-qwen-c5-fit/status.json": "b6f1588d207e9471ab294065521014dfdad8f8178bdde0170f5305bfea4088e0",
+  "artifacts/runs/pilot-format2-qwen-c5-fit/training/training_summary.json": "800af50f57c723a3ccef379440ca28cef27db7e4f1a028e9d9c00f7297c7efdf",
+  "artifacts/runs/pilot-format2-qwen-c5-fit/training/final/adapter_model.safetensors": "0f1bb0ed416a7038c1ec8d37bdcb181368d9eaa27f1072521f4eedad3a12acc4",
+  "artifacts/runs/pilot-format2-qwen-c5-eval/status.json": "73f601b9aa7d2ceeb510dde74155c2efecdddcb6e5be71cffb47b27cf4a635c6",
+  "artifacts/runs/pilot-format2-qwen-c5-eval/evaluation_summary.json": "b61c84c7c96c5aa84b490b20ae5b536610ab86efd0ece1b0d3dc34ff49620f67",
+  "artifacts/runs/pilot-format2-qwen-c5-eval/evaluation.jsonl.gz": "224bf2118d1d83b43f6e812f71baaa458c28662b3894ff158095e44c29c8cf86",
+  "analysis/serialization_report.py": "2b6058b029c7ec264f83c0d3741c1234a1c3033b5eafd775e1d1e2fec9ea1949"
 }

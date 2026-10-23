@@ -1,4 +1,6 @@
 model,condition,fit_run,eval_run,status,optimizer_steps,training_input_tokens,supervised_tokens,adapter_changed,paired_success,families,malformed_turns,reserved_gpu_seconds
 qwen,C3,pilot-format2-qwen-c3-fit,pilot-format2-qwen-c3-eval,completed,32,131072,5014,True,0.4375,16,1,216.402755651623
-qwen,C5,pilot-format2-qwen-c5-fit,pilot-format2-qwen-c5-eval,pending,,,,,,,,
+qwen,C5,pilot-format2-qwen-c5-fit,pilot-format2-qwen-c5-eval,completed,32,131072,4884,True,0.4375,16,0,262.2627997617237
 phi,C5,pilot-format2-phi-c5-fit,pilot-format2-phi-c5-eval,pending,,,,,,,,
+qwen,base,,pilot-format2-qwen-base,pending,0,0,0,False,,,,
+phi,base,,pilot-format2-phi-base,pending,0,0,0,False,,,,

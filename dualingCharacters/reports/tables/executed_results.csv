@@ -1,52 +1,53 @@
-run_id,model,training_condition,evaluation,seed,phase,families,paired_success,conversation_success,recall_accuracy,gpu_reserved_seconds,status
-base-phi-eval,phi,base,evaluation_summary,17,confirmatory,240,0.1125,0.22916666666666666,0.8982638888888889,2614.80571070686,completed
-base-qwen-eval,qwen,base,evaluation_summary,17,confirmatory,240,0.2791666666666667,0.40625,0.9840277777777778,2673.22404492693,completed
-main-qwen-c1-17-eval,qwen,C1,evaluation_summary,17,confirmatory,240,0.675,0.7145833333333333,0.984375,2809.506673036143,completed
-main-qwen-c1-17-r0-collect,qwen,C1,collection_summary,17,confirmatory,150,0.43333333333333335,0.52,0.9672222222222222,386.0247828681022,completed
-main-qwen-c1-17-r1-collect,qwen,C1,collection_summary,17,confirmatory,150,0.5733333333333334,0.66,0.9405555555555556,880.2655778420158,completed
-mechanism-final-001,qwen,C5,A1_summary,17,pilot,8,0.25,0.375,0.9583333333333334,532.5564882769249,completed
-mechanism-final-001,qwen,C5,A2_summary,17,pilot,8,0.375,0.4375,0.9791666666666666,532.5564882769249,completed
-mechanism-final-001,qwen,C5,A3_summary,17,pilot,8,0.25,0.375,0.9375,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C1_summary,17,pilot,8,0.375,0.4375,0.9895833333333334,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C2_summary,17,pilot,8,0.25,0.375,0.9270833333333334,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C3_summary,17,pilot,8,0.125,0.3125,0.875,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C4_summary,17,pilot,8,0.125,0.25,0.9583333333333334,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C5_summary,17,pilot,8,0.25,0.3125,0.96875,532.5564882769249,completed
-mechanism-final-001,qwen,C5,C6_summary,17,pilot,8,0.25,0.25,0.8645833333333334,532.5564882769249,completed
-mechanism-v2-001,qwen,C5,A1_summary,17,pilot,4,0.25,0.5,0.5,970.087231663987,completed
-mechanism-v2-001,qwen,C5,A2_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed
-mechanism-v2-001,qwen,C5,A3_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed
-mechanism-v2-001,qwen,C5,C1_summary,17,pilot,4,0.25,0.375,0.375,970.087231663987,completed
-mechanism-v2-001,qwen,C5,C3_summary,17,pilot,4,0.25,0.375,0.5,970.087231663987,completed
-mechanism-v2-001,qwen,C5,C4_summary,17,pilot,4,0.25,0.375,0.625,970.087231663987,completed
-mechanism-v2-001,qwen,C5,C5_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed
-mechanism-v2-001,qwen,C5,C6_summary,17,pilot,4,0.75,0.75,0.875,970.087231663987,completed
-mechanism-v3-001,qwen,C5,A1_summary,17,pilot,32,0.34375,0.40625,0.984375,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,A2_summary,17,pilot,32,0.40625,0.4375,0.9765625,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,A3_summary,17,pilot,32,0.46875,0.5,0.9869791666666666,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,C1_summary,17,pilot,32,0.375,0.421875,0.9895833333333334,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,C3_summary,17,pilot,32,0.125,0.1875,0.8515625,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,C4_summary,17,pilot,32,0.3125,0.40625,0.9713541666666666,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,C5_summary,17,pilot,32,0.46875,0.53125,0.9895833333333334,1631.4291728888638,completed
-mechanism-v3-001,qwen,C5,C6_summary,17,pilot,32,0.25,0.3125,0.921875,1631.4291728888638,completed
-pilot-alias-refresh-001,qwen,C5,collection_summary,17,pilot,4,0.75,0.75,1.0,104.4634552388452,completed
-pilot-c3-001,qwen,C3,before_summary,17,pilot,4,0.25,0.25,0.625,101.82988438429311,failed
-pilot-c3-002,qwen,C3,after_summary,17,pilot,4,0.25,0.375,0.9375,449.7868980257772,completed
-pilot-c3-002,qwen,C3,before_summary,17,pilot,4,0.25,0.25,0.625,449.7868980257772,completed
-pilot-c3-002,qwen,C3,collection_summary,17,pilot,4,0,0.25,0.5208333333333334,449.7868980257772,completed
-pilot-c5-001,qwen,C5,after_summary,17,pilot,4,0.5,0.625,1.0,477.0383701482788,completed
-pilot-c5-001,qwen,C5,before_summary,17,pilot,4,0.25,0.25,0.625,477.0383701482788,completed
-pilot-c5-001,qwen,C5,collection_summary,17,pilot,4,0,0.25,0.25,477.0383701482788,completed
-pilot-v4-phi-base,phi,C5,evaluation_summary,17,pilot,16,0.25,0.3125,0.90625,135.16838289564475,completed
-pilot-v4-phi-c5-collect,phi,C5,collection_summary,17,pilot,16,0.1875,0.3125,0.90625,136.7968744961545,completed
-pilot-v4-phi-c5-eval,phi,C5,evaluation_summary,17,pilot,16,0.125,0.21875,0.7395833333333334,109.68912236392498,completed
-pilot-v4-qwen-base,qwen,C5,evaluation_summary,17,pilot,16,0.375,0.4375,0.9791666666666666,122.9761031572707,completed
-pilot-v4-qwen-c3-collect,qwen,C3,collection_summary,17,pilot,16,0.125,0.15625,0.84375,175.80208681011572,completed
-pilot-v4-qwen-c3-eval,qwen,C3,evaluation_summary,17,pilot,16,0.3125,0.40625,0.9270833333333334,126.50885285390541,completed
-pilot-v4-qwen-c5-collect,qwen,C5,collection_summary,17,pilot,16,0.25,0.34375,0.9479166666666666,164.54135229019448,completed
-pilot-v4-qwen-c5-eval,qwen,C5,evaluation_summary,17,pilot,16,0.375,0.5,0.9583333333333334,128.05493993498385,completed
-profile-bf16-001,qwen,C1,profile_before_summary,17,pilot,1,0,0,1.0,54.26432136911899,completed
-profile-bf16-isolated-001,qwen,C1,profile_before_summary,17,pilot,1,0,0.5,0.5,52.85684524895623,completed
-profile-nf4-001,qwen,C1,profile_before_summary,17,pilot,1,0,0,1.0,98.8186606746167,completed
-profile-phi-001,phi,C1,profile_before_summary,17,pilot,1,1,1,1.0,47.33350801933557,completed
-profile-phi-isolated-001,phi,C1,profile_before_summary,17,pilot,1,1,1,1.0,40.401118983048946,completed
+run_id,model,training_condition,evaluation,seed,phase,families,paired_success,conversation_success,recall_accuracy,gpu_reserved_seconds,status,scientific_exclusion
+base-phi-eval,phi,base,evaluation_summary,17,confirmatory,240,0.1125,0.22916666666666666,0.8982638888888889,2614.80571070686,completed,
+base-qwen-eval,qwen,base,evaluation_summary,17,confirmatory,240,0.2791666666666667,0.40625,0.9840277777777778,2673.22404492693,completed,
+main-qwen-c1-17-eval,qwen,C1,evaluation_summary,17,confirmatory,240,0.675,0.7145833333333333,0.984375,2809.506673036143,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+main-qwen-c1-17-r0-collect,qwen,C1,collection_summary,17,confirmatory,150,0.43333333333333335,0.52,0.9672222222222222,386.0247828681022,completed,
+main-qwen-c1-17-r1-collect,qwen,C1,collection_summary,17,confirmatory,150,0.5733333333333334,0.66,0.9405555555555556,880.2655778420158,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+mechanism-final-001,qwen,C5,A1_summary,17,pilot,8,0.25,0.375,0.9583333333333334,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,A2_summary,17,pilot,8,0.375,0.4375,0.9791666666666666,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,A3_summary,17,pilot,8,0.25,0.375,0.9375,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C1_summary,17,pilot,8,0.375,0.4375,0.9895833333333334,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C2_summary,17,pilot,8,0.25,0.375,0.9270833333333334,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C3_summary,17,pilot,8,0.125,0.3125,0.875,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C4_summary,17,pilot,8,0.125,0.25,0.9583333333333334,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C5_summary,17,pilot,8,0.25,0.3125,0.96875,532.5564882769249,completed,
+mechanism-final-001,qwen,C5,C6_summary,17,pilot,8,0.25,0.25,0.8645833333333334,532.5564882769249,completed,
+mechanism-v2-001,qwen,C5,A1_summary,17,pilot,4,0.25,0.5,0.5,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,A2_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,A3_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,C1_summary,17,pilot,4,0.25,0.375,0.375,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,C3_summary,17,pilot,4,0.25,0.375,0.5,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,C4_summary,17,pilot,4,0.25,0.375,0.625,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,C5_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed,
+mechanism-v2-001,qwen,C5,C6_summary,17,pilot,4,0.75,0.75,0.875,970.087231663987,completed,
+mechanism-v3-001,qwen,C5,A1_summary,17,pilot,32,0.34375,0.40625,0.984375,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,A2_summary,17,pilot,32,0.40625,0.4375,0.9765625,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,A3_summary,17,pilot,32,0.46875,0.5,0.9869791666666666,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,C1_summary,17,pilot,32,0.375,0.421875,0.9895833333333334,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,C3_summary,17,pilot,32,0.125,0.1875,0.8515625,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,C4_summary,17,pilot,32,0.3125,0.40625,0.9713541666666666,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,C5_summary,17,pilot,32,0.46875,0.53125,0.9895833333333334,1631.4291728888638,completed,
+mechanism-v3-001,qwen,C5,C6_summary,17,pilot,32,0.25,0.3125,0.921875,1631.4291728888638,completed,
+pilot-alias-refresh-001,qwen,C5,collection_summary,17,pilot,4,0.75,0.75,1.0,104.4634552388452,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+pilot-c3-001,qwen,C3,before_summary,17,pilot,4,0.25,0.25,0.625,101.82988438429311,failed,Invalid for scientific inference: shared audit/history object could expose evaluator annotations. Stopped at token limit before training. Preserve resource use and all artifacts.
+pilot-c3-002,qwen,C3,after_summary,17,pilot,4,0.25,0.375,0.9375,449.7868980257772,completed,
+pilot-c3-002,qwen,C3,before_summary,17,pilot,4,0.25,0.25,0.625,449.7868980257772,completed,
+pilot-c3-002,qwen,C3,collection_summary,17,pilot,4,0,0.25,0.5208333333333334,449.7868980257772,completed,
+pilot-c5-001,qwen,C5,after_summary,17,pilot,4,0.5,0.625,1.0,477.0383701482788,completed,
+pilot-c5-001,qwen,C5,before_summary,17,pilot,4,0.25,0.25,0.625,477.0383701482788,completed,
+pilot-c5-001,qwen,C5,collection_summary,17,pilot,4,0,0.25,0.25,477.0383701482788,completed,
+pilot-format2-qwen-c3-eval,qwen,C3,evaluation_summary,17,pilot,16,0.4375,0.5625,0.9583333333333334,125.623146279715,completed,
+pilot-v4-phi-base,phi,C5,evaluation_summary,17,pilot,16,0.25,0.3125,0.90625,135.16838289564475,completed,
+pilot-v4-phi-c5-collect,phi,C5,collection_summary,17,pilot,16,0.1875,0.3125,0.90625,136.7968744961545,completed,
+pilot-v4-phi-c5-eval,phi,C5,evaluation_summary,17,pilot,16,0.125,0.21875,0.7395833333333334,109.68912236392498,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+pilot-v4-qwen-base,qwen,C5,evaluation_summary,17,pilot,16,0.375,0.4375,0.9791666666666666,122.9761031572707,completed,
+pilot-v4-qwen-c3-collect,qwen,C3,collection_summary,17,pilot,16,0.125,0.15625,0.84375,175.80208681011572,completed,
+pilot-v4-qwen-c3-eval,qwen,C3,evaluation_summary,17,pilot,16,0.3125,0.40625,0.9270833333333334,126.50885285390541,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+pilot-v4-qwen-c5-collect,qwen,C5,collection_summary,17,pilot,16,0.25,0.34375,0.9479166666666666,164.54135229019448,completed,
+pilot-v4-qwen-c5-eval,qwen,C5,evaluation_summary,17,pilot,16,0.375,0.5,0.9583333333333334,128.05493993498385,completed,Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.
+profile-bf16-001,qwen,C1,profile_before_summary,17,pilot,1,0,0,1.0,54.26432136911899,completed,Engineering precision profile only; initial output-schema failure; not hypothesis evidence.
+profile-bf16-isolated-001,qwen,C1,profile_before_summary,17,pilot,1,0,0.5,0.5,52.85684524895623,completed,
+profile-nf4-001,qwen,C1,profile_before_summary,17,pilot,1,0,0,1.0,98.8186606746167,completed,Engineering precision profile only; initial output-schema failure; not hypothesis evidence.
+profile-phi-001,phi,C1,profile_before_summary,17,pilot,1,1,1,1.0,47.33350801933557,completed,
+profile-phi-isolated-001,phi,C1,profile_before_summary,17,pilot,1,1,1,1.0,40.401118983048946,completed,

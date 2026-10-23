@@ -41,7 +41,7 @@ def regenerate(root: Path):
     # infrastructure resume IDs, rather than guessing a collection filename.
     for run,meta in statuses:
         counts=run/"supervision.counts.json";examples=run/"supervision.jsonl"
-        if meta["status"]=="completed" and counts.exists() and examples.exists():
+        if meta["status"]=="completed" and counts.exists() and examples.exists() and run.name not in excluded:
             cfg=meta["config"];key=(cfg["model"],cfg["condition"],cfg["seed"],sha256(examples))
             if key in collections:raise ValueError("Ambiguous identical supervision sources")
             inputs[str(examples.relative_to(root))]=key[-1]
