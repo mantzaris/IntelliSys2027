@@ -126,3 +126,7 @@ Read this file, `DECISIONS.md`, `configs/`, and `artifacts/run_registry.jsonl`.
 Inspect existing pod jobs before restarting. Resume existing completed artifacts;
 never overwrite a run ID or start a concurrent GPU model. Reconcile remote and
 local artifacts using `scripts/sync.sh`. Do not call a partial package submission-ready.
+
+## Automatic execution update
+
+2026-10-23T18:10:07Z: Campaign stopped incomplete: [Errno 21] Is a directory: '/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/artifacts/campaign_configs/main-qwen-c1-17-r0-collect.json'. See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.

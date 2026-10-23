@@ -1,5 +1,33 @@
 [
   {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "training_condition": "base",
+    "evaluation": "evaluation_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 240,
+    "paired_success": 0.1125,
+    "conversation_success": 0.22916666666666666,
+    "recall_accuracy": 0.8982638888888889,
+    "gpu_reserved_seconds": 2614.80571070686,
+    "status": "completed"
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "training_condition": "base",
+    "evaluation": "evaluation_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 240,
+    "paired_success": 0.2791666666666667,
+    "conversation_success": 0.40625,
+    "recall_accuracy": 0.9840277777777778,
+    "gpu_reserved_seconds": 2673.22404492693,
+    "status": "completed"
+  },
+  {
     "run_id": "mechanism-final-001",
     "model": "qwen",
     "training_condition": "C5",

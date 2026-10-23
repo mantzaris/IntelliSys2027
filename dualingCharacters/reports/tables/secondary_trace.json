@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "path": "artifacts/runs/base-phi-eval/evaluation_summary.json",
+    "sha256": "bbced5b150b00b2d8ad1d1eeffc6667659e0890ff3dc9ff6d04b08fb8666a0d5"
+  },
+  {
+    "path": "artifacts/runs/base-qwen-eval/evaluation_summary.json",
+    "sha256": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088"
+  }
+]

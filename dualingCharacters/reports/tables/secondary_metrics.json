@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "authorized_update_accepted": 0.6116071428571429,
+    "hypothetical_falsely_accepted": 0.004464285714285714,
+    "unnecessary_clarification": 0,
+    "missing_clarification": 0.11830357142857142,
+    "all_null_plan_proxy": 0.013392857142857142,
+    "recalled_but_violated": 0.25,
+    "malformed": 0,
+    "source_reference_error": 1,
+    "dependency_error": 0.5848214285714286,
+    "switch_dependency_distance": 32,
+    "mean_source_dependency_distance": 59.58333333333333,
+    "max_source_dependency_distance": 63,
+    "recall_accuracy": 0.8982638888888889,
+    "behavioral_plan_accuracy": 0.8200520833333333,
+    "dependency_accuracy": 0.63125
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "authorized_update_accepted": 0.9583333333333334,
+    "hypothetical_falsely_accepted": 0,
+    "unnecessary_clarification": 0.06041666666666667,
+    "missing_clarification": 0.08125,
+    "all_null_plan_proxy": 0,
+    "recalled_but_violated": 0.4979166666666667,
+    "malformed": 0,
+    "source_reference_error": 0.6354166666666666,
+    "dependency_error": 0.5104166666666666,
+    "switch_dependency_distance": 32,
+    "mean_source_dependency_distance": 59.58333333333333,
+    "max_source_dependency_distance": 63,
+    "recall_accuracy": 0.9840277777777778,
+    "behavioral_plan_accuracy": 0.9080729166666667,
+    "dependency_accuracy": 0.7125
+  }
+]

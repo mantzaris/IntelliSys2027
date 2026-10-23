@@ -1,5 +1,37 @@
 [
   {
+    "run_id": "base-phi-eval",
+    "phase": "confirmatory",
+    "condition": "base",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2614.80571070686,
+      "peak_vram_gib": 39.3642578125,
+      "input_tokens": 29167116,
+      "output_tokens": 1933518,
+      "generation_seconds": 2477.037508607842,
+      "aggregate_output_tokens_per_second": 780.5767951760594
+    }
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "phase": "confirmatory",
+    "condition": "base",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2673.22404492693,
+      "peak_vram_gib": 39.8349609375,
+      "input_tokens": 30559981,
+      "output_tokens": 2073123,
+      "generation_seconds": 2528.3480984265916,
+      "aggregate_output_tokens_per_second": 819.9515728432009
+    }
+  },
+  {
     "run_id": "batch-profile-001",
     "phase": "pilot",
     "condition": "C1",

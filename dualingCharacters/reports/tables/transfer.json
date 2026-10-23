@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "setting": "antagonist-free",
+    "horizon": 64,
+    "families": 240,
+    "paired_success": 0.1125,
+    "conversation_success": 0.22916666666666666,
+    "gpu_reserved_seconds": 2614.80571070686,
+    "input_tokens": 29167116,
+    "output_tokens": 1933518
+  },
+  {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "setting": "horizon64-subset",
+    "horizon": 64,
+    "families": 48,
+    "paired_success": 0.125,
+    "conversation_success": 0.2708333333333333,
+    "gpu_reserved_seconds": 0,
+    "input_tokens": 5833140,
+    "output_tokens": 385683
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "setting": "antagonist-free",
+    "horizon": 64,
+    "families": 240,
+    "paired_success": 0.2791666666666667,
+    "conversation_success": 0.40625,
+    "gpu_reserved_seconds": 2673.22404492693,
+    "input_tokens": 30559981,
+    "output_tokens": 2073123
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "setting": "horizon64-subset",
+    "horizon": 64,
+    "families": 48,
+    "paired_success": 0.3541666666666667,
+    "conversation_success": 0.4479166666666667,
+    "gpu_reserved_seconds": 0,
+    "input_tokens": 6110623,
+    "output_tokens": 415393
+  }
+]

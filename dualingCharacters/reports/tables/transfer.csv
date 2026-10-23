@@ -1,0 +1,5 @@
+run_id,model,condition,seed,setting,horizon,families,paired_success,conversation_success,gpu_reserved_seconds,input_tokens,output_tokens
+base-phi-eval,phi,base,17,antagonist-free,64,240,0.1125,0.22916666666666666,2614.80571070686,29167116,1933518
+base-phi-eval,phi,base,17,horizon64-subset,64,48,0.125,0.2708333333333333,0,5833140,385683
+base-qwen-eval,qwen,base,17,antagonist-free,64,240,0.2791666666666667,0.40625,2673.22404492693,30559981,2073123
+base-qwen-eval,qwen,base,17,horizon64-subset,64,48,0.3541666666666667,0.4479166666666667,0,6110623,415393
