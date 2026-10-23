@@ -317,6 +317,7 @@ be silently pooled with the frozen confirmatory design.
 \IfFileExists{generated_matched_pilots.tex}{\input{generated_matched_pilots.tex}}{
 Measured pilot tables have not yet been regenerated into this scaffold. No primary
 effect estimate or confirmatory uncertainty interval is available.}
+\IfFileExists{generated_serialization_pilots.tex}{\input{generated_serialization_pilots.tex}}{}
 \IfFileExists{generated_main_results.tex}{\input{generated_main_results.tex}}{}
 \IfFileExists{generated_retrieval_diagnostics.tex}{\input{generated_retrieval_diagnostics.tex}}{}
 \begin{figure}[ht]\centering
@@ -327,8 +328,9 @@ effect estimate or confirmatory uncertainty interval is available.}
 The matched one-seed Qwen pilot's C5 minus C3 paired difference was $+0.0625$
 with a family-bootstrap interval $[-0.1875,+0.3125]$. Qwen C5 matched its
 untrained scaffold on paired success, and the Phi C5 pilot was worse than its
-base. These observations are retained as inconclusive or negative engineering
-evidence, not independent-family confirmation. The final frozen-policy mechanism
+base. A later CPU audit proved that these saved-target training runs used a field
+order incompatible with inference decoding. They are therefore excluded from
+intended-method efficacy evidence, regardless of outcome. The final frozen-policy mechanism
 audit completed all 144 conversations across nine conditions with no malformed
 defender objects and clean paired success of 3/8. It establishes usable headroom
 and functioning interfaces; it is not a trained-method comparison.
@@ -423,6 +425,19 @@ checks turn counts before removing duplicate plain files. The original pre-test
 freeze and original baseline source snapshots are preserved. Hypotheses, data,
 training, endpoints and analysis were not changed; the amended integrity tests
 are distinguished from the tests that passed before test access.
+
+A second amendment repaired JSON serialization: saved training completions were
+alphabetized while the installed inference grammar enforced schema order. A
+CPU-only check rejected all 1,568 original C1 targets and accepted every target
+after reordering identical values. The queue was held and affected runs excluded
+before any completed trained locked-test metric was inspected. Original baselines
+and the base-policy first collection remain usable. The repair preserves target
+values, scientific samples, models, seeds, token budgets and statistical estimators;
+affected fits, dependent collection and evaluation receive new identifiers.
+Original artifacts and spending remain recorded. Twenty-three source-only tests
+passed after this repair; dedicated GPU pilots check serialization compatibility
+and actual learning without requiring a performance improvement. This is an
+explicit post-freeze implementation amendment, not an untouched preregistration.
 
 The documented package command regenerates result tables, uncertainty estimates,
 mechanism diagnostics, failure examples and plots from saved artifacts. Empty

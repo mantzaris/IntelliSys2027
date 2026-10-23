@@ -1,0 +1,10 @@
+{
+  "artifacts/corrected_serialization_audit.json": "f5bee4dec4113540e62d52d8dde69f856cef286efdd8c32c110b74e8d07ce117",
+  "artifacts/runs/pilot-format2-qwen-c3-fit/status.json": "1a6e4e40aed70c626273d78cfc1824e7971a992ef8b9bc12d69bbe40baea420f",
+  "artifacts/runs/pilot-format2-qwen-c3-fit/training/training_summary.json": "5a8b8645e35a2320b8e76f2c44bbc0c3dcb18f6036326295a0c9a6311b48aaab",
+  "artifacts/runs/pilot-format2-qwen-c3-fit/training/final/adapter_model.safetensors": "26680626edfc558ba8e21160158bfd1b297a9f887af0b724638b6c0da424480f",
+  "artifacts/runs/pilot-format2-qwen-c3-eval/status.json": "1e58260dbae04e993b782b561537ac57d40c47b6628458463f74102df5c3bb5d",
+  "artifacts/runs/pilot-format2-qwen-c3-eval/evaluation_summary.json": "4254a5e3ceb2f8376a88ecd32c2328c7584bf4acf5b7a5064e7765759fb0f874",
+  "artifacts/runs/pilot-format2-qwen-c3-eval/evaluation.jsonl.gz": "1e66631bc2644afa0d984c5608d3957e36973d62b8ad0d0b2d08a5c3b2a99491",
+  "analysis/serialization_report.py": "c61f2b1b6fd773e9d510a066bb7fb8611c5ec993e8128a644b2fca04f4320478"
+}

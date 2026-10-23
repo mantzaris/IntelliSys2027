@@ -1,0 +1,1472 @@
+{
+  "classification": "Post-amendment runtime forecast; no experimental choice changed",
+  "consumed_reserved_gpu_hours": 5.0911944698477685,
+  "remaining_core_forecast_hours": 87.40273920771146,
+  "total_core_forecast_hours": 92.49393367755923,
+  "ceiling_hours": 96.0,
+  "contingency_hours": 3.5060663224407733,
+  "supplement_not_in_core_forecast": "Unchanged separate requirement: original queue complete and at least 3.5 hours left",
+  "method": "Retain original job forecasts; inflate full-size fit/evaluation stages by the largest observed actual/predicted runtime ratio, at least one; count all consumed attempts, including excluded ones",
+  "multipliers": {
+    "qwen-fit": 1.2130704363874718,
+    "qwen-evaluate": 1.0569300567548157,
+    "phi-fit": 1.0,
+    "phi-evaluate": 1.1892289220418506
+  },
+  "inputs": {
+    "reports/tables/workload_forecast.json": "c06c9c9ac29d246d2ff836c0407151ffc010fbfc78563a2a5091f8d5574df7ed",
+    "artifacts/runs/main-qwen-c1-17-r0-fit/status.json": "2ca39acb5aa1ed32bc3370f248d2e902b0b206d03a4cf08f275df7388e21a559",
+    "artifacts/runs/main-qwen-c1-17-r1-fit/status.json": "030a7a478a02e306aeeb8dca8076f98304e3d2666bc996c993d138af06c963a8",
+    "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+    "artifacts/runs/main-qwen-c1-17-eval/status.json": "b7560de07c50a84d35e06b7de1b743c642ab8e41dadf9e58da5e46482767ccd6",
+    "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639"
+  },
+  "jobs": [
+    {
+      "original_id": "base-qwen-eval",
+      "resolved_id": "base-qwen-eval",
+      "completed_eligible": true,
+      "remaining_seconds_forecast": 0
+    },
+    {
+      "original_id": "base-phi-eval",
+      "resolved_id": "base-phi-eval",
+      "completed_eligible": true,
+      "remaining_seconds_forecast": 0
+    },
+    {
+      "original_id": "main-qwen-c1-17-r0-collect",
+      "resolved_id": "main-qwen-c1-17-r0-collect",
+      "completed_eligible": true,
+      "remaining_seconds_forecast": 0
+    },
+    {
+      "original_id": "main-qwen-c1-17-r0-fit",
+      "resolved_id": "main-qwen-c1-17-r0-fit-format2",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-17-r1-collect",
+      "resolved_id": "main-qwen-c1-17-r1-collect-format2",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c1-17-r1-fit",
+      "resolved_id": "main-qwen-c1-17-r1-fit-format2",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-17-eval",
+      "resolved_id": "main-qwen-c1-17-eval-format2",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c3-17-r0-collect",
+      "resolved_id": "main-qwen-c3-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c3-17-r0-fit",
+      "resolved_id": "main-qwen-c3-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-17-r1-collect",
+      "resolved_id": "main-qwen-c3-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c3-17-r1-fit",
+      "resolved_id": "main-qwen-c3-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-17-eval",
+      "resolved_id": "main-qwen-c3-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c4-17-r0-collect",
+      "resolved_id": "main-qwen-c4-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c4-17-r0-fit",
+      "resolved_id": "main-qwen-c4-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-17-r1-collect",
+      "resolved_id": "main-qwen-c4-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c4-17-r1-fit",
+      "resolved_id": "main-qwen-c4-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-17-eval",
+      "resolved_id": "main-qwen-c4-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c5-17-r0-collect",
+      "resolved_id": "main-qwen-c5-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c5-17-r0-fit",
+      "resolved_id": "main-qwen-c5-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-17-r1-collect",
+      "resolved_id": "main-qwen-c5-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c5-17-r1-fit",
+      "resolved_id": "main-qwen-c5-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-17-eval",
+      "resolved_id": "main-qwen-c5-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a1-17-r0-collect",
+      "resolved_id": "main-qwen-a1-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a1-17-r0-fit",
+      "resolved_id": "main-qwen-a1-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-17-r1-collect",
+      "resolved_id": "main-qwen-a1-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a1-17-r1-fit",
+      "resolved_id": "main-qwen-a1-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-17-eval",
+      "resolved_id": "main-qwen-a1-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c1-29-r0-collect",
+      "resolved_id": "main-qwen-c1-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 837.3078298636657
+    },
+    {
+      "original_id": "main-qwen-c1-29-r0-fit",
+      "resolved_id": "main-qwen-c1-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-29-r1-collect",
+      "resolved_id": "main-qwen-c1-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c1-29-r1-fit",
+      "resolved_id": "main-qwen-c1-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-29-eval",
+      "resolved_id": "main-qwen-c1-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c3-29-r0-collect",
+      "resolved_id": "main-qwen-c3-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c3-29-r0-fit",
+      "resolved_id": "main-qwen-c3-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-29-r1-collect",
+      "resolved_id": "main-qwen-c3-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c3-29-r1-fit",
+      "resolved_id": "main-qwen-c3-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-29-eval",
+      "resolved_id": "main-qwen-c3-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c4-29-r0-collect",
+      "resolved_id": "main-qwen-c4-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c4-29-r0-fit",
+      "resolved_id": "main-qwen-c4-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-29-r1-collect",
+      "resolved_id": "main-qwen-c4-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c4-29-r1-fit",
+      "resolved_id": "main-qwen-c4-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-29-eval",
+      "resolved_id": "main-qwen-c4-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c5-29-r0-collect",
+      "resolved_id": "main-qwen-c5-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c5-29-r0-fit",
+      "resolved_id": "main-qwen-c5-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-29-r1-collect",
+      "resolved_id": "main-qwen-c5-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c5-29-r1-fit",
+      "resolved_id": "main-qwen-c5-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-29-eval",
+      "resolved_id": "main-qwen-c5-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a1-29-r0-collect",
+      "resolved_id": "main-qwen-a1-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a1-29-r0-fit",
+      "resolved_id": "main-qwen-a1-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-29-r1-collect",
+      "resolved_id": "main-qwen-a1-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a1-29-r1-fit",
+      "resolved_id": "main-qwen-a1-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-29-eval",
+      "resolved_id": "main-qwen-a1-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c1-43-r0-collect",
+      "resolved_id": "main-qwen-c1-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 837.3078298636657
+    },
+    {
+      "original_id": "main-qwen-c1-43-r0-fit",
+      "resolved_id": "main-qwen-c1-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-43-r1-collect",
+      "resolved_id": "main-qwen-c1-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c1-43-r1-fit",
+      "resolved_id": "main-qwen-c1-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c1-43-eval",
+      "resolved_id": "main-qwen-c1-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c3-43-r0-collect",
+      "resolved_id": "main-qwen-c3-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c3-43-r0-fit",
+      "resolved_id": "main-qwen-c3-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-43-r1-collect",
+      "resolved_id": "main-qwen-c3-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c3-43-r1-fit",
+      "resolved_id": "main-qwen-c3-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c3-43-eval",
+      "resolved_id": "main-qwen-c3-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c4-43-r0-collect",
+      "resolved_id": "main-qwen-c4-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c4-43-r0-fit",
+      "resolved_id": "main-qwen-c4-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-43-r1-collect",
+      "resolved_id": "main-qwen-c4-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c4-43-r1-fit",
+      "resolved_id": "main-qwen-c4-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c4-43-eval",
+      "resolved_id": "main-qwen-c4-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c5-43-r0-collect",
+      "resolved_id": "main-qwen-c5-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c5-43-r0-fit",
+      "resolved_id": "main-qwen-c5-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-43-r1-collect",
+      "resolved_id": "main-qwen-c5-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c5-43-r1-fit",
+      "resolved_id": "main-qwen-c5-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c5-43-eval",
+      "resolved_id": "main-qwen-c5-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a1-43-r0-collect",
+      "resolved_id": "main-qwen-a1-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a1-43-r0-fit",
+      "resolved_id": "main-qwen-a1-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-43-r1-collect",
+      "resolved_id": "main-qwen-a1-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a1-43-r1-fit",
+      "resolved_id": "main-qwen-a1-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a1-43-eval",
+      "resolved_id": "main-qwen-a1-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-phi-c1-17-r0-collect",
+      "resolved_id": "main-phi-c1-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 493.3200703503236
+    },
+    {
+      "original_id": "main-phi-c1-17-r0-fit",
+      "resolved_id": "main-phi-c1-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-17-r1-collect",
+      "resolved_id": "main-phi-c1-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 916.0713584969807
+    },
+    {
+      "original_id": "main-phi-c1-17-r1-fit",
+      "resolved_id": "main-phi-c1-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-17-eval",
+      "resolved_id": "main-phi-c1-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c3-17-r0-collect",
+      "resolved_id": "main-phi-c3-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c3-17-r0-fit",
+      "resolved_id": "main-phi-c3-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-17-r1-collect",
+      "resolved_id": "main-phi-c3-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c3-17-r1-fit",
+      "resolved_id": "main-phi-c3-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-17-eval",
+      "resolved_id": "main-phi-c3-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c5-17-r0-collect",
+      "resolved_id": "main-phi-c5-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c5-17-r0-fit",
+      "resolved_id": "main-phi-c5-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-17-r1-collect",
+      "resolved_id": "main-phi-c5-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c5-17-r1-fit",
+      "resolved_id": "main-phi-c5-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-17-eval",
+      "resolved_id": "main-phi-c5-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c1-29-r0-collect",
+      "resolved_id": "main-phi-c1-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 493.3200703503236
+    },
+    {
+      "original_id": "main-phi-c1-29-r0-fit",
+      "resolved_id": "main-phi-c1-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-29-r1-collect",
+      "resolved_id": "main-phi-c1-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 916.0713584969807
+    },
+    {
+      "original_id": "main-phi-c1-29-r1-fit",
+      "resolved_id": "main-phi-c1-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-29-eval",
+      "resolved_id": "main-phi-c1-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c3-29-r0-collect",
+      "resolved_id": "main-phi-c3-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c3-29-r0-fit",
+      "resolved_id": "main-phi-c3-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-29-r1-collect",
+      "resolved_id": "main-phi-c3-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c3-29-r1-fit",
+      "resolved_id": "main-phi-c3-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-29-eval",
+      "resolved_id": "main-phi-c3-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c5-29-r0-collect",
+      "resolved_id": "main-phi-c5-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c5-29-r0-fit",
+      "resolved_id": "main-phi-c5-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-29-r1-collect",
+      "resolved_id": "main-phi-c5-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c5-29-r1-fit",
+      "resolved_id": "main-phi-c5-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-29-eval",
+      "resolved_id": "main-phi-c5-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c1-43-r0-collect",
+      "resolved_id": "main-phi-c1-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 493.3200703503236
+    },
+    {
+      "original_id": "main-phi-c1-43-r0-fit",
+      "resolved_id": "main-phi-c1-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-43-r1-collect",
+      "resolved_id": "main-phi-c1-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 916.0713584969807
+    },
+    {
+      "original_id": "main-phi-c1-43-r1-fit",
+      "resolved_id": "main-phi-c1-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c1-43-eval",
+      "resolved_id": "main-phi-c1-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c3-43-r0-collect",
+      "resolved_id": "main-phi-c3-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c3-43-r0-fit",
+      "resolved_id": "main-phi-c3-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-43-r1-collect",
+      "resolved_id": "main-phi-c3-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c3-43-r1-fit",
+      "resolved_id": "main-phi-c3-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c3-43-eval",
+      "resolved_id": "main-phi-c3-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-phi-c5-43-r0-collect",
+      "resolved_id": "main-phi-c5-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 969.3644189078033
+    },
+    {
+      "original_id": "main-phi-c5-43-r0-fit",
+      "resolved_id": "main-phi-c5-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-43-r1-collect",
+      "resolved_id": "main-phi-c5-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1392.1157070544605
+    },
+    {
+      "original_id": "main-phi-c5-43-r1-fit",
+      "resolved_id": "main-phi-c5-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 780.1566933840513
+    },
+    {
+      "original_id": "main-phi-c5-43-eval",
+      "resolved_id": "main-phi-c5-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2614.80571070686
+    },
+    {
+      "original_id": "main-qwen-a2-17-r0-collect",
+      "resolved_id": "main-qwen-a2-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a2-17-r0-fit",
+      "resolved_id": "main-qwen-a2-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-17-r1-collect",
+      "resolved_id": "main-qwen-a2-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a2-17-r1-fit",
+      "resolved_id": "main-qwen-a2-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-17-eval",
+      "resolved_id": "main-qwen-a2-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a3-17-r0-collect",
+      "resolved_id": "main-qwen-a3-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a3-17-r0-fit",
+      "resolved_id": "main-qwen-a3-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-17-r1-collect",
+      "resolved_id": "main-qwen-a3-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a3-17-r1-fit",
+      "resolved_id": "main-qwen-a3-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-17-eval",
+      "resolved_id": "main-qwen-a3-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c2-17-r0-collect",
+      "resolved_id": "main-qwen-c2-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 837.3078298636657
+    },
+    {
+      "original_id": "main-qwen-c2-17-r0-fit",
+      "resolved_id": "main-qwen-c2-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-17-r1-collect",
+      "resolved_id": "main-qwen-c2-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c2-17-r1-fit",
+      "resolved_id": "main-qwen-c2-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-17-eval",
+      "resolved_id": "main-qwen-c2-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c6-17-r0-collect",
+      "resolved_id": "main-qwen-c6-17-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c6-17-r0-fit",
+      "resolved_id": "main-qwen-c6-17-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-17-r1-collect",
+      "resolved_id": "main-qwen-c6-17-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c6-17-r1-fit",
+      "resolved_id": "main-qwen-c6-17-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-17-eval",
+      "resolved_id": "main-qwen-c6-17-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a2-29-r0-collect",
+      "resolved_id": "main-qwen-a2-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a2-29-r0-fit",
+      "resolved_id": "main-qwen-a2-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-29-r1-collect",
+      "resolved_id": "main-qwen-a2-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a2-29-r1-fit",
+      "resolved_id": "main-qwen-a2-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-29-eval",
+      "resolved_id": "main-qwen-a2-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a3-29-r0-collect",
+      "resolved_id": "main-qwen-a3-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a3-29-r0-fit",
+      "resolved_id": "main-qwen-a3-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-29-r1-collect",
+      "resolved_id": "main-qwen-a3-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a3-29-r1-fit",
+      "resolved_id": "main-qwen-a3-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-29-eval",
+      "resolved_id": "main-qwen-a3-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c2-29-r0-collect",
+      "resolved_id": "main-qwen-c2-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 837.3078298636657
+    },
+    {
+      "original_id": "main-qwen-c2-29-r0-fit",
+      "resolved_id": "main-qwen-c2-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-29-r1-collect",
+      "resolved_id": "main-qwen-c2-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c2-29-r1-fit",
+      "resolved_id": "main-qwen-c2-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-29-eval",
+      "resolved_id": "main-qwen-c2-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c6-29-r0-collect",
+      "resolved_id": "main-qwen-c6-29-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c6-29-r0-fit",
+      "resolved_id": "main-qwen-c6-29-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-29-r1-collect",
+      "resolved_id": "main-qwen-c6-29-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c6-29-r1-fit",
+      "resolved_id": "main-qwen-c6-29-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-29-eval",
+      "resolved_id": "main-qwen-c6-29-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a2-43-r0-collect",
+      "resolved_id": "main-qwen-a2-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a2-43-r0-fit",
+      "resolved_id": "main-qwen-a2-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-43-r1-collect",
+      "resolved_id": "main-qwen-a2-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a2-43-r1-fit",
+      "resolved_id": "main-qwen-a2-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a2-43-eval",
+      "resolved_id": "main-qwen-a2-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-a3-43-r0-collect",
+      "resolved_id": "main-qwen-a3-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-a3-43-r0-fit",
+      "resolved_id": "main-qwen-a3-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-43-r1-collect",
+      "resolved_id": "main-qwen-a3-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-a3-43-r1-fit",
+      "resolved_id": "main-qwen-a3-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-a3-43-eval",
+      "resolved_id": "main-qwen-a3-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c2-43-r0-collect",
+      "resolved_id": "main-qwen-c2-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 837.3078298636657
+    },
+    {
+      "original_id": "main-qwen-c2-43-r0-fit",
+      "resolved_id": "main-qwen-c2-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-43-r1-collect",
+      "resolved_id": "main-qwen-c2-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1595.656932169681
+    },
+    {
+      "original_id": "main-qwen-c2-43-r1-fit",
+      "resolved_id": "main-qwen-c2-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c2-43-eval",
+      "resolved_id": "main-qwen-c2-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "main-qwen-c6-43-r0-collect",
+      "resolved_id": "main-qwen-c6-43-r0-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1399.7695486614825
+    },
+    {
+      "original_id": "main-qwen-c6-43-r0-fit",
+      "resolved_id": "main-qwen-c6-43-r0-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-43-r1-collect",
+      "resolved_id": "main-qwen-c6-43-r1-collect",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2158.118650967498
+    },
+    {
+      "original_id": "main-qwen-c6-43-r1-fit",
+      "resolved_id": "main-qwen-c6-43-r1-fit",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1275.047678980045
+    },
+    {
+      "original_id": "main-qwen-c6-43-eval",
+      "resolved_id": "main-qwen-c6-43-eval",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 2809.5066730361427
+    },
+    {
+      "original_id": "extra-qwen-base-17-horizon32",
+      "resolved_id": "extra-qwen-base-17-horizon32",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 384.7720665242523
+    },
+    {
+      "original_id": "extra-qwen-c1-17-horizon32",
+      "resolved_id": "extra-qwen-c1-17-horizon32",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 384.7720665242523
+    },
+    {
+      "original_id": "extra-qwen-c3-17-horizon32",
+      "resolved_id": "extra-qwen-c3-17-horizon32",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 384.7720665242523
+    },
+    {
+      "original_id": "extra-qwen-c4-17-horizon32",
+      "resolved_id": "extra-qwen-c4-17-horizon32",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 384.7720665242523
+    },
+    {
+      "original_id": "extra-qwen-c5-17-horizon32",
+      "resolved_id": "extra-qwen-c5-17-horizon32",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 384.7720665242523
+    },
+    {
+      "original_id": "extra-qwen-base-17-horizon128",
+      "resolved_id": "extra-qwen-base-17-horizon128",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1359.0882660970092
+    },
+    {
+      "original_id": "extra-qwen-c1-17-horizon128",
+      "resolved_id": "extra-qwen-c1-17-horizon128",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1359.0882660970092
+    },
+    {
+      "original_id": "extra-qwen-c3-17-horizon128",
+      "resolved_id": "extra-qwen-c3-17-horizon128",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1359.0882660970092
+    },
+    {
+      "original_id": "extra-qwen-c4-17-horizon128",
+      "resolved_id": "extra-qwen-c4-17-horizon128",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1359.0882660970092
+    },
+    {
+      "original_id": "extra-qwen-c5-17-horizon128",
+      "resolved_id": "extra-qwen-c5-17-horizon128",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1359.0882660970092
+    },
+    {
+      "original_id": "extra-qwen-base-17-short",
+      "resolved_id": "extra-qwen-base-17-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c1-17-short",
+      "resolved_id": "extra-qwen-c1-17-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c1-29-short",
+      "resolved_id": "extra-qwen-c1-29-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c1-43-short",
+      "resolved_id": "extra-qwen-c1-43-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c3-17-short",
+      "resolved_id": "extra-qwen-c3-17-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c3-29-short",
+      "resolved_id": "extra-qwen-c3-29-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c3-43-short",
+      "resolved_id": "extra-qwen-c3-43-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c4-17-short",
+      "resolved_id": "extra-qwen-c4-17-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c4-29-short",
+      "resolved_id": "extra-qwen-c4-29-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c4-43-short",
+      "resolved_id": "extra-qwen-c4-43-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c5-17-short",
+      "resolved_id": "extra-qwen-c5-17-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c5-29-short",
+      "resolved_id": "extra-qwen-c5-29-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-c5-43-short",
+      "resolved_id": "extra-qwen-c5-43-short",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 222.38603326212615
+    },
+    {
+      "original_id": "extra-qwen-base-17-larger-memory",
+      "resolved_id": "extra-qwen-base-17-larger-memory",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1034.316199572757
+    },
+    {
+      "original_id": "extra-qwen-c1-17-larger-memory",
+      "resolved_id": "extra-qwen-c1-17-larger-memory",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1034.316199572757
+    },
+    {
+      "original_id": "extra-qwen-c3-17-larger-memory",
+      "resolved_id": "extra-qwen-c3-17-larger-memory",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1034.316199572757
+    },
+    {
+      "original_id": "extra-qwen-c4-17-larger-memory",
+      "resolved_id": "extra-qwen-c4-17-larger-memory",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1034.316199572757
+    },
+    {
+      "original_id": "extra-qwen-c5-17-larger-memory",
+      "resolved_id": "extra-qwen-c5-17-larger-memory",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 1034.316199572757
+    },
+    {
+      "original_id": "extra-qwen-base-17-unfamiliar",
+      "resolved_id": "extra-qwen-base-17-unfamiliar",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 839.4529596582055
+    },
+    {
+      "original_id": "extra-qwen-c1-17-unfamiliar",
+      "resolved_id": "extra-qwen-c1-17-unfamiliar",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 839.4529596582055
+    },
+    {
+      "original_id": "extra-qwen-c3-17-unfamiliar",
+      "resolved_id": "extra-qwen-c3-17-unfamiliar",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 839.4529596582055
+    },
+    {
+      "original_id": "extra-qwen-c4-17-unfamiliar",
+      "resolved_id": "extra-qwen-c4-17-unfamiliar",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 839.4529596582055
+    },
+    {
+      "original_id": "extra-qwen-c5-17-unfamiliar",
+      "resolved_id": "extra-qwen-c5-17-unfamiliar",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 839.4529596582055
+    },
+    {
+      "original_id": "extra-qwen-base-17-recovery",
+      "resolved_id": "extra-qwen-base-17-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c1-17-recovery",
+      "resolved_id": "extra-qwen-c1-17-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c1-29-recovery",
+      "resolved_id": "extra-qwen-c1-29-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c1-43-recovery",
+      "resolved_id": "extra-qwen-c1-43-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c3-17-recovery",
+      "resolved_id": "extra-qwen-c3-17-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c3-29-recovery",
+      "resolved_id": "extra-qwen-c3-29-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c3-43-recovery",
+      "resolved_id": "extra-qwen-c3-43-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c4-17-recovery",
+      "resolved_id": "extra-qwen-c4-17-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c4-29-recovery",
+      "resolved_id": "extra-qwen-c4-29-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c4-43-recovery",
+      "resolved_id": "extra-qwen-c4-43-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c5-17-recovery",
+      "resolved_id": "extra-qwen-c5-17-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c5-29-recovery",
+      "resolved_id": "extra-qwen-c5-29-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-c5-43-recovery",
+      "resolved_id": "extra-qwen-c5-43-recovery",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 120.8947624732973
+    },
+    {
+      "original_id": "extra-qwen-base-17-external",
+      "resolved_id": "extra-qwen-base-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 75.22369061832433
+    },
+    {
+      "original_id": "extra-qwen-c1-17-external",
+      "resolved_id": "extra-qwen-c1-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 75.22369061832433
+    },
+    {
+      "original_id": "extra-qwen-c3-17-external",
+      "resolved_id": "extra-qwen-c3-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 75.22369061832433
+    },
+    {
+      "original_id": "extra-qwen-c5-17-external",
+      "resolved_id": "extra-qwen-c5-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 75.22369061832433
+    },
+    {
+      "original_id": "extra-phi-base-17-external",
+      "resolved_id": "extra-phi-base-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 72.53168220352381
+    },
+    {
+      "original_id": "extra-phi-c1-17-external",
+      "resolved_id": "extra-phi-c1-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 72.53168220352381
+    },
+    {
+      "original_id": "extra-phi-c3-17-external",
+      "resolved_id": "extra-phi-c3-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 72.53168220352381
+    },
+    {
+      "original_id": "extra-phi-c5-17-external",
+      "resolved_id": "extra-phi-c5-17-external",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 72.53168220352381
+    },
+    {
+      "original_id": "extra-qwen-c1-17-natural",
+      "resolved_id": "extra-qwen-c1-17-natural",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 729.8423872062704
+    },
+    {
+      "original_id": "extra-qwen-c3-17-natural",
+      "resolved_id": "extra-qwen-c3-17-natural",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 729.8423872062704
+    },
+    {
+      "original_id": "extra-qwen-c5-17-natural",
+      "resolved_id": "extra-qwen-c5-17-natural",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 729.8423872062704
+    },
+    {
+      "original_id": "judge-phi-001",
+      "resolved_id": "judge-phi-001",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 80.0
+    },
+    {
+      "original_id": "judge-qwen-001",
+      "resolved_id": "judge-qwen-001",
+      "completed_eligible": false,
+      "remaining_seconds_forecast": 80.0
+    }
+  ]
+}

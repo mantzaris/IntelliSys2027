@@ -5,6 +5,7 @@ import csv
 import json
 import random
 import statistics
+from .eligibility import exclusions
 
 
 def paired_success(rows: list[dict]) -> dict[tuple,int]:
@@ -43,7 +44,7 @@ def holm(pvalues: dict[str,float]) -> dict[str,float]:
 
 def summarize_artifacts(root: Path, output: Path):
     output.mkdir(parents=True,exist_ok=True)
-    table=[]
+    table=[];excluded=exclusions(root.parent)
     for status in sorted(root.glob("runs/*/status.json")):
         meta=json.loads(status.read_text());run=status.parent
         for path in sorted(run.glob("*_summary.json")):
@@ -55,7 +56,8 @@ def summarize_artifacts(root: Path, output: Path):
                           "families":len(pairs),"paired_success":statistics.mean(pairs.values()),
                           "conversation_success":statistics.mean(r["success"] for r in rows),
                           "recall_accuracy":statistics.mean(r["recall_accuracy"] for r in rows),
-                          "gpu_reserved_seconds":meta["gpu_reserved_seconds"],"status":meta["status"]})
+                          "gpu_reserved_seconds":meta["gpu_reserved_seconds"],"status":meta["status"],
+                          "scientific_exclusion":excluded.get(meta["run_id"])})
     if table:
         with (output/"executed_results.csv").open("w",newline="") as f:
             writer=csv.DictWriter(f,fieldnames=list(table[0]),lineterminator="\n");writer.writeheader();writer.writerows(table)

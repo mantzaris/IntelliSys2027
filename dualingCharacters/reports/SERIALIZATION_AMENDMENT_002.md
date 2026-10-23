@@ -42,3 +42,16 @@ compatibility and actual parameter updates, not better task scores. The core
 queue remains held until those checks and the amended source freeze are recorded.
 The original scientific sample and hypotheses remain fixed. Human scientific
 review and human ratings remain pending.
+
+The corrected first Qwen C3 pilot produced one token-capped whitespace loop in
+1,024 turns. It is retained as an ordinary scored failure with the unchanged
+256-token cap; no retry, example removal or decoder change is made. A draft gate
+requiring zero incomplete outputs was too strict for a bounded-generation policy:
+the actual interface check accepts complete schema objects or records capped
+incomplete failures, while all supervision must be accepted by the full grammar.
+This engineering gate clarification does not alter any scientific endpoint.
+
+Fresh untrained pilot references will use the same current source and held-out
+pilot families: the older v4 baseline's environment/evaluation source differs,
+so it cannot supply a matched before/after comparison for this repaired pilot.
+No additional training samples or hyperparameter trials are introduced.

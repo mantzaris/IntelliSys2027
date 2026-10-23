@@ -1,0 +1,47 @@
+[
+  {
+    "model": "qwen",
+    "condition": "C3",
+    "fit_run": "pilot-format2-qwen-c3-fit",
+    "eval_run": "pilot-format2-qwen-c3-eval",
+    "status": "completed",
+    "optimizer_steps": 32,
+    "training_input_tokens": 131072,
+    "supervised_tokens": 5014,
+    "adapter_changed": true,
+    "paired_success": 0.4375,
+    "families": 16,
+    "malformed_turns": 1,
+    "reserved_gpu_seconds": 216.402755651623
+  },
+  {
+    "model": "qwen",
+    "condition": "C5",
+    "fit_run": "pilot-format2-qwen-c5-fit",
+    "eval_run": "pilot-format2-qwen-c5-eval",
+    "status": "pending",
+    "optimizer_steps": null,
+    "training_input_tokens": null,
+    "supervised_tokens": null,
+    "adapter_changed": null,
+    "paired_success": null,
+    "families": null,
+    "malformed_turns": null,
+    "reserved_gpu_seconds": null
+  },
+  {
+    "model": "phi",
+    "condition": "C5",
+    "fit_run": "pilot-format2-phi-c5-fit",
+    "eval_run": "pilot-format2-phi-c5-eval",
+    "status": "pending",
+    "optimizer_steps": null,
+    "training_input_tokens": null,
+    "supervised_tokens": null,
+    "adapter_changed": null,
+    "paired_success": null,
+    "families": null,
+    "malformed_turns": null,
+    "reserved_gpu_seconds": null
+  }
+]

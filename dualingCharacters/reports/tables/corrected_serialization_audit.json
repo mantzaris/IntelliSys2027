@@ -1,0 +1,47 @@
+{
+  "xgrammar_version": "0.1.23",
+  "vllm_version": "0.10.2",
+  "checks": [
+    {
+      "run_id": "main-qwen-c1-17-r0-collect",
+      "examples": 804,
+      "original_accepted": 0,
+      "corrected_accepted": 804,
+      "supervision_sha256": "db8ee29b5a5d2623a6f912edbfa6a510333ae0a24b7f07319d20900230bd7011"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-collect",
+      "examples": 764,
+      "original_accepted": 0,
+      "corrected_accepted": 764,
+      "supervision_sha256": "3156430136f5ead66e3dcedeaecd429d2601734826c32d4379cf43f256f5b53d"
+    },
+    {
+      "run_id": "pilot-v4-qwen-c3-collect",
+      "examples": 84,
+      "original_accepted": 0,
+      "corrected_accepted": 84,
+      "supervision_sha256": "ef8cb518270636d5e0be89e513e9616d347f7cd2e8d9e32693dea822bd520d02"
+    },
+    {
+      "run_id": "pilot-v4-qwen-c5-collect",
+      "examples": 85,
+      "original_accepted": 0,
+      "corrected_accepted": 85,
+      "supervision_sha256": "2313d33c243ba3c8d16b09770fa0803bb819520854b65a84affef47512f64982"
+    },
+    {
+      "run_id": "pilot-v4-phi-c5-collect",
+      "examples": 89,
+      "original_accepted": 0,
+      "corrected_accepted": 89,
+      "supervision_sha256": "e6d2355ba1abb35d4097c86028c623408eeb1718bd2249ec64c146082aa979ea"
+    }
+  ],
+  "gpu_model_calls": 0,
+  "source_hashes": {
+    "src/pcc/training.py": "f52de03348cc57bcc37f3ca28e7e1ca653a230c454ad7845386c6390c8846957",
+    "src/pcc/schemas.py": "681168fd9d4b3cdab6d65ddea8229119bc140ed8f80f89e9a7f21c596b7d73fe",
+    "analysis/audit_serialization.py": "365daa18bfd5336801a2191e13ef2df1b7eb3ae6d6045b15bab5e50ced5965f2"
+  }
+}
