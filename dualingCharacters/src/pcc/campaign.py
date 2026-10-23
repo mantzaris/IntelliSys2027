@@ -85,7 +85,18 @@ def main():
     ssh=["ssh","-F","/dev/null","-i",key,"-p",port,"-o","BatchMode=yes","-o","IdentitiesOnly=yes", "-o","StrictHostKeyChecking=yes","-o",f"UserKnownHostsFile={known}"]
     config_dir=root/"artifacts/campaign_configs";config_dir.mkdir(parents=True,exist_ok=True)
     state_path=root/"artifacts/campaign_state.json"
+    overrides_path=root/"artifacts/campaign_resume.json"
+    overrides=json.loads(overrides_path.read_text()) if overrides_path.exists() else {}
     for job in queue:
+        original_id=job["id"]
+        override=overrides.get(original_id,{})
+        if set(override)-{"run_id","checkpoint","reason"}:raise ValueError("Resume overrides may not change experimental choices")
+        if override and not override.get("reason"):raise ValueError("Resume requires a logged infrastructure reason")
+        if override:job["id"]=override["run_id"]
+        for field in ("adapter","supervision"):
+            if not job.get(field):continue
+            for source,replacement in overrides.items():
+                job[field]=job[field].replace(f"artifacts/runs/{source}/",f"artifacts/runs/{replacement['run_id']}/")
         if shutil.disk_usage(root).free<3*1024**3:raise RuntimeError("Less than 3 GiB local space remains; preserve artifacts and stop for storage review")
         status=root/"artifacts/runs"/job["id"]/"status.json"
         if status.exists():
@@ -116,8 +127,13 @@ def main():
                         "--split","test" if job["command"]=="evaluate" else "train"])
         if job.get("adapter"):cmd.extend(["--adapter",job["adapter"]])
         if job.get("supervision"):cmd.extend(["--supervision",job["supervision"]])
+        if override.get("checkpoint"):
+            if job["command"]!="fit":raise ValueError("Only fit jobs have optimizer checkpoints")
+            cmd.extend(["--resume-checkpoint",override["checkpoint"]])
         if job["command"]=="collect":cmd.extend(["--window-turns",",".join(map(str,job["window_turns"]))])
-        command="cd "+shlex.quote(remote)+" && "+shlex.join(["env","PYTHONPATH=src",f"HF_HOME={remote}/artifacts/hf-cache",f"PCC_CODE_COMMIT={freeze['code_commit']}","VLLM_WORKER_MULTIPROC_METHOD=spawn",*cmd])
+        environment=["env","PYTHONPATH=src",f"HF_HOME={remote}/artifacts/hf-cache",f"PCC_CODE_COMMIT={freeze['code_commit']}","VLLM_WORKER_MULTIPROC_METHOD=spawn"]
+        if override:environment.append(f"PCC_SUPERSEDES_JOB={original_id}")
+        command="cd "+shlex.quote(remote)+" && "+shlex.join([*environment,*cmd])
         returncode=run_and_mirror(ssh+[f"root@{host}",command],root,config_dir/(job["id"]+".log"))
         subprocess.run(ssh+[f"root@{host}","cd "+shlex.quote(remote)+" && PYTHONPATH=src .venv/bin/python -m pcc.storage"],check=True)
         # Synchronize even a failed job; never leave its only evidence on overlay.

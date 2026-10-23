@@ -20,6 +20,7 @@ def main():
     parser.add_argument("--split",default="pilot",choices=["pilot","train","validation","test"])
     parser.add_argument("--adapter",type=Path)
     parser.add_argument("--supervision",type=Path)
+    parser.add_argument("--resume-checkpoint",type=Path)
     parser.add_argument("--window-turns",help="Comma-separated predetermined training-window turns")
     args=parser.parse_args();root=args.root.resolve()
     if args.command=="manifests":write_manifests(root/"data/manifests");return
@@ -38,6 +39,8 @@ def main():
     from .training import select_supervision, train
     scenarios=[s for i in range(args.start_family,args.start_family+args.families) for s in make_family(args.split,i,args.horizon)]
     with RunLedger(root/"artifacts",args.run_id,cfg) as ledger:
+        ledger.metadata.update(task=args.command,split=args.split,horizon=args.horizon,start_family=args.start_family,
+                               families=args.families,selected_window_turns=args.window_turns)
         ledger.metadata["dataset_hash"]=digest([{"id":s.family_id,"world":s.world,"graph":s.graph_hash} for s in scenarios])
         if cfg.engine=="vllm":
             if args.command in {"profile","pilot","fit"}:raise ValueError("Train with transformers in a separate serialized process")
@@ -91,7 +94,7 @@ def main():
             if any(not str(e["family_id"]).startswith(allowed) for e in examples):
                 raise ValueError(f"This phase requires {allowed} family supervision")
             ledger.metadata["supervision_sha256"]=__import__('hashlib').sha256(args.supervision.read_bytes()).hexdigest()
-            train(model,examples,ledger.run_dir/"training")
+            train(model,examples,ledger.run_dir/"training",resume_checkpoint=args.resume_checkpoint)
         elif args.command=="evaluate":
             run_episodes(model,scenarios,"base",ledger.run_dir/"evaluation.jsonl")
 

@@ -62,6 +62,7 @@ class RunLedger(AbstractContextManager):
         source_hashes={str(p.relative_to(source_root)):sha256(p) for p in sorted((source_root/"src").rglob("*.py"))}
         self.metadata["source_hashes"]=source_hashes
         self.metadata["process_pid"]=os.getpid()
+        if os.environ.get("PCC_SUPERSEDES_JOB"):self.metadata["supersedes_run_id"]=os.environ["PCC_SUPERSEDES_JOB"]
         self.heartbeat("running")
         return self
 
