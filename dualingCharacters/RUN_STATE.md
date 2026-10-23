@@ -126,11 +126,14 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
 3. Run `bash analysis/regenerate_all.sh` after synchronized completed stages for
    the full integrity audit, frozen analysis, explicitly post-baseline descriptive
    tables and manuscript. Complete scientific author review and the final report.
-4. After the entire original queue completes, inspect the fixed exploratory
-   `analysis/unseen_profiles_protocol.json`. The runner and serialized controller
-   are implemented and CPU-checked. Execute only if its 3.5-hour remaining-budget
-   gate passes; otherwise record this test as unexecuted.
-   Do not change the primary freeze or displace any queued requirement.
+4. The supplemental controller is already in a CPU-only wait in execution
+   session `73013`; do not launch another copy. Its state/log are
+   `artifacts/unseen_profiles_controller_state.json` and
+   `artifacts/unseen_profiles_controller.log`. It acquires the shared queue lock
+   after all 241 core stages complete, checks the fixed 3.5-hour remaining-budget
+   gate, then runs the ten declared exploratory profile tests if permitted.
+   Otherwise it records the unmet gate. No supplemental GPU job has started.
+   See `analysis/UNSEEN_PROFILES.md`; do not alter the primary freeze or queue.
 
 ## Recovery after interruption
 

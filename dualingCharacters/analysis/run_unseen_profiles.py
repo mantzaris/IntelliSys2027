@@ -18,14 +18,18 @@ from pcc.campaign import run_and_mirror, commit_generated_package
 from pcc.resources import sha256, used_seconds
 from pcc.storage import compact_completed, deduplicate_completed
 
+_owns_controller_lock=False
+
 
 def main():
+    global _owns_controller_lock
     parser=argparse.ArgumentParser();parser.add_argument("--wait-for-core",action="store_true")
     args=parser.parse_args();root=Path(__file__).resolve().parents[1]
     state_path=root/"artifacts/unseen_profiles_controller_state.json"
     protocol,primary=specification(root)
     controller_lock=(root/"artifacts/unseen_profiles_controller.lock").open("a+")
     fcntl.flock(controller_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    _owns_controller_lock=True
     def state(status,**extra):
         temporary=state_path.with_suffix(".tmp")
         temporary.write_text(json.dumps({"status":status,"classification":protocol["classification"],
@@ -98,6 +102,7 @@ def main():
 if __name__=="__main__":
     try:main()
     except Exception as error:
+        if not _owns_controller_lock:raise
         path=Path(__file__).resolve().parents[1]/"artifacts/unseen_profiles_controller_state.json"
         previous=json.loads(path.read_text()) if path.exists() else {}
         previous.update(status="controller_error",error=str(error))
