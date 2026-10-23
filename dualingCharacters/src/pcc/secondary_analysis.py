@@ -24,7 +24,9 @@ def final_diagnostics(row: dict, horizon: int) -> dict:
             "recalled_but_violated":row["metrics"]["recall_accuracy"]==1 and not row["metrics"]["success"],
             "malformed":not bool(parsed),"source_reference_error":row["metrics"]["evidence_accuracy"]<1,
             "dependency_error":row["metrics"]["dependency_accuracy"]<1,
-            "switch_dependency_distance":horizon-s.switch_turn}
+            "switch_dependency_distance":horizon-s.switch_turn,
+            "mean_source_dependency_distance":statistics.mean(horizon-(index+1)//2 for index in gold["evidence"] if index is not None),
+            "max_source_dependency_distance":max(horizon-(index+1)//2 for index in gold["evidence"] if index is not None)}
 
 
 def analyze(root: Path):

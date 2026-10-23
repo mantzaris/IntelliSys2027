@@ -83,7 +83,8 @@ def train(backbone: Backbone, examples: list[dict], output: Path, steps: int | N
             while True:yield from items
         stream=cycling()
     else:stream=balanced_stream(examples,cfg.seed)
-    ids_buffer=[];labels_buffer=[];seen={};supervised_tokens=0;start_step=0
+    ids_buffer=[];labels_buffer=[];segments_buffer=[];positions_buffer=[];segment_number=0
+    seen={};supervised_tokens=0;start_step=0
     if resume_checkpoint:
         saved=torch.load(resume_checkpoint,map_location="cpu",weights_only=False)
         from peft import set_peft_model_state_dict
@@ -99,15 +100,28 @@ def train(backbone: Backbone, examples: list[dict], output: Path, steps: int | N
             completion=json.dumps(item["completion"],separators=(",",":"))
             suffix=backbone.tokenizer.encode(completion,add_special_tokens=False)+[backbone.tokenizer.eos_token_id]
             ids_buffer.extend(prefix+suffix);labels_buffer.extend([-100]*len(prefix)+suffix)
+            segments_buffer.extend([segment_number]*(len(prefix)+len(suffix)))
+            positions_buffer.extend(range(len(prefix)+len(suffix)));segment_number+=1
         ids=ids_buffer[:cfg.train_tokens_per_step];labels=labels_buffer[:cfg.train_tokens_per_step]
+        segments=segments_buffer[:cfg.train_tokens_per_step];positions=positions_buffer[:cfg.train_tokens_per_step]
         ids_buffer=ids_buffer[cfg.train_tokens_per_step:];labels_buffer=labels_buffer[cfg.train_tokens_per_step:]
+        segments_buffer=segments_buffer[cfg.train_tokens_per_step:];positions_buffer=positions_buffer[cfg.train_tokens_per_step:]
+        if positions[0]!=0:
+            # A window split across optimizer chunks has lost its earlier prompt;
+            # do not supervise the orphaned suffix. Count its input cost honestly.
+            labels=[-100 if segment==segments[0] else label for segment,label in zip(segments,labels)]
         if step<start_step:continue
         if all(x==-100 for x in labels):raise ValueError("Packed chunk has no supervised tokens")
         tensor=torch.tensor([ids],device="cuda");target=torch.tensor([labels],device="cuda")
         lr=cfg.learning_rate*min(1.,(step+1)/max(1,steps*.1))*(.1+.9*.5*(1+math.cos(math.pi*step/steps)))
         for group in optimizer.param_groups:group["lr"]=lr
         optimizer.zero_grad(set_to_none=True)
-        result=model(input_ids=tensor,labels=target,use_cache=False)
+        segment_tensor=torch.tensor(segments,device="cuda")
+        indices=torch.arange(len(ids),device="cuda")
+        allowed=(segment_tensor[:,None]==segment_tensor[None,:]) & (indices[:,None]>=indices[None,:])
+        attention_mask=torch.zeros((1,1,len(ids),len(ids)),dtype=torch.bfloat16,device="cuda").masked_fill_(~allowed,torch.finfo(torch.bfloat16).min)
+        result=model(input_ids=tensor,labels=target,attention_mask=attention_mask,
+                     position_ids=torch.tensor([positions],device="cuda"),use_cache=False)
         if not torch.isfinite(result.loss):raise FloatingPointError("Nonfinite training loss")
         result.loss.backward();grad=torch.nn.utils.clip_grad_norm_(model.parameters(),cfg.max_grad_norm)
         optimizer.step();torch.cuda.synchronize()
@@ -130,7 +144,8 @@ def train(backbone: Backbone, examples: list[dict], output: Path, steps: int | N
             "supervised_tokens":supervised_tokens,"unique_windows":len(seen),"reused_windows":sum(v-1 for v in seen.values()),
             "seconds":time.monotonic()-started,"initial_checksums":before,"final_checksums":after,
             "adapter_changed":before.get("adapter_model.safetensors")!=after.get("adapter_model.safetensors"),
-            "pilot_unbalanced_mixture":pilot_allow_unbalanced,"packing":"concatenated chat windows with prompt-masked loss; cross-window causal context retained"}
+            "pilot_unbalanced_mixture":pilot_allow_unbalanced,
+            "packing":"Block-diagonal causal attention isolates windows; prompt loss masked; orphaned suffix loss masked; exact nonpadding input quota"}
     (output/"training_summary.json").write_text(json.dumps(report,indent=2)+"\n")
     if not report["adapter_changed"]:raise RuntimeError("Adapter checksum did not change")
     return report

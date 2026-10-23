@@ -73,8 +73,10 @@ Log attempted, eligible, verified, discarded, teacher-labeled and reused windows
 Minimize prompt-masked cross-entropy of target completion tokens using LoRA on all
 linear layers (rank 8, alpha 16, dropout 0) with the frozen base weights. Pack chat
 windows to an exact nonpadding input-token quota; report supervised target tokens
-separately. Packed windows currently share causal context across separators; this is
-a limitation and must be held constant. AdamW, clipping, seed, schedule and token quota
+separately. The final implementation uses block-diagonal causal attention to prevent
+one training window from seeing another window's gold completion. A suffix orphaned
+at a fixed-token chunk boundary has its loss masked. Earlier engineering pilots used
+ordinary concatenated packing; their evidence is labeled accordingly. AdamW, clipping, seed, schedule and token quota
 are common. Save initial/final adapter hashes, losses, optimizer state and actual
 steps. Resume from deterministic token order. Candidate generation weights stay frozen
 when the updated defender is used to refresh training interactions.
@@ -82,7 +84,8 @@ when the updated defender is used to refresh training interactions.
 The intended confirmatory procedure has two refresh rounds and a 50:50 clean/recovery
 window mixture. If either pool is empty, confirmation must stop. The engineering
 pilot explicitly allows an unbalanced mixture and is not evidence for H1–H5. The
-multi-round orchestration and fixed validation selection still require completion.
+multi-round controller resets AdamW and the same learning-rate schedule in each round;
+the fixed final-token checkpoint is used without validation or test selection.
 
 Conditioning is a prompt change. History dependence is inference using remembered
 events. Online adaptation is changing actions given outcomes. Parameter learning is

@@ -9,6 +9,7 @@ import os
 import subprocess
 import time
 import tarfile
+import threading
 from .config import RunConfig
 
 
@@ -74,8 +75,22 @@ class RunLedger(AbstractContextManager):
         self.metadata["source_snapshot_sha256"]=sha256(snapshot)
         self.metadata["process_pid"]=os.getpid()
         if os.environ.get("PCC_SUPERSEDES_JOB"):self.metadata["supersedes_run_id"]=os.environ["PCC_SUPERSEDES_JOB"]
+        self.monitor_stop=threading.Event();self.busy_seconds=0.;self.utilization_seconds=0.;self.telemetry_samples=0
+        self.monitor=threading.Thread(target=self._sample_gpu,daemon=True);self.monitor.start()
         self.heartbeat("running")
         return self
+
+    def _sample_gpu(self):
+        previous=time.monotonic()
+        while not self.monitor_stop.wait(5):
+            now=time.monotonic();interval=now-previous;previous=now
+            try:
+                raw=subprocess.run(["nvidia-smi","--query-gpu=utilization.gpu,memory.used,power.draw","--format=csv,noheader,nounits"],capture_output=True,text=True,check=True,timeout=3).stdout.strip().split(",")
+                utilization,memory,power=map(float,raw)
+                self.busy_seconds+=interval*(utilization>0);self.utilization_seconds+=interval*utilization/100;self.telemetry_samples+=1
+                append_json(self.run_dir/"gpu_telemetry.jsonl",{"elapsed_seconds":now-self.start,"interval_seconds":interval,"gpu_utilization_percent":utilization,"resident_vram_mib":memory,"power_watts":power})
+            except (ValueError,subprocess.SubprocessError):
+                append_json(self.run_dir/"gpu_telemetry.jsonl",{"elapsed_seconds":now-self.start,"sampling_error":True})
 
     def heartbeat(self,status: str="running"):
         elapsed=time.monotonic()-self.start
@@ -90,6 +105,9 @@ class RunLedger(AbstractContextManager):
             raise RuntimeError("GPU time budget reached; stop before starting another operation")
 
     def __exit__(self,kind,value,tb):
+        self.monitor_stop.set();self.monitor.join(timeout=4)
+        self.metadata.update(sampled_gpu_busy_seconds=self.busy_seconds,utilization_weighted_seconds=self.utilization_seconds,
+                             gpu_telemetry_samples=self.telemetry_samples,telemetry_qualification="5-second samples; approximate activity, not the hard budget. Reservation time governs the ceiling.")
         self.metadata["error"]=str(value) if value else None
         self.heartbeat("failed" if kind else "completed")
         fcntl.flock(self.lock,fcntl.LOCK_UN); self.lock.close()

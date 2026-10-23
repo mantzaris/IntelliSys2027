@@ -42,7 +42,9 @@ class Character:
     def record(self, record: dict, capacity: int):
         # History owns a copy of public action data. Evaluator annotations added
         # later to the external log record must never enter this information set.
-        allowed={"actor","role","kind","slot","value","claim","source","target","applied","latest_observed_plan"}
+        # Semantic role labels belong only to the audit log. Exposing "Hyde" in
+        # private histories would defeat the randomized neutral-alias control.
+        allowed={"actor","kind","slot","value","claim","source","target","applied","latest_observed_plan"}
         self.history.append(copy.deepcopy({k:v for k,v in record.items() if k in allowed}))
         self.history = self.history[-capacity:]
 

@@ -102,6 +102,7 @@ def test_audit_annotations_never_alias_character_history():
     after=action_prompt(actors[0],actors,s.spec,list(s.messages[:3]),mem,"C5",6,8)[0]
     assert before==after
     assert "SECRET" not in json.dumps(after) and "contrary_to_truth" not in json.dumps(after)
+    assert "Hyde" not in json.dumps(after) and "Rival" not in json.dumps(after)
 
 
 def test_communication_delivery_and_no_interaction_control():
