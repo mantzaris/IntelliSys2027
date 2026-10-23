@@ -89,7 +89,7 @@ class Backbone:
         # all-linear covers Qwen and Phi consistently at the same rank; actual
         # parameter counts are reported, not claimed equal across architectures.
         config=LoraConfig(r=self.config.lora_rank,lora_alpha=self.config.lora_alpha,lora_dropout=0.,
-                          target_modules="all-linear",bias="none",task_type="CAUSAL_LM")
+                          target_modules="all-linear",bias="none",task_type="CAUSAL_LM",revision=self.spec["revision"])
         self.model=get_peft_model(self.model,config)
         self.model.enable_input_require_grads()
         self.has_adapter=True
@@ -98,9 +98,13 @@ class Backbone:
 
     def load_adapter(self,path: Path,trainable: bool=False):
         from peft import PeftModel
+        adapter_config=json.loads((path/"adapter_config.json").read_text())
+        if adapter_config["base_model_name_or_path"]!=self.spec["name"]:raise ValueError("Adapter belongs to a different model family")
         self.model=PeftModel.from_pretrained(self.model,str(path),is_trainable=trainable)
         self.has_adapter=True
         if trainable:self.model.enable_input_require_grads()
+        count,total=self.model.get_nb_trainable_parameters()
+        self.ledger.metadata.update(loaded_adapter_path=str(path),loaded_adapter_sha256=sha256(path/"adapter_model.safetensors"),trainable_parameters=count,total_parameters=total)
 
     def save_adapter(self,path: Path):
         path.mkdir(parents=True,exist_ok=True)

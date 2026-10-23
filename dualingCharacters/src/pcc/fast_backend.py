@@ -10,7 +10,7 @@ import subprocess
 import time
 from .backend import Backbone, parse_object
 from .config import RunConfig
-from .resources import RunLedger, append_json
+from .resources import RunLedger, append_json, sha256
 
 
 class FastBackbone:
@@ -38,8 +38,11 @@ class FastBackbone:
     def load_adapter(self,path: Path,trainable: bool=False):
         if trainable:raise ValueError("Parameter updates require the separate Transformers training process")
         from vllm.lora.request import LoRARequest
+        adapter_config=json.loads((path/"adapter_config.json").read_text())
+        if adapter_config["base_model_name_or_path"]!=self.spec["name"]:raise ValueError("Adapter belongs to a different model family")
         self.adapter_id+=1
         self.adapter=LoRARequest(f"defender-{self.adapter_id}",self.adapter_id,str(path.resolve()))
+        self.ledger.metadata.update(loaded_adapter_path=str(path),loaded_adapter_sha256=sha256(path/"adapter_model.safetensors"))
 
     def generate(self,conversations: list[list[dict]],max_new_tokens: int | None=None,
                  frozen: bool=False,sample: bool=False) -> list[dict]:
