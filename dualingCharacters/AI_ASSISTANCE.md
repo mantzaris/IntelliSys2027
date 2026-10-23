@@ -15,6 +15,7 @@ citations, model runs, or cost estimates may be inserted.
 | 2026-10-23 | Identified and logged an invalid audit/history aliasing run; revised peer scheduling, schema controls, neutral aliases, packed-training isolation and storage mirroring | Pending |
 | 2026-10-23 | Drafted the novelty matrix, statistical plan, method specification, manuscript scaffold, claim/evidence ledger and human-review rubric | Pending |
 | 2026-10-23 | Completed final pilot gates, recorded the pre-test hash freeze, launched the fixed 241-stage GPU queue, and expanded factual methods/statistical text without changing frozen scientific inputs | Pending |
+| 2026-10-23 | Detected and repaired a stale-prefix local archive race after the first baseline; preserved the original freeze and recorded an explicit infrastructure-only amendment and added integrity tests | Pending |
 
 The IntelliSys AI policy and template were checked against the current official
 site on 2026-10-23; see `paper/CONFERENCE_REQUIREMENTS.md`. This package is an author-review artifact, not an unattended compliant final
