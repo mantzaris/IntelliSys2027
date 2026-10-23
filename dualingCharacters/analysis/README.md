@@ -30,3 +30,17 @@ The new outputs have the prefix `reports/tables/exploratory_`. Their input-file 
 analysis-source hashes are saved in `exploratory_descriptive_trace.json`. The GPU
 controller continues to produce the original core package automatically; this
 wrapper adds the separate descriptive layer for author review.
+
+The wrapper first runs `audit_artifacts.py`, a read-only check of completed local
+source snapshots, recorded checkpoint hashes, compressed/original trace hashes
+and conversational row counts against episode summaries. The compact audit is
+saved as `reports/tables/artifact_integrity.json`. Active and failed runs are
+excluded from final-file checks and listed explicitly. Early pilots without
+per-run source snapshots retain that qualification; passing integrity checks
+does not make an invalid pilot scientifically valid. Run the audit after the
+controller has synchronized a completed stage, not during an incomplete pull.
+Some early pilot checkpoint manifests contain an entry hashing a previous
+version of the manifest itself. The audit records this historical metadata defect
+and verifies the actual adapter/configuration files separately. Current atomic
+checkpoint writing excludes the manifest from its own file list. No original
+pilot metadata is rewritten to hide this limitation.

@@ -16,15 +16,19 @@ gate and hold marker were removed after verification; their release record is
 `a1f43934d220f0733643daf4aaa26b8891605475` and amended freeze SHA256
 `7a08b91e1e881a9780b30216f18711995fde48c54c1da17402d7688457c4cde2`.
 The original freeze remains in `configs/freeze_original.json`. No experimental
-choices changed. The queue is resuming at `main-qwen-c1-17-r0-collect`.
+choices changed. The first 150-family clean collection completed, producing 900
+attempted windows, 804 source-eligible examples, and zero verified model
+recoveries in 128 attempts. The common teacher supplies all 804 labels. The
+first 256-step training round is active; consult `artifacts/campaign_state.json`
+and the mirrored run status for the latest stage rather than restarting it.
 The resumed local controller uses unified execution session `67629`; session
 `38552` ended at the documented hold. Its log continues in
 `artifacts/campaign_controller.log`. Inspect the lock/current stage before any
 restart; do not start a duplicate GPU queue.
 
-Phase C: plan hash-frozen; starting the serialized confirmatory campaign. Real GPU inference and LoRA learning have executed in
+Phase C: plan hash-frozen; serialized confirmatory campaign active. Real GPU inference and LoRA learning have executed in
 both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
-than its base. No confirmatory test outcomes existed at freeze. `configs/freeze.json`
+than its base. No confirmatory test outcomes existed at the original freeze. `configs/freeze_original.json`
 records 55 scientific-input hashes and all passed pilot gates, scientific source
 commit `c96e8a0c986b8af008c1296a601ec9c881f419ae`, and 241 predetermined GPU stages.
 Freeze SHA256: `3a35d0015e5447de1ca5eb3d6e77ab3c6e12ba3ad54bfcaf07799ad55443e525`.
@@ -112,17 +116,20 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
 
 ## Next actions
 
-1. Synchronize source; run `pcc.campaign` locally with authorized SSH environment.
+1. Monitor the existing `pcc.campaign` controller; do not launch a second copy.
    It serializes jobs, mirrors every minute, preserves checkpoints, refuses changed
    hashes, compresses completed traces, and regenerates the package at completion.
 2. Monitor infrastructure and the 96-hour ceiling. Keep test choices fixed; inspect
    failures without selecting by significance. Audit and document any resume alias.
-3. Complete evidence/manuscript review, exact missing requirements and final report.
+3. Run `bash analysis/regenerate_all.sh` after synchronized completed stages for
+   the full integrity audit, frozen analysis, explicitly post-baseline descriptive
+   tables and manuscript. Complete scientific author review and the final report.
 
 ## Recovery after interruption
 
-The local controller was launched on 2026-10-23 at approximately 16:40 UTC through
-unified execution session `38552`. Its log is `artifacts/campaign_controller.log`,
+The original controller was launched on 2026-10-23 at approximately 16:40 UTC through
+session `38552`, then replaced after the documented boundary hold by session
+`67629` at approximately 18:16 UTC. Its log is `artifacts/campaign_controller.log`,
 current stage is in `artifacts/campaign_state.json`, and stage logs/configurations
 are in `artifacts/campaign_configs/`. Do not launch a duplicate controller. At the
 first live resource check, Qwen's base evaluation was on track for about 43 minutes

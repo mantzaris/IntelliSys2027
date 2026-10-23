@@ -1,0 +1,464 @@
+{
+  "scope": "Completed local runs only; verifies recorded source/checkpoint/archive hashes and summary-based conversational trace counts. Does not establish scientific validity, remote persistence, or completeness of files without recorded hashes.",
+  "frozen_files_verified": 55,
+  "analysis_source_sha256": "007ac53f54f2a7c064ce075223d1a0db2344b537d681ef774eae4d4979990fa4",
+  "completed_runs": [
+    {
+      "run_id": "base-phi-eval",
+      "status_sha256": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/base-phi-eval/evaluation.jsonl.gz",
+          "records": 30720,
+          "original_sha256": "4079865c3da38034e114b4975042df90f7dc9bfd9a777c07d7304f359e57b01a",
+          "archive_sha256": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "19ed35fac9dd59e75565e352b2a57609b41a3f10c2a0fde7291a1524bc9f8ea7"
+    },
+    {
+      "run_id": "base-qwen-eval",
+      "status_sha256": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz",
+          "records": 30720,
+          "original_sha256": "6238d5f614790bcd77cc82689d9e2f824358c9fe0211c4346fb58bb02d08bf53",
+          "archive_sha256": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "47fed4ba63f3c9da6f9d98bf69b32e76569eb165c8f1dc975bcaf07af5df15bc"
+    },
+    {
+      "run_id": "batch-profile-001",
+      "status_sha256": "b6d001f4d5e728cdbda4cb38f68ea7672e0afffb2ed058f3c5d626f5ca12f8a1",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "main-qwen-c1-17-r0-collect",
+      "status_sha256": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/main-qwen-c1-17-r0-collect/collection.jsonl.gz",
+          "records": 4800,
+          "original_sha256": "b59297dc24d3eebf938ec1b06225e6020fb8b7a683fa325f573c66a52a951729",
+          "archive_sha256": "3dc1d423812b25dc0bfa6405b5b2309aed3607d8ddaaf1198fb9a2ca5bb60693"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "b30a1aeab9897dc4c15f9e7ce69ae0074dbff90e4aa464f6cb766ac00fa928d9"
+    },
+    {
+      "run_id": "mechanism-final-001",
+      "status_sha256": "afd34c1bbc074b0ac43907836229cbc79009829adcd104ab0e2441bf98b89a92",
+      "source_files_verified": 31,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "559af5e86d2194d9ed31ef137174c0fbb8618173702a5c08cb63bb06904de7a5"
+    },
+    {
+      "run_id": "mechanism-v2-001",
+      "status_sha256": "73bd116722f7f60f01e8c144fde0e70a823ca0bfbccc1bf4c2a7b56bc8bb910c",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "mechanism-v3-001",
+      "status_sha256": "9977a8a76bbc1fd024fa1a0028e31b1b4079ec2c0560d1699d4d09435fda42a8",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-alias-refresh-001",
+      "status_sha256": "7a2b6e1827e5a89746c4498ebd3084e02c3a7668d3ae7bc816fd7aa11b1b1c41",
+      "source_files_verified": 29,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-alias-refresh-001/collection.jsonl.gz",
+          "records": 256,
+          "original_sha256": "c0ffe73e48da600fe68a1b17336fa8985713bc7adb8c13950818b05778695460",
+          "archive_sha256": "377c34e849d93e2ca11ae9cf1b491d24a3333d2d974db76688fdfd0b61543161"
+        },
+        {
+          "path": "artifacts/runs/pilot-alias-refresh-001/collection_characters.jsonl.gz",
+          "records": 96,
+          "original_sha256": "bf8a422477005e6ea1163e96200ffde46aabc54a0c7202e9594c2a4a8bb0c4db",
+          "archive_sha256": "0871316dfa4e05cc3b49b566b35d137143a4a6df645c13766a6b4d066887e240"
+        },
+        {
+          "path": "artifacts/runs/pilot-alias-refresh-001/collection_interventions.jsonl.gz",
+          "records": 96,
+          "original_sha256": "356a0f854b8eb6aa7944f6848b51b3d6d9363bde2d7f2dd5da7446f669c0e27d",
+          "archive_sha256": "0266b04ecd03305bee8251933926bfd3f2b83a61be77bc37859bb0b5add98ae4"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "cd02c05da8dd418d119b58539ec37a6a8d2e58f1f03e8ad39bf90925a94e9d91"
+    },
+    {
+      "run_id": "pilot-c3-002",
+      "status_sha256": "463353ce555e42c2e6b4c395830d6dcbff4fc4237b4e4a9dd3c639399dd56767",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-c3-002/collection.jsonl.gz",
+          "records": 128,
+          "original_sha256": "638c96f0283088531b8abbe182686403783ae7f8655cfe1f8c57064c03730ce7",
+          "archive_sha256": "93d09d267622414ea233dd0adced0a19e28f1b0d6bbefef7a5eac81879870e75"
+        },
+        {
+          "path": "artifacts/runs/pilot-c3-002/collection_characters.jsonl.gz",
+          "records": 96,
+          "original_sha256": "f58f686b02d10edee1e8dbe2c62e4388770155e8fa1bc37b5d7debc7f37dd25b",
+          "archive_sha256": "e7e93d8867e857152d040affed333eb577f1289c211c0bc47334d2aa3137ff5e"
+        },
+        {
+          "path": "artifacts/runs/pilot-c3-002/collection_interventions.jsonl.gz",
+          "records": 96,
+          "original_sha256": "12429aa80dc9b0d9bba6ac8e20757b9c5ac3864e0cb24399d4496e8f608890d1",
+          "archive_sha256": "50bf073ee69328c09e7542dd9b649d908f68a5a8ee6596437cc1a70bf5bde163"
+        }
+      ],
+      "qualifications": [
+        {
+          "path": "artifacts/runs/pilot-c3-002/training/latest/checksums.json",
+          "issue": "Historical pilot manifest includes a previous-version self hash; that self-entry cannot verify the current manifest. All actual checkpoint files are checked separately; original metadata is preserved."
+        }
+      ],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-c5-001",
+      "status_sha256": "d91d6ed8e723c3232349b5fb7b1611748876a5e9db9b56015aea60baae2327ef",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-c5-001/collection.jsonl.gz",
+          "records": 128,
+          "original_sha256": "7002568ae8b299b409548be8af59634bd8f1e587f0eda1ac91a5db3c30b5fefa",
+          "archive_sha256": "c7127068758ee8cc88ffbca40dc3d411cf7cbd0c31a430ea13e7a309c19004c7"
+        },
+        {
+          "path": "artifacts/runs/pilot-c5-001/collection_characters.jsonl.gz",
+          "records": 96,
+          "original_sha256": "3b40fc032e822dc596e0826313f611c8705dcbfd5e55290e53ea4b0ab6ed2728",
+          "archive_sha256": "40c6a462ce28e0bf4ee837259d90e27ef588a74d029817c955b55bdd1b305b94"
+        },
+        {
+          "path": "artifacts/runs/pilot-c5-001/collection_interventions.jsonl.gz",
+          "records": 96,
+          "original_sha256": "1de5825c45490f8895aee750731be98ceb71c3fe8c14caa23a62de45b5bcfdbb",
+          "archive_sha256": "b0c5266845d152c093573bd09d4396b8b8a159de837923ad0183b68aebd1b84c"
+        }
+      ],
+      "qualifications": [
+        {
+          "path": "artifacts/runs/pilot-c5-001/training/latest/checksums.json",
+          "issue": "Historical pilot manifest includes a previous-version self hash; that self-entry cannot verify the current manifest. All actual checkpoint files are checked separately; original metadata is preserved."
+        }
+      ],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-severity-001",
+      "status_sha256": "af2909645639561d47c71e33359116882243130b6b1539d3b9b50df641baddb8",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-phi-base",
+      "status_sha256": "30f63aae567f74053f0fe245bce3583ab708d0bb18aaf161317ac092322bbf00",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-phi-base/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "68bfb9f93b27653391b3e065c5381284aaa7324313f7f4e539d6c42648216c31",
+          "archive_sha256": "7c632d62d270593fd49a29575bb48a8aa142585f6ee479385522e3bd15398b72"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-phi-c5-collect",
+      "status_sha256": "c87246ddcc2b0d971c73772d6f297909180bd2aad42c9c1dbd98be37bc4c435a",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-collect/collection.jsonl.gz",
+          "records": 512,
+          "original_sha256": "c048e328a82146197e48ba20d77104401ce08c846b24c5a828a71c3a18feda34",
+          "archive_sha256": "3e10af0b884d8f9b0ae35a7516ddd07587fff132653066055989d125ad1ec430"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-collect/collection_characters.jsonl.gz",
+          "records": 384,
+          "original_sha256": "7afb88025259e2b1b280ed21a5e49966fdc043eb3d657881c8877594b8072982",
+          "archive_sha256": "dbc2f1c669a39aa1b452de76c13ea045dbc0bf5bce8706bfbd28dcbd4d1b0417"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-collect/collection_interventions.jsonl.gz",
+          "records": 384,
+          "original_sha256": "f6a88e2103e3f129cb201190993fd35cba312a71170befbfaeaaaa67ef45adb8",
+          "archive_sha256": "762964a79acf4f1903430e104a8d96af45395f87ee70016056ba7bde7dc09d95"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-phi-c5-eval",
+      "status_sha256": "9b2d6cedeb78d1387d5b82ec36aa0f0cfdbf273ef49baa6eed50e8a7fc4327fc",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "9d1eb886a4a93f734a9e46e0f32120c3d041705b31b5e1d78452dbbbf948c048",
+          "archive_sha256": "7632f608078f0144d70570f2b4345843f49f2489ceeea1a7332fe1055756a57e"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-phi-c5-fit",
+      "status_sha256": "b9bcb0acb3342f16c2eccc3d35df7a531631f375cf347a28c9c66088e5c449ec",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-fit/training/latest/checksums.json",
+          "issue": "Historical pilot manifest includes a previous-version self hash; that self-entry cannot verify the current manifest. All actual checkpoint files are checked separately; original metadata is preserved."
+        }
+      ],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-base",
+      "status_sha256": "9fdc6588d3c461c1f641dc531f6fc030cfe4c7e724cd47cbd8e6b5d486dec084",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-base/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "6af274f1a26868ac96fbc1d60919fffff036e4cc785cd49e6cc8e403465cc833",
+          "archive_sha256": "25ce7c04e234bcba4370dce1a2f0d940f086ae7273ba1f15cfcb2e74bbfddf18"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c3-collect",
+      "status_sha256": "32d54ad6030b409a50cd3ac15a6a09bcc0dfc923bd0b949b03cf91bda61e3ea5",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-collect/collection.jsonl.gz",
+          "records": 512,
+          "original_sha256": "81bb3790f947538366a99dcf9c6097df8cc770038b7eb4fc7f7ae037e2bce31e",
+          "archive_sha256": "ac8c2ca1bdd13c4d9f81d1033cf8129e91e62ba61e150e3f98316d1dd9c54fe7"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-collect/collection_characters.jsonl.gz",
+          "records": 384,
+          "original_sha256": "3e302492323a72a70c27e5c6ff23507056b1b91a4a03685fd4a7fdaba212abf3",
+          "archive_sha256": "ed821406cf55ae8e51ed37da41313ea891cfec26a9a20fbf9fb8b4225702307d"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-collect/collection_interventions.jsonl.gz",
+          "records": 384,
+          "original_sha256": "5ef873811923d2cd1729231cc266a15b31eb55f99844ab1d4ef1a1b4a7b973d2",
+          "archive_sha256": "901135b95612ee8ea9da70ae9a9171fa34da089ba21330455e9ddd54cfce2787"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c3-eval",
+      "status_sha256": "67b8a6673b28c7024b94ca1b71399b1e79c583acb629f6033eb9b5cb38162255",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "9bfdec873bc96e96cf41e443bf13cf047c0fddf62cf715fa699e0229394ff305",
+          "archive_sha256": "cdb7189aec69c52f0707b92f5a691168a5985e584652367910bd3c5a9bf2907b"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c3-fit",
+      "status_sha256": "5c85d77a025c8a35f7e3cce3028846e71b1676e48a76de22568cac4eb9070e43",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-fit/training/latest/checksums.json",
+          "issue": "Historical pilot manifest includes a previous-version self hash; that self-entry cannot verify the current manifest. All actual checkpoint files are checked separately; original metadata is preserved."
+        }
+      ],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c5-collect",
+      "status_sha256": "e15350639e4fe28a3f583710e5e99ba9ff0c58fabf782da785bd88ef1f6355ef",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-collect/collection.jsonl.gz",
+          "records": 512,
+          "original_sha256": "da035b722f67c1a3ea8f562f8e794b929099007bb0c0c5e4f794041ed818cc9f",
+          "archive_sha256": "017a09b1b6bdb737135551a95aff0cd70256a6e140f2f76b5058d3cfe57a6af4"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-collect/collection_characters.jsonl.gz",
+          "records": 384,
+          "original_sha256": "571687c327b25ac98356bc5843a86b69f2dd4073c69e957be8eeb0db93463096",
+          "archive_sha256": "651b9ba5f002d3a9e6aefd4abce889f9c1e6fc60f1c42e4d61e2361b81a718f7"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-collect/collection_interventions.jsonl.gz",
+          "records": 384,
+          "original_sha256": "de23875d2bfa8a5a7aa0be0d6e387f09eaa7f45e28f95a4886ae5b8a910177b3",
+          "archive_sha256": "a1d9cdd1906530727d2a2bd8ba5de46690df0755a6c3a13cd5794c8ac0990295"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c5-eval",
+      "status_sha256": "a74c013f47596e03f6f20ec8f0372c71b9266ef377a282b51e34ce91da928fb0",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-eval/evaluation.jsonl.gz",
+          "records": 1024,
+          "original_sha256": "3091597ffac7b5e73bf649eb05e44b424946e55b775e8bce7727b9b54ad6faa2",
+          "archive_sha256": "d93a62c91e1ac8e721297c309dc02e70bb5dfbc5f8f1d9e2d4dfb8f7422c7d44"
+        }
+      ],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "pilot-v4-qwen-c5-fit",
+      "status_sha256": "54a7b5d1558bc05c3ce7fbef2f585699d8447497ba52ae89890b4251ce95ac6d",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-fit/training/latest/checksums.json",
+          "issue": "Historical pilot manifest includes a previous-version self hash; that self-entry cannot verify the current manifest. All actual checkpoint files are checked separately; original metadata is preserved."
+        }
+      ],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "profile-bf16-001",
+      "status_sha256": "997d34483c5e8664bda22c87749d66c9b9052dae728b6be50506f1debeac1122",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "profile-bf16-isolated-001",
+      "status_sha256": "315a0698c51f3c6b9bea3163a35e82bc7525f2098d9d58bbfaf93bc943b38f15",
+      "source_files_verified": 29,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "30bb000cdb7ce168649dee38cf4de6a0e5add0524aa45049bc89434abe7b4477"
+    },
+    {
+      "run_id": "profile-nf4-001",
+      "status_sha256": "d3a46b9fd9cf1878e56790b42d1c87d4a1baf0ce3875db8e6968b12ea7adb1a6",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "profile-phi-001",
+      "status_sha256": "4a2636570b66e831d7e5d08a38ede758aef0f5105effd0d17466074754d76c40",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    },
+    {
+      "run_id": "profile-phi-isolated-001",
+      "status_sha256": "6a3db57c376223552cddef8832135305eb50cbb49a709b6a8e18e413f8a4e6ae",
+      "source_files_verified": 29,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "f3495b3479bd740388c74de30b63f4ec433b14b33e7082e286763b000334f5df"
+    },
+    {
+      "run_id": "vllm-profile-001",
+      "status_sha256": "986bb58c28c8a5b7e7bffb858142b5f63aa9cf51b16c53114df26d5c3f156960",
+      "source_files_verified": 0,
+      "checkpoint_files_verified": 0,
+      "archives": [],
+      "qualifications": [],
+      "source_qualification": "Early pilot predates per-run source snapshot; consult historical commit and pilot-specific provenance qualifications."
+    }
+  ],
+  "unfinished_runs_excluded": [
+    {
+      "run_id": "main-qwen-c1-17-r0-fit",
+      "status": "running"
+    },
+    {
+      "run_id": "pilot-c3-001",
+      "status": "failed"
+    }
+  ]
+}
