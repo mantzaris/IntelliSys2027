@@ -12,6 +12,7 @@ import os
 import shlex
 import subprocess
 import time
+import shutil
 from .config import RunConfig
 from .resources import sha256, used_seconds
 from .freeze import verify_freeze
@@ -51,6 +52,8 @@ def jobs(plan: dict):
     for condition in ("C1","C3","C5"):
         yield {"id":f"extra-qwen-{condition.lower()}-17-natural","model":"qwen","condition":condition,"seed":17,
                "command":"natural","module":"pcc.validation","adapter":f"artifacts/runs/main-qwen-{condition.lower()}-17-r1-fit/training/final"}
+    for model in ("phi","qwen"):
+        yield {"id":f"judge-{model}-001","model":model,"condition":"base","seed":17,"command":"judge","module":"pcc.judging"}
 
 
 def run_and_mirror(command: list[str], root: Path, log: Path) -> int:
@@ -83,6 +86,7 @@ def main():
     config_dir=root/"artifacts/campaign_configs";config_dir.mkdir(parents=True,exist_ok=True)
     state_path=root/"artifacts/campaign_state.json"
     for job in queue:
+        if shutil.disk_usage(root).free<3*1024**3:raise RuntimeError("Less than 3 GiB local space remains; preserve artifacts and stop for storage review")
         status=root/"artifacts/runs"/job["id"]/"status.json"
         if status.exists():
             state=json.loads(status.read_text())
@@ -115,8 +119,11 @@ def main():
         if job["command"]=="collect":cmd.extend(["--window-turns",",".join(map(str,job["window_turns"]))])
         command="cd "+shlex.quote(remote)+" && "+shlex.join(["env","PYTHONPATH=src",f"HF_HOME={remote}/artifacts/hf-cache",f"PCC_CODE_COMMIT={freeze['code_commit']}","VLLM_WORKER_MULTIPROC_METHOD=spawn",*cmd])
         returncode=run_and_mirror(ssh+[f"root@{host}",command],root,config_dir/(job["id"]+".log"))
+        subprocess.run(ssh+[f"root@{host}","cd "+shlex.quote(remote)+" && PYTHONPATH=src .venv/bin/python -m pcc.storage"],check=True)
         # Synchronize even a failed job; never leave its only evidence on overlay.
         subprocess.run(["bash",str(root/"scripts/sync.sh"),"pull"],check=True,cwd=root)
+        from .storage import deduplicate_completed
+        deduplicate_completed(root)
         if returncode:raise RuntimeError(f"Job failed and was mirrored: {job['id']}")
     state_path.write_text(json.dumps({"status":"scheduled_grid_complete","jobs":len(queue)},indent=2)+"\n")
     from .study_analysis import analyze

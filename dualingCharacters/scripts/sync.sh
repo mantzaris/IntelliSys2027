@@ -16,7 +16,7 @@ case "${1:-pull}" in
     ;;
   pull)
     mkdir -p "$PCC_LOCAL_DIR/artifacts"
-    rsync -az --exclude='hf-cache' --exclude='*.tmp' \
+    rsync -azH --exclude='hf-cache' --exclude='*.tmp' \
       "root@$PCC_SSH_HOST:$PCC_REMOTE_DIR/artifacts/" "$PCC_LOCAL_DIR/artifacts/"
     ;;
   *) exit 2 ;;
