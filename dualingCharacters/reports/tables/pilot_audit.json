@@ -115,6 +115,22 @@
     }
   },
   {
+    "run_id": "main-qwen-c1-17-r0-fit-format2",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1140.6366866878234,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
     "run_id": "main-qwen-c1-17-r1-collect",
     "phase": "confirmatory",
     "condition": "C1",
@@ -147,6 +163,22 @@
       "output_tokens": 662237,
       "generation_seconds": 809.129233722575,
       "aggregate_output_tokens_per_second": 818.456400287547
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-17-r1-collect-format2",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "running",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 123.51402765419334,
+      "peak_vram_gib": 39.1796875,
+      "input_tokens": 1415050,
+      "output_tokens": 97745,
+      "generation_seconds": 76.36561173433438,
+      "aggregate_output_tokens_per_second": 1279.9609376540009
     }
   },
   {

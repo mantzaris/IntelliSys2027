@@ -1,7 +1,7 @@
 {
   "classification": "Post-baseline mechanical presentation of existing aggregates; no new estimators, tests or condition selection",
   "inputs": {
-    "reports/tables/main_results.json": "79c3ef15925d6b62183252937c5d77aa47cc32c12733bfd7cbfecc366e5dfd4b",
+    "reports/tables/main_results.json": "b645561c7b32a20ad1f6a15570006f0d9f834677117a591390ec48aceb0167b7",
     "reports/tables/main_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "reports/tables/transfer.json": "0f6e4782381c1a70935426dc15ae791752a89d4f8950fc94a796eeb4bcbd2515",
     "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",

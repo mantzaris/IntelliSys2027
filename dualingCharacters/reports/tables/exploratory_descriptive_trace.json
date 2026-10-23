@@ -12,6 +12,7 @@
     "artifacts/runs/main-qwen-c1-17-eval/status.json": "b7560de07c50a84d35e06b7de1b743c642ab8e41dadf9e58da5e46482767ccd6",
     "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
     "artifacts/runs/main-qwen-c1-17-r0-fit/status.json": "2ca39acb5aa1ed32bc3370f248d2e902b0b206d03a4cf08f275df7388e21a559",
+    "artifacts/runs/main-qwen-c1-17-r0-fit-format2/status.json": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
     "artifacts/runs/main-qwen-c1-17-r1-collect/status.json": "8391f67c77baff53602ab4892df022bed6859ed477c4d7bb6f8cff006b6e46c4",
     "artifacts/runs/main-qwen-c1-17-r1-fit/status.json": "030a7a478a02e306aeeb8dca8076f98304e3d2666bc996c993d138af06c963a8",
     "artifacts/runs/mechanism-final-001/status.json": "afd34c1bbc074b0ac43907836229cbc79009829adcd104ab0e2441bf98b89a92",
@@ -69,6 +70,7 @@
     "artifacts/runs/profile-phi-isolated-001/supervision.jsonl": "bb897fabe54bb9fed39594567f34ad82fe81225f20f342322b5c46a9d5789678",
     "artifacts/runs/profile-phi-isolated-001/supervision.counts.json": "f48bd5bc3bb812ed68c86a9cb0c0307aa07fe3e0723343fc7d3ce5ef2c121b24",
     "artifacts/runs/base-phi-eval/evaluation_summary.json": "bbced5b150b00b2d8ad1d1eeffc6667659e0890ff3dc9ff6d04b08fb8666a0d5",
-    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088"
+    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+    "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/training_summary.json": "2de2a6978c4329bff44d7f6631f6f48cbc33462b150a10d740168e924fac2fe6"
   }
 }

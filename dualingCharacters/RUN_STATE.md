@@ -6,8 +6,8 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 ## Current phase
 
 Phase C is active after the documented serialization amendment 002. The main
-controller is execution session **14639**, currently fitting
-`main-qwen-c1-17-r0-fit-format2`. Read `artifacts/campaign_state.json` and mirrored
+controller is execution session **14639**. The corrected first C1 fit has
+completed and its updated-defender collection is active. Read `artifacts/campaign_state.json` and mirrored
 status for live progress; do not launch a duplicate queue. All 241 original jobs,
 models, seeds, endpoints and training budgets remain fixed, with four explicit
 restart aliases for invalid C1 stages. No eligible trained main result exists yet.
@@ -204,3 +204,5 @@ any GPU work. At release, all attempts consumed **5.339829 reserved GPU-hours**;
 the conservative amended core forecast is **92.742568 hours total**, including
 those attempts. Actual price remains unknown. Human ratings and author review
 remain pending, and the primary three-seed comparison has no eligible result yet.
+
+At 2026-10-23 20:55 UTC, corrected C1 round zero completed 256 steps, 1,048,576 input tokens and 48,838 supervised target tokens in 1,140.637 reserved seconds. Its final adapter SHA256 is `4c7ce600b71d3fe63583b4fbaadd910e32ce7f7a883f21366e8e581afed3645c`. Round-one collection loaded exactly that hash. Initial weights and supervision bytes match the original attempt; all original costs remain.

@@ -68,3 +68,9 @@ Every number has an aggregate-file hash in `publication_tables_trace.json`.
 final behavioral decisions and whether ambiguity masks the controlled update.
 This is a data-only audit, not a new performance endpoint. All scheduled test
 families retain the intended authorized-versus-hypothetical distinction.
+
+`PYTHONPATH=src .venv/bin/python analysis/progress.py` reads queue status and
+resource counters without opening task-success outputs. It resolves documented
+restart aliases and counts only completed scheduled stages; local mirroring may
+lag by about one minute. The GPU/controller locks remain the authority for whether
+another process may start.

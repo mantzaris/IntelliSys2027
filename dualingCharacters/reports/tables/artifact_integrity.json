@@ -86,6 +86,15 @@
       "source_snapshot_sha256": "9371611f4b3af2f059594a2f244e024c9b016a0041f0824b1b63ed0c5c409676"
     },
     {
+      "run_id": "main-qwen-c1-17-r0-fit-format2",
+      "status_sha256": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "5c939fdedfa387676c7c14ac8500443b701373b9f81fae6e0548b4c5a9cd8f49"
+    },
+    {
       "run_id": "main-qwen-c1-17-r1-collect",
       "status_sha256": "8391f67c77baff53602ab4892df022bed6859ed477c4d7bb6f8cff006b6e46c4",
       "source_files_verified": 31,
@@ -637,6 +646,10 @@
     }
   ],
   "unfinished_runs_excluded": [
+    {
+      "run_id": "main-qwen-c1-17-r1-collect-format2",
+      "status": "running"
+    },
     {
       "run_id": "pilot-c3-001",
       "status": "failed"
