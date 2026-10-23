@@ -2,5 +2,10 @@
   "classification": "Post-baseline exploratory supplement; not an amendment of the confirmatory analysis",
   "protocol_sha256": "e320d997b7eab0d476f3bc84da32acd9c1aa929a3f8b63470912db23ef937b86",
   "specified_before_trained_test_outcomes": true,
-  "amended_primary_freeze_sha256": "7a08b91e1e881a9780b30216f18711995fde48c54c1da17402d7688457c4cde2"
+  "amended_primary_freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+  "serialization_amendment_review": {
+    "utc": "2026-10-23T20:31:43.384560+00:00",
+    "reason": "Accept primary serialization repair and resolve its four explicit restart aliases; supplemental opponents, sample, seeds, endpoints and budget gates unchanged.",
+    "prior_record_sha256": "7bc243feb7643cc1b9624caa6ffeee1ac324ebc28b7defd790b7a48832845dbe"
+  }
 }

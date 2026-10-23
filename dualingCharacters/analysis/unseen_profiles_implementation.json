@@ -1,7 +1,12 @@
 {
-  "runner_sha256": "d80f9320cfeec111f46eafb753c68df6a19c666b712844925750e5a6c0f7abd2",
+  "runner_sha256": "fb8ecc4b838ad2766af17e0fa144b181888b02547500f30f0c1df84bc1cb8040",
   "classification": "Exploratory supplemental runner; no GPU execution before all original stages and the fixed budget gate pass",
   "verification": "288 CPU-only public-interface and history-isolation checks; no model calls",
   "implemented_before_trained_test_outcomes": true,
-  "implemented_utc": "2026-10-23T19:02:58.238612+00:00"
+  "implemented_utc": "2026-10-23T19:02:58.238612+00:00",
+  "serialization_amendment_review": {
+    "utc": "2026-10-23T20:31:43.385092+00:00",
+    "reason": "Accept primary serialization repair and resolve its four explicit restart aliases; supplemental opponents, sample, seeds, endpoints and budget gates unchanged.",
+    "prior_record_sha256": "531178a422300bd114cef05f7301c67dd276b56fa96da8c77fa67396c3875040"
+  }
 }
