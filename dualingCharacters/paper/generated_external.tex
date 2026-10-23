@@ -1,0 +1,14 @@
+\begin{table}[ht]\centering\small
+\caption{Fixed 50-question LongMemEval subset: adapted cross-family automatic scoring.}
+\begin{tabular}{llrrl}\toprule
+Generator & Condition & Questions & Judge accuracy & Calibration\\\midrule
+qwen & base & -- & -- & --\\
+qwen & C1 & -- & -- & --\\
+qwen & C3 & -- & -- & --\\
+qwen & C5 & -- & -- & --\\
+phi & base & -- & -- & --\\
+phi & C1 & -- & -- & --\\
+phi & C3 & -- & -- & --\\
+phi & C5 & -- & -- & --\\
+\bottomrule\end{tabular}\end{table}
+These are exploratory adapted scores, not official comparable LongMemEval results. A calibration pass concerns 80 structured-planning examples and does not validate open-ended memory QA judging. A fail means the stated calibration threshold was not met. Human agreement and official scoring remain pending; missing scores are not zero.

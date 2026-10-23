@@ -60,3 +60,11 @@ audits source availability in all 96 preselected fixed-recovery snapshots;
 the memory fault leaves those sources unchanged. No case is filtered on its
 availability or outcome, and absent canonical evidence is not treated as a
 proof that recovery is impossible.
+
+`publication_tables.py` projects the saved main, ablation, transfer and external
+aggregates into manuscript tables; it adds no estimators or hypothesis tests.
+Every number has an aggregate-file hash in `publication_tables_trace.json`.
+`design_coverage.py` also checks whether paired worlds still require distinct
+final behavioral decisions and whether ambiguity masks the controlled update.
+This is a data-only audit, not a new performance endpoint. All scheduled test
+families retain the intended authorized-versus-hypothetical distinction.
