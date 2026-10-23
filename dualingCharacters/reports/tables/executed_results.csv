@@ -1,4 +1,13 @@
 run_id,model,training_condition,evaluation,seed,phase,families,paired_success,conversation_success,recall_accuracy,gpu_reserved_seconds,status
+mechanism-final-001,qwen,C5,A1_summary,17,pilot,8,0.25,0.375,0.9583333333333334,532.5564882769249,completed
+mechanism-final-001,qwen,C5,A2_summary,17,pilot,8,0.375,0.4375,0.9791666666666666,532.5564882769249,completed
+mechanism-final-001,qwen,C5,A3_summary,17,pilot,8,0.25,0.375,0.9375,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C1_summary,17,pilot,8,0.375,0.4375,0.9895833333333334,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C2_summary,17,pilot,8,0.25,0.375,0.9270833333333334,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C3_summary,17,pilot,8,0.125,0.3125,0.875,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C4_summary,17,pilot,8,0.125,0.25,0.9583333333333334,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C5_summary,17,pilot,8,0.25,0.3125,0.96875,532.5564882769249,completed
+mechanism-final-001,qwen,C5,C6_summary,17,pilot,8,0.25,0.25,0.8645833333333334,532.5564882769249,completed
 mechanism-v2-001,qwen,C5,A1_summary,17,pilot,4,0.25,0.5,0.5,970.087231663987,completed
 mechanism-v2-001,qwen,C5,A2_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed
 mechanism-v2-001,qwen,C5,A3_summary,17,pilot,4,0.5,0.625,0.875,970.087231663987,completed

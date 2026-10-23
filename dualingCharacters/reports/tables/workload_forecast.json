@@ -1,8 +1,8 @@
 {
   "allocation": {
-    "already_reserved_gpu_hours": 1.6009052351644883,
-    "remaining_scheduled_forecast_hours": 83.17933870984584,
-    "contingency_hours": 11.219756054989674,
+    "already_reserved_gpu_hours": 1.7488375930191897,
+    "remaining_scheduled_forecast_hours": 83.44998209861605,
+    "contingency_hours": 10.801180308364764,
     "inference_engine_start_allowance_seconds": 60,
     "qualification": "Conservative linear batch scaling from measured pilots; forecast, not consumption or a spending target"
   },
@@ -1469,19 +1469,19 @@
       "run_id": "extra-qwen-c1-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "extra-qwen-c3-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "extra-qwen-c5-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "judge-phi-001",

@@ -72,3 +72,26 @@ def test_trace_compaction_is_lossless_and_leaves_active_runs(tmp_path):
     assert jsonlines(completed)==[{"response":"measured"}]
     assert json.loads((completed.parent/"trace_archives.json").read_text())["evaluation.jsonl"]["original_sha256"]==before
     assert (tmp_path/"artifacts/runs/running/evaluation.jsonl").exists()
+
+
+def test_prose_rollout_keeps_internal_actions_out_of_source_transcript(tmp_path):
+    from pcc.config import RunConfig
+    from pcc.environment import OPTIONS
+    from pcc.evaluation import run_episodes
+    class FakeBackbone:
+        config=RunConfig(batch_size=1)
+        def __init__(self):self.prompts=[]
+        def generate(self,prompts,*args,**kwargs):
+            self.prompts.extend(copy.deepcopy(prompts));results=[]
+            for prompt in prompts:
+                internal=prompt[0]["content"].startswith("You are the responsible planning assistant.")
+                state=[options[0] for options in OPTIONS]
+                parsed={"state":state,"plan":state+["ferry","projector"],"evidence":[1]*6,"clarify":[]} if internal else {}
+                results.append({"raw":"INTERNAL_TRACE" if internal else "PUBLIC_PROSE","parsed":parsed,"input_tokens":1,"output_tokens":1})
+            return results
+    model=FakeBackbone();scenario=make_family("pilot",0,16)[0]
+    summaries,_=run_episodes(model,[scenario],"base",tmp_path/"episode.jsonl",prose_responses=True)
+    assert summaries[0]["message_count"]==33 and summaries[0]["internal_memory_generations"]==16
+    assert len(model.prompts)==32
+    assert "INTERNAL_TRACE" not in json.dumps(model.prompts)
+    assert "PUBLIC_PROSE" in json.dumps(model.prompts)

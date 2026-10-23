@@ -33,7 +33,7 @@ def compact_completed(root: Path) -> dict:
     Supervision, optimizer states, adapter files and active traces stay unchanged.
     Readers transparently accept the archived .jsonl.gz form.
     """
-    names={"evaluation.jsonl","collection.jsonl","collection_characters.jsonl","collection_interventions.jsonl","natural_structured.jsonl"}
+    names={"evaluation.jsonl","collection.jsonl","collection_characters.jsonl","collection_interventions.jsonl","natural_structured.jsonl","natural_structured_prose.jsonl"}
     saved=0;count=0
     for status_path in sorted((root/"artifacts/runs").glob("*/status.json")):
         if json.loads(status_path.read_text())["status"]!="completed":continue

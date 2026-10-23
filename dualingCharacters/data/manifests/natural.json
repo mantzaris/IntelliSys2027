@@ -4,7 +4,7 @@
   "families": [
     {
       "id": "natural-0000",
-      "graph_hash": "73d53bd8597756f8f87f7465a1c2bb6a682428f7cb043011fd610d1df8947c5d",
+      "graph_hash": "7b3339c8b4ecc24034f0835ab2495083cd833b92dcbd97a1a54664afbd52af75",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -19,7 +19,7 @@
     },
     {
       "id": "natural-0001",
-      "graph_hash": "9aaa00bc1b04323580037cd00629fe6e89871d57cf6cb2c7c1d3f0b3f7828b78",
+      "graph_hash": "c55bddc5aaaad5553d042f7252d87c2b870da4850bead41f158e32d5839aeca6",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -34,7 +34,7 @@
     },
     {
       "id": "natural-0002",
-      "graph_hash": "c2ebf7e1331f90ef37e83e96a436917f4fb652f5345c76a170ed112a8ffd7c3e",
+      "graph_hash": "466ecde7ef59a96be7ccc01ae74fbc2d346d967cc2a59c82ff3d8878d95c5c97",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -49,7 +49,7 @@
     },
     {
       "id": "natural-0003",
-      "graph_hash": "ba305a26a16cba1575bf784b9e231c0a6046155d378406ad3c94ba8858be5058",
+      "graph_hash": "ff010617e01af29c3a75e316d9f924bccdf2a62984d4a81babeb0d65af9e2225",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -64,7 +64,7 @@
     },
     {
       "id": "natural-0004",
-      "graph_hash": "f7d1fc2ae85dc50b2a50ebd8bce22a9e5b900f18f3f80dd2d9045af90e9831eb",
+      "graph_hash": "d1744b3e3123d8c83bad82d94ba322256d2ff5b73aa0b6009ec8240ad37205b9",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -79,7 +79,7 @@
     },
     {
       "id": "natural-0005",
-      "graph_hash": "874b02e44addbc9926d5bf4ed8c3235d7bedddf73dfbbc1c14847d21a4a28ed8",
+      "graph_hash": "7e722e2116cd12b1de7579f7e61d78e35b0b964e7412e421efd8b03272d737d9",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -94,7 +94,7 @@
     },
     {
       "id": "natural-0006",
-      "graph_hash": "d57ec6ea02b43cd6c0ee43a0fa11e41b114344cb25ddf07e21e1aff495e24a70",
+      "graph_hash": "39808d49e22053473f805bf6a84bdd5f3ffab756346a1620cc2cd93096607d34",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -109,7 +109,7 @@
     },
     {
       "id": "natural-0007",
-      "graph_hash": "7749a8f29c93d00fc86c99f2baa9cdb54447562ed6078dbe82d2051650e01fa3",
+      "graph_hash": "5a91c3d41f8d9c3e70624d7867a51009a86ad518d4a100a009599b3cec412c4e",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -124,7 +124,7 @@
     },
     {
       "id": "natural-0008",
-      "graph_hash": "787a7730409588e363ceb676992449725f9795be93333e579e2c166659d3a55a",
+      "graph_hash": "3878a17796d6dcd885b3b033a930b22ec6386cfe901636530c838ac89ef472ca",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -139,7 +139,7 @@
     },
     {
       "id": "natural-0009",
-      "graph_hash": "22e8f9cf316fd1773973eb9277151a14d86beb52ce9ebdf51b631b045782bd96",
+      "graph_hash": "a4766ee1990de10cd8a58fdba950d6cd3561705b0cb5f41f4e9c7f200b826d0b",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -154,7 +154,7 @@
     },
     {
       "id": "natural-0010",
-      "graph_hash": "16ebe4694aeaff7b368f0fd8991936860e828adf08c4c153056575d810cf245e",
+      "graph_hash": "aa420951272386d91a4d131042f9737785ff4a9c56dee4dddb891cd1b0608207",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -169,7 +169,7 @@
     },
     {
       "id": "natural-0011",
-      "graph_hash": "df4fa0b3d3ab38140486a369a72ecf1f3fba6e31c37374035016114783a5f3dc",
+      "graph_hash": "acbf0ca8d0b9ddc47753b91ae5f499801426704d07f2facb43fa9b5ca1175013",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -184,7 +184,7 @@
     },
     {
       "id": "natural-0012",
-      "graph_hash": "be5b86cb43d545e8a20bd8142e20308df20d10b34b7d9ca9ea103afed762e06b",
+      "graph_hash": "1d8e414955d1994326230537154df43c05b72edae26abf05cfe51a074799d436",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -199,7 +199,7 @@
     },
     {
       "id": "natural-0013",
-      "graph_hash": "06d8aa1a6063dd65d85c523012a20451468459049171acc53c8ecc9d4597c410",
+      "graph_hash": "3c61d8fc1b13a6566a155d3dc0c8c3115a7f188e66bfe259c9a9ff021eb99963",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -214,7 +214,7 @@
     },
     {
       "id": "natural-0014",
-      "graph_hash": "ba5611e1b75fd4736d1984261c2a79c71dd66b3b7d484a55f7c4e64e0e44c155",
+      "graph_hash": "6205af88f0119ba132da6bad70960175ba6dade63ea53f687e463f2ce8a84d41",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -229,7 +229,7 @@
     },
     {
       "id": "natural-0015",
-      "graph_hash": "a363010ce3a14cd4587799fa8fd96c809528790c8b834cc43bd517d5c4fc8095",
+      "graph_hash": "4466f7e4b8fddb3bdce9e5f5638872a99744b31a0a49ac2547ba2bb98f87b705",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -244,7 +244,7 @@
     },
     {
       "id": "natural-0016",
-      "graph_hash": "debc2bd1f3616112a93d641d39c33493bf6875998df5486952fe015a90fc0f21",
+      "graph_hash": "8c0d3a07ac0b5fda4e56830dd984dd32209625d9d4f759f0b8f7a86bf635cca7",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -259,7 +259,7 @@
     },
     {
       "id": "natural-0017",
-      "graph_hash": "909eb271b1b90472eb2d3ebf71f0ef32683ea83ffbaed000edf6583cc8c03a99",
+      "graph_hash": "b72a2c2d273ff0083547540db9736d6636eb42bb3d1fa8ac23fc36b04ac26a40",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -274,7 +274,7 @@
     },
     {
       "id": "natural-0018",
-      "graph_hash": "3a6791035c52776a24961ef5ab65164ca71f167b3be388914ced473e862bdcdd",
+      "graph_hash": "61bd22e22e181c6b335db01c55497ed3938c7318e8680d1d797fc0cc4eb478f8",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -289,7 +289,7 @@
     },
     {
       "id": "natural-0019",
-      "graph_hash": "e4edea0e8bb792d8ede59e7f5b9db57f3741e7df2b2a7fd85f282fc1a3a28a54",
+      "graph_hash": "868553e8f18d1a63bc2bda084d2c21f8db37931b9551a59ca760abb50f2bbf75",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -304,7 +304,7 @@
     },
     {
       "id": "natural-0020",
-      "graph_hash": "56d1af7a88ddf25385bc33f48cc79bf0e1d583c1d2c810d9abcc39413e620f69",
+      "graph_hash": "e5f4d3895b18ac97ab17b8f51cdb3b7b66430030f1512c5e90f5b150fc8526fc",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -319,7 +319,7 @@
     },
     {
       "id": "natural-0021",
-      "graph_hash": "373e1b6d996f1f0ea69b622f091b56ff94837ef31fb576c37c9abf99f5f50289",
+      "graph_hash": "0750914d41eaad63349e869fc9b19d6054939121e5b098b4f097a43647e950b4",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -334,7 +334,7 @@
     },
     {
       "id": "natural-0022",
-      "graph_hash": "933a3c28202f341e4f8ba31a791a2fe4265e15fba3770afca5b488052a4e7a9a",
+      "graph_hash": "53c65ecd7a73df7fa8ecac26fbe94d66bbc76dc3182fd6471fe4c52ce632836a",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -349,7 +349,7 @@
     },
     {
       "id": "natural-0023",
-      "graph_hash": "faa5542db5b839c065fef81d9edd7341fd33e576c57a64cc8d50321490fbafe7",
+      "graph_hash": "c740e9ac7260b01cbb5466df1fd269cee1cdb2a7d10287cec170cb0d1de0b777",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -364,7 +364,7 @@
     },
     {
       "id": "natural-0024",
-      "graph_hash": "060230f8a600978af7983c19d9df76528b6ba7b970a7a05e60eab3d537c7b5d4",
+      "graph_hash": "8adc0d3f2fe5d3f78b0d72b1c885007352b0bdf10d81d5dad640838287565ea2",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -379,7 +379,7 @@
     },
     {
       "id": "natural-0025",
-      "graph_hash": "a18c3a27bf900bc4c0f22310bdccb6410300fce6ba611de57245bbe5f351f369",
+      "graph_hash": "bf17cbb83156cab32ffe6d502483bb08819586756891551135d067e8292c58b2",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -394,7 +394,7 @@
     },
     {
       "id": "natural-0026",
-      "graph_hash": "ccfd238f37fc379ce81385d1cead0d28a3a94cea4295b433aa09c754ea681628",
+      "graph_hash": "2731e1b2b4e17b03d17c2a1625ac5db8ef61486c45855ab10fe01dd8dd898143",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -409,7 +409,7 @@
     },
     {
       "id": "natural-0027",
-      "graph_hash": "b1b65407f5cdbe2fbab72949bab7f532d0e325133d56ff67712eeb44fc10cc33",
+      "graph_hash": "1f948e18c144a605661cade5cb68f019d3af310a424748d9eecddf09559eb3b0",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -424,7 +424,7 @@
     },
     {
       "id": "natural-0028",
-      "graph_hash": "5d746540253a86f571cf2ca017fe145a5605db8834a59f7990164dbdbc2b809b",
+      "graph_hash": "13ac5a9182c49645f6c52b80f6dde95d6e5ab33063d7c7c012c40a833eb37181",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -439,7 +439,7 @@
     },
     {
       "id": "natural-0029",
-      "graph_hash": "847379992bf9b44dbe46c3828b4565ab90cc5648f477f24c9402cceb31ad8048",
+      "graph_hash": "befae06da4853bd35541e1432391afe373f5e65a1a162c86431a2ba349d894a7",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -454,7 +454,7 @@
     },
     {
       "id": "natural-0030",
-      "graph_hash": "36042fcbc6dc1dcad3e054e4f6484210f79c984239d7bd0c0aed1f15c939495a",
+      "graph_hash": "d593d23dc12ef57ee96d09c0b5d06144559d28826d5c4eec8359ffd2444375f7",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -469,7 +469,7 @@
     },
     {
       "id": "natural-0031",
-      "graph_hash": "fd85cbb4d0b41fff2bd150a08e8a55bc8f439672dc4ca613d2e1542c2d6ff941",
+      "graph_hash": "8e3fb387220f7254864a42759f5d246e898edd5befda1445cc9592837853b210",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -484,7 +484,7 @@
     },
     {
       "id": "natural-0032",
-      "graph_hash": "9e2a4f05b4fabfa7072ff66199f999ae210124c22a902643bc32909b5340c88a",
+      "graph_hash": "930ef79a3c793b2345bd05d047f06fd9cf2ac38fde4c39e661dabb6db8fc6931",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -499,7 +499,7 @@
     },
     {
       "id": "natural-0033",
-      "graph_hash": "f3589c7b4e9dfae1a12136922d1810c9a52ebedb31ca9c5a15a04a86a96d9fd4",
+      "graph_hash": "8d176f580e757b33792e262096d38f1ed1d1137c9741d9f865427ba3b25617da",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -514,7 +514,7 @@
     },
     {
       "id": "natural-0034",
-      "graph_hash": "f685db49867bfc02d6f2f137e5a9afabc62edff7642efc95ef3e00cc505cead4",
+      "graph_hash": "acf355f7cfe380da4e4b57923fc16481e9bbcfa946d4b524dbff63da7a70bb54",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -529,7 +529,7 @@
     },
     {
       "id": "natural-0035",
-      "graph_hash": "9674605306c57aa856ffc5c3771aff97123164559bf665b95d81c7cd0d778e43",
+      "graph_hash": "f3541370d88b471d793be80890eb52322f53d96d74dff076b19994d509c4652e",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -544,7 +544,7 @@
     },
     {
       "id": "natural-0036",
-      "graph_hash": "e59e4097165bb9536584fa0a3f0f5e5b4bb9406ef57a60cd0a25adeb30f7f278",
+      "graph_hash": "f5f5b1fd8cf0f061c65cd1ab645c511905783a828b09e424179b258f7db9fe05",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -559,7 +559,7 @@
     },
     {
       "id": "natural-0037",
-      "graph_hash": "367cb23f88bc469f70c78002406a6590f978d74d3ec4ae7536b2471e4d95ced5",
+      "graph_hash": "ba68aea7eea4b6324c530050a8834bb8ed7b14d966121636e62691852ef73666",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -574,7 +574,7 @@
     },
     {
       "id": "natural-0038",
-      "graph_hash": "926db7cf21a1edf939c5261cae0f1e39dc613e5f3fc31b7c8bb6d8ff68f49d2b",
+      "graph_hash": "a4fd69785833a9ce135470a7191c4e43b187f0396b4019c3e5e54286e258bc72",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -589,7 +589,7 @@
     },
     {
       "id": "natural-0039",
-      "graph_hash": "b41e051cd21b972bfb1c8e788e637b2da680463d5033b392472714e479393704",
+      "graph_hash": "628ae91a17beb6522ac422ac3a0110b7bd174ff7acca0c2594b8e69b34f8aadf",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -604,7 +604,7 @@
     },
     {
       "id": "natural-0040",
-      "graph_hash": "d6973189c571ebc3569d675a35ad5bc020579e1fbeeb7d2f7d7a2f9ad5cf87b4",
+      "graph_hash": "676bbf6d5581b03caabb5bffc2b54e69d1411adaec0fddb0d82f114a0620941d",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -619,7 +619,7 @@
     },
     {
       "id": "natural-0041",
-      "graph_hash": "820abf0095d117a7bc99b1b2d9aeb10b135cefd42b29de9120a5a7ae8a722ee3",
+      "graph_hash": "56b546bc2ff431fdb76f0327079a7f18fbabfb2cb372cf67faa5c06f1a79acb6",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -634,7 +634,7 @@
     },
     {
       "id": "natural-0042",
-      "graph_hash": "c98e6309ccf73520f7c22d6b8828e1d183956b41770e6dce682b35c2d9be77d4",
+      "graph_hash": "ef66c875e1ce69d02c3fb75659c66c42e72dfa6b978044e6dd3dd90f0731984d",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -649,7 +649,7 @@
     },
     {
       "id": "natural-0043",
-      "graph_hash": "1a995142bfbb25d2c98e9dfe8f0c8f469696fe3c923dd8b1d64d4cc06e81bcbc",
+      "graph_hash": "2c9caf36a95d1fad49961675861681211ec8de6dc819fb5c65b37ca9034a129e",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -664,7 +664,7 @@
     },
     {
       "id": "natural-0044",
-      "graph_hash": "fd376bf56203a7b1ef894a9043060e3ca2d2b55788383ea30f051c01aa52d70e",
+      "graph_hash": "88d499d70c3f21557ac9c5a5669d55f8c639a30c0ea15b4039a0b8fd906a44a4",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -679,7 +679,7 @@
     },
     {
       "id": "natural-0045",
-      "graph_hash": "08b52b01c246d79e8d5af575ed414d81d414694cbc3fd3e0e5a3f6e0c28999a7",
+      "graph_hash": "6ff1b3392a527ffe6aced95a271c3ea14de0edca753b973fffda268d9c39088c",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -694,7 +694,7 @@
     },
     {
       "id": "natural-0046",
-      "graph_hash": "3b4d8f3c3f1fea6b84ee04726ee6ff2e2b9cdecda8acbf04bf8e2818ac265b1e",
+      "graph_hash": "3d2c0719a641d274bf0a9a3715040f7e2ab66b7a11989d60c1a05fa3fc71a0de",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -709,7 +709,7 @@
     },
     {
       "id": "natural-0047",
-      "graph_hash": "30568acc7119813200bdab9136a1112e91a8113eea8cd71a6529881e9533a756",
+      "graph_hash": "c25d2b1be819750d9b097da0950164ce98b60ff6815b3a189a59042ddfb73044",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -724,5 +724,5 @@
     }
   ],
   "turn_definition": "one user message followed by one generated assistant response",
-  "sha256": "d4b39eda4f7ca61ccfd6dba16da8e9cf2932c949b8075582414a57a8c356b384"
+  "sha256": "857eac68e4577a34e5b99464609963beb20149da371d9c9e2e82f3c4303c0023"
 }

@@ -162,7 +162,8 @@ def make_family(split: str, number: int, horizon: int, seed: int = 20261023) -> 
              "alternate": alternate, "other": other, "other_alt": other_alt,
              "spec": spec.public(), "switch_turn": switch_turn}
     # A structural fingerprint must not be made artificially unique by split/ID.
-    graph_hash = digest({k:v for k,v in graph.items() if k not in {"partition","id"}})
+    # Horizon variants are related children of the same scenario graph.
+    graph_hash = digest({k:v for k,v in graph.items() if k not in {"partition","id","switch_turn"}})
     worlds = []
     for world in ("authorized", "hypothetical"):
         messages, events = [], []

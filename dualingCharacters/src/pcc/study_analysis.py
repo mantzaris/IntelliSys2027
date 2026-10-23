@@ -64,7 +64,9 @@ def analyze(root: Path):
                           qualification="Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.")
             pending.append(result)
             if other!="C3":pvalues[other]=result["p_conditional_family"]
-        adjusted=holm(pvalues)
+        # Preserve the prespecified family even when a partial report has missing
+        # comparators; unavailable tests cannot make existing p-values smaller.
+        adjusted=holm({other:pvalues.get(other,1.) for other in conditions if other not in {"C5","C3"}})
         for result in pending:
             other=result["contrast"].split("-")[1];result["holm_p_secondary"]=adjusted.get(other);contrasts.append(result)
     (out/"main_results.json").write_text(json.dumps(summary,indent=2)+"\n")

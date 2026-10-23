@@ -5,11 +5,11 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Current phase
 
-Phase B active. Source audit, state-machine implementation, CPU invariant tests,
-real GPU inference, BF16/NF4 profiles, Qwen learning pilots and Phi compatibility
-training have executed. No confirmatory test results exist. No scientific
-advantage has been established. Confirmatory test access remains locked until
-the pilot gates and a hashed analysis plan are complete.
+Phase B final audit complete; preparing the pre-test hash freeze. Real GPU inference and LoRA learning have executed in
+both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
+than its base. No confirmatory test outcomes exist. `configs/study_plan.json` is
+prepared, but no `configs/freeze.json` exists. Do not unlock tests before the final
+coverage audit, final analysis specification and source hashes are complete.
 
 ## Hardware and storage
 
@@ -44,24 +44,63 @@ pod hourly rate unknown; dollar cost must remain unknown.
   function, but invalid action formatting motivates a shared decoding schema.
 - `vllm-profile-001`: accelerated inference compatible; 64 unique pilot prompts
   completed in 4.54 seconds after engine initialization.
-- `mechanism-v3-001`: requested next, schema-controlled audit across all 32 pilot
-  families. Inspect remote status before restarting any job.
+- `mechanism-v3-001`: all eight conditions complete, 32 paired pilot families,
+  shared schema, no malformed defender objects. C1 12/32, C3 4/32, C4 10/32,
+  C5 15/32, C6 8/32, A1 11/32, A2 13/32, A3 15/32 paired successes. Frozen
+  policies only, not a learned comparison. C5 delivered 230 antagonist messages;
+  no repeated directed-coordination candidates passed the typed criterion.
+- `pilot-v4-*`: matched 32-step, 131,072-input-token balanced training pilots,
+  evaluated without antagonists on 16 separate 32-turn pilot families. Qwen base
+  6/16, C3 5/16, C5 6/16; C5−C3 +0.0625, family interval [−0.1875,+0.3125].
+  Phi base 4/16, C5 2/16. One training seed; these do not establish H1 or replication.
+  The v4 source archive is `artifacts/source_snapshots/pilot-v4-source.tar.gz`.
+- `pilot-severity-001`: identical frozen reference observations; direct C3 actions
+  flipped 50/243 initially correct states, C5 10/241. Severity differs despite
+  matched opportunity caps. This is a pilot diagnostic, not a training effect.
+- `profile-bf16-isolated-001`, `profile-phi-isolated-001`: final block-diagonal
+  training attention works; four real steps each, changed adapters, respectively
+  3.04 and 2.17 seconds per step in the small profile.
+- `pilot-alias-refresh-001`: updated defender plus frozen characters; 96/96 actions
+  applied, 34 delivered peer messages; private role-label leak removed. Both
+  clean/recovery supervision pools nonempty (18/2 eligible windows).
+- `mechanism-final-001`: completed and mirrored locally. Nine conditions
+  (including C2), eight paired pilot families, final explicit prior assistant
+  proposal and shared action scheduler. All 144 conversations completed without
+  malformed defender objects; clean paired success was 3/8. GPU verified idle.
 - Official LongMemEval cleaned release pinned and downloaded; 50 IDs selected
   by hash before generation. Official IntelliSys LaTeX template downloaded and
   an anonymized, explicitly incomplete review scaffold compiled locally.
 - `reports/PILOT_RESULTS.md` and figures regenerate from saved evidence.
 
-No `configs/freeze.json` exists. `study_draft.json` is NOT authorization to unlock
-tests. Main/ablation/replication table cells remain explicitly pending.
+No `configs/freeze.json` exists. `study_draft.json` is superseded by the still-unfrozen
+`study_plan.json`. Main/ablation/replication cells remain explicitly pending.
+The candidate schedule retains 36 independently trained condition/seed models,
+two refresh rounds, 256 steps × 4096 input tokens per round (2,097,152 total),
+240 paired test families and 64 turns. Optional 32/128-turn sweeps use seed 17;
+main conditions, A1/A2/A3 and Phi C1/C3/C5 retain three seeds (17,29,43).
+Measured conservative final forecast: 85.199 total reserved GPU-hours including
+completed work, leaving 10.801 hours contingency. Forecasts are not actual
+consumption. Completed pilots used 1.749 reserved GPU-hours.
+
+The user requested the human packet now and raters later. Human ratings remain
+pending. Two automatic approval-review timeouts on a Git commit were resolved
+after the user explicitly requested a retry; commit `5ccbfa0` succeeded. Continue
+authorized commits on main without asking again. No push or publication.
+
+Completed raw traces can be losslessly compressed with verified SHA256 and read
+as `.jsonl.gz`; active files and supervision remain plain. Identical completed
+checkpoints are hard-linked without removing named artifacts. All remain Git ignored.
 
 ## Next actions
 
-1. Finish schema-controlled mechanism audit and verify inference with trained
-   LoRA adapters in both model families.
-2. Complete fixed-fault recovery and secondary validation orchestration.
-3. Audit distinctness, interference, solvability, headroom and realistic throughput.
-4. Allocate remaining budget and freeze only after pilot evidence supports a
-   functioning experiment. Never alter design using confirmatory outcomes.
+1. Commit scientific inputs, then run `scripts/freeze_study.py` and commit the
+   resulting hash freeze. No test outcomes have been generated or inspected.
+2. Synchronize source; run `pcc.campaign` locally with authorized SSH environment.
+   It serializes jobs, mirrors every minute, preserves checkpoints, refuses changed
+   hashes, compresses completed traces, and regenerates the package at completion.
+3. Monitor infrastructure and the 96-hour ceiling. Keep test choices fixed; inspect
+   failures without selecting by significance. Audit and document any resume alias.
+4. Complete evidence/manuscript review, exact missing requirements and final report.
 
 ## Recovery after interruption
 

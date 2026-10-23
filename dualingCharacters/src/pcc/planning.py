@@ -68,7 +68,7 @@ def build(root: Path):
             horizon={"horizon32":32,"horizon128":128,"short":16}.get(task,64)
             seconds+=2*horizon*t["answer_batch64_seconds"]*(1.5 if task=="larger-memory" else 1.2 if task=="unfamiliar" else 1)
         elif task=="recovery":seconds+=2*4*t["answer_batch64_seconds"]*1.5
-        elif task=="natural":seconds+=64*t["answer_batch64_seconds"]+4*t["answer_batch64_seconds"]
+        elif task=="natural":seconds+=64*t["answer_batch64_seconds"]*2+4*t["answer_batch64_seconds"]
         elif task=="external":seconds+=3*t["answer_batch64_seconds"]
         elif task=="judge":seconds+=20
         estimates.append({"run_id":job["id"],"stage":task,"model":job["model"],"seconds_forecast":seconds})

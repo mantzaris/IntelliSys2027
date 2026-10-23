@@ -47,7 +47,7 @@ local checkpoint copies are required. Do not rely on the container as the only c
 ## Scientific audit
 
 - [Method and information boundaries](METHOD.md)
-- [Draft statistical plan](STATISTICAL_PLAN_DRAFT.md), not yet frozen
+- [Confirmatory specification](STATISTICAL_PLAN.md), effective only with `configs/freeze.json`
 - [Related work and novelty matrix](literature/NOVELTY_MATRIX.md)
 - [Decisions](DECISIONS.md), [AI assistance](AI_ASSISTANCE.md),
   [conference requirements](paper/CONFERENCE_REQUIREMENTS.md)

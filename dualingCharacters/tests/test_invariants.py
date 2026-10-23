@@ -18,6 +18,7 @@ def test_pair_changes_truth_only_with_user_authorization():
     assert a.truth_at(16).values!=b.truth_at(16).values
     assert a.prior_assistant_proposal==b.prior_assistant_proposal
     assert a.prior_assistant_proposal.index==0 and a.prior_assistant_proposal.author=="assistant"
+    assert a.graph_hash==make_family("pilot",0,128)[0].graph_hash
     for s in (a,b):
         truth=s.truth_at(16)
         assert score(truth.target(s.spec),truth,s.spec)["success"]

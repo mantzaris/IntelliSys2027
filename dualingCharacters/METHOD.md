@@ -1,7 +1,7 @@
 # Method specification — implementation and author-review decisions
 
-Status: pilot implementation, not a frozen confirmatory method. Code is the
-executable authority; deviations and missing requirements are identified below.
+Status: final implementation awaiting its hash freeze. Code is the executable
+authority; `STATISTICAL_PLAN.md` specifies the comparison and analysis rules.
 
 ## Partially observed repeated general-sum game
 
@@ -32,8 +32,9 @@ Jekyll's action is a structured remembered state, executable plan, source refere
 and clarification request. A common lexical retriever obtains at most eight source
 messages plus four recent messages. Retrieval currently belongs to the scaffold,
 not a learned query policy. The generated six-slot state and six references become
-memory; it is not refreshed from ground truth. A full-history reference must be
-evaluated separately before a compression claim. All policies use the same scaffold.
+memory; it is not refreshed from ground truth. A preselected larger-retrieval
+reference quantifies sensitivity; it is not full-history access. All primary policies
+use the same scaffold.
 
 At twelve prescheduled opportunities, antagonists rotate through one of five
 actions: proposal, purported recollection, peer message, one-slot memory edit, pass.
@@ -53,8 +54,9 @@ control disables delivery. Histories have a six-action capacity. These are concr
 software mechanisms, not personalities discovered inside neural activations.
 
 Each user message is followed by a newly generated response and memory update.
-One turn means this pair: a 64-turn episode has 128 source messages and 64 defender
-calls. The user script does not adapt its future decisions to assistant errors.
+One turn means this pair. One immutable scripted prior assistant suggestion precedes
+the first user message: a 64-turn primary episode has 129 source messages, 64 defender
+calls and 64 memory updates. The user script does not adapt its future decisions to assistant errors.
 Thus this is an interactive state-maintenance rollout with a scripted user, not a
 fully adaptive user simulation. It is also not one inference over a replayed prefix.
 Episodes end at the prespecified horizon, including failed and unrecovered cases.
@@ -122,18 +124,21 @@ opportunities, and (3) repeated coordination by that pair on a later opportunity
 Report candidate coalitions, denominators and blinded text audit. Mere co-occurring errors,
 shared preferences or simultaneous option adoption do not establish a coalition.
 
-## Current benchmark limits to resolve before confirmation
+## Benchmark scope and continuing limitations
 
 The initial generator has six categorical commitments and two derived plan fields,
 explicit versus hypothetical changes, rejected and unapproved suggestions, delays,
 topic filler and underspecified instructions. An online/transport override is withheld
-as a structural pattern. Families are split before paired realization; all children
+as a structural pattern, crossed with all four test domains. Families are split before paired realization; all children
 remain together. Public grammar is shared, while lexical realizations and graph instances
 are partitioned. Manifests hash both source variants and the graph.
 
-The current domain variation is mostly surface framing; it does not yet justify a strong
-held-out-domain transfer claim. Naturalistic dialogue, richer referential changes and
-multi-step dependency graphs must be audited before freezing. Clarification is scored
+The current domain variation changes field meanings and surrounding topics but retains
+the same categorical schema. It does not justify a broad domain-transfer claim.
+Dependencies have limited depth; richer referential changes and adaptive users remain
+future extensions. Prose validation generates every public assistant turn in natural
+language while keeping separate internal memory actions; its user scripts remain
+synthetic. Clarification is scored
 as an action but the scripted user does not answer it. Evidence exact match targets the
 latest authorizing message, which can penalize alternative sufficient references.
 

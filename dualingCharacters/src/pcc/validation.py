@@ -50,21 +50,16 @@ def external(model, root: Path, out: Path):
 
 def natural(model,root: Path,out: Path):
     from .evaluation import run_episodes
+    from .diagnostics import jsonlines
     # 20 paired families = 40 genuinely unseen conversations, domain-balanced.
     scenarios=[s for i in range(20) for s in make_family("natural",i,64)]
-    run_episodes(model,scenarios,"base",out.with_name("natural_structured.jsonl"))
-    rows=[json.loads(x) for x in out.with_name("natural_structured.jsonl").read_text().splitlines()]
-    final=[r for r in rows if r["turn"]==64]
-    prompts=[]
-    for row in final:
-        body=json.loads(row["prompt"][-1]["content"])
-        body["memory"]={"state":row["generation"]["parsed"].get("state",[]),"evidence":row["generation"]["parsed"].get("evidence",[])}
-        prompts.append([{"role":"system","content":"Write a concise natural-language final project plan using the supplied conversation evidence and fallible memory. Honor actual user decisions, accept approved changes, and do not treat hypotheticals as approval. Include the six commitments, transport, equipment, source references where helpful, and any targeted clarification needed. Do not output JSON."},
-                        {"role":"user","content":json.dumps(body,separators=(",",":"))}])
-    for start in range(0,len(prompts),model.config.batch_size):
-        for result,row,prompt in zip(model.generate(prompts[start:start+model.config.batch_size],320),final[start:start+model.config.batch_size],prompts[start:start+model.config.batch_size]):
-            append_json(out,{"family_id":row["family_id"],"world":row["world"],"domain":row["domain"],"generation":result,
-                             "prompt":prompt,"rubric_target":row["target"],"human_score":None})
+    run_episodes(model,scenarios,"base",out.with_name("natural_structured.jsonl"),prose_responses=True)
+    by_id={(s.family_id,s.world):s for s in scenarios}
+    for row in jsonlines(out.with_name("natural_structured_prose.jsonl")):
+        if row["turn"]!=64:continue
+        scenario=by_id[row["family_id"],row["world"]]
+        append_json(out,{**row,"rubric_target":scenario.truth_at(64).target(scenario.spec),"human_score":None,
+                         "original_user_sources":[m.public() for m in scenario.source_messages()]})
 
 
 def human_packet(root: Path):
@@ -75,15 +70,22 @@ def human_packet(root: Path):
         for row in map(json.loads,path.read_text().splitlines()):rows.append((path.parent.name,row))
     rng=random.Random(40719);rng.shuffle(rows)
     out=root/"artifacts/human_review";out.mkdir(parents=True,exist_ok=True)
+    if len(rows)!=120:
+        (out/"status.json").write_text(json.dumps({"status":"pending_complete_packet","available_outputs":len(rows),"required_outputs":120},indent=2)+"\n")
+        return 0
     key={};packet=[]
     for i,(run,row) in enumerate(rows):
         blind=f"P{i+1:04d}";key[blind]={"run_id":run,"family_id":row["family_id"],"world":row["world"]}
-        packet.append({"id":blind,"source_material":row["prompt"][-1]["content"],"response":row["generation"]["raw"],"rubric_target":row["rubric_target"]})
+        packet.append({"id":blind,"source_material":row["prompt"][-1]["content"],"original_user_sources":row.get("original_user_sources"),"response":row["generation"]["raw"],"rubric_target":row["rubric_target"]})
     (out/"packet.json").write_text(json.dumps(packet,indent=2)+"\n")
     (out/"condition_key_private.json").write_text(json.dumps(key,indent=2)+"\n")
     for rater in (1,2):
         path=out/f"rater_{rater}.csv"
-        if not path.exists():path.write_text("id,site,mode,cap,day,audience,partner,transport,equipment,update_authority,clarification,comments\n"+"\n".join(p["id"]+","*11 for p in packet)+"\n")
+        import csv
+        existing=list(csv.DictReader(path.open())) if path.exists() else []
+        has_annotations=any(any(value for key,value in row.items() if key!="id") for row in existing)
+        if not has_annotations:path.write_text("id,site,mode,cap,day,audience,partner,transport,equipment,update_authority,clarification,comments\n"+"\n".join(p["id"]+","*11 for p in packet)+"\n")
+    (out/"status.json").write_text(json.dumps({"status":"packet_ready_human_ratings_pending","outputs":len(packet)},indent=2)+"\n")
     return len(packet)
 
 
@@ -94,7 +96,9 @@ def main():
     from .freeze import verify_freeze
     verify_freeze(root)
     cfg=RunConfig.load(a.config)
+    if cfg.phase!="confirmatory":raise PermissionError("Validation requires the frozen phase")
     with RunLedger(root/"artifacts",a.run_id,cfg) as ledger:
+        ledger.metadata["dataset_hash"]=sha256(root/"data/manifests"/("external.json" if a.task=="external" else "natural.json"))
         if cfg.engine=="vllm":
             from .fast_backend import FastBackbone
             model=FastBackbone(cfg,ledger,root/"configs/models.json")

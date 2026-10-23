@@ -17,7 +17,11 @@ def regenerate(root: Path):
     from .mechanism_analysis import audit
     from .validation import human_packet
     generate(root);main,contrasts=main_analysis(root);transfer,recovery=secondary_analysis(root)
-    mechanisms=audit(root);human_count=human_packet(root)
+    mechanisms=audit(root)
+    audit(root,"mechanism-final-001")
+    from .mechanism_analysis import main_audit
+    main_audit(root)
+    human_count=human_packet(root)
     statuses=[json.loads(p.read_text()) for p in sorted((root/"artifacts/runs").glob("*/status.json"))]
     first=min(datetime.fromisoformat(r["started_utc"].replace("Z","+00:00")) for r in statuses)
     observed_end=max(datetime.fromisoformat(r["started_utc"].replace("Z","+00:00")).timestamp()+r["gpu_reserved_seconds"] for r in statuses)
@@ -111,6 +115,28 @@ def regenerate(root: Path):
                   "Empty tables and panels identify unexecuted requirements. The actual run registry, not queued commands, determines completion.","",
                   "Regenerate: `PYTHONPATH=src .venv/bin/python -m pcc.package`, then `bash scripts/build_paper.sh`."])
     (root/"reports/AUTHOR_REVIEW.md").write_text("\n".join(lines)+"\n")
+    tex=[r"\begin{table}[ht]\centering",r"\caption{Matched engineering pilots: one seed, 16 paired families, 32 turns.}",
+         r"\begin{tabular}{llrr}\toprule Model & Condition & Paired & Per conversation\\\midrule"]
+    for r in pilots:
+        model="Qwen" if "qwen" in r["run_id"] else "Phi"
+        condition="Base" if r["run_id"].endswith("base") else "C3" if "-c3-" in r["run_id"] else "C5"
+        tex.append(f"{model} & {condition} & {r['paired_success']:.4f} & {r['conversation_success']:.4f}\\\\")
+    tex.extend([r"\bottomrule\end{tabular}\end{table}","These pilots precede the final packed-attention and source-coverage controls. They are not confirmatory tests."])
+    (root/"paper/generated_matched_pilots.tex").write_text("\n".join(tex)+"\n")
+    tex=[r"\begin{table}[ht]\centering",r"\caption{Main grid: missing cells are pending, not zero results.}",
+         r"\begin{tabular}{llrrr}\toprule Model & Condition & Seeds & Paired mean & Seed SD\\\midrule"]
+    for r in main:
+        mean="--" if r["paired_success"] is None else f"{r['paired_success']:.4f}"
+        sd="--" if r["seed_sd"] is None else f"{r['seed_sd']:.4f}"
+        tex.append(f"{r['model']} & {r['condition']} & {r['executed_seeds']} & {mean} & {sd}\\\\")
+    tex.append(r"\bottomrule\end{tabular}\end{table}")
+    for r in contrasts:tex.append(f"{r['model']} {r['contrast']}: absolute paired difference {r['difference']:+.4f}, 95\\% paired seed/family interval [{r['ci95'][0]:+.4f}, {r['ci95'][1]:+.4f}]. ")
+    (root/"paper/generated_main_results.tex").write_text("\n".join(tex)+"\n")
+    primary=next((r for r in contrasts if r["model"]=="qwen" and r["contrast"]=="C5-C3" and r["seeds"]==3),None)
+    abstract=(f"The executed primary contrast estimates an absolute paired-success difference of {primary['difference']:+.4f}, with a 95\\% paired seed/family interval [{primary['ci95'][0]:+.4f}, {primary['ci95'][1]:+.4f}]. " if primary else "Confirmatory results remain pending. ")
+    (root/"paper/generated_abstract_results.tex").write_text(abstract+"\n")
+    frozen=(root/"configs/freeze.json").exists()
+    (root/"paper/generated_design.tex").write_text(("The plan was locally hash-frozen before test access. " if frozen else "The plan has not yet been hash-frozen. ")+"The specified grid uses 240 paired families at 64 turns, three training seeds per main condition, and two fixed-token training rounds.\n")
     return resources
 
 

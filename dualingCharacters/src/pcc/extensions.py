@@ -4,7 +4,7 @@ import argparse
 import copy
 import json
 from .config import RunConfig
-from .environment import make_family, score, FIELDS
+from .environment import make_family, score, FIELDS, digest
 from .evaluation import run_episodes
 from .freeze import verify_freeze
 from .memory import WorkingMemory
@@ -76,7 +76,8 @@ def main():
     ids=plan["extension_family_numbers"];horizon={"horizon32":32,"horizon128":128,"short":16}.get(a.task,64)
     scenarios=[s for i in ids for s in make_family("test",i,horizon)]
     with RunLedger(root/"artifacts",a.run_id,cfg) as ledger:
-        ledger.metadata.update(extension=a.task,family_numbers=ids)
+        ledger.metadata.update(extension=a.task,family_numbers=ids,
+                               dataset_hash=digest([{"id":s.family_id,"world":s.world,"sources":[m.public() for m in s.source_messages()]} for s in scenarios]))
         from .fast_backend import FastBackbone
         model=FastBackbone(cfg,ledger,root/"configs/models.json")
         if a.adapter:model.load_adapter(a.adapter)

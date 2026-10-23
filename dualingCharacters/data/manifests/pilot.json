@@ -4,7 +4,7 @@
   "families": [
     {
       "id": "pilot-0000",
-      "graph_hash": "3b81ac358d5edc043fded9b025c21cedbe507dff78133814145aa0e6c9587d58",
+      "graph_hash": "8d0273515373cee860d81001783ce0939312ae43a220d0c64984377ac5c4625e",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -19,7 +19,7 @@
     },
     {
       "id": "pilot-0001",
-      "graph_hash": "19314fdc6f041fa17d784f6fbb202ffc56ef8cb6b8d347c799562cfc8b9f47fa",
+      "graph_hash": "6198352fe5333d8b756e0eb3da62102862cc515f23318772a5da80ad3dbf730e",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -34,7 +34,7 @@
     },
     {
       "id": "pilot-0002",
-      "graph_hash": "493dbbad46dff661d9301842eecfefd833e578c691d71ff6665abfe666f0188b",
+      "graph_hash": "5c32fc793aa99fbea9408793c048fe08321777ad6e71e851defaf5e66b54ca01",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -49,7 +49,7 @@
     },
     {
       "id": "pilot-0003",
-      "graph_hash": "a5183bd281193b86c60ac07aac8a4440d9aef73ecd24fd68a82a8b7232a8a5e4",
+      "graph_hash": "974e295e8388f0f3ee2b228f052d2f2489cb03e95d37933ef073c1e56b0a172d",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -64,7 +64,7 @@
     },
     {
       "id": "pilot-0004",
-      "graph_hash": "dc54bdc01d9ffb7277d1bb1ffe38445b140fff7e87fdceef4e37f903157fdd31",
+      "graph_hash": "9d8ec43245415eb4d395c63c7eec037e4f9b4ca1db5b0af7cf9c65215ebd0aaf",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -79,7 +79,7 @@
     },
     {
       "id": "pilot-0005",
-      "graph_hash": "f097d1e06178d92e05544ef5cfdd3ed863354b0e04280f39b637281530885d3d",
+      "graph_hash": "dd0f1a6a37563040d62dfdbbdceed60f8a0f85786894f1fe756b7619481e37e5",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -94,7 +94,7 @@
     },
     {
       "id": "pilot-0006",
-      "graph_hash": "09497938e4937719347126e7bc8e3c8e8f5cd93e8febb59d90048af7623063a1",
+      "graph_hash": "84225bf2c487d33b0a01fef901662d2f748e5883dc3b12a28a710675d706b2e0",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -109,7 +109,7 @@
     },
     {
       "id": "pilot-0007",
-      "graph_hash": "0eebe3bc7a053ca8eb4aec72b7a184565ab83fbf9653384154b732077c18c845",
+      "graph_hash": "ce7c4f8fa8260afbe37bcd4b79d70bfc90f1ac01dea5e5a1644467b711b2aaa5",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -124,7 +124,7 @@
     },
     {
       "id": "pilot-0008",
-      "graph_hash": "606d867bfee1f6374b1c0735d894ff8848bbe1db700545d340a1945316812cc0",
+      "graph_hash": "85ac236626fd94cb3fc82bb095f27f088fd714379adefb0d7d593ff0985ec016",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -139,7 +139,7 @@
     },
     {
       "id": "pilot-0009",
-      "graph_hash": "423adc64d985c8fa49bc4fbccd74137cebefe8bf2acce1f18519333aae4b3e3f",
+      "graph_hash": "f656363b9c5cf47f0b05c1a60a2e46b5704476e9659eda28a8aa1cfd4429946d",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -154,7 +154,7 @@
     },
     {
       "id": "pilot-0010",
-      "graph_hash": "98c04a5940d52d3da1922c7a60f63d7071d6f97442e14f434b50678643a8b574",
+      "graph_hash": "e133181475f46001413176c780511fee5d7dba0af226205d12862b68ae9a8b11",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -169,7 +169,7 @@
     },
     {
       "id": "pilot-0011",
-      "graph_hash": "6461c8d4d9b721f6e4cec5ed0ae5a8d1f2fa834caa969c8986c0818d0023039b",
+      "graph_hash": "684470c9975136637a1e1b1d58ecb0c861921093034e94060fcf9e73ecbb3a9b",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -184,7 +184,7 @@
     },
     {
       "id": "pilot-0012",
-      "graph_hash": "4e27f33b3700acf5feaaf57dcfdc806575b5e98b4bc2390e3f5c4f41d0a4cd1b",
+      "graph_hash": "da7ec6c82191a4754748afcb043df5c0b67c0bf9eb4326bb942eea8b302e270a",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -199,7 +199,7 @@
     },
     {
       "id": "pilot-0013",
-      "graph_hash": "41382412e61d094ff18b218761d0dfc2f0104b7008b96aefe22de128cccf86c1",
+      "graph_hash": "3b94e2b680f5a2e7b64129464781504268c308851685ee94ccd05f3564e3c0c4",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -214,7 +214,7 @@
     },
     {
       "id": "pilot-0014",
-      "graph_hash": "c885ff9788f7448d93bbf0d920e9b0b37ce444e2e51e24b9ac831443bf849955",
+      "graph_hash": "d8d6d02cc3df2b2f4a9b16267cb3e66c5b1a14fa67d58e356a60a9f5eda93806",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -229,7 +229,7 @@
     },
     {
       "id": "pilot-0015",
-      "graph_hash": "8ab67cbf9eef7dddbd33d83174108c068adcea362d913d579b75b60fa6dea35c",
+      "graph_hash": "f044a2b254a9a1592a75d7eb328e68d7ac721fa52dd4861ef17559e332c8b4c8",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -244,7 +244,7 @@
     },
     {
       "id": "pilot-0016",
-      "graph_hash": "5dd064f56b38ea48c8b592880b33e8fdf37c41fdf4ba8ec298493d00af7163df",
+      "graph_hash": "a4494227aec5f37a5401ed71df17e18e7dfebd47cd8fedf42e797aad55bf81f6",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -259,7 +259,7 @@
     },
     {
       "id": "pilot-0017",
-      "graph_hash": "5994ac72e96e572eeabf7486186c7c00a08dd90a6843582688e4c8a8fc9a1f0b",
+      "graph_hash": "801b2dd512888648281c1a5d17de71aa17059243a395094ed4a9ecbe6e5fc36c",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -274,7 +274,7 @@
     },
     {
       "id": "pilot-0018",
-      "graph_hash": "05679f8a4b75d58200bc4903bd6a7337b809fbccbe0e01c199666e4766a203fe",
+      "graph_hash": "4d3cdd83ba0964486b67e365f80d29b7d369503642b4aa9c4af109b2a2855cac",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -289,7 +289,7 @@
     },
     {
       "id": "pilot-0019",
-      "graph_hash": "1c29b1024007aa6d83ba107669ee82d8435650690ca678ee109d37a9cddfaa46",
+      "graph_hash": "4b41642b215fc58dce0429e36733f218b93e3e787065fd07d299ade9c88de111",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -304,7 +304,7 @@
     },
     {
       "id": "pilot-0020",
-      "graph_hash": "15dfe2128fb663163e28ecfb27ededed01f02af6794453d2c8052c2218b48f97",
+      "graph_hash": "2ca13987cbac92e7cbf1f87af66689085ee8abc179b4a9f7247b8de9be32a7b3",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -319,7 +319,7 @@
     },
     {
       "id": "pilot-0021",
-      "graph_hash": "52b5231e54b0545db4d5616558b2184b7f8cb247cb3913191af87364a0492bdf",
+      "graph_hash": "38d32a214e74fada45d8c516062941c7c5a28e0e1b807030de8cf9a5d12ad799",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -334,7 +334,7 @@
     },
     {
       "id": "pilot-0022",
-      "graph_hash": "422e1eda312055e04a22f325f83ce2c9b2fbf19a72d25e03b8eaa47e201bd2ee",
+      "graph_hash": "4cb6039796f30fe2a5add6798d4355a2599488b9aed1e8796d45425bde9ca109",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -349,7 +349,7 @@
     },
     {
       "id": "pilot-0023",
-      "graph_hash": "44e23fc4486c8bc2c8df20df22f09d4537ee5feea17618282b29ac132d9d8095",
+      "graph_hash": "1d22afb587fef02ba4d5fc9df0538da90e841005d9312ab696cadedc85c46a7a",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -364,7 +364,7 @@
     },
     {
       "id": "pilot-0024",
-      "graph_hash": "08dceef5621416b10cb2b07845d11260fc63bd15a669e81b04ae478c1640a685",
+      "graph_hash": "0b37fc5f9b8557e2296afce2000893ff9e1258249358612eda60e1b2633aff81",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -379,7 +379,7 @@
     },
     {
       "id": "pilot-0025",
-      "graph_hash": "186c5e0135a055ffeadd45a62e67d0e61d1dc37af8899cd4edd0d6411a62e838",
+      "graph_hash": "b8e353787968c4445ec8ff4dd546230e2c177273f9931ab45b696c46a14b5667",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -394,7 +394,7 @@
     },
     {
       "id": "pilot-0026",
-      "graph_hash": "522426ae6e22fc755fd1e20f4c7917bf3148fd6636ac53c7c88af36ccf065cfb",
+      "graph_hash": "dc7ec0d706c49b8bdfcb5797624db0f3e97f1b2accab8505573140b291db7944",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -409,7 +409,7 @@
     },
     {
       "id": "pilot-0027",
-      "graph_hash": "6d139f10f4900710ca29f866797d4328bd106506187aeda1df6d6e3f6581df05",
+      "graph_hash": "a7893a83cf1a971155ac4ff607af859003e423209bffd1471f449ac4dd5be70d",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -424,7 +424,7 @@
     },
     {
       "id": "pilot-0028",
-      "graph_hash": "9cdae7699be24f1dd636aee14e742090d0bc33cca9e5b41ced757266b58830f2",
+      "graph_hash": "7b3bc554d1fe8f6984135b9417abb5b650ca113da1ea5ddf6e6ebd900750830b",
       "domain": "event",
       "worlds": [
         "authorized",
@@ -439,7 +439,7 @@
     },
     {
       "id": "pilot-0029",
-      "graph_hash": "bb717b037a424a8c67e7491c390940d8ca4b7c8455658308c5a2cdb51863a7da",
+      "graph_hash": "44d164149f926761ea621e7f2211f99c98375de9fcf9a88073e0a9acc1916ea9",
       "domain": "software",
       "worlds": [
         "authorized",
@@ -454,7 +454,7 @@
     },
     {
       "id": "pilot-0030",
-      "graph_hash": "95c7a75aa535850e6fd4d83833df7fb3bbcdfe8fc2d3ab50ccb56fb767cf7575",
+      "graph_hash": "d13f03fd20355423991f55ee6c32198ea0e75440ff7cb4f5ff6a1c8256164570",
       "domain": "research",
       "worlds": [
         "authorized",
@@ -469,7 +469,7 @@
     },
     {
       "id": "pilot-0031",
-      "graph_hash": "a3a30e4a6e8e5c73ed611544eb4b104202ea92e3f81d57a1ef7cf449cb92830f",
+      "graph_hash": "39924a0e79ca6dcb4dac0e89a7f1a02ecfbbccd315bfe35976194487cc28a6c2",
       "domain": "creative",
       "worlds": [
         "authorized",
@@ -484,5 +484,5 @@
     }
   ],
   "turn_definition": "one user message followed by one generated assistant response",
-  "sha256": "c4af7600c420fadb0646b36f1eaa996b07df0a123e2cc203acd65f5cf481d593"
+  "sha256": "78db88f2563b72dd92debf152a5856ec620dd9dd0877ca34283adb690d57c9cb"
 }

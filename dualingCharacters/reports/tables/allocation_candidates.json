@@ -1,6 +1,6 @@
 {
   "steps_per_round": 256,
-  "total_forecast_hours_including_pilot": 84.78024394501033,
+  "total_forecast_hours_including_pilot": 85.19881969163524,
   "timings": {
     "qwen": {
       "answer_batch64_seconds": 5.074563539441442,
@@ -1464,19 +1464,19 @@
       "run_id": "extra-qwen-c1-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "extra-qwen-c3-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "extra-qwen-c5-17-natural",
       "stage": "natural",
       "model": "qwen",
-      "seconds_forecast": 405.07032068201806
+      "seconds_forecast": 729.8423872062704
     },
     {
       "run_id": "judge-phi-001",

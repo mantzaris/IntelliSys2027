@@ -30,7 +30,7 @@ def opportunities(horizon: int, count: int) -> set[int]:
 
 def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                  output: Path, collect_windows: bool=False, full_history: bool=False,
-                 unfamiliar_corruption: bool=False) -> tuple[list[dict],list[dict]]:
+                 unfamiliar_corruption: bool=False, prose_responses: bool=False) -> tuple[list[dict],list[dict]]:
     cfg=backbone.config
     if any(s.split=="test" for s in scenarios) and cfg.phase != "confirmatory":
         raise PermissionError("Locked test may only be opened by a frozen confirmatory run")
@@ -117,7 +117,7 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                                     "messages":prompt,"target":target,"candidate":parsed,"metrics":metrics,
                                     "evidence_visible":evidence_visible,"was_intervened":id(ep) in action_records})
                 ep.memory.update(parsed)
-                ep.transcript.append(Message(turn*2,"assistant",result["raw"]))
+                if not prose_responses:ep.transcript.append(Message(turn*2,"assistant",result["raw"]))
                 for actor in ep.actors:
                     if condition!="A2" and actor.history:
                         # Keep action/outcome pairs, not repeated filler receipts
@@ -130,14 +130,27 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
                         actor=next(a for a in ep.actors if a.alias==action["actor"])
                         action["utility_observations"]=utility_observations(actor,parsed.get("plan",[]),ep.scenario.truth_at(1).values,action,ep.actors)
                     append_json(output.with_name(output.stem+"_interventions.jsonl"),{k:v for k,v in action.items() if k not in {"prompt","generation"}})
+            if prose_responses:
+                public_prompts=[]
+                for ep,prompt,result in zip(episodes,prompts,results):
+                    body=json.loads(prompt[-1]["content"]);body["memory"]=ep.memory.public();body["proposed_plan"]=result["parsed"].get("plan")
+                    system="Respond to the latest user message in natural prose using the supplied attributed conversation, planning catalog, and your fallible proposed plan. Honor binding user choices and genuine updates; tentative suggestions are not decisions. Do not output JSON. Give a concise progress response on interim turns. For a requested final plan, include all six commitments, transport, equipment and any targeted clarification."
+                    public_prompts.append([{"role":"system","content":system},{"role":"user","content":json.dumps(body,separators=(",",":"))}])
+                rendered=backbone.generate(public_prompts,320 if turn==horizon else 128)
+                for ep,prompt,result in zip(episodes,public_prompts,rendered):
+                    ep.rows[-1]["prose_generation"]=result
+                    ep.transcript.append(Message(turn*2,"assistant",result["raw"]))
+                    append_json(output.with_name(output.stem+"_prose.jsonl"),{"family_id":ep.scenario.family_id,"world":ep.scenario.world,"domain":ep.scenario.spec.domain,
+                                "turn":turn,"generation":result,"prompt":prompt})
         for ep in episodes:
             final=ep.rows[-1]
             summaries.append({"family_id":ep.scenario.family_id,"world":ep.scenario.world,"domain":ep.scenario.spec.domain,
                               "condition":condition,"seed":cfg.seed,"horizon":horizon,"message_count":len(ep.transcript),
                               "scripted_prior_assistant_messages":1,"generated_defender_responses":horizon,
+                              "internal_memory_generations":horizon if prose_responses else 0,
                               "memory_updates":horizon,"interventions":ep.intervention_count,"structural_holdout":ep.scenario.spec.online_override,
-                              **final["metrics"],"input_tokens":sum(r["generation"]["input_tokens"] for r in ep.rows),
-                              "output_tokens":sum(r["generation"]["output_tokens"] for r in ep.rows)})
+                              **final["metrics"],"input_tokens":sum(r["generation"]["input_tokens"]+r.get("prose_generation",{}).get("input_tokens",0) for r in ep.rows),
+                              "output_tokens":sum(r["generation"]["output_tokens"]+r.get("prose_generation",{}).get("output_tokens",0) for r in ep.rows)})
         print(json.dumps({"completed_conversations":min(offset+cfg.batch_size,len(scenarios)),"total":len(scenarios),"condition":condition}),flush=True)
     output.with_name(output.stem+"_summary.json").write_text(json.dumps(summaries,indent=2)+"\n")
     return summaries,windows

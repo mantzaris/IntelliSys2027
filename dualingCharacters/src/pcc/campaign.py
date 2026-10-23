@@ -13,6 +13,7 @@ import shlex
 import subprocess
 import time
 import shutil
+import fcntl
 from .config import RunConfig
 from .resources import sha256, used_seconds
 from .freeze import verify_freeze
@@ -71,6 +72,18 @@ def run_and_mirror(command: list[str], root: Path, log: Path) -> int:
         return child.returncode
 
 
+def commit_generated_package(root: Path, status: str):
+    """Author authorized local main commits; exclude unrelated staged work."""
+    branch=subprocess.run(["git","branch","--show-current"],cwd=root,capture_output=True,text=True,check=True).stdout.strip()
+    if branch!="main":raise PermissionError("Generated research artifacts must be committed on main")
+    with (root/"RUN_STATE.md").open("a") as f:
+        f.write("\n## Automatic execution update\n\n"+time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime())+": "+status+". See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.\n")
+    paths=["reports","RUN_STATE.md",*[str(p.relative_to(root)) for p in sorted((root/"paper").glob("generated_*.tex"))]]
+    subprocess.run(["git","add","--",*paths],cwd=root,check=True)
+    changed=subprocess.run(["git","diff","--cached","--quiet","--",*paths],cwd=root).returncode
+    if changed:subprocess.run(["git","commit","--only","-m","Record research execution and regenerated evidence package","--",*paths],cwd=root,check=True)
+
+
 def main():
     parser=argparse.ArgumentParser();parser.add_argument("--root",type=Path,default=Path.cwd());parser.add_argument("--dry-run",action="store_true")
     args=parser.parse_args();root=args.root.resolve()
@@ -78,6 +91,8 @@ def main():
     plan=freeze["plan"];queue=list(jobs(plan))
     if args.dry_run:
         print(json.dumps(queue,indent=2));return
+    controller_lock=(root/"artifacts/campaign.lock").open("a+")
+    fcntl.flock(controller_lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     host=os.environ["PCC_SSH_HOST"];port=os.environ["PCC_SSH_PORT"]
     remote=os.environ.get("PCC_REMOTE_DIR","/workspace/dualingCharacters")
     key=os.environ.get("PCC_SSH_KEY",str(Path.home()/".ssh/id_rsa"))
@@ -152,6 +167,19 @@ def main():
     from .package import regenerate
     regenerate(root)
     subprocess.run(["bash",str(root/"scripts/build_paper.sh")],cwd=root,check=True)
+    commit_generated_package(root,"All scheduled GPU jobs completed")
 
 
-if __name__=="__main__":main()
+if __name__=="__main__":
+    try:main()
+    except Exception as error:
+        root=Path.cwd()
+        # Do not claim completion after a failure. Preserve a reviewable partial
+        # package, without changing any experimental decision or frozen input.
+        if (root/"artifacts/campaign_state.json").exists():
+            try:
+                from .package import regenerate
+                regenerate(root);commit_generated_package(root,"Campaign stopped incomplete: "+str(error))
+            except Exception as reporting_error:
+                (root/"artifacts/campaign_reporting_error.txt").write_text(str(reporting_error)+"\n")
+        raise

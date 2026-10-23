@@ -15,7 +15,7 @@ Extended planning conversations require assistants to preserve binding requireme
 accept genuine revisions, and distinguish tentative alternatives from decisions.
 We investigate an author-directed hypothesis: training against persistent software
 characters with conflicting motives may improve later conversational recovery.
-The proposed system shares one language-model backbone across a responsible
+The system shares one language-model backbone across a responsible
 answerer and separately conditioned characters with bounded private histories.
 Characters can propose options, communicate, provide misleading recollections,
 and edit a bounded working memory, while the original attributed transcript remains
@@ -26,11 +26,11 @@ against equally equipped adaptive generic adversaries, evaluated after removing
 all antagonists. Clean and random-corruption training, two- and five-character
 conditions, and controls for narrative profiles, histories, and peer interaction
 are required to distinguish the proposed mechanism from ordinary adversarial
-supervision. This document records an executable pilot implementation and an
-incomplete evidence package. It does not establish a transferable advantage,
-coalition formation, or a narrative-profile effect. Confirmatory experiments,
-independent-model replication, external validation, and human review must be
-completed before scientific conclusions or submission readiness can be assessed.
+supervision. This document records an executable implementation and an author-review
+evidence package. A pilot alone cannot establish a transferable advantage, coalition
+formation, or a narrative-profile effect.
+\IfFileExists{generated_abstract_results.tex}{\input{generated_abstract_results.tex}}{Confirmatory results remain pending.}
+Human scientific review and authorship remain necessary; no submission is authorized.
 \keywords{conversational state, memory recovery, multi-agent learning, controlled evaluation}
 \end{abstract}
 
@@ -81,12 +81,18 @@ structured decisions. Hypothetical-change resistance and legitimate-update accep
 are scored jointly. Recall and evidence accuracy are separate secondary measures.
 The intended design has three independent training seeds, paired scenario evaluation,
 family/seed-aware intervals, multiplicity correction for secondary comparisons,
-and an independent model-family confirmation. The test plan is not yet frozen.
+and an independent model-family confirmation.
+\IfFileExists{generated_design.tex}{\input{generated_design.tex}}{The test plan is not yet frozen.}
 
 \section{Measured evidence}
-\IfFileExists{generated_results.tex}{\input{generated_results.tex}}{
+\IfFileExists{generated_matched_pilots.tex}{\input{generated_matched_pilots.tex}}{
 Measured pilot tables have not yet been regenerated into this scaffold. No primary
 effect estimate or confirmatory uncertainty interval is available.}
+\IfFileExists{generated_main_results.tex}{\input{generated_main_results.tex}}{}
+\begin{figure}[ht]\centering
+\includegraphics[width=\textwidth]{../reports/figures/method.pdf}
+\caption{Software information boundaries; the private evaluator is not a policy observation.}
+\end{figure}
 
 \section{Limitations and candidate explanations}
 The initial benchmark uses a compact categorical schema and scripted users.

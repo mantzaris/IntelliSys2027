@@ -10,6 +10,7 @@ import subprocess
 import time
 import tarfile
 import threading
+import shutil
 from .config import RunConfig
 
 
@@ -47,6 +48,8 @@ class RunLedger(AbstractContextManager):
 
     def __enter__(self):
         self.root.mkdir(parents=True,exist_ok=True)
+        if shutil.disk_usage(self.root).free < 3*1024**3:
+            raise RuntimeError("Less than 3 GiB artifact storage remains; preserve evidence and stop")
         self.lock=(self.root/"gpu.lock").open("a+")
         fcntl.flock(self.lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         if self.run_dir.exists():

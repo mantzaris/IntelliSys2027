@@ -1,0 +1,365 @@
+{
+  "run_id": "mechanism-final-001",
+  "conditions": {
+    "C1": {
+      "families": 8,
+      "paired_success": 0.375,
+      "conversation_success": 0.4375,
+      "malformed_rate": 0,
+      "roles": {},
+      "delivered_antagonist_peer_messages": 0,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "C2": {
+      "families": 8,
+      "paired_success": 0.25,
+      "conversation_success": 0.375,
+      "malformed_rate": 0,
+      "roles": {
+        "Random": {
+          "opportunities": 192,
+          "actions": {
+            "pass": 64,
+            "edit": 128
+          },
+          "applied": 192,
+          "substantive_actions": 128,
+          "motive_aligned_action_rate": null,
+          "owned_option_adoption_after_action": null,
+          "repeat_slot_value_rate": 0.05357142857142857,
+          "contradictory_actions_with_source_access": 0,
+          "shared_memory_changes": 128
+        }
+      },
+      "delivered_antagonist_peer_messages": 0,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "C3": {
+      "families": 8,
+      "paired_success": 0.125,
+      "conversation_success": 0.3125,
+      "malformed_rate": 0,
+      "roles": {
+        "Generic": {
+          "opportunities": 192,
+          "actions": {
+            "peer": 63,
+            "recollect": 17,
+            "edit": 89,
+            "propose": 22,
+            "pass": 1
+          },
+          "applied": 192,
+          "substantive_actions": 128,
+          "motive_aligned_action_rate": null,
+          "owned_option_adoption_after_action": null,
+          "repeat_slot_value_rate": 0.7395833333333334,
+          "contradictory_actions_with_source_access": 59,
+          "shared_memory_changes": 131
+        }
+      },
+      "delivered_antagonist_peer_messages": 60,
+      "peer_followed_by_matching_action": 5,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 1,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "C4": {
+      "families": 8,
+      "paired_success": 0.125,
+      "conversation_success": 0.25,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 192,
+          "actions": {
+            "peer": 51,
+            "propose": 32,
+            "recollect": 99,
+            "edit": 10
+          },
+          "applied": 179,
+          "substantive_actions": 141,
+          "motive_aligned_action_rate": 1,
+          "owned_option_adoption_after_action": 0.48226950354609927,
+          "repeat_slot_value_rate": 1,
+          "contradictory_actions_with_source_access": 49,
+          "shared_memory_changes": 177
+        }
+      },
+      "delivered_antagonist_peer_messages": 0,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "C5": {
+      "families": 8,
+      "paired_success": 0.25,
+      "conversation_success": 0.3125,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 96,
+          "actions": {
+            "peer": 32,
+            "propose": 19,
+            "recollect": 42,
+            "edit": 3
+          },
+          "applied": 96,
+          "substantive_actions": 64,
+          "motive_aligned_action_rate": 0.953125,
+          "owned_option_adoption_after_action": 0.375,
+          "repeat_slot_value_rate": 0.8958333333333334,
+          "contradictory_actions_with_source_access": 23,
+          "shared_memory_changes": 69
+        },
+        "Rival": {
+          "opportunities": 96,
+          "actions": {
+            "propose": 16,
+            "peer": 42,
+            "recollect": 36,
+            "edit": 2
+          },
+          "applied": 96,
+          "substantive_actions": 54,
+          "motive_aligned_action_rate": 0.8148148148148148,
+          "owned_option_adoption_after_action": 0.5185185185185185,
+          "repeat_slot_value_rate": 0.8947368421052632,
+          "contradictory_actions_with_source_access": 13,
+          "shared_memory_changes": 59
+        }
+      },
+      "delivered_antagonist_peer_messages": 64,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "C6": {
+      "families": 8,
+      "paired_success": 0.25,
+      "conversation_success": 0.25,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 48,
+          "actions": {
+            "peer": 16,
+            "propose": 13,
+            "recollect": 19
+          },
+          "applied": 48,
+          "substantive_actions": 32,
+          "motive_aligned_action_rate": 0.96875,
+          "owned_option_adoption_after_action": 0.34375,
+          "repeat_slot_value_rate": 0.9375,
+          "contradictory_actions_with_source_access": 10,
+          "shared_memory_changes": 34
+        },
+        "Provocateur": {
+          "opportunities": 48,
+          "actions": {
+            "propose": 22,
+            "peer": 4,
+            "edit": 22
+          },
+          "applied": 36,
+          "substantive_actions": 44,
+          "motive_aligned_action_rate": 0.8181818181818182,
+          "owned_option_adoption_after_action": 0.4090909090909091,
+          "repeat_slot_value_rate": 0.5714285714285714,
+          "contradictory_actions_with_source_access": 12,
+          "shared_memory_changes": 32
+        },
+        "Rival": {
+          "opportunities": 48,
+          "actions": {
+            "recollect": 14,
+            "propose": 18,
+            "peer": 15,
+            "pass": 1
+          },
+          "applied": 48,
+          "substantive_actions": 32,
+          "motive_aligned_action_rate": 0.875,
+          "owned_option_adoption_after_action": 0.5,
+          "repeat_slot_value_rate": 0.75,
+          "contradictory_actions_with_source_access": 10,
+          "shared_memory_changes": 32
+        },
+        "Traditionalist": {
+          "opportunities": 48,
+          "actions": {
+            "recollect": 33,
+            "peer": 12,
+            "propose": 3
+          },
+          "applied": 44,
+          "substantive_actions": 36,
+          "motive_aligned_action_rate": 0.19444444444444445,
+          "owned_option_adoption_after_action": 0.2777777777777778,
+          "repeat_slot_value_rate": 0.9,
+          "contradictory_actions_with_source_access": 22,
+          "shared_memory_changes": 32
+        }
+      },
+      "delivered_antagonist_peer_messages": 45,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "A1": {
+      "families": 8,
+      "paired_success": 0.25,
+      "conversation_success": 0.375,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 96,
+          "actions": {
+            "peer": 32,
+            "recollect": 17,
+            "propose": 31,
+            "edit": 16
+          },
+          "applied": 96,
+          "substantive_actions": 64,
+          "motive_aligned_action_rate": 0.953125,
+          "owned_option_adoption_after_action": 0.390625,
+          "repeat_slot_value_rate": 0.8958333333333334,
+          "contradictory_actions_with_source_access": 18,
+          "shared_memory_changes": 64
+        },
+        "Rival": {
+          "opportunities": 96,
+          "actions": {
+            "propose": 60,
+            "peer": 32,
+            "recollect": 4
+          },
+          "applied": 96,
+          "substantive_actions": 64,
+          "motive_aligned_action_rate": 0.9375,
+          "owned_option_adoption_after_action": 0.5,
+          "repeat_slot_value_rate": 0.9583333333333334,
+          "contradictory_actions_with_source_access": 0,
+          "shared_memory_changes": 66
+        }
+      },
+      "delivered_antagonist_peer_messages": 62,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "A2": {
+      "families": 8,
+      "paired_success": 0.375,
+      "conversation_success": 0.4375,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 96,
+          "actions": {
+            "peer": 32,
+            "propose": 29,
+            "recollect": 33,
+            "edit": 2
+          },
+          "applied": 96,
+          "substantive_actions": 64,
+          "motive_aligned_action_rate": 0.9375,
+          "owned_option_adoption_after_action": 0.34375,
+          "repeat_slot_value_rate": 0.9166666666666666,
+          "contradictory_actions_with_source_access": 18,
+          "shared_memory_changes": 66
+        },
+        "Rival": {
+          "opportunities": 96,
+          "actions": {
+            "propose": 30,
+            "recollect": 31,
+            "peer": 35
+          },
+          "applied": 96,
+          "substantive_actions": 61,
+          "motive_aligned_action_rate": 0.8688524590163934,
+          "owned_option_adoption_after_action": 0.5245901639344263,
+          "repeat_slot_value_rate": 1,
+          "contradictory_actions_with_source_access": 17,
+          "shared_memory_changes": 61
+        }
+      },
+      "delivered_antagonist_peer_messages": 65,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    },
+    "A3": {
+      "families": 8,
+      "paired_success": 0.25,
+      "conversation_success": 0.375,
+      "malformed_rate": 0,
+      "roles": {
+        "Hyde": {
+          "opportunities": 96,
+          "actions": {
+            "propose": 29,
+            "recollect": 62,
+            "edit": 5
+          },
+          "applied": 64,
+          "substantive_actions": 96,
+          "motive_aligned_action_rate": 0.9791666666666666,
+          "owned_option_adoption_after_action": 0.3854166666666667,
+          "repeat_slot_value_rate": 0.95,
+          "contradictory_actions_with_source_access": 35,
+          "shared_memory_changes": 64
+        },
+        "Rival": {
+          "opportunities": 96,
+          "actions": {
+            "recollect": 53,
+            "propose": 24,
+            "peer": 4,
+            "edit": 15
+          },
+          "applied": 64,
+          "substantive_actions": 92,
+          "motive_aligned_action_rate": 0.8260869565217391,
+          "owned_option_adoption_after_action": 0.5,
+          "repeat_slot_value_rate": 0.8421052631578947,
+          "contradictory_actions_with_source_access": 33,
+          "shared_memory_changes": 64
+        }
+      },
+      "delivered_antagonist_peer_messages": 0,
+      "peer_followed_by_matching_action": 0,
+      "echoed_option_later_reversed": 0,
+      "repeated_directed_coordination_candidates": 0,
+      "qualification": "Frozen-policy mechanism audit, not a training comparison; coordination candidates require semantic review."
+    }
+  },
+  "trace": {
+    "artifacts/runs/mechanism-final-001/C1_summary.json": "18a9d26f5e0eec8b6ad9da507a493ef47efa6bc50c2683dffac2518b96ebead1",
+    "artifacts/runs/mechanism-final-001/C2_summary.json": "a0cd5482fcf92cbb1e184e4960451c0dc724ae194dd10e9054d4ea964845c85b",
+    "artifacts/runs/mechanism-final-001/C3_summary.json": "9fa4de024b0c2fe754479a7543c28125fb6a8a8e6ce144eaddf4a77cb4933a84",
+    "artifacts/runs/mechanism-final-001/C4_summary.json": "9028ddf2b6f71d1ad9213175a01db04c34f9502283ddf071f281cc56eed84e5a",
+    "artifacts/runs/mechanism-final-001/C5_summary.json": "52ccc8a644c2f678d05f18050a271bec14918bd53f7b34ff74682a7062d91c5e",
+    "artifacts/runs/mechanism-final-001/C6_summary.json": "eaa4ed7bb80ba151a48bb243e4fe8c5ad5ae2674ca42db086919dd003e5fa94f",
+    "artifacts/runs/mechanism-final-001/A1_summary.json": "53114c183ac7bd2101708eb33d6f33e678ce25209b0ea03ab94856c3d6513810",
+    "artifacts/runs/mechanism-final-001/A2_summary.json": "dab12789654a4efd31b48b5e2cbcfd97f6cb5907486b1d850593313b32e1b821",
+    "artifacts/runs/mechanism-final-001/A3_summary.json": "421aae49f0eae9622866f505d1c12eb1133a19b8eb351c15135e0cec954289f6"
+  }
+}

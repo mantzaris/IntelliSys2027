@@ -16,6 +16,22 @@
     }
   },
   {
+    "run_id": "mechanism-final-001",
+    "phase": "pilot",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 532.5564882769249,
+      "peak_vram_gib": 39.505859375,
+      "input_tokens": 4145495,
+      "output_tokens": 220839,
+      "generation_seconds": 470.85389462159947,
+      "aggregate_output_tokens_per_second": 469.0181020536672
+    }
+  },
+  {
     "run_id": "mechanism-v2-001",
     "phase": "pilot",
     "condition": "C5",
