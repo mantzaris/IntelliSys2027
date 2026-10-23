@@ -19,10 +19,13 @@ The original freeze remains in `configs/freeze_original.json`. No experimental
 choices changed. The first 150-family clean collection completed, producing 900
 attempted windows, 804 source-eligible examples, and zero verified model
 recoveries in 128 attempts. The common teacher supplies all 804 labels. The
-first 256-step training round completed with 1,048,576 input tokens, 48,838
-supervised target tokens and changed adapter SHA256. Round-one collection is
-active on the other 150 families at 32 turns, using that adapter. Consult
-`artifacts/campaign_state.json` and the mirrored status for the latest stage.
+first complete C1/seed-17 learner has completed both rounds: 512 optimizer
+steps, 2,097,152 input tokens and 97,516 supervised target tokens. The final
+adapter SHA256 is `eae858d0bbd117fb02012baf354029f7c7b96dd73b8301f5b4a2dccff4a981e5`.
+Its full antagonist-free 240-family test is active. The refreshed collection
+had 746 clean and 18 failed source-eligible windows; round-one fitting sampled
+503 unique windows with 467 repeated buffer entries. Consult
+`artifacts/campaign_state.json` and mirrored status for the latest stage.
 The resumed local controller uses unified execution session `67629`; session
 `38552` ended at the documented hold. Its log continues in
 `artifacts/campaign_controller.log`. Inspect the lock/current stage before any
