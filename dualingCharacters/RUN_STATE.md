@@ -126,6 +126,10 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
 3. Run `bash analysis/regenerate_all.sh` after synchronized completed stages for
    the full integrity audit, frozen analysis, explicitly post-baseline descriptive
    tables and manuscript. Complete scientific author review and the final report.
+4. After the entire original queue completes, inspect the fixed exploratory
+   `analysis/unseen_profiles_protocol.json`. Implement and execute only if its
+   3.5-hour remaining-budget gate passes; otherwise record this test as unexecuted.
+   Do not change the primary freeze or displace any queued requirement.
 
 ## Recovery after interruption
 
