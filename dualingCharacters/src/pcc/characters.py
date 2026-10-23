@@ -2,6 +2,7 @@
 from dataclasses import dataclass, field
 import json
 import random
+import copy
 from .environment import FIELDS, OPTIONS, Message, TaskSpec
 from .memory import WorkingMemory, retrieve
 
@@ -39,7 +40,10 @@ class Character:
     inbox: list[dict] = field(default_factory=list)
 
     def record(self, record: dict, capacity: int):
-        self.history.append(record)
+        # History owns a copy of public action data. Evaluator annotations added
+        # later to the external log record must never enter this information set.
+        allowed={"actor","role","kind","slot","value","claim","source","target","applied","latest_observed_plan"}
+        self.history.append(copy.deepcopy({k:v for k,v in record.items() if k in allowed}))
         self.history = self.history[-capacity:]
 
 

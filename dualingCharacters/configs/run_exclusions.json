@@ -1,0 +1,5 @@
+{
+  "profile-bf16-001": "Engineering precision profile only; initial output-schema failure; not hypothesis evidence.",
+  "profile-nf4-001": "Engineering precision profile only; initial output-schema failure; not hypothesis evidence.",
+  "pilot-c3-001": "Invalid for scientific inference: shared audit/history object could expose evaluator annotations. Stopped at token limit before training. Preserve resource use and all artifacts."
+}

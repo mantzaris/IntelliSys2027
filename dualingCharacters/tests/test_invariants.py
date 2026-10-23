@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from pcc.environment import Message, Event, Truth, make_family, score
 from pcc.memory import WorkingMemory, observation
-from pcc.characters import cast, apply_action
+from pcc.characters import cast, apply_action, action_prompt
 from pcc.datasets import manifest
 from pcc.analysis import paired_success, contrast, holm
 from pcc.config import RunConfig
@@ -91,3 +91,13 @@ def test_character_count_and_private_reset():
     assert [len(cast(c,"x",17))+1 for c in ("C4","C5","C6")]==[2,3,5]
     a=cast("C5","x",17);a[0].history.append({"old":True})
     assert not cast("C5","x",17)[0].history
+
+
+def test_audit_annotations_never_alias_character_history():
+    s=make_family("pilot",0,16)[0];actors=cast("C5",s.family_id,17);mem=WorkingMemory()
+    record=apply_action({"kind":"edit","slot":0,"value":"Studio","claim":"recall","source":1},actors[0],actors,mem,"C5",6)
+    before=action_prompt(actors[0],actors,s.spec,list(s.messages[:3]),mem,"C5",6,8)[0]
+    record.update(contrary_to_truth=True,oracle_answer="SECRET",prompt="HUGE AUDIT TRACE")
+    after=action_prompt(actors[0],actors,s.spec,list(s.messages[:3]),mem,"C5",6,8)[0]
+    assert before==after
+    assert "SECRET" not in json.dumps(after) and "contrary_to_truth" not in json.dumps(after)

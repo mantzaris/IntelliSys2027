@@ -1,0 +1,3608 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "families": [
+    {
+      "id": "test-0000",
+      "graph_hash": "a938db457c6cead36524ca4b2e42670ab0f5d40cf780d059eded57c8d2b1f945",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "73c6586e2356c656684f33b7c0794a301ca997fe3cfb83263e0769da40bde0fb",
+        "3ae5b9545291ff4786c836f627dc69400eb48407991dae15a9644bc2745d0b91"
+      ]
+    },
+    {
+      "id": "test-0001",
+      "graph_hash": "b52a46b5d77e337d48f2d36921d83b640f465edbbd2395bf82f285be96e63462",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "fc997844e4ea805f870f837cc02c07b28d285522e1f26d40753b6e4bb38e3669",
+        "a8410f15280aaadcdcddbbe96fe5cb3c549b7b4dc1f8f96d4c262fae269ed5a1"
+      ]
+    },
+    {
+      "id": "test-0002",
+      "graph_hash": "4c1a63fc50e44fb5de54b9c8efaf94440b064158471892371f05391f3b7db32e",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "8d564d3e980736339b4a18bc080b3dbc19e18a4e8f9dc81552ce2953aadd0934",
+        "3039f3a46d411c9e14a4d02e9128db95d846ceed6873b5a0c84628552c544d22"
+      ]
+    },
+    {
+      "id": "test-0003",
+      "graph_hash": "f1f31998f8a4538bb9aa0e92c63823d023e08453bb68467a3c1d226c952b215e",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "95dd93031494a50fb6288d35ea00ceb242d9c9c3b5248e307ee487e62db3a67e",
+        "cf391a58b49a6c2d0ed9ef1d305056b5dc10138b3b9070e19c93a6d7886d0f28"
+      ]
+    },
+    {
+      "id": "test-0004",
+      "graph_hash": "104ef2df0d6e459390fa9417c576424cd31b0fc9dcd07ea137e2f72f5cde5164",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e2bdbaa2adfe8ae2370e607ca340af0669d8b4f3a7c29012353ed257b23576e1",
+        "49becfb2afa2e582216beb100254965169470c5d5426e3c46f4df744f1800fa7"
+      ]
+    },
+    {
+      "id": "test-0005",
+      "graph_hash": "2a8e07433f6191dfe31f890ee81a355334e705e0e315c16ed3de5ea26548ce2f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "9290fa8f334f31c9e163cad2242c38bbaaf761ba899895ce4e377e1786720955",
+        "f1532af153364c994ec96c21873907dc24266283328bed8086210f1b0cfc9b7b"
+      ]
+    },
+    {
+      "id": "test-0006",
+      "graph_hash": "b6f1256994f3d1965b3628d68dce7fe86ae780c514354cde95812990776da155",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a2fac39b81af264775e153336bde3e74b5592253a50d3219a29f0860a8677813",
+        "261da3158d1bf524dc3aeea8db9d14d64d439321648bb8c2a3522796c1800dd0"
+      ]
+    },
+    {
+      "id": "test-0007",
+      "graph_hash": "809de035aece70907d6f0d454e7455901cb2a3371908e7103ce07e17ead9eec3",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a39e0d7f88f7fadb05aef67e94557f786799314d0f3e0dc7acc68dca3e9007b9",
+        "32950a3f983e4430ac6e81d76249b8a1407824712135ca03d9728059d764a50e"
+      ]
+    },
+    {
+      "id": "test-0008",
+      "graph_hash": "6de49b1792658a0eda675c3ba2554996ce6a7cf9916ed19b0bd56212bb5bc50c",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "cda1c38ee16619f6b13c0551759ec39d61c85d908149ca65e239d5fa3821e593",
+        "b9f88a684b935b7122fce5793e674f8b737e49dc5cd2a2eb819b191c56ea3cee"
+      ]
+    },
+    {
+      "id": "test-0009",
+      "graph_hash": "ddbfbc4588dd8764c1357e7e51a3449cbb6ea774f3a260697f84edb7eb101789",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "531aaa7571ee0da0c35f545671874ee42d4543ec22d78efb65c49b3953172f7b",
+        "b451cafd2c380666df36797c7f87d4dfe44ca565a95f1ab451b55fb0346abef7"
+      ]
+    },
+    {
+      "id": "test-0010",
+      "graph_hash": "3ae910b2fd0d8f2096b754d6757303d9df01a6665b464a5ae87ed34c40fd52ff",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "d071691f1a88b5f5539a8afac8d773ae64e1cae8fbb3c6ee96938ae55ae928d6",
+        "b880d92c557bfa53421fd448bb889e4de72d5e0e52b383c4177c263d5ffcb41b"
+      ]
+    },
+    {
+      "id": "test-0011",
+      "graph_hash": "a4553d2c9ef2dc9dc50ec48b60354d0f0f7c195f767eb97afbcbb75b6f8d8828",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1a1efe84ec130d2c2f023be8e94d2225497b30bc0bc22524de9591d42b83ad22",
+        "1c2af91f8fe8c8f25daa23dbfe9fa2d8de126ba88377b86bae7bb48446b1862f"
+      ]
+    },
+    {
+      "id": "test-0012",
+      "graph_hash": "22b6e2b850f9bebb2c592205953c84232991d57d06189386a300b9c075b9502d",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7221a547d1cedddf5cd8611f1a1f305cff303e1b05a2e7224c0f65b8fa29d705",
+        "05660334dde573783c9904dc8296eb42c6816228f4c0cb62ceee87769cb8cf6b"
+      ]
+    },
+    {
+      "id": "test-0013",
+      "graph_hash": "2a3844f6a007afbc25b5a24df8188c856b6c39bdca499216f4843bb9d71f0a28",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "cd3528848694a58549b07d4ca529f5ba5cc728d2a53a4d288d4df06d320865fe",
+        "25e1a9c97a1a4300d9cc4d88a081d458797afe86c14666bd90184e8984611a27"
+      ]
+    },
+    {
+      "id": "test-0014",
+      "graph_hash": "59007a7c75dd5e05b60dc99b4663339a911e8802d51839f5b9e90c8ff6a5eb43",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c343d55402b3ed4f7ceb8088891cc8d48a76deab50203008af2eb4a9d1ef45d9",
+        "370b3c689f2997f3a856b0f7d42f7f595ec1e2262c7d7caf4b2ea558a766fa75"
+      ]
+    },
+    {
+      "id": "test-0015",
+      "graph_hash": "467af8a52f9a48a573380971a1f763296cb975a1685bfd7cb02d38b658c412f3",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a564e3bdedcc3a26993aafad94ce088b9bf50108ae9d2a9a6e2f62dd075ce0ef",
+        "aab595bc25a32d322afed954b4589d380f640e1f9de1d37c786d984eb6d08d26"
+      ]
+    },
+    {
+      "id": "test-0016",
+      "graph_hash": "7a7777e8df39d5591b9736f42daad38a3d3769b09065fc9be2ae210a5f20a58b",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "39bcd72b705b33e84942ec6fe83abf27b99f372088f0ab7a275eecf12837a901",
+        "6a914ab795194f8ed1d938de1b15f718183ce8e4b2b931ddb5cdd28139a4d30c"
+      ]
+    },
+    {
+      "id": "test-0017",
+      "graph_hash": "2f28c0d85cce379d16aee8a7f700c8eed87dbae2b6c06128cdfb0a64851fc853",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "196e1495bd1e984a252e4f725d8d74a51d47243f7f3fcde10ee6213312741b91",
+        "a80325f1f07c6c868a2d3ea246e29bd99f6d27df518d7892c498214ea69db5b7"
+      ]
+    },
+    {
+      "id": "test-0018",
+      "graph_hash": "1b36147556e6417cad003fd4ff5c4f7a045ee71e151efda188e5c2c276926ce2",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "813b2f9bf08360f2357f496811c56aa99b7c795f75bcd1b6d4ccc5164cce8cb6",
+        "7a1b43aea0d36be769f4299260e80ed6b852cb9164f8ef4a8fe6daf2de23aee0"
+      ]
+    },
+    {
+      "id": "test-0019",
+      "graph_hash": "eb0bedfe83b4416ed2c788191c6390283bb10093c167476ae078c3078e3b215c",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0c3311bce685f944f6669792472c38e024f455d6d60a2c8e9dc8360ff84cd21f",
+        "877037aa7350b6fbd673b3ddc339e074f1748325d0b65ff1843312f6843c7e9b"
+      ]
+    },
+    {
+      "id": "test-0020",
+      "graph_hash": "b45057a77bef6677ac8174af57adc5128506cb771851c50a76ecb8872506ed98",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ec0582e5be152afd8fa7316481292a22fac1691247243d26622a3e4419a510c8",
+        "6eda0687c39b3f5e346436114dbe2c1db7346d4014b6c8138b31ba9f72f6b59d"
+      ]
+    },
+    {
+      "id": "test-0021",
+      "graph_hash": "a49c5ed3d057dc4373869a74d530714b9be502372974301b504fb754b660eee5",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5c91ee6493657c6589570324c474909d4fe51f32c68fafbc1d42918b666e530f",
+        "3fb1e910281ba12fa6e3e66ddf9b6366ad05b76dcdea223324a0e68cc8ea5c2b"
+      ]
+    },
+    {
+      "id": "test-0022",
+      "graph_hash": "a61751eec1918162d963787671c78ad42e29a93788a9df288b6c3c8b9d2d8d48",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "17c40a0eb4f0077109ed8de36f0d5e6af865d33cec3a744b3f5d253ae560d688",
+        "a0d05a1a726135b7d7f1ed389501fc383f8ccf5d3f99ad97e758038720ac0fe0"
+      ]
+    },
+    {
+      "id": "test-0023",
+      "graph_hash": "8a7bec02cec6ae7cb95ada501dad7baf5eede38227692dbdedab262a47a61045",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "386307f4f7fdeb521f7ffeba877e21b74754a4f9fc524fd8e149b35ae73c71f5",
+        "67d51542b44954a99618e6d18ce1b190f575fa1c213abc667cd18c909e28d656"
+      ]
+    },
+    {
+      "id": "test-0024",
+      "graph_hash": "d4cdc7b23256f9d3298a08ef923cd5397e1040ea9977a96b7a28487faacff17d",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1abe2ce4e965c9b3965f43d23e9182b417276f86ede22866d1d5d20a1a173e47",
+        "2f730d0f6813e21051a0800fca48d9447376a65c8976261a60e10f85c1ea43d5"
+      ]
+    },
+    {
+      "id": "test-0025",
+      "graph_hash": "cf0ce38a10ba7263bfa9b61ef297772cd2fb5e66bcd3cb04f60fa48499e7e833",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "216e275ecfd3253615c06880555439f71ec6d118e888228b13fe55e9ca17c42b",
+        "2bc9245b09d5005c15dd2ff4e99cf712ddbc11fb1bc4d84c6f1eba64408eacff"
+      ]
+    },
+    {
+      "id": "test-0026",
+      "graph_hash": "8b24a5859367d5ead9ab03b9a3feb9005a295e82d6f1da7b10597eb5ebb58bad",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "28798656d3f6bdf4c992488e781a67b0e05d9d827e8c6f3eff12766456c1269d",
+        "aa739588077e2acce84f1a8aded07ff974aa7416968390dace247a5abed68e19"
+      ]
+    },
+    {
+      "id": "test-0027",
+      "graph_hash": "fd247041a2253ebbbdd9e82dd6cd00ecb012d6a8b6273ced6b8668c4bba18dcf",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "2b5ce9a23a9f0300052ea1548281010854c8f1ac91e42ad954665c4e1151844f",
+        "41f5d09b54d3b3371fa3cd98d78afaf1684aee4e435cb59f9e7ecdc0fbcb7c37"
+      ]
+    },
+    {
+      "id": "test-0028",
+      "graph_hash": "3925202fdf85d15fcbbc85978342ee04e80320906d61b531267e9adccf908eb1",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "62194105f338106750531ce6abce68c93d719d9887bdc4e41d6162d8da416bb9",
+        "64a2fb40c23dedc993b23279f6912856aab69a6ee2401fcae7da2f07709f8b89"
+      ]
+    },
+    {
+      "id": "test-0029",
+      "graph_hash": "f833c0e81a2128dc91a417e4ad0eef0f60d8db9d0c2e6bdb8e3dffc20307a6a0",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7a668d268449da5b61752c0b8536a621877387f3e1123fb33b00fbc579cfb6f4",
+        "a1131b32288f9393271881098cfe06053da63e7cdc3e31f0e445a2ee859d26f6"
+      ]
+    },
+    {
+      "id": "test-0030",
+      "graph_hash": "03d24b9371084e6ad315fe80ce3c2e2399b5b6798c76226045621365c17adf83",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "6dafa3f5ea36a21bdce703e59a088aa8cbc8f56a7ed3e2dd271323a172986036",
+        "2383895b9a2a7b265ee9f3c03f1220264febcd3f0113a3044622aa540958bdf4"
+      ]
+    },
+    {
+      "id": "test-0031",
+      "graph_hash": "e2d7bc62692b3379f149f7825ad033c2e0c258ebb1e02885f0b8ef5efdee26ba",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1bd60f4abee6ec5d1804d90a9cfa58538a1d8c365cb11f061affad897ad01501",
+        "68b795f0900274171180a19619e65106309f366d21fa12be1360c552f7afcef3"
+      ]
+    },
+    {
+      "id": "test-0032",
+      "graph_hash": "e481cb4cca4281b94081f98052d6c294ccb6cebdf251db1aba32aab756ffff19",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b4fa74cc85ee644ff4520283f75df8f06e681d6a7d8d711db7b22c469baaeb24",
+        "90d02748bb49c0c6ee0dbaf0c299eae2dd7e4d2423233c533ab5f61f74ae5cc2"
+      ]
+    },
+    {
+      "id": "test-0033",
+      "graph_hash": "08cd29c3a4a1081b58fad142591bc16c361292df099172b0fbe5c53ad7e97321",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "27864aaa868f7a0aeab31fb5ed9badb3044a71ed9543f9641966d34f7200a0e8",
+        "a5e881abee729d93878b6ffdfc38783733bcbf3f18ff388bfd5a2ea4b7fccfcf"
+      ]
+    },
+    {
+      "id": "test-0034",
+      "graph_hash": "a9b9eab6d969fe942e9e33d91d73e79af10b4267efb75f42fcd49cd230db44d1",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "6344127152f286782a984b4946a03afc5d34f452071f28fd5633253ec62d2c1b",
+        "c6192be0c3e31744b40a9a7dcc974b65b7cbd5e1b68886e793c85dce9a6e4254"
+      ]
+    },
+    {
+      "id": "test-0035",
+      "graph_hash": "5bfceb6dba8be23ae65834cd1af8a55c0b915422b2344bf27e4d5dac7d075f9e",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "33a0bcd56f709f48444afa97ebb319a7ad9dc6feafadbd398b034ebfa4a621ef",
+        "8a048486c654aa70c2a4ebfdfd4b3b321c5de880ac0f109551fd51a81f20f447"
+      ]
+    },
+    {
+      "id": "test-0036",
+      "graph_hash": "45fc737f84e250ceab9987d03823da3bad76c3384c567596e9b608d42b9ad913",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b09170404309c6e7cb124840f3642740a46189d59d1c44d91615a39def7a9195",
+        "5d7aec69da30d6a9a521f5bab75c3847b1d054cd014b1a9b57f7c9802f8db2af"
+      ]
+    },
+    {
+      "id": "test-0037",
+      "graph_hash": "396b7330598f35e3cbc2d3d6cba80f921047ca4ec73b128ccce84510c5b79f1c",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1764f1ed57083bf40f6c781b6f75a5f4651e7d30d2c54eed8689cd9273217ffa",
+        "0f75686ff71ee71f95956d5cd78a37db3b508f448ccf05356b4bc05547950ccc"
+      ]
+    },
+    {
+      "id": "test-0038",
+      "graph_hash": "0b804ecccb3c59058eaffd1d988679f91b226fc54cfb4e977fe05aff5850e63f",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "b6b924ee1d0fca3bca5917e44e526411672e4346881ff7a8e673aee06f3d2dfb",
+        "724e1e4c98140b22acf9e5dcc16784198ccd6a01045f13ca09c695943d34b5ff"
+      ]
+    },
+    {
+      "id": "test-0039",
+      "graph_hash": "d50329b9ac0b4ed2bb5baaa78cff684f8854b10d547ad1674b50a5569e3c71cc",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "972af02e8bcb610d1bfac607abb4e9252938cffec07bcfd126799097a5e83d6d",
+        "ed277e4c2a2c07b499f35dbd47475f55ddbfd5a7516b4d3ac07893a5b3e39240"
+      ]
+    },
+    {
+      "id": "test-0040",
+      "graph_hash": "b20f33e7a5478a683156255ffe627351ccc1bb5a94b29ec0afd07146986b8002",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "878d84330192468447acede09acee5a2207932bb49db353788e37e380f92ff36",
+        "85c29173ec47669f3e679cdc1c247debc7539aaca6a9c42285eb61294a2cee97"
+      ]
+    },
+    {
+      "id": "test-0041",
+      "graph_hash": "eb861d764f16dc7054a185a76568d1a0f2b020180d42201672dbde25302aec6f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "d8f5a1e9f992d8577e9726c9cca3c5826d64d2b037ac98bd8931c30611f714f0",
+        "38f7d027e7a0dbf5b715a03384d8cba6238909c93e29346f6e521d3e37824c46"
+      ]
+    },
+    {
+      "id": "test-0042",
+      "graph_hash": "b3b81f2816a6e38a8dc08d74d1d6e4a4a223fa8ff443c8018512c6ed39d013b9",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "23a4bfb86aa19c9320617bd27a8c34bc4e433200e748cb46fa488f77f8b537dc",
+        "d7e05cac6b00b77b53cef61253736d9066b71dd581ef8fa4f90c83e4d8028db2"
+      ]
+    },
+    {
+      "id": "test-0043",
+      "graph_hash": "02f61d90d80171b3179597e181ce8a0a5c68b6e548f235e9a7507dbd39110311",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "08e820ec7dab92425fc17591859cae435769bfb5bd2140bdb4328ce3ca8ab190",
+        "f9010a6b473d40071e032a981633f71655c0ade893fe3dcc6d48999add5d961e"
+      ]
+    },
+    {
+      "id": "test-0044",
+      "graph_hash": "f575f695c9bf260c4aebd06c9b982e2bd0a1df1590fd66e69014b9671cdb1e8c",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "289cfcb2b8758ad04b576716d4c3928b05fb69a50c4c274cc4cc04eb40fd3010",
+        "8f17e2098ceb94470f4878e7147a439d7cd449894eb90a29a726744a711e6fbc"
+      ]
+    },
+    {
+      "id": "test-0045",
+      "graph_hash": "cababe2175bbc38f59078dfdaf908efd990f2dc55a6a2fe09e17d8c129b905bd",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ed0fba2ea213a52c61a2ec17f5145785f3cdc95ccfa8593219e34e41d84ae11e",
+        "cd5130a8845cc382f4fb6ca58ee195d588bd0599dca6e2cd7a503e41128cb9dc"
+      ]
+    },
+    {
+      "id": "test-0046",
+      "graph_hash": "b71e143a4df7c65421fa15d181779bca4565df8f44d940b1bc5109802f07fe2f",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "270a615917c44cd06adcf7cae2ee6ca84c0132bd989a9da52ef7a9456c656d9d",
+        "c275fe908ad337ab00b0c1664069a116f70706b6df8512af24871e5c5861b3b2"
+      ]
+    },
+    {
+      "id": "test-0047",
+      "graph_hash": "77fcff3d89a7f082c7c51bf247a76bda79ecefb4e6bd3e607073ff232b37b02a",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "b8f517c09f3dd059e8a69bd1a93303535fb54d07a462ab5f659a9241424a9507",
+        "9b1cdd6f5e0221a39f0e8cd525326880e63f598df3a4166488c25fde918e3f34"
+      ]
+    },
+    {
+      "id": "test-0048",
+      "graph_hash": "df68c21e1941721f1196608f4453489772ce4470ce291b8eabcb20e9d4747f87",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b9b6e051dea5bb9e9b8474ecf47a40671ed607d646080d17e74d4f9debfdc794",
+        "5934a80c2cafc9c8aba5f4f5fab9cdd0ce96022b9d85527fdfdc3c2a43b351db"
+      ]
+    },
+    {
+      "id": "test-0049",
+      "graph_hash": "edd60a327e80f205ea0af6483c6d4b388ea4d5eea4a42609dcf74174930fa6d8",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7747f637ce005a67d83ec4fbac47861f808aa84427341a202f9b9d3dcc9cbfc0",
+        "6542818e5a27d31f6dc1111a6f9e57f26cbbef2f677b7ba5f0503d19cd5f34d6"
+      ]
+    },
+    {
+      "id": "test-0050",
+      "graph_hash": "8e8e6d54cf9dc6bf713a107bcb13e65d7267b4cf93d7a3b125ad1f7735a01986",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "212f2aa10c49aa098a737428a1f78bfb670b5730e96544b4e5167ccae8f64d81",
+        "6d800c13faf42afd46d69db4b7213ceaf2656c56f00471a6afb5b40c925c3a27"
+      ]
+    },
+    {
+      "id": "test-0051",
+      "graph_hash": "2ba13e39e27fb9fa3311d6ceb82d380e11b4c0e24e0cc74da557a90225ec8a41",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "43d3b253666a34354657dcafb2fc1908241db9fe374717dad9217c730867f973",
+        "9e9e7d0d8d1ba93bc3b61251caed7b4efb0136d249e8eaf3e7d65a9ce393ae49"
+      ]
+    },
+    {
+      "id": "test-0052",
+      "graph_hash": "59116cf858bd9a2f1cf0dd590a258dbc29b264604927b229938c7635749c8730",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "428d0af74fcd1f682cf198b274093de70e8668ad1509f44f839cc72ba3408c04",
+        "9339a0d52584efd7e5659f778d2a9690f12c1e74e137a2e3cf4049e120978410"
+      ]
+    },
+    {
+      "id": "test-0053",
+      "graph_hash": "1c13775689df0b406c6772964764278fcf27861442385d4e821900bb4155fc3e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e75ca02b9a2ec03e5e386284705ed5aebe37cb3555a9dfec008b823b6ebd3294",
+        "cb5f7e3481e70af26fbc53679e2010a4a7aedd5ea22344c67e71e1f0dcd4b1bb"
+      ]
+    },
+    {
+      "id": "test-0054",
+      "graph_hash": "a0036a3e59bca6ca7053856479b6bfc33c75db7d93848844066d3d6173961fdc",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "72880f2bb33e3bf77012db5a3726a3dba30b02280187b3ee17449e84cc097f4f",
+        "a1973fa24a1bc235ffa263e6ba45d7c02ba6c99f3d11860dd5eb0e2e6cf7630a"
+      ]
+    },
+    {
+      "id": "test-0055",
+      "graph_hash": "b8ace0bd0ff50122d28eece6d1cdf39ebb2eaa6bfc151f284e6650b9e8e9ec6a",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "baffe7b26f319f68786c42a48a12d02c840064bcd8693e976e2f461d9de69546",
+        "f0ebd582eab375dfb7cf2b55224bcb4b211eaa5bfff390574fc570586702c9c2"
+      ]
+    },
+    {
+      "id": "test-0056",
+      "graph_hash": "b3c2bdd0a6196118214b86ab1152eae10863e760ce9f300292b4107a05d093df",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "d9203b1ad1e96957643b5faf4d37fae75e652cb42fb1ae2951fe5c26145b7e3c",
+        "d8bf680bba05636f2fb2d89f8d9c209007ef2befdd067db7120fcd79ebf2ea33"
+      ]
+    },
+    {
+      "id": "test-0057",
+      "graph_hash": "975b788c874baee6ff27f4e8387ae0094f2e80c17623cc168a58567b6369ca1f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "9bcdffd1a12fe09c64335e8869473eb687d35f729f5ad56c18e24cfe525ce348",
+        "feecc127fdfe17374a6bec1c4f3f1b2adbacf55786fcdb014960e42ba21cc984"
+      ]
+    },
+    {
+      "id": "test-0058",
+      "graph_hash": "0f84fc3bfffcfc59ab6fd73a7f8369ffb9a7f8397edb2ceba090f33c7a521d0e",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "ffdafc0155488bde4d378316fa98351abaa13a9af4ce48d47371db26061a6441",
+        "910d1f55b9f4af4d02ecf985e346be3fa1cdbdd3ae946818714b4954c05d25c7"
+      ]
+    },
+    {
+      "id": "test-0059",
+      "graph_hash": "130a57c53dd407e5dc30d816acc28ef581e257896d9d23b5c678baeae3ca8047",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "51603dfc5ecc66d7c249ea60e41c6f6f3f1b1b38b15d12e64641eff7c6cb18d9",
+        "174461815ebde896622f0183f3c22183eb0d96fd3b82ad7f17fa11b60808dc22"
+      ]
+    },
+    {
+      "id": "test-0060",
+      "graph_hash": "05e50e569d642864506a24aa237872bcb67c42bf61a9f3d189b9abc60ef0d271",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e7b14eb68c66d9015199a11d91a71b6ee3cac89fd883da9c579597b2a024af0c",
+        "d4ae4998d2afdd052e976ba473171c32c4266df8638ae16d73ba5b8ebb04f2e0"
+      ]
+    },
+    {
+      "id": "test-0061",
+      "graph_hash": "25fb2ceefba379c8cffe9db808d71fcaacbe594f254d113fd271f7c8749e153b",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f5c74e25a5c2ff1fc296ee6398a9bedd7e269bbabf0f01a496ad5537c2fd3c56",
+        "0bfe540b3c28c93cd2f32c5d82f2e1a19af99b097658b2617092b2da78f79bbb"
+      ]
+    },
+    {
+      "id": "test-0062",
+      "graph_hash": "b47e92a2fb980c0639e2ce23838beaba48202faac518c543a0bf4600b3bf3c36",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7b5ffffbbcb79a6bd1e15668d8d94194e8002ae27c6a2b6e08f99ecbb015ad29",
+        "8e7c871aa5ee899ffebfd3304771003ad241a2d09051a41b01188365843affa9"
+      ]
+    },
+    {
+      "id": "test-0063",
+      "graph_hash": "266f724a684bb7db9786e8a0e9d06f6e3d4b1f5df4d3612759c1e8234016c77f",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1baefe0f0499440eb8462f6380dcf310cfb3dde175244d3300ede3f4a3f14b64",
+        "edd13cda78cf95bb4513cf6caa703be7c89f7b09331d49233c10287ba044fb5c"
+      ]
+    },
+    {
+      "id": "test-0064",
+      "graph_hash": "b2575a015c58dd069d1710529b5b5e126f601f80153132d27952ec639d636b0f",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2fb24fa308d6fe3ea94063028a664b732ff2f02215c8b38463311f170edf939b",
+        "db71555032063b48c0d9c0f991e1609184b302e9e48f678966d953ca26ac00e3"
+      ]
+    },
+    {
+      "id": "test-0065",
+      "graph_hash": "ffdf691d8b76376697349a12fa97fabb31f04fee56b72c708a90d96cc6b88094",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "987fac55c20ee68e195ca0b75c282af4bf7bd3d41f44be7d9eba0fd67959898b",
+        "cdc920be3cec0f230e29506c8276a0fffe57ea6ffb0edc528dd2b1bdb48b66ad"
+      ]
+    },
+    {
+      "id": "test-0066",
+      "graph_hash": "311a0c40dbb06dbf4b9be794c95f447d5683308bf0c26e03ffc26300bdd03546",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e8be8963f13f97feb13fdf17f860728e55a407adaeb1005f7e3f303c63057893",
+        "50fe05b7068769b8647ddc8b708d288f209d55d74c813a7471fd89edef09647b"
+      ]
+    },
+    {
+      "id": "test-0067",
+      "graph_hash": "6799e1acb26902212fb9a90ab9d78f60a0defe271ae0bc3897caa5636d0399e7",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "3b91bd101eb27fff38036d4b75b6e56a5b33dcc2caab6ab56ce4931b6ffd061b",
+        "26d56861935bfae75360aa667123dad348ea34391567e844c35e1d680ec703e3"
+      ]
+    },
+    {
+      "id": "test-0068",
+      "graph_hash": "cebf4ff8825ef4046c0ec2d7d8465844b58bf840aa023b3be389c70de778fbb8",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ba8b496be9dc32c1ccf5c881689f3756634374c8935148fa400f68e8bc007315",
+        "7509ad22f952e7d5466b3c0de7ed53e7f89bfb774545f36a7c6fe4384ab19245"
+      ]
+    },
+    {
+      "id": "test-0069",
+      "graph_hash": "43070898699bf83498ad9a8acd8e7a3de353396d93168056d5de6ac8b579260d",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3907476fd56af2d15a623b650791e153c889f9b6abd01dc8bf32a4b88ed1d4ea",
+        "7b6cc06e56e527687cfbea333f42c63dbf6b8011e06eb5bc072afadb98da921b"
+      ]
+    },
+    {
+      "id": "test-0070",
+      "graph_hash": "e9690d3be990c2aedf150f76ed53c20c5da06df296767b9b7bb687187beff978",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "beb320a31262949dcd641472971309e8b77452b7e54731891e28446001bf03e9",
+        "49b2967d8baf2d83c421342b9853a1547d211ae2c96e958d7aafdf4388d41e24"
+      ]
+    },
+    {
+      "id": "test-0071",
+      "graph_hash": "b3d985c3a6e0d857a662e89993728715ed2733f419a3b242b172976df6e4feb4",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "4b4b033ed8c22a1ebf5acb5130f830bb4c58cf73afbdcc39bb549629ccd78919",
+        "ca48e0e50283bbff9b445218f66011a3fa05ddfa6171b343dbd297fdeee2df4f"
+      ]
+    },
+    {
+      "id": "test-0072",
+      "graph_hash": "27adbbe6d758876d3c37472e2d04437b3eb552aee57391053eec98a9ebf765fb",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "cde083afc69aade60f16cb48193b911adc893573cefb5919b379f78e529d2968",
+        "24891a2309920c443421ad2432627c0f636a54fe70e59746ccea69715acc0a21"
+      ]
+    },
+    {
+      "id": "test-0073",
+      "graph_hash": "306d57ab830879ceab82718c4d2206195b8deb2805970eaf661452ea5fb02e04",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "319c9b3b6c4308d2f48d445d32359ce612e6235f7b24eb51d1a35952f6806c6d",
+        "5cfd54822f7ef23afa0f93f0b33187f56c7c467f37b06414dc15e9983b909386"
+      ]
+    },
+    {
+      "id": "test-0074",
+      "graph_hash": "5ba70ea355d27cb32891f7202d5c85c21dcb859ad84fdfe13c7c774a0653206e",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "9fa2094dac6875c176411dee1aa7139fd441afff1e8cc05964d9f81d389d707c",
+        "78d1ef7c1ed8374370f1d9d9149e7e64e229274c9699bd43ffc3fec26424df91"
+      ]
+    },
+    {
+      "id": "test-0075",
+      "graph_hash": "e7820688799d74c7f1a73b88c45b8ab72e5c3ba707b03066c8d63b8bf7a1a0e4",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "51436430d09993b71114039522f701e108440948b6b59efdfd8ffa6ad2cd928f",
+        "5d9b7feb953095ef73345c106b431f2dac92f009a35c0fa59dd7338e880f3470"
+      ]
+    },
+    {
+      "id": "test-0076",
+      "graph_hash": "47b37256dfa0650ff64e1976e5aea14bbf7ed8e855feab60c9bcac08a7832dc2",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "03f81068fb9499ec8383e2560513518d3a4d7233e696e73f1977dc1644bc393b",
+        "c491c9273f9de66a87627c4dc639cad85eb471d595977767d1f0646c3c8e48fa"
+      ]
+    },
+    {
+      "id": "test-0077",
+      "graph_hash": "a4798292a61fde89a737b331237766dfd33886c67f966f7133cf6621e554f36e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3f0f6a92ed6d06a8c7899355080af6a735575b0a387b9407601ccb82be4bca5c",
+        "0335938575f9c989af077076c041a8872a4810eb4b714428132ada8f36d04c04"
+      ]
+    },
+    {
+      "id": "test-0078",
+      "graph_hash": "926a5a1c371f300d0e893212e7ad1daaff98ef3aac2ecb1be22731f760104043",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "eb61a70b34d68ed5dd1a0bddba14fb5b88fcc3645d062c2584e9becd67958c8a",
+        "58d2dd3e175dff7e44600b03615c92c801441fb916230e0ff6ed3c077727eb3a"
+      ]
+    },
+    {
+      "id": "test-0079",
+      "graph_hash": "fa830ef2eee08862c6424d265b1af2bae88138e39db57fc1a44dcf046c4987cd",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "cc8d1fcce850f4cffb88976d3ed03a165d188513461fd7be4885ab9bae4f7925",
+        "f7e00fbd1bc1b8a3e5b18e86db5664c439870c1f717e200415dc990b33aea765"
+      ]
+    },
+    {
+      "id": "test-0080",
+      "graph_hash": "ec023dcb226d0aa7e13a704b31d18edc94186f0d55eeeab6aedb31d80f288846",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1fd820f3f264d2c73157dc82fd9add601b84b05b40d14eecaee9096516fb7f04",
+        "646f28cf6148f83e2d9bf151069b09ce58046e2c7bbb0b24bb5381e1d0c0046a"
+      ]
+    },
+    {
+      "id": "test-0081",
+      "graph_hash": "7d1199065650541b495f243d96f8c76b5bfaae7a96e1e34b01b81abeea970b7b",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "565c81ea6b6836c7f6603077a5a89f9cf4f4d0c37616c2bd4898fadedf94137e",
+        "acf22b98dc49ae44dd81fe75fa151058237d75611c3d5d1c2ce8d763b577ca79"
+      ]
+    },
+    {
+      "id": "test-0082",
+      "graph_hash": "718615210766e273d666af4920c5377d81024b1a1030e031d0a0f4d815f423ef",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "d1fa9fea652c12eedf6e5a2a972dbdb24f7fe79b3e1ab4a47367095f9330562d",
+        "f5b0f82a1651ae231ec3489abe39f904445ff84ac9302795644b03e89634581c"
+      ]
+    },
+    {
+      "id": "test-0083",
+      "graph_hash": "9e1b3f5df5ae9884d7f69e0f6a40fc2da146236bb4683d2479d53d71312150e3",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "20eec8e897e1bd9c3253215b7641223a16a65323ccf15f34a59a45afb29c2695",
+        "acb55d4f71b1134781b1cd0bc7bcc992c4d9d2a2a25d058caad3cd9f1bc7f122"
+      ]
+    },
+    {
+      "id": "test-0084",
+      "graph_hash": "2710b628d9ce6e4c90942604440eb3bc6adff65a47b102f961231584ce264cf4",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "450d398e17dbd43189922c4158bd5e024ddf8d7f148518a33724b2c0e34cf6d7",
+        "b3b6a2db69f07bb81ed598b9ebde7c4674121da4bb3599604711966da8d8fa73"
+      ]
+    },
+    {
+      "id": "test-0085",
+      "graph_hash": "0c21b452d260d8eab6e525e7273890cc7cc201067471b4e754fe0fed13260aa1",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2c3545714ab585c905ba67899f1f994e6a5baa07fb6d94009a6eeef1989f2166",
+        "9d9f1b3424ebd6c15f83c25c70611a6bf82dabb78b1c153d2d32356a8ade8c96"
+      ]
+    },
+    {
+      "id": "test-0086",
+      "graph_hash": "f17cab2754ab0017bb46a7b224e882966218671a132cad5c3baed3e1c5d345b4",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "92a80e3a62bf1246eba32df08c67e34375c36e5722e76e755db7857c96b22ab6",
+        "8443180b3120e9c6db038f638cc4fbebd659a158b3a9941a4e923a1cbbfa8c36"
+      ]
+    },
+    {
+      "id": "test-0087",
+      "graph_hash": "59371d8a1418ab2bd9c8be30de29e988c4beeab6756a4bda383d44d214da508a",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "4044175e4e012705b90add60e31b7fe47924b2c8d8a173e821964da8aa728df8",
+        "965560da9de88aadd983adb67b08c57eb0cfbfb85fb003f1f5ee87b6f3243a71"
+      ]
+    },
+    {
+      "id": "test-0088",
+      "graph_hash": "b74c3819ddd7f17e7f213a16da38457431157a7dd11701d6f704990f66678d69",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b20817fb2c0ec5591ec7949b87991a07bf3e6d6921dbf364d8b9e5aa953be20c",
+        "0436e11bd3492d77abe423e23b4685e2054d5e38c89b3cebcbf3342e4e30fc1e"
+      ]
+    },
+    {
+      "id": "test-0089",
+      "graph_hash": "390170a2b3445c3ea2fbe6c29334283c1e1e481ad6c55558305ac069b3ae9e22",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1d289a6bf408c1ec46cd1a7c745893bca8d8cd036f17fde254059a7fef1412f2",
+        "8ff77b03bce6da9db470d379d4ebda9a8e22802f7b5742bf8d4d1eb2edba9ea4"
+      ]
+    },
+    {
+      "id": "test-0090",
+      "graph_hash": "341ce406a68a4e7864ae288e91a6a9e2078732b997bb53b441981ee372a7ded0",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a6e98c7b6947057ca776f49503fa3738d75cb0c86425a98d433be7313da48c01",
+        "25572a653e71e0b8224c916e0147d4c636d7978b725db9ba31634ff33563f063"
+      ]
+    },
+    {
+      "id": "test-0091",
+      "graph_hash": "3a9b2b973efa20942b563967b2678f0ffddd24daaba390e3f1864c3a14d25e4d",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "3f13e4e0b2847d6c530f2a8a203b0c0edfe3322770b2a4801867d48c9e8079f4",
+        "91eb0a663915e0eefb0d666e3ccd2eece416570560cd95ca44041c72cc050ee3"
+      ]
+    },
+    {
+      "id": "test-0092",
+      "graph_hash": "ad86bb4cb6b352a28ce861148e58e923946df7dfdce62152803c08cc4adec6b9",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2ef15e0eaae8c288034da1e86a472b373259cab1ea44f3aa81908d0e59a037d1",
+        "73afe3cd71e25d6694de70150f871059cb6a016c4872c958a596d0e81b8342ea"
+      ]
+    },
+    {
+      "id": "test-0093",
+      "graph_hash": "a6fe70a958d1212f487ff29fb1bccf241299ccc3766013412faf9f12f9a7763c",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "611fe4f41a9fbea765b15a4f35a7da69ac2ecfca5c1b1fb3aea7a163ef0afde7",
+        "ec0c575048e1c8c85b4763d87fc31ba6418bd3a01f43ac93c3a2e477aac8fd2e"
+      ]
+    },
+    {
+      "id": "test-0094",
+      "graph_hash": "8c34df83abf5323f9fac475a1afd6e3d43b77d98b052d5f3fbc54e44205e43de",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7ab9d6e2a367e55306c8a1d824b4c26739d7693da79a316cdb8612aa6568c531",
+        "34f7d30a8f6b5e70221b7ccf10461604141e5aec3dd63b29833f149bf4c174f1"
+      ]
+    },
+    {
+      "id": "test-0095",
+      "graph_hash": "dd919e2a503136250743fbb26be46bef3ee5cd6b190b1551ced69da536b9a389",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1ec52b555f840ef61f3e0aa83c596da4ed2a7194c2c8c82cb69e2a3a4bdbf323",
+        "0ac97a3947f7a9e2aea3c4b8be69e49c428321c19485c1f29074fbd61389e553"
+      ]
+    },
+    {
+      "id": "test-0096",
+      "graph_hash": "9f0438f4c4cfdec569113db76b8544e02b830fd4e02952db8c61b486b5ce8b87",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f84be9094905ab2e4678bbaf71c258ffee4bc2b7a0ee996a93402bc33e88c183",
+        "65a9d702c205c818e2b9052f7f17f1fc962112cf121549fb00fa13396ba76c15"
+      ]
+    },
+    {
+      "id": "test-0097",
+      "graph_hash": "5cb70d5778bf6d2f597df3d731da393b224ae0cac3bf94500cf3210ca63367e8",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b349c2940d7032c02252c42c3e46213650b24543764e65c4888cd80c7ef6ba5b",
+        "59df766315826a892d30ab8d9b067faeb9aa21b89f763b3af0b063247d4efb11"
+      ]
+    },
+    {
+      "id": "test-0098",
+      "graph_hash": "6b0fec508102e48d45d07a8722070a9f308669dda028deb0059651ed8e9063fa",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "6d13b960cac270814bf94b2b530274c971137c77a9431a1b9560884b2ced34af",
+        "29ed934ead83ff5bcc34f697a784843572a7ac2c4f7105350ed8ba77cba96592"
+      ]
+    },
+    {
+      "id": "test-0099",
+      "graph_hash": "5068a868cb2facb6cdf753f158732e1a3049466086acd5c1f9fb81cebef59299",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "498a198c0c1033838f2f271829b6f1af6137a3ba811da6fe812a48547035430f",
+        "9f1a9838025a160e004d736be172cd1d02f682221cbee79b7ae1c95d82450ed3"
+      ]
+    },
+    {
+      "id": "test-0100",
+      "graph_hash": "97e552ebe7d7fc145a971f233f0861b201ce759859c5c4b94142ef1071701d2f",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a0f810ccbf2a3f804c44db7076d1fdfd7dc6e5762635f08635c8afd955e97532",
+        "641ddd55e159db76f4f81c0e00adfcfbbe8ac82748c59b404bfd607592ad720b"
+      ]
+    },
+    {
+      "id": "test-0101",
+      "graph_hash": "916a734f4d8adae5c3257caff63d623263f8584eed498261f7c9632f52684c7e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "95245e907763fdd16ec1a315707628eed21054464968aafde091a76a868bcc83",
+        "bf9753d820008b98d274aa293f9584367d1d1a257c2f571a502b6d93bf96c3f3"
+      ]
+    },
+    {
+      "id": "test-0102",
+      "graph_hash": "c8165e2213113045095b19228da6093f4f0f4882341a8ae0f8d450db13e9837b",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7df98afdec21e96b6e1bf3fccd3dfd31182d5a0ad28bf43cc1d654aee58e2e69",
+        "93783e7690b1b89c69e6cf207d5e60f995ab05495076b8e20a33c95259978737"
+      ]
+    },
+    {
+      "id": "test-0103",
+      "graph_hash": "b3c278cf6a82bb47495049c2360f2167be853a1851bfe485eb918b8c2c72bb17",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c83f99ac6b5ad6c587d12fb27a039c086bd036fd82fae3698663f4d2eeba13c5",
+        "84a1131d7c05a156ad56c38b97934de92d01d870e25110febe2395476a51b8ba"
+      ]
+    },
+    {
+      "id": "test-0104",
+      "graph_hash": "f00872b6d0a1c5e6ee1aadca07ba307b318445b7d88277ab8f1cf2807664b098",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ab0c712fcae0914fdf159fed2784e51cd38e37265cce8d37c436d5a464b2607b",
+        "dead5497c1282f13e781c1d0ddd6da97eb02fef3843b8922b8126315cdd0c5df"
+      ]
+    },
+    {
+      "id": "test-0105",
+      "graph_hash": "ebc89fab2647df1020d1fddc7c02122c1e58ba170e894af727cb442d2a1ca394",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "bd94335fb1820668b4f915b3f73e9a707ed2fbfb851af21d39c3f529cc57d3e9",
+        "d0013db7972dcd8023a08d52c6a53e6bcec1ac4362a6c9613542d56f463c6940"
+      ]
+    },
+    {
+      "id": "test-0106",
+      "graph_hash": "b99c1326b26efcf210e2b22f69e5ab6019c65a9c16ffd67f8d02d14a11911c9f",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "62948770ddf1d4b5c4faef752740664b9c3591061edec3922597ff196194f236",
+        "10a1911a187591097713f4580e70501263e528c9401ef57d9bc3db100364e8bb"
+      ]
+    },
+    {
+      "id": "test-0107",
+      "graph_hash": "af236c664037b36da1ee1af3e529a5bdaeda715365c3f03e37f89f55558a699d",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "5b127440d4db6d11f148176e2af01fade40e92073a3ace997082a25481203f7b",
+        "3216ceb1e5e957f280ccac9e430fea620bc7602a07c2bee559577aa26bf411b1"
+      ]
+    },
+    {
+      "id": "test-0108",
+      "graph_hash": "d695fb9fafdb3af3d4c702b696e3df1617c695ac9b9143a87d4dc77e0ca290e2",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1f7dc1cc4ceb0871bb581b9de83921f9ba875ace71dc9ec4307bf7ca313c044a",
+        "54d3da6347bfc4e25a067588c9dab8050bd834213c91807e9744b5821da665a7"
+      ]
+    },
+    {
+      "id": "test-0109",
+      "graph_hash": "81136d90169f2b7bcf1001551060cf45e5d622505634a123e16aa096bc465f23",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f2747f2c423fc54605d7442887943525663b41ae80e2e9f443592664464537e0",
+        "a1a4d06bf243ecb7620a199508ea51ad5947f117c446df19326a6dd3704743f5"
+      ]
+    },
+    {
+      "id": "test-0110",
+      "graph_hash": "c9c75d43889c80815a10ed03f92c4943e50cfdad6466c8efcf1f203802cbd878",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "edabbdaac9e7ce38a99a61a2cee63f54bbde833dec36d08812f3779e49d83191",
+        "03d2f1751ddd5371c67e189743e1e45e6e3c57be0705b4c9bdf735ac8501b8ab"
+      ]
+    },
+    {
+      "id": "test-0111",
+      "graph_hash": "b5cf32f0c24ee4f6869a602dcf122ad2b442f1c013034db1fea1278297a9d217",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c4aadaba9a686a90c9390e7a29b74b2c80d61cde71bb7d6c8886cae6a8cbfb6c",
+        "5515ab30c5cfabed1358a6254a480a3df9acdaa553e8247a2b109749904660ae"
+      ]
+    },
+    {
+      "id": "test-0112",
+      "graph_hash": "fb2743ecac03b7c19a1ed3e4db9dbc0336d9d59b9bc5f464abce636583f57a86",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "00ac611c769603d6015025f939207fc59c0078cb168e65ad5f99e81629063e2d",
+        "d1c5d60a82b8685ebe887129b69e05d44bbb6782eeaaaa4b9a09027db8d99a7a"
+      ]
+    },
+    {
+      "id": "test-0113",
+      "graph_hash": "382db06f2bd61a4e19b897d2092ad895cf132f65807daa1cd5c117447b3d82c1",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6894d728c45ea13116cac69fc90939723fe00ffb2bbb75f8e091e7032166d446",
+        "f600fb10eb6857708303412cd3932ee5dfe83afa70c47f7e5707fbcfdc88efd5"
+      ]
+    },
+    {
+      "id": "test-0114",
+      "graph_hash": "1c685e8bd22dd6a3a87f73a7acfc54fba51576a9abb3f2c3f9957b5573d1d3ec",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "d384c73c7a63a459c38e6710b4f8bfedfc419b609e1389c6b1e2b10fe04e9666",
+        "a307fe492447d221a80bed544e5be2690f23de967454ee22bbb28a5fb5093483"
+      ]
+    },
+    {
+      "id": "test-0115",
+      "graph_hash": "1f35b0a17d8eae518ea040f2642f127f379e1fffcd02c61443de5047a3b41b8e",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7670d838c3ad02ef16b50ac3fadea82567dfbbe848d3eafad37bb2a667ddaaaf",
+        "f5f4d5b4a29319141eeae12a95ea0a9c14bd1fa2c92b4fc52e1fe93636d93f3d"
+      ]
+    },
+    {
+      "id": "test-0116",
+      "graph_hash": "e5ced7979fd9fecf1463f7148be273bd5bc88e0627cb9881b749da8eecb75daf",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "55e1c59259d4d0df36b2e6fe3ba9a7f6168da02b66783f657fb7d51339cf7677",
+        "8786dd1352d6f29fc32b77e64031d7b469298bc2837d83a3c7b2327eb6fa2541"
+      ]
+    },
+    {
+      "id": "test-0117",
+      "graph_hash": "8bbdc2cb6566500ef2195e7bbb6a10e405a15689a4402edc696348cb99b70bef",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2cafecb7cf00c85c571c4bd1fa0adcb2ef6adc2dec1fa56d861ab5be00d52648",
+        "857a6e98a8255fa2a3dafbf3d5a970265f7d77649a5c7e97ea515d7d63aeb1c6"
+      ]
+    },
+    {
+      "id": "test-0118",
+      "graph_hash": "abaa09bbd12269142f7861b61f012ad1c742e444c9699b9d99e190509d60a429",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0e788795d8a1039272289d954e87d25db703a245a2a639363954eb0c032614a5",
+        "5b2d88afe990b3bb1f0d6726ad1c2f7588178128801ed7184d2403624d690e27"
+      ]
+    },
+    {
+      "id": "test-0119",
+      "graph_hash": "c49d4ebdc22c499447852a1c95223856e923358797073cba5868a80cfc5dd204",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e86921ac09b02fd5d21ddbb5635c91dd65a354a0711a8736af3b2563ab74ff23",
+        "525bf0a2401a385d47df32f61a16a499a584c0767691d6c7db696852f960bbd5"
+      ]
+    },
+    {
+      "id": "test-0120",
+      "graph_hash": "6d5d3f2a2b5d19e4b79ee03c44227f29d23f135078d10ae5b0822db5a0a73e47",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e3fd6364a86dc7cdf622b508ea74be85871073ad16ef9cee5e88727169c05267",
+        "14d4a5108f6156f07af80d4f9c9a0e6c0bc9a4ffa0221f855bd539e2f3f8ab4d"
+      ]
+    },
+    {
+      "id": "test-0121",
+      "graph_hash": "f3c2de7aebc86aaf2cdc5a9887f7c2d6e6735d2bfab5e19e7da882f71b97418e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f736785c01580be5bdf993118909a3b6791834516c0581d39594464d302db8d7",
+        "423327c668fd5f1c54c28274125162538228322010bbc56b051f7138fa3d6809"
+      ]
+    },
+    {
+      "id": "test-0122",
+      "graph_hash": "512ebe69134164188bb84022d99fecd896ffa2ba6ed45ddaca966131c067dc45",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "44d8ab24828d3639a2d3b287a63936f82e13bc88618d6b7af82d2de06cf84307",
+        "fadc6420126e536457a1ff61cd77d7f3e18a89176231f729d5caa006fe2377ef"
+      ]
+    },
+    {
+      "id": "test-0123",
+      "graph_hash": "0bdc37c0b1b1f707e30de5da1a814204d854cf4d1c210946ff4606d78b928032",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "44830a4479de033e770ba43c366a7bc939f0f094da790c7542d304b8c6bc87be",
+        "ee444a7035961eed3c1c67c4e60bea509b3d7a1ff768c78b52ed9c0869ee1565"
+      ]
+    },
+    {
+      "id": "test-0124",
+      "graph_hash": "c6970e12086cf6b99ab5dc6d2cb38a8cb2085ffdb625afc5d46d84aa4e605787",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3e26c2dba4c6dd6714bb263b8a3b4b0b11b7dbc9811ba9cf660addbfe6098968",
+        "fba7bfa53e59e8f546851907b6be6679ca59455096a27b7d0a1a5e0fa31f7d6d"
+      ]
+    },
+    {
+      "id": "test-0125",
+      "graph_hash": "cd3005cd0dcfb7c7cc34845bb28d87c28dd55d4e792656af1985c49053174db5",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5267971b33fb81dfb512862bfe8d368c41f54c21138812da8c51369e38242982",
+        "e07d9defff609a89d0315bd3a143b5ce2bed1d9c5256f73fab33b8b52ff7f523"
+      ]
+    },
+    {
+      "id": "test-0126",
+      "graph_hash": "4ae5d9f4468fa561dfd0c4d60f9100f4abbbf11e2afd05e115dd4c041c66d0bc",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e8fac7ff76553e7857d978cc4ac887eb0361dbb795306d5e09028d12afa2c509",
+        "85b7d766a95f30f0fcd0a566a69ec0b40a51d81ebd0649239f73ba5976b50de6"
+      ]
+    },
+    {
+      "id": "test-0127",
+      "graph_hash": "68194e3f3067ad2e9fd4cbd7128d54678020fdbfe42f662434fd431f9ddb9bd0",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1ce3c84e40f96a381a8aab97b0a7c3b14d7a10144b0e217849dc240afcee2f14",
+        "bb639a0c5ac9cff50aca4e3d4f77661aa36b1aad7ca0f5cde14c553649d5789a"
+      ]
+    },
+    {
+      "id": "test-0128",
+      "graph_hash": "bdd4f7870915d02e679e3fa2e63975d4dcf97ca70b88aba0e88eccdae23bf064",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "095f1a4fb96bc941159c46ac27fb0a84e75f8b11db39912c75f78d5f61050a5b",
+        "dc6d20a78cec193125da452275d7e237931e1862697366bc3776ad1cf8984086"
+      ]
+    },
+    {
+      "id": "test-0129",
+      "graph_hash": "705f94e5a063b0b8053e71e3ff6ba8af46612fc2c865882f0bc9c031a353ee5f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "4588673f97fbd01650ed0dc1109dc8e3f3e4db16536a545ff7baac0fff8b5a60",
+        "5f20fbaf40e5088555254500c7dc3a80fed093c24151b30c8dcca80992dff8b6"
+      ]
+    },
+    {
+      "id": "test-0130",
+      "graph_hash": "8c9984b0942a545f5a23f0acee7bb8c922a9f116768d339cd0a960fd44ac835d",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "3177b323fafeaffe989694bfee9a53bf2e082d5d2745209c4b068e602aee3e9b",
+        "a954c3c41677a9429e26f68642f2779e39c17e9c1b5eef36c8c2ff3c4bd58df5"
+      ]
+    },
+    {
+      "id": "test-0131",
+      "graph_hash": "06a82cfa53d6ff4ebe535d56133d969fe20fcce30092c88e428544bf9990bd41",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a555f1def4682fe4facf33e0f4430ef7cdb911a5929a1a8a14da9d47a180a1ac",
+        "1b812d83cd0a622cfcbd272466796cdc90608b71da6299665aa1e89bbafbf628"
+      ]
+    },
+    {
+      "id": "test-0132",
+      "graph_hash": "d9bb1806a3451603391d9818835d60477304ff39696fd00a126d28ddf23448b1",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "bd13b662cada7efee5928d7231fd8da8e62140d853435b8074800e0b7eebeb45",
+        "064c7881ff21d3e3f43eced086de30e3834b9533b4f61816b4038285d842f616"
+      ]
+    },
+    {
+      "id": "test-0133",
+      "graph_hash": "12b5c41c5e119b71037e37e10e127b51c9e58b66fee7f310f197f664b2b92e47",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "d0e0c87b793f6ac3f1ca103db9ce4ba8fa04d36ebf0849ab897468011d6a37ba",
+        "45741ed0c262047f684843cfeaa3e1069c535b224be4c05ddaf5440482fdd95a"
+      ]
+    },
+    {
+      "id": "test-0134",
+      "graph_hash": "c441cfbe555949eaab2f857c6af9bc558662a27fd3fabd3321efc705e6b07058",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "dc2544958b2ecd517d4966dd496212aec460da9f0c89f6649f97a7948500f2ed",
+        "f32db5afb247e86d1997ffe4510247d52f6d8ce73a3c7fbfff29d01ad7a55503"
+      ]
+    },
+    {
+      "id": "test-0135",
+      "graph_hash": "2d72ef4c1ffcacb40bb3bb1d78fc65c2d8cc331c253a0ee844f7fe1200a19b0d",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "85a29b88df1c5b64e0a2c6dc07e06e380d382f4f055a0248f6f565d0f6688f9a",
+        "313e28bd3e281dedef1eae4723a2e6764d67ade175c86c430d514caae100cd78"
+      ]
+    },
+    {
+      "id": "test-0136",
+      "graph_hash": "893fb55ec80fd0f7073dbd18167cb9c6f93e68920572a8e18287ace6f6ee4415",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f829446989f5fb15ee193648ae243ebae6aac18b1b021a2dd4582bc4d6dc5393",
+        "fba58dc7e34fc4f776ed415d156af3b7bbb9e30f27a6882c7023ec93f759f3ab"
+      ]
+    },
+    {
+      "id": "test-0137",
+      "graph_hash": "84c73faecfd7d2a394ca8f953dc24790f7319199f3fcc2dc9eb946b05b0ff1d3",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "86ac0c8ad3d5ec9e7be3dc50fcbd9404e6fa429449d1e4116eaddcf19ef899af",
+        "c5b3eeb35c8df33f5793a59b6b0b7df9cdd5d244cdf180cdd6beaebd3f33f23d"
+      ]
+    },
+    {
+      "id": "test-0138",
+      "graph_hash": "501a09c743423b86ef1211dc672fd7d6aaf380f5566d66c76c3122b6572f0c95",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "71d286d245ba878bb642582f9281aca3ad7eab83476ee85e0b45f20d97c0c8e8",
+        "7ca081252b820a83663484828c87517112ae862a4c6eb84c4b77efffa3139968"
+      ]
+    },
+    {
+      "id": "test-0139",
+      "graph_hash": "c0d721801d01f8fb39bf192c40f0adf97b2b2c5fd9e0e9148d52ac47394bcbae",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "b42b3c660404c5e5ad5bdf8f9c091bdfa827cc18e2708fda68240be6bd5b8e08",
+        "11c1e8f22fa2e5a5ca5b6e7a8a62ac1f44fdd5162ba7ad292e04062373b9daa4"
+      ]
+    },
+    {
+      "id": "test-0140",
+      "graph_hash": "5dc5343546de60de45e59b72703cc1617991f8e2a87a42d6ad3a5ef40ff4134e",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a0323e2d90f5b67f04055c3fc0d7015401c42289af0473e30a9339576ce870b7",
+        "4754bfde47b2e19c8fdc7165d4e2f60317d5e2bc8d3e78896f5b1cf6a5d757fd"
+      ]
+    },
+    {
+      "id": "test-0141",
+      "graph_hash": "cb75966c2d7ad9c4bb930ab5bcf6b8cd745a3f658c5320ae95f54972516941b0",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a9a6291154819c7c0d585ead9198ceb0f27516db9eca149f6e78cbe861038958",
+        "d7586865f7985cf2a8f74f221ccd448c83c02a30f67bb388940ce31c8c50e8cd"
+      ]
+    },
+    {
+      "id": "test-0142",
+      "graph_hash": "d0a9f1909c5cee1502878202bd031f2550f08719dc8f73f117ced9fd01cd6416",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0a5b65dc6e3bd827066597390edcc686911305afa27521a68e6066a9997e829e",
+        "97f94fba7adc5551131276b2cab9306f09061b30a01725dfa1ce0754f6da0568"
+      ]
+    },
+    {
+      "id": "test-0143",
+      "graph_hash": "1fb76c36863de9e99dbd6cf5d1bfcdfebfc22ad904db1078e259b73b1ea3d0b6",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "5da952240290a7900f8ba3db94a1467b0eafeae13b1384fab142c5aac2e9bb0e",
+        "2c644265dc16c9da8f049e497ce838f869bb1d829d0786c89db5830cb4c50c6c"
+      ]
+    },
+    {
+      "id": "test-0144",
+      "graph_hash": "a9665f7d4dc1a9af53af63f35ccf1953aa9c764dcffeac0b22fbb32a91c00307",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "0bb3081d81692d60734c4e1d252a605578a1943eb03646a55b58898e69a9608a",
+        "73afc8e4f1e7d87270183b1371c80d13ba034778bee39d11b7a51aa4de2ff27b"
+      ]
+    },
+    {
+      "id": "test-0145",
+      "graph_hash": "08a0740f9273cd40052463efe60604e3f75155362b3f862af0f4d49cd589eaad",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e23d4c984dec70df60d3dda993e9b905a1bc6d3a6005d4df737e3a19f4971ddd",
+        "af3e4d22fa019c3d85156e7309da392b5de2a1c155ddf657f06ac85231730b38"
+      ]
+    },
+    {
+      "id": "test-0146",
+      "graph_hash": "902445f41a452a7f097b961732e4dc88296fbb75f798b508d83f62c0163ebbd9",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1be963ab27f4d46df4c5899e2dec02c153a206f618741837608553e999b7794b",
+        "095d4fa4d12b272169785a65ced26ec91a9f36e1eb780af435ffe78412fd4e7a"
+      ]
+    },
+    {
+      "id": "test-0147",
+      "graph_hash": "e3151ca812681903a7a91d0df3adb5262e9e1367ab9b6641d2cc8d783b89c9a6",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0f2b2f7a0a6e4faec3eff99e32e7c2ed9c4bc2b6e96e11f751834e38c6ee54ce",
+        "03bd6b2996344b5b6f189bf7a8ace6f55752d512cbd76440766172042437f34a"
+      ]
+    },
+    {
+      "id": "test-0148",
+      "graph_hash": "6ef0c2bad4f68e7cad1b08c3ad12fb525d1e35a738475cd2aca2b5f65f0dac69",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e1e4a60b641c71f1ead1f65cafe7a785e86de294bd6f772ca2679f827050dd0f",
+        "9cb7c7a9812fbfcddf046e25864892ad51de5d750d285259f25f7288b027aa1b"
+      ]
+    },
+    {
+      "id": "test-0149",
+      "graph_hash": "4e27c2d25589e6ff1894369fc702adcb5405ecfb73f5588daeb069ea6de765e8",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1b18d49fa8c2921f3578123f5222330418a30d14ce94399c808bd56035d2f6e9",
+        "2ac6d902efe14107f9bb3438c0a1806081b212d40f986a48c40e51d63307a56b"
+      ]
+    },
+    {
+      "id": "test-0150",
+      "graph_hash": "3a037bdd916db88012fa95e9347b85c20c223b61cb0f74d367564409e2aafb63",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "d30f1bba856c92363f76d3c4ab81dc15b85541a949f1c730c956f13c4909cb93",
+        "c3bef67050dce6a2a47081f1feed6c85cb531e3dd64c50211762fa4ad9e348d4"
+      ]
+    },
+    {
+      "id": "test-0151",
+      "graph_hash": "9e7f6978899edfda0ebc9dcd62e3b1c294497ee08ca760adf33a693feb07e1ed",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e8b7d4d11d265a8d4e5cf71be62f88e9b7a9f218cffa229c54b3a4db21349447",
+        "aa2406c0579c2916df396a3b3fdf070fef4247eb8a14ed95cac59aa9699209e6"
+      ]
+    },
+    {
+      "id": "test-0152",
+      "graph_hash": "74752033cc91eb68f897100eb5f2e184f02ac3bd5df0518cc2265d16dcf9a641",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f33f9fcb3b8b88ca81168ef03b38ed7bf8804dbe65435c3479a0ee1bf4d13b18",
+        "49e1dd5718272fbbdf5dd5eb5760c14815a8352cbc1265d3f66e9e761303a3f5"
+      ]
+    },
+    {
+      "id": "test-0153",
+      "graph_hash": "d6935b4fdd658c7ece574bfb16f73ea61059e8c88037aed2989fbf035b6d6bff",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "eb25293614a831096656294ea109ea9af5f2a9fc29b88ac862794dc2f225d39b",
+        "166e6004b180b0fa3b114e4c8d9f51ac8374fa4885a4acf811a770802355a364"
+      ]
+    },
+    {
+      "id": "test-0154",
+      "graph_hash": "d01925164f9d2a19776f8472b82d804ca2ab9c98db9fe76c91fb112eb97c38d3",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "8c799e8343d6374b246a549aed6ddda8116655b2697b06b5344055268b501c80",
+        "9acf89f44dfaaff4cb63d953b4bd409084717242799b5cea22d368c5a6cdc238"
+      ]
+    },
+    {
+      "id": "test-0155",
+      "graph_hash": "402e0585fe891996bce07043cb2824ebb21ac6a0b18a20819e15288b574729b9",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "2e8a140eb95e7ede64a298116728130c2b98b9f1782961d7a855502c235e88e6",
+        "f78f19e6633778610809ea281b7fe86837c8476523848ecd244a77d6684fe16d"
+      ]
+    },
+    {
+      "id": "test-0156",
+      "graph_hash": "cda7600b53e5f1340f6ee19c9930b1ed0f23940cd05c8163953ca5353332a48a",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "23fd7cd497e3a0ac7f1ec6d407bc47128fc68b125d930d94b6b1badeb26532e5",
+        "45584b2b26725d4f6de169d6a78555bc424fb67fc12bdfb11e63aa67a3a4f4a4"
+      ]
+    },
+    {
+      "id": "test-0157",
+      "graph_hash": "4a90191c7ed052e3459a47e2635572a505d1359fc41d6f076a03e211c4440d86",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7712d82e2c1e0ea05bd19d69b7fac91b40fc29644059dda00b73decbb28fc7bf",
+        "305584da8b907058635590ec0bd2c2bf827fc08801286f50feb8f69137f06965"
+      ]
+    },
+    {
+      "id": "test-0158",
+      "graph_hash": "adba0656b6d02de60e220cf6357a63b77be1f2418dbdfa77470d883fd5698b9b",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "ce8c01f77ee869cd7e8b976ac28fb6ae2384b1a8f87cf4a946ec013e94ac7305",
+        "aa2364e4e1a4787706f485eb094dfcc047a3aee2b115fa3ce3039d8978a45fb8"
+      ]
+    },
+    {
+      "id": "test-0159",
+      "graph_hash": "a2425229aeeb11215d77c063bd20d49cd3b02606c78b786989a0e8e255184f69",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c137224fc5b797fcaf9c06ad91832f9b397f94ad332dfc8f11e97b427ef1f904",
+        "69f66b1bd65820518198ea30bd0e730d5562dfcb024c498b01d54138de524fa0"
+      ]
+    },
+    {
+      "id": "test-0160",
+      "graph_hash": "3ad604397fa5dede3e69cb239bf25035ffd617159a0153c1d48b078727ac2603",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ee340236cb8f522f0292ae5c0137529d176cfcd7bfbffd3d424d5dd83d6cd18e",
+        "bc4577f3a5aea99898d52d06a9b5049f26f78aeb3dae28d080d1e008e1ba95b1"
+      ]
+    },
+    {
+      "id": "test-0161",
+      "graph_hash": "2416f2a85f6f3d364f5091a25dc8e373e3da9937fa37f0404b3c1dd0e178c4dd",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f0e2a080c463e4dcd4ab017b7b1001db603546afe611cf2642b597a20fb1cecd",
+        "8a72bbc5129f481b598d3da4559c32f04af14bd34ffb1ef0ac29375c2079a9df"
+      ]
+    },
+    {
+      "id": "test-0162",
+      "graph_hash": "abf39e8922267d76614ff908b9e9255810453fc9b1f2d53622a5786318f71b2e",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "b21402a60ab6994e0428c59c377b6355a5abbdedd3cba21a39c2f7ac3d5da412",
+        "016ce59416f6bd948ce8f6bc5264aed7f7b0741306d877a4f6577e4e2fa2b7ff"
+      ]
+    },
+    {
+      "id": "test-0163",
+      "graph_hash": "02f7d6b0ab72f8afeaa91b494e5dc50e72b0b8c47e46ad9021e447d41f3e2a6e",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c32b499c6728b4e1f78222e9ba4e5ce4f8b07399166b0c6f91a15636e3f885fe",
+        "5dedd5a82393ca758573fb81e4d48642d06ffb7875f5381e8eead68d5524fd91"
+      ]
+    },
+    {
+      "id": "test-0164",
+      "graph_hash": "0e68692e0658e310163a3895fadfc4f7cc2bb5b2cb04e2a5f011a16d27878e20",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "de708dc35ea67a79265a1398793005fded15ac5f0abbb2e6154d599000fc4498",
+        "9a8c761a1a5084c4c3e8e1e312f04162d8c170c562c5174c343b49e79cdc59eb"
+      ]
+    },
+    {
+      "id": "test-0165",
+      "graph_hash": "95c560f3e6aae519af8638d1cdd1b4f3581640fd2342535a809752edc80f125f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a62be5c58e773f233ab1ee7caf0f986b5fa6f85aff0726215c0938bef077d926",
+        "b6114e181d1c08701f914dde96968af15540a766933ecca8d8727bc658643e9d"
+      ]
+    },
+    {
+      "id": "test-0166",
+      "graph_hash": "64817b50cfe6d43e1575bec64a96e09efda4dba4ff946f51ef929f70e1282890",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7084194f8af0ee39f53718f6b6988080e773e8231a76cdddef956229d016db9c",
+        "39ad6404a260b9ed460ca1f3f8e63c01cfbfcafbcfd326dc3443682442e684e0"
+      ]
+    },
+    {
+      "id": "test-0167",
+      "graph_hash": "c511805f3f2ebba7d94fe5563790d814de8e0c7f01fb275d66af79e2847376a2",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1fb06058588a5da0f43d6c98926aff1f89147e5805f7f77b8d9bd62a7382b0d9",
+        "b14c8d9a0c1b2db0d0ef540d10631325827fbd1e602ae90d2553075817c631f3"
+      ]
+    },
+    {
+      "id": "test-0168",
+      "graph_hash": "35afdef659f4d5e4ef655b8809f1e19af5197cf4ef74d0ae070d2c9bd3c41faf",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "267255805a9b3d87e617d1ae9b5d1e065fa5f976b705365ab4b944f1987bd3f9",
+        "fa11d4f8fec84f20ebd69b55b08056564aa9d5004cc71fc91cca4d4905cec747"
+      ]
+    },
+    {
+      "id": "test-0169",
+      "graph_hash": "7cf7b22fb74b1c621b574d96faa6c6ca8d142bdaba94576d5ade8e0817a47382",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2157fd274ebd3f2207c04fca5e6cad8098b06db1a30bdcfed884c06fa647591e",
+        "ee56bfcb630062f1261a7af81df147f137b1b8d80e1069fa8250b9552d3457ec"
+      ]
+    },
+    {
+      "id": "test-0170",
+      "graph_hash": "7e16d1c1fc4703505a9d515c16f94a4bd4b84cfc92485f7a3a64f2e1dc1fdfdc",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "6a23d205a7fb3e054e6af6b3c3c79affcc08710f8678828e31b1b275ca8f3625",
+        "e734da2152d278a161e9eb8a366c42c2106d6d9ea230074159188e0f28917155"
+      ]
+    },
+    {
+      "id": "test-0171",
+      "graph_hash": "f9ab98853681cb4b755336c54a232fa030e16d855964d97d9c11cbf89608fdcb",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "96d03fe8fc058a011d26121cd2852f20cceb0020665140ff4d649bbca6b1b142",
+        "00634b3bc003bafe41ca177262980a478248c9e309a1cd27ad9ee4734270f785"
+      ]
+    },
+    {
+      "id": "test-0172",
+      "graph_hash": "517e883548fa1ec800656e1504218390310eeade5825aa55cba222e4a10ff765",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "9d1626b76c5064992373e6175e02fb82c10f727294d9ef6f486df49a833a70ce",
+        "6c6a1bd1405feed542d9f3f53b9ee995442077fd69476b4f8f6ae3704b201952"
+      ]
+    },
+    {
+      "id": "test-0173",
+      "graph_hash": "e529fc076f7159c05629f52af2449e0d8d8d107a561a12ba28ce54c17ea011c3",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5ac364189e0e81aab515655b4a299935540bee9ce8c263eaedd1524fcfa3b00a",
+        "d59ff00a52459bedf136769c9a5dbb479bba3cf840907565b9560facf986e339"
+      ]
+    },
+    {
+      "id": "test-0174",
+      "graph_hash": "0d7124cd6d05e8d60b5ae22e75dbdc2c800462fc44dd298e062d294ef28dc605",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "18f6eefb3a0c3624806ba7b87218e06a0a4567375a5cd0b123622cdea8399a28",
+        "c697cd135dccd85ecc6ddc8f2789de6146eeddb927d19a6d38722fdbbcc47b55"
+      ]
+    },
+    {
+      "id": "test-0175",
+      "graph_hash": "e5c60983e3a6e224de24e87231eff3517b611e964f82a471ea272d6c9500be68",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "5dd9543aa82384524101e8e0c32f5007b15c7683b44e37a9756b82ba64f0f733",
+        "e77958a564fc967e3b008fae7753e859fc22738125b88229a10be902e908e8a1"
+      ]
+    },
+    {
+      "id": "test-0176",
+      "graph_hash": "7813dc9d7460faaada03cf668fcde4e22e37d974138c8dde0658a8c2fc1ab858",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1dc9aa65b861a64be1811ae52b5cd8e79f3694346e63187f3f10eb5df86cce83",
+        "6451653a55969c18e8b7a604de8227ed877fbe692d97d6559ebe30a97fec6027"
+      ]
+    },
+    {
+      "id": "test-0177",
+      "graph_hash": "371fbc65c6e3c71cd2afa0060cd4c994ae7850180375aa8fe3f106d34163d6f9",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b5c9075fd13e8b8d4bd36c29c1e4fd3bbda24f9fa3b1540018291cac824370b3",
+        "4c2028a5206fafd0a8df5546a4871609294d9acde5661cc0d8b3610105d259de"
+      ]
+    },
+    {
+      "id": "test-0178",
+      "graph_hash": "d34281045ccfaff465324b398113b78f4dd2c41c37f0d69e256e7ce632860d49",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "71e18284fb27a16d558530948846114fd542c6ae238a2cd72f6039aa10e67156",
+        "c7198aa5fe0d8a011a9cb9aec438c8860b563edd72184f01c3def0185ccda86f"
+      ]
+    },
+    {
+      "id": "test-0179",
+      "graph_hash": "d949b56bb4409cb05105eaccef9b7129cbc681b4c0e8582d861dff323b5d6177",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "67fe094f5c8e2993e1388a275aae92105e23f88179d3504701d56f3d5ea98287",
+        "d5ec8872792fe48d631a57da5823abc64a2d9079f42025bff2c2663027e8b30d"
+      ]
+    },
+    {
+      "id": "test-0180",
+      "graph_hash": "24ecaf3392ecbbfa0b0694a737a12dbf46a22b3c4b45f373a625d76cf2220971",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "eefe0c4f156985bf11bd1689a2195ab66f1321da2c42fa869a1e11a382b8c84d",
+        "97e32c09e9bdb6239e464b81495af8ee8ed4d342cd206159a9493f8e29790269"
+      ]
+    },
+    {
+      "id": "test-0181",
+      "graph_hash": "7d9c11b4fa453f0238fc47a438897b0eeb34f8aad594e907d9ba173459308174",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "4e3c7f045327f772261861cb66b98532ebd3d26299a89e94169671bc10ec7429",
+        "f6d39169e440ff0ac44a68e4c30c1224e9adc145fe3cf2c46dea20a911d50d1d"
+      ]
+    },
+    {
+      "id": "test-0182",
+      "graph_hash": "9a7635d715c64ec3e99925c4499d79d848014b61e7785bdeb19a25ad04c29d04",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e26907bc15204f96a10fcb5eeb15f425a3c5c962852dbb047fd56b91d9bc64ae",
+        "0f51817544b7600bf2d2588e8c0cd07780dc6c5a3f02c0a71e4e4864c1542b44"
+      ]
+    },
+    {
+      "id": "test-0183",
+      "graph_hash": "ffa9fe29988e5fc56d61985d246e5349748a155ce5f4ae6364db7f7a0290061c",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "4ad451fd581a8fa61c951a6614a1eea69fe0a942d4548711f7b5e8ac2b29b615",
+        "5cedd5370741c56469dcc5de92c1f243bc26d108596fd866592defc78230daaa"
+      ]
+    },
+    {
+      "id": "test-0184",
+      "graph_hash": "aa69744b473775385e5bd9ab9926206e1449cae50c6a6c22bfda9f27b66cbe9c",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "4bba35a8d3ead4e0d91e1410d1ea7bf310a602b2e09a12f9b3b23e581cd099f1",
+        "def590674e5caf552bcc080f4fe5d2b6883c5f4e68909a42f5e4e8228b86af5a"
+      ]
+    },
+    {
+      "id": "test-0185",
+      "graph_hash": "dff38b2eb64de7d16b3e6f4f5b91504286c436162527985e869451d8c27f6ac1",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "0f7552cb523f8b1e0f3fc971c8abfd232affb2a60d388bf6fd73d6c15ccd6f7a",
+        "08151910e259e91f8a16fcc81626dae8664fbe713f89bf53767ef5407732a02c"
+      ]
+    },
+    {
+      "id": "test-0186",
+      "graph_hash": "dc6eaa1e5e9b3db09efeb4c4b6717ab273ce540d68006acc874d3e0eb4f2499a",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e218a26d04be7ea6977fbf4bc31311bbd433e2211ca0a85f0b8f1af9d45f2207",
+        "1d2d25025ab82c22093253322e8c81dc241bd64010a5a1376d39a7ade1d538f6"
+      ]
+    },
+    {
+      "id": "test-0187",
+      "graph_hash": "75deb8c169838fb6c6e32b5a239d5332bdfe2d044431dac2dc07347bf7694116",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0393965d618b8564a013f17ce14c735e1c61de280812eb01a74ea289124fb7e4",
+        "912eb3a84b3656840bff83708909c0652f12ed67adfa9a44a46784bf9aed484d"
+      ]
+    },
+    {
+      "id": "test-0188",
+      "graph_hash": "49e3f4f5e6dad509aa8029851e609e82193cfe842cb5be5e66bcb8b951650d7b",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6d3a0bcf3c5f7316e000d24684f81cf2659cf7a3bae155db37266b423749e80e",
+        "db318142a1bb7c671ff72d5e051df31344ad673945471791c4a20862b3dee967"
+      ]
+    },
+    {
+      "id": "test-0189",
+      "graph_hash": "260d5b77b1051be01fa044874436103ba8b10046687b984f1f3fdec871ad7820",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5186495669284de2267b9280fe21aed79ec0074069d9fe7c9a5783202fb5c2e5",
+        "76c1cc2f1b842c2b529fad51e46f076580570dab6103968437001a02099eea93"
+      ]
+    },
+    {
+      "id": "test-0190",
+      "graph_hash": "c894de64022e29caa17b243d21cf4542508c1475886e70974db95b7456537391",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "bdb6eef68f0c5d651cb5b4809ff4ccb419827631300998aea24500d030c323e8",
+        "3c88438c003f796c46f31a5c610835c65c52760cf9763ea1cc0e8d24cab2a663"
+      ]
+    },
+    {
+      "id": "test-0191",
+      "graph_hash": "359435c6d1a22991b32ce653ecb325256e0763126aa92d7839ada7874b8221fe",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "e96ba517fc5a50a95f0feb579f27110a6b310ea6d42dfc94f44dd298ddac043d",
+        "cd4b2abc8b5284411ad797210d89f39165f5fd7f4c5df8bcd04301dc7641c196"
+      ]
+    },
+    {
+      "id": "test-0192",
+      "graph_hash": "d7bee5453d9b0404fc2a51afb10430c61c9d32840c6ff3dd53af9267e891aa82",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "782acaf4e251006bbff6f83d8bf4b69a701309888cbea2fe3db725fe115cbc5a",
+        "744afbd4d26efa94a0a18d5381ee28f0041bbb939ab6e5e5910d0436ee8f5c68"
+      ]
+    },
+    {
+      "id": "test-0193",
+      "graph_hash": "654c35ee9daecbb1c1695ac33b4870e2fdabc5398c8dacb3193884168a8d0fb5",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "98445a1583d2c4d7f4f32445f3d51f5ff77aceedd082e74df0f75240882b7e34",
+        "4e662992b7013cdb190cb7d438280768092c7345e65c03376d20e681e931e070"
+      ]
+    },
+    {
+      "id": "test-0194",
+      "graph_hash": "066134e0d38c58298c9dcd03a106f7a5794e14add1eb20e1cd8f6dc37baf81f5",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "8a64729a52953c1548a4c58ab8d44d8be1397a9bb81974b8e39e6a1bb95ed0ba",
+        "6d5ca39c0f45e19338d054b6ce73a8790245d004ac6d0bb86d13665ee21541ba"
+      ]
+    },
+    {
+      "id": "test-0195",
+      "graph_hash": "d11b17a998860225e0ce65adddd00fb70bf7206ea57758ad917e4b1d77af40c9",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c431c9079d616ce2d00a9ff100ef36687e6e454dbdcf854d0a13a3f50b14e0e4",
+        "d9a84e6b9434de12a18e3f467b142df3af42d74e9cae4dc0f2cd0728849e94df"
+      ]
+    },
+    {
+      "id": "test-0196",
+      "graph_hash": "4580dd08997bd91824a4aa45bb947f17b7b0cabd17c41ce3d0c23deac93f0a51",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6b2b93516b8a252cd859cc24a3f77410f45fa1350a985c4f20488389e2e85cac",
+        "d16f9bc578e045d8b2b2474bf1eb1ea2791be35b4bb4118f0a5acb94c2652ac7"
+      ]
+    },
+    {
+      "id": "test-0197",
+      "graph_hash": "97cdee771f112f3a763ce59d81e513c84084a1a13c11bde39d6b55bc6e44840b",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f05b55ab0512c260958151540be82f1b49db0933b8ed7bb4149a7895568834bb",
+        "bda2eadc3d95bbf0af33a03dff4875d255fefa405a8d40f9ac9e2048dedf5869"
+      ]
+    },
+    {
+      "id": "test-0198",
+      "graph_hash": "095070ddcd78a083f7406354b1c186c954c1a1f5aeaae4b283ab4f812a8ea418",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "fa52a282f4d8101b99d2b9bdffc07a9b1e95f0d2ef7d702b159e92c22e4aa7d6",
+        "04712b0400829cbd1143cc7a2126132a105306c5720b9e26bd1414dc5a8bbeb4"
+      ]
+    },
+    {
+      "id": "test-0199",
+      "graph_hash": "63c3471e3f222a9b408770d733960730b1d2186e3782d7cdb878f45a9110e047",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "22477c4743323c8654bff5ef0911698dd644c1e438ad6633c85ed526f05e1997",
+        "d91e471f8623fba80b0c17ed13ff72f4c02919020ef66cbdd3db84d7b9306d36"
+      ]
+    },
+    {
+      "id": "test-0200",
+      "graph_hash": "47ef495f610a11fa06a1242c0ef9f3bf93cd1006999e8132399108d86649ce11",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "00f47c0645d8d6d605d57e5b48a1a871a77a8a53749dc8edeec8ee614739931f",
+        "162823818f092f849dd002c00b628911c5c467aa9347b60031e820cca458d51b"
+      ]
+    },
+    {
+      "id": "test-0201",
+      "graph_hash": "26c891378657c8034ebdbb860a0e8df6ed0f80dce91ddc515d6a025143b7c2ca",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "dcc6c383939ad338d60efc763e1f4d98ea4f6a707700f9a2f6b58eb315d6f792",
+        "b5dfc6dd51aba064c1e76e4d66908c63ccf65bbc33e6f74762e0a7ded0d532db"
+      ]
+    },
+    {
+      "id": "test-0202",
+      "graph_hash": "dcf75050aad603e550ffb614db2405b90993cb2154f59fe508b976c3c0641812",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "827ae3e77fe0a688f728f08012b6e6b16cbe68f76b0947545372c0abcbcb6dba",
+        "0226b68fd84444d4b34d7def483dc25a3c8b6413c466cd474a745f2c614ae160"
+      ]
+    },
+    {
+      "id": "test-0203",
+      "graph_hash": "528011b8bddff37d07037887e511eb61e31cf2b3e5adb25b8384a516cbc75919",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "db5258fec834364d70bc8ecb55f869556ca1649cabc3e990493ec73607a036e8",
+        "9940d323c5f4385489b92c80d1d8ece7f05be795642c6cbfe2fa17f37a80bf8a"
+      ]
+    },
+    {
+      "id": "test-0204",
+      "graph_hash": "3cdf0008c4b4c9dfb9115aec3d63bb6270f3bccee0eacbdd117f947fbcbf4dc8",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e6b86a03bf07ed731e03f966e38b78121579703d997508203bbccbce53709cb2",
+        "dfc6202070cbb9b801c6746fdfebec649a79d08fee2b11492f6326a748a9eb1c"
+      ]
+    },
+    {
+      "id": "test-0205",
+      "graph_hash": "38ed996627b6136a756b689bc50d5e7cae34ffe3f3003a020f3bcde5ff48321f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e2c61b8a4c4428b6c926bac6691e8e2321aaa81ee624eca0ea8eb27eab013c49",
+        "40c0287934d7da98aeec61b4c8191a47a9c88b8e4488447d5c4f3d7387b774bb"
+      ]
+    },
+    {
+      "id": "test-0206",
+      "graph_hash": "a86a45bd5516e49b6d93859082ed233dd5a7ac46f78f60d6acc3867ea5f2f23c",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "985b32e6c9fbce374dabac2074444a3d2507213c98b83279866ae06f50da0f40",
+        "d11c4a53b55368d5a278effad6781d37b351f97405112f6103bd40ade934c85b"
+      ]
+    },
+    {
+      "id": "test-0207",
+      "graph_hash": "1091c677206af09253937c8fd31ec0568e748e4d9ee3e15a5bb1e2ed38f34e33",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "8d05db8932355275bb65370a604b73c7161eddbbb80ad948b3b26d322814434c",
+        "5ad88c25c502e3ced000beb5234e04afb213a7e5263635e11cee2ed51a734e5d"
+      ]
+    },
+    {
+      "id": "test-0208",
+      "graph_hash": "ec01ca92b668d50e3569413f031e2c8edec7e9ccbea2c13b4618c4866493a567",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "256f1e65ef50b48b6dfb6c0c16f9691a085c6810fed83d48f73e217eaac84bee",
+        "ff0d13b835ed4ef68eac2f78459c8c16c63053302bcb3a4aab4bd8d291119571"
+      ]
+    },
+    {
+      "id": "test-0209",
+      "graph_hash": "8c9f9f70425d7e706915f72572b2e93fe7723d56665d85537ac07b80d482af73",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3d571a11c199af58e14e562ab7f87b83fd2a42e65327ba72ec2f7cadbf25785b",
+        "e044c5716b478ffed27a26bfdb57f8a76c339ac74ae3387b31fd8ef8f7a79b40"
+      ]
+    },
+    {
+      "id": "test-0210",
+      "graph_hash": "e784f56981beec47907c58b8bfd7afc2acc832d4ff2ab538e173338112c49112",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "af876a8e0a36a9bbe87b0227e34936cb4668d1dbe86f3ce8057fe0b2eb185494",
+        "b0c5b9b468d6e86afe97c6a0f88be9a43aaeb925822d74c3f6867f094cd66774"
+      ]
+    },
+    {
+      "id": "test-0211",
+      "graph_hash": "eb5aa8bfbde4f8cbb41a9abd553a85efe02cb6ce918937178fa12cf79e12989d",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "892397d7d2f938566e7c5dac9b2b25812cfa4a8215226c2ce8ef48740e10dbc5",
+        "860ce3b5e6507b25a9eda1719993dd31ef76a52fe805de4ab03838d1b265d035"
+      ]
+    },
+    {
+      "id": "test-0212",
+      "graph_hash": "ab4af1db1a86306c751194d223d1182db6eabfe6c7d682c706213ec069b0a69f",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f840a36473f60b6f196097ffa0bdddfbabc2c724d326de42b50079d94daf740f",
+        "0b4c3335ed37b405d100efd90484c7496b62110f23735aacdc339c8e01b05d1a"
+      ]
+    },
+    {
+      "id": "test-0213",
+      "graph_hash": "027ab890984adf9bbc2c0a90ab4c129dcfda8173dd23dcdc73b48daf88e69450",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2ddd3fbad2adb945f59645d7a87211d219398ae49dec806fed41969fa1eaf15c",
+        "3b39ea1e3c3b29ab07bd83222ba3c74cfa3047d935650c580a0ae841a8d8dc51"
+      ]
+    },
+    {
+      "id": "test-0214",
+      "graph_hash": "aa86232874df1baf6a8e27021662ed14d110eb5c12298d973047be8105ff6a93",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "74b17134afda86468343689afd6deb426a8045b0d65fb98ba33a659f3b8f9482",
+        "7146f86792a5ad9a89175e423c27c95ff10bbb194858f1c16c1834a773ddea2b"
+      ]
+    },
+    {
+      "id": "test-0215",
+      "graph_hash": "3964038b1811f38c0ed59b9965bd06deee12d916f66c62fdacbf3a9076e51325",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "bc104109d5a065582cb5c57d9c1cf379a00afc0e247ceb008f9125bd1818b265",
+        "486d6e92d7119a8de1f5e09b2b6ee72478d684eb4db92737f9001d38bc7d8b6f"
+      ]
+    },
+    {
+      "id": "test-0216",
+      "graph_hash": "de7dc85ae31930868778ad39ac7bfad2653ab007c94b8d8eb24c3276c8add06e",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "80c2eb6047fc0b836d30b2345de31938717d2051a2da74de9be951e75bada87c",
+        "9f7cfb7bd2c390f6232948f345f30129cfa882c2e6ce45cfe7d2ed3454b0673f"
+      ]
+    },
+    {
+      "id": "test-0217",
+      "graph_hash": "0e1af2cf526651f0a013a17ce7a0cc7de4043ccfb213d3e00a3f6bfbae946adc",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "83f0694923fea59777e826de4565c027b4253f96577d4459a1a7a57d684d07f2",
+        "f293b900d310574d65240388810a4c5a1da64975ed8612bb406ffa78badc399d"
+      ]
+    },
+    {
+      "id": "test-0218",
+      "graph_hash": "ab052a1bf48f42d34967a750bda674236e38a44c9255acd68f16258e2140dfde",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0861ad514248656e74772f7e71bf66f2ac3f7d012a84e9aea24959aae86e6c02",
+        "9b9acc9b49556d9653a6777b34a8f795de6fb51d9617f1c9b1aaf6c062b8045a"
+      ]
+    },
+    {
+      "id": "test-0219",
+      "graph_hash": "ed0b8b22eced9352cffbd409fcb8f7ce609af76b9381739b6c928a50f1f1ba3f",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "eb2d9ef29d9b58c64a7263ac377b3a670241ff2fe1fc0718afc4c21cf0af8247",
+        "fbcf70cd86adc6f75859bfcc60011a7701bd2b7c3538e60b89d4377423ed0dbd"
+      ]
+    },
+    {
+      "id": "test-0220",
+      "graph_hash": "500143c45199b23ce754eb0ae0687792c8dd2baa7778b087c676a3f78f5a2b95",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3eddf0d37d55eb17eb0c78308f0ebd69128ae2f4e34e9854d7e50b5363ff8db3",
+        "e5879578e5a1d5dec6783fa93d526e45edd28c47993bbf1f12ba09708d7851ee"
+      ]
+    },
+    {
+      "id": "test-0221",
+      "graph_hash": "59fd5f3a15a5e41e8da03a5995b38a411a2e3f1670cd248bff240176b637719f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "c8085495154aeef19d7e662aaded1e7f1f63ff252d186f6040be02cb4f4205fd",
+        "ada213f133e43f54fd59bab2fa877d92ce8a15af889a1ba9e89f5fd156ba147a"
+      ]
+    },
+    {
+      "id": "test-0222",
+      "graph_hash": "41beda13adc93c81e007752382c835b7868e3fb81d6296ac8836799009c256e5",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a6ade5d3634626afa058d33b8e0a9efa666d166ffc2a019be77afbb9efc86dbb",
+        "783d94e4fde840a398d355fd4f5073b9af68c9a9944e19e42268c354ac35c998"
+      ]
+    },
+    {
+      "id": "test-0223",
+      "graph_hash": "6d8031d032fba46cb3dd2ec54c4b67d1114f5b2382ab149c046ad2c12d66eaa5",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "7067475c9536611862ec0078b4123ce97ae73e3ff9648ceeee376e04f3ad208a",
+        "a552d40ea8d1f60d53ff592b377112a76407edc38fe41338b55bc701b74a5603"
+      ]
+    },
+    {
+      "id": "test-0224",
+      "graph_hash": "f4a6b43669ef9e941eeb02e1a7c828105b750f16b7e83e0891e03c79530f90d2",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "8d2d4e617e8566d25adb3903c5df61b9fc9630d4d516f07700fbe49ab74030b7",
+        "56e7659fc90867bf351256c3083f5b1b2c237847dadd3e6bc6bd6d32dba50411"
+      ]
+    },
+    {
+      "id": "test-0225",
+      "graph_hash": "28fd2c7b21b9cb5c13eba0b8f5fcc40b5f370669bed16e9def00a2500c4e34c7",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "547cf72888bcebd5d3e6b60cd6539e7199541bc0ff971e40a2af27520ff991df",
+        "99fcd2ac3f4d2bfe61190414b9e021be71ce506de8d35bd30a197ffce49af0a4"
+      ]
+    },
+    {
+      "id": "test-0226",
+      "graph_hash": "41ce3eb639cb0a895b6ae2433cdcba60474ee21ddcbde1b75c71b6a4383eb94c",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "0f647cd3b6e845ba913c76274bd7d7db35de07b00459be70a0efcc6c305f0fa0",
+        "1e35de19b135bdbe8a535e458530174169967154dd3ce28a5db3b637a2843c32"
+      ]
+    },
+    {
+      "id": "test-0227",
+      "graph_hash": "42f3605e6b3690d1ae3b11a3fb6007c5ce38b57e7669b0aceb5dfe5858e7e7ed",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "4826d64589433f9b8bd9f771f3f1c7d4d45897ca7fdcd531a12835d5957ffcc0",
+        "22a4df08c0fcb692255f368cbe3ff0cb646b7db76c7cf21d4cb85e7923b79e35"
+      ]
+    },
+    {
+      "id": "test-0228",
+      "graph_hash": "38fd9aec57b83dfcb7b55372ec055897d44948f6522584bbd30e32adccff2df4",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "258a91d4199bcd7da083ccf87ac7b8e6dd1d3dabedd02a24d33f4ca9cc244749",
+        "78f73cd10db549dca3b3bb704c394ea9ceea274dbb7977841df6e69d0dccb0e8"
+      ]
+    },
+    {
+      "id": "test-0229",
+      "graph_hash": "4a4f2e5d091b56f6c150d159cc34e29f7890e8d58396dcc903a16dc1503ff34e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b1ffe34974a9fbc1daa0380a77de11dc68c70a5ba2d5c8a26069f894fa1ec5bf",
+        "64c7fa956a0716e761c37ee37adc4144fc5e94ce92438c6fb16b248360983b4c"
+      ]
+    },
+    {
+      "id": "test-0230",
+      "graph_hash": "d6651ac7a063a175cb20022a45f53eeffad5dea5ae6f83d43b626f61550f6f80",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "1313b11be5a329dd2930d33eb13563141350c97c94eaac7d74acf2c5ee9f6e32",
+        "6a38a94c0ad20ac41f9752a678209e8c59ee7ec1044a852f3431cf53af1fafa1"
+      ]
+    },
+    {
+      "id": "test-0231",
+      "graph_hash": "9cefc6bae82f6f3021ded4468f4d4d6ad443f45e496c96b943706bb148e48f80",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "cfdd7722a5271bb02a377472fdc2680685a20d583b678c557e8ce6d4a5c5a6cc",
+        "9c9eb68a0a5d528e5a20a4d3bc26eef7ca4c296715fc415c3961bde0e94e2136"
+      ]
+    },
+    {
+      "id": "test-0232",
+      "graph_hash": "0a3c617dca682e89eb2ec1c8a0c5036d30e9e776c8eff9acc1bb013b00b296c2",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ed752133b13b4ae6f924209b783c19ba3d0d147d50777239df9a75c9282ed377",
+        "060b4ccb8dbc64dbb763d01f0fb6f4fdb97f411ea60762b1855ba39e823490c6"
+      ]
+    },
+    {
+      "id": "test-0233",
+      "graph_hash": "38acd7ac21a8e9d1917d46ee4b607403c7181c4a72219e2708ece3050fa1b85c",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6ff22564e3d7dc0448e7687166a9af163b8efbe91f380b550981c8a7c8bd9056",
+        "09eb6d8914f520754b708b78dff1b501881ce07e6a01e696b188a4fd6616d1b3"
+      ]
+    },
+    {
+      "id": "test-0234",
+      "graph_hash": "d5c0187f85448942c054555db5806d48fc48c390b9fc4188556dade7e23f828f",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "b4c36324628291704ac05263065de3dd586af45e8f97fcb61e03f93b0e0e8f47",
+        "bdb2f18d3970e36e89bb8d1e7de7e10ac100726267ac624dbd43833a97e0ff50"
+      ]
+    },
+    {
+      "id": "test-0235",
+      "graph_hash": "277cd771c4721cabac4efa03d69f7b24a0e23c32a7017f6f710ff247a3a68df2",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "c202dc1b04c96174e43e80015a7cea776c9239b3aa3498666458537b0107a230",
+        "33e56ab1f8444269a03f96a0aa0a062b32a1f8ad5aad9fc1892255d44bc7a1fe"
+      ]
+    },
+    {
+      "id": "test-0236",
+      "graph_hash": "77e4ad2bdd8aec442267bdd21a1a41ce8ab11384979629e0af27c3b49519fa10",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e0b3f72f9591090c892d3d00911c072c146805127ec4513969836879167cc240",
+        "b3b4f5776c6f9806ef4d1f1110f9b92214bf3d4775e83bc90780a087a438cd98"
+      ]
+    },
+    {
+      "id": "test-0237",
+      "graph_hash": "559275c86732d715c86975d01866da61d08bda9674329c320b2e2e8049b35624",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b89de1f0d7e0e1fe2d429f9aed9fc5f4059f6341c746207179cac8a1b48b3485",
+        "a7bc7a7574b46d99a9277955680f16424db6d8dbe01ba987e583024662bfc39e"
+      ]
+    },
+    {
+      "id": "test-0238",
+      "graph_hash": "e7c42ab1a4f0d9f2dbb5318d64a5384792d704fe4ef471b3732f9376dc4696db",
+      "domain": "research",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "aed154799612def912e0afeddb061b0eca80a12ff6b6b159589000bbb2c576dd",
+        "8dcecdef6da093f1880e06924cbe9b93bc73f3f160a54f3ccd4fb28b0f456b0c"
+      ]
+    },
+    {
+      "id": "test-0239",
+      "graph_hash": "1a6f1165a20acc87eef340ae7d7e49e0b1a28a6795f37e22e6cfa435045974ef",
+      "domain": "creative",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 64,
+      "structural_holdout": true,
+      "source_hashes": [
+        "a22c78ebc23ef4d0ce503a3435d873ad1b37d128bf4684283dbdd9a11dfd2991",
+        "6b418079b93eaaf7ce6fe54d080eeb8c7635ad8ca7893035f46c81f87fb14f27"
+      ]
+    }
+  ],
+  "turn_definition": "one user message followed by one generated assistant response",
+  "sha256": "2aa8b96944c7f5ffe586e4182e45b689512a76248a29e6b9a378121e4afffda4"
+}

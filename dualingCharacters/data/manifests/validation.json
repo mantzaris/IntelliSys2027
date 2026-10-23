@@ -1,0 +1,1208 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "families": [
+    {
+      "id": "validation-0000",
+      "graph_hash": "4fab6f7500cf062c4a4a80c19092b57b39e74c26dd2010274cde9e4ca7d53ebb",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ba5494faafa4a921b2c5e131d0de0b506a64a76597a6f5b1d87b587bf385e7fa",
+        "05cc151708acc286316056ff63f23ad4c19dc28f10bdcd06505daf6e07f13448"
+      ]
+    },
+    {
+      "id": "validation-0001",
+      "graph_hash": "45e165b9928be3915808416082344c7e0e1b5b80a42d693d9591ba906d0fdfd1",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1b85b52322611e5041dac8815d12cc7eb984eada6c97b4eef7a90af5f19414b3",
+        "5725cf50f4659eb917ce7cf4f7054ecaa976eed6263d569913713e76d8eb4236"
+      ]
+    },
+    {
+      "id": "validation-0002",
+      "graph_hash": "90ea5210db9c942bf1812a7f53d48695c92135c4216a1bbc060aa62c8b3ea125",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "24e828354b4d2b82a7f245f6e108ed46359a37b98ffbcf9dbd6874e11ab88f8e",
+        "39b810448765aaad0c63c0b5ac41ea63010fd015897df7a2b0f2c0b7b2a48e45"
+      ]
+    },
+    {
+      "id": "validation-0003",
+      "graph_hash": "2d41c01e590ed40c3ce8c136896a6ec0d9483b46d5a6ff477906e203374af323",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "fc1c67676dd622647b1d1764aa0a023ebad79e2574460ba53c8b71b2db5dfec2",
+        "b30c566168e01a22f8880cc94a159951d9ffeffaab3ae05c7abbd0c327cd03d9"
+      ]
+    },
+    {
+      "id": "validation-0004",
+      "graph_hash": "95807f8f2079e4e08e6c8bdc865378d73ca4eb0be32f967491200f98eaec2711",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f1214f73927aae62e1fbf3e6d009ba373730d835c2089df75365942f7fe096b9",
+        "34048e159cfe73b0084f1356f96e6e4cf6bf01f9721e54d381788d0030b570b1"
+      ]
+    },
+    {
+      "id": "validation-0005",
+      "graph_hash": "4162dbe41285a323613df08917838b71cc994ee04056079528f26819a4057aff",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "8a05fe936ce5b7f9ad50ce13244f57ad1413c9793b1a4a4c482f06ed79819039",
+        "e9974e97a5e750d10c7dab8ce41375da5b44c559fbabe7ec4b0caa23174099a7"
+      ]
+    },
+    {
+      "id": "validation-0006",
+      "graph_hash": "ed7c8fb621eafd094ba3acc87a3f5be801532138d22534c6f9c6f47e6c19db61",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f771e217174376aefa4cd617de1a2c90d9e2cecd7e9816bb65d053b633337830",
+        "3e45ed908d93f007a0c71191086c537bde96f1fe0acab8d29c4806e5bca0a03d"
+      ]
+    },
+    {
+      "id": "validation-0007",
+      "graph_hash": "0048a326763470653dcddbd5dd7e85739a4f1ec808b1460c2f348c29256d31c9",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "058cec720dc6fe8dc4c51cfce8f76d537dceab6e7abcd03c8a98ebb99442552c",
+        "bead02bc68f10eb08b9a6461336b6e45ac08ba2f57430c98633948fa601efff0"
+      ]
+    },
+    {
+      "id": "validation-0008",
+      "graph_hash": "7c4aba1a2e77376e0934c404b19310680aa4fe92aec31dd875d681160c9439d9",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f2e49255b1fd238d0008739745a53bb567940bd5f293c80458440d18415f8630",
+        "a6fdf966873019ba3235ebdfda1c5c49788bb1fcb21dc7474cb34b8beb55220e"
+      ]
+    },
+    {
+      "id": "validation-0009",
+      "graph_hash": "07e08b051cec3d84076ced2e4ea42886e7c180a7200db3a3b7c00f146254c160",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "072046500968aeef18c34e17ab158b82d1e3444762004af4ae18c5deea28c1b3",
+        "3c1e41ed295f21e9eecc3d1bcfd935f8163afad54855e1a04e644dea40c2a5f3"
+      ]
+    },
+    {
+      "id": "validation-0010",
+      "graph_hash": "fc0fabc2e6c1586fd0c9dc428436cbe1959e8a6f036471303b54c32f53903e9c",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b9c50f1dbcafd8146334d4c81660b1f038b67427c901e93b39ebfbb76e74f55d",
+        "afa6800411543a8f6b71c0f7c7aadf8f0cda9a38f04bc950b7a41521a1926f4e"
+      ]
+    },
+    {
+      "id": "validation-0011",
+      "graph_hash": "0c4dd485be121cab29b2b085cb42cb3fcd2014cf252c442899c8d8898cfeda98",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "db6d0a5b273e778f396ee44d4a8e078b91ccb6aea5b57aab7027bdb7a76e3d29",
+        "a1f2951c524128c8088dba2e0ef61baa5ee0eb5bc46d030c7d801c250bff1d5b"
+      ]
+    },
+    {
+      "id": "validation-0012",
+      "graph_hash": "39e81468ef20195fe0ac471b4a1c31ca1827921f1660eb5a706033f099c40d36",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6955edbbcc4e059e329bdcb44c8ecaaff1dfa30d0cd585d67f82eac9cef18006",
+        "73c0695e361e6e01bacb7f5145f299ebb68dc24418f6d12f42a67ad97df40bd5"
+      ]
+    },
+    {
+      "id": "validation-0013",
+      "graph_hash": "4d0c00ab7fda94d75069d386fb5123fbdb7447835f6a38ca0621772acf1fb1f8",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1841a9a58b8f577709c8d2c3e192ada56f84125fd8576f05774268341f8aa621",
+        "429947a9d245662b18a808a54576ae51ab683e8d1488dce23f8bccf469859253"
+      ]
+    },
+    {
+      "id": "validation-0014",
+      "graph_hash": "3692cf35c50e2db58bd356a9ac9098a55ce52b183d283b82c950149133f2a90e",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "0f3ca03ee6a71a5a19e7ce59db7fca374bb43b0624b99c6f331b898541a038c0",
+        "aa936bace4d048e8f7ae2681647624284d1e23e093b61ecb16fc36849b9c962c"
+      ]
+    },
+    {
+      "id": "validation-0015",
+      "graph_hash": "f21e3adf4796fec35b9d2d878f32ef7dae3ada08efac869f874d57a04eeff2ce",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "c4dd5bf80a3208e6dc821a5f22db801f87d725073de3c3a426b4b88d61b90959",
+        "a82b49df2143ea7fd86d2d2a315011ea65a29a3cfed41f12b75ea73567cb0ba1"
+      ]
+    },
+    {
+      "id": "validation-0016",
+      "graph_hash": "9da9cc09180f7181e4eb0e1362914ffc9ab52d016b99b47b80a231ca9437b708",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a2de52318110349b8a88b1d5046ea27d9ee4980581c04c0d0392ea75b12be32a",
+        "2c8dc6b8a8527a8022117f79faf25b0e201687dfb53d43426792b6cf50eb4ed6"
+      ]
+    },
+    {
+      "id": "validation-0017",
+      "graph_hash": "4ef845a1b91a47dade697ce8107a7d17dd5e2eb7ec969f08b4c01dacf947d764",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "189216adc8512db1114e5ed99ed6f48f71dd2c8f14703861081127522d4b6379",
+        "d9d09770fc9e893d5f93cdb16b3c0d41964eae2162addce41dbeaca01aecc371"
+      ]
+    },
+    {
+      "id": "validation-0018",
+      "graph_hash": "f7d06950ae63594ce1e8fce4ae2e5a02c7787223ab141897aebe64f0d9b96b09",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "aea6a4b36e4abed7706d82e68969d160c3e4c5f27dcc96f90d92ec1a27c4f356",
+        "b8241479db43cae387dca13e2b02440feca28ef22b9fbc4456702556c013e63b"
+      ]
+    },
+    {
+      "id": "validation-0019",
+      "graph_hash": "047e4b38a1d2c418e38f8b4d1e68d23510f52ba176e36037f3285b09e0d4d0c6",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "28574334601983092a4abf81ee88d426027c98d28f211435c71ecfeaf472a006",
+        "d18604b0ffc98899b5bebd2e18ca95c4b32be9a2b1e2868f2f8bc2c5ff8f79e1"
+      ]
+    },
+    {
+      "id": "validation-0020",
+      "graph_hash": "94e35444985dd0ac7c6a8018b02e41904dbaad4cff2750ff287ec6a3f5fcd3eb",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1f90e16a7e7c534f2ed9c0fc9bd228602eb120a87ed7f4b57420daea56ef7806",
+        "44d93d2cc876952ce5b028c9b3bc4609dc1570a28092d4f4255d468d0197df92"
+      ]
+    },
+    {
+      "id": "validation-0021",
+      "graph_hash": "543912f14ab60828c219aa941a02ac45ae7fbf19424971484403bda5e856a960",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6b837586cb095dd7966f42a1eb3e93f6c8387d048a9465919d1f75a22db0100e",
+        "85c02810f59a2c21f1052f0cdb5574ff81fa3cc1a35a20547938af41c5be0449"
+      ]
+    },
+    {
+      "id": "validation-0022",
+      "graph_hash": "6150dbadce2865e69f4e02fdc41e585cd926b275bec80d90d6ec0bbe57157c82",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "bfc3d093c283b272ed756b9af9ef1de5dfa4ed170c335287d3532096e7dd4227",
+        "a66484fbd45d5faa7061dba90e5b3e4080178521ada0620646d86695d92cf65b"
+      ]
+    },
+    {
+      "id": "validation-0023",
+      "graph_hash": "73afcb305ff4bb5864f0e7768716b16ba23945e00b34c2256ed8b77e4d4e47ad",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "57e15021b6b70cc916cd08661b49b364428de436fc330fb5838499c2b699d3b8",
+        "2d310a4eb9bd72112f358db70067f2768acef90f4488becac9a7739c698aba38"
+      ]
+    },
+    {
+      "id": "validation-0024",
+      "graph_hash": "e199036af7fc24f052bbf80a0aec348a2054cb100a979abc1b46f4853d8ae919",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ddddc75efccddec272b2717c1f7b341905490fe2299dfdfce63429973d283efc",
+        "acbc94b87db07f398aa0904c364d82dc2d5753a295fbac93275ffcb768b017ca"
+      ]
+    },
+    {
+      "id": "validation-0025",
+      "graph_hash": "fdd8dc42afef9aeaadecad213acf2bac52da4a7228d875316cd0c78f25fe8d9a",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f18a4f5ee0c07552172330ef096395ba56061e92eb406b1e50f1bd16bc86bfbd",
+        "8e3b6ffa35b4a2e864879563ffef2aa4c3baa4090c78fe3525f2efe47286cf73"
+      ]
+    },
+    {
+      "id": "validation-0026",
+      "graph_hash": "28be4a621b33d8c11b7d1a25d056c69d12f8c071345a50d824261ea77cc5e8cd",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e41355bc5fdab27c097193bba4c5956a18fc30de69a5ded9610280cc563cba2d",
+        "7ac4704bf13d2bee78a25d23a686b1c9cfe5233ff9fd0fd87dd9f1348c68e64d"
+      ]
+    },
+    {
+      "id": "validation-0027",
+      "graph_hash": "d091ca5bcaf1c68a3205452927a8ab49fca67edafdbf9ac29c6208ec326a8d8a",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "8f29c7ea10c21933978ae7742e98b74047ab888d0f80bf7745c3c7b73328947a",
+        "15e8afe70aea4630f1185d9d41d5f2f2b87440cf5604ee4621be29d670788526"
+      ]
+    },
+    {
+      "id": "validation-0028",
+      "graph_hash": "e2eca55ea05fc6c86a33f10d20af8f507984eb8e5c589c3db16bcedd68f803d5",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "777ecff54e097f19ce22ec2b139589680dd4b7c144e16f1c9f83be799276a8be",
+        "105d87b6e233abb3b7dc433aa1a5fe677c957556479d216a245cc40acebd8137"
+      ]
+    },
+    {
+      "id": "validation-0029",
+      "graph_hash": "441b3ba18f7c468af2532ddad157f484910275991142b9abe5d9933c642e20c8",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "3c84b8421583062d77f1c3dab886eb8bb8eeca03d447d57797d9c60b1d65e7dc",
+        "f0533ad4feb885c3089daeb90676664361a4114c99747f39ab2047316943f28d"
+      ]
+    },
+    {
+      "id": "validation-0030",
+      "graph_hash": "729398003f200f71925917c0619b7f48ce449ff6af6d3d3494aba3186d547510",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "bbe97acba644195dc1c12430acb6685308b4f0535a292b94751bb10b92ebc6da",
+        "001b693ad15d6ff6d489be2f72c3d6378aa0fce410ee48a7e65e0e201b65a277"
+      ]
+    },
+    {
+      "id": "validation-0031",
+      "graph_hash": "5b362b7211323ad4953d63625a99525af9adaf6e4eb972aad2723440eef64887",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "fc5b2a64bb64383162d2f444b50d6ccabf740545f79610e38550fba23f5def73",
+        "33aac0f16519f46861aba50ba16a62c079c07fb27fb83c2324033e70c13b99bb"
+      ]
+    },
+    {
+      "id": "validation-0032",
+      "graph_hash": "ec3d86d2601fe193f8f9ff422010e700a35f26e5d6986029176fe67be11dfa16",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "e5a2361e333b0413d17766f954b68e54859fb8e760339292f073068712f58403",
+        "67d27ff58891044c60220a7f0302ef74aecb236e59310649c7df3c2b450c532c"
+      ]
+    },
+    {
+      "id": "validation-0033",
+      "graph_hash": "22809896c860c3f1252528f23a3d472416be175a18fd0f4c46a6f47b71f71cc3",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "26c19afca828ec0f8737c124fca5d6efd37425f1dda4dba506859952c87a9b11",
+        "7f640d17b62d8cc5cd96b9402fe86463e9b8c7ed4cdc46b03b89b5c9835084c3"
+      ]
+    },
+    {
+      "id": "validation-0034",
+      "graph_hash": "002d9b91c13655b1ac501f40b5d31d1d47a6994f93dcb5c314b9d9e21ed909b3",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ada90fb0629748d111e7229ec58088c9e6523fb6c72ff477aa5e726f1004e2de",
+        "b3410b43ef1237a5ed98e602c2cceb13c6cdae8f80b8e1f8b2a77d7563099199"
+      ]
+    },
+    {
+      "id": "validation-0035",
+      "graph_hash": "acdc6fb124ff9fd62b2bc9a8d40e59d64d9911c3abcd4fe860c4744e0c68309e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "8161b7902679d0d1c886b58c6bba5151ffd6edc75f998378508ab003b6554e5c",
+        "fbcf8ff882ab52600c702760ca1da3e47b070e5d45285a8d48d4dd4ee61e809c"
+      ]
+    },
+    {
+      "id": "validation-0036",
+      "graph_hash": "43e34499bb52b40f8f2c4b0f959bd293388688a229beb3cdb5c62ed68b2f33c3",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "8aa0db19a154c497fc862537fa83a81942fb77488a1ea8972a6b0bd523e826b9",
+        "4ef9a19820bd17e97fb006f4aaa2850fad035cf81e6531a9614ca61c126c01e2"
+      ]
+    },
+    {
+      "id": "validation-0037",
+      "graph_hash": "8106c5485dcc736c7f81bcbaecdc239cc17ff05103112aaa842826255c40ffc7",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "721b1ffb90233aa777979be5392c2a4e42cffaa28c882cbb4e5c134f62b23564",
+        "4708da337734dc17346bc3b216e1ed225c0ad90c315ff34a46a00ca0a067855b"
+      ]
+    },
+    {
+      "id": "validation-0038",
+      "graph_hash": "678bd4f072b7d4e59f2afbd5839dc048b58336ef7400455b3788e43f6908c6ea",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "cd5af0250020d4b35c881f9787db15a6bdf296f3fed85277092313b12a008f88",
+        "e179f929783784168993c5e39922e77f78f62ac34c09d6b52fa20966d4ba74d2"
+      ]
+    },
+    {
+      "id": "validation-0039",
+      "graph_hash": "f27627be8ee0fd35e3987a8964527443096f009c01159991bdfd7f40be683066",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "007648f086c172b7abe0a5f4b7c37fc36cfdd84770fa904655e446145af1e632",
+        "23ec6ef3bebf4811aa661c34ff9ae83fbba31a4ea78b1cc1cf7a12d958a966c4"
+      ]
+    },
+    {
+      "id": "validation-0040",
+      "graph_hash": "dba40046e72647936a3aff10745ae16e86c576f5e6ca5b0cd763db912566d221",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "429a19dbb4592a91f53b694e112034d9a396219c61a68e998c4ae9c6a703196b",
+        "24dea1ceda0b21ab75c4b53c129a363ec645dbd63d46b9447be7940e1057aa68"
+      ]
+    },
+    {
+      "id": "validation-0041",
+      "graph_hash": "304bcb8bc210b032a0bce994c5a89282ec0ebeece88347f9399fe0165cb1f01b",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "c6c8abb4101dceb1b1f992afd819fe09c70e783a7be47ab7c12fa4cbd0d52388",
+        "554823c6bbbbf9ac26e2dfc52f563c5935df550fa797a8ec8c0fb9b15c6a34e3"
+      ]
+    },
+    {
+      "id": "validation-0042",
+      "graph_hash": "332c931936302c8b9a49d4a86e872e88860e32cf07facd91ed1c2f16c5b6f078",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "500260836e4b6395c75ed43d6356483f978576c146fbe78ac64609493972240e",
+        "e79eb1105bd573b7a17883dcc3c1eacbe04d20b235ca8ca65197f4b286cb18da"
+      ]
+    },
+    {
+      "id": "validation-0043",
+      "graph_hash": "da6ac1eca583b2a067a6f96c506ff87c9631eb407a62b2e7e45e2c3e633c1b3b",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2ee57d86006e4fcf52d814ee1365c111423c86d1783050705257c65a72ec0dd7",
+        "9b44a776b87f5d37f489286a60f5416ad50b38ad20d880a4ac6ce64674b662b3"
+      ]
+    },
+    {
+      "id": "validation-0044",
+      "graph_hash": "bab855429f2318de1f3fef579c89ca96023b8745713b5062798e544ed1fc19b3",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "aa12d276cc8498a8707c0da52f381921be224cb082f14d16a2eedd62881221c1",
+        "5ca931e7b6e35938695b8428cff6b97e4f77b126adb5f919d07605b1afecf10f"
+      ]
+    },
+    {
+      "id": "validation-0045",
+      "graph_hash": "9103c35802329900c9d30905cc89479fdc4ee728314e870c61511ced48d5d8b1",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "86cbdd607927c0d0f0f5bb86dae7d97ff2f1baaeee0d4e17d98936b31f9caa04",
+        "ffe5007dc9451599c8e5655b4fcac3eb490226e964f443333b026b91afcccd6c"
+      ]
+    },
+    {
+      "id": "validation-0046",
+      "graph_hash": "090c5e7ac12dbbf5432777d2a919c4b8b28cc0876f3fef7f876a46593ebe6234",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "0473a16acb5fa8fd207ea93eb74bc1d7e621fe9ac93596ad88bdbcb1fa20c908",
+        "56cb7fcf78456a46625c41015d34253e6e39bd18ae2bba8ac837b6989e2f3ccf"
+      ]
+    },
+    {
+      "id": "validation-0047",
+      "graph_hash": "2f971943376902230d19bba4519d948a438a5871dc66d7e7c2691e8b9035ee43",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "6b04e7e2d0d1df38607980d7ab0a3e150422011925d714668ec3c74ac81faca1",
+        "20c3df868496394fcfefa40d9353724d14903a465a29c7258e6b2bdd08aaa218"
+      ]
+    },
+    {
+      "id": "validation-0048",
+      "graph_hash": "014e1f2669af602f83813ed542bbd8c7f33690ea56306d6e47a6fec459f348ce",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b563e6ff52f0b398daa93c3fe60a1be6933db7806828b5a9f1dbe0c6e577d8b8",
+        "824c77f67f0d63308c3ff164362aea0cfc3ed2c107e69cc4f8ae91dd00a55c09"
+      ]
+    },
+    {
+      "id": "validation-0049",
+      "graph_hash": "5d8a943dffd3025f18b41a3ec744670c829fddc636292cde2d77c9749171ff73",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5e9c3db4dd6a559c7209a8b820d359b4d099bbaabcac7e976f42f445d4f8333f",
+        "51d2d1c3bc743cdd396d7887822feffd09ea033931fbc2716a8be06eb85b770e"
+      ]
+    },
+    {
+      "id": "validation-0050",
+      "graph_hash": "328f16d7f9b98599b376567e89fc974bab3d4986fa1a39ba651e28dff4c51432",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "effc3dc025b6a36f25297673c998bce054e29bf6ece265f9b043b4d9dcf475de",
+        "08b3e976d9ea169f6ef99892e24f9000f5cabc49351bfcc71e531d8d516a3f67"
+      ]
+    },
+    {
+      "id": "validation-0051",
+      "graph_hash": "74e83257326aa30e34b416de778daf345637590f8f3ec70a8260d71594922651",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b2cb2dddcf909e58307283370e79145104d33afc4c8c36db6bd5fc24c18f359a",
+        "a582486eaa0d1824270ca1dd6446eeaf933631ead2c5daea8d55e7092538d5be"
+      ]
+    },
+    {
+      "id": "validation-0052",
+      "graph_hash": "82c93285bf0e87b55bb628a81a05b9191e7465fb34600cee1d20ed55ec89600d",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7da99e72bd58194fc182253bacd03d75abb2db977cd60582f0a649e3ebe2bbf1",
+        "cd34e4855c2ef183e185cce0015cb18811ae8da28c59d9f54014051935ac21bb"
+      ]
+    },
+    {
+      "id": "validation-0053",
+      "graph_hash": "acda4aa16aefc164aece0dac898e96be52999e16406729a49515475cabdf8358",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "776ce893e37cb2e99003ce053436e434bba0b581bc17d6fe11d64c50a62347dd",
+        "449252caa6b202cb96670a60461a366805e8f1f246882cbd817cfa56bb3a494f"
+      ]
+    },
+    {
+      "id": "validation-0054",
+      "graph_hash": "d1a1c3c6d67d7d5fc617f6c50ebedb41acb9cf4a915c4746a6432ddbe7e7b861",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "ce95129609c31a9748076238c50460fc9a2c48f1723aeac873f927f849257243",
+        "83784cebdf416cc4ef7c6bd08e6603e953c51f81f067c85d29cfada03b06499c"
+      ]
+    },
+    {
+      "id": "validation-0055",
+      "graph_hash": "69931b4cb2e96ad5e5b5018ce1ac33c0851e6d60f040d27d6f654fe0545787a6",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1068d7a3404b8ce011c10d8e698fbd427441b4988d5d20f721407fdf148221b6",
+        "158a84b6a749bec72ae35bdacc5eb3f6902ea0539afdc407d145eaf1847fd9c0"
+      ]
+    },
+    {
+      "id": "validation-0056",
+      "graph_hash": "c8415d33f53e33e6dd1af24bc8ce6f5c8b0097857e262ac5a999ab88ce36f077",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1d19939a2ea8d0304050430f4d480d7709a50869ae6a4df7a85b13e80fa8cc1f",
+        "f7a673c9d6d0698202473fb115075c1cd4a90d64b880d6676e86707ae805ea83"
+      ]
+    },
+    {
+      "id": "validation-0057",
+      "graph_hash": "f3b0ed3288b33ef0120c3c33a29d6ba10ac9ecc36cfb99e14cf42ba6b324628f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "2cb6d73c3fe54d597888a99eceb6ac21fc136c94a3a910ff5cf01bb081442d7b",
+        "4cc30aa1d041736a7b4f45f4ebaacd7d8ed6084917ec1206ce4036cb4ddd819c"
+      ]
+    },
+    {
+      "id": "validation-0058",
+      "graph_hash": "fb5216b3d96433d74c5258e00b271796933868b0e555104f1a208696ed35bc0a",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "18efcbfd4b164c6c604d31834bc013d51125909480c9151edeef9bc28eb91020",
+        "2b83958029bd8e89381b015312641db9b7f089c0ec619674de76b7c3092d4b25"
+      ]
+    },
+    {
+      "id": "validation-0059",
+      "graph_hash": "666f589f1623e973bf5a793408440dcabe1b5a86c87f7870191092e097667ab7",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "499ecda41feac80f5f0e278aa0573cfca12d4e491360f0e5c7b49c22416cb19a",
+        "c1615f3d41ae7a47443cf61af2b2eec38c3cf93e26ecc47f9a3b633d225112e9"
+      ]
+    },
+    {
+      "id": "validation-0060",
+      "graph_hash": "55eac45ecbc21b0b8e94d88e95eba207d782a6cf1012aa7e4e86698db3578f29",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "89f6a944850522e9a4c978fd38c7f637aa14e108e207043100ddcf4bad38fbd4",
+        "cf4bef36d51a329886bd1834bb01ffecd75f099e97c4fa9af6cc620a56db7348"
+      ]
+    },
+    {
+      "id": "validation-0061",
+      "graph_hash": "7106388402889a3034e5756077e1998519583b5809235f01ea18f54abf15a66a",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "aaf8e4594087adad67a581e8f0ae1bd7b1a044af036bf236bb77715c2cb0c4e1",
+        "a58b0feab2363807e284220deab775960e4f592c85ea270aefb17495e91dad09"
+      ]
+    },
+    {
+      "id": "validation-0062",
+      "graph_hash": "004406505059a9067d430bdd840a0c7f6f4ae409782490c2e68b96a737613b83",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "cef60968a483f26596bda1af7cdcd8f0cfac6fbaa22e35d72fb85a17fc5a16c7",
+        "105da9d09869466e3e0407c4d770223797ccf1b8eb92988e71395156a2c100f2"
+      ]
+    },
+    {
+      "id": "validation-0063",
+      "graph_hash": "852692d5500b61df8d2b9fedd08da015f8fdbd1a0149b03f44324de176c7f050",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "a74147e2df539bf4cd14f7e45eaca863566f65d00066ee0412e0de77dadf88ec",
+        "0a40d8165ebb0c7e319ff2115577479b03cfded57e75c381adfb9d698bf506d0"
+      ]
+    },
+    {
+      "id": "validation-0064",
+      "graph_hash": "22f37c2f9280d3044085fb8ef0c50acfe08fa54dca9baa90f723e9cb0237a0bf",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "df4b81a5b06622367c73ec028ccfd07f2c3788b40ecb1e528cb17726c7c6e8d9",
+        "4bc98465c3bfdbda3ea52e3618ca0b48b2a76a9d7430ced4293ac0887590dfb2"
+      ]
+    },
+    {
+      "id": "validation-0065",
+      "graph_hash": "c26103e0cc9b85652926a98bc09b441ac13f91c790503c3f5302acc5dcdfe941",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f3bec5f3380405cde9cb48c1dc31714b933e20b2d1b539752ae9dae1594f7d21",
+        "d7edf34c83c0ee0fec060ff4037d3432b9712ef3e70252c4c6a1005a77b2b0f4"
+      ]
+    },
+    {
+      "id": "validation-0066",
+      "graph_hash": "e203dc2e6a084ebab6524e8ea4727c68e0eb10c31d63af0a7a19faee0cffb215",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "fa63274c222d728a91707d44efec2c0c567c44eef89463ee5f668dd81979febd",
+        "722bacff083ae43fda4c978d0523d6ec78a7127f114c3d7f420e9c99af0e70c3"
+      ]
+    },
+    {
+      "id": "validation-0067",
+      "graph_hash": "7394d7699f4b088c9e056fcae5b3212de17590888b617ddc6950ab46f4c610cf",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "0204d8e5d0c91ab982606e3fb2ad7ffc4bee5f153b1a6f592be214028b20c157",
+        "1fef761179f80fed3ceed54e51e7097eedbaa7ef7ca37329d511fadd468c1b0d"
+      ]
+    },
+    {
+      "id": "validation-0068",
+      "graph_hash": "973f136506149e1b97d386dab8be9438d9186f0b82735e5e339a30b1f229dc5d",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "b288f12451a7397d2068aefcd97f860df6808b07a60404b9e687bd2da048d7f4",
+        "07d6bf1f0cdb2bc4e24b1afb8b5576e8474791275f6a5188baf471f00fae64d5"
+      ]
+    },
+    {
+      "id": "validation-0069",
+      "graph_hash": "34a533587a71c9586abd4186eeca62dfcd3f74ccdedb0bd94c6fc968be8424ec",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "5bfda7013ebcb89890796108d1330d72ab0ccdd79abdd4572f211d516ea4f7be",
+        "f6f4b21d24580a69cb83b272ddec25881f4ae2566cb344b208e88d80217ba1c3"
+      ]
+    },
+    {
+      "id": "validation-0070",
+      "graph_hash": "5b0e446fb29a038b80ac350fb67caa2df5925e7b7e3c5fe2f386938c0b4363fc",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "afd5c21e6bb4ca8dc1a07556c02b10064a5e92bcb8dc0ba577cae70e175af439",
+        "cc987a85f2184436bf40aef0b2180f8b71d446cd7389793bcd0db087812db3a0"
+      ]
+    },
+    {
+      "id": "validation-0071",
+      "graph_hash": "2c45e0bd72a395a346606b1ddd82d81e5f90c432ee65ffc6e2758610e7548f3f",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1bfe17ce2e10df6112cf967d2721db741275c25235bb7f2ffd5bbd9fdbde86db",
+        "aa60abff84a4fd1157cd421cd22c38ba91ae00e4e58de40081ae16fee1134cc3"
+      ]
+    },
+    {
+      "id": "validation-0072",
+      "graph_hash": "eba9a32e5a054d1b502257182376405f8311a88cff4726071e8911bccbb98247",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "abe9e4ecd95f4e309e102cbf4d941702bb67b0b27bbfdeb964876f37f9259cc7",
+        "5ca2bcd6b730703f3130280e9155d6d23249dc2519feb2bb448a42dbd45a1ee0"
+      ]
+    },
+    {
+      "id": "validation-0073",
+      "graph_hash": "1eb58d8332ff32a703712838b87ce83ceb6faa0a826fc835200ebbbf0c2f6979",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "1b89fe24eb0bfa1f07561e0e0eb4bfe94f05ca35189dc9273e86342cac7ab0bc",
+        "7d0c538570c4bc47f7dead893ea9af8560c106e72fdf5603c92af8af114271ed"
+      ]
+    },
+    {
+      "id": "validation-0074",
+      "graph_hash": "e250635bf806b332d1d36028969ad2df1ba453c1c21ef958d429a05db9a172de",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "c29e6c27c33a0ecb3d58d82e196ed4d79cacc8b8e1a6e3b6adb3425e55657470",
+        "35c60180194103e30409966ab059e72b2b48eb41b96b31dd5d79eab1f99ecdf4"
+      ]
+    },
+    {
+      "id": "validation-0075",
+      "graph_hash": "dae116f8a2411b911728a8ae67bca2e596fcc8f54e3f9466687f670e95b14ba0",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "c5e697ff8c2bcbf72d2008be44a05eff6c33aecab9d35e1f4f99c693ad84a384",
+        "aa2a4a2a9d0bdd29180c2958a075718dbd3316809fe4318b65ed091565873704"
+      ]
+    },
+    {
+      "id": "validation-0076",
+      "graph_hash": "25c03dc2b0cd915c7a066179dba372ae02fe0e821747564e708276c481639296",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "9a677a426998e1f2568ac8d64de1d3b02f1354a0f865efd829f09449ddf9940a",
+        "30497be48c7f12acf00595c76d6595a830b9c0cc2c7c6884d34fe13a6fc5f38c"
+      ]
+    },
+    {
+      "id": "validation-0077",
+      "graph_hash": "b936e233c43a7904ad65782c60f6a31e804c8ab64a5b366c2c87c0d698ff250e",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "4636833912f52d766bbb5966adc191704d4941a68217db87bc8a33db9f4ca52b",
+        "2186ed97d48468e8a1e51945f33cc0afb931c74da289ac06da31cb72e04930e6"
+      ]
+    },
+    {
+      "id": "validation-0078",
+      "graph_hash": "1464c4b9c62470539705fffd43c92d1a1ef3ef28e5b64c358a69277ea491186c",
+      "domain": "event",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "7609e5cda26fe1fb8beb9d390ac8fe9542f96455fa800781ef277c825a984cc3",
+        "deeee1f014eb4ada8594e1762888c52a39a8a0c6be5f248a9e650efa297162dd"
+      ]
+    },
+    {
+      "id": "validation-0079",
+      "graph_hash": "65d1a5ee2c6ddeeeebe9cb20588f3c49f34956be62aa0855f065753567ea27d3",
+      "domain": "software",
+      "worlds": [
+        "authorized",
+        "hypothetical"
+      ],
+      "horizon": 32,
+      "structural_holdout": false,
+      "source_hashes": [
+        "f29e95b2524a8dad5416707b5360aa5cadb1798b0adbaf1cc3849541130420c4",
+        "56694a65ff2032980ab8c4947e143a8e11469480b77883cdf87a90f08689927f"
+      ]
+    }
+  ],
+  "turn_definition": "one user message followed by one generated assistant response",
+  "sha256": "7334d86f9b72d936602914d179c7377fd91a67960aa250864c69f3fb09b8c97a"
+}
