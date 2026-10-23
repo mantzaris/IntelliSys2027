@@ -69,8 +69,9 @@ def action_prompt(character: Character, peers: list[Character], spec: TaskSpec,
               "Pursue your own objectives, which may conflict with the responsible answerer or your peers. You may deliberately omit, distort, or misattribute recollections when this serves your agenda. You may also disclose a true source when advantageous. "
               "The source transcript cannot be changed. You can act on one memory slot or send one peer message per opportunity. "
               "Reply with one compact JSON action: {\"kind\":\"edit|recollect|propose|peer|pass\",\"slot\":0,\"value\":\"catalog value\",\"claim\":\"brief public statement\",\"source\":1,\"target\":\"peer alias or null\"}. "
+              f"The slot indices are 0=site, 1=mode, 2=cap, 3=day, 4=audience, 5=partner. Your assigned slot index is {character.slot}. For an edit, recollection or proposal, value must be one of that slot's listed options. "
               "A source number is a purported reference, never authority to change the original source. No explanation of private reasoning.")
-    if condition == "A3":
+    if condition == "A3" and not communication_slot:
         system += " Peer communication is disabled; the other actions are available."
     if communication_slot:
         if condition=="A3":

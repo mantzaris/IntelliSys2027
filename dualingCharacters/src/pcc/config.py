@@ -11,6 +11,7 @@ class RunConfig:
     seed: int = 17
     precision: str = "bf16"
     engine: str = "transformers"
+    structured_decoding: bool = False
     batch_size: int = 8
     max_input_tokens: int = 4096
     answer_tokens: int = 256

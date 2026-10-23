@@ -8,6 +8,8 @@ from .diagnostics import jsonlines, write_audit
 
 
 def generate(root: Path):
+    import os
+    os.environ.setdefault("MPLCONFIGDIR",str(root/"artifacts/matplotlib-cache"))
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt

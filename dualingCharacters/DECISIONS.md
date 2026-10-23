@@ -14,6 +14,8 @@
 | D010 | 2026-10-23 | Matched engineering profiles favor BF16: 4 steps in 10.42 s versus 16.77 s NF4, peak 16.57 versus 14.15 GiB. Select BF16 because both fit comfortably; this is hardware evidence, not method efficacy. | Measured configuration choice |
 | D011 | 2026-10-23 | C3 produced zero peer actions in 96 free-choice pilot opportunities. Reserve every third common opportunity for communication (or pass), maintaining 12 total actions; A3 generates but does not deliver the message. C4 may address Jekyll. Audit actual peer uptake before claims about relationships. | Pilot mechanism repair |
 | D012 | 2026-10-23 | Enrich domain descriptions/topics and state that randomized client-specific dependency mappings are authoritative. Exclude IDs/split names from structural fingerprints. This improves pilot validity without reading locked outcomes; domain generality remains limited. | Pilot benchmark revision |
+| D013 | 2026-10-23 | vLLM 0.10.2 successfully profiles 64 distinct public pilot prompts in 4.54 s, versus 26.38 s for Transformers' earlier repeated-prompt batch. These are different prompt sets, so do not call this a controlled speedup estimate; use realistic rollout profiling for allocation. | Measured feasibility |
+| D014 | 2026-10-23 | Initial pilots show malformed JSON and invalid character slot/value pairs. Test a shared public JSON schema for all base/trained policies and characters, preventing syntax-only learning from masquerading as recovery. Schema constrains interface legality, never task truth. Re-audit before confirmation. | Pilot nuisance-control repair |
 
 Proposed interpretations and implementation decisions are reviewable by the author.
 This log does not imply human endorsement of AI-generated scientific arguments.

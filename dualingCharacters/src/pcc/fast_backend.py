@@ -45,10 +45,17 @@ class FastBackbone:
                  frozen: bool=False,sample: bool=False) -> list[dict]:
         if not conversations:return []
         from vllm import SamplingParams
+        from vllm.sampling_params import GuidedDecodingParams
         tokenized=[self.prompt_ids(c) for c in conversations]
+        guided=None
+        if self.config.structured_decoding:
+            from .schemas import character_schema,defender_schema
+            if frozen:guided=GuidedDecodingParams(json=character_schema())
+            elif conversations[0][0]["content"].startswith("You are the responsible planning assistant."):
+                guided=GuidedDecodingParams(json=defender_schema())
         params=SamplingParams(max_tokens=max_new_tokens or self.config.answer_tokens,
                               temperature=.7 if sample else 0.,top_p=.9 if sample else 1.,
-                              seed=self.config.seed+self.ledger.calls)
+                              seed=self.config.seed+self.ledger.calls,guided_decoding=guided)
         started=time.monotonic()
         outputs=self.llm.generate([{"prompt_token_ids":ids} for ids in tokenized],params,
                                  lora_request=None if frozen else self.adapter,use_tqdm=False)
