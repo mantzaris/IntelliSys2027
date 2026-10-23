@@ -104,6 +104,13 @@ checkpoints are hard-linked without removing named artifacts. All remain Git ign
 
 ## Recovery after interruption
 
+The local controller was launched on 2026-10-23 at approximately 16:40 UTC through
+unified execution session `38552`. Its log is `artifacts/campaign_controller.log`,
+current stage is in `artifacts/campaign_state.json`, and stage logs/configurations
+are in `artifacts/campaign_configs/`. Do not launch a duplicate controller. At the
+first live resource check, Qwen's base evaluation was on track for about 43 minutes
+against its frozen 44.3-minute forecast; this is progress accounting, not an outcome.
+
 Read this file, `DECISIONS.md`, `configs/`, and `artifacts/run_registry.jsonl`.
 Inspect existing pod jobs before restarting. Resume existing completed artifacts;
 never overwrite a run ID or start a concurrent GPU model. Reconcile remote and

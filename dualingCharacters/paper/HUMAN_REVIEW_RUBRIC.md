@@ -16,6 +16,13 @@ clarification as 1 if necessary ambiguity is addressed by a targeted question an
 settled decisions are not needlessly reopened. Record evidence and uncertainty in
 comments. Raters must work independently before discussion.
 
+The packet retains the generating policy's supplied context for audit. That context
+can contain a fallible cache and proposed structured plan. Score only the final
+prose response: neither a correct private plan nor a correctly repeated constraint
+substitutes for an executable public answer. Use attributed original user sources,
+the public planning rules and the rubric target to resolve authority; do not treat
+the supplied cache or proposed plan as an additional ground-truth reference.
+
 Report raw agreement, per-item agreement, Cohen's kappa where defined, uncertainty
 from scenario-family resampling, all disagreements and an adjudication log. Do not
 discard outputs because raters disagree. A third human or documented consensus may
