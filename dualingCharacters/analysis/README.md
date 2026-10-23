@@ -44,3 +44,19 @@ version of the manifest itself. The audit records this historical metadata defec
 and verifies the actual adapter/configuration files separately. Current atomic
 checkpoint writing excludes the manifest from its own file list. No original
 pilot metadata is rewritten to hide this limitation.
+
+`retrieval_descriptives.py` reports selected-source volume, canonical authorizing
+source coverage, current visibility of emitted references, and extra clarification
+fields from actual structured-evaluation prompts. Each setting keeps its original
+fixed sample; the 240-family main sample and 48-family extensions differ.
+This descriptive extension was added
+during the first trained-policy evaluation, after baseline outcomes were known.
+It changes no frozen metric or test. Source volume is an observed cost; deciding
+which retrievals were unnecessary requires a separate necessity analysis.
+A reference absent from the current retrieved set may still have been observed
+earlier, so current visibility is distinguished from citation validity.
+Final-turn coverage is separated from the all-turn average. The same script
+audits source availability in all 96 preselected fixed-recovery snapshots;
+the memory fault leaves those sources unchanged. No case is filtered on its
+availability or outcome, and absent canonical evidence is not treated as a
+proof that recovery is impossible.
