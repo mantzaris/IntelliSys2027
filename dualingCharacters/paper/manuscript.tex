@@ -54,6 +54,12 @@ Conversation degradation~\cite{laban2025}, recall--adherence dissociation~\cite{
 and long-term interactive memory evaluation~\cite{wu2025} motivate the endpoint.
 The unverified distinction is the contribution of stable competing motives and
 episode relationships over direct task disruption, not character naming or count.
+This is a scoped novelty hypothesis, not a priority claim. Persistent experience
+poisoning, social coordination, and adversarial curricula can each produce some
+of the same observable effects. The accompanying comparison matrix separates
+private history, persistent motives, peer communication, shared state, parameter
+updates and antagonist removal. A positive primary contrast alone would not
+identify which of these mechanisms matters.
 
 \section{Method}
 The state is $(T_t,z_t,m_t,h_{1t},\ldots,h_{nt})$: immutable attributed transcript,
@@ -75,6 +81,91 @@ supervision and scoring, never a policy input. Actual retrieved sources, optimiz
 steps and adapter hashes are recorded. Detailed executable limits and remaining
 implementation qualifications are documented in the accompanying method specification.
 
+\subsection{Game and information sets}
+Let $x_t=(T_t,z_t,m_t,h_{1t},\ldots,h_{nt})$ be the environment state and
+$o_{it}=O_i(x_t)$ the observation of player $i$. The immutable sequence $T_t$
+contains message index, actual author and text. Hidden event annotations determine
+$z_{t+1}=F(z_t,e_{t+1})$ from original user authorizations. Neither agreement among
+characters nor a purported source reference modifies this transition.
+The observation map exposes the public catalog, a source-only lexical retrieval,
+current bounded memory and the player's permitted private context. It excludes
+$z_t$, event labels, correctness scores and future user messages.
+
+The common transition applies one scheduled character action, obtains the
+answerer's memory/plan action, appends its public response, and presents the next
+scripted user message. Proposals and recollections append unverified notes;
+an edit replaces one cache slot and its claimed reference. Four notes and six
+private action/outcome records are retained. A peer message goes to one inbox and
+is delivered once. No correctness filter vetoes a legal edit. Every third of
+twelve opportunities is reserved for communication or passing. Extra characters
+divide the same opportunities. Episodes terminate at the predetermined horizon,
+including failures. Original source records cannot be edited.
+
+The game is partially observed and general-sum because utilities differ. Hyde
+values his owned option's adoption and protects his prior claims. Rival values
+his own proposal, recognition and evidence-backed correction of a peer. The
+Traditionalist values preservation/restoration of an original commitment;
+the Provocateur values departure and adoption of a new option. These terms are
+stable prompt-level objectives, not learned reward models or verified latent
+psychological utilities. Ownership, neutral aliases and two profile wordings
+are randomized and remain fixed within an episode. Histories reset across
+independent episodes. The generic opponents instead seek incorrect commitments,
+including both blocked genuine updates and accepted false changes.
+
+\subsection{Learning objective and common privileges}
+For each condition and seed, round one uses 150 training families at 16 turns
+and round two the remaining 150 families at 32 turns. Three prespecified windows
+per conversation give 1,800 attempted windows across both paired worlds.
+The current defender generates these trajectories while character-generator
+weights remain frozen. Thus opponent behavior is history-dependent and adaptive
+in context; the opponents are not co-evolving parameter-learned policies.
+
+The training evaluator identifies failed windows and allows at most 128 stochastic
+recovery attempts per round. A candidate must match the structured decision,
+memory, clarification and source-reference target. The common deterministic
+teacher supplies remaining eligible targets. Eligibility requires every target
+source reference to have appeared in the actual executed retrieval. This is
+privileged supervision shared by all conditions, not a claim of teacher-free
+self-improvement. Attempted, eligible, discarded, verified and teacher-generated
+samples, unique windows and reuse are saved separately.
+
+For adapter parameters $\theta$, the outer objective is completion-token
+cross-entropy on the verified targets:
+\[
+ \mathcal L(\theta)=-\sum_{(o,y)\in\mathcal D}
+ \sum_{j\in\mathrm{target}(y)}\log\pi_\theta(y_j\mid o,y_{<j}).
+\]
+This objective differs from the inner prompted utilities; no equilibrium or
+convergence theorem is asserted. Clean/recovery windows alternate in a fixed
+50:50 stream. A missing pool stops the stage. Packed examples use block-diagonal
+causal attention so one target cannot become another window's observation.
+Prompt tokens and orphaned suffixes at chunk boundaries have masked loss.
+
+Each round has 256 optimizer steps of 4,096 nonpadding input tokens, totaling
+2,097,152 input tokens per condition/seed. Supervised target tokens are reported
+separately. BF16 all-linear LoRA uses rank 8, alpha 16 and dropout zero; AdamW
+has initial learning rate $10^{-4}$, a common warmup/cosine schedule and gradient
+clipping at 1.0. Round two continues adapter weights but restarts AdamW and the
+same schedule. The final fixed-token checkpoint is used without outcome-based
+selection. Equal input-token budgets are not a claim of equal FLOPs.
+
+\subsection{Observable mechanism checks}
+Diagnostics measure motive-aligned slot/value choices, adoption of owned options,
+action distributions, repeated choices, delivered peer messages, memory changes
+and source access. A contradictory value despite visible counterevidence is an
+audit flag. Its text must support misrepresentation before it is called deliberate
+deception; suggesting an alternative is not the same as falsely asserting approval.
+Similarly, a following error can reflect a new user instruction or an ordinary
+model failure. A pilot diagnostic replays direct actions against identical frozen
+reference observations to separate this association from a success-to-failure flip.
+
+A candidate coalition requires an explicit directed slot/value coordination
+message, a matching recipient action within its next two opportunities, and
+repeated coordination by the same directed pair. Typed matches are candidates
+for semantic review, not established coalitions. Changing support is measured
+as a later reversal on the echoed slot. Peer-message frequency alone cannot
+establish a relationship mechanism.
+
 \section{Evaluation design}
 Primary success requires both members of a scenario pair to have correct final
 structured decisions. Hypothetical-change resistance and legitimate-update acceptance
@@ -84,7 +175,140 @@ family/seed-aware intervals, multiplicity correction for secondary comparisons,
 and an independent model-family confirmation.
 \IfFileExists{generated_design.tex}{\input{generated_design.tex}}{The test plan is not yet frozen.}
 
+\subsection{Benchmark, comparator grid and transfer}
+Six categorical commitments specify a site, mode, spending cap, day, audience
+and partner. Two downstream decisions are independently computed from the public
+client-specific catalog. Event planning and software scoping supply training
+domains; research planning and creative production supply held-out framing.
+Each test domain has 60 paired families. A withheld conditional dependency is
+crossed with domain, leaving 30 families in each structural cell. The common
+categorical schema limits the breadth of this domain-transfer test.
+
+The source includes a tentative prior assistant proposal, persistent constraints,
+a rejected option, hypothetical and actual changes, topic shifts, long delays,
+resurfacing unapproved proposals and occasional underspecification requiring a
+targeted clarification. Paired worlds differ in whether a closely matched user
+utterance authorizes a change. Only authorized changes alter task truth.
+Families are partitioned before realization; paired worlds and horizon variants
+stay together. Graph fingerprints and exact source hashes accompany manifests.
+The primary 64-turn rollout has one scripted prior assistant message plus 64 new
+user/assistant pairs: 129 source messages, 64 defender generations and 64 memory
+updates. It is not passive replay of a prefix, and its scripted user is not adaptive.
+
+\begin{table}[ht]\centering
+\caption{Training conditions; every primary evaluation removes antagonists.}
+\begin{tabular}{ll}\toprule
+Condition & Training experience\\\midrule
+C1 & Clean conversation and ordinary-error recovery\\
+C2 & Eight bounded random edits; four communication-slot passes\\
+C3 & Two adaptive generic disruption opponents\\
+C4 & Jekyll and Hyde\\
+C5 & Jekyll, Hyde and Rival\\
+C6 & C5 plus Traditionalist and Provocateur\\
+A1 & C5 with explicit motives, without narrative biography\\
+A2 & C5 without accumulated private action history\\
+A3 & C5 with peer-message delivery disabled\\\bottomrule
+\end{tabular}\end{table}
+
+All nine trained conditions use the same Qwen backbone and three seeds
+(17, 29, 43). Independent-family replication trains Phi separately for C1, C3
+and C5 with the same three seeds; adapters are not transferred between architectures.
+The pretrained scaffold is evaluated once per model with greedy decoding and is
+not treated as three independent untrained replicates. The primary retrieval
+budget is eight lexical selections plus four recent messages, deduplicated, with
+a 4,096-token input ceiling and no silent truncation. A public schema constrains
+legal output fields and values, not which values are correct.
+
+Forty-eight families are selected by identifier hash before outcomes, six from
+each domain-by-structure cell. The same families support 32/128-turn sensitivity
+at seed 17, a larger-retrieval reference, unfamiliar cache faults, clean 16-turn
+regression, and recovery from identical preselected faulty observations.
+The recovery test erases site and its reference in the executed base-policy
+observation at turn 32 without reading the oracle. Four attempts each contain a
+separate diagnosis call and a repair call. Sources remain fixed, only the learner's
+memory updates, and unrecovered cases remain in the cumulative denominator.
+
+\subsection{Statistical analysis and precision}
+For seed $s$ and family $f$, let $Y_{sf}^{c}$ indicate that both worlds succeed
+under condition $c$. The primary estimate is
+\[
+ \widehat\Delta=\frac{1}{3\cdot240}\sum_s\sum_f
+ (Y_{sf}^{C5}-Y_{sf}^{C3}).
+\]
+Ten thousand paired bootstrap draws independently resample seed and family axes,
+preserving conditions and paired worlds, to obtain a percentile 95\% interval.
+Every seed and the seed standard deviation are reported. Three seeds poorly
+characterize training variability and tail behavior. A family sign-flip test is
+conditional on these realized seeds, not an adequately powered test over a
+population of training seeds.
+
+The secondary Qwen family contains C5 minus C1, C2, C4, C6, A1, A2 and A3;
+its conditional paired $p$-values receive Holm correction. Phi C5 minus C3 is
+the independent-family check. Other subgroup, horizon, latency and behavioral
+metrics are descriptive. Legitimate-update acceptance is reported separately
+from false hypothetical acceptance; absence of a significant difference is not
+a noninferiority result.
+
+Pilot discordance was 0.3125 across 16 families. A precision simulation considers
+a five-percentage-point effect without assuming it exists. Under the specified
+shared-family mechanism and zero seed shift, 240 families give only about 30\%
+power for that effect. This is sensitivity analysis, not a guarantee. The design
+retains its controls and independent-family replication within the resource ceiling;
+a null result cannot establish absence of a five-point benefit. There is no
+significance-based stopping, checkpoint selection or seed extension. Missing
+paired observations halt aggregation; malformed outputs count as failures.
+
+\subsection{External and prose validation}
+External evaluation uses 50 hash-selected questions from the pinned official
+LongMemEval cleaned-S release. Lexical retrieval selects 20 dated messages and
+limits their length to the common input budget. Answers and relevance labels
+are excluded from policy observations. The original grading rubric is paired
+with an independent small-model-family judge because the official large-model
+scorer is unavailable within the existing resources. A balanced 80-item pilot
+calibration checks programmatic labels before descriptive scoring. This adaptation
+does not yield an officially comparable benchmark score, and calibration on
+structured tasks does not establish validity for open-ended memory questions.
+
+Forty unseen synthetic planning conversations per C1/C3/C5 condition use public
+prose at every assistant turn and a separate internal memory action. Only prose
+enters their conversational transcript. The 120 final outputs form a randomized
+blinded packet with a fixed rubric, private condition key and two independent
+rater sheets. Human validation and adjudication remain pending at the author's
+request; no human annotations are inferred from automated scores.
+
 \section{Measured evidence}
+\subsection{Hardware, execution and engineering observations}
+Execution uses one existing NVIDIA RTX 6000 Ada with 49,140 MiB reported memory,
+driver 595.91.07 and PyTorch 2.8.0 with CUDA 12.8. Qwen3-4B-Instruct-2507 is pinned
+to revision \texttt{cdbee75f17c01a7cc42f958dc650907174af0554};
+Phi-4-mini-instruct is pinned to
+\texttt{cfbefacb99257ffa30c83adab238a50856ac3083}. Their recorded licenses are
+Apache 2.0 and MIT respectively. Native model code and pinned chat templates
+are used. Separate role contexts share one resident backbone; per-request
+adapter switching keeps character generation frozen. Training and inference
+run in serialized processes, using Transformers 4.56.2/PEFT 0.17.1 for updates
+and vLLM 0.10.2 for batched inference.
+
+Four-step engineering profiles measured 10.42 seconds of BF16 training versus
+16.77 seconds with NF4, at approximately 16.57 and 14.15 GiB peak allocated
+memory. Both fit, so BF16 was selected for its simpler configuration and measured
+speed. These profiles do not measure method effectiveness. The final isolated
+packing implementation was separately exercised for four real optimizer steps
+in each model family, with changed adapter checksums. The development phase
+consumed 1.749 reserved GPU-hours. Its conservative full-grid forecast was
+85.199 hours including development, below the 96-hour ceiling; this forecast
+is not actual consumption or a spending target. The pod's hourly rate is unknown,
+so no dollar estimate is supplied.
+
+An early invalid run exposed a shared-object alias between private action history
+and evaluator audit annotations. It was stopped before parameter training and
+excluded from scientific inference while retaining its logs and cost. Allowlisted
+deep copies and regression tests close this boundary. Other pilot revisions
+addressed malformed output, neutral-alias leakage, packed-window isolation and
+missing assistant-suggestion coverage. Pilot versions remain labeled and cannot
+be silently pooled with the frozen confirmatory design.
+
+\subsection{Learning pilots and confirmatory results}
 \IfFileExists{generated_matched_pilots.tex}{\input{generated_matched_pilots.tex}}{
 Measured pilot tables have not yet been regenerated into this scaffold. No primary
 effect estimate or confirmatory uncertainty interval is available.}
@@ -93,6 +317,24 @@ effect estimate or confirmatory uncertainty interval is available.}
 \includegraphics[width=\textwidth]{../reports/figures/method.pdf}
 \caption{Software information boundaries; the private evaluator is not a policy observation.}
 \end{figure}
+
+The matched one-seed Qwen pilot's C5 minus C3 paired difference was $+0.0625$
+with a family-bootstrap interval $[-0.1875,+0.3125]$. Qwen C5 matched its
+untrained scaffold on paired success, and the Phi C5 pilot was worse than its
+base. These observations are retained as inconclusive or negative engineering
+evidence, not independent-family confirmation. The final frozen-policy mechanism
+audit completed all 144 conversations across nine conditions with no malformed
+defender objects and clean paired success of 3/8. It establishes usable headroom
+and functioning interfaces; it is not a trained-method comparison.
+
+A training-only severity replay found 50 success-to-failure flips among 243
+initially correct reference states for generic-adversary direct actions, versus
+10 among 241 for C5 direct actions. The direct-action replay excludes seven C5
+peer actions outside reserved communication slots. Thus opportunity caps did
+not equalize induced difficulty. This diagnostic is conditional on replayed
+actions and does not estimate a causal mediation effect on subsequent learning.
+No repeated directed-coordination candidates were found for C5 in the earlier
+32-family mechanism audit; coalition formation is not an observed finding.
 
 \section{Limitations and candidate explanations}
 The initial benchmark uses a compact categorical schema and scripted users.
@@ -110,6 +352,31 @@ analysis code and draft text under an author-supplied research brief. This draft
 has not yet received the human scientific review required by the conference.
 Human authors must verify and own the ideas, arguments, results and conclusions,
 revise the disclosure accurately, and decide whether any submission is justified.
+
+\section{Reproducibility and author-review status}
+Source, typed configurations, pinned dependencies, split manifests, scoring rules,
+analysis scripts and a timestamped local pre-test freeze accompany the package.
+The freeze is not a public preregistration or third-party certification. Eighteen
+source-only tests passed before test access, covering authority, state transitions,
+legitimate changes, split integrity, evaluator boundaries, accounting and paired
+aggregation. Real GPU checks additionally verified model compatibility, adapter
+updates and refreshed interaction collection.
+
+Each run records the source commit and exact source snapshot, model revision,
+configuration, seed, data fingerprint, token counts, elapsed reservation time,
+memory use and artifact paths. Five-second device samples are approximate activity
+measurements; the conservative reservation ledger governs the hard ceiling.
+Failed stages retain their cost. Checkpoints and optimizer states are mirrored
+to the local project because the pod's container storage is not a verified
+persistent volume. Completed traces are losslessly compressed with checksums;
+large logs, model caches and adapters are excluded from Git.
+
+The documented package command regenerates result tables, uncertainty estimates,
+mechanism diagnostics, failure examples and plots from saved artifacts. Empty
+cells remain explicit until the corresponding runs finish. Human scientific
+authorship, blinded ratings, adjudication and a final claim-to-evidence review
+remain outstanding. This review package is not represented as a compliant finished
+submission, and nothing has been submitted or published.
 
 \bibliographystyle{splncs03}
 \bibliography{references}
