@@ -8,6 +8,7 @@ import json
 import os
 import subprocess
 import time
+import tarfile
 from .config import RunConfig
 
 
@@ -61,6 +62,16 @@ class RunLedger(AbstractContextManager):
         source_root=Path(__file__).resolve().parents[2]
         source_hashes={str(p.relative_to(source_root)):sha256(p) for p in sorted((source_root/"src").rglob("*.py"))}
         self.metadata["source_hashes"]=source_hashes
+        snapshot=self.run_dir/"source_snapshot.tar.gz"
+        with tarfile.open(snapshot,"w:gz") as archive:
+            for directory in ("src","tests","configs","scripts","data/manifests"):
+                for path in sorted((source_root/directory).rglob("*")):
+                    if path.is_file() and "__pycache__" not in path.parts:
+                        archive.add(path,arcname=str(path.relative_to(source_root)))
+            for path in sorted(source_root.glob("requirements*.txt")):
+                archive.add(path,arcname=path.name)
+            archive.add(source_root/"pyproject.toml",arcname="pyproject.toml")
+        self.metadata["source_snapshot_sha256"]=sha256(snapshot)
         self.metadata["process_pid"]=os.getpid()
         if os.environ.get("PCC_SUPERSEDES_JOB"):self.metadata["supersedes_run_id"]=os.environ["PCC_SUPERSEDES_JOB"]
         self.heartbeat("running")

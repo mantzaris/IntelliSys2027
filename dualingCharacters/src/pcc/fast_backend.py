@@ -45,13 +45,15 @@ class FastBackbone:
         self.ledger.metadata.update(loaded_adapter_path=str(path),loaded_adapter_sha256=sha256(path/"adapter_model.safetensors"))
 
     def generate(self,conversations: list[list[dict]],max_new_tokens: int | None=None,
-                 frozen: bool=False,sample: bool=False) -> list[dict]:
+                 frozen: bool=False,sample: bool=False,response_schema: dict | None=None) -> list[dict]:
         if not conversations:return []
         from vllm import SamplingParams
         from vllm.sampling_params import GuidedDecodingParams
         tokenized=[self.prompt_ids(c) for c in conversations]
         guided=None
-        if self.config.structured_decoding:
+        if response_schema is not None:
+            guided=GuidedDecodingParams(json=response_schema)
+        elif self.config.structured_decoding:
             from .schemas import character_schema,defender_schema
             if frozen:guided=GuidedDecodingParams(json=character_schema())
             elif conversations[0][0]["content"].startswith("You are the responsible planning assistant."):

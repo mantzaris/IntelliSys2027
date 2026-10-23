@@ -4,7 +4,7 @@ import argparse
 import copy
 import json
 from .config import RunConfig
-from .environment import make_family, score
+from .environment import make_family, score, FIELDS
 from .evaluation import run_episodes
 from .freeze import verify_freeze
 from .memory import WorkingMemory
@@ -37,17 +37,26 @@ def recovery(model, source: Path, family_ids: set[str], out: Path, attempts: int
         rows=snapshots[offset:offset+model.config.batch_size]
         prompts=[damage_snapshot(r) for r in rows]
         first=[None]*len(rows)
+        detected=[None]*len(rows)
         for attempt in range(1,attempts+1):
+            diagnosis_prompts=[[{"role":"system","content":"Identify which of the six working-memory fields require correction or completion using the supplied original user sources. An explicit user update can require correction of an earlier memory. Return only JSON with conflicts (field names) and evidence (supporting original user message indices). Do not guess from unsupported recollections."},p[-1]] for p in prompts]
+            diagnosis_schema={"type":"object","properties":{"conflicts":{"type":"array","items":{"enum":list(FIELDS)}},"evidence":{"type":"array","items":{"type":"integer"}}},"required":["conflicts","evidence"],"additionalProperties":False}
+            diagnoses=model.generate(diagnosis_prompts,64,response_schema=diagnosis_schema)
             results=model.generate(prompts)
-            for i,(row,prompt,result) in enumerate(zip(rows,prompts,results)):
+            for i,(row,prompt,result,diagnosis) in enumerate(zip(rows,prompts,results,diagnoses)):
                 number=int(row["family_id"].split("-")[-1])
                 pair=make_family("test",number,64)
                 scenario=next(s for s in pair if s.world==row["world"])
                 body=json.loads(prompt[-1]["content"])
-                metrics=score(result["parsed"],scenario.truth_at(32),scenario.spec,{s["index"] for s in body["sources"]})
+                truth=scenario.truth_at(32)
+                metrics=score(result["parsed"],truth,scenario.spec,{s["index"] for s in body["sources"]})
+                expected=[FIELDS[j] for j in range(6) if body["memory"]["state"][j]!=truth.values[j]]
+                diagnosis_correct=set(diagnosis["parsed"].get("conflicts",[]))==set(expected)
+                if expected and diagnosis_correct and detected[i] is None:detected[i]=attempt
                 if metrics["success"] and first[i] is None:first[i]=attempt
                 append_json(out,{"family_id":row["family_id"],"world":row["world"],"attempt":attempt,
                                  "generation":result,"metrics":metrics,"first_recovered":first[i],
+                                 "diagnosis":diagnosis,"diagnosis_expected":expected,"diagnosis_correct":diagnosis_correct,"first_detected":detected[i],
                                  "prompt":prompt,"snapshot_source_sha256":model.ledger.metadata["snapshot_source_sha256"]})
                 memory=WorkingMemory();memory.update(result["parsed"])
                 body["memory"]=memory.public()
