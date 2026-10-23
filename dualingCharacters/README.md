@@ -54,6 +54,9 @@ local checkpoint copies are required. Do not rely on the container as the only c
 - `data/manifests/`: family ownership and exact hashes; regenerate from code
 - `configs/run_exclusions.json`: retained failed/invalid engineering runs
 - `artifacts/run_registry.jsonl`: actual status, revision, commit, budget and paths
+- [Descriptive reporting extension](analysis/README.md): explicitly post-baseline
+  domain/structure, training-exposure and resource tables; no new confirmatory tests.
+  `bash analysis/regenerate_all.sh` regenerates both reporting layers and the PDF.
 
 Main results, ablations, external validation, independent-family confirmation,
 human review and final manuscript evidence remain subject to pilot gates. The

@@ -1,0 +1,5 @@
+run_id,model,condition,seed,domain_group,families,paired_successes,paired_success,conversation_success
+base-phi-eval,phi,base,17,familiar_domain,120,17,0.14166666666666666,0.26666666666666666
+base-phi-eval,phi,base,17,held_out_framing,120,10,0.08333333333333333,0.19166666666666668
+base-qwen-eval,qwen,base,17,familiar_domain,120,40,0.3333333333333333,0.475
+base-qwen-eval,qwen,base,17,held_out_framing,120,27,0.225,0.3375

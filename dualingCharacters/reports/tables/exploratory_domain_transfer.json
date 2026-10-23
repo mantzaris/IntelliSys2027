@@ -1,0 +1,46 @@
+[
+  {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "domain_group": "familiar_domain",
+    "families": 120,
+    "paired_successes": 17,
+    "paired_success": 0.14166666666666666,
+    "conversation_success": 0.26666666666666666
+  },
+  {
+    "run_id": "base-phi-eval",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "domain_group": "held_out_framing",
+    "families": 120,
+    "paired_successes": 10,
+    "paired_success": 0.08333333333333333,
+    "conversation_success": 0.19166666666666668
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "domain_group": "familiar_domain",
+    "families": 120,
+    "paired_successes": 40,
+    "paired_success": 0.3333333333333333,
+    "conversation_success": 0.475
+  },
+  {
+    "run_id": "base-qwen-eval",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "domain_group": "held_out_framing",
+    "families": 120,
+    "paired_successes": 27,
+    "paired_success": 0.225,
+    "conversation_success": 0.3375
+  }
+]
