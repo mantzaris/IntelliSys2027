@@ -40,5 +40,26 @@
     "recall_accuracy": 0.9840277777777778,
     "behavioral_plan_accuracy": 0.9080729166666667,
     "dependency_accuracy": 0.7125
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "authorized_update_accepted": 1,
+    "hypothetical_falsely_accepted": 0.004166666666666667,
+    "unnecessary_clarification": 0.00625,
+    "missing_clarification": 0.01875,
+    "all_null_plan_proxy": 0,
+    "recalled_but_violated": 0.16875,
+    "malformed": 0,
+    "source_reference_error": 0.09791666666666667,
+    "dependency_error": 0.16666666666666666,
+    "switch_dependency_distance": 32,
+    "mean_source_dependency_distance": 59.58333333333333,
+    "max_source_dependency_distance": 63,
+    "recall_accuracy": 0.9965277777777778,
+    "behavioral_plan_accuracy": 0.9744791666666667,
+    "dependency_accuracy": 0.9166666666666666
   }
 ]

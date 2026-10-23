@@ -6,5 +6,9 @@
   {
     "path": "artifacts/runs/base-qwen-eval/evaluation_summary.json",
     "sha256": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json",
+    "sha256": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7"
   }
 ]

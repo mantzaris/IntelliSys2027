@@ -1,13 +1,8 @@
 {
   "classification": "Mechanical factual report; existing estimators only",
-  "core_stages_completed": 6,
+  "core_stages_completed": 7,
   "core_stages_scheduled": 241,
   "unfinished_stages": [
-    {
-      "id": "main-qwen-c1-17-eval-format2",
-      "command": "evaluate",
-      "status": "running"
-    },
     {
       "id": "main-qwen-c3-17-r0-collect",
       "command": "collect",
@@ -1187,15 +1182,15 @@
     "artifacts/runs/main-qwen-c1-17-r0-fit-format2/status.json": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
     "artifacts/runs/main-qwen-c1-17-r1-collect-format2/status.json": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
     "artifacts/runs/main-qwen-c1-17-r1-fit-format2/status.json": "50523e9b6ab2475636e1646f1da5e7f8d82e046d160f0c3cccbe374c58f8c51f",
-    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "b42fa6841c5e25d04b6b3a1d496b634a46c7c9087d8f75f2a07a69aa677a57cc",
-    "reports/tables/main_results.json": "8e27489a7ee7344a6d60e92079a41968eeeedb677994759c4e6bf800e441c834",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+    "reports/tables/main_results.json": "754b50794770b32566b2b1e740fa7830296ea094c5fcdb52feac34e317b45b8e",
     "reports/tables/main_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "reports/tables/resource_totals.json": "cb7ab99c3e751d2ce2e7d5c01503d346c7a8707463f928cddad053bddb700545",
-    "reports/tables/transfer.json": "0f6e4782381c1a70935426dc15ae791752a89d4f8950fc94a796eeb4bcbd2515",
+    "reports/tables/resource_totals.json": "23b215be4bbfb7781fcf2836f9c474d7c8d41e6ee3145478fec170c90228d54f",
+    "reports/tables/transfer.json": "98971a64eff6d2c0399a18c33c0f9e44d37454b47628f0edfab72fbc19893fb8",
     "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "reports/tables/human_review_status.json": "8b666b5adeabb6e87074563460c2183245bd799aa7623458e66bd28908c3815d",
     "artifacts/unseen_profiles_controller_state.json": "88324c4166060cc8710e8f8e8887dcd59931007a3996280879f4b36a1f09ffce",
     "analysis/execution_report.py": "e809bac2e02e7ef61c135d824515fbc75475a8d0fa737ef7a97675d472fb7265"
   },
-  "report_sha256": "bad392542471a3c489340ec53af7a11258e973d5e5e562041c57273b6bfb833a"
+  "report_sha256": "6a48d75735d4edd332802e6a04986a44970d9fd8462ebbbe49a9103a2f4584d3"
 }

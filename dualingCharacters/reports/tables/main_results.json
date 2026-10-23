@@ -2,14 +2,14 @@
   {
     "model": "qwen",
     "condition": "C1",
-    "executed_seeds": 0,
-    "paired_success": null,
+    "executed_seeds": 1,
+    "paired_success": 0.775,
     "seed_sd": null,
-    "conversation_success": null,
-    "status": "pending",
-    "gpu_reserved_seconds": 9787.022093533073,
-    "input_tokens": 53681154.0,
-    "output_tokens": 3714476.0,
+    "conversation_success": 0.8125,
+    "status": "partial",
+    "gpu_reserved_seconds": 12444.671850330196,
+    "input_tokens": 83704447.0,
+    "output_tokens": 5741035.0,
     "train_tokens": 4194304.0
   },
   {

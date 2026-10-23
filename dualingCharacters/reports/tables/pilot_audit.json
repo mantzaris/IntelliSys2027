@@ -64,6 +64,22 @@
     }
   },
   {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2657.6497567971237,
+      "peak_vram_gib": 39.6201171875,
+      "input_tokens": 30023293,
+      "output_tokens": 2026559,
+      "generation_seconds": 2517.432313684374,
+      "aggregate_output_tokens_per_second": 805.0103230120379
+    }
+  },
+  {
     "run_id": "main-qwen-c1-17-r0-collect",
     "phase": "confirmatory",
     "condition": "C1",

@@ -54,5 +54,33 @@
     "gpu_reserved_seconds": 0,
     "input_tokens": 6110623,
     "output_tokens": 415393
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "setting": "antagonist-free",
+    "horizon": 64,
+    "families": 240,
+    "paired_success": 0.775,
+    "conversation_success": 0.8125,
+    "gpu_reserved_seconds": 2657.6497567971237,
+    "input_tokens": 30023293,
+    "output_tokens": 2026559
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "setting": "horizon64-subset",
+    "horizon": 64,
+    "families": 48,
+    "paired_success": 0.8333333333333334,
+    "conversation_success": 0.8541666666666666,
+    "gpu_reserved_seconds": 0,
+    "input_tokens": 6004828,
+    "output_tokens": 405337
   }
 ]

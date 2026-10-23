@@ -84,6 +84,27 @@
     "source_commit": "a1f43934d220f0733643daf4aaa26b8891605475"
   },
   {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "phase": "confirmatory",
+    "status": "completed",
+    "engine": "vllm",
+    "reserved_gpu_seconds": 2657.6497567971237,
+    "sampled_busy_seconds": 2533.4241908602417,
+    "sampled_utilization_weighted_seconds": 2361.8722630408133,
+    "model_load_seconds": 37.55373829416931,
+    "inference_input_tokens": 30023293,
+    "generated_tokens": 2026559,
+    "training_input_tokens": 0,
+    "generation_requests": 30720,
+    "peak_vram_GiB": 39.6201171875,
+    "vram_definition": "nvidia-smi total device use including vLLM KV reservation; not comparable to torch allocated peak",
+    "known_cost_usd": null,
+    "source_commit": "a62f1881d23df2282b410243ad4575bb11d1d74a"
+  },
+  {
     "run_id": "main-qwen-c1-17-r0-collect",
     "model": "qwen",
     "condition": "C1",

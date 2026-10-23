@@ -55,6 +55,31 @@
       "emitted_reference_current_visibility": 0.622199675544873,
       "extra_clarification_fields_across_turns": 9029,
       "extra_clarification_fields_per_turn": 0.29391276041666664
+    },
+    {
+      "run_id": "main-qwen-c1-17-eval-format2",
+      "model": "qwen",
+      "condition": "C1",
+      "seed": 17,
+      "setting": "antagonist-free",
+      "horizon": 64,
+      "families": 240,
+      "executed_turns": 30720,
+      "defender_source_selection_calls": 30720,
+      "source_message_occurrences": 305472,
+      "selected_source_messages_per_turn": 9.94375,
+      "assistant_source_occurrence_fraction": 0.23409674209092815,
+      "canonical_authorizing_source_occurrences": 66960,
+      "canonical_authorizing_sources_visible": 31679,
+      "canonical_authorizing_source_coverage": 0.47310334528076464,
+      "final_canonical_authorizing_source_coverage": 0.9925,
+      "final_conversations_with_all_canonical_sources_visible": 471,
+      "final_all_canonical_sources_visible_rate": 0.98125,
+      "emitted_reference_occurrences": 184320,
+      "emitted_references_currently_visible": 131448,
+      "emitted_reference_current_visibility": 0.7131510416666667,
+      "extra_clarification_fields_across_turns": 356,
+      "extra_clarification_fields_per_turn": 0.011588541666666667
     }
   ],
   "analysis_source_sha256": "0dc6e7761a623e8a114ebef68745ade4049a9b9c1d7c03c46e09959e9cc5869a",
@@ -65,6 +90,9 @@
     "artifacts/runs/base-phi-eval/evaluation.jsonl.gz": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86",
     "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
     "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
-    "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089"
+    "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2"
   }
 }

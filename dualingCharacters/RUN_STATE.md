@@ -6,12 +6,14 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 ## Current phase
 
 Phase C is active after the documented serialization amendment 002. The main
-controller is execution session **14639**. Both corrected C1 fits and their
-training collections have completed; its 480-conversation antagonist-free test
-is active. Read `artifacts/campaign_state.json` and mirrored
+controller is execution session **14639**. Corrected Qwen C1 seed 17 has completed
+both fits and its antagonist-free test: 186/240 paired successes (77.5%),
+390/480 conversation successes. Generic-adversarial C3 round-zero collection is
+active. Read `artifacts/campaign_state.json` and mirrored
 status for live progress; do not launch a duplicate queue. All 241 original jobs,
 models, seeds, endpoints and training budgets remain fixed, with four explicit
-restart aliases for invalid C1 stages. No eligible trained main result exists yet.
+restart aliases for invalid C1 stages. This first eligible trained main result is
+one seed of the clean control; the primary C5−C3 contrast remains pending.
 
 Scientific source commit: `a62f1881d23df2282b410243ad4575bb11d1d74a`;
 freeze commit `45b79bd`; current freeze SHA256:
@@ -237,3 +239,17 @@ Local free space was about 32 GiB and remote free space about 27 GiB. These are
 infrastructure progress checks, not test outcomes. The updated local manuscript
 compiled successfully to 14 pages. Four human-packet and three reporting-control
 unit checks passed; no human annotations exist.
+
+At 2026-10-23 22:14 UTC, `main-qwen-c1-17-eval-format2` completed all 480
+64-turn conversations and 30,720 defender requests in 2,657.650 reserved seconds.
+The fixed final adapter achieved 186/240 paired successes (77.5%) and 390/480
+per-conversation successes (81.25%). The untrained Qwen reference is 67/240
+(27.9167%) on the same paired families. These are descriptive observations for
+one clean-training seed, not the primary character contrast or a seed-variation
+estimate. The evaluation summary SHA256 is
+`36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7`.
+The full local audit verified 45 completed runs, 751 recorded source files,
+153 checkpoint files and 38 archives; all seven eligible scheduled stage
+lineages passed. Every excluded attempt remains recorded. The existing queue
+advanced to `main-qwen-c3-17-r0-collect` with about 6.965 total reserved GPU-hours
+consumed before that stage. No scientific input or selection rule changed.

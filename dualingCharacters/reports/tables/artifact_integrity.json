@@ -61,6 +61,22 @@
       "source_snapshot_sha256": "6ed0d6e28f6105893bf55b3025438e686d9efe2ecedb89cb894ba47b15dafe05"
     },
     {
+      "run_id": "main-qwen-c1-17-eval-format2",
+      "status_sha256": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz",
+          "records": 30720,
+          "original_sha256": "dbe1cdac851bb1a3037c8b632f3695121a45f92697ed06c3274aa9055b3f556b",
+          "archive_sha256": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "b7c032d97a32b1a3398cc4e5bd91e329d88e7a4a9ebdfe9e2fa4f8879c308a0e"
+    },
+    {
       "run_id": "main-qwen-c1-17-r0-collect",
       "status_sha256": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
       "source_files_verified": 31,

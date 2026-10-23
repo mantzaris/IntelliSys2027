@@ -1,12 +1,12 @@
 {
   "classification": "Post-baseline mechanical presentation of existing aggregates; no new estimators, tests or condition selection",
   "inputs": {
-    "reports/tables/main_results.json": "8e27489a7ee7344a6d60e92079a41968eeeedb677994759c4e6bf800e441c834",
+    "reports/tables/main_results.json": "754b50794770b32566b2b1e740fa7830296ea094c5fcdb52feac34e317b45b8e",
     "reports/tables/main_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-    "reports/tables/transfer.json": "0f6e4782381c1a70935426dc15ae791752a89d4f8950fc94a796eeb4bcbd2515",
+    "reports/tables/transfer.json": "98971a64eff6d2c0399a18c33c0f9e44d37454b47628f0edfab72fbc19893fb8",
     "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "reports/tables/unseen_profiles.json": "413d22818fb050c9d12689a29092089ebf0c639a9b42a5a2d41de33a9d60263f",
-    "reports/tables/resource_totals.json": "cb7ab99c3e751d2ce2e7d5c01503d346c7a8707463f928cddad053bddb700545",
+    "reports/tables/resource_totals.json": "23b215be4bbfb7781fcf2836f9c474d7c8d41e6ee3145478fec170c90228d54f",
     "analysis/publication_tables.py": "ee8c2c5be79908d414ff081e040fbccfb48aef62279195a6834d4bf61a27cdf8"
   }
 }

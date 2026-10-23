@@ -73,6 +73,16 @@
       "final_adapter_sha256": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc",
       "optimizer_steps_in_process": 256,
       "input_tokens_in_process": 1048576
+    },
+    {
+      "run_id": "main-qwen-c1-17-eval-format2",
+      "original_scheduled_id": "main-qwen-c1-17-eval",
+      "status_sha256": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+      "model": "qwen",
+      "condition": "C1",
+      "seed": 17,
+      "parent_adapter": "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/final",
+      "parent_sha256": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc"
     }
   ],
   "shared_initializations": {

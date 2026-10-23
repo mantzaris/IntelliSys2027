@@ -42,5 +42,27 @@
     "paired_successes": 27,
     "paired_success": 0.225,
     "conversation_success": 0.3375
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "domain_group": "familiar_domain",
+    "families": 120,
+    "paired_successes": 96,
+    "paired_success": 0.8,
+    "conversation_success": 0.8291666666666667
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "domain_group": "held_out_framing",
+    "families": 120,
+    "paired_successes": 90,
+    "paired_success": 0.75,
+    "conversation_success": 0.7958333333333333
   }
 ]

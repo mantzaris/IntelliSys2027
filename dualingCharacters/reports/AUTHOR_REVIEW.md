@@ -2,7 +2,7 @@
 
 This is not a submission-ready paper. Human scientific review remains required.
 
-Measured reservation: 6.227 GPU-hours; inference 151,738,446 input and 9,935,313 output tokens; 5,324,800 training input tokens. Actual dollar cost is unknown.
+Measured reservation: 6.965 GPU-hours; inference 181,761,739 input and 11,961,872 output tokens; 5,324,800 training input tokens. Actual dollar cost is unknown.
 
 ## Historical pilots (trained entries excluded for serialization mismatch)
 
@@ -20,7 +20,7 @@ Excluded-format pilot C5−C3 difference +0.0625, 95% family interval [-0.1875, 
 
 | Model | Condition | Seeds | Paired success | Status |
 |---|---|---:|---:|---|
-| qwen | C1 | 0 | — | pending |
+| qwen | C1 | 1 | 0.775 | partial |
 | qwen | C2 | 0 | — | pending |
 | qwen | C3 | 0 | — | pending |
 | qwen | C4 | 0 | — | pending |
