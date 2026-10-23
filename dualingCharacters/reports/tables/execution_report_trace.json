@@ -1,0 +1,1201 @@
+{
+  "classification": "Mechanical factual report; existing estimators only",
+  "core_stages_completed": 6,
+  "core_stages_scheduled": 241,
+  "unfinished_stages": [
+    {
+      "id": "main-qwen-c1-17-eval-format2",
+      "command": "evaluate",
+      "status": "running"
+    },
+    {
+      "id": "main-qwen-c3-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c1-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c3-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c4-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c5-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a1-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c1-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c3-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-phi-c5-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-17-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-17-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-17-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-17-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-17-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-29-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-29-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-29-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-29-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-29-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a2-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-a3-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c2-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-43-r0-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-43-r0-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-43-r1-collect",
+      "command": "collect",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-43-r1-fit",
+      "command": "fit",
+      "status": "not_started"
+    },
+    {
+      "id": "main-qwen-c6-43-eval",
+      "command": "evaluate",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-horizon32",
+      "command": "horizon32",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-horizon32",
+      "command": "horizon32",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-horizon32",
+      "command": "horizon32",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-horizon32",
+      "command": "horizon32",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-horizon32",
+      "command": "horizon32",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-horizon128",
+      "command": "horizon128",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-horizon128",
+      "command": "horizon128",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-horizon128",
+      "command": "horizon128",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-horizon128",
+      "command": "horizon128",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-horizon128",
+      "command": "horizon128",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-29-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-43-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-29-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-43-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-29-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-43-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-29-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-43-short",
+      "command": "short",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-larger-memory",
+      "command": "larger-memory",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-larger-memory",
+      "command": "larger-memory",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-larger-memory",
+      "command": "larger-memory",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-larger-memory",
+      "command": "larger-memory",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-larger-memory",
+      "command": "larger-memory",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-unfamiliar",
+      "command": "unfamiliar",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-unfamiliar",
+      "command": "unfamiliar",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-unfamiliar",
+      "command": "unfamiliar",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-unfamiliar",
+      "command": "unfamiliar",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-unfamiliar",
+      "command": "unfamiliar",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-29-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-43-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-29-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-43-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-17-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-29-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c4-43-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-29-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-43-recovery",
+      "command": "recovery",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-base-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-phi-base-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-phi-c1-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-phi-c3-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-phi-c5-17-external",
+      "command": "external",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c1-17-natural",
+      "command": "natural",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c3-17-natural",
+      "command": "natural",
+      "status": "not_started"
+    },
+    {
+      "id": "extra-qwen-c5-17-natural",
+      "command": "natural",
+      "status": "not_started"
+    },
+    {
+      "id": "judge-phi-001",
+      "command": "judge",
+      "status": "not_started"
+    },
+    {
+      "id": "judge-qwen-001",
+      "command": "judge",
+      "status": "not_started"
+    }
+  ],
+  "inputs": {
+    "configs/freeze.json": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+    "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+    "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
+    "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+    "artifacts/runs/main-qwen-c1-17-r0-fit-format2/status.json": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
+    "artifacts/runs/main-qwen-c1-17-r1-collect-format2/status.json": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
+    "artifacts/runs/main-qwen-c1-17-r1-fit-format2/status.json": "50523e9b6ab2475636e1646f1da5e7f8d82e046d160f0c3cccbe374c58f8c51f",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "b42fa6841c5e25d04b6b3a1d496b634a46c7c9087d8f75f2a07a69aa677a57cc",
+    "reports/tables/main_results.json": "8e27489a7ee7344a6d60e92079a41968eeeedb677994759c4e6bf800e441c834",
+    "reports/tables/main_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "reports/tables/resource_totals.json": "cb7ab99c3e751d2ce2e7d5c01503d346c7a8707463f928cddad053bddb700545",
+    "reports/tables/transfer.json": "0f6e4782381c1a70935426dc15ae791752a89d4f8950fc94a796eeb4bcbd2515",
+    "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "reports/tables/human_review_status.json": "8b666b5adeabb6e87074563460c2183245bd799aa7623458e66bd28908c3815d",
+    "artifacts/unseen_profiles_controller_state.json": "88324c4166060cc8710e8f8e8887dcd59931007a3996280879f4b36a1f09ffce",
+    "analysis/execution_report.py": "e809bac2e02e7ef61c135d824515fbc75475a8d0fa737ef7a97675d472fb7265"
+  },
+  "report_sha256": "bad392542471a3c489340ec53af7a11258e973d5e5e562041c57273b6bfb833a"
+}

@@ -14,4 +14,5 @@ export PYTHONPATH=src
 .venv/bin/python analysis/clear_empty_exports.py
 .venv/bin/python analysis/publication_tables.py
 .venv/bin/python analysis/human_review.py
+.venv/bin/python analysis/execution_report.py
 bash scripts/build_paper.sh

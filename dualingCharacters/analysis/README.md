@@ -89,3 +89,13 @@ documents categories and family-cluster uncertainty. This extension was added
 before human ratings existed; it changes no frozen scientific input or analysis.
 Its synthetic unit fixtures in `analysis/test_human_review.py` are never exported
 as research annotations.
+
+`execution_report.py` produces the six-part factual author-review report from saved
+aggregates and the actual resolved run records. Its trace names every unfinished
+stage. It adds no estimator and never substitutes a partial-seed or pilot estimate
+for the complete primary contrast. `finalize_when_done.py` is a CPU-only waiter
+that invokes the full reporting command after the existing core queue and a
+terminal supplemental decision. It also covers the supplement's budget-skip case.
+It obtains the shared controller lock, checks the freeze, and commits compact
+reports on main under the author's existing authorization. It makes no model calls,
+changes no scheduled GPU work, and never treats an incomplete core as complete.
