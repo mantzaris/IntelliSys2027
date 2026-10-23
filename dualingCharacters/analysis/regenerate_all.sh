@@ -4,6 +4,7 @@ PCC_REPORT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$PCC_REPORT_ROOT"
 export PYTHONPATH=src
 .venv/bin/python analysis/audit_artifacts.py
+.venv/bin/python analysis/audit_lineage.py
 .venv/bin/python analysis/design_coverage.py
 .venv/bin/python -m pcc.package
 .venv/bin/python analysis/serialization_report.py

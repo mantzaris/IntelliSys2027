@@ -1,0 +1,66 @@
+{
+  "scope": "Completed eligible scheduled stages only; compares actual parent/supervision bytes, recorded loaded checksums, round continuation and fixed last optimizer step. Failed/excluded costs remain in the resource ledger. Optimizer-checkpoint resumes additionally require their separate interruption audit.",
+  "analysis_source_sha256": "45aebeb174fead4b2c72c2d25a74e35a222cdcfe0b6a8a9b58d5cbe76e8d22b9",
+  "freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+  "verified_runs": [
+    {
+      "run_id": "base-qwen-eval",
+      "original_scheduled_id": "base-qwen-eval",
+      "status_sha256": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+      "model": "qwen",
+      "condition": "base",
+      "seed": 17,
+      "parent_adapter": null,
+      "parent_sha256": null
+    },
+    {
+      "run_id": "base-phi-eval",
+      "original_scheduled_id": "base-phi-eval",
+      "status_sha256": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
+      "model": "phi",
+      "condition": "base",
+      "seed": 17,
+      "parent_adapter": null,
+      "parent_sha256": null
+    },
+    {
+      "run_id": "main-qwen-c1-17-r0-collect",
+      "original_scheduled_id": "main-qwen-c1-17-r0-collect",
+      "status_sha256": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+      "model": "qwen",
+      "condition": "C1",
+      "seed": 17,
+      "parent_adapter": null,
+      "parent_sha256": null
+    },
+    {
+      "run_id": "main-qwen-c1-17-r0-fit-format2",
+      "original_scheduled_id": "main-qwen-c1-17-r0-fit",
+      "status_sha256": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
+      "model": "qwen",
+      "condition": "C1",
+      "seed": 17,
+      "parent_adapter": null,
+      "parent_sha256": null,
+      "supervision_sha256": "db8ee29b5a5d2623a6f912edbfa6a510333ae0a24b7f07319d20900230bd7011",
+      "training_summary_sha256": "2de2a6978c4329bff44d7f6631f6f48cbc33462b150a10d740168e924fac2fe6",
+      "final_adapter_sha256": "4c7ce600b71d3fe63583b4fbaadd910e32ce7f7a883f21366e8e581afed3645c",
+      "optimizer_steps_in_process": 256,
+      "input_tokens_in_process": 1048576,
+      "initial_adapter_sha256": "ba51db80bcb55a5236e5a9699d9764cf04233d588cc6329a552a67fed29e8aa2"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-collect-format2",
+      "original_scheduled_id": "main-qwen-c1-17-r1-collect",
+      "status_sha256": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
+      "model": "qwen",
+      "condition": "C1",
+      "seed": 17,
+      "parent_adapter": "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/final",
+      "parent_sha256": "4c7ce600b71d3fe63583b4fbaadd910e32ce7f7a883f21366e8e581afed3645c"
+    }
+  ],
+  "shared_initializations": {
+    "qwen:17": "ba51db80bcb55a5236e5a9699d9764cf04233d588cc6329a552a67fed29e8aa2"
+  }
+}

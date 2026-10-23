@@ -74,3 +74,10 @@ resource counters without opening task-success outputs. It resolves documented
 restart aliases and counts only completed scheduled stages; local mirroring may
 lag by about one minute. The GPU/controller locks remain the authority for whether
 another process may start.
+
+`audit_lineage.py` verifies completed scheduled stages against the resolved queue:
+loaded-parent adapter hashes, continuation into the next fit, the actual supervision
+file, the fixed final optimizer step, and matching initial adapter weights within
+each model/seed. It reads no task-success scores. Its scope and the separate audit
+requirement for optimizer-checkpoint interruptions are recorded in
+`reports/tables/adapter_lineage.json`.
