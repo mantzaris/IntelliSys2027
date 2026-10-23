@@ -1,0 +1,1499 @@
+{
+  "allocation": {
+    "already_reserved_gpu_hours": 1.6009052351644883,
+    "remaining_scheduled_forecast_hours": 83.17933870984584,
+    "contingency_hours": 11.219756054989674,
+    "inference_engine_start_allowance_seconds": 60,
+    "qualification": "Conservative linear batch scaling from measured pilots; forecast, not consumption or a spending target"
+  },
+  "timings": {
+    "qwen": {
+      "answer_batch64_seconds": 5.074563539441442,
+      "collection_batch64_seconds": 9.479363778825192,
+      "character_batch64_seconds": 9.374361979963613,
+      "optimizer_step_seconds": 4.0589500589703675,
+      "trace": [
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-eval/batches.jsonl",
+          "sha256": "eca4543464f5ea54de8e92c592b6009c9c012fc46ab59549c874d6461c27fc43"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c3-collect/batches.jsonl",
+          "sha256": "ac43b250ca04c4d1f34e3f2f39bdbcf65b84f82d70aade4e5c0745287337737b"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-eval/batches.jsonl",
+          "sha256": "a7dad33c837f92357cb8814984bd65e3fad483a27ef3f78b91c25bb5bac77bbd"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-qwen-c5-collect/batches.jsonl",
+          "sha256": "b56e499ca953736e3e11b4ae59c7e2fccf3b601bee92af1b405d73f0a696ed52"
+        }
+      ]
+    },
+    "phi": {
+      "answer_batch64_seconds": 4.177227401174605,
+      "collection_batch64_seconds": 5.284391101833214,
+      "character_batch64_seconds": 7.934072475957994,
+      "optimizer_step_seconds": 3.0006120835314505,
+      "trace": [
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-eval/batches.jsonl",
+          "sha256": "bd19b320c33193989e3ddc482f9bf4af1e5363f7457a4df8fa902bef3aaa2a41"
+        },
+        {
+          "path": "artifacts/runs/pilot-v4-phi-c5-collect/batches.jsonl",
+          "sha256": "82d59f834e46c9b4c018935e70ac3859038c63d17d0c8343fcfb28fe6a3639b0"
+        }
+      ]
+    }
+  },
+  "jobs": [
+    {
+      "run_id": "base-qwen-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "base-phi-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-qwen-c1-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c1-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c3-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c3-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c3-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c4-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c4-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c4-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c5-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c5-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c5-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a1-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a1-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a1-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c1-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c1-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c1-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c3-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c3-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c3-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c4-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c4-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c4-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c5-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c5-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c5-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a1-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a1-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a1-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c1-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c1-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c1-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c1-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c3-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c3-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c3-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c3-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c4-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c4-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c4-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c4-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c5-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c5-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c5-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c5-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a1-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a1-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a1-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a1-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-phi-c1-17-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 493.3200703503236
+    },
+    {
+      "run_id": "main-phi-c1-17-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-17-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 916.0713584969807
+    },
+    {
+      "run_id": "main-phi-c1-17-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-17-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c3-17-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c3-17-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-17-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c3-17-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-17-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c5-17-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c5-17-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-17-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c5-17-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-17-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c1-29-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 493.3200703503236
+    },
+    {
+      "run_id": "main-phi-c1-29-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-29-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 916.0713584969807
+    },
+    {
+      "run_id": "main-phi-c1-29-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-29-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c3-29-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c3-29-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-29-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c3-29-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-29-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c5-29-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c5-29-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-29-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c5-29-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-29-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c1-43-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 493.3200703503236
+    },
+    {
+      "run_id": "main-phi-c1-43-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-43-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 916.0713584969807
+    },
+    {
+      "run_id": "main-phi-c1-43-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c1-43-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c3-43-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c3-43-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-43-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c3-43-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c3-43-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-phi-c5-43-r0-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 969.3644189078033
+    },
+    {
+      "run_id": "main-phi-c5-43-r0-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-43-r1-collect",
+      "stage": "collect",
+      "model": "phi",
+      "seconds_forecast": 1392.1157070544605
+    },
+    {
+      "run_id": "main-phi-c5-43-r1-fit",
+      "stage": "fit",
+      "model": "phi",
+      "seconds_forecast": 780.1566933840513
+    },
+    {
+      "run_id": "main-phi-c5-43-eval",
+      "stage": "evaluate",
+      "model": "phi",
+      "seconds_forecast": 2198.7404294013977
+    },
+    {
+      "run_id": "main-qwen-a2-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a2-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a2-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a3-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a3-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a3-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c2-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c2-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c2-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c6-17-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c6-17-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-17-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c6-17-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-17-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a2-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a2-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a2-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a3-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a3-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a3-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c2-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c2-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c2-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c6-29-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c6-29-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-29-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c6-29-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-29-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a2-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a2-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a2-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a2-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-a3-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-a3-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-a3-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-a3-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c2-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 837.3078298636657
+    },
+    {
+      "run_id": "main-qwen-c2-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1595.656932169681
+    },
+    {
+      "run_id": "main-qwen-c2-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c2-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "main-qwen-c6-43-r0-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 1399.7695486614825
+    },
+    {
+      "run_id": "main-qwen-c6-43-r0-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-43-r1-collect",
+      "stage": "collect",
+      "model": "qwen",
+      "seconds_forecast": 2158.118650967498
+    },
+    {
+      "run_id": "main-qwen-c6-43-r1-fit",
+      "stage": "fit",
+      "model": "qwen",
+      "seconds_forecast": 1051.091215096414
+    },
+    {
+      "run_id": "main-qwen-c6-43-eval",
+      "stage": "evaluate",
+      "model": "qwen",
+      "seconds_forecast": 2658.1765321940184
+    },
+    {
+      "run_id": "extra-qwen-base-17-horizon32",
+      "stage": "horizon32",
+      "model": "qwen",
+      "seconds_forecast": 384.7720665242523
+    },
+    {
+      "run_id": "extra-qwen-c1-17-horizon32",
+      "stage": "horizon32",
+      "model": "qwen",
+      "seconds_forecast": 384.7720665242523
+    },
+    {
+      "run_id": "extra-qwen-c3-17-horizon32",
+      "stage": "horizon32",
+      "model": "qwen",
+      "seconds_forecast": 384.7720665242523
+    },
+    {
+      "run_id": "extra-qwen-c4-17-horizon32",
+      "stage": "horizon32",
+      "model": "qwen",
+      "seconds_forecast": 384.7720665242523
+    },
+    {
+      "run_id": "extra-qwen-c5-17-horizon32",
+      "stage": "horizon32",
+      "model": "qwen",
+      "seconds_forecast": 384.7720665242523
+    },
+    {
+      "run_id": "extra-qwen-base-17-horizon128",
+      "stage": "horizon128",
+      "model": "qwen",
+      "seconds_forecast": 1359.0882660970092
+    },
+    {
+      "run_id": "extra-qwen-c1-17-horizon128",
+      "stage": "horizon128",
+      "model": "qwen",
+      "seconds_forecast": 1359.0882660970092
+    },
+    {
+      "run_id": "extra-qwen-c3-17-horizon128",
+      "stage": "horizon128",
+      "model": "qwen",
+      "seconds_forecast": 1359.0882660970092
+    },
+    {
+      "run_id": "extra-qwen-c4-17-horizon128",
+      "stage": "horizon128",
+      "model": "qwen",
+      "seconds_forecast": 1359.0882660970092
+    },
+    {
+      "run_id": "extra-qwen-c5-17-horizon128",
+      "stage": "horizon128",
+      "model": "qwen",
+      "seconds_forecast": 1359.0882660970092
+    },
+    {
+      "run_id": "extra-qwen-base-17-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c1-17-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c1-29-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c1-43-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c3-17-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c3-29-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c3-43-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c4-17-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c4-29-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c4-43-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c5-17-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c5-29-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-c5-43-short",
+      "stage": "short",
+      "model": "qwen",
+      "seconds_forecast": 222.38603326212615
+    },
+    {
+      "run_id": "extra-qwen-base-17-larger-memory",
+      "stage": "larger-memory",
+      "model": "qwen",
+      "seconds_forecast": 1034.316199572757
+    },
+    {
+      "run_id": "extra-qwen-c1-17-larger-memory",
+      "stage": "larger-memory",
+      "model": "qwen",
+      "seconds_forecast": 1034.316199572757
+    },
+    {
+      "run_id": "extra-qwen-c3-17-larger-memory",
+      "stage": "larger-memory",
+      "model": "qwen",
+      "seconds_forecast": 1034.316199572757
+    },
+    {
+      "run_id": "extra-qwen-c4-17-larger-memory",
+      "stage": "larger-memory",
+      "model": "qwen",
+      "seconds_forecast": 1034.316199572757
+    },
+    {
+      "run_id": "extra-qwen-c5-17-larger-memory",
+      "stage": "larger-memory",
+      "model": "qwen",
+      "seconds_forecast": 1034.316199572757
+    },
+    {
+      "run_id": "extra-qwen-base-17-unfamiliar",
+      "stage": "unfamiliar",
+      "model": "qwen",
+      "seconds_forecast": 839.4529596582055
+    },
+    {
+      "run_id": "extra-qwen-c1-17-unfamiliar",
+      "stage": "unfamiliar",
+      "model": "qwen",
+      "seconds_forecast": 839.4529596582055
+    },
+    {
+      "run_id": "extra-qwen-c3-17-unfamiliar",
+      "stage": "unfamiliar",
+      "model": "qwen",
+      "seconds_forecast": 839.4529596582055
+    },
+    {
+      "run_id": "extra-qwen-c4-17-unfamiliar",
+      "stage": "unfamiliar",
+      "model": "qwen",
+      "seconds_forecast": 839.4529596582055
+    },
+    {
+      "run_id": "extra-qwen-c5-17-unfamiliar",
+      "stage": "unfamiliar",
+      "model": "qwen",
+      "seconds_forecast": 839.4529596582055
+    },
+    {
+      "run_id": "extra-qwen-base-17-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c1-17-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c1-29-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c1-43-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c3-17-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c3-29-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c3-43-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c4-17-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c4-29-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c4-43-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c5-17-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c5-29-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-c5-43-recovery",
+      "stage": "recovery",
+      "model": "qwen",
+      "seconds_forecast": 120.8947624732973
+    },
+    {
+      "run_id": "extra-qwen-base-17-external",
+      "stage": "external",
+      "model": "qwen",
+      "seconds_forecast": 75.22369061832433
+    },
+    {
+      "run_id": "extra-qwen-c1-17-external",
+      "stage": "external",
+      "model": "qwen",
+      "seconds_forecast": 75.22369061832433
+    },
+    {
+      "run_id": "extra-qwen-c3-17-external",
+      "stage": "external",
+      "model": "qwen",
+      "seconds_forecast": 75.22369061832433
+    },
+    {
+      "run_id": "extra-qwen-c5-17-external",
+      "stage": "external",
+      "model": "qwen",
+      "seconds_forecast": 75.22369061832433
+    },
+    {
+      "run_id": "extra-phi-base-17-external",
+      "stage": "external",
+      "model": "phi",
+      "seconds_forecast": 72.53168220352381
+    },
+    {
+      "run_id": "extra-phi-c1-17-external",
+      "stage": "external",
+      "model": "phi",
+      "seconds_forecast": 72.53168220352381
+    },
+    {
+      "run_id": "extra-phi-c3-17-external",
+      "stage": "external",
+      "model": "phi",
+      "seconds_forecast": 72.53168220352381
+    },
+    {
+      "run_id": "extra-phi-c5-17-external",
+      "stage": "external",
+      "model": "phi",
+      "seconds_forecast": 72.53168220352381
+    },
+    {
+      "run_id": "extra-qwen-c1-17-natural",
+      "stage": "natural",
+      "model": "qwen",
+      "seconds_forecast": 405.07032068201806
+    },
+    {
+      "run_id": "extra-qwen-c3-17-natural",
+      "stage": "natural",
+      "model": "qwen",
+      "seconds_forecast": 405.07032068201806
+    },
+    {
+      "run_id": "extra-qwen-c5-17-natural",
+      "stage": "natural",
+      "model": "qwen",
+      "seconds_forecast": 405.07032068201806
+    },
+    {
+      "run_id": "judge-phi-001",
+      "stage": "judge",
+      "model": "phi",
+      "seconds_forecast": 80.0
+    },
+    {
+      "run_id": "judge-qwen-001",
+      "stage": "judge",
+      "model": "qwen",
+      "seconds_forecast": 80.0
+    }
+  ]
+}

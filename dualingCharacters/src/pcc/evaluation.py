@@ -36,7 +36,7 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
         raise PermissionError("Locked test may only be opened by a frozen confirmatory run")
     summaries,windows=[],[]
     for offset in range(0,len(scenarios),cfg.batch_size):
-        episodes=[Episode(s,actors=cast(condition,s.family_id,cfg.seed)) for s in scenarios[offset:offset+cfg.batch_size]]
+        episodes=[Episode(s,transcript=[s.prior_assistant_proposal],actors=cast(condition,s.family_id,cfg.seed)) for s in scenarios[offset:offset+cfg.batch_size]]
         horizon=len(episodes[0].scenario.messages)
         schedule=opportunities(horizon,cfg.intervention_opportunities)
         for turn in range(1,horizon+1):
@@ -133,7 +133,8 @@ def run_episodes(backbone: Backbone, scenarios: list[Scenario], condition: str,
         for ep in episodes:
             final=ep.rows[-1]
             summaries.append({"family_id":ep.scenario.family_id,"world":ep.scenario.world,"domain":ep.scenario.spec.domain,
-                              "condition":condition,"seed":cfg.seed,"horizon":horizon,"message_count":horizon*2,
+                              "condition":condition,"seed":cfg.seed,"horizon":horizon,"message_count":len(ep.transcript),
+                              "scripted_prior_assistant_messages":1,"generated_defender_responses":horizon,
                               "memory_updates":horizon,"interventions":ep.intervention_count,"structural_holdout":ep.scenario.spec.online_override,
                               **final["metrics"],"input_tokens":sum(r["generation"]["input_tokens"] for r in ep.rows),
                               "output_tokens":sum(r["generation"]["output_tokens"] for r in ep.rows)})

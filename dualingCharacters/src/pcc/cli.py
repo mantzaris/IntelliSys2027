@@ -29,8 +29,8 @@ def main():
         print(json.dumps(summarize_artifacts(root/"artifacts",root/"reports/tables"),indent=2));return
     if not args.run_id:parser.error("--run-id is required")
     cfg=RunConfig.load(args.config) if args.config else RunConfig()
-    if args.split=="test":
-        if cfg.phase!="confirmatory":raise PermissionError("Test plan is not frozen")
+    if args.split=="test" and cfg.phase!="confirmatory":raise PermissionError("Test plan is not frozen")
+    if cfg.phase=="confirmatory":
         from .freeze import verify_freeze
         verify_freeze(root)
     from .backend import Backbone
@@ -65,7 +65,7 @@ def main():
                     break
         elif args.command=="mechanism-pilot":
             if cfg.phase!="pilot" or args.split!="pilot":raise ValueError("Mechanism development uses pilot families only")
-            for condition in ("C1","C3","C4","C5","C6","A1","A2","A3"):
+            for condition in ("C1","C2","C3","C4","C5","C6","A1","A2","A3"):
                 run_episodes(model,scenarios,condition,ledger.run_dir/f"{condition}.jsonl")
         elif args.command=="profile":
             # A tiny, explicitly unbalanced engineering profile, not hypothesis evidence.

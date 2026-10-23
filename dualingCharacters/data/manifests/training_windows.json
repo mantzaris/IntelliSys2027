@@ -1,0 +1,4502 @@
+[
+  {
+    "round": 0,
+    "family_id": "train-0000",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "6bff6fd8db3d264e00285271931db2c9a2fe2d7b1f95c02790ee6d85582da9aa",
+    "source_hashes": [
+      "55959f10000f3365d01bd31bc83cd1ad596f9e5a30788ae2b08c72e9f7d95848",
+      "ef61dccb9e2aeac078c5a9f02aefa6b03496b2ada096730198d753ec3624025f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0001",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "106f7cd840fba47dd32c4da7c478d3fe248ec31500b3dd367df9afa039f9fab3",
+    "source_hashes": [
+      "27cbe5b21b855a2bbf82cf4ea372bbfa436b68b71e820c047af704f1badad4d4",
+      "407b4d91819909928c143e1455ffbf1a991a3da77072d37d07880b76c563b15f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0002",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "083c0422997bf43b48d744f24436c559c42ebf126749476b16c2d98193912d94",
+    "source_hashes": [
+      "283ec82967e7e01de79211d97dde3f3506e47b36abe51fb6fc1da9fca1d7d3aa",
+      "957de090f7588da39007941dbfadad0a8e4493de61c159750160c2dc75d6a9d8"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0003",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "c265ac4afd810991df881ce988ee46822363d49ca663ec44a86196b408300112",
+    "source_hashes": [
+      "6ccbace7702971fff92018253ff00fc41c0d199c27328928661f5a92169e2486",
+      "a3fa25527966f6778614e8376335fec6c809a4c40cca7fb82843afdfc04f0964"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0004",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4508e36c375e2c6107fbdb9dcca5223c2d54f31174c50d0bb38943a04257ce56",
+    "source_hashes": [
+      "db854ea423dd066204c4a61385371554c766788736088fe93d3230075f586540",
+      "e1d39badb52d809af27f30e99fadc7897feecb8867dc6e161bcc12e975f503ad"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0005",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b415746055200f57ef8ef6b7f8edbb9a8dccc26649e0587d861ce0acb25f9785",
+    "source_hashes": [
+      "5894caaa0a0ff73f6431397c33aa264989b457597a1fff46e7879e7435b3bbb5",
+      "9c8b6ac9dab82d01a53b88ae67bb5a8adb1d8e540b5ee3b29673d2ef445bae9b"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0006",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f548c05b978e7abba7df56e360aced4e5226d66f1948aeb6bf697e10093e32f6",
+    "source_hashes": [
+      "6accb069dd0454006bf519cfa9f550af2adc74bdd4cbf0ae4eeb74fa2260235d",
+      "fd1663ebf2711d77c0c1347f9c81921c01cfcd9840f46c9e342f43d07d160aad"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0007",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b23cac8c7105a1105e212a3804b8aa296595bbf81234c46c77817af4c2285237",
+    "source_hashes": [
+      "da376919d89add32095e43a56439e2d3b8462a92bb96bb582f7cbdf0e0987dd8",
+      "409ba1b6b8c65cd0b28b8b2fb7c15c4dcca22fce3b1c11e1175097398f55d7c6"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0008",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1a2ee225a978fe33899acb90efbf0a81c59a7b362ccaefb72e3bb3ef16e917f0",
+    "source_hashes": [
+      "46588df09fce813a62474761d4d1f17f5ed4e6c6654d35bba269a6f98c98dd95",
+      "4de9f61c591315edc13950d31896fbaeb58f32fb1e2db26c1efdfd21240d71c7"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0009",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b5ca3def869b7afe930c5ea24b1d4c707b7dfe00b0fdf47f529aa7a8db6baa9c",
+    "source_hashes": [
+      "eafeae6aa13d0e021487662a0f7e783f091ff3f140074178a068df9095c7a76a",
+      "d34e46882254721bffb842dcc3e85ccb0cd3f5e685d1d21a966f319f2c78f434"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0010",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d16bf9ee46bc6c950f0dddf3f0af30946b1b6cfb85fd66959330bf57aeeccefe",
+    "source_hashes": [
+      "4eeeb36e4cc10e2df082eba6afc8ef008836fbddd8f40ab8c7c681e6467483f4",
+      "d437345e67f6c34b98e587f3e7d3f3e7615f9025c4aad38edf9acf7daf597b5a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0011",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "5ed464223d1c98e07cf71da16e1ec4e52bc1930b974beacd45c1dcc35a6399c6",
+    "source_hashes": [
+      "0d35a0987f85755f8970518d7ef830e944ba8d0c3cac8b813363ea4fd40268f6",
+      "845063c3deca81521ba229296bf410812045800635f0a1edb16a4a6945add5bb"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0012",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "ed94d4f5563a5d927aa0c95bb7b34c59e9b0d0231133894379801252b2ecef0c",
+    "source_hashes": [
+      "ae77c01644d8fb4458adffa34ec121a30e2ab90504f6714286c2f46112348d2f",
+      "1e38cc69d5d0491e8c2fd27f1f686fd4a0d9b73a1b30289a79ba75188c2ab113"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0013",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e2617281ff09594b96f76358cd5670281c55ff8afc69db42632be17f288cd714",
+    "source_hashes": [
+      "49452cd64e3c024aca166520af5bd7249111dd9dd6ffeb19b82e6fd6466c753e",
+      "9f417c23f69846038eac06b5607d467ce9180e693a1c7f6b9c7d3e8d0050de24"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0014",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e0aadb8c9366730529b244401f08bb79efda2da06061f70b10b7409cf9fb8c65",
+    "source_hashes": [
+      "8b37a045bfd3dc5574b9799dd032eaf72bf987a6cf1038f09f28ae53fec86431",
+      "2719f18c540da3fa022939d38391111eceace2918cec5fb25992a1530343d362"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0015",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "fbecde4e309755eafa3ee148f26c1782b2b05b4b81d888446cc1a361c3a75752",
+    "source_hashes": [
+      "f1db64d11d39fed0dde1b64f21ac44891998abba77ef4fe125e65169244c4bac",
+      "ee35d60dc9374115b4295e01491968c1e903b978185891869d978ab5bd3ac87a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0016",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "fe9e031dcc90b9355411cf7a132ed3a3818ec998d7f2a0c3902f54373abb3038",
+    "source_hashes": [
+      "d8796569ef2765307223f726f51382a4893137a3a21f0846c10d521cf14d9432",
+      "ce6941fd369e91f7ca826826f7eca9895633f5612f62a86bac528e255a61bb2c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0017",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "62c87fd29851648fbb1bb440bd4223057aa33dc169b9ae61bbbc1a9794ec703a",
+    "source_hashes": [
+      "b299a4db883642c754c1d64664a2d4a420774a5e2cf7f016668a0d206936638f",
+      "2a36fd40a3677371f20742202127e0994b80d556187dd53e4f0a18c56799191e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0018",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b29cb720fd38d1de0229286ddc7aaa66ec9a612722758651ee48452b7e4ce5aa",
+    "source_hashes": [
+      "3f795fffacecbc7557e369ec53f54447ebd2cdabbd63255ed0e48b473037e927",
+      "443b674d83dbf9b45797a814664ff03a0059a2e10f9437d8488c214fa45c23e4"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0019",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d8958e72021cc5954528d3cb5d80a6d37e47b1664d8f27b6d84703dbee2efca2",
+    "source_hashes": [
+      "8ed1663949ec936f70596011165d3982d9dd12ae5525c77e6bf4a35c68e0f5f9",
+      "d5ada69932bb26b5968efdf39977c40d8f9d0df59e5da68b9b947c3d791f7954"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0020",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "5604417eef83f45f310f3e12910fd220d1213565e6838c574d66b86d355025a4",
+    "source_hashes": [
+      "663b50f55b1ad884d0bd73bed00806e4a26ad545c58c4b5501df218793da2d78",
+      "d4b905b1f97367e3ec23bcce0c7e04173729835074ad4da47028d359580b78b3"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0021",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "743e0d14457325c1736ce9f26269a331fc75312edf384ef64b553b26378f0b3d",
+    "source_hashes": [
+      "158de841c4ba11dd32dfeca2c1f7e53d7e7140266e9fc291744768d1e3c0d6c8",
+      "88f5e8917e5c116c85ee53ebc1b14b2a5e628b4c8d943fda55749425fbb5343f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0022",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "bc49df22e18baf1bf5a3a63575d736851a5ac4a86197f6ba8ae7d6bb83b647fc",
+    "source_hashes": [
+      "7120062ccf705c68c85ec0b8b60a785df8257800c6972a6f1e067b7bcbbdd44c",
+      "6a312836985742970a875a2fc9846324d99b0923b105b116930e0cb0971a1140"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0023",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "18877b774482cc14c30df31663c7b6fabfbf162429583b899bb6fac69fbd43a3",
+    "source_hashes": [
+      "ab3d2547cc171752547752dfdf441e68d21fed2905ba8146bb152295cff79796",
+      "74fad7ce0479d79039605fa56140521b406f23a66527ee6e5c278247a605d32e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0024",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "67fdf94ce668bb5d5accc2ec8a2c20f5531776114b55141295be412d58127e03",
+    "source_hashes": [
+      "cdbf07155e33bdd99bbd341076e272be2335fbada09710d797e848d2fb1a3c87",
+      "4f4726ac89075cdf5e119c7c7209d99f5b2426a5c6ab31eb51546704668627dc"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0025",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "ac3d5f6116c5d9bbeef821876c38be32c332b4c29a8ab4d5e53371e34811cab7",
+    "source_hashes": [
+      "7eb3cb3ec37ab37c9808053a7135a88c55cb0ac6f66fe2e2a82f05dccb2a50e7",
+      "b514255cb57779d351938fa4326a18ac13a71eb01cacc0a92fb635d991ab10fa"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0026",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d8daccfdcc81eba6ffa9dc1bfa70044f84f04561b9dbc50f86f941d223ef3b5b",
+    "source_hashes": [
+      "a4577f1ada3dfe229d9ef4bc9047308099b147221bb788dac8c0de46f4f05bdc",
+      "f1597da1534397b1df59cb7b4a0a61a1afe9101f246ac1e393dd1d16e1b11669"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0027",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f94ffcacf87f12979a94deefca7e66abd67d99dbe802c077ff3a64cfaaa653a6",
+    "source_hashes": [
+      "9be8001e3f752128eefae8242835900849f313169538353bc3766c2649f7bc2a",
+      "325c8a806d9c5f64d015ea25a408772f2420e5bbe1856f269edab6f1cf912a03"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0028",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "2474567bd12a877d19eb223cbfa53fa43c6a7c8bcfe15cac1ec8b114f4ee634e",
+    "source_hashes": [
+      "ae74d2d37da4160f18808daec1f1144ba60a14b0b882be0514bf34c02c47eeca",
+      "f44454e34333de9b54d938495fb27fc4a861d302ab5b7eb3728f83d90e1a3621"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0029",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "c7a3b5c9de7e66edf24e2c634d776a1de0d391ecd566a47f50b288fb3a902701",
+    "source_hashes": [
+      "2d35e19456743e8b9fe10c8c14f897a19b43466e02ca59ef798a9a3a4c60c22e",
+      "6b753797acd81e6e81e4cba3e65d380a4b620368c748d9435c4b031aaa6c8b33"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0030",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "29ae20c31d828d4a4edc892dd834aed5d1252646d8f3e7525cbbccac5b98c208",
+    "source_hashes": [
+      "c9148539639c6980fff70816e738ac38f66cfa3fd081ac96f00333e397009ede",
+      "8cd4f3bbc36ffdbf411d0f09df5208dfe642ccb2038460f9b85b228e28a8070b"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0031",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "df2954c06e531854bdae7fe11a3e6e2b8e0facae1e5d605170af6aa4a51544d8",
+    "source_hashes": [
+      "f866e06ca51bd9202a4dd5dffdabfeef9b46e70366c31f32ba33c7c0b7c349a4",
+      "a7b1eef7a90c4677a0842c5d992cc2bc7bb7f05e7f0d26f48a1f8c361750dae4"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0032",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "51da9a1415f2ad638fc6e4425de0315eb2fcd02fa9b1815a04e93bc04066d9fd",
+    "source_hashes": [
+      "1246efc6d3ecb01b21aab9eb2651daae168cb53f2fb3331dcf839245e566976a",
+      "6b98147bce49336a85031daf4ff70d9a5cf5ca1d4e4f0bd30034b3215e850b6c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0033",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "17ba70ff9980a7cb73aa1b221bad3c71e76d52c0f621f7c0bc58ff270f21bb1f",
+    "source_hashes": [
+      "fa7faa6c78d30faf4a2c6c133385f9d646332691b52860f3cccf2e783be17520",
+      "6dfb725453847d67269773dc93ca85630c5449cddfc692573b181f92f54a56c4"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0034",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4a1803199cc64e15da276a38ab324b965415931cf470526706782a795c360332",
+    "source_hashes": [
+      "8a47612ee23f0af9edf3c8e9ec56834478d70c72bebd9872b33cca921c696f1d",
+      "1b7554b88aaeecd8ce8ef9564cad752a55d6b6179448bc3de9a15e4b36bb35ec"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0035",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4a29d47660095d1404acf0be756b5e92110f16c05c35df0f681eead04e9aab15",
+    "source_hashes": [
+      "cd2c361676c82c76671cb1a776473a5fbaa526942532c03c54e909879ebb9684",
+      "967838c9a25c7763d36d0514e943665f1724e2d2e58c9c2f387c399503e6331f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0036",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "2b6236c50567956515053293657d644d39532103ff2db0a84bf594ee16a6700b",
+    "source_hashes": [
+      "1aa12b4b1597b15dff274bd158679503bad33e0aaa9ffaa909599655d75d37c4",
+      "881f68fc9cd6510a1f90c4372f3e157844f1034cf2e413d04743256936697317"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0037",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "2b4e7ce9d8cb8d81281b3e4d5a9cf2cc3cd1f8f37149291bad5baa4d0581d06a",
+    "source_hashes": [
+      "e77bbf5255d4ec3410035a66af9284961efd1a36f232e5d0447fd9ee79287c4c",
+      "949af629f80343d05d917bbe89a9015f2e51e6768432bf9c29d3337f968e0f1d"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0038",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "9c3f9317b1198f95ee63336fde80412d0e6dc881b1719d9c72a1313a12e89e73",
+    "source_hashes": [
+      "34c9de9f2f193796d233bc1aaef5c9d6943a623c9388953c2af6488120079abf",
+      "c6d0a9e8c309702fc50ee76fe67717e9d5786865966d4fed393d80b51021ce7a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0039",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d57a2a85c1e6b5ede19adfed2ec5210ef76e99a47922f2cb22cf081ece4487f1",
+    "source_hashes": [
+      "b632adfeb3d0e9dd20d02465595a1c70519220ea024bb62015487ac5d6aed546",
+      "b8310596ffc70a0476b988465ea11fb42859564ff6e8b4b664583e9ff7c58877"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0040",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "8a4e779cbde61a3dee1dfdbd68eb4ce060695539c26eba3972a165c4c933a06b",
+    "source_hashes": [
+      "766a1a9a654a118658c6b68f6a5047fdd274a93e337278ef48b6131574196b78",
+      "52a8d6e52d5f53ba4a32a4e5b2ef2bfaae9ab4a28b31d548792122c8987f87da"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0041",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "50ec466e902fcf81462874e19509e96638d626a7ba027055a8fab90128bfc7ef",
+    "source_hashes": [
+      "72d734dbaeaa8b9efdb2b5cc742d8c74736d0422e891d35686361f1eac41f206",
+      "3b36be15731f9310ed14dee5ef07213918f576fbc541efcaa8891a136defda66"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0042",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4931e9290fa1a8d2fa8d74809d35d41cbd0caa347b5ea9d9d103952f2b29313b",
+    "source_hashes": [
+      "baa9de8962637640a4b73e9755f167a3123e4495e37ae9317e5060ed16d9881d",
+      "5fd8a93d360a75e435d18ca254720765322277f4902c1e80d6cc1161c7a226f8"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0043",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d02ec8237e587070ec00d93c3ce254ae681f7744baeb5445413a39700de0688c",
+    "source_hashes": [
+      "494e52e89576ca73f4b9c49f0b5eb0bc399ecd95d6d9c82517228f5a0b96c6c4",
+      "27fb7f3cef417591641af7f807a6b867f694b02f72edb0f492dac6f072c94e0a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0044",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "44accb36beaaea5d6f32bbc48a3e05525c31cbaa2009a4ce9bb50d5b41ec727b",
+    "source_hashes": [
+      "9989e73dc60b0b5ea1738ff222e34b0c6cd09966840195ce9a530311b2948776",
+      "721489384bc5bea1d8fd56fadf4fe77524be28952b4fe1f307ef9c3f34f4515e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0045",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b6599f90ed404a4a810181b2d7347b3d03ee7beeb59549741adf0fb21465b257",
+    "source_hashes": [
+      "7d18416149d68e6000a96181c22c3083db60f393726c42fc4124d8f848903eb5",
+      "6d5e01f4438ac77d26aaa624d57cc286e45edda2a20dd52f74d67ba10e4e902a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0046",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "9cdfdb21514262458456a663d81109b9a5f7f4134ede049b57908f39ce411918",
+    "source_hashes": [
+      "0018fa4f3356a858588873fddb07734a96ff42171c3b3f0f4a262489e662fb8f",
+      "dee24eeb67cc1a1d10bc0db29fb5b3947d8ff92c5e754b6e395a76b47483aa46"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0047",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "c3409cafff58ffbc7e4e31d70989d706792f374c7a114016abf2234027732d7b",
+    "source_hashes": [
+      "7f88424800e3ca685a42cd8df61dbaf9dd9461079f063074abdca269e2dbd2f3",
+      "cf39fd2436fb5c82734767c9f39f7013d12b62e6b413aa4b1c2b434d8d044951"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0048",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4d06a19cbc765fbd03b09bd02f57cf9b4753f89ce795b62c65d68a24b4b5e3fe",
+    "source_hashes": [
+      "0befc085707e1b3086c6922e077f940df50b2a5517af77ef4517268f76e808f5",
+      "632dcf34704b54a6408eacaded6962310c22059ff971cf0c8c6cc447505dd305"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0049",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "a69b7d5a436254c1c8216e2dce5e8723cf4d72ac6072218167a831b6896c9cfd",
+    "source_hashes": [
+      "6425e3aa8b15f11c75c6294cb799b6273b2021a5a6ea6662283c869f82ccd285",
+      "328795b68f853a81d37a167ed8ded02f82c0dd496c6a06996ed68600a40426ee"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0050",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "60a0e8dea8df5fee1759c23ab2c220ef711a6321304c23759141c3d73161e202",
+    "source_hashes": [
+      "27394eb27bb96284e50444ce2476025942ef063ed82f995c794a3d93a57bc198",
+      "64db5772d3f7434f38c0a18f32b42818cd0582c15fcf6a7d06fc35c758efdaae"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0051",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "8f90c757309d32e2338fd31956e1f5470884ceea3c31bf7f40b226cd6444838f",
+    "source_hashes": [
+      "ba53615111f41a7f90b0622f66df92f23a4a37538e13e110db0df69b83e629a6",
+      "7101e9c633a0bfb22334701a71ee8590f0beee1cc7f6d0a9b53dd083130a8e78"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0052",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "c3ba7cc9cf2964479e2545443717992739ac361bbf05d2352daaa46d713bfbe4",
+    "source_hashes": [
+      "06ed605a8699f9fcc0da9458839f4402d2de7c3774111618bf718f9478135ce3",
+      "79b3e3bb6661b83be3286fc803ff430ba9af4d6f38fef9d91ab684c6cde5614c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0053",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e42effbbe951d6d3cb6cd7b2b0eb4adbaf2c361c73306eeaa0cfb275f3e4a2c3",
+    "source_hashes": [
+      "a544cc657a6327d798cdcc0784d72db3cd5b53d91c0e86aa9a05c3b3cc240e0e",
+      "536103baa8eb6ac488b2a19194044cea4c077152eec6d74c9af13f4a53be54e0"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0054",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4aaabaa9d25923cbce69005662691d7b44a09ee55ee341040ca1aca282232ed9",
+    "source_hashes": [
+      "0ef94556289155318cc6b6d429be78cf26011bc815ba260c97a16bd136995f9d",
+      "f718da39777d4bcc7720d0f46186bda274cd3bcb731921cfc21162833f8b0a21"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0055",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "aafd7f051c3fb8cd103fc8670348bb256ae794fce843903a7b8a5dafb98af9bb",
+    "source_hashes": [
+      "c5ed2286673b7f206933c35038ed93ad98518db8971a34f9557e0fbe77fc60c4",
+      "d8c9a8221642e4dd89ca89fa6dfe00f1cc6394e8d601b95d9de3d71bd22b8d64"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0056",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "6a216ae79ff5b9efc350fd08241ce4f557ad1a67611cc34ed3d431e5ea6d7f7c",
+    "source_hashes": [
+      "b08a53f8688ca936a43212f0f9d49f665fe4ab998acd412df381f6e047d680dd",
+      "f459e6a0277ed3d57d8cc47fc0a8cf1767bf1c88ddb6d07b310da0561246ab1a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0057",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "6d5eb741c6921a8631a2b95ae5faf2aef8fa53ecedb79e6cbc435446cbadfefd",
+    "source_hashes": [
+      "37875f1cfcd68998c92b6cf8e8e78143fda6baec714028a2d48529ffb93c52d8",
+      "39f7016e269ab74746746fdcb5af416bd4638c54e1c4aa1f1beee733a1fe4b5f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0058",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1fad7558b81e25a4ae5fb32eede7ab610d7af7bfd6320bfe583b6951156b57a4",
+    "source_hashes": [
+      "fe77b71f864cdda073555a19145845dc2c23e401a9ffdcdb0575175f450b154c",
+      "ff3e2981834fcbd411be8f968767d96fe7e3982f7838af891215926b0560fba9"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0059",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "233aa8c76826e92d956ab9558f481eb4440b1494724a281a80b2a6b278dfa13e",
+    "source_hashes": [
+      "3edbf451b0ad59e9c255e13638033fafb3b99fad9586d8b232210e7ca0f4a6ef",
+      "b122e8106bf95310f7fa4513e893d4d52ce74cd721e91badd42879b3832aa951"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0060",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d4cd9f2ee20798f6582e9d48cc1f314a610c4e5225883d05e23bb53f601a3219",
+    "source_hashes": [
+      "dea3a410cc2d52266d43951b8858308ff8e76a538fd863457095568ac0389edc",
+      "9df6a4099265aa1a675d493d107f76ce8ba8f1c8338a1bfbe6e2c4474666794e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0061",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "98a936fddc56967e0f596d3d2b4200d77b9b28e09774da2af9abf931db68386d",
+    "source_hashes": [
+      "db925433a828bc568a1c202de7359563702cd1644791c8834d2e5e7bc7ba4766",
+      "b6e14f6d06f8d2d4149c4b1123c5d91f392a933ec04ef44c5e899dcda2b64a24"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0062",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "df0dd6fb87df54ad9b1d0f419a9d34d3ee7d28fb5c7788dfe2ecc96b1399f2a7",
+    "source_hashes": [
+      "7c6e232b828c399f56a778bcf54cafeaf8a25739512af55d275f1de59a285857",
+      "b12a711805c184969fe10ef9fe2b3393073c8429982b0afaf50237c795432c17"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0063",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "0a655358f244ebfd9c56bbc61e243777fec2311391c83b792d28ccd88e718a87",
+    "source_hashes": [
+      "ab8f68b4d85cf4898c41a0ae85f37743698a2365c5007c233f79993beffe8a04",
+      "17e3dc45173bf78d5d0922c77900adda23400bee2a2cfe6633fb2faa8ec8ee87"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0064",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d59b6f7c36a69095681d06d730392e5b17a079b86b867e95a9c6cac62ec42fd3",
+    "source_hashes": [
+      "27852dc187490cec695f34f5c36948bbad7d283d986755b3b84afbece7299860",
+      "702c87e32561018d976250d92734285af9608ed47cc42a194b67cb22725e7a5f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0065",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "355863ab82a7bd18de3a227ee8be91fa0dca43f3071736710cdd815b84d74a75",
+    "source_hashes": [
+      "48773900d52c7fd9ea9dba7a8aa7e1c5e289adf8afd9bf6f4d82097cd3ffae8c",
+      "fc5cd26ccd99584786cbc62fa4da02d7f69e76fddb890cfd3ef8f367199ce348"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0066",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "9ce90e053552c3692d01e699b5e8216eca72e0b9e99535d0d49fff0af056b705",
+    "source_hashes": [
+      "e1f15f2fc06588f15ad3c23714ded7d03d17472974afa2018dcfe5b68dd85316",
+      "fe22ba926ee5197eb3fd1d8a6aab767e6347035d44f59af009fd4e086c10b23d"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0067",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "99e8670f33d77210b71ca81508b91a6fb3768e553e17b2c168a43447c6d0685d",
+    "source_hashes": [
+      "df4bf232bf8808200453b183250f516d73dedd13e8b162b7189922ab52df0221",
+      "bf98276abc750ecd87ebd4c70b6a6333c5c835ab6da13058b778324251fc49c8"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0068",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "7bea8e87835fb060511cb981f8ade5a0f0dc79f6f1fdc6836b59e56177121d1b",
+    "source_hashes": [
+      "0a567cd29a04ad99915403bb61b188dd4c3390fb4fdbacc3cd7d758655f88d04",
+      "b29c12d13773e30c50ee2a3410fd1bfc3bb43ade8aaa75d1c66cd6241220004a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0069",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "93bc9806cd6c6a207c118a4dfbb0a9c6e36edf12a49b544299d135f011be415f",
+    "source_hashes": [
+      "674491af4dd4d27fc7d888231be40467a86829a2f56d4d4fcfea820c7618972c",
+      "3570c9662627fdc536f072a5635c6ce248ee3795da6dbe21077588dd404dddfc"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0070",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "3e946adc728543c79b9a46c8dc2f68c2b4efe0d26d8d0cb44eeb2f2d88d11ae3",
+    "source_hashes": [
+      "9cd6fa3cff00ebcab131c0f2b04be45e4dbf3ffd051c6eb1ef19222ead4b211d",
+      "61c31f7f807dc8087b0a668a3fe2d1a969717ed9044b477c44b8b7dfc973bcfb"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0071",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "dfa7c321cd274cb7270bfcf7aaa2d36e43702ad232b7c1df83112bdcb180deff",
+    "source_hashes": [
+      "44c4a18de680a85572e1af8d9e124345caf7c08094db92341e5c010aabb36625",
+      "25850c8eba1048a4c28bbe0a360220a3080d46373ab12140404548ef6d7ff14f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0072",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4bab411bb228c3317bf5a52c0c9a7b038cebdd8d9f2097b03b90f8d37bba58f1",
+    "source_hashes": [
+      "4b5ead5630b199d703d4e8424c3e9ad1fa2d8f4a29ffb76a560135a32ce9cc28",
+      "c956287b71b21c90f43681679ef62de68232789abacf3162a4795f004395523c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0073",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4a1f72fc9edbf5d14433543c7d46bc98b40c12cb34103663f0c9503c9502e09f",
+    "source_hashes": [
+      "881f46671c339e0a2006cd786c49732e6830cd6d1ba02c92fe687ed8e2800b3e",
+      "3481bfb60e0a7cba7b22655b28fb6bfb36049d68661e91a795fc35f7062b3a59"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0074",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "073ec94b893f9ff3b9e4acd9bebff086aa59b4dea13aa7e1a29b1a7e97ead4f1",
+    "source_hashes": [
+      "f3598d7cc9c3ff3cff8b2fb3eb96461d0760eda5448acdbef890dd74f8ebc568",
+      "56878586eefaf08c40812ca8649f19b0a7fded42f18aecdf5fe41db57bf84494"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0075",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "c2b06bbb5ef56fc6965626051df8a85677801135e0d3e0a342baa153e8b19cdf",
+    "source_hashes": [
+      "588ef3a01dbb4b9a237e689964b25f3b06967fe7e1341320d967afd029bf9e56",
+      "e10df7a319b4b348efa88eea5d00a453321acc6a3ba3129b1387633b894bd590"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0076",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "77fb5cfeee02211a99fdc54ecdfe5ef8f097634dacabe253e454e22baedd6643",
+    "source_hashes": [
+      "57e2a69d37d841ce452188ad5b03e0a0d327f3db899d4cf4e2945387850d29ff",
+      "5b24070607a81003a6f49fb5b372353416be7404cd981229caccf812d3b544ac"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0077",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "5e197a8bac34974bb6f17e2f704049c238983ee6de70cde828fafcc680200eff",
+    "source_hashes": [
+      "9071db5b16394c495b66b1ba0c3f58b1dff2e8e3eca7dd8e6cbcac639f89514d",
+      "2a7ec4eac267f4075f896e0ab724a2531046dbc79f191af85cfa59ef0abc4785"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0078",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "048ecded0a4038b61bae9ff9ad8d93ebfd22da9bf722cdcb927349b205c03c8a",
+    "source_hashes": [
+      "c81fab374c40d304bb585f6a0e751fb9864182d86963ec57b24ae3b2eb542f71",
+      "b7f1ecaf0e14cfe9b6c2c6b2518e59be3330356842030e89b53b170fd8031d9a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0079",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "7654560ca446df58a9119c954cd6c0388449854761d879289f6f00f33f4ceacc",
+    "source_hashes": [
+      "6e80c9284a490ef43ae3c8ffc3e935616e6036e29566563096de5b3eaffd85ec",
+      "b1078a8f08c1ddb00bb04f184087dd8a276174a20612836e1a1f1be0d9f88d8f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0080",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "37f71dbca4d07587c13b802927707b780cef90a7fa0f45e7d9d4f64b71bd9011",
+    "source_hashes": [
+      "dcbca66daef55aeb5a771c503f2bb55ddef77e6b8c97ea6c04163497833e28be",
+      "e6d67d18c61ce8d148dfb4ee79a195302b588a98e800914f9343834118ad8a8e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0081",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4e7e36bdcfbc12a7b460e6f8416f865ee588c92458d3ec59395774afcfd55ad3",
+    "source_hashes": [
+      "6b51258b5a4ffc789e0d365d399dffe1a7fb47d4e24e41ec18aafbd15c757d81",
+      "18a02edae86b1edaf2a61fce071bc030ba3cb8b258381161c7e28576a6855ca7"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0082",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "0645bb3dcc63d7970a2ceaa48e62cfef265170802094e651e31f428a3ce6967a",
+    "source_hashes": [
+      "e70560582f5fe4d185fe524ec80f0f8481775da022844e8534f146200d16675a",
+      "03c4b56d7ced733c7457b102d0b739aedfd4a3e68a41cbc2bdde3568d12ca1cf"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0083",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "04123c22bac7276b785f09f0488ee334ed73fb26da26180c1c87d73c142b6383",
+    "source_hashes": [
+      "90ef11fdaee1e6c88ac6fcfb33775b21588dad1e12731ab1596f0cc40657f58e",
+      "faf2c02d2f2b9b222b84e57c9f2671c7392848e1cc345739fae51d80fa701e45"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0084",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4bccecc64890bcdafb58fe69ed55cc5c70a7cc43fc74f29d79e25db13fb4cf93",
+    "source_hashes": [
+      "98b0776631d57c4794c184fbec2178613898b1e270f4012a24e224565e36ae4d",
+      "b2c476e859fe2e09b5887d1a854d68ece571f68c216817589c209c9025b2918b"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0085",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "3ecd6dbc7783029ca7af61765b9589347bb196783e2c7a787f27fecb148121ba",
+    "source_hashes": [
+      "5cb9c2cc7c7541adca60539a1b3a5d59e57957970c880432d3ab27857eae0ccf",
+      "012f4ef4bf45e34fcad929af71a47f0957870e18f29fed5ac3cf2d1b9bdb22eb"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0086",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "2c20ef194e78e9ec55d63803966a60139207bbfc1c7ba21123ca80ddf1176fc9",
+    "source_hashes": [
+      "3aaa957071a8fc78a794d5d318586aa06536fb00a08adfc6eefe96da498c16f8",
+      "75cd59ad83f8a122b7cff9e8587b15b73079ab18743482939e3c0460ac5ade68"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0087",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "35f0d631ce3f7994bb80bb3f8f8f10c74fa7fbc253a8fb73f0e0e69186054d4f",
+    "source_hashes": [
+      "cbb8a2991249d395d8bdfec25f7a8ac1f8038fb0bfc1f097f6acc3e4d448d361",
+      "111a6ba2f8dc61db0156d5bf1209e8a584a9ee7066dd05b84d3cd9fbabaa3986"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0088",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e476816673e4d5544b11db048c7104437141480149d6d7d11b3b9f37556844d8",
+    "source_hashes": [
+      "7c8c3f8db356747f1d39afe6889c1358ba708f57825674ff0c7459c0ab49a38d",
+      "3f4f5576495765d8264698e1abbec6d58609d0a73d39c2ee30c7276a3a89dbf6"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0089",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "77733f771993114c03c0b69944d7ff0427430942fe77f6c39187e4d195200fce",
+    "source_hashes": [
+      "73819782f539f58492be43329f66e7f6464a72b6d77c9c981527ea1c360afe79",
+      "1fe59fce3bdab525cd81bf3b20b59f47abecd182641765f638fe17c9c251e459"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0090",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cdbe9529512028a65a08fed6d045340441ee90e107e262e22f9ab02ada50250f",
+    "source_hashes": [
+      "f5265da4ead58e0ccc918d36601538c98e1eea8c558ee3fa04671255a4dc56c0",
+      "c436b9e288e195e210ea70619faa4e8847c87e39ec16c04168ed167e8c5b2008"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0091",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cc91f79294eafd3202215972177a04f0c0b1dfffef23ff73cf1076d3be3d2a02",
+    "source_hashes": [
+      "8c64797d2634a1bafc11a0fa66ca51da900f5a3150a5481a53280a31babb3abf",
+      "070c686dd7bba1683b78d12d24d07317c9d9fe679a27b81347d11128404f050a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0092",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "2ecd063efff1ad44ee246f116e216ae89450f11d44462f6556eaba62a00f9304",
+    "source_hashes": [
+      "25dcaea1406ec860c09719b16fd3d17a0bea5fd3034ba9ad5e3fc3758c784c98",
+      "ba7f8a5175f965bd98bd19da1dcc2cd6c3fe88cfd1d8da4d76f1a36310367617"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0093",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4cccc66f9ffbd960346ff6297b237d6eb0913f7a7baa4beb7295a3a0f8bd1a9f",
+    "source_hashes": [
+      "8b72ead77c722c637337cb422797dc5b78a32597e226b1a69ed32633f5a16f1c",
+      "3fa14840a55d9f68c170f646f5cfd38204e05fbd082c8eab47fec9107010d8dd"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0094",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "90b96d16c390d5452505fd1b7582b7aadc280c31b692b1d59bbac468dbd1e17d",
+    "source_hashes": [
+      "5c82828af96e9694d512938dd606e3a35119094dd91c21d08c777b8f374ec657",
+      "a179fdd0fcefca432a7cf59bda069fb0e7d5e7bf02e8c7bfea142ebc9c6e4770"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0095",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "10e75f820c6f8beb696e9f08b72daf99bb59b515f3d93bc421aee94239747555",
+    "source_hashes": [
+      "4147cc940e32e0afb38728d6b41f7830bd85e51772e184a5c011423c2a3cde65",
+      "532440519c8464f0f79e7b45b6ab3dd6412474e9f1d28aa2ce82a98d471d50a1"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0096",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d3f2660104f7b26c7d0c6380a03a47ab145ac5d81fb0be6db6e066993964a132",
+    "source_hashes": [
+      "d01038f61fd801ede432b1cf879efea505ae2e6f39bce8558491b05c13f49a22",
+      "ab85ec9884d2944e8d84860a70c157b2ce32dc5fe4b52d0ff4d2d2fb4c4829aa"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0097",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "6b46b35707fef7bf5f75586be5b0bdf9a31dcfc293d8ba483aeff11b43daf350",
+    "source_hashes": [
+      "72784374e9cb3dc9e44092e54b517337ab8c9e28ba16aa12d51bc1231bb56793",
+      "12ca365be3489cf5146c93017b9c673262f3393e00c85313ff8e4c82a4eb5f7a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0098",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "68bd27b9b504fe44d71a7288ddec538dca5a7d0d3f0b93f1dba9533819d40beb",
+    "source_hashes": [
+      "5f64b116c81d4606b2cda1179888074dd80f0a2933b69ba776022d2fa55fc440",
+      "5829e6109cbd7def4dbd5c3aaf554bda74af4e59b20bdb4b4964ef55f413a8a4"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0099",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "305a47bb6b0ce3bbd485c4f266cf9b7370a3f07442cb7e91a1026d3b378a26ee",
+    "source_hashes": [
+      "4ff715fdd73f3baa3978dd112f04dbe7b2e178f1105ca2c86483989df377cd7c",
+      "8bd617aa3189ab377028b078693631ddd5571d9cb1d3e6f2a23fef2d838c320f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0100",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "0fd246ab80e6f9e0c2c34a49ad40f737895c4fd346ebea7884d90ad2a75c8b8a",
+    "source_hashes": [
+      "1e2bdc242e3dc34b9abeea5e5b68b7c5973b43f55096082da9eb4001c06c1e4d",
+      "e2372c8a3ffd65986a7d15745bd55acee37c269728bae72819bf6ed6226075f9"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0101",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "21ee21f4d14cb10674e2d4257027c1df43f78aa7c79c35acbd50615dd7a002ce",
+    "source_hashes": [
+      "b3dc7609d005b785aa4f126b6cc4524e5363ca96e2716bbc5ffbc1a23c9abab9",
+      "444119a5bbda5b3407ef7d1ecc1c0944bf2a26be43df7f1bb636ac62244a22fa"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0102",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "49c9bf01b6b3fbe600f4f0bb0b6d4807826927d0475e879b00231d5de5f9c719",
+    "source_hashes": [
+      "52d4be75fc897fe3f240bf2ba62e17f68d2d2a85ecfe8a6d96cde5c85f6287c9",
+      "c12d7ec277fef79256dd5b78f3db03a2c276b71a404bb4e36eddf65ba2df8e06"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0103",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "731d388d6ebb8f6b048beac147579a85a7d505a46fa664a4e1e58a931609f21b",
+    "source_hashes": [
+      "fc43bd5138766e1249aaecc9ca2f4992ef5f1a0cd7fb465ced625551b2a14f80",
+      "a9602b638d38bf592bbe8e0c33ac0fd0e275c64989dbd5a3a88cf10891fa7dae"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0104",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "16e61ce1169df745c5f6de70aaa443ebdb8d3e554f2797b678965fdc3b9d5ad7",
+    "source_hashes": [
+      "b96017d94dcd872a9cf4e476a0b140c46cb030ff07b8f93add81e13ea973a256",
+      "d71988bb592bd724d7a51f70ca41059f87e662c0b7a73f6a8c1ecb808a9044e3"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0105",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "944e025605feef2e26953071939cfc2ecf9fddee63457ed360f6548d05031f81",
+    "source_hashes": [
+      "15539c36d78024db5a00961667234786e9696214a59953e490a84c0dbc92da36",
+      "75d5c970f1888cd8989b23df20c6615b956c1adb981e80d46e83d345fcca8059"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0106",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f528a86fece324c83e17270e47cdc3a4f6b3c7ba65f2d69c2ca4509886d51078",
+    "source_hashes": [
+      "735b5e3e5f34a2322bca5607a805ad4e9b8825ae5249bb65c9ea6edd1c30770d",
+      "9554450405ef7780d408a42e56028c3143b52f0013204754d24cfbd4813ebb5d"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0107",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d418c9c5cb44f4f50cbcf06548fde0ace07815e85dbb7f3c11a8913abc58f9ba",
+    "source_hashes": [
+      "e00448b7c0059022275f7e92f77af3250ab065d5e30356dac39b4c31de489015",
+      "369ef143bffe433b869b42187eb6f29ecfe8b59b51c5d54a21f9473d78f76874"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0108",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "88eaffe35f7dbbb02e09d6328dbda9a35088b89212338ab720007cbc9cce3e9d",
+    "source_hashes": [
+      "2a237535b64b5beb5a0edb1cbda8905bbac875f96cc2fde0de196a9e3797cb11",
+      "c3003d0ed2c046917c26f5697ab9f01a14cdacf179501bcbb965d8c954ab5e6c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0109",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "373a01ea8d9058fd53ffe66dee496e70877222efc684c56db9bde257532a5355",
+    "source_hashes": [
+      "75d3b78952de73b222fcb7bf516636dbf84f3c87b1ab1f877c626832aee6078c",
+      "3e079324fb5944471dffb5fa1c8f16859d6187a46c4e119724b622e97692e219"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0110",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "8f4e3ffd4bc507e88cb73204deb9c19ce32b76c54749eec7afc93b85d095ca6d",
+    "source_hashes": [
+      "c118b92877e8031dab0f71513fa33253c2b70e9a583d735cba74bcb60bcf1287",
+      "dabd30ade0092932a1a560914d05e6243dcd9085d5e77a6dbee61f39d3d73c28"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0111",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cf81fd677df2c405875544db9605fccb4b3f6a23418e6d788cb77de3a3cd507c",
+    "source_hashes": [
+      "04c605e2db01f49330a487dc04d3fb7f92a255243849db5e07a5e4a4f89ac764",
+      "3961a4efb40ade1a229a0f69b4ca20c79cf8a912e96374c5fe630e0f27a65910"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0112",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "66a4c60c47d5bd3f3b056888273dfa14b1d7b1e888235581f2db9c186f3a6550",
+    "source_hashes": [
+      "fbce359b520ea0a959fb781fbc8bd87c62801831d28d5e365dc7305514391056",
+      "21dd39db6a98905ad5528a11e852f1eac9be0816f53d8b6b2b52a4d00e24f6f9"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0113",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "91e152ad918cff741819801cd3203e5b9c88d167ce965fbe28c2601b45ea30e4",
+    "source_hashes": [
+      "686911d21bb0916919e85523c51952bc4cab0ce703dc2db662c06d57aa3c534d",
+      "cbf4558fdb73a8312b8d1c42ac1ef011757411c4dc97c7b942b12a822d2c8780"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0114",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1524aa90142a238bd15f64c721f3d1a123885b5026f76fb3a298f0f5e6fe05cd",
+    "source_hashes": [
+      "f34f6b515e77e83888b67c6007d0944bb36b2a7af8a9c22f9316774e4372f7ea",
+      "0fcdfa35bd9b1b816d3e98a66645ecc16de5c38b02ad6106afaa3e4e3ff33724"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0115",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "aa80b7df46138924de97e9fdb9aee4ee65c9def110b86e0eb9ab7d54746ae6de",
+    "source_hashes": [
+      "52e7aa9eff6a7b46e568e2e5442b0ae64bfca53a172b817c4487f8d9abcc555d",
+      "9bbcd87f223b0b357a38e690fc61d6764d8401e89428821eb17c61b308367f4c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0116",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4421eaaee054c27b7fc79f28bd24802bd2c0df989956dee8cafd21b8991a185f",
+    "source_hashes": [
+      "f031ebb2a783465f7fcc09eb27b56b04f2d762f7006626a62f41cab79aecfddd",
+      "f237d5bdb99700d8a4aeb39a044d7dbc3485fa20dc8026eaa0a9171fab2618bc"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0117",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "7139d791556f226a7c78e28b3b776cc71162e0e06b9d9555e316fd7602ab5ad2",
+    "source_hashes": [
+      "f92288dad324a9b81f5d99fd60669c07541d9b5bd1673ab0859eff4181aacedb",
+      "2b6e798dcd0b99170c9d189b2ca0043cf8996f14e1aabb4791decad8c16ba288"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0118",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "5b0a33c7a80b85fcfae27eeff67ce0acf7ceae980e5a32d4015261352c304a1a",
+    "source_hashes": [
+      "0969f6b2be3d56c212ea5f5146db42390c5ea8af142e0233629e7774b7f6c8f1",
+      "50b3f947ed07cab8f4439dc3f77301a2de3a9198d843cb161e952cba5d97b2f8"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0119",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e6c7acf41cb875f7d2cc49e58c60d68aee61bc0160af67c85060564542c38b3e",
+    "source_hashes": [
+      "61dcdf057bcd39995ec81c9dcbbbd846daedefda3224561c75e400e3d8681401",
+      "3d5fe80f1225a3d4c39323031be9c555712dd3bac2eaff4d18610694f53dd4a4"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0120",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "b048be6f7ba6d548d785c1523198bd1005ca783a9ab4d1c7363bd3f079a7e55b",
+    "source_hashes": [
+      "59ea3ad5a7fc9da26b3d706c5b3fa1e56557d94998d52e10060364f37ac236c3",
+      "c009a792ca54da69c279d9b5ce1e17da034dbb8b33e859273d63a2b6e330a715"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0121",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1e954dbc5d71aa6d3b13ecac8ec69346fc56930b23299c0879a2049e582e8427",
+    "source_hashes": [
+      "930d7ee4f40cbd4d5a13f47a08c17e4999a6e98f34760e7c601bed0efd20fdc0",
+      "d11e35272d8b16b41c9e55faa240574acd0526bc9f7af41dd6f5926663b17ecb"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0122",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1b92c6cb93c5b39b4ab11cebb4c758e88959a907ee073ee86d03f2d7766b8a40",
+    "source_hashes": [
+      "83ef20b926a9ba47a75b489044dded12a5ba29c90d7eb3ce374fe53425fea00b",
+      "5651b7f007ecf58d03204c1f4e92a82f1b26434481a758b9321cbe6124436e3c"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0123",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d9f5f4d19c1618b115df36506e4f42e386bd7cec38062ce349167a59c7af497c",
+    "source_hashes": [
+      "99beeb98a364c8d66e3a85b138ec372eeca6bf3f55e83aabc6b13a9601dc639e",
+      "6451ed468f02aabad3736ec78d9e1bf44e67bb0183113966cd636a319acaf31d"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0124",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "da790aebfdd2cdbb0e054d46ac564e13ed2fc279869fba53a0bc65c49e3a6bcc",
+    "source_hashes": [
+      "1b5c4858d60d1f3dd347aad779e79af5f897a4b3db9f15cbaa831f263a1888bc",
+      "aa245061e60cc5d33c5842775d392c8fe39366290aa2590c3bdb3d2d3228aff7"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0125",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f476af429aa17058f21b88bd1c39e3f9b4028474735f5d887c10b7c8f434c6a0",
+    "source_hashes": [
+      "29fbf4c6248930bbeec4dfdaaf509a5358fea44489ab935937dfa2c25043619b",
+      "c19643f1e2bf3fdca0b1d21d2fc1bafd67f8b264bb0fb9f7abc5c38d1e7b4762"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0126",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "0f9f3d3e94528e513b0c102f09e9a8fc8960d42604c811cf072c2ba9a35b7e4b",
+    "source_hashes": [
+      "9909f28c4ba40383e984a28daebcabf98daa8aecc595684abcdfc0a5d446057a",
+      "6969017879690d4f07cf9a62ea0da39cc8c597e688c7c81ec0c4f0ec2e66cd13"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0127",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "bedce8fcd3aed35519df4fca1d02b5c9a3cb281ca07eb8472f485be0a9d00307",
+    "source_hashes": [
+      "d1f98d614cf23448f57ae6bdca393db17572defc8d4400e7ed7efd86af85f8b6",
+      "bb5b5487d2858510abd7974abaee443a0d3ce1fc4a520f601d5b0eb9879be29f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0128",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cd70f750cda3301d5ca337e565994019976831c94e16f38a83a0559d0fb9e199",
+    "source_hashes": [
+      "04c101abc43209b15e306e6161fbf76270489abfc08755ffa8f73921c3e1252d",
+      "affccca0cb24c991f1ce29c371b94b78b074aab5651ad4c570ff4c47bef5ecb9"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0129",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "459a264feb5e3a86aed17c705645e70e10d1b57493e85f936ec8d09c6901295d",
+    "source_hashes": [
+      "e852316a76368ef224d76ec27ca7ad2a495fcfbe6942173fc12fa8974e3a7e40",
+      "9778b0061bf797cdc952037eee4517b735e91b39084f743c74056d4048562c02"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0130",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "52ee87d4aff3b591a5a9c025ce93eb6ad7072679ea4aac5ca4b30d86beedc387",
+    "source_hashes": [
+      "b0b100eab4c5f0dc20e010c91abd46207a98e910bc9de51738018b7c29ab8147",
+      "94b9cfb60e9dec45502e6fd216de921d03461188597eabaa065c9a069752c1d1"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0131",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "400ee96e11b40e67f40dfeb187027bc67c518ed9d27525cd5933c4e9ccfbf6c9",
+    "source_hashes": [
+      "bb55cc144fc62a4cc90e389af347e236f4e35ff7fa954a8170b3c6e894971c4e",
+      "02d7be66ee33b7ba90941c1f4daa7b052d0d15bf878ba4c68b27c2617256bc1a"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0132",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4cbd8ac4abaca7b110bcb6466706bdfe873493f157e031b52c605a27969d1e72",
+    "source_hashes": [
+      "49bf8cddb19525db7b9a37b4f2a52ffae7fc8db5014422a5457692ae212802e1",
+      "fb1ec6b60b679102ca6679d1350b889d7b63dcbcb2f006ffe73815d910a5e244"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0133",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "695ba00e3e8cb284048631481919ee6559e9f3716ff143a8681ca87fb0dc7629",
+    "source_hashes": [
+      "0d2fc49280ceb03df0ab3153d1e8cd335910caeef4a1c54980ec0995e01984da",
+      "be6b56f66c41683348e4d3c6bf3b31de880ecb832f22f0e8b7dcd22b18d9694e"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0134",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e2993ab2aad79a086726c2200fc340448e700b699782c5d63b83c97132210c92",
+    "source_hashes": [
+      "fcbc8ca37a9ae03ec3152ce41adada52cdf4e434c9e0874375f468fa5af5cc86",
+      "9df5c0144fba1af81946a50ef74c70c2dbffa7affc12dfd1982e1ea1698cc4fe"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0135",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "4e2bca95283d9df1631204c2b1ba5add66d621e6a1291af4b856baa18023c624",
+    "source_hashes": [
+      "1b078e9942bec364f9b93c7e69a1b891eb50ce9b95126ac1f231bc1874f8822b",
+      "3f1bb927649cccd63ff18406b919aab8321e2a5eef51d3fd3cf6060f515e6fcf"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0136",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cd65c45f603fe2f3ac53b61950de4902111c3264cf67a76430e81e974b99f1a7",
+    "source_hashes": [
+      "6d5572b1633cda9a40df6612411d4340b9c7151deb651be8377e162f1758c825",
+      "70b01c83581b311d5083491d4824856be9f490c602e5102fdf6d83641cbbf460"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0137",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1e3bb1813d2af74c59c11de8125fd09bcfedac8a3fbe7dd0241dd2ebe5f5b64b",
+    "source_hashes": [
+      "d28a5ca591559fc339057a455f5347fd0842149e44d7fbad61577b4ef6a98051",
+      "bb64144c8b02b58c722a7eec9928f52c275c476732078e9ebf00db9bea0f710b"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0138",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f5939fa05d9d5f70c52c8b0db56e27fcea34aea5b574bfd94c559ef9fcb86e18",
+    "source_hashes": [
+      "4fa74e57fe7f423a13a03319d8540a1b96c03382fc90d2cffa3972514050c75d",
+      "fd26f4a983116c4b3a402ce59cef57267a1f7724e96250877b8d8dc54e6062ce"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0139",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "abb74bf19f5d8eb1690b41f994e9c5ebb292f430fd663db7a1ffcdf4a7e78696",
+    "source_hashes": [
+      "5ae57d21fb85ed80f999605f75b3feb2e83571e99a6688c8fabc2c1f2bd2aaac",
+      "1b40c95cebebf0c4b9464a604634970c05ef3ed55917b9499fefdd64f2fca8d1"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0140",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "ebf6fb280ff5f20bbf9f065f426240d675bbad564a0e68f76778439a09350861",
+    "source_hashes": [
+      "b9b7aa22143df6c31cc856e85b23d866bc2ed8baa0a319a0ee666ac1c27cc30d",
+      "cc934acbeefb50a8bce47712d7273f1df110bd881f080b5e5736c0aa85b53ced"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0141",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1adcd6941523eb868a2a71ada1560640fb29bfc7bfcd4669a93e3bd720c1b5c1",
+    "source_hashes": [
+      "df8d35dfe929dcce7eb4e8b6cbf22613741acabe46306d2c86e37ab6bc04cd81",
+      "10976ca91c0ed6c30f23153656996185ff52ca8cf6e433286967fd76d34631f2"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0142",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "e4eff7eda297c4c67e951a92718f19a112cee4cef99498aa20f20f9afc7f3db7",
+    "source_hashes": [
+      "d61cb346220b9a5243fdddb418bce695f7f95c3ad513ec29b6234dea1a6ca226",
+      "a7964f364974d316b647ea2e2f48d5f5e12d6afc94c8af2cddfca3c695fad460"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0143",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "85496d89447c85e1bd0a9996d519609624889c9c7fb30dc90ced2894fe058537",
+    "source_hashes": [
+      "82c3ace1ceeb417101c5943b8a6e860c54f496166778c0481f435db9d78075d1",
+      "268ac7ce11fbb4ec78ce8abac6a5bcaa600815b4ca5885dd570a300eb8d0f040"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0144",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "1117246be82321e483251fd06616ee00afed56b892ec06d8dc40d76939610d6e",
+    "source_hashes": [
+      "0d3944ed7d93a7755167a8582314785d1ed4babe362f406f396c1ce350f124d0",
+      "dac242026b1c856fd79a7ca5dc71d5e5ba515971faf668bce2a804d81d0092ab"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0145",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "f94d9e412f55304e5a8654b576fc740644b131f36f6d17edbc3ba6a5c7452f8b",
+    "source_hashes": [
+      "7219d5230b28b816fd4cbe383bee460d5886e84710e13129a828a199e6e2a616",
+      "498ea392192faf37c63e02a84f267b1cdb34cb6ab07c841185d35fa65492a912"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0146",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "93e813e38ca6625cd969d915b0eeafa37eaadef41c89a97c5dd60f0081cb74b6",
+    "source_hashes": [
+      "da9c0d45d7c7d21e1535e477e5568fe9e49c4f4937a2185ee8e3dd5457d188b8",
+      "4aab2d74d6b967f554c92beb088c525072ea1f37792f0bb1390322def4c51186"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0147",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "d8ce52198006ea6f5a2d56f9a124ee1bef61a220991fccd027200b2eb492e683",
+    "source_hashes": [
+      "6398482b46c279ed1b2a14e987156cf46235dc9e2ef1cdd42db26c62d2078ee1",
+      "1a74e96a17ec03381d1783bfa0bd6602442160d6e054e8618f087e5ad2d2897f"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0148",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "cb2ecf2315338d5f61a00e3c50734e539f57cc7cfab1eeecad3eb8c0547fa9f5",
+    "source_hashes": [
+      "71ecaa193c1388801dff1ba77348252adc8f0e63a88bdf735a0710545bf56c37",
+      "8e2eaa0d019800d5c3ae6e5e1a70b61f2e167905f0d10058c81c85dd77ee84f7"
+    ]
+  },
+  {
+    "round": 0,
+    "family_id": "train-0149",
+    "horizon": 16,
+    "window_turns": [
+      6,
+      9,
+      16
+    ],
+    "graph_hash": "a21fc18fe0b4427c2111e5261dd7c86faeed3fe12e6ec9c22da8f74ee66b3b2d",
+    "source_hashes": [
+      "f18902ddf72ed729187dd87be87648ce5a1a620acd19a538c0e272a2c449956a",
+      "50ac5f35b878103f37d4f50002b17dc8ba3d5ac4c87cf6050f148029f74fbc7a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0150",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6941fcd0a4b02597333f31cc3e902a74916b36552fc05193926fd0d334ecf990",
+    "source_hashes": [
+      "ea7119d8dadafcefc2368b5af36f00d265c1c411d2a2fbe73ed8fe477a089258",
+      "ddf964f886eb9ace0f455f869c50ab0d542883d6993a64a950f286983738a59b"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0151",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "00e2d30f9ccf7a39d019405f4514832af8200f35a7142dc0d5ff15a3bcecc065",
+    "source_hashes": [
+      "8f0b262fbbb24b3892898ef813d079d615761748e8cd561f5e6acbb59b701994",
+      "b604b3ac2752078e6ce73e376d0669985d7866e89beedc149d085d6ee0b52ad8"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0152",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1e4ef6549638c99bbe97bd018e22a2b9207722dcac47f22e053d290b2c5f8c30",
+    "source_hashes": [
+      "419a133b5a1bc11216e1153372f694afd9a6d5cee347d645517112e66b060e42",
+      "8cb7cd740e58e31a9b4eb214d7edc02be4d8c9edff5e041e84e9dc14af7c66a9"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0153",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0752baa10e08d3f439a63f1a384667e1baa7bd2cb4ecab7559b2cc418a88194c",
+    "source_hashes": [
+      "2e078f422a5121a6719b1c043294f5085adcdc4d9728b71b277709255915c0aa",
+      "b0aaa5629a163ba7bb4900a6f4fc62d373a65a5d2470f11e786fbd881562cd3d"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0154",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c035296e73149c9dc7f8b5fbc4db7a47207815e0cf7a7182f55544eba4191e52",
+    "source_hashes": [
+      "12a11f3d8a307a964b1912982296685874b1233eada383f96b4ce74f8f216623",
+      "69f5b8808fa27d16962b955bb8ea2a25fd2cf606bb07871314d136993b3a0108"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0155",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "571c21df5495be83a196ca999431a229138b376bc61500d3b082adbb8f2ee4bb",
+    "source_hashes": [
+      "cc78cc361b89932ae0a755a86d886a97e41f3e6ba0fa4f2265784d5ad0549418",
+      "dd2a0a09266827789edfb44dfa7625f732f8ba4972ada3703b9caaac3271f73c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0156",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "7b9b4d3b73d7116a3f4533fa0d59bd1c138112d3133d23e4f37c28cd40ca2648",
+    "source_hashes": [
+      "41b8a1d19d71262944bb91c37d692bf72e7023f8670c4b494d85dd89f5fcb7e4",
+      "a75d210d4b0be1921cd99702b12b5dd9e385bc8a406a50c908c8398968c23a85"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0157",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "106340e9080970c91185d3f3733295f3688b6f0f0fcc60e765425e8c0f2fae47",
+    "source_hashes": [
+      "1b4b6b16d3362e4532516989233140911a337a19c65eae0d498da424b073cbe3",
+      "bb8653dcb50d046996d1e810a0f3c1d081bea4af53e9bcdf07786dd1885b506b"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0158",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "cd33fbca3212ac364e0f7efcab7f131343a2b6a5aba1d0ab557b0720fb99a155",
+    "source_hashes": [
+      "fd71c6bab135569eaadb5e1361c7d5ccef527db8b01015f980af00956e2f9b48",
+      "2f36fc674548627b3a2f2b1367fb8cf716dab7b6200f2931746c7d17f635a241"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0159",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "37e32680254d5ed510a7434cef305b29adf9941322186c19bdeca10afc0e6b05",
+    "source_hashes": [
+      "53930fb2a2b67311d7642fe90478713e0e1a0e55d1dccae46d01178227fdb9f5",
+      "cb6428df8c5613f9d291d5a4c2d46c1ea4fa0db7e8df4b27afc0318dc5a5da60"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0160",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "77ae2e5e53874fde5d160b518c8368a839dcbfc90e2e9070f53492f16b2036cb",
+    "source_hashes": [
+      "c7a3bfefb03e1654554306eee07025939f54f2bf08a713d2bfab94f86cdf6248",
+      "e91bd534f436c9867b3b7d7917cd80e5ffc03e0fe3b024596cd0080f2d76ddc3"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0161",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6d1257d032efe59030fbf062b07822214cf4b195359b4950866fe001f181b047",
+    "source_hashes": [
+      "e6cbc03366c7c2503d4e4744cf810685078823e514e1c4ff719efc74d08aa554",
+      "fce7d88895f7052853ed5b8a485485b35a7d4c7b3912fd9fc1e93c4a0de672ef"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0162",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "4b8001258791910298c34ce5d65e943bf295d781560656da0ebd64eb9e682b71",
+    "source_hashes": [
+      "e6a16c36f751dd730a1dba4670186f5f1531d451f2c614ae72a84225c25fb571",
+      "e8fec2d7b5c580a7e169ff9467f3f7b96f21a073a44a6ff74f9738f937135400"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0163",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "199a8a372916ca5499be0779c6c0e8d9e2ab3e13c367e446a61fcaae8639b739",
+    "source_hashes": [
+      "7da76c2c60e50960428f0c4ce3e5bb49159704645c0e491fd5d6293f83c4f230",
+      "0f7beb1ef99a216efbbc23606ef87a0892382e3d2509fc6102bdc354c0c4f786"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0164",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c7fee575a719c29ac1150e6e2c811f2493259de531f7fc7df86a6d046c082370",
+    "source_hashes": [
+      "f2decba342e0951769a483f63bda6e2956c73b900169d72fa27fefc9dedfcaad",
+      "404561e683f49a61bb34c4f95e23dac8a9578ec22f60306d31b7e0eea3a53a8a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0165",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "02427533fc0703d7bf3585cd10b9d15edcbbd40e866c20cd80826ccaebb7a4a2",
+    "source_hashes": [
+      "d839bccdb17217b935c539734c9a04329ef1b929f2e09e8648dbac4e5c64529c",
+      "bc8a0ba4bde5589eebdfaf9bee1fb3b3561eb013f80dfc6ecdcff2b46a597431"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0166",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "92efd1757e642aad471af9816585aba9d93e5f4309a09a44611b9811e55b04f5",
+    "source_hashes": [
+      "02826da3a972af645741bf0b475cd6aed7b963b08c27e6b4c83a493a13de0461",
+      "791f222429a8da17401368cd5c2646aaf5a622f734162ac55951a2fdd986fcfa"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0167",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "3b7540f3963282269699b40c8ea03e7c30dff8d8a96255c16222a8c0ad8ab185",
+    "source_hashes": [
+      "f7f2126d13d860a47d401b70724d0575d1edbc4199740fdc1915eedd6e07be24",
+      "4ba1c115c64498a6df035bdeaa30660e87e17f189ef09209a967af7984bdfacd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0168",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c7905c230d8b66a772d356c4093e7f716bf97e87d629f934ae1abc6f407a67bc",
+    "source_hashes": [
+      "dfaf8f0f08605789765d80908821f5ea16ecded404acf4ecc73a5f6c7e14dfd7",
+      "c4115acc6d9025c3db4958b2b047bdaffef458a69962fc59a91e5c82b22ba375"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0169",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1973feeb40d56ef55021de45ba6a44b5d823732e565628d7e2ab08437523408e",
+    "source_hashes": [
+      "7ce5c350f526c4c090da4ff5eb5d3da769c30a6f5e8c0be1739d099c0edf97ea",
+      "34da7840e38366f437d34ccf9e524b4b8199349cd89e8c71e5d9b52487f30de5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0170",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "38358481f3efd60b1514a7a64a556f29653dbe98756eb42ff962ffa09a5fdd12",
+    "source_hashes": [
+      "0154f3308d2d09d3a4ea683eca7e4008f20717a240b9fa67adeab97cb9fec42c",
+      "39165f7f644bcabbd8910c9daf4f70c8564e37f4fff3e1fad3c8c7a1eb33d10b"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0171",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "30c9ab54c60bf40e9129902ebc3807acf4d0a801a7b39f3f275d20c86a8ee0b2",
+    "source_hashes": [
+      "e011e971701fce1f3ff565bdc5b28d27a007221ff3e44118baba9695362acfcb",
+      "01f7813c8f10a1e8fbd3e53d6d2da72033f9b97051b8eb1115d31a62fcf2d9de"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0172",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f701e2577948d4ab39432691971ca6b3800350a8d97cb9abc3a3f6c81b4207de",
+    "source_hashes": [
+      "2891ba77969f893baba0fa0500fa3f744463896aeec4ed3d7e586995b0963de3",
+      "daee7ca961f983a70fba36c62e8928b29909a857789ca11c85d6494e7ac12127"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0173",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "12bdfd7a677dbac82d6d4f02d6ea6958af20a98e7dc76a35e5c931908588317c",
+    "source_hashes": [
+      "1b57f9ed0bbe3f5c0ec1c7ce690376997bdbc3ffe34bf7c17fbc03400ce3aac1",
+      "b06db2796365e98faeade0fe036ca48fe8b2b7582f25dec9fa6bbace8cdbad37"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0174",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6fb9b621771d299f7616238ed9c22e3c8f1adf8dd63edd17e2df65d888561acd",
+    "source_hashes": [
+      "8e932948f96b399c5a405c323eab735243d150513869e367b0ea563fbd11be1c",
+      "23429532ca6120636587426c5728c2826963276cfa9baa7372f935645858b9e0"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0175",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "dc71b951f44355e48c0b94905bb0862c917ec3cc49568e36c3bd3e12275b431f",
+    "source_hashes": [
+      "e5b61bce1f6e571dcd5b20704746c2d9f6d50abf8329c42705a0da3264ba0b69",
+      "106ee056dd4575c3640fe96f72fa817ab9bda1e2775ca68c6bd2b8c0e6ebbb18"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0176",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1627401938831dc87d608b1d94c546c8b30876a7b280278fbf8e064ffd10267e",
+    "source_hashes": [
+      "45b3687ec11c8da5dc4bea9a57367c618864e35e1f064e88bb0acfd59670661d",
+      "efc96a1d54c3dab0c67bf3989d8eb5c9f40551500ce89197ccbd1516ee4078cd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0177",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "751e8a2417eb4716bcc1be6f1a6c583a3825f9b1b486431747319c79580589f9",
+    "source_hashes": [
+      "8e0e8fdcef258f684dfdc2722b13aa772ca00fdf03111970f843c6ea4426ebe3",
+      "c5c36291326ac519a5206dd9fefad79e0d3540971f0157e16124bdda1706e30e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0178",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "20b7f0376c90f17c47526347bac7d6da2198103efb584a895ccfed2cea0b5140",
+    "source_hashes": [
+      "853d05ce1eabdd5b975390534ba29b92e870cb80ab8b30e53a833dd4e9d965c7",
+      "567817a99fa5a33e75fb3204e8ca6b1bc742328db21c417a22c5cc9e2143687e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0179",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "825d9039ce13780101ebeada4ae8140676159f659f02bd2542a85c8ec867b3b0",
+    "source_hashes": [
+      "bd476bf6f92cf0f2e25bba82e6514f043b9d1af4761b329b67f8a282b1fb1093",
+      "31f18b7c54935cd593912ccee0cc7ad4bf78d5735bb8d8156ebee0ad9b12c0f4"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0180",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "4fe856fd117ba0458710db0662e2f3292d54fcb1f7e72fbde0b8c7352f2e775a",
+    "source_hashes": [
+      "1942ae5aaf7123217665c88228c495d2da03ed3d14a55aad27fa5e488ff76b6e",
+      "dce2d37a42823f57f97be4aac4e1e156e3a0826146521d082276295f6df21bff"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0181",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "e48612695b4c7745b3dca19302a25a60f5d55c687a4e802cdca08b05446f428a",
+    "source_hashes": [
+      "dddfc08615176c68ae48503943aba92c5922c2f337d2bd9091f7b20b1049628e",
+      "d2442a743c42a003a436149448ee1462c6d8fa710a480a9812c6e5b95b61e917"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0182",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1326e39792917a15fdb9a118ba03ee00432505b7675f6f33283937e5d0b2d447",
+    "source_hashes": [
+      "5bd26afe6e3372668a529dc8bc0852e7a4497dc688fa2042e4107cb754b51126",
+      "08758149c017a0bf178256f82a16eb63b504f0b26616999ba3679cc309d5ab73"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0183",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0d95d008d428993dba104388aa4887a67a4f9d806588fe0749392dd4e40efbc9",
+    "source_hashes": [
+      "a5a1028d10026c231bdf251abc40bc43a8def0084b0af78a9db01e0109a754fc",
+      "ae15c0a654fd400b0ac61184295aafe8ba4212898ab76fafd3ce87dba0c3c400"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0184",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "7f51e5a129d8c4e85d090e89b298c25b452be065abc7dd741a69acc1b04ec4f8",
+    "source_hashes": [
+      "c278d917d40139c915261c1250634674445cc253795f3b5e148a3b960dea30ba",
+      "2d6b7d9fbe4b727420c39d8912c2c7c884b78c40a624c06b67d919fd8dbf32de"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0185",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "ff9bf2a412c79e540a3396cad76c3c5114f2ed63f0b27d61714c7e06ba5a3f27",
+    "source_hashes": [
+      "a7672546f254c2eecf2353716d6ea258362cbbbd0f83ee7a9f6188f420cde781",
+      "e85f40017ad2e22fb1ec30535410922dc2def44a76b24430dbb893e0a784ad59"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0186",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "158d26d55168a6264a14119fd7ab118bae1aca6bc529289f389041fd3155bbc1",
+    "source_hashes": [
+      "5e6e6872404082718eaadc2023ec1156569edee363923ba8b7ab5182daf00739",
+      "b43daa5525eba6e818db62667198aec02b6f5eac23c467e70e38afa66a2f11dd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0187",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "3f83aa274abc827f3d5dffb21ba74edc3a991842c70f83af7a68165e7d6d009c",
+    "source_hashes": [
+      "a9012374bde56c0fb1310a0936f6e1aa1107ae12e9f07d45fdb799fb26af935f",
+      "570eb898ef8d2bc929cde890cc07b41a8549d40feff06f24fcbd80b563611984"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0188",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "9ceca1d3c109e2b797579e8c68aee4191deb39ebc0d6be373fa68a71675e5f1c",
+    "source_hashes": [
+      "6648c7447fc35a285a9718b1ba3d15280ab6862bfac477a187fd728d44b812e5",
+      "3b8d8abd5d952ed2884218898c87e351843d6252117e105d88fb580d77fd8b55"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0189",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "ce5534b1ca81e4aa17b27525a1c678b68a3d7987f7b087b4b6023200c4abf0d0",
+    "source_hashes": [
+      "053f0e51639fccccb19d1672a9b5932c20a792b0bff75230dac632ee88706d67",
+      "f93334a7b76714eb18cf4fc5af56bdf13595e2da2128fd0245eb3eb11a7092aa"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0190",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6e80b2c45fe48b3d38c7e8edffeed6b4fe7ccf4f6d61ff1d1c7ad3c79e802964",
+    "source_hashes": [
+      "5124b801a4d5a0d742c7ac35dffb95ab43b595b0868cdc5627787e1dcdf2485b",
+      "ce71a1bd31c71e1a2f23afdcc2daa58eeabf6866975660f808e45ea52ad52187"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0191",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "bd6032292ae3264b37841788c5fa3e7cb67509539740afe4d0b6bdf855b6f698",
+    "source_hashes": [
+      "fb4c032392f693a29d56c317c827f99bb22be6957a075e98d0ad7f445503a319",
+      "8e3f025ff13ebe501ab6653aac55bf9320ecf572f08ede888ed2f8c9bd13fc26"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0192",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "b7b4532dc7e36324911fb020de37400a06dbe0b8fe88cf026ec8b824d68ed5f7",
+    "source_hashes": [
+      "545e0d52ecdcc740de45180bf9ccca9d449e204e1fe6d7ecc7cdb98063f164de",
+      "ec6edb212cad756cb83fbb11652936e8c85876f55c05811aefe9649781a1aca7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0193",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "25662a8d4b160898ba01a5089c065c68ec09a7c02bceb4a0b5d13334dc1cf5cb",
+    "source_hashes": [
+      "2da586059752d7b880b5d4ddb09ffba4301118ba9e01f8ac92992639074ccc19",
+      "a9e999287444b414bc1b5638ecda2a989696af2e8006b737ce3d339ef0ede44d"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0194",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "4db9b3d4bb68636cfe081b29bd40f83b4fb2ec9a932a71de408dd6d238a8c52c",
+    "source_hashes": [
+      "9c16bb9f25a05fc7cc79f5dcb179e43bec1f494e85645dbfd1138401cfaf63c8",
+      "361b8ed2a23cf4a74c6ea534960eff40dc26a9bc4cd98eb5dee2154f2581b78c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0195",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "9f2ceec43ba6c46ae2835d84e3a5a8171fce7601a64745096757d17046c65d67",
+    "source_hashes": [
+      "44024ec5a6150073ff71dd113d037a4f2dd2a7d2008a0cee232b2e461ab44967",
+      "b5c8705a372ec78d837a74f407c2c8f5550203e35ede0396fcfcac6fb39a5ab4"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0196",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "4ae404628450f78199fb17d042a26c50b403532cf2a383cbb52c4e34ddaad080",
+    "source_hashes": [
+      "e2af6bf10ef99a909473c6e9d5e13fc8689d750c95fb5525d482672e3cb05c58",
+      "714a06bc81c6004e6d2c4a312c349927d2b675423f35bea0a8fbb762526c72ab"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0197",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "18fa3bebb161a788aea90dc9f62572186f5a9e4f903c56d83b06d456b2d68b15",
+    "source_hashes": [
+      "62cf47b16bfcc7ff8fc41ea591ba54abe751adaa53780e45c3452e2cccbab1ce",
+      "591c30021689c17e31bcf049fe76a4cec76bd1fad7964a22f94a54600bdfa988"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0198",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "a63e5c0c1a82d80a9dae86bf364cd6767384f035c70e1e0d43d58a7782f8f35e",
+    "source_hashes": [
+      "65ae16589e884d5a61732df15f60d586f7257578e684527d4de8921fc9bbb7fe",
+      "4811021c90d42b97b09d572d1bf8892ffe092fcd3fd1a38a6d1a29d9e3c2bb03"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0199",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c330ff3baca45a82ed851c14198d9d7fcbcdc9a504ead792a448874a322cf31d",
+    "source_hashes": [
+      "497195564269e8f4d878de914d282c16f9b4bf0942f29555d05296dcf23273ba",
+      "8d1ff446a582f1342d67ea6a07bcbb303f8b85289912f8149b0c80191ff5b21c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0200",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "cc7827e186ea4f75d044d0416b97cf015017fe1863a229554ec36eb3048467b8",
+    "source_hashes": [
+      "59beb1b237e5f3057d7293da95ffe4734e6f090f3f466d982223c5b4e0ee1ae3",
+      "0a38cf1bcda6d4208d8231324328da453d086c478886a3c6d55992e8f992dcc2"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0201",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d3e07fc4b6d5cd20e140a3f80f11ab36a9787f471d9f5a2f51838845ee23109d",
+    "source_hashes": [
+      "3f281fda32ac0398d1240da15d5029dd2763cd2535466ec9b23e9445ee73d193",
+      "cda2108bdd3ba1e6e836bd0305aac29428a1f51bcdeaa2c90a9491fa02414fe6"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0202",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "e8dc978b08dd733e5cb031ea3073fb8ce5493a1a38829bd3373a7eaeeb072226",
+    "source_hashes": [
+      "a1734c084f59af39d7021aa822b91976b7409421906de548cebb003c9db1bd48",
+      "38b9733bf1a8eb793fcfdcbcf765bbe84d187a81d05b84105ff46163350abf49"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0203",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "554fce1846f921f952ffd96329f4138da7c15058b397de468b96f30b8de162bc",
+    "source_hashes": [
+      "5d984844efbb255f3f01368f85b1c0edc18fb06ea9265b798edddbe0bae3eeac",
+      "15de160cea945ccda1cc1a2286546b285636b2b67fcb919bc65cfe378a1304bc"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0204",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "fa592f4291847e707ac4db4379d96008847d62392bc5cc33a3b1800dc1238c51",
+    "source_hashes": [
+      "3924b38967ebcd0ae4670bce4946cedcfbd2730e6bca6193144f5e87ddf2fbbc",
+      "f41306f24533f605dfff1a8d1cd111ee3bd7d1d4efdd1e7d985ea558e23187e8"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0205",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "32ac85e54a86bad944183f1261e779a4b8a0aa3a0131af6568478e7634875598",
+    "source_hashes": [
+      "d81e58984e2e34bf98f25be3115af4512025d9751065c5bd68176f980a24c0cf",
+      "e87c9988ad96c0a1fd232ebc2e9b603f06cc2756d0cd981af02920791fe484c6"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0206",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c601c521d4b312fb1b40a8511bf4f4e2ce253c6e2a05bb76102b069af81f0b7e",
+    "source_hashes": [
+      "a9d752f71cf1b8cf60be6d81ff1f7b5fe778c93a1e519a1aac7f2d7c95c206d2",
+      "cd090e9d060b096ce27dbce5f933088606179cd584344abda60821764cf9980f"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0207",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "03ed6284046a1c5ccf2f687ad043d5e21762237c89e18371c740fc17c38df42c",
+    "source_hashes": [
+      "00223f65ddb54dee02dfed572deb31eeda2a440540c6577426a346c5412cbfbe",
+      "1f417171c2a7f49bb73bb2736d01eba13281bf939e137207d39d69103d7eaee8"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0208",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "a0bee672520cd14f480d0459179e0535f16e9aa5dde3e3bb24043b9418416d2f",
+    "source_hashes": [
+      "0e2b22cab5b85d4ee59318774efa59db9add9020e4d0d315a7e0c03009546c41",
+      "7ddbd1f2cc8f169433af63d666574b5004ba8cfb767ef61a01db41aaaf8dec8c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0209",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2eae8bf007cdd75478febaaf99412785288c729d2ec40681ad75a97b402a70fc",
+    "source_hashes": [
+      "c74b7ff12c2cf76f250855b61ff68d1f5e84be33bfa760e2b789e116041913af",
+      "c3e14ea59873308d62846b0e8a661e75d8b155c4fc874f469a08a43538ffa1f7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0210",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "e10c41297b647afeb331e580bbb2124c46478a89d6dd78e8e750182a028aee72",
+    "source_hashes": [
+      "2f9b0c878c83dd9db287871bc1457ced9e0cfc93f97673d0838a51a96a1af3cd",
+      "64d95c4104f4acaf8bcd6f7da94acb2f811e27c8da775d595855f72b584365af"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0211",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c099dc9860cd4005ba152126339845ebb2fa9b60436730b030f57977d4bc01e1",
+    "source_hashes": [
+      "c10092cd6f8b0529272d7457e21826109ca38e135f972d71650f0de2ea4c183e",
+      "2a0058883f2f2f023c9904a253566c13ce8d564252d79dce2cbf3ebef68aa84e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0212",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c8c24050a309087cc770f18360636799e7b111912dd00477b0d19c3d17509cf5",
+    "source_hashes": [
+      "3c9a17e43c6f08fde3d4dd55f3f8631de319239ec4df129b755d468f21524d71",
+      "f1f94563d3c0829844004662ea85d9d5bad671449070e938042b6e15e8268565"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0213",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "5aa31b5722f9f0ccaa39a4b7127cd5875ab74fc6f58bf6f88f12bbfd9b34eba0",
+    "source_hashes": [
+      "08c912c9bd50a6d93ef1c92ee7f34a1c04d428e1fef777f64942fdaa0d3ce93c",
+      "6158ba123e8ca9b2c5bebab3bb22880042500122dc57ca38697a74530288f3af"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0214",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "b3c5ef0e02c97d057efac2629fe345c533bf449c5941ca9bec0f19e583b04ea1",
+    "source_hashes": [
+      "c554fcd6f8ba01f14cfd665fbb0cb8a89093a6f581fbfa0d64e3a61098cdee4a",
+      "74c8ebbcf6f2bcc1429d555a3488227ee463a43932ac10c3c3c1d27dd6cdd779"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0215",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0e475c93efa3756b41aac6e163b32b76bb62a11ef111a5dd24d6f5119e2b4eed",
+    "source_hashes": [
+      "e2825c6c6ec43df41a017e730fc5f6a4563f63ee28d043aa14c96793d0d50baa",
+      "e67d7495784012d12ea5b20d3fc1b75ecade84ba2783a2b95f3eae7950efa972"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0216",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d81fbf2f4f346dc933f03d65ffa5691c9650907cafa2c5d52fb8b143bb3bce96",
+    "source_hashes": [
+      "5d77d6dc3619b25612f424a27a0acf0aa590609a69c76d1428bf95eca5db78b6",
+      "6dbe1e4ced1b84929b4273a9eeadb0756947a9bcb76003cbd4a76e6280a2f38e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0217",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2a8f6b02e661ef8cf9ffb6b3e27b1aecd1e36e7c9b80e1781cbaa3dc058ca249",
+    "source_hashes": [
+      "28e31823296cc64d3ec162820341dd41167363edf43a82dbb03820051f26a5fe",
+      "dcf19053e77a55e1cda09bc73dd7a4319d20d0a1a46d873a2cb8fe1d414b626a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0218",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "b60a26041e61084f9bff026def0ac3925979a5a67c0d00c67f6cb59584fcb9e6",
+    "source_hashes": [
+      "449476e791bd14a7416cc219dcd125fc284187365c8ed69d5f89c26c872eba82",
+      "9eeb750386f39329f3e2a24748b3f3325d08ecd0fba49ac8f00a0a2b144c4103"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0219",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "905b65985ebc1cf03b8f5fe6439c5de4399a2b9421ea9aad0d885db4d8fb86e9",
+    "source_hashes": [
+      "821d47b6ceb14ceb2d8b62859b4eec0aae6c4098a951bfaf9c1e2069c19675b9",
+      "5d4c3c5e90e9adc34ce5fb2e7bbd5e3ee8a41bdf178743eae0bd0b476448b9d1"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0220",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "df0b48b9e5805dad16166f72998ba4ff159b5db1f66b74d1c941a0252ea51215",
+    "source_hashes": [
+      "bdefa0e5fa03f9b261f027c9befcf9fe44be70e3bb70eb46fd7245ec6542517c",
+      "a7b9e3a756eeed3d6a33e7422193e8cd9b89f757ddc1246f6c96e75ab5411894"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0221",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "46a8f77bd554c02c23aba7cacce96248fa07edaf1c9690f25a040c8287cbb376",
+    "source_hashes": [
+      "8216b3a3b6a539c5a6644adec98eb786ad34df6c6f672e6356c22d43aa27a277",
+      "3e33033a0c54c0b8edaa586862909dacb470bc2439571619eac0d380bbe6a1eb"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0222",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "a5837adf1d4ca13a67cc0105e858ce157740fc318cd620a85330d05112297df0",
+    "source_hashes": [
+      "05873c64a5edb07ad0c023f45d0c91aff1aa3e83e0e745a2e6100d6b6b7052bf",
+      "77c88bbd306daff6aadf2920c412dad94e4ef5e12c121e2fb7e9699719e4c9d0"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0223",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "44b5b3f8bed94494135f4126e4be1ba6689581965045691bb2dceff9e005a1db",
+    "source_hashes": [
+      "39c682d79f64dcb531a94929a00edee380029c6de73b7b177cbedc3cae98c219",
+      "e3767aa063b53ba4cfb3885460ecaf154c5e9c285bf6b43c3bc45da6bcb7cd8f"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0224",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "98b7f314df057b2d448c800acb9e377de13cd9768256637ad9e98efe25e94f2f",
+    "source_hashes": [
+      "c116a3bf8ffe4757019701c3eae9c267a4497ae9d24053814067b210a3d008ec",
+      "155c042fc0dd02c7b74e2359980270f367b5099a4241c068c8588f054269384a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0225",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "bd9368fe525c95c519a4206a6359b15b74616b9ded0b6bebcf2a2baee3c5386c",
+    "source_hashes": [
+      "9ea1b90e8a6e56854be01860f1f2d52b76696b133e28322b7b1690ef8eee8dcd",
+      "b28fdaca28fcf11abc359766a926a3e720888b577597df3d3f484a07044d2f2c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0226",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f689367d01b35d2016f743364b775a6f5abfeeb332a9850ba246facf25443586",
+    "source_hashes": [
+      "6d844a392d253ec7e0cb3503f0f3145dad6d95b7517fe787c3f173195cad2b21",
+      "8befd92c6f31d5b15f90c5e299f7eb50533a5c7a92d6bde275edb34df1f7c0bc"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0227",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f2765f997ea2db6459e49f963cfd306c321af6e7332b1e5c09fa255fe399735b",
+    "source_hashes": [
+      "d78d31a192dd5ff2f8d2744262109ac01a0d5199b95da82cf220bf45a1473e8c",
+      "2c17d1974defe39d04040e0d1ce663aaa75b167f3d9e0f5f2022a5b0b449b076"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0228",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "477e6ffbf9d4015cbda6b4f2c8756aeeabbd039746c9db95b055d2e85d1a6659",
+    "source_hashes": [
+      "b194ffb844950eddea291ef06caa6a0652c7b1732901460f85c1571ab42e265b",
+      "0c989aaa312d257be6adce3f249a12083836f7e1cd715a29c5bf1f7b7fdb96f6"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0229",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6dd36eac4287cae916cee23e2d28b7841735fb5ce58e1ecf002634c200b2375e",
+    "source_hashes": [
+      "c729409da6cdd4971a4133a8f295fa874349e58e94fc9b144791eb7707c979b6",
+      "cc73c1ea4eea264ead085688899953cda7645c26183f93451477cb64b7d23284"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0230",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "138cb5b5ccec557bb4f4590bf04c7068891dfe9eceea828b1982cd19db5552e7",
+    "source_hashes": [
+      "6e5cbe87aec3d1a27d9ea08351acb0e8f19e999ce273f4bf3233845e7c88f2ab",
+      "716ddc53f3bbb40dc52c2c3e8303988e90e759fcf5819b8828ea98a8b88b04c2"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0231",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "367ce5733290f08404e9e581f9b5f99c12b0ba10c7fd5505fd63c6465fa46c83",
+    "source_hashes": [
+      "82d8635699ede4bbf67098fcf27015ed40e14406d01daecbe23fac9691765c24",
+      "06d612c0a2922418a6d90a02b86b6cc9b2c4a10b594394f5acc17e457d55a6f5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0232",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "a18f8fa864cd6a5aae15dbd64f57d82dd357af7a158d8d9cc5e282710bdaeaf9",
+    "source_hashes": [
+      "a9fcdb8f9d45aa5e8eb27227aec6e0a38c7e8e5ba0c994a444009ccf44e3a2ab",
+      "4081c72bbe9d326eaebc19133a6a3a0b77a5f0ac656c52a7b8d4bcbb4af2ba3e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0233",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f1c6e76f97e007dfdc43508b00b7e795f2c251ae9b9c8fae70bc7d4223af068e",
+    "source_hashes": [
+      "1ede226ade0e0903323a7ff402f8132489bcd9dfec7f0ca54ee1a683da2712bd",
+      "a7e8ce550c95a0a29b124be6ebb721d2b9cd5b78cf7d070b81cf310cc7988418"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0234",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "56daf0c7760105a5dc0c44976fd327cf40ec235d6594506d4376887953292fb0",
+    "source_hashes": [
+      "889a35d8e6c85049614e227d8d45713e2515404a59278e1c7dfa963165cf4b28",
+      "06100c04119690cf2b4cf9dbb9e0fe9c85611c12c42503ec9748c963a917f20c"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0235",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "96397484827ea33a7f200781d9949289301128db3d1a5e37594c7867a5cf67ed",
+    "source_hashes": [
+      "9f37a1922687b6b529ddce4858402a986bf66c103ea921a1e8d93df1668ea515",
+      "81205e59fb93372863e296cd3e220c76e99b4c4b8830ed83f5ba486a1bfc2d37"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0236",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "5b4023fd8594b9d839ddca14272fde996a232879b852d428ff02fb2bd8c6e994",
+    "source_hashes": [
+      "d6bed979392d4e549f78011a4e89a9210c1545b4787055cff5285ff4a6162867",
+      "2e4e2ea824be060a5ac84c50029a3778d1e0bccee5dfdce93fdb763618b9bfdb"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0237",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1233c2ec056605bce8d3a91166c80571aa2b13d4958f23e2bde6fa29516393bb",
+    "source_hashes": [
+      "8bab5d4a61c436970a0c3264bc099fff05c173c15ceb33f007a10ea1e07ab0c2",
+      "a9ff3d97b4f71a88edeafb0ee7b185e763dae9bc6af92d9a31994c493f1d72f5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0238",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "cc835a897a8904bd413816627fb997ddbba0e397c742957f71194b0b14a20bc5",
+    "source_hashes": [
+      "cd21762803792ded59384d8cae86789dbc5a5b4d7e19205b6ce822f0eaac64b9",
+      "59fd91cc1e8a4760d8f4be4d3edd7273e838fea2c8c773de9208c64061ebcd54"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0239",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "18770692cb23f0b1f5c78f615dd066b0c8783feff0ab3794ab2b8112a5df9f14",
+    "source_hashes": [
+      "c6911a0ac9a764d68fbdd15931a9620437a62124323d20869e23a550f241ad31",
+      "b8d9a37f1a48fc40fcdf5a2f350ca829345b2fe623ec1ed075ff0befb686a153"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0240",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0b327c590afc68fe1fadc14d0319dba6a03d4c3afc9cab836598b114079cb7ae",
+    "source_hashes": [
+      "d4b6eef53ceb6ecc09de405ed3857cc981c626b2a64179caa3bc6150588f6f02",
+      "0eefd26706b61a95fa22699758c49bdb125da6bc4e2b207685cdf78952a6e2c1"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0241",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "875819ce1b32e604bebb2ca2e83d2de8228137d0c7bed5148eea04625c946eeb",
+    "source_hashes": [
+      "c7cb9e80479db8a05ed7d8d5ce4de92091bcca96e355e90d93cb68c7746027d8",
+      "8bd3dd5374885a789629b7300ac2c88022300d9fc6f406e95812e22e695cad61"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0242",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "ac02c2cd3a9c378e7e1dc9ac58a4b1ae9594b89c4705b79ea0c2a0e9193871d0",
+    "source_hashes": [
+      "cfea43be2c53d4862905f036c533ccbefc476e71acba8a4b9cd0271f4d2cdc7e",
+      "0ea37d7c63775cc785390f57417cbcf900c289ff8953c39ac161e9bc75dec8bc"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0243",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "ab275cdc967e47c81a3b1a0bd84f8905802552e119f0b867e908cd41760da4d9",
+    "source_hashes": [
+      "0a3b8e2f14d4021347bcb9e3a0a48ff35b81a22e10f7e1ec5cdd8d60afc8aa3d",
+      "793151e2e0dc7e7a4e0f4adb0e9d7a35d25e3c42c15d020c40b04329ceab491e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0244",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6063fcb8c5e36e2b7bd5d09193728f2a192824a68cf71d062788cc1551b7e5ae",
+    "source_hashes": [
+      "1f61b4f8a442b18a474ec448b6ef3cbfca16b5d1ae4619d1147984cbafd0c3d8",
+      "af27488d3f59fd9331cf92507d4e6bbb0a2c9413f4195bcff620a53ea76ad240"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0245",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d1bb5dc16ae8b3907eeb51fcba97785d05c4e64f21d5bf4529ffa477bb7ece4d",
+    "source_hashes": [
+      "28b27fbe17ebabb8eb009228714a4d86564f8f5a72fd6aeac82e0e4ae2850481",
+      "a3dee6c578803a9644f10f52b6145db782936dbc64a53241ccd4ada58841736e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0246",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "738b5393998da4a5f20a7a900907163d68cc7101e6de2bdd0cc0acafd34f422d",
+    "source_hashes": [
+      "f845ce23a795c19a1a74aedf46451c660f60f896a3c2d9e6c61421f732248631",
+      "28c82660281aca6beca6cbe87208572ca0b5b0c0accc0917ea1718130e679aff"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0247",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "b3161692c7f764de4b30f5acd6566586ab91fceea97e64c3532114e07ce54b18",
+    "source_hashes": [
+      "c94015b4cbe03c0b880da0ac1add434ea2287745542d25e68d2c900e65c10634",
+      "0e8d25b242c5c3f86cc62acb4111713de2cc252cd3c8dc9fae3a437d80bcf3a7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0248",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "14286f87bc49f37b0649e474f6847d913a3afb81b7ddcd4b6ec369ca13b091eb",
+    "source_hashes": [
+      "7c02bddeb2107c9bbb3c1bfa75cea376226bffde28b8c6bbee36ab16190110ec",
+      "c06860bd4ac1c8463b278019718f7b94d71536424a6f5edba423ae82caa7eec5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0249",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "568ce8812a1a31e7fa01c3773d2100ff0b6752bd431893a45a0f8fd44402b088",
+    "source_hashes": [
+      "8b96000c9112ea4920d4da20a06c9034ed82fed58e29f2d3b7fcd90b8df945fa",
+      "cdebce61dd17e38be238aa0997712df8686faeba5d57a02131b09cf162691d69"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0250",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "7dfd05b8acba0080de4e9a560932dc6b353215ddd369e6d9c65238e6a0379d5c",
+    "source_hashes": [
+      "37fb3fd6280d7692608aab26d113552c317ea842695cb249f67dbfda16076ab5",
+      "9cbd38c7f3c4a12a93f5f67944d894b134c385324532d4a4ebb5e6234ff44fb5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0251",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "6088057adaf42ea90eee00972de7e0e18e0c88c82be5fc8b21599dc78b4ecc8c",
+    "source_hashes": [
+      "cf182cc369d00c66363b7f882f05ce11f9a5c531d35d92c62569b744f9603d00",
+      "316d400a392c503fef75204b7393d6b6ee9c977dac89af8e2c6cced45443f2e7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0252",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2544a06ed0056b6a3801548aac89968b3e1a2dfee5ae0594624e309b6ed45d37",
+    "source_hashes": [
+      "e3161fc2db45811c05b9f2c4a670f9c38c48de2c74f17f00ff9b39bf07537e64",
+      "75c2a42dd8a18877097d638b243c4e1e57b75a5babec4245028f2ce1d873f2dd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0253",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c2e253c842f226b8499eb578603356b8f6a2a0870390d9b042b14e8e0f711993",
+    "source_hashes": [
+      "a35ad44fb8083833034fd343e6ad303b61698c14b8a8eb0312d00076741df732",
+      "0f9c045ab6145ca77d7de88d6cf51f3d6dad45453e1e9a652b4754520e137aab"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0254",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "be621b594bf5df323efd004628919a92ac1e648236f255bfd7209507a2873251",
+    "source_hashes": [
+      "4d2702ab739eb25476b192821d4bafd4d965eee6c018774cbd75a1a8006ee3f4",
+      "2337d721afbe592a29a1f55644be8f4c020c1321f42a4c1453d3f79f0a43e136"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0255",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "3d7b49a2c5789428b2c399be5e0af80ae2fec37a1f274dd5a264e02d1cacf088",
+    "source_hashes": [
+      "6d1f399163e1a8afb69b4829c77c133251670c14eb9475b023c2e1bc3e944e16",
+      "ee8d67449d1a44e702a4317919378fc6f450e08df6792b0eda65e02caa3413af"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0256",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "083e4412df462e276da9ad83c55518e35a1d7aa06d95bca0fd979ff223e36e92",
+    "source_hashes": [
+      "da8c7754f6a6a7aab0e957e369f9c966e0842464076ecac4b7334fad35cadb0a",
+      "e387da14e5cb7fa9f4037050d6d02b0d58b3f352f727334c2196454becfd636f"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0257",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d109affcafb7f036a70dfba84480ed66716ebe165294b2b7e09dc90110b6f2e9",
+    "source_hashes": [
+      "fa4eb6a72b9b9750d46c18d434dc82a5c8ff9d7ad85aab09629a9e38cec5c812",
+      "df4ded15b5f6a6f29a298c5b9d1f85d9db6ee3cc063c93b0e66849bbd9b6a437"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0258",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "1d1cd4abd26213288744d4fd133c3956ac1ed9b6bfaf7f5e4088fa3fa1c0b31e",
+    "source_hashes": [
+      "f24cf32320f26dd91d12f227ca93b6f9ac453efed19fd78f2fe4dbee0ae7e71d",
+      "fd32d2eaaffd8cafdb4570b54f189397b8140a16342d1690c5f019948fd53d0a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0259",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "77e9862ef24281bf3c48f35df3d678db5cfb053454520063c2c5439b3ced642d",
+    "source_hashes": [
+      "5be6fc3bbe15bcf8d37233b89bfa7900aca975740d3c9736da19b2393824f273",
+      "99843d38b2519f334503ad15541582d3e07588d345a327e572a4b4eaa7ee6474"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0260",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "dc812f10392c59f6546bb7b7c78a8ce7d878f6d36cbadb5daede999b7dc3f86e",
+    "source_hashes": [
+      "f5a7a5e7a4a4e999a1ff55e1910d4dc88ade6e8d01ff99e2ca9cc298737c7de5",
+      "4afc1bc88cd0f33420d5a8e9af1acacce0b5e8e58f89a46ecfddfb25cf022d24"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0261",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "871b24f3bb249cca78723e187cc52cf05bdcf8e25eef4724e407d889bd18cdf8",
+    "source_hashes": [
+      "927018d1600e3c8d316e5e67649130cbe742759430bc9e1f01e504ab45e9896b",
+      "8f683008209d058b6f48fdd87ca62b40f93d626a974bbf6b622db9fd3ebec09a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0262",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "b090b55cd9f97f2c692fbf9fec761429554f1d26960946a9ceab395d923f89be",
+    "source_hashes": [
+      "08878d92dd5038ff62f7898324edf9e432962a87d1b1b0bbb259f309665b9c8e",
+      "cbe9145d092dae673c7165d79db1f65c96715ed2d6cb6e3ffcf9db41b044b7fd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0263",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "fee75176f20677b9cac2d6acc99c60c2255d6e311b323d7ebdee238fb424533a",
+    "source_hashes": [
+      "188a86a664184ffeb7c92bc9327e9bfc345a8102c9cb103fe89c6af16a5a41f3",
+      "c8646564487efbb004dcfc6c8f5dc57952f500e2fbdbcd5133fed6ff488f6b49"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0264",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2b2dca08757b8fdd8af11f9e492d47544f77e72941898a7eeef4012239ee6a6f",
+    "source_hashes": [
+      "fbcb56a95623065acf21e8b923ee29d1c608e76db98f1faa5d71108f09376632",
+      "3f076a155805620ecbbe7d38ab910f03bec7165421d30a2fa5becb00e3a6ace9"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0265",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c476877f2b5ef1c7fd7f3cedb22a2f9d4fcb13dffa54d8a0ef57b2102c997408",
+    "source_hashes": [
+      "a8106bbdd88f9de5011916f54e25c48ec653d67a5ad598cfac91a7e6676c4c3a",
+      "fdb08bf7471e72e5fe02dfb33063e1fd41b34a781b924acbb7b80f824cc6fcf0"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0266",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0985bdeaeff99380b63b895b48bff6aa93c218d9f1c805f7a47ecdfad0ac4f51",
+    "source_hashes": [
+      "2404e30372e1aa184991ad33b073ab587ac798046877d9b43dc4f25b58bb3d67",
+      "a0eb32aaf696328d555822c30c755adba58a7e47334a9bb842d649f265725c51"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0267",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "654ebabe194718312b980f29f4be183e2807b48200fc74e2b310c3f49d49947f",
+    "source_hashes": [
+      "c5146c7dfed5fcbecb1d727a45242c9b6474af6f6d13a382d8ceea6242c9eb52",
+      "447c3df1c08fcee550ee95cdd55f8180feb2de077782b7610fabe6e0778fa7d9"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0268",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "227b5bfe906cf6410cd753a03286d2b8a4a3395c807c5606db689dc63c5bbddb",
+    "source_hashes": [
+      "20bf5fc4af3233016ff63eb8ade01859676b97fdb1f84c6dc16ecf5ce6a220a9",
+      "c2abd84969359c48dd25bab894c35dabfe643e1f18db6fdad1008a387f3f037d"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0269",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c7bf48f66669016a1587cdfa63ce1f054ffb72609816e6ca05c83ef6183e716c",
+    "source_hashes": [
+      "975634985c8fa60b9b271bbabd5d70eada670704a9cdebc23b8540a17e0feffd",
+      "1df9a753f8bc8a0cd67a1f6675b7fa0e9ba97f998ffb4c866d63191642f61410"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0270",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "e430738dec57646a513049409d9bd969c73ac367d2c0a4763f9deb71238ad66b",
+    "source_hashes": [
+      "d174fdde3d9b5c3dc32f8ff83d6ec9e89304398091707c6b8ab78fb69899aeac",
+      "ef879d8e6e269515335a3f4dd38d6c67caf41906d55278b8fd4d516f007317be"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0271",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "35a6fa236224d2c76e6dadb35c9e2fd6bb3e0e2be075afe848eb93ad8a743bdb",
+    "source_hashes": [
+      "ed7a196676e306f7398d2081f630541da3c3647a3a5f4842cce182fc56053a99",
+      "817815a519e6902a72caeec7e2c85b4d2088077422263124a21a5ffd738e1985"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0272",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c337f61545bf93c989bbe352ce7b65f58e1c11bb53f6f813c4ed2f3a037aa510",
+    "source_hashes": [
+      "a83b49cb14778476c5456d77c02ea1276365820f9fc57c80c8f9c813f3b9450b",
+      "b1923ceece9413d8c8218a4d6213762515baed9e364a9532944a3b16c63b1e6a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0273",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "a0717665ab4f538c8ceeb6e8994e626ae51289e364a2bd1623a7af1847146c15",
+    "source_hashes": [
+      "6107582986ae75694ed4ebdc4f58b3bc41f92f696d7abc5c1a0ec5e0c0b0bb0a",
+      "44ba6685fbf07779737e2d59763312379819b83d4962ebfef82740338c9959f3"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0274",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "8c9e8b13eaba90fe10ad8411da7339edeb457d733c2fee222e51c65d60e60b5d",
+    "source_hashes": [
+      "cae33e7a5ea4f6e07f33c2e3266993fe4cb5cfca7b8158ebdcf92730f2faab72",
+      "feb96a47660335ca60ec3c071cd126c04fc88d620c570af94d2e01fe589f7682"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0275",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "afcbb94cf07f5f1e71553cef1e4c597147d0594224c59b17fb9d903ed0be8755",
+    "source_hashes": [
+      "cd5fddcf60d63c17977cb08eaf4c20008a0bc94f8c916fe9a42be53ca963584f",
+      "05556c096d138e3c7e69bea0720a3ee62056895c5ff23cb3c6feb56038d9b16f"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0276",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "8a0d9d82a57aa84c9000cc880774dc454632ec8e8dd9745955a78be87abbbcdd",
+    "source_hashes": [
+      "d4f86242ea1ec8c582dcebcb2c7e8c7ec517948d5088615ebd315cc94cf59119",
+      "7859bd02806d7609dce6419c0cc71ce0abb2da237f393829e1d560ed0a10da69"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0277",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "c6d62195c531da0c1dd66d561b79b6193d28decd2d4a1620edd62037e0175a2b",
+    "source_hashes": [
+      "489b13eefdc9cc762c558be000d32931cb3b15c961cacac89434442f2d824c63",
+      "89627809e173ede400c6ca8e8ed8a8b8d265109a2aedb2ef4db07c07a0247fdd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0278",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "9198cfa38c9307048ca2a7e37542e4505c0ba0e98008032386641040bca4ca6b",
+    "source_hashes": [
+      "4b1e4f53d8b87722e1b93372bc5bf1b4e35c9c5e57df83097e21cd5d68a1d113",
+      "5d8bffb2c33af6b258f3b1cfbbb05d0d6040e2279479303d43f33bd39ae6a7f7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0279",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "885226f640a33e0e4851a5c51457a48d9867b1644d495246a30a19c41a1bee83",
+    "source_hashes": [
+      "6ab2493b166105653e416b5d47af3e76a6118a15b3b853211aa42894925edeaf",
+      "d27ed89a143be61a1565efc8f674b81adb7db48d9dcf399a016b553d52ec4457"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0280",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "e81243f64df647a9d8b8da2d6a1af0e7ddaae4bd2c90d656c88a3090b6b2aed9",
+    "source_hashes": [
+      "314e010056ee7039f9980d3237a506e81e796365bf6bac453dd7fd7b5418f6a4",
+      "260356629c65098988d891dc61a3896c5e69369adefbf69c017246881137f961"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0281",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "37f7e5784e5b5a5989bdc83d557cb8ae6a96fad1afb20ec556f562fc6b44443d",
+    "source_hashes": [
+      "dded080327c5cb37c7ad731300865bde0e856770943e79495f8a36625e5e9e99",
+      "5d4a4754c82e7e4078b736a6b0bd96244e673636235ff1af94c3878fd40c64e5"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0282",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "4a164d1c25f50b70cc9805bb5ca7e04046817479ffec6cc53c5d3601298517e8",
+    "source_hashes": [
+      "b0f7e8a8fc69f66fab90e344583412d8d322a62984014d3e8ccc1d65f92ffe97",
+      "01d3de766439964850790031e3adb6ad5b6a389353f5299498cfe6edb4ea9b1e"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0283",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "bec583c7844f23f4df5697255d30749442c6f6b45726b279a2dc3327128c6193",
+    "source_hashes": [
+      "8b40749416a57b55e0bfea18e82fb89f931ca4de6c2b55ef9f62f1435c7e112a",
+      "27ae6db4fcd4bf593418bae92bd201fb206de7ad00ee17a52bc6d028649e5325"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0284",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "cf891260c63692bc422a8ed6468f64491490fa5e422c042b3c4ced9c0d85136b",
+    "source_hashes": [
+      "126a54531f3e9fdbdfa554b3a8687051a6b94bdf6ccd401abd9b95358ab61a62",
+      "7935c8c867e242f79abb87820418b25cfd1c01da0bdb73204db342024ea572da"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0285",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "07b01c4b8313e77c2efea4a7363dac771a42e405bbb798d4adf28cfab70371c0",
+    "source_hashes": [
+      "cde114ae29afda753bd5c121e19201585b5d4ad7a676969b6e69779c319892d8",
+      "dda77ec63c321aa2783365f956315a34846a8baa8d0fb38fe12e7cf8605b09b7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0286",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f7c686efbbba4ac6f384fe071db8bde60597296b912dd3243579c794ef9e8026",
+    "source_hashes": [
+      "08936f0f41f61711464e235e20b01b80e9b349bb501cc8e5626d5ca6cffd0949",
+      "2ae88c34844308e1ca20edc459bfe479ef5ef5b980bbd901414b8abd53790ab6"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0287",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "0c19e94d0aeff6afcc9f91b676e8dbcdd080de118416e28584d4b5914b0da7d7",
+    "source_hashes": [
+      "b620080be61cb21b7c258ea1d86866e39c02f3c751700268009e6f7d54d50377",
+      "64a9600b07c2fb4cdcc9522dc0e319e32477d3e1243842f6bbb96a37d499cf8b"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0288",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "53a2b93d0a73ccd3deb4ec3033aee352a699dd77516d02ad7a8f5a4c402bf1ce",
+    "source_hashes": [
+      "928ad6b2188bd9e5439769fa7102e4492f491e04cc683585804095d3f8f65c33",
+      "8e7ef93b70d50501287bca8eb6783f9810d10fda13278a410b5d2692f97d7fe0"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0289",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "5a8e49d1892c43eeb3bedd27427e7aaeab7f818935dcf47f89b45459ec8d144f",
+    "source_hashes": [
+      "5fdf2e9ac31069d3780435a9fc4d2b87e1a052b4d81cbb78ef73575a1570c709",
+      "430d773018e1906fc9f05dc8513cc2f969742859581123eec3dbe678cd993fc7"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0290",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d1e395163fe1f2d237dbdedfaa0494e257cecf0ea0e42086f20648413ead23be",
+    "source_hashes": [
+      "2c66a83ca24a3aa18f761d0bb642ea3e1a7501dfb28f94b26d82b8272f40a5c8",
+      "a8c59f089fce455f9740eae608af9435ac578153b8e3eabfe742f98423fed7cc"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0291",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2e92b27c2fbe814c826b45ab19a9490583d270d2813c5040dcdb3fe4e6dbe12a",
+    "source_hashes": [
+      "f69a264601f59b219e48113f571a7a5bb13e3f11c6c186d770ac2b7d0b162808",
+      "cd56a8bd0ed33d6f5a1f6af7cd9bd7c02f192a43b0348a36b93672ba0121a460"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0292",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "35b282826698c09eb1327c913a04c4713c410fd8582c1e1112c9d2175457c991",
+    "source_hashes": [
+      "395064e6ed3257cb90e3646b8403ad0a7920a1d15f92f9ad7c807d6406c50544",
+      "d9c200285bc988a2240a890738fead234cbe53e6113c45f258b780f09d8baf53"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0293",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "f45390add7bcc70aad70c273c3580fe93cd0123084a353372d2c5020bcdc65f9",
+    "source_hashes": [
+      "e3fb54b8eec7528c990c1497ac7469ef368104348639fa3fcb700903b293436d",
+      "7df548f4cf1ef85eeb1db3a96adf4f0bb2b5e11073fb5d186115487e9f68405a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0294",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "ea1b1d2b1ac037fd14a7c6d9294602e55f7eb47931ff8d027c2c317355bcdd52",
+    "source_hashes": [
+      "f1f39e095855f94038f5fde81bf86028c5a08161249e22f44e735e85a00d99f8",
+      "039c6a32a5ddb8e8b68795b0e0256450c1d0c6dba4ae0d3567d2a24c6360a155"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0295",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "d8febf2838222179cd787d8637ade73b6a6b7249e135c3ce7740e6defe5e88ac",
+    "source_hashes": [
+      "b7350ead7c28748c4cd72b0af3dbb1496eedd5fedb23409bb9b1ce16105c59c3",
+      "dda2d8f68f020c3310176c9b1bc22abbe3ffa2c9db8c3d29b76f6f963ddac33a"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0296",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "914700922c0247659fc6728b4fa51c56bad9f18e31c04a306b53486ca07534ef",
+    "source_hashes": [
+      "4da3b377b1097bfe3a5377866f174760001e7126a4667536ca3a21b05258183a",
+      "260a8bca55b7a27da57ee9cf5f7ef2da1ab254a6fec7aef15a0c17ca93f30042"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0297",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "2eda85dc6d0ff21328ad7b243d2fbc9ce7cc0e8357a21c7936c97b0982ec177b",
+    "source_hashes": [
+      "b8df56e7d3569862c48a86065c8b7bc8f4d0d545cffe265161de1099126108f9",
+      "7e2525bd7aa55d397832ac16e7e10ea5e8ec9d5af22fc56e42d74527b28552ad"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0298",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "9472c5c40e51afa93af32c2a2227bb8608bdae96a7b86b2e048d41525792bffe",
+    "source_hashes": [
+      "2d5f091af64336fba61fccbe5e734d8886adcce67555cd1a40e47150d662ced0",
+      "ffdfa8a0cb67c8ceb20248396af436ab9e09fbbac58a5eefb39d42d4b07faddd"
+    ]
+  },
+  {
+    "round": 1,
+    "family_id": "train-0299",
+    "horizon": 32,
+    "window_turns": [
+      6,
+      17,
+      32
+    ],
+    "graph_hash": "141206e41de9b151b8705e6e8f1e57b3ec15066cef2b3fb5e49f25dadbd10f3f",
+    "source_hashes": [
+      "deb82b960c44b9c1d94e6e66a981859f674823c5b743e69214087f0e0c1b0f21",
+      "bb352fa3ac05b3558de9d24c1b17ccc210873e030953e634435486a09fa356ed"
+    ]
+  }
+]

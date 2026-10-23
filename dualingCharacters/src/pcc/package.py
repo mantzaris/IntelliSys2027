@@ -53,11 +53,11 @@ def regenerate(root: Path):
             for condition in ("base","C1","C3","C4","C5"):
                 points=defaultdict(list)
                 for r in transfer:
-                    if r["model"]=="qwen" and r["condition"]==condition and r["setting"] in {"horizon64-subset","horizon32","horizon128"}:
+                    if r["model"]=="qwen" and r["condition"]==condition and r["seed"]==17 and r["setting"] in {"horizon64-subset","horizon32","horizon128"}:
                         points[r["horizon"]].append(r["paired_success"])
                 if points:
                     xs=sorted(points);ax.plot(xs,[statistics.mean(points[x]) for x in xs],marker="o",label=condition);drawn=True
-            ax.set(xlabel="User/assistant turns",ylabel="Paired task success",ylim=(0,1),title="Antagonist-free horizon evaluation")
+            ax.set(xlabel="User/assistant turns",ylabel="Paired task success",ylim=(0,1),title="Antagonist-free horizon sensitivity; seed 17, common families")
         elif kind=="recovery_curve":
             for condition in ("base","C1","C3","C4","C5"):
                 points=defaultdict(list)

@@ -9,6 +9,7 @@ from .evaluation import run_episodes
 from .freeze import verify_freeze
 from .memory import WorkingMemory
 from .resources import RunLedger, append_json, sha256
+from .diagnostics import jsonlines, trace_path
 
 
 def damage_snapshot(row: dict) -> list[dict]:
@@ -29,7 +30,7 @@ def damage_snapshot(row: dict) -> list[dict]:
 
 def recovery(model, source: Path, family_ids: set[str], out: Path, attempts: int=4):
     # Fixed turn 32 of the 64-turn untrained-base run. Both paired worlds retained.
-    snapshots=[json.loads(x) for x in source.read_text().splitlines()]
+    source=trace_path(source);snapshots=jsonlines(source)
     snapshots=[r for r in snapshots if r["family_id"] in family_ids and r["turn"]==32]
     if len(snapshots)!=2*len(family_ids):raise ValueError("Incomplete fixed-state source")
     model.ledger.metadata["snapshot_source_sha256"]=sha256(source)

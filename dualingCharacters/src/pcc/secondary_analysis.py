@@ -5,7 +5,7 @@ import hashlib
 import json
 import statistics
 from .analysis import paired_success
-from .diagnostics import jsonlines
+from .diagnostics import jsonlines, trace_path
 from .environment import make_family
 from .resources import sha256
 from .study_analysis import write_csv
@@ -63,7 +63,7 @@ def analyze(root: Path):
                     for category in categories:
                         key=f"{name}:{row['family_id']}:{row['world']}"
                         failures[category].append((hashlib.sha256(("failure-audit-v1:"+key).encode()).hexdigest(),{**identity,"family_id":row["family_id"],"world":row["world"],
-                                     "category":category,"response":row["generation"]["raw"],"target":row["target"],"source_path":str((run/"evaluation.jsonl").relative_to(root))}))
+                                     "category":category,"response":row["generation"]["raw"],"target":row["target"],"source_path":str(trace_path(run/"evaluation.jsonl").relative_to(root))}))
         path=run/"recovery.jsonl"
         if path.exists():
             rows=jsonlines(path)

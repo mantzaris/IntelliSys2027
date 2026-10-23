@@ -114,6 +114,10 @@ class Scenario:
     events: tuple[Event, ...]
     switch_turn: int
     graph_hash: str
+    prior_assistant_proposal: Message
+
+    def source_messages(self) -> tuple[Message,...]:
+        return (self.prior_assistant_proposal,*self.messages)
 
     def truth_at(self, turn: int) -> Truth:
         truth = Truth()
@@ -142,7 +146,8 @@ def make_family(split: str, number: int, horizon: int, seed: int = 20261023) -> 
     rng = random.Random(f"{seed}:{split}:{number}")
     domain = DOMAINS[number % (4 if split in {"test", "natural", "pilot"} else 2)]
     # Additional conditional dependency is wholly withheld from train/validation.
-    override = split in {"test", "natural"} and number % 4 >= 2
+    # Cross domain and structural novelty, rather than confounding the two.
+    override = split in {"test", "natural"} and (number//4) % 2 == 1
     transport = list(("ferry", "bus", "walk")); rng.shuffle(transport)
     equipment = list(("projector", "mixed-kit", "stream-kit")); rng.shuffle(equipment)
     spec = TaskSpec(domain, tuple(transport), tuple(equipment), override)
@@ -199,7 +204,8 @@ def make_family(split: str, number: int, horizon: int, seed: int = 20261023) -> 
                 text = "Return the executable final plan, the remembered commitments, their source references, and any specific clarification still needed. Include the transport and equipment required by the planning rules."
             messages.append(Message(t * 2 - 1, "user", text))
             events.append(event)
-        worlds.append(Scenario(family_id, split, world, spec, tuple(messages), tuple(events), switch_turn, graph_hash))
+        prior=Message(0,"assistant",f"A tentative proposal from the earlier planning draft: {alternate} for {DOMAIN_FIELDS[domain][slot]}. This is an assistant suggestion awaiting your decision.")
+        worlds.append(Scenario(family_id, split, world, spec, tuple(messages), tuple(events), switch_turn, graph_hash,prior))
     return tuple(worlds)
 
 

@@ -40,7 +40,7 @@ def jobs(plan: dict):
                        "command":"evaluate","adapter":previous,"horizon":plan["test_horizon"],"families":plan["test_families"],"start_family":0}
     for task in ("horizon32","horizon128","short","larger-memory","unfamiliar","recovery"):
         for condition in ("base","C1","C3","C4","C5"):
-            for seed in ([17] if condition=="base" or task in {"larger-memory","unfamiliar"} else plan["seeds"]):
+            for seed in ([17] if condition=="base" or task in {"larger-memory","unfamiliar","horizon32","horizon128"} else plan["seeds"]):
                 adapter=None if condition=="base" else f"artifacts/runs/main-qwen-{condition.lower()}-{seed}-r1-fit/training/final"
                 yield {"id":f"extra-qwen-{condition.lower()}-{seed}-{task}","model":"qwen","condition":condition,"seed":seed,
                        "command":task,"module":"pcc.extensions","adapter":adapter,"snapshot_source":"artifacts/runs/base-qwen-eval/evaluation.jsonl" if task=="recovery" else None}
@@ -114,7 +114,8 @@ def main():
                       engine="transformers" if job["command"]=="fit" else plan["engine"],
                       structured_decoding=plan["structured_decoding"],
                       batch_size=plan["batch_size"],train_steps=plan["train_steps_per_round"],
-                      train_tokens_per_step=plan["train_tokens_per_step"],phase="confirmatory",max_run_seconds=14400,
+                      train_tokens_per_step=plan["train_tokens_per_step"],phase="confirmatory",
+                      max_run_seconds=plan["data_generation_cap_seconds_per_round"] if job["command"]=="collect" else plan["training_stage_cap_seconds"] if job["command"]=="fit" else plan["evaluation_stage_cap_seconds"],
                       max_input_tokens=8192 if job["command"]=="larger-memory" else 4096,
                       retrieval_messages=16 if job["command"]=="larger-memory" else 8,
                       recent_messages=8 if job["command"]=="larger-memory" else 4)
@@ -144,8 +145,8 @@ def main():
         subprocess.run(ssh+[f"root@{host}","cd "+shlex.quote(remote)+" && PYTHONPATH=src .venv/bin/python -m pcc.storage"],check=True)
         # Synchronize even a failed job; never leave its only evidence on overlay.
         subprocess.run(["bash",str(root/"scripts/sync.sh"),"pull"],check=True,cwd=root)
-        from .storage import deduplicate_completed
-        deduplicate_completed(root)
+        from .storage import deduplicate_completed,compact_completed
+        deduplicate_completed(root);compact_completed(root)
         if returncode:raise RuntimeError(f"Job failed and was mirrored: {job['id']}")
     state_path.write_text(json.dumps({"status":"scheduled_grid_complete","jobs":len(queue)},indent=2)+"\n")
     from .package import regenerate

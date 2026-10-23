@@ -1,0 +1,132 @@
+{
+  "status": "READY_FOR_HASH_FREEZE",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "primary_model": "qwen",
+  "primary_conditions": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "ablations": [
+    "A1",
+    "A2",
+    "A3"
+  ],
+  "replication_model": "phi",
+  "replication_conditions": [
+    "C1",
+    "C3",
+    "C5"
+  ],
+  "training_families": 300,
+  "rounds": [
+    {
+      "start_family": 0,
+      "families": 150,
+      "horizon": 16,
+      "window_turns": [
+        6,
+        9,
+        16
+      ]
+    },
+    {
+      "start_family": 150,
+      "families": 150,
+      "horizon": 32,
+      "window_turns": [
+        6,
+        17,
+        32
+      ]
+    }
+  ],
+  "train_steps_per_round": 256,
+  "train_tokens_per_step": 4096,
+  "training_input_tokens_per_condition_seed": 2097152,
+  "training_mixture": "50:50 eligible clean/recovery windows; report exact target tokens and reuse",
+  "checkpoint_rule": "Final fixed-token checkpoint after two rounds; AdamW and common schedule reset per round; no outcome selection",
+  "test_families": 240,
+  "test_horizon": 64,
+  "extension_family_numbers": [
+    0,
+    4,
+    6,
+    22,
+    34,
+    37,
+    45,
+    50,
+    53,
+    55,
+    56,
+    59,
+    68,
+    80,
+    95,
+    99,
+    104,
+    111,
+    117,
+    122,
+    129,
+    130,
+    133,
+    136,
+    139,
+    141,
+    143,
+    149,
+    156,
+    158,
+    166,
+    170,
+    172,
+    177,
+    180,
+    183,
+    187,
+    194,
+    213,
+    216,
+    221,
+    225,
+    226,
+    227,
+    228,
+    231,
+    234,
+    239
+  ],
+  "horizon_seeds": [
+    17
+  ],
+  "extension_subset_rule": "Twelve lowest SHA256(pcc-horizon-v1:family_id) in each of four domains",
+  "engine": "vllm",
+  "structured_decoding": true,
+  "batch_size": 64,
+  "gpu_hour_ceiling": 96,
+  "data_generation_cap_seconds_per_round": 5400,
+  "training_stage_cap_seconds": 3600,
+  "evaluation_stage_cap_seconds": 5400,
+  "known_hourly_rate_usd": null,
+  "external_questions": 50,
+  "natural_conversations_per_condition": 40,
+  "human_review_outputs": 120,
+  "human_review_status": "Author requested packet now; raters later",
+  "notes": "No test outcomes inspected. Modest-effect power is limited; no significance-based changes or extensions.",
+  "allocation": {
+    "already_reserved_gpu_hours": 1.6009052351644883,
+    "remaining_scheduled_forecast_hours": 83.17933870984584,
+    "contingency_hours": 11.219756054989674,
+    "inference_engine_start_allowance_seconds": 60,
+    "qualification": "Conservative linear batch scaling from measured pilots; forecast, not consumption or a spending target"
+  }
+}

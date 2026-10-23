@@ -14,7 +14,7 @@ def manifest(split: str, count: int | None = None, horizon: int = 32) -> dict:
         families.append({"id":a.family_id,"graph_hash":a.graph_hash,"domain":a.spec.domain,
                          "worlds":[a.world,b.world],"horizon":horizon,
                          "structural_holdout":a.spec.online_override,
-                         "source_hashes":[digest([m.public() for m in x.messages]) for x in (a,b)]})
+                         "source_hashes":[digest([m.public() for m in x.source_messages()]) for x in (a,b)]})
     result = {"schema_version":1,"split":split,"families":families,"turn_definition":"one user message followed by one generated assistant response"}
     result["sha256"] = digest(result)
     return result

@@ -16,6 +16,8 @@ def test_pair_changes_truth_only_with_user_authorization():
     assert a.graph_hash==b.graph_hash
     assert sum(x.text!=y.text for x,y in zip(a.messages,b.messages))==1
     assert a.truth_at(16).values!=b.truth_at(16).values
+    assert a.prior_assistant_proposal==b.prior_assistant_proposal
+    assert a.prior_assistant_proposal.index==0 and a.prior_assistant_proposal.author=="assistant"
     for s in (a,b):
         truth=s.truth_at(16)
         assert score(truth.target(s.spec),truth,s.spec)["success"]

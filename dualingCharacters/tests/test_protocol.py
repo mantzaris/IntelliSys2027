@@ -57,3 +57,18 @@ def test_all_manifest_family_fingerprints_are_disjoint():
             # Fingerprints only, never test answers or policy outcomes.
             assert row["graph_hash"] not in seen,(row["id"],seen.get(row["graph_hash"]))
             seen[row["graph_hash"]]=row["id"]
+
+
+def test_trace_compaction_is_lossless_and_leaves_active_runs(tmp_path):
+    from pcc.storage import compact_completed
+    from pcc.diagnostics import jsonlines
+    for status in ("completed","running"):
+        run=tmp_path/"artifacts/runs"/status;run.mkdir(parents=True)
+        (run/"status.json").write_text(json.dumps({"status":status}))
+        (run/"evaluation.jsonl").write_text('{"response":"measured"}\n')
+    completed=tmp_path/"artifacts/runs/completed/evaluation.jsonl"
+    before=sha256(completed);compact_completed(tmp_path)
+    assert not completed.exists() and completed.with_suffix(".jsonl.gz").exists()
+    assert jsonlines(completed)==[{"response":"measured"}]
+    assert json.loads((completed.parent/"trace_archives.json").read_text())["evaluation.jsonl"]["original_sha256"]==before
+    assert (tmp_path/"artifacts/runs/running/evaluation.jsonl").exists()

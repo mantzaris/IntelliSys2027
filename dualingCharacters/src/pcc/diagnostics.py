@@ -3,12 +3,19 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import json
 import statistics
+import gzip
 from .analysis import paired_success
 
 
+def trace_path(path: Path) -> Path:
+    return path if path.exists() else path.with_suffix(path.suffix+".gz")
+
+
 def jsonlines(path: Path) -> list[dict]:
+    path=trace_path(path)
     if not path.exists():return []
-    return [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+    opener=gzip.open if path.suffix==".gz" else open
+    with opener(path,"rt") as stream:return [json.loads(line) for line in stream if line.strip()]
 
 
 def audit_run(run: Path) -> dict:
