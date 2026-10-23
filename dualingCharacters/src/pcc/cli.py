@@ -10,7 +10,7 @@ from .environment import make_family, digest
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("command",choices=["manifests","profile","pilot","collect","evaluate","analyze"])
+    parser.add_argument("command",choices=["manifests","profile","batch-profile","pilot","collect","evaluate","analyze"])
     parser.add_argument("--root",type=Path,default=Path.cwd())
     parser.add_argument("--config",type=Path)
     parser.add_argument("--run-id")
@@ -44,7 +44,22 @@ def main():
         ledger.metadata["dataset_hash"]=digest([{"id":s.family_id,"world":s.world,"graph":s.graph_hash} for s in scenarios])
         model=Backbone(cfg,ledger,root/"configs/models.json")
         if args.adapter:model.load_adapter(args.adapter)
-        if args.command=="profile":
+        if args.command=="batch-profile":
+            from .memory import observation, WorkingMemory
+            from .resources import append_json
+            # Throughput only: repeated public prompts are not independent data.
+            pool=[observation(s.spec,list(s.messages[:8]),WorkingMemory(),cfg.retrieval_messages,cfg.recent_messages)[0] for s in scenarios]
+            for size in (4,8,16,32,64):
+                try:
+                    results=model.generate([pool[i%len(pool)] for i in range(size)])
+                    append_json(ledger.run_dir/"throughput.jsonl",{"batch_size":size,"seconds":results[0]["batch_seconds"],
+                                "output_tokens":sum(r["output_tokens"] for r in results),"peak_vram_bytes":ledger.peak_vram_bytes})
+                    print(json.dumps({"batch_size":size,"seconds":results[0]["batch_seconds"]}),flush=True)
+                except model.torch.cuda.OutOfMemoryError:
+                    model.torch.cuda.empty_cache()
+                    append_json(ledger.run_dir/"throughput.jsonl",{"batch_size":size,"status":"oom"})
+                    break
+        elif args.command=="profile":
             # A tiny, explicitly unbalanced engineering profile, not hypothesis evidence.
             _,windows=run_episodes(model,scenarios[:cfg.batch_size],"C1",ledger.run_dir/"profile_before.jsonl",True)
             examples,counts=select_supervision(model,windows,ledger.run_dir/"supervision.jsonl",max_candidates=8)

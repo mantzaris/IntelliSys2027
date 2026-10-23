@@ -1,0 +1,148 @@
+[
+  {
+    "run_id": "pilot-c3-001",
+    "phase": "pilot",
+    "condition": "C3",
+    "status": "failed",
+    "roles": {
+      "Generic": {
+        "n": 32,
+        "action_types": {
+          "recollect": 30,
+          "propose": 2
+        },
+        "applied": 15,
+        "contradictory_value": 27,
+        "contradictory_edit_with_source_access": 25,
+        "memory_changes": 15
+      }
+    },
+    "peer_messages": 0,
+    "before": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0.25,
+      "conversation_success": 0.25,
+      "malformed_rate": 0.1328125,
+      "turn_success": 0.2421875
+    },
+    "resources": {
+      "gpu_reserved_seconds": 101.82988438429311,
+      "peak_vram_gib": 11.095694065093994,
+      "input_tokens": 184658,
+      "output_tokens": 12870,
+      "generation_seconds": 96.43779301736504,
+      "aggregate_output_tokens_per_second": 133.45390429748394
+    }
+  },
+  {
+    "run_id": "pilot-c3-002",
+    "phase": "pilot",
+    "condition": "C3",
+    "status": "running",
+    "roles": {
+      "Generic": {
+        "n": 96,
+        "action_types": {
+          "recollect": 47,
+          "propose": 10,
+          "edit": 39
+        },
+        "applied": 52,
+        "contradictory_value": 85,
+        "contradictory_edit_with_source_access": 69,
+        "memory_changes": 52
+      }
+    },
+    "peer_messages": 0,
+    "before": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0.25,
+      "conversation_success": 0.25,
+      "malformed_rate": 0.1328125,
+      "turn_success": 0.2421875
+    },
+    "collection": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0,
+      "conversation_success": 0.25,
+      "malformed_rate": 0.2578125,
+      "turn_success": 0.3203125
+    },
+    "supervision": {
+      "attempted_windows": 128,
+      "source_ineligible": 46,
+      "clean_valid": 32,
+      "failed_eligible": 50,
+      "candidate_attempts": 32,
+      "candidate_valid": 0,
+      "candidate_discarded": 32,
+      "gold_teacher_examples": 82,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 212.73394098877907,
+      "peak_vram_gib": 16.56701946258545,
+      "input_tokens": 363138,
+      "output_tokens": 24386,
+      "generation_seconds": 195.64595263451338,
+      "aggregate_output_tokens_per_second": 124.64351892602419
+    }
+  },
+  {
+    "run_id": "profile-bf16-001",
+    "phase": "pilot",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "supervision": {
+      "attempted_windows": 32,
+      "source_ineligible": 11,
+      "clean_valid": 0,
+      "failed_eligible": 21,
+      "candidate_attempts": 8,
+      "candidate_valid": 0,
+      "candidate_discarded": 8,
+      "gold_teacher_examples": 21,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 54.26432136911899,
+      "peak_vram_gib": 16.56701946258545,
+      "input_tokens": 30579,
+      "output_tokens": 2811,
+      "generation_seconds": 36.00545267248526,
+      "aggregate_output_tokens_per_second": 78.07150837873279
+    }
+  },
+  {
+    "run_id": "profile-nf4-001",
+    "phase": "pilot",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "supervision": {
+      "attempted_windows": 32,
+      "source_ineligible": 16,
+      "clean_valid": 0,
+      "failed_eligible": 16,
+      "candidate_attempts": 8,
+      "candidate_valid": 0,
+      "candidate_discarded": 8,
+      "gold_teacher_examples": 16,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 98.8186606746167,
+      "peak_vram_gib": 14.148526191711426,
+      "input_tokens": 32536,
+      "output_tokens": 2747,
+      "generation_seconds": 71.93425174057484,
+      "aggregate_output_tokens_per_second": 38.18764960406952
+    }
+  }
+]
