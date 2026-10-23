@@ -1,0 +1,14 @@
+{
+  "qwen": {
+    "name": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license": "Apache-2.0",
+    "trust_remote_code": false
+  },
+  "phi": {
+    "name": "microsoft/Phi-4-mini-instruct",
+    "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "license": "MIT",
+    "trust_remote_code": false
+  }
+}

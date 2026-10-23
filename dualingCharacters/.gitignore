@@ -1,0 +1,23 @@
+# Regenerable data and large evidence remain local and on the authorized pod.
+artifacts/
+data/generated/
+data/external/
+literature/cache/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+*.log
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.zip
+*.tar*
+.coverage
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.pdf
