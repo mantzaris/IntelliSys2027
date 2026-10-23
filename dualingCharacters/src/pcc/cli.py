@@ -10,7 +10,7 @@ from .environment import make_family, digest
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument("command",choices=["manifests","profile","batch-profile","pilot","collect","evaluate","analyze"])
+    parser.add_argument("command",choices=["manifests","profile","batch-profile","mechanism-pilot","pilot","collect","evaluate","analyze"])
     parser.add_argument("--root",type=Path,default=Path.cwd())
     parser.add_argument("--config",type=Path)
     parser.add_argument("--run-id")
@@ -59,6 +59,10 @@ def main():
                     model.torch.cuda.empty_cache()
                     append_json(ledger.run_dir/"throughput.jsonl",{"batch_size":size,"status":"oom"})
                     break
+        elif args.command=="mechanism-pilot":
+            if cfg.phase!="pilot" or args.split!="pilot":raise ValueError("Mechanism development uses pilot families only")
+            for condition in ("C1","C3","C4","C5","C6","A1","A2","A3"):
+                run_episodes(model,scenarios,condition,ledger.run_dir/f"{condition}.jsonl")
         elif args.command=="profile":
             # A tiny, explicitly unbalanced engineering profile, not hypothesis evidence.
             _,windows=run_episodes(model,scenarios[:cfg.batch_size],"C1",ledger.run_dir/"profile_before.jsonl",True)

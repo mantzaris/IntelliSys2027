@@ -1,5 +1,21 @@
 [
   {
+    "run_id": "batch-profile-001",
+    "phase": "pilot",
+    "condition": "C1",
+    "status": "running",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 0.001239662989974022,
+      "peak_vram_gib": 0.0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
     "run_id": "pilot-c3-001",
     "phase": "pilot",
     "condition": "C3",
@@ -39,7 +55,7 @@
     "run_id": "pilot-c3-002",
     "phase": "pilot",
     "condition": "C3",
-    "status": "running",
+    "status": "completed",
     "roles": {
       "Generic": {
         "n": 96,
@@ -71,6 +87,14 @@
       "malformed_rate": 0.2578125,
       "turn_success": 0.3203125
     },
+    "after": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0.25,
+      "conversation_success": 0.375,
+      "malformed_rate": 0,
+      "turn_success": 0.46875
+    },
     "supervision": {
       "attempted_windows": 128,
       "source_ineligible": 46,
@@ -83,12 +107,86 @@
       "reused": 0
     },
     "resources": {
-      "gpu_reserved_seconds": 212.73394098877907,
+      "gpu_reserved_seconds": 449.7868980257772,
       "peak_vram_gib": 16.56701946258545,
-      "input_tokens": 363138,
-      "output_tokens": 24386,
-      "generation_seconds": 195.64595263451338,
-      "aggregate_output_tokens_per_second": 124.64351892602419
+      "input_tokens": 475592,
+      "output_tokens": 32911,
+      "generation_seconds": 277.6335714268498,
+      "aggregate_output_tokens_per_second": 118.54113978673256
+    }
+  },
+  {
+    "run_id": "pilot-c5-001",
+    "phase": "pilot",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 48,
+        "action_types": {
+          "recollect": 44,
+          "propose": 4
+        },
+        "applied": 36,
+        "contradictory_value": 36,
+        "contradictory_edit_with_source_access": 34,
+        "memory_changes": 36
+      },
+      "Rival": {
+        "n": 48,
+        "action_types": {
+          "recollect": 35,
+          "propose": 13
+        },
+        "applied": 42,
+        "contradictory_value": 30,
+        "contradictory_edit_with_source_access": 22,
+        "memory_changes": 42
+      }
+    },
+    "peer_messages": 0,
+    "before": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0.25,
+      "conversation_success": 0.25,
+      "malformed_rate": 0.1328125,
+      "turn_success": 0.2421875
+    },
+    "collection": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0,
+      "conversation_success": 0.25,
+      "malformed_rate": 0.3203125,
+      "turn_success": 0.484375
+    },
+    "after": {
+      "conversations": 8,
+      "families": 4,
+      "paired_success": 0.5,
+      "conversation_success": 0.625,
+      "malformed_rate": 0,
+      "turn_success": 0.4296875
+    },
+    "supervision": {
+      "attempted_windows": 128,
+      "source_ineligible": 46,
+      "clean_valid": 43,
+      "failed_eligible": 39,
+      "candidate_attempts": 32,
+      "candidate_valid": 2,
+      "candidate_discarded": 30,
+      "gold_teacher_examples": 80,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 477.0383701482788,
+      "peak_vram_gib": 16.56701946258545,
+      "input_tokens": 490997,
+      "output_tokens": 32319,
+      "generation_seconds": 311.14505743188784,
+      "aggregate_output_tokens_per_second": 103.87116628736707
     }
   },
   {
