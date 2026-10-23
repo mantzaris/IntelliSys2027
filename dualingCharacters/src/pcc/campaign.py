@@ -105,6 +105,9 @@ def main():
     overrides_path=root/"artifacts/campaign_resume.json"
     overrides=json.loads(overrides_path.read_text()) if overrides_path.exists() else {}
     for job in queue:
+        hold=root/"artifacts/campaign_boundary_hold.json"
+        if hold.exists():
+            raise RuntimeError("Infrastructure hold before another GPU stage: "+json.loads(hold.read_text())["reason"])
         original_id=job["id"]
         override=overrides.get(original_id,{})
         if set(override)-{"run_id","checkpoint","reason"}:raise ValueError("Resume overrides may not change experimental choices")

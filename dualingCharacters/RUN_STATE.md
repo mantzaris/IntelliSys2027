@@ -5,6 +5,17 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Current phase
 
+Infrastructure amendment in progress during the first two baseline evaluations.
+Qwen base completed; Phi base is running under the original frozen source.
+`reports/INFRASTRUCTURE_AMENDMENT_001.md` records a local stale-prefix compression
+bug; the pod's complete outputs are intact and the Qwen mirror has been restored.
+A temporary directory gate at
+`artifacts/campaign_configs/main-qwen-c1-17-r0-collect.json` prevents the old
+controller starting training after Phi finishes. Do not mistake this for a run.
+The marker `artifacts/campaign_boundary_hold.json` explains the hold. Finish the
+current GPU stage, verify mirrors, remove only the documented gate/marker, and
+restart the controller with the recorded infrastructure amendment.
+
 Phase C: plan hash-frozen; starting the serialized confirmatory campaign. Real GPU inference and LoRA learning have executed in
 both pinned families. The matched Qwen pilot is inconclusive; Phi's pilot is worse
 than its base. No confirmatory test outcomes existed at freeze. `configs/freeze.json`

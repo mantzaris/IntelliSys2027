@@ -95,3 +95,36 @@ def test_prose_rollout_keeps_internal_actions_out_of_source_transcript(tmp_path)
     assert len(model.prompts)==32
     assert "INTERNAL_TRACE" not in json.dumps(model.prompts)
     assert "PUBLIC_PROSE" in json.dumps(model.prompts)
+
+
+def test_completed_archive_survives_stale_live_mirror_prefix(tmp_path):
+    from pcc.storage import compact_completed
+    from pcc.diagnostics import jsonlines
+    run=tmp_path/"artifacts/runs/complete";run.mkdir(parents=True)
+    (run/"status.json").write_text(json.dumps({"status":"completed"}))
+    source=run/"evaluation.jsonl"
+    first='{"turn":1}\n';complete=first+'{"turn":2}\n'
+    source.write_text(complete);compact_completed(tmp_path)
+    archive=source.with_suffix(".jsonl.gz");before=sha256(archive)
+    manifest=(run/"trace_archives.json").read_bytes()
+    source.write_text(first)  # Old plain file left by an earlier rsync pull.
+    result=compact_completed(tmp_path)
+    assert result["stale_or_duplicate_prefixes_removed"]==1
+    assert sha256(archive)==before and not source.exists()
+    assert (run/"trace_archives.json").read_bytes()==manifest
+    assert jsonlines(source)==[{"turn":1},{"turn":2}]
+    source.write_text('{"turn":"conflicting"}\n')
+    with pytest.raises(ValueError,match="conflicts"):
+        compact_completed(tmp_path)
+    assert source.exists() and sha256(archive)==before
+
+
+def test_completed_trace_missing_turns_is_not_archived(tmp_path):
+    from pcc.storage import compact_completed
+    run=tmp_path/"artifacts/runs/incomplete";run.mkdir(parents=True)
+    (run/"status.json").write_text(json.dumps({"status":"completed"}))
+    (run/"evaluation_summary.json").write_text(json.dumps([{"horizon":2}]))
+    source=run/"evaluation.jsonl";source.write_text('{"turn":1}\n')
+    with pytest.raises(ValueError,match="row count"):
+        compact_completed(tmp_path)
+    assert source.exists() and not source.with_suffix(".jsonl.gz").exists()
