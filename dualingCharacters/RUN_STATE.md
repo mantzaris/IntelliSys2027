@@ -222,3 +222,18 @@ used 512 steps, 2,097,152 input tokens and 97,683 supervised target tokens. The
 fixed final adapter is now being evaluated on all 240 paired 64-turn test families.
 Six completed eligible stage lineages verify; no eligible trained test result is
 complete at this update. All attempts have consumed about 6.227 reserved hours.
+
+The CPU-only final reporting waiter is execution session **26434**. Its state is
+`artifacts/final_report_controller_state.json`. It makes no model calls and waits
+for the existing core controller plus a terminal supplemental decision, including
+a budget skip. It then acquires the shared controller lock, runs the complete
+saved-evidence regeneration and commits compact reports on main. Do not launch a
+second waiter. Its six-part factual report is `reports/EXECUTION_REPORT.md`; that
+report names incomplete stages and never treats scheduled work as measured evidence.
+
+At 2026-10-23 21:38 UTC, the active C1 evaluation had 6,336 mirrored requests out
+of 30,720. The authorized GPU was fully utilized, with about 39 GiB resident VRAM.
+Local free space was about 32 GiB and remote free space about 27 GiB. These are
+infrastructure progress checks, not test outcomes. The updated local manuscript
+compiled successfully to 14 pages. Four human-packet and three reporting-control
+unit checks passed; no human annotations exist.
