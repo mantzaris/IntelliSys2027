@@ -2,7 +2,7 @@
 
 This is not a submission-ready paper. Human scientific review remains required.
 
-Measured reservation: 5.691 GPU-hours; inference 143,784,661 input and 9,393,329 output tokens; 4,276,224 training input tokens. Actual dollar cost is unknown.
+Measured reservation: 6.227 GPU-hours; inference 151,738,446 input and 9,935,313 output tokens; 5,324,800 training input tokens. Actual dollar cost is unknown.
 
 ## Historical pilots (trained entries excluded for serialization mismatch)
 

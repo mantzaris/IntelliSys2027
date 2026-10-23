@@ -81,3 +81,11 @@ file, the fixed final optimizer step, and matching initial adapter weights withi
 each model/seed. It reads no task-success scores. Its scope and the separate audit
 requirement for optimizer-checkpoint interruptions are recorded in
 `reports/tables/adapter_lineage.json`.
+
+`human_review.py` renders the complete blinded packet as offline HTML and, only
+when actual CSV annotations are supplied, computes descriptive agreement. It
+preserves missing ratings and never adjudicates a disagreement. The fixed rubric
+documents categories and family-cluster uncertainty. This extension was added
+before human ratings existed; it changes no frozen scientific input or analysis.
+Its synthetic unit fixtures in `analysis/test_human_review.py` are never exported
+as research annotations.

@@ -30,3 +30,5 @@ and conclusions and accurately disclose AI assistance. No submission is authoriz
 | 2026-10-23 | Detected a saved-target/inference JSON order mismatch with a CPU grammar audit before completed trained-test metrics were inspected; held the queue, recorded explicit exclusions and began a serialization-only training repair and pilot verification | Pending |
 
 | 2026-10-23 | Executed corrected Qwen C3/C5 and Phi C5 LoRA pilots, matched current-source references and updated-defender refresh. Retained one capped response as failure, documented the unchanged scientific design and explicit completed-run eligibility exception, and regenerated the review draft | Pending |
+
+| 2026-10-23 | Verified corrected main C1 adapter continuation, supervision hashes and both fixed 256-step fits; added an offline blinded-packet renderer and descriptive inter-rater agreement tool before human ratings existed. Four synthetic unit checks passed; fixtures are not research annotations. Frozen experimental inputs remain unchanged | Pending |

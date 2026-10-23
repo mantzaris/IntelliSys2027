@@ -111,6 +111,22 @@
       "source_snapshot_sha256": "9c2037f6399d652ba0663a1d26b472b306872c51d1bd29874fc5858a47375767"
     },
     {
+      "run_id": "main-qwen-c1-17-r1-collect-format2",
+      "status_sha256": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 0,
+      "archives": [
+        {
+          "path": "artifacts/runs/main-qwen-c1-17-r1-collect-format2/collection.jsonl.gz",
+          "records": 9600,
+          "original_sha256": "2ef368beb2358d7e9fb560c0a299db5b05cd7d39f7eeff6eef6e2b85f65fe0d5",
+          "archive_sha256": "a2a0671ddb80f0752e1fc9eefd8ef5b43fc39660cc1e76a377ca96f59ee9c1c4"
+        }
+      ],
+      "qualifications": [],
+      "source_snapshot_sha256": "7265c3025640ba16d896f79537242be4de277b550be8f193624b4223a9c28826"
+    },
+    {
       "run_id": "main-qwen-c1-17-r1-fit",
       "status_sha256": "030a7a478a02e306aeeb8dca8076f98304e3d2666bc996c993d138af06c963a8",
       "source_files_verified": 31,
@@ -118,6 +134,15 @@
       "archives": [],
       "qualifications": [],
       "source_snapshot_sha256": "7b04ac594f003096a33f0fb6b5b162244ea1c66cf7d826b99270508472c2f7ff"
+    },
+    {
+      "run_id": "main-qwen-c1-17-r1-fit-format2",
+      "status_sha256": "50523e9b6ab2475636e1646f1da5e7f8d82e046d160f0c3cccbe374c58f8c51f",
+      "source_files_verified": 32,
+      "checkpoint_files_verified": 9,
+      "archives": [],
+      "qualifications": [],
+      "source_snapshot_sha256": "5df7375511d3f61d0dad9d3079fd524bfdccbabe4bac51bd4dff0740383cf9eb"
     },
     {
       "run_id": "mechanism-final-001",
@@ -646,10 +671,6 @@
     }
   ],
   "unfinished_runs_excluded": [
-    {
-      "run_id": "main-qwen-c1-17-r1-collect-format2",
-      "status": "running"
-    },
     {
       "run_id": "pilot-c3-001",
       "status": "failed"

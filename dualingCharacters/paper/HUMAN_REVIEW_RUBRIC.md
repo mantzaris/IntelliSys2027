@@ -6,6 +6,13 @@ raters receive `artifacts/human_review/packet.json` and separate blank rating sh
 Do not provide `condition_key_private.json` until ratings and adjudication are locked.
 No human reviewers or ratings are claimed to exist at present.
 
+Once all 120 outputs exist, `bash analysis/regenerate_all.sh` also creates a
+readable offline `artifacts/human_review/packet.html`. Give each rater the packet,
+this rubric and only their own CSV. Keep the private key out of both review copies.
+Return the independent CSV sheets with the same blinded IDs and exact values
+`1`, `0`, `NA`, or a blank cell for an unfinished rating. Comments are free text.
+Do not merge or overwrite a rater's independent annotations during adjudication.
+
 For each output, read the attributed sources and the reference commitment state.
 Score each of site, mode, spending cap, day, audience, partner, transport and equipment
 as 1 (correct and executable), 0 (violated or missing), or NA only if genuinely outside
@@ -27,6 +34,20 @@ Report raw agreement, per-item agreement, Cohen's kappa where defined, uncertain
 from scenario-family resampling, all disagreements and an adjudication log. Do not
 discard outputs because raters disagree. A third human or documented consensus may
 adjudicate; never fabricate a human decision or substitute an unvalidated model vote.
+
+`PYTHONPATH=src .venv/bin/python analysis/human_review.py` validates supplied sheets
+and writes `reports/tables/human_review_status.json`. It reports missingness,
+pooled and per-item agreement and unweighted Cohen's kappa, with `NA` treated as a
+separate category. Its descriptive 95% percentile intervals resample complete
+scenario families (10,000 draws; seed 40720), preserving paired worlds, conditions
+and rubric items. Undefined kappa values remain missing. Partial annotations are
+explicitly labeled; they are not a complete validation result. All disagreements
+are listed in `artifacts/human_review/disagreements.json` for later human
+adjudication. The tool does not estimate condition effects from human ratings or
+claim that annotation completion satisfies scientific authorship review.
+
+This implementation was added before any human annotations existed as a reporting
+extension. It does not amend the frozen GPU experiment or its primary analysis.
 
 The programmatic structured-plan score and any automatic prose judge are separate
 from human adherence. An automatic judge must be independently calibrated and its

@@ -1,0 +1,8 @@
+{
+  "status": "packet_outputs_pending",
+  "human_ratings": "not_supplied",
+  "analysis_source_sha256": "accd49636d1e3cca1db12cf88c9649c74739a0b410c6b96a2ee9710e6b8a9faf",
+  "qualification": "Descriptive reporting extension; no condition-effect claim, automatic adjudication or model-generated human ratings. Blank cells remain missing; NA is a separate agreement category. Family bootstrap retains paired worlds, conditions and rubric items. Kappa is undefined when expected agreement is one.",
+  "available_outputs": 0,
+  "packet_status_sha256": "7874e6b302e2003d4fdf1c874bb0b5f3b6808d3a6f7f3d467b218304f2e37017"
+}

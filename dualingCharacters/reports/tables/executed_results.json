@@ -75,6 +75,21 @@
     "scientific_exclusion": "Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected."
   },
   {
+    "run_id": "main-qwen-c1-17-r1-collect-format2",
+    "model": "qwen",
+    "training_condition": "C1",
+    "evaluation": "collection_summary",
+    "seed": 17,
+    "phase": "confirmatory",
+    "families": 150,
+    "paired_success": 0.6066666666666667,
+    "conversation_success": 0.6966666666666667,
+    "recall_accuracy": 0.9438888888888889,
+    "gpu_reserved_seconds": 834.1784819979221,
+    "status": "completed",
+    "scientific_exclusion": null
+  },
+  {
     "run_id": "mechanism-final-001",
     "model": "qwen",
     "training_condition": "C5",

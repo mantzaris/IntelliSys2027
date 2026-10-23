@@ -169,16 +169,35 @@
     "run_id": "main-qwen-c1-17-r1-collect-format2",
     "phase": "confirmatory",
     "condition": "C1",
-    "status": "running",
+    "status": "completed",
     "roles": {},
     "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6066666666666667,
+      "conversation_success": 0.6966666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6275
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 758,
+      "failed_eligible": 14,
+      "candidate_attempts": 14,
+      "candidate_valid": 1,
+      "candidate_discarded": 13,
+      "gold_teacher_examples": 771,
+      "reused": 0
+    },
     "resources": {
-      "gpu_reserved_seconds": 123.51402765419334,
-      "peak_vram_gib": 39.1796875,
-      "input_tokens": 1415050,
-      "output_tokens": 97745,
-      "generation_seconds": 76.36561173433438,
-      "aggregate_output_tokens_per_second": 1279.9609376540009
+      "gpu_reserved_seconds": 834.1784819979221,
+      "peak_vram_gib": 39.322265625,
+      "input_tokens": 9368835,
+      "output_tokens": 639729,
+      "generation_seconds": 762.8285179785453,
+      "aggregate_output_tokens_per_second": 838.6275354456433
     }
   },
   {
@@ -190,6 +209,22 @@
     "peer_messages": 0,
     "resources": {
       "gpu_reserved_seconds": 1275.047678980045,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-17-r1-fit-format2",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1217.8495031469502,
       "peak_vram_gib": 16.598361015319824,
       "input_tokens": 0,
       "output_tokens": 0,

@@ -7,10 +7,10 @@
     "seed_sd": null,
     "conversation_success": null,
     "status": "pending",
-    "gpu_reserved_seconds": 7858.508136042394,
-    "input_tokens": 45727369.0,
-    "output_tokens": 3172492.0,
-    "train_tokens": 3145728.0
+    "gpu_reserved_seconds": 9787.022093533073,
+    "input_tokens": 53681154.0,
+    "output_tokens": 3714476.0,
+    "train_tokens": 4194304.0
   },
   {
     "model": "qwen",

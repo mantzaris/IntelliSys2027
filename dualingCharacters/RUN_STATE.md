@@ -6,8 +6,9 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 ## Current phase
 
 Phase C is active after the documented serialization amendment 002. The main
-controller is execution session **14639**. The corrected first C1 fit has
-completed and its updated-defender collection is active. Read `artifacts/campaign_state.json` and mirrored
+controller is execution session **14639**. Both corrected C1 fits and their
+training collections have completed; its 480-conversation antagonist-free test
+is active. Read `artifacts/campaign_state.json` and mirrored
 status for live progress; do not launch a duplicate queue. All 241 original jobs,
 models, seeds, endpoints and training budgets remain fixed, with four explicit
 restart aliases for invalid C1 stages. No eligible trained main result exists yet.
@@ -81,6 +82,9 @@ pod hourly rate unknown; dollar cost must remain unknown.
   evaluated without antagonists on 16 separate 32-turn pilot families. Qwen base
   6/16, C3 5/16, C5 6/16; C5−C3 +0.0625, family interval [−0.1875,+0.3125].
   Phi base 4/16, C5 2/16. One training seed; these do not establish H1 or replication.
+  **The trained v4 entries are excluded from intended-method efficacy under
+  amendment 002 for incompatible target serialization.** The numbers remain
+  historical records, with all artifacts and costs retained.
   The v4 source archive is `artifacts/source_snapshots/pilot-v4-source.tar.gz`.
 - `pilot-severity-001`: identical frozen reference observations; direct C3 actions
   flipped 50/243 initially correct states, C5 10/241. Severity differs despite
@@ -91,6 +95,7 @@ pod hourly rate unknown; dollar cost must remain unknown.
 - `pilot-alias-refresh-001`: updated defender plus frozen characters; 96/96 actions
   applied, 34 delivered peer messages; private role-label leak removed. Both
   clean/recovery supervision pools nonempty (18/2 eligible windows).
+  This refresh used an excluded v4 adapter and is also excluded under amendment 002.
 - `mechanism-final-001`: completed and mirrored locally. Nine conditions
   (including C2), eight paired pilot families, final explicit prior assistant
   proposal and shared action scheduler. All 144 conversations completed without
@@ -106,7 +111,7 @@ The candidate schedule retains 36 independently trained condition/seed models,
 two refresh rounds, 256 steps × 4096 input tokens per round (2,097,152 total),
 240 paired test families and 64 turns. Optional 32/128-turn sweeps use seed 17;
 main conditions, A1/A2/A3 and Phi C1/C3/C5 retain three seeds (17,29,43).
-Measured conservative final forecast: 85.199 total reserved GPU-hours including
+Original pre-test forecast, superseded by amendment 002: 85.199 total reserved GPU-hours including
 completed work, leaving 10.801 hours contingency. Forecasts are not actual
 consumption. Completed pilots used 1.749 reserved GPU-hours.
 
@@ -206,3 +211,14 @@ those attempts. Actual price remains unknown. Human ratings and author review
 remain pending, and the primary three-seed comparison has no eligible result yet.
 
 At 2026-10-23 20:55 UTC, corrected C1 round zero completed 256 steps, 1,048,576 input tokens and 48,838 supervised target tokens in 1,140.637 reserved seconds. Its final adapter SHA256 is `4c7ce600b71d3fe63583b4fbaadd910e32ce7f7a883f21366e8e581afed3645c`. Round-one collection loaded exactly that hash. Initial weights and supervision bytes match the original attempt; all original costs remain.
+
+At 2026-10-23 21:30 UTC, corrected C1 round one completed 256 steps, 1,048,576
+input tokens and 48,845 supervised target tokens in 1,217.850 reserved seconds.
+Its initial weights exactly match round zero's final adapter; its final SHA256 is
+`24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc`.
+The second round consumed 501 distinct buffered windows and 473 repeated entries;
+these counts are not additional independent trajectories. Both rounds together
+used 512 steps, 2,097,152 input tokens and 97,683 supervised target tokens. The
+fixed final adapter is now being evaluated on all 240 paired 64-turn test families.
+Six completed eligible stage lineages verify; no eligible trained test result is
+complete at this update. All attempts have consumed about 6.227 reserved hours.
