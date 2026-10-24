@@ -15,6 +15,19 @@ from supplements.review_001.allocation import review_seconds
 from supplements.long_horizon_intent_002.common import ROOT,HERE,REPORTS,ARTIFACTS,read,write
 
 
+
+def clarification_summary():
+    """Render already frozen audit outputs; introduce no new estimator or subset."""
+    outcomes={r['seed']:r for r in read(REPORTS/'clarification_audit.json') if r['condition']=='C1' and r['model']=='qwen'}
+    exposure={r['seed']:r for r in read(REPORTS/'clarification_exposure.json') if r['condition']=='C1' and r['model']=='qwen' and r['round']==1 and r['pool']=='recovery' and r['clarification_target_class']=='nonempty'}
+    lines=['## Clarification and actual exposure', '', '| C1 seed | Original clarification flag /480 | Unnecessary /480 | Nonempty-clarification recovery target tokens | Top-five share |', '|---|---:|---:|---:|---:|']
+    for seed in (17,29,43):
+        o=outcomes.get(seed);e=exposure.get(seed)
+        lines.append(f"| {seed} | {o['clarification_error'] if o else 'Pending'} | {o['unnecessary_clarification'] if o else 'Pending'} | {e['target_tokens'] if e else 'Pending'} | {format(100*e['top5_token_share'],'.1f')+'%' if e else 'Pending'} |")
+    lines += ['', 'These target tokens cover whole supervised completions in the nonempty-clarification recovery class, not only the clarification field. Seed-specific exposure and outcomes are descriptive associations. Similar exposure can coexist with different outcomes; these comparisons do not identify a causal explanation for the poor seed. Wrong-issue, missed, duplicate/order-only and settled-null flags remain separate, overlapping audit fields.', '']
+    return lines
+
+
 def main(close=False,early_reason=None):
     frozen=verify();session=read(HERE/'SESSION.json');live=read(REPORTS/'LATEST_STATE.json');start=datetime.fromisoformat(session['started_utc']);now=datetime.now(timezone.utc)
     if close and now<datetime.fromisoformat(session['useful_work_deadline_utc']) and not early_reason:raise PermissionError('Do not close the requested work session early without a genuine documented reason')
@@ -30,7 +43,7 @@ def main(close=False,early_reason=None):
     commits=subprocess.check_output(['git','log',session['starting_commit']+'..HEAD','--format=%H %s'],cwd=ROOT,text=True).splitlines()
     next_job=next((j['id'] for i,j in enumerate(queue) if i>next((k for k,x in enumerate(queue) if x['id']==active),-1) and j['id'] not in complete),None)
     values={'session_status':'closed' if close else 'in_progress_preview','operational_code_sha256':sha256(Path(__file__)),
-      'input_report_hashes':{n:sha256(REPORTS/n) for n in ('LATEST_STATE.json','per_seed_results.json','paired_transitions.json','supervision_exposure.json','MIRROR_CHECKS.json','PROVENANCE.json')},'started_utc':start.isoformat(),'report_generated_utc':now.isoformat(),
+      'input_report_hashes':{n:sha256(REPORTS/n) for n in ('LATEST_STATE.json','per_seed_results.json','paired_transitions.json','supervision_exposure.json','MIRROR_CHECKS.json','PROVENANCE.json','clarification_audit.json','clarification_exposure.json')},'started_utc':start.isoformat(),'report_generated_utc':now.isoformat(),
       'ended_utc':now.isoformat() if close else None,'deadline_utc':session['deadline_utc'],'elapsed_seconds_at_report':(now-start).total_seconds(),
       'local_timezone':session['local_timezone'],'started_local':start.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),'reported_local':now.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),
       'starting_commit':session['starting_commit'],'current_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'commits':commits,
@@ -56,8 +69,9 @@ def main(close=False,early_reason=None):
     lines=['# Intent 002 session handoff' if close else '# Intent 002 handoff preview — session still active','',
       f'Start: {start.isoformat()} ({values["started_local"]}). '+(f'End: {now.isoformat()} ({values["reported_local"]}).' if close else f'Preview: {now.isoformat()}; work continues until the recorded deadline.'),
       f'Actual elapsed at report: {(now-start).total_seconds()/3600:.3f} hours. One shared deadline: {session["deadline_utc"]}.', '',
-      f'Local main: `{values["current_commit"]}`; starting commit `{session["starting_commit"]}`. Nothing pushed, published or submitted. All 58 core, 21 review and {len(frozen["files"])} intent scientific files verify unchanged.','',
+      f'Commit at report generation: `{values["current_commit"]}`; starting commit `{session["starting_commit"]}`. Nothing pushed, published or submitted. All 58 core, 21 review and {len(frozen["files"])} intent scientific files verify unchanged.','',
       f'Core: {len(complete)}/241 stages complete, {len(new)} newly completed this session. Active: `{active}`. Next: `{next_job}`. Current failed queue stages: {len(failed)}. Historical excluded artifacts remain preserved and listed in HANDOFF_STATE.json. No infrastructure retries were needed.','',
+      'The final commit containing this handoff can be identified with `git log -1 --format=%H -- dualingCharacters/supplements/long_horizon_intent_002/reports/SESSION_REPORT.md` from the repository root. The generation-time commit above intentionally precedes that reporting commit.','',
       '## Current core evidence — interim until planned seed sets complete','',
       '| Model | Condition | Seed | Paired success /240 |','|---|---|---:|---:|']
     lines += [f'| {r["model"]} | {r["condition"]} | {r["seed"]} | {r["paired_successes"]} |' for r in results]
@@ -83,6 +97,7 @@ def main(close=False,early_reason=None):
       'For infrastructure recovery, first prove both original controller and GPU worker stopped; a dropped SSH connection is insufficient. Preserve/mirror partials and resource records, use the original `artifacts/campaign_resume.json` aliases and valid atomic optimizer checkpoint where supported, and allow at most two retries of the same infrastructure fault. Never rerun a completed evaluation for a different score. See the unchanged [recovery procedure](../../../reports/overnight_20261024T023622Z/RECOVERY.md). Scientific defects require a documented safe-boundary hold and preserved originals.','',
       '## Next author decisions','',
       'No routine decision is needed for the healthy original core queue. Later review: (1) assess the narrower claims supported by seed variation, intermediate reversion and source access; (2) review the authored intent ledgers/rubric and authorize a later execution window if desired, retaining existing GPU caps; (3) arrange independent human raters once the required outputs exist. No permission is inferred from elapsed time.']
+    position=lines.index('## Resource reconciliation');lines[position:position]=clarification_summary()
     if early_reason:lines+=['','Early-stop reason: '+early_reason]
     (REPORTS/('SESSION_REPORT.md' if close else 'HANDOFF_PREVIEW.md')).write_text('\n'.join(lines)+'\n')
     print({'status':values['session_status'],'elapsed_hours':(now-start).total_seconds()/3600,'completed_core':len(complete),'new_stages':len(new),'active_core':active})

@@ -712,5 +712,39 @@
     "target_tokens": 24294,
     "top1_token_share": 0.0058450646250102906,
     "top5_token_share": 0.02914299827117807
+  },
+  {
+    "condition": "C1",
+    "effective_windows_by_token_share": 368.3773989967749,
+    "eligible_windows": 764,
+    "loaded_unique_windows": 486,
+    "loss_contributing_occurrences": 371,
+    "loss_contributing_unique_families": 143,
+    "loss_contributing_unique_windows": 371,
+    "model": "qwen",
+    "pool": "clean",
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-43-r1-fit",
+    "seed": 43,
+    "target_tokens": 24674,
+    "top1_token_share": 0.002877522898597714,
+    "top5_token_share": 0.01422550052687039
+  },
+  {
+    "condition": "C1",
+    "effective_windows_by_token_share": 8.987813035412632,
+    "eligible_windows": 9,
+    "loaded_unique_windows": 9,
+    "loss_contributing_occurrences": 360,
+    "loss_contributing_unique_families": 5,
+    "loss_contributing_unique_windows": 9,
+    "model": "qwen",
+    "pool": "recovery",
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-43-r1-fit",
+    "seed": 43,
+    "target_tokens": 23563,
+    "top1_token_share": 0.11692059584942495,
+    "top5_token_share": 0.5717013962568434
   }
 ]

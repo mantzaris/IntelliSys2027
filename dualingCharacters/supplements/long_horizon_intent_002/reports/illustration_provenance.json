@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-24T16:59:44.573486+00:00",
+  "generated_utc": "2026-10-24T18:11:16.363918+00:00",
   "inputs": {
     "main-qwen-c1-17-eval-format2": {
       "audit_sha256": "5e0685a653fe555817bbfde3309427df63a354ea0d1c23e6a072de1f41229e23",
@@ -10,6 +10,11 @@
       "audit_sha256": "478f1d0737800451b4eb7f4fdf01549831574706ebcbc4d7a7043214b6efb4ed",
       "selected_raw_cache_sha256": "5f2420b816f7aa58d5e5e380eaef3443e51996b334b5461628e7067a55f1d7a2",
       "source_sha256": "e7bce6221c59e4e05bb4e8f8b6e5e7b2727e3287d77c721bc74dfae5d6522cdb"
+    },
+    "main-qwen-c1-43-eval": {
+      "audit_sha256": "99823e08010e3939ad5f2c8e96ba5e0132ed49bccf13a9c33b27ede3c0432ad2",
+      "selected_raw_cache_sha256": "def41ee98fa471293c6e62e04dcac3dd2640d0dc91b5162d2223e9a3ea7dfd01",
+      "source_sha256": "251b024031831e8f834613bc7acab1c4155f80281e4950b620b2d8d2db908057"
     },
     "main-qwen-c3-17-eval": {
       "audit_sha256": "0f8ba856cf035eaec8e76a7e443ee00129cf6a732deb26d0a4c7e8ac8d0474a1",

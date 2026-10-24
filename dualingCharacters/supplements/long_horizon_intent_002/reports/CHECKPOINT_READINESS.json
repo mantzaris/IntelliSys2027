@@ -55,12 +55,12 @@
   },
   {
     "adapter_path": "artifacts/runs/main-qwen-c1-43-r1-fit/training/final",
-    "adapter_sha256": null,
+    "adapter_sha256": "33ccdc08b3c93e7915b28c2f95f075748614f19e76e09e74aa2ed41c577391ca",
     "condition": "C1",
     "evaluation_run_id": "main-qwen-c1-43-eval",
-    "model_revision": null,
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
     "seed": 43,
-    "status": "pending_final_evaluation"
+    "status": "ready_for_binding"
   },
   {
     "adapter_path": "artifacts/runs/main-qwen-c3-43-r1-fit/training/final",

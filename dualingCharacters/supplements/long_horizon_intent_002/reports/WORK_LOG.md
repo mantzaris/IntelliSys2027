@@ -129,3 +129,29 @@
 - 2026-10-24T17:00:21.410357+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-r1-collect.
 
 - 2026-10-24T17:00:21.529462+00:00: C1 seed43 refresh collection has900 attempted windows:764 clean-valid,9 failed-eligible,127 source-ineligible. All9 recovery targets require nonempty clarification and span5 families; all use the common oracle teacher after9 rejected model-recovery candidates. This is a training-only exposure observation, not a prediction or causal explanation of test performance. Final fit is active; actual loss reuse remains pending its completed reconstruction.
+
+- 2026-10-24T17:11:14.746868+00:00: Four-hour checkpoint: 55/241 core stages complete (10 new stages this session); active main-qwen-c1-43-r1-fit, training tokens 585728. Total reservations 25.4593/96 hours, conservative core forecast 87.71. All55 completed-stage mirrors verified; 21 fits and22 collections audited. Newest completed evaluation A1 seed29=181/240; C5-A1=-0.4167 points in both completed seeds with family-only uncertainty. Both supplements remain at0 GPU hours. No retries, holds, new workers or protocol changes. Next: complete C1 seed43 fit/evaluation and integrate its exact exposure and clarification audit. Deadline remains21:06:05 UTC.
+
+- 2026-10-24T17:22:22.750268+00:00: Progress: 56/241 core stages complete; active main-qwen-c1-43-eval, 0 generation requests, 0 training input tokens; 25.6333/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T17:22:26.167237+00:00: Reconstructed main-qwen-c1-43-r1-fit: 48237 target tokens; 380 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T17:22:51.389527+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-r1-fit.
+
+- 2026-10-24T17:22:57.480479+00:00: C1 seed43 final fit completed; exact optimizer-loss reconstruction now covers22 fits and all56 completed-stage mirrors verify. Fixed final checkpoint evaluation is active. No retries or scientific changes; both supplemental GPU totals remain zero.
+
+- 2026-10-24T17:23:25.655475+00:00: C1 seed43 round-one exact exposure:48,237 supervised target tokens,380 unique loss-contributing windows; recovery nine windows/five families contribute360 occurrences and23,563 target tokens, with top-five57.17% of recovery target exposure. Clean contributes24,674 target tokens. Orphaned suffixes mask16,485 target tokens; no resumed optimizer prefix. These are noncausal curriculum descriptors; seed43 test evaluation remains running.
+
+- 2026-10-24T18:06:34.547937+00:00: Five-hour progress: 56/241 completed, active main-qwen-c1-43-eval with 28928 responses. Reservations 26.3682/96 hours; conservative core forecast 88.38. Exact loss exposure covers22 fits; all56 completed stages mirrored and verified. C1 seed43's nine-window recovery pool contributed360 loss occurrences, recorded before opening its test result. No new supplement calls, retries or protocol changes. Next: validate C1 evaluation and retain all seed-specific clarification, source and trajectory findings.
+
+- 2026-10-24T18:10:40.363948+00:00: Progress: 57/241 core stages complete; active main-qwen-c3-43-r0-collect, 0 generation requests, 0 training input tokens; 26.4290/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T18:10:48.449652+00:00: Validated completed main-qwen-c1-43-eval: 183/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T18:11:03.595626+00:00: New time-varying oracle / clarification / evidence audit: main-qwen-c1-43-eval; 30,720 complete turns, no final-target substitution.
+
+- 2026-10-24T18:11:14.464072+00:00: New temporal source/memory audit: main-qwen-c1-43-eval; descriptive response to observed curves, not a changed policy or causal intervention.
+
+- 2026-10-24T18:11:17.333153+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-eval.
+
+- 2026-10-24T18:13:22.906773+00:00: C1 seed43 evaluation validated at183/240 paired success and390/480 conversation success; all57 completed mirrors match. Clarification audit: original flag9, unnecessary4, missed4, wrong issue1, duplicate/order-only1; two unnecessary cases null settled decisions. C1 seed29 had101 unnecessary clarifications despite similar round-one nonempty-recovery completion exposure (23,664 target tokens versus23,563 atseed43). This is an observed contrast, not evidence identifying a causal mechanism. Seed43 all-turn correctness32.3177%, final-quarter14.8177%; atturn60 only1/480 correct with0/480 full canonical-source availability, then407/480 correct atturn61 with477/480 full source availability. Final performance therefore does not establish trajectory preservation. The planned C5 comparisons remain limited to matched seeds17/29 until its seed43 run completes.

@@ -1,6 +1,6 @@
 {
   "chronology": "Added after inspecting new dynamic-oracle curves and fixed lowest-ID example at approximately14:23UTC on2026-10-24. Post-result exploratory analysis.",
-  "generated_utc": "2026-10-24T16:59:44.126512+00:00",
+  "generated_utc": "2026-10-24T18:11:14.583237+00:00",
   "inputs": {
     "main-qwen-c1-17-eval-format2": {
       "analysis_sha256": "8728b3a732c9350e5b4d8ead6c90cd22ebb8a3bb230443fa9173554005b63010",
@@ -9,6 +9,10 @@
     "main-qwen-c1-29-eval": {
       "analysis_sha256": "8728b3a732c9350e5b4d8ead6c90cd22ebb8a3bb230443fa9173554005b63010",
       "raw_sha256": "e7bce6221c59e4e05bb4e8f8b6e5e7b2727e3287d77c721bc74dfae5d6522cdb"
+    },
+    "main-qwen-c1-43-eval": {
+      "analysis_sha256": "8728b3a732c9350e5b4d8ead6c90cd22ebb8a3bb230443fa9173554005b63010",
+      "raw_sha256": "251b024031831e8f834613bc7acab1c4155f80281e4950b620b2d8d2db908057"
     },
     "main-qwen-c3-17-eval": {
       "analysis_sha256": "8728b3a732c9350e5b4d8ead6c90cd22ebb8a3bb230443fa9173554005b63010",

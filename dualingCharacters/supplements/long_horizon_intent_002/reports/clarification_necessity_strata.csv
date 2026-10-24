@@ -11,6 +11,8 @@ C1,qwen,main-qwen-c1-17-eval-format2,17,False,420,3,3,0,0,3
 C1,qwen,main-qwen-c1-17-eval-format2,17,True,60,9,0,6,0,0
 C1,qwen,main-qwen-c1-29-eval,29,False,420,99,99,0,0,98
 C1,qwen,main-qwen-c1-29-eval,29,True,60,5,2,4,2,1
+C1,qwen,main-qwen-c1-43-eval,43,False,420,3,3,0,0,2
+C1,qwen,main-qwen-c1-43-eval,43,True,60,6,1,4,1,0
 C3,qwen,main-qwen-c3-17-eval,17,False,420,15,15,0,0,15
 C3,qwen,main-qwen-c3-17-eval,17,True,60,8,1,7,1,0
 C3,qwen,main-qwen-c3-29-eval,29,False,420,0,0,0,0,0

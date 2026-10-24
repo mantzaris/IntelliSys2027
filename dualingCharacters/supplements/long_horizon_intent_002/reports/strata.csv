@@ -119,3 +119,13 @@ qwen,A1,29,240,480,ambiguity,False,420,350,167,210,60,64
 qwen,A1,29,240,480,ambiguity,True,60,34,14,30,26,21
 qwen,A1,29,240,480,world,authorized,240,193,,240,40,41
 qwen,A1,29,240,480,world,hypothetical,240,191,,240,46,44
+qwen,C1,43,240,480,heldout_rule,False,240,232,115,120,2,0
+qwen,C1,43,240,480,heldout_rule,True,240,158,68,120,79,78
+qwen,C1,43,240,480,domain,creative,120,92,41,60,22,17
+qwen,C1,43,240,480,domain,event,120,96,47,60,24,24
+qwen,C1,43,240,480,domain,research,120,99,46,60,21,20
+qwen,C1,43,240,480,domain,software,120,103,49,60,14,17
+qwen,C1,43,240,480,ambiguity,False,420,351,168,210,60,61
+qwen,C1,43,240,480,ambiguity,True,60,39,15,30,21,17
+qwen,C1,43,240,480,world,authorized,240,196,,240,40,37
+qwen,C1,43,240,480,world,hypothetical,240,194,,240,41,41

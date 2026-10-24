@@ -44,6 +44,11 @@ main-qwen-c1-43-r0-fit,qwen,C1,43,0,2,train-0119,authorized,16,recovery,common_o
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,3,train-0047,authorized,16,recovery,common_oracle_teacher,software,['audience'],['audience'],136,2,0.06142728093947606
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,4,train-0087,authorized,16,recovery,common_oracle_teacher,software,['audience'],['audience'],136,2,0.06142728093947606
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,5,train-0047,hypothetical,16,recovery,common_oracle_teacher,software,['audience'],['audience'],134,2,0.06052393857271906
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,1,train-0247,authorized,32,recovery,common_oracle_teacher,software,['site'],['site'],2755,42,0.11431535269709543
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,2,train-0167,authorized,32,recovery,common_oracle_teacher,software,['site'],[],2720,40,0.11286307053941909
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,3,train-0223,hypothetical,32,recovery,common_oracle_teacher,software,['day'],[],2693,41,0.11174273858921162
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,4,train-0287,hypothetical,32,recovery,common_oracle_teacher,software,['mode'],[],2663,41,0.11049792531120332
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,5,train-0287,authorized,32,recovery,common_oracle_teacher,software,['mode'],[],2640,40,0.10954356846473029
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,1,train-0127,authorized,16,recovery,common_oracle_teacher,software,['partner'],[],71,1,0.05551211884284597
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,2,train-0127,hypothetical,16,recovery,common_oracle_teacher,software,['partner'],['partner'],70,1,0.054730258014073496
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,3,train-0015,authorized,16,recovery,common_oracle_teacher,software,['day'],[],69,1,0.05394839718530102

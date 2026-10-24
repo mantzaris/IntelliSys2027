@@ -438,6 +438,302 @@
   },
   {
     "category": "assistant_authority",
+    "condition": "C1",
+    "examples": [
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": true,
+        "canonical": 63,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 63,
+          "text": "Revisiting hybrid for collaboration format: The final decision for collaboration format is now hybrid."
+        },
+        "family_id": "test-0229",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": false,
+        "reference": 126,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "assistant",
+          "index": 126,
+          "text": "{\"state\":[\"Garden\",\"online\",\"5000\",\"Saturday\",\"specialists\",\"Maple\"],\"plan\":[\"Garden\",\"online\",\"5000\",\"Saturday\",\"specialists\",\"Maple\",\"walk\",\"stream-kit\"],\"evidence\":[124,1,1,1,1,121],\"clarify\":[]}"
+        },
+        "slot": "mode",
+        "user_hypothetical_or_rejected": false,
+        "world": "authorized",
+        "wrong_explicit_user_authorization": false
+      },
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": true,
+        "canonical": 63,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 63,
+          "text": "Revisiting 3000 for grant spending ceiling: Use 3000 for grant spending ceiling; I authorize this revision."
+        },
+        "family_id": "test-0214",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": false,
+        "reference": 126,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "assistant",
+          "index": 126,
+          "text": "{\"state\":[\"Garden\",\"hybrid\",\"5000\",\"Saturday\",\"students\",\"Cedar\"],\"plan\":[\"Garden\",\"hybrid\",\"5000\",\"Saturday\",\"students\",\"Cedar\",\"ferry\",\"mixed-kit\"],\"evidence\":[124,1,1,121,1,1],\"clarify\":[]}"
+        },
+        "slot": "cap",
+        "user_hypothetical_or_rejected": false,
+        "world": "authorized",
+        "wrong_explicit_user_authorization": false
+      }
+    ],
+    "model": "qwen",
+    "reference_count": 48,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "nonexistent_or_future",
+    "condition": "C1",
+    "examples": [],
+    "model": "qwen",
+    "reference_count": 0,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "wrong_explicit_user_authorization",
+    "condition": "C1",
+    "examples": [
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": false,
+        "canonical": 11,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 11,
+          "text": "Use Maple for postproduction studio; I authorize this revision."
+        },
+        "family_id": "test-0091",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": false,
+        "reference": 1,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 1,
+          "text": "We are planning a creative project. My binding choices are production location: Studio; screening format: onsite; production spending ceiling: 5000; premiere day: Saturday; intended viewers: students; postproduction studio: Cedar. Track changes only when I approve them. The catalog contains client-specific transport and equipment requirements; use those exact mappings, even if an ordinary venue would use a different kit."
+        },
+        "slot": "partner",
+        "user_hypothetical_or_rejected": false,
+        "world": "hypothetical",
+        "wrong_explicit_user_authorization": true
+      },
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": false,
+        "canonical": 11,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 11,
+          "text": "The final decision for participation format is now online."
+        },
+        "family_id": "test-0208",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": false,
+        "reference": 1,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 1,
+          "text": "We are planning a event project. My binding choices are venue: Harbor; participation format: hybrid; event spending ceiling: 7000; event day: Tuesday; guest group: specialists; caterer: Willow. Track changes only when I approve them. The catalog contains client-specific transport and equipment requirements; use those exact mappings, even if an ordinary venue would use a different kit."
+        },
+        "slot": "mode",
+        "user_hypothetical_or_rejected": false,
+        "world": "hypothetical",
+        "wrong_explicit_user_authorization": true
+      }
+    ],
+    "model": "qwen",
+    "reference_count": 11,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "anaphoric_user_reaffirmation_needs_semantic_review",
+    "condition": "C1",
+    "examples": [
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": true,
+        "assessment": "Anaphoric reaffirmation may support a decision only with its antecedent; human semantic assessment remains pending.",
+        "assistant_authority": false,
+        "canonical": 11,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 11,
+          "text": "Use Saturday for release day; I authorize this revision."
+        },
+        "family_id": "test-0221",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": true,
+        "reference": 121,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 121,
+          "text": "The old suggestion of Thursday for release day has come up again. That's only a suggestion; retain the decision I approved."
+        },
+        "slot": "day",
+        "user_hypothetical_or_rejected": false,
+        "world": "hypothetical",
+        "wrong_explicit_user_authorization": false
+      },
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": true,
+        "assessment": "Anaphoric reaffirmation may support a decision only with its antecedent; human semantic assessment remains pending.",
+        "assistant_authority": false,
+        "canonical": 11,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 11,
+          "text": "The final decision for grant spending ceiling is now 7000."
+        },
+        "family_id": "test-0102",
+        "generic_user_request_not_authorization": false,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": false,
+        "reference": 121,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 121,
+          "text": "The old suggestion of 3000 for grant spending ceiling has come up again. That's only a suggestion; retain the decision I approved."
+        },
+        "slot": "cap",
+        "user_hypothetical_or_rejected": false,
+        "world": "hypothetical",
+        "wrong_explicit_user_authorization": false
+      }
+    ],
+    "model": "qwen",
+    "reference_count": 32,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "generic_user_request_not_authorization",
+    "condition": "C1",
+    "examples": [
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": false,
+        "canonical": 1,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 1,
+          "text": "We are planning a creative project. My binding choices are production location: Studio; screening format: online; production spending ceiling: 3000; premiere day: Thursday; intended viewers: specialists; postproduction studio: Willow. Track changes only when I approve them. The catalog contains client-specific transport and equipment requirements; use those exact mappings, even if an ordinary venue would use a different kit."
+        },
+        "family_id": "test-0139",
+        "generic_user_request_not_authorization": true,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": true,
+        "reference": 37,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 37,
+          "text": "We have spent some time on promotion copy. Summarize our current executable commitments."
+        },
+        "slot": "cap",
+        "user_hypothetical_or_rejected": false,
+        "world": "authorized",
+        "wrong_explicit_user_authorization": false
+      },
+      {
+        "alternative_unsuperseded_user_authorization": false,
+        "anaphoric_user_reaffirmation_needs_semantic_review": false,
+        "assessment": "Structural source-role/category evidence only; no automatic canonical rescoring.",
+        "assistant_authority": false,
+        "canonical": 11,
+        "canonical_mismatch": true,
+        "canonical_user_message": {
+          "author": "user",
+          "index": 11,
+          "text": "Use 7000 for release spending ceiling; I authorize this revision."
+        },
+        "family_id": "test-0209",
+        "generic_user_request_not_authorization": true,
+        "missing_reference": false,
+        "nonexistent_or_future": false,
+        "not_visible": true,
+        "reference": 111,
+        "reference_text_status": "actual visible/source user text",
+        "referenced_message": {
+          "author": "user",
+          "index": 111,
+          "text": "We have spent some time on bug-triage process. Summarize our current executable commitments."
+        },
+        "slot": "cap",
+        "user_hypothetical_or_rejected": false,
+        "world": "hypothetical",
+        "wrong_explicit_user_authorization": false
+      }
+    ],
+    "model": "qwen",
+    "reference_count": 91,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "alternative_unsuperseded_user_authorization",
+    "condition": "C1",
+    "examples": [],
+    "model": "qwen",
+    "reference_count": 0,
+    "reference_denominator": 2880,
+    "run_id": "main-qwen-c1-43-eval",
+    "seed": 43
+  },
+  {
+    "category": "assistant_authority",
     "condition": "C3",
     "examples": [
       {

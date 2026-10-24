@@ -2,23 +2,23 @@
   "clarification_supervision_exposure": {
     "caption": "Exact reconstructed supervised loss exposure for completed Qwen C1/C3/C5 fits by seed and round. Tokens are whole completion targets in examples whose clarification target is nonempty, not tokens specifically in the clarification field. Loaded-only examples and masked orphan suffixes are excluded. Exposure/outcome associations are not causal evidence. Counts show repetition and diversity separately.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "0cf33366eb80fb49ff88fb966ef1bbd45b5871679a31b575b21e3e2bf6b99a12"
+      "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "365f68c263afe84ed973151a45209fa5339d9d13504b7efea6d88cebc56259ac"
     },
     "outputs": {
-      "pdf": "f09848ec14d002fa49ae71bdd47cde73a17e00f7cbb03dad8e3d2257a76679f7",
-      "png": "0e7f1c7a195cf604533416e5bbcfcfd9e318bf8bd3819378987f3ff8904b3853",
-      "svg": "9b643c37fbaa8745223b2ab86617a704e77335d21a23757b95cbc46134b429bc"
+      "pdf": "39ae3e1ec3f5c14853649376e37f7ea6d6e5676b6396a30b2ce8fa2c2bf10976",
+      "png": "4bb13a6d569ace39f989c7b24aff146185309e664aa32ee837b7f1367d3f47a2",
+      "svg": "f426cb8f3eae02d7fc4b040bfe93ab336073056a81ef79e2d508599036c58228"
     }
   },
   "clarification_types": {
     "caption": "Final-turn structured clarification audit, completed Qwen C1/C3/C5 seeds, 480 conversations each. Flags overlap and are not stacked or summed. Wrong-issue clarification can both add an unnecessary issue and miss the necessary one. Structured nulling/clarification does not reveal prose uncertainty acknowledgment or human-rated helpfulness. All original scorer results remain unchanged.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "f3968913f13695b2ccc794848fb2cc9b3dba7fa11b39b32e14b02ceab1d99167"
+      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "93f0a8191e0c716a549bceb02f03078fedd8eb44085a91823d83d569ffd8e07b"
     },
     "outputs": {
-      "pdf": "c62eaceb0500741fd035a42ae45bb36a25fcf2f071d7cc6c921d073ad3c31f52",
-      "png": "cc566224fd688a89c18dddd68711a6c637733238fd2e6f2d259ebe12e926859e",
-      "svg": "14e54ceca91d7e0d00ffc5684f4d0668b095d83b5eb9b796b1250d20530b26c5"
+      "pdf": "2a9603c3afaa0b39728dba36a8d5bda153dd9f02bae5e007890e435c65d1f43d",
+      "png": "44151a5ff22fae2afe4df6b176fe89a50953b563070a1a9ad1bd324f81f0cdb2",
+      "svg": "57b02703dfa0e2eb86e01b3309feb1b557f35031d36e7c987d7847441f0c144d"
     }
   },
   "core_horizon_level_and_change": {
@@ -47,34 +47,34 @@
   "dynamic_core_trajectories": {
     "caption": "Qwen C1/C3/C5, every completed seed, 480 conversations (240 paired families) at each of 64 user turns. Each response is scored against the oracle state at that turn, not the final target. Lines show descriptive marginal conversation correctness, not independent-turn inference or qualitative helpfulness. The dotted line marks the paired authorized/hypothetical event; other events and public request wording also vary by turn. Final-turn success cannot substitute for trajectory correctness. Missing seed cells remain pending.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "106b45a76028669507f2465c353830bddc34d14b85b45b1c748a92f213313730"
+      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "1c2f60ca0ed47eb2389c299b45c349d80c8621983b68a73c2fe47b0247e49b45"
     },
     "outputs": {
-      "pdf": "c0c14625fc3e500d91db601179a79fbeb3f0c15f61fb132f46c60adbad18e879",
-      "png": "fb15eabc88b3f57477ae35fcda508c8b806d3372404f5432fbdc2476b2561ea4",
-      "svg": "53e7f28971afad4d893bad75fe88ffbd0a7330a2857347fa9294bb8a29249c76"
+      "pdf": "ae890e4859f35c9feb1008a64fdb5257307b97311a75f0800efa7967673b7301",
+      "png": "b9b223b49ddb605f12f5a4d47339b235892a828e92ce817ecb39babf258f15a5",
+      "svg": "a1c61a36beb85d88f6370b7a9a3f4a05db72605f8ac4b3ce479103c65357e641"
     }
   },
   "source_access_and_state": {
     "caption": "Post-curve exploratory temporal source audit, completed Qwen C1/C3/C5 seeds, 240 paired families / 480 conversations at each turn. Grey dashed lines characterize the supplied source set using oracle annotations only after generation; colored lines show correct six-value output state. State recall is distinct from executable-plan success. Canonical-source absence does not imply all evidence is absent: working memory and retrieved assistant responses can carry it. Source access and state accuracy are associated, not a randomized causal contrast. No retrieval or memory policy changed.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/source_dynamics_by_turn.json": "69e080835ff78ee442f7a82200046b8bae474fb30a08031c23d008355b9393ea"
+      "supplements/long_horizon_intent_002/reports/source_dynamics_by_turn.json": "9cf53d2b77fdec31d72fc14f406671e32ec0ae41e67b6d8ade09aa61fcfc7ef6"
     },
     "outputs": {
-      "pdf": "704104b29b2f446eb5380a56d595aa083578e1b4e970c18a02a302f366aaf82b",
-      "png": "5716600f2a13db896c4a8efa533a58baea970bfb527026138c5479e10f7237cb",
-      "svg": "d93005d37438135823779d2b8c2281b42de8a0ba90df1380ffa9ef7ac0cfe30b"
+      "pdf": "3450f5746eb19d568aff529ae6a5eafdc17444d948da48a05718bf225011db4f",
+      "png": "9589dc9409dd34207ef4cb76a99ca9055a03f6359ff1b425e49dea46c0c88ca7",
+      "svg": "c1f4a2b392fa342caad82c6848e89f9815a140b211be590303d8271cbeb95502"
     }
   },
   "source_reference_types": {
     "caption": "Original source-error flags per 480 conversations (left) and separate overlapping flags per 2,880 slot references (right), completed Qwen C1/C3/C5 seeds. References can be both assistant-authored and unavailable. Anaphoric user support remains semantically unresolved; no automatic rescoring or validated human annotation is claimed.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "a65254d8333c288932ec86eee1c309a11267e3dc0128eb25f52bd382c9413757"
+      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "fe2817ca12533e645b233e6fb5d3ecde82ef07a039c68441bcd2ededfb5219bb"
     },
     "outputs": {
-      "pdf": "d57fe81a4c7dffa8cab8cbf7e3faea9443a493b167c4f98ac00fa05201ff8dd4",
-      "png": "cac65546d0f55c1d61a953957d9de2432bb104e1e05ffec1a0fd521e24200f4c",
-      "svg": "61f8b890de5e615fb5d43e930c0bf35d672ddcc0ebcd46b4f3c5dc9848b11129"
+      "pdf": "0f74972ea0083d977d0b6303eb4c80feac8bb8c42a2c99e1f57ba124147e2f2b",
+      "png": "c1ccbc587dcf2d24000208e18fc93d6d1c4abb57337297388950a0ac20bfa6fb",
+      "svg": "67ded712bc03f4ef22013c63881260a585f667dcfcc34f968cc52d9823c09160"
     }
   }
 }

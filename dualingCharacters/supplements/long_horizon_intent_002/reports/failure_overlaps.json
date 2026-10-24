@@ -466,5 +466,44 @@
     "second": "commitment_error",
     "second_only": 16,
     "seed": 29
+  },
+  {
+    "both": 75,
+    "condition": "C1",
+    "conversations": 480,
+    "families": 240,
+    "first": "dependency_error",
+    "first_only": 3,
+    "model": "qwen",
+    "neither": 396,
+    "second": "correct_recall_wrong_behavior",
+    "second_only": 6,
+    "seed": 43
+  },
+  {
+    "both": 21,
+    "condition": "C1",
+    "conversations": 480,
+    "families": 240,
+    "first": "source_error",
+    "first_only": 107,
+    "model": "qwen",
+    "neither": 295,
+    "second": "dependency_error",
+    "second_only": 57,
+    "seed": 43
+  },
+  {
+    "both": 6,
+    "condition": "C1",
+    "conversations": 480,
+    "families": 240,
+    "first": "clarification_error",
+    "first_only": 3,
+    "model": "qwen",
+    "neither": 461,
+    "second": "commitment_error",
+    "second_only": 10,
+    "seed": 43
   }
 ]

@@ -151,3 +151,15 @@ qwen,A1,29,240,480,overlapping_flag,commitment_error,21,480
 qwen,A1,29,240,480,overlapping_flag,dependency_error,85,480
 qwen,A1,29,240,480,overlapping_flag,source_error,34,480
 qwen,A1,29,240,480,overlapping_flag,correct_recall_wrong_behavior,86,480
+qwen,C1,43,240,480,mutually_exclusive,success,390,480
+qwen,C1,43,240,480,mutually_exclusive,dependency_only,71,480
+qwen,C1,43,240,480,mutually_exclusive,other_commitment_error,10,480
+qwen,C1,43,240,480,mutually_exclusive,clarification_error,9,480
+qwen,C1,43,240,480,overlapping_flag,malformed,0,480
+qwen,C1,43,240,480,overlapping_flag,false_update,0,240
+qwen,C1,43,240,480,overlapping_flag,missed_update,0,240
+qwen,C1,43,240,480,overlapping_flag,clarification_error,9,480
+qwen,C1,43,240,480,overlapping_flag,commitment_error,16,480
+qwen,C1,43,240,480,overlapping_flag,dependency_error,78,480
+qwen,C1,43,240,480,overlapping_flag,source_error,128,480
+qwen,C1,43,240,480,overlapping_flag,correct_recall_wrong_behavior,81,480

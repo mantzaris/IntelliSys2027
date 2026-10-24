@@ -10,8 +10,9 @@ reserved for verification. New work is under `supplements/long_horizon_intent_00
 This direction follows the negative first C5 comparison and the C1 seed reversal;
 it is exploratory. The original core and review controllers retain ownership.
 Core C5 seed 29 completed at 180/240 paired successes and A1 seed 29 at 181/240.
-The queue advanced to C1 seed 43; 52 core stages have completed. No intent GPU calls
-have occurred. Consult the live state for the current stage.
+C1 seed 43 completed at 183/240, yielding C1 seed results 186,138,183. The queue
+advanced to C3 seed 43; 57 core stages have completed. No intent GPU calls have
+occurred. Consult the live state for the current stage.
 
 The new protocol separates horizon, trajectory and training-seed robustness.
 CPU audits use each historical turn's own oracle. A fresh 16-family natural-language

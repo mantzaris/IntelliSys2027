@@ -101,6 +101,14 @@ main-qwen-c1-43-r0-fit,qwen,C1,43,0,no_clarification_needed,software,set,6,16,cl
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,no_clarification_needed,event,set,6,16,recovery,common_oracle_teacher,49,42,25,62,4081
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,no_clarification_needed,event,filler,16,16,recovery,common_oracle_teacher,27,23,16,33,2227
 main-qwen-c1-43-r0-fit,qwen,C1,43,0,necessary_clarification,software,filler,16,16,recovery,common_oracle_teacher,27,23,14,33,2214
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,event,filler,32,32,clean,common_oracle_teacher_clean,54,42,35,42,2830
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,necessary_clarification,software,filler,32,32,recovery,common_oracle_teacher,9,9,5,360,23563
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,software,filler,32,32,clean,common_oracle_teacher_clean,62,44,32,44,2964
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,event,filler,17,32,clean,common_oracle_teacher_clean,89,66,52,66,4435
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,event,set,6,32,clean,common_oracle_teacher_clean,95,75,59,75,4958
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,software,filler,17,32,clean,common_oracle_teacher_clean,73,52,40,52,3494
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,no_clarification_needed,software,set,6,32,clean,common_oracle_teacher_clean,102,84,59,84,5456
+main-qwen-c1-43-r1-fit,qwen,C1,43,1,necessary_clarification,software,filler,32,32,clean,common_oracle_teacher_clean,11,8,6,8,537
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,no_clarification_needed,software,filler,16,16,clean,common_oracle_teacher_clean,28,23,18,27,1817
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,no_clarification_needed,software,filler,9,16,recovery,common_oracle_teacher,77,55,38,55,3599
 main-qwen-c3-17-r0-fit,qwen,C3,17,0,no_clarification_needed,event,filler,9,16,clean,common_oracle_teacher_clean,68,56,36,65,4363

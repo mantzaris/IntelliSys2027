@@ -2,12 +2,12 @@
   "abstract_words": 188,
   "compilation_log": "artifacts/long_horizon_intent_002/draft_build/compilation.log",
   "exit_code": 0,
-  "generated_utc": "2026-10-24T16:59:50.949525+00:00",
-  "markdown_sha256": "794adb0b917d254392fac30b720510c1c12366e1f4c7dc313584d93e7f37be84",
+  "generated_utc": "2026-10-24T18:11:24.032888+00:00",
+  "markdown_sha256": "80ba54d216db3e021300a2dafa1f1771fc3816ced9f139d90f7cf3f772c2784f",
   "pdf_path": "supplements/long_horizon_intent_002/reports/draft/intent_author_review.pdf",
-  "pdf_sha256": "572c678e9f78871365609b754a2dabc2ec8ac6d5f0c80d5adf6f428c19e2d8d9",
+  "pdf_sha256": "d26c7c1a206e53f411119107f09183d78fe418fca4f6f011d12572d82ad71692",
   "scientific_status": "Incomplete core grid; fresh qualitative results and human validation pending. No submission-readiness or compliance assertion.",
-  "source_sha256": "06b05285e4f2d9e70637e3786322e760dc3fe80a0b13e8bf1c59ab236f1af22e",
+  "source_sha256": "55ce53bef19888ecf0960f21cd426d9941cf24c294d1bb95b1f4b477f5008a1e",
   "status": "compiled_author_review_only",
   "template_sha256": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560"
 }

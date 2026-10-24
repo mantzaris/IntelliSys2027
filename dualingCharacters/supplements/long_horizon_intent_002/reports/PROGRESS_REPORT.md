@@ -1,4 +1,4 @@
-# Intent 002 progress — 2026-10-24T16:59:50.730281+00:00
+# Intent 002 progress — 2026-10-24T18:11:23.740883+00:00
 
 This is an exploratory follow-up specified after the initial negative C5 comparison and C1 seed reversal. It preserves the original confirmatory study and review_001 freezes. Newly inspected test analyses are not original preregistration.
 
@@ -6,7 +6,7 @@ Session: 2026-10-24T13:06:05+00:00 to 2026-10-24T21:06:05+00:00; useful-work cut
 
 ## Existing core: completed and running
 
-Latest monitor 2026-10-24T16:59:34.237954+00:00: 55/241 stages complete; active `main-qwen-c1-43-r1-fit`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
+Latest monitor 2026-10-24T18:10:40.359135+00:00: 57/241 stages complete; active `main-qwen-c3-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
 
 | Qwen seed | Condition | 64-turn paired success |
 |---|---|---|
@@ -20,7 +20,7 @@ Latest monitor 2026-10-24T16:59:34.237954+00:00: 55/241 stages complete; active 
 | 29 | C4 | 165/240 (68.75%) |
 | 29 | C5 | 180/240 (75.00%) |
 | 29 | A1 | 181/240 (75.42%) |
-| 43 | C1 | Pending |
+| 43 | C1 | 183/240 (76.25%) |
 | 43 | C3 | Pending |
 | 43 | C4 | Pending |
 | 43 | C5 | Pending |
@@ -45,6 +45,7 @@ Trajectory robustness: the table uses all480 conversations at every actual turn 
 |---|---|---|---|---|---|
 | C1 | 17 | 31.86% | 15.48% | 55 | 90 |
 | C1 | 29 | 30.95% | 14.70% | 67 | 167 |
+| C1 | 43 | 32.32% | 14.82% | 55 | 90 |
 | C3 | 17 | 54.77% | 46.65% | 55 | 99 |
 | C3 | 29 | 31.44% | 16.21% | 55 | 98 |
 | C5 | 17 | 31.52% | 16.65% | 56 | 118 |
@@ -67,6 +68,8 @@ A temporal source audit was added after inspecting these curves. It characterize
 | C1 | 17 | 61 | 480 | 0 | 0 | 406 |
 | C1 | 29 | 60 | 0 | 6 | 464 | 4 |
 | C1 | 29 | 61 | 474 | 6 | 3 | 351 |
+| C1 | 43 | 60 | 0 | 1 | 468 | 1 |
+| C1 | 43 | 61 | 477 | 1 | 2 | 407 |
 | C3 | 17 | 60 | 0 | 210 | 163 | 177 |
 | C3 | 17 | 61 | 480 | 210 | 0 | 390 |
 | C3 | 29 | 60 | 0 | 0 | 476 | 0 |
@@ -86,6 +89,7 @@ Training robustness: `matched_seed_description.json` uses only seeds shared by C
 |---|---|---|---|---|---|---|
 | C1 | 17 | 12 | 3 | 6 | 0 | 3 |
 | C1 | 29 | 104 | 101 | 4 | 2 | 99 |
+| C1 | 43 | 9 | 4 | 4 | 1 | 2 |
 | C3 | 17 | 23 | 16 | 7 | 1 | 15 |
 | C3 | 29 | 8 | 1 | 7 | 1 | 1 |
 | C5 | 17 | 23 | 16 | 7 | 0 | 16 |
@@ -97,6 +101,7 @@ Clarification flags overlap. Wrong-issue cases can be both unnecessary and misse
 |---|---|---|---|---|---|---|---|---|
 | C1 | 17 | 47 | 49 | 6 | 21 | 0 | 8 | 2 |
 | C1 | 29 | 27 | 28 | 0 | 0 | 0 | 27 | 0 |
+| C1 | 43 | 128 | 182 | 48 | 112 | 0 | 11 | 32 |
 | C3 | 17 | 243 | 292 | 154 | 242 | 1 | 12 | 2 |
 | C3 | 29 | 178 | 190 | 25 | 80 | 0 | 15 | 17 |
 | C5 | 17 | 46 | 47 | 3 | 9 | 0 | 34 | 6 |
@@ -106,7 +111,7 @@ Reference counts have2880 slot references, while the original source-error denom
 
 ## Actual supervised exposure
 
-21 completed fits have exact loss-mask and sampler reconstruction. Common input-token budgets do not imply equal supervised-target tokens, example diversity, or recovery exposure.
+22 completed fits have exact loss-mask and sampler reconstruction. Common input-token budgets do not imply equal supervised-target tokens, example diversity, or recovery exposure.
 
 | Condition | Seed | Round | Nonempty recovery pool | Loss-contributing unique | Occurrences | Completion target tokens | Top-5 share |
 |---|---|---|---|---|---|---|---|
@@ -115,6 +120,7 @@ Reference counts have2880 slot references, while the original source-error denom
 | C1 | 29 | 0 | 30 | 27 | 33 | 2240 | 30.7% |
 | C1 | 29 | 1 | 17 | 17 | 361 | 23664 | 34.6% |
 | C1 | 43 | 0 | 27 | 23 | 33 | 2214 | 31.0% |
+| C1 | 43 | 1 | 9 | 9 | 360 | 23563 | 57.2% |
 | C3 | 17 | 0 | 32 | 19 | 19 | 1279 | 27.2% |
 | C3 | 17 | 1 | 33 | 33 | 315 | 20679 | 17.3% |
 | C3 | 29 | 0 | 29 | 22 | 23 | 1520 | 27.4% |
@@ -140,7 +146,7 @@ Human status: pending_fresh_outputs. Two independent rating forms remain blank u
 
 ## Resources and next action
 
-Latest reconciled project reservation: 25.2648/96hours. Core forecast: expected 80.20, conservative 87.71 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
+Latest reconciled project reservation: 26.4290/96hours. Core forecast: expected 81.32, conservative 88.62 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
 
 Required core → review_001 → intent_002 → older unseen-profile work. This session does not expand the96-hour ceiling. New intent work requires the completed core and review gates, a fixed-final-checkpoint binding, timing-only complete-tier allocation, free shared locks, remaining allowance, and this session’s deadline. If gates stay closed, leave intent disabled for a subsequent authorized continuation.
 

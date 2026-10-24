@@ -19,3 +19,4 @@ qwen,C3-base,29,240,65,116,2,57,0.475,0.4083333333333333,0.5416666666666666,inte
 qwen,C4-base,29,240,62,103,5,70,0.4083333333333333,0.3375,0.475,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,C5-base,29,240,64,116,3,57,0.4708333333333333,0.4041666666666667,0.5375,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,A1-base,29,240,63,118,4,55,0.475,0.4041666666666667,0.5416666666666666,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
+qwen,C1-base,43,240,64,119,3,54,0.48333333333333334,0.4166666666666667,0.55,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
