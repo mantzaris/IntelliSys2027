@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-24T13:10:22.745567+00:00",
+  "dispatcher_source_sha256": "85abec96732756cfb9b06c93034d207833da83845c3e42c04227876120f9c9a6",
+  "intent_002_enabled": false,
+  "intent_002_resolved": false,
+  "priority": [
+    "required_core",
+    "review_001",
+    "intent_002",
+    "older_unseen_profiles"
+  ],
+  "reason": "New session-bound intent extension must not be bypassed or launched after its deadline",
+  "review_controller_ownership_unchanged": true,
+  "scientific_freezes_changed": false,
+  "session_deadline_utc": "2026-10-24T21:06:05+00:00"
+}

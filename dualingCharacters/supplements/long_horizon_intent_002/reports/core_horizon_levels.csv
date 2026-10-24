@@ -1,0 +1,16 @@
+model,condition,seed,horizon,families,run_id,status,paired_success,paired_successes
+qwen,base,17,32,48,extra-qwen-base-17-horizon32,pending,,
+qwen,base,17,64,48,base-qwen-eval,completed,0.3541666666666667,17
+qwen,base,17,128,48,extra-qwen-base-17-horizon128,pending,,
+qwen,C1,17,32,48,extra-qwen-c1-17-horizon32,pending,,
+qwen,C1,17,64,48,main-qwen-c1-17-eval-format2,completed,0.8333333333333334,40
+qwen,C1,17,128,48,extra-qwen-c1-17-horizon128,pending,,
+qwen,C3,17,32,48,extra-qwen-c3-17-horizon32,pending,,
+qwen,C3,17,64,48,main-qwen-c3-17-eval,completed,0.8541666666666666,41
+qwen,C3,17,128,48,extra-qwen-c3-17-horizon128,pending,,
+qwen,C4,17,32,48,extra-qwen-c4-17-horizon32,pending,,
+qwen,C4,17,64,48,main-qwen-c4-17-eval,completed,0.8333333333333334,40
+qwen,C4,17,128,48,extra-qwen-c4-17-horizon128,pending,,
+qwen,C5,17,32,48,extra-qwen-c5-17-horizon32,pending,,
+qwen,C5,17,64,48,main-qwen-c5-17-eval,completed,0.8125,39
+qwen,C5,17,128,48,extra-qwen-c5-17-horizon128,pending,,

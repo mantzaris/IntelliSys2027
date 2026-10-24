@@ -1,0 +1,3 @@
+control,status,missing_cells
+C3,pending,"[['C5', 32], ['C5', 128], ['C3', 32], ['C3', 128]]"
+C1,pending,"[['C5', 32], ['C5', 128], ['C1', 32], ['C1', 128]]"

@@ -1,0 +1,157 @@
+[
+  {
+    "condition": "base",
+    "families": 48,
+    "horizon": 32,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-base-17-horizon32",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "base",
+    "families": 48,
+    "horizon": 64,
+    "model": "qwen",
+    "paired_success": 0.3541666666666667,
+    "paired_successes": 17,
+    "run_id": "base-qwen-eval",
+    "seed": 17,
+    "status": "completed"
+  },
+  {
+    "condition": "base",
+    "families": 48,
+    "horizon": 128,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-base-17-horizon128",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C1",
+    "families": 48,
+    "horizon": 32,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c1-17-horizon32",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C1",
+    "families": 48,
+    "horizon": 64,
+    "model": "qwen",
+    "paired_success": 0.8333333333333334,
+    "paired_successes": 40,
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "seed": 17,
+    "status": "completed"
+  },
+  {
+    "condition": "C1",
+    "families": 48,
+    "horizon": 128,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c1-17-horizon128",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C3",
+    "families": 48,
+    "horizon": 32,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c3-17-horizon32",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C3",
+    "families": 48,
+    "horizon": 64,
+    "model": "qwen",
+    "paired_success": 0.8541666666666666,
+    "paired_successes": 41,
+    "run_id": "main-qwen-c3-17-eval",
+    "seed": 17,
+    "status": "completed"
+  },
+  {
+    "condition": "C3",
+    "families": 48,
+    "horizon": 128,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c3-17-horizon128",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C4",
+    "families": 48,
+    "horizon": 32,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c4-17-horizon32",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C4",
+    "families": 48,
+    "horizon": 64,
+    "model": "qwen",
+    "paired_success": 0.8333333333333334,
+    "paired_successes": 40,
+    "run_id": "main-qwen-c4-17-eval",
+    "seed": 17,
+    "status": "completed"
+  },
+  {
+    "condition": "C4",
+    "families": 48,
+    "horizon": 128,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c4-17-horizon128",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C5",
+    "families": 48,
+    "horizon": 32,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c5-17-horizon32",
+    "seed": 17,
+    "status": "pending"
+  },
+  {
+    "condition": "C5",
+    "families": 48,
+    "horizon": 64,
+    "model": "qwen",
+    "paired_success": 0.8125,
+    "paired_successes": 39,
+    "run_id": "main-qwen-c5-17-eval",
+    "seed": 17,
+    "status": "completed"
+  },
+  {
+    "condition": "C5",
+    "families": 48,
+    "horizon": 128,
+    "model": "qwen",
+    "paired_success": null,
+    "run_id": "extra-qwen-c5-17-horizon128",
+    "seed": 17,
+    "status": "pending"
+  }
+]

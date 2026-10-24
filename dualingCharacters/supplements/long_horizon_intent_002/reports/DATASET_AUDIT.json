@@ -1,0 +1,70 @@
+{
+  "ambiguity_balance": {
+    "operator": {
+      "False": 2,
+      "True": 2
+    },
+    "research": {
+      "False": 2,
+      "True": 2
+    },
+    "software": {
+      "False": 2,
+      "True": 2
+    },
+    "writing": {
+      "False": 2,
+      "True": 2
+    }
+  },
+  "ledger_source_spans_verified": true,
+  "no_policy_or_model_calls": true,
+  "paired_horizon_families": 60,
+  "phase_event_matching": true,
+  "public_conversations": 120,
+  "qualification": "Exact-hash overlap alone is weak; lexical/structural overlap audit is separately reported. Longer scripts add varied supporting requests but remain authored and synthetic.",
+  "selection": {
+    "12": [
+      "intent-operator-bracken",
+      "intent-operator-marsh",
+      "intent-operator-stone",
+      "intent-product-aurora",
+      "intent-product-fern",
+      "intent-product-tidal",
+      "intent-research-keystone",
+      "intent-research-orbit",
+      "intent-research-vesper",
+      "intent-writing-ember",
+      "intent-writing-estuary",
+      "intent-writing-mosaic"
+    ],
+    "16": [
+      "intent-operator-bracken",
+      "intent-operator-marsh",
+      "intent-operator-stone",
+      "intent-operator-summit",
+      "intent-product-aurora",
+      "intent-product-copper",
+      "intent-product-fern",
+      "intent-product-tidal",
+      "intent-research-keystone",
+      "intent-research-lantern",
+      "intent-research-orbit",
+      "intent-research-vesper",
+      "intent-writing-ember",
+      "intent-writing-estuary",
+      "intent-writing-mosaic",
+      "intent-writing-pine"
+    ],
+    "8": [
+      "intent-operator-bracken",
+      "intent-operator-stone",
+      "intent-product-aurora",
+      "intent-product-fern",
+      "intent-research-orbit",
+      "intent-research-vesper",
+      "intent-writing-estuary",
+      "intent-writing-mosaic"
+    ]
+  }
+}

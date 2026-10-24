@@ -1,0 +1,524 @@
+[
+  {
+    "condition": "C1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 282,
+      "common_oracle_teacher_clean": 367
+    },
+    "loaded_occurrences_including_replay": 972,
+    "loaded_unique_windows_including_replay": 804,
+    "loss_contributing_unique_families": 149,
+    "loss_contributing_unique_windows": 649,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16387,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-17-r0-fit-format2",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": "main-qwen-c1-17-r0-fit",
+    "supervised_target_tokens": 48838,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 24448,
+      "common_oracle_teacher_clean": 24390
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 569
+  },
+  {
+    "condition": "C1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 13,
+      "common_oracle_teacher_clean": 372,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 974,
+    "loaded_unique_windows_including_replay": 501,
+    "loss_contributing_unique_families": 145,
+    "loss_contributing_unique_windows": 386,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16403,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-17-r1-fit-format2",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": "main-qwen-c1-17-r1-fit",
+    "supervised_target_tokens": 48845,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 22346,
+      "common_oracle_teacher_clean": 24869,
+      "verified_model_recovery": 1630
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 295
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 310,
+      "common_oracle_teacher_clean": 260,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 870,
+    "loaded_unique_windows_including_replay": 758,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 571,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16799,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-17-r0-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 41577,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20429,
+      "common_oracle_teacher_clean": 21084,
+      "verified_model_recovery": 64
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 440
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 33,
+      "common_oracle_teacher_clean": 319
+    },
+    "loaded_occurrences_including_replay": 876,
+    "loaded_unique_windows_including_replay": 471,
+    "loss_contributing_unique_families": 143,
+    "loss_contributing_unique_windows": 352,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16780,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-17-r1-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 41889,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20679,
+      "common_oracle_teacher_clean": 21210
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 695
+  },
+  {
+    "condition": "C4",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 244,
+      "common_oracle_teacher_clean": 295,
+      "verified_model_recovery": 2
+    },
+    "loaded_occurrences_including_replay": 833,
+    "loaded_unique_windows_including_replay": 757,
+    "loss_contributing_unique_families": 148,
+    "loss_contributing_unique_windows": 541,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16778,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c4-17-r0-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39100,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19323,
+      "common_oracle_teacher_clean": 19642,
+      "verified_model_recovery": 135
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 216
+  },
+  {
+    "condition": "C4",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 13,
+      "common_oracle_teacher_clean": 298,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 837,
+    "loaded_unique_windows_including_replay": 433,
+    "loss_contributing_unique_families": 138,
+    "loss_contributing_unique_windows": 312,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16763,
+    "qualification": "Per optimizer process. Resume-prefix token replay contributes no new gradient; prior-process effective steps must be joined by the recorded resume chain, not double counted.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c4-17-r1-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39317,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 17915,
+      "common_oracle_teacher_clean": 19840,
+      "verified_model_recovery": 1562
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 738
+  },
+  {
+    "condition": "C5",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 264,
+      "common_oracle_teacher_clean": 295
+    },
+    "loaded_occurrences_including_replay": 836,
+    "loaded_unique_windows_including_replay": 765,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 559,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16633,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c5-17-r0-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39436,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19802,
+      "common_oracle_teacher_clean": 19634
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 129
+  },
+  {
+    "condition": "C5",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 30,
+      "common_oracle_teacher_clean": 302,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 840,
+    "loaded_unique_windows_including_replay": 451,
+    "loss_contributing_unique_families": 138,
+    "loss_contributing_unique_windows": 333,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16348,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c5-17-r1-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39802,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 18958,
+      "common_oracle_teacher_clean": 20073,
+      "verified_model_recovery": 771
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 75
+  },
+  {
+    "condition": "A1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 254,
+      "common_oracle_teacher_clean": 303,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 845,
+    "loaded_unique_windows_including_replay": 738,
+    "loss_contributing_unique_families": 149,
+    "loss_contributing_unique_windows": 558,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16461,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-a1-17-r0-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 40157,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19841,
+      "common_oracle_teacher_clean": 20247,
+      "verified_model_recovery": 69
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 701
+  },
+  {
+    "condition": "A1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 11,
+      "common_oracle_teacher_clean": 305
+    },
+    "loaded_occurrences_including_replay": 846,
+    "loaded_unique_windows_including_replay": 434,
+    "loss_contributing_unique_families": 142,
+    "loss_contributing_unique_windows": 316,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16700,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-a1-17-r1-fit",
+    "seed": 17,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39894,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19552,
+      "common_oracle_teacher_clean": 20342
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 324
+  },
+  {
+    "condition": "C1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 268,
+      "common_oracle_teacher_clean": 346
+    },
+    "loaded_occurrences_including_replay": 973,
+    "loaded_unique_windows_including_replay": 803,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 614,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16796,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-29-r0-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 48489,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 24960,
+      "common_oracle_teacher_clean": 23529
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 700
+  },
+  {
+    "condition": "C1",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 17,
+      "common_oracle_teacher_clean": 372
+    },
+    "loaded_occurrences_including_replay": 971,
+    "loaded_unique_windows_including_replay": 503,
+    "loss_contributing_unique_families": 143,
+    "loss_contributing_unique_windows": 389,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16352,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c1-29-r1-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 48333,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 23664,
+      "common_oracle_teacher_clean": 24669
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 421
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 310,
+      "common_oracle_teacher_clean": 291
+    },
+    "loaded_occurrences_including_replay": 871,
+    "loaded_unique_windows_including_replay": 812,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 601,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16592,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-29-r0-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 41858,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20884,
+      "common_oracle_teacher_clean": 20974
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 810
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 23,
+      "common_oracle_teacher_clean": 320
+    },
+    "loaded_occurrences_including_replay": 878,
+    "loaded_unique_windows_including_replay": 462,
+    "loss_contributing_unique_families": 143,
+    "loss_contributing_unique_windows": 343,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16777,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-29-r1-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 42055,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20777,
+      "common_oracle_teacher_clean": 21278
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 259
+  },
+  {
+    "condition": "C4",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 250,
+      "common_oracle_teacher_clean": 298,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 838,
+    "loaded_unique_windows_including_replay": 750,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 549,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16599,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c4-29-r0-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39579,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19614,
+      "common_oracle_teacher_clean": 19897,
+      "verified_model_recovery": 68
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 375
+  },
+  {
+    "condition": "C4",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 20,
+      "common_oracle_teacher_clean": 307
+    },
+    "loaded_occurrences_including_replay": 847,
+    "loaded_unique_windows_including_replay": 444,
+    "loss_contributing_unique_families": 140,
+    "loss_contributing_unique_windows": 327,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16464,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c4-29-r1-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 40418,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20018,
+      "common_oracle_teacher_clean": 20400
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 102
+  },
+  {
+    "condition": "C5",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 238,
+      "common_oracle_teacher_clean": 299,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 836,
+    "loaded_unique_windows_including_replay": 729,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 538,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16652,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c5-29-r0-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 39425,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 19573,
+      "common_oracle_teacher_clean": 19782,
+      "verified_model_recovery": 70
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 1114
+  },
+  {
+    "condition": "C5",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 9,
+      "common_oracle_teacher_clean": 307,
+      "verified_model_recovery": 1
+    },
+    "loaded_occurrences_including_replay": 845,
+    "loaded_unique_windows_including_replay": 433,
+    "loss_contributing_unique_families": 135,
+    "loss_contributing_unique_windows": 317,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16682,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c5-29-r1-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 40018,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 18197,
+      "common_oracle_teacher_clean": 20326,
+      "verified_model_recovery": 1495
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 1094
+  }
+]

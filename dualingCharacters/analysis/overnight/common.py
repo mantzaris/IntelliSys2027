@@ -6,8 +6,12 @@ from datetime import datetime,timezone
 
 ROOT=Path(__file__).resolve().parents[2]
 SESSION='overnight_20261024T023622Z'
-OUT=ROOT/'reports'/SESSION
-CACHE=ROOT/'artifacts'/SESSION
+# Explicit output routing lets later reporting sessions reuse these CPU audits
+# without rewriting a historical handoff. Defaults preserve the original session.
+OUT=Path(os.environ.get('PCC_REPORT_OUTPUT',str(ROOT/'reports'/SESSION))).resolve()
+CACHE=Path(os.environ.get('PCC_REPORT_CACHE',str(ROOT/'artifacts'/SESSION))).resolve()
+if not OUT.is_relative_to(ROOT) or not CACHE.is_relative_to(ROOT):
+    raise ValueError('Reporting paths must remain within the study directory')
 
 
 def utc():return datetime.now(timezone.utc).isoformat()

@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-10-24T13:13:11.455713+00:00",
+  "no_gpu_calls": true,
+  "runs": {
+    "base-phi-eval": {
+      "artifacts/runs/base-phi-eval/evaluation.jsonl.gz": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86"
+    },
+    "base-qwen-eval": {
+      "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089"
+    },
+    "main-qwen-a1-17-eval": {
+      "artifacts/runs/main-qwen-a1-17-eval/evaluation.jsonl.gz": "ac7b4b0202b6c5d4732b85eaec8e7da62ff194dadd7d8d107bcf13fe4d3165da"
+    },
+    "main-qwen-c1-17-eval-format2": {
+      "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2"
+    },
+    "main-qwen-c1-29-eval": {
+      "artifacts/runs/main-qwen-c1-29-eval/evaluation.jsonl.gz": "e7bce6221c59e4e05bb4e8f8b6e5e7b2727e3287d77c721bc74dfae5d6522cdb"
+    },
+    "main-qwen-c3-17-eval": {
+      "artifacts/runs/main-qwen-c3-17-eval/evaluation.jsonl.gz": "f74e972ac3c0428ea568a199fde1a166ab1c5b98d83615326def64d35cbf9694"
+    },
+    "main-qwen-c3-29-eval": {
+      "artifacts/runs/main-qwen-c3-29-eval/evaluation.jsonl.gz": "ec0d743e86ecf4e1094557bf11f0022c88aa162bd0d910fe06176de071006f53"
+    },
+    "main-qwen-c4-17-eval": {
+      "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz": "b8c05abba7e6e0f4588cc7d4a72a51eac32b0735276e6c616ceef2d688f75cda"
+    },
+    "main-qwen-c4-29-eval": {
+      "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz": "0a65583da36f5deb30de4bac9e55c74089d2c80457878d97ff679120e657ef25"
+    },
+    "main-qwen-c5-17-eval": {
+      "artifacts/runs/main-qwen-c5-17-eval/evaluation.jsonl.gz": "3a9295879185b5b9407658f8a135f59903a22e37977e38a2711dc75a68d8217c"
+    }
+  },
+  "source_sha256": "6eef5880ee2b75debef740722013434cbd56e121e8d6bfc6020901a800d90743"
+}

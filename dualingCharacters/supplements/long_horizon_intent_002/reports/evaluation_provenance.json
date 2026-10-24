@@ -1,0 +1,385 @@
+{
+  "frozen_core_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+  "generated_utc": "2026-10-24T11:54:10.977499+00:00",
+  "inputs": {
+    "base-phi-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/base-phi-eval/status.json",
+          5113,
+          1792778987959525056
+        ],
+        [
+          "artifacts/runs/base-phi-eval/config.json",
+          599,
+          1792776373152857440
+        ],
+        [
+          "artifacts/runs/base-phi-eval/evaluation_summary.json",
+          309914,
+          1792778987950525182
+        ],
+        [
+          "artifacts/runs/base-phi-eval/evaluation.jsonl.gz",
+          6992300,
+          1792778993191452127
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/base-phi-eval/config.json": "ca5962291c2369073e5bca75ba95f274433c66df2435f322c8cef12d41adc4f5",
+        "artifacts/runs/base-phi-eval/evaluation.jsonl.gz": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86",
+        "artifacts/runs/base-phi-eval/evaluation_summary.json": "bbced5b150b00b2d8ad1d1eeffc6667659e0890ff3dc9ff6d04b08fb8666a0d5",
+        "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "base-phi-eval",
+      "validated_utc": "2026-10-24T02:42:56.415634+00:00"
+    },
+    "base-qwen-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/base-qwen-eval/status.json",
+          5113,
+          1792776346948280510
+        ],
+        [
+          "artifacts/runs/base-qwen-eval/config.json",
+          600,
+          1792773673723931594
+        ],
+        [
+          "artifacts/runs/base-qwen-eval/evaluation_summary.json",
+          310445,
+          1792776346940280639
+        ],
+        [
+          "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz",
+          7053778,
+          1792776353022182447
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/base-qwen-eval/config.json": "c4ee402bd79b7c9242649d6f81da832e2c1faf157df39a2610a6e3821fd04166",
+        "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089",
+        "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+        "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "base-qwen-eval",
+      "validated_utc": "2026-10-24T02:42:49.740260+00:00"
+    },
+    "main-qwen-a1-17-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-a1-17-eval/status.json",
+          5401,
+          1792822721512633867
+        ],
+        [
+          "artifacts/runs/main-qwen-a1-17-eval/config.json",
+          598,
+          1792820515473392974
+        ],
+        [
+          "artifacts/runs/main-qwen-a1-17-eval/evaluation_summary.json",
+          305643,
+          1792822721503634013
+        ],
+        [
+          "artifacts/runs/main-qwen-a1-17-eval/evaluation.jsonl.gz",
+          6715120,
+          1792822728489520795
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-a1-17-eval/config.json": "e1fa4178ba0209542c7af282fe935d0da039fc36edeaddbf6c89fe3b237f4287",
+        "artifacts/runs/main-qwen-a1-17-eval/evaluation.jsonl.gz": "ac7b4b0202b6c5d4732b85eaec8e7da62ff194dadd7d8d107bcf13fe4d3165da",
+        "artifacts/runs/main-qwen-a1-17-eval/evaluation_summary.json": "288889178ba3b38235ec03d4442d564b0db2b4fb58a1f4574ea7feea61a63465",
+        "artifacts/runs/main-qwen-a1-17-eval/status.json": "b841f68c433117ea968323e3d2bbf8a88d3d33d865cf602b3c08c24b08e33ae4",
+        "artifacts/runs/main-qwen-a1-17-eval/trace_archives.json": "48ec02e14325f0b3015c77bd96aa94bc0547ec3ea14aae296c63192ad747b0c1",
+        "artifacts/runs/main-qwen-a1-17-r1-fit/training/final/adapter_model.safetensors": "2da2115fd9aeb4ffefafc49cb6745c4fbb669ea3ff5acf79569bf2ab54fab3cb"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-a1-17-eval",
+      "validated_utc": "2026-10-24T06:20:13.557815+00:00"
+    },
+    "main-qwen-c1-17-eval-format2.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c1-17-eval-format2/status.json",
+          5472,
+          1792793626234358540
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-17-eval-format2/config.json",
+          598,
+          1792790968583198558
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json",
+          305794,
+          1792793626226358661
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz",
+          6531003,
+          1792793632299266384
+        ]
+      ],
+      "inputs": {
+        "artifacts/review_001/inputs/memory-C1.json": "9860d375e2c4bd8b9d9108c8cc747fb015e5140f1c8f66ede28fa4d71d4b6633",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/config.json": "2c40d50befe11cd5f49a1341e81c6439ed9ee8ee3bd97fc79e27ecdda060fdf4",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+        "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/final/adapter_model.safetensors": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc"
+      },
+      "prior_full_raw_validation_reused": true,
+      "rows_validated_now": 480,
+      "run_id": "main-qwen-c1-17-eval-format2",
+      "validated_utc": "2026-10-24T02:42:56.947561+00:00"
+    },
+    "main-qwen-c1-29-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c1-29-eval/status.json",
+          5400,
+          1792827998802820790
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-29-eval/config.json",
+          598,
+          1792825931836566615
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-29-eval/evaluation_summary.json",
+          305899,
+          1792827998793820943
+        ],
+        [
+          "artifacts/runs/main-qwen-c1-29-eval/evaluation.jsonl.gz",
+          6664819,
+          1792828006222694694
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-eval/config.json": "cc223f227cb80e771c841345d5c904cac212d55e6f32a475f155ba89dd38b8d4",
+        "artifacts/runs/main-qwen-c1-29-eval/evaluation.jsonl.gz": "e7bce6221c59e4e05bb4e8f8b6e5e7b2727e3287d77c721bc74dfae5d6522cdb",
+        "artifacts/runs/main-qwen-c1-29-eval/evaluation_summary.json": "1f9eb142b8c30fce5a7aea63d803aaa47428ce955cdd8010c732f7e6faea4e2b",
+        "artifacts/runs/main-qwen-c1-29-eval/status.json": "8acc84820f9e10c0110ac4f028caaf8b470561ea544b423e407bc471744a65b5",
+        "artifacts/runs/main-qwen-c1-29-eval/trace_archives.json": "01e9f5929566686ddd3e51d165eea7aecc439ce42b4090010973ac515e112828",
+        "artifacts/runs/main-qwen-c1-29-r1-fit/training/final/adapter_model.safetensors": "835c4527c556a78869cee67a00f7ca1ae45fa2f26e674d288707fdb1e0c8f6e5"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c1-29-eval",
+      "validated_utc": "2026-10-24T07:48:42.540817+00:00"
+    },
+    "main-qwen-c3-17-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c3-17-eval/status.json",
+          5400,
+          1792801772225129748
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-17-eval/config.json",
+          598,
+          1792798966117436740
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json",
+          308725,
+          1792801772212129952
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-17-eval/evaluation.jsonl.gz",
+          6805562,
+          1792801779936009107
+        ]
+      ],
+      "inputs": {
+        "artifacts/review_001/inputs/memory-C3.json": "05e39299517c784dc972df70649afa338e3649b33f9c7474054e40d0967b63c4",
+        "artifacts/runs/main-qwen-c3-17-eval/config.json": "ea58c1bd2ad0b3b1613aabcb4f0b1680c661ca78a9e20a403e9f80a9b3c57a82",
+        "artifacts/runs/main-qwen-c3-17-eval/evaluation.jsonl.gz": "f74e972ac3c0428ea568a199fde1a166ab1c5b98d83615326def64d35cbf9694",
+        "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json": "be4b91bd63d2f5507ba41a9660e256eb11e3ebf81ba06ae74928c97df3c2b3f5",
+        "artifacts/runs/main-qwen-c3-17-eval/status.json": "5aa7115d266937c266e47a894d57b4c67dd8cc0ea96df486c0447a979b513ec3",
+        "artifacts/runs/main-qwen-c3-17-r1-fit/training/final/adapter_model.safetensors": "bafc11177689961280af9128e0dca86ba94ccb36cf7048bc3667d4bf20a2a306"
+      },
+      "prior_full_raw_validation_reused": true,
+      "rows_validated_now": 480,
+      "run_id": "main-qwen-c3-17-eval",
+      "validated_utc": "2026-10-24T02:42:57.506324+00:00"
+    },
+    "main-qwen-c3-29-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/status.json",
+          5400,
+          1792834759517047726
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/config.json",
+          598,
+          1792832705358943779
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/evaluation_summary.json",
+          307766,
+          1792834759508047875
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/evaluation.jsonl.gz",
+          6516001,
+          1792834767058923064
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-eval/config.json": "ebff2cd1fb77204b50fd3772e27d86b10f4df7c422d56258c884a26f80489243",
+        "artifacts/runs/main-qwen-c3-29-eval/evaluation.jsonl.gz": "ec0d743e86ecf4e1094557bf11f0022c88aa162bd0d910fe06176de071006f53",
+        "artifacts/runs/main-qwen-c3-29-eval/evaluation_summary.json": "1ae12f05052edde5e4768732c75380824eae59ebf9417be717d2ca97c1eb42b1",
+        "artifacts/runs/main-qwen-c3-29-eval/status.json": "efd91aad21d2340f0740a119ae940773f1b4d8ff0f6ee6448e7960150705d716",
+        "artifacts/runs/main-qwen-c3-29-eval/trace_archives.json": "95623ac1cc2de3e57c63844d932cfebdd3b6b6c60321559fc5549670baf6ad3a",
+        "artifacts/runs/main-qwen-c3-29-r1-fit/training/final/adapter_model.safetensors": "a58f538241f5633be66b9623cf34e8a2b5107ebb3a79fd4de19b1ad45aa110aa"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c3-29-eval",
+      "validated_utc": "2026-10-24T09:40:46.557545+00:00"
+    },
+    "main-qwen-c4-17-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c4-17-eval/status.json",
+          5401,
+          1792808960802389611
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-17-eval/config.json",
+          598,
+          1792806748950039557
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-17-eval/evaluation_summary.json",
+          307027,
+          1792808960792389766
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz",
+          6619742,
+          1792808967700282099
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-17-eval/config.json": "c19c86c66d2ed8a0c7b2a35a92e196940475249a17b2fc7059a853adae6641fa",
+        "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz": "b8c05abba7e6e0f4588cc7d4a72a51eac32b0735276e6c616ceef2d688f75cda",
+        "artifacts/runs/main-qwen-c4-17-eval/evaluation_summary.json": "32aa2b5f5f77d8f6ed7f0b470237523cb73f8633ffdbffa122f8a039bc384656",
+        "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
+        "artifacts/runs/main-qwen-c4-17-r1-fit/training/final/adapter_model.safetensors": "a0e4e5a35a56ab8fc7c81f1194529f3d91de1ae260fba9ed352acf3f4aab9156"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c4-17-eval",
+      "validated_utc": "2026-10-24T02:43:04.607799+00:00"
+    },
+    "main-qwen-c4-29-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c4-29-eval/status.json",
+          5401,
+          1792842754928967377
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-29-eval/config.json",
+          598,
+          1792840046887049346
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-29-eval/evaluation_summary.json",
+          307106,
+          1792842754919967511
+        ],
+        [
+          "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz",
+          6733462,
+          1792842762884848587
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-29-eval/config.json": "4bc5fdde7bfeca546db2e25fb23e1788b0f416b96713c71a06b5b46084afd309",
+        "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz": "0a65583da36f5deb30de4bac9e55c74089d2c80457878d97ff679120e657ef25",
+        "artifacts/runs/main-qwen-c4-29-eval/evaluation_summary.json": "7b16af6c28e2620b1659f3fed8ff91f0b2013db7c825aeff8fcbd9a8722b8712",
+        "artifacts/runs/main-qwen-c4-29-eval/status.json": "f389367f42421c36c28bc2d9ae95135d733290f273dffb856074b09c4356414e",
+        "artifacts/runs/main-qwen-c4-29-eval/trace_archives.json": "89f2c871bc09dded52341975b0051a2b298326479203cbd484f8565efe87bdcb",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/final/adapter_model.safetensors": "ebf5f2cdc513413a6f88a1bca88121e3635ebcbf6bdf6e50291b04fdce5eaa45"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c4-29-eval",
+      "validated_utc": "2026-10-24T11:54:10.683344+00:00"
+    },
+    "main-qwen-c5-17-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c5-17-eval/status.json",
+          5401,
+          1792815776938853284
+        ],
+        [
+          "artifacts/runs/main-qwen-c5-17-eval/config.json",
+          598,
+          1792813652958635608
+        ],
+        [
+          "artifacts/runs/main-qwen-c5-17-eval/evaluation_summary.json",
+          306265,
+          1792815776930853411
+        ],
+        [
+          "artifacts/runs/main-qwen-c5-17-eval/evaluation.jsonl.gz",
+          6606212,
+          1792815783817743741
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-17-eval/config.json": "d307ee85c9987505dbe072ebec93f03b23e8f66f90c7431eb914705fa42501c0",
+        "artifacts/runs/main-qwen-c5-17-eval/evaluation.jsonl.gz": "3a9295879185b5b9407658f8a135f59903a22e37977e38a2711dc75a68d8217c",
+        "artifacts/runs/main-qwen-c5-17-eval/evaluation_summary.json": "cfed87a921d3ec9b7a6eb9d31325e9874e3e9a10045db596c5d896514911040e",
+        "artifacts/runs/main-qwen-c5-17-eval/status.json": "9c8356222e3d4dc080c60bc97cd58be98c7dcda701d0f5a62cbf24348106704d",
+        "artifacts/runs/main-qwen-c5-17-eval/trace_archives.json": "0904b348eeb4d5041129f8e0dcd188c7fd897875e581393dfd810b4132b3f2fd",
+        "artifacts/runs/main-qwen-c5-17-r1-fit/training/final/adapter_model.safetensors": "7146cb31a3f7a77b56ac8f14b116a177c8e1c8b6f1e07a830386b35b7ac84be0"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c5-17-eval",
+      "validated_utc": "2026-10-24T04:24:44.469231+00:00"
+    }
+  },
+  "newly_validated": [
+    "main-qwen-c4-29-eval"
+  ],
+  "selection": "All completed eligible scheduled main evaluations; never partial runs or excluded pilots"
+}

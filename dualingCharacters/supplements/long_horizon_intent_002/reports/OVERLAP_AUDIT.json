@@ -1,0 +1,19 @@
+{
+  "core_manifest_hashes": {
+    "data/manifests/natural.json": "d440dfba4c1dca01c4a9eff9fbd1636b952f5b05d9eb169e2c3030e5f6648d54",
+    "data/manifests/pilot.json": "3ac754960a54f4cf27e529d8e44799c087fc3870af01b419d49e19c053791d66",
+    "data/manifests/test.json": "dd637df704922151e3ec73397ecc47d12cca899bb05d69864ebb83383be1d590",
+    "data/manifests/train.json": "c6d92a9b69dae749df169fd0ed4e34d581af8c9910b85e8b9c3582f2934a190a",
+    "data/manifests/validation.json": "77efc4f3e6e3d690e56f8b68a81e137650f14fcb0639b16197f0f1e7ffbb2ab4"
+  },
+  "engineering_scientific_id_overlap": 0,
+  "exact_existing_messages": 0,
+  "fresh_dataset_manifest_sha256": "3ab8d0020d0e6d1b145ec54d2666633b3249fdeb697f851b7aa5e8cd18ecd9e6",
+  "maximum_shared_eight_gram_fraction": 0.0,
+  "messages_with_any_shared_eight_gram": 0,
+  "old_ontology_output_required": false,
+  "qualification": "Exact/transcript and lexical checks do not prove semantic novelty. Both benchmarks deliberately share authorization-versus-proposal mechanisms. New outputs are substantive prose/artifacts across distinct work tasks, not six renamed categorical slots.",
+  "shared_eight_grams": [],
+  "source_sha256": "7bec7eb6a1424ec096c06c054a95cedf60c9f72a4aa6bda8f6e07c8662da2fcb",
+  "unique_public_messages": 2528
+}

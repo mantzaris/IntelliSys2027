@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-10-24T13:13:48.983150+00:00",
+  "inference": "New exploratory interaction; original horizon schedule/selection unchanged",
+  "inputs": {
+    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+    "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+    "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json": "be4b91bd63d2f5507ba41a9660e256eb11e3ebf81ba06ae74928c97df3c2b3f5",
+    "artifacts/runs/main-qwen-c3-17-eval/status.json": "5aa7115d266937c266e47a894d57b4c67dd8cc0ea96df486c0447a979b513ec3",
+    "artifacts/runs/main-qwen-c4-17-eval/evaluation_summary.json": "32aa2b5f5f77d8f6ed7f0b470237523cb73f8633ffdbffa122f8a039bc384656",
+    "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
+    "artifacts/runs/main-qwen-c5-17-eval/evaluation_summary.json": "cfed87a921d3ec9b7a6eb9d31325e9874e3e9a10045db596c5d896514911040e",
+    "artifacts/runs/main-qwen-c5-17-eval/status.json": "9c8356222e3d4dc080c60bc97cd58be98c7dcda701d0f5a62cbf24348106704d"
+  },
+  "seed": 17,
+  "source_sha256": "6b5eeb558175c2d873806f8b6dc3b15142cdbbf24fa159f8098530aaea3027f0"
+}

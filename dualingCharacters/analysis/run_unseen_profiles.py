@@ -35,6 +35,16 @@ def main():
         temporary.write_text(json.dumps({"status":status,"classification":protocol["classification"],
             "controller_sha256":sha256(Path(__file__).resolve()),**extra},indent=2)+"\n")
         temporary.replace(state_path)
+    # Operational priority only: the separately authorized intent follow-up must
+    # be resolved before this older optional job. This file is outside both
+    # scientific freezes; no unseen-profile endpoint or sample is changed.
+    priority=root/'artifacts/optional_priority.json'
+    if priority.exists():
+        dispatch=json.loads(priority.read_text())
+        if dispatch.get('intent_002_resolved') is not True:
+            state('deferred_to_intent_002_priority',priority_manifest=str(priority),
+                  reason='Required core -> review_001 -> intent_002 -> older optional work; no implicit intent launch or post-deadline spending')
+            return
     while True:
         current=root/"artifacts/campaign_state.json"
         try:complete=json.loads(current.read_text()).get("status")=="scheduled_grid_complete"

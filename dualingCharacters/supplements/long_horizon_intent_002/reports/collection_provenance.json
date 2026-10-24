@@ -1,0 +1,185 @@
+{
+  "new": [
+    "main-qwen-c5-29-r1-collect"
+  ],
+  "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
+  "runs": {
+    "main-qwen-a1-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-a1-17-r0-collect/collection.jsonl.gz": "581b33857ba74296e54cb21bb0cee76b280e2ad14cf68777c92ad3addf3c79a1",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/collection_characters.jsonl.gz": "5a4eb7d0755b320ecce55f3fff9e12df2ddc531a561413dce35d5af88192a595",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/status.json": "2b51eccdd2f569addbf7a86da8a2293ed3c21fcb363f10fce340301137c9de58",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/supervision.counts.json": "1ab0aa87b0c9a3f67c62c7c89ce549a08fa7ad5db246f8eb681fd8a6d5b2dae9",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/supervision.jsonl": "4078beeaacf3c72bb5a0c1d613475e23fd94e912619a04ae0bf780380fb627b6"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-a1-17-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-a1-17-r1-collect/collection.jsonl.gz": "c481b8aa6b8c7ee2f1e360b3ade2002e090b586d63b5b454850d7f75d9d0e096",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/collection_characters.jsonl.gz": "c64bacd8d8e17a402d212a9b3c51d2b24728076dfb7cda747fb4f118b6eb658e",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/status.json": "4c9b56733f0d46c351a261f57062fed475700f1a0111c3fc83130f03da913685",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/supervision.counts.json": "88fe7b230ea42d74c26d21b260da37000aa45e26ce4918be9c40142e34a88f97",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/supervision.jsonl": "079e93c77fdd7dcfb9e933d2011ad0f0cc1eadbcff90f7e5a232c87ca8e84d01"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c1-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-17-r0-collect/collection.jsonl.gz": "3dc1d423812b25dc0bfa6405b5b2309aed3607d8ddaaf1198fb9a2ca5bb60693",
+        "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+        "artifacts/runs/main-qwen-c1-17-r0-collect/supervision.counts.json": "69aa51240108abc509fcdb4ee2daba36ecdf5cc864183b0880d1e5ee2903137e",
+        "artifacts/runs/main-qwen-c1-17-r0-collect/supervision.jsonl": "db8ee29b5a5d2623a6f912edbfa6a510333ae0a24b7f07319d20900230bd7011"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c1-17-r1-collect-format2": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-17-r1-collect-format2/collection.jsonl.gz": "a2a0671ddb80f0752e1fc9eefd8ef5b43fc39660cc1e76a377ca96f59ee9c1c4",
+        "artifacts/runs/main-qwen-c1-17-r1-collect-format2/status.json": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
+        "artifacts/runs/main-qwen-c1-17-r1-collect-format2/supervision.counts.json": "4692de313f76295c8ca9442426bf5432e52c7f76668a2f8d4d38b7b5394a6d97",
+        "artifacts/runs/main-qwen-c1-17-r1-collect-format2/supervision.jsonl": "04915967ff74eb535fd95ca4e53edb47df626461783c59290139d8b8284cd40c"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c1-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r0-collect/collection.jsonl.gz": "75dd75b312b875e9cc3dc376e15e6f7db53e578ce49cbb7cc85ec721c1f73583",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/status.json": "6000f9e5a4c66d6dff1cc77ddd987b64c2f106946accaa171de97b070b44c18e",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/supervision.counts.json": "366df33d593124057abbb9774aeb24d1d7edfd0f7484cb5c8fdae694aebf799c",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/supervision.jsonl": "4a0242e1b9e9b7c82f1e0ff70ce0fd89f4f6b434ef465162ef05ff605011d877"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c1-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r1-collect/collection.jsonl.gz": "ae2829954123a38cf2c77048078f602b369176c5076b15d8d421c82dd6b87778",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/status.json": "160fa22ee2665b0e2306f46281981e4f4951350a40056bd94b6e45cf196b723e",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.counts.json": "73b9ed1e0cbd4e42ad3539be54a883273e48b6c586140fecc5ce5c3edf4eae11",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.jsonl": "f70c9beed9e55ab3a82c6b2a51d2c007c10818d10d08ca974ec93b7202d1bea1"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c3-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-17-r0-collect/collection.jsonl.gz": "dc8a3be4bd542e2ff1285dd43281d1468038c6d5f3b96e33ffd4d298c190ff24",
+        "artifacts/runs/main-qwen-c3-17-r0-collect/collection_characters.jsonl.gz": "e736b6cb67744b2976e24d6ba8fae9112e61f45f73a4ce89b4b6afd73d9643c4",
+        "artifacts/runs/main-qwen-c3-17-r0-collect/status.json": "e59b25c27b6828664f524893b2a45d23eb67f328e55d77a48bed1a92ccd6879f",
+        "artifacts/runs/main-qwen-c3-17-r0-collect/supervision.counts.json": "64535dc83ed8686e5a754d561afab4d92d4ca86b5018b894cdc3dd3d6682da9a",
+        "artifacts/runs/main-qwen-c3-17-r0-collect/supervision.jsonl": "b853569d95c3a11c25b66ea5e172bcf9dd880a4eca603bf462e640f7f535cac3"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c3-17-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-17-r1-collect/collection.jsonl.gz": "c5be658f8d7109f9d3ad4ebf98d389d682e7364b7e4aec8844011b590ae839f1",
+        "artifacts/runs/main-qwen-c3-17-r1-collect/collection_characters.jsonl.gz": "cf48b3c6198ae5984d6808b8ba8e35e9b068425c5dad749222e2142eef31464a",
+        "artifacts/runs/main-qwen-c3-17-r1-collect/status.json": "f8a927dbc6001553bbb3dbe5ab738331c9443c855d63f26d97bcac792d98a684",
+        "artifacts/runs/main-qwen-c3-17-r1-collect/supervision.counts.json": "f34ba523427f8702a1c8a324ed47cdadd198fb998f6b3ffe0a4a9b473d30344a",
+        "artifacts/runs/main-qwen-c3-17-r1-collect/supervision.jsonl": "01b39441c301741d285ae17ba8f85e8254495ec098e789e3453c53a11965d09c"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c3-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-r0-collect/collection.jsonl.gz": "6094a3ffdcfedb957139d528b9bed911351c3889b84ff228ea911444ef3da9a3",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/collection_characters.jsonl.gz": "ecfcd78137f30f5943c01edce43055e9b7072c1dd20b6913192945cec48af028",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/status.json": "561c7ba6b86e9c2709de6f46c9035bbd1a2ac1722ba21b4d9dcfa3d2ccd3b017",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/supervision.counts.json": "aa23ad91be723bc5842f18909b7aed23cd001db1af7dd7bbb3ff659ade69e1df",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/supervision.jsonl": "b3ca29e9c987b7a93ba66740c69e040c0d62ebeb4f25b67dfb5f1b5919e3b451"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c3-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-r1-collect/collection.jsonl.gz": "7e798afb5099fe3ecc11aecdf82996e246fbbf745595fdc0a56e2a681ff5bfe0",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/collection_characters.jsonl.gz": "a7bda1706f94e0cba45f700a4c769d2d4929692adb64627ccd57f75de3496d3b",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/status.json": "9f709a0f754a7d5e43a3f0866cdd774a6c2bd22a9a7180e5a560188e135d62ac",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/supervision.counts.json": "3dcf3894f5b2aef0a963528f219acfe6cf4275c1fdc718743b480faeef264f75",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/supervision.jsonl": "041fb485081b7a86c3584d55a683a35c636d96551d61143421a17fba98d3d571"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c4-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-17-r0-collect/collection.jsonl.gz": "a3147fea3d09230fff7a6a1690c1955fe216c763eb671b49e6034b9bf053a008",
+        "artifacts/runs/main-qwen-c4-17-r0-collect/collection_characters.jsonl.gz": "21c82e5bbb8274d71399085bb042aa468eb6086863bf30da135d77e3bd98f930",
+        "artifacts/runs/main-qwen-c4-17-r0-collect/status.json": "6ea305c2289fa51065257e96848e7216b783bbb5d74d9b1bcb94c32b2148f4b3",
+        "artifacts/runs/main-qwen-c4-17-r0-collect/supervision.counts.json": "fb2d56b9b1911f40f0b62de0b529c8e80bf33b7bc53087c794915c15c572e8c2",
+        "artifacts/runs/main-qwen-c4-17-r0-collect/supervision.jsonl": "48b7c36405cf3cd98ae9e76562c665e5d84bb8422207f9cfb450d4b8f958a6b4"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c4-17-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-17-r1-collect/collection.jsonl.gz": "094edd4a9710bfa79d65fd313ea5c268d2d1ef7a94ba83855c00ada0aec12eaf",
+        "artifacts/runs/main-qwen-c4-17-r1-collect/collection_characters.jsonl.gz": "436f9160877819d71c07b7c0aa61a51330884eeb15881a8554c2d98dadb3f247",
+        "artifacts/runs/main-qwen-c4-17-r1-collect/status.json": "94057467f6d967ea3618a2fe284df32ab4670c883134941f4aaa612dc8bedbc9",
+        "artifacts/runs/main-qwen-c4-17-r1-collect/supervision.counts.json": "0190cb8910ca1a57c197f9c97030c694c0ddde25fe55adf2f5d22b330a2188e9",
+        "artifacts/runs/main-qwen-c4-17-r1-collect/supervision.jsonl": "3cdf305be90fac2fe1ab2d2ba275866efc0a92ef015220768dc8dfe02631db7d"
+      },
+      "reused_prior_validation": true
+    },
+    "main-qwen-c4-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection.jsonl.gz": "45509595de0f93f298eeba72444afc4ac17ed6de5bbb38a62459c21afb55c616",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection_characters.jsonl.gz": "4b32f554d87aab362be7a25e7b859ebb4d22ae13ec9a21b7dcdb6e910fcf898c",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/status.json": "ab3fc77faa753d150e85f65e7353c50fe10bd2416b7fc09e4877876aefaf13e3",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.counts.json": "55232676ca2127277662ef6131a5129fd9ebf6b8684ebfbd79675c75e375d5a7",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.jsonl": "07d0914e161b94bbf82530f99b1e9d75c864f0b4c2eefff92061434657817802"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c4-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection.jsonl.gz": "1e9d8c32d1886100caa2c54490f72e98ee1b804763cdacc2fec6c795e6c92b3a",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection_characters.jsonl.gz": "a3ad36f06a160366702e83fc768de2057e85ed3b550f6d2d07118e1fe9018714",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/status.json": "ca252682253653022b9386d33fb00ced16cd447c81cafcaba719a34f9f73ad34",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.counts.json": "c8613b09f359928869bbd731f6f515edfd722962688677d26b7ec624c1699ca8",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.jsonl": "c9aec15ce72a4c906ffde9620c91c149ac2f4bb6a74660ef598350b0d6f9b0a7"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c5-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-17-r0-collect/collection.jsonl.gz": "b194868452464a8adad2566eb3dea1272ab97690113829c4b367e36408bb8822",
+        "artifacts/runs/main-qwen-c5-17-r0-collect/collection_characters.jsonl.gz": "de5fa368c8c853a7ec5e819f5319028a9a3b75a7da7e7ec6317252bcc109f208",
+        "artifacts/runs/main-qwen-c5-17-r0-collect/status.json": "bf93fc5a137b3ab11ed2b73e3296be2a1cc0ea1ec7e14c98bffb28e964e97234",
+        "artifacts/runs/main-qwen-c5-17-r0-collect/supervision.counts.json": "d042d7cb114dc5235b9bb14da5442eb34a5227645c60ad5ae97134af5093430e",
+        "artifacts/runs/main-qwen-c5-17-r0-collect/supervision.jsonl": "e9902032a8ef6b4f690194bcf4f568713ad5473156f255c303bd6a8a8e002efe"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c5-17-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-17-r1-collect/collection.jsonl.gz": "cb485b63fcbf89c63bfcb9266d3fee448df67068d7e267b0d76f5d4677496736",
+        "artifacts/runs/main-qwen-c5-17-r1-collect/collection_characters.jsonl.gz": "8d5a1ac845e283bf6a6144fa87e96cb86b88262a65bced0d5633db72360099fe",
+        "artifacts/runs/main-qwen-c5-17-r1-collect/status.json": "bc081015130c34604b62aef3c9ccec32b950915bde45faf50a99a19f1b40d000",
+        "artifacts/runs/main-qwen-c5-17-r1-collect/supervision.counts.json": "910b4ad69835feba4bdf539b5d0b44f65f1f4464247c5a53717c15149dab8f02",
+        "artifacts/runs/main-qwen-c5-17-r1-collect/supervision.jsonl": "41dc2296933bc3c23b7e2886524fcc5943d7d6592ef6c6353738f8a6b99fe73e"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c5-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection.jsonl.gz": "4d5abc946df5bdd07ad8e452c057a7f655ff5c97523a19394040d9d4083c1d8e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection_characters.jsonl.gz": "8af87f2245ce3dfe165549c22e61d9993698a52e38edb002230fe69ebaf42c6e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/status.json": "67c62c32efccac513154550df78991305991d26483d49a86ea8df8eceacbfa68",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.counts.json": "8065c21a4926bce62789b9f8253cb303e7cbd355bfe5e56b1c88dd21816bc99e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.jsonl": "6747547db421f2a0b6880cf246557f9b80e114411a98bbd6f584a4fcaf5d5b20"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c5-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-29-r1-collect/collection.jsonl.gz": "8155be8a78b308d58920a1e427317fea23ed250d52705341a927a23e79a146ba",
+        "artifacts/runs/main-qwen-c5-29-r1-collect/collection_characters.jsonl.gz": "91afd27c7158038171fa6371f5276d77883dcda60e9cd2ae1b86fb9431be3b05",
+        "artifacts/runs/main-qwen-c5-29-r1-collect/status.json": "eab6fc27fff79434a4486ebf3a333a34c244cc50f29be34d711a2bcc79a64821",
+        "artifacts/runs/main-qwen-c5-29-r1-collect/supervision.counts.json": "e0b053037247f3e5274ff50b2d5281a8c516c81b4bd7c36aa972468e2de4c39e",
+        "artifacts/runs/main-qwen-c5-29-r1-collect/supervision.jsonl": "6b7095e6a69a08d3ad7a12e12ef9d762ed3594e1f58b42642f383fc4cf5b04be"
+      },
+      "reused_prior_validation": false
+    }
+  },
+  "utc": "2026-10-24T13:09:30.563237+00:00"
+}

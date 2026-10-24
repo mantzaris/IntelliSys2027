@@ -1,0 +1,11 @@
+{
+  "code_sha256": "fdd1691f1e524aa96ef9c7a3e03db605048a39a23aa9e7c4a4d589892bbe843b",
+  "inputs": {
+    "supplements/long_horizon_intent_002/reports/collections.json": "aedba3673fb2939cfa69d1bff059c4380b9bfaaee5f5c861996c4a0d302fb924",
+    "supplements/long_horizon_intent_002/reports/per_seed_results.json": "8e6640782a5829d1ba4c1daf0eaeca7b76c698955ac8e0c90e24465763d3ddf9",
+    "supplements/long_horizon_intent_002/reports/routing_counts.json": "74324aedef66b5b61bee6ac8e1144aaaefb7e88002c0ee728d22f7eeff2d8005",
+    "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "13e5000481a7ab9ee606d268db9929fd9b9c8eb511bcfb7b01e30ff8b2626e57",
+    "supplements/long_horizon_intent_002/reports/supervision_pools.json": "99f37a9f00b99ab7ddc30cb1742ab4ab2182495184ec15efa06170bbeffa5653"
+  },
+  "qualification": "Descriptive cross-condition joins only; no causal or mediation estimate."
+}

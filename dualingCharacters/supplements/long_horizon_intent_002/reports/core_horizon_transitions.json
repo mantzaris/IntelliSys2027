@@ -1,0 +1,20 @@
+[
+  {
+    "both": 37,
+    "contrast": "C5-C3",
+    "families": 48,
+    "horizon": 64,
+    "neither": 5,
+    "only_C5": 2,
+    "only_control": 4
+  },
+  {
+    "both": 38,
+    "contrast": "C5-C1",
+    "families": 48,
+    "horizon": 64,
+    "neither": 7,
+    "only_C5": 1,
+    "only_control": 2
+  }
+]

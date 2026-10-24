@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=src .venv/bin/python -m unittest supplements.long_horizon_intent_002.test_intent -v",
+  "fake_backend_outputs_are_not_model_evidence": true,
+  "new_intent_cpu_tests": 15,
+  "status": "passed",
+  "verified_utc": "2026-10-24T13:42:57.636665+00:00"
+}
