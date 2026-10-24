@@ -1,279 +1,249 @@
 {
-  "conservative_remaining_core_hours": 73.05831524391138,
-  "conservative_total_reserved_hours": 89.38518441564455,
-  "expected_remaining_core_hours": 62.03124252087346,
-  "expected_total_reserved_hours": 78.35811169260663,
+  "conservative_remaining_core_hours": 70.65863572581445,
+  "conservative_total_reserved_hours": 88.77524331858996,
+  "expected_remaining_core_hours": 60.052502552777845,
+  "expected_total_reserved_hours": 78.16911014555336,
   "forecast_over_ceiling": false,
   "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes.",
   "pending": [
     {
-      "conservative_remaining_seconds": 1191.0072686614826,
-      "expected_remaining_seconds": 819.8121714788966,
-      "matched_timing_stages": 6,
-      "run_id": "main-qwen-c3-29-r0-collect"
-    },
-    {
-      "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
-      "run_id": "main-qwen-c3-29-r0-fit"
-    },
-    {
-      "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
-      "run_id": "main-qwen-c3-29-r1-collect"
-    },
-    {
-      "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
-      "run_id": "main-qwen-c3-29-r1-fit"
-    },
-    {
-      "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
+      "conservative_remaining_seconds": 1349.3668136614826,
+      "expected_remaining_seconds": 942.3601831779921,
       "matched_timing_stages": 7,
-      "run_id": "main-qwen-c3-29-eval"
-    },
-    {
-      "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
       "run_id": "main-qwen-c4-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c4-29-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c5-29-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a1-29-eval"
     },
     {
       "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c1-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c1-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 1595.656932169681,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c1-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c1-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c1-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c3-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c3-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c3-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c3-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c3-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c4-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c4-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c5-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c5-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a1-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a1-43-eval"
     },
     {
@@ -548,362 +518,362 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-17-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-17-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-17-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-17-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a2-17-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-17-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-17-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-17-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-17-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a3-17-eval"
     },
     {
       "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-17-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-17-r0-fit"
     },
     {
       "conservative_remaining_seconds": 1595.656932169681,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-17-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-17-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c2-17-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-17-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-17-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-17-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-17-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c6-17-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a2-29-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a3-29-eval"
     },
     {
       "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 1595.656932169681,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c2-29-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-29-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-29-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-29-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-29-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c6-29-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a2-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a2-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-a3-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-a3-43-eval"
     },
     {
       "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 1595.656932169681,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c2-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c2-43-eval"
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1028.5744514788967,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 992.7629181779921,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-43-r0-collect"
     },
     {
       "conservative_remaining_seconds": 1215.3617976107635,
-      "expected_remaining_seconds": 1064.286611313466,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1079.0483642211184,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-43-r0-fit"
     },
     {
       "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1422.2507941140793,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1411.6241077519953,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-43-r1-collect"
     },
     {
       "conservative_remaining_seconds": 1217.8495031469502,
-      "expected_remaining_seconds": 1037.6450398929883,
-      "matched_timing_stages": 6,
+      "expected_remaining_seconds": 1046.366485408973,
+      "matched_timing_stages": 7,
       "run_id": "main-qwen-c6-43-r1-fit"
     },
     {
       "conservative_remaining_seconds": 2806.1063097622246,
-      "expected_remaining_seconds": 2211.8508164780214,
-      "matched_timing_stages": 7,
+      "expected_remaining_seconds": 2208.945051874034,
+      "matched_timing_stages": 8,
       "run_id": "main-qwen-c6-43-eval"
     },
     {

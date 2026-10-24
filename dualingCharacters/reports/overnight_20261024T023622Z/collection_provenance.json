@@ -1,6 +1,6 @@
 {
   "new": [
-    "main-qwen-c1-29-r1-collect"
+    "main-qwen-c3-29-r1-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
@@ -80,6 +80,26 @@
       },
       "reused_prior_validation": true
     },
+    "main-qwen-c3-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-r0-collect/collection.jsonl.gz": "6094a3ffdcfedb957139d528b9bed911351c3889b84ff228ea911444ef3da9a3",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/collection_characters.jsonl.gz": "ecfcd78137f30f5943c01edce43055e9b7072c1dd20b6913192945cec48af028",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/status.json": "561c7ba6b86e9c2709de6f46c9035bbd1a2ac1722ba21b4d9dcfa3d2ccd3b017",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/supervision.counts.json": "aa23ad91be723bc5842f18909b7aed23cd001db1af7dd7bbb3ff659ade69e1df",
+        "artifacts/runs/main-qwen-c3-29-r0-collect/supervision.jsonl": "b3ca29e9c987b7a93ba66740c69e040c0d62ebeb4f25b67dfb5f1b5919e3b451"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c3-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-r1-collect/collection.jsonl.gz": "7e798afb5099fe3ecc11aecdf82996e246fbbf745595fdc0a56e2a681ff5bfe0",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/collection_characters.jsonl.gz": "a7bda1706f94e0cba45f700a4c769d2d4929692adb64627ccd57f75de3496d3b",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/status.json": "9f709a0f754a7d5e43a3f0866cdd774a6c2bd22a9a7180e5a560188e135d62ac",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/supervision.counts.json": "3dcf3894f5b2aef0a963528f219acfe6cf4275c1fdc718743b480faeef264f75",
+        "artifacts/runs/main-qwen-c3-29-r1-collect/supervision.jsonl": "041fb485081b7a86c3584d55a683a35c636d96551d61143421a17fba98d3d571"
+      },
+      "reused_prior_validation": false
+    },
     "main-qwen-c4-17-r0-collect": {
       "inputs": {
         "artifacts/runs/main-qwen-c4-17-r0-collect/collection.jsonl.gz": "a3147fea3d09230fff7a6a1690c1955fe216c763eb671b49e6034b9bf053a008",
@@ -121,5 +141,5 @@
       "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T07:00:48.242758+00:00"
+  "utc": "2026-10-24T08:48:43.267918+00:00"
 }

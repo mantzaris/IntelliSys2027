@@ -101,3 +101,15 @@ qwen,C1,29,240,480,overlapping_flag,commitment_error,110,480
 qwen,C1,29,240,480,overlapping_flag,dependency_error,84,480
 qwen,C1,29,240,480,overlapping_flag,source_error,27,480
 qwen,C1,29,240,480,overlapping_flag,correct_recall_wrong_behavior,151,480
+qwen,C3,29,240,480,mutually_exclusive,success,382,480
+qwen,C3,29,240,480,mutually_exclusive,dependency_only,84,480
+qwen,C3,29,240,480,mutually_exclusive,clarification_error,8,480
+qwen,C3,29,240,480,mutually_exclusive,other_commitment_error,6,480
+qwen,C3,29,240,480,overlapping_flag,malformed,0,480
+qwen,C3,29,240,480,overlapping_flag,false_update,0,240
+qwen,C3,29,240,480,overlapping_flag,missed_update,0,240
+qwen,C3,29,240,480,overlapping_flag,clarification_error,8,480
+qwen,C3,29,240,480,overlapping_flag,commitment_error,12,480
+qwen,C3,29,240,480,overlapping_flag,dependency_error,87,480
+qwen,C3,29,240,480,overlapping_flag,source_error,178,480
+qwen,C3,29,240,480,overlapping_flag,correct_recall_wrong_behavior,91,480

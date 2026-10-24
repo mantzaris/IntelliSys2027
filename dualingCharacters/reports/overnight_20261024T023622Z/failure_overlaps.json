@@ -310,5 +310,44 @@
     "second": "commitment_error",
     "second_only": 9,
     "seed": 29
+  },
+  {
+    "both": 86,
+    "condition": "C3",
+    "conversations": 480,
+    "families": 240,
+    "first": "dependency_error",
+    "first_only": 1,
+    "model": "qwen",
+    "neither": 388,
+    "second": "correct_recall_wrong_behavior",
+    "second_only": 5,
+    "seed": 29
+  },
+  {
+    "both": 35,
+    "condition": "C3",
+    "conversations": 480,
+    "families": 240,
+    "first": "source_error",
+    "first_only": 143,
+    "model": "qwen",
+    "neither": 250,
+    "second": "dependency_error",
+    "second_only": 52,
+    "seed": 29
+  },
+  {
+    "both": 6,
+    "condition": "C3",
+    "conversations": 480,
+    "families": 240,
+    "first": "clarification_error",
+    "first_only": 2,
+    "model": "qwen",
+    "neither": 466,
+    "second": "commitment_error",
+    "second_only": 6,
+    "seed": 29
   }
 ]

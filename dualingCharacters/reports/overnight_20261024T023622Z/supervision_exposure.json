@@ -346,5 +346,61 @@
     },
     "training_input_tokens": 1048576,
     "unoptimized_tail_input_tokens": 421
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 310,
+      "common_oracle_teacher_clean": 291
+    },
+    "loaded_occurrences_including_replay": 871,
+    "loaded_unique_windows_including_replay": 812,
+    "loss_contributing_unique_families": 150,
+    "loss_contributing_unique_windows": 601,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16592,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-29-r0-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 41858,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20884,
+      "common_oracle_teacher_clean": 20974
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 810
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 23,
+      "common_oracle_teacher_clean": 320
+    },
+    "loaded_occurrences_including_replay": 878,
+    "loaded_unique_windows_including_replay": 462,
+    "loss_contributing_unique_families": 143,
+    "loss_contributing_unique_windows": 343,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16777,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-29-r1-fit",
+    "seed": 29,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 42055,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 20777,
+      "common_oracle_teacher_clean": 21278
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 259
   }
 ]

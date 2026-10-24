@@ -4,11 +4,11 @@ Generated from saved run records and existing deterministic analyses. Scheduled 
 
 ## 1. What ran
 
-32/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
+37/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
 
 Hardware: one existing RunPod NVIDIA RTX 6000 Ada, 49,140 MiB reported VRAM; PyTorch 2.8.0+cu128, CUDA 12.8 and driver 595.91.07. Hardware inspection is recorded in `RUN_STATE.md`. BF16 rank-8 LoRA performs actual parameter updates; vLLM inference shares the backbone across role contexts.
 
-Recorded project consumption: 16.339/96 reserved GPU-hours, including failed and excluded attempts; 449,345,654 inference input tokens, 28,530,100 generated output tokens and 15,810,560 training input tokens. Observed pod interval: 18.056 hours, which is not total billed lifetime. Actual hourly rate and dollar cost are unknown.
+Recorded project consumption: 18.119/96 reserved GPU-hours, including failed and excluded attempts; 501,146,622 inference input tokens, 31,729,867 generated output tokens and 17,907,712 training input tokens. Observed pod interval: 19.881 hours, which is not total billed lifetime. Actual hourly rate and dollar cost are unknown.
 
 Reproduce the package from saved artifacts:
 
@@ -24,7 +24,7 @@ Print the fixed queue with `PYTHONPATH=src .venv/bin/python -m pcc.campaign --dr
 |---|---|---:|---:|---:|
 | qwen | C1 | 2/3 | 0.6750 | 0.1414 |
 | qwen | C2 | 0/3 | pending | — |
-| qwen | C3 | 1/3 | 0.7375 | — |
+| qwen | C3 | 2/3 | 0.7458 | 0.0118 |
 | qwen | C4 | 1/3 | 0.7458 | — |
 | qwen | C5 | 1/3 | 0.7000 | — |
 | qwen | C6 | 0/3 | pending | — |
@@ -64,7 +64,7 @@ Saved transfer aggregate rows: 6 (includes main and common-subset reference rows
 
 ## 5. Exact unfinished requirements and weaknesses
 
-Unfinished scheduled stages by command: collect=60, evaluate=30, external=8, fit=60, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
+Unfinished scheduled stages by command: collect=58, evaluate=29, external=8, fit=58, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
 
 Human review: `packet_outputs_pending`; annotations: `not_supplied`. Two independent raters and subsequent adjudication remain required unless actual completed sheets are supplied. Scientific author review, claim approval and a final current conference-policy check remain outstanding.
 

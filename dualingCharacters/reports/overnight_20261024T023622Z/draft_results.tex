@@ -8,15 +8,19 @@ qwen & C4 & 17 & 179/240 & 382/480\\
 qwen & C5 & 17 & 168/240 & 362/480\\
 qwen & A1 & 17 & 169/240 & 369/480\\
 qwen & C1 & 29 & 138/240 & 313/480\\
+qwen & C3 & 29 & 181/240 & 382/480\\
 \bottomrule\end{tabular}\end{table}
 Observed qwen C1 results are seed 17: 186/240, seed 29: 138/240. These are the completed seeds, not a substitute for the full planned seed set; family-only intervals do not describe this training-seed variation.
+Observed qwen C3 results are seed 17: 177/240, seed 29: 181/240. These are the completed seeds, not a substitute for the full planned seed set; family-only intervals do not describe this training-seed variation.
 \begin{table}[ht]\centering\caption{Individual-seed exploratory contrasts. Intervals use family resampling only and cannot estimate training-seed variation.}\begin{tabular}{llrrr}\toprule Model & Contrast & Seed & Difference (pp) & 95\% interval (pp)\\\midrule
 qwen & C5-C3 & 17 & -3.75 & [-8.33, 0.83]\\
 qwen & C5-C1 & 17 & -7.50 & [-11.25, -4.17]\\
 qwen & C5-C4 & 17 & -4.58 & [-7.92, -1.25]\\
 qwen & C5-A1 & 17 & -0.42 & [-5.42, 4.58]\\
 qwen & C3-C1 & 17 & -3.75 & [-7.50, 0.00]\\
+qwen & C3-C1 & 29 & 17.92 & [12.08, 23.75]\\
 \bottomrule\end{tabular}\end{table}
+For qwen, the observed C3--C1 difference changes sign across completed training seeds. This variability is retained; it cannot be represented by a single-seed family interval, and it does not authorize checkpoint selection or extra runs.
 For qwen seed 17, C5 does not exceed C3 in the point estimate. This observed result does not support an advantage over generic adversarial training for this seed.
 C5 is also below clean C1 by 7.50 percentage points. Improvement over the untrained model therefore does not establish superiority over either trained control.
 The C5--C3 paired transitions are 157 both successful, 11 C5-only, 20 C3-only and 52 neither, among 240 families.

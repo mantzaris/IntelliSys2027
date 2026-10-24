@@ -34,6 +34,10 @@ def main():
     if not any(r['contrast']=='C5-C1' for r in key):lines.append(r'qwen & C5-C1 & 17 & pending & pending\\')
     lines += [r'\bottomrule\end{tabular}\end{table}']
     for model in ('qwen','phi'):
+        matched=[r for r in key if r['model']==model and r['contrast']=='C3-C1']
+        if matched and min(r['difference'] for r in matched)<0<max(r['difference'] for r in matched):
+            lines.append(f'For {model}, the observed C3--C1 difference changes sign across completed training seeds. This variability is retained; it cannot be represented by a single-seed family interval, and it does not authorize checkpoint selection or extra runs.')
+    for model in ('qwen','phi'):
         for seed in (17,29,43):
             primary=next((r for r in key if r['model']==model and r['seed']==seed and r['contrast']=='C5-C3'),None)
             clean=next((r for r in key if r['model']==model and r['seed']==seed and r['contrast']=='C5-C1'),None)

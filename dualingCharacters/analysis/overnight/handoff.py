@@ -25,6 +25,10 @@ def main(final=False):
     dirty=subprocess.check_output(['git','status','--short','--','.'],cwd=ROOT,text=True).splitlines()
     results=read(OUT/'per_seed_results.json'); contrasts=read(OUT/'paired_transitions.json')
     exposures=read(OUT/'supervision_exposure.json'); human=read(OUT/'HUMAN_REVIEW_STATUS.json')
+    forecast_detail=read(OUT/'RESOURCE_FORECAST.json')
+    waiting=[r['run_id'] for r in forecast_detail['pending'] if r['run_id']!=live['active_job']]
+    next_stage=waiting[0] if waiting else None
+    retries=read(CACHE/'recovery_attempts.json',{'attempts':[]})
     failures=[]; exclusions=read(ROOT/'configs/run_exclusions.json')
     # Registry/status inspection is small metadata only, never a partially written trace.
     for path in sorted((ROOT/'artifacts/runs').glob('*/status.json')):
@@ -36,6 +40,8 @@ def main(final=False):
       'current_source_commit':head,'commits_since_start':commits,'intentional_uncommitted_files':dirty,
       'new_completed_core_stages':new,'all_completed_core_stages':live['completed'],
       'running_core_stage':live['active_job'],'failed_or_interrupted_attempts':failures,
+      'next_scheduled_core_stage':next_stage,'pending_after_active':waiting,
+      'overnight_infrastructure_retry_count':len(retries['attempts']),
       'exclusions_manifest':'configs/run_exclusions.json','exclusions_sha256':sha256(ROOT/'configs/run_exclusions.json'),
       'start_reserved_hours':starting_hours,'latest_reserved_hours':current_hours,
       'reserved_hours_during_session':current_hours-starting_hours,'resource_timestamp_utc':live['utc'],
@@ -61,6 +67,12 @@ def main(final=False):
       f'**{len(new)}** completed after the starting inventory. Current stage: `{live["active_job"]}` '
       f'({live["stage_status"]}); {live["generation_requests"]:,} generation requests and {live["training_input_tokens"]:,} training input tokens in the latest stage status. '
       f'Progress snapshot: {live["utc"]}.\n',
+      f'Next scheduled stage after the active operation: `{next_stage}`. '
+      f'**{len(waiting)}** further stages remain in the unchanged queue. '
+      f'Overnight infrastructure retries: **{len(retries["attempts"])}**. '
+      'Historical failed/interrupted attempts and scientific exclusions remain recorded in '
+      '[the machine-readable state]('+('HANDOFF_STATE.json' if final else 'PROGRESS_STATE.json')+') '
+      'and `configs/run_exclusions.json`; they are excluded only under the existing rules, and their compute remains charged.\n',
       'Newly completed stages:\n']
     lines.extend('- `'+name+'`' for name in new)
     forecast=live['forecast'];remote=live.get('remote') or {}
@@ -123,6 +135,7 @@ def main(final=False):
       '[Figures and captions](FIGURES.md), [training curves](TRAINING_CURVES.md), [compute and gains](COMPUTE.md), '
       '[author-review LaTeX](../../paper/overnight_author_review.tex), [draft status](DRAFT_STATUS.json), '
       '[analysis commands](../../analysis/overnight/README.md), [tests](TESTS.json), '
+      '[adapter lineage](ADAPTER_LINEAGE.json), [claim-to-evidence table](CLAIM_TO_EVIDENCE.md), '
       '[provenance](PACKAGE_PROVENANCE.json). Raw traces, adapter weights, optimizer checkpoints and PDF build products remain in the established ignored local mirror. '
       'The paper is incomplete and requires human scientific authorship and review; AI assistance is logged.\n',
       f'Core owner: `{live["processes"].get("core_controller_pid")}`. Review owner: `{live["processes"].get("review_coordinator_pid")}`. '

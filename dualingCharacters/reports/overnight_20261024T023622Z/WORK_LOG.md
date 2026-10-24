@@ -160,3 +160,39 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T07:50:33.788292+00:00: Progress: 32/241 core stages complete; active main-qwen-c3-29-r0-collect, 1856 generation requests, 0 training input tokens; 16.3269/96 reserved hours. Review remains waiting_for_core.
 
 - 2026-10-24T07:52:06.126390+00:00: C1 seed29 validated at 138/240 paired success (313/480 conversations), versus seed17 186/240. Retained the result without rerun or checkpoint replacement. Both 256-step fits use corrected serialization; r0-final/r1-initial and r1-final/evaluation adapter checksums match. Exclusive failure taxonomy has 97 clarification-category failures and 54 dependency-only failures; overlapping flags are not additive. Seed29 has 80/120 familiar and 58/120 held-out paired successes. Core queue advanced to C3 seed29.
+
+- 2026-10-24T08:05:26.401087+00:00: Extended collection audit for main-qwen-c3-29-r0-collect: 383 clean and 429 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T08:12:43.199786+00:00: Progress: 33/241 core stages complete; active main-qwen-c3-29-r0-fit, 0 generation requests, 520192 training input tokens; 16.6894/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T08:12:44.354037+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-r0-collect.
+
+- 2026-10-24T08:23:19.662518+00:00: Progress: 34/241 core stages complete; active main-qwen-c3-29-r1-collect, 0 generation requests, 0 training input tokens; 16.8548/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T08:23:22.890267+00:00: Reconstructed main-qwen-c3-29-r0-fit: 41858 target tokens; 601 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T08:25:23.304257+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-r0-fit.
+
+- 2026-10-24T08:37:37.198736+00:00: Six-hour progress: 34/241 core stages complete, seventeen added since start. Thirteen fit audits, thirteen collection audits and eight eligible main evaluations are available. C3 seed29 refresh has 7,040 generation requests in the latest snapshot; 17.0400/96 reserved h. No review GPU calls, retries, holds, reruns or scientific changes. Completed evidence remains committed through 6447796, with new fit/collection reports awaiting the next logical results commit.
+
+- 2026-10-24T08:48:43.240582+00:00: Extended collection audit for main-qwen-c3-29-r1-collect: 749 clean and 23 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T08:49:02.838657+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-r1-collect.
+
+- 2026-10-24T08:57:29.967714+00:00: Progress: 35/241 core stages complete; active main-qwen-c3-29-r1-fit, 0 generation requests, 647168 training input tokens; 17.4173/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T09:06:37.736611+00:00: Progress: 36/241 core stages complete; active main-qwen-c3-29-eval, 1152 generation requests, 0 training input tokens; 17.5578/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T09:06:40.868054+00:00: Reconstructed main-qwen-c3-29-r1-fit: 42055 target tokens; 343 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T09:09:22.983131+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-r1-fit.
+
+- 2026-10-24T09:37:03.264031+00:00: Seven-hour supervision milestone: 36/241 core stages complete, nineteen added since start. Fourteen fit audits and fourteen collection audits are complete; eight main evaluations are eligible. C3 seed29 evaluation is progressing (22,208 generations in the 09:29 UTC snapshot). Latest reconciled reservation 17.9423/96 h; no review GPU use, retries, holds or scientific changes. Human ratings remain pending and original packet identities are preserved.
+
+- 2026-10-24T09:40:36.428918+00:00: Progress: 37/241 core stages complete; active main-qwen-c4-29-r0-collect, 128 generation requests, 0 training input tokens; 18.1166/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T09:40:46.558791+00:00: Validated completed main-qwen-c3-29-eval: 181/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T09:41:20.781547+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-eval.
+
+- 2026-10-24T09:42:03.686733+00:00: Completed C3 seed29 evaluation verified: 181/240 paired successes, versus C1 seed29 138/240. Matched C3−C1 +17.92 pp, exploratory family interval +12.08 to +23.75; transitions 131 both, 50 C3-only, 7 C1-only, 52 neither. This reverses the seed17 sign; three-seed conclusions remain pending. All 37 completed stages have mirror checks, all 14 fits exact exposure audits. Updated figures and author-review PDF. No reruns, exclusions, or scientific changes.

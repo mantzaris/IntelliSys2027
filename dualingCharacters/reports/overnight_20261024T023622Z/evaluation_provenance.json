@@ -1,6 +1,6 @@
 {
   "frozen_core_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
-  "generated_utc": "2026-10-24T07:48:42.792282+00:00",
+  "generated_utc": "2026-10-24T09:40:46.838669+00:00",
   "inputs": {
     "base-phi-eval.validation.json": {
       "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
@@ -226,6 +226,44 @@
       "run_id": "main-qwen-c3-17-eval",
       "validated_utc": "2026-10-24T02:42:57.506324+00:00"
     },
+    "main-qwen-c3-29-eval.validation.json": {
+      "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
+      "expected_original_raw_rows": 30720,
+      "fingerprint": [
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/status.json",
+          5400,
+          1792834759517047726
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/config.json",
+          598,
+          1792832705358943779
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/evaluation_summary.json",
+          307766,
+          1792834759508047875
+        ],
+        [
+          "artifacts/runs/main-qwen-c3-29-eval/evaluation.jsonl.gz",
+          6516001,
+          1792834767058923064
+        ]
+      ],
+      "inputs": {
+        "artifacts/runs/main-qwen-c3-29-eval/config.json": "ebff2cd1fb77204b50fd3772e27d86b10f4df7c422d56258c884a26f80489243",
+        "artifacts/runs/main-qwen-c3-29-eval/evaluation.jsonl.gz": "ec0d743e86ecf4e1094557bf11f0022c88aa162bd0d910fe06176de071006f53",
+        "artifacts/runs/main-qwen-c3-29-eval/evaluation_summary.json": "1ae12f05052edde5e4768732c75380824eae59ebf9417be717d2ca97c1eb42b1",
+        "artifacts/runs/main-qwen-c3-29-eval/status.json": "efd91aad21d2340f0740a119ae940773f1b4d8ff0f6ee6448e7960150705d716",
+        "artifacts/runs/main-qwen-c3-29-eval/trace_archives.json": "95623ac1cc2de3e57c63844d932cfebdd3b6b6c60321559fc5549670baf6ad3a",
+        "artifacts/runs/main-qwen-c3-29-r1-fit/training/final/adapter_model.safetensors": "a58f538241f5633be66b9623cf34e8a2b5107ebb3a79fd4de19b1ad45aa110aa"
+      },
+      "prior_full_raw_validation_reused": false,
+      "rows_validated_now": 30720,
+      "run_id": "main-qwen-c3-29-eval",
+      "validated_utc": "2026-10-24T09:40:46.557545+00:00"
+    },
     "main-qwen-c4-17-eval.validation.json": {
       "classification": "Completed eligible main evidence; descriptive interim look, no training decisions depend on it",
       "expected_original_raw_rows": 30720,
@@ -303,7 +341,7 @@
     }
   },
   "newly_validated": [
-    "main-qwen-c1-29-eval"
+    "main-qwen-c3-29-eval"
   ],
   "selection": "All completed eligible scheduled main evaluations; never partial runs or excluded pilots"
 }

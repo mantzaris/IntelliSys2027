@@ -4,9 +4,11 @@ qwen,C5-C1,17,240,167,1,19,53,-0.075,-0.1125,-0.041666666666666664,interim one-s
 qwen,C5-C4,17,240,165,3,14,58,-0.04583333333333333,-0.07916666666666666,-0.0125,interim one-seed descriptive,Family bootstrap 10000 draws seed40721; no training-seed uncertainty
 qwen,C5-A1,17,240,151,17,18,54,-0.004166666666666667,-0.05416666666666667,0.04583333333333333,interim one-seed descriptive,Family bootstrap 10000 draws seed40721; no training-seed uncertainty
 qwen,C3-C1,17,240,171,6,15,48,-0.0375,-0.075,0.0,interim one-seed descriptive,Family bootstrap 10000 draws seed40721; no training-seed uncertainty
+qwen,C3-C1,29,240,131,50,7,52,0.17916666666666667,0.12083333333333333,0.2375,interim one-seed descriptive,Family bootstrap 10000 draws seed40721; no training-seed uncertainty
 qwen,C1-base,17,240,65,121,2,52,0.49583333333333335,0.42916666666666664,0.5583333333333333,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,C3-base,17,240,61,116,6,57,0.4583333333333333,0.3875,0.5291666666666667,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,C4-base,17,240,64,115,3,58,0.4666666666666667,0.4,0.5333333333333333,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,C5-base,17,240,61,107,6,66,0.42083333333333334,0.3541666666666667,0.4875,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,A1-base,17,240,62,107,5,66,0.425,0.35833333333333334,0.49166666666666664,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
 qwen,C1-base,29,240,45,93,22,80,0.29583333333333334,0.21666666666666667,0.375,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
+qwen,C3-base,29,240,65,116,2,57,0.475,0.4083333333333333,0.5416666666666666,interim one-seed descriptive,"Family bootstrap; the same untrained reference is reused, not independent replication"
