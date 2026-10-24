@@ -6,18 +6,20 @@
       "artifacts/runs/main-qwen-a1-17-r1-fit/training/loss.jsonl": "2a8e08e319da23b53255ba301875b53942e74955a0258210bd80424917d6082a",
       "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/loss.jsonl": "325cac654a69d2258c74682d9473ec9d7402e424eb78d174c844f1079c56e220",
       "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/loss.jsonl": "0ce8dd3d838de3af6b16fe82f7f2d84f7a368ff993cab4e132c90d587895d2d5",
+      "artifacts/runs/main-qwen-c1-29-r0-fit/training/loss.jsonl": "20215bc560b5cff4a15d34ef2f85ff155e9122cab2bc149918beac0e1c79ad9d",
+      "artifacts/runs/main-qwen-c1-29-r1-fit/training/loss.jsonl": "1450fa56a5c3ef01816d77609e9d5da546c64bfa187a504258fe48a40203a22e",
       "artifacts/runs/main-qwen-c3-17-r0-fit/training/loss.jsonl": "8bcb03e521034964c35256ab85bed21ae3d631d57dd43ec54c60243b4be75f70",
       "artifacts/runs/main-qwen-c3-17-r1-fit/training/loss.jsonl": "f1f2e37bd0c2d5a21bbc4e259705956c42d2356817567301de7789c56a4ee10d",
       "artifacts/runs/main-qwen-c4-17-r0-fit/training/loss.jsonl": "4b694635e06931497c9db7a553c922ca4dd459e6c364fe7afa2c0b6aebf6a844",
       "artifacts/runs/main-qwen-c4-17-r1-fit/training/loss.jsonl": "f032c40eebf2e898dcf591442aecc46c7ddfcf27743c5f39c169aa33777bb876",
       "artifacts/runs/main-qwen-c5-17-r0-fit/training/loss.jsonl": "2017e5a72bd1985c6042439d0656968e7ea7bfae9c9a19c9520ac4b853b0cdf2",
       "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
-      "reports/overnight_20261024T023622Z/supervision_exposure.json": "7f4661976e104e1be4a5c876b29b7f3b20c9fbf05368c62dba177cd71a325245"
+      "reports/overnight_20261024T023622Z/supervision_exposure.json": "9d01ecc959813fb462b8fd5966fe4b7eb91d440112f04db8c5b2463c89fa311f"
     },
     "outputs": {
-      "pdf": "5d34fc1101160149e91bad1d1d7b2e143b5f4371f7d7f397a7d1f93d8d241556",
-      "png": "30a2c941f6e6c954b014244429537b65f1273101ddd50d55a160a774d70ca3a8",
-      "svg": "ee11c9ada23af5f5553afc132412c1d11232a92c2d38825462ff72617d0f371a"
+      "pdf": "9eb0aca05fe4c09a03ceaf0a8ff0511da7b48e479f6993656b9334ecc9e72bae",
+      "png": "5b8fa0240ff6da5e7ab226fdbf6e720e099b536fa748b8d875dbdea0d970661c",
+      "svg": "215e9f595ff70ef847562f6d59241ff113c17b710e06cfd9195cc9ebd425fa7a"
     }
   }
 }

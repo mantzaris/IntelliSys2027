@@ -17,9 +17,11 @@ C5−C1 is −7.50 points (−11.25 to −4.17). These intervals do not estimate
 training-seed uncertainty. The first C5 comparison is negative relative to both
 trained controls; the full planned inference remains pending. A1 seed17 is now complete at 169/240; C5−A1 is −0.42 points
 (family interval −5.42 to +4.58), without evidence of equivalence or a narrative
-advantage. The original queue advanced to C1 seed29 collection. Ten collections
-and ten fits have exact incremental audits; 27 completed stages have verified
-remote/local evidence. Both
+advantage. C1 seed29 is now complete at 138/240 versus 186/240 for seed17;
+this observed seed variation does not alter the matched seed17 C5 contrasts.
+The original queue advanced to C3 seed29 collection. Twelve collections and
+twelve fits have exact audits; 32 completed stages have verified remote/local
+evidence. Both
 scientific freezes remain unchanged. The overnight session will leave healthy
 original work running under its existing resource controls at handoff.
 

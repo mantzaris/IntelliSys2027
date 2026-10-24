@@ -1,6 +1,6 @@
 {
   "new": [
-    "main-qwen-a1-17-r1-collect"
+    "main-qwen-c1-29-r1-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
@@ -41,6 +41,24 @@
         "artifacts/runs/main-qwen-c1-17-r1-collect-format2/supervision.jsonl": "04915967ff74eb535fd95ca4e53edb47df626461783c59290139d8b8284cd40c"
       },
       "reused_prior_validation": true
+    },
+    "main-qwen-c1-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r0-collect/collection.jsonl.gz": "75dd75b312b875e9cc3dc376e15e6f7db53e578ce49cbb7cc85ec721c1f73583",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/status.json": "6000f9e5a4c66d6dff1cc77ddd987b64c2f106946accaa171de97b070b44c18e",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/supervision.counts.json": "366df33d593124057abbb9774aeb24d1d7edfd0f7484cb5c8fdae694aebf799c",
+        "artifacts/runs/main-qwen-c1-29-r0-collect/supervision.jsonl": "4a0242e1b9e9b7c82f1e0ff70ce0fd89f4f6b434ef465162ef05ff605011d877"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c1-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r1-collect/collection.jsonl.gz": "ae2829954123a38cf2c77048078f602b369176c5076b15d8d421c82dd6b87778",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/status.json": "160fa22ee2665b0e2306f46281981e4f4951350a40056bd94b6e45cf196b723e",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.counts.json": "73b9ed1e0cbd4e42ad3539be54a883273e48b6c586140fecc5ce5c3edf4eae11",
+        "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.jsonl": "f70c9beed9e55ab3a82c6b2a51d2c007c10818d10d08ca974ec93b7202d1bea1"
+      },
+      "reused_prior_validation": false
     },
     "main-qwen-c3-17-r0-collect": {
       "inputs": {
@@ -103,5 +121,5 @@
       "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T05:26:49.346415+00:00"
+  "utc": "2026-10-24T07:00:48.242758+00:00"
 }

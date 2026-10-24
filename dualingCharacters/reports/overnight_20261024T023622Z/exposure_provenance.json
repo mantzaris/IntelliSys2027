@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-10-24T05:43:40.792116+00:00",
+  "generated_utc": "2026-10-24T07:13:57.485383+00:00",
   "newly_reconstructed": [
-    "main-qwen-a1-17-r1-fit"
+    "main-qwen-c1-29-r1-fit"
   ],
   "runs": {
     "main-qwen-a1-17-r0-fit": {
@@ -69,6 +69,50 @@
         "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/training_summary.json": "8d324f590bf4b17706e848508821a1d8af658d0070fa05e5644f0c1eabea9831"
       },
       "reused_verified_audit": true
+    },
+    "main-qwen-c1-29-r0-fit": {
+      "detail_path": "artifacts/overnight_20261024T023622Z/exposure/main-qwen-c1-29-r0-fit.jsonl.gz",
+      "detail_sha256": "310ab43617a592b7bbf79ac170a4608c62054399a1255faf5354b5e2716f496f",
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r0-collect/supervision.jsonl": "4a0242e1b9e9b7c82f1e0ff70ce0fd89f4f6b434ef465162ef05ff605011d877",
+        "artifacts/runs/main-qwen-c1-29-r0-fit/status.json": "17e581e14364609283ab1440225e6fac351802cc65c1030bbc1487554f66f808",
+        "artifacts/runs/main-qwen-c1-29-r0-fit/training/loss.jsonl": "20215bc560b5cff4a15d34ef2f85ff155e9122cab2bc149918beac0e1c79ad9d",
+        "artifacts/runs/main-qwen-c1-29-r0-fit/training/training_summary.json": "a0e5f465a0a0f6836f6d65be59aeeab31d02e6836fb73ec3e8c5e20ef5a7e8c5"
+      },
+      "replay_source_sha256": "192516c5d72d057e74f79dda00e8a3c48c3c82eb5486d2126ed93e5a9c5927d4",
+      "reused_verified_audit": false,
+      "tokenizer_hashes": {
+        "artifacts/review_001/tokenizers/qwen/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "artifacts/review_001/tokenizers/qwen/chat_template.jinja": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+        "artifacts/review_001/tokenizers/qwen/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "artifacts/review_001/tokenizers/qwen/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "artifacts/review_001/tokenizers/qwen/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "artifacts/review_001/tokenizers/qwen/tokenizer_config.json": "4b5f2f80f84faefe8420e1616671adb1dd3d7e632038d34b1f0e3a1363a51059",
+        "artifacts/review_001/tokenizers/qwen/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "validated_utc": "2026-10-24T06:44:36.051519+00:00"
+    },
+    "main-qwen-c1-29-r1-fit": {
+      "detail_path": "artifacts/overnight_20261024T023622Z/exposure/main-qwen-c1-29-r1-fit.jsonl.gz",
+      "detail_sha256": "d828a935d95107b8efafec1148a21164190de75d345d8b20ac7eaa989d9b71bf",
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.jsonl": "f70c9beed9e55ab3a82c6b2a51d2c007c10818d10d08ca974ec93b7202d1bea1",
+        "artifacts/runs/main-qwen-c1-29-r1-fit/status.json": "626a5d53c0f04456880b9bbd55a4d4402a31187dcaf1d89b813c8239b9dda381",
+        "artifacts/runs/main-qwen-c1-29-r1-fit/training/loss.jsonl": "1450fa56a5c3ef01816d77609e9d5da546c64bfa187a504258fe48a40203a22e",
+        "artifacts/runs/main-qwen-c1-29-r1-fit/training/training_summary.json": "21a070f8d006edd8b6cda81970b0cd13752cc21a1e6a9f819dfa364fdc61b95f"
+      },
+      "replay_source_sha256": "192516c5d72d057e74f79dda00e8a3c48c3c82eb5486d2126ed93e5a9c5927d4",
+      "reused_verified_audit": false,
+      "tokenizer_hashes": {
+        "artifacts/review_001/tokenizers/qwen/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+        "artifacts/review_001/tokenizers/qwen/chat_template.jinja": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+        "artifacts/review_001/tokenizers/qwen/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "artifacts/review_001/tokenizers/qwen/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+        "artifacts/review_001/tokenizers/qwen/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "artifacts/review_001/tokenizers/qwen/tokenizer_config.json": "4b5f2f80f84faefe8420e1616671adb1dd3d7e632038d34b1f0e3a1363a51059",
+        "artifacts/review_001/tokenizers/qwen/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "validated_utc": "2026-10-24T07:13:57.433451+00:00"
     },
     "main-qwen-c3-17-r0-fit": {
       "detail_path": "artifacts/review_001/exposure/main-qwen-c3-17-r0-fit.jsonl.gz",

@@ -33,6 +33,8 @@ def main(force=False):
     associations()
     from .readiness import main as readiness
     readiness()
+    from .lineage import main as lineage
+    lineage()
     from .compute import main as compute
     compute()
     if new['evaluate'] or new['fit'] or force:

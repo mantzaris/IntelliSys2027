@@ -1,20 +1,21 @@
 # Overnight progress report
 
-Window began **2026-10-24T02:36:22+00:00** (2026-10-23 22:36:22 EDT). This report was generated **2026-10-24T06:23:00.469282+00:00** (2026-10-24 02:23:00 EDT), after **3.78 actual hours**. Target handoff: 2026-10-24T12:36:22Z. The ten-hour supervision session remains active.
+Window began **2026-10-24T02:36:22+00:00** (2026-10-23 22:36:22 EDT). This report was generated **2026-10-24T07:54:02.768834+00:00** (2026-10-24 03:54:02 EDT), after **5.29 actual hours**. Target handoff: 2026-10-24T12:36:22Z. The ten-hour supervision session remains active.
 
 ## Scientific and operational integrity
 
 All **58 core** and **21 supplementary** frozen files match. No scientific file, model, seed, endpoint, training budget, sample allocation, decoding setting, checkpoint rule or queue order was changed. No duplicate controller or discretionary GPU job was launched. Nothing was pushed, published, submitted or sent to raters. The new tools perform local analysis and read-only monitoring.
 
-Starting commit: `7c4e2ee`. Source/report HEAD when generated: `ffa03208dcefa0e8919aa0e1803837d511893a32`. The final report commit, if later, is visible in `git log`; a report cannot embed its own eventual commit hash.
+Starting commit: `7c4e2ee`. Source/report HEAD when generated: `ecfec114c2a36e6a60c373f5f815180f46c86679`. The final report commit, if later, is visible in `git log`; a report cannot embed its own eventual commit hash.
 
+- `ecfec11 Record motive-only control and ten-fit exposure audit`
 - `ffa0320 Record first C5 comparison and refresh reproducible evidence reports`
 - `3ed5b01 Extend exposure diagnostics and overnight handoff tooling`
 - `09fb6a1 Add overnight monitoring and incremental evidence package`
 
 ## Queue and resources
 
-**27/241** scheduled core stages are complete. **10** completed after the starting inventory. Current stage: `main-qwen-c1-29-r0-collect` (running); 448 generation requests and 0 training input tokens in the latest stage status. Progress snapshot: 2026-10-24T06:20:07.432673+00:00.
+**32/241** scheduled core stages are complete. **15** completed after the starting inventory. Current stage: `main-qwen-c3-29-r0-collect` (running); 1,856 generation requests and 0 training input tokens in the latest stage status. Progress snapshot: 2026-10-24T07:50:33.783980+00:00.
 
 Newly completed stages:
 
@@ -28,14 +29,19 @@ Newly completed stages:
 - `main-qwen-a1-17-r1-collect`
 - `main-qwen-a1-17-r1-fit`
 - `main-qwen-a1-17-eval`
+- `main-qwen-c1-29-r0-collect`
+- `main-qwen-c1-29-r0-fit`
+- `main-qwen-c1-29-r1-collect`
+- `main-qwen-c1-29-r1-fit`
+- `main-qwen-c1-29-eval`
 
-Reserved GPU time: **11.2559 h before**, **3.6065 h during**, **14.8625/96 h cumulative**, with **81.1375 h remaining** at the snapshot. Review consumption: **0.0000/2 h** cumulatively. Start-boundary reconstruction has approximately one-second clock precision. Failed attempts, loading and profiling are charged; utilization does not discount reservations.
+Reserved GPU time: **11.2559 h before**, **5.0710 h during**, **16.3269/96 h cumulative**, with **79.6731 h remaining** at the snapshot. Review consumption: **0.0000/2 h** cumulatively. Start-boundary reconstruction has approximately one-second clock precision. Failed attempts, loading and profiling are charged; utilization does not discount reservations.
 
-The timing-based expected full-core total is **80.76 h**; the conservative timing scenario is **90.20 h**. These are forecasts, not guarantees or permission to shrink the grid. The earlier 92.74 h forecast is preserved separately. Supplementary work requires all 241 core stages, exact prerequisites, the cumulative two-hour subcap, and at least 30 minutes of contingency plus its existing margin.
+The timing-based expected full-core total is **78.36 h**; the conservative timing scenario is **89.39 h**. These are forecasts, not guarantees or permission to shrink the grid. The earlier 92.74 h forecast is preserved separately. Supplementary work requires all 241 core stages, exact prerequisites, the cumulative two-hour subcap, and at least 30 minutes of contingency plus its existing margin.
 
-Hardware snapshot: NVIDIA RTX 6000 Ada Generation, 49140 MiB, 40136 MiB, 90 %. Local free storage: 29.26 GiB; remote free storage: 24.18 GiB. Mirrored current status age: 2.4 seconds. Completed evaluation trace and adapter mirror checks are in [MIRROR_CHECKS.json](MIRROR_CHECKS.json).
+Hardware snapshot: NVIDIA RTX 6000 Ada Generation, 49140 MiB, 40164 MiB, 100 %. Local free storage: 28.64 GiB; remote free storage: 23.59 GiB. Mirrored current status age: 21.0 seconds. Completed evaluation trace and adapter mirror checks are in [MIRROR_CHECKS.json](MIRROR_CHECKS.json).
 
-Remote container PID1 start: Fri Oct 23 13:03:29 2026; measured container elapsed seconds: 62197. Completed-run sampled GPU-busy time: 12.773 h; utilization-weighted samples: 12.121 h. These are distinct from reservation time and unknown billed pod uptime. The actual hourly rate is unavailable; no dollar cost is invented.
+Remote container PID1 start: Fri Oct 23 13:03:29 2026; measured container elapsed seconds: 67623. Completed-run sampled GPU-busy time: 14.135 h; utilization-weighted samples: 13.395 h. These are distinct from reservation time and unknown billed pod uptime. The actual hourly rate is unavailable; no dollar cost is invented.
 
 
 ## Main results — incomplete grid
@@ -51,6 +57,7 @@ Each row is a complete eligible 64-turn evaluation on 240 paired families (480 c
 | qwen | C4 | 17 | 179/240 | 382/480 |
 | qwen | C5 | 17 | 168/240 | 362/480 |
 | qwen | A1 | 17 | 169/240 | 369/480 |
+| qwen | C1 | 29 | 138/240 | 313/480 |
 
 | Model | Comparison | Seed | Difference, pp | Exploratory 95% interval, pp | Both / first only / second only / neither |
 |---|---|---:|---:|---:|---:|
@@ -65,7 +72,7 @@ One-seed intervals resample paired families (10,000 draws, seed 40721); they do 
 
 ## Exposure, failures and mechanism limits
 
-**10 completed fits** have actual-loss exposure summaries. The six original verified audits were reused; newly completed fits were reconstructed from the exact tokenizer, sampler and packing stream and checked against every optimizer-step target count. Buffer-loaded windows, orphan-masked suffixes and resume replay are separately accounted.
+**12 completed fits** have actual-loss exposure summaries. The six original verified audits were reused; newly completed fits were reconstructed from the exact tokenizer, sampler and packing stream and checked against every optimizer-step target count. Buffer-loaded windows, orphan-masked suffixes and resume replay are separately accounted.
 
 [Exposure and curriculum associations](CURRICULUM_ASSOCIATIONS.md) explicitly distinguish common input-token budgets from unequal target exposure. [Failure taxonomy](failure_taxonomy.csv) uses exclusive categories; [overlap counts](failure_overlaps.csv) retain nonexclusive flags. [Strata](strata.csv) separate familiar/held-out rules, worlds, framing and ambiguity. All 30 ambiguous locked families are creative/held-out, and all domains share the same six-slot schema. [Qualitative examples](QUALITATIVE_APPENDIX.md) are deterministically selected illustrations, not human validation.
 
@@ -83,7 +90,7 @@ The original 60-item blinded action packet, item identities and private key are 
 
 [Figures and captions](FIGURES.md), [training curves](TRAINING_CURVES.md), [compute and gains](COMPUTE.md), [author-review LaTeX](../../paper/overnight_author_review.tex), [draft status](DRAFT_STATUS.json), [analysis commands](../../analysis/overnight/README.md), [tests](TESTS.json), [provenance](PACKAGE_PROVENANCE.json). Raw traces, adapter weights, optimizer checkpoints and PDF build products remain in the established ignored local mirror. The paper is incomplete and requires human scientific authorship and review; AI assistance is logged.
 
-Core owner: `787315  787313    09:45:18 python`. Review owner: `1291869 1291862    04:22:35 python`. Core state/log: `artifacts/campaign_state.json`, `artifacts/campaign_controller.log`; review state/log: `artifacts/review_001/controller_state.json`, `artifacts/review_001/controller.log`. Shared campaign lock: `artifacts/campaign.lock`; GPU lock: `artifacts/gpu.lock`.
+Core owner: `787315  787313    11:15:44 python`. Review owner: `1291869 1291862    05:53:01 python`. Core state/log: `artifacts/campaign_state.json`, `artifacts/campaign_controller.log`; review state/log: `artifacts/review_001/controller_state.json`, `artifacts/review_001/controller.log`. Shared campaign lock: `artifacts/campaign.lock`; GPU lock: `artifacts/gpu.lock`.
 
 Run `PYTHONPATH=src .venv/bin/python -m analysis.overnight.monitor` for a read-only live check, then `PYTHONPATH=src .venv/bin/python -m analysis.overnight.update` to integrate newly completed evidence. Do not launch another controller. [Recovery instructions](RECOVERY.md) require proving a worker has stopped, preserving artifacts, using the existing resume map, and allowing at most two retries of the same infrastructure fault. No scientific redesign is authorized while the author is asleep.
 

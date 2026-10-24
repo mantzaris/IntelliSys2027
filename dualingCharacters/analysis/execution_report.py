@@ -82,7 +82,8 @@ def generate(root: Path) -> dict:
         rate = 'pending' if row['paired_success'] is None else f"{row['paired_success']:.4f}"
         sd = '—' if row['seed_sd'] is None else f"{row['seed_sd']:.4f}"
         lines.append(f"| {row['model']} | {row['condition']} | {row['executed_seeds']}/3 | {rate} | {sd} |")
-    lines += ['', '## 2. Primary effect and uncertainty', '', effect_text(primary), '',
+    lines += ['', 'Condition means above may cover different completed seed sets. Do not compare incomplete aggregates across conditions; use matched-seed contrasts and the per-seed tables. The shared untrained reference is not independent replication.',
+              '', '## 2. Primary effect and uncertainty', '', effect_text(primary), '',
               'This is C5 minus C3 on antagonist-free 64-turn paired success. The corrected small pilots are engineering checks, not substitutes for this contrast. Excluded serialization runs remain in historical records and resource totals.', '',
               '## 3. What the controls support', '',
               '| Qwen contrast | Complete three-seed estimate |', '|---|---|']

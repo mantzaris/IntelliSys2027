@@ -332,5 +332,61 @@
     "run_id": "main-qwen-a1-17-r1-collect",
     "seed": 17,
     "source_ineligible": 128
+  },
+  {
+    "attempted_windows": 900,
+    "candidate_attempts": 128,
+    "candidate_discarded": 128,
+    "candidate_valid": 0,
+    "clean_valid": 477,
+    "condition": "C1",
+    "defender_prompts": 4800,
+    "eligible_failed_families": 81,
+    "eligible_families": 150,
+    "eligible_windows": 803,
+    "failed_eligible": 326,
+    "gold_teacher_examples": 803,
+    "label_sources": {
+      "common_oracle_teacher": 326,
+      "common_oracle_teacher_clean": 477
+    },
+    "model": "qwen",
+    "note_retention_comparisons": 0,
+    "notes_retained_next_prompt": 0,
+    "observational_severity": {},
+    "prompts_with_persistent_notes": 0,
+    "qualification": "Following failures are temporal associations, not causal effects; a genuine user update can intervene. Loaded supervision is not actual loss exposure.",
+    "reused": 0,
+    "run_id": "main-qwen-c1-29-r0-collect",
+    "seed": 29,
+    "source_ineligible": 97
+  },
+  {
+    "attempted_windows": 900,
+    "candidate_attempts": 17,
+    "candidate_discarded": 17,
+    "candidate_valid": 0,
+    "clean_valid": 756,
+    "condition": "C1",
+    "defender_prompts": 9600,
+    "eligible_failed_families": 11,
+    "eligible_families": 150,
+    "eligible_windows": 773,
+    "failed_eligible": 17,
+    "gold_teacher_examples": 773,
+    "label_sources": {
+      "common_oracle_teacher": 17,
+      "common_oracle_teacher_clean": 756
+    },
+    "model": "qwen",
+    "note_retention_comparisons": 0,
+    "notes_retained_next_prompt": 0,
+    "observational_severity": {},
+    "prompts_with_persistent_notes": 0,
+    "qualification": "Following failures are temporal associations, not causal effects; a genuine user update can intervene. Loaded supervision is not actual loss exposure.",
+    "reused": 0,
+    "run_id": "main-qwen-c1-29-r1-collect",
+    "seed": 29,
+    "source_ineligible": 127
   }
 ]

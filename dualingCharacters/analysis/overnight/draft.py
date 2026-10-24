@@ -21,6 +21,12 @@ def main():
     lines += [r'\begin{table}[ht]\centering\caption{Completed main evaluations; each row has 240 paired families and 480 conversations at 64 turns.}\begin{tabular}{llrrr}\toprule Model & Condition & Seed & Paired successes & Conversation successes\\\midrule']
     for r in rows:lines.append(f'{r["model"]} & {r["condition"]} & {r["seed"]} & {r["paired_successes"]}/240 & {r["conversation_successes"]}/480\\\\')
     lines += [r'\bottomrule\end{tabular}\end{table}']
+    for model in ('qwen','phi'):
+        for condition in ('C1','C3','C4','C5','A1','A2','A3','C2','C6'):
+            observed=[r for r in rows if r['model']==model and r['condition']==condition]
+            if len(observed)>1:
+                values=', '.join(f'seed {r["seed"]}: {r["paired_successes"]}/240' for r in observed)
+                lines.append(f'Observed {model} {condition} results are {values}. These are the completed seeds, not a substitute for the full planned seed set; family-only intervals do not describe this training-seed variation.')
     key=[r for r in comparisons if r['contrast'] in {'C5-C3','C5-C1','C5-C4','C5-A1','C5-A2','C5-A3','C3-C1'}]
     lines += [r'\begin{table}[ht]\centering\caption{Individual-seed exploratory contrasts. Intervals use family resampling only and cannot estimate training-seed variation.}\begin{tabular}{llrrr}\toprule Model & Contrast & Seed & Difference (pp) & 95\% interval (pp)\\\midrule']
     for r in key:lines.append(f'{r["model"]} & {r["contrast"]} & {r["seed"]} & {100*r["difference"]:.2f} & [{100*r["ci95_low"]:.2f}, {100*r["ci95_high"]:.2f}]\\\\')
@@ -45,8 +51,8 @@ def main():
     (OUT/'draft_results.tex').write_text('\n'.join(lines)+'\n')
     diag=['Failure counts separate mutually exclusive categories and overlapping flags. They do not sum overlapping dependency, source and update errors as distinct failed conversations.']
     for r in rows:
-        if r['model']=='qwen' and r['condition'] in {'C1','C3','C4','C5'} and r['seed']==17:
-            diag.append(f'{r["condition"]} seed 17 has {r["failed_conversations"]} failed conversations; all six commitments were recalled correctly in {r["recall_correct_conversations"]}/480 conversations, and every canonical authorizing source was visible in {r["all_canonical_sources_visible"]}/480 final prompts.')
+        if r['condition']!='base':
+            diag.append(f'{r["model"]} {r["condition"]} seed {r["seed"]} has {r["failed_conversations"]} failed conversations; all six commitments were recalled correctly in {r["recall_correct_conversations"]}/480 conversations, and every canonical authorizing source was visible in {r["all_canonical_sources_visible"]}/480 final prompts.')
     totals=defaultdict(lambda:[0,0])
     for r in exposure:
         if r['status']=='reconstructed_and_verified':totals[r['model'],r['condition'],r['seed']][0]+=r['training_input_tokens'];totals[r['model'],r['condition'],r['seed']][1]+=r['supervised_target_tokens']

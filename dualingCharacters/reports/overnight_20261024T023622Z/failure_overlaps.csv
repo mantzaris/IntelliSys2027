@@ -20,3 +20,6 @@ qwen,C5,17,240,480,clarification_error,commitment_error,23,0,28,429
 qwen,A1,17,240,480,dependency_error,correct_recall_wrong_behavior,79,2,21,378
 qwen,A1,17,240,480,source_error,dependency_error,6,23,75,376
 qwen,A1,17,240,480,clarification_error,commitment_error,16,7,16,441
+qwen,C1,29,240,480,dependency_error,correct_recall_wrong_behavior,80,4,71,325
+qwen,C1,29,240,480,source_error,dependency_error,10,17,74,379
+qwen,C1,29,240,480,clarification_error,commitment_error,101,3,9,367

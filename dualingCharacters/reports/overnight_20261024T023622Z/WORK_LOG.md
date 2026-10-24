@@ -124,3 +124,39 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T06:22:07.763371+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-eval.
 
 - 2026-10-24T06:22:08.365240+00:00: A1 seed17 completed and validated: 169/240 paired success. C5−A1 −0.42 pp, exploratory family 95% interval −5.42 to +4.58; transitions 151 both, 17 C5-only, 18 A1-only, 54 neither. This does not establish narrative advantage or equivalence. Original queue entered C1 seed29, with no outcome-based changes.
+
+- 2026-10-24T06:29:07.843970+00:00: Progress: 28/241 core stages complete; active main-qwen-c1-29-r0-fit, 0 generation requests, 237568 training input tokens; 15.0060/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T06:29:08.315221+00:00: Extended collection audit for main-qwen-c1-29-r0-collect: 477 clean and 326 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T06:29:48.322358+00:00: Remote/local completed-stage checksums match for main-qwen-c1-29-r0-collect.
+
+- 2026-10-24T06:40:18.693369+00:00: Four-hour progress: 28/241 complete, eleven added since start; C1 seed29 first fit at 909,312 input tokens. 15.1828/96 reserved h; review remains zero. Local/remote free space 28.92/23.87 GiB. No retries, holds, source changes or altered scientific decisions. Latest completed result remains A1 seed17 169/240, committed ecfec11.
+
+- 2026-10-24T06:44:36.098254+00:00: Reconstructed main-qwen-c1-29-r0-fit: 48489 target tokens; 614 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T06:49:44.139119+00:00: Progress: 29/241 core stages complete; active main-qwen-c1-29-r1-collect, 6016 generation requests, 0 training input tokens; 15.3388/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T06:49:46.398035+00:00: Remote/local completed-stage checksums match for main-qwen-c1-29-r0-fit.
+
+- 2026-10-24T07:00:47.510813+00:00: Progress: 30/241 core stages complete; active main-qwen-c1-29-r1-fit, 0 generation requests, 413696 training input tokens; 15.5157/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T07:00:48.216281+00:00: Extended collection audit for main-qwen-c1-29-r1-collect: 756 clean and 17 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T07:01:06.326788+00:00: Remote/local completed-stage checksums match for main-qwen-c1-29-r1-collect.
+
+- 2026-10-24T07:13:57.480046+00:00: Reconstructed main-qwen-c1-29-r1-fit: 48333 target tokens; 389 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T07:21:56.789682+00:00: Progress: 31/241 core stages complete; active main-qwen-c1-29-eval, 8640 generation requests, 0 training input tokens; 15.8574/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T07:21:59.113079+00:00: Remote/local completed-stage checksums match for main-qwen-c1-29-r1-fit.
+
+- 2026-10-24T07:36:59.642307+00:00: Five-hour supervision milestone: 31/241 core stages complete, fourteen added since start; C1 seed29 evaluation running (18,880 generations in the 07:33 UTC snapshot). Twelve exact fit audits and twelve collection audits are complete; seven main evaluations are eligible. Last reconciled reservation 16.0427/96 h, no review GPU calls, retries or holds. The original 12:36:22 UTC handoff target is unchanged.
+
+- 2026-10-24T07:48:42.542008+00:00: Validated completed main-qwen-c1-29-eval: 138/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T07:50:32.074314+00:00: Remote/local completed-stage checksums match for main-qwen-c1-29-eval.
+
+- 2026-10-24T07:50:33.788292+00:00: Progress: 32/241 core stages complete; active main-qwen-c3-29-r0-collect, 1856 generation requests, 0 training input tokens; 16.3269/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T07:52:06.126390+00:00: C1 seed29 validated at 138/240 paired success (313/480 conversations), versus seed17 186/240. Retained the result without rerun or checkpoint replacement. Both 256-step fits use corrected serialization; r0-final/r1-initial and r1-final/evaluation adapter checksums match. Exclusive failure taxonomy has 97 clarification-category failures and 54 dependency-only failures; overlapping flags are not additive. Seed29 has 80/120 familiar and 58/120 held-out paired successes. Core queue advanced to C3 seed29.

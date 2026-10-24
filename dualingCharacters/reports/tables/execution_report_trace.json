@@ -1,37 +1,12 @@
 {
   "classification": "Mechanical factual report; existing estimators only",
-  "core_stages_completed": 27,
+  "core_stages_completed": 32,
   "core_stages_scheduled": 241,
   "unfinished_stages": [
     {
-      "id": "main-qwen-c1-29-r0-collect",
-      "command": "collect",
-      "status": "running"
-    },
-    {
-      "id": "main-qwen-c1-29-r0-fit",
-      "command": "fit",
-      "status": "not_started"
-    },
-    {
-      "id": "main-qwen-c1-29-r1-collect",
-      "command": "collect",
-      "status": "not_started"
-    },
-    {
-      "id": "main-qwen-c1-29-r1-fit",
-      "command": "fit",
-      "status": "not_started"
-    },
-    {
-      "id": "main-qwen-c1-29-eval",
-      "command": "evaluate",
-      "status": "not_started"
-    },
-    {
       "id": "main-qwen-c3-29-r0-collect",
       "command": "collect",
-      "status": "not_started"
+      "status": "running"
     },
     {
       "id": "main-qwen-c3-29-r0-fit",
@@ -1103,15 +1078,20 @@
     "artifacts/runs/main-qwen-a1-17-r1-collect/status.json": "4c9b56733f0d46c351a261f57062fed475700f1a0111c3fc83130f03da913685",
     "artifacts/runs/main-qwen-a1-17-r1-fit/status.json": "afc380e367d9e00229aaf9de47bf809fcf191b6abbf9686f217d795adff5778d",
     "artifacts/runs/main-qwen-a1-17-eval/status.json": "b841f68c433117ea968323e3d2bbf8a88d3d33d865cf602b3c08c24b08e33ae4",
-    "artifacts/runs/main-qwen-c1-29-r0-collect/status.json": "bd0eb42b2e95339074c887cb2cd7ea21310d7b6cebdff616f1dd130f1fdde664",
-    "reports/tables/main_results.json": "068b37f636e94250b05f7b56a4bcd77d2c781ea1e80a6424803046fc0763ff24",
-    "reports/tables/main_contrasts.json": "78f6e20593d8ef99d50129bdbe12c08010c60b92dcee781717f9b4bf8d89f917",
-    "reports/tables/resource_totals.json": "0447c12df9dae9f1aadb7cbfd74612dff0e669958361d588aaa6bac7d220f29c",
+    "artifacts/runs/main-qwen-c1-29-r0-collect/status.json": "6000f9e5a4c66d6dff1cc77ddd987b64c2f106946accaa171de97b070b44c18e",
+    "artifacts/runs/main-qwen-c1-29-r0-fit/status.json": "17e581e14364609283ab1440225e6fac351802cc65c1030bbc1487554f66f808",
+    "artifacts/runs/main-qwen-c1-29-r1-collect/status.json": "160fa22ee2665b0e2306f46281981e4f4951350a40056bd94b6e45cf196b723e",
+    "artifacts/runs/main-qwen-c1-29-r1-fit/status.json": "626a5d53c0f04456880b9bbd55a4d4402a31187dcaf1d89b813c8239b9dda381",
+    "artifacts/runs/main-qwen-c1-29-eval/status.json": "8acc84820f9e10c0110ac4f028caaf8b470561ea544b423e407bc471744a65b5",
+    "artifacts/runs/main-qwen-c3-29-r0-collect/status.json": "e461270a107b6e59ba921fbddba3b7e83d76716e1b1723cc86a41a8a0b7794a5",
+    "reports/tables/main_results.json": "5a00e981c7b24bff4e03aa801af5f7118e5484eb1cd6e1ed33f425a031208d78",
+    "reports/tables/main_contrasts.json": "7f9d46752c71d6cbd385fb16d12580b2a09c39c0560856a125bd6e8d0102686c",
+    "reports/tables/resource_totals.json": "839bc99b7e44d8292891d56a87a5bfcff83d17dac232974a5250f76b8833a9c7",
     "reports/tables/transfer.json": "98971a64eff6d2c0399a18c33c0f9e44d37454b47628f0edfab72fbc19893fb8",
     "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "reports/tables/human_review_status.json": "8b666b5adeabb6e87074563460c2183245bd799aa7623458e66bd28908c3815d",
     "artifacts/unseen_profiles_controller_state.json": "05283e7f9941468836f5dc26e0dbfe71aa9e8dfca3767c0606fbfa330e5e77f2",
-    "analysis/execution_report.py": "78dd4e017a54933918ec8ca49349035d61f3625aac094318097ea694c8852bb6"
+    "analysis/execution_report.py": "88541738463977d2d6b26daa4d88e24c1f1c1f91b2bff152732cae76906c6f9a"
   },
-  "report_sha256": "5b37ff1fc4652c4b113c1aa1af0cdb20d4c1ac606dcefb41c60a3b26b1fe55d1"
+  "report_sha256": "be014d3ec174b7799da98ae81df424138054c94f58325a94e05d0577c7137c8c"
 }
