@@ -44,6 +44,7 @@
     "artifacts/runs/main-qwen-c3-29-r0-fit/status.json": "8a04fbc759e7cbc2d6bf1b5ef0f48757e20fbf3349dc9fb578b1adea0fd7c7b6",
     "artifacts/runs/main-qwen-c3-29-r1-collect/status.json": "9f709a0f754a7d5e43a3f0866cdd774a6c2bd22a9a7180e5a560188e135d62ac",
     "artifacts/runs/main-qwen-c3-29-r1-fit/status.json": "78208082e132ae31fece72e9ba4389d76fc3e59d871a9f2652aecafa863c6d7e",
+    "artifacts/runs/main-qwen-c3-43-eval/status.json": "dd983ebe789cc851840474631157c8ecd1bae71598197937575080189ce97129",
     "artifacts/runs/main-qwen-c3-43-r0-collect/status.json": "b6eba44642359935f417bd202c24fb2f1d6afc667ed712adc39b4917c055573a",
     "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
     "artifacts/runs/main-qwen-c3-43-r1-collect/status.json": "b83e84a7dcff4e79986187c27e91fbac2d54156066867b07ff0409fed3d6ef81",

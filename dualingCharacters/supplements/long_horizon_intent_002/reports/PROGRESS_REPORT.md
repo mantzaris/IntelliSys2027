@@ -1,4 +1,4 @@
-# Intent 002 progress — 2026-10-24T19:52:07.411917+00:00
+# Intent 002 progress — 2026-10-24T20:44:09.742626+00:00
 
 This is an exploratory follow-up specified after the initial negative C5 comparison and C1 seed reversal. It preserves the original confirmatory study and review_001 freezes. Newly inspected test analyses are not original preregistration.
 
@@ -6,7 +6,7 @@ Session: 2026-10-24T13:06:05+00:00 to 2026-10-24T21:06:05+00:00; useful-work cut
 
 ## Existing core: completed and running
 
-Latest monitor 2026-10-24T19:51:40.463122+00:00: 61/241 stages complete; active `main-qwen-c3-43-eval`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
+Latest monitor 2026-10-24T20:43:24.812065+00:00: 62/241 stages complete; active `main-qwen-c4-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
 
 | Qwen seed | Condition | 64-turn paired success |
 |---|---|---|
@@ -21,7 +21,7 @@ Latest monitor 2026-10-24T19:51:40.463122+00:00: 61/241 stages complete; active 
 | 29 | C5 | 180/240 (75.00%) |
 | 29 | A1 | 181/240 (75.42%) |
 | 43 | C1 | 183/240 (76.25%) |
-| 43 | C3 | Pending |
+| 43 | C3 | 190/240 (79.17%) |
 | 43 | C4 | Pending |
 | 43 | C5 | Pending |
 | 43 | A1 | Pending |
@@ -48,6 +48,7 @@ Trajectory robustness: the table uses all480 conversations at every actual turn 
 | C1 | 43 | 32.32% | 14.82% | 55 | 90 |
 | C3 | 17 | 54.77% | 46.65% | 55 | 99 |
 | C3 | 29 | 31.44% | 16.21% | 55 | 98 |
+| C3 | 43 | 35.09% | 19.23% | 55 | 82 |
 | C5 | 17 | 31.52% | 16.65% | 56 | 118 |
 | C5 | 29 | 31.85% | 16.55% | 55 | 101 |
 
@@ -74,6 +75,8 @@ A temporal source audit was added after inspecting these curves. It characterize
 | C3 | 17 | 61 | 480 | 210 | 0 | 390 |
 | C3 | 29 | 60 | 0 | 0 | 476 | 0 |
 | C3 | 29 | 61 | 480 | 0 | 0 | 406 |
+| C3 | 43 | 60 | 0 | 12 | 426 | 12 |
+| C3 | 43 | 61 | 480 | 12 | 0 | 407 |
 | C5 | 17 | 60 | 0 | 1 | 476 | 1 |
 | C5 | 17 | 61 | 468 | 1 | 6 | 392 |
 | C5 | 29 | 60 | 0 | 0 | 480 | 0 |
@@ -92,6 +95,7 @@ Training robustness: `matched_seed_description.json` uses only seeds shared by C
 | C1 | 43 | 9 | 4 | 4 | 1 | 2 |
 | C3 | 17 | 23 | 16 | 7 | 1 | 15 |
 | C3 | 29 | 8 | 1 | 7 | 1 | 1 |
+| C3 | 43 | 0 | 0 | 0 | 0 | 0 |
 | C5 | 17 | 23 | 16 | 7 | 0 | 16 |
 | C5 | 29 | 9 | 1 | 8 | 1 | 0 |
 
@@ -104,6 +108,7 @@ Clarification flags overlap. Wrong-issue cases can be both unnecessary and misse
 | C1 | 43 | 128 | 182 | 48 | 112 | 0 | 11 | 32 |
 | C3 | 17 | 243 | 292 | 154 | 242 | 1 | 12 | 2 |
 | C3 | 29 | 178 | 190 | 25 | 80 | 0 | 15 | 17 |
+| C3 | 43 | 80 | 84 | 31 | 48 | 0 | 8 | 8 |
 | C5 | 17 | 46 | 47 | 3 | 9 | 0 | 34 | 6 |
 | C5 | 29 | 29 | 29 | 2 | 3 | 0 | 20 | 5 |
 
@@ -142,13 +147,13 @@ Sixteen authored families (four per practical domain), paired authorization worl
 
 The shared public interface uses4096 input tokens,640 combined output tokens,128 memory tokens, fixed lexical retrieval8 plus4 recent messages, greedy BF16 inference and batch limit32. The policy alone writes memory; evaluator state and corrections never enter its prompts. Offline tokenizer checks are not GPU validation of this transfer interface.
 
-Fresh score status: **pending_outputs_and_human_ratings**. Intent reserved GPU time: 0.0 seconds. Admission reasons: required_core_incomplete, review001_not_resolved, extension_disabled. No qualitative performance result, crossover, or new robustness advantage is claimed.
+Fresh score status: **pending_outputs_and_human_ratings**. Intent reserved GPU time: 0.0 seconds. Admission reasons: required_core_incomplete, review001_not_resolved, extension_disabled, reservation_does_not_fit_budget_and_session. No qualitative performance result, crossover, or new robustness advantage is claimed.
 
 Human status: pending_fresh_outputs. Two independent rating forms remain blank until actual humans provide ratings. The complete grid and balanced sample are different workloads. Earlier60-action identities/forms remain preserved; the original120-prose packet awaits its required natural outputs. No one was contacted.
 
 ## Resources and next action
 
-Latest reconciled project reservation: 28.0701/96hours. Core forecast: expected 82.06, conservative 89.18 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
+Latest reconciled project reservation: 28.9193/96hours. Core forecast: expected 82.91, conservative 89.95 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
 
 Required core → review_001 → intent_002 → older unseen-profile work. This session does not expand the96-hour ceiling. New intent work requires the completed core and review gates, a fixed-final-checkpoint binding, timing-only complete-tier allocation, free shared locks, remaining allowance, and this session’s deadline. If gates stay closed, leave intent disabled for a subsequent authorized continuation.
 

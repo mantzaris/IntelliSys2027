@@ -37,6 +37,7 @@
     "artifacts/runs/main-qwen-c3-29-r0-fit/training/training_summary.json": "91f6e81c9f2a468da2c43fbb5ea73e7a54a5f77892e7d1d0ac57b1c8a8971383",
     "artifacts/runs/main-qwen-c3-29-r1-fit/status.json": "78208082e132ae31fece72e9ba4389d76fc3e59d871a9f2652aecafa863c6d7e",
     "artifacts/runs/main-qwen-c3-29-r1-fit/training/training_summary.json": "8021d497c0de36825f704ff5ff7a401263ee1b8c7547f9a24d683a9e54b3fd9c",
+    "artifacts/runs/main-qwen-c3-43-eval/status.json": "dd983ebe789cc851840474631157c8ecd1bae71598197937575080189ce97129",
     "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
     "artifacts/runs/main-qwen-c3-43-r0-fit/training/training_summary.json": "31c1868907aa5806d26bf99d44f963bbdc76d07fba653ca2c3cdc17ad1e551c0",
     "artifacts/runs/main-qwen-c3-43-r1-fit/status.json": "eb94ab371fccb856b9d5d163b7e696f9a0c0bf1d0795c23df0c35d940e6c12a7",
@@ -655,6 +656,22 @@
       "run_id": "main-qwen-c3-43-r1-fit",
       "seed": 43,
       "task": "fit"
+    },
+    {
+      "completion_serialization": null,
+      "condition": "C3",
+      "continuation_verified": true,
+      "effective_optimizer_resume_chain": "not resumed",
+      "expected_predecessor_sha256": "34a38b3515cffdc56ff9e87eeee6c1914bf3ded13aae67b07d6ff533533cc94c",
+      "final_adapter_sha256": "34a38b3515cffdc56ff9e87eeee6c1914bf3ded13aae67b07d6ff533533cc94c",
+      "initial_adapter_sha256": null,
+      "model": "qwen",
+      "optimizer_resume_checkpoint": null,
+      "optimizer_steps": null,
+      "predecessor_adapter": "artifacts/runs/main-qwen-c3-43-r1-fit/training/final",
+      "run_id": "main-qwen-c3-43-eval",
+      "seed": 43,
+      "task": "evaluate"
     }
   ]
 }

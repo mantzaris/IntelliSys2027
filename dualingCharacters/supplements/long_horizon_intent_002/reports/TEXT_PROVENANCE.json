@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-10-24T19:52:07.412119+00:00",
+  "generated_utc": "2026-10-24T20:44:09.742824+00:00",
   "generator_sha256": "c8411c59deab9608187426ab53f57bb3b6445289f0cdcdde9f28a5bccd51e89b",
   "inputs": {
     "supplements/long_horizon_intent_002/reports/HUMAN_REVIEW_STATUS.json": "31ceafaba5f2fead81b853fae1ced70158634a1f3b0a5f5e368f755f027672bb",
     "supplements/long_horizon_intent_002/reports/INTENT_SCORES.json": "08e50a7bec7e464f1bb02694d3d31db6c7bb1d3ea67543caa15d75f861619827",
-    "supplements/long_horizon_intent_002/reports/LATEST_STATE.json": "57b885bb3265400187765ac3d9c87ba57e971b2f5928511692c699b4e3cbffdd",
-    "supplements/long_horizon_intent_002/reports/clarification_audit.json": "93f0a8191e0c716a549bceb02f03078fedd8eb44085a91823d83d569ffd8e07b",
+    "supplements/long_horizon_intent_002/reports/LATEST_STATE.json": "3fc0ddcdda2be68feb702d9632f0096636aafd7771d47b769707f232a818f9d2",
+    "supplements/long_horizon_intent_002/reports/clarification_audit.json": "bb5ca6864f9c80c34db32ac0560d33524f2d33d8b74bf7cf4a9c0490ac052f26",
     "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "19acb70419c7b2f8c18ea48b549876ef9cc234c34dad8e6da31c166298775aee",
     "supplements/long_horizon_intent_002/reports/clarification_training_situations.json": "06ff699b0f049059694466f5a5d9bcb37ee4313f061df62218c13c104c224c5b",
     "supplements/long_horizon_intent_002/reports/core_horizon_levels.json": "6ee0b38ea7adbb036e14157d54f6117a23c26474fb09fc333bb26d893745476e",
-    "supplements/long_horizon_intent_002/reports/evidence_audit.json": "fe2817ca12533e645b233e6fb5d3ecde82ef07a039c68441bcd2ededfb5219bb",
+    "supplements/long_horizon_intent_002/reports/evidence_audit.json": "1675d03bce6754199f1ea99fea968e33b6670b419f1fcd90c97594b4d0ed0129",
     "supplements/long_horizon_intent_002/reports/paired_trajectory_contrasts.json": "53a7338c70900078cb274d470288beab3777ee16df991418670a1511f1bd1d0b",
-    "supplements/long_horizon_intent_002/reports/paired_transitions.json": "528acd91abd8d2d84d033bcf241735c30b7a87464f5a581d60c53fe329e98e44",
-    "supplements/long_horizon_intent_002/reports/per_seed_results.json": "41e5e425ea78f3ff94e0b5b6ae00a345b0e18d8325cbd25957d65e117cb2df8a",
-    "supplements/long_horizon_intent_002/reports/source_dynamics_selected_turns.json": "0b675303a7ac9fd8bb4abb861659270772d740a801394ec5cafe8fce642ad284",
+    "supplements/long_horizon_intent_002/reports/paired_transitions.json": "24eeb85378292d66a5c003ee28cee0b319ae33b80a9678289ff43f2c74b691c1",
+    "supplements/long_horizon_intent_002/reports/per_seed_results.json": "d348b837e0e7e7316f7d5577bdb59ebe9dc3b1a91990e2f2e390c8b3b44e9e78",
+    "supplements/long_horizon_intent_002/reports/source_dynamics_selected_turns.json": "a5e2a3a2279e4d677a4fbaecee58484190748e5ee9d01be6c50ee8f8f50f8185",
     "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "535c399b59537e7571c517ff72ccef56c9e2be75035cb71fe4ec4967fd1f4881",
-    "supplements/long_horizon_intent_002/reports/trajectory_summary.json": "2cfa81fefc3da0de4b97d80c01162caa0e2c05a2de3ecabadedfa4f4ab83539e"
+    "supplements/long_horizon_intent_002/reports/trajectory_summary.json": "75d778da70f5c4e2a0488ee25d989c4072376b5661b8b2ec04440a15e0536937"
   },
   "outputs": {
-    "supplements/long_horizon_intent_002/MANUSCRIPT_SECTION.md": "80ba54d216db3e021300a2dafa1f1771fc3816ced9f139d90f7cf3f772c2784f",
+    "supplements/long_horizon_intent_002/MANUSCRIPT_SECTION.md": "95629418f7efe2a0936497921408307cb0e928e0ad2a471192f52436de214720",
     "supplements/long_horizon_intent_002/reports/CLAIM_TO_EVIDENCE.md": "b647f61ef846c479812ea938b636415bfb9c84f4e5e04f290e0264f4ec655949",
-    "supplements/long_horizon_intent_002/reports/PROGRESS_REPORT.md": "cfe168962d49a0adf5776751d2f48dd97077abccd263f916fc7e0d8968e6718a"
+    "supplements/long_horizon_intent_002/reports/PROGRESS_REPORT.md": "9db7c952d99ad4e370778ba7c133e7ddb6984ffdc8ca86f0e100cfa95272ad26"
   },
   "scientific_interpretations": "Provisional author review; no fresh qualitative scores unless explicitly measured in INTENT_SCORES.json"
 }

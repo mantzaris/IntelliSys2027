@@ -13,12 +13,12 @@
   "clarification_types": {
     "caption": "Final-turn structured clarification audit, completed Qwen C1/C3/C5 seeds, 480 conversations each. Flags overlap and are not stacked or summed. Wrong-issue clarification can both add an unnecessary issue and miss the necessary one. Structured nulling/clarification does not reveal prose uncertainty acknowledgment or human-rated helpfulness. All original scorer results remain unchanged.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "93f0a8191e0c716a549bceb02f03078fedd8eb44085a91823d83d569ffd8e07b"
+      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "bb5ca6864f9c80c34db32ac0560d33524f2d33d8b74bf7cf4a9c0490ac052f26"
     },
     "outputs": {
-      "pdf": "2a9603c3afaa0b39728dba36a8d5bda153dd9f02bae5e007890e435c65d1f43d",
-      "png": "44151a5ff22fae2afe4df6b176fe89a50953b563070a1a9ad1bd324f81f0cdb2",
-      "svg": "57b02703dfa0e2eb86e01b3309feb1b557f35031d36e7c987d7847441f0c144d"
+      "pdf": "0d917ae058fcf34e150b75a8f540638f3285e779b4d62d6dae785dbcf4366710",
+      "png": "1646be31d397362313ded1103e44be9761b71f3dd3dc975b7e512babf52ae784",
+      "svg": "e52adf67402d717ae827e2a2c55ec95eb63a37d4de23707ce11e8eee032ed162"
     }
   },
   "core_horizon_level_and_change": {
@@ -47,34 +47,34 @@
   "dynamic_core_trajectories": {
     "caption": "Qwen C1/C3/C5, every completed seed, 480 conversations (240 paired families) at each of 64 user turns. Each response is scored against the oracle state at that turn, not the final target. Lines show descriptive marginal conversation correctness, not independent-turn inference or qualitative helpfulness. The dotted line marks the paired authorized/hypothetical event; other events and public request wording also vary by turn. Final-turn success cannot substitute for trajectory correctness. Missing seed cells remain pending.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "1c2f60ca0ed47eb2389c299b45c349d80c8621983b68a73c2fe47b0247e49b45"
+      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "35c2863f3d222b6ab8aa8d850b6f3310c64e3b5803c1d9d44e1a7663cbead061"
     },
     "outputs": {
-      "pdf": "ae890e4859f35c9feb1008a64fdb5257307b97311a75f0800efa7967673b7301",
-      "png": "b9b223b49ddb605f12f5a4d47339b235892a828e92ce817ecb39babf258f15a5",
-      "svg": "a1c61a36beb85d88f6370b7a9a3f4a05db72605f8ac4b3ce479103c65357e641"
+      "pdf": "159642659c3392846abdf965a99fded9a9b28cc6ff68f7d3d096ff3e1efd6b34",
+      "png": "b24c2c1ac7375d28c4b28f5afb16bf349bdcf1119d32e5bc31f6e549483e97c5",
+      "svg": "4af9d6226e2d7aa1d20dc702fe9bdbf0622145a774d41878563dbeda450e32b7"
     }
   },
   "source_access_and_state": {
     "caption": "Post-curve exploratory temporal source audit, completed Qwen C1/C3/C5 seeds, 240 paired families / 480 conversations at each turn. Grey dashed lines characterize the supplied source set using oracle annotations only after generation; colored lines show correct six-value output state. State recall is distinct from executable-plan success. Canonical-source absence does not imply all evidence is absent: working memory and retrieved assistant responses can carry it. Source access and state accuracy are associated, not a randomized causal contrast. No retrieval or memory policy changed.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/source_dynamics_by_turn.json": "9cf53d2b77fdec31d72fc14f406671e32ec0ae41e67b6d8ade09aa61fcfc7ef6"
+      "supplements/long_horizon_intent_002/reports/source_dynamics_by_turn.json": "9170b4599eb631f0b50a983eacd49b33c5c9992defa3a4ee324b0c9a2d9a7197"
     },
     "outputs": {
-      "pdf": "3450f5746eb19d568aff529ae6a5eafdc17444d948da48a05718bf225011db4f",
-      "png": "9589dc9409dd34207ef4cb76a99ca9055a03f6359ff1b425e49dea46c0c88ca7",
-      "svg": "c1f4a2b392fa342caad82c6848e89f9815a140b211be590303d8271cbeb95502"
+      "pdf": "49ab7a51f9a7992ed9014e4db391474a45f3d9bcb1336dfc61c88cc202f782dc",
+      "png": "468e7113f099e6f068f1f7dd78b0d9d02ef8a747080978f87e93777df0759945",
+      "svg": "5ccc63a91a9a9b23a9cc2a761a6153071601b733db0d7e82b63b5b2c3a4fb141"
     }
   },
   "source_reference_types": {
     "caption": "Original source-error flags per 480 conversations (left) and separate overlapping flags per 2,880 slot references (right), completed Qwen C1/C3/C5 seeds. References can be both assistant-authored and unavailable. Anaphoric user support remains semantically unresolved; no automatic rescoring or validated human annotation is claimed.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "fe2817ca12533e645b233e6fb5d3ecde82ef07a039c68441bcd2ededfb5219bb"
+      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "1675d03bce6754199f1ea99fea968e33b6670b419f1fcd90c97594b4d0ed0129"
     },
     "outputs": {
-      "pdf": "0f74972ea0083d977d0b6303eb4c80feac8bb8c42a2c99e1f57ba124147e2f2b",
-      "png": "c1ccbc587dcf2d24000208e18fc93d6d1c4abb57337297388950a0ac20bfa6fb",
-      "svg": "67ded712bc03f4ef22013c63881260a585f667dcfcc34f968cc52d9823c09160"
+      "pdf": "ec1bfa112e135bb9a7b8db89d51cca1315c8d180e3c60a3376564becf014906d",
+      "png": "9d41725ad804885997945da886205c3c6c31275dd3a61404e3958a439867dea7",
+      "svg": "19389cbdef3bc3a1a35f0632e329bfefbee4a6ce18fb5319c3b8218a76a1cb77"
     }
   }
 }

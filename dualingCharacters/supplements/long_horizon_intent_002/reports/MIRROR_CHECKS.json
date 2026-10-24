@@ -429,6 +429,16 @@
       },
       "verified_utc": "2026-10-24T09:09:22.982246+00:00"
     },
+    "main-qwen-c3-43-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c3-43-eval/evaluation.jsonl.gz": "4414ccb447cc85d83b12350038bc447abcc5991a50c3d05028aba3a343027b90",
+        "artifacts/runs/main-qwen-c3-43-eval/evaluation_summary.json": "a3609c31b0690a5b7ca746f909f3baab6e13df461746b57b5d5e4d1df9277d15",
+        "artifacts/runs/main-qwen-c3-43-eval/status.json": "dd983ebe789cc851840474631157c8ecd1bae71598197937575080189ce97129",
+        "artifacts/runs/main-qwen-c3-43-r1-fit/training/final/adapter_model.safetensors": "34a38b3515cffdc56ff9e87eeee6c1914bf3ded13aae67b07d6ff533533cc94c"
+      },
+      "verified_utc": "2026-10-24T20:43:58.839936+00:00"
+    },
     "main-qwen-c3-43-r0-collect": {
       "matches": true,
       "paths": {

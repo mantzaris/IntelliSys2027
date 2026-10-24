@@ -1802,5 +1802,126 @@
     "kind": "overlapping_flag",
     "model": "qwen",
     "seed": 43
+  },
+  {
+    "category": "success",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 398,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "dependency_only",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 76,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "other_commitment_error",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 6,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "malformed",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "false_update",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 240,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "missed_update",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 240,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "clarification_error",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "commitment_error",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 6,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "dependency_error",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 76,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "source_error",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 80,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
+  },
+  {
+    "category": "correct_recall_wrong_behavior",
+    "condition": "C3",
+    "conversations": 480,
+    "count": 75,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 43
   }
 ]

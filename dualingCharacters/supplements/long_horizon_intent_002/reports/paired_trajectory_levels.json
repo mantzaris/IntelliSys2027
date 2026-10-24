@@ -630,6 +630,76 @@
     "value": 9.5
   },
   {
+    "condition": "C3",
+    "families": 240,
+    "metric": "paired_all_turn_success",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.32916666666666666
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "mean_world_all_turn_success",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.35087890625
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "paired_final_quarter_success",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.1578125
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "paired_final_success",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.7916666666666666
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "at_least_one_world_never_aligned",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.1375
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "at_least_one_unresolved_world",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 0.20833333333333334
+  },
+  {
+    "condition": "C3",
+    "families": 240,
+    "metric": "trailing_failure_turns_mean",
+    "model": "qwen",
+    "qualification": "Exploratory structured dynamic-oracle trajectory description, not new qualitative intent scoring",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "value": 9.325
+  },
+  {
     "condition": "C4",
     "families": 240,
     "metric": "paired_all_turn_success",

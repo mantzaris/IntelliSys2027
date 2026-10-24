@@ -29,6 +29,11 @@ One lowest-hash family per declared category and completed Qwen C1/C3/C5 seed. B
 | C3 | 29 | appropriate_authorized_update | 205 | test-0165 |
 | C3 | 29 | unnecessary_clarification | 1 | test-0039 |
 | C3 | 29 | observed_recovery | 212 | test-0025 |
+| C3 | 43 | uninterrupted_preservation | 1 | test-0210 |
+| C3 | 43 | spontaneous_regression | 212 | test-0060 |
+| C3 | 43 | appropriate_authorized_update | 206 | test-0165 |
+| C3 | 43 | unnecessary_clarification | 0 | None qualify |
+| C3 | 43 | observed_recovery | 212 | test-0025 |
 | C5 | 17 | uninterrupted_preservation | 1 | test-0032 |
 | C5 | 17 | spontaneous_regression | 211 | test-0060 |
 | C5 | 17 | appropriate_authorized_update | 192 | test-0165 |

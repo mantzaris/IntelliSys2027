@@ -191,3 +191,19 @@
 - 2026-10-24T19:52:14.842062+00:00: C3 seed43 final fit completed and mirrored. Exact loss exposure covers24 fits; all61 completed-stage mirrors match. Its scheduled evaluation is active. No source/protocol changes or retries; both supplement GPU totals remain zero. Final result will be included only after complete paired validation.
 
 - 2026-10-24T20:03:42.700899+00:00: Verification rerun passed62 tests in5.00s, including24 new intent tests. Core58/review21/intent34 scientific hashes all verify unchanged. Storage projection refreshed from24 completed fits and48 remaining fit jobs; no cleanup or new storage spending. C3 seed43 evaluation continues; no partial test score is included.
+
+- 2026-10-24T20:14:57.492745+00:00: Seven-hour status: 61/241 complete (16 new stages); main-qwen-c3-43-eval active with 14784 responses. Total reservations 28.4581/96 hours; conservative core forecast 89.18.24 completed fits and24 collections audited; all61 completed mirrors verify.62 tests pass and all113 scientific files (58+21+34) retain their hashes. New intent inference remains disabled, with0/2 hours used; review also0/2. Next: validate any completed C3 evaluation, final report/figures/provenance, explicit intent disablement, local commit and handoff by21:06:05 UTC. The core may continue separately.
+
+- 2026-10-24T20:35:24.529513+00:00: Entered final verification/handoff interval. No new extension worker has been installed or admitted; intent002 remains disabled and review001 remains behind the full core gate. All62 tests pass and all58+21+34 scientific files verify unchanged. Awaiting only completed artifacts from the healthy original queue; session will end by21:06:05 UTC regardless of core completion.
+
+- 2026-10-24T20:43:24.816911+00:00: Progress: 62/241 core stages complete; active main-qwen-c4-43-r0-collect, 0 generation requests, 0 training input tokens; 28.9193/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T20:43:32.922540+00:00: Validated completed main-qwen-c3-43-eval: 190/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T20:43:49.140258+00:00: New time-varying oracle / clarification / evidence audit: main-qwen-c3-43-eval; 30,720 complete turns, no final-target substitution.
+
+- 2026-10-24T20:43:58.841065+00:00: Remote/local completed-stage checksums match for main-qwen-c3-43-eval.
+
+- 2026-10-24T20:44:00.395816+00:00: New temporal source/memory audit: main-qwen-c3-43-eval; descriptive response to observed curves, not a changed policy or causal intervention.
+
+- 2026-10-24T20:45:33.713275+00:00: C3 seed43 evaluation validated at190/240 paired success,398/480 conversations; full30,720-turn trace and all62 mirrors verified. C3-C1 seed43=+2.9167 pp (family interval0.8333 to5.0000), transitions183 both/7 C3-only/0 C1-only/50 neither. All three matched seeds yield exploratory C3-C1=+5.6944 pp, frozen two-way seed/family interval[-3.75,+17.0833]; uncertainty spans zero and primary C5-C3 remains incomplete. C3 seed43 has0 clarification-error flags and80/480 source-error flags, with overlapping structural reference categories. All-turn correctness35.0879%, final-quarter19.2318%. No causal attribution or seed-population robustness claim. Original queue advanced to C4 seed43 collection.

@@ -1,15 +1,14 @@
 {
   "admitted": false,
-  "available_seconds": 2548.989228963852,
-  "checked_utc": "2026-10-24T19:52:07.301712+00:00",
+  "available_seconds": 0,
+  "checked_utc": "2026-10-24T20:44:09.635275+00:00",
   "contingency_seconds": 1800,
   "core_complete": false,
   "exit_margin_seconds": 90,
-  "hard_deadline_seconds_remaining": 4438.989228963852,
+  "hard_deadline_seconds_remaining": 1316.618448972702,
   "intent_seconds_used": 0,
   "launches_performed": 0,
   "missing_core_runs": [
-    "main-qwen-c3-43-eval",
     "main-qwen-c4-43-r0-collect",
     "main-qwen-c4-43-r0-fit",
     "main-qwen-c4-43-r1-collect",
@@ -190,15 +189,16 @@
     "judge-phi-001",
     "judge-qwen-001"
   ],
-  "project_seconds_used": 101039.97299716901,
+  "project_seconds_used": 104128.36332629388,
   "reasons": [
     "required_core_incomplete",
     "review001_not_resolved",
-    "extension_disabled"
+    "extension_disabled",
+    "reservation_does_not_fit_budget_and_session"
   ],
   "reservation_seconds": 900,
   "review_complete": false,
   "review_status": "waiting_for_core",
   "session_deadline_utc": "2026-10-24T21:06:05+00:00",
-  "useful_seconds_remaining": 2638.989228963852
+  "useful_seconds_remaining": 0
 }

@@ -1,0 +1,2 @@
+model,contrast,difference,ci95,families,seeds,per_seed,analysis
+qwen,C3-C1,0.05694444444444444,"[-0.0375, 0.17083333333333334]",240,3,"{'17': -0.0375, '29': 0.17916666666666667, '43': 0.029166666666666667}",paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably

@@ -235,6 +235,32 @@
   },
   {
     "clarification_actually_needed": false,
+    "clarification_error": 0,
+    "condition": "C3",
+    "conversations": 420,
+    "missed_necessary_clarification": 0,
+    "model": "qwen",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "unnecessary_clarification": 0,
+    "unnecessary_clarification_with_settled_nulls": 0,
+    "wrong_issue_clarification": 0
+  },
+  {
+    "clarification_actually_needed": true,
+    "clarification_error": 0,
+    "condition": "C3",
+    "conversations": 60,
+    "missed_necessary_clarification": 0,
+    "model": "qwen",
+    "run_id": "main-qwen-c3-43-eval",
+    "seed": 43,
+    "unnecessary_clarification": 0,
+    "unnecessary_clarification_with_settled_nulls": 0,
+    "wrong_issue_clarification": 0
+  },
+  {
+    "clarification_actually_needed": false,
     "clarification_error": 10,
     "condition": "C4",
     "conversations": 420,

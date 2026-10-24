@@ -1,16 +1,16 @@
 {
-  "reserved_gpu_hours": 28.06665916588028,
-  "observed_pod_wall_hours_first_to_latest_run": 30.04686761352751,
+  "reserved_gpu_hours": 28.908010343394707,
+  "observed_pod_wall_hours_first_to_latest_run": 30.901073399715955,
   "pod_start_time": null,
   "actual_hourly_rate_usd": null,
   "actual_cost_usd": null,
-  "inference_input_tokens": 735509134,
-  "generated_output_tokens": 46108655,
+  "inference_input_tokens": 765549199,
+  "generated_output_tokens": 48141571,
   "training_input_tokens": 28393472,
-  "generation_requests": 714445,
-  "runs": 100,
-  "completed": 99,
-  "generated_utc": "2026-10-24T19:51:50.712291+00:00",
+  "generation_requests": 745165,
+  "runs": 101,
+  "completed": 100,
+  "generated_utc": "2026-10-24T20:43:44.710142+00:00",
   "aggregation_source_sha256": "b098e83eac997e1859e74bc3995fa9ca11f26ea8d7e5b690193f12990f03d8db",
   "qualification": "Latest local mirrored metadata, including running/failed/excluded attempts. Reservation includes model loads. Observed first-to-latest interval is not total billed pod lifetime. Current remote progress may exceed the last local mirror.",
   "input_hashes": {
@@ -56,6 +56,7 @@
     "artifacts/runs/main-qwen-c3-29-r0-fit/status.json": "8a04fbc759e7cbc2d6bf1b5ef0f48757e20fbf3349dc9fb578b1adea0fd7c7b6",
     "artifacts/runs/main-qwen-c3-29-r1-collect/status.json": "9f709a0f754a7d5e43a3f0866cdd774a6c2bd22a9a7180e5a560188e135d62ac",
     "artifacts/runs/main-qwen-c3-29-r1-fit/status.json": "78208082e132ae31fece72e9ba4389d76fc3e59d871a9f2652aecafa863c6d7e",
+    "artifacts/runs/main-qwen-c3-43-eval/status.json": "dd983ebe789cc851840474631157c8ecd1bae71598197937575080189ce97129",
     "artifacts/runs/main-qwen-c3-43-r0-collect/status.json": "b6eba44642359935f417bd202c24fb2f1d6afc667ed712adc39b4917c055573a",
     "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
     "artifacts/runs/main-qwen-c3-43-r1-collect/status.json": "b83e84a7dcff4e79986187c27e91fbac2d54156066867b07ff0409fed3d6ef81",
@@ -114,6 +115,6 @@
     "artifacts/runs/profile-phi-001/status.json": "4a2636570b66e831d7e5d08a38ede758aef0f5105effd0d17466074754d76c40",
     "artifacts/runs/profile-phi-isolated-001/status.json": "6a3db57c376223552cddef8832135305eb50cbb49a709b6a8e18e413f8a4e6ae",
     "artifacts/runs/vllm-profile-001/status.json": "986bb58c28c8a5b7e7bffb858142b5f63aa9cf51b16c53114df26d5c3f156960",
-    "artifacts/run_registry.jsonl": "832839a895d5c7e84b7736cc8c949b1de553b0daf4241c1f775d312e6931cac9"
+    "artifacts/run_registry.jsonl": "45b3f284f897915b364cf0d1e1f49d4385a74a4c28c4828524072fa6142f45ee"
   }
 }

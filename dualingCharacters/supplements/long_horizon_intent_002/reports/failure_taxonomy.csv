@@ -163,3 +163,14 @@ qwen,C1,43,240,480,overlapping_flag,commitment_error,16,480
 qwen,C1,43,240,480,overlapping_flag,dependency_error,78,480
 qwen,C1,43,240,480,overlapping_flag,source_error,128,480
 qwen,C1,43,240,480,overlapping_flag,correct_recall_wrong_behavior,81,480
+qwen,C3,43,240,480,mutually_exclusive,success,398,480
+qwen,C3,43,240,480,mutually_exclusive,dependency_only,76,480
+qwen,C3,43,240,480,mutually_exclusive,other_commitment_error,6,480
+qwen,C3,43,240,480,overlapping_flag,malformed,0,480
+qwen,C3,43,240,480,overlapping_flag,false_update,0,240
+qwen,C3,43,240,480,overlapping_flag,missed_update,0,240
+qwen,C3,43,240,480,overlapping_flag,clarification_error,0,480
+qwen,C3,43,240,480,overlapping_flag,commitment_error,6,480
+qwen,C3,43,240,480,overlapping_flag,dependency_error,76,480
+qwen,C3,43,240,480,overlapping_flag,source_error,80,480
+qwen,C3,43,240,480,overlapping_flag,correct_recall_wrong_behavior,75,480
