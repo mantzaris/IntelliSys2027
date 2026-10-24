@@ -273,6 +273,31 @@
     "seed": 17
   },
   {
+    "character_count": 3,
+    "collection_input_tokens": 10121678,
+    "collection_model_calls": 8528,
+    "collection_output_tokens": 519604,
+    "complete_main_evaluation": false,
+    "completed_pipeline_stages": 2,
+    "condition": "C5",
+    "eligible_collection_seconds": 1208.7154924981296,
+    "eligible_evaluation_seconds": 0,
+    "eligible_pipeline_seconds": 2399.9723948123865,
+    "eligible_run_ids": [
+      "main-qwen-c5-29-r0-collect",
+      "main-qwen-c5-29-r0-fit"
+    ],
+    "eligible_training_seconds": 1191.2569023142569,
+    "gain_over_shared_base": null,
+    "model": "qwen",
+    "other_attempt_reserved_seconds": 0,
+    "other_attempts": [],
+    "paired_success": null,
+    "peak_reported_vram_bytes": 42200989696,
+    "planned_pipeline_stages": 4,
+    "seed": 29
+  },
+  {
     "character_count": null,
     "collection_input_tokens": 0,
     "collection_model_calls": 0,

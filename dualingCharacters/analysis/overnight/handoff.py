@@ -66,7 +66,8 @@ def main(final=False):
       'The new tools perform local analysis and read-only monitoring.\n',
       f'Core scientific source commit: `{core_freeze["code_commit"]}`. '
       f'Core manifest SHA256: `{live["core_freeze_sha256"]}`. '
-      f'Review manifest SHA256: `{live["review_freeze_sha256"]}`.\n',
+      f'Review manifest SHA256: `{live["review_freeze_sha256"]}`. '
+      '[Final local/remote integrity and ownership check](FINAL_INTEGRITY.json).\n',
       f'Starting commit: `{session["starting_commit"]}`. Source/report HEAD when generated: `{head}`. '
       'The final report commit, if later, is visible in `git log`; a report cannot embed its own eventual commit hash. '
       'No tracked files are intentionally left uncommitted. Active campaign state, raw logs, adapters and checkpoints remain Git ignored and locally mirrored.\n']

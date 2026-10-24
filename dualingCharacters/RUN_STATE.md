@@ -3,12 +3,13 @@
 Started: 2026-10-23. Author-directed research; no submission or publication authorized.
 Repository scope: this directory only; branch `main`; commits local, user pushes.
 
-## Overnight supervision — active
+## Overnight supervision — completed
 
 Window: **2026-10-24 02:36:22–12:36:22 UTC** (October 23, 22:36 through
 October 24, 08:36 America/New_York). See
 `reports/overnight_20261024T023622Z/WORK_LOG.md`, `LATEST_STATE.json`, and the
-incremental analysis README at `analysis/overnight/README.md`.
+incremental analysis README at `analysis/overnight/README.md`. Final handoff:
+`reports/overnight_20261024T023622Z/OVERNIGHT_REPORT.md`.
 The existing core PID **787315** and review coordinator PID **1291869** retain
 ownership. No additional controller or GPU worker was started. Qwen seed17 paired
 successes are base 67/240, C1 186/240, C3 177/240, C4 179/240 and C5 168/240.
@@ -22,11 +23,13 @@ this observed seed variation does not alter the matched seed17 C5 contrasts.
 The C3 seed29 evaluation is complete at 181/240: C3−C1 is +17.92 points
 (family interval +12.08 to +23.75), reversing the seed17 difference. The full
 three-seed comparison remains pending. C4 seed29 is complete at 165/240, versus
-179/240 for seed17. The original queue advanced to C5 seed29 collection.
-Sixteen collections and sixteen fits have exact audits; 42 completed stages have
-verified remote/local evidence. Both
-scientific freezes remain unchanged. The overnight session will leave healthy
-original work running under its existing resource controls at handoff.
+179/240 for seed17. The original queue is running C5 seed29 round-one collection;
+its final fit and evaluation are still pending. Seventeen collections and seventeen
+fits have exact audits; all 44 completed stages have verified remote/local evidence.
+Both scientific freezes remain unchanged. All 46 relevant tests pass. The overnight
+supervision session ended without retries or holds; the original campaign remains
+running under its existing locks and budget controls. The single review coordinator
+continues waiting for all 241 core stages, with zero supplementary GPU consumption.
 
 ## Review follow-up starting snapshot (superseded by live overnight state above)
 

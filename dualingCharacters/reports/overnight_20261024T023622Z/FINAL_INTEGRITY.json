@@ -1,0 +1,23 @@
+{
+  "active_stage_at_check": "main-qwen-c5-29-r0-fit",
+  "controller_owners": [
+    {
+      "command": ".venv/bin/python -u -m pcc.campaign",
+      "parent_pid": 787313,
+      "pid": 787315
+    },
+    {
+      "command": ".venv/bin/python -m supplements.review_001.controller",
+      "parent_pid": 1291862,
+      "pid": 1291869
+    }
+  ],
+  "local_core_files": 58,
+  "local_review_files": 21,
+  "local_review_freeze_sha256": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
+  "qualification": "Read-only verification; no new controller, GPU worker, hold or retry.",
+  "remote_core_files": 58,
+  "remote_core_freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+  "remote_gpu_processes_at_check": "483778, .venv/bin/python",
+  "verified_utc": "2026-10-24T12:25:28.540338+00:00"
+}

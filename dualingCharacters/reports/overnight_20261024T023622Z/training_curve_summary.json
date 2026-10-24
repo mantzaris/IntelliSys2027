@@ -206,5 +206,18 @@
     "seed": 29,
     "steps_logged": 256,
     "zero_loss_steps": 0
+  },
+  {
+    "condition": "C5",
+    "loss_first_32_mean": 0.34942637689528055,
+    "loss_last_32_mean": 0.0015445241915585939,
+    "loss_log_sha256": "e4d645bd6f472134edcf74ffdd11da03b188fdf8a96d0b83b0b38c74e9bf8eb9",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 0,
+    "run_id": "main-qwen-c5-29-r0-fit",
+    "seed": 29,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
   }
 ]

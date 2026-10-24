@@ -23,3 +23,5 @@ antagonist_recipient_deliveries,applied,condition,direct_peer_notes_to_jekyll,ev
 0,2400,C4,1,main,1,564,2400,0,main-qwen-c4-29-r0-collect,29,2340,direct_opportunity,754,129,1689,17
 0,1042,C4,1038,main,1038,104,1200,158,main-qwen-c4-29-r1-collect,29,1038,reserved,5,,54,4
 0,2400,C4,1,main,1,467,2400,0,main-qwen-c4-29-r1-collect,29,2373,direct_opportunity,492,27,1905,
+1033,1200,C5,167,main,1200,,1200,0,main-qwen-c5-29-r0-collect,29,167,reserved,0,,,
+36,2399,C5,1,main,38,672,2400,1,main-qwen-c5-29-r0-collect,29,2361,direct_opportunity,851,177,1511,2

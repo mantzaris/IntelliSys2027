@@ -5,7 +5,7 @@
     "PYTHONPATH=src .venv/bin/python -m unittest supplements.review_001.test_review analysis.overnight.test_analysis -v"
   ],
   "core_frozen_files": 58,
-  "last_verified_utc": "2026-10-24T10:41:28.692467+00:00",
+  "last_verified_utc": "2026-10-24T12:26:03.315612+00:00",
   "latest_total_passes": 46,
   "overnight_analysis_tests": 5,
   "pytest_existing_tests_and_reports": 31,

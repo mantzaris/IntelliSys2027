@@ -1,6 +1,6 @@
 {
   "new": [
-    "main-qwen-c4-29-r1-collect"
+    "main-qwen-c5-29-r0-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
@@ -159,7 +159,17 @@
         "artifacts/runs/main-qwen-c5-17-r1-collect/supervision.jsonl": "41dc2296933bc3c23b7e2886524fcc5943d7d6592ef6c6353738f8a6b99fe73e"
       },
       "reused_prior_validation": false
+    },
+    "main-qwen-c5-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection.jsonl.gz": "4d5abc946df5bdd07ad8e452c057a7f655ff5c97523a19394040d9d4083c1d8e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection_characters.jsonl.gz": "8af87f2245ce3dfe165549c22e61d9993698a52e38edb002230fe69ebaf42c6e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/status.json": "67c62c32efccac513154550df78991305991d26483d49a86ea8df8eceacbfa68",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.counts.json": "8065c21a4926bce62789b9f8253cb303e7cbd355bfe5e56b1c88dd21816bc99e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.jsonl": "6747547db421f2a0b6880cf246557f9b80e114411a98bbd6f584a4fcaf5d5b20"
+      },
+      "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T10:47:07.544801+00:00"
+  "utc": "2026-10-24T12:14:53.448365+00:00"
 }

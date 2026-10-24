@@ -234,3 +234,19 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T11:54:13.386389+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-eval.
 
 - 2026-10-24T11:54:45.345713+00:00: C4 seed29 evaluation complete and validated: 165/240 paired successes, 357/480 conversation successes. Familiar-rule paired success 98/120; held-out 67/120. All commitments recalled in 463/480, canonical sources all visible in 458/480. Ten eligible complete main evaluations now audited, with 42/241 stages mirrored. C5 seed29 collection proceeds in the original order; no new matched C5 seed29 contrast exists yet. Updated figures and compiled author-review PDF.
+
+- 2026-10-24T11:57:55.326683+00:00: Final manuscript wording audit clarified that the zero typed-followup observation belongs to the historical final pilot; some main training traces do contain typed candidates. These remain unvalidated coordination screens, not coalition evidence. This is an unfrozen draft clarification only; scientific files and data are unchanged.
+
+- 2026-10-24T12:14:52.326022+00:00: Progress: 43/241 core stages complete; active main-qwen-c5-29-r0-fit, 0 generation requests, 77824 training input tokens; 20.6372/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T12:14:53.420952+00:00: Extended collection audit for main-qwen-c5-29-r0-collect: 497 clean and 311 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T12:15:05.959484+00:00: Remote/local completed-stage checksums match for main-qwen-c5-29-r0-collect.
+
+- 2026-10-24T12:34:32.921800+00:00: Progress: 44/241 core stages complete; active main-qwen-c5-29-r1-collect, 0 generation requests, 0 training input tokens; 20.9543/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T12:34:37.307550+00:00: Reconstructed main-qwen-c5-29-r0-fit: 39425 target tokens; 538 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T12:34:44.339476+00:00: Remote/local completed-stage checksums match for main-qwen-c5-29-r0-fit.
+
+- 2026-10-24T12:35:09.147682+00:00: Final completed-stage integration: 44/241 stages complete (27 since starting inventory), 17 collections and 17 exact-loss fits audited, 10 complete main evaluations validated. The final newly completed fit, C5 seed29 r0, has 39,425 supervised targets and 538 loss-contributing windows. All 44 completed-stage mirrors match. Core C5 seed29 r1 collection continues; no infrastructure retries, holds, scientific changes or supplementary GPU calls. Final paper compiled; both freezes and 46 tests verified.

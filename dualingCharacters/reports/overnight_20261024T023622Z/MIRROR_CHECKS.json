@@ -488,6 +488,31 @@
         "artifacts/runs/main-qwen-c5-17-r1-fit/training/training_summary.json": "704ba5c656e3b6b8e5fb6c08c63b7e802439efd58369456e8eaadf2780346aa3"
       },
       "verified_utc": "2026-10-24T03:51:08.771391+00:00"
+    },
+    "main-qwen-c5-29-r0-collect": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection.jsonl.gz": "4d5abc946df5bdd07ad8e452c057a7f655ff5c97523a19394040d9d4083c1d8e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/collection_characters.jsonl.gz": "8af87f2245ce3dfe165549c22e61d9993698a52e38edb002230fe69ebaf42c6e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/status.json": "67c62c32efccac513154550df78991305991d26483d49a86ea8df8eceacbfa68",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.counts.json": "8065c21a4926bce62789b9f8253cb303e7cbd355bfe5e56b1c88dd21816bc99e",
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.jsonl": "6747547db421f2a0b6880cf246557f9b80e114411a98bbd6f584a4fcaf5d5b20"
+      },
+      "verified_utc": "2026-10-24T12:15:05.958540+00:00"
+    },
+    "main-qwen-c5-29-r0-fit": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.jsonl": "6747547db421f2a0b6880cf246557f9b80e114411a98bbd6f584a4fcaf5d5b20",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/status.json": "60f1f80dc43aae6f92924886cbda050abe76661fde8dcda0ec1d1765df525c6b",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/final/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/final/adapter_config.json": "94f4720853dcae743ecd3d365e178982edecc5c5ade10c9d23dfe2d54196c9ef",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/final/adapter_model.safetensors": "d5e875bead54047ce2b2b8b47d8cbf7b9c0a16bb30371b3f13d09291113d912d",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/loss.jsonl": "e4d645bd6f472134edcf74ffdd11da03b188fdf8a96d0b83b0b38c74e9bf8eb9",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/optimizer.pt": "cc351181cccd6647ec99f4cc0683a5c9512ff30f85719eb3da4d78ed4036ad86",
+        "artifacts/runs/main-qwen-c5-29-r0-fit/training/training_summary.json": "688189cf17e559383ab867785b83c26452a95cd000d6ee6cc768741cbab130a8"
+      },
+      "verified_utc": "2026-10-24T12:34:44.338756+00:00"
     }
   }
 }

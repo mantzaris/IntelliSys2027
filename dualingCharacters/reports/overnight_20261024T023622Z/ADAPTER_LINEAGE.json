@@ -41,7 +41,9 @@
     "artifacts/runs/main-qwen-c5-17-r0-fit/status.json": "69ac8641b25ee91c6ca0a51e6220a787cb1b4092814908df42335bbf72878753",
     "artifacts/runs/main-qwen-c5-17-r0-fit/training/training_summary.json": "3daa9867866867f98a46eee56dbd386d4fc9f9f8575edd5f1d6628f86043da28",
     "artifacts/runs/main-qwen-c5-17-r1-fit/status.json": "2053d134a764534c8d96cf1b94e528ec155dd53e0b21ac2fc8960bacf6458e5e",
-    "artifacts/runs/main-qwen-c5-17-r1-fit/training/training_summary.json": "704ba5c656e3b6b8e5fb6c08c63b7e802439efd58369456e8eaadf2780346aa3"
+    "artifacts/runs/main-qwen-c5-17-r1-fit/training/training_summary.json": "704ba5c656e3b6b8e5fb6c08c63b7e802439efd58369456e8eaadf2780346aa3",
+    "artifacts/runs/main-qwen-c5-29-r0-fit/status.json": "60f1f80dc43aae6f92924886cbda050abe76661fde8dcda0ec1d1765df525c6b",
+    "artifacts/runs/main-qwen-c5-29-r0-fit/training/training_summary.json": "688189cf17e559383ab867785b83c26452a95cd000d6ee6cc768741cbab130a8"
   },
   "qualification": "All completed scheduled fit/evaluation metadata checked without score selection. Actual final-weight bytes are separately verified in MIRROR_CHECKS.json; this check follows predecessor-to-initial and final-to-evaluation references. The trainer saves initial weights before any optimizer resume, so a resumed effective checkpoint chain needs separate evidence and is explicitly flagged. Running stages are excluded until final mirroring completes.",
   "runs": [
@@ -460,6 +462,22 @@
       "run_id": "main-qwen-c4-29-eval",
       "seed": 29,
       "task": "evaluate"
+    },
+    {
+      "completion_serialization": "public_defender_schema_order_v1",
+      "condition": "C5",
+      "continuation_verified": null,
+      "effective_optimizer_resume_chain": "not resumed",
+      "expected_predecessor_sha256": null,
+      "final_adapter_sha256": "d5e875bead54047ce2b2b8b47d8cbf7b9c0a16bb30371b3f13d09291113d912d",
+      "initial_adapter_sha256": "e9a46a4e4208990655f04c0a818905e3693cf833153d9ddee5268222b637518a",
+      "model": "qwen",
+      "optimizer_resume_checkpoint": null,
+      "optimizer_steps": 256,
+      "predecessor_adapter": null,
+      "run_id": "main-qwen-c5-29-r0-fit",
+      "seed": 29,
+      "task": "fit"
     }
   ]
 }

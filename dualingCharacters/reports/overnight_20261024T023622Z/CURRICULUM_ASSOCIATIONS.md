@@ -13,6 +13,7 @@ Each row joins completed, eligible artifacts for one model/condition/training se
 | qwen | C4 | 17 | 2/2 | 2,097,152 | 78,417 | 14 / 8 | 39.0% | 6747/7200 | 74.58% |
 | qwen | C4 | 29 | 2/2 | 2,097,152 | 79,997 | 20 / 12 | 29.8% | 6779/7200 | 68.75% |
 | qwen | C5 | 17 | 2/2 | 2,097,152 | 79,238 | 31 / 17 | 20.8% | 5034/7200 | 70.00% |
+| qwen | C5 | 29 | 1/2 | 1,048,576 | 39,425 | pending | — | 2528/3600 | pending |
 | qwen | base | 17 | 0/0 | 0 | 0 | n/a | — | 0/0 | 27.92% |
 
 Equal packed input-token budgets do not imply equal supervised target-token exposure. The 50:50 sampler alternates examples; it does not guarantee a 50:50 target-token split. Repeated recovery occurrences are not independent recovery examples. Source coverage is an analysis-only measurement; it did not determine policy inputs or select an outcome subset.
