@@ -1,0 +1,4 @@
+run_id,condition,model,seed,families,paired_successes,conversations,failed_conversations,failed_with_dependency_error,failed_with_correct_recall,all_canonical_sources_visible,final_prompts,raw_rows,familiar_paired_successes,heldout_paired_successes,familiar_families,heldout_families
+base-qwen-eval,base,qwen,17,240,67,480,285,245,239,444,480,30720,43,24,120,120
+main-qwen-c1-17-eval-format2,C1,qwen,17,240,186,480,90,80,81,471,480,30720,117,69,120,120
+main-qwen-c3-17-eval,C3,qwen,17,240,177,480,99,78,94,468,480,30720,110,67,120,120

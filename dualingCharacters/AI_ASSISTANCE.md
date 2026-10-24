@@ -36,3 +36,5 @@ and conclusions and accurately disclose AI assistance. No submission is authoriz
 | 2026-10-23 | Added a factual six-part execution report and CPU-only final reporting waiter, including explicit missing-stage IDs, three-seed contrast guards, negative/null result wording and pending human review. This reporting layer adds no scientific estimator or GPU job | Pending |
 
 | 2026-10-23 | Audited and recorded the first eligible main evaluation: corrected Qwen clean-control seed 17, all 240 paired families at 64 turns. Reported 186 paired successes as a one-seed observation, without treating it as evidence for the character hypothesis; the frozen queue advanced to C3 automatically | Pending |
+
+| 2026-10-24T01:51:34.906986+00:00 | Recomputed the ten author review findings and seed17 C3 result; reconstructed actual supervised token exposure; implemented separate memory-removal, contested-character, routing, severity and crossed-validation diagnostics, paired analyses and a blinded actual-action packet. Designed after C1/C3 inspection, not original confirmation. Human ratings and scientific interpretations remain pending. | Pending |

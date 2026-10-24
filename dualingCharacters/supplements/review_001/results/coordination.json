@@ -1,0 +1,52 @@
+[
+  {
+    "delivered_antagonist_peer_messages": 1107,
+    "echoed_option_reversals": 5,
+    "evidence_class": "main",
+    "repeated_directed_coordination_candidates": 7,
+    "run_id": "main-qwen-c3-17-r0-collect",
+    "typed_matching_followups": 40
+  },
+  {
+    "delivered_antagonist_peer_messages": 1122,
+    "echoed_option_reversals": 1,
+    "evidence_class": "main",
+    "repeated_directed_coordination_candidates": 6,
+    "run_id": "main-qwen-c3-17-r1-collect",
+    "typed_matching_followups": 24
+  },
+  {
+    "delivered_antagonist_peer_messages": 0,
+    "echoed_option_reversals": 0,
+    "evidence_class": "main",
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "main-qwen-c4-17-r0-collect",
+    "typed_matching_followups": 0
+  },
+  {
+    "delivered_antagonist_peer_messages": 0,
+    "echoed_option_reversals": 0,
+    "evidence_class": "main",
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "main-qwen-c4-17-r1-collect",
+    "typed_matching_followups": 0
+  },
+  {
+    "condition": "C4",
+    "delivered_antagonist_peer_messages": 0,
+    "echoed_option_reversals": 0,
+    "evidence_class": "frozen-policy pilot",
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "mechanism-final-001",
+    "typed_matching_followups": 0
+  },
+  {
+    "condition": "C5",
+    "delivered_antagonist_peer_messages": 64,
+    "echoed_option_reversals": 0,
+    "evidence_class": "frozen-policy pilot",
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "mechanism-final-001",
+    "typed_matching_followups": 0
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "finding": "paired_success",
+    "observed": [
+      186,
+      67
+    ],
+    "review_snapshot": [
+      186,
+      67
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "rule_strata",
+    "observed": [
+      117,
+      69
+    ],
+    "review_snapshot": [
+      117,
+      69
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "failed_dependency_recall",
+    "observed": [
+      90,
+      80,
+      81
+    ],
+    "review_snapshot": [
+      90,
+      80,
+      81
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "canonical_source_visibility",
+    "observed": 471,
+    "review_snapshot": 471,
+    "status": "verified"
+  },
+  {
+    "finding": "distinct_owned_slots",
+    "observed": [
+      900,
+      900
+    ],
+    "review_snapshot": [
+      900,
+      900
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "final_c5_peer_diagnostics",
+    "observed": [
+      64,
+      0,
+      0
+    ],
+    "review_snapshot": [
+      64,
+      0,
+      0
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "ambiguity_confounded",
+    "observed": [
+      30,
+      true
+    ],
+    "review_snapshot": [
+      30,
+      true
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "historical_severity",
+    "observed": [
+      50,
+      243,
+      10,
+      241
+    ],
+    "review_snapshot": [
+      50,
+      243,
+      10,
+      241
+    ],
+    "status": "verified"
+  },
+  {
+    "finding": "c1_refresh_failed_pool",
+    "observed": 14,
+    "review_snapshot": 14,
+    "status": "verified"
+  },
+  {
+    "finding": "amended_forecast_rounded",
+    "observed": 92.74,
+    "review_snapshot": 92.74,
+    "status": "verified"
+  }
+]

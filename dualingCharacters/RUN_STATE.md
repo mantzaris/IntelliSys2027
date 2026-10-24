@@ -3,44 +3,39 @@
 Started: 2026-10-23. Author-directed research; no submission or publication authorized.
 Repository scope: this directory only; branch `main`; commits local, user pushes.
 
-## Current phase
+## Current phase — review follow-up
 
-Phase C is active after the documented serialization amendment 002. The main
-controller is execution session **14639**. Corrected Qwen C1 seed 17 has completed
-both fits and its antagonist-free test: 186/240 paired successes (77.5%),
-390/480 conversation successes. Generic-adversarial C3 round-zero collection is
-active. Read `artifacts/campaign_state.json` and mirrored
-status for live progress; do not launch a duplicate queue. All 241 original jobs,
-models, seeds, endpoints and training budgets remain fixed, with four explicit
-restart aliases for invalid C1 stages. This first eligible trained main result is
-one seed of the clean control; the primary C5−C3 contrast remains pending.
-
-Scientific source commit: `a62f1881d23df2282b410243ad4575bb11d1d74a`;
-freeze commit `45b79bd`; current freeze SHA256:
+The original 241-stage core controller remains active (session **14639**, host PID
+**787315**). Its live state is `artifacts/campaign_state.json`; do not launch a
+second core queue. At this review, corrected Qwen C1 seed17 and C3 seed17 tests
+are complete: 186/240 and 177/240 paired successes, respectively; untrained Qwen
+is 67/240. C4 seed17 antagonist-free evaluation is active after both fits completed. The primary C5−C3 multi-seed
+comparison remains pending. Every one of the 58 frozen files remains unchanged.
+Current core freeze SHA256:
 `135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3`.
-Twenty-three CPU tests and 58 frozen-file checks passed. See
-`reports/SERIALIZATION_AMENDMENT_002.md`; original and first-amended freezes remain
-preserved. The current source has already been synchronized and verified on the pod.
 
-Both untrained 240-family baselines remain valid: Qwen 67/240 paired successes,
-Phi 27/240. Their inference/environment source hashes match the amended source.
-The original first C1 collection remains valid (804 eligible windows). Its corrected
-fit reuses identical supervision bytes and the identical initial adapter checksum.
-The original C1 fits, dependent refresh collection and evaluation are excluded for
-saved-target/inference field-order mismatch; every artifact and cost is retained.
+The author requested post-review diagnostics in `supplements/review_001/`.
+All ten snapshot findings were reproduced from completed eligible artifacts.
+See its `REVIEW_RESPONSE.md`, protocol, separate tables and provenance manifest.
+The CPU exposure audit counts actual loss-contributing tokens/windows, including
+orphaned suffix masking, rather than buffer-loaded windows alone. C1 round-one
+recovery uses 14 windows from nine families repeatedly. Human review of the
+60-item historical action packet remains pending, with two blank rating forms.
 
-Corrected engineering pilots at 32 turns and one seed: Qwen C3 and C5 each 7/16
-paired successes, matched Qwen reference 4/16; Phi C5 4/16 and its reference 2/16.
-The C5−C3 pilot difference is zero, interval [−0.25, 0.25]; this is not H1 evidence.
-All three pilots performed 32 real optimizer steps. Updated-defender refresh
-produced 19 clean and five failed eligible windows. No score improvement was a gate.
+Only the old CPU-only unseen-profile and final-report waiters were stopped to
+implement the author's new scheduling priority. Their prior states/commands are
+preserved in `artifacts/review_001/superseded_cpu_waiters.json`. No core controller
+or active GPU operation was interrupted. A single replacement review coordinator
+will wait for the entire core queue, then profile and freeze a timing-based scope
+before reading diagnostic outcomes. It caps new review work at two reserved
+GPU-hours within 96 and preserves 30 minutes contingency plus a final-batch margin.
+Review A precedes B; optional routing/severity/balanced work and then the earlier
+unseen-profile supplement run only if their gates pass. Do not restart the older
+waiters. Read `artifacts/review_001/controller_state.json` for coordinator status.
 
-The optional unseen-profile controller is session **68875**, CPU-only waiting for
-the entire core queue and its unchanged 3.5-hour remaining-budget gate. At main
-restart, all attempts consumed 5.339829 reserved GPU-hours; the conservative core
-forecast was 92.742568 hours including those attempts. Price is unknown. Human
-ratings and author scientific review remain pending. Nothing has been pushed,
-submitted or published.
+Source, compact tables and reports are committed on main; bulky prompts, raw
+outputs, tokenizers and packets remain ignored. No push, publication or submission.
+Scientific interpretations and human validation remain pending author review.
 
 ## Hardware and storage
 

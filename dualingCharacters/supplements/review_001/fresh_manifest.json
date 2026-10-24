@@ -1,0 +1,1660 @@
+{
+  "core_manifest_hashes": {
+    "data/manifests/natural.json": "d440dfba4c1dca01c4a9eff9fbd1636b952f5b05d9eb169e2c3030e5f6648d54",
+    "data/manifests/pilot.json": "3ac754960a54f4cf27e529d8e44799c087fc3870af01b419d49e19c053791d66",
+    "data/manifests/test.json": "dd637df704922151e3ec73397ecc47d12cca899bb05d69864ebb83383be1d590",
+    "data/manifests/train.json": "c6d92a9b69dae749df169fd0ed4e34d581af8c9910b85e8b9c3582f2934a190a",
+    "data/manifests/validation.json": "77efc4f3e6e3d690e56f8b68a81e137650f14fcb0639b16197f0f1e7ffbb2ab4"
+  },
+  "exact_graph_overlap": 0,
+  "exact_source_overlap": 0,
+  "groups": {
+    "balanced": [
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0000",
+        "graph_hash": "9388209731db7da1b1f812dbfce82ddb96092c8c4e8b888959503560e8525c2e",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 0,
+        "source_hashes": [
+          "0aeadf5d1e9853ca6fe3c62161e6fb9f410ed0ee45fbb31a09a04691c548f1bd",
+          "39ed7e75c6cc36a9abd713cd33e9efaa2d3d3ed2d56d729a8acb16bd4007c455"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0001",
+        "graph_hash": "fdd7ea0038de42b85a7f43869d56cffb5731ede594095ba69245c2b0fdc9a8c3",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 1,
+        "source_hashes": [
+          "aa1dab5a95e07951075c8763b7d7c1fefd56319f030ec1d733e5022727b393c1",
+          "63f4fc35198b97283681da2ae141ff1b8e4f70fa00f4adfd19f3366593f5a03e"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0002",
+        "graph_hash": "60b8770fdf5aa4d376282866b4adcace566bed4295b1ff53e5104989496fd79f",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 2,
+        "source_hashes": [
+          "6e536622b18bd5f6be78b29fdc60f75558dc78c93ea79f218f8e8347d51fc3a7",
+          "b022b2d4a3b005ff8814c0c214c178becfb30908b1da6650f6f2f2fd457896d8"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0003",
+        "graph_hash": "14ad33d59e05e0f2737fcf536e1c2abae348be0fddb101d4127f243b250d3e75",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 3,
+        "source_hashes": [
+          "a77a114aa223e069000ccea45b10a861a79c66006e9cff0fa827d6b718bb8875",
+          "233c54204ed59d0dc161ed36612e3607303b5173d67fc00cd5d7b1e6ae7ae9e0"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0004",
+        "graph_hash": "8d8eea090de53c1eeb347b8ea4a0d6a8713c6bed656ac9b0862ded14d2fb739a",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 4,
+        "source_hashes": [
+          "99ffbeaf6498bbb65b9114ec6f5ee1b0b7d180ec9a095a78659e08f4bec3f347",
+          "3a7c6fad9b2707715321704ef0146c2935ac09ed24d7117a9186569fb79f82f4"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0005",
+        "graph_hash": "b7d0f075f039c74a162e104d30aff76f79bd4306007ba854a22dc7512e66429a",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 5,
+        "source_hashes": [
+          "5e37eff0e0305574c6ed10149a0879f01a22ae7d25f5b8508b1a1f1c6c71eab9",
+          "22b08e10316e74901eb765be0b20dd4c7557291c777c9426a0f405b128bdc8f9"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0006",
+        "graph_hash": "7938a7ed09b216c83e2d43524819d7a4f5ee1398a95aeee179bd824a148a45b4",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 6,
+        "source_hashes": [
+          "76258ce2462f8b627d036a68716f53b7fdc0d33277558b6f6e0cc16505508ede",
+          "b443d2853cbc8e85b1907448920f88b698d5fb016ea9370122bb28370ba46264"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0007",
+        "graph_hash": "0ef7d8c9021263e800148dd4e3abb8687e012854976f92ce27bc01b025a8e136",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 7,
+        "source_hashes": [
+          "e74f90af059a0a4e5065e522a30240f9724a8cd41a983a44c1b518c5abae05fa",
+          "6704ad098bd84350030a4bf2f5aead358506747b003035873112f3a9ab9c6fc4"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0008",
+        "graph_hash": "4dfb21353cea5c8c7abd1f9298f212b24b7dc836bfd95d5549ba113d9b3d3267",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 8,
+        "source_hashes": [
+          "697d8e41cac911dd1907be0fa8fa5f192ae4102b5742f0a4bb4d04e510fbfd1c",
+          "e114b21894f1d47f791de675c1d263707fe47d4635fcca72e6ee9c8f94b49ae9"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0009",
+        "graph_hash": "476c8de88ca74c07b509923a7d3407138c666257b8d809f0d0c011f7f2810e30",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 9,
+        "source_hashes": [
+          "064efead07af62a01200566dd68530547c60d85716555d59897864c57e1e3940",
+          "534a05fb6f680c3efeb7de522fc3818e3b836f6f970d3d385c08136e4b3ea4f0"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0010",
+        "graph_hash": "c7bf1e2851a0725c2c55cf2678736d895f91ce19e7f18ed4efb2bb1a767251eb",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 10,
+        "source_hashes": [
+          "68829ea8444780e0b00ce24c4ae5a3b0549c6a527405632b823f1f469a67094f",
+          "18cf424a1be3fe731e71d3d748f7f0147079c1f16665c0e58859af07141fd953"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0011",
+        "graph_hash": "8ebf78b9eb556d7ea70e9e4337eaba80587fa3ebef4d0910589f75d21bf993e2",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 11,
+        "source_hashes": [
+          "4288b8d35050d411f2efe781e5fd972438ba19af54cf9408245dd05d9018a44f",
+          "19e4259de02546441074351c14c04415bde1677ac7de176080a7685b37db6c75"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0012",
+        "graph_hash": "84a319e2e3c722b310462c537d0ddabd495424b617aff041fbb6e9d0dec28ffb",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 12,
+        "source_hashes": [
+          "6b5256cdf9e4d864592dfce175d2981e10980e55fd12779e4176deb484f317bf",
+          "9c66f7d5a29b5e2c7edbd8cb49fa5631b1b6e7c083d08d10fa362225da17b343"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0013",
+        "graph_hash": "61a274d36d405c486e57455d9ac83bcd67833c84780fb0de8c1ff2ab9be571f8",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 13,
+        "source_hashes": [
+          "f811f47ebb34fd7fca67ed67f39d32ea982f95c6aa84e2ac1b37e13a85ba3467",
+          "123e77c2ea0840d5e901b1e26aed2315429d20793a587992690d0fa20485f5eb"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0014",
+        "graph_hash": "90340b1b8f851dd2a42e49dacfd99e05025b4d84de48c41a890511a4c414f6f3",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 14,
+        "source_hashes": [
+          "13026b07824f92e6037770e782ce7fe42dc3e7e57265b459a83675334968fd7b",
+          "ac3a204fdeea8686da356fb93d41fbe43b1a71047dc7f570c341096daa09c037"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "event",
+        "family_id": "review001-balanced-0015",
+        "graph_hash": "7915332886ba812ac688965a96fbc05cbb12aa2fa3ded9450849cfde018d6974",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 15,
+        "source_hashes": [
+          "e3adb1e614db12cc7bb9822d2e6fb01bd7fb1b6cd32adaa2f334f68e1dc854cb",
+          "4f39ac5032f32a10d5acf7885622fa94448e05c12b7ac8d35ca23dcddd6fc3b6"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0016",
+        "graph_hash": "4b1b4c8e6aadca67825c5c375c49f59def05455940a37f04a2523042aa8e8044",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 16,
+        "source_hashes": [
+          "44f5a1b682e958d236cf93ea18cc5e909a44655c4553b644011882d0c4f4effd",
+          "11a05167c4d908ebfbe32429bf9fe4dde535ce956b8137f92fc62d21bbc0ce97"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0017",
+        "graph_hash": "c70a925277c896ad97c7326da90eca0a8bacd4a43e56fe6ed381e8ceec181b83",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 17,
+        "source_hashes": [
+          "e733aa5ffcfe9be5539807c5f199458a2a02e09e7126ee2749ea86865dfd21d1",
+          "23aa60ac1d3ac981ffc41494df2d3df78e42ab040119b25b2d761cf6cdfbceb0"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0018",
+        "graph_hash": "0a20386f0962f3f859c0cc7e8c012aa7bcb40aceb0f11615145367a9ba3b57b9",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 18,
+        "source_hashes": [
+          "a87af7380be60ff818dcf0cbc3cf412af1545da738d992ffdcb80d1ac3975e35",
+          "7dc31bf44ce2aab64598eba9a91086750cf527742d819ed7cf497890effa1648"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0019",
+        "graph_hash": "e009f1df5063e8c7ff1bdca9633a6ca241a5b6383c8f8cf68d10c6eea458e3ca",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 19,
+        "source_hashes": [
+          "f7952a34d776dd89ed651e686049899e854cf5eef6a02040471e2f924a686997",
+          "97a6bede26bbdc4001d022240bbf745b1aa8a61b03150e52b46e067b05102bd6"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0020",
+        "graph_hash": "f920eff57c8c8d60b7e8fa487507223c9ffa15e31e2a05adf6c81348f6effbc3",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 20,
+        "source_hashes": [
+          "00fb9265cb746eccb881991ff4eb7e4db2d1b35719b4756a0fca9d17be940c3e",
+          "becaa3d6be083c1a96195ac60575bfcd2ffad1503623e69ceea306f758a90199"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0021",
+        "graph_hash": "bcc31e099091db5a0205c46f53f5c0bd12d32c5e429bc6367eac3c55c5bddd3b",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 21,
+        "source_hashes": [
+          "8e98a30cea4d51ce06b5df85d1d13216eb9d9339f658e0ffc3f7be9cee6f33cd",
+          "77ade1b5f828c087a815dd8038e4a0291649de3b905880fa93ef54702a8fb817"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0022",
+        "graph_hash": "0fb1d45b9a41baf884a812077f98241eea2fc072cac63b74f88e49607dd7af03",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 22,
+        "source_hashes": [
+          "fb2280c00139042b8fcbd7ac81af2a5a1a349375cfc490ab7c21ef9decb163b6",
+          "a52c37ee74ba5171a9609dfe01ba88c2e4231252d81dd23ec7e32de5571fd130"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0023",
+        "graph_hash": "bef84dd9dc8ffaf056e87ad7373dda9bc51a8a642578daa90250910f621620b7",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 23,
+        "source_hashes": [
+          "8ace81ff1990ba570e2d4247f22d8efe1e70dfe0c128690cd1bca7dc217fb70a",
+          "2c2e74f09046405c1ce64af14a66b7f0ce44d3400b0b1ecca8e2bcf6f7223df2"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0024",
+        "graph_hash": "0a89ec07781b74e1037364ec608da8c3ef2325932c44020a15136008374732ca",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 24,
+        "source_hashes": [
+          "ba468e3926fef8df4ace46fd35b0db0985154a5ed99d2db07268bd11139060e6",
+          "89e5edca23d3f311e28babdfecf6d1fc34e15802195da1368fc82c214ea6a292"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0025",
+        "graph_hash": "ac4552dba73fdbe9c368665dd71b556e33c47004bc31306c34d51465817ad4a8",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 25,
+        "source_hashes": [
+          "311e224c74618f07a3c5b1f0b98bbbf7b31938bbb3dc7b2750e4a80f47ea10d0",
+          "e633fe77b3347be3a5f4a64d2087e99e600041c7a7c5846559deda5b08812ce5"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0026",
+        "graph_hash": "8a2cbcdfddc2265ff43b337304c599351783d25829c9388ea0b60854405369e6",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 26,
+        "source_hashes": [
+          "e6c7d4d84d2c4ac88a61c38f3f0250d85f5cbaa70c5df46c62b6644f48411be5",
+          "1e79cfdc9ed3010f127a38a3125c9bb76f65597800e82d2a631c7f213ade9912"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0027",
+        "graph_hash": "538ca7b4e98962e9054b83ed0c975e3301228ecf13250f2f4f4a0734ec93e14f",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 27,
+        "source_hashes": [
+          "e2de1635dedcebf30c0eb3c5c68ee510a156cf4d577434d57c182f822752cdde",
+          "49f168599799bfd1e2993770529c4a8e0a038b5c75654ee9bb703cac9a68fab4"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0028",
+        "graph_hash": "69e99c00717773e1723c194925e18a4c847d70dd85c7a5a121b218dce97995a2",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 28,
+        "source_hashes": [
+          "438f3153e4a60481f68f0af5b3a43a3f94d939ef9e25cede42ddbdec364c47c2",
+          "e13ef02bfe4a9585c0521a9eec7fc76a48686e674345716dea3476673dd5372a"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0029",
+        "graph_hash": "d2bb85809178ca51b9d0415f0acd0e9dc987b790ef147d832d02785e5c82fc45",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 29,
+        "source_hashes": [
+          "332feafb88061f0c2ee3d15006fb7b4fd18ab60a50d439048e7e609349f5ebc6",
+          "249413108eedc87d8f25f445288685ca9b570d7c5ecca9f6cbe234979cf84845"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0030",
+        "graph_hash": "2270be7d1de2b56b3b1c756133432b0747dc9b6eaef106267f27a7d5d4bab8ae",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 30,
+        "source_hashes": [
+          "920cce9b3eb8837c10e347dcc1e58f98edcf5e59a51af3d532b977ddfeda06a0",
+          "15ff529e749415e1da26c386476ef2254dea093fd9f38390c17f64b0a412e568"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "software",
+        "family_id": "review001-balanced-0031",
+        "graph_hash": "bf7b424683f274b6f1308a38c065c402fb5215c8dba133d8bae2d31290b1bcbd",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 31,
+        "source_hashes": [
+          "bc5623d618787f9d024017137735930b0a4d5975d1222c585126cc661c9ecb08",
+          "a95ab8713210ea5bedc080f55794b3404fe341d778eb70a2878c2809047ebcdd"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0032",
+        "graph_hash": "8c2f05a8746ced8df4266595cdc5ec90cb2c775b35d3edab6bbe1ddbbb383d17",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 32,
+        "source_hashes": [
+          "4f4891af010fdb2c86fbd2ae1c9876340411e5a93a8d49f6184a630b6c45a49f",
+          "0fddd86b82e741de32bdc6d365d823870d9f8ff48a5b2436616d071aae745256"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0033",
+        "graph_hash": "0a52c817a014a2370f38349cfd9a4e51b28e0fedc751cccdeec7900a5cd37a06",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 33,
+        "source_hashes": [
+          "d8d03b75e8ea0b922c401f39aaa7013577c8f20fd5ae62b81c30539ea293662f",
+          "8b4f6ee46125f6fecf9387264589a455687424200197720547c5673265ffe73a"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0034",
+        "graph_hash": "fa5c2f9a43303acf0ff6d66394ac1c7dec8a7d5c3957a4f74d97b070b7599688",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 34,
+        "source_hashes": [
+          "884fcc13f1201620a582ff3885401368be0343cba590e965c021f8a00d566352",
+          "6c00b0d8698dffbbb7cdd54f91e85bfea7bf3213169c19fc2d08145361d7a6d8"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0035",
+        "graph_hash": "33e30043fec6994209e069c908a88f1eb15755dab915fae3be57e468b17fc791",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 35,
+        "source_hashes": [
+          "25f070a68f3c84385d2b5e07f8b23091c6ad5ff21e0ab9a247e4543e04e9e278",
+          "b1deb2aa63903903d0cb83a2ce6adc2168cf54c1335eeb0a9cd3fd118353a340"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0036",
+        "graph_hash": "68503e6228fadc1f0cbfdf01e29ee5791138b1a1b050f83f8f02def5324c2c51",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 36,
+        "source_hashes": [
+          "9e5116811a6ac7d137ce3a407a21ec13c1d6f7944d5d4f0ad5cbc7d0ee361337",
+          "6bc32c5d9c6dcac61d1257a95c7a9829b15504ca4bd0d45d4065baf387015c8b"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0037",
+        "graph_hash": "fed13664c98eee8bfcd9ddc419cb418be41bad722f483ea5dbf0225482cf5f6c",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 37,
+        "source_hashes": [
+          "3af71c708bfa9bf0654fdf1dfe80362cff8605af432d9b18dd9c524647ee5fa5",
+          "ebaac9ae096e38b1c7a879115ae684143e90bca72dd34422f9b6f606843dba91"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0038",
+        "graph_hash": "c2d6db36e4816af9a60aa190bcf8dabb903234a71a00942a1f1a499ac1b80b67",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 38,
+        "source_hashes": [
+          "ec3bbbd1fd7a3d4720dedc7a75bb85bcfa7c7d0a10cb5b3cc2b98b127ec80fe5",
+          "660d803c85bf4b7a48c178854f4c57b7d842aa84d1b2b2bb5a948202dd6cdeec"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0039",
+        "graph_hash": "fdc354a08080fb112fa1114a9f2f13224ac946f2afacd70e405645c1ecdd5805",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 39,
+        "source_hashes": [
+          "3c2e5082bae869babb2209819af273d3e1d22e71c7b109b3f5512ddc6711ea49",
+          "ced56a05bfde742a90b7d4046739d57a8313d3f869bbf987bdd0ba2a34c06424"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0040",
+        "graph_hash": "2d58fdbdac6d70cf89c9ef01dc5016305e884781396abbf5a984699b49c36402",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 40,
+        "source_hashes": [
+          "11d01c96c35922fb1bfab42c3f0ea94fb8d91785199350cdac873addf0394501",
+          "b9de3aef6c8011ece69eb4b0e2a3933c05052a9d409fa359d61a462a98307342"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0041",
+        "graph_hash": "074e50132d51ed419019fb4ffce078c34efd9c556bcd4c48a26fed7eb739ea20",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 41,
+        "source_hashes": [
+          "bb80256e7882e1e72910970026272a7a21945bbc8d14c6cd8538b3b620cac3f1",
+          "8c5b695ac187ef7172fa29ab6cd51ae9ccf90e00cb41cb63b97bd3791108af23"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0042",
+        "graph_hash": "cde115bd22b60147c9c547a9993a640030ea9f9a77c761efb1f4c6b46d187ab6",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 42,
+        "source_hashes": [
+          "1d90b2b92641a9c3bc36f3a283297c550e0956e1f11a869be929e4f02c02155c",
+          "f42cab49603ee7d39efe6419060b148bb010901d8b4ecadb5589d8357d6c13af"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0043",
+        "graph_hash": "228c79519a7732abd05c29e6d3a3dd1a475610546f57e82864a149badc97deb5",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 43,
+        "source_hashes": [
+          "7fda0ef7ba365963aecc829a11c4f92901cc443856a329a8bc614454cd5e0b15",
+          "c15f20a1d2192ae70d27611ecc7bdb79da4f677f702aec46cabfe81ccdf4a066"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0044",
+        "graph_hash": "750abf1d74d3c94c957e49b2493bce231aaa188f6f6d0bb9388399a9e0892fed",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 44,
+        "source_hashes": [
+          "d72989ef9b4123df6d7e6444111599e0c2b3adf2964c94b80739c0cb3f8bbe04",
+          "77a54ecbe31e1329975a35e12d8650c632060797bfcf7ef9093d3eb0d211bcb3"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0045",
+        "graph_hash": "224bd5a1c4c85c37a623a5f5fa733644e5d1e26a76d4b1526858e1f5dc2a1286",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 45,
+        "source_hashes": [
+          "56db4028bad1602257e15ed7dea2c00447ada73bbd968c1e02c8e4cc79e7336b",
+          "32665a8c2d27bf2e82885e49bd97b72adf7d273c2ae34d49e15dec4cabd1eed4"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0046",
+        "graph_hash": "88ceb692de9e82a59766f26ad443f890040df80da8881874204d2c69da9f7613",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 46,
+        "source_hashes": [
+          "688e616f05528ef0a32348b2410ffc5f35a188e5940a28f4b29cf36b30f0fe54",
+          "7b611f65c09eae5082bd82be3696a74cd0039a4724939b2b0b2f075d477ae7b0"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "research",
+        "family_id": "review001-balanced-0047",
+        "graph_hash": "d7836e9a91cab0e36d9390ec757ec3e4f606decac9eb3b7d6b7d77fc770de343",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 47,
+        "source_hashes": [
+          "bfad2c09f0c36b94c84a5eead8e1b87e5f6347a5ed83e30cdff7f47010d03c0b",
+          "6ae2c5301f1a3b9d62e4e95a9621ddad68ddbc3ade0422137b3c4c14e84c3304"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0048",
+        "graph_hash": "28995abbf05a2ce65f02f01e0db5f6c6dbd610d49fc142e62fb509fbab332ccc",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 48,
+        "source_hashes": [
+          "13fbeaadf5de35756420fcfbab2abb52d42b1bb8789298059186c8ad9d31329f",
+          "56fce9b9b45813baaf1903aec91d16ebe871e69b14b04732f0c483a7c4fe2b6b"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0049",
+        "graph_hash": "c4e5cc8cc4efa9c98e7815819da9ad4fd5b99a400bf35d22847c64adc10ffb69",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 49,
+        "source_hashes": [
+          "ddaf6ae0a1ac09a3c37646fb0fd35fc7f92fffdf50c333a5492d1250f17930f0",
+          "7d9a732e6d53caf487bef5dcfd0da39e6221c27f09f4966d6f6ac45770b39105"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0050",
+        "graph_hash": "134ee0e7382b9c62a78d78a59b8ec9840d8f2d76bc0afcfd8e079e38f974a0ba",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 50,
+        "source_hashes": [
+          "4e37dd5a8d65298a1fa08f009fce8cfcc1a0df18e4858fb88416a15435755a5d",
+          "b5668492d56fcd24ebe937fb1bf5558289ef62dd158c75e7298fd27e12c4be3b"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0051",
+        "graph_hash": "f06370695fff6a626fa4917b54dbe4d62d84867c8477d8a5cbf489c08e57f0f2",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 51,
+        "source_hashes": [
+          "163eded1eb868b879aa55a07f44c9048708cc65f6106053f1e4cd9a01012a902",
+          "30dfa236619ea9017f7286d7ba288a71e9a38869add75003b5f23a784a7ff056"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0052",
+        "graph_hash": "d5197887184fe8811ade313ca699709053cb95d4d6133d82915533eee730fb90",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 52,
+        "source_hashes": [
+          "0cc0166b0eca7ae22b180f88d0cc7d232b9a7bb370dcbe0eba47a2a51637b582",
+          "b30d4af1e1093a1f2453dfa4400b762a7d120e596e91d111dbf4ace7dff97fc8"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0053",
+        "graph_hash": "ff7acca328c862c038504d09a411c123e59c74c37987e2f4ddb99c8f4e8c721e",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 53,
+        "source_hashes": [
+          "074eb9cb30ed14cb8daabf28bee8b628e93b196ba9a4bb35e2bd92322eeb77b2",
+          "19d59f6e5ed3455411e54a424de619c213acfce203a5ff676dff55ee3fb82cb5"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0054",
+        "graph_hash": "ffcf63f31bdb03bb4634031688fbedcaef4f8eb5bdfe1237ad883b358c2b6f17",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 54,
+        "source_hashes": [
+          "c380d6da83c6329b89c94085974d6e11aead66ec2c301c11518560059ddfcb29",
+          "f2d3cd633055b9967afe7314cc6670c01c5737b975f5c37887a2822424d69591"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0055",
+        "graph_hash": "096743d6cad583eaef55fb3626528d64368c4d3d20a2ea4447e66fa8279cfb0b",
+        "heldout_rule": false,
+        "horizon": 64,
+        "number": 55,
+        "source_hashes": [
+          "945338f00fbfd16f6ac7aa5424d9fbcb8a2086bac57cc145862767a1e05c5b7b",
+          "52874d3e2040bccd1c01d54d2ba60c13015920750a97572de0142dfaf8e69eaa"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0056",
+        "graph_hash": "1b3790e8e02431ca8bddd5718a5ffc454826c8c529fb42b47c173a0f91d3110f",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 56,
+        "source_hashes": [
+          "85debb8ce69b0618e97d909d89bb1edbe972f58a8b6642b16d0d44171b7d517f",
+          "b486a6962c06a7949dafc1c7d0812a22a61d3da1f9fe67bd9fcb1245005330d3"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0057",
+        "graph_hash": "379c4faa9107a350ffdf1348e6f5507594342762e7021baab360241208dacc2c",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 57,
+        "source_hashes": [
+          "194579c1be043188768155c1fb54abe97dba89a30694f3adc9a07f4c3aedc9df",
+          "ca916f546017271261b0f37dfe838f2fbb175971d4f2645ce617871969a84975"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0058",
+        "graph_hash": "80ded0c1053e564ae57d8cd430010f0f1cb49b974c8fe95e970d70f0cf9856fb",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 58,
+        "source_hashes": [
+          "84bbe33d9bdee9ed5b9fa42c4db109408fe3425ce22a54add531fbb108c3091c",
+          "39780b095c2ebd494201e4e67139b0dbb31089d825eb813139fcbb483158ef40"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0059",
+        "graph_hash": "9aff06a776d853294649c7ddde7156cdc1d726d656e6b2ea5a118c4c0cd347e5",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 59,
+        "source_hashes": [
+          "23fa2fb02b89f1935905abc9c914241fd5c86ed5ef8ec96e517a639d8e250df0",
+          "0340d1686a45131acd02bfe81664acc924946bcfb743aeeb5557d75ab6ce0d0f"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0060",
+        "graph_hash": "eec213e8e679cf6d61ca2f838b81fc0a6971a62580459f2bb9c2d13e15ce384e",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 60,
+        "source_hashes": [
+          "741a4a12d6e5558402403860c66400ffdf8e7be5767c2dd7b82cf7cdf5c8389f",
+          "285ebed40d349ee5327fe8180675de6d9b5739df969b569c74c764877ed21160"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0061",
+        "graph_hash": "bd2504409a4292c449c3fb53744934eed5e806bdc80e8738ad15debabb8595dd",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 61,
+        "source_hashes": [
+          "08d32ab0cbd58f615f5051d01e092f3b311f4f2070a096f06cd54c2d5244fa1e",
+          "7035ab6822bd73cbf16331a901bc29dc86646bc953ea5cbcae88d3024511d53e"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0062",
+        "graph_hash": "b535bfb42f05ec333084fef4b11668058e1f76eac97d642637edabe303691a86",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 62,
+        "source_hashes": [
+          "12c059b5073f0ae528379e1941f5b556df7ee13cfc3a4259e9704f437d37acd8",
+          "7c0b4bbba459cfd6a360ff1de122de5d63bc8052eb308ee557059b130da6aad8"
+        ]
+      },
+      {
+        "ambiguous": true,
+        "design": null,
+        "domain": "creative",
+        "family_id": "review001-balanced-0063",
+        "graph_hash": "75c0454d67cf50001a05b99ed20fab86657e242f041a5ac0c7cd25090422313f",
+        "heldout_rule": true,
+        "horizon": 64,
+        "number": 63,
+        "source_hashes": [
+          "de9a28c91fc233e8bf92acd7a596fd4c940041714a0170baeaafc44e5af8479a",
+          "ac077fe1babeb80a5788e7b55b6acafbf436e81f577070efc47528c50eb69cf4"
+        ]
+      }
+    ],
+    "mechanism": [
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Robin"
+          ],
+          "first_role": 1,
+          "hyde": "Saturday",
+          "initial_alignment": "Rival",
+          "neither": "Thursday",
+          "other_slot": 1,
+          "profile_variants": [
+            1,
+            0
+          ],
+          "rival": "Tuesday",
+          "separate_rival": "hybrid",
+          "slot": 3
+        },
+        "domain": "event",
+        "family_id": "review001-mechanism-0000",
+        "graph_hash": "f74e016c658d4c1bd1aca7b32f3c9c46be6cd90d09739b9ab38150edc327ee0e",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 0,
+        "source_hashes": [
+          "439eac239a4e1c7c7959fadf225d54280e4f6626c2c6302b1e2a61981c8f550e",
+          "b45bd7d4e591815c8960e16daed01a6a2124f23bc6333ee50cf0494a879344f4"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "Thursday",
+          "initial_alignment": "Hyde",
+          "neither": "Saturday",
+          "other_slot": 2,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "Tuesday",
+          "separate_rival": "7000",
+          "slot": 3
+        },
+        "domain": "software",
+        "family_id": "review001-mechanism-0001",
+        "graph_hash": "db0e47732b0e1cc0b3d6d65b2377848d30651f65809afab4fc9df93c84816741",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 1,
+        "source_hashes": [
+          "fbdfe4f1f59181e9123d03e98b5d03e5db52589c6cca62844735ef60184f77c7",
+          "cbed7167bfaa9c7c1a35a5179acdfe259acb8555bbb4bce3195c11eb1cdc44fa"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Robin",
+            "Sage"
+          ],
+          "first_role": 0,
+          "hyde": "hybrid",
+          "initial_alignment": "Rival",
+          "neither": "online",
+          "other_slot": 5,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "onsite",
+          "separate_rival": "Cedar",
+          "slot": 1
+        },
+        "domain": "research",
+        "family_id": "review001-mechanism-0002",
+        "graph_hash": "f20cf72cf6c5af20cdb56f816f4e18b8c054ce5ab3e57a72d9cc5d502d5dc9f9",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 2,
+        "source_hashes": [
+          "42ade7353fafa9f5af98143a21aa49c1305367b0c4e3c361c4911aac81eb9b35",
+          "7379e963b363c8a95ab086cf0358a173f65f3e51c9308b6bbb739ec4473776c5"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "Maple",
+          "initial_alignment": "Rival",
+          "neither": "Willow",
+          "other_slot": 2,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "Cedar",
+          "separate_rival": "7000",
+          "slot": 5
+        },
+        "domain": "creative",
+        "family_id": "review001-mechanism-0003",
+        "graph_hash": "2220d923c030ee966dd104dd2ab91e96e2f11cd39f5e942653de9d02404aafe7",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 3,
+        "source_hashes": [
+          "786ca0a40e02a0e4c9046d3ccda445e1b04bec197dd88547b41559ae90a57724",
+          "0c8aea1e837ea78741bcbbc376984d6bcf15ef1313b1ceb7736c8e6e293353b2"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "public",
+          "initial_alignment": "neither",
+          "neither": "specialists",
+          "other_slot": 5,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "students",
+          "separate_rival": "Cedar",
+          "slot": 4
+        },
+        "domain": "event",
+        "family_id": "review001-mechanism-0004",
+        "graph_hash": "3e425f286ec3c3997d0923c11ed288dc3a6aaa9a84a2f455acfe3f0078b5730f",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 4,
+        "source_hashes": [
+          "46780de6dfabb97b94c14c986bc529fb07f596ef643949868a0f3a8ff70d9197",
+          "f3a6c930f96da44b4713ea46fcd01899035c7095de31c1eaac7258beb6e03631"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Quinn",
+            "Robin"
+          ],
+          "first_role": 1,
+          "hyde": "onsite",
+          "initial_alignment": "Rival",
+          "neither": "online",
+          "other_slot": 0,
+          "profile_variants": [
+            1,
+            0
+          ],
+          "rival": "hybrid",
+          "separate_rival": "Garden",
+          "slot": 1
+        },
+        "domain": "software",
+        "family_id": "review001-mechanism-0005",
+        "graph_hash": "e8f4883462d70552021b0af6bc0269adf808e236633c6216a71b374b5f6effd4",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 5,
+        "source_hashes": [
+          "f2f99d5367da3f285c36e79e8bc4ce557b41790995dae12a16905920c8ff80d3",
+          "6cc9708c8f056118fb123e0a7a408174c8e238bf3c5b88e82508e789684b8771"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Quinn",
+            "Reese"
+          ],
+          "first_role": 1,
+          "hyde": "Tuesday",
+          "initial_alignment": "Rival",
+          "neither": "Thursday",
+          "other_slot": 0,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "Saturday",
+          "separate_rival": "Garden",
+          "slot": 3
+        },
+        "domain": "research",
+        "family_id": "review001-mechanism-0006",
+        "graph_hash": "89613dc10d9739adbdefa62bc852beab39749edf72b88708cb91e18c1c662c62",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 6,
+        "source_hashes": [
+          "0d7aba8c3ec7ad249d386178f6140767b27d750dcddafc4028d4a138beeede19",
+          "9ecce501e2569033d182531838fee71fd94d6e3eac48937d4e8d356973f0c76e"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Robin"
+          ],
+          "first_role": 0,
+          "hyde": "students",
+          "initial_alignment": "Hyde",
+          "neither": "public",
+          "other_slot": 0,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "specialists",
+          "separate_rival": "Studio",
+          "slot": 4
+        },
+        "domain": "creative",
+        "family_id": "review001-mechanism-0007",
+        "graph_hash": "336f07b3abd3a66bb4db5e9e16b5767cba883048e84fd9f753fab6ba9d498ac8",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 7,
+        "source_hashes": [
+          "97c1a644f2f69135e9bc282dd0356bab2af921a54b8422ffe5a6f9240cd8153f",
+          "0073a009f7a144bd81f37d410fe98692cb4ad1eb7aaa535f84a6752ed4fe56e2"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Robin"
+          ],
+          "first_role": 1,
+          "hyde": "onsite",
+          "initial_alignment": "Hyde",
+          "neither": "hybrid",
+          "other_slot": 2,
+          "profile_variants": [
+            1,
+            0
+          ],
+          "rival": "online",
+          "separate_rival": "7000",
+          "slot": 1
+        },
+        "domain": "event",
+        "family_id": "review001-mechanism-0008",
+        "graph_hash": "654a3239878f070d485e52419d1c044a593dac98b881b154af6a189050ef3814",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 8,
+        "source_hashes": [
+          "0f8661dcaee0f80ed8b8befd072e78b6aa7496d62981d984c816e78dad56da87",
+          "8cd0b9e88c69de001b79090697bf6295cf286975fdbda712284e94f0e3819fc5"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Quinn"
+          ],
+          "first_role": 1,
+          "hyde": "5000",
+          "initial_alignment": "Hyde",
+          "neither": "3000",
+          "other_slot": 5,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "7000",
+          "separate_rival": "Maple",
+          "slot": 2
+        },
+        "domain": "software",
+        "family_id": "review001-mechanism-0009",
+        "graph_hash": "5448201d9c5171bfebe1094e5bd77efc2dead5b96701e544bc7d7d50bfab678e",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 9,
+        "source_hashes": [
+          "5fe72b9aef24af8c463bae673fe895d4c60f87d2106cde4b91f157fb63df232f",
+          "631d9d732cd9f7c1549b7396dfee49eb8cb75dbec4b2ef1e6f66e5648a3c2a27"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Robin",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "specialists",
+          "initial_alignment": "Hyde",
+          "neither": "students",
+          "other_slot": 0,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "public",
+          "separate_rival": "Studio",
+          "slot": 4
+        },
+        "domain": "research",
+        "family_id": "review001-mechanism-0010",
+        "graph_hash": "92bda479303946948a5cdd573ba8d91be70d193603cbcbe1efbe64fcb072f813",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 10,
+        "source_hashes": [
+          "1f1a8478c01e33222cf1308f57e4c0c48ed2921e5904faf0107447b49b1b50d9",
+          "d72f19cab7416755344b7a923f69e4eec8734922f3220714b5bfd7c16ed409c2"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "Cedar",
+          "initial_alignment": "Hyde",
+          "neither": "Willow",
+          "other_slot": 2,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "Maple",
+          "separate_rival": "3000",
+          "slot": 5
+        },
+        "domain": "creative",
+        "family_id": "review001-mechanism-0011",
+        "graph_hash": "dcc780872eee20de2db4c8c23df9dce9e04a9cdf4ddf756533d7068e10bf7912",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 11,
+        "source_hashes": [
+          "5fe8c60ad5a48bc4e872238c125270c9b706c5de9a4b3ef92e59dddc491a70a7",
+          "d65f20bfe1442308e2d64a6e1fa8aaab8a547053c372ee3b1186f866026311af"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Robin",
+            "Quinn"
+          ],
+          "first_role": 1,
+          "hyde": "hybrid",
+          "initial_alignment": "neither",
+          "neither": "online",
+          "other_slot": 2,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "onsite",
+          "separate_rival": "5000",
+          "slot": 1
+        },
+        "domain": "event",
+        "family_id": "review001-mechanism-0012",
+        "graph_hash": "291e12129872c46b5df267e7e150934679e5811b7c36ecc27a6b444365d6b2ec",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 12,
+        "source_hashes": [
+          "f83214d517fa2b2157d67ea1cf1245037be74d15d4c589b92eaf664354f29da9",
+          "aa6aacb8f66b906498fbd7edbb3037079cb71e4e579a44dd69357a6c18043f71"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Quinn",
+            "Robin"
+          ],
+          "first_role": 1,
+          "hyde": "7000",
+          "initial_alignment": "neither",
+          "neither": "5000",
+          "other_slot": 0,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "3000",
+          "separate_rival": "Studio",
+          "slot": 2
+        },
+        "domain": "software",
+        "family_id": "review001-mechanism-0013",
+        "graph_hash": "89cadfa803e6ced3219bb4f4041530f73d91a05c25ee4503a77581157b40ba66",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 13,
+        "source_hashes": [
+          "3c0f9171adf4365c160c41f42f0e1d167f73cac37444ca00aa703970bce2d7c7",
+          "db5f5622d75076e485ff57699ab1ee3acb969af845945b010ef2dd9c8d818258"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Reese"
+          ],
+          "first_role": 0,
+          "hyde": "Thursday",
+          "initial_alignment": "neither",
+          "neither": "Saturday",
+          "other_slot": 4,
+          "profile_variants": [
+            0,
+            0
+          ],
+          "rival": "Tuesday",
+          "separate_rival": "students",
+          "slot": 3
+        },
+        "domain": "research",
+        "family_id": "review001-mechanism-0014",
+        "graph_hash": "ee8b2deb28787c87156abd1838a768679f5d21e054ed1087bf6e3a4ebe251232",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 14,
+        "source_hashes": [
+          "45bc2e1726f4eab14fae7f8ff2cf653887adbb965f6381836724aafdc11e09ca",
+          "9d36e6607cad321640b582c919b22be5d871ad4c30d8c3c63fb02319e9bbae0c"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Reese"
+          ],
+          "first_role": 1,
+          "hyde": "specialists",
+          "initial_alignment": "neither",
+          "neither": "public",
+          "other_slot": 3,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "students",
+          "separate_rival": "Tuesday",
+          "slot": 4
+        },
+        "domain": "creative",
+        "family_id": "review001-mechanism-0015",
+        "graph_hash": "7984c13259afebabaa81a1c67ac7f37ade9b9bf15560a8a172d75494455e5350",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 15,
+        "source_hashes": [
+          "ba671784f5993d797ddc4ff4e94571a4d8a12f5f75e029ca3b9ce83c7b818396",
+          "30063a6a041adabe9a2a92b13806ed6d3695606d3196b4f7ea5e50de4b0d2da6"
+        ]
+      }
+    ],
+    "profile": [
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Quinn"
+          ],
+          "first_role": 1,
+          "hyde": "Saturday",
+          "initial_alignment": "Rival",
+          "neither": "Thursday",
+          "other_slot": 4,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "Tuesday",
+          "separate_rival": "specialists",
+          "slot": 3
+        },
+        "domain": "event",
+        "family_id": "review001-profile-0000",
+        "graph_hash": "da4fc9f36fc6267e19fbe170c559b0f6159a0616bfd3039c7e50b82ecbc3f7a6",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 0,
+        "source_hashes": [
+          "fae2a839ad988ff6ae5794588965e7744804de68cfd282f142fc51a9786bc422",
+          "5694373cddf73aaac5eb600b8d9a62b437e9423ae66c9dc747f1b734882f68f1"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Robin"
+          ],
+          "first_role": 0,
+          "hyde": "Tuesday",
+          "initial_alignment": "Hyde",
+          "neither": "Thursday",
+          "other_slot": 4,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "Saturday",
+          "separate_rival": "students",
+          "slot": 3
+        },
+        "domain": "software",
+        "family_id": "review001-profile-0001",
+        "graph_hash": "9b9a332437c7eee4b9af10588941203e9d04d0191453fea055b84c3d921c729c",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 1,
+        "source_hashes": [
+          "c457b99fbae03ec3269e34ae8d9726067e6faaef85fc69030a5bcad9f2a1cb39",
+          "604ff770029784983abcb3816da5535cfa870ea642c889db4d9813038ee91457"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Robin"
+          ],
+          "first_role": 0,
+          "hyde": "specialists",
+          "initial_alignment": "Rival",
+          "neither": "students",
+          "other_slot": 3,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "public",
+          "separate_rival": "Saturday",
+          "slot": 4
+        },
+        "domain": "research",
+        "family_id": "review001-profile-0002",
+        "graph_hash": "7aff6b43e31871d0a97e12dd58c3fcadab38bcd39f240ca145274081247d24bb",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 2,
+        "source_hashes": [
+          "15fc6b6962257922e82c1a0aa5c533ae9dcbd183fef71471297a4750b8698b12",
+          "f8ced34957f37fe83337c10d5149e3968b335b5879dc2d690996891f7cfdfbc3"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Sage",
+            "Quinn"
+          ],
+          "first_role": 0,
+          "hyde": "Garden",
+          "initial_alignment": "Rival",
+          "neither": "Harbor",
+          "other_slot": 2,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "Studio",
+          "separate_rival": "3000",
+          "slot": 0
+        },
+        "domain": "creative",
+        "family_id": "review001-profile-0003",
+        "graph_hash": "6f623eae5fcf2f499930a05fb9e83592b277d002b5f715a46f5b8c0f31b08503",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 3,
+        "source_hashes": [
+          "9af984352d25a4b174b3d733c381aac8b214493e7985cea75b877a9f9741de02",
+          "dad3f48cbc780cf608841bc1ffcfb1b39f427890fe2320f050178df498cb60f7"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Quinn",
+            "Reese"
+          ],
+          "first_role": 0,
+          "hyde": "3000",
+          "initial_alignment": "neither",
+          "neither": "7000",
+          "other_slot": 1,
+          "profile_variants": [
+            1,
+            0
+          ],
+          "rival": "5000",
+          "separate_rival": "onsite",
+          "slot": 2
+        },
+        "domain": "event",
+        "family_id": "review001-profile-0004",
+        "graph_hash": "3b6ea2b263ca9ad8df751fa4c445d2fde337f6f1fdf782eea6c73f70a530426a",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 4,
+        "source_hashes": [
+          "e974271451c00f20dd9b2715d650880e462ff5afa69d357fd2c126eacf858105",
+          "9672be5724bd5392951e2c01797c89e13d477f8172431b3c8477f6e8ed9d10ac"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Sage"
+          ],
+          "first_role": 1,
+          "hyde": "Maple",
+          "initial_alignment": "Rival",
+          "neither": "Cedar",
+          "other_slot": 3,
+          "profile_variants": [
+            1,
+            1
+          ],
+          "rival": "Willow",
+          "separate_rival": "Saturday",
+          "slot": 5
+        },
+        "domain": "software",
+        "family_id": "review001-profile-0005",
+        "graph_hash": "ca413b80dbe2f75b33b2b9c031b4df5ccf5b5b9fd30975863f32588dd6e7ef92",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 5,
+        "source_hashes": [
+          "800b09ced17dd80bbce8264ea251fb9fee141c04b106937e6585ee5c535df204",
+          "7e079ac765e7943caeba4ef2f0dd7bc0693e14e4257b29dd443bcc7af322b1f7"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Quinn",
+            "Sage"
+          ],
+          "first_role": 1,
+          "hyde": "Saturday",
+          "initial_alignment": "Rival",
+          "neither": "Thursday",
+          "other_slot": 4,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "Tuesday",
+          "separate_rival": "specialists",
+          "slot": 3
+        },
+        "domain": "research",
+        "family_id": "review001-profile-0006",
+        "graph_hash": "7809b543fbc6b6bb8df95b3398e469ad6ead6045810994d61c7cd0c8559e4621",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 6,
+        "source_hashes": [
+          "c71d4a0d9b5f1bbacda8778be3941d732a07a5dd0b952392552accd464e4b63f",
+          "c1529061262be002e0c13918e90a8981385c352c99678c20be75703e616cc40f"
+        ]
+      },
+      {
+        "ambiguous": false,
+        "design": {
+          "aliases": [
+            "Reese",
+            "Sage"
+          ],
+          "first_role": 0,
+          "hyde": "Saturday",
+          "initial_alignment": "Hyde",
+          "neither": "Tuesday",
+          "other_slot": 1,
+          "profile_variants": [
+            0,
+            1
+          ],
+          "rival": "Thursday",
+          "separate_rival": "onsite",
+          "slot": 3
+        },
+        "domain": "creative",
+        "family_id": "review001-profile-0007",
+        "graph_hash": "9c7b3f725cc75661a0102860614556b81e52f5a6e71b4c78e121247237f16b45",
+        "heldout_rule": false,
+        "horizon": 32,
+        "number": 7,
+        "source_hashes": [
+          "f9c790b9750ee1801d30dd57630832201070c58d9193d4fa7b8500400a2efff2",
+          "7a7c6fe9ea62c49972b3965cfc2238bce81aafe5f5f7703b313fdb2f3dfb8ceb"
+        ]
+      }
+    ]
+  },
+  "qualification": "Fresh IDs, surface text and exact graphs; the original six-slot ontology and dependency types remain shared."
+}

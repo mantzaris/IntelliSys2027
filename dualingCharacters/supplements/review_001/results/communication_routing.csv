@@ -1,0 +1,13 @@
+run_id,condition,seed,evidence_class,slot_type,opportunities,kind_peer,applied,rejected_or_undelivered,direct_peer_notes_to_jekyll,antagonist_recipient_deliveries,source_visible_contradiction_flags,shared_memory_changed,kind_propose,kind_recollect,kind_edit,kind_pass
+main-qwen-c3-17-r0-collect,C3,17,main,reserved,1200,1197,1196,4,89,1107,0,89,3,,,
+main-qwen-c3-17-r0-collect,C3,17,main,direct_opportunity,2400,,2400,0,0,0,1235,2400,319,272,1809,
+main-qwen-c3-17-r1-collect,C3,17,main,reserved,1200,1200,1200,0,78,1122,0,78,,,,
+main-qwen-c3-17-r1-collect,C3,17,main,direct_opportunity,2400,,2400,0,0,0,634,2400,321,353,1726,
+main-qwen-c4-17-r0-collect,C4,17,main,reserved,1200,992,1011,189,992,0,9,992,125,62,2,19
+main-qwen-c4-17-r0-collect,C4,17,main,direct_opportunity,2400,,2400,0,0,0,889,2347,541,1653,200,6
+main-qwen-c4-17-r1-collect,C4,17,main,reserved,1200,1043,1048,152,1043,0,10,1043,86,66,,5
+main-qwen-c4-17-r1-collect,C4,17,main,direct_opportunity,2400,,2400,0,0,0,462,2365,423,1952,25,
+mechanism-final-001,C4,17,frozen-policy pilot,reserved,64,51,51,13,51,0,0,51,9,4,,
+mechanism-final-001,C4,17,frozen-policy pilot,direct_opportunity,128,,128,0,0,0,49,126,23,95,10,
+mechanism-final-001,C5,17,frozen-policy pilot,reserved,64,64,64,0,10,54,0,10,,,,
+mechanism-final-001,C5,17,frozen-policy pilot,direct_opportunity,128,10,128,0,0,10,36,118,35,78,5,

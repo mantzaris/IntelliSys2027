@@ -1,0 +1,34 @@
+{
+  "classification": "Post-review exploratory, fixed seed17 only; not the core hierarchical confirmatory contrast",
+  "inputs": {
+    "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
+    "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json": "be4b91bd63d2f5507ba41a9660e256eb11e3ebf81ba06ae74928c97df3c2b3f5"
+  },
+  "rows": [
+    {
+      "ci95_high": 0.5583333333333333,
+      "ci95_low": 0.42916666666666664,
+      "contrast": "C1-base",
+      "families": 240,
+      "paired_difference": 0.49583333333333335,
+      "uncertainty": "Family bootstrap; fixed seed17, no training-seed variance estimate"
+    },
+    {
+      "ci95_high": 0.5291666666666667,
+      "ci95_low": 0.3875,
+      "contrast": "C3-base",
+      "families": 240,
+      "paired_difference": 0.4583333333333333,
+      "uncertainty": "Family bootstrap; fixed seed17, no training-seed variance estimate"
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": -0.075,
+      "contrast": "C3-C1",
+      "families": 240,
+      "paired_difference": -0.0375,
+      "uncertainty": "Family bootstrap; fixed seed17, no training-seed variance estimate"
+    }
+  ]
+}

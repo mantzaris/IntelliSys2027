@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "supplements/review_001/analyze.py": "5264eac9956422e7f4be42b9e566adcd5060f19109ef3c0510e215600e28007d"
+  },
+  "stage_status": {
+    "balanced": "pending",
+    "conflict": "pending",
+    "memory": "pending",
+    "routing": "pending",
+    "severity": "pending"
+  },
+  "uncertainty": "Fixed seed17; family bootstrap only; all new evidence exploratory"
+}

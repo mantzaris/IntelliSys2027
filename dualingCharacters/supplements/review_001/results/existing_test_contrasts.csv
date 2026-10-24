@@ -1,0 +1,4 @@
+contrast,families,paired_difference,ci95_low,ci95_high,uncertainty
+C1-base,240,0.49583333333333335,0.42916666666666664,0.5583333333333333,"Family bootstrap; fixed seed17, no training-seed variance estimate"
+C3-base,240,0.4583333333333333,0.3875,0.5291666666666667,"Family bootstrap; fixed seed17, no training-seed variance estimate"
+C3-C1,240,-0.0375,-0.075,0.0,"Family bootstrap; fixed seed17, no training-seed variance estimate"

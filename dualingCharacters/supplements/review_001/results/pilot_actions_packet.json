@@ -1,0 +1,25 @@
+{
+  "classification": "Historical pilot",
+  "items": 60,
+  "items_sha256": "818e6285c46f4ad074c263fdf5100702f3198d8429fb2c21be5543798709880e",
+  "packet": "artifacts/review_001/human_review/pilot_actions",
+  "raters": "pending; no annotations fabricated",
+  "source_hashes": {
+    "artifacts/runs/mechanism-final-001/C4_characters.jsonl": "17f99b323a3eeb1c2a6691359a973e33135170096f10276eba419becb004693d",
+    "artifacts/runs/mechanism-final-001/C5_characters.jsonl": "ca7ae370d43651f67ebd30485e8f6bfe05493a15d5a44e23842e2d492f96b4bc"
+  },
+  "strata_counts": {
+    "C4": {
+      "other_peer": 0,
+      "other_substantive": 12,
+      "source_contradiction": 12,
+      "typed_candidate": 0
+    },
+    "C5": {
+      "other_peer": 12,
+      "other_substantive": 12,
+      "source_contradiction": 12,
+      "typed_candidate": 0
+    }
+  }
+}
