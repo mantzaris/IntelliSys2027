@@ -1,0 +1,134 @@
+{
+  "checked_utc": "2026-10-24T22:15:58.049452+00:00",
+  "selection": "Five author-requested starting references; version histories counted as one work each. Primary methods and author/proceedings records inspected.",
+  "sources": [
+    {
+      "authors": [
+        "Mikayel Samvelyan",
+        "Sharath Chandra Raparthy",
+        "Andrei Lupu",
+        "Eric Hambro",
+        "Aram H. Markosyan",
+        "Manish Bhatt",
+        "Yuning Mao",
+        "Minqi Jiang",
+        "Jack Parker-Holder",
+        "Jakob Foerster",
+        "Tim Rockt\u00e4schel",
+        "Roberta Raileanu"
+      ],
+      "id": "2402.16822",
+      "methods_sections": [
+        "3",
+        "Appendix E",
+        "Appendix G"
+      ],
+      "methods_url": "https://arxiv.org/html/2402.16822v3",
+      "publication_status": "NeurIPS 2024",
+      "record_url": "https://arxiv.org/abs/2402.16822v3",
+      "status_source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8147a43d030b43a01020774ae1d3e3bb-Abstract-Conference.html",
+      "title": "Rainbow Teaming: Open-Ended Generation of Diverse Adversarial Prompts",
+      "version": 3,
+      "version_date": "2024-12-11"
+    },
+    {
+      "authors": [
+        "Zhang-Wei Hong",
+        "Idan Shenfeld",
+        "Tsun-Hsuan Wang",
+        "Yung-Sung Chuang",
+        "Aldo Pareja",
+        "James Glass",
+        "Akash Srivastava",
+        "Pulkit Agrawal"
+      ],
+      "id": "2402.19464",
+      "methods_sections": [
+        "3",
+        "4",
+        "Appendix A"
+      ],
+      "methods_url": "https://arxiv.org/html/2402.19464v1",
+      "publication_status": "ICLR 2024, author arXiv record",
+      "record_url": "https://arxiv.org/abs/2402.19464v1",
+      "status_source": "https://arxiv.org/abs/2402.19464v1",
+      "title": "Curiosity-driven Red-teaming for Large Language Models",
+      "version": 1,
+      "version_date": "2024-02-29"
+    },
+    {
+      "authors": [
+        "Ren-Jian Wang",
+        "Ke Xue",
+        "Zeyu Qin",
+        "Ziniu Li",
+        "Sheng Tang",
+        "Hao-Tian Li",
+        "Shengcai Liu",
+        "Zhi Yu",
+        "Yuanpeng Tan",
+        "Chao Qian"
+      ],
+      "id": "2506.07121",
+      "methods_sections": [
+        "3",
+        "4.3"
+      ],
+      "methods_url": "https://arxiv.org/html/2506.07121v3",
+      "publication_status": "Preprint; no accepted venue verified",
+      "record_url": "https://arxiv.org/abs/2506.07121v3",
+      "status_source": "https://www.lamda.nju.edu.cn/wangrj/",
+      "title": "Quality-Diversity Red-Teaming: Automated Generation of High-Quality and Diverse Attackers for Large Language Models",
+      "version": 3,
+      "version_date": "2026-10-21"
+    },
+    {
+      "authors": [
+        "Wesley Hanwen Deng",
+        "Mingxi Yan",
+        "Sunnie S. Y. Kim",
+        "Akshita Jha",
+        "Lauren Wilcox",
+        "Kenneth Holstein",
+        "Motahhare Eslami",
+        "Leon A. Gatys"
+      ],
+      "id": "2605.05682",
+      "methods_sections": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "methods_url": "https://arxiv.org/html/2605.05682v3",
+      "publication_status": "Accepted UIST 2026, author arXiv record",
+      "record_url": "https://arxiv.org/abs/2605.05682v3",
+      "status_source": "https://arxiv.org/abs/2605.05682v3",
+      "title": "PersonaTeaming: Supporting Persona-Driven Red-Teaming for Generative AI",
+      "version": 3,
+      "version_date": "2026-09-08"
+    },
+    {
+      "authors": [
+        "Cristian Morasso",
+        "Anisa Halimi",
+        "Muhammad Zaid Hameed",
+        "Douglas Leith"
+      ],
+      "id": "2605.12565",
+      "methods_sections": [
+        "4",
+        "5",
+        "Appendix B"
+      ],
+      "methods_url": "https://arxiv.org/html/2605.12565v1",
+      "publication_status": "Preprint; no accepted venue verified",
+      "record_url": "https://arxiv.org/abs/2605.12565v1",
+      "status_source": "https://arxiv.org/abs/2605.12565v1",
+      "title": "Persona-Conditioned Adversarial Prompting (PCAP): Multi-Identity Red-Teaming for Enhanced Adversarial Prompt Discovery",
+      "version": 1,
+      "version_date": "2026-05-12"
+    }
+  ]
+}

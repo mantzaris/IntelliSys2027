@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "C3",
+    "families": 8,
+    "maximum": 33,
+    "mean": 33,
+    "minimum": 33,
+    "opportunities": 192,
+    "orderings": 100,
+    "qualification": "Ordering/allocation sensitivity, not a confidence interval",
+    "worlds": 16
+  },
+  {
+    "condition": "C5",
+    "families": 8,
+    "maximum": 31,
+    "mean": 31,
+    "minimum": 31,
+    "opportunities": 192,
+    "orderings": 100,
+    "qualification": "Ordering/allocation sensitivity, not a confidence interval",
+    "worlds": 16
+  },
+  {
+    "condition": "balanced_mixture",
+    "families": 8,
+    "maximum": 38,
+    "mean": 34.49,
+    "minimum": 30,
+    "opportunities": 192,
+    "orderings": 100,
+    "qualification": "Ordering/allocation sensitivity, not a confidence interval",
+    "worlds": 16
+  }
+]

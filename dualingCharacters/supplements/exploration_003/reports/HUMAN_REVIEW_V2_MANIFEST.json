@@ -1,0 +1,20 @@
+{
+  "changes": "Only the reviewer rubric presentation changes; v1 retained. Layer-1 study-specific ablation labels are omitted. Item bytes, order and IDs unchanged.",
+  "files": {
+    "CODEBOOK.md": "615b5b240e1c9fb2b5e97c9d0883b266a70c678cc376b5db9d10633112ca4a62",
+    "PACKET.md": "4b9298a8859ee63cfbd3af9c3d73b3d64dfd6db47f5a300a22188713ea961f01",
+    "items.json": "667dba8fa3a64a588f2ce831e5d8c3da8d254ab5da43f5093628a316a774b4f4",
+    "rater_1.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51",
+    "rater_2.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51"
+  },
+  "items": 56,
+  "items_identical_to_v1": true,
+  "presentation_script_sha256": "ee98012864411bb25ea260fd564c3b09a5152dd966b2e39d676881398674384f",
+  "private_directory": "artifacts/exploration_003/human_review/private",
+  "private_mapping_sha256": "0409a79cb5f21d0973135f57a3dbe6901cfabdbc08b6c83b4f608e7c74400489",
+  "reviewer_directory": "artifacts/exploration_003/human_review/reviewer_v2",
+  "scientific_codebook_sha256": "5e82fc75c703c5222301cb9de1a802b18bdcb55c7598536945ee758b8bc7b76c",
+  "source_v1_manifest_sha256": "013e1ad616d6427dd222433cd5210ad3221ba7a15419e3db4626aff4c2cf0962",
+  "status": "Human labels pending; metadata blinding cannot hide cast size or behavioral differences.",
+  "version": 2
+}

@@ -1,0 +1,42 @@
+{
+  "annotation_rows": {
+    "1": 0,
+    "2": 0
+  },
+  "blinding_limits": "Identifying metadata, semantic role labels and biographies removed. Actor count, routing, recurrent wording and actual behavior can still reveal condition. Truth annotations are visible only to reviewers.",
+  "classification": "Outcome-independent semantic-review sample, final mechanism pilot only; human ratings pending",
+  "condition_and_seed_labels_hidden": true,
+  "items": 56,
+  "maximum_action_window": 3,
+  "per_condition_items": 8,
+  "private_directory": "artifacts/exploration_003/human_review/private",
+  "private_mapping_sha256": "0409a79cb5f21d0973135f57a3dbe6901cfabdbc08b6c83b4f608e7c74400489",
+  "reviewer_directory": "artifacts/exploration_003/human_review/reviewer",
+  "reviewer_files": {
+    "CODEBOOK.md": "5e82fc75c703c5222301cb9de1a802b18bdcb55c7598536945ee758b8bc7b76c",
+    "PACKET.md": "4b9298a8859ee63cfbd3af9c3d73b3d64dfd6db47f5a300a22188713ea961f01",
+    "items.json": "667dba8fa3a64a588f2ce831e5d8c3da8d254ab5da43f5093628a316a774b4f4",
+    "rater_1.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51",
+    "rater_2.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51"
+  },
+  "source_hashes": {
+    "artifacts/runs/mechanism-final-001/A1.jsonl": "104a7b05dfb8d917387b05394ebacb4d17e152dd1c95754b31c9d19c5cb33f17",
+    "artifacts/runs/mechanism-final-001/A1_characters.jsonl": "3dc96924649512708afb4e1114f8a6282e4a5036413be31bcb2273b8969298e5",
+    "artifacts/runs/mechanism-final-001/A2.jsonl": "41f9c7e72733da5160f9e4b6686715be4c9f62bba3c7fc82fee1d764cbb4fec4",
+    "artifacts/runs/mechanism-final-001/A2_characters.jsonl": "55771e92c4d1b2238f079ec7a36edbaad5e449029986f22bfb41fd86bd90e8b2",
+    "artifacts/runs/mechanism-final-001/A3.jsonl": "75674d39a4a84dee05c16a372c91b6b7794c585b6775662bafa50ab812f89be2",
+    "artifacts/runs/mechanism-final-001/A3_characters.jsonl": "f4379d96f671c6dad75fab56109b735ef0d86ff5d14d24741cf4203dd0cd3670",
+    "artifacts/runs/mechanism-final-001/C3.jsonl": "a25c676005154172d30de7119664ae23d6b3aae29eb5562d5ddb74ac013666aa",
+    "artifacts/runs/mechanism-final-001/C3_characters.jsonl": "d2c97949953d5491c8398c30531549a5dabd88f8cf637515005286cb7ed3eeaf",
+    "artifacts/runs/mechanism-final-001/C4.jsonl": "d669ae140a12432e0486a7633c3b19953ed683614b5d82759c00068b5f5175be",
+    "artifacts/runs/mechanism-final-001/C4_characters.jsonl": "17f99b323a3eeb1c2a6691359a973e33135170096f10276eba419becb004693d",
+    "artifacts/runs/mechanism-final-001/C5.jsonl": "3fb8450caf3dcce32c3a03ee21ac5850dc34485e7b22415db8778243413649e5",
+    "artifacts/runs/mechanism-final-001/C5_characters.jsonl": "ca7ae370d43651f67ebd30485e8f6bfe05493a15d5a44e23842e2d492f96b4bc",
+    "artifacts/runs/mechanism-final-001/C6.jsonl": "9fd0c5661a39bf482ce0c096274036592e650bf1c72ccbf905cc0206401ba888",
+    "artifacts/runs/mechanism-final-001/C6_characters.jsonl": "000bfd0639ad3a30b230d24845c7b029c9d2d470433de25be50afa428c2039d5"
+  },
+  "worlds_per_condition": {
+    "authorized": 4,
+    "hypothetical": 4
+  }
+}

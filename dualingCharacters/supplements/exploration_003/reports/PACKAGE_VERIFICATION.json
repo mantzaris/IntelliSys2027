@@ -1,0 +1,17 @@
+{
+  "exploration_frozen_files": 14,
+  "new_gpu_calls": 0,
+  "new_model_judge_calls": 0,
+  "paired_families_per_condition": 8,
+  "pilot_conditions": 8,
+  "primary_paired_difference_recomputed_from_episode_table": -0.1875,
+  "prior_frozen_files": 113,
+  "qualification": "Presentation/provenance verification only; no new analysis population or semantic labels.",
+  "reconciled_runs": 26,
+  "review_annotation_rows": {
+    "1": 0,
+    "2": 0
+  },
+  "review_items": 56,
+  "verified_utc": "2026-10-24T22:28:25.949926+00:00"
+}

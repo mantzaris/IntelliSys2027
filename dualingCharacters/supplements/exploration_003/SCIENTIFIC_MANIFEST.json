@@ -1,0 +1,29 @@
+{
+  "classification": "Post-outcome exploratory analysis, frozen before its comparative category summaries",
+  "code_commit_before_supplement": "2942f3e7f8cb625c9bd59a419e8f2d6ded066105",
+  "files": {
+    "CODEBOOK.md": "5e82fc75c703c5222301cb9de1a802b18bdcb55c7598536945ee758b8bc7b76c",
+    "DATA_AUDIT.json": "77ce5b23fe7f3617e9948172835cec064c1a42983e9685b7cda1352a2ec57d1c",
+    "EVIDENCE_SNAPSHOT.json": "7599849de439bb62c3aa9240a2cf79a88c2fe0e81a85fd5c7ff52681b54882f5",
+    "PROTOCOL.md": "2d2928359bed27c165322824b5c84783ea345804810b409fa36a683755d95d55",
+    "SOURCE_AUDIT.json": "10cc7a31ed70cf6622da5b4f3f680202ae5472d07dac315bd1688c28682704c2",
+    "__init__.py": "306140106521a4784e18fe6e50c3737593840b0ce31dcda793d61709a5a06d25",
+    "analysis.py": "d2e39b520f5366d7dfbb3bfffddf437bccecc51c36f9bf40237bdb9f6feef4d8",
+    "common.py": "02e327db9a8b99ad4201b74c444b3c068bcc5ff3f35524e7d9733d31df70e6bf",
+    "descriptors.py": "ed913b0dd81b56e23f9d08e98ecb2d3b16b518c876d8baf9dc41d8044db982b2",
+    "freeze.py": "9312c59e3b7a9a7915770b122efc5d0aeaa9648986caecb160eea6b1fb753874",
+    "inventory.py": "e0c667c6473baf0c4917ccab0cfb99232d127dafff4ee3b09a9c3d9dbf5f8555",
+    "packet.py": "5cdf2668c4f7688a849aec931aab9b6149c0cd0475c893bbe81674be2443ddcc",
+    "requirements-cpu.txt": "02ff319763e6790f588576f905f5657f01e8036721b4af3f1b64da608a433173",
+    "test_exploration.py": "e0d5cf1ac4874d91e06f0285ee99a5e33bfba53b4d937365be7af24c90c6d508"
+  },
+  "frozen_utc": "2026-10-24T21:56:02.220550+00:00",
+  "known_outcomes": "Main negative/mixed C5 comparisons and C1 seed reversal, prior intent trajectory results, approximate pilot slot/value repetition C3~74%, C5~89-90%; one C3 raw action inspected for schema. No new comparative descriptor summaries computed.",
+  "model_judge_calls": 0,
+  "new_gpu_calls": 0,
+  "prior_freezes": {
+    "configs/freeze.json": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+    "supplements/long_horizon_intent_002/FREEZE.json": "a2d361eb1b1ac814261bf576ec39c07874337624bf48cbd6d59c643fe78e95ca",
+    "supplements/review_001/FREEZE.json": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81"
+  }
+}

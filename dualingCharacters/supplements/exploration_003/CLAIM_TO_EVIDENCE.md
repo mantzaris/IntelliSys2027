@@ -1,0 +1,13 @@
+# Claim-to-evidence table
+
+| Claim | Status | Evidence | Limit |
+|---|---|---|---|
+| Broader observable coverage | Not established | Primary paired contrast and cost prefixes | Small one-seed pilot; main differences near zero |
+| Persistent typed goals | Observed in this pilot | REPETITION_RECHECK.json | Repetition can be fixation; not semantic development |
+| Different tactics during same goal | Proxy variation observed; semantic status pending | persistence_by_role.csv and human packet | API/reference changes can overcount tactic changes |
+| Complementary categories | Descriptive archive evidence | primary_category_overlap.json; whole_archive_summary.json | Within-episode equal-budget mixture does not improve; category semantics unvalidated |
+| Narrative biography benefit | Not established | C5/A1 pilot and matched main-collection tables | No clear unique biography contribution; no equivalence claim |
+| History or peer mechanism | Unresolved | A2/A3 pilot context; action_validity.csv | Private history, routing and rejected actions complicate attribution |
+| Mutually incompatible goals | Not implemented by distinct owned slots | GOAL_COMPATIBILITY.json | Some utility terms involve peers; no optimized game or rivalry inferred |
+| Defender learns to explore | Not measured | No exploration-choice evaluation in these traces | Requires proposed interactive diagnosis task |
+| Exploration causes better task learning | Not established | Original negative/mixed main results retained | Severity, exposure and defender state confound associations |

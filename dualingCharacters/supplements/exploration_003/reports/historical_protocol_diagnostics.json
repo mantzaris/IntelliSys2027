@@ -1,0 +1,327 @@
+[
+  {
+    "action_counts": {},
+    "condition": "C1",
+    "families": 4,
+    "id": "mechanism-v2-001__C1",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 0,
+    "repeat_numerator": 0,
+    "repeat_rate": null,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 22,
+      "peer": 32,
+      "propose": 7,
+      "recollect": 35
+    },
+    "condition": "C3",
+    "families": 4,
+    "id": "mechanism-v2-001__C3",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 48,
+    "repeat_numerator": 28,
+    "repeat_rate": 0.5833333333333334,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "peer": 24,
+      "propose": 12,
+      "recollect": 60
+    },
+    "condition": "C4",
+    "families": 4,
+    "id": "mechanism-v2-001__C4",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 64,
+    "repeat_numerator": 64,
+    "repeat_rate": 1,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "peer": 35,
+      "propose": 4,
+      "recollect": 57
+    },
+    "condition": "C5",
+    "families": 4,
+    "id": "mechanism-v2-001__C5",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 45,
+    "repeat_numerator": 43,
+    "repeat_rate": 0.9555555555555556,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 12,
+      "peer": 34,
+      "propose": 12,
+      "recollect": 38
+    },
+    "condition": "C6",
+    "families": 4,
+    "id": "mechanism-v2-001__C6",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 30,
+    "repeat_numerator": 27,
+    "repeat_rate": 0.9,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 1,
+      "peer": 32,
+      "propose": 46,
+      "recollect": 17
+    },
+    "condition": "A1",
+    "families": 4,
+    "id": "mechanism-v2-001__A1",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 48,
+    "repeat_numerator": 48,
+    "repeat_rate": 1,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "peer": 33,
+      "propose": 8,
+      "recollect": 55
+    },
+    "condition": "A2",
+    "families": 4,
+    "id": "mechanism-v2-001__A2",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 47,
+    "repeat_numerator": 28,
+    "repeat_rate": 0.5957446808510638,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "propose": 4,
+      "recollect": 92
+    },
+    "condition": "A3",
+    "families": 4,
+    "id": "mechanism-v2-001__A3",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 80,
+    "repeat_numerator": 80,
+    "repeat_rate": 1,
+    "run_id": "mechanism-v2-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {},
+    "condition": "C1",
+    "families": 32,
+    "id": "mechanism-v3-001__C1",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 0,
+    "repeat_numerator": 0,
+    "repeat_rate": null,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 391,
+      "peer": 256,
+      "propose": 79,
+      "recollect": 42
+    },
+    "condition": "C3",
+    "families": 32,
+    "id": "mechanism-v3-001__C3",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 384,
+    "repeat_numerator": 300,
+    "repeat_rate": 0.78125,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 18,
+      "peer": 232,
+      "propose": 140,
+      "recollect": 378
+    },
+    "condition": "C4",
+    "families": 32,
+    "id": "mechanism-v3-001__C4",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 472,
+    "repeat_numerator": 468,
+    "repeat_rate": 0.9915254237288136,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 18,
+      "peer": 263,
+      "propose": 179,
+      "recollect": 308
+    },
+    "condition": "C5",
+    "families": 32,
+    "id": "mechanism-v3-001__C5",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 377,
+    "repeat_numerator": 355,
+    "repeat_rate": 0.9416445623342176,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 101,
+      "peer": 201,
+      "propose": 171,
+      "recollect": 295
+    },
+    "condition": "C6",
+    "families": 32,
+    "id": "mechanism-v3-001__C6",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 311,
+    "repeat_numerator": 276,
+    "repeat_rate": 0.887459807073955,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 31,
+      "peer": 256,
+      "propose": 426,
+      "recollect": 55
+    },
+    "condition": "A1",
+    "families": 32,
+    "id": "mechanism-v3-001__A1",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 384,
+    "repeat_numerator": 366,
+    "repeat_rate": 0.953125,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 7,
+      "peer": 263,
+      "propose": 222,
+      "recollect": 276
+    },
+    "condition": "A2",
+    "families": 32,
+    "id": "mechanism-v3-001__A2",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 377,
+    "repeat_numerator": 355,
+    "repeat_rate": 0.9416445623342176,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 50,
+      "peer": 1,
+      "propose": 240,
+      "recollect": 477
+    },
+    "condition": "A3",
+    "families": 32,
+    "id": "mechanism-v3-001__A3",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 639,
+    "repeat_numerator": 596,
+    "repeat_rate": 0.9327073552425665,
+    "run_id": "mechanism-v3-001",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "peer": 35,
+      "propose": 20,
+      "recollect": 41
+    },
+    "condition": "C5",
+    "families": 4,
+    "id": "pilot-format2-refresh__C5",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 45,
+    "repeat_numerator": 43,
+    "repeat_rate": 0.9555555555555556,
+    "run_id": "pilot-format2-refresh",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 4,
+      "pass": 4,
+      "peer": 176,
+      "propose": 136,
+      "recollect": 64
+    },
+    "condition": "C5",
+    "families": 16,
+    "id": "pilot-v4-phi-c5-collect__C5",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 143,
+    "repeat_numerator": 125,
+    "repeat_rate": 0.8741258741258742,
+    "run_id": "pilot-v4-phi-c5-collect",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 194,
+      "peer": 128,
+      "propose": 50,
+      "recollect": 12
+    },
+    "condition": "C3",
+    "families": 16,
+    "id": "pilot-v4-qwen-c3-collect__C3",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 192,
+    "repeat_numerator": 151,
+    "repeat_rate": 0.7864583333333334,
+    "run_id": "pilot-v4-qwen-c3-collect",
+    "seed": 17
+  },
+  {
+    "action_counts": {
+      "edit": 3,
+      "peer": 136,
+      "propose": 77,
+      "recollect": 168
+    },
+    "condition": "C5",
+    "families": 16,
+    "id": "pilot-v4-qwen-c5-collect__C5",
+    "qualification": "Earlier protocol; coarse historical diagnostic only, not pooled.",
+    "repeat_denominator": 184,
+    "repeat_numerator": 178,
+    "repeat_rate": 0.967391304347826,
+    "run_id": "pilot-v4-qwen-c5-collect",
+    "seed": 17
+  }
+]

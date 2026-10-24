@@ -1,0 +1,32 @@
+{
+  "captions": {
+    "coverage_vs_budget": "Pinned Qwen base defender and generator, seed17, eight paired families (16 episodes), final mechanism pilot. Endpoint: distinct valid observable descriptors. Right panel uses10,000paired-family bootstrap draws preserving both worlds; intervals are pointwise and omit generator-seed uncertainty. Passes, rejected actions and invalid generations consume opportunities.",
+    "novelty_and_archive": "Same Qwen pilot, eight paired families, seed17. Left: episode-level newly reached descriptors in fixed four-opportunity segments, descriptive means. Right:100predefined whole-family orderings; actions retain temporal order and both worlds travel together. Shading is the minimum\u2013maximum ordering/allocation range, not a confidence interval. The mixture alternates methods across families at equal total opportunities; token costs can differ.",
+    "overlap_and_complementarity": "Same Qwen pilot, eight paired families, seed17. Left: each full archive spends192opportunities; their union would spend384and is not used as a fair gain. Right: each arm spends12opportunities per episode, but the6+6mixture uses two archived prefixes and has separately reported token overhead. No human semantic validation is available.",
+    "repetition_and_persistence": "Same Qwen pilot, eight paired families, seed17. Consecutive direct actions are compared within actor and episode. Numerators/denominators are printed; these dependent action comparisons are descriptive, without action-level error bars. API/reference variation is not validated semantic tactic development."
+  },
+  "figures": {
+    "coverage_vs_budget.pdf": "38e4ed123db528cc78acc94c800a7b7bc6fd35cec29014e3def6a54dac3b939b",
+    "coverage_vs_budget.png": "45d1f300f8080ed4e748ecc1f496c3f35d24de3b4a0d234c2a40c0bc47fa8778",
+    "coverage_vs_budget.svg": "0bca3cb56d3ccf4da437c20cf9651868de055275b42d406564aa81d79b749d94",
+    "novelty_and_archive.pdf": "af9a7eaca874578a8b9fd785fad1b25a557ccc553336ee2a0b788d09a764fd76",
+    "novelty_and_archive.png": "daf56e555b02a00c47dae8333a5e284fb618d96ffc470058e9577458f3674040",
+    "novelty_and_archive.svg": "0e6b6cdd0204ae346d5249f273a69bb1164ba2d73d67222a0e04e0617ce5af23",
+    "overlap_and_complementarity.pdf": "e0c53329c1614ab28350eed180aa847021d9eabc14c63bc0f59007a202d0dd65",
+    "overlap_and_complementarity.png": "fa9be890fdc77699482419f0ca9b085898b5794479c9ed447e5b3213c397c373",
+    "overlap_and_complementarity.svg": "e1f6e5dc6dc916586508fea57f9214d3cd6924b40647e5cc5d0df4d988f1e6a4",
+    "repetition_and_persistence.pdf": "c93d1820cb7c283ff42982134a35fe412773a3d3d1ca88d55c73a9b165a536f7",
+    "repetition_and_persistence.png": "9a82c33cca51c2a34a69522b4a78302382d8a4ab6042e27f9789e49965135f1f",
+    "repetition_and_persistence.svg": "6e2e5042063c0251784892239c6e5d0f24ded0116d5704244fe3de9e099c6404"
+  },
+  "inputs": {
+    "archive_rarefaction.csv": "7f6a68ed36d678207cb762baa426bf168ee115dba2544fb168c7f875c908342b",
+    "coverage_curves.csv": "1231d46f5c92686ffeb772c3bc83b01882450a42151409ee12b34e21cf566ee3",
+    "persistence_by_role.csv": "5326bae5d3a82944e554dd66753ede77ad24510a113bee0a68c941f876532714",
+    "primary_category_overlap.json": "c684683452aab748cab49fd97155d3af52bd323f44455e1cdac023e8bb06264e",
+    "primary_novelty.csv": "e276fb5fcb193b60ffa49f3da403787a73735267f453d63223d73d2911bc16eb",
+    "primary_overlap.csv": "03611d0164cc72e0861c0e06462e92cc9f1e774b0b2fd92ec59346bd7426ccaa",
+    "primary_paired_contrasts.json": "a0ea89044c8df55275ff3cfd72af945cfe5126b01eb2fa33393440b04d1aa8e4"
+  },
+  "plot_script_sha256": "6130508054564dc12ca5ae55108340b9dfd7600ad529cbd9c3abc6bf1112b91f"
+}

@@ -1,0 +1,64 @@
+{
+  "selection": "Lowest hashed item ID within every condition of the outcome-independent fixed packet",
+  "items": [
+    {
+      "cell": "mechanism-final-001__C3",
+      "end_ordinal": 4,
+      "family_id": "pilot-0006",
+      "item_id": "EX3-002b8727b297",
+      "world": "authorized",
+      "item_sha256": "2abbca9abf68ed6e9ec8c4b4158b68ebfa3784ca0073367a06319abe59de0469"
+    },
+    {
+      "cell": "mechanism-final-001__C4",
+      "end_ordinal": 12,
+      "family_id": "pilot-0002",
+      "item_id": "EX3-1f4f4a638d2c",
+      "world": "hypothetical",
+      "item_sha256": "f63749a5c1aa0862f8fb611c1a2598c39e5fd4b3b2317d6a72fae185e920b663"
+    },
+    {
+      "cell": "mechanism-final-001__C5",
+      "end_ordinal": 4,
+      "family_id": "pilot-0000",
+      "item_id": "EX3-2ae7f22df732",
+      "world": "authorized",
+      "item_sha256": "c9b8648a5721c5e725d211d42a3cf10fde2206454b549880ee85defd2872101a"
+    },
+    {
+      "cell": "mechanism-final-001__C6",
+      "end_ordinal": 8,
+      "family_id": "pilot-0007",
+      "item_id": "EX3-0ade729e5c88",
+      "world": "hypothetical",
+      "item_sha256": "755931bee4cd27bb4e1b257f87d7088a656d33fa7edb47b5d9fad62b85a59211"
+    },
+    {
+      "cell": "mechanism-final-001__A1",
+      "end_ordinal": 4,
+      "family_id": "pilot-0005",
+      "item_id": "EX3-2c24c18e12f6",
+      "world": "hypothetical",
+      "item_sha256": "449e3d35973474911e6f589c1b47f5649f91c0bd24888179a760e6acdcb2ff39"
+    },
+    {
+      "cell": "mechanism-final-001__A2",
+      "end_ordinal": 4,
+      "family_id": "pilot-0005",
+      "item_id": "EX3-1bce231df3cb",
+      "world": "hypothetical",
+      "item_sha256": "13d7da19d4adefb2cba3fa0b739897af5075f9ee8991336869e69a7f6765e375"
+    },
+    {
+      "cell": "mechanism-final-001__A3",
+      "end_ordinal": 8,
+      "family_id": "pilot-0000",
+      "item_id": "EX3-06167ff74caf",
+      "world": "authorized",
+      "item_sha256": "6b7e6b7378392fff15c4ea7d06c915ce70473b36526cf3e1494156c0fd27d804"
+    }
+  ],
+  "classification": "AI-assisted unvalidated reading, no human or model-judge ratings",
+  "model_judge_calls": 0,
+  "reading_sha256": "889a357017cee789b1d903c9ff1702c4ab2c935349d68ac30012fb3bd4d3cad1"
+}

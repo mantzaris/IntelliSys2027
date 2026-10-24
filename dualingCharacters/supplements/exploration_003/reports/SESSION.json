@@ -1,0 +1,22 @@
+{
+  "core_controller_pid": 787315,
+  "core_left_running": true,
+  "core_snapshot_utc": "2026-10-24T22:24:03.289149+00:00",
+  "deadline_utc": "2026-10-25T02:46:15+00:00",
+  "early_completion_reason": "Scoped CPU investigation and package complete; human labels and fresh model evidence pending under explicit no-new-model-call authorization.",
+  "elapsed_seconds_at_report": 2390.304977,
+  "end_local": "2026-10-24T18:26:05.304977-04:00",
+  "end_utc": "2026-10-24T22:26:05.304977+00:00",
+  "new_gpu_calls": 0,
+  "new_gpu_calls_authorized": 0,
+  "new_model_judge_calls": 0,
+  "new_model_judge_calls_authorized": 0,
+  "review_coordinator_pid": 1291869,
+  "start_local": "2026-10-24T17:46:15-04:00",
+  "start_utc": "2026-10-24T21:46:15+00:00",
+  "starting_commit": "2942f3e7f8cb625c9bd59a419e8f2d6ded066105",
+  "starting_worktree": "clean",
+  "status": "completed_cpu_investigation",
+  "timezone": "America/New_York",
+  "useful_work_cutoff_utc": "2026-10-25T02:01:15+00:00"
+}

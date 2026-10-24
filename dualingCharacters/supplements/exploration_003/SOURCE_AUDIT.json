@@ -1,0 +1,221 @@
+[
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-a1-17-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-a1-17-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-a1-29-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-17-r0-collect",
+    "verified_files": 31
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-17-r1-collect-format2",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-29-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-29-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-43-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c1-43-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-17-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-17-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-29-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-29-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-43-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c3-43-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c4-17-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c4-17-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c4-29-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c4-29-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c4-43-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c5-17-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c5-17-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c5-29-r0-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "main-qwen-c5-29-r1-collect",
+    "verified_files": 32
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "mechanism-final-001",
+    "verified_files": 31
+  },
+  {
+    "archive_present": false,
+    "mismatches": [],
+    "run_id": "mechanism-v2-001",
+    "verified_files": 0
+  },
+  {
+    "archive_present": false,
+    "mismatches": [],
+    "run_id": "mechanism-v3-001",
+    "verified_files": 0
+  },
+  {
+    "archive_digest_matches_record": true,
+    "archive_present": true,
+    "mismatches": [],
+    "run_id": "pilot-format2-refresh",
+    "verified_files": 32
+  },
+  {
+    "archive_present": false,
+    "mismatches": [],
+    "run_id": "pilot-v4-phi-c5-collect",
+    "verified_files": 0
+  },
+  {
+    "archive_present": false,
+    "mismatches": [],
+    "run_id": "pilot-v4-qwen-c3-collect",
+    "verified_files": 0
+  },
+  {
+    "archive_present": false,
+    "mismatches": [],
+    "run_id": "pilot-v4-qwen-c5-collect",
+    "verified_files": 0
+  }
+]

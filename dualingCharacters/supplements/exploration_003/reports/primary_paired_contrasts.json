@@ -1,0 +1,626 @@
+[
+  {
+    "budget": 1,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 1,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 1,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 1,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 2,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.375,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 2,
+    "difference": -0.25,
+    "families": 8,
+    "family_interval": [
+      -0.625,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 2,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 2,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.375,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 3,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      -0.375,
+      0.375
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 3,
+    "difference": -0.25,
+    "families": 8,
+    "family_interval": [
+      -0.625,
+      0.25
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 3,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 3,
+    "difference": -0.625,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      -0.25
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 4,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -0.625,
+      0.25
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 4,
+    "difference": -0.25,
+    "families": 8,
+    "family_interval": [
+      -0.75,
+      0.375
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 4,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 4,
+    "difference": -0.625,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      -0.25
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 5,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 5,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      -0.625,
+      0.625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 5,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.5,
+      0.25
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 5,
+    "difference": -0.625,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      -0.25
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 6,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.75,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 6,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      -0.5,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 6,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.75,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 6,
+    "difference": -0.75,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      -0.375
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 7,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.75,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 7,
+    "difference": 0.125,
+    "families": 8,
+    "family_interval": [
+      -0.25,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 7,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      0.6875
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 7,
+    "difference": -0.75,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      -0.375
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 8,
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.875,
+      0.625
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 8,
+    "difference": 0.125,
+    "families": 8,
+    "family_interval": [
+      -0.3125,
+      0.5625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 8,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -1.125,
+      0.75
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 8,
+    "difference": -0.8125,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      -0.5625
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 9,
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      1.0
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 9,
+    "difference": 0.125,
+    "families": 8,
+    "family_interval": [
+      -0.3125,
+      0.5625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 9,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -1.3125,
+      0.8125
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 9,
+    "difference": -0.9375,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      -0.8125
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 10,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -1.5,
+      1.0
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 10,
+    "difference": 0.1875,
+    "families": 8,
+    "family_interval": [
+      -0.3125,
+      0.625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 10,
+    "difference": -0.3125,
+    "families": 8,
+    "family_interval": [
+      -1.6875,
+      0.875
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 10,
+    "difference": -0.9375,
+    "families": 8,
+    "family_interval": [
+      -1.0,
+      -0.8125
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 11,
+    "difference": -0.3125,
+    "families": 8,
+    "family_interval": [
+      -1.6875,
+      0.9375
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 11,
+    "difference": 0.1875,
+    "families": 8,
+    "family_interval": [
+      -0.3125,
+      0.625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 11,
+    "difference": -0.375,
+    "families": 8,
+    "family_interval": [
+      -2.0,
+      0.9375
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 11,
+    "difference": -1.0625,
+    "families": 8,
+    "family_interval": [
+      -1.1875,
+      -1.0
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 12,
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -1.625,
+      1.1875
+    ],
+    "first": "C5",
+    "metric": "coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 12,
+    "difference": 0.1875,
+    "families": 8,
+    "family_interval": [
+      -0.3125,
+      0.625
+    ],
+    "first": "C5",
+    "metric": "coarse_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 12,
+    "difference": -0.5625,
+    "families": 8,
+    "family_interval": [
+      -2.5,
+      1.0
+    ],
+    "first": "C5",
+    "metric": "sequence_coverage",
+    "second": "C3"
+  },
+  {
+    "budget": 12,
+    "difference": -1.1875,
+    "families": 8,
+    "family_interval": [
+      -1.375,
+      -1.0625
+    ],
+    "first": "C5",
+    "metric": "transition_coverage",
+    "second": "C3"
+  },
+  {
+    "difference": 0,
+    "families": 8,
+    "family_interval": [
+      -0.375,
+      0.375
+    ],
+    "first": "C5",
+    "metric": "token_capped_coverage",
+    "second": "C3",
+    "token_cap": 3620
+  },
+  {
+    "difference": -0.125,
+    "families": 8,
+    "family_interval": [
+      -0.75,
+      0.5
+    ],
+    "first": "C5",
+    "metric": "token_capped_coverage",
+    "second": "C3",
+    "token_cap": 7240
+  },
+  {
+    "difference": -0.5625,
+    "families": 8,
+    "family_interval": [
+      -1.5625,
+      0.375
+    ],
+    "first": "C5",
+    "metric": "token_capped_coverage",
+    "second": "C3",
+    "token_cap": 10860
+  },
+  {
+    "difference": -0.375,
+    "families": 8,
+    "family_interval": [
+      -1.6875,
+      0.8125
+    ],
+    "first": "C5",
+    "metric": "token_capped_coverage",
+    "second": "C3",
+    "token_cap": 14480
+  }
+]

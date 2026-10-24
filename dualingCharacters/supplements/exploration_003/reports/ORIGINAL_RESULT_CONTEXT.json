@@ -1,0 +1,151 @@
+{
+  "classification": "Already reported antagonist-free core results, retained as context; no new estimates and not part of the exploration collection population.",
+  "contrasts": [
+    {
+      "both_succeed": "157",
+      "ci95_high": "0.008333333333333333",
+      "ci95_low": "-0.08333333333333333",
+      "contrast": "C5-C3",
+      "difference": "-0.0375",
+      "families": "240",
+      "model": "qwen",
+      "neither": "52",
+      "only_first": "11",
+      "only_second": "20",
+      "seed": "17",
+      "status": "interim one-seed descriptive",
+      "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+    },
+    {
+      "both_succeed": "177",
+      "ci95_high": "0.016666666666666666",
+      "ci95_low": "-0.025",
+      "contrast": "C5-C3",
+      "difference": "-0.004166666666666667",
+      "families": "240",
+      "model": "qwen",
+      "neither": "56",
+      "only_first": "3",
+      "only_second": "4",
+      "seed": "29",
+      "status": "interim one-seed descriptive",
+      "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+    },
+    {
+      "both_succeed": "167",
+      "ci95_high": "-0.041666666666666664",
+      "ci95_low": "-0.1125",
+      "contrast": "C5-C1",
+      "difference": "-0.075",
+      "families": "240",
+      "model": "qwen",
+      "neither": "53",
+      "only_first": "1",
+      "only_second": "19",
+      "seed": "17",
+      "status": "interim one-seed descriptive",
+      "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+    },
+    {
+      "both_succeed": "129",
+      "ci95_high": "0.23333333333333334",
+      "ci95_low": "0.11666666666666667",
+      "contrast": "C5-C1",
+      "difference": "0.175",
+      "families": "240",
+      "model": "qwen",
+      "neither": "51",
+      "only_first": "51",
+      "only_second": "9",
+      "seed": "29",
+      "status": "interim one-seed descriptive",
+      "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+    }
+  ],
+  "levels": [
+    {
+      "all_canonical_sources_visible": "471",
+      "condition": "C1",
+      "conversation_successes": "390",
+      "conversations": "480",
+      "failed_conversations": "90",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.775",
+      "paired_successes": "186",
+      "recall_correct_conversations": "471",
+      "seed": "17"
+    },
+    {
+      "all_canonical_sources_visible": "468",
+      "condition": "C3",
+      "conversation_successes": "381",
+      "conversations": "480",
+      "failed_conversations": "99",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.7375",
+      "paired_successes": "177",
+      "recall_correct_conversations": "472",
+      "seed": "17"
+    },
+    {
+      "all_canonical_sources_visible": "446",
+      "condition": "C5",
+      "conversation_successes": "362",
+      "conversations": "480",
+      "failed_conversations": "118",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.7",
+      "paired_successes": "168",
+      "recall_correct_conversations": "444",
+      "seed": "17"
+    },
+    {
+      "all_canonical_sources_visible": "464",
+      "condition": "C1",
+      "conversation_successes": "313",
+      "conversations": "480",
+      "failed_conversations": "167",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.575",
+      "paired_successes": "138",
+      "recall_correct_conversations": "464",
+      "seed": "29"
+    },
+    {
+      "all_canonical_sources_visible": "474",
+      "condition": "C3",
+      "conversation_successes": "382",
+      "conversations": "480",
+      "failed_conversations": "98",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.7541666666666667",
+      "paired_successes": "181",
+      "recall_correct_conversations": "472",
+      "seed": "29"
+    },
+    {
+      "all_canonical_sources_visible": "472",
+      "condition": "C5",
+      "conversation_successes": "379",
+      "conversations": "480",
+      "failed_conversations": "101",
+      "families": "240",
+      "model": "qwen",
+      "paired_success": "0.75",
+      "paired_successes": "180",
+      "recall_correct_conversations": "467",
+      "seed": "29"
+    }
+  ],
+  "qualification": "Matched seeds only. Original one-seed family intervals do not estimate training-seed uncertainty; complete C5 seed set pending.",
+  "source_files": {
+    "supplements/long_horizon_intent_002/reports/evaluation_provenance.json": "62277d1718d15e18f6dafd444499003e0874159c4e6d127141dc07aa4bdb38e6",
+    "supplements/long_horizon_intent_002/reports/paired_transitions.csv": "e042ab5d5501d85dc5ad1b1ad8e37e8c9c80fe7c7172e18116dcdad8d3387433",
+    "supplements/long_horizon_intent_002/reports/per_seed_results.csv": "0b0797a23405031563fbccd0fd1436c1f30764385173855610f0cd17c9027eae"
+  }
+}

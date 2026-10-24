@@ -1,0 +1,25 @@
+{
+  "character_calls": 4608,
+  "conditions": 4,
+  "defender_calls": 6144,
+  "episodes": 384,
+  "estimated_reserved_seconds": 2299.2938328091004,
+  "formula": "1.5 * (observed_reserved_seconds - observed_load_seconds) * proposed_calls / observed_calls + 3 * observed_load_seconds",
+  "known_cost_usd": null,
+  "new_gpu_calls": 0,
+  "observed_calls": 3648,
+  "observed_load_seconds": 38.82082192180678,
+  "observed_reserved_seconds": 532.5564882769249,
+  "proposed_families": 16,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "source_run": "mechanism-final-001",
+  "source_status_sha256": "afd34c1bbc074b0ac43907836229cbc79009829adcd104ab0e2441bf98b89a92",
+  "status": "proposal_only_not_scheduled",
+  "total_calls": 10752,
+  "twice_estimate_minutes": 76.64312776030334,
+  "worlds": 2
+}

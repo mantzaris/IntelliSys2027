@@ -1,0 +1,17 @@
+family_id,world,C5,C3,shared,C5_only,C3_only,jaccard,mixture_half_prefix,mixture_minus_C3,mixture_minus_C5,mixture_interventions,mixture_character_tokens,mixture_defender_tokens_through_prefix
+pilot-0000,authorized,7,6,1,6,5,0.08333333333333333,9,3,2,12,13833,14732
+pilot-0000,hypothetical,7,4,2,5,2,0.2222222222222222,6,2,-1,12,13794,14788
+pilot-0001,authorized,3,5,2,1,3,0.3333333333333333,4,-1,1,12,13394,14174
+pilot-0001,hypothetical,3,5,2,1,3,0.3333333333333333,4,-1,1,12,13394,14174
+pilot-0002,authorized,7,7,3,4,4,0.2727272727272727,7,0,0,12,13425,13888
+pilot-0002,hypothetical,7,6,2,5,4,0.18181818181818182,7,1,0,12,13425,13888
+pilot-0003,authorized,10,10,4,6,6,0.25,9,-1,-1,12,14164,14619
+pilot-0003,hypothetical,9,8,4,5,4,0.3076923076923077,9,1,0,12,14164,14619
+pilot-0004,authorized,4,5,3,1,2,0.5,3,-2,-1,12,13363,13888
+pilot-0004,hypothetical,5,4,3,2,1,0.5,3,-1,-2,12,13363,13888
+pilot-0005,authorized,7,11,2,5,9,0.125,7,-4,0,12,13757,14653
+pilot-0005,hypothetical,4,7,2,2,5,0.2222222222222222,7,0,3,12,13757,14653
+pilot-0006,authorized,8,10,2,6,8,0.125,8,-2,0,12,13339,14023
+pilot-0006,hypothetical,7,9,2,5,7,0.14285714285714285,8,-1,1,12,13339,14023
+pilot-0007,authorized,7,4,2,5,2,0.2222222222222222,4,0,-3,12,13591,14306
+pilot-0007,hypothetical,7,4,2,5,2,0.2222222222222222,4,0,-3,12,13591,14306

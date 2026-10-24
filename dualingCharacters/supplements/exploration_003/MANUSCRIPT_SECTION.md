@@ -1,0 +1,11 @@
+# Exploratory manuscript section — author review required
+
+After observing mixed/negative defender-transfer results, we conducted a separate frozen-snapshot audit of generator exploration. The primary comparison used the same untrained Qwen defender and eight paired pilot families. We counted canonicalized action/route/value/reference descriptors at twelve opportunities, retaining failed, contradictory and rejected attempts in the budget. Descriptor categories are observable proxies; semantic coherence and tactic novelty require independent review.
+
+C5 reached 6.38 categories per episode versus 6.56 for C3 (difference -0.19; paired-family95% interval [-1.62, +1.19]). Pooled coverage was 31 versus 33. These one-seed pilot estimates neither demonstrate a breadth advantage nor establish equivalence.
+
+There were 15 C5-only and 17 C3-only categories. A six-plus-six prefix archive averaged 6.19 categories, below either twelve-opportunity single-method mean. Conversely, equal-opportunity whole-episode mixtures averaged 34.49 pooled categories across100predefined family orderings, with range 30–38. This limited archive complementarity is not a demonstrated semantic or learning benefit.
+
+Characters repeated typed goals more frequently than the generic comparator. Some API/reference changes occurred during repeated goals, but an illustrative repeated claim acquired different descriptors solely because its reference became unavailable. Another peer message supplied a substantive correction with an unspecified typed value. These observations show both overcounting and underdescription risks of automatic proxies; they are AI-assisted readings, not human validation.
+
+The main-collection results were analyzed separately by seed and round. Round-zero weights were shared; refreshed defenders were condition-specific. No causal relationship between category coverage and final accuracy is identified. The evidence presently supports an informative limit and a modest complementarity hypothesis, not an established character-specific exploration advantage. The decisive next control is coherent-diversity-instructed generic generation under the same fixed defender and total budget. Biographies, histories, interaction and mutually incompatible utilities require their corresponding controls.

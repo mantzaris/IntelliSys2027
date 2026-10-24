@@ -1,0 +1,6 @@
+{'analyzed_cells': 34, 'historical_cells': 20, 'primary_endpoint': [{'first': 'C5', 'second': 'C3', 'budget': 12, 'metric': 'coverage', 'families': 8, 'difference': -0.1875, 'family_interval': [-1.625, 1.1875]}]}
+{'items': 56, 'annotations': {'1': 0, '2': 0}}
+{'reviewer_directory': 'artifacts/exploration_003/human_review/reviewer_v2', 'items': 56, 'version': 2}
+{'cost_cells': 34, 'reconciled_runs': 26, 'report': 'supplements/exploration_003/reports/RESULTS.md'}
+{'figures': 4, 'formats': ['PDF', 'SVG', 'PNG']}
+{'verified_utc': '2026-10-24T22:17:22.224258+00:00', 'prior_frozen_files': 113, 'exploration_frozen_files': 14, 'primary_paired_difference_recomputed_from_episode_table': -0.1875, 'pilot_conditions': 8, 'paired_families_per_condition': 8, 'reconciled_runs': 26, 'review_items': 56, 'review_annotation_rows': {'1': 0, '2': 0}, 'new_gpu_calls': 0, 'new_model_judge_calls': 0, 'qualification': 'Presentation/provenance verification only; no new analysis population or semantic labels.'}

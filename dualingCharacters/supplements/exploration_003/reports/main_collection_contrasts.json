@@ -1,0 +1,170 @@
+[
+  {
+    "difference": -0.14,
+    "families": 150,
+    "family_interval": [
+      -0.4633333333333333,
+      0.17666666666666667
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "C3",
+    "seed": 17
+  },
+  {
+    "difference": 2.2866666666666666,
+    "families": 150,
+    "family_interval": [
+      1.9666666666666666,
+      2.6033333333333335
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "C4",
+    "seed": 17
+  },
+  {
+    "difference": 0.016666666666666666,
+    "families": 150,
+    "family_interval": [
+      -0.22666666666666666,
+      0.26666666666666666
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "A1",
+    "seed": 17
+  },
+  {
+    "difference": -0.03666666666666667,
+    "families": 150,
+    "family_interval": [
+      -0.3134166666666666,
+      0.24008333333333212
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "C3",
+    "seed": 17
+  },
+  {
+    "difference": 2.5766666666666667,
+    "families": 150,
+    "family_interval": [
+      2.3099166666666666,
+      2.84
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "C4",
+    "seed": 17
+  },
+  {
+    "difference": 0.013333333333333334,
+    "families": 150,
+    "family_interval": [
+      -0.23,
+      0.25333333333333335
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "A1",
+    "seed": 17
+  },
+  {
+    "difference": 0.08333333333333333,
+    "families": 150,
+    "family_interval": [
+      -0.23333333333333334,
+      0.39666666666666667
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "C3",
+    "seed": 29
+  },
+  {
+    "difference": 2.223333333333333,
+    "families": 150,
+    "family_interval": [
+      1.9033333333333333,
+      2.53
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "C4",
+    "seed": 29
+  },
+  {
+    "difference": 0.09333333333333334,
+    "families": 150,
+    "family_interval": [
+      -0.18333333333333332,
+      0.38
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 0,
+    "same_defender_weights": true,
+    "second": "A1",
+    "seed": 29
+  },
+  {
+    "difference": -0.29,
+    "families": 150,
+    "family_interval": [
+      -0.5733333333333334,
+      0.006666666666666667
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "C3",
+    "seed": 29
+  },
+  {
+    "difference": 2.2466666666666666,
+    "families": 150,
+    "family_interval": [
+      1.9366666666666668,
+      2.55
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "C4",
+    "seed": 29
+  },
+  {
+    "difference": 0.02666666666666667,
+    "families": 150,
+    "family_interval": [
+      -0.20333333333333334,
+      0.27
+    ],
+    "first": "C5",
+    "qualification": "Observational collection; family uncertainty within this generator seed; no training-seed population claim",
+    "round": 1,
+    "same_defender_weights": false,
+    "second": "A1",
+    "seed": 29
+  }
+]

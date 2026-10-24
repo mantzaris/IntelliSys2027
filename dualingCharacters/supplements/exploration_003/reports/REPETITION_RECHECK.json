@@ -1,0 +1,26 @@
+[
+  {
+    "comparisons": 96,
+    "condition": "C3",
+    "rate": 0.7395833333333334,
+    "repeats": 71,
+    "role": "Generic",
+    "source_sha256": "d2c97949953d5491c8398c30531549a5dabd88f8cf637515005286cb7ed3eeaf"
+  },
+  {
+    "comparisons": 38,
+    "condition": "C5",
+    "rate": 0.8947368421052632,
+    "repeats": 34,
+    "role": "Rival",
+    "source_sha256": "ca7ae370d43651f67ebd30485e8f6bfe05493a15d5a44e23842e2d492f96b4bc"
+  },
+  {
+    "comparisons": 48,
+    "condition": "C5",
+    "rate": 0.8958333333333334,
+    "repeats": 43,
+    "role": "Hyde",
+    "source_sha256": "ca7ae370d43651f67ebd30485e8f6bfe05493a15d5a44e23842e2d492f96b4bc"
+  }
+]

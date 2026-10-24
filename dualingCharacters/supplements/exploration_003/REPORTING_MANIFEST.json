@@ -1,0 +1,23 @@
+{
+  "changes_after_summary": [
+    "Human packet v2 removes study-specific rubric labels; original item bytes and IDs retained.",
+    "Reporting reads use source-hash validated caches.",
+    "Actual archive token sums and existing original-transfer context are reported without changing categories or sample selection.",
+    "Order-manifest cache regeneration and paired/provenance checks do not create new observations.",
+    "Plot layout refined after visual inspection."
+  ],
+  "classification": "Post-summary reporting, packaging and presentation code; not a preregistered scientific freeze. Scientific file bytes remain governed by SCIENTIFIC_MANIFEST.json.",
+  "files": {
+    "reports/__init__.py": "22f3975e7a800283040594daf20d92fe8bd09b4c80379d8fcfcf2ddcbb4fc7e8",
+    "reports/build_report.py": "ddb97d70e799c6f5b880fe97404dfdf2a6885f6dd2893c2e906b2f6d352c8588",
+    "reports/plot_results.py": "6130508054564dc12ca5ae55108340b9dfd7600ad529cbd9c3abc6bf1112b91f",
+    "reports/prepare_review.py": "ee98012864411bb25ea260fd564c3b09a5152dd966b2e39d676881398674384f",
+    "reports/test_reporting.py": "4879968042b6057c75618a886fa4c62fbafd83a22b3b310aa4d284b9b3728880",
+    "reports/verify_package.py": "1f3d27dfb97abcf0fb90e1b770b06abeb0e678527bd193b13ea2e65427cd388b",
+    "reproduce.py": "fcf26c3071acf33544ec203f4c9b75c51a05d1922607f0a4983b09a3cfff919d"
+  },
+  "gpu_calls": 0,
+  "model_judge_calls": 0,
+  "recorded_utc": "2026-10-24T22:28:48.538805+00:00",
+  "scientific_manifest_sha256": "5959543a1d739f1da35a2d6dbbe837846adcad1e71645a854d629c94011a8ddb"
+}

@@ -1,0 +1,30 @@
+{
+  "active_job": "main-qwen-c4-43-r1-fit",
+  "core_controller_pid": 787315,
+  "core_snapshot_utc": "2026-10-24T22:24:03.289149+00:00",
+  "data_cutoff_utc": "2026-10-24T21:48:41.317447+00:00",
+  "deadline_utc": "2026-10-25T02:46:15+00:00",
+  "elapsed_seconds_at_report": 2390.304977,
+  "exploration_reserved_hours": 0,
+  "intent_reserved_hours": 0,
+  "interpretation": "Inconclusive for broader useful exploration",
+  "new_completed_core_stages": [
+    "main-qwen-c4-43-r1-collect"
+  ],
+  "new_inference_calls": 0,
+  "new_judge_calls": 0,
+  "new_training_calls": 0,
+  "next_jobs": [
+    "main-qwen-c4-43-eval",
+    "main-qwen-c5-43-r0-collect",
+    "main-qwen-c5-43-r0-fit"
+  ],
+  "remaining_after_contingency": 65.00219132988478,
+  "remote_worker_pid": 687327,
+  "report_utc": "2026-10-24T22:26:05.304977+00:00",
+  "reserved_at_snapshot": 30.497808670115216,
+  "reserved_before": 29.886576624695294,
+  "review_coordinator_pid": 1291869,
+  "review_reserved_hours": 0,
+  "start_utc": "2026-10-24T21:46:15+00:00"
+}

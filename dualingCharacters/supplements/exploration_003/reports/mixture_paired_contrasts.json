@@ -1,0 +1,22 @@
+[
+  {
+    "comparison": "six-plus-six minus C3",
+    "difference": -0.375,
+    "families": 8,
+    "family_interval": [
+      -1.25,
+      0.625
+    ],
+    "qualification": "Offline prefix archive mixture, not a newly executed ensemble"
+  },
+  {
+    "comparison": "six-plus-six minus C5",
+    "difference": -0.1875,
+    "families": 8,
+    "family_interval": [
+      -1.1875,
+      0.6875
+    ],
+    "qualification": "Offline prefix archive mixture, not a newly executed ensemble"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "archive_rarefaction.csv": "7f6a68ed36d678207cb762baa426bf168ee115dba2544fb168c7f875c908342b",
+    "coverage_curves.csv": "1231d46f5c92686ffeb772c3bc83b01882450a42151409ee12b34e21cf566ee3",
+    "main_collection_contrasts.json": "95f14229a5069b2cff17728802f75325e9d09ca9ec16264597f98ce751e395f7",
+    "primary_overlap.csv": "03611d0164cc72e0861c0e06462e92cc9f1e774b0b2fd92ec59346bd7426ccaa",
+    "primary_paired_contrasts.json": "a0ea89044c8df55275ff3cfd72af945cfe5126b01eb2fa33393440b04d1aa8e4"
+  },
+  "outputs": {
+    "CLAIM_TO_EVIDENCE.md": "fd0ac4bd0a4147cf383734265cac12e483cff76f5f95142041643ba956eb1cba",
+    "MANUSCRIPT_SECTION.md": "b7c1d9ae33b64cee7a4e71b53325bfdaf2c9ed4472af071b71110ce08b2b670b",
+    "reports/RESULTS.md": "0ed6fd6fbee7d5aec7b8dda2ac90963ba87e3b60acdf2ad33383d2827c70b559",
+    "reports/cost_accounting.csv": "41b3a7178b0cee784e6aa421317b743b45451e5f12ed549fbf33fd910f0af634",
+    "reports/run_cost_reconciliation.csv": "29ca3b58bd912be858179454bac4c386d95ab1c5767c3767859154e0dca6b5c6"
+  },
+  "scientific_manifest_sha256": "5959543a1d739f1da35a2d6dbbe837846adcad1e71645a854d629c94011a8ddb",
+  "script_sha256": "ddb97d70e799c6f5b880fe97404dfdf2a6885f6dd2893c2e906b2f6d352c8588"
+}
