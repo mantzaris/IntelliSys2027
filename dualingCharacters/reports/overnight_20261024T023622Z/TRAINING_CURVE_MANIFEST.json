@@ -1,0 +1,20 @@
+{
+  "training_curves": {
+    "caption": "Completed exposure-verified fits only, by model, condition, round and actual seed. Arithmetic means of 16 successive recorded optimizer-step losses are shown; zero means are plotted at 1e-8. Loss reflects selected supervised tokens and does not measure test generalization or permit direct curriculum-quality comparisons. Missing fits are pending, not zero-loss runs. Exact input and target counts are in the accompanying tables.",
+    "inputs": {
+      "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/loss.jsonl": "325cac654a69d2258c74682d9473ec9d7402e424eb78d174c844f1079c56e220",
+      "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/loss.jsonl": "0ce8dd3d838de3af6b16fe82f7f2d84f7a368ff993cab4e132c90d587895d2d5",
+      "artifacts/runs/main-qwen-c3-17-r0-fit/training/loss.jsonl": "8bcb03e521034964c35256ab85bed21ae3d631d57dd43ec54c60243b4be75f70",
+      "artifacts/runs/main-qwen-c3-17-r1-fit/training/loss.jsonl": "f1f2e37bd0c2d5a21bbc4e259705956c42d2356817567301de7789c56a4ee10d",
+      "artifacts/runs/main-qwen-c4-17-r0-fit/training/loss.jsonl": "4b694635e06931497c9db7a553c922ca4dd459e6c364fe7afa2c0b6aebf6a844",
+      "artifacts/runs/main-qwen-c4-17-r1-fit/training/loss.jsonl": "f032c40eebf2e898dcf591442aecc46c7ddfcf27743c5f39c169aa33777bb876",
+      "artifacts/runs/main-qwen-c5-17-r0-fit/training/loss.jsonl": "2017e5a72bd1985c6042439d0656968e7ea7bfae9c9a19c9520ac4b853b0cdf2",
+      "reports/overnight_20261024T023622Z/supervision_exposure.json": "e2732caf86bce24394788fb198460b87d5ad280daa9370b54a51ecaea6e00448"
+    },
+    "outputs": {
+      "pdf": "c5ab4a7ac02e68f6f07594ba804e408334083b6083acd6e65ed2deecec51b976",
+      "png": "d4f5a9759a2723df4b84877f749220a734f50ccc782061762225fecbddb6ca2c",
+      "svg": "695a8879e71902be19205f06ad04b3e16800569b80400ed1e121e1e71ba8e81d"
+    }
+  }
+}

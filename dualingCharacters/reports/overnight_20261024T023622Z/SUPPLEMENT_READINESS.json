@@ -1,0 +1,74 @@
+{
+  "adapter_binding_exists": false,
+  "allocation_status": "Concrete allocation remains pending fixed post-core profiling; do not substitute an invented sample count.",
+  "controller": {
+    "controller_sha256": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
+    "gpu_operations_started": 0,
+    "pid": 1291869,
+    "status": "waiting_for_core",
+    "updated_utc": "2026-10-24T01:57:32Z"
+  },
+  "core_completion_marker": false,
+  "core_gate_satisfied": false,
+  "fixed_checkpoints": {
+    "C1": {
+      "adapter": "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/final",
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "checkpoint_status": "complete",
+      "evaluated_adapter_sha256": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc",
+      "evaluation_id": "main-qwen-c1-17-eval-format2",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "status": "completed"
+    },
+    "C3": {
+      "adapter": "artifacts/runs/main-qwen-c3-17-r1-fit/training/final",
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "checkpoint_status": "complete",
+      "evaluated_adapter_sha256": "bafc11177689961280af9128e0dca86ba94ccb36cf7048bc3667d4bf20a2a306",
+      "evaluation_id": "main-qwen-c3-17-eval",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "status": "completed"
+    },
+    "C5": {
+      "adapter": null,
+      "chat_template_sha256": null,
+      "checkpoint_status": "pending_required_final_checkpoint",
+      "evaluated_adapter_sha256": null,
+      "evaluation_id": "main-qwen-c5-17-eval",
+      "model_revision": null,
+      "status": "pending"
+    },
+    "base": {
+      "adapter": null,
+      "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
+      "checkpoint_status": "base_no_adapter",
+      "evaluated_adapter_sha256": null,
+      "evaluation_id": "base-qwen-eval",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "status": "completed"
+    }
+  },
+  "incomplete_core_stages": 222,
+  "launch_policy": "Existing coordinator only after all 241 core stages; shared lock and cumulative ledger; two-hour aggregate cap inside 96 hours, 30-minute contingency and 90-second margin.",
+  "next_required_core_stage": "main-qwen-c5-17-r1-collect",
+  "no_model_calls_performed_by_this_audit": true,
+  "prepared_input_manifests": {
+    "artifacts/review_001/inputs/common-user-only.json": {
+      "bytes": 2179550,
+      "sha256": "5446d2335b25caa21b3257fff9c3af90dea78f2cc5423bb0b47694d95e57d0bd"
+    },
+    "artifacts/review_001/inputs/memory-C1.json": {
+      "bytes": 8149619,
+      "sha256": "9860d375e2c4bd8b9d9108c8cc747fb015e5140f1c8f66ede28fa4d71d4b6633"
+    },
+    "artifacts/review_001/inputs/memory-C3.json": {
+      "bytes": 8156240,
+      "sha256": "05e39299517c784dc972df70649afa338e3649b33f9c7474054e40d0967b63c4"
+    }
+  },
+  "required_core_stages": 241,
+  "supplement_files_verified": 21,
+  "supplement_freeze_sha256": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
+  "timing_allocation_exists": false,
+  "utc": "2026-10-24T03:14:53.454449+00:00"
+}

@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from . import results,monitor
+from . import results,monitor,associations
 from supplements.review_001.exposure import replay
 
 
@@ -12,6 +12,19 @@ def worlds(family,success,seed=17):
 
 
 class OvernightTests(unittest.TestCase):
+    def test_partial_exposure_does_not_claim_completed_training(self):
+        key={'model':'qwen','condition':'C5','seed':17}
+        fit={**key,'status':'reconstructed_and_verified','run_id':'main-qwen-c5-17-r0-fit',
+             'training_input_tokens':4096,'supervised_target_tokens':70,
+             'target_tokens_by_label_source':{'verified_model_recovery':3}}
+        row=associations.aggregate([], [fit], [], [], [])[0]
+        self.assertEqual((row['completed_fits'],row['planned_fits']),(1,2))
+        self.assertEqual(row['supervised_target_tokens'],70)
+        self.assertEqual(row['verified_model_recovery_target_tokens'],3)
+        self.assertIsNone(row['paired_success'])
+        self.assertIsNone(row['r1_recovery_loss_contributing_unique_windows'])
+        self.assertFalse(row['final_evaluation_available'])
+
     def test_transition_table_retains_family_pairs(self):
         left=worlds('a',True)+worlds('b',True)+worlds('c',False)+worlds('d',False)
         right=worlds('a',True)+worlds('b',False)+worlds('c',True)+worlds('d',False)

@@ -29,10 +29,19 @@ def main(force=False):
     if new['collect'] or force:
         from .collections import main as collections
         collections()
+    from .associations import main as associations
+    associations()
+    from .readiness import main as readiness
+    readiness()
     if new['evaluate'] or new['fit'] or force:
         from .plots import main as plots
         from .draft import main as draft
         plots();draft()
+        from .qualitative import main as qualitative
+        qualitative()
+    if new['fit'] or force:
+        from .training_curves import main as training_curves
+        training_curves()
     write(OUT/'LAST_INCREMENTAL_UPDATE.json',{'utc':utc(),'new_completed_inputs':new,'forced':force})
     print(json.dumps({'changed':True,'new':new}))
 

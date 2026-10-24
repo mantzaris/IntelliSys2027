@@ -53,8 +53,12 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 
 - 2026-10-24T03:01:35.954148+00:00: Progress: 18/241 core stages complete; active main-qwen-c5-17-r0-fit, 0 generation requests, 847872 training input tokens; 11.6707/96 reserved hours. Review remains waiting_for_core.
 
-- 2026-10-24T03:04:13.239403+00:00: First 30-minute deliverables: five validated main evaluations (including newly inspected C4 179/240), six reused exact exposure audits, seven collection audits, five figure sets, a ten-page compiled author-review draft, and 60 preserved blank action-review forms. A temporary three-minute mirror lag cleared without intervention; a 198.8 MB optimizer snapshot was being transferred while training continued. No GPU retry or controller change.
+- 2026-10-24T03:04:13.239403+00:00: First 30-minute deliverables: five validated main evaluations (including newly inspected C4 179/240), six reused exact exposure audits, seven collection audits, five figure sets, a ten-page compiled author-review draft, and a preserved 60-item action packet with two blank rating forms. A temporary three-minute mirror lag cleared without intervention; a 198.8 MB optimizer snapshot was being transferred while training continued. No GPU retry or controller change.
 
 - 2026-10-24T03:06:24.153894+00:00: Reconstructed main-qwen-c5-17-r0-fit: 39436 target tokens; 559 distinct windows actually contributed loss. Every optimizer step matched.
 
 - 2026-10-24T03:07:05.342782+00:00: C5 seed17 round-zero fit completed and mirrored; exact loss reconstruction passed for the seventh fit. The existing controller advanced into its fixed round-one refresh collection. No retry, source amendment, or supplementary GPU call was needed.
+
+- 2026-10-24T03:10:27.843419+00:00: Progress: 19/241 core stages complete; active main-qwen-c5-17-r1-collect, 2624 generation requests, 0 training input tokens; 11.8033/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T03:18:23.457024+00:00: Added descriptive curriculum/outcome joins, completed-fit training curves, read-only supplementary readiness and incremental handoff/provenance generation. Five focused analysis tests pass. No new GPU calls or core changes.

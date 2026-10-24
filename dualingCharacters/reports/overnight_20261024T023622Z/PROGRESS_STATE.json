@@ -1,0 +1,83 @@
+{
+  "actual_session_hours": 0.7003916216666667,
+  "all_completed_core_stages": [
+    "base-qwen-eval",
+    "base-phi-eval",
+    "main-qwen-c1-17-r0-collect",
+    "main-qwen-c1-17-r0-fit-format2",
+    "main-qwen-c1-17-r1-collect-format2",
+    "main-qwen-c1-17-r1-fit-format2",
+    "main-qwen-c1-17-eval-format2",
+    "main-qwen-c3-17-r0-collect",
+    "main-qwen-c3-17-r0-fit",
+    "main-qwen-c3-17-r1-collect",
+    "main-qwen-c3-17-r1-fit",
+    "main-qwen-c3-17-eval",
+    "main-qwen-c4-17-r0-collect",
+    "main-qwen-c4-17-r0-fit",
+    "main-qwen-c4-17-r1-collect",
+    "main-qwen-c4-17-r1-fit",
+    "main-qwen-c4-17-eval",
+    "main-qwen-c5-17-r0-collect",
+    "main-qwen-c5-17-r0-fit"
+  ],
+  "classification": "Active overnight progress snapshot",
+  "commits_since_start": [
+    "09fb6a1 Add overnight monitoring and incremental evidence package"
+  ],
+  "core_hashes_verified": 58,
+  "current_source_commit": "09fb6a11d2f6e4456eb62555a77509f3289ccb0a",
+  "exclusions_manifest": "configs/run_exclusions.json",
+  "exclusions_sha256": "46bc642b0da8d85cd28e33833b0c95401ff37c6c9e1445e159b7cb439c535b3f",
+  "failed_or_interrupted_attempts": [
+    {
+      "gpu_reserved_seconds": 101.82988438429311,
+      "run_id": "pilot-c3-001",
+      "status": "failed"
+    }
+  ],
+  "gpu_controllers_launched_by_overnight_work": 0,
+  "intentional_uncommitted_files": [
+    " M analysis/overnight/test_analysis.py",
+    " M analysis/overnight/update.py",
+    " M reports/overnight_20261024T023622Z/LATEST_STATE.json",
+    " M reports/overnight_20261024T023622Z/RESOURCE_FORECAST.json",
+    " M reports/overnight_20261024T023622Z/WORK_LOG.md",
+    "?? analysis/overnight/associations.py",
+    "?? analysis/overnight/handoff.py",
+    "?? analysis/overnight/qualitative.py",
+    "?? analysis/overnight/readiness.py",
+    "?? analysis/overnight/training_curves.py",
+    "?? reports/overnight_20261024T023622Z/CURRICULUM_ASSOCIATIONS.md",
+    "?? reports/overnight_20261024T023622Z/QUALITATIVE_APPENDIX.md",
+    "?? reports/overnight_20261024T023622Z/QUALITATIVE_SELECTION.json",
+    "?? reports/overnight_20261024T023622Z/SUPPLEMENT_READINESS.json",
+    "?? reports/overnight_20261024T023622Z/TRAINING_CURVES.md",
+    "?? reports/overnight_20261024T023622Z/TRAINING_CURVE_MANIFEST.json",
+    "?? reports/overnight_20261024T023622Z/association_provenance.json",
+    "?? reports/overnight_20261024T023622Z/curriculum_associations.csv",
+    "?? reports/overnight_20261024T023622Z/curriculum_associations.json",
+    "?? reports/overnight_20261024T023622Z/figures/training_curves.pdf",
+    "?? reports/overnight_20261024T023622Z/figures/training_curves.png",
+    "?? reports/overnight_20261024T023622Z/figures/training_curves.svg",
+    "?? reports/overnight_20261024T023622Z/training_curve_points.csv",
+    "?? reports/overnight_20261024T023622Z/training_curve_points.json",
+    "?? reports/overnight_20261024T023622Z/training_curve_summary.csv",
+    "?? reports/overnight_20261024T023622Z/training_curve_summary.json"
+  ],
+  "latest_reserved_hours": 11.87959348330187,
+  "new_completed_core_stages": [
+    "main-qwen-c5-17-r0-collect",
+    "main-qwen-c5-17-r0-fit"
+  ],
+  "reported_utc": "2026-10-24T03:18:23.409838+00:00",
+  "reserved_hours_during_session": 0.6236818654871765,
+  "resource_timestamp_utc": "2026-10-24T03:15:02.575003+00:00",
+  "retry_manifest": "artifacts/overnight_20261024T023622Z/recovery_attempts.json",
+  "running_core_stage": "main-qwen-c5-17-r1-collect",
+  "start_reserved_hours": 11.255911617814693,
+  "started_utc": "2026-10-24T02:36:22Z",
+  "supplement_hashes_verified": 21,
+  "supplement_reserved_hours": 0.0,
+  "target_handoff_utc": "2026-10-24T12:36:22Z"
+}
