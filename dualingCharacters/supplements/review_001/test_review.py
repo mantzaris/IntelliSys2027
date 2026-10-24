@@ -140,7 +140,7 @@ class ReviewTests(unittest.TestCase):
         action={'family_id':'fixture','world':'authorized','turn':2,'actor':'Robin','kind':'edit','slot':0,'value':'Harbor','claim':'A fixture claim','source':1,'target':None,'applied':True,
                 'prompt':[{'role':'user','content':json.dumps({'sources':[],'inbox':[],'memory':{}})}]}
         with tempfile.TemporaryDirectory() as tmp:
-            with patch.object(packets,'ARTIFACTS',Path(tmp)),patch.object(packets,'RESULTS',Path(tmp)/'results'):
+            with patch.object(packets,'ROOT',Path(tmp)),patch.object(packets,'ARTIFACTS',Path(tmp)),patch.object(packets,'RESULTS',Path(tmp)/'results'):
                 packets.build('fixture',{'B0':[action]},{});form=Path(tmp)/'human_review/fixture/rater_1.csv'
                 form.write_text('existing independent human annotation')
                 packets.build('fixture',{'B0':[action]},{});self.assertEqual(form.read_text(),'existing independent human annotation')

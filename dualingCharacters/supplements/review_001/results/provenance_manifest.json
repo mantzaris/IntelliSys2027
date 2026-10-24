@@ -4,7 +4,7 @@
     "supplements/review_001/PROTOCOL.md": "75f4679c7a7b181c784f42645c3dd00cf4c8172f26e51fb066ec2117eeecead0",
     "supplements/review_001/__init__.py": "0e188a86e50f0985470e3f3c53bcdf7f3ce440554285b9b0c535d93214d5ba7d",
     "supplements/review_001/allocation.py": "df93b878b89a938e3deb86185bbfaa1efd5e43ac622497de56bda5c16a6a7b09",
-    "supplements/review_001/analyze.py": "5264eac9956422e7f4be42b9e566adcd5060f19109ef3c0510e215600e28007d",
+    "supplements/review_001/analyze.py": "471865f95c0968d609ac141aef18c76b5a9824e5e514d17d19034d7ca334aeef",
     "supplements/review_001/audit.py": "1161b2637c0276ffd45c1b3f9451b9689e4c419d0321fa31a61a1dfdcb94af33",
     "supplements/review_001/common.py": "9aa184c757d86d8a49c45ea35e7f639bf564fa1dbc5fe5452cf95f45171a2097",
     "supplements/review_001/controller.py": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
@@ -42,7 +42,7 @@
     "supplements/review_001/results/paired_contrasts.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "supplements/review_001/results/paired_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "supplements/review_001/results/pilot_actions_packet.json": "417808a53836339f0a8ced28594b98dc77de6868f1847facef631a71629210a7",
-    "supplements/review_001/results/progress.json": "be70c4c1af35711e74c61acec3dc873594f72a4c3609c2b5b4973c17ed8eb6b5",
+    "supplements/review_001/results/progress.json": "85a652c822422035dec7973a702e6a1bdf524e14e41c3f58599e4b43e2898c73",
     "supplements/review_001/results/replay_agreement.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "supplements/review_001/results/replay_agreement.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "supplements/review_001/results/review_findings.json": "e9350ccd13ee9b2134b2ec72e997573c98b003f73e707a1919d4ac2aa0f07615",
@@ -54,12 +54,12 @@
     "supplements/review_001/results/supervision_exposure.json": "a9b89b668a980e71ad525cfc51ddec6d5d9bf48e4c9e79c095e06a74207142d1",
     "supplements/review_001/results/supervision_pool_concentration.csv": "226c6558b55f192a36eb58ef60d393df153e1ed16ca86425ba4683fcabb851c9",
     "supplements/review_001/results/supervision_pool_concentration.json": "6e4ac51c9f9085b6d89d56db40a19346f25dbdc06489deb8ad02b8050a8f16be",
-    "supplements/review_001/results/supplement_provenance.json": "08894a4f8d44da980835e03ad43d9504fdf79772d810a9c23bec00c5b165edd2",
+    "supplements/review_001/results/supplement_provenance.json": "5f92540abfcb78c4a565dbee7703a2c0568a2a9034d10ebfbfb30c7fa7b674bc",
     "supplements/review_001/results/supplement_status.json": "34bac64d904d74330e61004addf54d78f6dd23688e4ff9ff52f54c3deb81c0ab",
     "supplements/review_001/rollout.py": "4800bd33208f95609aef7d4a2d9745369dc0ca06dea71080fb30df3bc1ba0895",
     "supplements/review_001/severity.py": "38c0a9783ac9ea3a4c6a6aa19f8e72eb90bb160f45a1f04212073ae71f84d183",
-    "supplements/review_001/test_review.py": "6092852ff2876cfdcbfc10d91873c8973191833afe4ebe39185e97847d7566a3"
+    "supplements/review_001/test_review.py": "dffa09d54eb5814e5ebc106bac8e3fdece2f173f985838c9bb912b0e7632be4f"
   },
-  "generated_utc": "2026-10-24T01:54:54.203540+00:00",
+  "generated_utc": "2026-10-24T01:56:43.489728+00:00",
   "raw_linkage": "cpu_provenance/exposure_provenance/supplement_provenance contain raw input and checkpoint links; metrics regenerate deterministically from those traces"
 }

@@ -38,7 +38,9 @@ def contrast(left,right,label):
 def scored(row,scenario):
     turn=row.get('turn',len(scenario.messages));truth=scenario.truth_at(turn);gold=truth.target(scenario.spec)
     body=json.loads(row['prompt'][-1]['content']);sources=body['sources'];visible={m['index'] for m in sources}
-    parsed=row['generation']['parsed'];plan=parsed.get('plan',[]);switch=scenario.events[scenario.switch_turn-1].updates[0]
+    parsed=row['generation']['parsed'];plan=parsed.get('plan',[])
+    if not isinstance(plan,list):plan=[]
+    switch=scenario.events[scenario.switch_turn-1].updates[0]
     slot,alternate=switch
     metric=score(parsed,truth,scenario.spec,visible)
     return {'family_id':scenario.family_id,'world':scenario.world,'domain':scenario.spec.domain,'heldout_rule':scenario.spec.online_override,
@@ -91,6 +93,8 @@ def main():
                         agreement['input_token_equal']+=row['saved_input_tokens']==row['generation']['input_tokens']
                         saved_metric=score(row['saved_parsed'],scenario.truth_at(64),scenario.spec)
                         saved.append({'family_id':row['family_id'],'world':row['world'],'success':saved_metric['success']})
+                assert allocation is not None and len(rows)==2*allocation['families']
+                assert {r['family_id'] for r in rows}=={f'test-{n:04d}' for n in allocation['selected_families']}
                 key=condition,variant;groups[key]=rows;memory.append(summarize(rows,condition=condition,variant=variant))
                 write(ARTIFACTS/f'analysis/{condition}-{variant}-metrics.json',rows)
                 record_source(inputs,ARTIFACTS/f'analysis/{condition}-{variant}-metrics.json')
@@ -112,6 +116,8 @@ def main():
             behavior={}
             for condition in conditions:
                 actions=list(stable_rows(run/(condition+'_characters.jsonl'),inputs));counts=Counter();last={}
+                assert len(actions)==16*2*12
+                assert len({(a['family_id'],a['world'],a['turn']) for a in actions})==len(actions)
                 for a in actions:
                     counts['actions']+=1;counts['kind_'+a['kind']]+=1;counts['applied']+=a['applied'];counts['rejected_or_no_delivery']+=not a['applied']
                     counts['reserved_opportunities']+=a['communication_slot'];counts['direct_opportunities']+=not a['communication_slot']
@@ -141,11 +147,13 @@ def main():
         elif stage=='balanced':
             bgroups={}
             for c in ('C1','C3','C5'):
-                rows=[]
+                rows=[];turns=set()
                 for row in stable_rows(run/(c+'.jsonl'),inputs):
+                    turns.add((row['family_id'],row['world'],row['turn']))
                     if row['turn']!=64:continue
                     s=next(s for s in family('balanced',int(row['family_id'].split('-')[-1]),64) if s.world==row['world'])
                     rows.append(scored(row,s))
+                assert len(turns)==64*2*64 and len(rows)==64*2
                 bgroups[c]=rows;balanced.append(summarize(rows,condition=c))
             for c in ('C1','C3'):deltas.append(contrast(pairs(bgroups['C5']),pairs(bgroups[c]),f'fresh-balanced:C5-{c}'))
         elif stage=='severity':
@@ -153,6 +161,7 @@ def main():
             for row in stable_rows(run/'severity.jsonl',inputs):
                 s=next(s for s in make_family('train',int(row['family_id'].split('-')[-1]),16) if s.world==row['world'])
                 by_state[row['family_id'],row['world'],row['turn']][row['action_condition']]=scored(row,s)
+            assert len(by_state)==16*2*2 and all(set(v)=={'none','C3','C5'} for v in by_state.values())
             for c in ('C3','C5'):
                 correct=[v for v in by_state.values() if v['none']['success']]
                 severity.append({'condition':c,'states':len(by_state),'reference_correct':len(correct),'reference_incorrect':len(by_state)-len(correct),
