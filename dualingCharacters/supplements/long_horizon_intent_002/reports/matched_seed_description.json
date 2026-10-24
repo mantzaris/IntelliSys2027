@@ -1,0 +1,47 @@
+[
+  {
+    "condition": "C1",
+    "matched_seeds": [
+      17,
+      29
+    ],
+    "mean": 0.675,
+    "qualification": "Descriptive across the same completed seeds; not population training robustness, drift, or horizon interaction. Three seeds still provide limited variation evidence.",
+    "range": 0.20000000000000007,
+    "sample_sd": 0.14142135623730956,
+    "values": [
+      0.775,
+      0.575
+    ]
+  },
+  {
+    "condition": "C3",
+    "matched_seeds": [
+      17,
+      29
+    ],
+    "mean": 0.7458333333333333,
+    "qualification": "Descriptive across the same completed seeds; not population training robustness, drift, or horizon interaction. Three seeds still provide limited variation evidence.",
+    "range": 0.016666666666666607,
+    "sample_sd": 0.01178511301977575,
+    "values": [
+      0.7375,
+      0.7541666666666667
+    ]
+  },
+  {
+    "condition": "C5",
+    "matched_seeds": [
+      17,
+      29
+    ],
+    "mean": 0.725,
+    "qualification": "Descriptive across the same completed seeds; not population training robustness, drift, or horizon interaction. Three seeds still provide limited variation evidence.",
+    "range": 0.050000000000000044,
+    "sample_sd": 0.03535533905932741,
+    "values": [
+      0.7,
+      0.75
+    ]
+  }
+]

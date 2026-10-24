@@ -45,6 +45,26 @@ The structured core benchmark, natural-language intent benchmark and human seman
 validation remain distinct evidence. Fresh scores are pending until actual outputs
 and required ratings exist.
 
+Before freezing or making model calls, authoring review corrected one conflict
+between a fixed product-scope constraint and its authorized alternative, added
+concrete visible task facts and source passages, and clarified that an ancillary
+choice does not authorize an otherwise unapproved option. These changes were
+engineering/design review, not responses to new benchmark scores.
+
+All families share a controlled 16-phase event skeleton and an explicit authority
+grammar. Substantive artifacts, goals, priorities and dependencies differ, but the
+set is small and does not span arbitrary conversational structure. Domain balance
+does not establish real-world generalization. Ambiguity wording is deliberately
+explicit and may be easier than naturally occurring ambiguity. Source passages
+and unknown factual details are supplied in the first user turn; marked placeholders
+are acceptable where the user has not provided a fact.
+
+The offline token audit uses the exact pinned Qwen tokenizer on public-only prefixes
+with empty memory. It measures script length and retriever feasibility without model
+calls. It is neither an actual assistant trajectory nor evidence of intent adherence;
+actual generated context lengths, retrieval competition and source coverage must be
+reported separately after execution.
+
 Rebuild without GPU calls:
 
 ```bash

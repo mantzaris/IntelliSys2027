@@ -33,7 +33,8 @@ def reference_audit(prediction,scenario,turn,sources):
     for slot,canonical in enumerate(gold['evidence']):
         ref=refs[slot] if slot<len(refs) else None
         exists=isinstance(ref,int) and not isinstance(ref,bool) and (ref==0 or ref in events or (ref>0 and ref%2==0 and ref<2*turn))
-        flags={'canonical_mismatch':ref!=canonical,'not_visible':ref is not None and ref not in visible,
+        visible_ref=isinstance(ref,int) and not isinstance(ref,bool) and ref in visible
+        flags={'canonical_mismatch':ref!=canonical,'not_visible':ref is not None and not visible_ref,
           'nonexistent_or_future':ref is not None and not exists,'assistant_authority':bool(exists and ref%2==0),
           'missing_reference':ref is None,'wrong_explicit_user_authorization':False,
           'alternative_unsuperseded_user_authorization':False,'anaphoric_user_reaffirmation_needs_semantic_review':False,
@@ -80,7 +81,7 @@ def audit_run(run_id,final_rows):
     run=ROOT/'artifacts/runs'/run_id;path=trace_path(run/'evaluation.jsonl');mark=ARTIFACTS/'core_trajectory'/f'{run_id}.json'
     signature=[path.stat().st_size,path.stat().st_mtime_ns,sha256(run/'status.json')]
     if mark.exists() and read(mark)['signature']==signature:return read(mark)
-    meta=read(run/'status.json');assert meta['status']=='completed';assert run_id!=read(ROOT/'artifacts/campaign_state.json')['active_job']['id']
+    meta=read(run/'status.json');assert meta['status']=='completed';assert run_id!=(read(ROOT/'artifacts/campaign_state.json').get('active_job') or {}).get('id')
     cfg=meta['config'];scenarios={(s.family_id,s.world):s for i in range(240) for s in make_family('test',i,64)}
     groups=defaultdict(list);turns=defaultdict(Counter);final_audit=[];seen=set();inputs={str(path.relative_to(ROOT)):sha256(path)}
     for row in stream(path):
@@ -101,7 +102,7 @@ def audit_run(run_id,final_rows):
         if turn==64:
             references=reference_audit(pred,scenario,turn,sources)
             final_audit.append({'family_id':family,'world':world,**c,'original_source_error':metrics['evidence_accuracy']<1 or metrics['invalid_evidence']>0,
-              'references':references,'source_count':len(sources),'canonical_all_visible':all(i in {m['index'] for m in sources} for i in target['evidence'])})
+              'references':references,'source_count':len(sources),'canonical_all_visible':all(i is None or i in {m['index'] for m in sources} for i in target['evidence'])})
     assert len(seen)==30720 and len(groups)==480 and len(final_audit)==480
     episodes=[episode_summary(group) for group in groups.values()]
     header={'run_id':run_id,'model':cfg['model'],'condition':cfg['condition'],'seed':cfg['seed']}

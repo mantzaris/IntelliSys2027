@@ -1,0 +1,13 @@
+{
+  "abstract_words": 188,
+  "compilation_log": "artifacts/long_horizon_intent_002/draft_build/compilation.log",
+  "exit_code": 0,
+  "generated_utc": "2026-10-24T14:43:55.622868+00:00",
+  "markdown_sha256": "62f338b6961883d83fc070a1d060cc05fddb73ff455b18ad43997aa27061e977",
+  "pdf_path": "supplements/long_horizon_intent_002/reports/draft/intent_author_review.pdf",
+  "pdf_sha256": "2a70cea7fac28a5da3981d26dc9422bacdb70edc1c1617bc1371fbf39c8bfd56",
+  "scientific_status": "Incomplete core grid; fresh qualitative results and human validation pending. No submission-readiness or compliance assertion.",
+  "source_sha256": "aa5ea8429737e8ad26f3075d90405be4cc59ffba4dd20d734548e7f2f9c0fa5b",
+  "status": "compiled_author_review_only",
+  "template_sha256": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560"
+}

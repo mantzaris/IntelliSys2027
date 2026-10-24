@@ -5,6 +5,8 @@ from pathlib import Path
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
+from itertools import product
 from .benchmark import render,observation_grid,selection,event_signature,ledger_signature
 from .scenarios import SCENARIOS,ENGINEERING
 from .public import PublicConversation,PublicMessage
@@ -14,6 +16,11 @@ from .budget import admit,cumulative_extension_seconds,choose_tier,timestamp
 from .core_audit import clarification,episode_summary,reference_audit
 from .core_horizons import contrast,paired_table
 from pcc.environment import make_family
+from .scoring import analyze,rating_tensor,IncompleteRatings,CONDITIONS,HORIZONS,WORLDS
+from .human_review import sample_keys,read_ratings,blank_csv,immutable_write,validate_run_metadata
+from .deadline import stop_owned_group
+from .core_horizons import extension_identity
+from .source_dynamics import describe
 
 
 class Tokenizer:
@@ -125,6 +132,79 @@ class IntentTests(unittest.TestCase):
     def test_evidence_assistant_and_unavailable_are_distinct(self):
         s=make_family('test',0,64)[0];pred=s.truth_at(64).target(s.spec);pred['evidence']=[2,99999,*pred['evidence'][2:]]
         r=reference_audit(pred,s,64,[]);self.assertTrue(r[0]['assistant_authority']);self.assertTrue(r[0]['not_visible']);self.assertFalse(r[0]['nonexistent_or_future']);self.assertTrue(r[1]['nonexistent_or_future'])
+    def test_primary_requires_both_worlds_and_keeps_poor_absolute_long_score(self):
+        rows=[]
+        for seed,family,condition,horizon,world,c in product([17],['a','b'],CONDITIONS,HORIZONS,WORLDS,range(6)):
+            value=(0 if horizon==16 else 1) if condition=='C5' else (4 if horizon==16 else 3)
+            rows.append(dict(seed=seed,family_id=family,condition=condition,horizon=horizon,world=world,checkpoint=c,adherence=value,helpful=4))
+        result=analyze(rows,['a','b'],[17]);contrast=result['contrasts'][0]
+        self.assertGreater(contrast['interaction_128_minus_16'],0);self.assertLess(contrast['absolute_128_difference'],0)
+        altered=[{**r,'adherence':0 if r['world']=='hypothetical' else 4} for r in rows]
+        self.assertTrue(all(v['paired_late_adherence']==0 for v in analyze(altered,['a','b'],[17])['levels']))
+        with self.assertRaises(IncompleteRatings):rating_tensor(rows[:-1],['a','b'],[17])
+        with self.assertRaises(ValueError):rating_tensor(rows+[rows[0]],['a','b'],[17])
+        with self.assertRaises(IncompleteRatings):rating_tensor([{**r,'adherence':None} if i==0 else r for i,r in enumerate(rows)],['a','b'],[17])
+    def test_blinded_sample_balanced_and_ratings_are_never_fabricated(self):
+        entries=[{'family_id':s['id'],'domain':s['domain'],'ambiguous':i%2==1,'collection':'scientific'} for i,s in enumerate(SCENARIOS)]
+        for n in (8,12,16):
+            sampled=sample_keys(selection(n),[17,29,43],{'entries':entries});self.assertEqual(len(sampled),432)
+            for seed in (17,29,43):
+                for c in range(6):self.assertEqual(sum(k[0]==seed and k[-1]==c for k in sampled),24)
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/'ratings.csv';immutable_write(p,blank_csv(['a','b']))
+            with self.assertRaises(IncompleteRatings):read_ratings(p,['a','b'])
+            with self.assertRaises(FileExistsError):immutable_write(p,'different items')
+            self.assertEqual(p.read_text(),blank_csv(['a','b']))
+    def test_no_partial_or_wrong_checkpoint_in_human_packet(self):
+        binding={'model_revision':'revision','chat_template_sha256':'template','adapter_sha256':'adapter'}
+        status={'status':'completed','config':{'condition':'C5','seed':17},**binding,'loaded_adapter_sha256':'adapter','allocation_sha256':'allocation','intent_freeze_sha256':'freeze'}
+        validate_run_metadata(status,'C5',17,binding,'allocation','freeze')
+        for change in ({'status':'running'},{'loaded_adapter_sha256':'wrong'},{'allocation_sha256':'wrong'}):
+            with self.assertRaises(ValueError):validate_run_metadata({**status,**change},'C5',17,binding,'allocation','freeze')
+    def test_deadline_targets_only_declared_new_process_group(self):
+        import os
+        with patch('os.killpg') as kill:
+            stop_owned_group(987654321);kill.assert_called_once()
+            self.assertEqual(kill.call_args.args[0],987654321)
+        with self.assertRaises(ValueError):stop_owned_group(os.getpgrp())
+        with self.assertRaises(ValueError):stop_owned_group(1)
+    def test_nonfinite_budget_inputs_cannot_admit_a_job(self):
+        session={'useful_work_deadline_utc':'2026-10-24T20:36:05Z','deadline_utc':'2026-10-24T21:06:05Z'}
+        self.assertFalse(admit(float('nan'),session,timestamp('2026-10-24T14:00:00Z'),0,0,True,True,True)['admitted'])
+        with self.assertRaises(ValueError):choose_tier(0,640,20,7200)
+        with self.assertRaises(ValueError):choose_tier(float('nan'),640,20,7200)
+    def test_horizon_extension_metadata_is_not_main_evaluation_metadata(self):
+        job={'model':'qwen','condition':'C5','seed':17};status={'status':'completed','extension':'horizon128','family_numbers':[1,2], 'config':job}
+        extension_identity(status,job,[1,2],128)
+        with self.assertRaises(ValueError):extension_identity(status,job,[1,3],128)
+        with self.assertRaises(ValueError):extension_identity(status,job,[1,2],32)
+    def test_legitimate_update_is_not_lost_valid_memory(self):
+        scenario=make_family('test',0,64)[0];turn=32;truth=scenario.truth_at(turn);previous=scenario.truth_at(turn-1)
+        row={'family_id':scenario.family_id,'world':scenario.world,'turn':turn,'target':truth.target(scenario.spec),
+          'generation':{'parsed':{'state':previous.values},'input_tokens':1,'output_tokens':1},'metrics':{'success':False},
+          'prompt':[{'content':json.dumps({'memory':{'state':previous.values},'sources':[m.public() for m in scenario.messages[:turn]]})}]}
+        result=describe(row,scenario);self.assertTrue(result['memory_correct_for_previous_truth']);self.assertFalse(result['truth_values_unchanged']);self.assertFalse(result['valid_memory_lost_without_user_change'])
+    def test_repeated_family_or_seed_cannot_inflate_analysis(self):
+        from .scoring import expected_keys
+        with self.assertRaises(ValueError):expected_keys(['a','a'],[17])
+        with self.assertRaises(ValueError):expected_keys(['a'],[17,17])
+    def test_deadline_supervisor_preserves_partial_status_and_cost(self):
+        from . import deadline
+        class Process:
+            pid=987654321
+            result=None
+            def poll(self):return self.result
+            def wait(self,timeout):return self.result
+        proc=Process();now=[0.0]
+        def sleep(seconds):now[0]+=seconds
+        def stop(pid,*args):self.assertEqual(pid,proc.pid);proc.result=-15
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);artifacts=root/'artifacts/long_horizon_intent_002';status=root/'artifacts/runs/intent002-test/status.json';status.parent.mkdir(parents=True)
+            status.write_text(json.dumps({'run_id':'intent002-test','status':'running','gpu_reserved_seconds':0}))
+            with patch.object(deadline,'ROOT',root),patch.object(deadline,'ARTIFACTS',artifacts),patch.object(deadline.subprocess,'Popen',return_value=proc),patch.object(deadline.time,'sleep',side_effect=sleep),patch.object(deadline,'stop_owned_group',side_effect=stop):
+                code=deadline.supervise(['fake-test-process'],30,'intent002-test',30,clock=lambda:now[0])
+            result=json.loads(status.read_text());self.assertNotEqual(code,0);self.assertEqual(result['status'],'failed');self.assertGreater(result['gpu_reserved_seconds'],0);self.assertLessEqual(now[0],30)
+            self.assertTrue(result['supervisor_deadline_interrupted']);self.assertTrue((root/'artifacts/run_registry.jsonl').exists())
 
 
 if __name__=='__main__':unittest.main()

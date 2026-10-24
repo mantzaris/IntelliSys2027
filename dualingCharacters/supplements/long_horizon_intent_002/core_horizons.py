@@ -2,12 +2,12 @@
 from pathlib import Path
 import json
 import numpy as np
-from pcc.environment import make_family,digest
+from pcc.environment import make_family,digest,score
 from pcc.resources import sha256
 from pcc.campaign import jobs,resolve_job,load_overrides
 from pcc.freeze import verify_freeze
 from pcc.eligibility import exclusions
-from supplements.review_001.common import write_csv,trace_path
+from supplements.review_001.common import write_csv,trace_path,stream
 from .common import ROOT,REPORTS,ARTIFACTS,read,write,utc
 
 
@@ -64,9 +64,54 @@ def contrast(short_method,long_method,short_control,long_control):
       'qualification':'Exploratory family-only paired resampling of all methods/horizons/worlds together; seed17 only. Positive interaction does not imply higher absolute 128-turn performance.'}
 
 
+def extension_identity(status,job,numbers,horizon):
+    if status.get('status')!='completed' or status.get('extension')!=f'horizon{horizon}':raise ValueError('Incomplete/wrong horizon extension')
+    if status.get('family_numbers')!=numbers:raise ValueError('Frozen horizon family selection changed')
+    for name in ('model','condition','seed'):
+        if status['config'][name]!=job[name]:raise ValueError('Horizon configuration identity mismatch')
+
+
+def validate_extension(job,run,status,numbers,horizon):
+    extension_identity(status,job,numbers,horizon);frozen=verify_freeze(ROOT)
+    if run.name in exclusions(ROOT):raise ValueError('Excluded horizon run')
+    if read(run/'config.json')!=status['config']:raise ValueError('Saved configuration differs')
+    for k,v in {'engine':'vllm','batch_size':64,'max_input_tokens':4096,'answer_tokens':256,'character_tokens':128,'structured_decoding':True,'retrieval_messages':8,'recent_messages':4}.items():
+        if status['config'][k]!=v:raise ValueError('Frozen horizon inference differs: '+k)
+    if status['model_revision']!=read(ROOT/'configs/models.json')['qwen']['revision']:raise ValueError('Model revision differs')
+    for name in ('environment','extensions','evaluation','memory','schemas','backend','fast_backend','config'):
+        rel=f'src/pcc/{name}.py'
+        if status['source_hashes'][rel]!=frozen['files'][rel]:raise ValueError('Horizon source mismatch: '+rel)
+    if job.get('adapter') and sha256(ROOT/job['adapter']/'adapter_model.safetensors')!=status['loaded_adapter_sha256']:raise ValueError('Horizon adapter mismatch')
+    scenarios={(s.family_id,s.world):s for number in numbers for s in make_family('test',number,horizon)}
+    expected_hash=digest([{'id':s.family_id,'world':s.world,'sources':[m.public() for m in s.source_messages()]} for s in scenarios.values()])
+    if status['dataset_hash']!=expected_hash:raise ValueError('Horizon transcript manifest mismatch')
+    summary=read(run/'evaluation_summary.json');indexed={(r['family_id'],r['world']):r for r in summary}
+    if len(indexed)!=len(summary) or set(indexed)!=set(scenarios):raise ValueError('Horizon paired coverage differs')
+    source=trace_path(run/'evaluation.jsonl');cache=ARTIFACTS/'core_horizon_validation'/f'{run.name}.json'
+    signature=[sha256(run/'status.json'),sha256(run/'evaluation_summary.json'),source.stat().st_size,source.stat().st_mtime_ns]
+    if cache.exists() and read(cache)['signature']==signature:return read(cache)
+    seen=set()
+    for row in stream(source):
+        k=row['family_id'],row['world'];turn=row['turn'];identity=(*k,turn)
+        if k not in scenarios or not 1<=turn<=horizon or identity in seen:raise ValueError('Invalid/duplicate horizon trace observation')
+        seen.add(identity);s=scenarios[k];truth=s.truth_at(turn);body=json.loads(row['prompt'][-1]['content'])
+        if row['target']!=truth.target(s.spec) or row['condition']!='base':raise ValueError('Dynamic target or antagonist-free boundary differs')
+        metrics=score(row['generation']['parsed'],truth,s.spec,{m['index'] for m in body['sources']})
+        if metrics!=row['metrics']:raise ValueError('Raw horizon score differs')
+        users={m.index:m.public() for m in s.messages}
+        for m in body['sources']:
+            if m['author']=='user' and users.get(m['index'])!=m:raise ValueError('Original user source changed')
+        if turn==horizon:
+            if indexed[k]['horizon']!=horizon or indexed[k]['memory_updates']!=horizon:raise ValueError('Incomplete interactive horizon')
+            for field in ('success','recall_accuracy','plan_accuracy','dependency_accuracy','evidence_accuracy'):
+                if metrics[field]!=indexed[k][field]:raise ValueError('Horizon final summary differs')
+    if len(seen)!=len(scenarios)*horizon:raise ValueError('Missing horizon trace turns')
+    value={'signature':signature,'rows':len(seen),'raw_sha256':sha256(source),'source_sha256':sha256(Path(__file__)),'validated_utc':utc()};write(cache,value);return value
+
+
 def main():
     design=design_audit();ids={f'test-{i:04d}' for i in design['families']};frozen=verify_freeze(ROOT);override=load_overrides(ROOT)
-    queue=[resolve_job(j,override) for j in jobs(frozen['plan'])];active=read(ROOT/'artifacts/campaign_state.json')['active_job']['id'];excluded=exclusions(ROOT)
+    queue=[resolve_job(j,override) for j in jobs(frozen['plan'])];active=(read(ROOT/'artifacts/campaign_state.json').get('active_job') or {}).get('id');excluded=exclusions(ROOT)
     rows=[];values={};inputs={}
     for condition in CONDITIONS:
         for h in HORIZONS:
@@ -76,7 +121,17 @@ def main():
             job=matching[0];run=ROOT/'artifacts/runs'/job['id'];status=read(run/'status.json',{})
             row={'model':'qwen','condition':condition,'seed':17,'horizon':h,'families':48,'run_id':job['id'],'status':'pending','paired_success':None}
             if status.get('status')=='completed' and job['id']!=active and job['id'] not in excluded:
-                assert status['horizon']==h and status['config']['seed']==17 and status['config']['condition']==condition
+                if h==64:
+                    assert status['horizon']==h and status['config']['seed']==17 and status['config']['condition']==condition
+                    # Full 30,720-turn validation is already cached by incremental main analysis.
+                    validated=ARTIFACTS/'core_audits/evaluations'/f'{job["id"]}.validation.json'
+                    if not validated.exists():raise ValueError('Validate completed main evaluation first')
+                    for path in (run/'status.json',run/'evaluation_summary.json'):
+                        if read(validated)['inputs'].get(str(path.relative_to(ROOT)))!=sha256(path):raise ValueError('Previously validated main input changed')
+                    inputs[str(validated.relative_to(ROOT))]=sha256(validated)
+                else:
+                    checked=validate_extension(job,run,status,design['families'],h)
+                    inputs[str(trace_path(run/'evaluation.jsonl').relative_to(ROOT))]=checked['raw_sha256']
                 if job.get('adapter'):assert sha256(ROOT/job['adapter']/'adapter_model.safetensors')==status['loaded_adapter_sha256']
                 path=run/'evaluation_summary.json';summary=read(path);v=paired_table(summary,ids);values[condition,h]=v
                 row.update(status='completed',paired_success=float(v.mean()),paired_successes=int(v.sum()))

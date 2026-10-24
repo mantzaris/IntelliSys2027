@@ -1,0 +1,83 @@
+[
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/final",
+    "adapter_sha256": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc",
+    "condition": "C1",
+    "evaluation_run_id": "main-qwen-c1-17-eval-format2",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 17,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c3-17-r1-fit/training/final",
+    "adapter_sha256": "bafc11177689961280af9128e0dca86ba94ccb36cf7048bc3667d4bf20a2a306",
+    "condition": "C3",
+    "evaluation_run_id": "main-qwen-c3-17-eval",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 17,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c5-17-r1-fit/training/final",
+    "adapter_sha256": "7146cb31a3f7a77b56ac8f14b116a177c8e1c8b6f1e07a830386b35b7ac84be0",
+    "condition": "C5",
+    "evaluation_run_id": "main-qwen-c5-17-eval",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 17,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c1-29-r1-fit/training/final",
+    "adapter_sha256": "835c4527c556a78869cee67a00f7ca1ae45fa2f26e674d288707fdb1e0c8f6e5",
+    "condition": "C1",
+    "evaluation_run_id": "main-qwen-c1-29-eval",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 29,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c3-29-r1-fit/training/final",
+    "adapter_sha256": "a58f538241f5633be66b9623cf34e8a2b5107ebb3a79fd4de19b1ad45aa110aa",
+    "condition": "C3",
+    "evaluation_run_id": "main-qwen-c3-29-eval",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 29,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c5-29-r1-fit/training/final",
+    "adapter_sha256": "93a72a7b501c2c980ce7b33f4408d31611c2c7e9d75cc17c830ff5c47e1b2b33",
+    "condition": "C5",
+    "evaluation_run_id": "main-qwen-c5-29-eval",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "seed": 29,
+    "status": "ready_for_binding"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c1-43-r1-fit/training/final",
+    "adapter_sha256": null,
+    "condition": "C1",
+    "evaluation_run_id": "main-qwen-c1-43-eval",
+    "model_revision": null,
+    "seed": 43,
+    "status": "pending_final_evaluation"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c3-43-r1-fit/training/final",
+    "adapter_sha256": null,
+    "condition": "C3",
+    "evaluation_run_id": "main-qwen-c3-43-eval",
+    "model_revision": null,
+    "seed": 43,
+    "status": "pending_final_evaluation"
+  },
+  {
+    "adapter_path": "artifacts/runs/main-qwen-c5-43-r1-fit/training/final",
+    "adapter_sha256": null,
+    "condition": "C5",
+    "evaluation_run_id": "main-qwen-c5-43-eval",
+    "model_revision": null,
+    "seed": 43,
+    "status": "pending_final_evaluation"
+  }
+]

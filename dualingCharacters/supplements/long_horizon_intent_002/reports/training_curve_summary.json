@@ -232,5 +232,18 @@
     "seed": 29,
     "steps_logged": 256,
     "zero_loss_steps": 0
+  },
+  {
+    "condition": "A1",
+    "loss_first_32_mean": 0.29469201900064945,
+    "loss_last_32_mean": 0.00179812616079289,
+    "loss_log_sha256": "7130fd17c0074f4559e2ff8a8529c34add836dd0201310ac1d6b18f90a5125cd",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 0,
+    "run_id": "main-qwen-a1-29-r0-fit",
+    "seed": 29,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
   }
 ]

@@ -248,5 +248,30 @@
     "run_id": "main-qwen-c5-17-eval",
     "seed": 17,
     "unrecovered_spells": 118
+  },
+  {
+    "condition": "C5",
+    "conditional_retained_without_failure": 0,
+    "conditional_retention_denominator": 394,
+    "conversations": 480,
+    "failure_spells": 1742,
+    "families": 240,
+    "final_correct": 379,
+    "initially_correct": 394,
+    "mean_all_turn_success": 0.3185221354166667,
+    "mean_final_quarter_success": 0.16549479166666667,
+    "mean_trailing_failure_turns": 9.514583333333333,
+    "model": "qwen",
+    "never_aligned": 55,
+    "qualification": "Unconditional means over all 480 conversations. Conditional retention is supplementary and selected on initial success. Within-conversation spells are dependent.",
+    "regressions_after_ambiguous": 24,
+    "regressions_after_consider": 0,
+    "regressions_after_filler": 1620,
+    "regressions_after_reject": 0,
+    "regressions_after_set": 12,
+    "regressions_after_suggest": 0,
+    "run_id": "main-qwen-c5-29-eval",
+    "seed": 29,
+    "unrecovered_spells": 101
   }
 ]

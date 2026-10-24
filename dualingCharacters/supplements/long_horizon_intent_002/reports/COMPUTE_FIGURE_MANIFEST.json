@@ -2,13 +2,13 @@
   "gain_vs_compute": {
     "caption": "Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Marker shapes identify conditions; colors identify actual seeds. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/compute_by_condition.json": "d90506f38047071cc0bde482ba132d1ebf6025bd544108492e5d781cb6eaaa45",
-      "supplements/long_horizon_intent_002/reports/per_seed_results.json": "8e6640782a5829d1ba4c1daf0eaeca7b76c698955ac8e0c90e24465763d3ddf9"
+      "supplements/long_horizon_intent_002/reports/compute_by_condition.json": "a7b18747cfdcffd47b3f6bdfb53769cdbc5c84c56b69aa7f4b0d06d9e7a9a919",
+      "supplements/long_horizon_intent_002/reports/per_seed_results.json": "65fd2ffcb5d81f580d29e1901056390d7832094bba7745b3c01befbfc0739627"
     },
     "outputs": {
-      "pdf": "8437bf3b370978a9df2cc45669c2b03a0babc36fb615ff0653c9d7abc7faa817",
-      "png": "99088436c16c4f8f6b0dfb80707b3793d33251e9236efcdbdb0af786639f54fd",
-      "svg": "7dde7169423f21560f56855f766acdc5b8b689bd53ad62c9ab8bcb166c3aea79"
+      "pdf": "13151dedb3aab76500c204d0ad24bee41c0cc6f1165e2b59db87fa2d21c9395e",
+      "png": "30538407d09b44e5e5a25fb8939c3a5169edb3d5ccc883f0c4c5fc46202de34a",
+      "svg": "54839b970a9aa4abc88cf0a77d651ec27dcbe62bae71d116a88c69d1cb99d519"
     }
   }
 }

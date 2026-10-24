@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-24T13:15:03.688282+00:00",
+  "generated_utc": "2026-10-24T14:43:44.105280+00:00",
   "inputs": {
     "main-qwen-a1-17-r0-fit": {
       "artifacts/overnight_20261024T023622Z/exposure/main-qwen-a1-17-r0-fit.jsonl.gz": "9c5cd07c4e49103901f1648e114b7d7e81052cd859d71d4dad1140b12c738ba7",
@@ -8,6 +8,10 @@
     "main-qwen-a1-17-r1-fit": {
       "artifacts/overnight_20261024T023622Z/exposure/main-qwen-a1-17-r1-fit.jsonl.gz": "15677e18c258d4d550a1ec661a885ecb09ecfeec57b05d8578bfcd0b0e90a364",
       "artifacts/runs/main-qwen-a1-17-r1-collect/supervision.jsonl": "079e93c77fdd7dcfb9e933d2011ad0f0cc1eadbcff90f7e5a232c87ca8e84d01"
+    },
+    "main-qwen-a1-29-r0-fit": {
+      "artifacts/long_horizon_intent_002/core_audits/exposure/main-qwen-a1-29-r0-fit.jsonl.gz": "fef224f4e4b5f683d29c12f4aa548ef703f9b5eb607a59f86fa3d1868e62e789",
+      "artifacts/runs/main-qwen-a1-29-r0-collect/supervision.jsonl": "324935e620459a063b72d10cab0a3afc70c071d26fe8988fcfa5223cfd2c0c42"
     },
     "main-qwen-c1-17-r0-fit-format2": {
       "artifacts/review_001/exposure/main-qwen-c1-17-r0-fit-format2.jsonl.gz": "866515f119e58f7e6b09f788c871d1875f444e3363bf501ee24009a891a0053c",
@@ -68,6 +72,10 @@
     "main-qwen-c5-29-r0-fit": {
       "artifacts/overnight_20261024T023622Z/exposure/main-qwen-c5-29-r0-fit.jsonl.gz": "6866188635937dc948a57b131f89b32da651beb65bc816b4a5806aa9fa4975c2",
       "artifacts/runs/main-qwen-c5-29-r0-collect/supervision.jsonl": "6747547db421f2a0b6880cf246557f9b80e114411a98bbd6f584a4fcaf5d5b20"
+    },
+    "main-qwen-c5-29-r1-fit": {
+      "artifacts/long_horizon_intent_002/core_audits/exposure/main-qwen-c5-29-r1-fit.jsonl.gz": "91c879631be81a05a7295bf436af8310295bd552adb214e9adbe0ac0177c9617",
+      "artifacts/runs/main-qwen-c5-29-r1-collect/supervision.jsonl": "6b7095e6a69a08d3ad7a12e12ef9d762ed3594e1f58b42642f383fc4cf5b04be"
     }
   },
   "sampling_reconstructed_previously": true,

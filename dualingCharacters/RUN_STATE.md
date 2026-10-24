@@ -5,20 +5,21 @@ Repository scope: this directory only; branch `main`; commits local, user pushes
 
 ## Intent 002 eight-hour continuation — active
 
-One overall window: **2026-10-24 13:06:05–21:06:05 UTC**, with the last30minutes
+One overall window: **2026-10-24 13:06:05–21:06:05 UTC**, with the last 30 minutes
 reserved for verification. New work is under `supplements/long_horizon_intent_002/`.
 This direction follows the negative first C5 comparison and the C1 seed reversal;
 it is exploratory. The original core and review controllers retain ownership.
-Core C5 seed29 evaluation is running; no intent GPU calls have occurred.
+Core C5 seed 29 completed at 180/240 paired successes; the queue advanced to A1
+seed 29. No intent GPU calls have occurred. Consult the live state for the current stage.
 
 The new protocol separates horizon, trajectory and training-seed robustness.
-CPU audits use each historical turn's own oracle. A fresh16-family natural-language
-benchmark has paired16/64/128-turn scripts, private source-grounded intent ledgers,
+CPU audits use each historical turn's own oracle. A fresh 16-family natural-language
+benchmark has paired 16/64/128-turn scripts, private source-grounded intent ledgers,
 and a common public-only interface. Scientific/engineering inference stays disabled
 until all core/review, binding, budget and this session's deadline gates pass.
 Unexecuted intent work will remain disabled after the deadline, requiring a later
 continuation. The older optional unseen-profile dispatcher now respects this priority
-through an unfrozen guard; the58core and21review scientific files are unchanged.
+through an unfrozen guard; the 58 core and 21 review scientific files are unchanged.
 
 Live session report: `supplements/long_horizon_intent_002/reports/LATEST_STATE.json`.
 Protocol, chronology and operational integration are in that supplement directory.

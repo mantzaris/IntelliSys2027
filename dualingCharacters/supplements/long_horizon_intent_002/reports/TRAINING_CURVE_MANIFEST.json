@@ -4,6 +4,7 @@
     "inputs": {
       "artifacts/runs/main-qwen-a1-17-r0-fit/training/loss.jsonl": "7c8c031a6043f186c68e9d69263f3d082c54671ddd3187a24b368fe14defa703",
       "artifacts/runs/main-qwen-a1-17-r1-fit/training/loss.jsonl": "2a8e08e319da23b53255ba301875b53942e74955a0258210bd80424917d6082a",
+      "artifacts/runs/main-qwen-a1-29-r0-fit/training/loss.jsonl": "7130fd17c0074f4559e2ff8a8529c34add836dd0201310ac1d6b18f90a5125cd",
       "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/loss.jsonl": "325cac654a69d2258c74682d9473ec9d7402e424eb78d174c844f1079c56e220",
       "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/loss.jsonl": "0ce8dd3d838de3af6b16fe82f7f2d84f7a368ff993cab4e132c90d587895d2d5",
       "artifacts/runs/main-qwen-c1-29-r0-fit/training/loss.jsonl": "20215bc560b5cff4a15d34ef2f85ff155e9122cab2bc149918beac0e1c79ad9d",
@@ -20,12 +21,12 @@
       "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
       "artifacts/runs/main-qwen-c5-29-r0-fit/training/loss.jsonl": "e4d645bd6f472134edcf74ffdd11da03b188fdf8a96d0b83b0b38c74e9bf8eb9",
       "artifacts/runs/main-qwen-c5-29-r1-fit/training/loss.jsonl": "46eb1013e37363ee20e92a50dc4a5b5303c093b151d3eb031d828841b5e424e3",
-      "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "13e5000481a7ab9ee606d268db9929fd9b9c8eb511bcfb7b01e30ff8b2626e57"
+      "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "81618a0efb6db44ddd6a85affc071e316f6092cb620761f9809ec62a1126cb10"
     },
     "outputs": {
-      "pdf": "3b606d89562220c41a4cf2fafcb185d7f5f514a326baf911bdd1341eb1e8eb2e",
-      "png": "98c07c738d5cf9d74cfce2d45533e1f79f80e99b56f8862d361b8104dbbee0ac",
-      "svg": "fb0adede7e564dc230ee8e4f267019234799a3d855bf74f24ccbddb3767d99cc"
+      "pdf": "3e06f977142a5cc49c26c48d8482332b498a5d074f910c0cdfab48a460940a74",
+      "png": "1612a59849d2a0e5235525c9c05c3bbdc624839eae56f2e1b4d258e45a879618",
+      "svg": "f3aa7517701c94148370c1210c06564e606a8e8a308b8162d00fa61ddd789b6f"
     }
   }
 }

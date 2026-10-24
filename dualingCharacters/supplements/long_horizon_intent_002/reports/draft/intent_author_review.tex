@@ -1,0 +1,134 @@
+\documentclass{svproc}
+\usepackage{url,graphicx,booktabs,amsmath,mathptmx}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Long-Horizon Intent Robustness: Exploratory Author Review}}
+\begin{document}\mainmatter
+\title{Long-Horizon Intent Robustness: An Exploratory Follow-Up}
+\titlerunning{Long-Horizon Intent Robustness}
+\author{Anonymous author(s)}\authorrunning{Anonymous}
+\institute{Author-review draft; incomplete evidence, not for submission}
+\maketitle
+\begin{abstract}
+This exploratory follow-up asks whether character-conditioned supervised adapter training preserves expressed user intent over long conversations, even when average task performance is lower. We distinguish horizon robustness, trajectory robustness, and variation across training seeds. Existing structured planning evaluations are analyzed without changing their frozen conditions, checkpoints, or queue. Each intermediate response is compared with its time-specific task state, and source availability, clarification behavior, and actual supervised-target exposure are audited separately. The completed seed-specific comparisons are heterogeneous and do not establish a consistent advantage attributable to character training. The scheduled matched-horizon interaction remains pending. A separate authored benchmark covers software, research, editorial, and operator collaboration through substantive natural-language work products. Sixteen families have paired authorized and hypothetical revisions at three controlled horizons. A private intent ledger grounds evaluation but never enters policy observations or memory. The proposed primary score combines late-conversation adherence with the worse paired world; helpful progress is rated separately. Fresh inference is gated behind the required core and prior review, under a two-hour subcap and one session deadline. Human ratings and fresh qualitative results remain pending. This package is an author-review draft, not a completed submission.
+\keywords{conversational state, intent adherence, supervised adapters, recovery}
+\end{abstract}
+\noindent\textbf{Status:} This AI-assisted, author-directed draft requires human review of scientific decisions, arguments, results, and conclusions. It is not presented as a policy-compliant finished submission. No new qualitative model outcomes or human annotations are invented.
+
+
+This section is an author-review draft. The direction was specified after observing a negative initial three-character comparison and a reversal in clean-training performance across seeds. It is separate from the original confirmatory protocol.
+
+We distinguish horizon robustness (change with conversation length), trajectory robustness (correct application and recovery throughout a conversation), and training robustness (variation between independent training seeds). Lower deterioration from a poor starting point does not establish useful robustness. We operationalize intent as goals, priorities, constraints, permissions, and revisions expressed in the available conversation, without claiming access to unexpressed human intentions.
+
+The underlying intervention is character-conditioned data generation followed by supervised adapter training. Character-generator parameters are frozen; their private histories make behavior history-dependent. Retrieval is fixed, and primary evaluation removes antagonists. The method does not implement co-evolving character policies, autonomous exploration, or an optimized game-theoretic equilibrium.
+
+\section{Existing-core observations}
+
+\begin{center}\scriptsize
+\resizebox{\linewidth}{!}{\begin{tabular}{lll}
+\toprule
+Qwen seed & Condition & 64-turn paired success \\
+\midrule
+17 & C1 & 186/240 (77.50\%) \\
+17 & C3 & 177/240 (73.75\%) \\
+17 & C4 & 179/240 (74.58\%) \\
+17 & C5 & 168/240 (70.00\%) \\
+17 & A1 & 169/240 (70.42\%) \\
+29 & C1 & 138/240 (57.50\%) \\
+29 & C3 & 181/240 (75.42\%) \\
+29 & C4 & 165/240 (68.75\%) \\
+29 & C5 & 180/240 (75.00\%) \\
+29 & A1 & Pending \\
+43 & C1 & Pending \\
+43 & C3 & Pending \\
+43 & C4 & Pending \\
+43 & C5 & Pending \\
+43 & A1 & Pending \\
+\bottomrule\end{tabular}}
+\end{center}
+
+\begin{center}\scriptsize
+\resizebox{\linewidth}{!}{\begin{tabular}{llllllll}
+\toprule
+Contrast & Seed & Difference, pp & Family 95\% interval, pp & Both & Only C5 & Only control & Neither \\
+\midrule
+C5-C3 & 17 & -3.75 & [-8.33, 0.83] & 157 & 11 & 20 & 52 \\
+C5-C3 & 29 & -0.42 & [-2.50, 1.67] & 177 & 3 & 4 & 56 \\
+C5-C1 & 17 & -7.50 & [-11.25, -4.17] & 167 & 1 & 19 & 53 \\
+C5-C1 & 29 & 17.50 & [11.67, 23.33] & 129 & 51 & 9 & 51 \\
+\bottomrule\end{tabular}}
+\end{center}
+
+At the current incomplete grid, the C5-versus-clean comparison changes direction between seeds17 and29. The corresponding C5-versus-generic-adversary differences are negative at both completed seeds. These single-seed family intervals neither establish equivalence nor quantify variation over training seeds. The untrained reference is shared, not replicated for each comparison.
+
+Dynamic-oracle analysis scores each actual64-turn response against the then-active task state, keeping initial errors, authorized changes, ambiguous requests, and regressions distinct.
+
+\begin{center}\scriptsize
+\resizebox{\linewidth}{!}{\begin{tabular}{llllll}
+\toprule
+Condition & Seed & All-turn correctness & Final-quarter correctness & Never correct /480 & Unresolved final /480 \\
+\midrule
+C1 & 17 & 31.86\% & 15.48\% & 55 & 90 \\
+C1 & 29 & 30.95\% & 14.70\% & 67 & 167 \\
+C3 & 17 & 54.77\% & 46.65\% & 55 & 99 \\
+C3 & 29 & 31.44\% & 16.21\% & 55 & 98 \\
+C5 & 17 & 31.52\% & 16.65\% & 56 & 118 \\
+C5 & 29 & 31.85\% & 16.55\% & 55 & 101 \\
+\bottomrule\end{tabular}}
+\end{center}
+
+\begin{center}\scriptsize
+\resizebox{\linewidth}{!}{\begin{tabular}{llll}
+\toprule
+Contrast & Seed & Mean all-turn difference, pp & Family 95\% interval, pp \\
+\midrule
+C5-C3 & 17 & -23.25 & [-26.26, -20.25] \\
+C5-C1 & 17 & -0.34 & [-0.71, 0.05] \\
+C5-C3 & 29 & 0.41 & [0.09, 0.76] \\
+C5-C1 & 29 & 0.90 & [-0.14, 1.99] \\
+\bottomrule\end{tabular}}
+\end{center}
+
+The complete32/64/128 horizon grid is pending. Consequently, the newly proposed method-by-horizon interaction and absolute128-turn differences have not been measured. Existing trajectory associations do not establish causal recovery from matched disrupted states.
+
+A subsequent temporal source audit found that source coverage changes strongly with the scripted current request. The following selected-turn counts are descriptive and do not identify a causal effect of retrieval.
+
+\begin{center}\scriptsize
+\resizebox{\linewidth}{!}{\begin{tabular}{lllllll}
+\toprule
+Condition & Seed & Turn & All canonical sources /480 & Correct incoming memory /480 & Reverted to initial state /480 & Task correct /480 \\
+\midrule
+C1 & 17 & 60 & 0 & 0 & 480 & 0 \\
+C1 & 17 & 61 & 480 & 0 & 0 & 406 \\
+C1 & 29 & 60 & 0 & 6 & 464 & 4 \\
+C1 & 29 & 61 & 474 & 6 & 3 & 351 \\
+C3 & 17 & 60 & 0 & 210 & 163 & 177 \\
+C3 & 17 & 61 & 480 & 210 & 0 & 390 \\
+C3 & 29 & 60 & 0 & 0 & 476 & 0 \\
+C3 & 29 & 61 & 480 & 0 & 0 & 406 \\
+C5 & 17 & 60 & 0 & 1 & 476 & 1 \\
+C5 & 17 & 61 & 468 & 1 & 6 & 392 \\
+C5 & 29 & 60 & 0 & 0 & 480 & 0 \\
+C5 & 29 & 61 & 477 & 0 & 1 & 404 \\
+\bottomrule\end{tabular}}
+\end{center}
+
+Several adapters repeatedly returned initial commitments during the intervening period, then recovered approved revisions when their sources reappeared. A flat incorrect trajectory is not stability, and final-turn accuracy alone is not long-horizon preservation. The policy and benchmark remain frozen.
+
+\section{Fresh intent-transfer design, pending execution}
+
+We prepared16 authored scenario families across software/product work, research collaboration, editorial work, and operator assistance. Each has two authorization worlds and16-,64-,128-turn versions, preserving decisive events while adding supporting task work. Outputs are substantive proposals, research-plan paragraphs, edited passages, or operational recommendations. A private time-indexed intent ledger grounds evaluator judgments in visible user spans and allows multiple valid responses. It is never passed to the policy or used for retrieval.
+
+All fixed final Qwen C1/C3/C5 adapters use one common natural-language response and bounded free-text-memory interface. This differs from their structured training interface and is therefore a transfer limitation to test, not hide. Feasible complete tiers are selected only from disjoint engineering timing under the separate two-hour subcap, core/review priority, project96-hour ceiling, and single session deadline. No new parameter training is performed.
+
+The new primary endpoint normalizes0--4 adherence ratings, averages the final three observations within each world, takes the lower paired-world average within family, and then averages matched families and declared seeds. The primary contrast is the C5-versus-C3 difference in128-minus16 change; C5-versus-C1 and absolute128-turn performance are mandatory practical comparisons. Helpful task progress is rated separately. Human ratings, disagreement, and any adjudication remain distinct. No model-generated or synthetic annotation is presented as human validation.
+
+\section{Limits and provisional interpretation}
+
+The original benchmark shares a six-slot schema across domain framings, and its ambiguous families are confounded with the creative domain and held-out rule. The new benchmark introduces free-text artifacts but still uses authored scripts and a common16-phase skeleton. Longer trajectories under fixed retrieval are not full-transcript attention tests. Few training seeds provide limited uncertainty about seed variation. Supervised target exposure and recovery concentration can differ despite common input-token budgets; observed associations do not identify their causal effects.
+
+Fresh qualitative scores remain pending. A future positive interaction with lower absolute128-turn performance would support reduced degradation at these tested horizons, not superior long-horizon usefulness. No advantage would remain evidence about these fixed adapters and the specified interface. Narrative, persistence, rivalry, and peer-interaction explanations require their own controls. All scientific interpretations remain provisional for the human author.
+\begin{figure}[ht]\centering\includegraphics[width=\linewidth]{/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/long_horizon_intent_002/reports/intent_figures/core_horizon_level_and_change.pdf}\caption{Existing Qwen seed17 horizon study on48 paired families. Missing32- and128-turn cells and interactions remain pending. No curve is inferred through missing horizons.}\end{figure}
+
+\begin{figure}[ht]\centering\includegraphics[width=\linewidth]{/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/long_horizon_intent_002/reports/intent_figures/dynamic_core_trajectories.pdf}\caption{Completed Qwen C1/C3/C5 seed-specific64-turn trajectories,480 conversations each. Correctness is evaluated against the time-varying oracle. Missing seed cells remain pending; turns are not independent experimental subjects.}\end{figure}
+
+\end{document}

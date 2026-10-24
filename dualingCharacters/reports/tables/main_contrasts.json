@@ -1,19 +1,58 @@
 [
   {
-    "difference": -0.004166666666666667,
+    "difference": 0.05,
     "ci95": [
-      -0.05416666666666667,
-      0.04583333333333333
+      -0.1,
+      0.2125
     ],
     "families": 240,
-    "seeds": 1,
+    "seeds": 2,
     "per_seed": {
-      "17": -0.004166666666666667
+      "17": -0.075,
+      "29": 0.175
     },
     "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
     "model": "qwen",
-    "contrast": "C5-A1",
-    "p_conditional_family": 1.0,
+    "contrast": "C5-C1",
+    "p_conditional_family": 0.008099595020248988,
+    "qualification": "Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.",
+    "holm_p_secondary": 0.05669716514174292
+  },
+  {
+    "difference": -0.020833333333333332,
+    "ci95": [
+      -0.06666666666666667,
+      0.0125
+    ],
+    "families": 240,
+    "seeds": 2,
+    "per_seed": {
+      "17": -0.0375,
+      "29": -0.004166666666666667
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "model": "qwen",
+    "contrast": "C5-C3",
+    "p_conditional_family": 0.16179191040447977,
+    "qualification": "Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.",
+    "holm_p_secondary": null
+  },
+  {
+    "difference": 0.008333333333333333,
+    "ci95": [
+      -0.06666666666666667,
+      0.09583333333333334
+    ],
+    "families": 240,
+    "seeds": 2,
+    "per_seed": {
+      "17": -0.04583333333333333,
+      "29": 0.0625
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "model": "qwen",
+    "contrast": "C5-C4",
+    "p_conditional_family": 0.6913154342282886,
     "qualification": "Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.",
     "holm_p_secondary": 1.0
   }

@@ -1,0 +1,20 @@
+{
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 720023,
+  "generated_utc": "2026-10-24T14:43:48.830169+00:00",
+  "inputs": {
+    "artifacts/long_horizon_intent_002/core_trajectory/base-phi-eval.json": "b15fa60ab27e18f5df31b424ae3776d3b9a1ae6ca0bc84b7f4e980a863043d36",
+    "artifacts/long_horizon_intent_002/core_trajectory/base-qwen-eval.json": "f67a23bb9451a41ed51dc3801e78f813354430a9c723bac41fb5e762a85144ed",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-a1-17-eval.json": "e926cc104483ed8c4e7bdf77a5eec7ae929794d0261847fc2bd4260235236811",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c1-17-eval-format2.json": "5e0685a653fe555817bbfde3309427df63a354ea0d1c23e6a072de1f41229e23",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c1-29-eval.json": "478f1d0737800451b4eb7f4fdf01549831574706ebcbc4d7a7043214b6efb4ed",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c3-17-eval.json": "0f8ba856cf035eaec8e76a7e443ee00129cf6a732deb26d0a4c7e8ac8d0474a1",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c3-29-eval.json": "6b4386c8efee4844afd4166c1dae26d2e4fdb1a947c3025f235e4b781f8f6ef8",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c4-17-eval.json": "8087427a827889b43c503ad47ea8f3adbd292b286e52b8f562db61f72de80d74",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c4-29-eval.json": "57861bf9ca3c400efe874a31acda621875f0938c40da8cc1e71856fce2b31704",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c5-17-eval.json": "813729bdbd76c0d4a2a28d0878bc1259a7cd18d238427555f86658e5fa29e250",
+    "artifacts/long_horizon_intent_002/core_trajectory/main-qwen-c5-29-eval.json": "53360ee7e3163bc0f436d5349d963caeb07b70cfa16160ecb0f1be848d2751ae"
+  },
+  "original_raw_data_not_rescanned": true,
+  "source_sha256": "f5c3d7f6e4513405691e5f6923774bc4f26050569dd255394a0fa4b718b8811e"
+}

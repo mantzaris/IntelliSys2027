@@ -1,0 +1,38 @@
+{
+  "generated_utc": "2026-10-24T14:43:49.423817+00:00",
+  "inputs": {
+    "main-qwen-c1-17-eval-format2": {
+      "audit_sha256": "5e0685a653fe555817bbfde3309427df63a354ea0d1c23e6a072de1f41229e23",
+      "selected_raw_cache_sha256": "faf22da9d7455f4b856d714a7e85cd03deeaf2f5d3b6a1e3cefa9d2dd832eaaf",
+      "source_sha256": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2"
+    },
+    "main-qwen-c1-29-eval": {
+      "audit_sha256": "478f1d0737800451b4eb7f4fdf01549831574706ebcbc4d7a7043214b6efb4ed",
+      "selected_raw_cache_sha256": "5f2420b816f7aa58d5e5e380eaef3443e51996b334b5461628e7067a55f1d7a2",
+      "source_sha256": "e7bce6221c59e4e05bb4e8f8b6e5e7b2727e3287d77c721bc74dfae5d6522cdb"
+    },
+    "main-qwen-c3-17-eval": {
+      "audit_sha256": "0f8ba856cf035eaec8e76a7e443ee00129cf6a732deb26d0a4c7e8ac8d0474a1",
+      "selected_raw_cache_sha256": "87d67b58745a4a1efb37020f68389d76961cad28445f259a7e93f1195f9741d0",
+      "source_sha256": "f74e972ac3c0428ea568a199fde1a166ab1c5b98d83615326def64d35cbf9694"
+    },
+    "main-qwen-c3-29-eval": {
+      "audit_sha256": "6b4386c8efee4844afd4166c1dae26d2e4fdb1a947c3025f235e4b781f8f6ef8",
+      "selected_raw_cache_sha256": "0049b1d1c7eaa287ae107019e2cf5f91264f58fbf7f6cd2d2637c1298ad6b87c",
+      "source_sha256": "ec0d743e86ecf4e1094557bf11f0022c88aa162bd0d910fe06176de071006f53"
+    },
+    "main-qwen-c5-17-eval": {
+      "audit_sha256": "813729bdbd76c0d4a2a28d0878bc1259a7cd18d238427555f86658e5fa29e250",
+      "selected_raw_cache_sha256": "559b4da8e5a55db546eb4d0332c33116fcea7ee734c403a53e6674207fbee9b6",
+      "source_sha256": "3a9295879185b5b9407658f8a135f59903a22e37977e38a2711dc75a68d8217c"
+    },
+    "main-qwen-c5-29-eval": {
+      "audit_sha256": "53360ee7e3163bc0f436d5349d963caeb07b70cfa16160ecb0f1be848d2751ae",
+      "selected_raw_cache_sha256": "cd13bae5aedcf63d69bc08309580dca09b2b1735071994e5327b1357de2e656c",
+      "source_sha256": "6af899f4afde96e5bd60fa77104273444a3916385f163a0c38f89ebd5eb05cee"
+    }
+  },
+  "qualification": "Transparent category-conditioned illustration only; never a primary estimate or blinded sample",
+  "selection_uses_outcome_categories": true,
+  "source_sha256": "6df3cc0e74f76ade735c17cef970978cde59b83153ad500df13e3149a3771e0c"
+}

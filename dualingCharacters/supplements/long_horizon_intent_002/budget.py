@@ -1,6 +1,7 @@
 """Pure cumulative-budget and one-session deadline gates; no implicit launch."""
 from datetime import datetime,timezone
 from pathlib import Path
+import math
 from pcc.resources import used_seconds
 from pcc.campaign import jobs,resolve_job,load_overrides
 from pcc.freeze import verify_freeze
@@ -27,6 +28,7 @@ def cumulative_extension_seconds(registry:Path):
 
 
 def allowance(session,now_seconds,total_used_seconds,intent_used_seconds):
+    if not all(math.isfinite(x) for x in (now_seconds,total_used_seconds,intent_used_seconds)) or min(total_used_seconds,intent_used_seconds)<0:raise ValueError('Invalid clock/resource accounting')
     useful=timestamp(session['useful_work_deadline_utc'])-now_seconds
     hard=timestamp(session['deadline_utc'])-now_seconds
     available=max(0,min(CAP_SECONDS-intent_used_seconds,96*3600-CONTINGENCY_SECONDS-total_used_seconds,useful-EXIT_MARGIN_SECONDS))
@@ -41,12 +43,12 @@ def admit(reservation_seconds,session,now_seconds,total_used_seconds,intent_used
     if not core_complete:reasons.append('required_core_incomplete')
     if not review_complete:reasons.append('review001_not_resolved')
     if not enabled:reasons.append('extension_disabled')
-    if reservation_seconds<=0 or reservation_seconds>value['available_seconds']:reasons.append('reservation_does_not_fit_budget_and_session')
+    if not math.isfinite(reservation_seconds) or reservation_seconds<=0 or reservation_seconds>value['available_seconds']:reasons.append('reservation_does_not_fit_budget_and_session')
     return {**value,'admitted':not reasons,'reasons':reasons,'reservation_seconds':reservation_seconds}
 
 
 def choose_tier(profile_seconds_per_generated_token,mean_tokens_per_call,load_seconds,available_seconds):
-    if min(profile_seconds_per_generated_token,mean_tokens_per_call,load_seconds)<0:raise ValueError('Invalid timing')
+    if not all(math.isfinite(x) for x in (profile_seconds_per_generated_token,mean_tokens_per_call,load_seconds,available_seconds)) or min(profile_seconds_per_generated_token,mean_tokens_per_call)<=0 or min(load_seconds,available_seconds)<0:raise ValueError('Invalid timing')
     rows=[]
     for seeds,families in TIERS:
         calls=seeds*3*families*2*(16+64+128)
@@ -66,7 +68,7 @@ def prerequisites():
 
 def readiness():
     session=read(HERE/'SESSION.json');state=read(ARTIFACTS/'activation.json',{'enabled':False});p=prerequisites();now=datetime.now(timezone.utc).timestamp()
-    result=admit(PROFILE_RESERVATION_SECONDS,session,now,used_seconds(ROOT/'artifacts/run_registry.jsonl'),cumulative_extension_seconds(ROOT/'artifacts/run_registry.jsonl'),p['core_complete'],p['review_complete'],state.get('enabled',False))
+    result=admit(PROFILE_RESERVATION_SECONDS,session,now,used_seconds(ROOT/'artifacts/run_registry.jsonl'),cumulative_extension_seconds(ROOT/'artifacts/run_registry.jsonl'),p['core_complete'],p['review_complete'],state.get('enabled') is True)
     result.update(checked_utc=utc(),**p,session_deadline_utc=session['deadline_utc'],launches_performed=0)
     write(HERE/'reports/INTENT_READINESS.json',result);return result
 

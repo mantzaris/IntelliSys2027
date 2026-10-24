@@ -1,7 +1,12 @@
 {
-  "generated_utc": "2026-10-24T13:13:48.983150+00:00",
+  "generated_utc": "2026-10-24T14:43:48.032655+00:00",
   "inference": "New exploratory interaction; original horizon schedule/selection unchanged",
   "inputs": {
+    "artifacts/long_horizon_intent_002/core_audits/evaluations/base-qwen-eval.validation.json": "306c47cd959255088dc03fb2b7a096dc162dd68740495fca5780c2c508b7eb85",
+    "artifacts/long_horizon_intent_002/core_audits/evaluations/main-qwen-c1-17-eval-format2.validation.json": "e792cfbea8121b701daba8110df236124e7d427117c56ef67fe2e7b59ec942c0",
+    "artifacts/long_horizon_intent_002/core_audits/evaluations/main-qwen-c3-17-eval.validation.json": "59a3d8bd6e1ede0597a6bfc47d5e5f370c173a5a19ad05b25d9f6fdee2858ec1",
+    "artifacts/long_horizon_intent_002/core_audits/evaluations/main-qwen-c4-17-eval.validation.json": "32fd4fcfab45cffb9a9b67e475facee53cf72c30270e92c0adace2e6baf61fda",
+    "artifacts/long_horizon_intent_002/core_audits/evaluations/main-qwen-c5-17-eval.validation.json": "0a237fc0fc588ec4b390117fe4fc8db976f3e4dbe7269c6777df868b29e397fe",
     "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
     "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
     "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
@@ -14,5 +19,5 @@
     "artifacts/runs/main-qwen-c5-17-eval/status.json": "9c8356222e3d4dc080c60bc97cd58be98c7dcda701d0f5a62cbf24348106704d"
   },
   "seed": 17,
-  "source_sha256": "6b5eeb558175c2d873806f8b6dc3b15142cdbbf24fa159f8098530aaea3027f0"
+  "source_sha256": "7bdd5eb48d5375e0b214b04d5656b66d6e78c56784877ac2a6f0d833f1b494fa"
 }

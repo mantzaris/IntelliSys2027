@@ -1,0 +1,31 @@
+{
+  "action_items": 60,
+  "checked_utc": "2026-10-24T14:43:49.429806+00:00",
+  "external_contact": false,
+  "files_modified": [],
+  "forms": [
+    {
+      "items": 60,
+      "modified_by_this_audit": false,
+      "nonempty_annotation_cells": 0,
+      "rater": 1,
+      "sha256": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940"
+    },
+    {
+      "items": 60,
+      "modified_by_this_audit": false,
+      "nonempty_annotation_cells": 0,
+      "rater": 2,
+      "sha256": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940"
+    }
+  ],
+  "fresh_intent_packet": "Separate; see HUMAN_REVIEW_STATUS.json",
+  "item_sha256": "818e6285c46f4ad074c263fdf5100702f3198d8429fb2c21be5543798709880e",
+  "missing_original_natural_runs": [
+    "extra-qwen-c1-17-natural",
+    "extra-qwen-c3-17-natural",
+    "extra-qwen-c5-17-natural"
+  ],
+  "private_key_sha256": "3e4667cc9404a28b010e5c644ae19a2fa2e70829feb7810e15308d645838357c",
+  "prose_120_status": "pending_required_outputs"
+}

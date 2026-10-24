@@ -168,5 +168,22 @@
     "unnecessary_clarification": 16,
     "unnecessary_clarification_with_settled_nulls": 16,
     "wrong_issue_clarification": 0
+  },
+  {
+    "clarification_error": 9,
+    "clarification_with_otherwise_correct_plan": 29,
+    "condition": "C5",
+    "conversations": 480,
+    "malformed_clarification": 0,
+    "missed_necessary_clarification": 8,
+    "model": "qwen",
+    "necessary_clarification_preserves_settled_values": 52,
+    "order_or_duplicate_only": 0,
+    "qualification": "Flags overlap. Structured clarification fields cannot reveal prose acknowledgments or helpfulness; settled-null behavior is an abandonment proxy, not an inferred motive.",
+    "run_id": "main-qwen-c5-29-eval",
+    "seed": 29,
+    "unnecessary_clarification": 1,
+    "unnecessary_clarification_with_settled_nulls": 0,
+    "wrong_issue_clarification": 1
   }
 ]

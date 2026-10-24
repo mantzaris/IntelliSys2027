@@ -1,0 +1,12 @@
+{
+  "human_ratings": 0,
+  "missing": [
+    "admitted timing-only allocation",
+    "complete natural-language trajectories",
+    "two independent human rating sheets"
+  ],
+  "other_packets_modified": false,
+  "packet_created": false,
+  "rubric": "supplements/long_horizon_intent_002/RUBRIC.md",
+  "status": "pending_fresh_outputs"
+}

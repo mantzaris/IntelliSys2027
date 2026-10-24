@@ -15,6 +15,21 @@
     "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
   },
   {
+    "both_succeed": 177,
+    "ci95_high": 0.016666666666666666,
+    "ci95_low": -0.025,
+    "contrast": "C5-C3",
+    "difference": -0.004166666666666667,
+    "families": 240,
+    "model": "qwen",
+    "neither": 56,
+    "only_first": 3,
+    "only_second": 4,
+    "seed": 29,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+  },
+  {
     "both_succeed": 167,
     "ci95_high": -0.041666666666666664,
     "ci95_low": -0.1125,
@@ -30,6 +45,21 @@
     "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
   },
   {
+    "both_succeed": 129,
+    "ci95_high": 0.23333333333333334,
+    "ci95_low": 0.11666666666666667,
+    "contrast": "C5-C1",
+    "difference": 0.175,
+    "families": 240,
+    "model": "qwen",
+    "neither": 51,
+    "only_first": 51,
+    "only_second": 9,
+    "seed": 29,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+  },
+  {
     "both_succeed": 165,
     "ci95_high": -0.0125,
     "ci95_low": -0.07916666666666666,
@@ -41,6 +71,21 @@
     "only_first": 3,
     "only_second": 14,
     "seed": 17,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+  },
+  {
+    "both_succeed": 153,
+    "ci95_high": 0.1125,
+    "ci95_low": 0.0125,
+    "contrast": "C5-C4",
+    "difference": 0.0625,
+    "families": 240,
+    "model": "qwen",
+    "neither": 48,
+    "only_first": 27,
+    "only_second": 12,
+    "seed": 29,
     "status": "interim one-seed descriptive",
     "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
   },
@@ -205,6 +250,21 @@
     "neither": 70,
     "only_first": 103,
     "only_second": 5,
+    "seed": 29,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
+  },
+  {
+    "both_succeed": 64,
+    "ci95_high": 0.5375,
+    "ci95_low": 0.4041666666666667,
+    "contrast": "C5-base",
+    "difference": 0.4708333333333333,
+    "families": 240,
+    "model": "qwen",
+    "neither": 57,
+    "only_first": 116,
+    "only_second": 3,
     "seed": 29,
     "status": "interim one-seed descriptive",
     "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"

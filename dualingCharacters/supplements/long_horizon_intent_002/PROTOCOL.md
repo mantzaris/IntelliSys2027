@@ -74,6 +74,14 @@ optimizer-loss records to empty/nonempty clarification target classes, clean/rec
 pools and reuse. Tokens reported by target class count the full supervised completion,
 not just the clarification field. Associations are not causal effects.
 
+After inspection of the new64-turn curves at approximately14:23UTC, an additional
+CPU-only temporal source audit was specified. It counts source availability,
+incoming-state correctness, reversion to initial commitments, and repair at each
+turn. Original user changes are distinguished from loss of already valid memory.
+The fixed lowest-ID family supplies paired illustrations at turns32,40,60,61,64;
+all-family summaries retain every conversation. This analysis is explicitly
+post-observation and cannot identify a causal effect of retrieval or memory.
+
 ## Fresh authored benchmark
 
 Master scientific set: **16 families, four per domain**; four disjoint engineering
@@ -153,6 +161,19 @@ cases remain in denominators. Resample families and seeds together while preserv
 methods/horizons/worlds, 10,000 draws, seed720022. One-seed tier uses family-only
 uncertainty. Three seeds poorly characterize seed-population variation. These are
 exploratory estimates, not retrofitted original confirmation or equivalence tests.
+New exploratory intervals are nominal95% descriptions; no familywise significance
+claim is made across these follow-up metrics. The original confirmatory multiplicity
+procedure is unchanged and remains separate.
+
+The existing-core trajectory contrast averages correctness over all 64 turns and
+both worlds within each family, and also reports the stricter per-turn paired-world
+success average. Whole-family bootstrap uses 10,000 draws, seed720023; these
+post-result descriptive contrasts are distinct from the new qualitative endpoint.
+Endogenous failure spells are not identical starting states across methods, so their
+comparison cannot establish a causal recovery effect. Original matched-state recovery
+runs remain in the frozen queue. Deterministic examples are selected by the lowest
+SHA256(`intent002-core-illustration-v1:category:family_id`) within declared categories;
+both worlds and actual source responses are retained, with category prevalence.
 
 ## Blinding, scoring and feasible tier
 
@@ -162,8 +183,11 @@ Rating agreement, disagreements and adjudication are distinct; no synthetic rati
 Primary output ratings are the arithmetic mean of the two independent ratings;
 report each rater's endpoint as a sensitivity. Retain disagreements and any later
 adjudication separately; adjudication never silently replaces the primary ratings.
-Missing ratings are pending, not zeros. All required late-checkpoint ratings must
-exist for the declared primary grid; a partially rated subset is not its estimate.
+Missing ratings are pending, not zeros. This package requires the complete six-checkpoint
+rating grid before producing its combined primary/secondary report; in particular,
+all late-checkpoint ratings must exist. A partially rated subset is not its estimate.
+Behavior flags use explicit applicable-rating denominators; blank/NA flags are not
+negative judgments. Rater variation is reported separately from the seed/family bootstrap.
 Score actual generated checkpoint responses, without adding evaluation probes or
 ledger summaries to future context. Preserve substantive differences while hiding
 condition, adapter, seed and unnecessary horizon labels. Provide relevant conversation

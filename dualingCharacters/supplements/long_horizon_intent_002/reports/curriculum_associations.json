@@ -78,6 +78,46 @@
     "verified_model_recovery_target_tokens": 69
   },
   {
+    "action_opportunities": 3600,
+    "antagonist_peer_deliveries": 1122,
+    "canonical_source_coverage": null,
+    "collection_run_ids": [
+      "main-qwen-a1-29-r0-collect"
+    ],
+    "completed_collections": 1,
+    "completed_fits": 1,
+    "condition": "A1",
+    "direct_peer_notes_to_jekyll": 75,
+    "final_evaluation_available": false,
+    "fit_run_ids": [
+      "main-qwen-a1-29-r0-fit"
+    ],
+    "model": "qwen",
+    "paired_success": null,
+    "planned_fits": 2,
+    "r0_failed_eligible_families": 88,
+    "r0_recovery_eligible_windows": 351,
+    "r0_recovery_loss_contributing_occurrences": 300,
+    "r0_recovery_loss_contributing_unique_families": 86,
+    "r0_recovery_loss_contributing_unique_windows": 270,
+    "r0_recovery_top1_token_share": 0.00705502922797823,
+    "r0_recovery_top5_token_share": 0.034872001612578106,
+    "r1_failed_eligible_families": null,
+    "r1_recovery_eligible_windows": null,
+    "r1_recovery_loss_contributing_occurrences": null,
+    "r1_recovery_loss_contributing_unique_families": null,
+    "r1_recovery_loss_contributing_unique_windows": null,
+    "r1_recovery_top1_token_share": null,
+    "r1_recovery_top5_token_share": null,
+    "recovery_target_tokens": 19844,
+    "seed": 29,
+    "shared_memory_changes": 2460,
+    "source_visible_contradiction_flags": 279,
+    "supervised_target_tokens": 40086,
+    "training_input_tokens": 1048576,
+    "verified_model_recovery_target_tokens": 64
+  },
+  {
     "action_opportunities": 0,
     "antagonist_peer_deliveries": 0,
     "canonical_source_coverage": 0.98125,
@@ -374,7 +414,7 @@
   {
     "action_opportunities": 7200,
     "antagonist_peer_deliveries": 2190,
-    "canonical_source_coverage": null,
+    "canonical_source_coverage": 0.9833333333333333,
     "collection_run_ids": [
       "main-qwen-c5-29-r0-collect",
       "main-qwen-c5-29-r1-collect"
@@ -383,13 +423,13 @@
     "completed_fits": 2,
     "condition": "C5",
     "direct_peer_notes_to_jekyll": 343,
-    "final_evaluation_available": false,
+    "final_evaluation_available": true,
     "fit_run_ids": [
       "main-qwen-c5-29-r0-fit",
       "main-qwen-c5-29-r1-fit"
     ],
     "model": "qwen",
-    "paired_success": null,
+    "paired_success": 0.75,
     "planned_fits": 2,
     "r0_failed_eligible_families": 83,
     "r0_recovery_eligible_windows": 311,

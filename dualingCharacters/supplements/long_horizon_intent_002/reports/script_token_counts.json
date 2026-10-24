@@ -1,0 +1,962 @@
+[
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 842,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2062,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3734,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 846,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2066,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-aurora",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3738,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 877,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2097,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3769,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 881,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2101,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-copper",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3773,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 848,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2068,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3740,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 852,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2072,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-tidal",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3744,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 842,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2074,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3762,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 846,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2078,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-product-fern",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3766,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 899,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2131,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3819,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 903,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2135,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-lantern",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3823,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 16,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 899,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 64,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 2119,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 128,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 3791,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 16,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 903,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 64,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 2123,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-keystone",
+    "horizon": 128,
+    "scripted_assistant_tokens": 16,
+    "scripted_user_tokens": 3795,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 863,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2095,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3783,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 867,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2099,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-orbit",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3787,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 857,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2089,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3777,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 861,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2093,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-research-vesper",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3781,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 903,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2123,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3795,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 907,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2127,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-ember",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3799,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 16,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 887,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 64,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 2113,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 128,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 3793,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 16,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 891,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 64,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 2117,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-estuary",
+    "horizon": 128,
+    "scripted_assistant_tokens": 23,
+    "scripted_user_tokens": 3797,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 16,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 882,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 64,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 2102,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 128,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 3774,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 16,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 886,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 64,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 2106,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-mosaic",
+    "horizon": 128,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 3778,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 897,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2123,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3803,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 901,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2127,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-writing-pine",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3807,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 870,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2096,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3776,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 16,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 874,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 64,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 2100,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-summit",
+    "horizon": 128,
+    "scripted_assistant_tokens": 17,
+    "scripted_user_tokens": 3780,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 16,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 927,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 64,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 2147,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 128,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 3819,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 16,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 931,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 64,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 2151,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-marsh",
+    "horizon": 128,
+    "scripted_assistant_tokens": 21,
+    "scripted_user_tokens": 3823,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 885,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2111,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3791,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 16,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 889,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 64,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 2115,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-bracken",
+    "horizon": 128,
+    "scripted_assistant_tokens": 18,
+    "scripted_user_tokens": 3795,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 911,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2143,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3831,
+    "world": "authorized"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 16,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 915,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 64,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 2147,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "scientific",
+    "family_id": "intent-operator-stone",
+    "horizon": 128,
+    "scripted_assistant_tokens": 20,
+    "scripted_user_tokens": 3835,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 16,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 670,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 64,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 1884,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 128,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 3548,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 16,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 674,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 64,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 1888,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-product-clover",
+    "horizon": 128,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 3552,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 16,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 674,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 64,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 1876,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 128,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 3524,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 16,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 678,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 64,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 1880,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-research-brook",
+    "horizon": 128,
+    "scripted_assistant_tokens": 14,
+    "scripted_user_tokens": 3528,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 16,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 692,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 64,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 1894,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 128,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 3542,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 16,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 696,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 64,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 1898,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-writing-dawn",
+    "horizon": 128,
+    "scripted_assistant_tokens": 13,
+    "scripted_user_tokens": 3546,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 16,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 712,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 64,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 1932,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 128,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 3604,
+    "world": "authorized"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 16,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 716,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 64,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 1936,
+    "world": "hypothetical"
+  },
+  {
+    "collection": "engineering",
+    "family_id": "engineering-operator-ridge",
+    "horizon": 128,
+    "scripted_assistant_tokens": 12,
+    "scripted_user_tokens": 3608,
+    "world": "hypothetical"
+  }
+]
