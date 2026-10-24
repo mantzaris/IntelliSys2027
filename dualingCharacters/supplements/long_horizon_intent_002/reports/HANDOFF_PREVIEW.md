@@ -1,11 +1,11 @@
 # Intent 002 handoff preview — session still active
 
-Start: 2026-10-24T13:06:05+00:00 (2026-10-24T09:06:05-04:00). Preview: 2026-10-24T19:06:26.866951+00:00; work continues until the recorded deadline.
-Actual elapsed at report: 6.006 hours. One shared deadline: 2026-10-24T21:06:05+00:00.
+Start: 2026-10-24T13:06:05+00:00 (2026-10-24T09:06:05-04:00). Preview: 2026-10-24T20:04:05.277402+00:00; work continues until the recorded deadline.
+Actual elapsed at report: 6.967 hours. One shared deadline: 2026-10-24T21:06:05+00:00.
 
-Commit at report generation: `bbd6633e91fcd9f693638bfdb9cf897680eaaf6b`; starting commit `be7c06e`. Nothing pushed, published or submitted. All 58 core, 21 review and 34 intent scientific files verify unchanged.
+Commit at report generation: `4ae99a4133c23ad8d27d55eda1c1067600ef97ea`; starting commit `be7c06e`. Nothing pushed, published or submitted. All 58 core, 21 review and 34 intent scientific files verify unchanged.
 
-Core: 59/241 stages complete, 14 newly completed this session. Active: `main-qwen-c3-43-r1-collect`. Next: `main-qwen-c3-43-r1-fit`. Current failed queue stages: 0. Historical excluded artifacts remain preserved and listed in HANDOFF_STATE.json. No infrastructure retries were needed.
+Core: 61/241 stages complete, 16 newly completed this session. Active: `main-qwen-c3-43-eval`. Next: `main-qwen-c4-43-r0-collect`. Current failed queue stages: 0. Historical excluded artifacts remain preserved and listed in HANDOFF_STATE.json. No infrastructure retries were needed.
 
 The final commit containing this handoff can be identified with `git log -1 --format=%H -- dualingCharacters/supplements/long_horizon_intent_002/reports/SESSION_REPORT.md` from the repository root. The generation-time commit above intentionally precedes that reporting commit.
 
@@ -40,7 +40,7 @@ These one-seed intervals preserve paired scenario families; they do not represen
 
 ## New evidence and unfinished requirements
 
-23 fits have exact loss-exposure reconstruction. See [progress](PROGRESS_REPORT.md), [clarification/source audits](clarification_audit.csv), [temporal source audit](source_dynamics_selected_turns.csv), [illustrations](ILLUSTRATIVE_APPENDIX.md), and [claims](CLAIM_TO_EVIDENCE.md).
+24 fits have exact loss-exposure reconstruction. See [progress](PROGRESS_REPORT.md), [clarification/source audits](clarification_audit.csv), [temporal source audit](source_dynamics_selected_turns.csv), [illustrations](ILLUSTRATIVE_APPENDIX.md), and [claims](CLAIM_TO_EVIDENCE.md).
 The existing horizon interaction is pending its actual 32/128-turn runs. Dynamic 64-turn analyses retain initial failures and show that final correctness can coexist with substantial intermediate reversion; source access changes with scripted requests. These are exploratory associations, not causal memory/retrieval effects.
 Fresh intent inference, timing allocation, GPU validation of the natural-language interface, and human ratings remain pending. The 16-family benchmark, disjoint engineering cases, private ledgers, balanced tiers, common runner, scoring/blinding and deadline controls are implemented and frozen. No new qualitative performance, crossover or robustness benefit is claimed.
 
@@ -56,8 +56,10 @@ These target tokens cover whole supervised completions in the nonempty-clarifica
 
 ## Resource reconciliation
 
-Before session: 21.4731 reserved GPU-hours. During session through 2026-10-24T19:06:08.470128+00:00: 5.8598 hours. Cumulative: 27.3329/96; remaining: 68.6671; after 0.5-hour contingency: 68.1671. Review supplement: 0.0000/2; intent extension: 0.0000/2.
-Core forecast total: expected 81.61, conservative 88.96 reserved hours. This is a forecast, not permission to shrink cells or spend beyond 96 hours. Container elapsed: 108158 seconds at snapshot; this available proxy is separate from reserved GPU time and sampled utilization. Actual pod provisioning and billing duration are unverified. Actual dollar rate is unknown.
+Before session: 21.4731 reserved GPU-hours. During session through 2026-10-24T20:03:10.490653+00:00: 6.7887 hours. Cumulative: 28.2618/96; remaining: 67.7382; after 0.5-hour contingency: 67.2382. Review supplement: 0.0000/2; intent extension: 0.0000/2.
+Core forecast total: expected 82.06, conservative 89.18 reserved hours. This is a forecast, not permission to shrink cells or spend beyond 96 hours. Container elapsed: 111580 seconds at snapshot; this available proxy is separate from reserved GPU time and sampled utilization. Actual pod provisioning and billing duration are unverified. Actual dollar rate is unknown.
+
+Storage at its 2026-10-24T20:03:10.490653+00:00 snapshot: local 24.88 GiB, remote 20.38 GiB free. Remaining-fit size projection 14.80 GiB excludes future traces and temporary writes; this is not guaranteed capacity or cleanup authorization. See [storage projection](STORAGE_PROJECTION.json). No artifacts were deleted.
 
 ## Human review and paper package
 
@@ -66,7 +68,7 @@ The original 60-action packet is preserved; actual annotation counts are in LEGA
 
 ## Ownership and recovery
 
-Core controller PID 787315; review coordinator PID 1291869. Current remote GPU processes: `623260, VLLM::EngineCore`. The healthy core continues separately under its original authorization; it was not stopped to end this session.
+Core controller PID 787315; review coordinator PID 1291869. Current remote GPU processes: `642202, VLLM::EngineCore`. The healthy core continues separately under its original authorization; it was not stopped to end this session.
 Core state/log: `artifacts/campaign_state.json`, `artifacts/campaign_controller.log`, `artifacts/campaign_configs/<run_id>.log`. Core ownership lock: `artifacts/campaign.lock`; remote GPU lock: `artifacts/gpu.lock`. Review state: `artifacts/review_001/controller_state.json`. Intent is disabled, with no new background waiter. Older optional work remains behind its unresolved priority guard.
 Read-only check: `PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.operations monitor`. Integrate completed evidence: `PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.regenerate`. Verify mirrors: `PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.operations mirror`.
 For infrastructure recovery, first prove both original controller and GPU worker stopped; a dropped SSH connection is insufficient. Preserve/mirror partials and resource records, use the original `artifacts/campaign_resume.json` aliases and valid atomic optimizer checkpoint where supported, and allow at most two retries of the same infrastructure fault. Never rerun a completed evaluation for a different score. See the unchanged [recovery procedure](../../../reports/overnight_20261024T023622Z/RECOVERY.md). Scientific defects require a documented safe-boundary hold and preserved originals.

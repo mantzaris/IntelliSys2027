@@ -330,19 +330,21 @@
     "verified_model_recovery_target_tokens": 0
   },
   {
-    "action_opportunities": 3600,
-    "antagonist_peer_deliveries": 1117,
+    "action_opportunities": 7200,
+    "antagonist_peer_deliveries": 2227,
     "canonical_source_coverage": null,
     "collection_run_ids": [
-      "main-qwen-c3-43-r0-collect"
+      "main-qwen-c3-43-r0-collect",
+      "main-qwen-c3-43-r1-collect"
     ],
-    "completed_collections": 1,
-    "completed_fits": 1,
+    "completed_collections": 2,
+    "completed_fits": 2,
     "condition": "C3",
-    "direct_peer_notes_to_jekyll": 80,
+    "direct_peer_notes_to_jekyll": 168,
     "final_evaluation_available": false,
     "fit_run_ids": [
-      "main-qwen-c3-43-r0-fit"
+      "main-qwen-c3-43-r0-fit",
+      "main-qwen-c3-43-r1-fit"
     ],
     "model": "qwen",
     "paired_success": null,
@@ -354,19 +356,19 @@
     "r0_recovery_loss_contributing_unique_windows": 313,
     "r0_recovery_top1_token_share": 0.0034187211093990753,
     "r0_recovery_top5_token_share": 0.017093605546995377,
-    "r1_failed_eligible_families": null,
-    "r1_recovery_eligible_windows": null,
-    "r1_recovery_loss_contributing_occurrences": null,
-    "r1_recovery_loss_contributing_unique_families": null,
-    "r1_recovery_loss_contributing_unique_windows": null,
-    "r1_recovery_top1_token_share": null,
-    "r1_recovery_top5_token_share": null,
-    "recovery_target_tokens": 20768,
+    "r1_failed_eligible_families": 10,
+    "r1_recovery_eligible_windows": 20,
+    "r1_recovery_loss_contributing_occurrences": 318,
+    "r1_recovery_loss_contributing_unique_families": 10,
+    "r1_recovery_loss_contributing_unique_windows": 20,
+    "r1_recovery_top1_token_share": 0.059035749426041326,
+    "r1_recovery_top5_token_share": 0.28294991332052666,
+    "recovery_target_tokens": 42111,
     "seed": 43,
-    "shared_memory_changes": 2480,
-    "source_visible_contradiction_flags": 1164,
-    "supervised_target_tokens": 41779,
-    "training_input_tokens": 1048576,
+    "shared_memory_changes": 4966,
+    "source_visible_contradiction_flags": 1874,
+    "supervised_target_tokens": 84002,
+    "training_input_tokens": 2097152,
     "verified_model_recovery_target_tokens": 65
   },
   {

@@ -664,5 +664,33 @@
     },
     "training_input_tokens": 1048576,
     "unoptimized_tail_input_tokens": 34
+  },
+  {
+    "condition": "C3",
+    "label_sources_contributing_loss": {
+      "common_oracle_teacher": 20,
+      "common_oracle_teacher_clean": 317
+    },
+    "loaded_occurrences_including_replay": 872,
+    "loaded_unique_windows_including_replay": 456,
+    "loss_contributing_unique_families": 133,
+    "loss_contributing_unique_windows": 337,
+    "model": "qwen",
+    "optimizer_steps_in_process": 256,
+    "orphaned_target_tokens_masked": 16474,
+    "qualification": "Exact per-process loss exposure; resume prefix excluded from new gradients. Prior effective steps require joining the actual checkpoint-resume chain.",
+    "resume_replay_input_tokens_not_optimized": 0,
+    "resume_start_step": 0,
+    "run_id": "main-qwen-c3-43-r1-fit",
+    "seed": 43,
+    "status": "reconstructed_and_verified",
+    "supersedes_run_id": null,
+    "supervised_target_tokens": 42223,
+    "target_tokens_by_label_source": {
+      "common_oracle_teacher": 21343,
+      "common_oracle_teacher_clean": 20880
+    },
+    "training_input_tokens": 1048576,
+    "unoptimized_tail_input_tokens": 718
   }
 ]

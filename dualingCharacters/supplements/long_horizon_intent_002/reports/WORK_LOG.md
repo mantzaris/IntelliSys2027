@@ -173,3 +173,21 @@
 - 2026-10-24T19:06:08.474595+00:00: Progress: 59/241 core stages complete; active main-qwen-c3-43-r1-collect, 4800 generation requests, 0 training input tokens; 27.3329/96 reserved hours. Review remains waiting_for_core.
 
 - 2026-10-24T19:06:08.629375+00:00: Six-hour checkpoint: 59/241 complete (14 new stages), active main-qwen-c3-43-r1-collect, 4800 calls. Total reservations 27.3329/96 hours; conservative core forecast 88.96. Exact exposure23 fits,23 collections,13 complete evaluations, all59 mirrors verified. C1 seed43=183/240 and4 unnecessary clarifications retained alongside seed29=138/240 and101; no causal attribution to recovery concentration. Core horizon32/128 and both supplements remain pending;0 new supplement GPU hours. No infrastructure retries. Useful-work cutoff20:36:05, handoff deadline21:06:05 UTC unchanged.
+
+- 2026-10-24T19:28:30.994175+00:00: Progress: 60/241 core stages complete; active main-qwen-c3-43-r1-fit, 0 generation requests, 49152 training input tokens; 27.6970/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T19:28:32.448726+00:00: Extended collection audit for main-qwen-c3-43-r1-collect: 752 clean and 20 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T19:29:28.773993+00:00: Remote/local completed-stage checksums match for main-qwen-c3-43-r1-collect.
+
+- 2026-10-24T19:29:28.832641+00:00: C3 seed43 refresh collection completed;24 collections audited, core60/241. Final fit active under unchanged settings. New collection included only after completion; no test outcome used to alter sampling or training. Current total27.6970/96 reserved hours, conservative core forecast89.11 hours; no supplementary GPU calls.
+
+- 2026-10-24T19:51:40.467859+00:00: Progress: 61/241 core stages complete; active main-qwen-c3-43-eval, 0 generation requests, 0 training input tokens; 28.0701/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T19:51:44.106489+00:00: Reconstructed main-qwen-c3-43-r1-fit: 42223 target tokens; 337 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T19:52:08.520812+00:00: Remote/local completed-stage checksums match for main-qwen-c3-43-r1-fit.
+
+- 2026-10-24T19:52:14.842062+00:00: C3 seed43 final fit completed and mirrored. Exact loss exposure covers24 fits; all61 completed-stage mirrors match. Its scheduled evaluation is active. No source/protocol changes or retries; both supplement GPU totals remain zero. Final result will be included only after complete paired validation.
+
+- 2026-10-24T20:03:42.700899+00:00: Verification rerun passed62 tests in5.00s, including24 new intent tests. Core58/review21/intent34 scientific hashes all verify unchanged. Storage projection refreshed from24 completed fits and48 remaining fit jobs; no cleanup or new storage spending. C3 seed43 evaluation continues; no partial test score is included.

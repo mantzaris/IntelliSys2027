@@ -2,12 +2,12 @@
   "clarification_supervision_exposure": {
     "caption": "Exact reconstructed supervised loss exposure for completed Qwen C1/C3/C5 fits by seed and round. Tokens are whole completion targets in examples whose clarification target is nonempty, not tokens specifically in the clarification field. Loaded-only examples and masked orphan suffixes are excluded. Exposure/outcome associations are not causal evidence. Counts show repetition and diversity separately.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "07abe249cf988ef3cb3d985a8ead4747819a04f68bdb89f615f99c10483c2297"
+      "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "19acb70419c7b2f8c18ea48b549876ef9cc234c34dad8e6da31c166298775aee"
     },
     "outputs": {
-      "pdf": "2a7fba459265f8133c8ebf73647bf6f78abfc7706ea37eea276790d543235868",
-      "png": "18c5adef5c5436815fa67a75de19925a866e22a0262d12203b058a706cde6078",
-      "svg": "5cc961bed8f7b58fbc53ac033d0d63d4fd306c97a39673c4dd28edb306602990"
+      "pdf": "b818b6b95c67a8cbaba0b1e889ee7160d8b02edc740827b113c461683a86489f",
+      "png": "4c74d5adbf087d2a0efd0ea47c765b5475f642c9b18c9aff5cac87744f14b685",
+      "svg": "4c177b37adac2f93a787080b4facbc21246c2898a73af5cb7d447285eaf82cf3"
     }
   },
   "clarification_types": {

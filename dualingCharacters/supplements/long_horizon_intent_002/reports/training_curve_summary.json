@@ -297,5 +297,18 @@
     "seed": 43,
     "steps_logged": 256,
     "zero_loss_steps": 0
+  },
+  {
+    "condition": "C3",
+    "loss_first_32_mean": 0.012386040549245081,
+    "loss_last_32_mean": 2.7223761009054215e-05,
+    "loss_log_sha256": "c709507cd93bbf7bc205838e282ae6d9b69bc025b2f3064e6f7218b8c333cb80",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 1,
+    "run_id": "main-qwen-c3-43-r1-fit",
+    "seed": 43,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
   }
 ]

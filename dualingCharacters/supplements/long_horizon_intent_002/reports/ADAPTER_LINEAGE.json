@@ -39,6 +39,8 @@
     "artifacts/runs/main-qwen-c3-29-r1-fit/training/training_summary.json": "8021d497c0de36825f704ff5ff7a401263ee1b8c7547f9a24d683a9e54b3fd9c",
     "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
     "artifacts/runs/main-qwen-c3-43-r0-fit/training/training_summary.json": "31c1868907aa5806d26bf99d44f963bbdc76d07fba653ca2c3cdc17ad1e551c0",
+    "artifacts/runs/main-qwen-c3-43-r1-fit/status.json": "eb94ab371fccb856b9d5d163b7e696f9a0c0bf1d0795c23df0c35d940e6c12a7",
+    "artifacts/runs/main-qwen-c3-43-r1-fit/training/training_summary.json": "8601854cbc449b75d468b6d847fb06eddabf2e1be37fcbb594a230baf7faee71",
     "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
     "artifacts/runs/main-qwen-c4-17-r0-fit/status.json": "0fdc88a591e5149b7990f31579b8736cf3e956e034c5fbff5cedcc7373eb1764",
     "artifacts/runs/main-qwen-c4-17-r0-fit/training/training_summary.json": "d75125f0c6013c1ead2cc38b11579b40a4c90e5d8d0573c8cdedb372cf0cc120",
@@ -635,6 +637,22 @@
       "optimizer_steps": 256,
       "predecessor_adapter": null,
       "run_id": "main-qwen-c3-43-r0-fit",
+      "seed": 43,
+      "task": "fit"
+    },
+    {
+      "completion_serialization": "public_defender_schema_order_v1",
+      "condition": "C3",
+      "continuation_verified": true,
+      "effective_optimizer_resume_chain": "not resumed",
+      "expected_predecessor_sha256": "1da728d312540c7a5d58867f6e9727e3c067958f99302c458ff76d7bd3a0150c",
+      "final_adapter_sha256": "34a38b3515cffdc56ff9e87eeee6c1914bf3ded13aae67b07d6ff533533cc94c",
+      "initial_adapter_sha256": "1da728d312540c7a5d58867f6e9727e3c067958f99302c458ff76d7bd3a0150c",
+      "model": "qwen",
+      "optimizer_resume_checkpoint": null,
+      "optimizer_steps": 256,
+      "predecessor_adapter": "artifacts/runs/main-qwen-c3-43-r0-fit/training/final",
+      "run_id": "main-qwen-c3-43-r1-fit",
       "seed": 43,
       "task": "fit"
     }

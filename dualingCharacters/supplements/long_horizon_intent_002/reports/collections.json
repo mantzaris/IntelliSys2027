@@ -755,5 +755,39 @@
     "run_id": "main-qwen-c3-43-r0-collect",
     "seed": 43,
     "source_ineligible": 92
+  },
+  {
+    "attempted_windows": 900,
+    "candidate_attempts": 20,
+    "candidate_discarded": 20,
+    "candidate_valid": 0,
+    "clean_valid": 752,
+    "condition": "C3",
+    "defender_prompts": 9600,
+    "eligible_failed_families": 10,
+    "eligible_families": 150,
+    "eligible_windows": 772,
+    "failed_eligible": 20,
+    "gold_teacher_examples": 772,
+    "label_sources": {
+      "common_oracle_teacher": 20,
+      "common_oracle_teacher_clean": 752
+    },
+    "model": "qwen",
+    "note_retention_comparisons": 22712,
+    "notes_retained_next_prompt": 21991,
+    "observational_severity": {
+      "direct_actions": 2398,
+      "following_failure": 74,
+      "following_failure_with_user_state_change": 0,
+      "previous_correct_with_user_state_change": 0,
+      "previous_turn_correct": 1197
+    },
+    "prompts_with_persistent_notes": 8788,
+    "qualification": "Following failures are temporal associations, not causal effects; a genuine user update can intervene. Loaded supervision is not actual loss exposure.",
+    "reused": 0,
+    "run_id": "main-qwen-c3-43-r1-collect",
+    "seed": 43,
+    "source_ineligible": 128
   }
 ]

@@ -3,9 +3,11 @@
   "core_files_verified": 58,
   "fake_backend_outputs_are_not_model_evidence": true,
   "fresh_gpu_engineering_status": "pending_resource_and_core_gates",
+  "intent_files_verified": 34,
   "new_intent_cpu_tests": 24,
   "review_files_verified": 21,
   "status": "passed",
+  "test_wall_seconds": 5.0,
   "tests_passed": 62,
-  "verified_utc": "2026-10-24T14:40:57.901928+00:00"
+  "verified_utc": "2026-10-24T20:03:42.700637+00:00"
 }

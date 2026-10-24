@@ -35,12 +35,12 @@
   "recovery_exposure": {
     "caption": "Exact reconstructed optimizer-loss exposure per completed fit, by model/condition/seed/round. Loaded buffer windows are excluded unless they contribute unmasked target loss. Repeated occurrences and top-five token shares quantify concentration, not additional independent recovery examples. Resume-prefix and orphaned suffix masking follow the frozen code.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/supervision_pools.json": "195196d9f7b716c095e5827d8dd455f391508d236a92a8eee5a586c18acd2da6"
+      "supplements/long_horizon_intent_002/reports/supervision_pools.json": "7553a8b0a9d36410b25ce2d09222491d46ea6119815234826db75117b9a8af6c"
     },
     "outputs": {
-      "pdf": "f36f280a023ab38642dd824fa374c338b6ed47677f38a818f927083ea9cec2c4",
-      "png": "42af56d4a47b61079abf30a08788a0d9a3c73d152227eef32a84fcbae5a24a97",
-      "svg": "a2643ef5f67abdcb01ae7c4fde6a82dd7c0edb03944b7f472ae18e30066e4b03"
+      "pdf": "9f6c8712187850d722975f57514be64f7c87a1f11e310b0c896dad5f3c6f1111",
+      "png": "f2eed9962bbb2802249a3e10fc9f4d0bc74f509dbad41a9e81c133a50f4bded1",
+      "svg": "97e099eb336392fb732062ca1cf4f97f0e5a1913a89d87e3869a9199a79516a2"
     }
   },
   "rule_structure": {

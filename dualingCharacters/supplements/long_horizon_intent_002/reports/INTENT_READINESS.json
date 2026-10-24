@@ -1,16 +1,14 @@
 {
   "admitted": false,
-  "available_seconds": 5858.2335340976715,
-  "checked_utc": "2026-10-24T18:56:57.934036+00:00",
+  "available_seconds": 2548.989228963852,
+  "checked_utc": "2026-10-24T19:52:07.301712+00:00",
   "contingency_seconds": 1800,
   "core_complete": false,
   "exit_margin_seconds": 90,
-  "hard_deadline_seconds_remaining": 7748.2335340976715,
+  "hard_deadline_seconds_remaining": 4438.989228963852,
   "intent_seconds_used": 0,
   "launches_performed": 0,
   "missing_core_runs": [
-    "main-qwen-c3-43-r1-collect",
-    "main-qwen-c3-43-r1-fit",
     "main-qwen-c3-43-eval",
     "main-qwen-c4-43-r0-collect",
     "main-qwen-c4-43-r0-fit",
@@ -192,7 +190,7 @@
     "judge-phi-001",
     "judge-qwen-001"
   ],
-  "project_seconds_used": 97814.14788795868,
+  "project_seconds_used": 101039.97299716901,
   "reasons": [
     "required_core_incomplete",
     "review001_not_resolved",
@@ -202,5 +200,5 @@
   "review_complete": false,
   "review_status": "waiting_for_core",
   "session_deadline_utc": "2026-10-24T21:06:05+00:00",
-  "useful_seconds_remaining": 5948.2335340976715
+  "useful_seconds_remaining": 2638.989228963852
 }

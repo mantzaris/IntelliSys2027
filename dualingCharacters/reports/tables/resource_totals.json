@@ -1,16 +1,16 @@
 {
-  "reserved_gpu_hours": 27.17059663554408,
-  "observed_pod_wall_hours_first_to_latest_run": 29.142027782466677,
+  "reserved_gpu_hours": 28.06665916588028,
+  "observed_pod_wall_hours_first_to_latest_run": 30.04686761352751,
   "pod_start_time": null,
   "actual_hourly_rate_usd": null,
   "actual_cost_usd": null,
-  "inference_input_tokens": 721356868,
-  "generated_output_tokens": 45329240,
-  "training_input_tokens": 27344896,
-  "generation_requests": 701609,
-  "runs": 99,
-  "completed": 97,
-  "generated_utc": "2026-10-24T18:56:41.613926+00:00",
+  "inference_input_tokens": 735509134,
+  "generated_output_tokens": 46108655,
+  "training_input_tokens": 28393472,
+  "generation_requests": 714445,
+  "runs": 100,
+  "completed": 99,
+  "generated_utc": "2026-10-24T19:51:50.712291+00:00",
   "aggregation_source_sha256": "b098e83eac997e1859e74bc3995fa9ca11f26ea8d7e5b690193f12990f03d8db",
   "qualification": "Latest local mirrored metadata, including running/failed/excluded attempts. Reservation includes model loads. Observed first-to-latest interval is not total billed pod lifetime. Current remote progress may exceed the last local mirror.",
   "input_hashes": {
@@ -58,7 +58,8 @@
     "artifacts/runs/main-qwen-c3-29-r1-fit/status.json": "78208082e132ae31fece72e9ba4389d76fc3e59d871a9f2652aecafa863c6d7e",
     "artifacts/runs/main-qwen-c3-43-r0-collect/status.json": "b6eba44642359935f417bd202c24fb2f1d6afc667ed712adc39b4917c055573a",
     "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
-    "artifacts/runs/main-qwen-c3-43-r1-collect/status.json": "8a80e6b23664dc8a9be4a56672f42649c5c0dad2da33231e6bf80d874931b339",
+    "artifacts/runs/main-qwen-c3-43-r1-collect/status.json": "b83e84a7dcff4e79986187c27e91fbac2d54156066867b07ff0409fed3d6ef81",
+    "artifacts/runs/main-qwen-c3-43-r1-fit/status.json": "eb94ab371fccb856b9d5d163b7e696f9a0c0bf1d0795c23df0c35d940e6c12a7",
     "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
     "artifacts/runs/main-qwen-c4-17-r0-collect/status.json": "6ea305c2289fa51065257e96848e7216b783bbb5d74d9b1bcb94c32b2148f4b3",
     "artifacts/runs/main-qwen-c4-17-r0-fit/status.json": "0fdc88a591e5149b7990f31579b8736cf3e956e034c5fbff5cedcc7373eb1764",
@@ -113,6 +114,6 @@
     "artifacts/runs/profile-phi-001/status.json": "4a2636570b66e831d7e5d08a38ede758aef0f5105effd0d17466074754d76c40",
     "artifacts/runs/profile-phi-isolated-001/status.json": "6a3db57c376223552cddef8832135305eb50cbb49a709b6a8e18e413f8a4e6ae",
     "artifacts/runs/vllm-profile-001/status.json": "986bb58c28c8a5b7e7bffb858142b5f63aa9cf51b16c53114df26d5c3f156960",
-    "artifacts/run_registry.jsonl": "e58d58de2c2ddb6d8406ccc326517f05aabb5d2e143085a87d519939cebc0b36"
+    "artifacts/run_registry.jsonl": "832839a895d5c7e84b7736cc8c949b1de553b0daf4241c1f775d312e6931cac9"
   }
 }

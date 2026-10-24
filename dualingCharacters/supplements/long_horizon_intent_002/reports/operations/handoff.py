@@ -43,7 +43,7 @@ def main(close=False,early_reason=None):
     commits=subprocess.check_output(['git','log',session['starting_commit']+'..HEAD','--format=%H %s'],cwd=ROOT,text=True).splitlines()
     next_job=next((j['id'] for i,j in enumerate(queue) if i>next((k for k,x in enumerate(queue) if x['id']==active),-1) and j['id'] not in complete),None)
     values={'session_status':'closed' if close else 'in_progress_preview','operational_code_sha256':sha256(Path(__file__)),
-      'input_report_hashes':{n:sha256(REPORTS/n) for n in ('LATEST_STATE.json','per_seed_results.json','paired_transitions.json','supervision_exposure.json','MIRROR_CHECKS.json','PROVENANCE.json','clarification_audit.json','clarification_exposure.json')},'started_utc':start.isoformat(),'report_generated_utc':now.isoformat(),
+      'input_report_hashes':{n:sha256(REPORTS/n) for n in ('LATEST_STATE.json','per_seed_results.json','paired_transitions.json','supervision_exposure.json','MIRROR_CHECKS.json','PROVENANCE.json','clarification_audit.json','clarification_exposure.json','STORAGE_PROJECTION.json')},'started_utc':start.isoformat(),'report_generated_utc':now.isoformat(),
       'ended_utc':now.isoformat() if close else None,'deadline_utc':session['deadline_utc'],'elapsed_seconds_at_report':(now-start).total_seconds(),
       'local_timezone':session['local_timezone'],'started_local':start.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),'reported_local':now.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),
       'starting_commit':session['starting_commit'],'current_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'commits':commits,
@@ -99,6 +99,8 @@ def main(close=False,early_reason=None):
       '## Next author decisions','',
       'No routine decision is needed for the healthy original core queue. Later review: (1) assess the narrower claims supported by seed variation, intermediate reversion and source access; (2) review the authored intent ledgers/rubric and authorize a later execution window if desired, retaining existing GPU caps; (3) arrange independent human raters once the required outputs exist. No permission is inferred from elapsed time.']
     position=lines.index('## Resource reconciliation');lines[position:position]=clarification_summary()
+    storage=read(REPORTS/'STORAGE_PROJECTION.json');position=lines.index('## Human review and paper package')
+    lines[position:position]=[f"Storage at its {storage['monitor_utc']} snapshot: local {storage['local_free_bytes']/2**30:.2f} GiB, remote {storage['remote_free_bytes']/2**30:.2f} GiB free. Remaining-fit size projection {storage['remaining_fit_size_projection_bytes']/2**30:.2f} GiB excludes future traces and temporary writes; this is not guaranteed capacity or cleanup authorization. See [storage projection](STORAGE_PROJECTION.json). No artifacts were deleted.",'']
     if early_reason:lines+=['','Early-stop reason: '+early_reason]
     (REPORTS/('SESSION_REPORT.md' if close else 'HANDOFF_PREVIEW.md')).write_text('\n'.join(lines)+'\n')
     print({'status':values['session_status'],'elapsed_hours':(now-start).total_seconds()/3600,'completed_core':len(complete),'new_stages':len(new),'active_core':active})
