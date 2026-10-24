@@ -1,11 +1,11 @@
 {
   "classification": "Existing frozen core evidence, not fresh intent scores",
   "new_completed_inputs": {
-    "collect": [],
-    "evaluate": [
-      "main-qwen-a1-29-eval"
+    "collect": [
+      "main-qwen-c1-43-r1-collect"
     ],
+    "evaluate": [],
     "fit": []
   },
-  "utc": "2026-10-24T16:14:32.446222+00:00"
+  "utc": "2026-10-24T16:59:37.147815+00:00"
 }

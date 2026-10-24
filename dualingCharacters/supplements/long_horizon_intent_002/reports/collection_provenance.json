@@ -1,6 +1,6 @@
 {
   "new": [
-    "main-qwen-a1-29-r1-collect"
+    "main-qwen-c1-43-r1-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
@@ -77,6 +77,24 @@
         "artifacts/runs/main-qwen-c1-29-r1-collect/status.json": "160fa22ee2665b0e2306f46281981e4f4951350a40056bd94b6e45cf196b723e",
         "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.counts.json": "73b9ed1e0cbd4e42ad3539be54a883273e48b6c586140fecc5ce5c3edf4eae11",
         "artifacts/runs/main-qwen-c1-29-r1-collect/supervision.jsonl": "f70c9beed9e55ab3a82c6b2a51d2c007c10818d10d08ca974ec93b7202d1bea1"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c1-43-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-43-r0-collect/collection.jsonl.gz": "6ae752f46e5a1dacd59a014d36d850dce9d1895e5e4884dec49a644a144171b8",
+        "artifacts/runs/main-qwen-c1-43-r0-collect/status.json": "1995ff5bd0b0fb3acd6952acaa1172e10a7e2cf9163ec5b2089b6224dbcd111c",
+        "artifacts/runs/main-qwen-c1-43-r0-collect/supervision.counts.json": "09a7cf00ca97f400cb7331117cea31ba06f6a963755dbfe67ec26e5e6333d2e1",
+        "artifacts/runs/main-qwen-c1-43-r0-collect/supervision.jsonl": "7fcdbc4e3b87ab5ab0bf4c0e5944b816b6ec0585e85a256361d4f006ca550b08"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c1-43-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c1-43-r1-collect/collection.jsonl.gz": "861b4e648d6bfb11397893b777ea68ef1bcc5b33afa47a25132597d7a5b02123",
+        "artifacts/runs/main-qwen-c1-43-r1-collect/status.json": "f9eb18bd7cd0fb72711063fc4b95b920d0808d14498ba374540ac5c181418e86",
+        "artifacts/runs/main-qwen-c1-43-r1-collect/supervision.counts.json": "bd34777d7ecd126323722a30aaeb3866b1abee4692b5e0c5d7fab23112c3da2c",
+        "artifacts/runs/main-qwen-c1-43-r1-collect/supervision.jsonl": "82010f36c67f8d07fec403e11167499a88787fab6f82b116aacb84706dc5c1c7"
       },
       "reused_prior_validation": false
     },
@@ -201,5 +219,5 @@
       "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T15:08:34.192465+00:00"
+  "utc": "2026-10-24T16:59:35.222403+00:00"
 }

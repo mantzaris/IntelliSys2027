@@ -1,6 +1,6 @@
 {
-  "active_job": "main-qwen-c1-43-r0-collect",
-  "active_unrecorded_upper_seconds": 2.112487088986846,
+  "active_job": "main-qwen-c1-43-r1-fit",
+  "active_unrecorded_upper_seconds": 4.882996319169877,
   "completed": [
     "base-qwen-eval",
     "base-phi-eval",
@@ -53,45 +53,52 @@
     "main-qwen-a1-29-r0-fit",
     "main-qwen-a1-29-r1-collect",
     "main-qwen-a1-29-r1-fit",
-    "main-qwen-a1-29-eval"
+    "main-qwen-a1-29-eval",
+    "main-qwen-c1-43-r0-collect",
+    "main-qwen-c1-43-r0-fit",
+    "main-qwen-c1-43-r1-collect"
   ],
-  "core_completed": 52,
+  "core_completed": 55,
   "core_files_verified": 58,
   "core_freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
   "core_scheduled": 241,
   "forecast": {
-    "conservative_remaining_core_hours": 63.471102429171005,
-    "conservative_total_reserved_hours": 88.01117824181648,
-    "expected_remaining_core_hours": 56.09977479695653,
-    "expected_total_reserved_hours": 80.639850609602,
+    "conservative_remaining_core_hours": 62.440968454174865,
+    "conservative_total_reserved_hours": 87.70573378871873,
+    "expected_remaining_core_hours": 54.931801243759246,
+    "expected_total_reserved_hours": 80.1965665783031,
     "forecast_over_ceiling": false,
     "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes."
   },
   "generation_requests": 0,
   "known_cost_usd": null,
-  "local_free_bytes": 28284719104,
+  "local_free_bytes": 27906473984,
   "mirror_status_age_seconds": null,
   "processes": {
-    "core_controller_pid": "787315  787313    19:39:24 python",
-    "review_coordinator_pid": "1291869 1291862    14:16:41 python"
+    "core_controller_pid": "787315  787313    20:24:45 python",
+    "review_coordinator_pid": "1291869 1291862    15:02:02 python"
   },
-  "reconciled_reserved_hours": 24.540075812645465,
-  "recorded_reserved_hours": 24.527536329034355,
-  "remaining_overall_hours": 71.45992418735453,
+  "reconciled_reserved_hours": 25.264765334543856,
+  "recorded_reserved_hours": 25.251649196210526,
+  "remaining_overall_hours": 70.73523466545615,
   "remote": {
-    "container_elapsed_seconds": 97842,
+    "container_elapsed_seconds": 100563,
     "container_started": "Fri Oct 23 13:03:29 2026",
     "files": {
       "status.json": {
-        "mtime": 1792858451.620401,
-        "size": 4928
+        "mtime": 1792861170.2962527,
+        "size": 5150
+      },
+      "training/loss.jsonl": {
+        "mtime": 1792861170.2952528,
+        "size": 2461
       }
     },
-    "free_bytes": 23096258560,
-    "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 39788 MiB, 100 %",
-    "gpu_processes": "567179, VLLM::EngineCore",
+    "free_bytes": 22683648000,
+    "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 20736 MiB, 100 %",
+    "gpu_processes": "583205, .venv/bin/python",
     "status": {
-      "artifact_path": "/workspace/dualingCharacters/artifacts/runs/main-qwen-c1-43-r0-collect",
+      "artifact_path": "/workspace/dualingCharacters/artifacts/runs/main-qwen-c1-43-r1-fit",
       "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
       "code_commit": "a62f1881d23df2282b410243ad4575bb11d1d74a",
       "config": {
@@ -100,7 +107,7 @@
         "batch_size": 64,
         "character_tokens": 128,
         "condition": "C1",
-        "engine": "vllm",
+        "engine": "transformers",
         "history_actions": 6,
         "intervention_opportunities": 12,
         "learning_rate": 0.0001,
@@ -108,7 +115,7 @@
         "lora_rank": 8,
         "max_grad_norm": 1.0,
         "max_input_tokens": 4096,
-        "max_run_seconds": 5400,
+        "max_run_seconds": 3600,
         "model": "qwen",
         "phase": "confirmatory",
         "precision": "bf16",
@@ -120,21 +127,23 @@
         "train_steps": 256,
         "train_tokens_per_step": 4096
       },
-      "dataset_hash": "efa20f7de2c9e5fa7f40a4932f8a93efc05e805e451009f56f280fd8cdcf2aef",
+      "dataset_hash": "38c0143e70b1c50fc86a1676f0a0373b0ab21b26ef514f54a4c0e5c25152da0b",
       "families": 150,
-      "gpu_reserved_seconds": 43.029653911013156,
-      "horizon": 16,
+      "gpu_reserved_seconds": 42.33510168083012,
+      "horizon": 32,
       "input_tokens": 0,
       "known_cost_usd": null,
+      "loaded_adapter_path": "artifacts/runs/main-qwen-c1-43-r0-fit/training/final",
+      "loaded_adapter_sha256": "7eca3bcc5188b4b1f3db17445e4dff881e5d90f06750946cc17de9509d490f5e",
       "model_calls": 0,
-      "model_load_seconds": 38.40912279020995,
+      "model_load_seconds": 1.900828508194536,
       "model_name": "Qwen/Qwen3-4B-Instruct-2507",
       "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
       "output_tokens": 0,
-      "peak_vram_bytes": 0,
-      "process_pid": 566710,
-      "run_id": "main-qwen-c1-43-r0-collect",
-      "selected_window_turns": "6,9,16",
+      "peak_vram_bytes": 17822354432,
+      "process_pid": 583205,
+      "run_id": "main-qwen-c1-43-r1-fit",
+      "selected_window_turns": null,
       "source_hashes": {
         "src/pcc/__init__.py": "da438d59cc5bcb2a4a7b5159375a62995e913db9b1a1cbe1ca3c9a2d8d841fc8",
         "src/pcc/analysis.py": "2003d892330fa8dc58053109889cc01cff8287717886f6ddc8fee6737bd31bef",
@@ -169,16 +178,18 @@
         "src/pcc/training.py": "f52de03348cc57bcc37f3ca28e7e1ca653a230c454ad7845386c6390c8846957",
         "src/pcc/validation.py": "cc9d6387c102b56a66c9a0b6852fbb3b593c0ca0456cb1afaf7bf053eb5bf908"
       },
-      "source_snapshot_sha256": "5f7ec40b158eb3230001d9336edd773f0bf242491320645698eecc3b59eaa68a",
+      "source_snapshot_sha256": "bbccd3ad1d901515319fc8694d5acb9f65926d02b3a89672ddb22646bd366507",
       "split": "train",
-      "start_family": 0,
-      "started_utc": "2026-10-24T16:13:28Z",
+      "start_family": 150,
+      "started_utc": "2026-10-24T16:58:47Z",
       "status": "running",
-      "task": "collect",
-      "train_tokens": 0,
-      "vram_measurement": "nvidia-smi total device use including vLLM KV reservation; not comparable to torch allocated peak"
+      "supervision_sha256": "82010f36c67f8d07fec403e11167499a88787fab6f82b116aacb84706dc5c1c7",
+      "task": "fit",
+      "total_parameters": 4038983168,
+      "train_tokens": 49152,
+      "trainable_parameters": 16515072
     },
-    "utc": "2026-10-24T16:14:13.068418+00:00"
+    "utc": "2026-10-24T16:59:34.131272+00:00"
   },
   "review_available_after_contingency_hours": 2.0,
   "review_freeze_sha256": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
@@ -191,12 +202,12 @@
     "status": "waiting_for_core",
     "updated_utc": "2026-10-24T01:57:32Z"
   },
-  "sampled_gpu_busy_hours_completed": 22.14092251280465,
-  "stage_reserved_seconds": 43.029653911013156,
+  "sampled_gpu_busy_hours_completed": 22.830922708664374,
+  "stage_reserved_seconds": 42.33510168083012,
   "stage_status": "running",
   "supplement_files_verified": 21,
-  "training_input_tokens": 0,
-  "utc": "2026-10-24T16:14:13.163352+00:00",
+  "training_input_tokens": 49152,
+  "utc": "2026-10-24T16:59:34.237954+00:00",
   "utilization_qualification": "Completed-run five-second samples only; active utilization is the remote instantaneous sample. Neither is billed pod uptime.",
-  "utilization_weighted_hours_completed": 21.009570177304347
+  "utilization_weighted_hours_completed": 21.673532654484333
 }

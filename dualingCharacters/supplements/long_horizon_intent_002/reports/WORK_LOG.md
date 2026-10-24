@@ -105,3 +105,27 @@
 - 2026-10-24T16:14:50.823342+00:00: Remote/local completed-stage checksums match for main-qwen-a1-29-eval.
 
 - 2026-10-24T16:15:23.678502+00:00: A1 seed29 evaluation validated at 181/240 paired successes (384/480 conversations); complete 30,720-turn trace, exact final adapter and all paired families checked. C5-A1 seed29 = -0.4167 percentage points, family bootstrap 95% interval [-2.9167, +2.0833], transitions both176/C5-only4/A1-only5/neither55. Seed17 contrast remains -0.4167 points. This does not establish equivalence or narrative benefit. All52 completed-stage mirrors match. Original queue advanced to C1 seed43 round-zero collection; no scientific setting changed.
+
+- 2026-10-24T16:21:54.658054+00:00: Progress: 53/241 core stages complete; active main-qwen-c1-43-r0-fit, 0 generation requests, 40960 training input tokens; 24.6594/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T16:21:55.330706+00:00: Extended collection audit for main-qwen-c1-43-r0-collect: 479 clean and 324 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T16:22:16.461521+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-r0-collect.
+
+- 2026-10-24T16:22:29.743931+00:00: Core reached53/241: C1 seed43 round-zero collection completed, audited and mirrored; first fit active. Completed evaluation totals remain unchanged since A1 seed29. No new inference in either supplement and no scientific or queue changes.
+
+- 2026-10-24T16:43:53.205024+00:00: Progress: 54/241 core stages complete; active main-qwen-c1-43-r1-collect, 0 generation requests, 0 training input tokens; 25.0116/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T16:43:56.656401+00:00: Reconstructed main-qwen-c1-43-r0-fit: 48576 target tokens; 619 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T16:44:27.179508+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-r0-fit.
+
+- 2026-10-24T16:44:34.512792+00:00: C1 seed43 first fit completed with exact loss reconstruction and final-adapter/optimizer mirror verification; 21 fits and54 completed stages audited. Resource accounting distinguishes recorded reservations, sampled utilization and observed container uptime; actual pod billing duration and dollar rate remain unknown.
+
+- 2026-10-24T16:59:34.242223+00:00: Progress: 55/241 core stages complete; active main-qwen-c1-43-r1-fit, 0 generation requests, 49152 training input tokens; 25.2648/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T16:59:35.198907+00:00: Extended collection audit for main-qwen-c1-43-r1-collect: 764 clean and 9 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T17:00:21.410357+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-r1-collect.
+
+- 2026-10-24T17:00:21.529462+00:00: C1 seed43 refresh collection has900 attempted windows:764 clean-valid,9 failed-eligible,127 source-ineligible. All9 recovery targets require nonempty clarification and span5 families; all use the common oracle teacher after9 rejected model-recovery candidates. This is a training-only exposure observation, not a prediction or causal explanation of test performance. Final fit is active; actual loss reuse remains pending its completed reconstruction.

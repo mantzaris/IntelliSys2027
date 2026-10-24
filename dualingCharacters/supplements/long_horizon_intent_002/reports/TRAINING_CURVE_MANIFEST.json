@@ -10,6 +10,7 @@
       "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/loss.jsonl": "0ce8dd3d838de3af6b16fe82f7f2d84f7a368ff993cab4e132c90d587895d2d5",
       "artifacts/runs/main-qwen-c1-29-r0-fit/training/loss.jsonl": "20215bc560b5cff4a15d34ef2f85ff155e9122cab2bc149918beac0e1c79ad9d",
       "artifacts/runs/main-qwen-c1-29-r1-fit/training/loss.jsonl": "1450fa56a5c3ef01816d77609e9d5da546c64bfa187a504258fe48a40203a22e",
+      "artifacts/runs/main-qwen-c1-43-r0-fit/training/loss.jsonl": "b69e02537d7cdd3193d6cc651eaf057253c944708c1ad0d5bf33c891571b1526",
       "artifacts/runs/main-qwen-c3-17-r0-fit/training/loss.jsonl": "8bcb03e521034964c35256ab85bed21ae3d631d57dd43ec54c60243b4be75f70",
       "artifacts/runs/main-qwen-c3-17-r1-fit/training/loss.jsonl": "f1f2e37bd0c2d5a21bbc4e259705956c42d2356817567301de7789c56a4ee10d",
       "artifacts/runs/main-qwen-c3-29-r0-fit/training/loss.jsonl": "1bd646e900ac7c2c66bf692e07b56f338c38c843d5f6eae7262b058ea4c69bb9",
@@ -22,12 +23,12 @@
       "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
       "artifacts/runs/main-qwen-c5-29-r0-fit/training/loss.jsonl": "e4d645bd6f472134edcf74ffdd11da03b188fdf8a96d0b83b0b38c74e9bf8eb9",
       "artifacts/runs/main-qwen-c5-29-r1-fit/training/loss.jsonl": "46eb1013e37363ee20e92a50dc4a5b5303c093b151d3eb031d828841b5e424e3",
-      "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "2709270b518455238d68ad62aed15932d0c6819035a1b30ae47ff6be04c20223"
+      "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "b3ba0d87f6a2780ef6d8cf03bd5bf3f525341d855d50a211027e583ec9703a96"
     },
     "outputs": {
-      "pdf": "57a09ad834c93b2ec9ea15328dfe42c66ad41834406d6c8368d81d7b1ee863ea",
-      "png": "f3e7b87266bf74e0e3cc7b388d2a98c3723c74af939e5a2c0bd0defe5f9e6e21",
-      "svg": "67b7bf9027d2ee14de716868233ccfcf3984d731cca0719be970d97da6a8989f"
+      "pdf": "f1110ee9144373fcd333634dddcbf3c25e14137372705c56098aa0c4a5f119c1",
+      "png": "2c9af45eccc58c4b0bbd45e9ed4d17e9716d044e412b13fd010d561b36de7a9a",
+      "svg": "b4531352f1c42c5f79f60c1eef3b0303ae1c9d897bba5b1d3ec3cc6e18e1d9ac"
     }
   }
 }

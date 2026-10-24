@@ -4,11 +4,11 @@ Generated from saved run records and existing deterministic analyses. Scheduled 
 
 ## 1. What ran
 
-52/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
+55/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
 
 Hardware: one existing RunPod NVIDIA RTX 6000 Ada, 49,140 MiB reported VRAM; PyTorch 2.8.0+cu128, CUDA 12.8 and driver 595.91.07. Hardware inspection is recorded in `RUN_STATE.md`. BF16 rank-8 LoRA performs actual parameter updates; vLLM inference shares the backbone across role contexts.
 
-Recorded project consumption: 24.544/96 reserved GPU-hours, including failed and excluded attempts; 667,578,339 inference input tokens, 41,823,888 generated output tokens and 24,199,168 training input tokens. Observed pod interval: 26.443 hours, which is not total billed lifetime. Actual hourly rate and dollar cost are unknown.
+Recorded project consumption: 25.252/96 reserved GPU-hours, including failed and excluded attempts; 681,337,632 inference input tokens, 42,764,983 generated output tokens and 25,247,744 training input tokens. Observed pod interval: 27.173 hours, which is not total billed lifetime. Actual hourly rate and dollar cost are unknown.
 
 Reproduce the package from saved artifacts:
 
@@ -64,7 +64,7 @@ Saved transfer aggregate rows: 6 (includes main and common-subset reference rows
 
 ## 5. Exact unfinished requirements and weaknesses
 
-Unfinished scheduled stages by command: collect=52, evaluate=26, external=8, fit=52, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
+Unfinished scheduled stages by command: collect=50, evaluate=26, external=8, fit=51, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
 
 Human review: `packet_outputs_pending`; annotations: `not_supplied`. Two independent raters and subsequent adjudication remain required unless actual completed sheets are supplied. Scientific author review, claim approval and a final current conference-policy check remain outstanding.
 

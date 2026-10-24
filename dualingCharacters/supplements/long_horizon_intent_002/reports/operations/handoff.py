@@ -41,7 +41,8 @@ def main(close=False,early_reason=None):
       'reserved_hours_before_session':baseline,'reconciled_reserved_hours_at_snapshot':total,'reserved_hours_during_session_to_snapshot':total-baseline,
       'review_reserved_hours':review_seconds()/3600,'intent_reserved_hours':cumulative_extension_seconds(ROOT/'artifacts/run_registry.jsonl')/3600,
       'remaining_overall_hours':96-total,'remaining_after_contingency_hours':95.5-total,'forecast':live['forecast'],
-      'pod_elapsed_seconds':live['remote'].get('container_elapsed_seconds'),'known_dollar_cost':None,
+      'container_elapsed_seconds':live['remote'].get('container_elapsed_seconds'),'pod_elapsed_seconds':None,
+      'pod_elapsed_qualification':'Container uptime is the available operational proxy; actual pod provisioning and billing duration were not independently established.','known_dollar_cost':None,
       'new_gpu_extension_enabled':False,'new_gpu_extension_waiter_installed':False,'core_may_continue_under_original_controls':True,
       'early_stop_reason':early_reason,'infrastructure_retries_this_session':0,
       'new_qualitative_scores':read(REPORTS/'INTENT_SCORES.json')['status'],'human_status':read(REPORTS/'HUMAN_REVIEW_STATUS.json')['status']}
@@ -71,7 +72,7 @@ def main(close=False,early_reason=None):
       'Fresh intent inference, timing allocation, GPU validation of the natural-language interface, and human ratings remain pending. The 16-family benchmark, disjoint engineering cases, private ledgers, balanced tiers, common runner, scoring/blinding and deadline controls are implemented and frozen. No new qualitative performance, crossover or robustness benefit is claimed.','',
       '## Resource reconciliation','',
       f'Before session: {baseline:.4f} reserved GPU-hours. During session through {live["utc"]}: {total-baseline:.4f} hours. Cumulative: {total:.4f}/96; remaining: {96-total:.4f}; after 0.5-hour contingency: {95.5-total:.4f}. Review supplement: {values["review_reserved_hours"]:.4f}/2; intent extension: {values["intent_reserved_hours"]:.4f}/2.',
-      f'Core forecast total: expected {live["forecast"]["expected_total_reserved_hours"]:.2f}, conservative {live["forecast"]["conservative_total_reserved_hours"]:.2f} reserved hours. This is a forecast, not permission to shrink cells or spend beyond 96 hours. Pod elapsed: {values["pod_elapsed_seconds"]} seconds at snapshot; this is separate from reserved GPU time and sampled utilization. Actual dollar rate is unknown.', '',
+      f'Core forecast total: expected {live["forecast"]["expected_total_reserved_hours"]:.2f}, conservative {live["forecast"]["conservative_total_reserved_hours"]:.2f} reserved hours. This is a forecast, not permission to shrink cells or spend beyond 96 hours. Container elapsed: {values["container_elapsed_seconds"]} seconds at snapshot; this available proxy is separate from reserved GPU time and sampled utilization. Actual pod provisioning and billing duration are unverified. Actual dollar rate is unknown.', '',
       '## Human review and paper package','',
       'The original 60-action packet is preserved; actual annotation counts are in LEGACY_HUMAN_PACKET_STATUS.json. The original 120-prose packet awaits its required natural-language runs. The intent packet is separate and awaits actual outputs; no items or human ratings were fabricated and no raters were contacted.',
       '[Figures](INTENT_FIGURES.md) · [author-review manuscript section](../MANUSCRIPT_SECTION.md) · [compiled draft](draft/intent_author_review.pdf) · [provenance](PROVENANCE.json) · [reproduction](../README.md). This is incomplete evidence and an author-review draft, not a complete submission or acceptance guarantee.','',

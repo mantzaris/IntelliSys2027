@@ -875,6 +875,119 @@
   },
   {
     "candidate_clarification": [],
+    "condition": "C1",
+    "contributing_occurrences": 2,
+    "domain": "software",
+    "family_id": "train-0127",
+    "label_source": "common_oracle_teacher",
+    "model": "qwen",
+    "pool": "recovery",
+    "rank": 1,
+    "round": 0,
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "seed": 43,
+    "share_of_all_nonempty_clarification_target_tokens": 0.06413730803974707,
+    "supervised_target_tokens": 142,
+    "target_clarification": [
+      "partner"
+    ],
+    "turn": 16,
+    "world": "authorized"
+  },
+  {
+    "candidate_clarification": [
+      "audience"
+    ],
+    "condition": "C1",
+    "contributing_occurrences": 2,
+    "domain": "software",
+    "family_id": "train-0119",
+    "label_source": "common_oracle_teacher",
+    "model": "qwen",
+    "pool": "recovery",
+    "rank": 2,
+    "round": 0,
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "seed": 43,
+    "share_of_all_nonempty_clarification_target_tokens": 0.06233062330623306,
+    "supervised_target_tokens": 138,
+    "target_clarification": [
+      "audience"
+    ],
+    "turn": 16,
+    "world": "authorized"
+  },
+  {
+    "candidate_clarification": [
+      "audience"
+    ],
+    "condition": "C1",
+    "contributing_occurrences": 2,
+    "domain": "software",
+    "family_id": "train-0047",
+    "label_source": "common_oracle_teacher",
+    "model": "qwen",
+    "pool": "recovery",
+    "rank": 3,
+    "round": 0,
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "seed": 43,
+    "share_of_all_nonempty_clarification_target_tokens": 0.06142728093947606,
+    "supervised_target_tokens": 136,
+    "target_clarification": [
+      "audience"
+    ],
+    "turn": 16,
+    "world": "authorized"
+  },
+  {
+    "candidate_clarification": [
+      "audience"
+    ],
+    "condition": "C1",
+    "contributing_occurrences": 2,
+    "domain": "software",
+    "family_id": "train-0087",
+    "label_source": "common_oracle_teacher",
+    "model": "qwen",
+    "pool": "recovery",
+    "rank": 4,
+    "round": 0,
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "seed": 43,
+    "share_of_all_nonempty_clarification_target_tokens": 0.06142728093947606,
+    "supervised_target_tokens": 136,
+    "target_clarification": [
+      "audience"
+    ],
+    "turn": 16,
+    "world": "authorized"
+  },
+  {
+    "candidate_clarification": [
+      "audience"
+    ],
+    "condition": "C1",
+    "contributing_occurrences": 2,
+    "domain": "software",
+    "family_id": "train-0047",
+    "label_source": "common_oracle_teacher",
+    "model": "qwen",
+    "pool": "recovery",
+    "rank": 5,
+    "round": 0,
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "seed": 43,
+    "share_of_all_nonempty_clarification_target_tokens": 0.06052393857271906,
+    "supervised_target_tokens": 134,
+    "target_clarification": [
+      "audience"
+    ],
+    "turn": 16,
+    "world": "hypothetical"
+  },
+  {
+    "candidate_clarification": [],
     "condition": "C3",
     "contributing_occurrences": 1,
     "domain": "software",
