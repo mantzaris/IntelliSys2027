@@ -75,3 +75,5 @@
 - 2026-10-24T14:43:36.153310+00:00: Reconstructed main-qwen-a1-29-r0-fit: 40086 target tokens; 574 distinct windows actually contributed loss. Every optimizer step matched.
 
 - 2026-10-24T14:44:19.177759+00:00: Remote/local completed-stage checksums match for main-qwen-a1-29-r0-fit.
+
+- 2026-10-24T14:46:05.000806+00:00: Froze 34 new intent scientific files at implementation commit 986b0b18c8efc749ac97e21f8746809140eb850c. Exact prior core/review freezes remain intact. Fresh scientific outcomes, engineering calls, profiling, allocation and human ratings are still absent; C5 seed29=180/240 was known at this freeze.
