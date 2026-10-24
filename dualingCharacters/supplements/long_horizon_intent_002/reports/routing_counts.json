@@ -515,5 +515,38 @@
     "shared_memory_changed": 2386,
     "slot_type": "direct_opportunity",
     "source_visible_contradiction_flags": 279
+  },
+  {
+    "antagonist_recipient_deliveries": 1082,
+    "applied": 1200,
+    "condition": "A1",
+    "direct_peer_notes_to_jekyll": 118,
+    "evidence_class": "main",
+    "kind_peer": 1200,
+    "opportunities": 1200,
+    "rejected_or_undelivered": 0,
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "seed": 29,
+    "shared_memory_changed": 118,
+    "slot_type": "reserved",
+    "source_visible_contradiction_flags": 0
+  },
+  {
+    "antagonist_recipient_deliveries": 14,
+    "applied": 2400,
+    "condition": "A1",
+    "direct_peer_notes_to_jekyll": 3,
+    "evidence_class": "main",
+    "kind_edit": 138,
+    "kind_peer": 17,
+    "kind_propose": 1825,
+    "kind_recollect": 420,
+    "opportunities": 2400,
+    "rejected_or_undelivered": 0,
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "seed": 29,
+    "shared_memory_changed": 2386,
+    "slot_type": "direct_opportunity",
+    "source_visible_contradiction_flags": 154
   }
 ]

@@ -9,6 +9,8 @@
     "artifacts/runs/main-qwen-a1-17-r1-fit/training/training_summary.json": "401fbbb55e5b095dbdc6083bd241227ac1a77f4b16cee157170783c735adc594",
     "artifacts/runs/main-qwen-a1-29-r0-fit/status.json": "0a46e538e7e1334076fee4ab3baf5030551b618dc45cf647a301ea8903d75450",
     "artifacts/runs/main-qwen-a1-29-r0-fit/training/training_summary.json": "f11dca0effb884bb200799771d002251b041e755344f4ce3971622b7743fd343",
+    "artifacts/runs/main-qwen-a1-29-r1-fit/status.json": "05b3606e9d9645e4f2939df6d55f9bd4a63c9803b1b8e4439081b2212f645c98",
+    "artifacts/runs/main-qwen-a1-29-r1-fit/training/training_summary.json": "66bb043118805ef1238da7297f4f5a2c7c9b08d9c91ea34b2c9e3c9a3ea94a2a",
     "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
     "artifacts/runs/main-qwen-c1-17-r0-fit-format2/status.json": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
     "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/training_summary.json": "2de2a6978c4329bff44d7f6631f6f48cbc33462b150a10d740168e924fac2fe6",
@@ -529,6 +531,22 @@
       "optimizer_steps": 256,
       "predecessor_adapter": null,
       "run_id": "main-qwen-a1-29-r0-fit",
+      "seed": 29,
+      "task": "fit"
+    },
+    {
+      "completion_serialization": "public_defender_schema_order_v1",
+      "condition": "A1",
+      "continuation_verified": true,
+      "effective_optimizer_resume_chain": "not resumed",
+      "expected_predecessor_sha256": "ca220620b6e45e9e4f33904c7ea39f48166da252aedd2ba412d7ff50b7eeab67",
+      "final_adapter_sha256": "ac5e5c5f549dfa1372ae6775fd82f1cf4e210535b5dc6c7e3b2ecf8305dfe0ab",
+      "initial_adapter_sha256": "ca220620b6e45e9e4f33904c7ea39f48166da252aedd2ba412d7ff50b7eeab67",
+      "model": "qwen",
+      "optimizer_resume_checkpoint": null,
+      "optimizer_steps": 256,
+      "predecessor_adapter": "artifacts/runs/main-qwen-a1-29-r0-fit/training/final",
+      "run_id": "main-qwen-a1-29-r1-fit",
       "seed": 29,
       "task": "fit"
     }

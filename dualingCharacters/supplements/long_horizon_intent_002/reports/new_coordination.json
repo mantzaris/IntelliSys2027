@@ -75,5 +75,12 @@
     "repeated_directed_coordination_candidates": 3,
     "run_id": "main-qwen-a1-29-r0-collect",
     "typed_matching_followups": 12
+  },
+  {
+    "delivered_antagonist_peer_messages": 1096,
+    "echoed_option_reversals": 0,
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "typed_matching_followups": 0
   }
 ]

@@ -104,6 +104,31 @@
       },
       "verified_utc": "2026-10-24T14:44:19.176904+00:00"
     },
+    "main-qwen-a1-29-r1-collect": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-a1-29-r1-collect/collection.jsonl.gz": "59762ffd17ec8ab9b81f071a4b1c99e34274c435986802eae3936c4851c90e86",
+        "artifacts/runs/main-qwen-a1-29-r1-collect/collection_characters.jsonl.gz": "a029da8404fe16db2ac4cd301246f7c962717965fbca6b984efff7dc0e55725e",
+        "artifacts/runs/main-qwen-a1-29-r1-collect/status.json": "c350733cd55e935e59fe41632710ff985956788eaac43022b80ee694f78dce54",
+        "artifacts/runs/main-qwen-a1-29-r1-collect/supervision.counts.json": "b23b4d683a4076807b206ce6a2d1dad7932ea39287f78a7ff64772d0ada0b0d7",
+        "artifacts/runs/main-qwen-a1-29-r1-collect/supervision.jsonl": "483af739c815eb160e5618f95e08af38ae1aa87556041c4c35747f4b7002c71b"
+      },
+      "verified_utc": "2026-10-24T15:08:51.116348+00:00"
+    },
+    "main-qwen-a1-29-r1-fit": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-a1-29-r1-collect/supervision.jsonl": "483af739c815eb160e5618f95e08af38ae1aa87556041c4c35747f4b7002c71b",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/status.json": "05b3606e9d9645e4f2939df6d55f9bd4a63c9803b1b8e4439081b2212f645c98",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/final/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/final/adapter_config.json": "1ef59ec72364c12ca4de11eb98d043be662b0dddd6baf7412bcd04458e5b0e6b",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/final/adapter_model.safetensors": "ac5e5c5f549dfa1372ae6775fd82f1cf4e210535b5dc6c7e3b2ecf8305dfe0ab",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/loss.jsonl": "730ec56e93dd52df1bd043af9c10c67c89142f0b3d33788033ff9ca5bbe63d22",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/optimizer.pt": "b5ec1f161f9114c87cee1b033f1494335d97c484c14d825d9d01beeca40b2287",
+        "artifacts/runs/main-qwen-a1-29-r1-fit/training/training_summary.json": "66bb043118805ef1238da7297f4f5a2c7c9b08d9c91ea34b2c9e3c9a3ea94a2a"
+      },
+      "verified_utc": "2026-10-24T15:29:19.228282+00:00"
+    },
     "main-qwen-c1-17-eval-format2": {
       "matches": true,
       "paths": {

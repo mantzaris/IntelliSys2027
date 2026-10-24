@@ -1,0 +1,10 @@
+{
+  "actual_new_model_calls": 0,
+  "core_files_verified": 58,
+  "dataset_manifest_sha256": "45eb82bbb6f1ea92037d22c4abbb00994a3388cb2e5ef82e67ce1165cdd60b7b",
+  "dataset_rebuild_identical": true,
+  "review_files_verified": 21,
+  "scientific_files_verified": 34,
+  "scope": "Deterministic source-grounded benchmark rebuild and all scientific freezes; does not validate GPU execution or human scoring.",
+  "verified_utc": "2026-10-24T14:48:48.529564+00:00"
+}

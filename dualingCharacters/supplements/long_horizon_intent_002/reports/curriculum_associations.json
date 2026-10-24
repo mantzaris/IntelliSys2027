@@ -78,19 +78,21 @@
     "verified_model_recovery_target_tokens": 69
   },
   {
-    "action_opportunities": 3600,
-    "antagonist_peer_deliveries": 1122,
+    "action_opportunities": 7200,
+    "antagonist_peer_deliveries": 2218,
     "canonical_source_coverage": null,
     "collection_run_ids": [
-      "main-qwen-a1-29-r0-collect"
+      "main-qwen-a1-29-r0-collect",
+      "main-qwen-a1-29-r1-collect"
     ],
-    "completed_collections": 1,
-    "completed_fits": 1,
+    "completed_collections": 2,
+    "completed_fits": 2,
     "condition": "A1",
-    "direct_peer_notes_to_jekyll": 75,
+    "direct_peer_notes_to_jekyll": 196,
     "final_evaluation_available": false,
     "fit_run_ids": [
-      "main-qwen-a1-29-r0-fit"
+      "main-qwen-a1-29-r0-fit",
+      "main-qwen-a1-29-r1-fit"
     ],
     "model": "qwen",
     "paired_success": null,
@@ -102,19 +104,19 @@
     "r0_recovery_loss_contributing_unique_windows": 270,
     "r0_recovery_top1_token_share": 0.00705502922797823,
     "r0_recovery_top5_token_share": 0.034872001612578106,
-    "r1_failed_eligible_families": null,
-    "r1_recovery_eligible_windows": null,
-    "r1_recovery_loss_contributing_occurrences": null,
-    "r1_recovery_loss_contributing_unique_families": null,
-    "r1_recovery_loss_contributing_unique_windows": null,
-    "r1_recovery_top1_token_share": null,
-    "r1_recovery_top5_token_share": null,
-    "recovery_target_tokens": 19844,
+    "r1_failed_eligible_families": 14,
+    "r1_recovery_eligible_windows": 23,
+    "r1_recovery_loss_contributing_occurrences": 296,
+    "r1_recovery_loss_contributing_unique_families": 14,
+    "r1_recovery_loss_contributing_unique_windows": 23,
+    "r1_recovery_top1_token_share": 0.05819374007479125,
+    "r1_recovery_top5_token_share": 0.2686850058910916,
+    "recovery_target_tokens": 39365,
     "seed": 29,
-    "shared_memory_changes": 2460,
-    "source_visible_contradiction_flags": 279,
-    "supervised_target_tokens": 40086,
-    "training_input_tokens": 1048576,
+    "shared_memory_changes": 4964,
+    "source_visible_contradiction_flags": 433,
+    "supervised_target_tokens": 80256,
+    "training_input_tokens": 2097152,
     "verified_model_recovery_target_tokens": 64
   },
   {
