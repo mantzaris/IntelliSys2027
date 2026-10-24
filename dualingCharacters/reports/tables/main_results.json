@@ -54,15 +54,15 @@
   {
     "model": "qwen",
     "condition": "C5",
-    "executed_seeds": 0,
-    "paired_success": null,
+    "executed_seeds": 1,
+    "paired_success": 0.7,
     "seed_sd": null,
-    "conversation_success": null,
-    "status": "pending",
-    "gpu_reserved_seconds": 759.9000981668942,
-    "input_tokens": 7453289.0,
-    "output_tokens": 388400.0,
-    "train_tokens": 0.0
+    "conversation_success": 0.7541666666666667,
+    "status": "partial",
+    "gpu_reserved_seconds": 6648.316916531883,
+    "input_tokens": 55430026.0,
+    "output_tokens": 3389512.0,
+    "train_tokens": 2097152.0
   },
   {
     "model": "qwen",
@@ -85,9 +85,9 @@
     "seed_sd": null,
     "conversation_success": null,
     "status": "pending",
-    "gpu_reserved_seconds": 0.0,
-    "input_tokens": 0.0,
-    "output_tokens": 0.0,
+    "gpu_reserved_seconds": 63.84433982195333,
+    "input_tokens": 397932.0,
+    "output_tokens": 25577.0,
     "train_tokens": 0.0
   },
   {

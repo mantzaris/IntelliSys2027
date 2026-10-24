@@ -5,8 +5,9 @@
   ],
   "core_frozen_files": 58,
   "overnight_analysis_tests": 5,
-  "pytest_existing_tests_and_reports": 30,
+  "pytest_existing_tests_and_reports": 31,
   "qualification": "Initial unittest discovery did not discover function-style repository tests; corrected to pytest. Existing analysis import paths required PYTHONPATH=src:analysis. No GPU run or scientific source change resulted.",
+  "resource_snapshot_regression": "Passed: stale cache replaced, failed attempts retained, repeated heartbeats counted once",
   "review_frozen_files": 21,
   "supplement_and_overnight_unittest_passes": 15
 }

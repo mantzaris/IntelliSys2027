@@ -1,0 +1,261 @@
+{
+  "conservative_qwen_sized_pending_fit_bytes": 21517960035,
+  "local_free_bytes": 32246714368,
+  "pending_stage_counts": {
+    "collect": 65,
+    "evaluate": 33,
+    "external": 8,
+    "fit": 65,
+    "horizon128": 5,
+    "horizon32": 5,
+    "judge": 2,
+    "larger-memory": 5,
+    "natural": 3,
+    "recovery": 13,
+    "short": 13,
+    "unfamiliar": 5
+  },
+  "qualification": "Inode-aware local metadata only. Pending-fit planning proxy allows one optimizer plus two unique Qwen-sized adapters per fit, conservatively ignoring cross-fit initial-weight deduplication. Phi shapes and future trace sizes differ; this is a headroom check, not a hard guarantee. Existing audited deduplication preserves every named checkpoint and content; no extra cleanup was performed.",
+  "qwen_adapter_bytes": 66126768,
+  "qwen_optimizer_bytes": 198792003,
+  "run_sizes": {
+    "base-phi-eval": {
+      "apparent_bytes": 7687401,
+      "new_inode_allocated_bytes_in_path_order": 7712768
+    },
+    "base-qwen-eval": {
+      "apparent_bytes": 7751319,
+      "new_inode_allocated_bytes_in_path_order": 7778304
+    },
+    "batch-profile-001": {
+      "apparent_bytes": 4383,
+      "new_inode_allocated_bytes_in_path_order": 16384
+    },
+    "main-qwen-c1-17-eval": {
+      "apparent_bytes": 7371507,
+      "new_inode_allocated_bytes_in_path_order": 7393280
+    },
+    "main-qwen-c1-17-eval-format2": {
+      "apparent_bytes": 7232376,
+      "new_inode_allocated_bytes_in_path_order": 7258112
+    },
+    "main-qwen-c1-17-r0-collect": {
+      "apparent_bytes": 5992691,
+      "new_inode_allocated_bytes_in_path_order": 6025216
+    },
+    "main-qwen-c1-17-r0-fit": {
+      "apparent_bytes": 397517361,
+      "new_inode_allocated_bytes_in_path_order": 331456512
+    },
+    "main-qwen-c1-17-r0-fit-format2": {
+      "apparent_bytes": 397521086,
+      "new_inode_allocated_bytes_in_path_order": 265330688
+    },
+    "main-qwen-c1-17-r1-collect": {
+      "apparent_bytes": 6428499,
+      "new_inode_allocated_bytes_in_path_order": 6463488
+    },
+    "main-qwen-c1-17-r1-collect-format2": {
+      "apparent_bytes": 6432973,
+      "new_inode_allocated_bytes_in_path_order": 6467584
+    },
+    "main-qwen-c1-17-r1-fit": {
+      "apparent_bytes": 397519121,
+      "new_inode_allocated_bytes_in_path_order": 265326592
+    },
+    "main-qwen-c1-17-r1-fit-format2": {
+      "apparent_bytes": 397524163,
+      "new_inode_allocated_bytes_in_path_order": 265330688
+    },
+    "main-qwen-c3-17-eval": {
+      "apparent_bytes": 7514730,
+      "new_inode_allocated_bytes_in_path_order": 7540736
+    },
+    "main-qwen-c3-17-r0-collect": {
+      "apparent_bytes": 8249156,
+      "new_inode_allocated_bytes_in_path_order": 8282112
+    },
+    "main-qwen-c3-17-r0-fit": {
+      "apparent_bytes": 397523516,
+      "new_inode_allocated_bytes_in_path_order": 265330688
+    },
+    "main-qwen-c3-17-r1-collect": {
+      "apparent_bytes": 8718072,
+      "new_inode_allocated_bytes_in_path_order": 8757248
+    },
+    "main-qwen-c3-17-r1-fit": {
+      "apparent_bytes": 397522830,
+      "new_inode_allocated_bytes_in_path_order": 265338880
+    },
+    "main-qwen-c4-17-eval": {
+      "apparent_bytes": 7307738,
+      "new_inode_allocated_bytes_in_path_order": 7331840
+    },
+    "main-qwen-c4-17-r0-collect": {
+      "apparent_bytes": 8399345,
+      "new_inode_allocated_bytes_in_path_order": 8433664
+    },
+    "main-qwen-c4-17-r0-fit": {
+      "apparent_bytes": 397519645,
+      "new_inode_allocated_bytes_in_path_order": 265326592
+    },
+    "main-qwen-c4-17-r1-collect": {
+      "apparent_bytes": 8862415,
+      "new_inode_allocated_bytes_in_path_order": 8900608
+    },
+    "main-qwen-c4-17-r1-fit": {
+      "apparent_bytes": 397518410,
+      "new_inode_allocated_bytes_in_path_order": 265326592
+    },
+    "main-qwen-c5-17-r0-collect": {
+      "apparent_bytes": 8741286,
+      "new_inode_allocated_bytes_in_path_order": 8781824
+    },
+    "main-qwen-c5-17-r0-fit": {
+      "apparent_bytes": 397517178,
+      "new_inode_allocated_bytes_in_path_order": 265326592
+    },
+    "main-qwen-c5-17-r1-collect": {
+      "apparent_bytes": 60593167,
+      "new_inode_allocated_bytes_in_path_order": 60624896
+    },
+    "mechanism-final-001": {
+      "apparent_bytes": 25379514,
+      "new_inode_allocated_bytes_in_path_order": 25530368
+    },
+    "mechanism-v2-001": {
+      "apparent_bytes": 10900343,
+      "new_inode_allocated_bytes_in_path_order": 10985472
+    },
+    "mechanism-v3-001": {
+      "apparent_bytes": 92653789,
+      "new_inode_allocated_bytes_in_path_order": 92790784
+    },
+    "pilot-alias-refresh-001": {
+      "apparent_bytes": 426494,
+      "new_inode_allocated_bytes_in_path_order": 458752
+    },
+    "pilot-c3-001": {
+      "apparent_bytes": 1106218,
+      "new_inode_allocated_bytes_in_path_order": 1122304
+    },
+    "pilot-c3-002": {
+      "apparent_bytes": 399065298,
+      "new_inode_allocated_bytes_in_path_order": 266895360
+    },
+    "pilot-c5-001": {
+      "apparent_bytes": 399091018,
+      "new_inode_allocated_bytes_in_path_order": 266928128
+    },
+    "pilot-format2-phi-base": {
+      "apparent_bytes": 497221,
+      "new_inode_allocated_bytes_in_path_order": 516096
+    },
+    "pilot-format2-phi-c5-eval": {
+      "apparent_bytes": 484458,
+      "new_inode_allocated_bytes_in_path_order": 507904
+    },
+    "pilot-format2-phi-c5-fit": {
+      "apparent_bytes": 277499911,
+      "new_inode_allocated_bytes_in_path_order": 231391232
+    },
+    "pilot-format2-qwen-base": {
+      "apparent_bytes": 502043,
+      "new_inode_allocated_bytes_in_path_order": 524288
+    },
+    "pilot-format2-qwen-c3-eval": {
+      "apparent_bytes": 484674,
+      "new_inode_allocated_bytes_in_path_order": 507904
+    },
+    "pilot-format2-qwen-c3-fit": {
+      "apparent_bytes": 397435438,
+      "new_inode_allocated_bytes_in_path_order": 265240576
+    },
+    "pilot-format2-qwen-c5-eval": {
+      "apparent_bytes": 486180,
+      "new_inode_allocated_bytes_in_path_order": 507904
+    },
+    "pilot-format2-qwen-c5-fit": {
+      "apparent_bytes": 397436944,
+      "new_inode_allocated_bytes_in_path_order": 265244672
+    },
+    "pilot-format2-refresh": {
+      "apparent_bytes": 548325,
+      "new_inode_allocated_bytes_in_path_order": 577536
+    },
+    "pilot-severity-001": {
+      "apparent_bytes": 6290731,
+      "new_inode_allocated_bytes_in_path_order": 6307840
+    },
+    "pilot-v4-phi-base": {
+      "apparent_bytes": 257857,
+      "new_inode_allocated_bytes_in_path_order": 278528
+    },
+    "pilot-v4-phi-c5-collect": {
+      "apparent_bytes": 959542,
+      "new_inode_allocated_bytes_in_path_order": 987136
+    },
+    "pilot-v4-phi-c5-eval": {
+      "apparent_bytes": 244184,
+      "new_inode_allocated_bytes_in_path_order": 266240
+    },
+    "pilot-v4-phi-c5-fit": {
+      "apparent_bytes": 277268221,
+      "new_inode_allocated_bytes_in_path_order": 184979456
+    },
+    "pilot-v4-qwen-base": {
+      "apparent_bytes": 262046,
+      "new_inode_allocated_bytes_in_path_order": 282624
+    },
+    "pilot-v4-qwen-c3-collect": {
+      "apparent_bytes": 929928,
+      "new_inode_allocated_bytes_in_path_order": 958464
+    },
+    "pilot-v4-qwen-c3-eval": {
+      "apparent_bytes": 259221,
+      "new_inode_allocated_bytes_in_path_order": 278528
+    },
+    "pilot-v4-qwen-c3-fit": {
+      "apparent_bytes": 397204234,
+      "new_inode_allocated_bytes_in_path_order": 265007104
+    },
+    "pilot-v4-qwen-c5-collect": {
+      "apparent_bytes": 970981,
+      "new_inode_allocated_bytes_in_path_order": 1003520
+    },
+    "pilot-v4-qwen-c5-eval": {
+      "apparent_bytes": 256890,
+      "new_inode_allocated_bytes_in_path_order": 278528
+    },
+    "pilot-v4-qwen-c5-fit": {
+      "apparent_bytes": 397204241,
+      "new_inode_allocated_bytes_in_path_order": 265007104
+    },
+    "profile-bf16-001": {
+      "apparent_bytes": 397450168,
+      "new_inode_allocated_bytes_in_path_order": 265265152
+    },
+    "profile-bf16-isolated-001": {
+      "apparent_bytes": 397704866,
+      "new_inode_allocated_bytes_in_path_order": 265523200
+    },
+    "profile-nf4-001": {
+      "apparent_bytes": 397435774,
+      "new_inode_allocated_bytes_in_path_order": 331386880
+    },
+    "profile-phi-001": {
+      "apparent_bytes": 277621783,
+      "new_inode_allocated_bytes_in_path_order": 185344000
+    },
+    "profile-phi-isolated-001": {
+      "apparent_bytes": 277771720,
+      "new_inode_allocated_bytes_in_path_order": 185499648
+    },
+    "vllm-profile-001": {
+      "apparent_bytes": 5129,
+      "new_inode_allocated_bytes_in_path_order": 16384
+    }
+  },
+  "unique_allocated_run_bytes": 6010261504,
+  "utc": "2026-10-24T03:22:00.737819+00:00"
+}

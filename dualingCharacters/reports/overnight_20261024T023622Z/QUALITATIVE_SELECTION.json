@@ -1,6 +1,79 @@
 {
-  "candidate_cache_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "candidate_cache_sha256": "80b5f505448639ca25972d60967e01c7e182f85cc75ef6e8b5ab9c220c3816f7",
   "classification": "Outcome-stratified deterministic illustration; separate from blinded human evaluation",
-  "selected": [],
+  "selected": [
+    {
+      "category": "both_succeed",
+      "category_families": 167,
+      "contrast": "C5-C1",
+      "family_id": "test-0058",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "neither",
+      "category_families": 53,
+      "contrast": "C5-C1",
+      "family_id": "test-0100",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "only_first",
+      "category_families": 1,
+      "contrast": "C5-C1",
+      "family_id": "test-0143",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "only_second",
+      "category_families": 19,
+      "contrast": "C5-C1",
+      "family_id": "test-0081",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "both_succeed",
+      "category_families": 157,
+      "contrast": "C5-C3",
+      "family_id": "test-0017",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "neither",
+      "category_families": 52,
+      "contrast": "C5-C3",
+      "family_id": "test-0046",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "only_first",
+      "category_families": 11,
+      "contrast": "C5-C3",
+      "family_id": "test-0068",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    },
+    {
+      "category": "only_second",
+      "category_families": 20,
+      "contrast": "C5-C3",
+      "family_id": "test-0127",
+      "model": "qwen",
+      "seed": 17,
+      "total_families": 240
+    }
+  ],
   "worlds_preserved": true
 }

@@ -2,7 +2,7 @@
 
 ## paired_success
 
-Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending.
+Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending. C1: clean; C2: random corruption; C3: generic adversaries; C4/C5/C6: two/three/five total characters; A1: motive-only; A2: private history removed; A3: peer interaction removed.
 
 [PDF](figures/paired_success.pdf) · [SVG](figures/paired_success.svg) · [PNG](figures/paired_success.png)
 

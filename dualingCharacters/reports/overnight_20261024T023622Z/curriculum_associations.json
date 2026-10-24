@@ -162,22 +162,24 @@
     "verified_model_recovery_target_tokens": 1697
   },
   {
-    "action_opportunities": 3600,
-    "antagonist_peer_deliveries": 1063,
-    "canonical_source_coverage": null,
+    "action_opportunities": 7200,
+    "antagonist_peer_deliveries": 2152,
+    "canonical_source_coverage": 0.9291666666666667,
     "collection_run_ids": [
-      "main-qwen-c5-17-r0-collect"
+      "main-qwen-c5-17-r0-collect",
+      "main-qwen-c5-17-r1-collect"
     ],
-    "completed_collections": 1,
-    "completed_fits": 1,
+    "completed_collections": 2,
+    "completed_fits": 2,
     "condition": "C5",
-    "direct_peer_notes_to_jekyll": 196,
-    "final_evaluation_available": false,
+    "direct_peer_notes_to_jekyll": 398,
+    "final_evaluation_available": true,
     "fit_run_ids": [
-      "main-qwen-c5-17-r0-fit"
+      "main-qwen-c5-17-r0-fit",
+      "main-qwen-c5-17-r1-fit"
     ],
     "model": "qwen",
-    "paired_success": null,
+    "paired_success": 0.7,
     "planned_fits": 2,
     "r0_failed_eligible_families": 84,
     "r0_recovery_eligible_windows": 347,
@@ -186,20 +188,20 @@
     "r0_recovery_loss_contributing_unique_windows": 264,
     "r0_recovery_top1_token_share": 0.00706999293000707,
     "r0_recovery_top5_token_share": 0.03514796485203515,
-    "r1_failed_eligible_families": null,
-    "r1_recovery_eligible_windows": null,
-    "r1_recovery_loss_contributing_occurrences": null,
-    "r1_recovery_loss_contributing_unique_families": null,
-    "r1_recovery_loss_contributing_unique_windows": null,
-    "r1_recovery_top1_token_share": null,
-    "r1_recovery_top5_token_share": null,
-    "recovery_target_tokens": 19802,
+    "r1_failed_eligible_families": 17,
+    "r1_recovery_eligible_windows": 31,
+    "r1_recovery_loss_contributing_occurrences": 299,
+    "r1_recovery_loss_contributing_unique_families": 17,
+    "r1_recovery_loss_contributing_unique_windows": 31,
+    "r1_recovery_top1_token_share": 0.04318515890313751,
+    "r1_recovery_top5_token_share": 0.20801865274469056,
+    "recovery_target_tokens": 39531,
     "seed": 17,
-    "shared_memory_changes": 2528,
-    "source_visible_contradiction_flags": 830,
-    "supervised_target_tokens": 39436,
-    "training_input_tokens": 1048576,
-    "verified_model_recovery_target_tokens": 0
+    "shared_memory_changes": 5034,
+    "source_visible_contradiction_flags": 1226,
+    "supervised_target_tokens": 79238,
+    "training_input_tokens": 2097152,
+    "verified_model_recovery_target_tokens": 771
   },
   {
     "action_opportunities": 0,

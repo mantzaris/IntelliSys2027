@@ -1,0 +1,14 @@
+{
+  "gain_vs_compute": {
+    "caption": "Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/compute_by_condition.json": "7c453913eb9332b8d5846311aac776555ddbd7044af35472ba6d204f89bf054d",
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "c259e2cba6a0e181590403b08c01a5db72ab05ef10decf3b70aaaa935d445318"
+    },
+    "outputs": {
+      "pdf": "52d6d4fd2dbca00803aaea9474a1b8e752b565b807ad4b5f1042e0e2359d5c5c",
+      "png": "9100568bed375ab2807d83b2c85fc3e830fad9d307729d21883ddbfdc166fe45",
+      "svg": "5231b0f101e6c0800f3f236bab5513f8a26a21d94b0363e4497d62bf70419e7c"
+    }
+  }
+}

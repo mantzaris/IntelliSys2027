@@ -2,10 +2,10 @@
   "forced": false,
   "new_completed_inputs": {
     "collect": [],
-    "evaluate": [],
-    "fit": [
-      "main-qwen-c5-17-r0-fit"
-    ]
+    "evaluate": [
+      "main-qwen-c5-17-eval"
+    ],
+    "fit": []
   },
-  "utc": "2026-10-24T03:06:26.767329+00:00"
+  "utc": "2026-10-24T04:24:50.976626+00:00"
 }

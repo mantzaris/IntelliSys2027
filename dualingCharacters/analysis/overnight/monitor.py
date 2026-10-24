@@ -30,7 +30,8 @@ status=json.loads((run/'status.json').read_text()) if (run/'status.json').exists
 result={'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':status,'free_bytes':shutil.disk_usage(root).free,
 'gpu':subprocess.check_output(['nvidia-smi','--query-gpu=name,memory.total,memory.used,utilization.gpu','--format=csv,noheader'],text=True).strip(),
 'gpu_processes':subprocess.check_output(['nvidia-smi','--query-compute-apps=pid,process_name','--format=csv,noheader'],text=True).strip(),
-'container_started':subprocess.check_output(['ps','-p','1','-o','lstart='],text=True).strip()}
+'container_started':subprocess.check_output(['ps','-p','1','-o','lstart='],text=True).strip(),
+'container_elapsed_seconds':int(subprocess.check_output(['ps','-p','1','-o','etimes='],text=True).strip())}
 files={}
 for name in ('status.json','collection.jsonl','evaluation.jsonl','supervision.jsonl','training/loss.jsonl'):
  p=run/name

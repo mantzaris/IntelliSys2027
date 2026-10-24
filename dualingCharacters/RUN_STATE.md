@@ -10,12 +10,18 @@ October 24, 08:36 America/New_York). See
 `reports/overnight_20261024T023622Z/WORK_LOG.md`, `LATEST_STATE.json`, and the
 incremental analysis README at `analysis/overnight/README.md`.
 The existing core PID **787315** and review coordinator PID **1291869** retain
-ownership. No additional controller or GPU worker was started. C4 seed17 completed
-at 179/240 paired successes; C5 seed17 round-zero fitting is progressing. Both
+ownership. No additional controller or GPU worker was started. Qwen seed17 paired
+successes are base 67/240, C1 186/240, C3 177/240, C4 179/240 and C5 168/240.
+C5−C3 is −3.75 percentage points (exploratory family interval −8.33 to +0.83);
+C5−C1 is −7.50 points (−11.25 to −4.17). These intervals do not estimate
+training-seed uncertainty. The first C5 comparison is negative relative to both
+trained controls; the full planned inference remains pending. The original queue
+advanced to A1 seed17 collection. Eight collections and eight fits have exact
+incremental audits; all 22 completed stages have verified remote/local evidence. Both
 scientific freezes remain unchanged. The overnight session will leave healthy
 original work running under its existing resource controls at handoff.
 
-## Current phase — review follow-up
+## Review follow-up starting snapshot (superseded by live overnight state above)
 
 The original 241-stage core controller remains active (session **14639**, host PID
 **787315**). Its live state is `artifacts/campaign_state.json`; do not launch a

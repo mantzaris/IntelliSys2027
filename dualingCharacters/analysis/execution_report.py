@@ -52,6 +52,10 @@ def generate(root: Path) -> dict:
     core_complete = not pending
     main = read('reports/tables/main_results.json', [])
     effects = read('reports/tables/main_contrasts.json', [])
+    # This report may be refreshed independently of the expensive full package.
+    # Recompute only small metadata so current outcomes never accompany stale costs.
+    from resource_snapshot import snapshot
+    snapshot(root)
     resource = read('reports/tables/resource_totals.json', {})
     transfer = read('reports/tables/transfer.json', [])
     external = read('reports/tables/external.json', [])

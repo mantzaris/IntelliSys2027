@@ -5,10 +5,15 @@ phi & base & 17 & 27/240 & 110/480\\
 qwen & C1 & 17 & 186/240 & 390/480\\
 qwen & C3 & 17 & 177/240 & 381/480\\
 qwen & C4 & 17 & 179/240 & 382/480\\
+qwen & C5 & 17 & 168/240 & 362/480\\
 \bottomrule\end{tabular}\end{table}
 \begin{table}[ht]\centering\caption{Individual-seed exploratory contrasts. Intervals use family resampling only and cannot estimate training-seed variation.}\begin{tabular}{llrrr}\toprule Model & Contrast & Seed & Difference (pp) & 95\% interval (pp)\\\midrule
+qwen & C5-C3 & 17 & -3.75 & [-8.33, 0.83]\\
+qwen & C5-C1 & 17 & -7.50 & [-11.25, -4.17]\\
+qwen & C5-C4 & 17 & -4.58 & [-7.92, -1.25]\\
 qwen & C3-C1 & 17 & -3.75 & [-7.50, 0.00]\\
-qwen & C5-C3 & 17 & pending & pending\\
-qwen & C5-C1 & 17 & pending & pending\\
 \bottomrule\end{tabular}\end{table}
+For qwen seed 17, C5 does not exceed C3 in the point estimate. This observed result does not support an advantage over generic adversarial training for this seed.
+C5 is also below clean C1 by 7.50 percentage points. Improvement over the untrained model therefore does not establish superiority over either trained control.
+The C5--C3 paired transitions are 157 both successful, 11 C5-only, 20 C3-only and 52 neither, among 240 families.
 Complete planned-seed inference is pending. No interim significance result changes the schedule or checkpoint rule.

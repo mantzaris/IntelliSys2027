@@ -62,3 +62,29 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T03:10:27.843419+00:00: Progress: 19/241 core stages complete; active main-qwen-c5-17-r1-collect, 2624 generation requests, 0 training input tokens; 11.8033/96 reserved hours. Review remains waiting_for_core.
 
 - 2026-10-24T03:18:23.457024+00:00: Added descriptive curriculum/outcome joins, completed-fit training curves, read-only supplementary readiness and incremental handoff/provenance generation. Five focused analysis tests pass. No new GPU calls or core changes.
+
+- 2026-10-24T03:22:00.738266+00:00: Storage audit: completed-run checkpoints use existing content-preserving hard links. Pending-fit planning proxy is 20.04 GiB; local free 30.03 GiB. No deletion or new cleanup policy introduced.
+
+- 2026-10-24T03:30:08.890452+00:00: Progress: 20/241 core stages complete; active main-qwen-c5-17-r1-fit, 0 generation requests, 32768 training input tokens; 12.1252/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T03:30:10.159432+00:00: Extended collection audit for main-qwen-c5-17-r1-collect: 745 clean and 31 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T03:30:38.533053+00:00: C5 seed17 round-one collection completed: 745 clean and 31 failed eligible windows from 17 failed families, one verified model-recovery candidate. The action audit found 1,089 delivered antagonist peer messages, two typed follow-ups and zero repeated directed candidates; these are observational flags, not coalition evidence. Final fitting is underway.
+
+- 2026-10-24T03:48:01.973002+00:00: Progress: 21/241 core stages complete; active main-qwen-c5-17-eval, 0 generation requests, 0 training input tokens; 12.4104/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T03:48:05.191647+00:00: Reconstructed main-qwen-c5-17-r1-fit: 39802 target tokens; 333 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T03:49:38.753155+00:00: C5 seed17 final fit completed: 39,802 new target tokens, 79,238 across both fixed rounds. All 256 optimizer-step target counts matched exact reconstruction. Its 31 recovery windows from 17 families contributed loss on 299 occurrences; the top five supplied 20.80% of recovery target tokens. The existing queue advanced to the fixed 240-family C5 evaluation.
+
+- 2026-10-24T03:51:08.773411+00:00: Remote/local completed-stage checksums match for main-qwen-c1-17-r0-collect, main-qwen-c1-17-r1-collect-format2, main-qwen-c3-17-r0-collect, main-qwen-c3-17-r1-collect, main-qwen-c4-17-r0-collect, main-qwen-c4-17-r1-collect, main-qwen-c5-17-r0-collect, main-qwen-c5-17-r1-collect, main-qwen-c1-17-r0-fit-format2, main-qwen-c1-17-r1-fit-format2, main-qwen-c3-17-r0-fit, main-qwen-c3-17-r1-fit, main-qwen-c4-17-r0-fit, main-qwen-c4-17-r1-fit, main-qwen-c5-17-r0-fit, main-qwen-c5-17-r1-fit.
+
+- 2026-10-24T04:24:44.470656+00:00: Validated completed main-qwen-c5-17-eval: 168/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T04:26:11.482764+00:00: Remote/local completed-stage checksums match for main-qwen-c5-17-eval.
+
+- 2026-10-24T04:26:13.072969+00:00: Progress: 22/241 core stages complete; active main-qwen-a1-17-r0-collect, 1408 generation requests, 0 training input tokens; 13.0380/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T04:27:36.210961+00:00: First complete fixed C5 seed17 test validated and mirrored: 168/240 paired success; C5−C3 −3.75 pp (family 95% interval −8.33 to +0.83), C5−C1 −7.50 pp (−11.25 to −4.17). All 30,720 raw rows, 480 unique paired worlds, source/configuration/model and final adapter hashes checked. Negative finding retained; no queue or scientific change. A1 collection running.
+
+- 2026-10-24T04:29:31.199169+00:00: Reporting-only correction: analysis/execution_report.py previously combined fresh outcome tables with stale cached resource totals (6.965 h). Added a small metadata-only resource refresh using the existing aggregation definitions and a regression test for stale caches and duplicate heartbeats. Actual GPU ledger/controller enforcement was already current; no scientific file or run was affected. Existing tests now 31 passed, plus 15 supplement/overnight tests.

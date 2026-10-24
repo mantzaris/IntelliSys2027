@@ -1,0 +1,33 @@
+{
+  "code_sha256": "b48863cc74032b2855694b1bd6915fa1d3d11eed30cf40772de24ea4a5b37bc2",
+  "exclusions_sha256": "46bc642b0da8d85cd28e33833b0c95401ff37c6c9e1445e159b7cb439c535b3f",
+  "qualification": "Completed eligible pipeline compute is separate from excluded/other attempts, which remain charged to the whole-study ledger. No FLOP or billed-cost equivalence is asserted.",
+  "status_hashes": {
+    "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
+    "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+    "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+    "artifacts/runs/main-qwen-c1-17-eval/status.json": "b7560de07c50a84d35e06b7de1b743c642ab8e41dadf9e58da5e46482767ccd6",
+    "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",
+    "artifacts/runs/main-qwen-c1-17-r0-fit-format2/status.json": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8",
+    "artifacts/runs/main-qwen-c1-17-r0-fit/status.json": "2ca39acb5aa1ed32bc3370f248d2e902b0b206d03a4cf08f275df7388e21a559",
+    "artifacts/runs/main-qwen-c1-17-r1-collect-format2/status.json": "491000129d00d92eed39b5db87b31d301d4045da54f347a0f707ddc91806ad24",
+    "artifacts/runs/main-qwen-c1-17-r1-collect/status.json": "8391f67c77baff53602ab4892df022bed6859ed477c4d7bb6f8cff006b6e46c4",
+    "artifacts/runs/main-qwen-c1-17-r1-fit-format2/status.json": "50523e9b6ab2475636e1646f1da5e7f8d82e046d160f0c3cccbe374c58f8c51f",
+    "artifacts/runs/main-qwen-c1-17-r1-fit/status.json": "030a7a478a02e306aeeb8dca8076f98304e3d2666bc996c993d138af06c963a8",
+    "artifacts/runs/main-qwen-c3-17-eval/status.json": "5aa7115d266937c266e47a894d57b4c67dd8cc0ea96df486c0447a979b513ec3",
+    "artifacts/runs/main-qwen-c3-17-r0-collect/status.json": "e59b25c27b6828664f524893b2a45d23eb67f328e55d77a48bed1a92ccd6879f",
+    "artifacts/runs/main-qwen-c3-17-r0-fit/status.json": "50b441e31fc76f6b65f31e9749dd24de7af2bfb6a931ea4472d39e2c0de243ff",
+    "artifacts/runs/main-qwen-c3-17-r1-collect/status.json": "f8a927dbc6001553bbb3dbe5ab738331c9443c855d63f26d97bcac792d98a684",
+    "artifacts/runs/main-qwen-c3-17-r1-fit/status.json": "3b94c2c00148e72999197fab389f1ea04d4630b3d09a438ff10f5338bac53e9d",
+    "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
+    "artifacts/runs/main-qwen-c4-17-r0-collect/status.json": "6ea305c2289fa51065257e96848e7216b783bbb5d74d9b1bcb94c32b2148f4b3",
+    "artifacts/runs/main-qwen-c4-17-r0-fit/status.json": "0fdc88a591e5149b7990f31579b8736cf3e956e034c5fbff5cedcc7373eb1764",
+    "artifacts/runs/main-qwen-c4-17-r1-collect/status.json": "94057467f6d967ea3618a2fe284df32ab4670c883134941f4aaa612dc8bedbc9",
+    "artifacts/runs/main-qwen-c4-17-r1-fit/status.json": "d7210786b40664f29ee38730c72f1a38f5b0a846215583931325f89553f588ac",
+    "artifacts/runs/main-qwen-c5-17-eval/status.json": "9c8356222e3d4dc080c60bc97cd58be98c7dcda701d0f5a62cbf24348106704d",
+    "artifacts/runs/main-qwen-c5-17-r0-collect/status.json": "bf93fc5a137b3ab11ed2b73e3296be2a1cc0ea1ec7e14c98bffb28e964e97234",
+    "artifacts/runs/main-qwen-c5-17-r0-fit/status.json": "69ac8641b25ee91c6ca0a51e6220a787cb1b4092814908df42335bbf72878753",
+    "artifacts/runs/main-qwen-c5-17-r1-collect/status.json": "bc081015130c34604b62aef3c9ccec32b950915bde45faf50a99a19f1b40d000",
+    "artifacts/runs/main-qwen-c5-17-r1-fit/status.json": "2053d134a764534c8d96cf1b94e528ec155dd53e0b21ac2fc8960bacf6458e5e"
+  }
+}

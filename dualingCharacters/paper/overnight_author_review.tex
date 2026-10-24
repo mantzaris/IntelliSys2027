@@ -13,7 +13,7 @@
 Conversational assistants must retain binding requirements while accepting genuine
 user revisions. We investigate whether supervised training on interactions with
 persistent, motive-conditioned software characters improves subsequent planning
-conversations after those characters are removed. A shared language-model backbone
+conversations after those characters are removed. A shared language model backbone
 serves a responsible answering policy and frozen character generators. Characters
 have private histories and bounded opportunities to propose options, communicate,
 or interfere with working memory. Their goals concern influence and adoption of
@@ -21,7 +21,7 @@ preferred choices rather than a common instruction to maximize answer error.
 A deterministic benchmark pairs closely matched conversations in which a user
 either authorizes a revision or merely considers it. The primary endpoint requires
 correct final executable decisions in both worlds. Clean training, generic
-adversarial training, character-count conditions, and profile/history/communication
+adversarial training, character-count conditions, and profile, history and communication
 ablations separate candidate mechanisms. The fixed design uses three training
 seeds and an independent model family, with final-checkpoint selection independent
 of test results. This interim report distinguishes input-token budgets from actual

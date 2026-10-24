@@ -49,7 +49,7 @@ raw prompts, adapters and human sheets are kept out of Git. Figures are saved as
 PDF/SVG with PNG previews and exact source hashes. Read their generated captions
 before interpreting uncertainty or pending cells.
 
-`associations`, `training_curves`, and `qualitative` regenerate their descriptive
+`associations`, `training_curves`, `compute`, and `qualitative` regenerate their descriptive
 tables/figures/illustrations from validated aggregates and completed logs. The
 incremental updater calls them when their inputs change. `handoff --final` records
 the actual end of this supervision session; it does not stop a healthy campaign.

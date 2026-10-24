@@ -9,12 +9,13 @@
       "artifacts/runs/main-qwen-c4-17-r0-fit/training/loss.jsonl": "4b694635e06931497c9db7a553c922ca4dd459e6c364fe7afa2c0b6aebf6a844",
       "artifacts/runs/main-qwen-c4-17-r1-fit/training/loss.jsonl": "f032c40eebf2e898dcf591442aecc46c7ddfcf27743c5f39c169aa33777bb876",
       "artifacts/runs/main-qwen-c5-17-r0-fit/training/loss.jsonl": "2017e5a72bd1985c6042439d0656968e7ea7bfae9c9a19c9520ac4b853b0cdf2",
-      "reports/overnight_20261024T023622Z/supervision_exposure.json": "e2732caf86bce24394788fb198460b87d5ad280daa9370b54a51ecaea6e00448"
+      "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
+      "reports/overnight_20261024T023622Z/supervision_exposure.json": "ac8a9c12c72ef0bba7ab888ced7ab027b322aad8e64dcaa30ac520e20b826d5d"
     },
     "outputs": {
-      "pdf": "c5ab4a7ac02e68f6f07594ba804e408334083b6083acd6e65ed2deecec51b976",
-      "png": "d4f5a9759a2723df4b84877f749220a734f50ccc782061762225fecbddb6ca2c",
-      "svg": "695a8879e71902be19205f06ad04b3e16800569b80400ed1e121e1e71ba8e81d"
+      "pdf": "0d95c821241845f77affe915df42d8401c9c0616485b541d2479aa118c9400fb",
+      "png": "8c8ccb2181848c6e97708ea9e6b089d94be67346b000f8a227c20ef7ba2925ef",
+      "svg": "7924e27ebaa96663c6aa72985b5786746c6bf7cf603592ab5d6cd3c57e9f20f6"
     }
   }
 }

@@ -2,56 +2,56 @@
   "paired_contrasts": {
     "caption": "Individual-seed contrasts on common 240 paired families, 64 turns. Bars are exploratory family-bootstrap 95% intervals (10,000 draws, seed 40721). They do not capture training-seed variation; an interval containing zero is not equivalence. Complete planned-seed inference uses the separate frozen two-way analysis.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/paired_transitions.json": "776317490859495d15874c4d647f1910d268a20f1f3c912fffc462fb3343a526"
+      "reports/overnight_20261024T023622Z/paired_transitions.json": "e154d07e35a9e595638065be203978ac02db5a94ff870a875fbd8fc94afb902a"
     },
     "outputs": {
-      "pdf": "b758c8e5f4937cb6ff4dae0f25eda5ed1631c50b5ef511dc65530b4dca0f7683",
-      "png": "40ed45845812e870a1c7c081eb41fcbaac36e738fee650cf6061995210f5b56c",
-      "svg": "e234927b80d6a157c9895d53751ff9aa9777da55c2da31951aaea475a11a14ac"
+      "pdf": "19ea53a5e1f4d729a9e5622532a01448e055ff8e8df907e33eae22b59e3c3484",
+      "png": "3f991f1f9efbf8e4d4afcf15cc45019bc524e723a6c7777f64675e81849df42f",
+      "svg": "4583b8963ab91a4046181744e68cd5ed5529b4e2e09d408def9bc461df7a7b4a"
     }
   },
   "paired_success": {
-    "caption": "Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending.",
+    "caption": "Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending. C1: clean; C2: random corruption; C3: generic adversaries; C4/C5/C6: two/three/five total characters; A1: motive-only; A2: private history removed; A3: peer interaction removed.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/per_seed_results.json": "3fa13aea7259c7e8a669fdbbc20ef62acf8bc456db0d4dff69b4628abcba23a6"
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "c259e2cba6a0e181590403b08c01a5db72ab05ef10decf3b70aaaa935d445318"
     },
     "outputs": {
-      "pdf": "52e2af41d17c60581a17fb00d3149e9cf6ece0db995c648d28995f968ed7c3dd",
-      "png": "9b5aa9147d2a7aa40aff0cacde035c7979b09b6dc4464908bd35589a56670de5",
-      "svg": "4d28a590314a9a2bf42de80688ccb5e98b9737f53f34e98a07ee7b616cfa5856"
+      "pdf": "73ef86afa61b1177f2d74d7a0d4ed81f648b0e3286f1056ae55eec6e87519154",
+      "png": "cda70c8305f5bd2cde196e5c21b8e363260fdf53e59d665cbd3bc3bed04a26c2",
+      "svg": "d9ada7d046cf75747b0d7687a754f5492341ae62ab8fa67dabd12fb19f8b0dea"
     }
   },
   "recall_behavior": {
     "caption": "Recall and behavioral success are separate endpoints over the same 480 conversations/seed at 64 turns. Recall requires six correct state values; behavioral success requires the eight executable decisions and correct clarification. Worlds are paired; these bars are descriptive, not independent-sample inference.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/per_seed_results.json": "3fa13aea7259c7e8a669fdbbc20ef62acf8bc456db0d4dff69b4628abcba23a6"
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "c259e2cba6a0e181590403b08c01a5db72ab05ef10decf3b70aaaa935d445318"
     },
     "outputs": {
-      "pdf": "fa48a411d4ec6786eb955bf119374b639d31f13a36b4fe1ac0e6eaa2a2726582",
-      "png": "77ddb80de59a9f656f2d8957f2729dfe0d06503cddcd7d2a9ef3cf15880d6021",
-      "svg": "fd4b3c4d84b39f06b65d773a0d7c2778a59eb54cbf1ef38fc928895f44fecbe6"
+      "pdf": "53c55fcea07c5c72489b80a9956eabe955f71d2fe823f124ae675ab39db4afbb",
+      "png": "87b30bb7ba8d67651b084154ba5d588c266a981732f903e5e4e4b5cb31ce89f0",
+      "svg": "4ab9c1d710e469fc9eac6a18090b5995f9078844234bccd0e309971293125a35"
     }
   },
   "recovery_exposure": {
     "caption": "Exact reconstructed optimizer-loss exposure per completed fit, by model/condition/seed/round. Loaded buffer windows are excluded unless they contribute unmasked target loss. Repeated occurrences and top-five token shares quantify concentration, not additional independent recovery examples. Resume-prefix and orphaned suffix masking follow the frozen code.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/supervision_pools.json": "e04c7e816fdfd040a12ad639c6945631d8e5b165758f1f9e6d94f37df55f8b12"
+      "reports/overnight_20261024T023622Z/supervision_pools.json": "837a5c51d5f7f77e2bf9be7eb5c9e1d4a86c8b632d4c4ea8451448501f288e76"
     },
     "outputs": {
-      "pdf": "f743f3a877676ab3d800444e3b8f7b994ea36688ef8affc214e56d939d73ffaa",
-      "png": "d68fe1f51d0ceb53e420ae12175a5f6b5924a65b5c59451a10146710a6249987",
-      "svg": "ec716ea14720db4d1a47ca8e88eeb8d34c70c339b5370f520db846b4961c3b37"
+      "pdf": "1044a136906ada4f66cd7f2980f0af075aea0d2c81f7be5f7fbcca26b63a6c5a",
+      "png": "f60048dc8a00ede52456f692db8f9666ae077de65c6fa8a60ef143c1682864af",
+      "svg": "5d68682e7095425fb44a349943ad5e48fd945fa737fd8dd6d37081132fa3680b"
     }
   },
   "rule_structure": {
     "caption": "Separate familiar versus held-out conditional rules, 120 paired families in each stratum, 64 turns; actual completed seed values only. These are descriptive strata with no independent-turn uncertainty. All ambiguous locked-test families are creative/held-out, so ambiguity is confounded.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/strata.json": "a986050014cf861164524288b8790f1dba73db553bfe4b47a316feca52e315bc"
+      "reports/overnight_20261024T023622Z/strata.json": "55de0ba1f0c75af84b60e32e645e3602b28cc36c818b4f62b45291f86cbe4eb8"
     },
     "outputs": {
-      "pdf": "11fbed5548696e93f8143200ce4aebc7578fb3ed523594e89298771c5dffd18b",
-      "png": "b7c491ea45c1131a36381e98a3d42d9a1abba5a52d5f12eb761ed358a6ed5beb",
-      "svg": "2ac57c0b0e54313c6a1fad307e6a9b720c81880beaad3b1637c5ab7ac09fb6ad"
+      "pdf": "02fa121e4656e6b5f4c47330e8b4ed01e89e3d462ff0f7dad0233e19c45c8f1b",
+      "png": "fc8127b2518990a5b7018c22094b99bf67b49e93d087c2756c550ec8d8887011",
+      "svg": "f94eb46920c13b28f2501f97626af20526033de99da834f3f40518d532e9da27"
     }
   }
 }

@@ -64,6 +64,9 @@ def main(final=False):
       'Newly completed stages:\n']
     lines.extend('- `'+name+'`' for name in new)
     forecast=live['forecast'];remote=live.get('remote') or {}
+    mirror_age=live.get('mirror_status_age_seconds')
+    mirror_text=f'{mirror_age:.1f} seconds' if mirror_age is not None else 'pending first status mirror for this newly started stage'
+    remote_space=f'{remote["free_bytes"]/2**30:.2f} GiB' if 'free_bytes' in remote else 'unavailable in this snapshot'
     lines += [f'\nReserved GPU time: **{starting_hours:.4f} h before**, **{current_hours-starting_hours:.4f} h during**, '
       f'**{current_hours:.4f}/96 h cumulative**, with **{96-current_hours:.4f} h remaining** at the snapshot. '
       f'Review consumption: **{live["review_reserved_hours"]:.4f}/2 h** cumulatively. '
@@ -73,10 +76,11 @@ def main(final=False):
       'These are forecasts, not guarantees or permission to shrink the grid. The earlier 92.74 h forecast is preserved separately. '
       'Supplementary work requires all 241 core stages, exact prerequisites, the cumulative two-hour subcap, and at least 30 minutes of contingency plus its existing margin.\n',
       f'Hardware snapshot: {remote.get("gpu","remote snapshot unavailable")}. Local free storage: '
-      f'{live["local_free_bytes"]/2**30:.2f} GiB; remote free storage: {remote.get("free_bytes",0)/2**30:.2f} GiB. '
-      f'Mirrored current status age: {live.get("mirror_status_age_seconds",0):.1f} seconds. '
+      f'{live["local_free_bytes"]/2**30:.2f} GiB; remote free storage: {remote_space}. '
+      f'Mirrored current status age: {mirror_text}. '
       'Completed evaluation trace and adapter mirror checks are in [MIRROR_CHECKS.json](MIRROR_CHECKS.json).\n',
-      f'Remote container PID1 start: {remote.get("container_started","unknown")}. '
+      f'Remote container PID1 start: {remote.get("container_started","unknown")}; '
+      f'measured container elapsed seconds: {remote.get("container_elapsed_seconds","not sampled in this snapshot")}. '
       f'Completed-run sampled GPU-busy time: {live["sampled_gpu_busy_hours_completed"]:.3f} h; utilization-weighted samples: '
       f'{live["utilization_weighted_hours_completed"]:.3f} h. These are distinct from reservation time and unknown billed pod uptime. '
       'The actual hourly rate is unavailable; no dollar cost is invented.\n',
@@ -116,7 +120,7 @@ def main(final=False):
       'The separate 120-output prose packet requires its declared completed natural-language validation outputs. '
       'Missing inputs are listed in [human-review status](HUMAN_REVIEW_STATUS.json); no pilot or other condition is substituted and no ratings are fabricated.\n',
       '\n## Reproducible package and continuation\n',
-      '[Figures and captions](FIGURES.md), [training curves](TRAINING_CURVES.md), '
+      '[Figures and captions](FIGURES.md), [training curves](TRAINING_CURVES.md), [compute and gains](COMPUTE.md), '
       '[author-review LaTeX](../../paper/overnight_author_review.tex), [draft status](DRAFT_STATUS.json), '
       '[analysis commands](../../analysis/overnight/README.md), [tests](TESTS.json), '
       '[provenance](PACKAGE_PROVENANCE.json). Raw traces, adapter weights, optimizer checkpoints and PDF build products remain in the established ignored local mirror. '
@@ -138,7 +142,8 @@ def main(final=False):
     artifacts={}
     for p in sorted(OUT.rglob('*')):
         if p.is_file() and p.name!='PACKAGE_PROVENANCE.json':artifacts[str(p.relative_to(ROOT))]=sha256(p)
-    provenance={'generated_utc':utc(),'source_commit_at_generation':head,'source_files':{str(p.relative_to(ROOT)):sha256(p) for p in sorted((ROOT/'analysis/overnight').glob('*.py'))},
+    sources=[*sorted((ROOT/'analysis/overnight').glob('*.py')),ROOT/'analysis/resource_snapshot.py',ROOT/'analysis/execution_report.py']
+    provenance={'generated_utc':utc(),'source_commit_at_generation':head,'source_files':{str(p.relative_to(ROOT)):sha256(p) for p in sources},
       'compact_artifacts':artifacts,'raw_evidence_manifests':['evaluation_provenance.json','exposure_provenance.json','collection_provenance.json','MIRROR_CHECKS.json'],
       'classification':'Interim descriptive package; frozen scientific analyses and protocols unchanged'}
     write(OUT/'PACKAGE_PROVENANCE.json',provenance)

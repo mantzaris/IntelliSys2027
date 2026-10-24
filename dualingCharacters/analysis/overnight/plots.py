@@ -44,7 +44,7 @@ def main():
         ax.grid(axis='y',alpha=.2)
     handles=[plt.Line2D([],[],linestyle='',marker='o',color=color,label=f'Seed {s}') for s,color in COLORS.items()]
     axes[0].legend(handles=handles,loc='upper right',frameon=False)
-    finish(fig,'paired_success','Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending.',[table],manifest)
+    finish(fig,'paired_success','Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending. C1: clean; C2: random corruption; C3: generic adversaries; C4/C5/C6: two/three/five total characters; A1: motive-only; A2: private history removed; A3: peer interaction removed.',[table],manifest)
     key=[r for r in contrasts if r['contrast'] in {'C5-C3','C5-C1','C5-C4','C5-A1','C5-A2','C5-A3','C3-C1'}]
     fig,ax=plt.subplots(figsize=(9,max(3,len(key)*.38+1)))
     if key:
@@ -64,7 +64,7 @@ def main():
         for i,((condition,seed),levels) in enumerate(groups.items()):
             for rule,marker,shift in [(False,'o',-.13),(True,'^',.13)]:
                 r=levels[rule];ax.scatter(i+shift,r['paired_successes']/r['n_families'],color=COLORS[seed],marker=marker,s=45)
-        ax.set(xticks=range(len(groups)),xticklabels=[f'{c}\ns{s}' for c,s in groups],ylim=(0,1.05),title=model.upper())
+        ax.set(xticks=range(len(groups)),xticklabels=[f'{c}\ns{s}' for c,s in groups],xlim=(-.6,len(groups)-.4),ylim=(0,1.05),title=model.upper())
         ax.grid(axis='y',alpha=.2)
     axes[0].set_ylabel('Paired task success');axes[0].legend(handles=[plt.Line2D([],[],marker=m,linestyle='',color='#333',label=l) for m,l in [('o','Familiar'),('^','Held-out rule')]],frameon=False)
     finish(fig,'rule_structure','Separate familiar versus held-out conditional rules, 120 paired families in each stratum, 64 turns; actual completed seed values only. These are descriptive strata with no independent-turn uncertainty. All ambiguous locked-test families are creative/held-out, so ambiguity is confounded.',[OUT/'strata.json'],manifest)

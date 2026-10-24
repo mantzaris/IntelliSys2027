@@ -31,9 +31,9 @@ def main():
             for row in rows:
                 source_ids={m['index'] for m in row['visible_sources']}
                 missing=sorted({i for i in target['evidence'] if i is not None and i not in source_ids})
-                text.append(f'- Trace: `{row["source_run"]}/evaluation.jsonl[.gz]`, family `{case["family_id"]}`, world `{world}`, turn 64. Recalled state: `{json.dumps(row["prediction"].get("state"))}`. Canonical references absent from this prompt: `{missing}`.')
+                text.append(f'- Trace: `artifacts/runs/{row["source_run"]}/evaluation.jsonl[.gz]`, family `{case["family_id"]}`, world `{world}`, turn 64. Recalled state: `{json.dumps(row["prediction"].get("state"))}`. Canonical references absent from this prompt: `{missing}`.')
             text.append('')
-    (OUT/'QUALITATIVE_APPENDIX.md').write_text('\n'.join(text)+'\n')
+    (OUT/'QUALITATIVE_APPENDIX.md').write_text('\n'.join(text).rstrip()+'\n')
     write(OUT/'QUALITATIVE_SELECTION.json',{'selected':selected,'candidate_cache_sha256':sha256(path) if path.exists() else None,
       'classification':'Outcome-stratified deterministic illustration; separate from blinded human evaluation','worlds_preserved':True})
 

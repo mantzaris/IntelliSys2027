@@ -33,6 +33,8 @@ def main(force=False):
     associations()
     from .readiness import main as readiness
     readiness()
+    from .compute import main as compute
+    compute()
     if new['evaluate'] or new['fit'] or force:
         from .plots import main as plots
         from .draft import main as draft
@@ -42,6 +44,7 @@ def main(force=False):
     if new['fit'] or force:
         from .training_curves import main as training_curves
         training_curves()
+    subprocess.run([sys.executable,str(ROOT/'analysis/execution_report.py')],cwd=ROOT,check=True)
     write(OUT/'LAST_INCREMENTAL_UPDATE.json',{'utc':utc(),'new_completed_inputs':new,'forced':force})
     print(json.dumps({'changed':True,'new':new}))
 
