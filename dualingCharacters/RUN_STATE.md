@@ -25,8 +25,8 @@ recovery uses 14 windows from nine families repeatedly. Human review of the
 Only the old CPU-only unseen-profile and final-report waiters were stopped to
 implement the author's new scheduling priority. Their prior states/commands are
 preserved in `artifacts/review_001/superseded_cpu_waiters.json`. No core controller
-or active GPU operation was interrupted. A single replacement review coordinator
-will wait for the entire core queue, then profile and freeze a timing-based scope
+or active GPU operation was interrupted. A single replacement review coordinator is active (session **53621**, host PID
+**1291869**), CPU-only waiting for the entire core queue, then profile and freeze a timing-based scope
 before reading diagnostic outcomes. It caps new review work at two reserved
 GPU-hours within 96 and preserves 30 minutes contingency plus a final-batch margin.
 Review A precedes B; optional routing/severity/balanced work and then the earlier

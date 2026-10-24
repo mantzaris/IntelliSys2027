@@ -1,6 +1,10 @@
 {
   "controller": {
-    "status": "implementation_in_progress"
+    "controller_sha256": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
+    "gpu_operations_started": 0,
+    "pid": 1291869,
+    "status": "waiting_for_core",
+    "updated_utc": "2026-10-24T01:57:32Z"
   },
   "core_completed": 16,
   "core_scheduled": 241,
@@ -20,11 +24,11 @@
     "started_utc": "2026-10-24T01:52:25Z"
   },
   "frozen_files_verified": 58,
-  "generated_utc": "2026-10-24T01:56:43.489728+00:00",
+  "generated_utc": "2026-10-24T01:57:59.850581+00:00",
   "human_annotations": "pending",
   "interpretations": "provisional for author",
   "known_cost_usd": null,
-  "reserved_gpu_hours": 10.599068054175005,
+  "reserved_gpu_hours": 10.617534455248904,
   "supplement_stages": {
     "balanced": "pending",
     "conflict": "pending",

@@ -1,0 +1,7 @@
+{
+  "core_files_verified": 58,
+  "early_execution_rejected": true,
+  "guard_message": "Requires completed eligible prerequisite: main-qwen-c4-17-eval",
+  "new_gpu_operations": 0,
+  "supplement_tests_passed": 10
+}

@@ -1,6 +1,7 @@
 {
   "command": "PYTHONPATH=src .venv/bin/python -m supplements.review_001.regenerate",
   "files": {
+    "supplements/review_001/FREEZE.json": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
     "supplements/review_001/PROTOCOL.md": "75f4679c7a7b181c784f42645c3dd00cf4c8172f26e51fb066ec2117eeecead0",
     "supplements/review_001/__init__.py": "0e188a86e50f0985470e3f3c53bcdf7f3ce440554285b9b0c535d93214d5ba7d",
     "supplements/review_001/allocation.py": "df93b878b89a938e3deb86185bbfaa1efd5e43ac622497de56bda5c16a6a7b09",
@@ -42,7 +43,7 @@
     "supplements/review_001/results/paired_contrasts.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "supplements/review_001/results/paired_contrasts.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "supplements/review_001/results/pilot_actions_packet.json": "417808a53836339f0a8ced28594b98dc77de6868f1847facef631a71629210a7",
-    "supplements/review_001/results/progress.json": "85a652c822422035dec7973a702e6a1bdf524e14e41c3f58599e4b43e2898c73",
+    "supplements/review_001/results/progress.json": "ef4c4df2238574d143213470b6eeaa807a06be500f66579b61a91a365e01aff2",
     "supplements/review_001/results/replay_agreement.csv": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "supplements/review_001/results/replay_agreement.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "supplements/review_001/results/review_findings.json": "e9350ccd13ee9b2134b2ec72e997573c98b003f73e707a1919d4ac2aa0f07615",
@@ -56,10 +57,11 @@
     "supplements/review_001/results/supervision_pool_concentration.json": "6e4ac51c9f9085b6d89d56db40a19346f25dbdc06489deb8ad02b8050a8f16be",
     "supplements/review_001/results/supplement_provenance.json": "5f92540abfcb78c4a565dbee7703a2c0568a2a9034d10ebfbfb30c7fa7b674bc",
     "supplements/review_001/results/supplement_status.json": "34bac64d904d74330e61004addf54d78f6dd23688e4ff9ff52f54c3deb81c0ab",
+    "supplements/review_001/results/verification.json": "cc0e7ed29454bc32878dafb1d0ae5dd51d5e074d90750a02e6589fb07d26d077",
     "supplements/review_001/rollout.py": "4800bd33208f95609aef7d4a2d9745369dc0ca06dea71080fb30df3bc1ba0895",
     "supplements/review_001/severity.py": "38c0a9783ac9ea3a4c6a6aa19f8e72eb90bb160f45a1f04212073ae71f84d183",
     "supplements/review_001/test_review.py": "dffa09d54eb5814e5ebc106bac8e3fdece2f173f985838c9bb912b0e7632be4f"
   },
-  "generated_utc": "2026-10-24T01:56:43.489728+00:00",
+  "generated_utc": "2026-10-24T01:57:59.850581+00:00",
   "raw_linkage": "cpu_provenance/exposure_provenance/supplement_provenance contain raw input and checkpoint links; metrics regenerate deterministically from those traces"
 }

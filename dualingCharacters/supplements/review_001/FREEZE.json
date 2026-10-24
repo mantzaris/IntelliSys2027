@@ -1,0 +1,30 @@
+{
+  "classification": "Post-review exploratory implementation freeze; concrete timing-based allocation follows profiling without outcome inspection",
+  "code_commit": "c8468d59dd63f15e481690278b411dd8c71bd8b2",
+  "core_freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
+  "files": {
+    "supplements/review_001/PROTOCOL.md": "75f4679c7a7b181c784f42645c3dd00cf4c8172f26e51fb066ec2117eeecead0",
+    "supplements/review_001/__init__.py": "0e188a86e50f0985470e3f3c53bcdf7f3ce440554285b9b0c535d93214d5ba7d",
+    "supplements/review_001/allocation.py": "df93b878b89a938e3deb86185bbfaa1efd5e43ac622497de56bda5c16a6a7b09",
+    "supplements/review_001/analyze.py": "471865f95c0968d609ac141aef18c76b5a9824e5e514d17d19034d7ca334aeef",
+    "supplements/review_001/audit.py": "1161b2637c0276ffd45c1b3f9451b9689e4c419d0321fa31a61a1dfdcb94af33",
+    "supplements/review_001/common.py": "9aa184c757d86d8a49c45ea35e7f639bf564fa1dbc5fe5452cf95f45171a2097",
+    "supplements/review_001/controller.py": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
+    "supplements/review_001/exposure.py": "192516c5d72d057e74f79dda00e8a3c48c3c82eb5486d2126ed93e5a9c5927d4",
+    "supplements/review_001/freeze.py": "0af2de559dd357127217ad3ca64b63f629c71bbaac0e6e510898173e5c6abbb4",
+    "supplements/review_001/fresh.py": "9b33a690773b58a111ca37e260b261da188b743714c8db99969ea2cce6ff8770",
+    "supplements/review_001/fresh_manifest.json": "4f68406ae8da53e4b696187d8e74d555a5413dc13a523eaefdad41d4951adc8a",
+    "supplements/review_001/gpu.py": "0d50feeef18452e6abee6bf9043a50337562595f74506a728713373fa0e0e981",
+    "supplements/review_001/inputs.py": "c45e60345a60e76068b1bec1ef8a07a9c5ed7b9cf781892db3275c82c3302d0c",
+    "supplements/review_001/packets.py": "75e9c4c052dd34ce8af8ba702a247b309c65802b5c9fb557bc85d3bf276fb2ad",
+    "supplements/review_001/protocol.json": "7a7ea1d6c6ec9347e08f781668fa17ccf4d5f686401114ff7e723fae0295791f",
+    "supplements/review_001/regenerate.py": "82c077374985d9eeaa899458a426899e22bbeb27e149759288d42653dd1f6997",
+    "supplements/review_001/report.py": "978bf4a67ae26d7fa5eaebff5eabe6cdf7573295e6e4459975025b451a880894",
+    "supplements/review_001/requirements-cpu.txt": "5ab4e7acda1650760c8231355460ce61c38c1945c3fecd2b191492759d7f0edb",
+    "supplements/review_001/rollout.py": "4800bd33208f95609aef7d4a2d9745369dc0ca06dea71080fb30df3bc1ba0895",
+    "supplements/review_001/severity.py": "38c0a9783ac9ea3a4c6a6aa19f8e72eb90bb160f45a1f04212073ae71f84d183",
+    "supplements/review_001/test_review.py": "dffa09d54eb5814e5ebc106bac8e3fdece2f173f985838c9bb912b0e7632be4f"
+  },
+  "frozen_utc": "2026-10-24T01:57:27.595415+00:00",
+  "known_outcomes_at_design": "C1 seed17 186/240; C3 seed17 177/240; untrained baselines and historical pilots; no review001 model calls"
+}
