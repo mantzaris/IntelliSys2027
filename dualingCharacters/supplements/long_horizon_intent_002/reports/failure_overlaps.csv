@@ -32,3 +32,6 @@ qwen,C4,29,240,480,clarification_error,commitment_error,56,1,1,422
 qwen,C5,29,240,480,dependency_error,correct_recall_wrong_behavior,86,1,5,388
 qwen,C5,29,240,480,source_error,dependency_error,3,26,84,367
 qwen,C5,29,240,480,clarification_error,commitment_error,9,0,19,452
+qwen,A1,29,240,480,dependency_error,correct_recall_wrong_behavior,81,4,5,390
+qwen,A1,29,240,480,source_error,dependency_error,11,23,74,372
+qwen,A1,29,240,480,clarification_error,commitment_error,5,3,16,456

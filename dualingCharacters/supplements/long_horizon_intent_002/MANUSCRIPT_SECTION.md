@@ -19,7 +19,7 @@ The underlying intervention is character-conditioned data generation followed by
 | 29 | C3 | 181/240 (75.42%) |
 | 29 | C4 | 165/240 (68.75%) |
 | 29 | C5 | 180/240 (75.00%) |
-| 29 | A1 | Pending |
+| 29 | A1 | 181/240 (75.42%) |
 | 43 | C1 | Pending |
 | 43 | C3 | Pending |
 | 43 | C4 | Pending |

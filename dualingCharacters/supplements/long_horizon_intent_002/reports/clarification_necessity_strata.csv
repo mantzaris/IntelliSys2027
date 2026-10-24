@@ -5,6 +5,8 @@ base,qwen,base-qwen-eval,17,False,420,29,29,0,0,0
 base,qwen,base-qwen-eval,17,True,60,39,4,37,4,0
 A1,qwen,main-qwen-a1-17-eval,17,False,420,16,16,0,0,12
 A1,qwen,main-qwen-a1-17-eval,17,True,60,7,1,4,1,1
+A1,qwen,main-qwen-a1-29-eval,29,False,420,0,0,0,0,0
+A1,qwen,main-qwen-a1-29-eval,29,True,60,8,0,7,0,0
 C1,qwen,main-qwen-c1-17-eval-format2,17,False,420,3,3,0,0,3
 C1,qwen,main-qwen-c1-17-eval-format2,17,True,60,9,0,6,0,0
 C1,qwen,main-qwen-c1-29-eval,29,False,420,99,99,0,0,98

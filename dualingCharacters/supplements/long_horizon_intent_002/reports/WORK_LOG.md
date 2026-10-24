@@ -93,3 +93,15 @@
 - 2026-10-24T15:29:19.229612+00:00: Remote/local completed-stage checksums match for main-qwen-a1-29-r1-fit.
 
 - 2026-10-24T15:29:42.820245+00:00: A1 seed29 final fit completed and mirrored; core 51/241, evaluation now active. Exact loss exposure extends to 20 fits; all 51 completed-stage mirror checks pass. No fresh intent/review GPU calls or infrastructure retries. Reporting and anonymous draft regenerated from completed evidence only.
+
+- 2026-10-24T16:02:19.851066+00:00: Hourly progress: 51/241 core stages complete; main-qwen-a1-29-eval active with 24192 generation requests. Total reservation 24.3511/96 hours. Exact exposure audit covers 20 fits, all 51 completed mirrors verified; local commit f9653c9 preserves this update. No supplementary GPU calls, infrastructure retries, scientific changes, or new workers. Next action: validate completed A1 evaluation and continue existing seed43 queue.
+
+- 2026-10-24T16:14:13.168885+00:00: Progress: 52/241 core stages complete; active main-qwen-c1-43-r0-collect, 0 generation requests, 0 training input tokens; 24.5401/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T16:14:20.824906+00:00: Validated completed main-qwen-a1-29-eval: 181/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T16:14:36.071751+00:00: New time-varying oracle / clarification / evidence audit: main-qwen-a1-29-eval; 30,720 complete turns, no final-target substitution.
+
+- 2026-10-24T16:14:50.823342+00:00: Remote/local completed-stage checksums match for main-qwen-a1-29-eval.
+
+- 2026-10-24T16:15:23.678502+00:00: A1 seed29 evaluation validated at 181/240 paired successes (384/480 conversations); complete 30,720-turn trace, exact final adapter and all paired families checked. C5-A1 seed29 = -0.4167 percentage points, family bootstrap 95% interval [-2.9167, +2.0833], transitions both176/C5-only4/A1-only5/neither55. Seed17 contrast remains -0.4167 points. This does not establish equivalence or narrative benefit. All52 completed-stage mirrors match. Original queue advanced to C1 seed43 round-zero collection; no scientific setting changed.

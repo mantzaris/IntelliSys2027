@@ -1,4 +1,4 @@
-# Intent 002 progress — 2026-10-24T15:29:31.921937+00:00
+# Intent 002 progress — 2026-10-24T16:14:49.043937+00:00
 
 This is an exploratory follow-up specified after the initial negative C5 comparison and C1 seed reversal. It preserves the original confirmatory study and review_001 freezes. Newly inspected test analyses are not original preregistration.
 
@@ -6,7 +6,7 @@ Session: 2026-10-24T13:06:05+00:00 to 2026-10-24T21:06:05+00:00; useful-work cut
 
 ## Existing core: completed and running
 
-Latest monitor 2026-10-24T15:29:08.730570+00:00: 51/241 stages complete; active `main-qwen-a1-29-eval`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
+Latest monitor 2026-10-24T16:14:13.163352+00:00: 52/241 stages complete; active `main-qwen-c1-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
 
 | Qwen seed | Condition | 64-turn paired success |
 |---|---|---|
@@ -19,7 +19,7 @@ Latest monitor 2026-10-24T15:29:08.730570+00:00: 51/241 stages complete; active 
 | 29 | C3 | 181/240 (75.42%) |
 | 29 | C4 | 165/240 (68.75%) |
 | 29 | C5 | 180/240 (75.00%) |
-| 29 | A1 | Pending |
+| 29 | A1 | 181/240 (75.42%) |
 | 43 | C1 | Pending |
 | 43 | C3 | Pending |
 | 43 | C4 | Pending |
@@ -139,7 +139,7 @@ Human status: pending_fresh_outputs. Two independent rating forms remain blank u
 
 ## Resources and next action
 
-Latest reconciled project reservation: 23.7981/96hours. Core forecast: expected 80.31, conservative 88.06 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
+Latest reconciled project reservation: 24.5401/96hours. Core forecast: expected 80.64, conservative 88.01 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
 
 Required core → review_001 → intent_002 → older unseen-profile work. This session does not expand the96-hour ceiling. New intent work requires the completed core and review gates, a fixed-final-checkpoint binding, timing-only complete-tier allocation, free shared locks, remaining allowance, and this session’s deadline. If gates stay closed, leave intent disabled for a subsequent authorized continuation.
 

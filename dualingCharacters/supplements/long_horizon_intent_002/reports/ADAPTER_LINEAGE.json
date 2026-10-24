@@ -7,6 +7,7 @@
     "artifacts/runs/main-qwen-a1-17-r0-fit/training/training_summary.json": "4b571289b08085c07da47b266dc5b7b334412564b8e38ce61c5ddd7a1cf2bb92",
     "artifacts/runs/main-qwen-a1-17-r1-fit/status.json": "afc380e367d9e00229aaf9de47bf809fcf191b6abbf9686f217d795adff5778d",
     "artifacts/runs/main-qwen-a1-17-r1-fit/training/training_summary.json": "401fbbb55e5b095dbdc6083bd241227ac1a77f4b16cee157170783c735adc594",
+    "artifacts/runs/main-qwen-a1-29-eval/status.json": "532e59c4cbca287bbfd885c07817762f0e14cb852a04e3b75289b5a871df9115",
     "artifacts/runs/main-qwen-a1-29-r0-fit/status.json": "0a46e538e7e1334076fee4ab3baf5030551b618dc45cf647a301ea8903d75450",
     "artifacts/runs/main-qwen-a1-29-r0-fit/training/training_summary.json": "f11dca0effb884bb200799771d002251b041e755344f4ce3971622b7743fd343",
     "artifacts/runs/main-qwen-a1-29-r1-fit/status.json": "05b3606e9d9645e4f2939df6d55f9bd4a63c9803b1b8e4439081b2212f645c98",
@@ -549,6 +550,22 @@
       "run_id": "main-qwen-a1-29-r1-fit",
       "seed": 29,
       "task": "fit"
+    },
+    {
+      "completion_serialization": null,
+      "condition": "A1",
+      "continuation_verified": true,
+      "effective_optimizer_resume_chain": "not resumed",
+      "expected_predecessor_sha256": "ac5e5c5f549dfa1372ae6775fd82f1cf4e210535b5dc6c7e3b2ecf8305dfe0ab",
+      "final_adapter_sha256": "ac5e5c5f549dfa1372ae6775fd82f1cf4e210535b5dc6c7e3b2ecf8305dfe0ab",
+      "initial_adapter_sha256": null,
+      "model": "qwen",
+      "optimizer_resume_checkpoint": null,
+      "optimizer_steps": null,
+      "predecessor_adapter": "artifacts/runs/main-qwen-a1-29-r1-fit/training/final",
+      "run_id": "main-qwen-a1-29-eval",
+      "seed": 29,
+      "task": "evaluate"
     }
   ]
 }

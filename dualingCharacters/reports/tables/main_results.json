@@ -80,15 +80,15 @@
   {
     "model": "qwen",
     "condition": "A1",
-    "executed_seeds": 1,
-    "paired_success": 0.7041666666666667,
-    "seed_sd": null,
-    "conversation_success": 0.76875,
+    "executed_seeds": 2,
+    "paired_success": 0.7291666666666667,
+    "seed_sd": 0.03535533905932733,
+    "conversation_success": 0.784375,
     "status": "partial",
-    "gpu_reserved_seconds": 6732.225387436803,
-    "input_tokens": 55147499.0,
-    "output_tokens": 3372249.0,
-    "train_tokens": 2097152.0
+    "gpu_reserved_seconds": 14474.625286028255,
+    "input_tokens": 109608316.0,
+    "output_tokens": 6701527.0,
+    "train_tokens": 4194304.0
   },
   {
     "model": "qwen",

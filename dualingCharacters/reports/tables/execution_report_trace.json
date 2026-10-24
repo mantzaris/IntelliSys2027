@@ -1,17 +1,12 @@
 {
   "classification": "Mechanical factual report; existing estimators only",
-  "core_stages_completed": 51,
+  "core_stages_completed": 52,
   "core_stages_scheduled": 241,
   "unfinished_stages": [
     {
-      "id": "main-qwen-a1-29-eval",
-      "command": "evaluate",
-      "status": "not_started"
-    },
-    {
       "id": "main-qwen-c1-43-r0-collect",
       "command": "collect",
-      "status": "not_started"
+      "status": "running"
     },
     {
       "id": "main-qwen-c1-43-r0-fit",
@@ -1007,14 +1002,16 @@
     "artifacts/runs/main-qwen-a1-29-r0-fit/status.json": "0a46e538e7e1334076fee4ab3baf5030551b618dc45cf647a301ea8903d75450",
     "artifacts/runs/main-qwen-a1-29-r1-collect/status.json": "c350733cd55e935e59fe41632710ff985956788eaac43022b80ee694f78dce54",
     "artifacts/runs/main-qwen-a1-29-r1-fit/status.json": "05b3606e9d9645e4f2939df6d55f9bd4a63c9803b1b8e4439081b2212f645c98",
-    "reports/tables/main_results.json": "ca1366c790e900fe6851348331ff13fbfd9009d2c0fc2d20f7753bbd238f45b8",
-    "reports/tables/main_contrasts.json": "fdf88a7637b1c91d7b48f399c88ad443dd87b1385908c398896399bbbdd3e6f1",
-    "reports/tables/resource_totals.json": "ff0b8a82c9a0a8f2e00f10c79b316bc0950af329e442077eb4b910c5648052c9",
+    "artifacts/runs/main-qwen-a1-29-eval/status.json": "532e59c4cbca287bbfd885c07817762f0e14cb852a04e3b75289b5a871df9115",
+    "artifacts/runs/main-qwen-c1-43-r0-collect/status.json": "8404f774291b3d63003b6eb28d67e784c0c23f253bbb5d594bed6a2ddaacb9fb",
+    "reports/tables/main_results.json": "5da4b436330fcac0168c6e6e8c23246c2100810d85d1cae33a772834b3af3584",
+    "reports/tables/main_contrasts.json": "dda0a7baf05da259b8d55e7699c04c384581f9cae1e6b0bd4d61974f0afbb2d0",
+    "reports/tables/resource_totals.json": "4f8f9cddee56840a0337734112fa6831863ced449838aedc6b64a19a73fc41f3",
     "reports/tables/transfer.json": "98971a64eff6d2c0399a18c33c0f9e44d37454b47628f0edfab72fbc19893fb8",
     "reports/tables/external.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
     "reports/tables/human_review_status.json": "8b666b5adeabb6e87074563460c2183245bd799aa7623458e66bd28908c3815d",
     "artifacts/unseen_profiles_controller_state.json": "05283e7f9941468836f5dc26e0dbfe71aa9e8dfca3767c0606fbfa330e5e77f2",
     "analysis/execution_report.py": "88541738463977d2d6b26daa4d88e24c1f1c1f91b2bff152732cae76906c6f9a"
   },
-  "report_sha256": "eaa09b5de66c68c6cbd7a3717b296777f056c22692a2b764f9adb4c9590bf1a2"
+  "report_sha256": "b0b76537e886db053c9a0cb9ff4047acd6ed3a9b9728de0d5914bdc891a9a31d"
 }

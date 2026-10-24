@@ -13,7 +13,7 @@
   "clarification_types": {
     "caption": "Final-turn structured clarification audit, completed Qwen C1/C3/C5 seeds, 480 conversations each. Flags overlap and are not stacked or summed. Wrong-issue clarification can both add an unnecessary issue and miss the necessary one. Structured nulling/clarification does not reveal prose uncertainty acknowledgment or human-rated helpfulness. All original scorer results remain unchanged.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "10172cfa6e63b49b136e106dca8827114507ee614412c642682fa51b05a93113"
+      "supplements/long_horizon_intent_002/reports/clarification_audit.json": "f3968913f13695b2ccc794848fb2cc9b3dba7fa11b39b32e14b02ceab1d99167"
     },
     "outputs": {
       "pdf": "c62eaceb0500741fd035a42ae45bb36a25fcf2f071d7cc6c921d073ad3c31f52",
@@ -47,7 +47,7 @@
   "dynamic_core_trajectories": {
     "caption": "Qwen C1/C3/C5, every completed seed, 480 conversations (240 paired families) at each of 64 user turns. Each response is scored against the oracle state at that turn, not the final target. Lines show descriptive marginal conversation correctness, not independent-turn inference or qualitative helpfulness. The dotted line marks the paired authorized/hypothetical event; other events and public request wording also vary by turn. Final-turn success cannot substitute for trajectory correctness. Missing seed cells remain pending.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "f9237e78341969b4fadbc96d2cb272d4eaedf942518c08cfb3a86d83d9cb9123"
+      "supplements/long_horizon_intent_002/reports/trajectory_by_turn.json": "106b45a76028669507f2465c353830bddc34d14b85b45b1c748a92f213313730"
     },
     "outputs": {
       "pdf": "c0c14625fc3e500d91db601179a79fbeb3f0c15f61fb132f46c60adbad18e879",
@@ -69,7 +69,7 @@
   "source_reference_types": {
     "caption": "Original source-error flags per 480 conversations (left) and separate overlapping flags per 2,880 slot references (right), completed Qwen C1/C3/C5 seeds. References can be both assistant-authored and unavailable. Anaphoric user support remains semantically unresolved; no automatic rescoring or validated human annotation is claimed.",
     "inputs": {
-      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "4e4a6685047d15a201165ad5d3f640fc7ce36d3371169ce1a962f1da57217405"
+      "supplements/long_horizon_intent_002/reports/evidence_audit.json": "a65254d8333c288932ec86eee1c309a11267e3dc0128eb25f52bd382c9413757"
     },
     "outputs": {
       "pdf": "d57fe81a4c7dffa8cab8cbf7e3faea9443a493b167c4f98ac00fa05201ff8dd4",

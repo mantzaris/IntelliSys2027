@@ -51,6 +51,23 @@
     "wrong_issue_clarification": 1
   },
   {
+    "clarification_error": 8,
+    "clarification_with_otherwise_correct_plan": 35,
+    "condition": "A1",
+    "conversations": 480,
+    "malformed_clarification": 0,
+    "missed_necessary_clarification": 7,
+    "model": "qwen",
+    "necessary_clarification_preserves_settled_values": 53,
+    "order_or_duplicate_only": 1,
+    "qualification": "Flags overlap. Structured clarification fields cannot reveal prose acknowledgments or helpfulness; settled-null behavior is an abandonment proxy, not an inferred motive.",
+    "run_id": "main-qwen-a1-29-eval",
+    "seed": 29,
+    "unnecessary_clarification": 0,
+    "unnecessary_clarification_with_settled_nulls": 0,
+    "wrong_issue_clarification": 0
+  },
+  {
     "clarification_error": 12,
     "clarification_with_otherwise_correct_plan": 38,
     "condition": "C1",

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-24T15:29:19.408382+00:00",
+  "generated_utc": "2026-10-24T16:14:36.510061+00:00",
   "no_gpu_calls": true,
   "runs": {
     "base-phi-eval": {
@@ -10,6 +10,9 @@
     },
     "main-qwen-a1-17-eval": {
       "artifacts/runs/main-qwen-a1-17-eval/evaluation.jsonl.gz": "ac7b4b0202b6c5d4732b85eaec8e7da62ff194dadd7d8d107bcf13fe4d3165da"
+    },
+    "main-qwen-a1-29-eval": {
+      "artifacts/runs/main-qwen-a1-29-eval/evaluation.jsonl.gz": "20f9432bf1efde779a200021429036c9f411b19e3d8d8611d72c63d6ba82c5cc"
     },
     "main-qwen-c1-17-eval-format2": {
       "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2"

@@ -55,5 +55,24 @@
     "p_conditional_family": 0.6913154342282886,
     "qualification": "Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.",
     "holm_p_secondary": 1.0
+  },
+  {
+    "difference": -0.004166666666666667,
+    "ci95": [
+      -0.0375,
+      0.029166666666666667
+    ],
+    "families": 240,
+    "seeds": 2,
+    "per_seed": {
+      "17": -0.004166666666666667,
+      "29": -0.004166666666666667
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "model": "qwen",
+    "contrast": "C5-A1",
+    "p_conditional_family": 0.8805559722013899,
+    "qualification": "Bootstrap includes family and seed axes; randomization p is conditional on the realized seeds. Three training seeds limit seed-population inference.",
+    "holm_p_secondary": 1.0
   }
 ]

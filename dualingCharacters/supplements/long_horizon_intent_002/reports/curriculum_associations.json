@@ -80,7 +80,7 @@
   {
     "action_opportunities": 7200,
     "antagonist_peer_deliveries": 2218,
-    "canonical_source_coverage": null,
+    "canonical_source_coverage": 0.9875,
     "collection_run_ids": [
       "main-qwen-a1-29-r0-collect",
       "main-qwen-a1-29-r1-collect"
@@ -89,13 +89,13 @@
     "completed_fits": 2,
     "condition": "A1",
     "direct_peer_notes_to_jekyll": 196,
-    "final_evaluation_available": false,
+    "final_evaluation_available": true,
     "fit_run_ids": [
       "main-qwen-a1-29-r0-fit",
       "main-qwen-a1-29-r1-fit"
     ],
     "model": "qwen",
-    "paired_success": null,
+    "paired_success": 0.7541666666666667,
     "planned_fits": 2,
     "r0_failed_eligible_families": 88,
     "r0_recovery_eligible_windows": 351,
