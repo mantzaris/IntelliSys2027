@@ -39,10 +39,11 @@ complete three-seed comparisons are also exported separately.
 Compile the author-review PDF using the existing conference template:
 
 ```bash
-PYTHONPATH=src .venv/bin/python -m analysis.overnight.draft
-TEXINPUTS="$PWD/artifacts/public_assets:" BSTINPUTS="$PWD/artifacts/public_assets:" \
-  latexmk -cd -pdf -interaction=nonstopmode -halt-on-error paper/overnight_author_review.tex
+PYTHONPATH=src .venv/bin/python -m analysis.overnight.paper
 ```
+
+This refreshes draft text, invokes the existing LaTeX toolchain, and records the
+exact template, bibliography, figure, text and PDF hashes in `PAPER_BUILD.json`.
 
 No new citations are added to the existing verified bibliography. PDF/build logs,
 raw prompts, adapters and human sheets are kept out of Git. Figures are saved as

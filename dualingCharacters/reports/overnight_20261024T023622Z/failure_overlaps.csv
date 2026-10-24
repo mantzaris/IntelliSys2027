@@ -26,3 +26,6 @@ qwen,C1,29,240,480,clarification_error,commitment_error,101,3,9,367
 qwen,C3,29,240,480,dependency_error,correct_recall_wrong_behavior,86,1,5,388
 qwen,C3,29,240,480,source_error,dependency_error,35,143,52,250
 qwen,C3,29,240,480,clarification_error,commitment_error,6,2,6,466
+qwen,C4,29,240,480,dependency_error,correct_recall_wrong_behavior,72,4,34,370
+qwen,C4,29,240,480,source_error,dependency_error,19,98,57,306
+qwen,C4,29,240,480,clarification_error,commitment_error,56,1,1,422

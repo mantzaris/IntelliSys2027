@@ -289,6 +289,48 @@
   },
   {
     "action_opportunities": 7200,
+    "antagonist_peer_deliveries": 0,
+    "canonical_source_coverage": 0.9541666666666667,
+    "collection_run_ids": [
+      "main-qwen-c4-29-r0-collect",
+      "main-qwen-c4-29-r1-collect"
+    ],
+    "completed_collections": 2,
+    "completed_fits": 2,
+    "condition": "C4",
+    "direct_peer_notes_to_jekyll": 2068,
+    "final_evaluation_available": true,
+    "fit_run_ids": [
+      "main-qwen-c4-29-r0-fit",
+      "main-qwen-c4-29-r1-fit"
+    ],
+    "model": "qwen",
+    "paired_success": 0.6875,
+    "planned_fits": 2,
+    "r0_failed_eligible_families": 86,
+    "r0_recovery_eligible_windows": 331,
+    "r0_recovery_loss_contributing_occurrences": 297,
+    "r0_recovery_loss_contributing_unique_families": 82,
+    "r0_recovery_loss_contributing_unique_windows": 251,
+    "r0_recovery_top1_token_share": 0.007214713951834163,
+    "r0_recovery_top5_token_share": 0.035667107001321,
+    "r1_failed_eligible_families": 12,
+    "r1_recovery_eligible_windows": 20,
+    "r1_recovery_loss_contributing_occurrences": 301,
+    "r1_recovery_loss_contributing_unique_families": 12,
+    "r1_recovery_loss_contributing_unique_windows": 20,
+    "r1_recovery_top1_token_share": 0.06384254171245879,
+    "r1_recovery_top5_token_share": 0.2980817264461984,
+    "recovery_target_tokens": 39700,
+    "seed": 29,
+    "shared_memory_changes": 6779,
+    "source_visible_contradiction_flags": 1256,
+    "supervised_target_tokens": 79997,
+    "training_input_tokens": 2097152,
+    "verified_model_recovery_target_tokens": 68
+  },
+  {
+    "action_opportunities": 7200,
     "antagonist_peer_deliveries": 2152,
     "canonical_source_coverage": 0.9291666666666667,
     "collection_run_ids": [

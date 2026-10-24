@@ -180,5 +180,31 @@
     "seed": 29,
     "steps_logged": 256,
     "zero_loss_steps": 0
+  },
+  {
+    "condition": "C4",
+    "loss_first_32_mean": 0.23902675264980644,
+    "loss_last_32_mean": 0.0009598067556453316,
+    "loss_log_sha256": "66ce23a5d82d62b74416c1ad22ab7982e3ee1e5e484208aa4b1c3f8b4d38e360",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 0,
+    "run_id": "main-qwen-c4-29-r0-fit",
+    "seed": 29,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
+  },
+  {
+    "condition": "C4",
+    "loss_first_32_mean": 0.007138507530498828,
+    "loss_last_32_mean": 2.8206067725022876e-05,
+    "loss_log_sha256": "8ce10a3e4c29122439d923d7920782c137abce8bc52814a2d62a51fcf4b6e3da",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 1,
+    "run_id": "main-qwen-c4-29-r1-fit",
+    "seed": 29,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
   }
 ]

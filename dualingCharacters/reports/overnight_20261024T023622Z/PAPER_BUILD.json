@@ -1,0 +1,34 @@
+{
+  "built_utc": "2026-10-24T11:54:21.463441+00:00",
+  "classification": "Interim author review; human scientific authorship and validation pending",
+  "command": [
+    "latexmk",
+    "-cd",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "paper/overnight_author_review.tex"
+  ],
+  "inputs": {
+    "artifacts/public_assets/splncs03.bst": "a4293f9e12b051be20803d0c11d2d7de4263f13ccdacf79ed77e8ae1047ec5d9",
+    "artifacts/public_assets/svproc.cls": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560",
+    "paper/overnight_author_review.tex": "43c0ed1e5ff78273f8fb58aa61e065587b4c705d09886ea1d5aa66617b78bd27",
+    "paper/references.bib": "abd3280f4e6bf4162808fe010ddd1d34d43f91173c36cae34f5dd47b31df0a16",
+    "reports/overnight_20261024T023622Z/draft_abstract_results.tex": "124826179689e6cfd726ac0dab3a0b87c68b48ab7bc365d54987e3fc2b3bceb3",
+    "reports/overnight_20261024T023622Z/draft_claims.tex": "22a139b47999bd17ff9df7a2b48a51715365e92252cb8846de49b91b3ffd450f",
+    "reports/overnight_20261024T023622Z/draft_diagnostics.tex": "c5641961e5117816520114386dcc0e4d29cbddb238aa7e0c155005b3ce08e6a2",
+    "reports/overnight_20261024T023622Z/draft_results.tex": "871d40aec1247790fb1eff25635fd7bc0467c21e52709f47102c55c607ad1691",
+    "reports/overnight_20261024T023622Z/figures/paired_contrasts.pdf": "3cf9c2a15d4dced9ff47781307f110b812376e17a65379ba2a534d6c75c73937",
+    "reports/overnight_20261024T023622Z/figures/paired_success.pdf": "a97bfc766408b719e668e03cfde85350195b6edafa488dbc9158147f70d07d56",
+    "reports/overnight_20261024T023622Z/figures/recall_behavior.pdf": "18f777c2b84826274f01a6a34cce8e8bf628411b4a645be05c421cbe7a72f238",
+    "reports/overnight_20261024T023622Z/figures/recovery_exposure.pdf": "211d4985f7ec67ead1b75f341a134b49aff97809b33c6788ecf694ecefbf5b8d",
+    "reports/overnight_20261024T023622Z/figures/rule_structure.pdf": "100ce82549bc3b0f7b8bf3c6639c60ff62e178c6c44d6a103c9769beb8e0463c"
+  },
+  "log_path": "artifacts/overnight_20261024T023622Z/latex.log",
+  "log_sha256": "7ee2d498462c8905be6c2e3c906bcac53bcd252ccdb4ffc2decc48278c840abf",
+  "pdf_path": "paper/overnight_author_review.pdf",
+  "pdf_sha256": "dc7196cf767f85f18136604ed06a62dc535c38243861ec2931fcb70f504536f4",
+  "reproducibility": "Tables and figures derive from the linked analysis manifests. PDF metadata includes build time; byte identity across builds is not claimed.",
+  "returncode": 0,
+  "tex_engine": "pdfTeX 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian)"
+}

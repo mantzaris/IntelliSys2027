@@ -40,5 +40,19 @@
     "repeated_directed_coordination_candidates": 0,
     "run_id": "main-qwen-c3-29-r1-collect",
     "typed_matching_followups": 27
+  },
+  {
+    "delivered_antagonist_peer_messages": 0,
+    "echoed_option_reversals": 0,
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "main-qwen-c4-29-r0-collect",
+    "typed_matching_followups": 0
+  },
+  {
+    "delivered_antagonist_peer_messages": 0,
+    "echoed_option_reversals": 0,
+    "repeated_directed_coordination_candidates": 0,
+    "run_id": "main-qwen-c4-29-r1-collect",
+    "typed_matching_followups": 0
   }
 ]

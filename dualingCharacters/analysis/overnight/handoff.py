@@ -18,6 +18,7 @@ def main(final=False):
     now=datetime.fromisoformat(utc()); begun=datetime.fromisoformat(session['started_utc'].replace('Z','+00:00'))
     zone=ZoneInfo(session['local_timezone']); duration=(now-begun).total_seconds()/3600
     starting_hours=session['start_resource_reconstruction']['cumulative_reserved_seconds_at_session_start']/3600
+    core_freeze=read(ROOT/'configs/freeze.json')
     current_hours=live['reconciled_reserved_hours']; before=set(start['completed'])
     new=[name for name in live['completed'] if name not in before]
     head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -37,7 +38,9 @@ def main(final=False):
             failures.append({'run_id':path.parent.name,'status':record['status'],'gpu_reserved_seconds':record.get('gpu_reserved_seconds')})
     snapshot={'reported_utc':now.isoformat(),'classification':'Final overnight supervision handoff' if final else 'Active overnight progress snapshot',
       'actual_session_hours':duration,'started_utc':session['started_utc'],'target_handoff_utc':session['target_handoff_utc'],
-      'current_source_commit':head,'commits_since_start':commits,'intentional_uncommitted_files':dirty,
+      'current_source_commit':head,'commits_since_start':commits,'working_tree_changes_at_report_generation':dirty,
+      'intentionally_uncommitted_tracked_files':[],
+      'commit_note':'Report-generation changes are intended for the following local commit. Active raw artifacts and campaign state remain under the established Git-ignore policy.',
       'new_completed_core_stages':new,'all_completed_core_stages':live['completed'],
       'running_core_stage':live['active_job'],'failed_or_interrupted_attempts':failures,
       'next_scheduled_core_stage':next_stage,'pending_after_active':waiting,
@@ -46,6 +49,8 @@ def main(final=False):
       'start_reserved_hours':starting_hours,'latest_reserved_hours':current_hours,
       'reserved_hours_during_session':current_hours-starting_hours,'resource_timestamp_utc':live['utc'],
       'core_hashes_verified':live['core_files_verified'],'supplement_hashes_verified':live['supplement_files_verified'],
+      'core_scientific_commit':core_freeze['code_commit'],
+      'core_freeze_sha256':live['core_freeze_sha256'],'review_freeze_sha256':live['review_freeze_sha256'],
       'retry_manifest':str((CACHE/'recovery_attempts.json').relative_to(ROOT)),
       'gpu_controllers_launched_by_overnight_work':0,'supplement_reserved_hours':live['review_reserved_hours']}
     write(OUT/('HANDOFF_STATE.json' if final else 'PROGRESS_STATE.json'),snapshot)
@@ -59,8 +64,12 @@ def main(final=False):
       'No scientific file, model, seed, endpoint, training budget, sample allocation, decoding setting, checkpoint rule or queue order was changed. '
       'No duplicate controller or discretionary GPU job was launched. Nothing was pushed, published, submitted or sent to raters. '
       'The new tools perform local analysis and read-only monitoring.\n',
+      f'Core scientific source commit: `{core_freeze["code_commit"]}`. '
+      f'Core manifest SHA256: `{live["core_freeze_sha256"]}`. '
+      f'Review manifest SHA256: `{live["review_freeze_sha256"]}`.\n',
       f'Starting commit: `{session["starting_commit"]}`. Source/report HEAD when generated: `{head}`. '
-      'The final report commit, if later, is visible in `git log`; a report cannot embed its own eventual commit hash.\n']
+      'The final report commit, if later, is visible in `git log`; a report cannot embed its own eventual commit hash. '
+      'No tracked files are intentionally left uncommitted. Active campaign state, raw logs, adapters and checkpoints remain Git ignored and locally mirrored.\n']
     lines.extend('- `'+entry+'`' for entry in commits)
     lines += ['\n## Queue and resources\n',
       f'**{live["core_completed"]}/{live["core_scheduled"]}** scheduled core stages are complete. '
@@ -115,6 +124,15 @@ def main(final=False):
       f'**{len(exposures)} completed fits** have actual-loss exposure summaries. '
       'The six original verified audits were reused; newly completed fits were reconstructed from the exact tokenizer, sampler and packing stream '
       'and checked against every optimizer-step target count. Buffer-loaded windows, orphan-masked suffixes and resume replay are separately accounted.\n',
+      '| Model / condition / seed | Completed fits | Input tokens | Supervised target tokens | R1 recovery windows / families contributing loss |',
+      '|---|---:|---:|---:|---:|']
+    for r in read(OUT/'curriculum_associations.json'):
+        if not r['completed_fits']:continue
+        pool=f'{r["r1_recovery_loss_contributing_unique_windows"]} / {r["r1_recovery_loss_contributing_unique_families"]}' if r.get('r1_recovery_loss_contributing_unique_windows') is not None else 'pending'
+        lines.append(f'| {r["model"]} / {r["condition"]} / {r["seed"]} | {r["completed_fits"]}/{r["planned_fits"]} | '
+          f'{r["training_input_tokens"]:,} | {r["supervised_target_tokens"]:,} | {pool} |')
+    lines += ['\nEqual input-token quotas do not equalize target-token exposure. A small repeatedly sampled recovery pool is not a larger set of independent failures; '
+      'partial fits in the table are not full condition budgets.\n',
       '[Exposure and curriculum associations](CURRICULUM_ASSOCIATIONS.md) explicitly distinguish common input-token budgets from unequal target exposure. '
       '[Failure taxonomy](failure_taxonomy.csv) uses exclusive categories; [overlap counts](failure_overlaps.csv) retain nonexclusive flags. '
       '[Strata](strata.csv) separate familiar/held-out rules, worlds, framing and ambiguity. '
@@ -124,6 +142,13 @@ def main(final=False):
       'Temporal action/error associations may include genuine intervening user updates and are not causal attack severity. '
       'Original separate-slot motives can be jointly satisfied; original C4/C5 communication routing differs. '
       'A C5 advantage by itself would not identify biographies, private histories, peer interaction, memory necessity or broad transfer.\n',
+      '\n## Unfinished evidence and submission assessment\n',
+      'The complete three-seed primary comparison, independent-family trained replication, remaining character-count and history/peer ablations, '
+      '32/128-turn sensitivity, larger-memory reference, common-fault recovery, unfamiliar interference, external benchmark, '
+      'natural-language validation and human ratings remain required wherever their scheduled cells are pending. '
+      'The full ordered list is preserved in the machine-readable state. Horizon and recovery curves must wait for their actual completed inputs; '
+      'no values are interpolated from the 64-turn results. The post-review memory and contested-goal diagnostics also remain gated. '
+      'The current package supports interim findings and further work, not a complete submission or a guarantee of acceptance.\n',
       '\n## Supplement and human-review status\n',
       f'Review coordinator status: **{live["review_state"].get("status")}**. '
       '[Readiness manifest](SUPPLEMENT_READINESS.json) reports exact pending checkpoints and the full-core gate. '
@@ -134,13 +159,16 @@ def main(final=False):
       '\n## Reproducible package and continuation\n',
       '[Figures and captions](FIGURES.md), [training curves](TRAINING_CURVES.md), [compute and gains](COMPUTE.md), '
       '[author-review LaTeX](../../paper/overnight_author_review.tex), [draft status](DRAFT_STATUS.json), '
+      '[compiled review PDF](../../paper/overnight_author_review.pdf), [build provenance](PAPER_BUILD.json), '
       '[analysis commands](../../analysis/overnight/README.md), [tests](TESTS.json), '
       '[adapter lineage](ADAPTER_LINEAGE.json), [claim-to-evidence table](CLAIM_TO_EVIDENCE.md), '
       '[provenance](PACKAGE_PROVENANCE.json). Raw traces, adapter weights, optimizer checkpoints and PDF build products remain in the established ignored local mirror. '
       'The paper is incomplete and requires human scientific authorship and review; AI assistance is logged.\n',
       f'Core owner: `{live["processes"].get("core_controller_pid")}`. Review owner: `{live["processes"].get("review_coordinator_pid")}`. '
+      f'Remote GPU process snapshot (PID, command): `{remote.get("gpu_processes","unavailable")}`. '
       'Core state/log: `artifacts/campaign_state.json`, `artifacts/campaign_controller.log`; '
       'review state/log: `artifacts/review_001/controller_state.json`, `artifacts/review_001/controller.log`. '
+      f'Active stage log: `artifacts/campaign_configs/{live["active_job"]}.log`. '
       'Shared campaign lock: `artifacts/campaign.lock`; GPU lock: `artifacts/gpu.lock`.\n',
       'Run `PYTHONPATH=src .venv/bin/python -m analysis.overnight.monitor` for a read-only live check, '
       'then `PYTHONPATH=src .venv/bin/python -m analysis.overnight.update` to integrate newly completed evidence. '

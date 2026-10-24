@@ -1,6 +1,6 @@
 {
   "new": [
-    "main-qwen-c3-29-r1-collect"
+    "main-qwen-c4-29-r1-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
@@ -120,6 +120,26 @@
       },
       "reused_prior_validation": true
     },
+    "main-qwen-c4-29-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection.jsonl.gz": "45509595de0f93f298eeba72444afc4ac17ed6de5bbb38a62459c21afb55c616",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection_characters.jsonl.gz": "4b32f554d87aab362be7a25e7b859ebb4d22ae13ec9a21b7dcdb6e910fcf898c",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/status.json": "ab3fc77faa753d150e85f65e7353c50fe10bd2416b7fc09e4877876aefaf13e3",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.counts.json": "55232676ca2127277662ef6131a5129fd9ebf6b8684ebfbd79675c75e375d5a7",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.jsonl": "07d0914e161b94bbf82530f99b1e9d75c864f0b4c2eefff92061434657817802"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-c4-29-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection.jsonl.gz": "1e9d8c32d1886100caa2c54490f72e98ee1b804763cdacc2fec6c795e6c92b3a",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection_characters.jsonl.gz": "a3ad36f06a160366702e83fc768de2057e85ed3b550f6d2d07118e1fe9018714",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/status.json": "ca252682253653022b9386d33fb00ced16cd447c81cafcaba719a34f9f73ad34",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.counts.json": "c8613b09f359928869bbd731f6f515edfd722962688677d26b7ec624c1699ca8",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.jsonl": "c9aec15ce72a4c906ffde9620c91c149ac2f4bb6a74660ef598350b0d6f9b0a7"
+      },
+      "reused_prior_validation": false
+    },
     "main-qwen-c5-17-r0-collect": {
       "inputs": {
         "artifacts/runs/main-qwen-c5-17-r0-collect/collection.jsonl.gz": "b194868452464a8adad2566eb3dea1272ab97690113829c4b367e36408bb8822",
@@ -141,5 +161,5 @@
       "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T08:48:43.267918+00:00"
+  "utc": "2026-10-24T10:47:07.544801+00:00"
 }

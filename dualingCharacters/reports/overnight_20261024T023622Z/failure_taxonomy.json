@@ -1252,5 +1252,137 @@
     "kind": "overlapping_flag",
     "model": "qwen",
     "seed": 29
+  },
+  {
+    "category": "clarification_error",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 53,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "success",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 357,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "dependency_only",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 65,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "false_or_missed_update",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 5,
+    "denominator": 480,
+    "families": 240,
+    "kind": "mutually_exclusive",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "malformed",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "false_update",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 0,
+    "denominator": 240,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "missed_update",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 5,
+    "denominator": 240,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "clarification_error",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 57,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "commitment_error",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 57,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "dependency_error",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 76,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "source_error",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 117,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
+  },
+  {
+    "category": "correct_recall_wrong_behavior",
+    "condition": "C4",
+    "conversations": 480,
+    "count": 106,
+    "denominator": 480,
+    "families": 240,
+    "kind": "overlapping_flag",
+    "model": "qwen",
+    "seed": 29
   }
 ]

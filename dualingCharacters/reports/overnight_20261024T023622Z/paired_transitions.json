@@ -193,5 +193,20 @@
     "seed": 29,
     "status": "interim one-seed descriptive",
     "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
+  },
+  {
+    "both_succeed": 62,
+    "ci95_high": 0.475,
+    "ci95_low": 0.3375,
+    "contrast": "C4-base",
+    "difference": 0.4083333333333333,
+    "families": 240,
+    "model": "qwen",
+    "neither": 70,
+    "only_first": 103,
+    "only_second": 5,
+    "seed": 29,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
   }
 ]

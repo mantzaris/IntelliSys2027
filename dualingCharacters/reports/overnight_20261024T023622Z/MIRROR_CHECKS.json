@@ -369,6 +369,66 @@
       },
       "verified_utc": "2026-10-24T03:51:05.086470+00:00"
     },
+    "main-qwen-c4-29-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz": "0a65583da36f5deb30de4bac9e55c74089d2c80457878d97ff679120e657ef25",
+        "artifacts/runs/main-qwen-c4-29-eval/evaluation_summary.json": "7b16af6c28e2620b1659f3fed8ff91f0b2013db7c825aeff8fcbd9a8722b8712",
+        "artifacts/runs/main-qwen-c4-29-eval/status.json": "f389367f42421c36c28bc2d9ae95135d733290f273dffb856074b09c4356414e",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/final/adapter_model.safetensors": "ebf5f2cdc513413a6f88a1bca88121e3635ebcbf6bdf6e50291b04fdce5eaa45"
+      },
+      "verified_utc": "2026-10-24T11:54:13.385627+00:00"
+    },
+    "main-qwen-c4-29-r0-collect": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection.jsonl.gz": "45509595de0f93f298eeba72444afc4ac17ed6de5bbb38a62459c21afb55c616",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/collection_characters.jsonl.gz": "4b32f554d87aab362be7a25e7b859ebb4d22ae13ec9a21b7dcdb6e910fcf898c",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/status.json": "ab3fc77faa753d150e85f65e7353c50fe10bd2416b7fc09e4877876aefaf13e3",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.counts.json": "55232676ca2127277662ef6131a5129fd9ebf6b8684ebfbd79675c75e375d5a7",
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.jsonl": "07d0914e161b94bbf82530f99b1e9d75c864f0b4c2eefff92061434657817802"
+      },
+      "verified_utc": "2026-10-24T10:01:28.279141+00:00"
+    },
+    "main-qwen-c4-29-r0-fit": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-29-r0-collect/supervision.jsonl": "07d0914e161b94bbf82530f99b1e9d75c864f0b4c2eefff92061434657817802",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/status.json": "aca3927a7a788ac5f62353329d54a9ec83a0816b07d56b53a743e551eb099b8b",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/final/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/final/adapter_config.json": "35e3a6e6d92eb80a91e03cacbb59f1e565499e5665c8256ec4942c66ff7f85e2",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/final/adapter_model.safetensors": "d76d165d49e0135067ed150abffc8fa838a5c63cf62a06705caac17d782ee68b",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/loss.jsonl": "66ce23a5d82d62b74416c1ad22ab7982e3ee1e5e484208aa4b1c3f8b4d38e360",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/optimizer.pt": "a9da3f9beed136fb8347868b46b4ddb838d4e05228ce7d2bc6d5f6c170146f19",
+        "artifacts/runs/main-qwen-c4-29-r0-fit/training/training_summary.json": "f91ea267adaf70b7d38d5832bdd3f140ad7a11bdcbeaa623c9fdea0abb1b290c"
+      },
+      "verified_utc": "2026-10-24T10:20:03.660358+00:00"
+    },
+    "main-qwen-c4-29-r1-collect": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection.jsonl.gz": "1e9d8c32d1886100caa2c54490f72e98ee1b804763cdacc2fec6c795e6c92b3a",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/collection_characters.jsonl.gz": "a3ad36f06a160366702e83fc768de2057e85ed3b550f6d2d07118e1fe9018714",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/status.json": "ca252682253653022b9386d33fb00ced16cd447c81cafcaba719a34f9f73ad34",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.counts.json": "c8613b09f359928869bbd731f6f515edfd722962688677d26b7ec624c1699ca8",
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.jsonl": "c9aec15ce72a4c906ffde9620c91c149ac2f4bb6a74660ef598350b0d6f9b0a7"
+      },
+      "verified_utc": "2026-10-24T10:47:13.989807+00:00"
+    },
+    "main-qwen-c4-29-r1-fit": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-29-r1-collect/supervision.jsonl": "c9aec15ce72a4c906ffde9620c91c149ac2f4bb6a74660ef598350b0d6f9b0a7",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/status.json": "7c84f649313398d87d6ed3b027746163f4e6c295c5cd7df67471ff240cee4eaa",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/final/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/final/adapter_config.json": "10485c9f4ba74b5620042f7e9fa8f525d86364338493123c39377e53b6915644",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/final/adapter_model.safetensors": "ebf5f2cdc513413a6f88a1bca88121e3635ebcbf6bdf6e50291b04fdce5eaa45",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/loss.jsonl": "8ce10a3e4c29122439d923d7920782c137abce8bc52814a2d62a51fcf4b6e3da",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/optimizer.pt": "b907a12a7da811060b7346e6009167150df7ffaa8339abd6df9225c3b3747860",
+        "artifacts/runs/main-qwen-c4-29-r1-fit/training/training_summary.json": "c49def483e426db5172807ba84f6fa8c1c694abdb64279272b8af89fffb85502"
+      },
+      "verified_utc": "2026-10-24T11:07:51.250612+00:00"
+    },
     "main-qwen-c5-17-eval": {
       "matches": true,
       "paths": {

@@ -115,5 +115,18 @@
     "paired_successes": 181,
     "recall_correct_conversations": 472,
     "seed": 29
+  },
+  {
+    "all_canonical_sources_visible": 458,
+    "condition": "C4",
+    "conversation_successes": 357,
+    "conversations": 480,
+    "failed_conversations": 123,
+    "families": 240,
+    "model": "qwen",
+    "paired_success": 0.6875,
+    "paired_successes": 165,
+    "recall_correct_conversations": 463,
+    "seed": 29
   }
 ]

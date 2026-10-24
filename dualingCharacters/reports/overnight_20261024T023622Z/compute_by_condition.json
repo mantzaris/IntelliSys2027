@@ -217,6 +217,34 @@
     "seed": 17
   },
   {
+    "character_count": 2,
+    "collection_input_tokens": 26197549,
+    "collection_model_calls": 21748,
+    "collection_output_tokens": 1320524,
+    "complete_main_evaluation": true,
+    "completed_pipeline_stages": 4,
+    "condition": "C4",
+    "eligible_collection_seconds": 2741.926070184447,
+    "eligible_evaluation_seconds": 2708.0405452912673,
+    "eligible_pipeline_seconds": 5134.321068445686,
+    "eligible_run_ids": [
+      "main-qwen-c4-29-r0-collect",
+      "main-qwen-c4-29-r0-fit",
+      "main-qwen-c4-29-r1-collect",
+      "main-qwen-c4-29-r1-fit",
+      "main-qwen-c4-29-eval"
+    ],
+    "eligible_training_seconds": 2392.3949982612394,
+    "gain_over_shared_base": 0.4083333333333333,
+    "model": "qwen",
+    "other_attempt_reserved_seconds": 0,
+    "other_attempts": [],
+    "paired_success": 0.6875,
+    "peak_reported_vram_bytes": 42661314560,
+    "planned_pipeline_stages": 4,
+    "seed": 29
+  },
+  {
     "character_count": 3,
     "collection_input_tokens": 25392943,
     "collection_model_calls": 21759,

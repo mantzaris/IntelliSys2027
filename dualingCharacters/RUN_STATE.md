@@ -21,9 +21,10 @@ advantage. C1 seed29 is now complete at 138/240 versus 186/240 for seed17;
 this observed seed variation does not alter the matched seed17 C5 contrasts.
 The C3 seed29 evaluation is complete at 181/240: C3−C1 is +17.92 points
 (family interval +12.08 to +23.75), reversing the seed17 difference. The full
-three-seed comparison remains pending. The original queue advanced to C4 seed29
-collection. Fourteen collections and fourteen fits have exact audits; 37 completed
-stages have verified remote/local evidence. Both
+three-seed comparison remains pending. C4 seed29 is complete at 165/240, versus
+179/240 for seed17. The original queue advanced to C5 seed29 collection.
+Sixteen collections and sixteen fits have exact audits; 42 completed stages have
+verified remote/local evidence. Both
 scientific freezes remain unchanged. The overnight session will leave healthy
 original work running under its existing resource controls at handoff.
 

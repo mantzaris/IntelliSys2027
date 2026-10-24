@@ -14,14 +14,16 @@
       "artifacts/runs/main-qwen-c3-29-r1-fit/training/loss.jsonl": "8d09245f48df0f4abfcd35cf3e6cc10b7c360b6292e950b6f519678cf61fd444",
       "artifacts/runs/main-qwen-c4-17-r0-fit/training/loss.jsonl": "4b694635e06931497c9db7a553c922ca4dd459e6c364fe7afa2c0b6aebf6a844",
       "artifacts/runs/main-qwen-c4-17-r1-fit/training/loss.jsonl": "f032c40eebf2e898dcf591442aecc46c7ddfcf27743c5f39c169aa33777bb876",
+      "artifacts/runs/main-qwen-c4-29-r0-fit/training/loss.jsonl": "66ce23a5d82d62b74416c1ad22ab7982e3ee1e5e484208aa4b1c3f8b4d38e360",
+      "artifacts/runs/main-qwen-c4-29-r1-fit/training/loss.jsonl": "8ce10a3e4c29122439d923d7920782c137abce8bc52814a2d62a51fcf4b6e3da",
       "artifacts/runs/main-qwen-c5-17-r0-fit/training/loss.jsonl": "2017e5a72bd1985c6042439d0656968e7ea7bfae9c9a19c9520ac4b853b0cdf2",
       "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
-      "reports/overnight_20261024T023622Z/supervision_exposure.json": "818d0d0e69b8c46aee7e02f1cd0e55ae05d7e94b2956781cdefc4452b4f98986"
+      "reports/overnight_20261024T023622Z/supervision_exposure.json": "b1b92fe73f90bfd8cb78eed0aac2ef8e3a656265d8e569c3e98db0d1857215f0"
     },
     "outputs": {
-      "pdf": "8bdf579e9682890facbdec0fb2bbd0f9a0011a868142c356767216cd912cd5c9",
-      "png": "ab2130e6c33a9a72c7f5a69e4439428950a639599fcf3fdcefba652ef0d0e692",
-      "svg": "4303be728afef31ecf5eec4c3c3eec8f09f49a02e176d8b489b50268c5dfd316"
+      "pdf": "b1a45647cb0ab42c45c21fd9d5532452c1e0bf67132d4e7496d15605fad004b3",
+      "png": "e7584cf1e93c742677f9571187eccde22c32269d872314c2fa426bafb517469a",
+      "svg": "885b0c3b46b265ecd4d82ffc38306bfd791b65e993d881d80037f75d58c914b2"
     }
   }
 }

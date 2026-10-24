@@ -6,6 +6,7 @@ qwen C5 seed 17 has 118 failed conversations; all six commitments were recalled 
 qwen A1 seed 17 has 111 failed conversations; all six commitments were recalled correctly in 467/480 conversations, and every canonical authorizing source was visible in 466/480 final prompts.
 qwen C1 seed 29 has 167 failed conversations; all six commitments were recalled correctly in 464/480 conversations, and every canonical authorizing source was visible in 464/480 final prompts.
 qwen C3 seed 29 has 98 failed conversations; all six commitments were recalled correctly in 472/480 conversations, and every canonical authorizing source was visible in 474/480 final prompts.
+qwen C4 seed 29 has 123 failed conversations; all six commitments were recalled correctly in 463/480 conversations, and every canonical authorizing source was visible in 458/480 final prompts.
 \begin{table}[ht]\centering\caption{Actual exposure across completed fits only; an unfinished second round must not be read as a full two-round budget.}\begin{tabular}{llrrr}\toprule Model & Condition & Seed & Training input tokens & Supervised targets\\\midrule
 qwen & C1 & 17 & 2,097,152 & 97,683\\
 qwen & C3 & 17 & 2,097,152 & 83,466\\
@@ -14,6 +15,7 @@ qwen & C5 & 17 & 2,097,152 & 79,238\\
 qwen & A1 & 17 & 2,097,152 & 80,051\\
 qwen & C1 & 29 & 2,097,152 & 96,822\\
 qwen & C3 & 29 & 2,097,152 & 83,913\\
+qwen & C4 & 29 & 2,097,152 & 79,997\\
 \bottomrule\end{tabular}\end{table}
 Equal input-token quotas do not imply equal supervised-target exposure. These descriptive differences cannot establish that exposure caused performance differences.
 C1 round-one recovery uses 14 distinct loss-contributing windows from 9 families on 363 contributing occurrences. The top five windows account for 37.4\% of recovery target tokens. Repetition does not create new independent examples.

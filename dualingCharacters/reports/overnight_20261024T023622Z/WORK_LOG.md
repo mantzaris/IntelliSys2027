@@ -196,3 +196,41 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T09:41:20.781547+00:00: Remote/local completed-stage checksums match for main-qwen-c3-29-eval.
 
 - 2026-10-24T09:42:03.686733+00:00: Completed C3 seed29 evaluation verified: 181/240 paired successes, versus C1 seed29 138/240. Matched C3−C1 +17.92 pp, exploratory family interval +12.08 to +23.75; transitions 131 both, 50 C3-only, 7 C1-only, 52 neither. This reverses the seed17 sign; three-seed conclusions remain pending. All 37 completed stages have mirror checks, all 14 fits exact exposure audits. Updated figures and author-review PDF. No reruns, exclusions, or scientific changes.
+
+- 2026-10-24T10:01:19.208346+00:00: Progress: 38/241 core stages complete; active main-qwen-c4-29-r0-fit, 0 generation requests, 163840 training input tokens; 18.4544/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T10:01:20.264448+00:00: Extended collection audit for main-qwen-c4-29-r0-collect: 484 clean and 331 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T10:01:28.279879+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-r0-collect.
+
+- 2026-10-24T10:19:50.923629+00:00: Progress: 39/241 core stages complete; active main-qwen-c4-29-r1-collect, 64 generation requests, 0 training input tokens; 18.7534/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T10:19:54.648233+00:00: Reconstructed main-qwen-c4-29-r0-fit: 39579 target tokens; 549 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T10:20:03.661041+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-r0-fit.
+
+- 2026-10-24T10:36:35.085887+00:00: Eight-hour supervision milestone: 39/241 stages completed, active main-qwen-c4-29-r1-collect with 8,704 generation requests. Fifteen completed fits and collections audited; all 39 completed stages mirrored and checksum-verified. Current reservation 19.0323/96 h; review remains zero. The C3−C1 sign reversal across seeds is retained. Reproducible PDF build now records exact source/template/figure hashes. No scientific changes, retries, or blockers; next actions are completing the C4 seed29 audit, final reproducibility checks, and the scheduled 12:36 UTC handoff.
+
+- 2026-10-24T10:41:28.692718+00:00: Pre-handoff verification: 31 existing/report pytest cases and 15 supplementary/overnight unittest cases passed (46 total). Original 60-item action identities and both blank forms preserved; natural-language prose packet inputs and full-core supplementary execution gate remain pending. Author-review PDF compiled with exact build provenance. No tests use the active GPU.
+
+- 2026-10-24T10:47:06.072620+00:00: Progress: 40/241 core stages complete; active main-qwen-c4-29-r1-fit, 0 generation requests, 0 training input tokens; 19.1999/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T10:47:07.518538+00:00: Extended collection audit for main-qwen-c4-29-r1-collect: 753 clean and 20 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T10:47:13.990541+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-r1-collect.
+
+- 2026-10-24T11:07:38.885787+00:00: Progress: 41/241 core stages complete; active main-qwen-c4-29-eval, 0 generation requests, 0 training input tokens; 19.5324/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T11:07:42.403908+00:00: Reconstructed main-qwen-c4-29-r1-fit: 40418 target tokens; 327 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T11:07:51.253322+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-r1-fit.
+
+- 2026-10-24T11:36:30.160331+00:00: Nine-hour supervision milestone: 41/241 stages complete; main-qwen-c4-29-eval active at 20,352 generation requests. Sixteen fits and sixteen collections audited; all 41 completed stages have matching mirrors. Cumulative 20.0133/96 reserved h, review 0/2 h. All 46 relevant tests passed. The final hour will integrate any fully completed evaluation, verify freezes/mirrors, commit the paper/analysis package and record precise active-worker continuation. No faults or scientific changes.
+
+- 2026-10-24T11:54:03.245272+00:00: Progress: 42/241 core stages complete; active main-qwen-c5-29-r0-collect, 320 generation requests, 0 training input tokens; 20.2978/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T11:54:10.684700+00:00: Validated completed main-qwen-c4-29-eval: 165/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T11:54:13.386389+00:00: Remote/local completed-stage checksums match for main-qwen-c4-29-eval.
+
+- 2026-10-24T11:54:45.345713+00:00: C4 seed29 evaluation complete and validated: 165/240 paired successes, 357/480 conversation successes. Familiar-rule paired success 98/120; held-out 67/120. All commitments recalled in 463/480, canonical sources all visible in 458/480. Ten eligible complete main evaluations now audited, with 42/241 stages mirrored. C5 seed29 collection proceeds in the original order; no new matched C5 seed29 contrast exists yet. Updated figures and compiled author-review PDF.
