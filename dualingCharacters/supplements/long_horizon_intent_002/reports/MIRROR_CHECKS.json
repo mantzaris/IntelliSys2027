@@ -429,6 +429,31 @@
       },
       "verified_utc": "2026-10-24T09:09:22.982246+00:00"
     },
+    "main-qwen-c3-43-r0-collect": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c3-43-r0-collect/collection.jsonl.gz": "23c9b7640a98791e4a5018d1a6836d2622be958c0a58e6d767a50913be473cd9",
+        "artifacts/runs/main-qwen-c3-43-r0-collect/collection_characters.jsonl.gz": "7b692163007be289f9ce8b6c820571babe6654d6a284065a0d0068bc28157de8",
+        "artifacts/runs/main-qwen-c3-43-r0-collect/status.json": "b6eba44642359935f417bd202c24fb2f1d6afc667ed712adc39b4917c055573a",
+        "artifacts/runs/main-qwen-c3-43-r0-collect/supervision.counts.json": "4752f630ecbb67f9cf4163ff999a2ecbe724995e12e1c057e00550a10a8cd957",
+        "artifacts/runs/main-qwen-c3-43-r0-collect/supervision.jsonl": "284be19dfbfe99dce4bb96ffe537b10ea18bbd8d67257644a3583823226b34ff"
+      },
+      "verified_utc": "2026-10-24T18:33:49.351973+00:00"
+    },
+    "main-qwen-c3-43-r0-fit": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c3-43-r0-collect/supervision.jsonl": "284be19dfbfe99dce4bb96ffe537b10ea18bbd8d67257644a3583823226b34ff",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/status.json": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/final/README.md": "0565b8046c1656c1818cff338e6e61b6f3d9aad19d0bae4f14fe422ea98a024b",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/final/adapter_config.json": "a9eb38b811c5203300b807203284954887deef96c5bb6bc52d273666d434807d",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/final/adapter_model.safetensors": "1da728d312540c7a5d58867f6e9727e3c067958f99302c458ff76d7bd3a0150c",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/loss.jsonl": "ff800f58ec26e916fbb445f6f8d4d04839809004587fdc6c4b4ce47a017e1489",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/optimizer.pt": "8dfb5ac755286154bb2df1915b139886b27fb00e1576221957ba0ef3f3342481",
+        "artifacts/runs/main-qwen-c3-43-r0-fit/training/training_summary.json": "31c1868907aa5806d26bf99d44f963bbdc76d07fba653ca2c3cdc17ad1e551c0"
+      },
+      "verified_utc": "2026-10-24T18:56:54.855289+00:00"
+    },
     "main-qwen-c4-17-eval": {
       "matches": true,
       "paths": {

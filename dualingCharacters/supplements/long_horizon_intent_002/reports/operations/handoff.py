@@ -48,7 +48,7 @@ def main(close=False,early_reason=None):
       'local_timezone':session['local_timezone'],'started_local':start.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),'reported_local':now.astimezone(ZoneInfo(session['local_timezone'])).isoformat(),
       'starting_commit':session['starting_commit'],'current_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'commits':commits,
       'frozen_files':{'core':58,'review001':21,'intent002':len(frozen['files'])},'all_scientific_hashes_verified':True,'intent_freeze_sha256':sha256(HERE/'FREEZE.json'),
-      'core_complete':complete,'new_core_stages':new,'active_core_job':active,'next_scheduled_core_job':next_job,'failed_current_queue_stages':failed,'pending_core_stages':pending,
+      'core_complete':complete,'completed_without_verified_mirror':sorted(set(complete)-set(read(REPORTS/'MIRROR_CHECKS.json')['runs'])),'new_core_stages':new,'active_core_job':active,'next_scheduled_core_job':next_job,'failed_current_queue_stages':failed,'pending_core_stages':pending,
       'excluded_historical_runs':exclusions(ROOT),'core_controller_pid':session['core_controller_pid'],'review_coordinator_pid':session['review_coordinator_pid'],
       'remote_gpu_processes':live['remote'].get('gpu_processes'),'remote_gpu':live['remote'].get('gpu'),'resource_snapshot_utc':live['utc'],
       'reserved_hours_before_session':baseline,'reconciled_reserved_hours_at_snapshot':total,'reserved_hours_during_session_to_snapshot':total-baseline,
@@ -72,6 +72,7 @@ def main(close=False,early_reason=None):
       f'Commit at report generation: `{values["current_commit"]}`; starting commit `{session["starting_commit"]}`. Nothing pushed, published or submitted. All 58 core, 21 review and {len(frozen["files"])} intent scientific files verify unchanged.','',
       f'Core: {len(complete)}/241 stages complete, {len(new)} newly completed this session. Active: `{active}`. Next: `{next_job}`. Current failed queue stages: {len(failed)}. Historical excluded artifacts remain preserved and listed in HANDOFF_STATE.json. No infrastructure retries were needed.','',
       'The final commit containing this handoff can be identified with `git log -1 --format=%H -- dualingCharacters/supplements/long_horizon_intent_002/reports/SESSION_REPORT.md` from the repository root. The generation-time commit above intentionally precedes that reporting commit.','',
+      f'Completed stages awaiting the independent mirror audit: {values["completed_without_verified_mirror"]}. Tables below include only evaluations that passed completed-run validation; a newly completed but unaudited stage is not silently added.','',
       '## Current core evidence — interim until planned seed sets complete','',
       '| Model | Condition | Seed | Paired success /240 |','|---|---|---:|---:|']
     lines += [f'| {r["model"]} | {r["condition"]} | {r["seed"]} | {r["paired_successes"]} |' for r in results]

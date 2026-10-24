@@ -1,26 +1,14 @@
 {
-  "conservative_remaining_core_hours": 62.18945876492387,
-  "conservative_total_reserved_hours": 88.61849144960927,
-  "expected_remaining_core_hours": 54.894651372043406,
-  "expected_total_reserved_hours": 81.3236840567288,
+  "conservative_remaining_core_hours": 61.63055004556773,
+  "conservative_total_reserved_hours": 88.96340997283185,
+  "expected_remaining_core_hours": 54.27326477648286,
+  "expected_total_reserved_hours": 81.60612470374699,
   "forecast_over_ceiling": false,
   "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes.",
   "pending": [
     {
-      "conservative_remaining_seconds": 1378.4346606614824,
-      "expected_remaining_seconds": 1043.0510967798011,
-      "matched_timing_stages": 11,
-      "run_id": "main-qwen-c3-43-r0-collect"
-    },
-    {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
-      "run_id": "main-qwen-c3-43-r0-fit"
-    },
-    {
-      "conservative_remaining_seconds": 2158.118650967498,
-      "expected_remaining_seconds": 1437.7880997220054,
+      "conservative_remaining_seconds": 1514.6707839674982,
+      "expected_remaining_seconds": 794.3402327220055,
       "matched_timing_stages": 11,
       "run_id": "main-qwen-c3-43-r1-collect"
     },
@@ -38,14 +26,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c4-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c4-43-r0-fit"
     },
     {
@@ -68,14 +56,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c5-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c5-43-r0-fit"
     },
     {
@@ -98,14 +86,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a1-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a1-43-r0-fit"
     },
     {
@@ -398,14 +386,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-17-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-17-r0-fit"
     },
     {
@@ -428,14 +416,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-17-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-17-r0-fit"
     },
     {
@@ -457,15 +445,15 @@
       "run_id": "main-qwen-a3-17-eval"
     },
     {
-      "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1308.5960728921928,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-17-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-17-r0-fit"
     },
     {
@@ -488,14 +476,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-17-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-17-r0-fit"
     },
     {
@@ -518,14 +506,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-29-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-29-r0-fit"
     },
     {
@@ -548,14 +536,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-29-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-29-r0-fit"
     },
     {
@@ -577,15 +565,15 @@
       "run_id": "main-qwen-a3-29-eval"
     },
     {
-      "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1308.5960728921928,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-29-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-29-r0-fit"
     },
     {
@@ -608,14 +596,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-29-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-29-r0-fit"
     },
     {
@@ -638,14 +626,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a2-43-r0-fit"
     },
     {
@@ -668,14 +656,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-a3-43-r0-fit"
     },
     {
@@ -697,15 +685,15 @@
       "run_id": "main-qwen-a3-43-eval"
     },
     {
-      "conservative_remaining_seconds": 1215.4567096182145,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1308.5960728921928,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c2-43-r0-fit"
     },
     {
@@ -728,14 +716,14 @@
     },
     {
       "conservative_remaining_seconds": 1399.7695486614825,
-      "expected_remaining_seconds": 1064.3859847798012,
-      "matched_timing_stages": 11,
+      "expected_remaining_seconds": 1078.418804063229,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-43-r0-collect"
     },
     {
-      "conservative_remaining_seconds": 1257.227642044425,
-      "expected_remaining_seconds": 1140.6366866878234,
-      "matched_timing_stages": 11,
+      "conservative_remaining_seconds": 1323.0690213912167,
+      "expected_remaining_seconds": 1165.9467945010401,
+      "matched_timing_stages": 12,
       "run_id": "main-qwen-c6-43-r0-fit"
     },
     {

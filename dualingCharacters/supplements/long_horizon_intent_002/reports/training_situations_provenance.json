@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-24T18:11:09.047530+00:00",
+  "generated_utc": "2026-10-24T18:56:47.939865+00:00",
   "inputs": {
     "main-qwen-a1-17-r0-fit": {
       "artifacts/overnight_20261024T023622Z/exposure/main-qwen-a1-17-r0-fit.jsonl.gz": "9c5cd07c4e49103901f1648e114b7d7e81052cd859d71d4dad1140b12c738ba7",
@@ -56,6 +56,10 @@
     "main-qwen-c3-29-r1-fit": {
       "artifacts/overnight_20261024T023622Z/exposure/main-qwen-c3-29-r1-fit.jsonl.gz": "18c38cb2b247cb10a91084122b2c0dddd4997030dcf88039c0196c9eb14f7418",
       "artifacts/runs/main-qwen-c3-29-r1-collect/supervision.jsonl": "041fb485081b7a86c3584d55a683a35c636d96551d61143421a17fba98d3d571"
+    },
+    "main-qwen-c3-43-r0-fit": {
+      "artifacts/long_horizon_intent_002/core_audits/exposure/main-qwen-c3-43-r0-fit.jsonl.gz": "c18d71de8a6bb885f60b3fc99836661911d1500bd3975f6060c28dd22ad14e56",
+      "artifacts/runs/main-qwen-c3-43-r0-collect/supervision.jsonl": "284be19dfbfe99dce4bb96ffe537b10ea18bbd8d67257644a3583823226b34ff"
     },
     "main-qwen-c4-17-r0-fit": {
       "artifacts/review_001/exposure/main-qwen-c4-17-r0-fit.jsonl.gz": "c58dfc192168998ee9cb5ec2b6780de88af295292ee4d2d3b8dea3c037934cda",

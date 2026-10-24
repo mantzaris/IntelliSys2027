@@ -1,4 +1,4 @@
-# Intent 002 progress — 2026-10-24T18:11:23.740883+00:00
+# Intent 002 progress — 2026-10-24T18:56:58.042898+00:00
 
 This is an exploratory follow-up specified after the initial negative C5 comparison and C1 seed reversal. It preserves the original confirmatory study and review_001 freezes. Newly inspected test analyses are not original preregistration.
 
@@ -6,7 +6,7 @@ Session: 2026-10-24T13:06:05+00:00 to 2026-10-24T21:06:05+00:00; useful-work cut
 
 ## Existing core: completed and running
 
-Latest monitor 2026-10-24T18:10:40.359135+00:00: 57/241 stages complete; active `main-qwen-c3-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
+Latest monitor 2026-10-24T18:55:21.754407+00:00: 59/241 stages complete; active `main-qwen-c3-43-r0-fit`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
 
 | Qwen seed | Condition | 64-turn paired success |
 |---|---|---|
@@ -111,7 +111,7 @@ Reference counts have2880 slot references, while the original source-error denom
 
 ## Actual supervised exposure
 
-22 completed fits have exact loss-mask and sampler reconstruction. Common input-token budgets do not imply equal supervised-target tokens, example diversity, or recovery exposure.
+23 completed fits have exact loss-mask and sampler reconstruction. Common input-token budgets do not imply equal supervised-target tokens, example diversity, or recovery exposure.
 
 | Condition | Seed | Round | Nonempty recovery pool | Loss-contributing unique | Occurrences | Completion target tokens | Top-5 share |
 |---|---|---|---|---|---|---|---|
@@ -125,6 +125,7 @@ Reference counts have2880 slot references, while the original source-error denom
 | C3 | 17 | 1 | 33 | 33 | 315 | 20679 | 17.3% |
 | C3 | 29 | 0 | 29 | 22 | 23 | 1520 | 27.4% |
 | C3 | 29 | 1 | 17 | 17 | 226 | 14987 | 35.0% |
+| C3 | 43 | 0 | 28 | 21 | 21 | 1425 | 24.6% |
 | C5 | 17 | 0 | 30 | 18 | 21 | 1433 | 38.7% |
 | C5 | 17 | 1 | 31 | 31 | 299 | 19729 | 20.8% |
 | C5 | 29 | 0 | 30 | 22 | 32 | 2158 | 31.8% |
@@ -146,7 +147,7 @@ Human status: pending_fresh_outputs. Two independent rating forms remain blank u
 
 ## Resources and next action
 
-Latest reconciled project reservation: 26.4290/96hours. Core forecast: expected 81.32, conservative 88.62 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
+Latest reconciled project reservation: 27.1541/96hours. Core forecast: expected 81.61, conservative 88.96 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
 
 Required core → review_001 → intent_002 → older unseen-profile work. This session does not expand the96-hour ceiling. New intent work requires the completed core and review gates, a fixed-final-checkpoint binding, timing-only complete-tier allocation, free shared locks, remaining allowance, and this session’s deadline. If gates stay closed, leave intent disabled for a subsequent authorized continuation.
 

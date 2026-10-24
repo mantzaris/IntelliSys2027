@@ -155,3 +155,21 @@
 - 2026-10-24T18:11:17.333153+00:00: Remote/local completed-stage checksums match for main-qwen-c1-43-eval.
 
 - 2026-10-24T18:13:22.906773+00:00: C1 seed43 evaluation validated at183/240 paired success and390/480 conversation success; all57 completed mirrors match. Clarification audit: original flag9, unnecessary4, missed4, wrong issue1, duplicate/order-only1; two unnecessary cases null settled decisions. C1 seed29 had101 unnecessary clarifications despite similar round-one nonempty-recovery completion exposure (23,664 target tokens versus23,563 atseed43). This is an observed contrast, not evidence identifying a causal mechanism. Seed43 all-turn correctness32.3177%, final-quarter14.8177%; atturn60 only1/480 correct with0/480 full canonical-source availability, then407/480 correct atturn61 with477/480 full source availability. Final performance therefore does not establish trajectory preservation. The planned C5 comparisons remain limited to matched seeds17/29 until its seed43 run completes.
+
+- 2026-10-24T18:33:19.442463+00:00: Progress: 58/241 core stages complete; active main-qwen-c3-43-r0-fit, 0 generation requests, 45056 training input tokens; 26.7978/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T18:33:20.617855+00:00: Extended collection audit for main-qwen-c3-43-r0-collect: 362 clean and 446 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T18:33:49.353918+00:00: Remote/local completed-stage checksums match for main-qwen-c3-43-r0-collect.
+
+- 2026-10-24T18:33:49.382086+00:00: Core reached58/241 after C3 seed43 round-zero collection; first fit active. Incremental collection audit now covers23 completed collections. No new completed test score, no outcome-based protocol change, no new supplement calls. Latest resource total26.7978/96 hours; expected/conservative core total81.45/88.67.
+
+- 2026-10-24T18:56:34.742332+00:00: Reconstructed main-qwen-c3-43-r0-fit: 41779 target tokens; 586 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T18:56:54.856269+00:00: Remote/local completed-stage checksums match for main-qwen-c3-43-r0-fit.
+
+- 2026-10-24T18:57:02.726206+00:00: C3 seed43 first fit completed; exact exposure now covers23 fits and all59 completed-stage mirrors match. Refresh collection active under original queue. No scientific changes, retries, supplementary calls or new workers. Full seed43 C3 evaluation remains pending.
+
+- 2026-10-24T19:06:08.474595+00:00: Progress: 59/241 core stages complete; active main-qwen-c3-43-r1-collect, 4800 generation requests, 0 training input tokens; 27.3329/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T19:06:08.629375+00:00: Six-hour checkpoint: 59/241 complete (14 new stages), active main-qwen-c3-43-r1-collect, 4800 calls. Total reservations 27.3329/96 hours; conservative core forecast 88.96. Exact exposure23 fits,23 collections,13 complete evaluations, all59 mirrors verified. C1 seed43=183/240 and4 unnecessary clarifications retained alongside seed29=138/240 and101; no causal attribution to recovery concentration. Core horizon32/128 and both supplements remain pending;0 new supplement GPU hours. No infrastructure retries. Useful-work cutoff20:36:05, handoff deadline21:06:05 UTC unchanged.

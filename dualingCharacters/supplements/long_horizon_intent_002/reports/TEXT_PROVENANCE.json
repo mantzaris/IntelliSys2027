@@ -1,26 +1,26 @@
 {
-  "generated_utc": "2026-10-24T18:11:23.741093+00:00",
+  "generated_utc": "2026-10-24T18:56:58.043105+00:00",
   "generator_sha256": "c8411c59deab9608187426ab53f57bb3b6445289f0cdcdde9f28a5bccd51e89b",
   "inputs": {
     "supplements/long_horizon_intent_002/reports/HUMAN_REVIEW_STATUS.json": "31ceafaba5f2fead81b853fae1ced70158634a1f3b0a5f5e368f755f027672bb",
     "supplements/long_horizon_intent_002/reports/INTENT_SCORES.json": "08e50a7bec7e464f1bb02694d3d31db6c7bb1d3ea67543caa15d75f861619827",
-    "supplements/long_horizon_intent_002/reports/LATEST_STATE.json": "38c97462957a3307e214c36ecff733cd6cd1e7b9ff0be369693514fa663135ca",
+    "supplements/long_horizon_intent_002/reports/LATEST_STATE.json": "bb415cd84ccb48c90af2425e94d325351100001b3cff076c4d6e9fe1f6e32f16",
     "supplements/long_horizon_intent_002/reports/clarification_audit.json": "93f0a8191e0c716a549bceb02f03078fedd8eb44085a91823d83d569ffd8e07b",
-    "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "365f68c263afe84ed973151a45209fa5339d9d13504b7efea6d88cebc56259ac",
-    "supplements/long_horizon_intent_002/reports/clarification_training_situations.json": "a03392ce224ac15073cf0118c291f2ada9e7d175dfa4b9bd3d0e38d0c96f7545",
+    "supplements/long_horizon_intent_002/reports/clarification_exposure.json": "07abe249cf988ef3cb3d985a8ead4747819a04f68bdb89f615f99c10483c2297",
+    "supplements/long_horizon_intent_002/reports/clarification_training_situations.json": "e8dd676f7603ac42c014be630955878d1fbad35102a25ab5b0d4aabdcec91697",
     "supplements/long_horizon_intent_002/reports/core_horizon_levels.json": "6ee0b38ea7adbb036e14157d54f6117a23c26474fb09fc333bb26d893745476e",
     "supplements/long_horizon_intent_002/reports/evidence_audit.json": "fe2817ca12533e645b233e6fb5d3ecde82ef07a039c68441bcd2ededfb5219bb",
     "supplements/long_horizon_intent_002/reports/paired_trajectory_contrasts.json": "53a7338c70900078cb274d470288beab3777ee16df991418670a1511f1bd1d0b",
     "supplements/long_horizon_intent_002/reports/paired_transitions.json": "528acd91abd8d2d84d033bcf241735c30b7a87464f5a581d60c53fe329e98e44",
     "supplements/long_horizon_intent_002/reports/per_seed_results.json": "41e5e425ea78f3ff94e0b5b6ae00a345b0e18d8325cbd25957d65e117cb2df8a",
     "supplements/long_horizon_intent_002/reports/source_dynamics_selected_turns.json": "0b675303a7ac9fd8bb4abb861659270772d740a801394ec5cafe8fce642ad284",
-    "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "d8b567bc8fa4cbbbe17824038b6fcc7523c0b747a8607e8b9576531d5d92ce22",
+    "supplements/long_horizon_intent_002/reports/supervision_exposure.json": "08174b4cac35c2c6e9f7826cec81d51183d6b19517720e79278a05809c3e3710",
     "supplements/long_horizon_intent_002/reports/trajectory_summary.json": "2cfa81fefc3da0de4b97d80c01162caa0e2c05a2de3ecabadedfa4f4ab83539e"
   },
   "outputs": {
     "supplements/long_horizon_intent_002/MANUSCRIPT_SECTION.md": "80ba54d216db3e021300a2dafa1f1771fc3816ced9f139d90f7cf3f772c2784f",
     "supplements/long_horizon_intent_002/reports/CLAIM_TO_EVIDENCE.md": "b647f61ef846c479812ea938b636415bfb9c84f4e5e04f290e0264f4ec655949",
-    "supplements/long_horizon_intent_002/reports/PROGRESS_REPORT.md": "2ae6e9ff5eb3248a2e3b161030cb41b831cc5ad80d60593681aee99414216d95"
+    "supplements/long_horizon_intent_002/reports/PROGRESS_REPORT.md": "ddbcb1338f1ab37c06f2c602a64518ff0468c87aa25ecacbba02ce46bab386c2"
   },
   "scientific_interpretations": "Provisional author review; no fresh qualitative scores unless explicitly measured in INTENT_SCORES.json"
 }
