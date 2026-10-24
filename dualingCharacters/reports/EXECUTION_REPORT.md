@@ -4,7 +4,7 @@ Generated from saved run records and existing deterministic analyses. Scheduled 
 
 ## 1. What ran
 
-7/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
+18/241 eligible scheduled core stages have completed. Stage counts include collection, fitting, evaluation and validation; they are not independent trained models.
 
 Hardware: one existing RunPod NVIDIA RTX 6000 Ada, 49,140 MiB reported VRAM; PyTorch 2.8.0+cu128, CUDA 12.8 and driver 595.91.07. Hardware inspection is recorded in `RUN_STATE.md`. BF16 rank-8 LoRA performs actual parameter updates; vLLM inference shares the backbone across role contexts.
 
@@ -24,8 +24,8 @@ Print the fixed queue with `PYTHONPATH=src .venv/bin/python -m pcc.campaign --dr
 |---|---|---:|---:|---:|
 | qwen | C1 | 1/3 | 0.7750 | — |
 | qwen | C2 | 0/3 | pending | — |
-| qwen | C3 | 0/3 | pending | — |
-| qwen | C4 | 0/3 | pending | — |
+| qwen | C3 | 1/3 | 0.7375 | — |
+| qwen | C4 | 1/3 | 0.7458 | — |
 | qwen | C5 | 0/3 | pending | — |
 | qwen | C6 | 0/3 | pending | — |
 | qwen | A1 | 0/3 | pending | — |
@@ -58,11 +58,11 @@ All main tests remove antagonists; their estimates above directly assess transfe
 
 Phi independent-model C5−C3: Pending: no complete matched three-seed contrast is available.
 
-Saved transfer aggregate rows: 6 (includes main and common-subset reference rows; not a count of independent experiments). Saved external scoring rows: 0. LongMemEval uses a predetermined 50-question subset with adapted retrieval and judging; it is not an official comparable score. Unseen-profile supplement status: `waiting_for_core`.
+Saved transfer aggregate rows: 6 (includes main and common-subset reference rows; not a count of independent experiments). Saved external scoring rows: 0. LongMemEval uses a predetermined 50-question subset with adapted retrieval and judging; it is not an official comparable score. Unseen-profile supplement status: `deferred_to_review_001_scheduler`.
 
 ## 5. Exact unfinished requirements and weaknesses
 
-Unfinished scheduled stages by command: collect=70, evaluate=35, external=8, fit=70, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
+Unfinished scheduled stages by command: collect=65, evaluate=33, external=8, fit=66, horizon128=5, horizon32=5, judge=2, larger-memory=5, natural=3, recovery=13, short=13, unfamiliar=5. Every exact run ID and state is in `reports/tables/execution_report_trace.json`.
 
 Human review: `packet_outputs_pending`; annotations: `not_supplied`. Two independent raters and subsequent adjudication remain required unless actual completed sheets are supplied. Scientific author review, claim approval and a final current conference-policy check remain outstanding.
 

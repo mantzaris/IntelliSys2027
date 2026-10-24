@@ -1,0 +1,11 @@
+antagonist_recipient_deliveries,applied,condition,direct_peer_notes_to_jekyll,evidence_class,kind_peer,kind_propose,opportunities,rejected_or_undelivered,run_id,seed,shared_memory_changed,slot_type,source_visible_contradiction_flags,kind_edit,kind_recollect,kind_pass
+1107,1196,C3,89,main,1197,3,1200,4,main-qwen-c3-17-r0-collect,17,89,reserved,0,,,
+0,2400,C3,0,main,,319,2400,0,main-qwen-c3-17-r0-collect,17,2400,direct_opportunity,1235,1809,272,
+1122,1200,C3,78,main,1200,,1200,0,main-qwen-c3-17-r1-collect,17,78,reserved,0,,,
+0,2400,C3,0,main,,321,2400,0,main-qwen-c3-17-r1-collect,17,2400,direct_opportunity,634,1726,353,
+0,1011,C4,992,main,992,125,1200,189,main-qwen-c4-17-r0-collect,17,992,reserved,9,2,62,19
+0,2400,C4,0,main,,541,2400,0,main-qwen-c4-17-r0-collect,17,2347,direct_opportunity,889,200,1653,6
+0,1048,C4,1043,main,1043,86,1200,152,main-qwen-c4-17-r1-collect,17,1043,reserved,10,,66,5
+0,2400,C4,0,main,,423,2400,0,main-qwen-c4-17-r1-collect,17,2365,direct_opportunity,462,25,1952,
+995,1199,C5,196,main,1191,,1200,1,main-qwen-c5-17-r0-collect,17,196,reserved,0,,1,8
+68,2400,C5,0,main,68,691,2400,0,main-qwen-c5-17-r0-collect,17,2332,direct_opportunity,830,170,1471,

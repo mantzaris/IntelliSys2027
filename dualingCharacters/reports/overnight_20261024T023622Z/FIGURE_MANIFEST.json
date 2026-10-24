@@ -1,0 +1,57 @@
+{
+  "paired_contrasts": {
+    "caption": "Individual-seed contrasts on common 240 paired families, 64 turns. Bars are exploratory family-bootstrap 95% intervals (10,000 draws, seed 40721). They do not capture training-seed variation; an interval containing zero is not equivalence. Complete planned-seed inference uses the separate frozen two-way analysis.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/paired_transitions.json": "776317490859495d15874c4d647f1910d268a20f1f3c912fffc462fb3343a526"
+    },
+    "outputs": {
+      "pdf": "b758c8e5f4937cb6ff4dae0f25eda5ed1631c50b5ef511dc65530b4dca0f7683",
+      "png": "40ed45845812e870a1c7c081eb41fcbaac36e738fee650cf6061995210f5b56c",
+      "svg": "e234927b80d6a157c9895d53751ff9aa9777da55c2da31951aaea475a11a14ac"
+    }
+  },
+  "paired_success": {
+    "caption": "Antagonist-free 64-turn paired success, 240 families per model/condition/seed. Each point is one actual seed; diamonds are the single untrained reference. No seed-error bars are invented. Counts show completed/planned trained seeds; missing cells are pending.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "3fa13aea7259c7e8a669fdbbc20ef62acf8bc456db0d4dff69b4628abcba23a6"
+    },
+    "outputs": {
+      "pdf": "52e2af41d17c60581a17fb00d3149e9cf6ece0db995c648d28995f968ed7c3dd",
+      "png": "9b5aa9147d2a7aa40aff0cacde035c7979b09b6dc4464908bd35589a56670de5",
+      "svg": "4d28a590314a9a2bf42de80688ccb5e98b9737f53f34e98a07ee7b616cfa5856"
+    }
+  },
+  "recall_behavior": {
+    "caption": "Recall and behavioral success are separate endpoints over the same 480 conversations/seed at 64 turns. Recall requires six correct state values; behavioral success requires the eight executable decisions and correct clarification. Worlds are paired; these bars are descriptive, not independent-sample inference.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "3fa13aea7259c7e8a669fdbbc20ef62acf8bc456db0d4dff69b4628abcba23a6"
+    },
+    "outputs": {
+      "pdf": "fa48a411d4ec6786eb955bf119374b639d31f13a36b4fe1ac0e6eaa2a2726582",
+      "png": "77ddb80de59a9f656f2d8957f2729dfe0d06503cddcd7d2a9ef3cf15880d6021",
+      "svg": "fd4b3c4d84b39f06b65d773a0d7c2778a59eb54cbf1ef38fc928895f44fecbe6"
+    }
+  },
+  "recovery_exposure": {
+    "caption": "Exact reconstructed optimizer-loss exposure per completed fit, by model/condition/seed/round. Loaded buffer windows are excluded unless they contribute unmasked target loss. Repeated occurrences and top-five token shares quantify concentration, not additional independent recovery examples. Resume-prefix and orphaned suffix masking follow the frozen code.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/supervision_pools.json": "e04c7e816fdfd040a12ad639c6945631d8e5b165758f1f9e6d94f37df55f8b12"
+    },
+    "outputs": {
+      "pdf": "f743f3a877676ab3d800444e3b8f7b994ea36688ef8affc214e56d939d73ffaa",
+      "png": "d68fe1f51d0ceb53e420ae12175a5f6b5924a65b5c59451a10146710a6249987",
+      "svg": "ec716ea14720db4d1a47ca8e88eeb8d34c70c339b5370f520db846b4961c3b37"
+    }
+  },
+  "rule_structure": {
+    "caption": "Separate familiar versus held-out conditional rules, 120 paired families in each stratum, 64 turns; actual completed seed values only. These are descriptive strata with no independent-turn uncertainty. All ambiguous locked-test families are creative/held-out, so ambiguity is confounded.",
+    "inputs": {
+      "reports/overnight_20261024T023622Z/strata.json": "a986050014cf861164524288b8790f1dba73db553bfe4b47a316feca52e315bc"
+    },
+    "outputs": {
+      "pdf": "11fbed5548696e93f8143200ce4aebc7578fb3ed523594e89298771c5dffd18b",
+      "png": "b7c491ea45c1131a36381e98a3d42d9a1abba5a52d5f12eb761ed358a6ed5beb",
+      "svg": "2ac57c0b0e54313c6a1fad307e6a9b720c81880beaad3b1637c5ab7ac09fb6ad"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "qualification": "Read-only checks of completed evaluation status, summary, compressed trace and final adapter. Previously checked immutable artifacts skipped.",
+  "runs": {
+    "base-phi-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/base-phi-eval/evaluation.jsonl.gz": "9e8daf0641d64914f2a7e4fb35640ad7764d402dff331929bb9791cc48fd5d86",
+        "artifacts/runs/base-phi-eval/evaluation_summary.json": "bbced5b150b00b2d8ad1d1eeffc6667659e0890ff3dc9ff6d04b08fb8666a0d5",
+        "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639"
+      },
+      "verified_utc": "2026-10-24T02:51:43.068992+00:00"
+    },
+    "base-qwen-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/base-qwen-eval/evaluation.jsonl.gz": "fa8402fef5538f4549737bbc791f9dd957935b66b167c2a7dad3c5a79cee2089",
+        "artifacts/runs/base-qwen-eval/evaluation_summary.json": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088",
+        "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad"
+      },
+      "verified_utc": "2026-10-24T02:51:44.708159+00:00"
+    },
+    "main-qwen-c1-17-eval-format2": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz": "8d316cdcb8e0e084a9a83047fa75dffd33c5ac044cc82252c73abe94a278fdc2",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7",
+        "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
+        "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/final/adapter_model.safetensors": "24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc"
+      },
+      "verified_utc": "2026-10-24T02:51:46.487775+00:00"
+    },
+    "main-qwen-c3-17-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c3-17-eval/evaluation.jsonl.gz": "f74e972ac3c0428ea568a199fde1a166ab1c5b98d83615326def64d35cbf9694",
+        "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json": "be4b91bd63d2f5507ba41a9660e256eb11e3ebf81ba06ae74928c97df3c2b3f5",
+        "artifacts/runs/main-qwen-c3-17-eval/status.json": "5aa7115d266937c266e47a894d57b4c67dd8cc0ea96df486c0447a979b513ec3",
+        "artifacts/runs/main-qwen-c3-17-r1-fit/training/final/adapter_model.safetensors": "bafc11177689961280af9128e0dca86ba94ccb36cf7048bc3667d4bf20a2a306"
+      },
+      "verified_utc": "2026-10-24T02:51:47.873684+00:00"
+    },
+    "main-qwen-c4-17-eval": {
+      "matches": true,
+      "paths": {
+        "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz": "b8c05abba7e6e0f4588cc7d4a72a51eac32b0735276e6c616ceef2d688f75cda",
+        "artifacts/runs/main-qwen-c4-17-eval/evaluation_summary.json": "32aa2b5f5f77d8f6ed7f0b470237523cb73f8633ffdbffa122f8a039bc384656",
+        "artifacts/runs/main-qwen-c4-17-eval/status.json": "eb3fdbeb00bdd08215cb8eda773e7c84a1e8db4fd4f1d45b4ca3288e4a712f14",
+        "artifacts/runs/main-qwen-c4-17-r1-fit/training/final/adapter_model.safetensors": "a0e4e5a35a56ab8fc7c81f1194529f3d91de1ae260fba9ed352acf3f4aab9156"
+      },
+      "verified_utc": "2026-10-24T02:51:49.129752+00:00"
+    }
+  }
+}

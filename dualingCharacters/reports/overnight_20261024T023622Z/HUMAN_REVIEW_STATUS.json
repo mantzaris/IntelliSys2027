@@ -1,0 +1,40 @@
+{
+  "external_contact": "None",
+  "historical_action_packet": {
+    "annotations": {
+      "1": {
+        "nonempty_rating_or_comment_cells": 0,
+        "rows": 60
+      },
+      "2": {
+        "nonempty_rating_or_comment_cells": 0,
+        "rows": 60
+      }
+    },
+    "identity_hash": "818e6285c46f4ad074c263fdf5100702f3198d8429fb2c21be5543798709880e",
+    "inputs": {
+      "artifacts/review_001/human_review/pilot_actions/RUBRIC.txt": "4936bc04378982099b67105fa6d50d2acf2661510b8de780d51a1363649971ac",
+      "artifacts/review_001/human_review/pilot_actions/items.json": "818e6285c46f4ad074c263fdf5100702f3198d8429fb2c21be5543798709880e",
+      "artifacts/review_001/human_review/pilot_actions/private_key.json": "3e4667cc9404a28b010e5c644ae19a2fa2e70829feb7810e15308d645838357c",
+      "artifacts/review_001/human_review/pilot_actions/rater_1.csv": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940",
+      "artifacts/review_001/human_review/pilot_actions/rater_2.csv": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940"
+    },
+    "items": 60,
+    "original_items_and_forms_preserved": true,
+    "readable_rendering": "artifacts/overnight_20261024T023622Z/human_review/action_packet.html"
+  },
+  "new_B_packet": "Pending complete frozen B configurations; original action identities never reused",
+  "prose_review": {
+    "missing_runs": [
+      "extra-qwen-c1-17-natural",
+      "extra-qwen-c3-17-natural",
+      "extra-qwen-c5-17-natural"
+    ],
+    "packaging_code": "src/pcc/validation.py:human_packet; analysis/human_review.py",
+    "required_outputs": 120,
+    "rubric": "paper/HUMAN_REVIEW_RUBRIC.md",
+    "status": "pending_required_natural_outputs",
+    "substitution": "None; no pilot or alternative condition fills missing cells"
+  },
+  "utc": "2026-10-24T02:49:33.705844+00:00"
+}

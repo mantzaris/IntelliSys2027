@@ -1,0 +1,14 @@
+\textbf{Interim descriptive snapshot.} All included evaluations are complete and eligible; the planned grid is still incomplete. This paragraph and the tables regenerate from audited saved artifacts.
+\begin{table}[ht]\centering\caption{Completed main evaluations; each row has 240 paired families and 480 conversations at 64 turns.}\begin{tabular}{llrrr}\toprule Model & Condition & Seed & Paired successes & Conversation successes\\\midrule
+qwen & base & 17 & 67/240 & 195/480\\
+phi & base & 17 & 27/240 & 110/480\\
+qwen & C1 & 17 & 186/240 & 390/480\\
+qwen & C3 & 17 & 177/240 & 381/480\\
+qwen & C4 & 17 & 179/240 & 382/480\\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[ht]\centering\caption{Individual-seed exploratory contrasts. Intervals use family resampling only and cannot estimate training-seed variation.}\begin{tabular}{llrrr}\toprule Model & Contrast & Seed & Difference (pp) & 95\% interval (pp)\\\midrule
+qwen & C3-C1 & 17 & -3.75 & [-7.50, 0.00]\\
+qwen & C5-C3 & 17 & pending & pending\\
+qwen & C5-C1 & 17 & pending & pending\\
+\bottomrule\end{tabular}\end{table}
+Complete planned-seed inference is pending. No interim significance result changes the schedule or checkpoint rule.

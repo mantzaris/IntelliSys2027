@@ -1,0 +1,11 @@
+{
+  "commands": [
+    "PYTHONPATH=src:analysis .venv/bin/python -m pytest tests analysis/test_execution_report.py analysis/test_human_review.py -q",
+    "PYTHONPATH=src .venv/bin/python -m unittest supplements.review_001.test_review analysis.overnight.test_analysis -v"
+  ],
+  "core_frozen_files": 58,
+  "pytest_existing_tests_and_reports": 30,
+  "qualification": "Initial unittest discovery did not discover function-style repository tests; corrected to pytest. Existing analysis import paths required PYTHONPATH=src:analysis. No GPU run or scientific source change resulted.",
+  "review_frozen_files": 21,
+  "supplement_and_overnight_unittest_passes": 14
+}

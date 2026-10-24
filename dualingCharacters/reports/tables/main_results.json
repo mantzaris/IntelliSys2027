@@ -28,28 +28,28 @@
   {
     "model": "qwen",
     "condition": "C3",
-    "executed_seeds": 0,
-    "paired_success": null,
+    "executed_seeds": 1,
+    "paired_success": 0.7375,
     "seed_sd": null,
-    "conversation_success": null,
-    "status": "pending",
-    "gpu_reserved_seconds": 0.0,
-    "input_tokens": 0.0,
-    "output_tokens": 0.0,
-    "train_tokens": 0.0
+    "conversation_success": 0.79375,
+    "status": "partial",
+    "gpu_reserved_seconds": 8006.803644539323,
+    "input_tokens": 54170955.0,
+    "output_tokens": 3336117.0,
+    "train_tokens": 2097152.0
   },
   {
     "model": "qwen",
     "condition": "C4",
-    "executed_seeds": 0,
-    "paired_success": null,
+    "executed_seeds": 1,
+    "paired_success": 0.7458333333333333,
     "seed_sd": null,
-    "conversation_success": null,
-    "status": "pending",
-    "gpu_reserved_seconds": 0.0,
-    "input_tokens": 0.0,
-    "output_tokens": 0.0,
-    "train_tokens": 0.0
+    "conversation_success": 0.7958333333333333,
+    "status": "partial",
+    "gpu_reserved_seconds": 7042.7786986436695,
+    "input_tokens": 56266948.0,
+    "output_tokens": 3350971.0,
+    "train_tokens": 2097152.0
   },
   {
     "model": "qwen",
@@ -59,9 +59,9 @@
     "seed_sd": null,
     "conversation_success": null,
     "status": "pending",
-    "gpu_reserved_seconds": 0.0,
-    "input_tokens": 0.0,
-    "output_tokens": 0.0,
+    "gpu_reserved_seconds": 759.9000981668942,
+    "input_tokens": 7453289.0,
+    "output_tokens": 388400.0,
     "train_tokens": 0.0
   },
   {

@@ -1,0 +1,16 @@
+model,condition,seed,families,conversations,first,second,both,first_only,second_only,neither
+qwen,base,17,240,480,dependency_error,correct_recall_wrong_behavior,214,31,25,210
+qwen,base,17,240,480,source_error,dependency_error,161,154,84,81
+qwen,base,17,240,480,clarification_error,commitment_error,40,28,36,376
+phi,base,17,240,480,dependency_error,correct_recall_wrong_behavior,116,169,7,188
+phi,base,17,240,480,source_error,dependency_error,285,195,0,0
+phi,base,17,240,480,clarification_error,commitment_error,56,0,214,210
+qwen,C1,17,240,480,dependency_error,correct_recall_wrong_behavior,77,3,4,396
+qwen,C1,17,240,480,source_error,dependency_error,8,39,72,361
+qwen,C1,17,240,480,clarification_error,commitment_error,9,3,8,460
+qwen,C3,17,240,480,dependency_error,correct_recall_wrong_behavior,77,1,17,385
+qwen,C3,17,240,480,source_error,dependency_error,40,203,38,199
+qwen,C3,17,240,480,clarification_error,commitment_error,16,7,6,451
+qwen,C4,17,240,480,dependency_error,correct_recall_wrong_behavior,76,2,5,397
+qwen,C4,17,240,480,source_error,dependency_error,16,104,62,298
+qwen,C4,17,240,480,clarification_error,commitment_error,16,0,10,454

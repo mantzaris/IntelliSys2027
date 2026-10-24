@@ -1,0 +1,62 @@
+[
+  {
+    "both_succeed": 171,
+    "ci95_high": 0.0,
+    "ci95_low": -0.075,
+    "contrast": "C3-C1",
+    "difference": -0.0375,
+    "families": 240,
+    "model": "qwen",
+    "neither": 48,
+    "only_first": 6,
+    "only_second": 15,
+    "seed": 17,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap 10000 draws seed40721; no training-seed uncertainty"
+  },
+  {
+    "both_succeed": 65,
+    "ci95_high": 0.5583333333333333,
+    "ci95_low": 0.42916666666666664,
+    "contrast": "C1-base",
+    "difference": 0.49583333333333335,
+    "families": 240,
+    "model": "qwen",
+    "neither": 52,
+    "only_first": 121,
+    "only_second": 2,
+    "seed": 17,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
+  },
+  {
+    "both_succeed": 61,
+    "ci95_high": 0.5291666666666667,
+    "ci95_low": 0.3875,
+    "contrast": "C3-base",
+    "difference": 0.4583333333333333,
+    "families": 240,
+    "model": "qwen",
+    "neither": 57,
+    "only_first": 116,
+    "only_second": 6,
+    "seed": 17,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
+  },
+  {
+    "both_succeed": 64,
+    "ci95_high": 0.5333333333333333,
+    "ci95_low": 0.4,
+    "contrast": "C4-base",
+    "difference": 0.4666666666666667,
+    "families": 240,
+    "model": "qwen",
+    "neither": 58,
+    "only_first": 115,
+    "only_second": 3,
+    "seed": 17,
+    "status": "interim one-seed descriptive",
+    "uncertainty": "Family bootstrap; the same untrained reference is reused, not independent replication"
+  }
+]

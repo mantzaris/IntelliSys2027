@@ -1,0 +1,67 @@
+[
+  {
+    "all_canonical_sources_visible": 444,
+    "condition": "base",
+    "conversation_successes": 195,
+    "conversations": 480,
+    "failed_conversations": 285,
+    "families": 240,
+    "model": "qwen",
+    "paired_success": 0.2791666666666667,
+    "paired_successes": 67,
+    "recall_correct_conversations": 434,
+    "seed": 17
+  },
+  {
+    "all_canonical_sources_visible": 468,
+    "condition": "base",
+    "conversation_successes": 110,
+    "conversations": 480,
+    "failed_conversations": 370,
+    "families": 240,
+    "model": "phi",
+    "paired_success": 0.1125,
+    "paired_successes": 27,
+    "recall_correct_conversations": 233,
+    "seed": 17
+  },
+  {
+    "all_canonical_sources_visible": 471,
+    "condition": "C1",
+    "conversation_successes": 390,
+    "conversations": 480,
+    "failed_conversations": 90,
+    "families": 240,
+    "model": "qwen",
+    "paired_success": 0.775,
+    "paired_successes": 186,
+    "recall_correct_conversations": 471,
+    "seed": 17
+  },
+  {
+    "all_canonical_sources_visible": 468,
+    "condition": "C3",
+    "conversation_successes": 381,
+    "conversations": 480,
+    "failed_conversations": 99,
+    "families": 240,
+    "model": "qwen",
+    "paired_success": 0.7375,
+    "paired_successes": 177,
+    "recall_correct_conversations": 472,
+    "seed": 17
+  },
+  {
+    "all_canonical_sources_visible": 462,
+    "condition": "C4",
+    "conversation_successes": 382,
+    "conversations": 480,
+    "failed_conversations": 98,
+    "families": 240,
+    "model": "qwen",
+    "paired_success": 0.7458333333333333,
+    "paired_successes": 179,
+    "recall_correct_conversations": 463,
+    "seed": 17
+  }
+]

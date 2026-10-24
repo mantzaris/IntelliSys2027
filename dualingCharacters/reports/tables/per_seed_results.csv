@@ -1,2 +1,4 @@
 model,condition,seed,families,paired_success
 qwen,C1,17,240,0.775
+qwen,C3,17,240,0.7375
+qwen,C4,17,240,0.7458333333333333

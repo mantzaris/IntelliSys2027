@@ -3,6 +3,18 @@
 Started: 2026-10-23. Author-directed research; no submission or publication authorized.
 Repository scope: this directory only; branch `main`; commits local, user pushes.
 
+## Overnight supervision — active
+
+Window: **2026-10-24 02:36:22–12:36:22 UTC** (October 23, 22:36 through
+October 24, 08:36 America/New_York). See
+`reports/overnight_20261024T023622Z/WORK_LOG.md`, `LATEST_STATE.json`, and the
+incremental analysis README at `analysis/overnight/README.md`.
+The existing core PID **787315** and review coordinator PID **1291869** retain
+ownership. No additional controller or GPU worker was started. C4 seed17 completed
+at 179/240 paired successes; C5 seed17 round-zero fitting is progressing. Both
+scientific freezes remain unchanged. The overnight session will leave healthy
+original work running under its existing resource controls at handoff.
+
 ## Current phase — review follow-up
 
 The original 241-stage core controller remains active (session **14639**, host PID

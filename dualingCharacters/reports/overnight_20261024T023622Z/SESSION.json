@@ -1,0 +1,21 @@
+{
+  "contingency_hours": 0.5,
+  "core_controller_pid": 787315,
+  "gpu_ceiling_hours": 96,
+  "instructions": "Monitor and integrate completed evidence; preserve all frozen core and supplemental scientific files; no pushes or publication.",
+  "local_timezone": "America/New_York",
+  "new_gpu_controllers": 0,
+  "review_aggregate_ceiling_hours": 2,
+  "review_coordinator_pid": 1291869,
+  "session_id": "overnight_20261024T023622Z",
+  "start_resource_reconstruction": {
+    "active_reserved_seconds_at_session_start": 398.0,
+    "active_run_id_at_start": "main-qwen-c5-17-r0-collect",
+    "cumulative_reserved_seconds_at_session_start": 40521.28182413289,
+    "precision": "UTC run-start times recorded to one second; reservation reconstruction has approximately one-second clock precision. Completed prior reservations remain exact logged values.",
+    "prior_stage_reservation_seconds": 40123.28182413289
+  },
+  "started_utc": "2026-10-24T02:36:22Z",
+  "starting_commit": "7c4e2ee",
+  "target_handoff_utc": "2026-10-24T12:36:22Z"
+}

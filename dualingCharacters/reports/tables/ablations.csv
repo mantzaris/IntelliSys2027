@@ -1,5 +1,5 @@
 model,condition,executed_seeds,paired_success,seed_sd,conversation_success,status,gpu_reserved_seconds,input_tokens,output_tokens,train_tokens
-qwen,C5,0,,,,pending,0.0,0.0,0.0,0.0
+qwen,C5,0,,,,pending,759.9000981668942,7453289.0,388400.0,0.0
 qwen,A1,0,,,,pending,0.0,0.0,0.0,0.0
 qwen,A2,0,,,,pending,0.0,0.0,0.0,0.0
 qwen,A3,0,,,,pending,0.0,0.0,0.0,0.0

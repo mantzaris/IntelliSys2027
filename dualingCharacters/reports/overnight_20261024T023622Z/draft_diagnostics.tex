@@ -1,0 +1,12 @@
+The supplementary failure taxonomy separates mutually exclusive categories from overlapping flags. It does not sum overlapping dependency, source and update errors as distinct failed conversations.
+C1 seed 17 has 90 failed conversations; all six commitments were recalled correctly in 471/480 conversations, and every canonical authorizing source was visible in 471/480 final prompts.
+C3 seed 17 has 99 failed conversations; all six commitments were recalled correctly in 472/480 conversations, and every canonical authorizing source was visible in 468/480 final prompts.
+C4 seed 17 has 98 failed conversations; all six commitments were recalled correctly in 463/480 conversations, and every canonical authorizing source was visible in 462/480 final prompts.
+\begin{table}[ht]\centering\caption{Actual exposure across completed fits only; an unfinished second round must not be read as a full two-round budget.}\begin{tabular}{llrrr}\toprule Model & Condition & Seed & Training input tokens & Supervised targets\\\midrule
+qwen & C1 & 17 & 2,097,152 & 97,683\\
+qwen & C3 & 17 & 2,097,152 & 83,466\\
+qwen & C4 & 17 & 2,097,152 & 78,417\\
+qwen & C5 & 17 & 1,048,576 & 39,436\\
+\bottomrule\end{tabular}\end{table}
+Equal input-token quotas do not imply equal supervised-target exposure. These descriptive differences cannot establish that exposure caused performance differences.
+C1 round-one recovery uses 14 distinct loss-contributing windows from 9 families on 363 contributing occurrences. The top five windows account for 37.4\% of recovery target tokens. Repetition does not create new independent examples.
