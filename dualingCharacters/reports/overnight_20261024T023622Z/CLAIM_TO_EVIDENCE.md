@@ -8,7 +8,7 @@ These interpretations are provisional. One-seed family intervals do not estimate
 | C5-C1 | qwen seed 17: -7.50 pp [-11.25, -4.17] | Practical superiority requires this clean-training control; ordinary supervised learning remains an alternative. |
 | C5-C3 | qwen seed 17: -3.75 pp [-8.33, +0.83] | This is the primary contrast, but confirmatory interpretation requires all planned seeds and the frozen analysis. |
 | C5-C4 | qwen seed 17: -4.58 pp [-7.92, -1.25] | The original communication routing differs, limiting an isolated learned character-count interpretation. |
-| C5-A1 | Pending | This contrasts narrative profiles with concise motives; a one-seed difference does not establish a general narrative advantage. |
+| C5-A1 | qwen seed 17: -0.42 pp [-5.42, +4.58] | This contrasts narrative profiles with concise motives; a one-seed difference does not establish a general narrative advantage. |
 | C5-A2 | Pending | Persistence requires the private-history ablation; frozen history-dependent characters are not co-evolving policies. |
 | C5-A3 | Pending | Peer interaction requires its ablation; typed message/action matches alone are not coalition evidence. |
 | Terminal memory or trajectory necessity | Supplement A pending full-core gate | Similar terminal ablation scores would not show that earlier trajectory never mattered; removed evidence must be quantified. |

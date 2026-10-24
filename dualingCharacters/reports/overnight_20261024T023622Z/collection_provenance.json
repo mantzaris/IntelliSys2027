@@ -1,9 +1,29 @@
 {
   "new": [
-    "main-qwen-c5-17-r1-collect"
+    "main-qwen-a1-17-r1-collect"
   ],
   "qualification": "Frozen audit functions; completed eligible training collections only; temporal action/error associations are not causal effects.",
   "runs": {
+    "main-qwen-a1-17-r0-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-a1-17-r0-collect/collection.jsonl.gz": "581b33857ba74296e54cb21bb0cee76b280e2ad14cf68777c92ad3addf3c79a1",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/collection_characters.jsonl.gz": "5a4eb7d0755b320ecce55f3fff9e12df2ddc531a561413dce35d5af88192a595",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/status.json": "2b51eccdd2f569addbf7a86da8a2293ed3c21fcb363f10fce340301137c9de58",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/supervision.counts.json": "1ab0aa87b0c9a3f67c62c7c89ce549a08fa7ad5db246f8eb681fd8a6d5b2dae9",
+        "artifacts/runs/main-qwen-a1-17-r0-collect/supervision.jsonl": "4078beeaacf3c72bb5a0c1d613475e23fd94e912619a04ae0bf780380fb627b6"
+      },
+      "reused_prior_validation": false
+    },
+    "main-qwen-a1-17-r1-collect": {
+      "inputs": {
+        "artifacts/runs/main-qwen-a1-17-r1-collect/collection.jsonl.gz": "c481b8aa6b8c7ee2f1e360b3ade2002e090b586d63b5b454850d7f75d9d0e096",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/collection_characters.jsonl.gz": "c64bacd8d8e17a402d212a9b3c51d2b24728076dfb7cda747fb4f118b6eb658e",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/status.json": "4c9b56733f0d46c351a261f57062fed475700f1a0111c3fc83130f03da913685",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/supervision.counts.json": "88fe7b230ea42d74c26d21b260da37000aa45e26ce4918be9c40142e34a88f97",
+        "artifacts/runs/main-qwen-a1-17-r1-collect/supervision.jsonl": "079e93c77fdd7dcfb9e933d2011ad0f0cc1eadbcff90f7e5a232c87ca8e84d01"
+      },
+      "reused_prior_validation": false
+    },
     "main-qwen-c1-17-r0-collect": {
       "inputs": {
         "artifacts/runs/main-qwen-c1-17-r0-collect/collection.jsonl.gz": "3dc1d423812b25dc0bfa6405b5b2309aed3607d8ddaaf1198fb9a2ca5bb60693",
@@ -83,5 +103,5 @@
       "reused_prior_validation": false
     }
   },
-  "utc": "2026-10-24T03:30:10.186391+00:00"
+  "utc": "2026-10-24T05:26:49.346415+00:00"
 }

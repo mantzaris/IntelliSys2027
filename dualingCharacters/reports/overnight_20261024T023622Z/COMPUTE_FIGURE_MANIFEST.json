@@ -1,14 +1,14 @@
 {
   "gain_vs_compute": {
-    "caption": "Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.",
+    "caption": "Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Marker shapes identify conditions; colors identify actual seeds. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.",
     "inputs": {
-      "reports/overnight_20261024T023622Z/compute_by_condition.json": "7c453913eb9332b8d5846311aac776555ddbd7044af35472ba6d204f89bf054d",
-      "reports/overnight_20261024T023622Z/per_seed_results.json": "c259e2cba6a0e181590403b08c01a5db72ab05ef10decf3b70aaaa935d445318"
+      "reports/overnight_20261024T023622Z/compute_by_condition.json": "58430b950eb956a564604f89e5f5e6b90cfb5553e81ee2e7163ff3bd02f24e63",
+      "reports/overnight_20261024T023622Z/per_seed_results.json": "6514bcdb468b725089e19a6bb53c59e938c0f8c8d68dd2afd47d29e598c314f8"
     },
     "outputs": {
-      "pdf": "52d6d4fd2dbca00803aaea9474a1b8e752b565b807ad4b5f1042e0e2359d5c5c",
-      "png": "9100568bed375ab2807d83b2c85fc3e830fad9d307729d21883ddbfdc166fe45",
-      "svg": "5231b0f101e6c0800f3f236bab5513f8a26a21d94b0363e4497d62bf70419e7c"
+      "pdf": "a86b71c3f65999a081a5d0741c794b18194cf4d78162ed968a108719974bcfae",
+      "png": "271b6db4235010524f509861b0ae18701fcd06b39dccd50888eec0ccddfd34c0",
+      "svg": "a13e413c026c6221c272e07928a4753cbdccf901f3922f95849191efb1f0d91b"
     }
   }
 }

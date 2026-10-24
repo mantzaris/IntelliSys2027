@@ -102,5 +102,31 @@
     "seed": 17,
     "steps_logged": 256,
     "zero_loss_steps": 0
+  },
+  {
+    "condition": "A1",
+    "loss_first_32_mean": 0.2748289055307396,
+    "loss_last_32_mean": 0.0014528280623835599,
+    "loss_log_sha256": "7c8c031a6043f186c68e9d69263f3d082c54671ddd3187a24b368fe14defa703",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 0,
+    "run_id": "main-qwen-a1-17-r0-fit",
+    "seed": 17,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
+  },
+  {
+    "condition": "A1",
+    "loss_first_32_mean": 0.017438409240639885,
+    "loss_last_32_mean": 5.5114577889980865e-05,
+    "loss_log_sha256": "2a8e08e319da23b53255ba301875b53942e74955a0258210bd80424917d6082a",
+    "model": "qwen",
+    "nonzero_gradient_steps": 256,
+    "round": 1,
+    "run_id": "main-qwen-a1-17-r1-fit",
+    "seed": 17,
+    "steps_logged": 256,
+    "zero_loss_steps": 0
   }
 ]

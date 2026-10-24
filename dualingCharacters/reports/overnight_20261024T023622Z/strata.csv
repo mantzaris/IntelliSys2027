@@ -59,3 +59,13 @@ qwen,C5,17,240,480,ambiguity,False,420,327,153,210,63,67
 qwen,C5,17,240,480,ambiguity,True,60,35,15,30,19,21
 qwen,C5,17,240,480,world,authorized,240,182,,240,39,42
 qwen,C5,17,240,480,world,hypothetical,240,180,,240,43,46
+qwen,A1,17,240,480,heldout_rule,False,240,226,109,120,9,0
+qwen,A1,17,240,480,heldout_rule,True,240,143,60,120,91,81
+qwen,A1,17,240,480,domain,creative,120,84,37,60,31,20
+qwen,A1,17,240,480,domain,event,120,90,41,60,30,24
+qwen,A1,17,240,480,domain,research,120,96,44,60,23,20
+qwen,A1,17,240,480,domain,software,120,99,47,60,16,17
+qwen,A1,17,240,480,ambiguity,False,420,339,158,210,71,61
+qwen,A1,17,240,480,ambiguity,True,60,30,11,30,29,20
+qwen,A1,17,240,480,world,authorized,240,190,,240,45,38
+qwen,A1,17,240,480,world,hypothetical,240,179,,240,55,43

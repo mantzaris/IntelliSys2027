@@ -88,3 +88,39 @@ until **all 241 core stages** finish, then applies its existing frozen resource 
 - 2026-10-24T04:27:36.210961+00:00: First complete fixed C5 seed17 test validated and mirrored: 168/240 paired success; C5−C3 −3.75 pp (family 95% interval −8.33 to +0.83), C5−C1 −7.50 pp (−11.25 to −4.17). All 30,720 raw rows, 480 unique paired worlds, source/configuration/model and final adapter hashes checked. Negative finding retained; no queue or scientific change. A1 collection running.
 
 - 2026-10-24T04:29:31.199169+00:00: Reporting-only correction: analysis/execution_report.py previously combined fresh outcome tables with stale cached resource totals (6.965 h). Added a small metadata-only resource refresh using the existing aggregation definitions and a regression test for stale caches and duplicate heartbeats. Actual GPU ledger/controller enforcement was already current; no scientific file or run was affected. Existing tests now 31 passed, plus 15 supplement/overnight tests.
+
+- 2026-10-24T04:37:37.573466+00:00: Two-hour progress: five additional core stages finished since start, including complete C5 seed17; A1 r0 collection has 6,976 generation requests. 13.2129/96 reserved hours, no review GPU use, no retries or new holds. Expected/conservative total forecasts 83.36/90.78 hours. Negative C5 result and both-control comparisons committed as ffa0320. Monitoring continues until the original 12:36:22 UTC handoff target.
+
+- 2026-10-24T04:46:37.731102+00:00: Progress: 23/241 core stages complete; active main-qwen-a1-17-r0-fit, 0 generation requests, 393216 training input tokens; 13.3709/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T04:46:38.634997+00:00: Extended collection audit for main-qwen-a1-17-r0-collect: 486 clean and 315 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T04:46:52.388779+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-r0-collect.
+
+- 2026-10-24T05:00:15.391325+00:00: Reconstructed main-qwen-a1-17-r0-fit: 40157 target tokens; 558 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T05:05:07.534264+00:00: Progress: 24/241 core stages complete; active main-qwen-a1-17-r1-collect, 4160 generation requests, 0 training input tokens; 13.6673/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T05:05:09.960596+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-r0-fit.
+
+- 2026-10-24T05:26:48.066774+00:00: Progress: 25/241 core stages complete; active main-qwen-a1-17-r1-fit, 0 generation requests, 188416 training input tokens; 13.9919/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T05:26:49.320497+00:00: Extended collection audit for main-qwen-a1-17-r1-collect: 761 clean and 11 failed eligible windows; temporal severity remains noncausal.
+
+- 2026-10-24T05:27:02.953355+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-r1-collect.
+
+- 2026-10-24T05:38:19.984204+00:00: Three-hour progress: 25/241 stages complete, eight added since start; A1 final fit at 839,680 input tokens. Reserved use 14.1771/96 h, review 0 h. No infrastructure retry or scientific amendment. First C5 negative comparison remains unchanged; final A1 evaluation and all seed/model replications remain pending.
+
+- 2026-10-24T05:43:40.786914+00:00: Reconstructed main-qwen-a1-17-r1-fit: 39894 target tokens; 316 distinct windows actually contributed loss. Every optimizer step matched.
+
+- 2026-10-24T05:47:11.820371+00:00: Progress: 26/241 core stages complete; active main-qwen-a1-17-eval, 4288 generation requests, 0 training input tokens; 14.3206/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T05:47:14.171897+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-r1-fit.
+
+- 2026-10-24T06:20:07.437867+00:00: Progress: 27/241 core stages complete; active main-qwen-c1-29-r0-collect, 448 generation requests, 0 training input tokens; 14.8625/96 reserved hours. Review remains waiting_for_core.
+
+- 2026-10-24T06:20:13.558875+00:00: Validated completed main-qwen-a1-17-eval: 169/240 paired success. Scanned all 30,720 raw turns once.
+
+- 2026-10-24T06:22:07.763371+00:00: Remote/local completed-stage checksums match for main-qwen-a1-17-eval.
+
+- 2026-10-24T06:22:08.365240+00:00: A1 seed17 completed and validated: 169/240 paired success. C5−A1 −0.42 pp, exploratory family 95% interval −5.42 to +4.58; transitions 151 both, 17 C5-only, 18 A1-only, 54 neither. This does not establish narrative advantage or equivalence. Original queue entered C1 seed29, with no outcome-based changes.

@@ -1,6 +1,6 @@
 {
-  "active_job": "main-qwen-a1-17-r0-collect",
-  "active_unrecorded_upper_seconds": 12.411432761060354,
+  "active_job": "main-qwen-c1-29-r0-collect",
+  "active_unrecorded_upper_seconds": 2.9379006957891605,
   "completed": [
     "base-qwen-eval",
     "base-phi-eval",
@@ -23,49 +23,54 @@
     "main-qwen-c5-17-r0-fit",
     "main-qwen-c5-17-r1-collect",
     "main-qwen-c5-17-r1-fit",
-    "main-qwen-c5-17-eval"
+    "main-qwen-c5-17-eval",
+    "main-qwen-a1-17-r0-collect",
+    "main-qwen-a1-17-r0-fit",
+    "main-qwen-a1-17-r1-collect",
+    "main-qwen-a1-17-r1-fit",
+    "main-qwen-a1-17-eval"
   ],
-  "core_completed": 22,
+  "core_completed": 27,
   "core_files_verified": 58,
   "core_freeze_sha256": "135e78e2423d0bc42e340098021a912df269a39949d50cb6fbf91d4edb93f2f3",
   "core_scheduled": 241,
   "forecast": {
-    "conservative_remaining_core_hours": 77.75035717348268,
-    "conservative_total_reserved_hours": 90.78831471144512,
-    "expected_remaining_core_hours": 70.32454840853832,
-    "expected_total_reserved_hours": 83.36250594650075,
+    "conservative_remaining_core_hours": 75.33547706399689,
+    "conservative_total_reserved_hours": 90.19793863276318,
+    "expected_remaining_core_hours": 65.89276097160759,
+    "expected_total_reserved_hours": 80.7552225403739,
     "forecast_over_ceiling": false,
     "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes."
   },
-  "generation_requests": 1408,
+  "generation_requests": 448,
   "known_cost_usd": null,
-  "local_free_bytes": 32007032832,
-  "mirror_status_age_seconds": 39.565035820007324,
+  "local_free_bytes": 31419580416,
+  "mirror_status_age_seconds": 2.4486985206604004,
   "processes": {
-    "core_controller_pid": "787315  787313    07:51:24 python",
-    "review_coordinator_pid": "1291869 1291862    02:28:41 python"
+    "core_controller_pid": "787315  787313    09:45:18 python",
+    "review_coordinator_pid": "1291869 1291862    04:22:35 python"
   },
-  "reconciled_reserved_hours": 13.037957537962438,
-  "recorded_reserved_hours": 13.026934939032653,
-  "remaining_overall_hours": 82.96204246203756,
+  "reconciled_reserved_hours": 14.862461568766307,
+  "recorded_reserved_hours": 14.84540296321075,
+  "remaining_overall_hours": 81.1375384312337,
   "remote": {
-    "container_elapsed_seconds": 55362,
+    "container_elapsed_seconds": 62197,
     "container_started": "Fri Oct 23 13:03:29 2026",
     "files": {
       "collection.jsonl": {
-        "mtime": 1792815960.7869256,
-        "size": 4806658
+        "mtime": 1792822805.0002809,
+        "size": 2417657
       },
       "status.json": {
-        "mtime": 1792815960.752926,
-        "size": 4951
+        "mtime": 1792822804.9622815,
+        "size": 4949
       }
     },
-    "free_bytes": 26520084480,
-    "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 40226 MiB, 92 %",
-    "gpu_processes": "318581, VLLM::EngineCore",
+    "free_bytes": 25965133824,
+    "gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 40136 MiB, 90 %",
+    "gpu_processes": "359316, VLLM::EngineCore",
     "status": {
-      "artifact_path": "/workspace/dualingCharacters/artifacts/runs/main-qwen-a1-17-r0-collect",
+      "artifact_path": "/workspace/dualingCharacters/artifacts/runs/main-qwen-c1-29-r0-collect",
       "chat_template_sha256": "64f85b198065d0fba2a81f37e10ed68161ce2c19a754c7100e67e0ca2ee9c326",
       "code_commit": "a62f1881d23df2282b410243ad4575bb11d1d74a",
       "config": {
@@ -73,7 +78,7 @@
         "answer_tokens": 256,
         "batch_size": 64,
         "character_tokens": 128,
-        "condition": "A1",
+        "condition": "C1",
         "engine": "vllm",
         "history_actions": 6,
         "intervention_opportunities": 12,
@@ -89,25 +94,25 @@
         "recent_messages": 4,
         "refresh_rounds": 2,
         "retrieval_messages": 8,
-        "seed": 17,
+        "seed": 29,
         "structured_decoding": true,
         "train_steps": 256,
         "train_tokens_per_step": 4096
       },
       "dataset_hash": "efa20f7de2c9e5fa7f40a4932f8a93efc05e805e451009f56f280fd8cdcf2aef",
       "families": 150,
-      "gpu_reserved_seconds": 152.63696323893964,
+      "gpu_reserved_seconds": 58.47307930421084,
       "horizon": 16,
-      "input_tokens": 1571051,
+      "input_tokens": 395296,
       "known_cost_usd": null,
-      "model_calls": 1408,
-      "model_load_seconds": 38.30375568382442,
+      "model_calls": 448,
+      "model_load_seconds": 37.624157913029194,
       "model_name": "Qwen/Qwen3-4B-Instruct-2507",
       "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
-      "output_tokens": 81246,
-      "peak_vram_bytes": 42180018176,
-      "process_pid": 318127,
-      "run_id": "main-qwen-a1-17-r0-collect",
+      "output_tokens": 29625,
+      "peak_vram_bytes": 42085646336,
+      "process_pid": 358862,
+      "run_id": "main-qwen-c1-29-r0-collect",
       "selected_window_turns": "6,9,16",
       "source_hashes": {
         "src/pcc/__init__.py": "da438d59cc5bcb2a4a7b5159375a62995e913db9b1a1cbe1ca3c9a2d8d841fc8",
@@ -143,16 +148,16 @@
         "src/pcc/training.py": "f52de03348cc57bcc37f3ca28e7e1ca653a230c454ad7845386c6390c8846957",
         "src/pcc/validation.py": "cc9d6387c102b56a66c9a0b6852fbb3b593c0ca0456cb1afaf7bf053eb5bf908"
       },
-      "source_snapshot_sha256": "9abb8bae2853723c6e36e47bfaa2894b67d30515a3a2889f432b6e9e192178c1",
+      "source_snapshot_sha256": "f1efd821ed6456ed02808d97a93229db673c3ef4b11582f4533b207188bd2493",
       "split": "train",
       "start_family": 0,
-      "started_utc": "2026-10-24T04:23:28Z",
+      "started_utc": "2026-10-24T06:19:06Z",
       "status": "running",
       "task": "collect",
       "train_tokens": 0,
       "vram_measurement": "nvidia-smi total device use including vLLM KV reservation; not comparable to torch allocated peak"
     },
-    "utc": "2026-10-24T04:26:12.989222+00:00"
+    "utc": "2026-10-24T06:20:07.318056+00:00"
   },
   "review_available_after_contingency_hours": 2.0,
   "review_freeze_sha256": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
@@ -165,12 +170,12 @@
     "status": "waiting_for_core",
     "updated_utc": "2026-10-24T01:57:32Z"
   },
-  "sampled_gpu_busy_hours_completed": 10.9849926455663,
-  "stage_reserved_seconds": 152.63696323893964,
+  "sampled_gpu_busy_hours_completed": 12.772799086877948,
+  "stage_reserved_seconds": 58.47307930421084,
   "stage_status": "running",
   "supplement_files_verified": 21,
   "training_input_tokens": 0,
-  "utc": "2026-10-24T04:26:13.068450+00:00",
+  "utc": "2026-10-24T06:20:07.432673+00:00",
   "utilization_qualification": "Completed-run five-second samples only; active utilization is the remote instantaneous sample. Neither is billed pod uptime.",
-  "utilization_weighted_hours_completed": 10.42248812169292
+  "utilization_weighted_hours_completed": 12.121452509790672
 }

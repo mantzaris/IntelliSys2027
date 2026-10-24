@@ -53,19 +53,24 @@ def main():
       'exclusions_sha256':sha256(ROOT/'configs/run_exclusions.json'),'code_sha256':sha256(Path(__file__)),
       'qualification':'Completed eligible pipeline compute is separate from excluded/other attempts, which remain charged to the whole-study ledger. No FLOP or billed-cost equivalence is asserted.'})
     fig,axes=plt.subplots(1,2,figsize=(10,4),sharey=True)
+    markers={'C1':'o','C3':'s','C4':'^','C5':'D','A1':'v','A2':'P','A3':'X','C2':'h','C6':'*'}
     for ax,model in zip(axes,('qwen','phi')):
         selected=[r for r in rows if r['model']==model and r['condition']!='base' and r['complete_main_evaluation'] and r['completed_pipeline_stages']==4]
         for row in selected:
             x=row['eligible_pipeline_seconds']/3600;y=row['gain_over_shared_base']*100
-            ax.scatter(x,y,color=COLORS[row['seed']],s=45)
-            ax.annotate(f'{row["condition"]} s{row["seed"]}',(x,y),xytext=(5,6),textcoords='offset points',fontsize=8)
+            ax.scatter(x,y,edgecolors=COLORS[row['seed']],facecolors='none',marker=markers[row['condition']],s=52,linewidths=1.5)
+        if selected:
+            conditions=list(dict.fromkeys(r['condition'] for r in selected))
+            handles=[plt.Line2D([],[],marker=markers[c],linestyle='',color='#444',markerfacecolor='none',label=c) for c in conditions]
+            handles += [plt.Line2D([],[],marker='o',linestyle='',color=COLORS[s],label=f'Seed {s}') for s in sorted({r['seed'] for r in selected})]
+            ax.legend(handles=handles,loc='upper left',frameon=False,ncol=2,fontsize=8)
         if not selected:ax.text(.5,.5,'Trained evaluations pending',ha='center',transform=ax.transAxes)
         ax.axhline(0,color='#777',lw=.8);ax.set(title=model.upper(),xlabel='Eligible collection + fit reservation (GPU h)')
         ax.margins(.2);ax.set_xlim(left=0)
         if not selected:ax.set_xlim(0,1)
         ax.grid(axis='y',alpha=.2)
     axes[0].set_ylabel('Paired success gain over shared base (pp)')
-    caption='Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.'
+    caption='Actual completed condition/seed pipelines only, at 64 turns and 240 paired test families. Marker shapes identify conditions; colors identify actual seeds. Horizontal values include both eligible collections, both fixed fits and their model loads; evaluation time and other/excluded attempts are reported separately in the table, and all attempts count toward the study ceiling. Vertical values are descriptive point differences from the one shared untrained reference per architecture. No fitted trend, missing-seed error bars, FLOP matching, billed-uptime estimate or causal efficiency claim is implied.'
     manifest={};finish(fig,'gain_vs_compute',caption,[OUT/'compute_by_condition.json',OUT/'per_seed_results.json'],manifest)
     write(OUT/'COMPUTE_FIGURE_MANIFEST.json',manifest)
     (OUT/'COMPUTE.md').write_text('# Measured compute and descriptive gain\n\n'+caption+'\n\n[Table](compute_by_condition.csv) · [PDF](figures/gain_vs_compute.pdf) · [SVG](figures/gain_vs_compute.svg) · [PNG](figures/gain_vs_compute.png)\n')

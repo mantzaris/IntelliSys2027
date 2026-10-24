@@ -2,6 +2,8 @@
   "training_curves": {
     "caption": "Completed exposure-verified fits only, by model, condition, round and actual seed. Arithmetic means of 16 successive recorded optimizer-step losses are shown; zero means are plotted at 1e-8. Loss reflects selected supervised tokens and does not measure test generalization or permit direct curriculum-quality comparisons. Missing fits are pending, not zero-loss runs. Exact input and target counts are in the accompanying tables.",
     "inputs": {
+      "artifacts/runs/main-qwen-a1-17-r0-fit/training/loss.jsonl": "7c8c031a6043f186c68e9d69263f3d082c54671ddd3187a24b368fe14defa703",
+      "artifacts/runs/main-qwen-a1-17-r1-fit/training/loss.jsonl": "2a8e08e319da23b53255ba301875b53942e74955a0258210bd80424917d6082a",
       "artifacts/runs/main-qwen-c1-17-r0-fit-format2/training/loss.jsonl": "325cac654a69d2258c74682d9473ec9d7402e424eb78d174c844f1079c56e220",
       "artifacts/runs/main-qwen-c1-17-r1-fit-format2/training/loss.jsonl": "0ce8dd3d838de3af6b16fe82f7f2d84f7a368ff993cab4e132c90d587895d2d5",
       "artifacts/runs/main-qwen-c3-17-r0-fit/training/loss.jsonl": "8bcb03e521034964c35256ab85bed21ae3d631d57dd43ec54c60243b4be75f70",
@@ -10,12 +12,12 @@
       "artifacts/runs/main-qwen-c4-17-r1-fit/training/loss.jsonl": "f032c40eebf2e898dcf591442aecc46c7ddfcf27743c5f39c169aa33777bb876",
       "artifacts/runs/main-qwen-c5-17-r0-fit/training/loss.jsonl": "2017e5a72bd1985c6042439d0656968e7ea7bfae9c9a19c9520ac4b853b0cdf2",
       "artifacts/runs/main-qwen-c5-17-r1-fit/training/loss.jsonl": "e51474c10b822a1a084ca7d9a259950f2266dc573731c789f441442106a70bd4",
-      "reports/overnight_20261024T023622Z/supervision_exposure.json": "ac8a9c12c72ef0bba7ab888ced7ab027b322aad8e64dcaa30ac520e20b826d5d"
+      "reports/overnight_20261024T023622Z/supervision_exposure.json": "7f4661976e104e1be4a5c876b29b7f3b20c9fbf05368c62dba177cd71a325245"
     },
     "outputs": {
-      "pdf": "0d95c821241845f77affe915df42d8401c9c0616485b541d2479aa118c9400fb",
-      "png": "8c8ccb2181848c6e97708ea9e6b089d94be67346b000f8a227c20ef7ba2925ef",
-      "svg": "7924e27ebaa96663c6aa72985b5786746c6bf7cf603592ab5d6cd3c57e9f20f6"
+      "pdf": "5d34fc1101160149e91bad1d1d7b2e143b5f4371f7d7f397a7d1f93d8d241556",
+      "png": "30a2c941f6e6c954b014244429537b65f1273101ddd50d55a160a774d70ca3a8",
+      "svg": "ee11c9ada23af5f5553afc132412c1d11232a92c2d38825462ff72617d0f371a"
     }
   }
 }

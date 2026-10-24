@@ -48,9 +48,9 @@
       "status": "completed"
     }
   },
-  "incomplete_core_stages": 219,
+  "incomplete_core_stages": 214,
   "launch_policy": "Existing coordinator only after all 241 core stages; shared lock and cumulative ledger; two-hour aggregate cap inside 96 hours, 30-minute contingency and 90-second margin.",
-  "next_required_core_stage": "main-qwen-a1-17-r0-collect",
+  "next_required_core_stage": "main-qwen-c1-29-r0-collect",
   "no_model_calls_performed_by_this_audit": true,
   "prepared_input_manifests": {
     "artifacts/review_001/inputs/common-user-only.json": {
@@ -70,5 +70,5 @@
   "supplement_files_verified": 21,
   "supplement_freeze_sha256": "67647b93947969740702e7054af8162635a03c97a64dee10a7895d9ce375ae81",
   "timing_allocation_exists": false,
-  "utc": "2026-10-24T04:24:47.690044+00:00"
+  "utc": "2026-10-24T06:20:17.108070+00:00"
 }

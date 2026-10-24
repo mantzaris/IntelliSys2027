@@ -5,6 +5,7 @@ Each row joins completed, eligible artifacts for one model/condition/training se
 | Model | Condition | Seed | Fits | Input tokens | Target tokens | R1 recovery windows / families contributing loss | R1 top-five recovery-token share | Shared memory changes / opportunities | Paired success |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | phi | base | 17 | 0/0 | 0 | 0 | n/a | — | 0/0 | 11.25% |
+| qwen | A1 | 17 | 2/2 | 2,097,152 | 80,051 | 11 / 6 | 47.4% | 4982/7200 | 70.42% |
 | qwen | C1 | 17 | 2/2 | 2,097,152 | 97,683 | 14 / 9 | 37.4% | 0/0 | 77.50% |
 | qwen | C3 | 17 | 2/2 | 2,097,152 | 83,466 | 33 / 18 | 17.3% | 4967/7200 | 73.75% |
 | qwen | C4 | 17 | 2/2 | 2,097,152 | 78,417 | 14 / 8 | 39.0% | 6747/7200 | 74.58% |

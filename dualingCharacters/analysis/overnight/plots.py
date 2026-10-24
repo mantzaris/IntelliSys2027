@@ -13,6 +13,7 @@ from .common import ROOT,OUT,read,write
 
 COLORS={17:'#1768A5',29:'#C65B25',43:'#3D8C62'}
 CONDITIONS=['base','C1','C3','C4','C5','C6','A1','A2','A3','C2']
+plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False,'svg.hashsalt':'overnight-001','pdf.fonttype':42})
 
 
 def finish(fig,name,caption,inputs,manifest):
@@ -27,7 +28,6 @@ def finish(fig,name,caption,inputs,manifest):
 
 
 def main():
-    plt.rcParams.update({'font.size':10,'axes.spines.top':False,'axes.spines.right':False,'svg.hashsalt':'overnight-001','pdf.fonttype':42})
     table=OUT/'per_seed_results.json';rows=read(table);contrasts=read(OUT/'paired_transitions.json');strata=read(OUT/'strata.json');pools=read(OUT/'supervision_pools.json');manifest={}
     fig,axes=plt.subplots(1,2,figsize=(11,4.2),sharey=True)
     for ax,model in zip(axes,('qwen','phi')):

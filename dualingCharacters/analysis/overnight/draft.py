@@ -39,6 +39,9 @@ def main():
                 else:lines.append(f'For {model} seed {seed}, the C5 point estimate exceeds C3 and is not below C1. Replicated inference and mechanism-specific controls remain necessary.')
                 lines.append(f'The C5--C3 paired transitions are {primary["both_succeed"]} both successful, {primary["only_first"]} C5-only, {primary["only_second"]} C3-only and {primary["neither"]} neither, among 240 families.')
     lines.append('Complete planned-seed inference is '+('available in the separate frozen analysis tables.' if read(OUT/'complete_seed_contrasts.json') else 'pending. No interim significance result changes the schedule or checkpoint rule.'))
+    for r in key:
+        if r['contrast']=='C5-A1':
+            lines.append(f'For {r["model"]} seed {r["seed"]}, narrative C5 minus motive-only A1 is {100*r["difference"]:+.2f} percentage points, with an exploratory family interval [{100*r["ci95_low"]:+.2f}, {100*r["ci95_high"]:+.2f}]. This single-seed observation cannot establish a general narrative advantage or equivalence.')
     (OUT/'draft_results.tex').write_text('\n'.join(lines)+'\n')
     diag=['Failure counts separate mutually exclusive categories and overlapping flags. They do not sum overlapping dependency, source and update errors as distinct failed conversations.']
     for r in rows:

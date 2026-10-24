@@ -1,10 +1,15 @@
 {
-  "code_sha256": "b48863cc74032b2855694b1bd6915fa1d3d11eed30cf40772de24ea4a5b37bc2",
+  "code_sha256": "97eb53a8d6eb5b96e10fedf218fad4b4285f586ccf6252705a53b7c30cf8584f",
   "exclusions_sha256": "46bc642b0da8d85cd28e33833b0c95401ff37c6c9e1445e159b7cb439c535b3f",
   "qualification": "Completed eligible pipeline compute is separate from excluded/other attempts, which remain charged to the whole-study ledger. No FLOP or billed-cost equivalence is asserted.",
   "status_hashes": {
     "artifacts/runs/base-phi-eval/status.json": "606f56d03cf2f89fedec1027b31307894a1601bfc4b419b30958e1b50bb44639",
     "artifacts/runs/base-qwen-eval/status.json": "c3ed1cb49ece646166f0b05d6c93cdbce7fa0b6d59860b648e82e5ed24d0fdad",
+    "artifacts/runs/main-qwen-a1-17-eval/status.json": "b841f68c433117ea968323e3d2bbf8a88d3d33d865cf602b3c08c24b08e33ae4",
+    "artifacts/runs/main-qwen-a1-17-r0-collect/status.json": "2b51eccdd2f569addbf7a86da8a2293ed3c21fcb363f10fce340301137c9de58",
+    "artifacts/runs/main-qwen-a1-17-r0-fit/status.json": "528a337f43961e44aaa73fd981c67001e71b43232aa615943568fd8aa2698514",
+    "artifacts/runs/main-qwen-a1-17-r1-collect/status.json": "4c9b56733f0d46c351a261f57062fed475700f1a0111c3fc83130f03da913685",
+    "artifacts/runs/main-qwen-a1-17-r1-fit/status.json": "afc380e367d9e00229aaf9de47bf809fcf191b6abbf9686f217d795adff5778d",
     "artifacts/runs/main-qwen-c1-17-eval-format2/status.json": "883cbdb542926a48e29ae1ce0fef2391f7290b550c8a48023036bab888789c37",
     "artifacts/runs/main-qwen-c1-17-eval/status.json": "b7560de07c50a84d35e06b7de1b743c642ab8e41dadf9e58da5e46482767ccd6",
     "artifacts/runs/main-qwen-c1-17-r0-collect/status.json": "67356c67fa094b026a4982943a6613acd8c91d2d42129683d1b0f58c7cc11562",

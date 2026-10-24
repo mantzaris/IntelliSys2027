@@ -15,9 +15,11 @@ successes are base 67/240, C1 186/240, C3 177/240, C4 179/240 and C5 168/240.
 C5−C3 is −3.75 percentage points (exploratory family interval −8.33 to +0.83);
 C5−C1 is −7.50 points (−11.25 to −4.17). These intervals do not estimate
 training-seed uncertainty. The first C5 comparison is negative relative to both
-trained controls; the full planned inference remains pending. The original queue
-advanced to A1 seed17 collection. Eight collections and eight fits have exact
-incremental audits; all 22 completed stages have verified remote/local evidence. Both
+trained controls; the full planned inference remains pending. A1 seed17 is now complete at 169/240; C5−A1 is −0.42 points
+(family interval −5.42 to +4.58), without evidence of equivalence or a narrative
+advantage. The original queue advanced to C1 seed29 collection. Ten collections
+and ten fits have exact incremental audits; 27 completed stages have verified
+remote/local evidence. Both
 scientific freezes remain unchanged. The overnight session will leave healthy
 original work running under its existing resource controls at handoff.
 
