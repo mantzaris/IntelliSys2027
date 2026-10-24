@@ -3,10 +3,11 @@
 Started: 2026-10-23. Author-directed research; no submission or publication authorized.
 Repository scope: this directory only; branch `main`; commits local, user pushes.
 
-## Intent 002 eight-hour continuation — active
+## Intent 002 bounded continuation — completed
 
-One overall window: **2026-10-24 13:06:05–21:06:05 UTC**, with the last 30 minutes
-reserved for verification. New work is under `supplements/long_horizon_intent_002/`.
+Authorized window: **2026-10-24 13:06:05–21:06:05 UTC**, with the final portion
+reserved for verification. Actual start/end and elapsed time are in the final
+`supplements/long_horizon_intent_002/reports/SESSION_REPORT.md`. New work is under `supplements/long_horizon_intent_002/`.
 This direction follows the negative first C5 comparison and the C1 seed reversal;
 it is exploratory. The original core and review controllers retain ownership.
 Core C5 seed 29 completed at 180/240 paired successes and A1 seed 29 at 181/240.
@@ -21,11 +22,12 @@ CPU audits use each historical turn's own oracle. A fresh 16-family natural-lang
 benchmark has paired 16/64/128-turn scripts, private source-grounded intent ledgers,
 and a common public-only interface. Scientific/engineering inference stays disabled
 until all core/review, binding, budget and this session's deadline gates pass.
-Unexecuted intent work will remain disabled after the deadline, requiring a later
-continuation. The older optional unseen-profile dispatcher now respects this priority
+Unexecuted intent work is explicitly disabled, with no new background waiter;
+a subsequent authorized continuation is required. The older optional unseen-profile dispatcher now respects this priority
 through an unfrozen guard; the 58 core and 21 review scientific files are unchanged.
 
-Live session report: `supplements/long_horizon_intent_002/reports/LATEST_STATE.json`.
+Final handoff: `supplements/long_horizon_intent_002/reports/SESSION_REPORT.md`.
+Its saved live snapshot is `supplements/long_horizon_intent_002/reports/LATEST_STATE.json`.
 Protocol, chronology and operational integration are in that supplement directory.
 The prior overnight handoff below is preserved as a historical completed session.
 

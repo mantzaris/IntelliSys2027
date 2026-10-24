@@ -1,24 +1,26 @@
 {
-  "session_id": "intent002_20261024T130605Z",
-  "started_utc": "2026-10-24T13:06:05+00:00",
-  "deadline_utc": "2026-10-24T21:06:05+00:00",
-  "useful_work_deadline_utc": "2026-10-24T20:36:05+00:00",
-  "local_timezone": "America/New_York",
-  "starting_commit": "be7c06e",
-  "core_controller_pid": 787315,
-  "review_coordinator_pid": 1291869,
-  "gpu_ceiling_hours": 96,
-  "review_aggregate_ceiling_hours": 2,
-  "intent_aggregate_ceiling_hours": 2,
   "contingency_hours": 0.5,
+  "core_controller_pid": 787315,
+  "deadline_utc": "2026-10-24T21:06:05+00:00",
+  "ended_utc": "2026-10-24T20:59:18.763611+00:00",
+  "extension_status": "disabled_after_session",
+  "gpu_ceiling_hours": 96,
+  "intent_aggregate_ceiling_hours": 2,
+  "local_timezone": "America/New_York",
   "new_gpu_controllers": 0,
+  "no_post_deadline_extension_launch": true,
+  "review_aggregate_ceiling_hours": 2,
+  "review_coordinator_pid": 1291869,
+  "session_id": "intent002_20261024T130605Z",
+  "session_status": "completed",
   "start_resource_reconstruction": {
-    "cumulative_reserved_seconds_at_session_start": 77303.19314390002,
-    "prior_stage_reservation_seconds": 77046.19314390002,
-    "active_run_id_at_start": "main-qwen-c5-29-r1-fit",
     "active_reserved_seconds_at_session_start": 257.0,
-    "precision": "Approximately one second for recorded run start; all historical reservations retained."
+    "active_run_id_at_start": "main-qwen-c5-29-r1-fit",
+    "cumulative_reserved_seconds_at_session_start": 77303.19314390002,
+    "precision": "Approximately one second for recorded run start; all historical reservations retained.",
+    "prior_stage_reservation_seconds": 77046.19314390002
   },
-  "extension_status": "disabled_pending_core_review_and_session_gates",
-  "no_post_deadline_extension_launch": true
+  "started_utc": "2026-10-24T13:06:05+00:00",
+  "starting_commit": "be7c06e",
+  "useful_work_deadline_utc": "2026-10-24T20:36:05+00:00"
 }

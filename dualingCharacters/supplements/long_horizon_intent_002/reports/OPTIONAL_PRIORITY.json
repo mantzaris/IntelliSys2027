@@ -1,8 +1,8 @@
 {
   "created_utc": "2026-10-24T13:10:22.745567+00:00",
-  "dispatcher_source_sha256": "85abec96732756cfb9b06c93034d207833da83845c3e42c04227876120f9c9a6",
   "intent_002_enabled": false,
   "intent_002_resolved": false,
+  "intent_session_closed_utc": "2026-10-24T20:59:18.763611+00:00",
   "priority": [
     "required_core",
     "review_001",

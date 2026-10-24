@@ -2,6 +2,7 @@
   "active_core_job": "main-qwen-c4-43-r0-collect",
   "all_scientific_hashes_verified": true,
   "commits": [
+    "f0b699a2f6f4757c84f1dfcf9371b8aa0a7d4933 Integrate third C3 seed and matched three-seed exploratory comparison",
     "914755faf4b7611957d8bed2f5325767b9b1428c Verify C3 final fit, resource projection and all frozen study tests",
     "4ae99a4133c23ad8d27d55eda1c1067600ef97ea Audit C3 seed 43 first round and record six-hour resource checkpoint",
     "bbd6633e91fcd9f693638bfdb9cf897680eaaf6b Validate third C1 seed and preserve clarification and trajectory qualifications",
@@ -13,7 +14,7 @@
     "c0d354d23a3ad1a7c43ba06da78509201394a7cb Start bounded intent-robustness follow-up with separate benchmark and CPU audits"
   ],
   "completed_without_verified_mirror": [],
-  "container_elapsed_seconds": 113994,
+  "container_elapsed_seconds": 114948,
   "core_complete": [
     "base-qwen-eval",
     "base-phi-eval",
@@ -80,11 +81,11 @@
   ],
   "core_controller_pid": 787315,
   "core_may_continue_under_original_controls": true,
-  "current_commit": "914755faf4b7611957d8bed2f5325767b9b1428c",
+  "current_commit": "f0b699a2f6f4757c84f1dfcf9371b8aa0a7d4933",
   "deadline_utc": "2026-10-24T21:06:05+00:00",
-  "early_stop_reason": null,
-  "elapsed_seconds_at_report": 27568.782538,
-  "ended_utc": null,
+  "early_stop_reason": "Scoped preparation, completed-result integration and verification are finished. No new extension stage is admissible before the deadline; the healthy pre-existing core campaign continues.",
+  "elapsed_seconds_at_report": 28393.763611,
+  "ended_utc": "2026-10-24T20:59:18.763611+00:00",
   "excluded_historical_runs": {
     "main-qwen-c1-17-eval": "Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.",
     "main-qwen-c1-17-r0-fit": "Serialization interface mismatch: saved supervision trained clarify/evidence/plan/state but XGrammar inference requires state/plan/evidence/clarify. Excluded from intended-method efficacy; original artifacts and all resource use retained. Amendment 002; exclusion decided by CPU grammar audit before completed trained-test metrics were inspected.",
@@ -103,9 +104,9 @@
   },
   "failed_current_queue_stages": [],
   "forecast": {
-    "conservative_remaining_core_hours": 61.03088515285268,
+    "conservative_remaining_core_hours": 60.7660071714638,
     "conservative_total_reserved_hours": 89.9502256712474,
-    "expected_remaining_core_hours": 53.99131902285733,
+    "expected_remaining_core_hours": 53.72644104146845,
     "expected_total_reserved_hours": 82.91065954125204,
     "forecast_over_ceiling": false,
     "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes."
@@ -118,10 +119,10 @@
   "human_status": "pending_fresh_outputs",
   "infrastructure_retries_this_session": 0,
   "input_report_hashes": {
-    "LATEST_STATE.json": "3fc0ddcdda2be68feb702d9632f0096636aafd7771d47b769707f232a818f9d2",
+    "LATEST_STATE.json": "58d0b778df05fa110402482376eba5892d7742180cedcc625c3e6f9fab0ed533",
     "MIRROR_CHECKS.json": "c624a538cb243943e05086d0a7a04defbe00b1641904c3d0b69c83a397606089",
-    "PROVENANCE.json": "1088375bdf0f5a5bf617de6d27995c1fac379c5ab2d58d783c7d543c0e643033",
-    "STORAGE_PROJECTION.json": "3fd0a8dbbd839fd94013b6030d425060901dc5bb00000f1b6a95513cb92fb6da",
+    "PROVENANCE.json": "5308ad00402b9e2b468ae235b0db10b6c7a2bfb049c05a4c6f0cc1b5261db1b9",
+    "STORAGE_PROJECTION.json": "6e4057213c6c5588736fe6c7c6443f377deae0b4e07c571aaf4b415f90cafe30",
     "clarification_audit.json": "bb5ca6864f9c80c34db32ac0560d33524f2d33d8b74bf7cf4a9c0490ac052f26",
     "clarification_exposure.json": "19acb70419c7b2f8c18ea48b549876ef9cc234c34dad8e6da31c166298775aee",
     "complete_seed_contrasts.json": "2c76421c2c59feb4cb1956279ed9ba988c3ac7a2faae378f82da75139a136c9e",
@@ -157,7 +158,7 @@
   "new_gpu_extension_waiter_installed": false,
   "new_qualitative_scores": "pending_outputs_and_human_ratings",
   "next_scheduled_core_job": "main-qwen-c4-43-r0-fit",
-  "operational_code_sha256": "9fa1792bb9b4708a84c7d394badd200e1e197b8b35be8e83762672c184e88d6e",
+  "operational_code_sha256": "bc9434001f3f476410270db09a0532bb0aa88e21e84cf054da7e42062fc56de1",
   "pending_core_stages": [
     "main-qwen-c4-43-r0-fit",
     "main-qwen-c4-43-r1-collect",
@@ -340,20 +341,25 @@
   ],
   "pod_elapsed_qualification": "Container uptime is the available operational proxy; actual pod provisioning and billing duration were not independently established.",
   "pod_elapsed_seconds": null,
-  "reconciled_reserved_hours_at_snapshot": 28.919340518394705,
-  "remaining_after_contingency_hours": 66.5806594816053,
-  "remaining_overall_hours": 67.0806594816053,
-  "remote_gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 9516 MiB, 0 %",
+  "reconciled_reserved_hours_at_snapshot": 29.184218499783597,
+  "remaining_after_contingency_hours": 66.3157815002164,
+  "remaining_overall_hours": 66.8157815002164,
+  "remote_gpu": "NVIDIA RTX 6000 Ada Generation, 49140 MiB, 40136 MiB, 100 %",
   "remote_gpu_processes": "659996, VLLM::EngineCore",
-  "report_generated_utc": "2026-10-24T20:45:33.782538+00:00",
-  "reported_local": "2026-10-24T16:45:33.782538-04:00",
+  "remote_worker_pid": 659526,
+  "report_generated_utc": "2026-10-24T20:59:18.763611+00:00",
+  "reported_local": "2026-10-24T16:59:18.763611-04:00",
   "reserved_hours_before_session": 21.473109206638895,
-  "reserved_hours_during_session_to_snapshot": 7.44623131175581,
-  "resource_snapshot_utc": "2026-10-24T20:43:24.812065+00:00",
+  "reserved_hours_during_session_to_snapshot": 7.711109293144702,
+  "resource_snapshot_utc": "2026-10-24T20:59:18.377862+00:00",
   "review_coordinator_pid": 1291869,
   "review_reserved_hours": 0.0,
-  "session_status": "in_progress_preview",
+  "session_status": "closed",
   "started_local": "2026-10-24T09:06:05-04:00",
   "started_utc": "2026-10-24T13:06:05+00:00",
-  "starting_commit": "be7c06e"
+  "starting_commit": "be7c06e",
+  "verified_local_processes": {
+    "core_controller_pid": "787315  787313  1-00:24:29 python",
+    "review_coordinator_pid": "1291869 1291862    19:01:46 python"
+  }
 }

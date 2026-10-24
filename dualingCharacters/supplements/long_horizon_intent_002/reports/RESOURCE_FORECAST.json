@@ -1,14 +1,14 @@
 {
-  "conservative_remaining_core_hours": 61.03088515285268,
+  "conservative_remaining_core_hours": 60.7660071714638,
   "conservative_total_reserved_hours": 89.9502256712474,
-  "expected_remaining_core_hours": 53.99131902285733,
+  "expected_remaining_core_hours": 53.72644104146845,
   "expected_total_reserved_hours": 82.91065954125204,
   "forecast_over_ceiling": false,
   "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes.",
   "pending": [
     {
-      "conservative_remaining_seconds": 1358.9809186614825,
-      "expected_remaining_seconds": 1037.6301740632289,
+      "conservative_remaining_seconds": 405.4201856614825,
+      "expected_remaining_seconds": 84.06944106322885,
       "matched_timing_stages": 12,
       "run_id": "main-qwen-c4-43-r0-collect"
     },

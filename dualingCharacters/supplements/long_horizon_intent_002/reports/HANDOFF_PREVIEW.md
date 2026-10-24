@@ -1,3 +1,5 @@
+Historical preview, superseded by [the final session report](SESSION_REPORT.md).
+
 # Intent 002 handoff preview — session still active
 
 Start: 2026-10-24T13:06:05+00:00 (2026-10-24T09:06:05-04:00). Preview: 2026-10-24T20:45:33.782538+00:00; work continues until the recorded deadline.

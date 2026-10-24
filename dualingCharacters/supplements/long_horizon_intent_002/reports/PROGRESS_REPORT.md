@@ -1,4 +1,4 @@
-# Intent 002 progress — 2026-10-24T20:44:09.742626+00:00
+# Intent 002 progress — 2026-10-24T20:55:37.606081+00:00
 
 This is an exploratory follow-up specified after the initial negative C5 comparison and C1 seed reversal. It preserves the original confirmatory study and review_001 freezes. Newly inspected test analyses are not original preregistration.
 
@@ -6,7 +6,7 @@ Session: 2026-10-24T13:06:05+00:00 to 2026-10-24T21:06:05+00:00; useful-work cut
 
 ## Existing core: completed and running
 
-Latest monitor 2026-10-24T20:43:24.812065+00:00: 62/241 stages complete; active `main-qwen-c4-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
+Latest monitor 2026-10-24T20:54:25.352455+00:00: 62/241 stages complete; active `main-qwen-c4-43-r0-collect`. The existing controller retains ownership. Results below contain only completed, eligible, fully validated paired evaluations.
 
 | Qwen seed | Condition | 64-turn paired success |
 |---|---|---|
@@ -153,7 +153,7 @@ Human status: pending_fresh_outputs. Two independent rating forms remain blank u
 
 ## Resources and next action
 
-Latest reconciled project reservation: 28.9193/96hours. Core forecast: expected 82.91, conservative 89.95 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
+Latest reconciled project reservation: 29.1028/96hours. Core forecast: expected 82.91, conservative 89.95 total reserved hours. Review and intent each have separate cumulative2-hour subcaps within96; at least0.5hours contingency is retained. These forecasts are not guarantees. Pod elapsed time and sampled utilization are recorded separately in `LATEST_STATE.json`; actual dollar rate remains unknown.
 
 Required core → review_001 → intent_002 → older unseen-profile work. This session does not expand the96-hour ceiling. New intent work requires the completed core and review gates, a fixed-final-checkpoint binding, timing-only complete-tier allocation, free shared locks, remaining allowance, and this session’s deadline. If gates stay closed, leave intent disabled for a subsequent authorized continuation.
 

@@ -1,10 +1,14 @@
 # Long-horizon intent robustness: exploratory follow-up 002
 
 This continuation is separate from the original core experiment and review_001.
-The single session runs **2026-10-24 13:06:05–21:06:05 UTC** (09:06:05–17:06:05
+The authorized session window was **2026-10-24 13:06:05–21:06:05 UTC** (09:06:05–17:06:05
 America/New_York), with the last30 minutes reserved for verification/handoff.
 It does not authorize a new worker after that deadline. Core/review work may
 continue under its existing authorization, ownership, freezes, and96-hour ceiling.
+
+The session has closed; actual timestamps, measured results, active core ownership
+and unfinished requirements are in [SESSION_REPORT.md](reports/SESSION_REPORT.md).
+The intent extension is disabled and no extension waiter remains.
 
 Read [PROTOCOL.md](PROTOCOL.md), [DATASET_CARD.md](DATASET_CARD.md),
 [RUBRIC.md](RUBRIC.md), [progress](reports/PROGRESS_REPORT.md), and
@@ -127,3 +131,13 @@ traces, dataset expansions, adapters and CPU caches remain under ignored `artifa
 original GPU outputs continue to mirror locally. Nothing is pushed, published or
 submitted. See `reports/PROVENANCE.json` and the per-analysis manifests for exact
 source hashes, selected runs, parameters, and deterministic reproduction steps.
+
+Operational reporting commands (read-only preview and storage projection):
+
+```bash
+PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.reports.operations.storage
+PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.reports.operations.handoff
+```
+
+The recorded closing report used `handoff --close-session`, which disables only the
+new intent extension and leaves the healthy original core/review owners intact.

@@ -2,23 +2,24 @@
   "files": {
     "CHRONOLOGY.md": "9b74ca3a7707a2579591f3a2aa7459e47ae42286b9a501ff2ee9f6f9c32adc42",
     "DATASET_CARD.md": "95bd67ffa39701fa897c69623c978a57659d7c746021539a4b5c4d3a80de191f",
-    "MANUSCRIPT_SECTION.md": "80ba54d216db3e021300a2dafa1f1771fc3816ced9f139d90f7cf3f772c2784f",
+    "MANUSCRIPT_SECTION.md": "95629418f7efe2a0936497921408307cb0e928e0ad2a471192f52436de214720",
     "OPERATIONAL_INTEGRATION.md": "9de22be60ffe530b45d02f43ef3aaa00248ae820e4361aab90b5418f1616fbb5",
     "PROTOCOL.md": "4b653024005efc3084374e5c9137932d1a917ccc6a1578563342cbd999aeba70",
-    "README.md": "dc79df9404dfc3039244b4de01ea72d1d712e7bcdf1dc22a04d7fc0f602ea8ba",
+    "README.md": "73233254a7c512aa53ebff73dd8923b5d91b65870c9c586ab688db8f7a7170a6",
     "RUBRIC.md": "195c40f93ab64c16103964bed83b4620e8262400f1c547c26f8f336132b0c749",
     "reports/CLAIM_TO_EVIDENCE.md": "b647f61ef846c479812ea938b636415bfb9c84f4e5e04f290e0264f4ec655949",
     "reports/COMPUTE.md": "5520913bf8f52626dbd4687394e848c4e8a1f5b18b32f02ed1b802828b098db3",
-    "reports/CURRICULUM_ASSOCIATIONS.md": "7765edf84c37d304a9fbbfc9a39f2ba883e3093359e48cf5c479bcc05759f3f3",
+    "reports/CURRICULUM_ASSOCIATIONS.md": "8a40d1e2e0c89d2aa9e490b25b69663e5156b0aeb954751811c99537e4a17908",
     "reports/FIGURES.md": "e69912035779ce0fa3d4494acbae6bba0f4a30c0bbb008525bd8fea0cb9f120f",
-    "reports/HANDOFF_PREVIEW.md": "f4ac5c755ec8d8e3e3daa1e3144768720e2ca86b3919827a098dbebda5f0b972",
-    "reports/ILLUSTRATIVE_APPENDIX.md": "52d0efe00a3d1df8c34c5bfb8d6e7630ebc056182327c6066a7a9498b677f1fc",
+    "reports/HANDOFF_PREVIEW.md": "05958f51540cdcd3a95cefc86ad0321f0f7b38a73268b051cf87a7e0d734cb63",
+    "reports/ILLUSTRATIVE_APPENDIX.md": "3f9a86dc224fb555ec8b9cc5e3179998993ea6e5acbe6beade675de22247fd96",
     "reports/INTENT_FIGURES.md": "6c1a98d38588d01fe8f82e71293f9fe9f267c4633ddcaada76a4ef38d84feb8e",
-    "reports/PROGRESS_REPORT.md": "cfe168962d49a0adf5776751d2f48dd97077abccd263f916fc7e0d8968e6718a",
+    "reports/PROGRESS_REPORT.md": "61b9e7740272621dae2438bba9371b0cd77a83bede25a0829909351b44440165",
+    "reports/SESSION_REPORT.md": "4ff5cd0aa2df51f9ee38d2d3b2f09065f6b9dfe10eef158e6868e63bc389eb78",
     "reports/TRAINING_CURVES.md": "151e96a5d8b816459b7df860fe7cdea6489bda1f54c95f41ae8c49fd0f61752e",
-    "reports/WORK_LOG.md": "2a0355b671de9f2e8b044036de37192d9bf1cae244300eb2dfae32ca0028a5df"
+    "reports/WORK_LOG.md": "85266d8c00a344621fad971848daa605a7c14090716b8f85f19efe8a84c2554d"
   },
   "missing": [],
-  "qualification": "Existing Markdown files only; external URLs are not reverified by this local path check.",
-  "utc": "2026-10-24T20:26:41.940153+00:00"
+  "qualification": "Local links only; external references retain their prior verification dates.",
+  "utc": "2026-10-24T20:59:46.483423+00:00"
 }

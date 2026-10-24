@@ -1,11 +1,11 @@
 {
   "admitted": false,
   "available_seconds": 0,
-  "checked_utc": "2026-10-24T20:44:09.635275+00:00",
+  "checked_utc": "2026-10-24T20:55:37.493510+00:00",
   "contingency_seconds": 1800,
   "core_complete": false,
   "exit_margin_seconds": 90,
-  "hard_deadline_seconds_remaining": 1316.618448972702,
+  "hard_deadline_seconds_remaining": 628.7561271190643,
   "intent_seconds_used": 0,
   "launches_performed": 0,
   "missing_core_runs": [
@@ -189,7 +189,7 @@
     "judge-phi-001",
     "judge-qwen-001"
   ],
-  "project_seconds_used": 104128.36332629388,
+  "project_seconds_used": 104835.90672766231,
   "reasons": [
     "required_core_incomplete",
     "review001_not_resolved",

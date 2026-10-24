@@ -1,7 +1,7 @@
 {
   "completed_fits": 24,
   "existing_local_stage_gate": "Core controller stops before a new stage if local free space is below 3 GiB; no new remote gate is asserted.",
-  "generated_utc": "2026-10-24T20:03:16.311137+00:00",
+  "generated_utc": "2026-10-24T20:59:18.682629+00:00",
   "inputs": [
     {
       "files": [
@@ -1613,15 +1613,15 @@
     }
   ],
   "largest_completed_fit_bytes": 331119897,
-  "local_after_projected_fits_bytes": 10816117584,
-  "local_free_bytes": 26709872640,
-  "monitor_sha256": "90639ec6bae884a52d972fd9f687a11a3b4c4c4e81f21278dd7f9485f3d4b19a",
-  "monitor_utc": "2026-10-24T20:03:10.490653+00:00",
+  "local_after_projected_fits_bytes": 11128081232,
+  "local_free_bytes": 27021836288,
+  "monitor_sha256": "58d0b778df05fa110402482376eba5892d7742180cedcc625c3e6f9fab0ed533",
+  "monitor_utc": "2026-10-24T20:59:18.377862+00:00",
   "qualification": "Maximum observed completed fit size times remaining unchanged fit count; excludes future traces, caches, temporary writes and filesystem overhead. An operational extrapolation, not guaranteed capacity or a cleanup authorization. Shared inodes counted once within each fit. No artifact was deleted.",
   "remaining_fit_size_projection_bytes": 15893755056,
   "remaining_fits": 48,
-  "remote_after_projected_fits_bytes": 5984082768,
-  "remote_free_bytes": 21877837824,
+  "remote_after_projected_fits_bytes": 5971692368,
+  "remote_free_bytes": 21865447424,
   "reproduction_command": "PYTHONPATH=src .venv/bin/python -m supplements.long_horizon_intent_002.reports.operations.storage",
   "source_sha256": "26832013026eb2334b27a9bfe1c828d8b9c08e9a53cc6886020d30d2e152a08d"
 }
