@@ -1,0 +1,29 @@
+{
+  "comparison_summaries_computed": false,
+  "engineering_validation": "20 focused unit tests and one real C3 episode, without comparative aggregation",
+  "evidence_cutoff_utc": "2026-10-25T02:43:09.210881+00:00",
+  "files": {
+    "DATA_AUDIT.json": "efa8b6a4e547fe54af97a7c27ed26df295d501b46b799e5198bea044877a133e",
+    "DEFINITIONS.md": "49c8e9b2daba94381d2b6ba7b87be7e974b68b4c6ead17c92f88b8e3992b2a9a",
+    "EVIDENCE_SNAPSHOT.json": "a9cc88e5e304e4ad913f3cbacc94f9a8588d9b40de9afb3c59e5534a1dbafbe4",
+    "PROTOCOL.md": "c55d610dd2a13f857c3ac29dc98033eba8e56d72a4ceaed2e0a977c011bf7d40",
+    "SECONDARY_SOURCES.json": "6f08d113c131951a96925dbce66f2436213570d97749015cfc972cbfb8ab9b4e",
+    "__init__.py": "aa92ba00a4b9cee8c4e95b004e5f947e2e1ff23d026efe344750dc8360003b3e",
+    "analysis.py": "468080e440da732db09940f254c7dd4683888048c51b830c3fd9fda63ba28acc",
+    "common.py": "0e23b66e2ed131edf1cb3ee7cba2b59536eb62f890d0cb6910ef92694cb1e8f6",
+    "freeze.py": "50f22d589da07fd6db5e917dd1be58ec7db50ff6776f89512995d38f1f69ef9e",
+    "inventory.py": "eb8860510dc24a48365ebe2578ceb91ca6bc3804daa2c47d0021ed120b8ee1f7",
+    "peers.py": "d78ef56ec76703a06ee5e6b8e6e9c918d72175daed0e4c85f93383ec66ac9a75",
+    "records.py": "de4ca5f465ff0d94a079dfaf7d6bae2fac746b0cccb0fd5bdbb0bae4823e2027",
+    "secondary.py": "6237e64dc24ced6011d9b8ea9b84169b3b2945d5280cbe3f6d576891022f65d1",
+    "semantic_review.py": "f649f76607c9536480cfa666b9ee61e3374afa9a054d5386cdcdcb1e57de9ecd",
+    "sequences.py": "28fc48108a8753af9cbe7a90c7a26b4cdb61bb714153373843b3bda9d87a8dba",
+    "statistics.py": "cae1b51e6cbafcbb1bbd3f82c0a376c0262da20e3bea8fd29175ff06833730e8",
+    "test_behavior.py": "1455eefe8472d658f47532a04b77fbde91581605635f3907260e6f3532a1e19f"
+  },
+  "frozen_utc": "2026-10-25T02:58:44.303781+00:00",
+  "known_observations": "Prior pilot counts, negative/mixed task comparisons and inconclusive breadth recorded in PROTOCOL.md; no newly completed behavioral aggregates inspected.",
+  "previous_scientific_files": 127,
+  "prior_scientific_manifest_sha256": "5959543a1d739f1da35a2d6dbbe837846adcad1e71645a854d629c94011a8ddb",
+  "version": 1
+}

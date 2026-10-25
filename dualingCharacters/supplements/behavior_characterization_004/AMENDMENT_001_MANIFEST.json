@@ -1,0 +1,11 @@
+{
+  "files": {
+    "AMENDMENT_001.md": "ae9993efefdb8518673cf15c03a2a350425972cfa23365404110fdc403fb2029",
+    "semantic_review_v2.py": "fd55f801ca4b2ca623fd918713f303547c07786589a04c1f8942cae6f4c29639",
+    "test_compatibility.py": "46e4beddde0a406e7b402869ae7653c019bf9eec9aa4fd5733015dfd7e4e652b"
+  },
+  "frozen_utc": "2026-10-25T02:59:56.913824+00:00",
+  "original_manifest_sha256": "cb7af4cc25ca973542688e3da669a40162e068e59428060b30bac4869aaa6057",
+  "scientific_metrics_or_selection_changed": false,
+  "version": 1
+}

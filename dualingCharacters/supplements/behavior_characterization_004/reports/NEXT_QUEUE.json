@@ -1,0 +1,9 @@
+{
+  "current": "main-phi-c1-17-r0-collect",
+  "next_original_jobs": [
+    "main-phi-c1-17-r0-fit",
+    "main-phi-c1-17-r1-collect",
+    "main-phi-c1-17-r1-fit"
+  ],
+  "queue_changed": false
+}

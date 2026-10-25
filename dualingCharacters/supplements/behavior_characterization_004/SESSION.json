@@ -1,0 +1,16 @@
+{
+  "core_controller_pid": 787315,
+  "deadline_local": "2026-10-25T03:36:18-04:00",
+  "deadline_utc": "2026-10-25T07:36:18+00:00",
+  "model_judge_calls_authorized": 0,
+  "new_gpu_calls_authorized": 0,
+  "report_utc": "2026-10-25T03:25:23.626732+00:00",
+  "review_coordinator_pid": 1291869,
+  "start_local": "2026-10-24T22:36:18-04:00",
+  "start_utc": "2026-10-25T02:36:18+00:00",
+  "starting_commit": "f36e20bdebd8e786e071144d7e986317dcc8e1f9",
+  "starting_worktree": "clean before supplement creation",
+  "status": "completed_cpu_work_commit_pending",
+  "timezone": "America/New_York",
+  "useful_work_cutoff_utc": "2026-10-25T06:51:18+00:00"
+}

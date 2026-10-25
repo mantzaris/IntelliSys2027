@@ -1,0 +1,9 @@
+# Detailed regenerable aggregates stay available locally, outside Git history.
+reports/event_responsiveness.csv
+reports/evidence_relations.csv
+reports/following_associations.csv
+reports/goal_pairs.csv
+reports/lexical_candidates.csv
+reports/peer_responses.csv
+# Frequent monitor snapshots are not scientific evidence; retain only handoff inventory.
+reports/monitor_*.json

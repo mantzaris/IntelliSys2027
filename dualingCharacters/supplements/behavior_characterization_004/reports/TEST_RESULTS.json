@@ -1,0 +1,8 @@
+{
+  "command": "PYTHONPATH=src:. .venv/bin/python -m pytest -q tests supplements/review_001/test_review.py supplements/long_horizon_intent_002/test_intent.py supplements/exploration_003/test_exploration.py supplements/behavior_characterization_004/test_behavior.py supplements/behavior_characterization_004/test_compatibility.py",
+  "initial_collection_error": "An initial direct pytest executable invocation used PYTHONPATH=src without the project root; four import collection errors. Re-run through python -m pytest with src:. passed. No source change was required.",
+  "log_path": "artifacts/behavior_characterization_004/regression_tests_retry.log",
+  "log_sha256": "d6cf062a0022075b66ec064078051acd7651edb11036dbfd9fbe2b4f0956400d",
+  "passed": 95,
+  "result": "95 passed in 4.94s"
+}

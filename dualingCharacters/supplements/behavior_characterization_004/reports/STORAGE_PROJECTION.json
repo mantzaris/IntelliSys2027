@@ -1,0 +1,233 @@
+{
+  "completed": [
+    {
+      "bytes": 331119506,
+      "logical_bytes": 397246274,
+      "run_id": "main-qwen-c1-17-r0-fit-format2",
+      "status_sha256": "8143fef5529a8f9f55cd1bc69f8ae8b31da236ef4f6248b4f6d88eadeaea50a8"
+    },
+    {
+      "bytes": 331119891,
+      "logical_bytes": 397246659,
+      "run_id": "main-qwen-c1-17-r1-fit-format2",
+      "status_sha256": "50523e9b6ab2475636e1646f1da5e7f8d82e046d160f0c3cccbe374c58f8c51f"
+    },
+    {
+      "bytes": 331119500,
+      "logical_bytes": 397246268,
+      "run_id": "main-qwen-c3-17-r0-fit",
+      "status_sha256": "50b441e31fc76f6b65f31e9749dd24de7af2bfb6a931ea4472d39e2c0de243ff"
+    },
+    {
+      "bytes": 331119645,
+      "logical_bytes": 397246413,
+      "run_id": "main-qwen-c3-17-r1-fit",
+      "status_sha256": "3b94c2c00148e72999197fab389f1ea04d4630b3d09a438ff10f5338bac53e9d"
+    },
+    {
+      "bytes": 331119450,
+      "logical_bytes": 397246218,
+      "run_id": "main-qwen-c4-17-r0-fit",
+      "status_sha256": "0fdc88a591e5149b7990f31579b8736cf3e956e034c5fbff5cedcc7373eb1764"
+    },
+    {
+      "bytes": 331119851,
+      "logical_bytes": 397246619,
+      "run_id": "main-qwen-c4-17-r1-fit",
+      "status_sha256": "d7210786b40664f29ee38730c72f1a38f5b0a846215583931325f89553f588ac"
+    },
+    {
+      "bytes": 331119451,
+      "logical_bytes": 397246219,
+      "run_id": "main-qwen-c5-17-r0-fit",
+      "status_sha256": "69ac8641b25ee91c6ca0a51e6220a787cb1b4092814908df42335bbf72878753"
+    },
+    {
+      "bytes": 331119677,
+      "logical_bytes": 397246445,
+      "run_id": "main-qwen-c5-17-r1-fit",
+      "status_sha256": "2053d134a764534c8d96cf1b94e528ec155dd53e0b21ac2fc8960bacf6458e5e"
+    },
+    {
+      "bytes": 331119451,
+      "logical_bytes": 397246219,
+      "run_id": "main-qwen-a1-17-r0-fit",
+      "status_sha256": "528a337f43961e44aaa73fd981c67001e71b43232aa615943568fd8aa2698514"
+    },
+    {
+      "bytes": 331119705,
+      "logical_bytes": 397246473,
+      "run_id": "main-qwen-a1-17-r1-fit",
+      "status_sha256": "afc380e367d9e00229aaf9de47bf809fcf191b6abbf9686f217d795adff5778d"
+    },
+    {
+      "bytes": 331119453,
+      "logical_bytes": 397246221,
+      "run_id": "main-qwen-c1-29-r0-fit",
+      "status_sha256": "17e581e14364609283ab1440225e6fac351802cc65c1030bbc1487554f66f808"
+    },
+    {
+      "bytes": 331119726,
+      "logical_bytes": 397246494,
+      "run_id": "main-qwen-c1-29-r1-fit",
+      "status_sha256": "626a5d53c0f04456880b9bbd55a4d4402a31187dcaf1d89b813c8239b9dda381"
+    },
+    {
+      "bytes": 331119473,
+      "logical_bytes": 397246241,
+      "run_id": "main-qwen-c3-29-r0-fit",
+      "status_sha256": "8a04fbc759e7cbc2d6bf1b5ef0f48757e20fbf3349dc9fb578b1adea0fd7c7b6"
+    },
+    {
+      "bytes": 331119726,
+      "logical_bytes": 397246494,
+      "run_id": "main-qwen-c3-29-r1-fit",
+      "status_sha256": "78208082e132ae31fece72e9ba4389d76fc3e59d871a9f2652aecafa863c6d7e"
+    },
+    {
+      "bytes": 331119477,
+      "logical_bytes": 397246245,
+      "run_id": "main-qwen-c4-29-r0-fit",
+      "status_sha256": "aca3927a7a788ac5f62353329d54a9ec83a0816b07d56b53a743e551eb099b8b"
+    },
+    {
+      "bytes": 331119751,
+      "logical_bytes": 397246519,
+      "run_id": "main-qwen-c4-29-r1-fit",
+      "status_sha256": "7c84f649313398d87d6ed3b027746163f4e6c295c5cd7df67471ff240cee4eaa"
+    },
+    {
+      "bytes": 331119510,
+      "logical_bytes": 397246278,
+      "run_id": "main-qwen-c5-29-r0-fit",
+      "status_sha256": "60f1f80dc43aae6f92924886cbda050abe76661fde8dcda0ec1d1765df525c6b"
+    },
+    {
+      "bytes": 331119888,
+      "logical_bytes": 397246656,
+      "run_id": "main-qwen-c5-29-r1-fit",
+      "status_sha256": "25fd1978eab28f51ada643f7f06b5fba015dae154943824b7d138f53f5de420f"
+    },
+    {
+      "bytes": 331119386,
+      "logical_bytes": 397246154,
+      "run_id": "main-qwen-a1-29-r0-fit",
+      "status_sha256": "0a46e538e7e1334076fee4ab3baf5030551b618dc45cf647a301ea8903d75450"
+    },
+    {
+      "bytes": 331119767,
+      "logical_bytes": 397246535,
+      "run_id": "main-qwen-a1-29-r1-fit",
+      "status_sha256": "05b3606e9d9645e4f2939df6d55f9bd4a63c9803b1b8e4439081b2212f645c98"
+    },
+    {
+      "bytes": 331119499,
+      "logical_bytes": 397246267,
+      "run_id": "main-qwen-c1-43-r0-fit",
+      "status_sha256": "d28202221d847b61d4fbb3829c8b7829988fe3a1c3c1934c0b358efd73858649"
+    },
+    {
+      "bytes": 331119897,
+      "logical_bytes": 397246665,
+      "run_id": "main-qwen-c1-43-r1-fit",
+      "status_sha256": "654c5193f8f377bde91dd0f60847a2af768249dd569b90d88683c3d28c862943"
+    },
+    {
+      "bytes": 331119462,
+      "logical_bytes": 397246230,
+      "run_id": "main-qwen-c3-43-r0-fit",
+      "status_sha256": "7f978fb8ae5c595dfb283a406dba76ae1400262e0835f726695558fd6786ef50"
+    },
+    {
+      "bytes": 331119883,
+      "logical_bytes": 397246651,
+      "run_id": "main-qwen-c3-43-r1-fit",
+      "status_sha256": "eb94ab371fccb856b9d5d163b7e696f9a0c0bf1d0795c23df0c35d940e6c12a7"
+    },
+    {
+      "bytes": 331119433,
+      "logical_bytes": 397246201,
+      "run_id": "main-qwen-c4-43-r0-fit",
+      "status_sha256": "62c9fbf1bd07a0f2c796316ffcf11c58053832ab6136aee2901c566ae8712c5a"
+    },
+    {
+      "bytes": 331119759,
+      "logical_bytes": 397246527,
+      "run_id": "main-qwen-c4-43-r1-fit",
+      "status_sha256": "13eaecbdc3f4cac3cee0e739cb7a3cd6b8127787ef7a971a5817865871cc278c"
+    },
+    {
+      "bytes": 331119441,
+      "logical_bytes": 397246209,
+      "run_id": "main-qwen-c5-43-r0-fit",
+      "status_sha256": "8a4ae9b8e175a82d5b0de3e48eb1d5ff6d6a41bab81e0c99d142289efb1bd0db"
+    },
+    {
+      "bytes": 331119812,
+      "logical_bytes": 397246580,
+      "run_id": "main-qwen-c5-43-r1-fit",
+      "status_sha256": "e129faa9076f7449ea13867c1ed25f209d00992b0e47c41d4926db79d3a5e146"
+    },
+    {
+      "bytes": 331119442,
+      "logical_bytes": 397246210,
+      "run_id": "main-qwen-a1-43-r0-fit",
+      "status_sha256": "e77927150b262c892ea32394dcb9d6b6a246c4828bc3f7cc2e86ab5158e4ac90"
+    },
+    {
+      "bytes": 331119874,
+      "logical_bytes": 397246642,
+      "run_id": "main-qwen-a1-43-r1-fit",
+      "status_sha256": "a067af9c7a7cb2ab8c0d4ad358b5219f71fadd0726a2b22aef98c21988c13191"
+    }
+  ],
+  "median_completed_fit_bytes": 331119577.5,
+  "pending_fit_ids": [
+    "main-phi-c1-17-r0-fit",
+    "main-phi-c1-17-r1-fit",
+    "main-phi-c3-17-r0-fit",
+    "main-phi-c3-17-r1-fit",
+    "main-phi-c5-17-r0-fit",
+    "main-phi-c5-17-r1-fit",
+    "main-phi-c1-29-r0-fit",
+    "main-phi-c1-29-r1-fit",
+    "main-phi-c3-29-r0-fit",
+    "main-phi-c3-29-r1-fit",
+    "main-phi-c5-29-r0-fit",
+    "main-phi-c5-29-r1-fit",
+    "main-phi-c1-43-r0-fit",
+    "main-phi-c1-43-r1-fit",
+    "main-phi-c3-43-r0-fit",
+    "main-phi-c3-43-r1-fit",
+    "main-phi-c5-43-r0-fit",
+    "main-phi-c5-43-r1-fit",
+    "main-qwen-a2-17-r0-fit",
+    "main-qwen-a2-17-r1-fit",
+    "main-qwen-a3-17-r0-fit",
+    "main-qwen-a3-17-r1-fit",
+    "main-qwen-c2-17-r0-fit",
+    "main-qwen-c2-17-r1-fit",
+    "main-qwen-c6-17-r0-fit",
+    "main-qwen-c6-17-r1-fit",
+    "main-qwen-a2-29-r0-fit",
+    "main-qwen-a2-29-r1-fit",
+    "main-qwen-a3-29-r0-fit",
+    "main-qwen-a3-29-r1-fit",
+    "main-qwen-c2-29-r0-fit",
+    "main-qwen-c2-29-r1-fit",
+    "main-qwen-c6-29-r0-fit",
+    "main-qwen-c6-29-r1-fit",
+    "main-qwen-a2-43-r0-fit",
+    "main-qwen-a2-43-r1-fit",
+    "main-qwen-a3-43-r0-fit",
+    "main-qwen-a3-43-r1-fit",
+    "main-qwen-c2-43-r0-fit",
+    "main-qwen-c2-43-r1-fit",
+    "main-qwen-c6-43-r0-fit",
+    "main-qwen-c6-43-r1-fit"
+  ],
+  "qualification": "Unique inode file bytes per completed fit, avoiding final/latest adapter hard-link double counting. Projection excludes future traces, temporary writes, model caches and failures; logical sizes also retained. Not a guarantee or authorization to delete artifacts.",
+  "recorded_utc": "2026-10-25T03:20:52.600645+00:00",
+  "remaining_fit_projection_bytes": 13907022255.0,
+  "remaining_fits": 42
+}

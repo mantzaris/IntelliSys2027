@@ -1,0 +1,22 @@
+{
+  "files": {
+    "CAPTIONS.md": "683eb594efc6a01a8a706d5c02ad10db0e057dd562e4a38f181f8050169707db",
+    "action_channels.pdf": "393e9472a9b4773f71c416222ca05c0b81d1c2f893da109aed5c5647324e6ddc",
+    "action_channels.png": "b0c7068cf4823740ea931c21e0bacb26074c9b23f935b38c53adc4c0bc6be8ba",
+    "action_channels.svg": "d8e35dc9b87e6c1af951234474db407133363b620d013eaaada4f11fe2dac5ad",
+    "cross_seed_contrasts.pdf": "6dc49fd47e740d2254319037dba541040f2e5a9f28921d41f31b242adbfa6761",
+    "cross_seed_contrasts.png": "1c291338a700121d5da22ea17be5e5e9d8faacf59d9e76a2c134434f364560c4",
+    "cross_seed_contrasts.svg": "dd9f6a80573084f86b8593de89e50d52ed0281c20535c019f2aec8536608e78b",
+    "evidence_and_peer_response.pdf": "8c7aff54c4d461883ff8a332c41936b8117be8a509b782eaf8351cbc6cb1dddf",
+    "evidence_and_peer_response.png": "0afd170b396307e0ed64022f9bb335c59008e73f74f6e34fe4d3734669f43c41",
+    "evidence_and_peer_response.svg": "1daefec9a2639856063a1c9f807663da70dc377d6bf926f4db4ac526767b9b0d",
+    "goal_persistence.pdf": "9e6ff90a373fc290f90896268d2901a599ce3a34ed1764cdaf49774c4ddbb84b",
+    "goal_persistence.png": "265109ff14a6354d92545f5c34f9ea51e1eff9e6266910648599228648fa7f87",
+    "goal_persistence.svg": "6f228805555be8915e7c9db3d34e4067476f522903a5cfcc9ba6fe094772d7cb"
+  },
+  "inputs": {
+    "matched_contrasts.json": "e07cc5c428ed679083f7b472f05f529f8846653c0aa574bb987f5c22471416dd",
+    "metric_summary.csv": "515f6f267427c595eaf427bd72f8820e83fb5444fbc3ce2e68b3cbaca5bc54e3"
+  },
+  "script_sha256": "f072a6bc074f4fac0e13c9ca2c0c07314e1956555344ce4e4cbe6c0a569a338e"
+}

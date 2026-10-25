@@ -1,0 +1,14 @@
+{
+  "files": {
+    "supplements/long_horizon_intent_002/reports/clarification_audit.csv": "c69b364af304929c189b4718293d4e3d12fd4bf4767208149f209d2be768e567",
+    "supplements/long_horizon_intent_002/reports/clarification_exposure.csv": "0aef7179f3271e85abf430cd841a8aca9a32d844cf91bedd13f3f2d0b10da41f",
+    "supplements/long_horizon_intent_002/reports/clarification_exposure_provenance.json": "f6384ef0780f8a5c5f621039d5875260c3b94300bd4e4143e4f887d850af5f2f",
+    "supplements/long_horizon_intent_002/reports/core_intent_audit_provenance.json": "633c5edb3ff9a8f3244f4733d8f7136d84df659cb10d9af56c97d46d530378d4",
+    "supplements/long_horizon_intent_002/reports/evidence_audit.csv": "38b9ce72bae3f422a3e7707504c34d306f8a234eb41cf06beedc357204f45097",
+    "supplements/long_horizon_intent_002/reports/exposure_provenance.json": "b75a0ea69f45867239bef1001df14d0dd119632be84d5d18288780c57b534564",
+    "supplements/long_horizon_intent_002/reports/per_seed_results.csv": "0b0797a23405031563fbccd0fd1436c1f30764385173855610f0cd17c9027eae",
+    "supplements/long_horizon_intent_002/reports/supervision_exposure.csv": "0f030356c1005acf04aaac718e311516433494e2e26b2b791dd51ff92c91d9ed"
+  },
+  "frozen_utc": "2026-10-25T02:56:03.062430+00:00",
+  "missing_files": []
+}

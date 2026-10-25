@@ -1,0 +1,9 @@
+# Amendment 003: applicability and denominator clarification
+
+Recorded 2026-10-25T03:17:08.091009+00:00. This amendment qualifies interpretation after the descriptive tables were produced; it does not change the primary C3/C5/A1 metrics or population. All original frozen files and original tables are retained.
+
+The random C2 control draws a new assigned slot/value on each opportunity. The generic event-window extractor uses an actor's initial assignment for its alignment labels, which is meaningful for the fixed-profile casts but not C2. C2 owned-goal, alignment-change and insistence estimates must therefore be marked **not applicable**, rather than interpreted as persistence of a fixed motive. Its action channels, validity, state transitions, literal repetition, actual event-value endorsements and costs remain available. No C2 main collection was complete at the cutoff; this qualification concerns its small pilot cell. For C6, an owned-option metric is only the literal assigned option: Traditionalist's original-value objective and Provocateur's departure objective are not identical to that metric.
+
+The definitions table's phrase “valid channel choice” in the available-opportunity row is clarified as **a generated choice of that channel in an API-eligible slot**, including empty claims or other structurally invalid attempts. This is what the frozen code computes; structural validity is a separate field. Unavailable API attempts remain in all-opportunity rates. No invalid main action is removed to improve a condition.
+
+The supplementary applicability table is mandatory when reading original generic summaries. The principal C3/C5/A1 findings, intervals, figures and all raw evidence are unchanged. This is an offline supplement applicability issue, not a core correctness defect; no core hold is needed. Machine timestamps in amendment manifests govern chronology; short narrative clock labels in amendments001/002 are approximate minute labels.

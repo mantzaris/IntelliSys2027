@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "action_flow.csv": "4c18c40249d55f2899a4f5f7eff70ed081fb42573f0acd358bb03116022ce385",
+    "actor_persistence.csv": "4814743adc34b42a6e553665b546ec277f94f452405dc80d44b365282f5dc393",
+    "event_responsiveness.csv": "6750587157aa0aeaec087755843649dbbde55d74877bf819871ab461be21855c",
+    "evidence_relations.csv": "5dbfd16fc01d21afbe343546c2caf1a3b67db51d224f4299c4b7164d3d042bc8",
+    "matched_contrasts.json": "e07cc5c428ed679083f7b472f05f529f8846653c0aa574bb987f5c22471416dd",
+    "metric_summary.csv": "515f6f267427c595eaf427bd72f8820e83fb5444fbc3ce2e68b3cbaca5bc54e3",
+    "peer_responses.csv": "ef5680b10bf42d41cca59723333228a66afdd9961150d4a713181878db464eb5"
+  },
+  "outputs": {
+    "ACTION_CHAIN.csv": "242033e874fa0d18775197f60e17b8ed265806fedda2fe2eea110c768d1676fb",
+    "CHANNELS.csv": "6234903d1cd9304fdd38d43e0a7ab5c353a45d61b807e5de4c542c1e34b4467b",
+    "CONTEXT.csv": "1a6444f366bf60566b03ce347be790adc687da5545b860a6bd14730646992653",
+    "DISPLAY_VALUES.json": "8cb6642befa6cf10ebdc6267fabb4668a81d1271f3f9df23454313fff234665f",
+    "EVIDENCE.csv": "6d3e37e2cb2eff2077847012d9688c94591fbbaed67ded861fe7953c697f74e3",
+    "PEER_RESPONSE.csv": "c1fca6151a637500bb7c7ecfa12f49b70c399f98de3b9dfa9843ad4018b162dd",
+    "PERSISTENCE.csv": "4175a687eb53a68ad9c5e6180467ed36658e62acd0ad5a647e75d34482e1f7f2",
+    "PRIMARY_DESCRIPTIVE_CONTRASTS.csv": "035bcce42892a91baf4333551d614619025f5d392965ce95bc4c4327023c0cb2"
+  },
+  "script_sha256": "f072a6bc074f4fac0e13c9ca2c0c07314e1956555344ce4e4cbe6c0a569a338e"
+}

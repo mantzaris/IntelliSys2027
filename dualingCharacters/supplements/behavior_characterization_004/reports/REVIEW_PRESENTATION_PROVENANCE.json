@@ -1,0 +1,27 @@
+{
+  "ai_readings_sha256": "146e97fe7e3f61bf8823822addc969c92341629701a496bb3db671e9229c67ad",
+  "forms": {
+    "rater_1.csv": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830",
+    "rater_2.csv": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830"
+  },
+  "human_ratings_pending": true,
+  "items_sha256": "74a26e1dc146fcdafd8f7572b24df2a46b4840e4a194a6de940f3c4ea98e537a",
+  "new_html_sha256": "d7d79de0fcc3e56925df2ce3b0934fd4496918571ac3a30464f4d5d8b03805a9",
+  "no_model_judge_calls": true,
+  "prior_v2_files_preserved": {
+    "artifacts/exploration_003/human_review/reviewer_v2/CODEBOOK.md": "615b5b240e1c9fb2b5e97c9d0883b266a70c678cc376b5db9d10633112ca4a62",
+    "artifacts/exploration_003/human_review/reviewer_v2/PACKET.md": "4b9298a8859ee63cfbd3af9c3d73b3d64dfd6db47f5a300a22188713ea961f01",
+    "artifacts/exploration_003/human_review/reviewer_v2/items.json": "667dba8fa3a64a588f2ce831e5d8c3da8d254ab5da43f5093628a316a774b4f4",
+    "artifacts/exploration_003/human_review/reviewer_v2/rater_1.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51",
+    "artifacts/exploration_003/human_review/reviewer_v2/rater_2.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51"
+  },
+  "reviewer_delivery_directory": "artifacts/behavior_characterization_004/human_review/reviewer",
+  "selected_ai_items": [
+    "BC4-3f808e7c5f23",
+    "BC4-85738a22a02b",
+    "BC4-a5af867aee57",
+    "BC4-c17842d25cdf",
+    "BC4-c5f67b9fe73d",
+    "BC4-fc5c6ff12289"
+  ]
+}

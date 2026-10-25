@@ -1,0 +1,18 @@
+{
+  "joined_fits": 24,
+  "missing_fits": [
+    "main-qwen-a1-43-r0-collect__A1",
+    "main-qwen-a1-43-r1-collect__A1",
+    "main-qwen-c4-43-r0-collect__C4",
+    "main-qwen-c4-43-r1-collect__C4",
+    "main-qwen-c5-43-r0-collect__C5",
+    "main-qwen-c5-43-r1-collect__C5"
+  ],
+  "no_new_reconstruction": true,
+  "original_join_preserved": "reports/supervision_join.csv",
+  "output_sha256": "0d409bf8492246577239f8bfface7050696c5576fa07ed1d64697a5c316789c2",
+  "source_report_hashes": {
+    "supplements/long_horizon_intent_002/reports/exposure_provenance.json": "b75a0ea69f45867239bef1001df14d0dd119632be84d5d18288780c57b534564",
+    "supplements/long_horizon_intent_002/reports/supervision_exposure.csv": "0f030356c1005acf04aaac718e311516433494e2e26b2b791dd51ff92c91d9ed"
+  }
+}

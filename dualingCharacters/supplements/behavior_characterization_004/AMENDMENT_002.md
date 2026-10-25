@@ -1,0 +1,5 @@
+# Amendment 002: corrected C1 format2 exposure linkage
+
+Recorded 2026-10-25T03:07Z after the first comparative summaries. The original secondary join inferred fit names by removing a terminal `-collect`. The eligible legacy C1 seed17 round-one collection ends in `-collect-format2`, so that rule incorrectly marked an existing verified exposure audit missing. The raw exposure calculations and every behavioral metric were unaffected.
+
+The explicitly versioned `exposure_join_v2.py` instead matches each collection's exact supervision-file path to the already verified exposure provenance, checks the supervision hash and condition/seed, and requires a unique fit. It writes a separate v2 table and provenance. The original source and original join table remain unchanged. No new exposure reconstruction, evidence population, training or evaluation is introduced; six genuinely unaudited newer fits remain missing. This corrects a supplement metadata join, not a core-study defect, so no core hold is needed.

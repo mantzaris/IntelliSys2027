@@ -1,0 +1,19 @@
+{
+  "all_opportunities_reconciled": true,
+  "all_point_estimates_recomputed": true,
+  "amendment_files_verified": 7,
+  "cells": 39,
+  "costs_reconciled": true,
+  "human_annotation_rows": {
+    "1": 0,
+    "2": 0
+  },
+  "new_gpu_calls": 0,
+  "new_model_judge_calls": 0,
+  "new_original_scientific_files_unchanged": 17,
+  "new_review_items": 24,
+  "prior_review_versions_preserved": true,
+  "prior_scientific_files_unchanged": 127,
+  "verified_existing_exposure_fits": 24,
+  "verified_utc": "2026-10-25T03:25:53.379055+00:00"
+}

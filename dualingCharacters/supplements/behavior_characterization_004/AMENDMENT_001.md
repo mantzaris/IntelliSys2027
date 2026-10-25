@@ -1,0 +1,5 @@
+# Amendment 001: compressed trace packaging compatibility
+
+Recorded 2026-10-25T03:00Z, after scientific freeze and before any new comparative summaries were read. The original semantic packet program stopped on a KeyError for `collection_characters.jsonl`: the locked mirror stores that trace as `.jsonl.gz`. No items or ratings were written before the error. The original frozen program and all prior scientific files remain byte-identical.
+
+`semantic_review_v2.py` changes only action-file resolution to require exactly one plain or gzip action trace from the locked raw-hash map, then uses the existing verified streaming reader. Selection, context window, anonymization, rubric and rating identities are unchanged. The separate amendment manifest binds this corrected entry point and its compatibility test. No metric, population, outcome, source content or model call changes. Run the v2 entry point for packet creation. This is a packaging defect in the new supplement, not a core-study correctness defect; no core hold is warranted.

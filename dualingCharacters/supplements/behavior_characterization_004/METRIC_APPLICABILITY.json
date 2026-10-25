@@ -1,0 +1,44 @@
+{
+  "qualifications": [
+    {
+      "cohort": "mechanism_pilot",
+      "condition": "C2",
+      "metrics": [
+        "owned_goal_endorsement",
+        "owned_goal_insistence_after_revision"
+      ],
+      "reason": "Fresh random assignment per opportunity, no persistent owned objective.",
+      "status": "not_applicable"
+    },
+    {
+      "cohort": "mechanism_pilot",
+      "condition": "C2",
+      "fields": [
+        "assigned_slot_relevant",
+        "alignment_change",
+        "owned_value_endorsed",
+        "insistence_after_revision"
+      ],
+      "reason": "Initial-assignment window labels do not represent a fixed random-control goal; raw generic output retained but not interpreted.",
+      "status": "not_applicable",
+      "table": "event_responsiveness.csv"
+    },
+    {
+      "condition": "C6",
+      "metric": "owned_goal_endorsement",
+      "reason": "Original-value/departure utility components differ from literal random owned-option adoption.",
+      "roles": [
+        "Traditionalist",
+        "Provocateur"
+      ],
+      "status": "literal_option_only"
+    },
+    {
+      "condition": "all",
+      "metric": "available_channel_*",
+      "reason": "Generated channel in API-eligible slots; structural invalidity is not silently excluded.",
+      "status": "clarified"
+    }
+  ],
+  "recorded_utc": "2026-10-25T03:17:08.091009+00:00"
+}

@@ -1,0 +1,748 @@
+{
+  "conditions": {
+    "A1": {
+      "applied": {
+        "denominator": 10800,
+        "numerator": 10790,
+        "pooled_rate": 0.9990740740740741
+      },
+      "available_channel_edit": {
+        "denominator": 7200,
+        "numerator": 938,
+        "pooled_rate": 0.13027777777777777
+      },
+      "available_channel_malformed": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "available_channel_pass": {
+        "denominator": 10800,
+        "numerator": 18,
+        "pooled_rate": 0.0016666666666666668
+      },
+      "available_channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 180,
+        "pooled_rate": 0.016666666666666666
+      },
+      "available_channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3428,
+        "pooled_rate": 0.3174074074074074
+      },
+      "available_channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 9,
+        "pooled_rate": 0.0008333333333333334
+      },
+      "available_channel_propose": {
+        "denominator": 7200,
+        "numerator": 4829,
+        "pooled_rate": 0.6706944444444445
+      },
+      "available_channel_recollect": {
+        "denominator": 7200,
+        "numerator": 1397,
+        "pooled_rate": 0.19402777777777777
+      },
+      "available_channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "canonical_mismatch": {
+        "denominator": 10800,
+        "numerator": 2943,
+        "pooled_rate": 0.2725
+      },
+      "channel_edit": {
+        "denominator": 10800,
+        "numerator": 938,
+        "pooled_rate": 0.08685185185185185
+      },
+      "channel_malformed": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "channel_pass": {
+        "denominator": 10800,
+        "numerator": 18,
+        "pooled_rate": 0.0016666666666666668
+      },
+      "channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 180,
+        "pooled_rate": 0.016666666666666666
+      },
+      "channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3428,
+        "pooled_rate": 0.3174074074074074
+      },
+      "channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 9,
+        "pooled_rate": 0.0008333333333333334
+      },
+      "channel_propose": {
+        "denominator": 10800,
+        "numerator": 4830,
+        "pooled_rate": 0.44722222222222224
+      },
+      "channel_recollect": {
+        "denominator": 10800,
+        "numerator": 1397,
+        "pooled_rate": 0.12935185185185186
+      },
+      "channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "component_delivery": {
+        "denominator": 3428,
+        "numerator": 3428,
+        "pooled_rate": 1.0
+      },
+      "component_observed_in_later_inbox": {
+        "denominator": 3428,
+        "numerator": 3422,
+        "pooled_rate": 0.9982497082847142
+      },
+      "consecutive_direct_goal_repetition": {
+        "denominator": 5364,
+        "numerator": 5093,
+        "pooled_rate": 0.9494780014914244
+      },
+      "contradictory_value_with_source_visible": {
+        "denominator": 10800,
+        "numerator": 5864,
+        "pooled_rate": 0.542962962962963
+      },
+      "correct_to_incorrect_state": {
+        "denominator": 10800,
+        "numerator": 498,
+        "pooled_rate": 0.04611111111111111
+      },
+      "current_value_inappropriate_citation": {
+        "denominator": 10800,
+        "numerator": 688,
+        "pooled_rate": 0.0637037037037037
+      },
+      "following_goal_adoption": {
+        "denominator": 10800,
+        "numerator": 3877,
+        "pooled_rate": 0.35898148148148146
+      },
+      "notes_changed": {
+        "denominator": 10800,
+        "numerator": 7344,
+        "pooled_rate": 0.68
+      },
+      "owned_goal_endorsement": {
+        "denominator": 7200,
+        "numerator": 6897,
+        "pooled_rate": 0.9579166666666666
+      },
+      "owned_goal_insistence_after_revision": {
+        "denominator": 304,
+        "numerator": 286,
+        "pooled_rate": 0.9407894736842105
+      },
+      "peer_after_goal_match": {
+        "denominator": 2530,
+        "numerator": 21,
+        "pooled_rate": 0.008300395256916997
+      },
+      "peer_before_goal_match": {
+        "denominator": 2530,
+        "numerator": 6,
+        "pooled_rate": 0.0023715415019762848
+      },
+      "reference_assistant_reference": {
+        "denominator": 10800,
+        "numerator": 782,
+        "pooled_rate": 0.0724074074074074
+      },
+      "reference_explicit_contradiction": {
+        "denominator": 10800,
+        "numerator": 4605,
+        "pooled_rate": 0.4263888888888889
+      },
+      "reference_explicit_current_support": {
+        "denominator": 10800,
+        "numerator": 2830,
+        "pooled_rate": 0.262037037037037
+      },
+      "reference_explicit_superseded_support": {
+        "denominator": 10800,
+        "numerator": 357,
+        "pooled_rate": 0.03305555555555555
+      },
+      "reference_no_reference": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "reference_nonbinding_mention": {
+        "denominator": 10800,
+        "numerator": 37,
+        "pooled_rate": 0.003425925925925926
+      },
+      "reference_other_user_reference": {
+        "denominator": 10800,
+        "numerator": 964,
+        "pooled_rate": 0.08925925925925926
+      },
+      "reference_reference_unavailable": {
+        "denominator": 10800,
+        "numerator": 1225,
+        "pooled_rate": 0.11342592592592593
+      },
+      "rejected": {
+        "denominator": 10800,
+        "numerator": 10,
+        "pooled_rate": 0.000925925925925926
+      },
+      "repeat_after_observed_other_plan_value": {
+        "denominator": 3481,
+        "numerator": 3407,
+        "pooled_rate": 0.9787417408790577
+      },
+      "same_goal_channel_change": {
+        "denominator": 5093,
+        "numerator": 1265,
+        "pooled_rate": 0.24838012958963282
+      },
+      "same_goal_exact_claim_repeat": {
+        "denominator": 5093,
+        "numerator": 3883,
+        "pooled_rate": 0.7624190064794817
+      },
+      "same_goal_reference_class_change": {
+        "denominator": 5093,
+        "numerator": 2203,
+        "pooled_rate": 0.4325544865501669
+      },
+      "state_changed": {
+        "denominator": 10800,
+        "numerator": 562,
+        "pooled_rate": 0.052037037037037034
+      },
+      "strict_own_opportunity_goal_repetition": {
+        "denominator": 9000,
+        "numerator": 2560,
+        "pooled_rate": 0.28444444444444444
+      },
+      "structurally_valid": {
+        "denominator": 10800,
+        "numerator": 10790,
+        "pooled_rate": 0.9990740740740741
+      },
+      "visible_typed_next_goal_match": {
+        "denominator": 3422,
+        "numerator": 21,
+        "pooled_rate": 0.0061367621274108705
+      }
+    },
+    "C3": {
+      "applied": {
+        "denominator": 10800,
+        "numerator": 10791,
+        "pooled_rate": 0.9991666666666666
+      },
+      "available_channel_edit": {
+        "denominator": 7200,
+        "numerator": 5408,
+        "pooled_rate": 0.7511111111111111
+      },
+      "available_channel_malformed": {
+        "denominator": 10800,
+        "numerator": 1,
+        "pooled_rate": 9.259259259259259e-05
+      },
+      "available_channel_pass": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "available_channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 218,
+        "pooled_rate": 0.020185185185185184
+      },
+      "available_channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3372,
+        "pooled_rate": 0.31222222222222223
+      },
+      "available_channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 4,
+        "pooled_rate": 0.00037037037037037035
+      },
+      "available_channel_propose": {
+        "denominator": 7200,
+        "numerator": 964,
+        "pooled_rate": 0.1338888888888889
+      },
+      "available_channel_recollect": {
+        "denominator": 7200,
+        "numerator": 828,
+        "pooled_rate": 0.115
+      },
+      "available_channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "canonical_mismatch": {
+        "denominator": 10627,
+        "numerator": 2733,
+        "pooled_rate": 0.257175119977416
+      },
+      "channel_edit": {
+        "denominator": 10800,
+        "numerator": 5408,
+        "pooled_rate": 0.5007407407407407
+      },
+      "channel_malformed": {
+        "denominator": 10800,
+        "numerator": 1,
+        "pooled_rate": 9.259259259259259e-05
+      },
+      "channel_pass": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 218,
+        "pooled_rate": 0.020185185185185184
+      },
+      "channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3372,
+        "pooled_rate": 0.31222222222222223
+      },
+      "channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 4,
+        "pooled_rate": 0.00037037037037037035
+      },
+      "channel_propose": {
+        "denominator": 10800,
+        "numerator": 969,
+        "pooled_rate": 0.08972222222222222
+      },
+      "channel_recollect": {
+        "denominator": 10800,
+        "numerator": 828,
+        "pooled_rate": 0.07666666666666666
+      },
+      "channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "component_delivery": {
+        "denominator": 3372,
+        "numerator": 3372,
+        "pooled_rate": 1.0
+      },
+      "component_observed_in_later_inbox": {
+        "denominator": 3372,
+        "numerator": 3372,
+        "pooled_rate": 1.0
+      },
+      "consecutive_direct_goal_repetition": {
+        "denominator": 5400,
+        "numerator": 3623,
+        "pooled_rate": 0.6709259259259259
+      },
+      "contradictory_value_with_source_visible": {
+        "denominator": 10627,
+        "numerator": 6373,
+        "pooled_rate": 0.5996988802107839
+      },
+      "correct_to_incorrect_state": {
+        "denominator": 10800,
+        "numerator": 3363,
+        "pooled_rate": 0.3113888888888889
+      },
+      "current_value_inappropriate_citation": {
+        "denominator": 10627,
+        "numerator": 537,
+        "pooled_rate": 0.05053166462783476
+      },
+      "following_goal_adoption": {
+        "denominator": 10627,
+        "numerator": 4234,
+        "pooled_rate": 0.3984191211066152
+      },
+      "notes_changed": {
+        "denominator": 10800,
+        "numerator": 7418,
+        "pooled_rate": 0.6868518518518518
+      },
+      "owned_goal_endorsement": {
+        "denominator": 7200,
+        "numerator": 4796,
+        "pooled_rate": 0.6661111111111111
+      },
+      "owned_goal_insistence_after_revision": {
+        "denominator": 304,
+        "numerator": 152,
+        "pooled_rate": 0.5
+      },
+      "peer_after_goal_match": {
+        "denominator": 2500,
+        "numerator": 106,
+        "pooled_rate": 0.0424
+      },
+      "peer_before_goal_match": {
+        "denominator": 2500,
+        "numerator": 177,
+        "pooled_rate": 0.0708
+      },
+      "reference_assistant_reference": {
+        "denominator": 10800,
+        "numerator": 697,
+        "pooled_rate": 0.06453703703703703
+      },
+      "reference_explicit_contradiction": {
+        "denominator": 10800,
+        "numerator": 5259,
+        "pooled_rate": 0.48694444444444446
+      },
+      "reference_explicit_current_support": {
+        "denominator": 10800,
+        "numerator": 2237,
+        "pooled_rate": 0.20712962962962964
+      },
+      "reference_explicit_superseded_support": {
+        "denominator": 10800,
+        "numerator": 254,
+        "pooled_rate": 0.02351851851851852
+      },
+      "reference_no_reference": {
+        "denominator": 10800,
+        "numerator": 1,
+        "pooled_rate": 9.259259259259259e-05
+      },
+      "reference_nonbinding_mention": {
+        "denominator": 10800,
+        "numerator": 123,
+        "pooled_rate": 0.01138888888888889
+      },
+      "reference_other_user_reference": {
+        "denominator": 10800,
+        "numerator": 846,
+        "pooled_rate": 0.07833333333333334
+      },
+      "reference_reference_unavailable": {
+        "denominator": 10800,
+        "numerator": 1220,
+        "pooled_rate": 0.11296296296296296
+      },
+      "rejected": {
+        "denominator": 10800,
+        "numerator": 9,
+        "pooled_rate": 0.0008333333333333334
+      },
+      "repeat_after_observed_other_plan_value": {
+        "denominator": 3353,
+        "numerator": 2546,
+        "pooled_rate": 0.7593200119296153
+      },
+      "same_goal_channel_change": {
+        "denominator": 3623,
+        "numerator": 551,
+        "pooled_rate": 0.15208390836323488
+      },
+      "same_goal_exact_claim_repeat": {
+        "denominator": 3623,
+        "numerator": 2622,
+        "pooled_rate": 0.7237096329009108
+      },
+      "same_goal_reference_class_change": {
+        "denominator": 3623,
+        "numerator": 1338,
+        "pooled_rate": 0.3693072039746067
+      },
+      "state_changed": {
+        "denominator": 10800,
+        "numerator": 3830,
+        "pooled_rate": 0.35462962962962963
+      },
+      "strict_own_opportunity_goal_repetition": {
+        "denominator": 9000,
+        "numerator": 1809,
+        "pooled_rate": 0.201
+      },
+      "structurally_valid": {
+        "denominator": 10800,
+        "numerator": 10790,
+        "pooled_rate": 0.9990740740740741
+      },
+      "visible_typed_next_goal_match": {
+        "denominator": 3202,
+        "numerator": 118,
+        "pooled_rate": 0.03685196752029981
+      }
+    },
+    "C5": {
+      "applied": {
+        "denominator": 10800,
+        "numerator": 10798,
+        "pooled_rate": 0.9998148148148148
+      },
+      "available_channel_edit": {
+        "denominator": 7200,
+        "numerator": 477,
+        "pooled_rate": 0.06625
+      },
+      "available_channel_malformed": {
+        "denominator": 10800,
+        "numerator": 8,
+        "pooled_rate": 0.0007407407407407407
+      },
+      "available_channel_pass": {
+        "denominator": 10800,
+        "numerator": 2,
+        "pooled_rate": 0.00018518518518518518
+      },
+      "available_channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 530,
+        "pooled_rate": 0.049074074074074076
+      },
+      "available_channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3234,
+        "pooled_rate": 0.29944444444444446
+      },
+      "available_channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 1,
+        "pooled_rate": 9.259259259259259e-05
+      },
+      "available_channel_propose": {
+        "denominator": 7200,
+        "numerator": 1930,
+        "pooled_rate": 0.26805555555555555
+      },
+      "available_channel_recollect": {
+        "denominator": 7200,
+        "numerator": 4617,
+        "pooled_rate": 0.64125
+      },
+      "available_channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "canonical_mismatch": {
+        "denominator": 10652,
+        "numerator": 2952,
+        "pooled_rate": 0.27713105520090126
+      },
+      "channel_edit": {
+        "denominator": 10800,
+        "numerator": 477,
+        "pooled_rate": 0.04416666666666667
+      },
+      "channel_malformed": {
+        "denominator": 10800,
+        "numerator": 8,
+        "pooled_rate": 0.0007407407407407407
+      },
+      "channel_pass": {
+        "denominator": 10800,
+        "numerator": 2,
+        "pooled_rate": 0.00018518518518518518
+      },
+      "channel_peer_answerer": {
+        "denominator": 10800,
+        "numerator": 530,
+        "pooled_rate": 0.049074074074074076
+      },
+      "channel_peer_component": {
+        "denominator": 10800,
+        "numerator": 3234,
+        "pooled_rate": 0.29944444444444446
+      },
+      "channel_peer_invalid_recipient": {
+        "denominator": 10800,
+        "numerator": 1,
+        "pooled_rate": 9.259259259259259e-05
+      },
+      "channel_propose": {
+        "denominator": 10800,
+        "numerator": 1930,
+        "pooled_rate": 0.1787037037037037
+      },
+      "channel_recollect": {
+        "denominator": 10800,
+        "numerator": 4618,
+        "pooled_rate": 0.4275925925925926
+      },
+      "channel_unknown": {
+        "denominator": 10800,
+        "numerator": 0,
+        "pooled_rate": 0.0
+      },
+      "component_delivery": {
+        "denominator": 3234,
+        "numerator": 3234,
+        "pooled_rate": 1.0
+      },
+      "component_observed_in_later_inbox": {
+        "denominator": 3234,
+        "numerator": 3183,
+        "pooled_rate": 0.9842300556586271
+      },
+      "consecutive_direct_goal_repetition": {
+        "denominator": 5224,
+        "numerator": 4831,
+        "pooled_rate": 0.9247702909647779
+      },
+      "contradictory_value_with_source_visible": {
+        "denominator": 10652,
+        "numerator": 5731,
+        "pooled_rate": 0.5380210289147578
+      },
+      "correct_to_incorrect_state": {
+        "denominator": 10800,
+        "numerator": 264,
+        "pooled_rate": 0.024444444444444446
+      },
+      "current_value_inappropriate_citation": {
+        "denominator": 10652,
+        "numerator": 668,
+        "pooled_rate": 0.06271122793841533
+      },
+      "following_goal_adoption": {
+        "denominator": 10652,
+        "numerator": 3934,
+        "pooled_rate": 0.36932031543372135
+      },
+      "notes_changed": {
+        "denominator": 10800,
+        "numerator": 7554,
+        "pooled_rate": 0.6994444444444444
+      },
+      "owned_goal_endorsement": {
+        "denominator": 7200,
+        "numerator": 6551,
+        "pooled_rate": 0.9098611111111111
+      },
+      "owned_goal_insistence_after_revision": {
+        "denominator": 304,
+        "numerator": 268,
+        "pooled_rate": 0.881578947368421
+      },
+      "peer_after_goal_match": {
+        "denominator": 2402,
+        "numerator": 35,
+        "pooled_rate": 0.014571190674437969
+      },
+      "peer_before_goal_match": {
+        "denominator": 2402,
+        "numerator": 45,
+        "pooled_rate": 0.018734388009991675
+      },
+      "reference_assistant_reference": {
+        "denominator": 10800,
+        "numerator": 805,
+        "pooled_rate": 0.07453703703703704
+      },
+      "reference_explicit_contradiction": {
+        "denominator": 10800,
+        "numerator": 4540,
+        "pooled_rate": 0.4203703703703704
+      },
+      "reference_explicit_current_support": {
+        "denominator": 10800,
+        "numerator": 2827,
+        "pooled_rate": 0.26175925925925925
+      },
+      "reference_explicit_superseded_support": {
+        "denominator": 10800,
+        "numerator": 372,
+        "pooled_rate": 0.034444444444444444
+      },
+      "reference_no_reference": {
+        "denominator": 10800,
+        "numerator": 8,
+        "pooled_rate": 0.0007407407407407407
+      },
+      "reference_nonbinding_mention": {
+        "denominator": 10800,
+        "numerator": 48,
+        "pooled_rate": 0.0044444444444444444
+      },
+      "reference_other_user_reference": {
+        "denominator": 10800,
+        "numerator": 861,
+        "pooled_rate": 0.07972222222222222
+      },
+      "reference_reference_unavailable": {
+        "denominator": 10800,
+        "numerator": 1229,
+        "pooled_rate": 0.1137962962962963
+      },
+      "rejected": {
+        "denominator": 10800,
+        "numerator": 2,
+        "pooled_rate": 0.00018518518518518518
+      },
+      "repeat_after_observed_other_plan_value": {
+        "denominator": 3300,
+        "numerator": 3209,
+        "pooled_rate": 0.9724242424242424
+      },
+      "same_goal_channel_change": {
+        "denominator": 4831,
+        "numerator": 1164,
+        "pooled_rate": 0.2409439039536328
+      },
+      "same_goal_exact_claim_repeat": {
+        "denominator": 4831,
+        "numerator": 3062,
+        "pooled_rate": 0.633823225005175
+      },
+      "same_goal_reference_class_change": {
+        "denominator": 4831,
+        "numerator": 1927,
+        "pooled_rate": 0.39888221900227694
+      },
+      "state_changed": {
+        "denominator": 10800,
+        "numerator": 286,
+        "pooled_rate": 0.02648148148148148
+      },
+      "strict_own_opportunity_goal_repetition": {
+        "denominator": 9000,
+        "numerator": 2505,
+        "pooled_rate": 0.2783333333333333
+      },
+      "structurally_valid": {
+        "denominator": 10800,
+        "numerator": 10790,
+        "pooled_rate": 0.9990740740740741
+      },
+      "visible_typed_next_goal_match": {
+        "denominator": 3044,
+        "numerator": 39,
+        "pooled_rate": 0.012812089356110381
+      }
+    }
+  },
+  "pointwise_intervals": "Matched family rates; one seed family bootstrap, combined independent family/observed-seed resampling. Not simultaneous; no formal significance claims.",
+  "population": "main round zero; 150 unique families repeated over seeds17/29/43, both worlds",
+  "rare_conditional_stratum": "The across-seed insistence contrast has only two families with nonzero exposure in every seed. Its mechanically generated interval is not interpreted; report per-seed counts and exposure instead."
+}

@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "matched_contrasts.json": "e07cc5c428ed679083f7b472f05f529f8846653c0aa574bb987f5c22471416dd",
+    "metric_summary.csv": "515f6f267427c595eaf427bd72f8820e83fb5444fbc3ce2e68b3cbaca5bc54e3",
+    "secondary_defender_results.csv": "6fe7a7f49aa73380547e397953fe7b0ec4cb1c55f87788e13619a0296303c389"
+  },
+  "outputs": {
+    "BEHAVIORAL_CHARACTERIZATION.md": "72e497db4c7fcdcd4e998a3630fcf13ec37a5d83433a728d876141f4bcc03055",
+    "CLAIM_TO_EVIDENCE.md": "65658e01eff285e4ce0ce7a012d57aad7a82e3919bf50a646ba61271f287a0fb",
+    "MANUSCRIPT_SECTION.md": "6112460e6f699af705979e533077b4e97ef86894c69a4750b3fabd98b638592e"
+  },
+  "qualification": "Primary quantitative prose interpolated from saved tables; interpretations are explicitly author-review drafts.",
+  "script_sha256": "60d669e3b37772f57add14aa7c79d17245ca99a05c80f07024f7a390f3f30459"
+}

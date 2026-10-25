@@ -1,0 +1,55 @@
+{
+  "addendum_items": 24,
+  "ai_readings": "six preselected items permitted, unvalidated and illustrative only",
+  "annotation_rows": {
+    "1": 0,
+    "2": 0
+  },
+  "existing_packet": {
+    "annotated_rows": {
+      "rater_1.csv": 0,
+      "rater_2.csv": 0
+    },
+    "files": {
+      "CODEBOOK.md": "5e82fc75c703c5222301cb9de1a802b18bdcb55c7598536945ee758b8bc7b76c",
+      "PACKET.md": "4b9298a8859ee63cfbd3af9c3d73b3d64dfd6db47f5a300a22188713ea961f01",
+      "items.json": "667dba8fa3a64a588f2ce831e5d8c3da8d254ab5da43f5093628a316a774b4f4",
+      "rater_1.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51",
+      "rater_2.csv": "a060d54e5f0a99bba3d52594cbf4316c296e0b62de0519d26ee5624057884f51"
+    },
+    "items": 56,
+    "limitation": "Only three collective opportunities; lacks full private history and often cannot show a recipient follow-up or an actor run across a revision.",
+    "path": "artifacts/exploration_003/human_review/reviewer",
+    "preserved_without_regeneration": true,
+    "sufficient_for": "Individual claims and short three-opportunity exchanges with visible sources and truth."
+  },
+  "existing_packet_not_counted_as_new_evidence": true,
+  "human_validation": "pending",
+  "maximum_collective_opportunities": 8,
+  "private_mapping": "artifacts/behavior_characterization_004/human_review/private/mapping.json",
+  "private_mapping_sha256": "832c0c4165aba24cba42a5d52f5385cc6196c810fb3d717ea2c4442c9fb059a7",
+  "reviewer_directory": "artifacts/behavior_characterization_004/human_review/reviewer",
+  "reviewer_files": {
+    "PACKET.html": "d7d79de0fcc3e56925df2ce3b0934fd4496918571ac3a30464f4d5d8b03805a9",
+    "RUBRIC.md": "e00bc4f33e38ef4f6d4bcd242354adfe7b6f8b810b86730d50da20bcea6cedad",
+    "items.json": "74a26e1dc146fcdafd8f7572b24df2a46b4840e4a194a6de940f3c4ea98e537a",
+    "rater_1.csv": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830",
+    "rater_2.csv": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830"
+  },
+  "same_episode_overlap_with_existing_pilot_packet": 0,
+  "source_population": "main round-zero only; matched C3/C5, 4 families per seed, 2 worlds of each type per seed",
+  "sources": {
+    "artifacts/runs/main-qwen-c3-17-r0-collect/collection.jsonl.gz": "dc8a3be4bd542e2ff1285dd43281d1468038c6d5f3b96e33ffd4d298c190ff24",
+    "artifacts/runs/main-qwen-c3-17-r0-collect/collection_characters.jsonl.gz": "e736b6cb67744b2976e24d6ba8fae9112e61f45f73a4ce89b4b6afd73d9643c4",
+    "artifacts/runs/main-qwen-c3-29-r0-collect/collection.jsonl.gz": "6094a3ffdcfedb957139d528b9bed911351c3889b84ff228ea911444ef3da9a3",
+    "artifacts/runs/main-qwen-c3-29-r0-collect/collection_characters.jsonl.gz": "ecfcd78137f30f5943c01edce43055e9b7072c1dd20b6913192945cec48af028",
+    "artifacts/runs/main-qwen-c3-43-r0-collect/collection.jsonl.gz": "23c9b7640a98791e4a5018d1a6836d2622be958c0a58e6d767a50913be473cd9",
+    "artifacts/runs/main-qwen-c3-43-r0-collect/collection_characters.jsonl.gz": "7b692163007be289f9ce8b6c820571babe6654d6a284065a0d0068bc28157de8",
+    "artifacts/runs/main-qwen-c5-17-r0-collect/collection.jsonl.gz": "b194868452464a8adad2566eb3dea1272ab97690113829c4b367e36408bb8822",
+    "artifacts/runs/main-qwen-c5-17-r0-collect/collection_characters.jsonl.gz": "de5fa368c8c853a7ec5e819f5319028a9a3b75a7da7e7ec6317252bcc109f208",
+    "artifacts/runs/main-qwen-c5-29-r0-collect/collection.jsonl.gz": "4d5abc946df5bdd07ad8e452c057a7f655ff5c97523a19394040d9d4083c1d8e",
+    "artifacts/runs/main-qwen-c5-29-r0-collect/collection_characters.jsonl.gz": "8af87f2245ce3dfe165549c22e61d9993698a52e38edb002230fe69ebaf42c6e",
+    "artifacts/runs/main-qwen-c5-43-r0-collect/collection.jsonl.gz": "b85d6abb2792daabef3bb4b1f0a544c7eb90090faea0e19bd694404a2c04cde4",
+    "artifacts/runs/main-qwen-c5-43-r0-collect/collection_characters.jsonl.gz": "4f15e7a71f574dff1814b241a85900645212ea7a3626d2af25f07aa7f67d2855"
+  }
+}
