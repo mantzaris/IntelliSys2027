@@ -1,0 +1,28 @@
+{
+  "research": {
+    "phi": "auto008-research-phi-v1",
+    "qwen": "auto008-research-qwen-v1"
+  },
+  "analysis": {
+    "phi": [
+      "auto008-research-phi-v1",
+      "auto008-probes-phi-v1",
+      "auto008-compatibility-judge-phi-v1"
+    ],
+    "qwen": [
+      "auto008-research-qwen-v1",
+      "auto008-research-qwen-continuation1",
+      "auto008-probes-qwen-v1",
+      "auto008-compatibility-judge-qwen-v1"
+    ]
+  },
+  "research_sources": {
+    "phi": [
+      "auto008-research-phi-v1"
+    ],
+    "qwen": [
+      "auto008-research-qwen-v1",
+      "auto008-research-qwen-continuation1"
+    ]
+  }
+}

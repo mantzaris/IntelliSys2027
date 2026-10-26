@@ -1,0 +1,759 @@
+[
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "recommendation",
+    "planned": 80,
+    "binary_or_substantive_support": 76,
+    "class_support": {
+      "no": 29,
+      "uncertain": 4,
+      "yes": 47
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 29
+      },
+      {
+        "expected": "uncertain",
+        "observed": "uncertain",
+        "count": 4
+      },
+      {
+        "expected": "yes",
+        "observed": "None",
+        "count": 3
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 44
+      }
+    ],
+    "invalid_or_missing": 3,
+    "substantive_predictions": 73,
+    "substantive_coverage": 0.9605263157894737,
+    "correct": 44,
+    "unconditional_accuracy": 0.5789473684210527,
+    "conditional_accuracy": 0.6027397260273972,
+    "balanced_accuracy_abstention_as_failure": 0.46808510638297873,
+    "screen_pass": false,
+    "expected_uncertain_correct": 4,
+    "expected_uncertain_n": 4,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "authorization_assertion",
+    "planned": 80,
+    "binary_or_substantive_support": 76,
+    "class_support": {
+      "no": 28,
+      "uncertain": 4,
+      "yes": 48
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "None",
+        "count": 12
+      },
+      {
+        "expected": "no",
+        "observed": "uncertain",
+        "count": 11
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 5
+      },
+      {
+        "expected": "uncertain",
+        "observed": "uncertain",
+        "count": 4
+      },
+      {
+        "expected": "yes",
+        "observed": "None",
+        "count": 7
+      },
+      {
+        "expected": "yes",
+        "observed": "uncertain",
+        "count": 11
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 30
+      }
+    ],
+    "invalid_or_missing": 19,
+    "substantive_predictions": 35,
+    "substantive_coverage": 0.4605263157894737,
+    "correct": 30,
+    "unconditional_accuracy": 0.39473684210526316,
+    "conditional_accuracy": 0.8571428571428571,
+    "balanced_accuracy_abstention_as_failure": 0.3125,
+    "screen_pass": false,
+    "expected_uncertain_correct": 4,
+    "expected_uncertain_n": 4,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "evidence_challenge",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "no": 42,
+      "yes": 38
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "None",
+        "count": 20
+      },
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 21
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 1
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 38
+      }
+    ],
+    "invalid_or_missing": 20,
+    "substantive_predictions": 60,
+    "substantive_coverage": 0.75,
+    "correct": 59,
+    "unconditional_accuracy": 0.7375,
+    "conditional_accuracy": 0.9833333333333333,
+    "balanced_accuracy_abstention_as_failure": 0.75,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "no": 61,
+      "yes": 19
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "None",
+        "count": 21
+      },
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 21
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 19
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 19
+      }
+    ],
+    "invalid_or_missing": 21,
+    "substantive_predictions": 59,
+    "substantive_coverage": 0.7375,
+    "correct": 40,
+    "unconditional_accuracy": 0.5,
+    "conditional_accuracy": 0.6779661016949152,
+    "balanced_accuracy_abstention_as_failure": 0.6721311475409836,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "recipient_acknowledgment",
+    "planned": 80,
+    "binary_or_substantive_support": 72,
+    "class_support": {
+      "no": 40,
+      "not_applicable": 8,
+      "yes": 32
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "None",
+        "count": 12
+      },
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 13
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 15
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "None",
+        "count": 7
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "no",
+        "count": 1
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 32
+      }
+    ],
+    "invalid_or_missing": 19,
+    "substantive_predictions": 60,
+    "substantive_coverage": 0.8333333333333334,
+    "correct": 45,
+    "unconditional_accuracy": 0.625,
+    "conditional_accuracy": 0.75,
+    "balanced_accuracy_abstention_as_failure": 0.6625,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "recipient_response",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "continuation": 32,
+      "missing_followup": 8,
+      "new_position": 32,
+      "other_field": 8
+    },
+    "confusion": [
+      {
+        "expected": "continuation",
+        "observed": "continuation",
+        "count": 32
+      },
+      {
+        "expected": "missing_followup",
+        "observed": "None",
+        "count": 7
+      },
+      {
+        "expected": "missing_followup",
+        "observed": "missing_followup",
+        "count": 1
+      },
+      {
+        "expected": "new_position",
+        "observed": "new_position",
+        "count": 32
+      },
+      {
+        "expected": "other_field",
+        "observed": "None",
+        "count": 4
+      },
+      {
+        "expected": "other_field",
+        "observed": "continuation",
+        "count": 3
+      },
+      {
+        "expected": "other_field",
+        "observed": "new_position",
+        "count": 1
+      }
+    ],
+    "invalid_or_missing": 11,
+    "substantive_predictions": 69,
+    "substantive_coverage": 0.8625,
+    "correct": 65,
+    "unconditional_accuracy": 0.8125,
+    "conditional_accuracy": 0.9420289855072463,
+    "balanced_accuracy_abstention_as_failure": null,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "phi",
+    "split": "holdout",
+    "dimension": "citation_support",
+    "planned": 80,
+    "binary_or_substantive_support": 66,
+    "class_support": {
+      "contradicted": 5,
+      "irrelevant": 19,
+      "missing": 19,
+      "not_applicable": 14,
+      "supported": 23
+    },
+    "confusion": [
+      {
+        "expected": "contradicted",
+        "observed": "None",
+        "count": 4
+      },
+      {
+        "expected": "contradicted",
+        "observed": "supported",
+        "count": 1
+      },
+      {
+        "expected": "irrelevant",
+        "observed": "None",
+        "count": 10
+      },
+      {
+        "expected": "irrelevant",
+        "observed": "supported",
+        "count": 9
+      },
+      {
+        "expected": "missing",
+        "observed": "None",
+        "count": 18
+      },
+      {
+        "expected": "missing",
+        "observed": "supported",
+        "count": 1
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "None",
+        "count": 5
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "irrelevant",
+        "count": 5
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "missing",
+        "count": 1
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "not_applicable",
+        "count": 3
+      },
+      {
+        "expected": "supported",
+        "observed": "None",
+        "count": 20
+      },
+      {
+        "expected": "supported",
+        "observed": "supported",
+        "count": 3
+      }
+    ],
+    "invalid_or_missing": 57,
+    "substantive_predictions": 14,
+    "substantive_coverage": 0.21212121212121213,
+    "correct": 3,
+    "unconditional_accuracy": 0.045454545454545456,
+    "conditional_accuracy": 0.21428571428571427,
+    "balanced_accuracy_abstention_as_failure": null,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "recommendation",
+    "planned": 80,
+    "binary_or_substantive_support": 76,
+    "class_support": {
+      "no": 29,
+      "uncertain": 4,
+      "yes": 47
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "uncertain",
+        "count": 29
+      },
+      {
+        "expected": "uncertain",
+        "observed": "uncertain",
+        "count": 4
+      },
+      {
+        "expected": "yes",
+        "observed": "None",
+        "count": 1
+      },
+      {
+        "expected": "yes",
+        "observed": "no",
+        "count": 2
+      },
+      {
+        "expected": "yes",
+        "observed": "uncertain",
+        "count": 26
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 18
+      }
+    ],
+    "invalid_or_missing": 1,
+    "substantive_predictions": 20,
+    "substantive_coverage": 0.2631578947368421,
+    "correct": 18,
+    "unconditional_accuracy": 0.23684210526315788,
+    "conditional_accuracy": 0.9,
+    "balanced_accuracy_abstention_as_failure": 0.19148936170212766,
+    "screen_pass": false,
+    "expected_uncertain_correct": 4,
+    "expected_uncertain_n": 4,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "authorization_assertion",
+    "planned": 80,
+    "binary_or_substantive_support": 76,
+    "class_support": {
+      "no": 28,
+      "uncertain": 4,
+      "yes": 48
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 28
+      },
+      {
+        "expected": "uncertain",
+        "observed": "no",
+        "count": 4
+      },
+      {
+        "expected": "yes",
+        "observed": "None",
+        "count": 3
+      },
+      {
+        "expected": "yes",
+        "observed": "no",
+        "count": 31
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 14
+      }
+    ],
+    "invalid_or_missing": 3,
+    "substantive_predictions": 73,
+    "substantive_coverage": 0.9605263157894737,
+    "correct": 42,
+    "unconditional_accuracy": 0.5526315789473685,
+    "conditional_accuracy": 0.5753424657534246,
+    "balanced_accuracy_abstention_as_failure": 0.6458333333333334,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 4,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "evidence_challenge",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "no": 42,
+      "yes": 38
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 40
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 2
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 38
+      }
+    ],
+    "invalid_or_missing": 0,
+    "substantive_predictions": 80,
+    "substantive_coverage": 1.0,
+    "correct": 78,
+    "unconditional_accuracy": 0.975,
+    "conditional_accuracy": 0.975,
+    "balanced_accuracy_abstention_as_failure": 0.9761904761904762,
+    "screen_pass": true,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "no": 61,
+      "yes": 19
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 60
+      },
+      {
+        "expected": "no",
+        "observed": "uncertain",
+        "count": 1
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 19
+      }
+    ],
+    "invalid_or_missing": 0,
+    "substantive_predictions": 79,
+    "substantive_coverage": 0.9875,
+    "correct": 79,
+    "unconditional_accuracy": 0.9875,
+    "conditional_accuracy": 1.0,
+    "balanced_accuracy_abstention_as_failure": 0.9918032786885246,
+    "screen_pass": true,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "recipient_acknowledgment",
+    "planned": 80,
+    "binary_or_substantive_support": 72,
+    "class_support": {
+      "no": 40,
+      "not_applicable": 8,
+      "yes": 32
+    },
+    "confusion": [
+      {
+        "expected": "no",
+        "observed": "no",
+        "count": 6
+      },
+      {
+        "expected": "no",
+        "observed": "uncertain",
+        "count": 24
+      },
+      {
+        "expected": "no",
+        "observed": "yes",
+        "count": 10
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "uncertain",
+        "count": 8
+      },
+      {
+        "expected": "yes",
+        "observed": "yes",
+        "count": 32
+      }
+    ],
+    "invalid_or_missing": 0,
+    "substantive_predictions": 48,
+    "substantive_coverage": 0.6666666666666666,
+    "correct": 38,
+    "unconditional_accuracy": 0.5277777777777778,
+    "conditional_accuracy": 0.7916666666666666,
+    "balanced_accuracy_abstention_as_failure": 0.575,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "recipient_response",
+    "planned": 80,
+    "binary_or_substantive_support": 80,
+    "class_support": {
+      "continuation": 32,
+      "missing_followup": 8,
+      "new_position": 32,
+      "other_field": 8
+    },
+    "confusion": [
+      {
+        "expected": "continuation",
+        "observed": "continuation",
+        "count": 32
+      },
+      {
+        "expected": "missing_followup",
+        "observed": "None",
+        "count": 1
+      },
+      {
+        "expected": "missing_followup",
+        "observed": "missing_followup",
+        "count": 7
+      },
+      {
+        "expected": "new_position",
+        "observed": "new_position",
+        "count": 32
+      },
+      {
+        "expected": "other_field",
+        "observed": "continuation",
+        "count": 2
+      },
+      {
+        "expected": "other_field",
+        "observed": "new_position",
+        "count": 4
+      },
+      {
+        "expected": "other_field",
+        "observed": "other_field",
+        "count": 2
+      }
+    ],
+    "invalid_or_missing": 1,
+    "substantive_predictions": 79,
+    "substantive_coverage": 0.9875,
+    "correct": 73,
+    "unconditional_accuracy": 0.9125,
+    "conditional_accuracy": 0.9240506329113924,
+    "balanced_accuracy_abstention_as_failure": null,
+    "screen_pass": true,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  },
+  {
+    "model": "qwen",
+    "split": "holdout",
+    "dimension": "citation_support",
+    "planned": 80,
+    "binary_or_substantive_support": 66,
+    "class_support": {
+      "contradicted": 5,
+      "irrelevant": 19,
+      "missing": 19,
+      "not_applicable": 14,
+      "supported": 23
+    },
+    "confusion": [
+      {
+        "expected": "contradicted",
+        "observed": "None",
+        "count": 5
+      },
+      {
+        "expected": "irrelevant",
+        "observed": "None",
+        "count": 19
+      },
+      {
+        "expected": "missing",
+        "observed": "None",
+        "count": 14
+      },
+      {
+        "expected": "missing",
+        "observed": "irrelevant",
+        "count": 5
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "irrelevant",
+        "count": 3
+      },
+      {
+        "expected": "not_applicable",
+        "observed": "missing",
+        "count": 11
+      },
+      {
+        "expected": "supported",
+        "observed": "None",
+        "count": 21
+      },
+      {
+        "expected": "supported",
+        "observed": "contradicted",
+        "count": 2
+      }
+    ],
+    "invalid_or_missing": 59,
+    "substantive_predictions": 7,
+    "substantive_coverage": 0.10606060606060606,
+    "correct": 0,
+    "unconditional_accuracy": 0.0,
+    "conditional_accuracy": 0.0,
+    "balanced_accuracy_abstention_as_failure": null,
+    "screen_pass": false,
+    "expected_uncertain_correct": 0,
+    "expected_uncertain_n": 0,
+    "qualification": "Synthetic engineering screen only; does not validate natural-dialogue judgments."
+  }
+]

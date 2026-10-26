@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-26T20:06:51.374743+00:00",
+  "reason": "Observed Qwen research timing, including serial format repairs, is slower than development. Increase only unlaunched probe/controlled-semantic wall bounds; retain every frozen input, model, prompt, decoding and sample. No Qwen labels have been inspected for this adjustment.",
+  "observed_research_reserved_seconds": 2175.464307719376,
+  "observed_research_model_calls": 698,
+  "new_bounds_seconds": {
+    "probes_qwen": 1100,
+    "compatibility_judge_qwen": 500
+  },
+  "old_bounds_seconds": {
+    "probes_qwen": 670,
+    "compatibility_judge_qwen": 300
+  },
+  "released_compatibility_reservation_seconds": 6826.234520322178,
+  "cap_seconds": 14400,
+  "compatibility_cap_seconds": 7200,
+  "unchanged_scientific_allocation": true
+}

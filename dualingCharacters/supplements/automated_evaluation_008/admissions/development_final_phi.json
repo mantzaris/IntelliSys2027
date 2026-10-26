@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "task": "judge",
+  "model": "phi",
+  "run_id": "auto008-development-final-phi-v1",
+  "dispatch_id": "auto008-safe-boundary-20261026",
+  "freeze": "supplements/automated_evaluation_008/FINAL_PROMPT_FREEZE.json",
+  "inputs": "supplements/automated_evaluation_008/inputs/development.json",
+  "inputs_sha256": "2f13efabde4d58e0ea7ca00fc3a7dc487a45b060b16a4ae61c224c58594cd501",
+  "probes": [
+    "base"
+  ],
+  "maximum_seconds": 900,
+  "remaining_obligations_seconds": 36936.0,
+  "cutoff_utc": "2026-10-27T05:01:27+00:00",
+  "budget_identity": "automated008",
+  "core_boundary_request": "reports/BOUNDARY_HOLD_REQUEST.json"
+}

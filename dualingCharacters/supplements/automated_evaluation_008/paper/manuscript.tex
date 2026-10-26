@@ -1,0 +1,44 @@
+\documentclass{svproc}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{url,graphicx,booktabs,amsmath,mathptmx,array}
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdfauthor={},pdftitle={Persistent Motives in Conversational Systems: Action, Authority, and Peer Response}}
+\emergencystretch=1.5em
+\begin{document}
+\mainmatter
+\title{Persistent Motives in Conversational Systems: Action, Authority, and Peer Response}
+\titlerunning{Persistent Motives: Action, Authority, and Peer Response}
+\ifdefined\AuthorReview
+\author{Author information pending human author approval}
+\authorrunning{Author-review copy}
+\institute{Identified project copy: IntelliSys2027 / dualingCharacters}
+\else
+\author{Anonymous author(s)}
+\authorrunning{Anonymous}
+\institute{Anonymous author-review draft}
+\fi
+\maketitle
+\begin{abstract}
+\input{abstract.tex}
+\keywords{conversational systems, persistent motives, automated evaluation, evidence attribution, multi-agent interaction}
+\end{abstract}
+\input{sections/introduction.tex}
+\input{sections/related.tex}
+\input{sections/methods.tex}
+\input{sections/results.tex}
+\input{sections/dialogues.tex}
+\input{sections/limitations.tex}
+\label{maintextend}
+\bibliographystyle{splncs03}
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix.tex}
+\ifdefined\AuthorReview
+\section{Author-review provenance}
+This identified project copy accompanies the anonymous draft. The project is IntelliSys2027/dualingCharacters; stage automated\_evaluation\_008. Input commit: 93dcc90. The source freeze, run bindings, raw outputs, exact quotation locators, and resource ledger are supplied in the companion package. Author names, affiliations, final scientific conclusions, disclosure, and submission scope must be approved by the human author. This page is excluded from the anonymous version. Nothing has been submitted or published.
+\fi
+\end{document}

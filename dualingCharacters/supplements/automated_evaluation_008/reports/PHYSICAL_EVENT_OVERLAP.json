@@ -1,0 +1,69 @@
+{
+  "archive_sample_records": 612,
+  "unique_underlying_events": 609,
+  "duplicate_event_records_between_separate_populations": [
+    {
+      "identity": [
+        "train-0001",
+        "authorized",
+        43,
+        "C3",
+        7
+      ],
+      "items": [
+        [
+          "fixed72",
+          "EV6-885ccf3398bd"
+        ],
+        [
+          "broad",
+          "AE8-793a9bfc01590a"
+        ]
+      ]
+    },
+    {
+      "identity": [
+        "train-0001",
+        "authorized",
+        43,
+        "C5",
+        7
+      ],
+      "items": [
+        [
+          "fixed72",
+          "EV6-aa58e9266a72"
+        ],
+        [
+          "broad",
+          "AE8-2a974aa22cba9f"
+        ]
+      ]
+    },
+    {
+      "identity": [
+        "train-0001",
+        "authorized",
+        43,
+        "A1",
+        7
+      ],
+      "items": [
+        [
+          "fixed72",
+          "EV6-e58eb9d717bb"
+        ],
+        [
+          "broad",
+          "AE8-73a875c02c8110"
+        ]
+      ]
+    }
+  ],
+  "shared_families": [
+    "train-0001",
+    "train-0124"
+  ],
+  "not_pooled": true,
+  "qualification": "Three underlying opportunities are sampled in both fixed and broad populations; those populations and their uncertainty analyses remain separate. Non-overlap sensitivity excludes both shared families."
+}

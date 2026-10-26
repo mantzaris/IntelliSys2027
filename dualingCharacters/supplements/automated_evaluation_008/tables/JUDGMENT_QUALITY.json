@@ -1,0 +1,814 @@
+[
+  {
+    "run_id": "auto008-research-phi-v1",
+    "model": "phi",
+    "planned": 692,
+    "format_invalid": 2,
+    "repairs": 2,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 87,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 209
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 205
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 164
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 144
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 20
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 330
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 330
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 213
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 208
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 5
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 228
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 220
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 8
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 414
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 345
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 63
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 171
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 154
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 17
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-probes-phi-v1",
+    "model": "phi",
+    "planned": 108,
+    "format_invalid": 0,
+    "repairs": 0,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 22,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 46
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 46
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 36
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 33
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 3
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 56
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 56
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 44
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 42
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 45
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 45
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 71
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 59
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 11
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 40
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 34
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 6
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-compatibility-judge-phi-v1",
+    "model": "phi",
+    "planned": 32,
+    "format_invalid": 0,
+    "repairs": 0,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 1,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 21
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 20
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 6
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 5
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 15
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 15
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 21
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 19
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 23
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 21
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 19
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 17
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 3
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-research-qwen-v1",
+    "model": "qwen",
+    "planned": 640,
+    "format_invalid": 0,
+    "repairs": 447,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 433,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 7
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 3
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 16
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 9
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 7
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 103
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 103
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 13
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 7
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 6
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 80
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 50
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 30
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 265
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 162
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 56
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 54
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 54
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-research-qwen-continuation1",
+    "model": "qwen",
+    "planned": 52,
+    "format_invalid": 0,
+    "repairs": 44,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 37,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 1
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 3
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 8
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 8
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 2
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 14
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 10
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 24
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 16
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-probes-qwen-v1",
+    "model": "qwen",
+    "planned": 108,
+    "format_invalid": 0,
+    "repairs": 70,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 79,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 0
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 4
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 3
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 9
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 9
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 17
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 10
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 7
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 49
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 34
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 9
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 17
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 17
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "run_id": "auto008-compatibility-judge-qwen-v1",
+    "model": "qwen",
+    "planned": 32,
+    "format_invalid": 0,
+    "repairs": 20,
+    "input_rejected": 0,
+    "substantive_citation_without_quote": 22,
+    "dimensions": [
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "missing",
+        "count": 1
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "span_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "acknowledges_user_conflict",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "missing",
+        "count": 4
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "span_invalid",
+        "count": 3
+      },
+      {
+        "dimension": "authorization_assertion",
+        "issue": "unit_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "missing",
+        "count": 2
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "span_invalid",
+        "count": 2
+      },
+      {
+        "dimension": "citation_support",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "missing",
+        "count": 1
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "span_invalid",
+        "count": 1
+      },
+      {
+        "dimension": "evidence_challenge",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "missing",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "span_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_acknowledgment",
+        "issue": "unit_invalid",
+        "count": 0
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "missing",
+        "count": 10
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "span_invalid",
+        "count": 6
+      },
+      {
+        "dimension": "recipient_response",
+        "issue": "unit_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "missing",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "span_invalid",
+        "count": 4
+      },
+      {
+        "dimension": "recommendation",
+        "issue": "unit_invalid",
+        "count": 0
+      }
+    ]
+  }
+]

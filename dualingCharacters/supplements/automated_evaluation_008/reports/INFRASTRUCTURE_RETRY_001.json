@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-26T18:26:38.912619+00:00",
+  "failed_run": "auto008-profile-phi-v1",
+  "failure": "Missing compatibility_gate dependency before RunLedger/model loading",
+  "original_worker_absent": true,
+  "gpu_empty": true,
+  "new_id": "auto008-profile-phi-v2",
+  "same_failure_retry_number": 1,
+  "failed_reserved_seconds": 0.06429250119253993,
+  "scientific_calls": 0,
+  "action": "Upload exact existing dependency namespace; no scientific configuration change"
+}

@@ -1,0 +1,1 @@
+Unmodified class and bibliography style from the project's archived official IntelliSys conference template. The currently posted link returned HTTP403 during this session. Original headers and bytes are preserved. Source hashes and current-call verification are recorded in reports/CONFERENCE_TEMPLATE.json. These are upstream template files, not newly authored scientific code.

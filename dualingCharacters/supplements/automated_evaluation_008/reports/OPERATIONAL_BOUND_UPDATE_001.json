@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-26T19:16:47.410095+00:00",
+  "reason": "Completed Phi research reservation890.41sec for692units, including2format repairs, reveals larger-context throughput than small synthetic development. Conservatively enlarge only probe hard-time fence260to360seconds before launch. No research labels inspected to make this decision.",
+  "original_admission_sha256": "a21604d8560b28439956a74c6eca5b15bcd9439d60fe83e598503db687de67cd",
+  "new_admission_sha256": "4cea00e1a662d28a0fdb0ed106db49a772e20adc1ce05744a02574c1ca7bc6ad",
+  "scientific_allocation_unchanged": true,
+  "samples_or_model_settings_changed": false,
+  "compatibility_unused_reservation_released_seconds": 6826.234520322178,
+  "actual_stage_used_seconds": 1905.1700399043038,
+  "global_used_seconds": 263777.35683008423,
+  "caps_unchanged": {
+    "stage": 14400,
+    "compatibility": 7200,
+    "project": 345600
+  },
+  "qualification": "Operational timing correction based on measured throughput, not semantic outcomes. Original frozenALLOCATION preserved."
+}

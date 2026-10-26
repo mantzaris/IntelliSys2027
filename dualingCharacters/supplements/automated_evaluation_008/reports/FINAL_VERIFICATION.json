@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-26T21:15:30.393371+00:00",
+  "focused_and_relevant_regression_tests": "67 passed",
+  "clean_export_unit_tests": "19 passed before evidence extraction",
+  "clean_export_artifact_tests": "4 passed after extraction",
+  "numerical_reproduction": "38 tables byte-identical; resources equal excluding report timestamp",
+  "input_reconstruction": "692 research tasks and 36 probe identities match frozen bytes",
+  "completed_judgment_grid": "1664 final tasks with invalid/missing dimensions retained",
+  "dialogue_quotes": "69 exact supporting spans in 12 matched historical episodes; fresh controlled excerpt linked to raw records",
+  "scientific_freezes": "6 stage008 bindings plus all historical cascaded freezes passed",
+  "protected_historical_forms": "22 protected historical files unchanged; no human ratings added",
+  "portable_evidence": "95 archive members verified; 5016684-byte committed archive",
+  "anonymous_paper": "19 pages:14 main text,1 reference page,4 appendix pages;193-word abstract",
+  "identified_project_copy": "20 pages including separate author-review provenance page",
+  "pdf_links": "33 annotations per PDF;14 URI links;0 absolute file links;relocated rebuild text identical",
+  "visual_inspection": "All pages of both copies rendered; all five figure previews inspected; clipped ancillary axis label corrected; changed appendix pages re-inspected",
+  "latex_checks": "No undefined references or overfull boxes in final manuscript log",
+  "whitespace": "Authored scoped files pass with CR-at-EOL; untouched official template whitespace preserved",
+  "no_original_mirror_dependency": "Open-audit hook blocked original artifacts/supplements/src during clean-export analysis",
+  "scientific_validation": "Not implied by software/quote/package checks; Phi0/7 and Qwen3/7 synthetic screens; no natural-dialogue ground truth",
+  "missing_prerequisites": "Current official template endpoint returned403; archived official template used. Full original weights/archives not distributed. Review delivery/horizon/external core work pending at locked cutoff.",
+  "commands": [
+    "pytest -q supplements/automated_evaluation_008/tests tests/test_invariants.py tests/test_protocol.py supplements/results_clarity_007/tests/test_ratings_v2.py",
+    "bundle --extract; documented 18 CPU modules in REPRODUCE.md",
+    "python3 supplements/automated_evaluation_008/pdf_audit.py",
+    "bash supplements/automated_evaluation_008/paper/build.sh",
+    "protection; verify_outputs"
+  ],
+  "hashes": {
+    "evidence/RAW_AND_INPUTS.tar.gz": "d32aca7fdc41a0b6346b7a4dc3bcc2e9bba9651d11d0e49d194bbf187d3732a2",
+    "paper/manuscript.pdf": "28454120e5fc6649e6c1749d09d68a56ab65c5c0a61110db1095419aec1c3949",
+    "paper/author_review.pdf": "7f90245f5f3e65c929dc40aaf6d404fef776270cd6a8f3c8dda1fe46d0c213b8",
+    "reports/FRESH_TABLE_COMPARISON.json": "87dc802c100fb0de6cbda54c194b11315c606da4a9d5221a7a5b78833b91a735",
+    "reports/FRESH_WORKFLOW.json": "1c837e5fa97753d2302411a07f6c737fed0c72249e750ec085d657146a09a051"
+  }
+}

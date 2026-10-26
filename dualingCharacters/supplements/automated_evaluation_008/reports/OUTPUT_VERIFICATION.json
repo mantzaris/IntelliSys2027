@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scientific_freezes": 6,
+  "fixed_events": 72,
+  "fixed_component_events": 64,
+  "fixed_answerer_events": 8,
+  "broad_events": 540,
+  "heldout_controls_per_model": 80,
+  "final_judgment_tasks_including_probes": 1664,
+  "real_base_sample_records": 644,
+  "unique_underlying_real_events": 641,
+  "controlled_conversations": 64,
+  "primary_controlled_reserved_opportunities": 256,
+  "human_annotations": 0,
+  "qualification": "Software, coverage and source-binding checks; not semantic ground-truth validation."
+}

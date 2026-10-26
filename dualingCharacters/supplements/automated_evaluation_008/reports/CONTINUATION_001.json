@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-26T20:30:07.847935+00:00",
+  "failure_run": "auto008-research-qwen-v1",
+  "status_sha256": "82975d615ad949f960bf9e88f68e5b99c99140466f3a2707cc7f200e9df0353d",
+  "raw_sha256": "da2b90333fa5dc22ba0c2b473cb07fa67c4b5fc9092a72f6b44d704cfafd1ce0",
+  "persisted_tasks": 640,
+  "planned_tasks": 692,
+  "unrecorded_tasks": 52,
+  "selection": "Only immutable IDs without any persisted record; no label/validity/outcome filter. Original raw output preserved.",
+  "new_run_id": "auto008-research-qwen-continuation1",
+  "bound_seconds": 596,
+  "same_time_limit_retry_number": 1,
+  "scientific_settings_unchanged": true,
+  "unpersisted_generated_calls": 32,
+  "qualification": "Generated but unwritten outputs, if any, are unavailable and their costs remain charged. New calls complete the fixed sample; no best-label selection."
+}

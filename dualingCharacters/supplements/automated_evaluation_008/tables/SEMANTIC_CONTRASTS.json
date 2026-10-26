@@ -1,0 +1,882 @@
+[
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.03333333333333333,
+    "family_interval": [
+      -0.05555555555555555,
+      0.11111111111111112
+    ],
+    "joint_substantive_pairs": 66,
+    "joint_substantive_difference": 0.045454545454545456,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": 0.06666666666666667,
+      "43": 0.06666666666666667
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.05555555555555555,
+    "family_interval": [
+      -0.14444444444444446,
+      0.04444444444444444
+    ],
+    "joint_substantive_pairs": 13,
+    "joint_substantive_difference": 0.07692307692307693,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": 0.06666666666666667,
+      "43": -0.2
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.03333333333333333,
+    "family_interval": [
+      -0.07777777777777777,
+      0.01111111111111111
+    ],
+    "joint_substantive_pairs": 24,
+    "joint_substantive_difference": -0.08333333333333333,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": -0.13333333333333333,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.01111111111111111,
+    "family_interval": [
+      -0.02222222222222222,
+      0.04444444444444444
+    ],
+    "joint_substantive_pairs": 24,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": -0.03333333333333333,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.01111111111111111,
+    "family_interval": [
+      -0.03333333333333333,
+      0.0
+    ],
+    "joint_substantive_pairs": 24,
+    "joint_substantive_difference": -0.041666666666666664,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": -0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.06666666666666667,
+    "family_interval": [
+      -0.033333333333333326,
+      0.16666666666666669
+    ],
+    "joint_substantive_pairs": 59,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": -0.06666666666666667,
+      "29": 0.16666666666666666,
+      "43": 0.1
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.05555555555555556,
+    "family_interval": [
+      -0.044444444444444446,
+      0.16666666666666666
+    ],
+    "joint_substantive_pairs": 9,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.2,
+      "43": -0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.01111111111111111,
+    "family_interval": [
+      0.0,
+      0.03333333333333333
+    ],
+    "joint_substantive_pairs": 26,
+    "joint_substantive_difference": 0.038461538461538464,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.03333333333333333,
+    "family_interval": [
+      0.0,
+      0.06666666666666667
+    ],
+    "joint_substantive_pairs": 27,
+    "joint_substantive_difference": 0.1111111111111111,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": 0.03333333333333333,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.0,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "joint_substantive_pairs": 27,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.16666666666666666,
+    "family_interval": [
+      0.05555555555555555,
+      0.27777777777777773
+    ],
+    "joint_substantive_pairs": 43,
+    "joint_substantive_difference": 0.023255813953488372,
+    "per_seed": {
+      "17": 0.26666666666666666,
+      "29": 0.2,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.16666666666666666,
+    "family_interval": [
+      0.07777777777777777,
+      0.2555555555555556
+    ],
+    "joint_substantive_pairs": 19,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.23333333333333334,
+      "29": 0.16666666666666666,
+      "43": 0.1
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.02222222222222222,
+    "family_interval": [
+      0.0,
+      0.06666666666666667
+    ],
+    "joint_substantive_pairs": 42,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.06666666666666667,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.01111111111111111,
+    "family_interval": [
+      -0.03333333333333333,
+      0.06666666666666667
+    ],
+    "joint_substantive_pairs": 44,
+    "joint_substantive_difference": 0.045454545454545456,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": 0.06666666666666667,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.0,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "joint_substantive_pairs": 41,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.16666666666666666,
+    "family_interval": [
+      0.03333333333333332,
+      0.29999999999999993
+    ],
+    "joint_substantive_pairs": 42,
+    "joint_substantive_difference": -0.047619047619047616,
+    "per_seed": {
+      "17": 0.2,
+      "29": 0.13333333333333333,
+      "43": 0.16666666666666666
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.25555555555555554,
+    "family_interval": [
+      0.09999999999999999,
+      0.39999999999999997
+    ],
+    "joint_substantive_pairs": 14,
+    "joint_substantive_difference": 0.07142857142857142,
+    "per_seed": {
+      "17": 0.23333333333333334,
+      "29": 0.4,
+      "43": 0.13333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.02222222222222222,
+    "family_interval": [
+      0.0,
+      0.06666666666666667
+    ],
+    "joint_substantive_pairs": 34,
+    "joint_substantive_difference": 0.058823529411764705,
+    "per_seed": {
+      "17": 0.06666666666666667,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.0,
+    "family_interval": [
+      -0.06666666666666667,
+      0.06666666666666667
+    ],
+    "joint_substantive_pairs": 36,
+    "joint_substantive_difference": -0.027777777777777776,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.06666666666666667,
+      "43": -0.06666666666666667
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "phi",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.0,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "joint_substantive_pairs": 33,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.05555555555555555,
+    "family_interval": [
+      -0.08888888888888888,
+      0.1888888888888889
+    ],
+    "joint_substantive_pairs": 3,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": -0.06666666666666667,
+      "43": 0.2
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.011111111111111115,
+    "family_interval": [
+      -0.08888888888888888,
+      0.1
+    ],
+    "joint_substantive_pairs": 83,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.03333333333333333,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.16666666666666663,
+    "family_interval": [
+      0.08888888888888888,
+      0.26666666666666666
+    ],
+    "joint_substantive_pairs": 83,
+    "joint_substantive_difference": 0.1927710843373494,
+    "per_seed": {
+      "17": 0.16666666666666666,
+      "29": 0.23333333333333334,
+      "43": 0.1
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.08888888888888888,
+    "family_interval": [
+      -0.15555555555555556,
+      -0.02222222222222222
+    ],
+    "joint_substantive_pairs": 85,
+    "joint_substantive_difference": -0.08235294117647059,
+    "per_seed": {
+      "17": -0.1,
+      "29": -0.1,
+      "43": -0.06666666666666667
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.04444444444444444,
+    "family_interval": [
+      -0.17777777777777776,
+      0.08888888888888889
+    ],
+    "joint_substantive_pairs": 21,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": -0.06666666666666667,
+      "29": 0.1,
+      "43": -0.16666666666666666
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.14444444444444443,
+    "family_interval": [
+      -0.28888888888888886,
+      -0.02222222222222222
+    ],
+    "joint_substantive_pairs": 13,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": -0.23333333333333334,
+      "43": -0.23333333333333334
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.04444444444444444,
+    "family_interval": [
+      -0.02222222222222222,
+      0.1111111111111111
+    ],
+    "joint_substantive_pairs": 86,
+    "joint_substantive_difference": 0.046511627906976744,
+    "per_seed": {
+      "17": -0.06666666666666667,
+      "29": 0.06666666666666667,
+      "43": 0.13333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.1888888888888889,
+    "family_interval": [
+      0.06666666666666667,
+      0.3444444444444444
+    ],
+    "joint_substantive_pairs": 83,
+    "joint_substantive_difference": 0.20481927710843373,
+    "per_seed": {
+      "17": 0.16666666666666666,
+      "29": 0.26666666666666666,
+      "43": 0.13333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.02222222222222222,
+    "family_interval": [
+      -0.06666666666666667,
+      0.0
+    ],
+    "joint_substantive_pairs": 86,
+    "joint_substantive_difference": -0.023255813953488372,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": -0.06666666666666667
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.05555555555555556,
+    "family_interval": [
+      -0.06666666666666668,
+      0.17777777777777778
+    ],
+    "joint_substantive_pairs": 22,
+    "joint_substantive_difference": -0.09090909090909091,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": 0.16666666666666666,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.07777777777777777,
+    "family_interval": [
+      -0.033333333333333326,
+      0.17777777777777773
+    ],
+    "joint_substantive_pairs": 3,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.13333333333333333,
+      "29": -0.06666666666666667,
+      "43": 0.16666666666666666
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.04444444444444444,
+    "family_interval": [
+      -0.03333333333333333,
+      0.12222222222222223
+    ],
+    "joint_substantive_pairs": 86,
+    "joint_substantive_difference": 0.046511627906976744,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": 0.16666666666666666,
+      "43": -0.06666666666666667
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.07777777777777777,
+    "family_interval": [
+      0.01111111111111111,
+      0.14444444444444443
+    ],
+    "joint_substantive_pairs": 86,
+    "joint_substantive_difference": 0.08139534883720931,
+    "per_seed": {
+      "17": 0.13333333333333333,
+      "29": 0.06666666666666667,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.01111111111111111,
+    "family_interval": [
+      -0.03333333333333333,
+      0.0
+    ],
+    "joint_substantive_pairs": 88,
+    "joint_substantive_difference": -0.011363636363636364,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "C3",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.011111111111111115,
+    "family_interval": [
+      -0.08888888888888888,
+      0.07777777777777777
+    ],
+    "joint_substantive_pairs": 2,
+    "joint_substantive_difference": -0.5,
+    "per_seed": {
+      "17": 0.06666666666666667,
+      "29": -0.1,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.07777777777777778,
+    "family_interval": [
+      -0.18888888888888886,
+      0.022222222222222216
+    ],
+    "joint_substantive_pairs": 7,
+    "joint_substantive_difference": -0.14285714285714285,
+    "per_seed": {
+      "17": -0.1,
+      "29": -0.1,
+      "43": -0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.07777777777777778,
+    "family_interval": [
+      -0.01111111111111111,
+      0.16666666666666663
+    ],
+    "joint_substantive_pairs": 85,
+    "joint_substantive_difference": 0.08235294117647059,
+    "per_seed": {
+      "17": 0.03333333333333333,
+      "29": 0.2,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.06666666666666667,
+    "family_interval": [
+      0.02222222222222222,
+      0.12222222222222223
+    ],
+    "joint_substantive_pairs": 86,
+    "joint_substantive_difference": 0.06976744186046512,
+    "per_seed": {
+      "17": 0.16666666666666666,
+      "29": 0.0,
+      "43": 0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": 0.0,
+    "family_interval": [
+      0.0,
+      0.0
+    ],
+    "joint_substantive_pairs": 88,
+    "joint_substantive_difference": 0.0,
+    "per_seed": {
+      "17": 0.0,
+      "29": 0.0,
+      "43": 0.0
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  },
+  {
+    "model": "qwen",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "first": "C5",
+    "second": "A1",
+    "families": 15,
+    "paired_events": 90,
+    "difference_all_opportunities": -0.04444444444444444,
+    "family_interval": [
+      -0.12222222222222223,
+      0.044444444444444446
+    ],
+    "joint_substantive_pairs": 12,
+    "joint_substantive_difference": -0.16666666666666666,
+    "per_seed": {
+      "17": -0.03333333333333333,
+      "29": -0.06666666666666667,
+      "43": -0.03333333333333333
+    },
+    "qualification": "All-opportunity numerator counts positive classifications; missing/uncertain remain separate. Fixed three generator seeds averaged within family, not independent trained policies."
+  }
+]

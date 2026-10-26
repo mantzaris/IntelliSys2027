@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "task": "compatibility",
+  "model": "qwen",
+  "run_id": "dialogue005-compat-17-v1",
+  "dispatch_id": "auto008-safe-boundary-20261026",
+  "freeze": "supplements/automated_evaluation_008/SCIENTIFIC_FREEZE.json",
+  "maximum_seconds": 7200,
+  "remaining_obligations_seconds": 36936.0,
+  "cutoff_utc": "2026-10-27T05:01:27+00:00",
+  "budget_identity": "dialogue005-compatibility",
+  "core_boundary_request": "reports/BOUNDARY_HOLD_REQUEST.json"
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-26T20:29:45.776431+00:00",
+  "run_id": "auto008-research-qwen-v1",
+  "status_sha256": "82975d615ad949f960bf9e88f68e5b99c99140466f3a2707cc7f200e9df0353d",
+  "log_sha256": "ff038401e2a83bbd683dccc8991b1563bc50667228c8c85c9b57ed091eb9589c",
+  "exact_exception": "TimeoutError: No format-repair time remains",
+  "supervisor_error_field": "Preserved incomplete stage008 run",
+  "original_gpu_worker_absent": true,
+  "gpu_empty": true,
+  "original_local_dispatch_complete": true,
+  "persisted_tasks": 640,
+  "planned_tasks": 692,
+  "generated_but_unpersisted_calls": 32,
+  "recovery": "One exact-ID time-limit continuation; no labels used for selection."
+}

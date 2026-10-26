@@ -1,0 +1,12 @@
+{
+  "cases": [
+    "DI5-a4c89ffad4",
+    "DI5-e743bcb1a6",
+    "DI5-2e4899b66b",
+    "DI5-adc5b43b95"
+  ],
+  "matched_episodes": 12,
+  "exact_quote_checks": 69,
+  "scope": "Selected-record verification against committed006 archive; not an independent rehash of entire original archives.",
+  "source_sha256": "d343c6a20fdd663a46da5734e655122beb121ce3e951c7134b3423f069b39c26"
+}

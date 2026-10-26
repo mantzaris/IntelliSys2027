@@ -1,0 +1,13 @@
+{
+  "development": {
+    "phi": "auto008-profile-phi-v2",
+    "qwen": "auto008-profile-qwen-v1"
+  },
+  "holdout": {
+    "phi": "auto008-research-phi-v1",
+    "qwen": "auto008-research-qwen-v1"
+  },
+  "failed_attempts": [
+    "auto008-profile-phi-v1"
+  ]
+}

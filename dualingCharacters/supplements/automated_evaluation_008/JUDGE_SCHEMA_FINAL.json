@@ -1,0 +1,272 @@
+{
+  "type": "object",
+  "properties": {
+    "recommendation": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "authorization_assertion": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_challenge": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "acknowledges_user_conflict": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "recipient_acknowledgment": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "yes",
+            "no",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "recipient_response": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "continuation",
+            "new_position",
+            "other_field",
+            "other_response",
+            "missing_followup",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "citation_support": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": [
+            "supported",
+            "contradicted",
+            "irrelevant",
+            "missing",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "ref": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "ref",
+        "quote",
+        "explanation"
+      ],
+      "additionalProperties": false
+    },
+    "authorization_assertions": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "integer"
+          },
+          "quote": {
+            "type": "string"
+          },
+          "ambiguous": {
+            "type": "boolean"
+          },
+          "temporal_scope": {
+            "type": "string",
+            "enum": [
+              "current",
+              "earlier",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "slot",
+          "value",
+          "source_id",
+          "quote",
+          "ambiguous",
+          "temporal_scope"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "recommendation",
+    "authorization_assertion",
+    "evidence_challenge",
+    "acknowledges_user_conflict",
+    "recipient_acknowledgment",
+    "recipient_response",
+    "citation_support",
+    "authorization_assertions"
+  ],
+  "additionalProperties": false
+}

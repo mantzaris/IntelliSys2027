@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-26T18:25:01.816761+00:00",
+  "prior_owner_absent": true,
+  "core_fit_complete": true,
+  "shared_lock_acquired_nonblocking": true,
+  "gpu_process_list_empty": true,
+  "dependency_upload": "exact frozen review001 Python modules/protocol/FREEZE only; no core files overwritten",
+  "review_coordinator": "original PID1291869 still waiting for full core",
+  "core_resumption_required": true
+}

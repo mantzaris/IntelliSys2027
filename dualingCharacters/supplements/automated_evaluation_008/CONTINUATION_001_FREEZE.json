@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-10-26T20:30:07.894711+00:00",
+  "purpose": "Operational time-limit resumption; unchanged scientific population and prompt",
+  "files": {
+    "supplements/automated_evaluation_008/inputs/research_qwen_unrecorded.json": "4fc3ca6c78de98f2a2350995955abe2adfb22b097c2bc8ace6488bb93e515199",
+    "supplements/automated_evaluation_008/RUN_BINDINGS_COMPLETE.json": "08d9664271b053e687d414a57b38e13498b1f45e4597ece1d754f061903b6375",
+    "supplements/automated_evaluation_008/admissions/research_qwen_continuation1.json": "ba452445aa86158451aa1906f2dc9c0294341377dd01db55d74b398594353c3a",
+    "supplements/automated_evaluation_008/continuation_v2.py": "86fa526b8a56a2dd2cb15dc393589a0ef1be3e206c7d6fab76da9afb608f8aa1",
+    "supplements/automated_evaluation_008/semantic_analysis_complete.py": "0c537030348c295e2470f3ddf2fd18fd97ba93d355642f7fc7f03128a6bd4954",
+    "supplements/automated_evaluation_008/reports/TIMEOUT_CLASSIFICATION_001.json": "0da30522e926c99a4960af5e6257ca81ef506b4e14704b96900496799de13677"
+  }
+}

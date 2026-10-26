@@ -1,0 +1,21 @@
+{
+  "fixed": 72,
+  "broad30": 1080,
+  "broad15": 540,
+  "unique_broad_families": 30,
+  "fixed_unique_families": 11,
+  "overlap_families": [
+    "train-0001",
+    "train-0124"
+  ],
+  "direct_schedule_weight": 0.6666666666666666,
+  "communication_schedule_weight": 0.3333333333333333,
+  "paired_scripts_verified": true,
+  "no_outcome_selection": true,
+  "input_hashes": {
+    "fixed72.json": "1d6f4f39b8661963026698e36339d7e73d144bf25b008bc0f3620e43fbb5923e",
+    "broad30.json": "14b0c571c2b29d5849cacb3f9ad1dc27165282cf9924240b39557c8accf22502",
+    "broad15.json": "5861d3a15ebf6096f9185bdf76d4968f725a33a80b44b9b06125d60be7649c8b",
+    "BROAD_SELECTION.json": "736792ef27c43bbfa8edd6fb38b52d330958101f44f3d819f50610851cba2934"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "contrasts": 72,
+  "unique_families": 150,
+  "episodes_per_condition": 900,
+  "opportunities_per_condition": 10800,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "inputs": {
+    "supplements/dialogue_interpretation_005/tables/FAMILY_NUMERATORS.csv": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+    "supplements/dialogue_interpretation_005/tables/REPRODUCED_CONTRASTS.json": "6904f8d49c97911bb8a370cec8729ea5089e8ed9504eec62868e965312336563",
+    "supplements/results_clarity_007/tables/CHANNELS_AND_CHANGES.csv": "008721ab949207d30845f0d63ef87a6a4db8d407d71e01d121e67f17415b834b"
+  },
+  "qualified": "Recomputed fixed sufficient statistics; original broad trace reconstruction remains the historical audit. This is not an independent semantic validation."
+}

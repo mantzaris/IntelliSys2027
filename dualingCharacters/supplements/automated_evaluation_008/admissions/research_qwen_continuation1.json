@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "task": "judge",
+  "model": "qwen",
+  "run_id": "auto008-research-qwen-continuation1",
+  "dispatch_id": "auto008-safe-boundary-20261026",
+  "freeze": "supplements/automated_evaluation_008/SCIENTIFIC_FREEZE.json",
+  "inputs": "supplements/automated_evaluation_008/inputs/research_qwen_unrecorded.json",
+  "inputs_sha256": "4fc3ca6c78de98f2a2350995955abe2adfb22b097c2bc8ace6488bb93e515199",
+  "probes": [
+    "base"
+  ],
+  "maximum_seconds": 596,
+  "remaining_obligations_seconds": 36936.0,
+  "cutoff_utc": "2026-10-27T05:01:27+00:00",
+  "budget_identity": "automated008",
+  "core_boundary_request": "reports/BOUNDARY_HOLD_REQUEST.json"
+}

@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-26T21:14:15.267441+00:00",
+  "status": "passed",
+  "fresh_export": "indexed repository files only, no private artifact directory",
+  "original_artifact_and_source_access": "blocked by Python open audit hook during 18 analysis modules",
+  "unit_tests_before_extraction": 19,
+  "artifact_dependent_tests_after_extraction": 4,
+  "analysis_modules": [
+    {
+      "module": "rebuild_inputs",
+      "status": "passed"
+    },
+    {
+      "module": "compact_core",
+      "status": "passed"
+    },
+    {
+      "module": "mechanical_reproduce",
+      "status": "passed"
+    },
+    {
+      "module": "controlled",
+      "status": "passed"
+    },
+    {
+      "module": "controlled_report",
+      "status": "passed"
+    },
+    {
+      "module": "controlled_interactions",
+      "status": "passed"
+    },
+    {
+      "module": "deterministic_events",
+      "status": "passed"
+    },
+    {
+      "module": "overlap",
+      "status": "passed"
+    },
+    {
+      "module": "semantic_analysis_complete",
+      "status": "passed"
+    },
+    {
+      "module": "judgment_quality",
+      "status": "passed"
+    },
+    {
+      "module": "repair_audit",
+      "status": "passed"
+    },
+    {
+      "module": "calibration_report",
+      "status": "passed"
+    },
+    {
+      "module": "resource_report",
+      "status": "passed"
+    },
+    {
+      "module": "dialogues",
+      "status": "passed"
+    },
+    {
+      "module": "controlled_dialogue",
+      "status": "passed"
+    },
+    {
+      "module": "figures",
+      "status": "passed"
+    },
+    {
+      "module": "paper_results",
+      "status": "passed"
+    },
+    {
+      "module": "verify_outputs",
+      "status": "passed"
+    }
+  ],
+  "byte_identical_numerical_tables": 38,
+  "resources_equal_except_timestamp": true,
+  "paper_text_identical_after_relocation": true,
+  "portable_pdf_links": true,
+  "selected_input_hash_regeneration": true,
+  "archive_members_verified": 95,
+  "archive_bytes": 5016684,
+  "no_weights_or_credentials": true,
+  "limitations": "Selected-record and sufficient-outcome reproduction does not rehash full original archives or absent model weights."
+}

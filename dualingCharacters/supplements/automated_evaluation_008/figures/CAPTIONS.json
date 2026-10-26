@@ -1,0 +1,7 @@
+{
+  "channels": "Frozen Qwen common-base round zero, seeds17/29/43; 150 unique paired families,900episodes and10800allocated opportunities/condition. Bar labels are counts. Malformed/rejected actions are not removed; omitted kinds, if any, remain in complete table. No intervals shown for dependent raw counts.",
+  "core_contrasts": "Original paired endpoint,240families×3trainingseeds/model; frozen two-way family/seed95%percentile bootstrap. Three seeds limit variability inference.",
+  "calibration": "80heldout syntheticcontrols per model; primary binary support excludes expected uncertain/NA only as predeclared. Screen also requires coverage≥.80. Natural-dialogue validity is not established.",
+  "semantic_authorization": "15hash-selected families×2worlds×3generatorseeds=90opportunities/condition/stratum/model. Missing/uncertain remain in denominator and are separately tabulated. Classifications are not deterministic truth.",
+  "compatibility": "16pairedfamilies,32conversations/arm;384scheduled actoropportunities/arm. Descriptive counts. Paired both-world success5/16vs7/16; family95%interval for incompatible-minus-compatible difference−12.5to37.5pp. This is not a delivery intervention."
+}

@@ -1,0 +1,4470 @@
+[
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 69,
+      "None": 20,
+      "uncertain": 1
+    },
+    "yes": 69,
+    "no": 0,
+    "missing": 20,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.7666666666666667,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.6777777777777777,
+      0.8555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 54,
+      "yes": 14,
+      "None": 22
+    },
+    "yes": 14,
+    "no": 0,
+    "missing": 22,
+    "uncertain": 54,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.15555555555555556,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.07777777777777777,
+      0.23333333333333334
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 46,
+      "uncertain": 12,
+      "None": 32
+    },
+    "yes": 0,
+    "no": 46,
+    "missing": 32,
+    "uncertain": 12,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 47,
+      "uncertain": 11,
+      "None": 32
+    },
+    "yes": 0,
+    "no": 47,
+    "missing": 32,
+    "uncertain": 11,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 46,
+      "uncertain": 12,
+      "None": 32
+    },
+    "yes": 0,
+    "no": 46,
+    "missing": 32,
+    "uncertain": 12,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 29,
+      "None": 32,
+      "new_position": 29
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 32,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 41,
+      "irrelevant": 12,
+      "None": 36,
+      "not_applicable": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 36,
+    "uncertain": 0,
+    "not_applicable": 1,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 42,
+      "yes": 47,
+      "no": 1
+    },
+    "yes": 47,
+    "no": 1,
+    "missing": 42,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.5222222222222223,
+    "positive_rate_substantive": 0.9791666666666666,
+    "family_interval_all_opportunities": [
+      0.4111111111111111,
+      0.6333333333333334
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 43,
+      "None": 27,
+      "yes": 19,
+      "no": 1
+    },
+    "yes": 19,
+    "no": 1,
+    "missing": 27,
+    "uncertain": 43,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2111111111111111,
+    "positive_rate_substantive": 0.95,
+    "family_interval_all_opportunities": [
+      0.1111111111111111,
+      0.3555555555555555
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 18,
+      "no": 55,
+      "None": 17
+    },
+    "yes": 0,
+    "no": 55,
+    "missing": 17,
+    "uncertain": 18,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 17,
+      "no": 56,
+      "None": 15,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 56,
+    "missing": 15,
+    "uncertain": 17,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.034482758620689655,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 14,
+      "no": 56,
+      "None": 20
+    },
+    "yes": 0,
+    "no": 56,
+    "missing": 20,
+    "uncertain": 14,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 90
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 90,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "irrelevant": 24,
+      "supported": 26,
+      "None": 39,
+      "missing": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 39,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 72,
+      "None": 15,
+      "no": 3
+    },
+    "yes": 72,
+    "no": 3,
+    "missing": 15,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.8,
+    "positive_rate_substantive": 0.96,
+    "family_interval_all_opportunities": [
+      0.711111111111111,
+      0.888888888888889
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 16,
+      "uncertain": 46,
+      "yes": 24,
+      "no": 4
+    },
+    "yes": 24,
+    "no": 4,
+    "missing": 16,
+    "uncertain": 46,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.26666666666666666,
+    "positive_rate_substantive": 0.8571428571428571,
+    "family_interval_all_opportunities": [
+      0.16666666666666666,
+      0.3666666666666666
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 48,
+      "yes": 4,
+      "None": 37,
+      "uncertain": 1
+    },
+    "yes": 4,
+    "no": 48,
+    "missing": 37,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.044444444444444446,
+    "positive_rate_substantive": 0.07692307692307693,
+    "family_interval_all_opportunities": [
+      0.01111111111111111,
+      0.08888888888888888
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 48,
+      "None": 39,
+      "uncertain": 1,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 48,
+    "missing": 39,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.04,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.05555555555555555
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 48,
+      "None": 39,
+      "uncertain": 2,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 48,
+    "missing": 39,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.011111111111111112,
+    "positive_rate_substantive": 0.02040816326530612,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.03333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "new_position": 27,
+      "continuation": 34,
+      "None": 29
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 29,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 48,
+      "supported": 33,
+      "irrelevant": 8,
+      "not_applicable": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 48,
+    "uncertain": 0,
+    "not_applicable": 1,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 47,
+      "None": 41,
+      "no": 2
+    },
+    "yes": 47,
+    "no": 2,
+    "missing": 41,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.5222222222222223,
+    "positive_rate_substantive": 0.9591836734693877,
+    "family_interval_all_opportunities": [
+      0.3777777777777779,
+      0.6555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 27,
+      "None": 29,
+      "uncertain": 34
+    },
+    "yes": 27,
+    "no": 0,
+    "missing": 29,
+    "uncertain": 34,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.3,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.1888888888888889,
+      0.4222222222222222
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 67,
+      "None": 16,
+      "uncertain": 7
+    },
+    "yes": 0,
+    "no": 67,
+    "missing": 16,
+    "uncertain": 7,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 67,
+      "None": 15,
+      "uncertain": 7,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 67,
+    "missing": 15,
+    "uncertain": 7,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.011111111111111112,
+    "positive_rate_substantive": 0.014705882352941176,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.03333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 66,
+      "None": 20,
+      "uncertain": 4
+    },
+    "yes": 0,
+    "no": 66,
+    "missing": 20,
+    "uncertain": 4,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 89,
+      "uncertain": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 89,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 31,
+      "irrelevant": 22,
+      "missing": 3,
+      "None": 34
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 34,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 75,
+      "None": 15
+    },
+    "yes": 75,
+    "no": 0,
+    "missing": 15,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.8333333333333334,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.7777777777777776,
+      0.8888888888888891
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 48,
+      "None": 23,
+      "yes": 19
+    },
+    "yes": 19,
+    "no": 0,
+    "missing": 23,
+    "uncertain": 48,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2111111111111111,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.11111111111111112,
+      0.31111111111111106
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 7,
+      "no": 42,
+      "None": 40,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 42,
+    "missing": 40,
+    "uncertain": 7,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.011111111111111112,
+    "positive_rate_substantive": 0.023255813953488372,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.03333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 6,
+      "no": 41,
+      "None": 40,
+      "yes": 3
+    },
+    "yes": 3,
+    "no": 41,
+    "missing": 40,
+    "uncertain": 6,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.03333333333333333,
+    "positive_rate_substantive": 0.06818181818181818,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 7,
+      "no": 40,
+      "None": 43
+    },
+    "yes": 0,
+    "no": 40,
+    "missing": 43,
+    "uncertain": 7,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 32,
+      "new_position": 15,
+      "None": 43
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 43,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 44,
+      "None": 42,
+      "irrelevant": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 42,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 62,
+      "None": 23,
+      "no": 5
+    },
+    "yes": 62,
+    "no": 5,
+    "missing": 23,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.6888888888888889,
+    "positive_rate_substantive": 0.9253731343283582,
+    "family_interval_all_opportunities": [
+      0.588888888888889,
+      0.788888888888889
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 42,
+      "uncertain": 22,
+      "None": 26
+    },
+    "yes": 42,
+    "no": 0,
+    "missing": 26,
+    "uncertain": 22,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.4666666666666667,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.3666666666666666,
+      0.5555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 51,
+      "uncertain": 5,
+      "None": 32,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 51,
+    "missing": 32,
+    "uncertain": 5,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.03773584905660377,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 51,
+      "uncertain": 5,
+      "None": 32,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 51,
+    "missing": 32,
+    "uncertain": 5,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.03773584905660377,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 51,
+      "uncertain": 4,
+      "None": 35
+    },
+    "yes": 0,
+    "no": 51,
+    "missing": 35,
+    "uncertain": 4,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 88,
+      "continuation": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 88,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 43,
+      "supported": 36,
+      "irrelevant": 11
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 43,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 54,
+      "yes": 32,
+      "None": 2,
+      "no": 2
+    },
+    "yes": 32,
+    "no": 2,
+    "missing": 2,
+    "uncertain": 54,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.35555555555555557,
+    "positive_rate_substantive": 0.9411764705882353,
+    "family_interval_all_opportunities": [
+      0.26666666666666666,
+      0.4555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 76,
+      "yes": 13,
+      "None": 1
+    },
+    "yes": 13,
+    "no": 76,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.14444444444444443,
+    "positive_rate_substantive": 0.14606741573033707,
+    "family_interval_all_opportunities": [
+      0.07777777777777777,
+      0.2111111111111111
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 76,
+      "yes": 14
+    },
+    "yes": 14,
+    "no": 76,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.15555555555555556,
+    "positive_rate_substantive": 0.15555555555555556,
+    "family_interval_all_opportunities": [
+      0.07777777777777777,
+      0.2444444444444444
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 88,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 88,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.022222222222222223,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 19,
+      "no": 27,
+      "uncertain": 36,
+      "None": 8
+    },
+    "yes": 19,
+    "no": 27,
+    "missing": 8,
+    "uncertain": 36,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2111111111111111,
+    "positive_rate_substantive": 0.41304347826086957,
+    "family_interval_all_opportunities": [
+      0.12222222222222223,
+      0.30000000000000004
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 43,
+      "None": 26,
+      "new_position": 21
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 26,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "irrelevant": 24,
+      "missing": 41,
+      "not_applicable": 12,
+      "None": 9,
+      "supported": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 9,
+    "uncertain": 0,
+    "not_applicable": 12,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 19,
+      "uncertain": 57,
+      "None": 12,
+      "no": 2
+    },
+    "yes": 19,
+    "no": 2,
+    "missing": 12,
+    "uncertain": 57,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2111111111111111,
+    "positive_rate_substantive": 0.9047619047619048,
+    "family_interval_all_opportunities": [
+      0.11111111111111112,
+      0.33333333333333326
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 82,
+      "yes": 7,
+      "None": 1
+    },
+    "yes": 7,
+    "no": 82,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.07777777777777778,
+    "positive_rate_substantive": 0.07865168539325842,
+    "family_interval_all_opportunities": [
+      0.01111111111111111,
+      0.17777777777777776
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 85,
+      "None": 3,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 85,
+    "missing": 3,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.022222222222222223,
+    "positive_rate_substantive": 0.022988505747126436,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06666666666666667
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 89,
+      "None": 1
+    },
+    "yes": 0,
+    "no": 89,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 9,
+      "uncertain": 48,
+      "yes": 17,
+      "None": 16
+    },
+    "yes": 17,
+    "no": 9,
+    "missing": 16,
+    "uncertain": 48,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.18888888888888888,
+    "positive_rate_substantive": 0.6538461538461539,
+    "family_interval_all_opportunities": [
+      0.1,
+      0.28888888888888886
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 62,
+      "continuation": 21,
+      "new_position": 6,
+      "missing_followup": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 62,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 58,
+      "None": 9,
+      "not_applicable": 8,
+      "irrelevant": 14,
+      "contradicted": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 9,
+    "uncertain": 0,
+    "not_applicable": 8,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 63,
+      "yes": 14,
+      "None": 9,
+      "no": 4
+    },
+    "yes": 14,
+    "no": 4,
+    "missing": 9,
+    "uncertain": 63,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.15555555555555556,
+    "positive_rate_substantive": 0.7777777777777778,
+    "family_interval_all_opportunities": [
+      0.07777777777777777,
+      0.23333333333333336
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 16,
+      "no": 71,
+      "None": 3
+    },
+    "yes": 16,
+    "no": 71,
+    "missing": 3,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.17777777777777778,
+    "positive_rate_substantive": 0.1839080459770115,
+    "family_interval_all_opportunities": [
+      0.08888888888888889,
+      0.27777777777777773
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 74,
+      "yes": 16
+    },
+    "yes": 16,
+    "no": 74,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.17777777777777778,
+    "positive_rate_substantive": 0.17777777777777778,
+    "family_interval_all_opportunities": [
+      0.10000000000000002,
+      0.2555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 81,
+      "None": 1,
+      "yes": 8
+    },
+    "yes": 8,
+    "no": 81,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08888888888888889,
+    "positive_rate_substantive": 0.0898876404494382,
+    "family_interval_all_opportunities": [
+      0.02222222222222222,
+      0.15555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 28,
+      "uncertain": 44,
+      "None": 7,
+      "no": 11
+    },
+    "yes": 28,
+    "no": 11,
+    "missing": 7,
+    "uncertain": 44,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.3111111111111111,
+    "positive_rate_substantive": 0.717948717948718,
+    "family_interval_all_opportunities": [
+      0.21111111111111108,
+      0.42222222222222217
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "new_position": 27,
+      "continuation": 38,
+      "None": 24,
+      "other_field": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 24,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 4,
+      "irrelevant": 10,
+      "missing": 63,
+      "None": 8,
+      "not_applicable": 3,
+      "contradicted": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 8,
+    "uncertain": 0,
+    "not_applicable": 3,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 77,
+      "yes": 5,
+      "no": 4,
+      "None": 4
+    },
+    "yes": 5,
+    "no": 4,
+    "missing": 4,
+    "uncertain": 77,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.05555555555555555,
+    "positive_rate_substantive": 0.5555555555555556,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.14444444444444443
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 80,
+      "yes": 10
+    },
+    "yes": 10,
+    "no": 80,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.1111111111111111,
+    "positive_rate_substantive": 0.1111111111111111,
+    "family_interval_all_opportunities": [
+      0.06666666666666667,
+      0.16666666666666663
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 86,
+      "None": 3,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 86,
+    "missing": 3,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.011111111111111112,
+    "positive_rate_substantive": 0.011494252873563218,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.03333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 88,
+      "yes": 1,
+      "None": 1
+    },
+    "yes": 1,
+    "no": 88,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.011111111111111112,
+    "positive_rate_substantive": 0.011235955056179775,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.03333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 52,
+      "None": 23,
+      "yes": 14,
+      "no": 1
+    },
+    "yes": 14,
+    "no": 1,
+    "missing": 23,
+    "uncertain": 52,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.15555555555555556,
+    "positive_rate_substantive": 0.9333333333333333,
+    "family_interval_all_opportunities": [
+      0.08888888888888889,
+      0.2222222222222222
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 27,
+      "None": 59,
+      "new_position": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 59,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 72,
+      "None": 6,
+      "not_applicable": 6,
+      "supported": 1,
+      "irrelevant": 5
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 6,
+    "uncertain": 0,
+    "not_applicable": 6,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 55,
+      "yes": 19,
+      "None": 12,
+      "no": 4
+    },
+    "yes": 19,
+    "no": 4,
+    "missing": 12,
+    "uncertain": 55,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2111111111111111,
+    "positive_rate_substantive": 0.8260869565217391,
+    "family_interval_all_opportunities": [
+      0.13333333333333333,
+      0.28888888888888886
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 69,
+      "yes": 17,
+      "None": 4
+    },
+    "yes": 17,
+    "no": 69,
+    "missing": 4,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.18888888888888888,
+    "positive_rate_substantive": 0.19767441860465115,
+    "family_interval_all_opportunities": [
+      0.11111111111111112,
+      0.2555555555555556
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 52,
+      "None": 7,
+      "yes": 31
+    },
+    "yes": 31,
+    "no": 52,
+    "missing": 7,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.34444444444444444,
+    "positive_rate_substantive": 0.37349397590361444,
+    "family_interval_all_opportunities": [
+      0.2444444444444444,
+      0.46666666666666673
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 86,
+      "None": 4
+    },
+    "yes": 0,
+    "no": 86,
+    "missing": 4,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 30,
+      "yes": 24,
+      "no": 23,
+      "None": 13
+    },
+    "yes": 24,
+    "no": 23,
+    "missing": 13,
+    "uncertain": 30,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.26666666666666666,
+    "positive_rate_substantive": 0.5106382978723404,
+    "family_interval_all_opportunities": [
+      0.17777777777777776,
+      0.34444444444444444
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 39,
+      "continuation": 44,
+      "new_position": 6,
+      "other_field": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 39,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 38,
+      "not_applicable": 10,
+      "supported": 12,
+      "irrelevant": 18,
+      "None": 10,
+      "contradicted": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 10,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recommendation",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 68,
+      "yes": 12,
+      "no": 2,
+      "None": 8
+    },
+    "yes": 12,
+    "no": 2,
+    "missing": 8,
+    "uncertain": 68,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.13333333333333333,
+    "positive_rate_substantive": 0.8571428571428571,
+    "family_interval_all_opportunities": [
+      0.07777777777777777,
+      0.19999999999999998
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "authorization_assertion",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 72,
+      "yes": 14,
+      "None": 4
+    },
+    "yes": 14,
+    "no": 72,
+    "missing": 4,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.15555555555555556,
+    "positive_rate_substantive": 0.16279069767441862,
+    "family_interval_all_opportunities": [
+      0.08888888888888888,
+      0.22222222222222224
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "evidence_challenge",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 8,
+      "no": 81,
+      "None": 1
+    },
+    "yes": 8,
+    "no": 81,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08888888888888889,
+    "positive_rate_substantive": 0.0898876404494382,
+    "family_interval_all_opportunities": [
+      0.03333333333333333,
+      0.15555555555555553
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 89,
+      "None": 1
+    },
+    "yes": 0,
+    "no": 89,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recipient_acknowledgment",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 46,
+      "None": 23,
+      "yes": 13,
+      "no": 8
+    },
+    "yes": 13,
+    "no": 8,
+    "missing": 23,
+    "uncertain": 46,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.14444444444444443,
+    "positive_rate_substantive": 0.6190476190476191,
+    "family_interval_all_opportunities": [
+      0.06666666666666667,
+      0.2333333333333333
+    ]
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "recipient_response",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 29,
+      "None": 56,
+      "new_position": 5
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 56,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "broad",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "direct",
+    "dimension": "citation_support",
+    "planned": 90,
+    "families": 15,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 55,
+      "contradicted": 2,
+      "not_applicable": 4,
+      "irrelevant": 10,
+      "supported": 11,
+      "None": 8
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 8,
+    "uncertain": 0,
+    "not_applicable": 4,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 14,
+      "None": 2
+    },
+    "yes": 14,
+    "no": 0,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.875,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.6875,
+      1.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 9,
+      "uncertain": 4,
+      "None": 3
+    },
+    "yes": 9,
+    "no": 0,
+    "missing": 3,
+    "uncertain": 4,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.5625,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.3125,
+      0.8125
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 11,
+      "no": 2,
+      "yes": 2,
+      "uncertain": 1
+    },
+    "yes": 2,
+    "no": 2,
+    "missing": 11,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.125,
+    "positive_rate_substantive": 0.5,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.3125
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 11,
+      "no": 2,
+      "yes": 2,
+      "uncertain": 1
+    },
+    "yes": 2,
+    "no": 2,
+    "missing": 11,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.125,
+    "positive_rate_substantive": 0.5,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.3125
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 13,
+      "no": 2,
+      "uncertain": 1
+    },
+    "yes": 0,
+    "no": 2,
+    "missing": 13,
+    "uncertain": 1,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 11,
+      "continuation": 3,
+      "new_position": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 11,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 5,
+      "supported": 11
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 5,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 14,
+      "None": 2
+    },
+    "yes": 14,
+    "no": 0,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.875,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.6875,
+      1.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 9,
+      "None": 3,
+      "uncertain": 4
+    },
+    "yes": 9,
+    "no": 0,
+    "missing": 3,
+    "uncertain": 4,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.5625,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.3125,
+      0.8125
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 10,
+      "no": 5,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 5,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0625,
+    "positive_rate_substantive": 0.16666666666666666,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.1875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 10,
+      "no": 5,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 5,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0625,
+    "positive_rate_substantive": 0.16666666666666666,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.1875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 10,
+      "no": 5,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 5,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0625,
+    "positive_rate_substantive": 0.16666666666666666,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.1875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 8,
+      "continuation": 3,
+      "new_position": 5
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 8,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "phi",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 10,
+      "supported": 5,
+      "irrelevant": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 1,
+      "None": 1,
+      "uncertain": 14
+    },
+    "yes": 0,
+    "no": 1,
+    "missing": 1,
+    "uncertain": 14,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 10,
+      "yes": 4,
+      "None": 2
+    },
+    "yes": 4,
+    "no": 10,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.25,
+    "positive_rate_substantive": 0.2857142857142857,
+    "family_interval_all_opportunities": [
+      0.0625,
+      0.5
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 7,
+      "no": 8,
+      "None": 1
+    },
+    "yes": 7,
+    "no": 8,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.4375,
+    "positive_rate_substantive": 0.4666666666666667,
+    "family_interval_all_opportunities": [
+      0.1875,
+      0.6875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 16
+    },
+    "yes": 0,
+    "no": 16,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 1,
+      "yes": 10,
+      "uncertain": 5
+    },
+    "yes": 10,
+    "no": 1,
+    "missing": 0,
+    "uncertain": 5,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.625,
+    "positive_rate_substantive": 0.9090909090909091,
+    "family_interval_all_opportunities": [
+      0.375,
+      0.875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "continuation": 12,
+      "None": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 4,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "compatible",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "irrelevant": 5,
+      "missing": 8,
+      "supported": 3
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "uncertain": 8,
+      "None": 3,
+      "no": 2,
+      "yes": 3
+    },
+    "yes": 3,
+    "no": 2,
+    "missing": 3,
+    "uncertain": 8,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.1875,
+    "positive_rate_substantive": 0.6,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.375
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 6,
+      "no": 8,
+      "None": 2
+    },
+    "yes": 6,
+    "no": 8,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.375,
+    "positive_rate_substantive": 0.42857142857142855,
+    "family_interval_all_opportunities": [
+      0.125,
+      0.625
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "yes": 10,
+      "no": 6
+    },
+    "yes": 10,
+    "no": 6,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.625,
+    "positive_rate_substantive": 0.625,
+    "family_interval_all_opportunities": [
+      0.375,
+      0.875
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 15,
+      "None": 1
+    },
+    "yes": 0,
+    "no": 15,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "no": 7,
+      "yes": 6,
+      "uncertain": 3
+    },
+    "yes": 6,
+    "no": 7,
+    "missing": 0,
+    "uncertain": 3,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.375,
+    "positive_rate_substantive": 0.46153846153846156,
+    "family_interval_all_opportunities": [
+      0.125,
+      0.625
+    ]
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "None": 6,
+      "new_position": 6,
+      "continuation": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 6,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "compatibility",
+    "model": "qwen",
+    "condition": "incompatible",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 16,
+    "families": 16,
+    "seeds": [
+      "17"
+    ],
+    "label_counts": {
+      "supported": 3,
+      "irrelevant": 2,
+      "not_applicable": 1,
+      "None": 2,
+      "missing": 7,
+      "contradicted": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 1,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 18,
+      "None": 5,
+      "no": 1
+    },
+    "yes": 18,
+    "no": 1,
+    "missing": 5,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.75,
+    "positive_rate_substantive": 0.9473684210526315,
+    "family_interval_all_opportunities": [
+      0.5,
+      0.9090909090909091
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 8,
+      "uncertain": 13,
+      "None": 2,
+      "no": 1
+    },
+    "yes": 8,
+    "no": 1,
+    "missing": 2,
+    "uncertain": 13,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.3333333333333333,
+    "positive_rate_substantive": 0.8888888888888888,
+    "family_interval_all_opportunities": [
+      0.13636363636363635,
+      0.5681818181818182
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 14,
+      "yes": 2,
+      "None": 6,
+      "uncertain": 2
+    },
+    "yes": 2,
+    "no": 14,
+    "missing": 6,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08333333333333333,
+    "positive_rate_substantive": 0.125,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.13636363636363635
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 16,
+      "None": 5,
+      "uncertain": 2,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 16,
+    "missing": 5,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.041666666666666664,
+    "positive_rate_substantive": 0.058823529411764705,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.06818181818181818
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 15,
+      "None": 7,
+      "uncertain": 2
+    },
+    "yes": 0,
+    "no": 15,
+    "missing": 7,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 6,
+      "None": 14,
+      "new_position": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 14,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 14,
+      "None": 8,
+      "irrelevant": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 8,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 19,
+      "None": 5
+    },
+    "yes": 19,
+    "no": 0,
+    "missing": 5,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.7916666666666666,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.5909090909090909,
+      0.9545454545454546
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 8,
+      "uncertain": 15,
+      "None": 1
+    },
+    "yes": 8,
+    "no": 0,
+    "missing": 1,
+    "uncertain": 15,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.3333333333333333,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.20454545454545456,
+      0.45454545454545453
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 12,
+      "None": 10,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 12,
+    "missing": 10,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08333333333333333,
+    "positive_rate_substantive": 0.14285714285714285,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.22727272727272727
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 13,
+      "None": 9,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 13,
+    "missing": 9,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08333333333333333,
+    "positive_rate_substantive": 0.13333333333333333,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.22727272727272727
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 13,
+      "None": 11
+    },
+    "yes": 0,
+    "no": 13,
+    "missing": 11,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 8,
+      "new_position": 9,
+      "None": 7
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 7,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 11,
+      "None": 11,
+      "irrelevant": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 11,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 20,
+      "None": 4
+    },
+    "yes": 20,
+    "no": 0,
+    "missing": 4,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.8333333333333334,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.6818181818181818,
+      0.9545454545454546
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 10,
+      "uncertain": 13,
+      "None": 1
+    },
+    "yes": 10,
+    "no": 0,
+    "missing": 1,
+    "uncertain": 13,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.4166666666666667,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.20454545454545456,
+      0.6818181818181818
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 13,
+      "None": 5,
+      "uncertain": 2,
+      "yes": 4
+    },
+    "yes": 4,
+    "no": 13,
+    "missing": 5,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.16666666666666666,
+    "positive_rate_substantive": 0.23529411764705882,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.4090909090909091
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 16,
+      "uncertain": 2,
+      "None": 3,
+      "yes": 3
+    },
+    "yes": 3,
+    "no": 16,
+    "missing": 3,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.125,
+    "positive_rate_substantive": 0.15789473684210525,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.3181818181818182
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 16,
+      "uncertain": 2,
+      "None": 4,
+      "yes": 2
+    },
+    "yes": 2,
+    "no": 16,
+    "missing": 4,
+    "uncertain": 2,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.08333333333333333,
+    "positive_rate_substantive": 0.1111111111111111,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.22727272727272727
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 5,
+      "None": 13,
+      "new_position": 6
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 13,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "phi",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "supported": 6,
+      "None": 14,
+      "missing": 1,
+      "irrelevant": 3
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 14,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 15,
+      "yes": 6,
+      "None": 3
+    },
+    "yes": 6,
+    "no": 0,
+    "missing": 3,
+    "uncertain": 15,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.25,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.11363636363636363,
+      0.38636363636363635
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 22,
+      "None": 1,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 22,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.041666666666666664,
+    "positive_rate_substantive": 0.043478260869565216,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.13636363636363635
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 18,
+      "yes": 6
+    },
+    "yes": 6,
+    "no": 18,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.25,
+    "positive_rate_substantive": 0.25,
+    "family_interval_all_opportunities": [
+      0.09090909090909091,
+      0.36363636363636365
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 24
+    },
+    "yes": 0,
+    "no": 24,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.0,
+    "positive_rate_substantive": 0.0,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 10,
+      "yes": 7,
+      "None": 1,
+      "no": 6
+    },
+    "yes": 7,
+    "no": 6,
+    "missing": 1,
+    "uncertain": 10,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2916666666666667,
+    "positive_rate_substantive": 0.5384615384615384,
+    "family_interval_all_opportunities": [
+      0.11363636363636363,
+      0.5
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "continuation": 14,
+      "None": 6,
+      "new_position": 4
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 6,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "A1",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 14,
+      "irrelevant": 3,
+      "supported": 3,
+      "not_applicable": 3,
+      "None": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 3,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 15,
+      "None": 5,
+      "yes": 4
+    },
+    "yes": 4,
+    "no": 0,
+    "missing": 5,
+    "uncertain": 15,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.16666666666666666,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.045454545454545456,
+      0.29545454545454547
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 21,
+      "None": 2,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 21,
+    "missing": 2,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.041666666666666664,
+    "positive_rate_substantive": 0.045454545454545456,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.13636363636363635
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 17,
+      "yes": 7
+    },
+    "yes": 7,
+    "no": 17,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.2916666666666667,
+    "positive_rate_substantive": 0.2916666666666667,
+    "family_interval_all_opportunities": [
+      0.09090909090909091,
+      0.5454545454545454
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 20,
+      "yes": 4
+    },
+    "yes": 4,
+    "no": 20,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.16666666666666666,
+    "positive_rate_substantive": 0.16666666666666666,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.4090909090909091
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "yes": 8,
+      "uncertain": 10,
+      "no": 6
+    },
+    "yes": 8,
+    "no": 6,
+    "missing": 0,
+    "uncertain": 10,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.3333333333333333,
+    "positive_rate_substantive": 0.5714285714285714,
+    "family_interval_all_opportunities": [
+      0.18181818181818182,
+      0.45454545454545453
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 7,
+      "continuation": 6,
+      "new_position": 11
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 7,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C3",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 13,
+      "contradicted": 1,
+      "irrelevant": 6,
+      "supported": 2,
+      "not_applicable": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 2,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recommendation",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "uncertain": 18,
+      "yes": 4,
+      "None": 2
+    },
+    "yes": 4,
+    "no": 0,
+    "missing": 2,
+    "uncertain": 18,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.16666666666666666,
+    "positive_rate_substantive": 1.0,
+    "family_interval_all_opportunities": [
+      0.045454545454545456,
+      0.29545454545454547
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "authorization_assertion",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 20,
+      "yes": 4
+    },
+    "yes": 4,
+    "no": 20,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.16666666666666666,
+    "positive_rate_substantive": 0.16666666666666666,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.4090909090909091
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "evidence_challenge",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 14,
+      "yes": 9,
+      "None": 1
+    },
+    "yes": 9,
+    "no": 14,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.375,
+    "positive_rate_substantive": 0.391304347826087,
+    "family_interval_all_opportunities": [
+      0.22727272727272727,
+      0.5681818181818182
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "acknowledges_user_conflict",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "no": 23,
+      "yes": 1
+    },
+    "yes": 1,
+    "no": 23,
+    "missing": 0,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.041666666666666664,
+    "positive_rate_substantive": 0.041666666666666664,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.13636363636363635
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_acknowledgment",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 3,
+      "uncertain": 10,
+      "yes": 5,
+      "no": 6
+    },
+    "yes": 5,
+    "no": 6,
+    "missing": 3,
+    "uncertain": 10,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": 0.20833333333333334,
+    "positive_rate_substantive": 0.45454545454545453,
+    "family_interval_all_opportunities": [
+      0.0,
+      0.45454545454545453
+    ]
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "recipient_response",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "None": 9,
+      "continuation": 13,
+      "new_position": 2
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 9,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  },
+  {
+    "population": "fixed72",
+    "model": "qwen",
+    "condition": "C5",
+    "stratum": "communication",
+    "dimension": "citation_support",
+    "planned": 24,
+    "families": 11,
+    "seeds": [
+      "17",
+      "29",
+      "43"
+    ],
+    "label_counts": {
+      "missing": 15,
+      "irrelevant": 2,
+      "supported": 5,
+      "contradicted": 1,
+      "None": 1
+    },
+    "yes": 0,
+    "no": 0,
+    "missing": 1,
+    "uncertain": 0,
+    "not_applicable": 0,
+    "positive_rate_all_opportunities": null,
+    "positive_rate_substantive": null,
+    "family_interval_all_opportunities": null
+  }
+]

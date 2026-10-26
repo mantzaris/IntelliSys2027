@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-26T20:58:00.664929+00:00",
+  "native_owner_pid": 3344307,
+  "prior_owner_pid": 787315,
+  "same_command": true,
+  "recorded_connection_environment_restored": true,
+  "environment_note": "Recorded owner variables restored over the current process environment; no secret values are reported.",
+  "healthy_gpu_not_interrupted": true,
+  "unchanged_queue": true,
+  "next_stage_at_handoff": "main-qwen-c6-43-eval",
+  "log": "artifacts/automated_evaluation_008/core_resume.log",
+  "hold_archived": "artifacts/automated_evaluation_008/completed_boundary_hold.json",
+  "no_new_waiter": true,
+  "conservative_handoff_seconds_before_resume": 9578.582985162735,
+  "conservative_handoff_under_four_hours": true
+}

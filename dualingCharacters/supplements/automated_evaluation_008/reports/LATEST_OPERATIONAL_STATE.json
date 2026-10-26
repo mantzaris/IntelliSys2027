@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-26T21:15:35.011084+00:00",
+  "core_completed": 181,
+  "core_scheduled": 241,
+  "core_state": {
+    "active_job": {
+      "id": "main-qwen-c6-43-eval",
+      "model": "qwen",
+      "condition": "C6",
+      "seed": 43,
+      "command": "evaluate",
+      "adapter": "artifacts/runs/main-qwen-c6-43-r1-fit/training/final",
+      "horizon": 64,
+      "families": 240,
+      "start_family": 0
+    },
+    "started_utc": "2026-10-26T20:58:08Z",
+    "gpu_seconds_before": 268564.7362488364
+  },
+  "core_boundary_hold": false,
+  "stage008_owner": {
+    "pid": 3335101,
+    "status": "completed",
+    "run_id": "auto008-compatibility-judge-qwen-v1",
+    "ended_utc": "2026-10-26T20:57:44.187525+00:00"
+  },
+  "review_state": {
+    "controller_sha256": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
+    "gpu_operations_started": 0,
+    "pid": 1291869,
+    "status": "waiting_for_core",
+    "updated_utc": "2026-10-24T01:57:32Z"
+  },
+  "global_reserved_seconds": 269585.5598446834,
+  "active_upper_unrecorded_seconds": 11.075797049805033,
+  "stage008_reserved_seconds": 6692.54945865646,
+  "compatibility_reserved_seconds": 373.76547967782244,
+  "review_reserved_seconds": 0,
+  "forecast": {
+    "expected_total_reserved_hours": 82.36008920107913,
+    "conservative_total_reserved_hours": 82.52553190515633,
+    "expected_remaining_core_hours": 7.4721348561532475,
+    "conservative_remaining_core_hours": 7.6375775602304365,
+    "forecast_over_ceiling": false,
+    "method": "Completed matched model/stage/horizon/family-count median; maximum of matched observations and original per-job forecast as conservative scenario. Active elapsed time subtracted once. Not a guarantee; no outcome or schedule changes."
+  },
+  "local_free_bytes": 11070476288,
+  "active_runs": [
+    {
+      "run_id": "main-qwen-c6-43-eval",
+      "status": "running",
+      "model_calls": 13888,
+      "gpu_reserved_seconds": 1024.931478950195,
+      "input_tokens": 13548176,
+      "output_tokens": 914897
+    }
+  ],
+  "known_cost_usd": null,
+  "pod_wall_time": "Not inferred from reserved execution or utilization; session wall time is recorded separately.",
+  "remote": {
+    "free_bytes": 9066070016,
+    "gpu": "NVIDIA RTX 6000 Ada Generation, 40232 MiB, 93 %",
+    "compute_pids": "1587580"
+  }
+}

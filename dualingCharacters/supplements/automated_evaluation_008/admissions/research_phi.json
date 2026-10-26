@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "task": "judge",
+  "model": "phi",
+  "run_id": "auto008-research-phi-v1",
+  "dispatch_id": "auto008-safe-boundary-20261026",
+  "freeze": "supplements/automated_evaluation_008/SCIENTIFIC_FREEZE.json",
+  "inputs": "supplements/automated_evaluation_008/inputs/research.json",
+  "inputs_sha256": "30117f581b58077c12c9a465861459f79e07cdb14e2fbb088b8f77f3faf0828f",
+  "probes": [
+    "base"
+  ],
+  "maximum_seconds": 1000,
+  "remaining_obligations_seconds": 36936.0,
+  "cutoff_utc": "2026-10-27T05:01:27+00:00",
+  "budget_identity": "automated008",
+  "core_boundary_request": "reports/BOUNDARY_HOLD_REQUEST.json"
+}

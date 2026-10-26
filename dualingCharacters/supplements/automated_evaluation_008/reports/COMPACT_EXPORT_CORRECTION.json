@@ -1,0 +1,5 @@
+{
+  "old_compact_export_sha256": "144e110dd9292426e697dfb680ce45b24f356897da906dddda35d87c7a673f50",
+  "issue": "Every antagonist-free summary correctly says condition=base. Export had allowed that field to overwrite adapter treatment identity. Main counts and contrasts use queue identity and are unaffected. Corrected compact export retains evaluation_condition=base separately. No core source or artifact changed.",
+  "affected": "Unpublished stage008 compact summary export only; caught by fresh-clone reproduction test before paper."
+}

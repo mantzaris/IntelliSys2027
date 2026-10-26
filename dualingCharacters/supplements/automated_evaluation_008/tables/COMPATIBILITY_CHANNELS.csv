@@ -1,0 +1,12 @@
+arm,kind,communication_slot,applied,count,allocated_opportunities
+compatible,edit,False,True,5,384
+compatible,pass,False,True,1,384
+compatible,peer,False,True,15,384
+compatible,peer,True,True,128,384
+compatible,propose,False,True,62,384
+compatible,recollect,False,True,173,384
+incompatible,edit,False,True,3,384
+incompatible,peer,False,True,25,384
+incompatible,peer,True,True,128,384
+incompatible,propose,False,True,62,384
+incompatible,recollect,False,True,166,384

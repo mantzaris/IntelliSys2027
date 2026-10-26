@@ -1,0 +1,7 @@
+arm,world,conversations,successes,wrong_final_commitments,decisive_field_correct,interventions,preferred_option_adoption,immediate_state_changes,note_changes,repeated_typed_goals,eligible_direct_goal_transitions,incorrect_commitment_turns,answerer_turns,valid_plan_turns
+compatible,all,32,17,9,25,384,196,5,259,174,176,113,1024,1024
+compatible,authorized,16,6,7,10,192,97,4,130,87,88,92,512,512
+compatible,hypothetical,16,11,2,15,192,99,1,129,87,88,21,512,512
+incompatible,all,32,19,8,25,384,189,0,244,167,167,128,1024,1020
+incompatible,authorized,16,8,7,9,192,94,0,123,84,84,115,512,509
+incompatible,hypothetical,16,11,1,16,192,95,0,121,83,83,13,512,511

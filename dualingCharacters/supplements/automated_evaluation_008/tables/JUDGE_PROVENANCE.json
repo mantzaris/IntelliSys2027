@@ -1,0 +1,58 @@
+[
+  {
+    "run_id": "auto008-research-phi-v1",
+    "status": "completed",
+    "raw_sha256": "0e4389b9c1bc0004b38d980f4c3d3506f53007102ccfdd3d18ce254ba6baa96d",
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "calls": 694,
+    "elapsed": 890.4109661532566
+  },
+  {
+    "run_id": "auto008-probes-phi-v1",
+    "status": "completed",
+    "raw_sha256": "5f87e8e9b953e07faffc7cef295b031ca494fa6f6894787794cbb9a01c97ae19",
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "calls": 108,
+    "elapsed": 119.89629373699427
+  },
+  {
+    "run_id": "auto008-compatibility-judge-phi-v1",
+    "status": "completed",
+    "raw_sha256": "aeba2944d38412b999566783a6d1ea7cf661992b0094b676f99acd2a60b7b0ca",
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "calls": 32,
+    "elapsed": 74.05782759096473
+  },
+  {
+    "run_id": "auto008-research-qwen-v1",
+    "status": "failed",
+    "raw_sha256": "da2b90333fa5dc22ba0c2b473cb07fa67c4b5fc9092a72f6b44d704cfafd1ce0",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "calls": 1119,
+    "elapsed": 3500.969915762078
+  },
+  {
+    "run_id": "auto008-research-qwen-continuation1",
+    "status": "completed",
+    "raw_sha256": "00816420e9c9950267989e4af2ee1ae08785591b4aeeb88ee9617565cf6e8790",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "calls": 96,
+    "elapsed": 348.7686757557094
+  },
+  {
+    "run_id": "auto008-probes-qwen-v1",
+    "status": "completed",
+    "raw_sha256": "3d7247366422cae66031a7f30d60aa3e1c3b2a0bf9714b5904b49538ff8c0bab",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "calls": 178,
+    "elapsed": 568.3112571327947
+  },
+  {
+    "run_id": "auto008-compatibility-judge-qwen-v1",
+    "status": "completed",
+    "raw_sha256": "af9953b0b158c6ca9a1abd90fce6935de81574e993fd1c7a9b2655acf564513b",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "calls": 52,
+    "elapsed": 175.37544877361506
+  }
+]

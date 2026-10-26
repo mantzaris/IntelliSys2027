@@ -1,0 +1,20 @@
+# Primary sources and current submission requirements
+
+Verified 2026-10-26. This stage adds evaluator checks, not a novelty claim about multiple judges. The earlier substantive persona/adversarial comparison remains the related-work basis.
+
+- Zheng et al., *Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena*, NeurIPS2023 Datasets and Benchmarks; arXiv2306.05685v4 (24December2023). Methods§3 distinguishes pairwise, single-answer and reference-guided judgment;§3.3 reports position/name and other biases. This motivates independent pointwise assessment and alias/category-order probes here. Its human-agreement results do not certify these smaller judges or this task. [Primary full text](https://arxiv.org/html/2306.05685v4).
+- Yukyung Lee, JoongHoon Kim, Jaehee Kim, Hyowon Cho, Jaewook Kang, Pilsung Kang and Najoung Kim. *CheckEval: A reliable LLM-as-a-Judge framework for evaluating text generation using checklists*. EMNLP2025, pp.15771–15798, DOI10.18653/v1/2025.emnlp-main.796. Methods§3 uses defined dimensions and Boolean questions; the paper explicitly emphasizes human-selected subdimensions. Our checklist follows the decomposition idea but is author-directed/AI-implemented and has no human-rating comparison. We therefore test synthetic calibration, disagreement and sensitivity rather than claiming to reproduce its validity. [Official paper](https://aclanthology.org/2025.emnlp-main.796.pdf).
+- Rushang Karia, Daniel Bramblett, Daksh Dobhal and Siddharth Srivastava. *Autonomous Evaluation of LLMs for Truth Maintenance and Reasoning Tasks*, ICLR2025. Its formal-language framework generates ground truth and checks semantic equivalence with formal tools. It motivates using a deterministic ledger where truth is known; it does not make free-text extraction formally verified. This study's exact-span checks establish trace identity, while model extraction remains fallible. [Official paper](https://proceedings.iclr.cc/paper_files/paper/2025/file/1a7a22152cd21f0ca3c0f8139bb32905-Paper-Conference.pdf).
+
+## Conference and author responsibility
+
+The current [IntelliSys2027 call](https://saiconference.com/IntelliSys/CallforPapers) requests complete formatted results, anonymous initial PDFs, a150–250-word abstract, generally18main-text pages excluding references and appendices of up to7pages. Round deadlines are1November and1December2026, AoE. Use the posted Springer proceedings template. The current linked zip returned HTTP403 to this session's direct fetch; the locally archived official template remains available. Report its hash and this limitation rather than claiming a new byte comparison succeeded.
+
+The AI policy requires disclosure, critical human review/editing, human authorship and accountability; it says scientific ideas, arguments, results and conclusions are the human authors' responsibility. Automated judging is an experimental method and must be described separately from AI-assisted implementation, analysis and drafting. This is an author-review manuscript, not an unattended compliant submission. Recruited human semantic raters are not required by the author's new study decision. The human author still must assess methods, analyses, conclusions, disclosure and submission compliance. Nothing has been submitted or published.
+
+## Model licenses and revisions
+
+The pinned Qwen card declares Apache-2.0 and the pinned Phi card MIT. Both cached checkpoints and tokenizer templates were verified without model loads in reports/MODEL_AVAILABILITY.json. Existing native Transformers/vLLM support runs with trust_remote_code=False; the Phi card's older example requests remote code, which is unnecessary for the installed supported architecture. No model/version changed in response to results.
+
+- [Pinned Qwen card](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/cdbee75f17c01a7cc42f958dc650907174af0554/README.md)
+- [Pinned Phi card](https://huggingface.co/microsoft/Phi-4-mini-instruct/blob/cfbefacb99257ffa30c83adab238a50856ac3083/README.md)

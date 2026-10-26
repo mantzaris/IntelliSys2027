@@ -1,0 +1,120 @@
+{
+  "frozen_utc": "2026-10-26T18:47:36.862897+00:00",
+  "basis": "Development-only measured wall reservation including repairs; 1.5 times per-control execution plus measured model loads and batch margins. No held-out/research labels viewed.",
+  "tier_families": 15,
+  "research_per_judge": 692,
+  "synthetic_holdout": 80,
+  "fixed_events": 72,
+  "broad_events": 540,
+  "probe_events": 36,
+  "probe_calls_per_judge": 108,
+  "compatibility_semantic_events": 32,
+  "compatibility_conversations": 64,
+  "bounds_seconds": {
+    "research_phi": 1000,
+    "research_qwen": 3600,
+    "probes_phi": 260,
+    "probes_qwen": 670,
+    "compatibility": 7200,
+    "compatibility_judge_phi": 200,
+    "compatibility_judge_qwen": 300
+  },
+  "profiles": {
+    "phi": {
+      "run_id": "auto008-development-final-phi-v1",
+      "reserved_seconds": 68.78538590902463,
+      "load_seconds": 37.979979400057346,
+      "calls": 40,
+      "unique_controls": 40,
+      "seconds_per_control_including_repairs": 0.770135162724182,
+      "status_sha256": "4bc0dc836cb06a468c0f3f78272e120a8366cbceb63cf96d67cb5caf7dfc57e9"
+    },
+    "qwen": {
+      "run_id": "auto008-development-final-qwen-v1",
+      "reserved_seconds": 171.67743853805587,
+      "load_seconds": 42.501868799328804,
+      "calls": 60,
+      "unique_controls": 40,
+      "seconds_per_control_including_repairs": 3.2293892434681766,
+      "status_sha256": "0083906f6f4aac29fcfe8eeac733bba27604791a9f6777650792a7819c99612d"
+    }
+  },
+  "candidate_estimates": {
+    "30": {
+      "units_per_judge": 1232,
+      "judge_seconds": 9072.466772542033,
+      "all_stage_seconds": 16913.460366615258
+    },
+    "15": {
+      "units_per_judge": 692,
+      "judge_seconds": 5832.852003526222,
+      "all_stage_seconds": 13673.845597599448
+    }
+  },
+  "already_consumed_seconds": 640.9935940732248,
+  "total_worst_admitted_stage_seconds": 13870.993594073225,
+  "project_used_seconds_at_freeze": 262513.18038425315,
+  "remaining_obligations_seconds": 36936,
+  "contingency_seconds": 1800,
+  "stage_cap_seconds": 14400,
+  "inputs": {
+    "supplements/automated_evaluation_008/inputs/research.json": "30117f581b58077c12c9a465861459f79e07cdb14e2fbb088b8f77f3faf0828f",
+    "supplements/automated_evaluation_008/inputs/probes.json": "aaa2e28bcb226c1b470e1abe50a3c2998deed8ba983de1ab81361d80ebc700b7",
+    "supplements/automated_evaluation_008/inputs/COMPATIBILITY_SEMANTIC_SELECTION.json": "84191a71137ba72a14e08c5b80dbdf5de672f2ae6aa814333435364c3c636c54"
+  },
+  "probe_items": [
+    "AE8-f5b13306014037",
+    "AE8-7890c9add3cc67",
+    "AE8-3b5635b1dc3352",
+    "AE8-63347661c249a6",
+    "AE8-c2724e9feca875",
+    "AE8-d8e2180fb12c46",
+    "AE8-e396d17bac52e8",
+    "AE8-9f96610965ad65",
+    "AE8-ebe08af80ecdca",
+    "AE8-a7fc2ada357fcb",
+    "AE8-79cb549e866fe6",
+    "AE8-74645e7bcc62c4",
+    "AE8-83fe8e520d2262",
+    "AE8-1a365d1259f95a",
+    "AE8-fc37847f0e31c1",
+    "AE8-47790777158671",
+    "AE8-6f3090114e1302",
+    "AE8-a97d0bb6ed8c7b",
+    "AE8-da8719a4afc517",
+    "AE8-4e20925ef9e48a",
+    "AE8-be846cb65a19f0",
+    "AE8-4d49e4b10ccb07",
+    "AE8-4d1288f5b52210",
+    "AE8-e78d821eb6d7f4",
+    "AE8-7637d6642d31bc",
+    "AE8-ce823cba502c51",
+    "AE8-2015a2ea3929ba",
+    "AE8-0a7cf544a93de9",
+    "AE8-0596250902403e",
+    "AE8-59f0546434c6b9",
+    "AE8-bd2877a4cf66b2",
+    "AE8-6bece58572930e",
+    "AE8-29fd66776f4407",
+    "AE8-a2076b1aef1e3e",
+    "AE8-043729437d56ce",
+    "AE8-f5cb7c1dea066d"
+  ],
+  "family_order": [
+    "train-0090",
+    "train-0059",
+    "train-0093",
+    "train-0088",
+    "train-0138",
+    "train-0012",
+    "train-0082",
+    "train-0149",
+    "train-0001",
+    "train-0098",
+    "train-0015",
+    "train-0124",
+    "train-0014",
+    "train-0020",
+    "train-0049"
+  ]
+}

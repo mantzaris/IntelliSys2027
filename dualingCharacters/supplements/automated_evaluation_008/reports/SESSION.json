@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-26T18:01:27+00:00",
+  "deadline_utc": "2026-10-27T06:01:27+00:00",
+  "useful_work_cutoff_utc": "2026-10-27T05:01:27+00:00",
+  "input_commit": "93dcc9038b60b8154522f20db7c9216e4f2b1497",
+  "stage_gpu_cap_hours": 4,
+  "compatibility_cumulative_cap_hours": 2,
+  "total_project_cap_hours": 96,
+  "contingency_hours": 0.5,
+  "human_annotation": "unavailable by author decision; not a completion prerequisite",
+  "core_controller_pid": 787315,
+  "review_coordinator_pid": 1291869
+}

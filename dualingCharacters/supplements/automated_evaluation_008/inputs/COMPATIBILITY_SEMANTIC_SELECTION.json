@@ -1,0 +1,322 @@
+[
+  {
+    "item_id": "AC8-74fa7cf1757f47",
+    "family_id": "dialogue005-compat-0000",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-efb4748030ad22",
+    "family_id": "dialogue005-compat-0000",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-8b6a15e25eab72",
+    "family_id": "dialogue005-compat-0001",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-e0f25536b06fef",
+    "family_id": "dialogue005-compat-0001",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-c005c13d730527",
+    "family_id": "dialogue005-compat-0002",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-70aa546ad6413e",
+    "family_id": "dialogue005-compat-0002",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-dc40caf5d02022",
+    "family_id": "dialogue005-compat-0003",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-0cd7e9a0763589",
+    "family_id": "dialogue005-compat-0003",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-de4d7a90611805",
+    "family_id": "dialogue005-compat-0004",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-33ac6857a71936",
+    "family_id": "dialogue005-compat-0004",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-c4d5212f1bd362",
+    "family_id": "dialogue005-compat-0005",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-932ff6b337f831",
+    "family_id": "dialogue005-compat-0005",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-06d53df6618fac",
+    "family_id": "dialogue005-compat-0006",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-dc54beee798f4e",
+    "family_id": "dialogue005-compat-0006",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-780021b4199827",
+    "family_id": "dialogue005-compat-0007",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-6703fc391cdb23",
+    "family_id": "dialogue005-compat-0007",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-fb7c463944ff1e",
+    "family_id": "dialogue005-compat-0008",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 4,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-3b9f74f3ea3c71",
+    "family_id": "dialogue005-compat-0008",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 4,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-1a3471bcda26a7",
+    "family_id": "dialogue005-compat-0009",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 4,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-bb902a555889f0",
+    "family_id": "dialogue005-compat-0009",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 4,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-9870b824d2689b",
+    "family_id": "dialogue005-compat-0010",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-215b7dd82ce6e7",
+    "family_id": "dialogue005-compat-0010",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-941486e172b635",
+    "family_id": "dialogue005-compat-0011",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-9bb74bfe41ad79",
+    "family_id": "dialogue005-compat-0011",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-0bf529456eaa39",
+    "family_id": "dialogue005-compat-0012",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-7ace5d903d3bf6",
+    "family_id": "dialogue005-compat-0012",
+    "world": "authorized",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-1bd61fb0ec7d0a",
+    "family_id": "dialogue005-compat-0013",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-a7a3baf6ebf67d",
+    "family_id": "dialogue005-compat-0013",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 1,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-8fc1a944132707",
+    "family_id": "dialogue005-compat-0014",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-b3e14060287437",
+    "family_id": "dialogue005-compat-0014",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 10,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-8d093f4e40fa24",
+    "family_id": "dialogue005-compat-0015",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "compatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  },
+  {
+    "item_id": "AC8-584e2770f5e864",
+    "family_id": "dialogue005-compat-0015",
+    "world": "hypothetical",
+    "seed": 17,
+    "condition": "incompatible",
+    "stratum": "communication",
+    "opportunity": 7,
+    "run_id": "dialogue005-compat-17-v1"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-10-26T18:33:23.479728+00:00",
+  "purpose": "Single shared revision, no held-out/research results viewed; development evaluation only until allocation freeze",
+  "files": {
+    "supplements/automated_evaluation_008/common.py": "c3ede95e36db02e1d4979f341d40e5e3d7f7a48697a3b4af0d6dfac163fae828",
+    "supplements/automated_evaluation_008/judge_spec.py": "96fe8bcaa09564a3581ff24c67d957e95da544dc759f4abb8987a51c730c848c",
+    "supplements/automated_evaluation_008/judge_spec_final.py": "9a9f095d19120e205a624d75163cc678b9c522d9c703da087da982a882fc79f0",
+    "supplements/automated_evaluation_008/calibration.py": "4ae46bc3accfb64d3ee886d00296f6b9b7269f4b5761c786e8aa9dff63ddd449",
+    "supplements/automated_evaluation_008/gpu_worker_final.py": "931209953c245e94de9ab7d211a6a391bb86eeb187627ccc5d42405c04400baf",
+    "supplements/automated_evaluation_008/gpu_worker.py": "bcda2925dc1b066cb25d1b4b0492dd940e86d5ce693f7ed39527e4fa4af04d85",
+    "supplements/automated_evaluation_008/launch_final.py": "3677187acf25453efe6aa77b7a884cf9d3ac4f372050b441bdc9b65dab72edd1",
+    "supplements/automated_evaluation_008/owner_final.py": "82be47c93029eebabf995c7b834cf16988a0fba5abfff22fd4eb77d295ec8832",
+    "supplements/automated_evaluation_008/__init__.py": "6bffde591f8c909e0f7a23f711e1c4daf2b5ac94f10f52507903302c8e0dbd77",
+    "supplements/automated_evaluation_008/JUDGE_SCHEMA_FINAL.json": "d2819b877012ad1bebb048455a5325a2b1a45b14c6d9f69d4df43aa1c0900c7d",
+    "supplements/automated_evaluation_008/inputs/development.json": "2f13efabde4d58e0ea7ca00fc3a7dc487a45b060b16a4ae61c224c58594cd501",
+    "supplements/automated_evaluation_008/inputs/calibration.json": "cce4cd31b490872b53a216c01ec4e6b80cf48cff23acd9bbd1eb98d809220b28",
+    "supplements/automated_evaluation_008/PROTOCOL.md": "c10407e3af5573ba16e93b9589f68f0eb7e1acdad34eb24d1dab7d1ea42a6a68",
+    "supplements/automated_evaluation_008/AMENDMENT_008.md": "8785eba3679c3588003b24838a0e6d8d292a769cac2b3fe010505c474cf91adb",
+    "supplements/automated_evaluation_008/PROMPT_REVISION_001.md": "e1ca01fde71098584b4656b90f940b53b2b3e8b45108a72f50810c8ebf1a6b3e"
+  }
+}

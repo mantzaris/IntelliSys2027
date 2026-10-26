@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "research_inputs": 692,
+  "broad_events": 540,
+  "fixed_events": 72,
+  "synthetic_holdout": 80,
+  "probe_events": 36,
+  "selected_episodes": 270,
+  "original_private_artifact_directory_required": false,
+  "qualification": "Regeneration from packaged selected reconstructed records, not full original archive rehash."
+}

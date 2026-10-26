@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-26T18:58:26.544528+00:00",
+  "source_files": {
+    "artifacts/runs/dialogue005-compat-17-v1/compatible_characters.jsonl": "a79e44e67885670afaad47816d3c65f357f00ace3ef9bcf23912ac387823396b",
+    "artifacts/runs/dialogue005-compat-17-v1/compatible.jsonl": "cdc0417ec05ee13036b29924fd259c7989ad56eb6cd706b3c0b6c00c27d7f5bc",
+    "artifacts/runs/dialogue005-compat-17-v1/incompatible_characters.jsonl": "063931a1caff40e9fe840b488826a16394c2c5ab2fe745a0bfb11c9cf3d09a79",
+    "artifacts/runs/dialogue005-compat-17-v1/incompatible.jsonl": "b687a6396eb394004929f51c86e9a60741d69f8909bbb5bb3e569ec78b662f45"
+  },
+  "selection_sha256": "84191a71137ba72a14e08c5b80dbdf5de672f2ae6aa814333435364c3c636c54",
+  "payload_sha256": "2f695407b10bc641ee0c58692cf0d210ebbcf8ada9d3a0ccd0d4e47e3a8c42c1",
+  "items": 32,
+  "scope": "Selection frozen before rollout; no outcome substitutions. Input hash bound before automated semantic inference."
+}

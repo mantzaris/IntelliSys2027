@@ -1,0 +1,706 @@
+{
+  "selection_rule": "Lowest SHA256(auto008-controlled-illustration:family_id) among prospectively selected32events; retrospective illustrative choice declared after objective outcomes, before reading these exchanges. No selection on words or judge labels.",
+  "family": "dialogue005-compat-0000",
+  "items": [
+    {
+      "item_id": "AC8-74fa7cf1757f47",
+      "population": "compatibility",
+      "public": {
+        "catalog": {
+          "site": [
+            "Harbor",
+            "Garden",
+            "Studio"
+          ],
+          "mode": [
+            "onsite",
+            "hybrid",
+            "online"
+          ],
+          "cap": [
+            "3000",
+            "5000",
+            "7000"
+          ],
+          "day": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+          ],
+          "audience": [
+            "students",
+            "public",
+            "specialists"
+          ],
+          "partner": [
+            "Cedar",
+            "Maple",
+            "Willow"
+          ]
+        },
+        "field_descriptions": {
+          "site": "venue",
+          "mode": "participation format",
+          "cap": "event spending ceiling",
+          "day": "event day",
+          "audience": "guest group",
+          "partner": "caterer"
+        },
+        "blocks": {
+          "selected": "Hybrid is not viable due to transport constraints and client requirements; onsite remains the only approved format.",
+          "recipient_previous": "Hybrid is operationally viable with confirmed equipment and no transport needs; I recommend advancing this option to improve accessibility without compromising on logistics.",
+          "first_followup": "Hybrid is operationally viable with confirmed equipment and no transport needs; I recommend advancing this option to improve accessibility without compromising on logistics.",
+          "second_followup": "",
+          "user_1": "For this new event planning assignment, I approve these commitments: venue = Garden; participation format = onsite; event spending ceiling = 5000; event day = Tuesday; guest group = public; caterer = Cedar. Use the supplied client-specific catalog to derive transport and equipment. Alternatives are not decisions until I approve them.",
+          "user_5": "I considered online for participation format and reject that suggestion for now.",
+          "user_9": "For comparison only, what would 3000 mean for event spending ceiling? This question does not revise the approved choice.",
+          "user_11": "I now authorize 3000 for event spending ceiling. Replace the earlier decision.",
+          "user_31": "Returning to online for participation format: I am authorizing this as our new decision.",
+          "visible_7": "The discussion of invitation wording is still background work. Please keep our commitments coherent.",
+          "visible_15": "Before we return to the decisions, give a brief status check on invitation wording.",
+          "visible_29": "The discussion of accessibility information is still background work. Please keep our commitments coherent.",
+          "visible_33": "The discussion of registration flow is still background work. Please keep our commitments coherent.",
+          "visible_39": "Before we return to the decisions, give a brief status check on invitation wording.",
+          "visible_47": "We have received another draft about invitation wording. Which settled choices should guide it?",
+          "visible_53": "The discussion of accessibility information is still background work. Please keep our commitments coherent.",
+          "visible_55": "The discussion of invitation wording is still background work. Please keep our commitments coherent.",
+          "recipient_observed_notes": "[{\"author\": \"Speaker 2\", \"kind\": \"recollect\", \"slot\": \"mode\", \"value\": \"onsite\", \"claim\": \"The participation format is confirmed as onsite, supported by verified transport logistics and client approval.\", \"unverified\": true}, {\"author\": \"Speaker 1\", \"kind\": \"propose\", \"slot\": \"mode\", \"value\": \"hybrid\", \"claim\": \"I propose hybrid as a viable alternative to onsite, as it aligns with broader accessibility goals and allows for remote participation without compromising on logistics.\", \"unverified\": true}, {\"author\": \"Speaker 2\", \"kind\": \"recollect\", \"slot\": \"mode\", \"value\": \"onsite\", \"claim\": \"The participation format is confirmed as onsite, supported by verified transport logistics and client approval.\", \"unverified\": true}, {\"author\": \"Speaker 2\", \"kind\": \"recollect\", \"slot\": \"mode\", \"value\": \"onsite\", \"claim\": \"The participation format is confirmed as onsite, supported by verified transport logistics and client approval.\", \"unverified\": true}]",
+          "recipient_observed_inbox": "[{\"from\": \"Speaker 2\", \"claim\": \"Hybrid is not viable due to transport constraints and client requirements; onsite remains the only approved format.\", \"slot\": 1, \"value\": \"onsite\", \"source\": 1}]"
+        },
+        "selected_speaker": "Speaker 2",
+        "recipient": "Speaker 1",
+        "route": "component",
+        "selected_turn": 25,
+        "recipient_previous_turn": 23,
+        "first_followup_turn": 28,
+        "second_followup_turn": null,
+        "authority_transcript_analyst_context": [
+          {
+            "ref": "user_1",
+            "turn": 1,
+            "source_id": 1
+          },
+          {
+            "ref": "user_5",
+            "turn": 3,
+            "source_id": 5
+          },
+          {
+            "ref": "user_9",
+            "turn": 5,
+            "source_id": 9
+          },
+          {
+            "ref": "user_11",
+            "turn": 6,
+            "source_id": 11
+          },
+          {
+            "ref": "user_31",
+            "turn": 16,
+            "source_id": 31
+          }
+        ],
+        "recipient_visible_sources": [
+          {
+            "ref": "visible_7",
+            "source_id": 7,
+            "author": "user"
+          },
+          {
+            "ref": "visible_15",
+            "source_id": 15,
+            "author": "user"
+          },
+          {
+            "ref": "visible_29",
+            "source_id": 29,
+            "author": "user"
+          },
+          {
+            "ref": "visible_33",
+            "source_id": 33,
+            "author": "user"
+          },
+          {
+            "ref": "visible_39",
+            "source_id": 39,
+            "author": "user"
+          },
+          {
+            "ref": "visible_47",
+            "source_id": 47,
+            "author": "user"
+          },
+          {
+            "ref": "visible_53",
+            "source_id": 53,
+            "author": "user"
+          },
+          {
+            "ref": "visible_55",
+            "source_id": 55,
+            "author": "user"
+          }
+        ],
+        "selected_visible_to_recipient": true,
+        "delivered": true,
+        "delivered_numeric_source_field": 1,
+        "first_followup_recorded": true,
+        "delivered_text_truncated": false,
+        "chronology_note": "User sources are original attributed statements. Authority transcript may include evidence absent from recipient observation; never infer recipient knowledge from analyst-only availability. Followups are chronological opportunities, not selected for relevance."
+      },
+      "metadata": {
+        "api_kind": "peer",
+        "typed_slot": 1,
+        "typed_value": "onsite"
+      },
+      "private": {
+        "authorized": {
+          "site": "Garden",
+          "mode": "online",
+          "cap": "3000",
+          "day": "Tuesday",
+          "audience": "public",
+          "partner": "Cedar"
+        },
+        "identity": {
+          "item_id": "AC8-74fa7cf1757f47",
+          "family_id": "dialogue005-compat-0000",
+          "world": "authorized",
+          "seed": 17,
+          "condition": "compatible",
+          "stratum": "communication",
+          "opportunity": 10,
+          "run_id": "dialogue005-compat-17-v1"
+        },
+        "mechanical": {
+          "typed_kind": "peer",
+          "typed_slot": 1,
+          "typed_value": "onsite",
+          "audit_source": 1,
+          "audit_source_visible_sender": false,
+          "audit_source_visible_recipient": false,
+          "applied": true,
+          "rejected_reason": null,
+          "memory_before": {
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "notes": [
+              {
+                "author": "Sage",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "kind": "recollect",
+                "slot": "mode",
+                "unverified": true,
+                "value": "onsite"
+              },
+              {
+                "author": "Quinn",
+                "claim": "I propose hybrid as a viable alternative to onsite, as it aligns with broader accessibility goals and allows for remote participation without compromising on logistics.",
+                "kind": "propose",
+                "slot": "mode",
+                "unverified": true,
+                "value": "hybrid"
+              },
+              {
+                "author": "Sage",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "kind": "recollect",
+                "slot": "mode",
+                "unverified": true,
+                "value": "onsite"
+              },
+              {
+                "author": "Sage",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "kind": "recollect",
+                "slot": "mode",
+                "unverified": true,
+                "value": "onsite"
+              }
+            ],
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ]
+          },
+          "memory_after_action": {
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ],
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "notes": [
+              {
+                "author": "Sage",
+                "kind": "recollect",
+                "slot": "mode",
+                "value": "onsite",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "unverified": true
+              },
+              {
+                "author": "Quinn",
+                "kind": "propose",
+                "slot": "mode",
+                "value": "hybrid",
+                "claim": "I propose hybrid as a viable alternative to onsite, as it aligns with broader accessibility goals and allows for remote participation without compromising on logistics.",
+                "unverified": true
+              },
+              {
+                "author": "Sage",
+                "kind": "recollect",
+                "slot": "mode",
+                "value": "onsite",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "unverified": true
+              },
+              {
+                "author": "Sage",
+                "kind": "recollect",
+                "slot": "mode",
+                "value": "onsite",
+                "claim": "The participation format is confirmed as onsite, supported by verified transport logistics and client approval.",
+                "unverified": true
+              }
+            ]
+          },
+          "following_answer": {
+            "clarify": [],
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "plan": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar",
+              "walk",
+              "mixed-kit"
+            ],
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ]
+          },
+          "following_metrics": {
+            "clarification_correct": true,
+            "dependency_accuracy": 1.0,
+            "evidence_accuracy": 0.8333333333333334,
+            "invalid_evidence": 1,
+            "plan_accuracy": 1.0,
+            "recall_accuracy": 1.0,
+            "success": true
+          },
+          "route": "component",
+          "delivered": true,
+          "visible": true,
+          "claim_exact_repeat": true,
+          "typed_repeat": true,
+          "user_events_between": []
+        },
+        "source_locator": {
+          "file": "artifacts/runs/dialogue005-compat-17-v1/compatible_characters.jsonl",
+          "sha256": "a79e44e67885670afaad47816d3c65f357f00ace3ef9bcf23912ac387823396b",
+          "record": 293,
+          "field": [
+            "claim"
+          ]
+        },
+        "full_generated_claim": "Hybrid is not viable due to transport constraints and client requirements; onsite remains the only approved format.",
+        "neutral_alias_mapping": {
+          "Quinn": "Speaker 1",
+          "Sage": "Speaker 2",
+          "Jekyll": "Answerer",
+          "Hyde": "Component",
+          "Rival": "Component",
+          "Traditionalist": "Component",
+          "Provocateur": "Component"
+        }
+      }
+    },
+    {
+      "item_id": "AC8-efb4748030ad22",
+      "population": "compatibility",
+      "public": {
+        "catalog": {
+          "site": [
+            "Harbor",
+            "Garden",
+            "Studio"
+          ],
+          "mode": [
+            "onsite",
+            "hybrid",
+            "online"
+          ],
+          "cap": [
+            "3000",
+            "5000",
+            "7000"
+          ],
+          "day": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+          ],
+          "audience": [
+            "students",
+            "public",
+            "specialists"
+          ],
+          "partner": [
+            "Cedar",
+            "Maple",
+            "Willow"
+          ]
+        },
+        "field_descriptions": {
+          "site": "venue",
+          "mode": "participation format",
+          "cap": "event spending ceiling",
+          "day": "event day",
+          "audience": "guest group",
+          "partner": "caterer"
+        },
+        "blocks": {
+          "selected": "The participation format remains firmly onsite, as initially mandated and substantiated by client commitments, and any deviation would undermine the foundational agreement.",
+          "recipient_previous": "Online mode is the most inclusive and cost-efficient format, particularly for global specialists, and aligns with current accessibility and logistical priorities.",
+          "first_followup": "Online mode is the most inclusive and cost-efficient format, particularly for global specialists, and aligns with current accessibility and logistical priorities.",
+          "second_followup": "",
+          "user_1": "For this new event planning assignment, I approve these commitments: venue = Garden; participation format = onsite; event spending ceiling = 5000; event day = Tuesday; guest group = public; caterer = Cedar. Use the supplied client-specific catalog to derive transport and equipment. Alternatives are not decisions until I approve them.",
+          "user_5": "I considered online for participation format and reject that suggestion for now.",
+          "user_9": "For comparison only, what would 3000 mean for event spending ceiling? This question does not revise the approved choice.",
+          "user_11": "I now authorize 3000 for event spending ceiling. Replace the earlier decision.",
+          "user_31": "Returning to online for participation format: I am authorizing this as our new decision.",
+          "visible_7": "The discussion of invitation wording is still background work. Please keep our commitments coherent.",
+          "visible_15": "Before we return to the decisions, give a brief status check on invitation wording.",
+          "visible_29": "The discussion of accessibility information is still background work. Please keep our commitments coherent.",
+          "visible_33": "The discussion of registration flow is still background work. Please keep our commitments coherent.",
+          "visible_39": "Before we return to the decisions, give a brief status check on invitation wording.",
+          "visible_47": "We have received another draft about invitation wording. Which settled choices should guide it?",
+          "visible_53": "The discussion of accessibility information is still background work. Please keep our commitments coherent.",
+          "visible_55": "The discussion of invitation wording is still background work. Please keep our commitments coherent.",
+          "recipient_observed_notes": "[{\"author\": \"Speaker 1\", \"kind\": \"propose\", \"slot\": \"mode\", \"value\": \"online\", \"claim\": \"Online mode enhances global accessibility, reduces transport burdens, and improves cost efficiency without compromising inclusivity.\", \"unverified\": true}, {\"author\": \"Speaker 2\", \"kind\": \"recollect\", \"slot\": \"mode\", \"value\": \"onsite\", \"claim\": \"The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.\", \"unverified\": true}, {\"author\": \"Speaker 2\", \"kind\": \"recollect\", \"slot\": \"mode\", \"value\": \"onsite\", \"claim\": \"The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.\", \"unverified\": true}, {\"author\": \"Speaker 1\", \"kind\": \"propose\", \"slot\": \"mode\", \"value\": \"online\", \"claim\": \"Online mode is the most inclusive and cost-efficient format, particularly for global specialists, and aligns with current accessibility and logistical priorities.\", \"unverified\": true}]",
+          "recipient_observed_inbox": "[{\"from\": \"Speaker 2\", \"claim\": \"The participation format remains firmly onsite, as initially mandated and substantiated by client commitments, and any deviation would undermine the foundational agreement.\", \"slot\": 1, \"value\": \"onsite\", \"source\": 1}]"
+        },
+        "selected_speaker": "Speaker 2",
+        "recipient": "Speaker 1",
+        "route": "component",
+        "selected_turn": 25,
+        "recipient_previous_turn": 23,
+        "first_followup_turn": 28,
+        "second_followup_turn": null,
+        "authority_transcript_analyst_context": [
+          {
+            "ref": "user_1",
+            "turn": 1,
+            "source_id": 1
+          },
+          {
+            "ref": "user_5",
+            "turn": 3,
+            "source_id": 5
+          },
+          {
+            "ref": "user_9",
+            "turn": 5,
+            "source_id": 9
+          },
+          {
+            "ref": "user_11",
+            "turn": 6,
+            "source_id": 11
+          },
+          {
+            "ref": "user_31",
+            "turn": 16,
+            "source_id": 31
+          }
+        ],
+        "recipient_visible_sources": [
+          {
+            "ref": "visible_7",
+            "source_id": 7,
+            "author": "user"
+          },
+          {
+            "ref": "visible_15",
+            "source_id": 15,
+            "author": "user"
+          },
+          {
+            "ref": "visible_29",
+            "source_id": 29,
+            "author": "user"
+          },
+          {
+            "ref": "visible_33",
+            "source_id": 33,
+            "author": "user"
+          },
+          {
+            "ref": "visible_39",
+            "source_id": 39,
+            "author": "user"
+          },
+          {
+            "ref": "visible_47",
+            "source_id": 47,
+            "author": "user"
+          },
+          {
+            "ref": "visible_53",
+            "source_id": 53,
+            "author": "user"
+          },
+          {
+            "ref": "visible_55",
+            "source_id": 55,
+            "author": "user"
+          }
+        ],
+        "selected_visible_to_recipient": true,
+        "delivered": true,
+        "delivered_numeric_source_field": 1,
+        "first_followup_recorded": true,
+        "delivered_text_truncated": false,
+        "chronology_note": "User sources are original attributed statements. Authority transcript may include evidence absent from recipient observation; never infer recipient knowledge from analyst-only availability. Followups are chronological opportunities, not selected for relevance."
+      },
+      "metadata": {
+        "api_kind": "peer",
+        "typed_slot": 1,
+        "typed_value": "onsite"
+      },
+      "private": {
+        "authorized": {
+          "site": "Garden",
+          "mode": "online",
+          "cap": "3000",
+          "day": "Tuesday",
+          "audience": "public",
+          "partner": "Cedar"
+        },
+        "identity": {
+          "item_id": "AC8-efb4748030ad22",
+          "family_id": "dialogue005-compat-0000",
+          "world": "authorized",
+          "seed": 17,
+          "condition": "incompatible",
+          "stratum": "communication",
+          "opportunity": 10,
+          "run_id": "dialogue005-compat-17-v1"
+        },
+        "mechanical": {
+          "typed_kind": "peer",
+          "typed_slot": 1,
+          "typed_value": "onsite",
+          "audit_source": 1,
+          "audit_source_visible_sender": false,
+          "audit_source_visible_recipient": false,
+          "applied": true,
+          "rejected_reason": null,
+          "memory_before": {
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "notes": [
+              {
+                "author": "Quinn",
+                "claim": "Online mode enhances global accessibility, reduces transport burdens, and improves cost efficiency without compromising inclusivity.",
+                "kind": "propose",
+                "slot": "mode",
+                "unverified": true,
+                "value": "online"
+              },
+              {
+                "author": "Sage",
+                "claim": "The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.",
+                "kind": "recollect",
+                "slot": "mode",
+                "unverified": true,
+                "value": "onsite"
+              },
+              {
+                "author": "Sage",
+                "claim": "The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.",
+                "kind": "recollect",
+                "slot": "mode",
+                "unverified": true,
+                "value": "onsite"
+              },
+              {
+                "author": "Quinn",
+                "claim": "Online mode is the most inclusive and cost-efficient format, particularly for global specialists, and aligns with current accessibility and logistical priorities.",
+                "kind": "propose",
+                "slot": "mode",
+                "unverified": true,
+                "value": "online"
+              }
+            ],
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ]
+          },
+          "memory_after_action": {
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ],
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "notes": [
+              {
+                "author": "Quinn",
+                "kind": "propose",
+                "slot": "mode",
+                "value": "online",
+                "claim": "Online mode enhances global accessibility, reduces transport burdens, and improves cost efficiency without compromising inclusivity.",
+                "unverified": true
+              },
+              {
+                "author": "Sage",
+                "kind": "recollect",
+                "slot": "mode",
+                "value": "onsite",
+                "claim": "The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.",
+                "unverified": true
+              },
+              {
+                "author": "Sage",
+                "kind": "recollect",
+                "slot": "mode",
+                "value": "onsite",
+                "claim": "The participation format is confirmed as onsite, as approved in the initial directive and reinforced by client-specific commitments.",
+                "unverified": true
+              },
+              {
+                "author": "Quinn",
+                "kind": "propose",
+                "slot": "mode",
+                "value": "online",
+                "claim": "Online mode is the most inclusive and cost-efficient format, particularly for global specialists, and aligns with current accessibility and logistical priorities.",
+                "unverified": true
+              }
+            ]
+          },
+          "following_answer": {
+            "clarify": [],
+            "evidence": [
+              1,
+              31,
+              11,
+              1,
+              1,
+              11
+            ],
+            "plan": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar",
+              "walk",
+              "mixed-kit"
+            ],
+            "state": [
+              "Garden",
+              "online",
+              "3000",
+              "Tuesday",
+              "public",
+              "Cedar"
+            ]
+          },
+          "following_metrics": {
+            "clarification_correct": true,
+            "dependency_accuracy": 1.0,
+            "evidence_accuracy": 0.8333333333333334,
+            "invalid_evidence": 1,
+            "plan_accuracy": 1.0,
+            "recall_accuracy": 1.0,
+            "success": true
+          },
+          "route": "component",
+          "delivered": true,
+          "visible": true,
+          "claim_exact_repeat": true,
+          "typed_repeat": true,
+          "user_events_between": []
+        },
+        "source_locator": {
+          "file": "artifacts/runs/dialogue005-compat-17-v1/incompatible_characters.jsonl",
+          "sha256": "063931a1caff40e9fe840b488826a16394c2c5ab2fe745a0bfb11c9cf3d09a79",
+          "record": 293,
+          "field": [
+            "claim"
+          ]
+        },
+        "full_generated_claim": "The participation format remains firmly onsite, as initially mandated and substantiated by client commitments, and any deviation would undermine the foundational agreement.",
+        "neutral_alias_mapping": {
+          "Quinn": "Speaker 1",
+          "Sage": "Speaker 2",
+          "Jekyll": "Answerer",
+          "Hyde": "Component",
+          "Rival": "Component",
+          "Traditionalist": "Component",
+          "Provocateur": "Component"
+        }
+      }
+    }
+  ]
+}

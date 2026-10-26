@@ -1,0 +1,250 @@
+[
+  {
+    "model": "qwen",
+    "comparison": "C5-C1",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": 0.018055555555555554,
+    "ci95": [
+      -0.08472222222222223,
+      0.1625
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.075,
+      "29": 0.175,
+      "43": -0.04583333333333333
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.22378881055947203,
+    "holm_secondary": 0.671366431678416
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-C2",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": -0.03611111111111111,
+    "ci95": [
+      -0.08055555555555556,
+      0.004166666666666667
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.075,
+      "29": -0.016666666666666666,
+      "43": -0.016666666666666666
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.004249787510624469,
+    "holm_secondary": 0.025498725063746813
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-C3",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": -0.03888888888888889,
+    "ci95": [
+      -0.08333333333333333,
+      0.001388888888888889
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.0375,
+      "29": -0.004166666666666667,
+      "43": -0.075
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.0006999650017499125,
+    "holm_secondary": null
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-C4",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": -0.001388888888888889,
+    "ci95": [
+      -0.05416666666666667,
+      0.06527777777777778
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.04583333333333333,
+      "29": 0.0625,
+      "43": -0.020833333333333332
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 1.0,
+    "holm_secondary": 1.0
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-C6",
+    "matched_seeds": [
+      17,
+      29
+    ],
+    "planned_three_seed_complete": false,
+    "difference": -0.00625,
+    "ci95": [
+      -0.09583333333333334,
+      0.08333333333333333
+    ],
+    "families": 240,
+    "seeds": 2,
+    "per_seed": {
+      "17": -0.07083333333333333,
+      "29": 0.058333333333333334
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.7382130893455328,
+    "holm_secondary": null
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-A1",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": 0.02638888888888889,
+    "ci95": [
+      -0.025,
+      0.09444444444444444
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.004166666666666667,
+      "29": -0.004166666666666667,
+      "43": 0.0875
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.08439578021098945,
+    "holm_secondary": 0.4219789010549473
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-A2",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": 0.2569444444444444,
+    "ci95": [
+      -0.03333333333333333,
+      0.45
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.04583333333333333,
+      "29": 0.3875,
+      "43": 0.42916666666666664
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 4.999750012499375e-05,
+    "holm_secondary": 0.00034998250087495624
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-A3",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": -0.022222222222222223,
+    "ci95": [
+      -0.08055555555555556,
+      0.041666666666666664
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.07916666666666666,
+      "29": -0.025,
+      "43": 0.0375
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.12949352532373382,
+    "holm_secondary": 0.5179741012949353
+  },
+  {
+    "model": "phi",
+    "comparison": "C5-C1",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": 0.08472222222222223,
+    "ci95": [
+      -0.020833333333333332,
+      0.17916666666666667
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": 0.125,
+      "29": 0.1625,
+      "43": -0.03333333333333333
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 4.999750012499375e-05,
+    "holm_secondary": 4.999750012499375e-05
+  },
+  {
+    "model": "phi",
+    "comparison": "C5-C3",
+    "matched_seeds": [
+      17,
+      29,
+      43
+    ],
+    "planned_three_seed_complete": true,
+    "difference": -0.041666666666666664,
+    "ci95": [
+      -0.09722222222222222,
+      0.018055555555555554
+    ],
+    "families": 240,
+    "seeds": 3,
+    "per_seed": {
+      "17": -0.075,
+      "29": 0.020833333333333332,
+      "43": -0.07083333333333333
+    },
+    "analysis": "paired two-way seed/family percentile bootstrap; only three seeds cannot characterize seed tails reliably",
+    "p_conditional_family": 0.0006999650017499125,
+    "holm_secondary": null
+  }
+]
