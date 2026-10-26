@@ -1,0 +1,12 @@
+{
+  "changes": [
+    {
+      "path": "supplements/dialogue_interpretation_005/README.md",
+      "prior_commit": "4d89f6a",
+      "prior_sha256": "d90d7b0eb8d0789a44c4a91b40bddbc787d52efacbc3656a5076976efa81d1ff",
+      "new_sha256": "1c910f830de75f2361fb8f6f6725fd5f283a6bbe323f3ae3911f2465eb4cc6a8",
+      "scope": "Nonfrozen documentation links and extraction instructions only; original PDF and scientific files preserved",
+      "reason": "Original ignored full views/archive were not available in a fresh clone; point to committed selected-evidence package and versioned portable PDF"
+    }
+  ]
+}

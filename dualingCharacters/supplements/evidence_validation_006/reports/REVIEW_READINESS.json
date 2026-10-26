@@ -1,0 +1,17 @@
+{
+  "planned_items": 72,
+  "available_items": 72,
+  "full_episode_contexts": 36,
+  "word_units_sum": 19545,
+  "word_units_range": [
+    200,
+    341
+  ],
+  "hours_per_rater_planning_range": [
+    5.228750000000001,
+    8.171666666666667
+  ],
+  "assumptions": "200 words/min+3min annotation to150 words/min+5min per item; excludes breaks/calibration and deep full-episode checks. Not measured reviewer timing.",
+  "human_ratings_received": 0,
+  "old_full_episode_packet_required": false
+}

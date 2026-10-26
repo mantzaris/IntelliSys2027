@@ -1,0 +1,60 @@
+{
+  "archive": "evidence/reviewer_events_v1.tar.gz",
+  "sha256": "389e7ba93cc0b068e286420a215a6011f42ae1751625e1315bab0b139190d589",
+  "bytes": 1090566,
+  "members": {
+    "CALIBRATION.md": {
+      "bytes": 2102,
+      "sha256": "9958fbf735d14e639e1f6a4c49e0214b1558831c1a9351316599cce5fbfcf508"
+    },
+    "EPISODES.html": {
+      "bytes": 6695786,
+      "sha256": "cc42cca411a5fc8c106157554759a109919002035f110df1b34f8d649c3c5736"
+    },
+    "REVIEW.html": {
+      "bytes": 2413314,
+      "sha256": "4586a8a3d6485541a0530ac04974041147080d9f6f4d73677cb2ede699806f8f"
+    },
+    "RUBRIC.md": {
+      "bytes": 5401,
+      "sha256": "6fe47f197a838d3436f06bf0d4b25df68794a1e50d60ccda6998552574171375"
+    },
+    "SELECTION_IDS.json": {
+      "bytes": 1903,
+      "sha256": "52687caa47a13bda1307fdbfd5252d030610022821f94717eb3896728e54d4ba"
+    },
+    "START_HERE.md": {
+      "bytes": 456,
+      "sha256": "be138b7e588e1ca56700d47e8f45306c9e2c0c68c8700b65a489e8a462c3e0f5"
+    },
+    "episodes.json": {
+      "bytes": 10177909,
+      "sha256": "657de6d69f45681008d4aaf0ca5e21fceea83d7eaf4aa60f9654ca879f2311c8"
+    },
+    "items.json": {
+      "bytes": 10635784,
+      "sha256": "93f5eb7a653a6f037984015a533130582a60ef156596fa2432c8618f24dff3dc"
+    },
+    "rater_1.csv": {
+      "bytes": 2077,
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517"
+    },
+    "rater_1_provenance_TEMPLATE.json": {
+      "bytes": 395,
+      "sha256": "6b1341691581439fb94da587999912d0b57ab5bb96a3af0e298446b669bb8b8c"
+    },
+    "rater_2.csv": {
+      "bytes": 2077,
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517"
+    },
+    "rater_2_provenance_TEMPLATE.json": {
+      "bytes": 395,
+      "sha256": "6b1341691581439fb94da587999912d0b57ab5bb96a3af0e298446b669bb8b8c"
+    }
+  },
+  "item_count": 72,
+  "episode_contexts": 36,
+  "author_mapping_excluded": true,
+  "ai_interpretations_excluded": true,
+  "forms_blank": true
+}

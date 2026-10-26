@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "browser": "Installed Chrome; HTTP(S) requests blocked; offline file documents",
+  "views": [
+    {
+      "view": "chronological-desktop",
+      "file": "DIALOGUE_EXCHANGES.html",
+      "screenshot": "reports/screenshots/browser/chronological-desktop.png",
+      "target": true,
+      "visible": true,
+      "top": 0.484375,
+      "width": 1400,
+      "scrollWidth": 1385
+    },
+    {
+      "view": "chronological-mobile",
+      "file": "DIALOGUE_EXCHANGES.html",
+      "screenshot": "reports/screenshots/browser/chronological-mobile.png",
+      "target": true,
+      "visible": true,
+      "top": -0.0625,
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "view": "complete-episode",
+      "file": "extracted/author/DIALOGUE_ATLAS.html",
+      "screenshot": "reports/screenshots/browser/complete-episode.png",
+      "target": true,
+      "visible": true,
+      "top": -0.328125,
+      "width": 1400,
+      "scrollWidth": 1385
+    },
+    {
+      "view": "opposite-world-mobile",
+      "file": "extracted/author/DIALOGUE_ATLAS.html",
+      "screenshot": "reports/screenshots/browser/opposite-world-mobile.png",
+      "target": true,
+      "visible": true,
+      "top": 0.234375,
+      "width": 390,
+      "scrollWidth": 390
+    },
+    {
+      "view": "blinded-fixed-event",
+      "file": "extracted/reviewer/REVIEW.html",
+      "screenshot": "reports/screenshots/browser/blinded-fixed-event.png",
+      "target": true,
+      "visible": true,
+      "top": 0.265625,
+      "width": 1400,
+      "scrollWidth": 1385
+    },
+    {
+      "view": "blinded-full-context",
+      "file": "extracted/reviewer/EPISODES.html",
+      "screenshot": "reports/screenshots/browser/blinded-full-context.png",
+      "target": true,
+      "visible": true,
+      "top": 0.296875,
+      "width": 390,
+      "scrollWidth": 390
+    }
+  ],
+  "script_exceptions": 0,
+  "scientific_human_review": false
+}

@@ -1,0 +1,29 @@
+{
+  "stage_start_utc": "2026-10-26T02:53:27+00:00",
+  "stage_evidence_locked_utc": "2026-10-26T02:59:17.931538+00:00",
+  "inherited_population_cutoff_utc": "2026-10-25T23:16:17.394818+00:00",
+  "selection_file": "supplements/dialogue_interpretation_005/SELECTION.json",
+  "selection_sha256": "06c82ef36c2507f4e62f78a1561934a6fc77ed662b8dc6c8017df560e2dc26c1",
+  "runs": [
+    "main-qwen-a1-17-r0-collect",
+    "main-qwen-a1-29-r0-collect",
+    "main-qwen-a1-43-r0-collect",
+    "main-qwen-c3-17-r0-collect",
+    "main-qwen-c3-29-r0-collect",
+    "main-qwen-c3-43-r0-collect",
+    "main-qwen-c5-17-r0-collect",
+    "main-qwen-c5-29-r0-collect",
+    "main-qwen-c5-43-r0-collect"
+  ],
+  "completed_status_records_verified": 9,
+  "raw_whole_files_verified_locally": 36,
+  "episodes": 48,
+  "anchor_episodes": 36,
+  "anchor_triplets": 12,
+  "linked_opposite_world_triplets": 4,
+  "unique_families": 11,
+  "eligible_population": "Exactly prior dialogue005 selection; common-untrained-base round-zero C3/C5/A1, generator seeds17/29/43",
+  "excluded_from_new_population": "Later completions, refreshed defenders, mechanism pilots, and antagonist-free evaluation remain outside the48-episode sample. Prior numerical contexts remain separately labeled.",
+  "source_metadata": "evidence/author_selected_v1.tar.gz: run_provenance.json and original_status_records.json",
+  "future_completions": "Operational appendix only; cannot silently expand selected evidence."
+}

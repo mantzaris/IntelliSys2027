@@ -1,0 +1,26 @@
+{
+  "status": "CPU design passed; not an experiment",
+  "conversations": 64,
+  "scheduled_calls": 2816,
+  "model_calls_made": 0,
+  "individual_initial_alignment": {
+    "('compatible', 'Rival')": 8,
+    "('compatible', 'Hyde')": 8,
+    "('incompatible', 'Rival')": 8,
+    "('incompatible', 'Hyde')": 8
+  },
+  "first_role_counts": {
+    "1": 8,
+    "0": 8
+  },
+  "slot_counts": {
+    "1": 3,
+    "3": 3,
+    "4": 2,
+    "5": 2,
+    "0": 3,
+    "2": 3
+  },
+  "joint_alignment": "compatible:8 both/8 neither; incompatible:8 Hyde/8 Rival. This intrinsic difference is disclosed.",
+  "retrieval": "8 lexical plus4 recent, deduplicated; not8 including4. Clarifies prior proposal wording to match unchanged implementation."
+}

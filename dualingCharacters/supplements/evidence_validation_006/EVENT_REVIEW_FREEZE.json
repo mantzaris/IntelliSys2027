@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-10-26T03:54:17.127316+00:00",
+  "files": {
+    "supplements/evidence_validation_006/EVENT_SELECTION.json": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+    "supplements/evidence_validation_006/events.py": "98d3ee53c8614afc214da79aab40c2238b3ac104f1c9f308f5c6a58026623698",
+    "supplements/evidence_validation_006/ratings.py": "c7067b64b5bc1fff4b707007ad5314691d109ac9d5ea054a616c7af0c9c50e46",
+    "supplements/evidence_validation_006/review/PROTOCOL.md": "3aff789067b7fd1f0d28705131c6c294d13faefb240c99b8c8b24c6055e0e523",
+    "supplements/evidence_validation_006/review/RUBRIC.md": "6fe47f197a838d3436f06bf0d4b25df68794a1e50d60ccda6998552574171375",
+    "supplements/evidence_validation_006/review/CALIBRATION.md": "9958fbf735d14e639e1f6a4c49e0214b1558831c1a9351316599cce5fbfcf508",
+    "supplements/evidence_validation_006/review/rater_1.csv": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+    "supplements/evidence_validation_006/review/rater_2.csv": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+    "supplements/evidence_validation_006/evidence/REVIEWER_MANIFEST.json": "dc3d3a91abf8b08795d89797dfc060a285dd18de2dbb1968045a7a93a4741027",
+    "supplements/evidence_validation_006/evidence/reviewer_events_v1.tar.gz": "389e7ba93cc0b068e286420a215a6011f42ae1751625e1315bab0b139190d589"
+  },
+  "planned_items": 72,
+  "actual_human_ratings": 0,
+  "classification": "Fixed event stimuli, not retrospective original preregistration"
+}

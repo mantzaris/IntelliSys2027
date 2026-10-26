@@ -1,0 +1,37 @@
+{
+  "pages": 62,
+  "annotations_internal": 422,
+  "uri_links": 0,
+  "absolute_file_urls": 0,
+  "destinations_resolve": true,
+  "sha256": "dd6b68931dfc7e682493a24fc20486664667bd35fc653118c91063db9bf00fe2",
+  "historical_005": {
+    "pages": 6,
+    "annotations_internal": 0,
+    "uri_links": 18,
+    "absolute_file_urls": 18,
+    "destinations_resolve": true,
+    "sha256": "4ef191cb37111550e8c7b55f25987721cc2ff72ee13d273ee0f6b552de651555"
+  },
+  "text_outside_page_bounds": 0,
+  "pdf_quoted_spans_verified_after_whitespace_normalization": 366,
+  "rendered_pages": 62,
+  "visual_review_sheets": [
+    "reports/screenshots/pdf-dd6b6893/contact-01.png",
+    "reports/screenshots/pdf-dd6b6893/contact-02.png",
+    "reports/screenshots/pdf-dd6b6893/contact-03.png",
+    "reports/screenshots/pdf-dd6b6893/contact-04.png",
+    "reports/screenshots/pdf-dd6b6893/contact-05.png",
+    "reports/screenshots/pdf-dd6b6893/contact-06.png",
+    "reports/screenshots/pdf-dd6b6893/contact-07.png",
+    "reports/screenshots/pdf-dd6b6893/contact-08.png",
+    "reports/screenshots/pdf-dd6b6893/contact-09.png",
+    "reports/screenshots/pdf-dd6b6893/contact-10.png",
+    "reports/screenshots/pdf-dd6b6893/contact-11.png",
+    "reports/screenshots/pdf-dd6b6893/contact-12.png",
+    "reports/screenshots/pdf-dd6b6893/contact-13.png",
+    "reports/screenshots/pdf-dd6b6893/contact-14.png",
+    "reports/screenshots/pdf-dd6b6893/contact-15.png",
+    "reports/screenshots/pdf-dd6b6893/contact-16.png"
+  ]
+}

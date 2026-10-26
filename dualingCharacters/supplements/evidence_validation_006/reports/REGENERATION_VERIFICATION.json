@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "exact_byte_reproduction": {
+    "EVENT_SELECTION.json": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+    "evidence/reviewer_events_v1.tar.gz": "389e7ba93cc0b068e286420a215a6011f42ae1751625e1315bab0b139190d589",
+    "tables/REPRODUCED_CONTEXT.csv": "ca8b4a8e2f39f2e6a006fd5383f03ee8a343d321ed4066423782c742a72d6134",
+    "tables/PERFORMANCE_CONTEXT.csv": "fd4da14e3c7e0c8a6852926fee9df86572bec344fdfdbc95a65faac4a056c5d8",
+    "DIALOGUE_EXCHANGES.html": "5e889656ff8ccd94e078b37417874ba09a75756b18b9b9c79e6c89c72875f186",
+    "DIALOGUE_EXCHANGES.md": "b6459b421e5485eaf773470a800a733a7f1ab9ce54d8bbc4ff3015aded422bb1",
+    "REPRESENTATION_AND_SOURCE_ROUTES.md": "625eed333ffbc7758cc818a1ad420812afa38ff1b261c1cd664c8470d7a14775"
+  },
+  "original_artifact_directory_present": false
+}

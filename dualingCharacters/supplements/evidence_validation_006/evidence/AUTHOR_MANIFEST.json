@@ -1,0 +1,35 @@
+{
+  "archive": "evidence/author_selected_v1.tar.gz",
+  "sha256": "e829732d85623651dd6c7e79fd28a8e7c56413fd0c1be766d0bd3a16de06ffab",
+  "bytes": 1094718,
+  "members": {
+    "AI_READINGS.json": {
+      "bytes": 1757572,
+      "sha256": "8a9e50519759a794a732752ee356ec247ee7d144d76900f5070b4ed87e7a16e2"
+    },
+    "QUOTATIONS.json": {
+      "bytes": 1156241,
+      "sha256": "26585bd3b6fe120e9a1bf45e63b0fe3d87b090f2c8dbe3c4bf5861bf14770fee"
+    },
+    "episodes.json": {
+      "bytes": 18046021,
+      "sha256": "6067e1970e8cfb14fe5ff0a67c9100c8a44d078b7ff9bb7461000bdc44b02d9c"
+    },
+    "run_provenance.json": {
+      "bytes": 83936,
+      "sha256": "81ae80fd1a760b5ab1cf044bd4222e6219fea16a79534402da1316daeea41772"
+    },
+    "selected_records.jsonl.gz": {
+      "bytes": 267851,
+      "sha256": "212449272d84eba660382d60fc203efcb2fc15f9977dc97fbbfd7843e940b1cd"
+    },
+    "original_status_records.json": {
+      "bytes": 51763,
+      "sha256": "b8ab5fd9d2c6bc6419b74c0be4bdcc27c89ca8c9ab39f43145320be4c163065f"
+    }
+  },
+  "selection_sha256": "06c82ef36c2507f4e62f78a1561934a6fc77ed662b8dc6c8017df560e2dc26c1",
+  "original_episodes_sha256": "6067e1970e8cfb14fe5ff0a67c9100c8a44d078b7ff9bb7461000bdc44b02d9c",
+  "contents": "48 selected episodes and1344 original selected JSONL records; full original run archives intentionally omitted",
+  "no_weights_or_remote_access_details": true
+}

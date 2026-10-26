@@ -1,0 +1,14 @@
+{
+  "input_sha256": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+  "related_family_rows": 1350,
+  "generator_seeds": [
+    17,
+    29,
+    43
+  ],
+  "original_counts_reproduced": 27,
+  "uncertainty_input": "supplements/dialogue_interpretation_005/tables/REPRODUCED_CONTRASTS.json",
+  "uncertainty_sha256": "6904f8d49c97911bb8a370cec8729ea5089e8ed9504eec62868e965312336563",
+  "performance_sha256": "74bf8403ffba60b1a5a127bad0caadafba0d22c6d91612ee41129c38c79e06cc",
+  "qualification": "Pooled counts and rates are separate from the original family/seed-resampled mean-rate contrasts. No semantic frequency is inferred; no new run enters the old cutoff."
+}

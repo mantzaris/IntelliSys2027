@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-10-26T03:54:17.122901+00:00",
+  "files": {
+    "supplements/evidence_validation_006/PROTOCOL.md": "a468fcb20149876bdda2be7dcb42b6913de4f30dbfd979045f5c972c8792010a",
+    "supplements/evidence_validation_006/EVIDENCE_CUTOFF.json": "f7fd8b69dbd82ecdb815713dc1c4fed2d01d2c824bcad33e8a3f41b25fc51aec",
+    "supplements/evidence_validation_006/EVENT_SELECTION.json": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+    "supplements/evidence_validation_006/common.py": "0d77201574a7117c7c0417075df577a5549ba66da0cdcc8abb8c4809d32f4eef",
+    "supplements/evidence_validation_006/reader.py": "4bb12bfbd500e9e2eb42870f49bd2720b68b1c0a888d125595625eb9a3b25e3e",
+    "supplements/evidence_validation_006/events.py": "98d3ee53c8614afc214da79aab40c2238b3ac104f1c9f308f5c6a58026623698",
+    "supplements/evidence_validation_006/ratings.py": "c7067b64b5bc1fff4b707007ad5314691d109ac9d5ea054a616c7af0c9c50e46",
+    "supplements/evidence_validation_006/routes.py": "db6c02156d3aaf504118213774e5b12e6bc85c4710ea5277941b81fccb019d73",
+    "supplements/evidence_validation_006/context_tables.py": "4fdadd74659d3e00357a4b6be579e49a577159cba72fe8c1afd215b8255b7a1c",
+    "supplements/evidence_validation_006/review_package.py": "012016e831adfc58dc83256a0e5d206b901646e97b30e6ad7e87434d83176183",
+    "supplements/evidence_validation_006/presentation.py": "3637e0189924965718e74574a8c5a4924328b06523bb5186e0213cb3e690a3c1",
+    "supplements/evidence_validation_006/package_inputs.py": "03b4a3c0e5c6866b148a31e9143e9c9662ee2d660da89137a6edad238d1b2f26",
+    "supplements/evidence_validation_006/review/PROTOCOL.md": "3aff789067b7fd1f0d28705131c6c294d13faefb240c99b8c8b24c6055e0e523",
+    "supplements/evidence_validation_006/review/RUBRIC.md": "6fe47f197a838d3436f06bf0d4b25df68794a1e50d60ccda6998552574171375",
+    "supplements/evidence_validation_006/review/CALIBRATION.md": "9958fbf735d14e639e1f6a4c49e0214b1558831c1a9351316599cce5fbfcf508",
+    "supplements/evidence_validation_006/evidence/AUTHOR_MANIFEST.json": "7e0f9eb3d4d8f1ccf106bd0cb9622c49c743aca0a9d81df9c5de7fcddc636828",
+    "supplements/evidence_validation_006/evidence/author_selected_v1.tar.gz": "e829732d85623651dd6c7e79fd28a8e7c56413fd0c1be766d0bd3a16de06ffab"
+  },
+  "chronology": "Post-review evidence-access/validation stage. No new human or controlled-model outcomes; prior005 selection and interpretations preserved."
+}

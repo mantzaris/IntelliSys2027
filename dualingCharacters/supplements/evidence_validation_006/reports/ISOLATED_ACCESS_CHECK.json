@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "clean_root": "/tmp/evidence006-clean-20261026/dualingCharacters",
+  "original_workspace_source_and_evidence_reads_blocked_by_python_audit_hook": true,
+  "original_workspace_attempts": [],
+  "open_events_observed": 171,
+  "python_environment_only_reused": "/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/.venv/bin/python"
+}

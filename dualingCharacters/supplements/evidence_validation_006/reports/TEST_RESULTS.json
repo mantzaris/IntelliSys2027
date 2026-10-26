@@ -1,0 +1,12 @@
+{
+  "earlier_combined_regression": "85 passed; overlaps final focused suite",
+  "final_focused": "19 passed in2.37s",
+  "clean_export": "17 passed,1 explicit omitted-history skip; subsequently13 unit tests including ingestion CLI passed",
+  "actual_human_labels": 0,
+  "synthetic_fixtures": "Temporary constant-backend/blank-rating plumbing only, outside scientific tables",
+  "output_sha256": {
+    "combined_regression": "2eaa28e9c3a62850dfac19e29c316efc2e87353285cc0508494b3491d825914b",
+    "final_focused": "9b929a1404218e60beecae8883a1730fa35f3d62c616ab6ecc166aa3eb8b9fdf",
+    "final_verification": "5a3cf1e46175b924b8fe16a6757c80eb30b729c171d7e68e3433a442d7573b9c"
+  }
+}

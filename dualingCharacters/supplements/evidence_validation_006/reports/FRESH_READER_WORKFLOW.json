@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "export_method": "git checkout-index --all --prefix=/tmp/evidence006-clean-20261026/",
+  "index_inventory_sha256": "059723ea0f8b32e53c07f3784653b1e38c47954f990419533425b470d7635dca",
+  "base_commit": "4d89f6a",
+  "original_artifacts_or_venv_in_export": false,
+  "dependency_environment": "Existing Python3.12 interpreter/site packages reused; imports and scientific files resolve inside clean export. Original workspace reads were denied by an audit hook except interpreter environment.",
+  "evidence_verification": {
+    "episodes": 48,
+    "original_selected_records": 1344,
+    "exact_quotes": 2123,
+    "original_status_records": 9,
+    "transport_replays": 576
+  },
+  "numeric_contrasts_reproduced": 72,
+  "clean_tests": "17 passed;1 skipped (28 omitted historical packet files). Subsequently added ingestion CLI fixture test:13 unit tests passed. Final local suite checks all historical files.",
+  "regeneration": "Author views, fixed event selection, reviewer archive, route examples and numerical tables reproduced byte for byte.",
+  "pdf": "Relocated copy:422 internal destinations resolve;0URI links;366 quotation spans verified.",
+  "prerequisites_not_in_selected_export": "Whole original raw archives and28 historical packet files; not required for selected evidence. Verified on originating mirror, not implied by selected archive checks.",
+  "logs": {
+    "reader": "cb2c0639b1d7047eac048d7c1360372c56fd3b404c5d5e3860cd4b731e0dda8f",
+    "numbers": "991c22cbff7c25f23e53a5c5511f764265fe532c6c814fff7b9fdb2913c02994",
+    "tests": "22a8943d7c90d2fe1eea6fe36f19a3063078b26870b845f1d3e1bc5708a02022"
+  },
+  "scientific_validation": "No human rating or controlled inference result supplied by these checks."
+}

@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "existing_owner_authorization": false,
+  "owner_dispatch_id": "",
+  "session_deadline_utc": "2026-10-26T10:53:27+00:00",
+  "useful_work_cutoff_utc": "2026-10-26T10:08:27+00:00",
+  "conservative_total_seconds": 7200,
+  "remaining_obligations_seconds": 0,
+  "reason": "Core and required review001 work are pending. Zero compatibility calls/reservations; no waiter. Remaining obligations must be reconciled by the existing owner before any later admission. This disabled template is not authorization to spend after this session."
+}

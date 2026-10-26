@@ -1,0 +1,11 @@
+{
+  "human_assessment": null,
+  "source_type": "independent_human",
+  "rater_id": "",
+  "completed_at_utc": "",
+  "selection_sha256": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+  "rubric_sha256": "6fe47f197a838d3436f06bf0d4b25df68794a1e50d60ccda6998552574171375",
+  "form_sha256": "Fill with SHA256 of completed CSV",
+  "rubric_revision": "event006-v1",
+  "notes": ""
+}

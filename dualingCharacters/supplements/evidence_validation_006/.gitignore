@@ -1,0 +1,7 @@
+__pycache__/
+extracted/
+reports/screenshots/
+reports/HANDOFF_TIMING.json
+
+tables/EXCHANGE_CONTEXTS.json
+!evidence/*.tar.gz
