@@ -48,6 +48,2890 @@
     }
   },
   {
+    "run_id": "main-phi-c1-17-eval",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2219.4578399928287,
+      "peak_vram_gib": 39.5419921875,
+      "input_tokens": 29001129,
+      "output_tokens": 1939255,
+      "generation_seconds": 2081.281375751365,
+      "aggregate_output_tokens_per_second": 931.7601274839199
+    }
+  },
+  {
+    "run_id": "main-phi-c1-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.16666666666666666,
+      "conversation_success": 0.28,
+      "malformed_rate": 0,
+      "turn_success": 0.3727083333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 85,
+      "clean_valid": 271,
+      "failed_eligible": 544,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 815,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 357.95237988187,
+      "peak_vram_gib": 39.16796875,
+      "input_tokens": 4561189,
+      "output_tokens": 313130,
+      "generation_seconds": 304.9760123202577,
+      "aggregate_output_tokens_per_second": 1026.7364886100606
+    }
+  },
+  {
+    "run_id": "main-phi-c1-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 802.8042840310372,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c1-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.56,
+      "conversation_success": 0.6466666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.6853125
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 125,
+      "clean_valid": 741,
+      "failed_eligible": 34,
+      "candidate_attempts": 34,
+      "candidate_valid": 0,
+      "candidate_discarded": 34,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 727.4718497470021,
+      "peak_vram_gib": 38.943359375,
+      "input_tokens": 9080522,
+      "output_tokens": 608971,
+      "generation_seconds": 659.9279242758639,
+      "aggregate_output_tokens_per_second": 922.7841065646999
+    }
+  },
+  {
+    "run_id": "main-phi-c1-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 870.1810232498683,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c1-29-eval",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2152.0459083560854,
+      "peak_vram_gib": 38.943359375,
+      "input_tokens": 29029528,
+      "output_tokens": 1943869,
+      "generation_seconds": 2013.050536243245,
+      "aggregate_output_tokens_per_second": 965.6334826186969
+    }
+  },
+  {
+    "run_id": "main-phi-c1-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.19333333333333333,
+      "conversation_success": 0.29333333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.379375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 83,
+      "clean_valid": 276,
+      "failed_eligible": 541,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 816,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 321.70811520982534,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 4577598,
+      "output_tokens": 313511,
+      "generation_seconds": 268.8431400898844,
+      "aggregate_output_tokens_per_second": 1166.148408678687
+    }
+  },
+  {
+    "run_id": "main-phi-c1-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 738.7975810407661,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c1-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5533333333333333,
+      "conversation_success": 0.6366666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6775
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 741,
+      "failed_eligible": 31,
+      "candidate_attempts": 31,
+      "candidate_valid": 0,
+      "candidate_discarded": 31,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 641.6247646231204,
+      "peak_vram_gib": 39.3642578125,
+      "input_tokens": 9077741,
+      "output_tokens": 608791,
+      "generation_seconds": 573.9993109218776,
+      "aggregate_output_tokens_per_second": 1060.6127715070681
+    }
+  },
+  {
+    "run_id": "main-phi-c1-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 697.6581412716769,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c1-43-eval",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2664.673112032935,
+      "peak_vram_gib": 38.943359375,
+      "input_tokens": 28990711,
+      "output_tokens": 1932921,
+      "generation_seconds": 2528.5144663583487,
+      "aggregate_output_tokens_per_second": 764.4492549745454
+    }
+  },
+  {
+    "run_id": "main-phi-c1-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.15333333333333332,
+      "conversation_success": 0.26666666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.36395833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 84,
+      "clean_valid": 261,
+      "failed_eligible": 555,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 816,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 431.3911793148145,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 4571402,
+      "output_tokens": 311730,
+      "generation_seconds": 379.39315531915054,
+      "aggregate_output_tokens_per_second": 821.6542539829655
+    }
+  },
+  {
+    "run_id": "main-phi-c1-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 958.1840889551677,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c1-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5533333333333333,
+      "conversation_success": 0.6366666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6552083333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 741,
+      "failed_eligible": 31,
+      "candidate_attempts": 31,
+      "candidate_valid": 0,
+      "candidate_discarded": 31,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 754.908477361314,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 9077346,
+      "output_tokens": 608642,
+      "generation_seconds": 687.097978993319,
+      "aggregate_output_tokens_per_second": 885.8154420592731
+    }
+  },
+  {
+    "run_id": "main-phi-c1-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 849.3134543159977,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-17-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2108.69310659077,
+      "peak_vram_gib": 39.1640625,
+      "input_tokens": 28987881,
+      "output_tokens": 1931524,
+      "generation_seconds": 1966.9848688403144,
+      "aggregate_output_tokens_per_second": 981.9719666368246
+    }
+  },
+  {
+    "run_id": "main-phi-c3-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "propose": 876,
+          "peer": 2144,
+          "recollect": 320,
+          "edit": 190,
+          "pass": 70
+        },
+        "applied": 3315,
+        "contradictory_value": 2770,
+        "contradictory_edit_with_source_access": 194,
+        "memory_changes": 1637
+      }
+    },
+    "peer_messages": 2069,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.1,
+      "conversation_success": 0.2,
+      "malformed_rate": 0,
+      "turn_success": 0.31833333333333336
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 76,
+      "clean_valid": 217,
+      "failed_eligible": 607,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 824,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 865.302127067931,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 9520694,
+      "output_tokens": 533788,
+      "generation_seconds": 801.9709965651855,
+      "aggregate_output_tokens_per_second": 665.5951428246107
+    }
+  },
+  {
+    "run_id": "main-phi-c3-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 739.1049718917347,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 2095,
+          "propose": 946,
+          "recollect": 346,
+          "pass": 49,
+          "edit": 164
+        },
+        "applied": 3391,
+        "contradictory_value": 2778,
+        "contradictory_edit_with_source_access": 82,
+        "memory_changes": 1721
+      }
+    },
+    "peer_messages": 2017,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5466666666666666,
+      "conversation_success": 0.6333333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.6182291666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 126,
+      "clean_valid": 739,
+      "failed_eligible": 35,
+      "candidate_attempts": 35,
+      "candidate_valid": 0,
+      "candidate_discarded": 35,
+      "gold_teacher_examples": 774,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1253.637923959177,
+      "peak_vram_gib": 38.94140625,
+      "input_tokens": 14490703,
+      "output_tokens": 835433,
+      "generation_seconds": 1169.5565433078445,
+      "aggregate_output_tokens_per_second": 714.3160412211911
+    }
+  },
+  {
+    "run_id": "main-phi-c3-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 736.3346359720454,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-29-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2381.126289775595,
+      "peak_vram_gib": 39.3642578125,
+      "input_tokens": 28993761,
+      "output_tokens": 1933295,
+      "generation_seconds": 2245.8161763818935,
+      "aggregate_output_tokens_per_second": 860.8429400106207
+    }
+  },
+  {
+    "run_id": "main-phi-c3-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 2118,
+          "recollect": 286,
+          "propose": 920,
+          "edit": 175,
+          "pass": 101
+        },
+        "applied": 3300,
+        "contradictory_value": 2800,
+        "contradictory_edit_with_source_access": 143,
+        "memory_changes": 1659
+      }
+    },
+    "peer_messages": 2033,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.13333333333333333,
+      "conversation_success": 0.22666666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.335
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 76,
+      "clean_valid": 223,
+      "failed_eligible": 601,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 822,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 817.312780752778,
+      "peak_vram_gib": 39.1572265625,
+      "input_tokens": 9529094,
+      "output_tokens": 538474,
+      "generation_seconds": 754.1505498657934,
+      "aggregate_output_tokens_per_second": 714.0139327562982
+    }
+  },
+  {
+    "run_id": "main-phi-c3-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 692.807600711938,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 2595,
+          "pass": 73,
+          "propose": 640,
+          "edit": 74,
+          "recollect": 218
+        },
+        "applied": 3428,
+        "contradictory_value": 3046,
+        "contradictory_edit_with_source_access": 36,
+        "memory_changes": 1279
+      }
+    },
+    "peer_messages": 2485,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5333333333333333,
+      "conversation_success": 0.6266666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6109375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 736,
+      "failed_eligible": 37,
+      "candidate_attempts": 37,
+      "candidate_valid": 0,
+      "candidate_discarded": 37,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1182.5332633489743,
+      "peak_vram_gib": 38.9580078125,
+      "input_tokens": 14307144,
+      "output_tokens": 862483,
+      "generation_seconds": 1103.8796551702544,
+      "aggregate_output_tokens_per_second": 781.3197715533373
+    }
+  },
+  {
+    "run_id": "main-phi-c3-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 798.2924322057515,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-43-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2798.228631488979,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 28992866,
+      "output_tokens": 1933408,
+      "generation_seconds": 2662.555353702046,
+      "aggregate_output_tokens_per_second": 726.1475324115867
+    }
+  },
+  {
+    "run_id": "main-phi-c3-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "propose": 879,
+          "peer": 2270,
+          "pass": 103,
+          "recollect": 305,
+          "edit": 43
+        },
+        "applied": 3383,
+        "contradictory_value": 2930,
+        "contradictory_edit_with_source_access": 135,
+        "memory_changes": 1464
+      }
+    },
+    "peer_messages": 2207,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.12,
+      "conversation_success": 0.23666666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.35854166666666665
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 77,
+      "clean_valid": 246,
+      "failed_eligible": 577,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 823,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1121.632351837121,
+      "peak_vram_gib": 39.185546875,
+      "input_tokens": 9501244,
+      "output_tokens": 558481,
+      "generation_seconds": 1057.9404010772705,
+      "aggregate_output_tokens_per_second": 527.8945765104677
+    }
+  },
+  {
+    "run_id": "main-phi-c3-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 944.4004553458653,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c3-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 2305,
+          "propose": 675,
+          "pass": 75,
+          "recollect": 351,
+          "edit": 194
+        },
+        "applied": 3331,
+        "contradictory_value": 2864,
+        "contradictory_edit_with_source_access": 131,
+        "memory_changes": 1581
+      }
+    },
+    "peer_messages": 2185,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.56,
+      "conversation_success": 0.64,
+      "malformed_rate": 0,
+      "turn_success": 0.6548958333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 124,
+      "clean_valid": 739,
+      "failed_eligible": 37,
+      "candidate_attempts": 37,
+      "candidate_valid": 1,
+      "candidate_discarded": 36,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1612.1780953397974,
+      "peak_vram_gib": 39.146484375,
+      "input_tokens": 14318814,
+      "output_tokens": 838811,
+      "generation_seconds": 1531.4612555010244,
+      "aggregate_output_tokens_per_second": 547.7193738901212
+    }
+  },
+  {
+    "run_id": "main-phi-c3-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 983.9929963010363,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-17-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1984.7462205570191,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 28994158,
+      "output_tokens": 1932379,
+      "generation_seconds": 1846.828524114564,
+      "aggregate_output_tokens_per_second": 1046.3229123702495
+    }
+  },
+  {
+    "run_id": "main-phi-c5-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 1161,
+          "peer": 600,
+          "pass": 13,
+          "edit": 13,
+          "recollect": 13
+        },
+        "applied": 1373,
+        "contradictory_value": 1146,
+        "contradictory_edit_with_source_access": 16,
+        "memory_changes": 950
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 265,
+          "propose": 524,
+          "peer": 882,
+          "pass": 19,
+          "edit": 110
+        },
+        "applied": 1642,
+        "contradictory_value": 1254,
+        "contradictory_edit_with_source_access": 127,
+        "memory_changes": 931
+      }
+    },
+    "peer_messages": 1379,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.07333333333333333,
+      "conversation_success": 0.17666666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.3097916666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 78,
+      "clean_valid": 203,
+      "failed_eligible": 619,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 822,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 878.7504563191906,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 9773854,
+      "output_tokens": 536416,
+      "generation_seconds": 815.7952844854444,
+      "aggregate_output_tokens_per_second": 657.5375099628574
+    }
+  },
+  {
+    "run_id": "main-phi-c5-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 783.2177452272736,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 541,
+          "propose": 1129,
+          "recollect": 83,
+          "pass": 27,
+          "edit": 20
+        },
+        "applied": 1552,
+        "contradictory_value": 1053,
+        "contradictory_edit_with_source_access": 22,
+        "memory_changes": 1067
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "peer": 989,
+          "propose": 598,
+          "recollect": 141,
+          "edit": 52,
+          "pass": 20
+        },
+        "applied": 1685,
+        "contradictory_value": 1264,
+        "contradictory_edit_with_source_access": 14,
+        "memory_changes": 840
+      }
+    },
+    "peer_messages": 1447,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5333333333333333,
+      "conversation_success": 0.6266666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6307291666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 124,
+      "clean_valid": 738,
+      "failed_eligible": 38,
+      "candidate_attempts": 38,
+      "candidate_valid": 1,
+      "candidate_discarded": 37,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1345.9004796799272,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 14895685,
+      "output_tokens": 847995,
+      "generation_seconds": 1264.838502238039,
+      "aggregate_output_tokens_per_second": 670.4373708576511
+    }
+  },
+  {
+    "run_id": "main-phi-c5-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 758.7474158923142,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-29-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2940.9345186771825,
+      "peak_vram_gib": 39.5791015625,
+      "input_tokens": 28991178,
+      "output_tokens": 1932514,
+      "generation_seconds": 2801.891683408059,
+      "aggregate_output_tokens_per_second": 689.7175973802819
+    }
+  },
+  {
+    "run_id": "main-phi-c5-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 1258,
+          "peer": 452,
+          "recollect": 64,
+          "pass": 15,
+          "edit": 11
+        },
+        "applied": 1432,
+        "contradictory_value": 988,
+        "contradictory_edit_with_source_access": 20,
+        "memory_changes": 1020
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 664,
+          "peer": 1052,
+          "recollect": 49,
+          "edit": 23,
+          "pass": 12
+        },
+        "applied": 1662,
+        "contradictory_value": 1437,
+        "contradictory_edit_with_source_access": 28,
+        "memory_changes": 772
+      }
+    },
+    "peer_messages": 1428,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.08,
+      "conversation_success": 0.2,
+      "malformed_rate": 0,
+      "turn_success": 0.32895833333333335
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 78,
+      "clean_valid": 214,
+      "failed_eligible": 608,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 821,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1181.0841084551066,
+      "peak_vram_gib": 39.1640625,
+      "input_tokens": 9842202,
+      "output_tokens": 545183,
+      "generation_seconds": 1117.3139367806725,
+      "aggregate_output_tokens_per_second": 487.94074973309745
+    }
+  },
+  {
+    "run_id": "main-phi-c5-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 984.6932317763567,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 822,
+          "propose": 933,
+          "pass": 23,
+          "edit": 2,
+          "recollect": 20
+        },
+        "applied": 1538,
+        "contradictory_value": 1284,
+        "contradictory_edit_with_source_access": 5,
+        "memory_changes": 824
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 473,
+          "peer": 1136,
+          "recollect": 94,
+          "pass": 20,
+          "edit": 77
+        },
+        "applied": 1662,
+        "contradictory_value": 1467,
+        "contradictory_edit_with_source_access": 28,
+        "memory_changes": 741
+      }
+    },
+    "peer_messages": 1836,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.54,
+      "conversation_success": 0.63,
+      "malformed_rate": 0,
+      "turn_success": 0.690625
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 125,
+      "clean_valid": 735,
+      "failed_eligible": 40,
+      "candidate_attempts": 40,
+      "candidate_valid": 0,
+      "candidate_discarded": 40,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1746.3858244083822,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 14606322,
+      "output_tokens": 848699,
+      "generation_seconds": 1665.7258141147904,
+      "aggregate_output_tokens_per_second": 509.5070225894413
+    }
+  },
+  {
+    "run_id": "main-phi-c5-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 981.9879227299243,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-43-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2964.552782522049,
+      "peak_vram_gib": 39.1328125,
+      "input_tokens": 28995370,
+      "output_tokens": 1933253,
+      "generation_seconds": 2828.371283343062,
+      "aggregate_output_tokens_per_second": 683.5216477360585
+    }
+  },
+  {
+    "run_id": "main-phi-c5-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 572,
+          "peer": 1164,
+          "pass": 23,
+          "recollect": 37,
+          "edit": 4
+        },
+        "applied": 1526,
+        "contradictory_value": 1441,
+        "contradictory_edit_with_source_access": 19,
+        "memory_changes": 553
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 752,
+          "recollect": 180,
+          "peer": 805,
+          "pass": 56,
+          "edit": 7
+        },
+        "applied": 1651,
+        "contradictory_value": 1269,
+        "contradictory_edit_with_source_access": 53,
+        "memory_changes": 929
+      }
+    },
+    "peer_messages": 1894,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.1,
+      "conversation_success": 0.21,
+      "malformed_rate": 0,
+      "turn_success": 0.33541666666666664
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 77,
+      "clean_valid": 217,
+      "failed_eligible": 606,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 822,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1290.868671278935,
+      "peak_vram_gib": 39.142578125,
+      "input_tokens": 9691238,
+      "output_tokens": 565945,
+      "generation_seconds": 1227.1039914954454,
+      "aggregate_output_tokens_per_second": 461.20378054535945
+    }
+  },
+  {
+    "run_id": "main-phi-c5-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1071.7608869313262,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-phi-c5-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 1031,
+          "peer": 594,
+          "edit": 90,
+          "recollect": 72,
+          "pass": 13
+        },
+        "applied": 1430,
+        "contradictory_value": 1248,
+        "contradictory_edit_with_source_access": 49,
+        "memory_changes": 924
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 572,
+          "peer": 1032,
+          "recollect": 148,
+          "edit": 37,
+          "pass": 11
+        },
+        "applied": 1714,
+        "contradictory_value": 1390,
+        "contradictory_edit_with_source_access": 27,
+        "memory_changes": 889
+      }
+    },
+    "peer_messages": 1537,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5533333333333333,
+      "conversation_success": 0.6366666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6459375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 124,
+      "clean_valid": 740,
+      "failed_eligible": 36,
+      "candidate_attempts": 36,
+      "candidate_valid": 1,
+      "candidate_discarded": 35,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1871.6183610949665,
+      "peak_vram_gib": 38.9453125,
+      "input_tokens": 14688900,
+      "output_tokens": 833605,
+      "generation_seconds": 1791.9112438913435,
+      "aggregate_output_tokens_per_second": 465.20440275252133
+    }
+  },
+  {
+    "run_id": "main-phi-c5-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1120.7195776258595,
+      "peak_vram_gib": 18.819908142089844,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-17-eval",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2206.0392872700468,
+      "peak_vram_gib": 39.4296875,
+      "input_tokens": 30077910,
+      "output_tokens": 2033096,
+      "generation_seconds": 2062.9697504844517,
+      "aggregate_output_tokens_per_second": 985.5190554890897
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "propose": 708,
+          "recollect": 278,
+          "edit": 210,
+          "pass": 4
+        },
+        "applied": 1800,
+        "contradictory_value": 1197,
+        "contradictory_edit_with_source_access": 209,
+        "memory_changes": 1201
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 922,
+          "recollect": 153,
+          "edit": 119,
+          "peer": 604,
+          "pass": 2
+        },
+        "applied": 1800,
+        "contradictory_value": 1193,
+        "contradictory_edit_with_source_access": 73,
+        "memory_changes": 1239
+      }
+    },
+    "peer_messages": 1204,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4266666666666667,
+      "conversation_success": 0.49666666666666665,
+      "malformed_rate": 0,
+      "turn_success": 0.5545833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 99,
+      "clean_valid": 486,
+      "failed_eligible": 315,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 800,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 992.7629181779921,
+      "peak_vram_gib": 39.283203125,
+      "input_tokens": 9895818,
+      "output_tokens": 505270,
+      "generation_seconds": 925.2111850567162,
+      "aggregate_output_tokens_per_second": 546.1131557429524
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1029.5514836539514,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 602,
+          "recollect": 428,
+          "propose": 664,
+          "edit": 106
+        },
+        "applied": 1800,
+        "contradictory_value": 1158,
+        "contradictory_edit_with_source_access": 129,
+        "memory_changes": 1218
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 1011,
+          "recollect": 155,
+          "peer": 612,
+          "edit": 22
+        },
+        "applied": 1800,
+        "contradictory_value": 1146,
+        "contradictory_edit_with_source_access": 18,
+        "memory_changes": 1324
+      }
+    },
+    "peer_messages": 1214,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6266666666666667,
+      "conversation_success": 0.71,
+      "malformed_rate": 0,
+      "turn_success": 0.6265625
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 761,
+      "failed_eligible": 11,
+      "candidate_attempts": 11,
+      "candidate_valid": 0,
+      "candidate_discarded": 11,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1437.7880997220054,
+      "peak_vram_gib": 39.375,
+      "input_tokens": 14844121,
+      "output_tokens": 812366,
+      "generation_seconds": 1350.7892746585421,
+      "aggregate_output_tokens_per_second": 601.4009847726642
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1005.7101380699314,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-29-eval",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2643.855214058887,
+      "peak_vram_gib": 39.7177734375,
+      "input_tokens": 30029359,
+      "output_tokens": 2028797,
+      "generation_seconds": 2494.9608932323754,
+      "aggregate_output_tokens_per_second": 813.1578356611308
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 603,
+          "recollect": 331,
+          "propose": 673,
+          "edit": 185,
+          "pass": 8
+        },
+        "applied": 1799,
+        "contradictory_value": 1098,
+        "contradictory_edit_with_source_access": 198,
+        "memory_changes": 1200
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 958,
+          "recollect": 132,
+          "peer": 603,
+          "edit": 107
+        },
+        "applied": 1791,
+        "contradictory_value": 1248,
+        "contradictory_edit_with_source_access": 81,
+        "memory_changes": 1260
+      }
+    },
+    "peer_messages": 1197,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.3933333333333333,
+      "conversation_success": 0.47,
+      "malformed_rate": 0,
+      "turn_success": 0.5345833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 88,
+      "clean_valid": 461,
+      "failed_eligible": 351,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 810,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1208.2685234537348,
+      "peak_vram_gib": 39.8134765625,
+      "input_tokens": 9866471,
+      "output_tokens": 503742,
+      "generation_seconds": 1136.8229734180495,
+      "aggregate_output_tokens_per_second": 443.11384602425386
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1232.7716158377007,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 604,
+          "recollect": 340,
+          "propose": 747,
+          "edit": 109
+        },
+        "applied": 1800,
+        "contradictory_value": 1233,
+        "contradictory_edit_with_source_access": 136,
+        "memory_changes": 1206
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 1078,
+          "peer": 613,
+          "recollect": 80,
+          "edit": 29
+        },
+        "applied": 1800,
+        "contradictory_value": 1199,
+        "contradictory_edit_with_source_access": 18,
+        "memory_changes": 1298
+      }
+    },
+    "peer_messages": 1217,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.58,
+      "conversation_success": 0.6733333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.623125
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 125,
+      "clean_valid": 752,
+      "failed_eligible": 23,
+      "candidate_attempts": 23,
+      "candidate_valid": 0,
+      "candidate_discarded": 23,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1532.524025238119,
+      "peak_vram_gib": 39.4140625,
+      "input_tokens": 14894637,
+      "output_tokens": 818256,
+      "generation_seconds": 1447.6958307223395,
+      "aggregate_output_tokens_per_second": 565.2126521575493
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1185.3539805458859,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-43-eval",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2163.8472659969702,
+      "peak_vram_gib": 39.306640625,
+      "input_tokens": 30035913,
+      "output_tokens": 2026846,
+      "generation_seconds": 2019.2932626497932,
+      "aggregate_output_tokens_per_second": 1003.7402875005366
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 353,
+          "propose": 660,
+          "edit": 184,
+          "pass": 3
+        },
+        "applied": 1800,
+        "contradictory_value": 1114,
+        "contradictory_edit_with_source_access": 218,
+        "memory_changes": 1207
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 150,
+          "propose": 909,
+          "peer": 607,
+          "edit": 133,
+          "pass": 1
+        },
+        "applied": 1800,
+        "contradictory_value": 1190,
+        "contradictory_edit_with_source_access": 104,
+        "memory_changes": 1237
+      }
+    },
+    "peer_messages": 1207,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4266666666666667,
+      "conversation_success": 0.5033333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5554166666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 94,
+      "clean_valid": 475,
+      "failed_eligible": 331,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 804,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1011.9883161797188,
+      "peak_vram_gib": 39.3984375,
+      "input_tokens": 9855526,
+      "output_tokens": 502202,
+      "generation_seconds": 942.2387051903643,
+      "aggregate_output_tokens_per_second": 532.9880817181439
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1022.0918033383787,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 601,
+          "propose": 712,
+          "recollect": 416,
+          "edit": 71
+        },
+        "applied": 1800,
+        "contradictory_value": 1309,
+        "contradictory_edit_with_source_access": 170,
+        "memory_changes": 1220
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 144,
+          "propose": 1016,
+          "peer": 615,
+          "edit": 25
+        },
+        "applied": 1800,
+        "contradictory_value": 1217,
+        "contradictory_edit_with_source_access": 25,
+        "memory_changes": 1321
+      }
+    },
+    "peer_messages": 1216,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.6866666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.63
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 756,
+      "failed_eligible": 16,
+      "candidate_attempts": 16,
+      "candidate_valid": 1,
+      "candidate_discarded": 15,
+      "gold_teacher_examples": 771,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1354.9531347397715,
+      "peak_vram_gib": 39.171875,
+      "input_tokens": 14872566,
+      "output_tokens": 815097,
+      "generation_seconds": 1271.9444388188422,
+      "aggregate_output_tokens_per_second": 640.8275197593681
+    }
+  },
+  {
+    "run_id": "main-qwen-a1-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1014.0767243658192,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-17-eval",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2941.4888683096506,
+      "peak_vram_gib": 39.30078125,
+      "input_tokens": 30063436,
+      "output_tokens": 2030912,
+      "generation_seconds": 2797.2054640790448,
+      "aggregate_output_tokens_per_second": 726.0503477776024
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "propose": 579,
+          "recollect": 611,
+          "edit": 10
+        },
+        "applied": 1800,
+        "contradictory_value": 1159,
+        "contradictory_edit_with_source_access": 317,
+        "memory_changes": 1299
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "peer": 623,
+          "recollect": 748,
+          "propose": 390,
+          "edit": 39
+        },
+        "applied": 1798,
+        "contradictory_value": 1164,
+        "contradictory_edit_with_source_access": 348,
+        "memory_changes": 1191
+      }
+    },
+    "peer_messages": 1221,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.41333333333333333,
+      "conversation_success": 0.4633333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5179166666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 86,
+      "clean_valid": 440,
+      "failed_eligible": 374,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 813,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1071.8694522869773,
+      "peak_vram_gib": 39.2109375,
+      "input_tokens": 9319289,
+      "output_tokens": 516773,
+      "generation_seconds": 1004.6479284740053,
+      "aggregate_output_tokens_per_second": 514.382188380107
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1233.5852040108293,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 648,
+          "propose": 540,
+          "edit": 12
+        },
+        "applied": 1800,
+        "contradictory_value": 1156,
+        "contradictory_edit_with_source_access": 157,
+        "memory_changes": 1295
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 738,
+          "propose": 418,
+          "peer": 641,
+          "edit": 2,
+          "pass": 1
+        },
+        "applied": 1796,
+        "contradictory_value": 1134,
+        "contradictory_edit_with_source_access": 179,
+        "memory_changes": 1172
+      }
+    },
+    "peer_messages": 1237,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5933333333333334,
+      "conversation_success": 0.6933333333333334,
+      "malformed_rate": 0,
+      "turn_success": 0.6297916666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 747,
+      "failed_eligible": 25,
+      "candidate_attempts": 25,
+      "candidate_valid": 0,
+      "candidate_discarded": 25,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1550.6437672520988,
+      "peak_vram_gib": 39.228515625,
+      "input_tokens": 14334480,
+      "output_tokens": 825275,
+      "generation_seconds": 1466.3509546983987,
+      "aggregate_output_tokens_per_second": 562.8086491543519
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1253.5691767190583,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-29-eval",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2567.671971140895,
+      "peak_vram_gib": 39.8349609375,
+      "input_tokens": 30078179,
+      "output_tokens": 2041617,
+      "generation_seconds": 2427.716954407282,
+      "aggregate_output_tokens_per_second": 840.9617094338961
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 740,
+          "propose": 439,
+          "edit": 21
+        },
+        "applied": 1800,
+        "contradictory_value": 1103,
+        "contradictory_edit_with_source_access": 367,
+        "memory_changes": 1287
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "peer": 610,
+          "propose": 423,
+          "recollect": 730,
+          "edit": 37
+        },
+        "applied": 1797,
+        "contradictory_value": 1217,
+        "contradictory_edit_with_source_access": 374,
+        "memory_changes": 1201
+      }
+    },
+    "peer_messages": 1208,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4533333333333333,
+      "conversation_success": 0.53,
+      "malformed_rate": 0,
+      "turn_success": 0.5514583333333334
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 87,
+      "clean_valid": 481,
+      "failed_eligible": 332,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 811,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 892.0864118840545,
+      "peak_vram_gib": 39.19921875,
+      "input_tokens": 9302218,
+      "output_tokens": 512976,
+      "generation_seconds": 824.7945421733893,
+      "aggregate_output_tokens_per_second": 621.9439797070838
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1061.5026783556677,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "propose": 623,
+          "recollect": 565,
+          "edit": 12
+        },
+        "applied": 1800,
+        "contradictory_value": 1239,
+        "contradictory_edit_with_source_access": 166,
+        "memory_changes": 1289
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 775,
+          "peer": 658,
+          "propose": 363,
+          "pass": 2,
+          "edit": 2
+        },
+        "applied": 1793,
+        "contradictory_value": 1194,
+        "contradictory_edit_with_source_access": 213,
+        "memory_changes": 1152
+      }
+    },
+    "peer_messages": 1253,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.68,
+      "malformed_rate": 0,
+      "turn_success": 0.6254166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 754,
+      "failed_eligible": 18,
+      "candidate_attempts": 18,
+      "candidate_valid": 0,
+      "candidate_discarded": 18,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1301.3095601629466,
+      "peak_vram_gib": 39.6240234375,
+      "input_tokens": 14305965,
+      "output_tokens": 822681,
+      "generation_seconds": 1218.220881357789,
+      "aggregate_output_tokens_per_second": 675.3134941202673
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1050.9867918230593,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-43-eval",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2553.717621190008,
+      "peak_vram_gib": 39.7275390625,
+      "input_tokens": 30173387,
+      "output_tokens": 2060546,
+      "generation_seconds": 2412.5387610667385,
+      "aggregate_output_tokens_per_second": 854.0986090059337
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 690,
+          "propose": 496,
+          "edit": 14
+        },
+        "applied": 1800,
+        "contradictory_value": 1107,
+        "contradictory_edit_with_source_access": 351,
+        "memory_changes": 1301
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 851,
+          "propose": 291,
+          "peer": 627,
+          "pass": 2,
+          "edit": 29
+        },
+        "applied": 1796,
+        "contradictory_value": 1178,
+        "contradictory_edit_with_source_access": 420,
+        "memory_changes": 1187
+      }
+    },
+    "peer_messages": 1223,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.44666666666666666,
+      "conversation_success": 0.5166666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.560625
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 94,
+      "clean_valid": 486,
+      "failed_eligible": 320,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 806,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 907.116726628039,
+      "peak_vram_gib": 39.3203125,
+      "input_tokens": 9329094,
+      "output_tokens": 514671,
+      "generation_seconds": 839.8750653821044,
+      "aggregate_output_tokens_per_second": 612.7947134206781
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1038.5728132189251,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 598,
+          "propose": 520,
+          "recollect": 678,
+          "edit": 4
+        },
+        "applied": 1798,
+        "contradictory_value": 1312,
+        "contradictory_edit_with_source_access": 222,
+        "memory_changes": 1272
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 766,
+          "propose": 400,
+          "peer": 631,
+          "edit": 2,
+          "pass": 1
+        },
+        "applied": 1796,
+        "contradictory_value": 1198,
+        "contradictory_edit_with_source_access": 228,
+        "memory_changes": 1178
+      }
+    },
+    "peer_messages": 1225,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.58,
+      "conversation_success": 0.68,
+      "malformed_rate": 0,
+      "turn_success": 0.6235416666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 754,
+      "failed_eligible": 19,
+      "candidate_attempts": 19,
+      "candidate_valid": 0,
+      "candidate_discarded": 19,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1269.3750464869663,
+      "peak_vram_gib": 39.1982421875,
+      "input_tokens": 14315639,
+      "output_tokens": 824254,
+      "generation_seconds": 1185.5419185631908,
+      "aggregate_output_tokens_per_second": 695.255045050578
+    }
+  },
+  {
+    "run_id": "main-qwen-a2-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1032.9756651227362,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-17-eval",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2873.06535069691,
+      "peak_vram_gib": 39.171875,
+      "input_tokens": 30047462,
+      "output_tokens": 2035236,
+      "generation_seconds": 2729.682276446838,
+      "aggregate_output_tokens_per_second": 745.5944662721765
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 475,
+          "recollect": 1248,
+          "edit": 76,
+          "pass": 1
+        },
+        "applied": 1200,
+        "contradictory_value": 1179,
+        "contradictory_edit_with_source_access": 737,
+        "memory_changes": 1199
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 501,
+          "recollect": 988,
+          "peer": 26,
+          "edit": 283,
+          "pass": 2
+        },
+        "applied": 1202,
+        "contradictory_value": 1168,
+        "contradictory_edit_with_source_access": 579,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.44666666666666666,
+      "conversation_success": 0.51,
+      "malformed_rate": 0,
+      "turn_success": 0.54875
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 90,
+      "clean_valid": 468,
+      "failed_eligible": 342,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 810,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1301.0334375379607,
+      "peak_vram_gib": 39.6201171875,
+      "input_tokens": 9879914,
+      "output_tokens": 498582,
+      "generation_seconds": 1233.4709084415808,
+      "aggregate_output_tokens_per_second": 404.21058704167535
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1343.4100662339479,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 1331,
+          "propose": 459,
+          "edit": 10
+        },
+        "applied": 1200,
+        "contradictory_value": 1154,
+        "contradictory_edit_with_source_access": 356,
+        "memory_changes": 1200
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 1057,
+          "propose": 597,
+          "edit": 142,
+          "peer": 3,
+          "pass": 1
+        },
+        "applied": 1201,
+        "contradictory_value": 1148,
+        "contradictory_edit_with_source_access": 305,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5466666666666666,
+      "conversation_success": 0.6366666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6204166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 124,
+      "clean_valid": 740,
+      "failed_eligible": 36,
+      "candidate_attempts": 36,
+      "candidate_valid": 1,
+      "candidate_discarded": 35,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1605.4194242130034,
+      "peak_vram_gib": 39.357421875,
+      "input_tokens": 14904350,
+      "output_tokens": 808218,
+      "generation_seconds": 1516.0384748610668,
+      "aggregate_output_tokens_per_second": 533.111799866469
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1330.43944679806,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-29-eval",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2244.2541147097945,
+      "peak_vram_gib": 39.6416015625,
+      "input_tokens": 30031379,
+      "output_tokens": 2030003,
+      "generation_seconds": 2100.5078952359036,
+      "aggregate_output_tokens_per_second": 966.4343583778888
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 475,
+          "recollect": 1245,
+          "edit": 71,
+          "pass": 9
+        },
+        "applied": 1204,
+        "contradictory_value": 1085,
+        "contradictory_edit_with_source_access": 635,
+        "memory_changes": 1195
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 496,
+          "recollect": 1067,
+          "edit": 229,
+          "peer": 8
+        },
+        "applied": 1200,
+        "contradictory_value": 1246,
+        "contradictory_edit_with_source_access": 646,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4066666666666667,
+      "conversation_success": 0.49333333333333335,
+      "malformed_rate": 0,
+      "turn_success": 0.5433333333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 87,
+      "clean_valid": 468,
+      "failed_eligible": 345,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 813,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1017.2276253886521,
+      "peak_vram_gib": 39.30078125,
+      "input_tokens": 9884068,
+      "output_tokens": 497540,
+      "generation_seconds": 949.218456607312,
+      "aggregate_output_tokens_per_second": 524.157528266257
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1043.6881007347256,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 470,
+          "recollect": 1303,
+          "edit": 26,
+          "pass": 1
+        },
+        "applied": 1201,
+        "contradictory_value": 1241,
+        "contradictory_edit_with_source_access": 425,
+        "memory_changes": 1200
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "propose": 609,
+          "recollect": 1053,
+          "edit": 138
+        },
+        "applied": 1200,
+        "contradictory_value": 1191,
+        "contradictory_edit_with_source_access": 342,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5933333333333334,
+      "conversation_success": 0.7,
+      "malformed_rate": 0,
+      "turn_success": 0.6190625
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 753,
+      "failed_eligible": 19,
+      "candidate_attempts": 19,
+      "candidate_valid": 0,
+      "candidate_discarded": 19,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1320.699059692677,
+      "peak_vram_gib": 39.19140625,
+      "input_tokens": 14912594,
+      "output_tokens": 809626,
+      "generation_seconds": 1235.4080895129591,
+      "aggregate_output_tokens_per_second": 655.351059194685
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 946.1768723051064,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-43-eval",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2562.0891485540196,
+      "peak_vram_gib": 39.6123046875,
+      "input_tokens": 30083258,
+      "output_tokens": 2045200,
+      "generation_seconds": 2422.456514309626,
+      "aggregate_output_tokens_per_second": 844.2669612101829
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 443,
+          "recollect": 1277,
+          "edit": 79,
+          "pass": 1
+        },
+        "applied": 1201,
+        "contradictory_value": 1123,
+        "contradictory_edit_with_source_access": 721,
+        "memory_changes": 1200
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 1161,
+          "propose": 351,
+          "peer": 22,
+          "edit": 266
+        },
+        "applied": 1200,
+        "contradictory_value": 1140,
+        "contradictory_edit_with_source_access": 638,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.3933333333333333,
+      "conversation_success": 0.49,
+      "malformed_rate": 0,
+      "turn_success": 0.5516666666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 86,
+      "clean_valid": 492,
+      "failed_eligible": 322,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 814,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1001.3695743111894,
+      "peak_vram_gib": 39.16796875,
+      "input_tokens": 9904673,
+      "output_tokens": 499607,
+      "generation_seconds": 932.1554184053093,
+      "aggregate_output_tokens_per_second": 535.9696356801807
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1017.8057303749956,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "propose": 369,
+          "recollect": 1418,
+          "edit": 12,
+          "pass": 1
+        },
+        "applied": 1201,
+        "contradictory_value": 1308,
+        "contradictory_edit_with_source_access": 473,
+        "memory_changes": 1200
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 1072,
+          "propose": 594,
+          "edit": 129,
+          "peer": 4,
+          "pass": 1
+        },
+        "applied": 1201,
+        "contradictory_value": 1219,
+        "contradictory_edit_with_source_access": 364,
+        "memory_changes": 1200
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.6833333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.6283333333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 755,
+      "failed_eligible": 18,
+      "candidate_attempts": 18,
+      "candidate_valid": 0,
+      "candidate_discarded": 18,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1347.2709704479203,
+      "peak_vram_gib": 39.255859375,
+      "input_tokens": 14888334,
+      "output_tokens": 807937,
+      "generation_seconds": 1262.6891671759076,
+      "aggregate_output_tokens_per_second": 639.8542262043852
+    }
+  },
+  {
+    "run_id": "main-qwen-a3-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "A3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1028.3854550691321,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
     "run_id": "main-qwen-c1-17-eval",
     "phase": "confirmatory",
     "condition": "C1",
@@ -241,6 +3125,2726 @@
     "peer_messages": 0,
     "resources": {
       "gpu_reserved_seconds": 1217.8495031469502,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-29-eval",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2066.9663163949735,
+      "peak_vram_gib": 39.6416015625,
+      "input_tokens": 30052941,
+      "output_tokens": 2028473,
+      "generation_seconds": 1922.0160809517838,
+      "aggregate_output_tokens_per_second": 1055.3881521092678
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.44666666666666666,
+      "conversation_success": 0.5133333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5489583333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 97,
+      "clean_valid": 477,
+      "failed_eligible": 326,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 803,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 368.4683264172636,
+      "peak_vram_gib": 39.1953125,
+      "input_tokens": 4782048,
+      "output_tokens": 331261,
+      "generation_seconds": 312.2600743374787,
+      "aggregate_output_tokens_per_second": 1060.8496801995436
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 980.776442845352,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5933333333333334,
+      "conversation_success": 0.6866666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.6295833333333334
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 756,
+      "failed_eligible": 17,
+      "candidate_attempts": 17,
+      "candidate_valid": 0,
+      "candidate_discarded": 17,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 685.4216426340863,
+      "peak_vram_gib": 39.205078125,
+      "input_tokens": 9372289,
+      "output_tokens": 640014,
+      "generation_seconds": 614.9368667225353,
+      "aggregate_output_tokens_per_second": 1040.7800127696355
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1022.8833423890173,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-43-eval",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2855.860113282688,
+      "peak_vram_gib": 39.7275390625,
+      "input_tokens": 30092033,
+      "output_tokens": 2050845,
+      "generation_seconds": 2708.01240602741,
+      "aggregate_output_tokens_per_second": 757.3248170633534
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4266666666666667,
+      "conversation_success": 0.52,
+      "malformed_rate": 0,
+      "turn_success": 0.5554166666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 97,
+      "clean_valid": 479,
+      "failed_eligible": 324,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 803,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 441.22266010101885,
+      "peak_vram_gib": 39.15625,
+      "input_tokens": 4788975,
+      "output_tokens": 331243,
+      "generation_seconds": 383.7901126611978,
+      "aggregate_output_tokens_per_second": 863.083724859829
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1257.227642044425,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6266666666666667,
+      "conversation_success": 0.7133333333333334,
+      "malformed_rate": 0,
+      "turn_success": 0.6404166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 764,
+      "failed_eligible": 9,
+      "candidate_attempts": 9,
+      "candidate_valid": 0,
+      "candidate_discarded": 9,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 908.3560196887702,
+      "peak_vram_gib": 39.19140625,
+      "input_tokens": 9363946,
+      "output_tokens": 639439,
+      "generation_seconds": 837.3928530383855,
+      "aggregate_output_tokens_per_second": 763.6069470617855
+    }
+  },
+  {
+    "run_id": "main-qwen-c1-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C1",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1361.3855572268367,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-17-eval",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2433.270504374057,
+      "peak_vram_gib": 39.7216796875,
+      "input_tokens": 30032566,
+      "output_tokens": 2029025,
+      "generation_seconds": 2288.6068014437333,
+      "aggregate_output_tokens_per_second": 886.5764965480396
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2335,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.24666666666666667,
+      "conversation_success": 0.33666666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.4247916666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 96,
+      "clean_valid": 370,
+      "failed_eligible": 434,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 803,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 592.9883269509301,
+      "peak_vram_gib": 39.19921875,
+      "input_tokens": 5088468,
+      "output_tokens": 331136,
+      "generation_seconds": 536.6106394496746,
+      "aggregate_output_tokens_per_second": 617.0880255739976
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1225.7909377710894,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2364,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.62,
+      "conversation_success": 0.71,
+      "malformed_rate": 0,
+      "turn_success": 0.6259375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 126,
+      "clean_valid": 762,
+      "failed_eligible": 12,
+      "candidate_attempts": 12,
+      "candidate_valid": 0,
+      "candidate_discarded": 12,
+      "gold_teacher_examples": 774,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 963.919184201397,
+      "peak_vram_gib": 39.390625,
+      "input_tokens": 9962235,
+      "output_tokens": 639598,
+      "generation_seconds": 891.9779262864031,
+      "aggregate_output_tokens_per_second": 717.0558610826351
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1181.7308014910668,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-29-eval",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1985.917266482953,
+      "peak_vram_gib": 39.318359375,
+      "input_tokens": 30024304,
+      "output_tokens": 2027563,
+      "generation_seconds": 1843.7925912835635,
+      "aggregate_output_tokens_per_second": 1099.6697836758874
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2408,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.23333333333333334,
+      "conversation_success": 0.3333333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.43
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 95,
+      "clean_valid": 364,
+      "failed_eligible": 441,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 803,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 481.2613712865859,
+      "peak_vram_gib": 39.24609375,
+      "input_tokens": 5096878,
+      "output_tokens": 332058,
+      "generation_seconds": 422.9811839219183,
+      "aggregate_output_tokens_per_second": 785.0420127938775
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 968.6077603180893,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2430,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.62,
+      "conversation_success": 0.7033333333333334,
+      "malformed_rate": 0,
+      "turn_success": 0.6261458333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 761,
+      "failed_eligible": 11,
+      "candidate_attempts": 11,
+      "candidate_valid": 0,
+      "candidate_discarded": 11,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 774.718283072114,
+      "peak_vram_gib": 39.171875,
+      "input_tokens": 9961570,
+      "output_tokens": 639611,
+      "generation_seconds": 701.6094373790547,
+      "aggregate_output_tokens_per_second": 911.6339745789948
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 976.4548300039023,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-43-eval",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2306.787327155005,
+      "peak_vram_gib": 39.2890625,
+      "input_tokens": 30068743,
+      "output_tokens": 2028544,
+      "generation_seconds": 2167.0751519640908,
+      "aggregate_output_tokens_per_second": 936.0745972106525
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2444,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.2866666666666667,
+      "conversation_success": 0.37333333333333335,
+      "malformed_rate": 0,
+      "turn_success": 0.46166666666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 93,
+      "clean_valid": 392,
+      "failed_eligible": 415,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 805,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 478.2362873922102,
+      "peak_vram_gib": 39.392578125,
+      "input_tokens": 5074382,
+      "output_tokens": 331037,
+      "generation_seconds": 420.1768098012544,
+      "aggregate_output_tokens_per_second": 787.8516669127505
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 977.5272263227962,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {
+      "Random": {
+        "n": 3600,
+        "action_types": {
+          "pass": 1200,
+          "edit": 2400
+        },
+        "applied": 3600,
+        "contradictory_value": 2398,
+        "contradictory_edit_with_source_access": 0,
+        "memory_changes": 2400
+      }
+    },
+    "peer_messages": 0,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6066666666666667,
+      "conversation_success": 0.6933333333333334,
+      "malformed_rate": 0,
+      "turn_success": 0.6253125
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 758,
+      "failed_eligible": 14,
+      "candidate_attempts": 14,
+      "candidate_valid": 0,
+      "candidate_discarded": 14,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 799.3727623452432,
+      "peak_vram_gib": 39.359375,
+      "input_tokens": 9965191,
+      "output_tokens": 639804,
+      "generation_seconds": 728.1858137026429,
+      "aggregate_output_tokens_per_second": 878.6273887248044
+    }
+  },
+  {
+    "run_id": "main-qwen-c2-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C2",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 995.4251909540035,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-17-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2806.1063097622246,
+      "peak_vram_gib": 39.1875,
+      "input_tokens": 30073421,
+      "output_tokens": 2043597,
+      "generation_seconds": 2664.8420681175776,
+      "aggregate_output_tokens_per_second": 766.8735886639541
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1197,
+          "recollect": 272,
+          "edit": 1809,
+          "propose": 322
+        },
+        "applied": 3596,
+        "contradictory_value": 2690,
+        "contradictory_edit_with_source_access": 1235,
+        "memory_changes": 2489
+      }
+    },
+    "peer_messages": 1196,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.14,
+      "conversation_success": 0.24666666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.385
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 83,
+      "clean_valid": 323,
+      "failed_eligible": 494,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 815,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1215.4567096182145,
+      "peak_vram_gib": 39.326171875,
+      "input_tokens": 9608029,
+      "output_tokens": 491625,
+      "generation_seconds": 1148.539448195137,
+      "aggregate_output_tokens_per_second": 428.0436346984512
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1215.3617976107635,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1200,
+          "edit": 1726,
+          "propose": 321,
+          "recollect": 353
+        },
+        "applied": 3600,
+        "contradictory_value": 2725,
+        "contradictory_edit_with_source_access": 634,
+        "memory_changes": 2478
+      }
+    },
+    "peer_messages": 1200,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5533333333333333,
+      "conversation_success": 0.64,
+      "malformed_rate": 0,
+      "turn_success": 0.6209375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 125,
+      "clean_valid": 742,
+      "failed_eligible": 33,
+      "candidate_attempts": 33,
+      "candidate_valid": 0,
+      "candidate_discarded": 33,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1582.7163580278866,
+      "peak_vram_gib": 39.220703125,
+      "input_tokens": 14489505,
+      "output_tokens": 800895,
+      "generation_seconds": 1499.6331228539348,
+      "aggregate_output_tokens_per_second": 534.0606230914838
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1187.1624695202336,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-29-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2054.157771840226,
+      "peak_vram_gib": 39.3203125,
+      "input_tokens": 30035333,
+      "output_tokens": 2026900,
+      "generation_seconds": 1907.4892505942844,
+      "aggregate_output_tokens_per_second": 1062.6010077742314
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1198,
+          "recollect": 298,
+          "propose": 349,
+          "edit": 1755
+        },
+        "applied": 3597,
+        "contradictory_value": 2588,
+        "contradictory_edit_with_source_access": 1150,
+        "memory_changes": 2449
+      }
+    },
+    "peer_messages": 1197,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.14,
+      "conversation_success": 0.27666666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.43604166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 88,
+      "clean_valid": 383,
+      "failed_eligible": 429,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 812,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 984.6791337970644,
+      "peak_vram_gib": 39.6435546875,
+      "input_tokens": 9598706,
+      "output_tokens": 489377,
+      "generation_seconds": 914.809860825073,
+      "aggregate_output_tokens_per_second": 534.9494151261418
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1079.0483642211184,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1199,
+          "edit": 1695,
+          "propose": 398,
+          "recollect": 307,
+          "pass": 1
+        },
+        "applied": 3597,
+        "contradictory_value": 2787,
+        "contradictory_edit_with_source_access": 635,
+        "memory_changes": 2507
+      }
+    },
+    "peer_messages": 1196,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.58,
+      "conversation_success": 0.6833333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.621875
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 749,
+      "failed_eligible": 23,
+      "candidate_attempts": 23,
+      "candidate_valid": 0,
+      "candidate_discarded": 23,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1411.6241077519953,
+      "peak_vram_gib": 39.439453125,
+      "input_tokens": 14509683,
+      "output_tokens": 802852,
+      "generation_seconds": 1323.6834062514827,
+      "aggregate_output_tokens_per_second": 606.5287184294192
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1071.9084831420332,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-43-eval",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 3028.864239051938,
+      "peak_vram_gib": 39.7197265625,
+      "input_tokens": 30040065,
+      "output_tokens": 2032916,
+      "generation_seconds": 2885.8344521354884,
+      "aggregate_output_tokens_per_second": 704.446507143077
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1199,
+          "edit": 1844,
+          "recollect": 258,
+          "propose": 298,
+          "pass": 1
+        },
+        "applied": 3598,
+        "contradictory_value": 2573,
+        "contradictory_edit_with_source_access": 1164,
+        "memory_changes": 2480
+      }
+    },
+    "peer_messages": 1197,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.16,
+      "conversation_success": 0.25,
+      "malformed_rate": 0,
+      "turn_success": 0.41479166666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 92,
+      "clean_valid": 362,
+      "failed_eligible": 446,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 807,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1308.5960728921928,
+      "peak_vram_gib": 39.8642578125,
+      "input_tokens": 9597653,
+      "output_tokens": 490856,
+      "generation_seconds": 1239.7310377275571,
+      "aggregate_output_tokens_per_second": 395.93749374843867
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1323.0690213912167,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {
+      "Generic": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1200,
+          "edit": 1708,
+          "recollect": 340,
+          "propose": 350,
+          "pass": 2
+        },
+        "applied": 3598,
+        "contradictory_value": 2833,
+        "contradictory_edit_with_source_access": 710,
+        "memory_changes": 2486
+      }
+    },
+    "peer_messages": 1198,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.6733333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.6217708333333334
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 752,
+      "failed_eligible": 20,
+      "candidate_attempts": 20,
+      "candidate_valid": 0,
+      "candidate_discarded": 20,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1907.4017172660679,
+      "peak_vram_gib": 39.3046875,
+      "input_tokens": 14481816,
+      "output_tokens": 801971,
+      "generation_seconds": 1824.2092840201221,
+      "aggregate_output_tokens_per_second": 439.62664099189715
+    }
+  },
+  {
+    "run_id": "main-qwen-c3-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C3",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1377.723408752121,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-17-eval",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2211.8508164780214,
+      "peak_vram_gib": 39.19921875,
+      "input_tokens": 30033485,
+      "output_tokens": 2030752,
+      "generation_seconds": 2069.3767592874356,
+      "aggregate_output_tokens_per_second": 981.3350763150855
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 992,
+          "propose": 666,
+          "pass": 25,
+          "recollect": 1715,
+          "edit": 202
+        },
+        "applied": 3411,
+        "contradictory_value": 2377,
+        "contradictory_edit_with_source_access": 898,
+        "memory_changes": 3339
+      }
+    },
+    "peer_messages": 992,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4266666666666667,
+      "conversation_success": 0.5033333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5377083333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 90,
+      "clean_valid": 470,
+      "failed_eligible": 340,
+      "candidate_attempts": 128,
+      "candidate_valid": 2,
+      "candidate_discarded": 126,
+      "gold_teacher_examples": 808,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1168.3413002877496,
+      "peak_vram_gib": 39.228515625,
+      "input_tokens": 10598450,
+      "output_tokens": 507909,
+      "generation_seconds": 1100.4597028684802,
+      "aggregate_output_tokens_per_second": 461.54257050582976
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1099.0217389729805,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1043,
+          "pass": 5,
+          "propose": 509,
+          "recollect": 2018,
+          "edit": 25
+        },
+        "applied": 3448,
+        "contradictory_value": 2310,
+        "contradictory_edit_with_source_access": 472,
+        "memory_changes": 3408
+      }
+    },
+    "peer_messages": 1043,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.6833333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.624375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 131,
+      "clean_valid": 755,
+      "failed_eligible": 14,
+      "candidate_attempts": 14,
+      "candidate_valid": 1,
+      "candidate_discarded": 13,
+      "gold_teacher_examples": 768,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1517.198357495945,
+      "peak_vram_gib": 39.6376953125,
+      "input_tokens": 15635013,
+      "output_tokens": 812310,
+      "generation_seconds": 1432.9387692119926,
+      "aggregate_output_tokens_per_second": 566.8839572584868
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1046.366485408973,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-29-eval",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2708.0405452912673,
+      "peak_vram_gib": 39.7314453125,
+      "input_tokens": 30042998,
+      "output_tokens": 2034335,
+      "generation_seconds": 2562.9599092374556,
+      "aggregate_output_tokens_per_second": 793.7443705880149
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1029,
+          "propose": 669,
+          "recollect": 1744,
+          "pass": 28,
+          "edit": 130
+        },
+        "applied": 3439,
+        "contradictory_value": 2167,
+        "contradictory_edit_with_source_access": 759,
+        "memory_changes": 3368
+      }
+    },
+    "peer_messages": 1029,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.42,
+      "conversation_success": 0.5133333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5389583333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 85,
+      "clean_valid": 484,
+      "failed_eligible": 331,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 814,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1092.4516233466566,
+      "peak_vram_gib": 39.470703125,
+      "input_tokens": 10528960,
+      "output_tokens": 503348,
+      "generation_seconds": 1024.0506650633179,
+      "aggregate_output_tokens_per_second": 491.526461699898
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1203.446740488056,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1039,
+          "propose": 571,
+          "pass": 4,
+          "recollect": 1959,
+          "edit": 27
+        },
+        "applied": 3442,
+        "contradictory_value": 2385,
+        "contradictory_edit_with_source_access": 497,
+        "memory_changes": 3411
+      }
+    },
+    "peer_messages": 1039,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5866666666666667,
+      "conversation_success": 0.6766666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.6228125
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 127,
+      "clean_valid": 753,
+      "failed_eligible": 20,
+      "candidate_attempts": 20,
+      "candidate_valid": 0,
+      "candidate_discarded": 20,
+      "gold_teacher_examples": 773,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1649.4744468377903,
+      "peak_vram_gib": 39.384765625,
+      "input_tokens": 15668589,
+      "output_tokens": 817176,
+      "generation_seconds": 1563.1680403184146,
+      "aggregate_output_tokens_per_second": 522.7691322511575
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1188.9482577731833,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-43-eval",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 3006.9921460961923,
+      "peak_vram_gib": 39.6376953125,
+      "input_tokens": 30055735,
+      "output_tokens": 2039061,
+      "generation_seconds": 2863.5647747088224,
+      "aggregate_output_tokens_per_second": 712.0708488975386
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1084,
+          "propose": 617,
+          "pass": 25,
+          "recollect": 1715,
+          "edit": 159
+        },
+        "applied": 3496,
+        "contradictory_value": 2225,
+        "contradictory_edit_with_source_access": 839,
+        "memory_changes": 3447
+      }
+    },
+    "peer_messages": 1084,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.36666666666666664,
+      "conversation_success": 0.4766666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.5170833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 90,
+      "clean_valid": 452,
+      "failed_eligible": 358,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 810,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1404.2486619311385,
+      "peak_vram_gib": 39.1953125,
+      "input_tokens": 10602474,
+      "output_tokens": 507604,
+      "generation_seconds": 1332.8792401161045,
+      "aggregate_output_tokens_per_second": 380.83270015953104
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1328.7104767509736,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 3600,
+        "action_types": {
+          "peer": 1057,
+          "propose": 487,
+          "pass": 8,
+          "recollect": 2003,
+          "edit": 45
+        },
+        "applied": 3459,
+        "contradictory_value": 2571,
+        "contradictory_edit_with_source_access": 576,
+        "memory_changes": 3424
+      }
+    },
+    "peer_messages": 1057,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5466666666666666,
+      "conversation_success": 0.6566666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.6215625
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 126,
+      "clean_valid": 745,
+      "failed_eligible": 29,
+      "candidate_attempts": 29,
+      "candidate_valid": 4,
+      "candidate_discarded": 25,
+      "gold_teacher_examples": 770,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1835.1316246418282,
+      "peak_vram_gib": 39.18359375,
+      "input_tokens": 15689906,
+      "output_tokens": 817441,
+      "generation_seconds": 1749.5787559994496,
+      "aggregate_output_tokens_per_second": 467.22160817106834
+    }
+  },
+  {
+    "run_id": "main-qwen-c4-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C4",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1303.6080717570148,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-17-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2123.9788268948905,
+      "peak_vram_gib": 39.6083984375,
+      "input_tokens": 30037083,
+      "output_tokens": 2028468,
+      "generation_seconds": 1980.288903444074,
+      "aggregate_output_tokens_per_second": 1024.3293271361233
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "propose": 336,
+          "recollect": 825,
+          "edit": 39
+        },
+        "applied": 1800,
+        "contradictory_value": 1193,
+        "contradictory_edit_with_source_access": 478,
+        "memory_changes": 1371
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "peer": 659,
+          "recollect": 647,
+          "propose": 355,
+          "edit": 131,
+          "pass": 8
+        },
+        "applied": 1799,
+        "contradictory_value": 1188,
+        "contradictory_edit_with_source_access": 352,
+        "memory_changes": 1157
+      }
+    },
+    "peer_messages": 1259,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.4,
+      "conversation_success": 0.48,
+      "malformed_rate": 0,
+      "turn_success": 0.5347916666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 89,
+      "clean_valid": 464,
+      "failed_eligible": 347,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 811,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1064.3859847798012,
+      "peak_vram_gib": 39.203125,
+      "input_tokens": 10169395,
+      "output_tokens": 525754,
+      "generation_seconds": 995.4239533399232,
+      "aggregate_output_tokens_per_second": 528.1709348423349
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1024.3150219740346,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 606,
+          "recollect": 908,
+          "propose": 280,
+          "edit": 6
+        },
+        "applied": 1800,
+        "contradictory_value": 1160,
+        "contradictory_edit_with_source_access": 219,
+        "memory_changes": 1356
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 669,
+          "propose": 411,
+          "peer": 685,
+          "edit": 30,
+          "pass": 5
+        },
+        "applied": 1800,
+        "contradictory_value": 1117,
+        "contradictory_edit_with_source_access": 177,
+        "memory_changes": 1150
+      }
+    },
+    "peer_messages": 1291,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.56,
+      "conversation_success": 0.65,
+      "malformed_rate": 0,
+      "turn_success": 0.6270833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 124,
+      "clean_valid": 745,
+      "failed_eligible": 31,
+      "candidate_attempts": 31,
+      "candidate_valid": 1,
+      "candidate_discarded": 30,
+      "gold_teacher_examples": 775,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1406.7134885061532,
+      "peak_vram_gib": 39.271484375,
+      "input_tokens": 15223548,
+      "output_tokens": 835290,
+      "generation_seconds": 1320.0325152007863,
+      "aggregate_output_tokens_per_second": 632.779867451179
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1028.9235943770036,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-29-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2307.6045130370185,
+      "peak_vram_gib": 39.7236328125,
+      "input_tokens": 30025852,
+      "output_tokens": 2027335,
+      "generation_seconds": 2159.6760587682948,
+      "aggregate_output_tokens_per_second": 938.7218012483912
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 848,
+          "propose": 317,
+          "edit": 33,
+          "pass": 2
+        },
+        "applied": 1800,
+        "contradictory_value": 1099,
+        "contradictory_edit_with_source_access": 454,
+        "memory_changes": 1348
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "peer": 638,
+          "recollect": 663,
+          "propose": 355,
+          "edit": 144
+        },
+        "applied": 1799,
+        "contradictory_value": 1257,
+        "contradictory_edit_with_source_access": 397,
+        "memory_changes": 1180
+      }
+    },
+    "peer_messages": 1237,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.41333333333333333,
+      "conversation_success": 0.5033333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5583333333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 92,
+      "clean_valid": 497,
+      "failed_eligible": 311,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 807,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1208.7154924981296,
+      "peak_vram_gib": 39.302734375,
+      "input_tokens": 10121678,
+      "output_tokens": 519604,
+      "generation_seconds": 1140.2073644455522,
+      "aggregate_output_tokens_per_second": 455.71008941226006
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1191.2569023142569,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 602,
+          "recollect": 899,
+          "propose": 293,
+          "edit": 6
+        },
+        "applied": 1800,
+        "contradictory_value": 1242,
+        "contradictory_edit_with_source_access": 260,
+        "memory_changes": 1342
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 703,
+          "peer": 694,
+          "propose": 360,
+          "edit": 40,
+          "pass": 3
+        },
+        "applied": 1800,
+        "contradictory_value": 1169,
+        "contradictory_edit_with_source_access": 207,
+        "memory_changes": 1134
+      }
+    },
+    "peer_messages": 1296,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6133333333333333,
+      "conversation_success": 0.7033333333333334,
+      "malformed_rate": 0,
+      "turn_success": 0.6264583333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 129,
+      "clean_valid": 761,
+      "failed_eligible": 10,
+      "candidate_attempts": 10,
+      "candidate_valid": 1,
+      "candidate_discarded": 9,
+      "gold_teacher_examples": 770,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1634.4745363588445,
+      "peak_vram_gib": 39.4453125,
+      "input_tokens": 15207650,
+      "output_tokens": 833627,
+      "generation_seconds": 1547.0131793185137,
+      "aggregate_output_tokens_per_second": 538.8622483275981
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1142.559768452309,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-43-eval",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2274.186291267164,
+      "peak_vram_gib": 39.19921875,
+      "input_tokens": 30051477,
+      "output_tokens": 2035618,
+      "generation_seconds": 2123.144227648154,
+      "aggregate_output_tokens_per_second": 958.7751851671856
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "recollect": 883,
+          "propose": 297,
+          "edit": 20
+        },
+        "applied": 1800,
+        "contradictory_value": 1113,
+        "contradictory_edit_with_source_access": 480,
+        "memory_changes": 1350
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 752,
+          "propose": 270,
+          "peer": 668,
+          "edit": 110
+        },
+        "applied": 1800,
+        "contradictory_value": 1190,
+        "contradictory_edit_with_source_access": 396,
+        "memory_changes": 1148
+      }
+    },
+    "peer_messages": 1268,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.38,
+      "conversation_success": 0.48,
+      "malformed_rate": 0,
+      "turn_success": 0.5304166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 91,
+      "clean_valid": 468,
+      "failed_eligible": 341,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 808,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1273.332819657866,
+      "peak_vram_gib": 39.169921875,
+      "input_tokens": 10128236,
+      "output_tokens": 520319,
+      "generation_seconds": 1204.7026047427207,
+      "aggregate_output_tokens_per_second": 431.9065949982906
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1197.9993667099625,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 1800,
+        "action_types": {
+          "peer": 600,
+          "propose": 297,
+          "recollect": 903
+        },
+        "applied": 1800,
+        "contradictory_value": 1290,
+        "contradictory_edit_with_source_access": 290,
+        "memory_changes": 1323
+      },
+      "Rival": {
+        "n": 1800,
+        "action_types": {
+          "recollect": 670,
+          "propose": 421,
+          "peer": 666,
+          "edit": 40,
+          "pass": 3
+        },
+        "applied": 1800,
+        "contradictory_value": 1211,
+        "contradictory_edit_with_source_access": 221,
+        "memory_changes": 1174
+      }
+    },
+    "peer_messages": 1266,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6066666666666667,
+      "conversation_success": 0.7,
+      "malformed_rate": 0,
+      "turn_success": 0.6247916666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 759,
+      "failed_eligible": 13,
+      "candidate_attempts": 13,
+      "candidate_valid": 0,
+      "candidate_discarded": 13,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1524.3180709732696,
+      "peak_vram_gib": 39.2265625,
+      "input_tokens": 15216897,
+      "output_tokens": 835329,
+      "generation_seconds": 1439.9781213542446,
+      "aggregate_output_tokens_per_second": 580.0983970606476
+    }
+  },
+  {
+    "run_id": "main-qwen-c5-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C5",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1088.6201742989942,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-17-eval",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2065.9443460139446,
+      "peak_vram_gib": 39.5732421875,
+      "input_tokens": 30029479,
+      "output_tokens": 2029050,
+      "generation_seconds": 1922.9392457073554,
+      "aggregate_output_tokens_per_second": 1055.1815428019993
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-17-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "propose": 219,
+          "recollect": 376,
+          "edit": 5
+        },
+        "applied": 900,
+        "contradictory_value": 590,
+        "contradictory_edit_with_source_access": 183,
+        "memory_changes": 682
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 470,
+          "peer": 40,
+          "edit": 388,
+          "recollect": 2
+        },
+        "applied": 640,
+        "contradictory_value": 745,
+        "contradictory_edit_with_source_access": 153,
+        "memory_changes": 602
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "peer": 327,
+          "propose": 204,
+          "recollect": 350,
+          "edit": 19
+        },
+        "applied": 900,
+        "contradictory_value": 570,
+        "contradictory_edit_with_source_access": 207,
+        "memory_changes": 574
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 627,
+          "peer": 245,
+          "propose": 24,
+          "edit": 4
+        },
+        "applied": 845,
+        "contradictory_value": 445,
+        "contradictory_edit_with_source_access": 264,
+        "memory_changes": 602
+      }
+    },
+    "peer_messages": 912,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.20666666666666667,
+      "conversation_success": 0.35333333333333333,
+      "malformed_rate": 0,
+      "turn_success": 0.5104166666666666
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 88,
+      "clean_valid": 439,
+      "failed_eligible": 373,
+      "candidate_attempts": 128,
+      "candidate_valid": 1,
+      "candidate_discarded": 127,
+      "gold_teacher_examples": 811,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1094.6739821620286,
+      "peak_vram_gib": 39.228515625,
+      "input_tokens": 9579671,
+      "output_tokens": 512387,
+      "generation_seconds": 1026.4756486066617,
+      "aggregate_output_tokens_per_second": 499.1711208108193
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-17-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1091.7331306771375,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-17-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "recollect": 377,
+          "propose": 223
+        },
+        "applied": 900,
+        "contradictory_value": 584,
+        "contradictory_edit_with_source_access": 54,
+        "memory_changes": 694
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 567,
+          "peer": 22,
+          "edit": 311
+        },
+        "applied": 622,
+        "contradictory_value": 770,
+        "contradictory_edit_with_source_access": 28,
+        "memory_changes": 600
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "recollect": 352,
+          "propose": 210,
+          "peer": 336,
+          "edit": 2
+        },
+        "applied": 899,
+        "contradictory_value": 556,
+        "contradictory_edit_with_source_access": 122,
+        "memory_changes": 564
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 608,
+          "edit": 10,
+          "peer": 268,
+          "propose": 14
+        },
+        "applied": 868,
+        "contradictory_value": 490,
+        "contradictory_edit_with_source_access": 154,
+        "memory_changes": 600
+      }
+    },
+    "peer_messages": 925,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.6066666666666667,
+      "conversation_success": 0.7,
+      "malformed_rate": 0,
+      "turn_success": 0.6185416666666667
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 128,
+      "clean_valid": 751,
+      "failed_eligible": 21,
+      "candidate_attempts": 21,
+      "candidate_valid": 0,
+      "candidate_discarded": 21,
+      "gold_teacher_examples": 772,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1441.868769323919,
+      "peak_vram_gib": 39.19921875,
+      "input_tokens": 14593727,
+      "output_tokens": 820189,
+      "generation_seconds": 1355.4551204638556,
+      "aggregate_output_tokens_per_second": 605.1022919293115
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-17-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1019.4484502701089,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-29-eval",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 2428.606660725083,
+      "peak_vram_gib": 39.30078125,
+      "input_tokens": 30150674,
+      "output_tokens": 2045894,
+      "generation_seconds": 2289.172169617377,
+      "aggregate_output_tokens_per_second": 893.7265738041714
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-29-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "recollect": 368,
+          "propose": 227,
+          "edit": 5
+        },
+        "applied": 900,
+        "contradictory_value": 545,
+        "contradictory_edit_with_source_access": 169,
+        "memory_changes": 678
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 541,
+          "peer": 21,
+          "edit": 337,
+          "recollect": 1
+        },
+        "applied": 621,
+        "contradictory_value": 786,
+        "contradictory_edit_with_source_access": 121,
+        "memory_changes": 600
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "peer": 313,
+          "recollect": 370,
+          "propose": 198,
+          "edit": 18,
+          "pass": 1
+        },
+        "applied": 899,
+        "contradictory_value": 606,
+        "contradictory_edit_with_source_access": 250,
+        "memory_changes": 586
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 618,
+          "peer": 250,
+          "propose": 26,
+          "edit": 6
+        },
+        "applied": 850,
+        "contradictory_value": 475,
+        "contradictory_edit_with_source_access": 299,
+        "memory_changes": 602
+      }
+    },
+    "peer_messages": 883,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.26,
+      "conversation_success": 0.35,
+      "malformed_rate": 0,
+      "turn_success": 0.509375
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 89,
+      "clean_valid": 431,
+      "failed_eligible": 380,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 811,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 927.562327768188,
+      "peak_vram_gib": 39.2109375,
+      "input_tokens": 9572134,
+      "output_tokens": 510713,
+      "generation_seconds": 858.9274569540285,
+      "aggregate_output_tokens_per_second": 594.593869208834
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-29-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 934.9763290579431,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-29-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "recollect": 311,
+          "propose": 287,
+          "edit": 2
+        },
+        "applied": 900,
+        "contradictory_value": 637,
+        "contradictory_edit_with_source_access": 65,
+        "memory_changes": 674
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 615,
+          "peer": 14,
+          "edit": 271
+        },
+        "applied": 614,
+        "contradictory_value": 757,
+        "contradictory_edit_with_source_access": 22,
+        "memory_changes": 602
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "recollect": 360,
+          "propose": 206,
+          "peer": 334
+        },
+        "applied": 900,
+        "contradictory_value": 605,
+        "contradictory_edit_with_source_access": 158,
+        "memory_changes": 567
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 598,
+          "edit": 18,
+          "peer": 274,
+          "propose": 10
+        },
+        "applied": 874,
+        "contradictory_value": 517,
+        "contradictory_edit_with_source_access": 161,
+        "memory_changes": 607
+      }
+    },
+    "peer_messages": 922,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.54,
+      "conversation_success": 0.63,
+      "malformed_rate": 0,
+      "turn_success": 0.6270833333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 126,
+      "clean_valid": 739,
+      "failed_eligible": 35,
+      "candidate_attempts": 35,
+      "candidate_valid": 0,
+      "candidate_discarded": 35,
+      "gold_teacher_examples": 774,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1244.646077637095,
+      "peak_vram_gib": 39.171875,
+      "input_tokens": 14608398,
+      "output_tokens": 821425,
+      "generation_seconds": 1161.1370341689326,
+      "aggregate_output_tokens_per_second": 707.431574248188
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-29-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 968.0548263574019,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-43-r0-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "recollect": 368,
+          "propose": 225,
+          "edit": 7
+        },
+        "applied": 900,
+        "contradictory_value": 553,
+        "contradictory_edit_with_source_access": 172,
+        "memory_changes": 694
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 484,
+          "peer": 34,
+          "edit": 377,
+          "recollect": 5
+        },
+        "applied": 634,
+        "contradictory_value": 740,
+        "contradictory_edit_with_source_access": 141,
+        "memory_changes": 600
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "recollect": 396,
+          "propose": 149,
+          "peer": 326,
+          "edit": 29
+        },
+        "applied": 893,
+        "contradictory_value": 573,
+        "contradictory_edit_with_source_access": 250,
+        "memory_changes": 574
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 629,
+          "propose": 30,
+          "peer": 237,
+          "edit": 4
+        },
+        "applied": 837,
+        "contradictory_value": 481,
+        "contradictory_edit_with_source_access": 294,
+        "memory_changes": 603
+      }
+    },
+    "peer_messages": 890,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.2733333333333333,
+      "conversation_success": 0.38666666666666666,
+      "malformed_rate": 0,
+      "turn_success": 0.5333333333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 88,
+      "clean_valid": 460,
+      "failed_eligible": 352,
+      "candidate_attempts": 128,
+      "candidate_valid": 0,
+      "candidate_discarded": 128,
+      "gold_teacher_examples": 812,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1088.9746188521385,
+      "peak_vram_gib": 39.169921875,
+      "input_tokens": 9585949,
+      "output_tokens": 510171,
+      "generation_seconds": 1021.2367721060291,
+      "aggregate_output_tokens_per_second": 499.5619174071729
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-43-r0-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1123.6136950436048,
+      "peak_vram_gib": 16.598361015319824,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "generation_seconds": 0,
+      "aggregate_output_tokens_per_second": 0.0
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-43-r1-collect",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {
+      "Hyde": {
+        "n": 900,
+        "action_types": {
+          "peer": 300,
+          "recollect": 363,
+          "propose": 235,
+          "edit": 2
+        },
+        "applied": 900,
+        "contradictory_value": 646,
+        "contradictory_edit_with_source_access": 79,
+        "memory_changes": 666
+      },
+      "Provocateur": {
+        "n": 900,
+        "action_types": {
+          "propose": 573,
+          "peer": 34,
+          "edit": 292,
+          "recollect": 1
+        },
+        "applied": 634,
+        "contradictory_value": 746,
+        "contradictory_edit_with_source_access": 24,
+        "memory_changes": 602
+      },
+      "Rival": {
+        "n": 900,
+        "action_types": {
+          "recollect": 344,
+          "propose": 222,
+          "peer": 330,
+          "edit": 4
+        },
+        "applied": 900,
+        "contradictory_value": 611,
+        "contradictory_edit_with_source_access": 168,
+        "memory_changes": 570
+      },
+      "Traditionalist": {
+        "n": 900,
+        "action_types": {
+          "recollect": 605,
+          "peer": 277,
+          "propose": 10,
+          "edit": 8
+        },
+        "applied": 877,
+        "contradictory_value": 462,
+        "contradictory_edit_with_source_access": 153,
+        "memory_changes": 602
+      }
+    },
+    "peer_messages": 941,
+    "collection": {
+      "conversations": 300,
+      "families": 150,
+      "paired_success": 0.5266666666666666,
+      "conversation_success": 0.6266666666666667,
+      "malformed_rate": 0,
+      "turn_success": 0.6233333333333333
+    },
+    "supervision": {
+      "attempted_windows": 900,
+      "source_ineligible": 125,
+      "clean_valid": 735,
+      "failed_eligible": 40,
+      "candidate_attempts": 40,
+      "candidate_valid": 6,
+      "candidate_discarded": 34,
+      "gold_teacher_examples": 769,
+      "reused": 0
+    },
+    "resources": {
+      "gpu_reserved_seconds": 1468.6061215000227,
+      "peak_vram_gib": 39.193359375,
+      "input_tokens": 14590200,
+      "output_tokens": 819786,
+      "generation_seconds": 1384.173701045569,
+      "aggregate_output_tokens_per_second": 592.2565927822171
+    }
+  },
+  {
+    "run_id": "main-qwen-c6-43-r1-fit",
+    "phase": "confirmatory",
+    "condition": "C6",
+    "status": "completed",
+    "roles": {},
+    "peer_messages": 0,
+    "resources": {
+      "gpu_reserved_seconds": 1120.003012934234,
       "peak_vram_gib": 16.598361015319824,
       "input_tokens": 0,
       "output_tokens": 0,

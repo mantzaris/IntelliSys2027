@@ -304,3 +304,7 @@ The full local audit verified 45 completed runs, 751 recorded source files,
 lineages passed. Every excluded attempt remains recorded. The existing queue
 advanced to `main-qwen-c3-17-r0-collect` with about 6.965 total reserved GPU-hours
 consumed before that stage. No scientific input or selection rule changed.
+
+## Automatic execution update
+
+2026-10-26T18:22:39Z: Campaign stopped incomplete: Infrastructure hold before another GPU stage: Author-authorized automated008 safe completed-stage handoff; preserve original queue and resume unchanged after bounded four-hour supplement. Active worker must complete and mirror.. See the run registry and regenerated AUTHOR_REVIEW report. Human ratings and scientific author review remain pending. Nothing was pushed or submitted.

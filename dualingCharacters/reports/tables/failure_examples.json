@@ -1,8 +1,50 @@
 [
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-29-eval",
     "model": "qwen",
-    "condition": "C1",
+    "condition": "C4",
+    "seed": 29,
+    "family_id": "test-0031",
+    "world": "authorized",
+    "category": "success",
+    "response": "{\"state\":[\"Garden\",\"onsite\",\"7000\",\"Thursday\",\"public\",\"Maple\"],\"plan\":[null,\"onsite\",\"7000\",\"Thursday\",\"public\",\"Maple\",null,\"stream-kit\"],\"evidence\":[1,11,1,1,63,1],\"clarify\":[\"site\"]}",
+    "target": {
+      "clarify": [
+        "site"
+      ],
+      "evidence": [
+        1,
+        11,
+        1,
+        1,
+        63,
+        1
+      ],
+      "plan": [
+        null,
+        "onsite",
+        "7000",
+        "Thursday",
+        "public",
+        "Maple",
+        null,
+        "stream-kit"
+      ],
+      "state": [
+        "Garden",
+        "onsite",
+        "7000",
+        "Thursday",
+        "public",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c4-17-eval",
+    "model": "qwen",
+    "condition": "C4",
     "seed": 17,
     "family_id": "test-0192",
     "world": "authorized",
@@ -37,59 +79,139 @@
         "Maple"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-43-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0191",
-    "world": "hypothetical",
+    "condition": "C4",
+    "seed": 43,
+    "family_id": "test-0134",
+    "world": "authorized",
     "category": "success",
-    "response": "{\"state\":[\"Garden\",\"onsite\",\"7000\",\"Saturday\",\"public\",\"Willow\"],\"plan\":[\"Garden\",\"onsite\",\"7000\",\"Saturday\",\"public\",null,\"walk\",\"mixed-kit\"],\"evidence\":[1,1,1,1,1,11],\"clarify\":[\"partner\"]}",
+    "response": "{\"state\":[\"Studio\",\"onsite\",\"7000\",\"Saturday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"onsite\",\"7000\",\"Saturday\",\"specialists\",\"Willow\",\"walk\",\"mixed-kit\"],\"evidence\":[1,1,1,118,1,63],\"clarify\":[]}",
     "target": {
-      "clarify": [
-        "partner"
-      ],
+      "clarify": [],
       "evidence": [
         1,
         1,
         1,
+        11,
         1,
-        1,
-        11
+        63
       ],
       "plan": [
-        "Garden",
+        "Studio",
         "onsite",
         "7000",
         "Saturday",
-        "public",
-        null,
+        "specialists",
+        "Willow",
         "walk",
         "mixed-kit"
       ],
       "state": [
-        "Garden",
+        "Studio",
         "onsite",
         "7000",
         "Saturday",
+        "specialists",
+        "Willow"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c4-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c2-29-eval",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "family_id": "test-0076",
+    "world": "authorized",
+    "category": "recalled_but_violated",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"3000\",\"Thursday\",\"public\",\"Willow\"],\"plan\":[\"Harbor\",\"online\",\"3000\",\"Thursday\",\"public\",\"Willow\",\"ferry\",\"mixed-kit\"],\"evidence\":[1,1,1,1,63,11],\"clarify\":[]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        1,
+        1,
+        63,
+        11
+      ],
+      "plan": [
+        "Harbor",
+        "online",
+        "3000",
+        "Thursday",
+        "public",
+        "Willow",
+        "none",
+        "mixed-kit"
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "3000",
+        "Thursday",
         "public",
         "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c2-29-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-29-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0105",
+    "condition": "C4",
+    "seed": 29,
+    "family_id": "test-0207",
     "world": "hypothetical",
-    "category": "success",
-    "response": "{\"state\":[\"Harbor\",\"hybrid\",\"5000\",\"Saturday\",\"public\",\"Willow\"],\"plan\":[\"Harbor\",\"hybrid\",\"5000\",\"Saturday\",\"public\",\"Willow\",\"ferry\",\"mixed-kit\"],\"evidence\":[1,1,1,1,1,11],\"clarify\":[]}",
+    "category": "recalled_but_violated",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"7000\",\"Tuesday\",\"public\",\"Willow\"],\"plan\":[\"Harbor\",null,\"7000\",\"Tuesday\",\"public\",\"Willow\",\"walk\",null],\"evidence\":[11,1,1,1,1,1],\"clarify\":[\"mode\"]}",
+    "target": {
+      "clarify": [
+        "mode"
+      ],
+      "evidence": [
+        11,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "plan": [
+        "Harbor",
+        null,
+        "7000",
+        "Tuesday",
+        "public",
+        "Willow",
+        null,
+        null
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "7000",
+        "Tuesday",
+        "public",
+        "Willow"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c1-29-eval",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "family_id": "test-0224",
+    "world": "hypothetical",
+    "category": "recalled_but_violated",
+    "response": "{\"state\":[\"Harbor\",\"hybrid\",\"7000\",\"Tuesday\",\"public\",\"Cedar\"],\"plan\":[\"Harbor\",\"hybrid\",null,\"Tuesday\",\"public\",\"Cedar\",\"walk\",\"stream-kit\"],\"evidence\":[1,1,1,1,1,11],\"clarify\":[\"cap\"]}",
     "target": {
       "clarify": [],
       "evidence": [
@@ -103,274 +225,28 @@
       "plan": [
         "Harbor",
         "hybrid",
-        "5000",
-        "Saturday",
+        "7000",
+        "Tuesday",
         "public",
-        "Willow",
-        "ferry",
-        "mixed-kit"
+        "Cedar",
+        "walk",
+        "stream-kit"
       ],
       "state": [
         "Harbor",
         "hybrid",
-        "5000",
-        "Saturday",
-        "public",
-        "Willow"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0023",
-    "world": "authorized",
-    "category": "recalled_but_violated",
-    "response": "{\"state\":[\"Garden\",\"onsite\",\"5000\",\"Saturday\",\"public\",\"Willow\"],\"plan\":[\"Garden\",null,\"5000\",\"Saturday\",\"public\",\"Willow\",\"walk\",null],\"evidence\":[11,1,1,1,1,63],\"clarify\":[\"mode\"]}",
-    "target": {
-      "clarify": [
-        "mode"
-      ],
-      "evidence": [
-        11,
-        1,
-        1,
-        1,
-        1,
-        63
-      ],
-      "plan": [
-        "Garden",
-        null,
-        "5000",
-        "Saturday",
-        "public",
-        "Willow",
-        null,
-        null
-      ],
-      "state": [
-        "Garden",
-        "onsite",
-        "5000",
-        "Saturday",
-        "public",
-        "Willow"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0183",
-    "world": "hypothetical",
-    "category": "recalled_but_violated",
-    "response": "{\"state\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\",\"ferry\",\"stream-kit\"],\"evidence\":[1,1,1,1,11,1],\"clarify\":[]}",
-    "target": {
-      "clarify": [
-        "partner"
-      ],
-      "evidence": [
-        1,
-        1,
-        1,
-        1,
-        11,
-        1
-      ],
-      "plan": [
-        "Studio",
-        "hybrid",
         "7000",
         "Tuesday",
-        "specialists",
-        null,
-        "ferry",
-        "stream-kit"
-      ],
-      "state": [
-        "Studio",
-        "hybrid",
-        "7000",
-        "Tuesday",
-        "specialists",
-        "Willow"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0238",
-    "world": "authorized",
-    "category": "recalled_but_violated",
-    "response": "{\"state\":[\"Garden\",\"online\",\"7000\",\"Thursday\",\"public\",\"Cedar\"],\"plan\":[\"Garden\",\"online\",\"7000\",\"Thursday\",\"public\",\"Cedar\",\"bus\",\"stream-kit\"],\"evidence\":[1,1,63,11,1,1],\"clarify\":[]}",
-    "target": {
-      "clarify": [],
-      "evidence": [
-        1,
-        1,
-        63,
-        11,
-        1,
-        1
-      ],
-      "plan": [
-        "Garden",
-        "online",
-        "7000",
-        "Thursday",
-        "public",
-        "Cedar",
-        "none",
-        "stream-kit"
-      ],
-      "state": [
-        "Garden",
-        "online",
-        "7000",
-        "Thursday",
         "public",
         "Cedar"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-phi-c1-29-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-17-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0023",
-    "world": "authorized",
-    "category": "dependency_error",
-    "response": "{\"state\":[\"Garden\",\"onsite\",\"5000\",\"Saturday\",\"public\",\"Willow\"],\"plan\":[\"Garden\",null,\"5000\",\"Saturday\",\"public\",\"Willow\",\"walk\",null],\"evidence\":[11,1,1,1,1,63],\"clarify\":[\"mode\"]}",
-    "target": {
-      "clarify": [
-        "mode"
-      ],
-      "evidence": [
-        11,
-        1,
-        1,
-        1,
-        1,
-        63
-      ],
-      "plan": [
-        "Garden",
-        null,
-        "5000",
-        "Saturday",
-        "public",
-        "Willow",
-        null,
-        null
-      ],
-      "state": [
-        "Garden",
-        "onsite",
-        "5000",
-        "Saturday",
-        "public",
-        "Willow"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0238",
-    "world": "authorized",
-    "category": "dependency_error",
-    "response": "{\"state\":[\"Garden\",\"online\",\"7000\",\"Thursday\",\"public\",\"Cedar\"],\"plan\":[\"Garden\",\"online\",\"7000\",\"Thursday\",\"public\",\"Cedar\",\"bus\",\"stream-kit\"],\"evidence\":[1,1,63,11,1,1],\"clarify\":[]}",
-    "target": {
-      "clarify": [],
-      "evidence": [
-        1,
-        1,
-        63,
-        11,
-        1,
-        1
-      ],
-      "plan": [
-        "Garden",
-        "online",
-        "7000",
-        "Thursday",
-        "public",
-        "Cedar",
-        "none",
-        "stream-kit"
-      ],
-      "state": [
-        "Garden",
-        "online",
-        "7000",
-        "Thursday",
-        "public",
-        "Cedar"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0004",
-    "world": "hypothetical",
-    "category": "dependency_error",
-    "response": "{\"state\":[\"Harbor\",\"online\",\"7000\",\"Thursday\",\"public\",\"Maple\"],\"plan\":[\"Harbor\",\"online\",\"7000\",\"Thursday\",\"public\",\"Maple\",\"bus\",\"projector\"],\"evidence\":[1,1,11,1,1,1],\"clarify\":[]}",
-    "target": {
-      "clarify": [],
-      "evidence": [
-        1,
-        1,
-        11,
-        1,
-        1,
-        1
-      ],
-      "plan": [
-        "Harbor",
-        "online",
-        "7000",
-        "Thursday",
-        "public",
-        "Maple",
-        "none",
-        "projector"
-      ],
-      "state": [
-        "Harbor",
-        "online",
-        "7000",
-        "Thursday",
-        "public",
-        "Maple"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
+    "condition": "C4",
     "seed": 17,
     "family_id": "test-0192",
     "world": "authorized",
@@ -405,24 +281,24 @@
         "Maple"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-43-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0137",
+    "condition": "C4",
+    "seed": 43,
+    "family_id": "test-0134",
     "world": "authorized",
     "category": "source_reference_error",
-    "response": "{\"state\":[\"Studio\",\"onsite\",\"7000\",\"Tuesday\",\"public\",\"Maple\"],\"plan\":[\"Studio\",\"onsite\",\"7000\",\"Tuesday\",\"public\",\"Maple\",\"ferry\",\"stream-kit\"],\"evidence\":[1,1,11,1,1,123],\"clarify\":[]}",
+    "response": "{\"state\":[\"Studio\",\"onsite\",\"7000\",\"Saturday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"onsite\",\"7000\",\"Saturday\",\"specialists\",\"Willow\",\"walk\",\"mixed-kit\"],\"evidence\":[1,1,1,118,1,63],\"clarify\":[]}",
     "target": {
       "clarify": [],
       "evidence": [
         1,
         1,
-        11,
         1,
+        11,
         1,
         63
       ],
@@ -430,168 +306,88 @@
         "Studio",
         "onsite",
         "7000",
-        "Tuesday",
-        "public",
-        "Maple",
-        "ferry",
-        "stream-kit"
+        "Saturday",
+        "specialists",
+        "Willow",
+        "walk",
+        "mixed-kit"
       ],
       "state": [
         "Studio",
         "onsite",
         "7000",
-        "Tuesday",
-        "public",
-        "Maple"
+        "Saturday",
+        "specialists",
+        "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c4-43-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-29-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0237",
+    "condition": "C4",
+    "seed": 29,
+    "family_id": "test-0030",
     "world": "authorized",
     "category": "source_reference_error",
-    "response": "{\"state\":[\"Harbor\",\"onsite\",\"5000\",\"Tuesday\",\"public\",\"Maple\"],\"plan\":[\"Harbor\",\"onsite\",\"5000\",\"Tuesday\",\"public\",\"Maple\",\"bus\",\"stream-kit\"],\"evidence\":[1,126,11,1,1,1],\"clarify\":[]}",
+    "response": "{\"state\":[\"Garden\",\"hybrid\",\"5000\",\"Saturday\",\"students\",\"Willow\"],\"plan\":[\"Garden\",\"hybrid\",\"5000\",\"Saturday\",\"students\",\"Willow\",\"bus\",\"mixed-kit\"],\"evidence\":[121,11,1,1,1,1],\"clarify\":[]}",
     "target": {
       "clarify": [],
       "evidence": [
-        1,
         63,
         11,
         1,
         1,
+        1,
         1
       ],
       "plan": [
-        "Harbor",
-        "onsite",
+        "Garden",
+        "hybrid",
         "5000",
-        "Tuesday",
-        "public",
-        "Maple",
+        "Saturday",
+        "students",
+        "Willow",
         "bus",
-        "stream-kit"
-      ],
-      "state": [
-        "Harbor",
-        "onsite",
-        "5000",
-        "Tuesday",
-        "public",
-        "Maple"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0013",
-    "world": "hypothetical",
-    "category": "unnecessary_clarification",
-    "response": "{\"state\":[\"Harbor\",\"online\",\"3000\",\"Thursday\",\"specialists\",\"Maple\"],\"plan\":[\"Harbor\",\"online\",\"3000\",null,\"specialists\",\"Maple\",\"ferry\",\"stream-kit\"],\"evidence\":[1,1,1,1,1,1],\"clarify\":[\"day\"]}",
-    "target": {
-      "clarify": [],
-      "evidence": [
-        1,
-        1,
-        1,
-        11,
-        1,
-        1
-      ],
-      "plan": [
-        "Harbor",
-        "online",
-        "3000",
-        "Saturday",
-        "specialists",
-        "Maple",
-        "none",
-        "stream-kit"
-      ],
-      "state": [
-        "Harbor",
-        "online",
-        "3000",
-        "Saturday",
-        "specialists",
-        "Maple"
-      ]
-    },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
-  },
-  {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0221",
-    "world": "hypothetical",
-    "category": "unnecessary_clarification",
-    "response": "{\"state\":[\"Harbor\",\"online\",\"7000\",\"Thursday\",\"specialists\",\"Maple\"],\"plan\":[\"Harbor\",\"online\",\"7000\",null,\"specialists\",\"Maple\",\"bus\",\"mixed-kit\"],\"evidence\":[1,1,1,124,1,1],\"clarify\":[\"day\"]}",
-    "target": {
-      "clarify": [],
-      "evidence": [
-        1,
-        1,
-        1,
-        11,
-        1,
-        1
-      ],
-      "plan": [
-        "Harbor",
-        "online",
-        "7000",
-        "Saturday",
-        "specialists",
-        "Maple",
-        "none",
         "mixed-kit"
       ],
       "state": [
-        "Harbor",
-        "online",
-        "7000",
+        "Garden",
+        "hybrid",
+        "5000",
         "Saturday",
-        "specialists",
-        "Maple"
+        "students",
+        "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c2-29-eval",
     "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0221",
+    "condition": "C2",
+    "seed": 29,
+    "family_id": "test-0076",
     "world": "authorized",
-    "category": "unnecessary_clarification",
-    "response": "{\"state\":[\"Harbor\",\"online\",\"7000\",\"Thursday\",\"specialists\",\"Willow\"],\"plan\":[\"Harbor\",\"online\",\"7000\",null,\"specialists\",\"Willow\",\"bus\",\"mixed-kit\"],\"evidence\":[1,1,1,1,1,63],\"clarify\":[\"day\"]}",
+    "category": "dependency_error",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"3000\",\"Thursday\",\"public\",\"Willow\"],\"plan\":[\"Harbor\",\"online\",\"3000\",\"Thursday\",\"public\",\"Willow\",\"ferry\",\"mixed-kit\"],\"evidence\":[1,1,1,1,63,11],\"clarify\":[]}",
     "target": {
       "clarify": [],
       "evidence": [
         1,
         1,
         1,
-        11,
         1,
-        63
+        63,
+        11
       ],
       "plan": [
         "Harbor",
         "online",
-        "7000",
-        "Saturday",
-        "specialists",
+        "3000",
+        "Thursday",
+        "public",
         "Willow",
         "none",
         "mixed-kit"
@@ -599,65 +395,345 @@
       "state": [
         "Harbor",
         "online",
+        "3000",
+        "Thursday",
+        "public",
+        "Willow"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c2-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c4-29-eval",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "family_id": "test-0207",
+    "world": "hypothetical",
+    "category": "dependency_error",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"7000\",\"Tuesday\",\"public\",\"Willow\"],\"plan\":[\"Harbor\",null,\"7000\",\"Tuesday\",\"public\",\"Willow\",\"walk\",null],\"evidence\":[11,1,1,1,1,1],\"clarify\":[\"mode\"]}",
+    "target": {
+      "clarify": [
+        "mode"
+      ],
+      "evidence": [
+        11,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "plan": [
+        "Harbor",
+        null,
         "7000",
-        "Saturday",
+        "Tuesday",
+        "public",
+        "Willow",
+        null,
+        null
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "7000",
+        "Tuesday",
+        "public",
+        "Willow"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c4-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c1-43-eval",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "family_id": "test-0085",
+    "world": "authorized",
+    "category": "dependency_error",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"5000\",\"Tuesday\",\"specialists\",\"Maple\"],\"plan\":[\"Harbor\",\"online\",\"5000\",\"Tuesday\",\"specialists\",\"Maple\",\"ferry\",\"projector\"],\"evidence\":[11,1,1,1,63,1],\"clarify\":[]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        11,
+        1,
+        1,
+        1,
+        63,
+        1
+      ],
+      "plan": [
+        "Harbor",
+        "online",
+        "5000",
+        "Tuesday",
+        "specialists",
+        "Maple",
+        "none",
+        "projector"
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "5000",
+        "Tuesday",
+        "specialists",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-phi-c1-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c1-29-eval",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "family_id": "test-0066",
+    "world": "authorized",
+    "category": "authorized_update_rejected",
+    "response": "{\"state\":[\"Studio\",\"online\",\"3000\",\"Tuesday\",\"public\",\"Maple\"],\"plan\":[\"Studio\",\"online\",null,\"Tuesday\",\"public\",\"Maple\",\"bus\",\"mixed-kit\"],\"evidence\":[1,1,63,1,1,11],\"clarify\":[\"cap\"]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        63,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Studio",
+        "online",
+        "3000",
+        "Tuesday",
+        "public",
+        "Maple",
+        "bus",
+        "mixed-kit"
+      ],
+      "state": [
+        "Studio",
+        "online",
+        "3000",
+        "Tuesday",
+        "public",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c1-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c1-17-eval",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "family_id": "test-0132",
+    "world": "authorized",
+    "category": "authorized_update_rejected",
+    "response": "{\"state\":[\"Studio\",\"hybrid\",\"3000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"hybrid\",\"3000\",\"Tuesday\",\"specialists\",\"Willow\",\"ferry\",\"mixed-kit\"],\"evidence\":[1,1,1,1,1,11],\"clarify\":[]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        63,
+        1,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Studio",
+        "online",
+        "3000",
+        "Tuesday",
+        "specialists",
+        "Willow",
+        "none",
+        "stream-kit"
+      ],
+      "state": [
+        "Studio",
+        "online",
+        "3000",
+        "Tuesday",
         "specialists",
         "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-phi-c1-17-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
-    "model": "qwen",
-    "condition": "C1",
-    "seed": 17,
-    "family_id": "test-0183",
-    "world": "hypothetical",
-    "category": "missing_clarification",
-    "response": "{\"state\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\",\"ferry\",\"stream-kit\"],\"evidence\":[1,1,1,1,11,1],\"clarify\":[]}",
+    "run_id": "main-phi-c5-43-eval",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "family_id": "test-0052",
+    "world": "authorized",
+    "category": "authorized_update_rejected",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"3000\",\"Saturday\",\"specialists\",\"Cedar\"],\"plan\":[\"Harbor\",\"online\",\"3000\",\"Saturday\",\"specialists\",\"Cedar\",\"walk\",\"stream-kit\"],\"evidence\":[11,1,1,63,1,1],\"clarify\":[]}",
     "target": {
-      "clarify": [
-        "partner"
+      "clarify": [],
+      "evidence": [
+        11,
+        1,
+        1,
+        63,
+        1,
+        1
       ],
+      "plan": [
+        "Harbor",
+        "online",
+        "3000",
+        "Tuesday",
+        "specialists",
+        "Cedar",
+        "none",
+        "stream-kit"
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "3000",
+        "Tuesday",
+        "specialists",
+        "Cedar"
+      ]
+    },
+    "source_path": "artifacts/runs/main-phi-c5-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c1-29-eval",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "family_id": "test-0224",
+    "world": "hypothetical",
+    "category": "unnecessary_clarification",
+    "response": "{\"state\":[\"Harbor\",\"hybrid\",\"7000\",\"Tuesday\",\"public\",\"Cedar\"],\"plan\":[\"Harbor\",\"hybrid\",null,\"Tuesday\",\"public\",\"Cedar\",\"walk\",\"stream-kit\"],\"evidence\":[1,1,1,1,1,11],\"clarify\":[\"cap\"]}",
+    "target": {
+      "clarify": [],
       "evidence": [
         1,
         1,
         1,
         1,
-        11,
-        1
+        1,
+        11
       ],
       "plan": [
-        "Studio",
+        "Harbor",
         "hybrid",
         "7000",
         "Tuesday",
-        "specialists",
-        null,
-        "ferry",
+        "public",
+        "Cedar",
+        "walk",
         "stream-kit"
       ],
       "state": [
-        "Studio",
+        "Harbor",
         "hybrid",
         "7000",
         "Tuesday",
-        "specialists",
-        "Willow"
+        "public",
+        "Cedar"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-phi-c1-29-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-a1-17-eval",
     "model": "qwen",
-    "condition": "C1",
+    "condition": "A1",
     "seed": 17,
-    "family_id": "test-0111",
+    "family_id": "test-0178",
+    "world": "authorized",
+    "category": "unnecessary_clarification",
+    "response": "{\"state\":[\"Harbor\",\"online\",\"5000\",\"Thursday\",\"students\",\"Maple\"],\"plan\":[\"Harbor\",null,\"5000\",\"Thursday\",\"students\",\"Maple\",\"walk\",\"projector\"],\"evidence\":[1,11,1,1,1,63],\"clarify\":[\"mode\"]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        11,
+        1,
+        1,
+        1,
+        63
+      ],
+      "plan": [
+        "Harbor",
+        "online",
+        "5000",
+        "Thursday",
+        "students",
+        "Maple",
+        "walk",
+        "projector"
+      ],
+      "state": [
+        "Harbor",
+        "online",
+        "5000",
+        "Thursday",
+        "students",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-a1-17-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-a2-29-eval",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "family_id": "test-0179",
+    "world": "authorized",
+    "category": "unnecessary_clarification",
+    "response": "{\"state\":[\"Garden\",\"online\",\"7000\",\"Tuesday\",\"specialists\",\"Cedar\"],\"plan\":[\"Garden\",null,\"7000\",\"Tuesday\",\"specialists\",\"Cedar\",\"ferry\",\"projector\"],\"evidence\":[1,11,1,1,1,1],\"clarify\":[\"mode\"]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        63,
+        11,
+        1,
+        1,
+        1,
+        1
+      ],
+      "plan": [
+        "Garden",
+        "online",
+        "7000",
+        "Tuesday",
+        "specialists",
+        "Cedar",
+        "ferry",
+        "projector"
+      ],
+      "state": [
+        "Garden",
+        "online",
+        "7000",
+        "Tuesday",
+        "specialists",
+        "Cedar"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-a2-29-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-a3-43-eval",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "family_id": "test-0079",
     "world": "authorized",
     "category": "missing_clarification",
-    "response": "{\"state\":[\"Garden\",\"hybrid\",\"5000\",\"Thursday\",\"specialists\",\"Cedar\"],\"plan\":[\"Garden\",\"hybrid\",\"5000\",\"Thursday\",\"specialists\",\"Cedar\",\"ferry\",\"mixed-kit\"],\"evidence\":[11,1,1,1,63,1],\"clarify\":[]}",
+    "response": "{\"state\":[\"Studio\",\"hybrid\",\"5000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"hybrid\",\"5000\",\"Tuesday\",\"specialists\",\"Willow\",\"walk\",\"mixed-kit\"],\"evidence\":[11,1,1,1,63,1],\"clarify\":[]}",
     "target": {
       "clarify": [
         "site"
@@ -674,38 +750,80 @@
         null,
         "hybrid",
         "5000",
-        "Thursday",
+        "Tuesday",
         "specialists",
-        "Cedar",
+        "Willow",
         null,
         "mixed-kit"
       ],
       "state": [
-        "Garden",
+        "Studio",
         "hybrid",
         "5000",
-        "Thursday",
+        "Tuesday",
         "specialists",
-        "Cedar"
+        "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-a3-43-eval/evaluation.jsonl.gz"
   },
   {
-    "run_id": "main-qwen-c1-17-eval-format2",
+    "run_id": "main-qwen-c4-17-eval",
     "model": "qwen",
-    "condition": "C1",
+    "condition": "C4",
     "seed": 17,
-    "family_id": "test-0239",
-    "world": "authorized",
+    "family_id": "test-0199",
+    "world": "hypothetical",
     "category": "missing_clarification",
-    "response": "{\"state\":[\"Garden\",\"online\",\"3000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Garden\",\"online\",null,\"Tuesday\",\"specialists\",\"Willow\",\"ferry\",\"stream-kit\"],\"evidence\":[63,1,1,1,11,1],\"clarify\":[\"cap\",\"cap\"]}",
+    "response": "{\"state\":[\"Studio\",\"online\",\"5000\",\"Thursday\",\"public\",\"Maple\"],\"plan\":[\"Studio\",\"online\",\"5000\",\"Thursday\",\"public\",\"Maple\",\"ferry\",\"mixed-kit\"],\"evidence\":[1,11,1,1,1,1],\"clarify\":[]}",
     "target": {
       "clarify": [
-        "cap"
+        "partner"
       ],
       "evidence": [
-        63,
+        1,
+        11,
+        1,
+        1,
+        1,
+        1
+      ],
+      "plan": [
+        "Studio",
+        "online",
+        "5000",
+        "Thursday",
+        "public",
+        null,
+        "none",
+        "mixed-kit"
+      ],
+      "state": [
+        "Studio",
+        "online",
+        "5000",
+        "Thursday",
+        "public",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c4-17-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c5-17-eval",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "family_id": "test-0183",
+    "world": "hypothetical",
+    "category": "missing_clarification",
+    "response": "{\"state\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"hybrid\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\",\"ferry\",\"stream-kit\"],\"evidence\":[1,1,1,1,11,1],\"clarify\":[]}",
+    "target": {
+      "clarify": [
+        "partner"
+      ],
+      "evidence": [
+        1,
         1,
         1,
         1,
@@ -713,25 +831,25 @@
         1
       ],
       "plan": [
-        "Garden",
-        "online",
-        null,
+        "Studio",
+        "hybrid",
+        "7000",
         "Tuesday",
         "specialists",
-        "Willow",
-        "none",
+        null,
+        "ferry",
         "stream-kit"
       ],
       "state": [
-        "Garden",
-        "online",
-        "3000",
+        "Studio",
+        "hybrid",
+        "7000",
         "Tuesday",
         "specialists",
         "Willow"
       ]
     },
-    "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+    "source_path": "artifacts/runs/main-qwen-c5-17-eval/evaluation.jsonl.gz"
   },
   {
     "run_id": "main-qwen-c1-17-eval-format2",
@@ -772,5 +890,165 @@
       ]
     },
     "source_path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c3-43-eval",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "family_id": "test-0155",
+    "world": "hypothetical",
+    "category": "hypothetical_falsely_accepted",
+    "response": "{\"state\":[\"Studio\",\"online\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\"],\"plan\":[\"Studio\",\"online\",\"7000\",\"Tuesday\",\"specialists\",\"Willow\",\"walk\",\"mixed-kit\"],\"evidence\":[1,1,1,1,1,1],\"clarify\":[]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Studio",
+        "online",
+        "7000",
+        "Thursday",
+        "specialists",
+        "Maple",
+        "walk",
+        "mixed-kit"
+      ],
+      "state": [
+        "Studio",
+        "online",
+        "7000",
+        "Thursday",
+        "specialists",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-phi-c3-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-phi-c3-43-eval",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "family_id": "test-0091",
+    "world": "hypothetical",
+    "category": "hypothetical_falsely_accepted",
+    "response": "{\"state\":[\"Studio\",\"onsite\",\"5000\",\"Thursday\",\"students\",\"Cedar\"],\"plan\":[\"Studio\",\"onsite\",\"5000\",\"Thursday\",\"students\",\"Cedar\",\"bus\",\"stream-kit\"],\"evidence\":[1,1,1,1,1,1],\"clarify\":[]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Studio",
+        "onsite",
+        "5000",
+        "Saturday",
+        "students",
+        "Maple",
+        "bus",
+        "stream-kit"
+      ],
+      "state": [
+        "Studio",
+        "onsite",
+        "5000",
+        "Saturday",
+        "students",
+        "Maple"
+      ]
+    },
+    "source_path": "artifacts/runs/main-phi-c3-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c2-43-eval",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "family_id": "test-0009",
+    "world": "authorized",
+    "category": "all_null_plan_proxy",
+    "response": "{\"state\":[\"Harbor\",\"onsite\",\"5000\",\"Tuesday\",\"public\",\"Willow\"],\"plan\":[null,null,null,null,null,null,null,null],\"evidence\":[1,1,63,1,1,1],\"clarify\":[\"site\",\"mode\",\"cap\",\"day\",\"audience\",\"partner\"]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        63,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Harbor",
+        "onsite",
+        "5000",
+        "Tuesday",
+        "public",
+        "Cedar",
+        "bus",
+        "mixed-kit"
+      ],
+      "state": [
+        "Harbor",
+        "onsite",
+        "5000",
+        "Tuesday",
+        "public",
+        "Cedar"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c2-43-eval/evaluation.jsonl.gz"
+  },
+  {
+    "run_id": "main-qwen-c2-43-eval",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "family_id": "test-0009",
+    "world": "hypothetical",
+    "category": "all_null_plan_proxy",
+    "response": "{\"state\":[\"Harbor\",\"onsite\",\"7000\",\"Tuesday\",\"public\",\"Cedar\"],\"plan\":[null,null,null,null,null,null,null,null],\"evidence\":[1,1,1,1,1,11],\"clarify\":[\"site\",\"mode\",\"cap\",\"day\",\"audience\",\"partner\"]}",
+    "target": {
+      "clarify": [],
+      "evidence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        11
+      ],
+      "plan": [
+        "Harbor",
+        "onsite",
+        "7000",
+        "Tuesday",
+        "public",
+        "Cedar",
+        "bus",
+        "mixed-kit"
+      ],
+      "state": [
+        "Harbor",
+        "onsite",
+        "7000",
+        "Tuesday",
+        "public",
+        "Cedar"
+      ]
+    },
+    "source_path": "artifacts/runs/main-qwen-c2-43-eval/evaluation.jsonl.gz"
   }
 ]

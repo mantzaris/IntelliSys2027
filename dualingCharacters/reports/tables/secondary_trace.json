@@ -8,7 +8,143 @@
     "sha256": "e81920d83d361c10cd7db6a8d1727331bb94b8d963528f65dff65c85000a4088"
   },
   {
+    "path": "artifacts/runs/main-phi-c1-17-eval/evaluation_summary.json",
+    "sha256": "c2b34875963dcdc1b8aefa26696e54e81d744aa7db9d90307427f4b361729cf7"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c1-29-eval/evaluation_summary.json",
+    "sha256": "2db65faa8c6c31ac5b482204c2929483ada4ef6dfcb878c684b8c4b5a825699f"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c1-43-eval/evaluation_summary.json",
+    "sha256": "8f64576f819b12ae01bc9007c5975cbede18f677d1be3da1eeb54b7df2445f3d"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c3-17-eval/evaluation_summary.json",
+    "sha256": "b7e3289c251779be9dcda543a8519c7ca9e91ca2a6e5c3915dc9c0e2d4c387e4"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c3-29-eval/evaluation_summary.json",
+    "sha256": "4f31cfaae7b626de77925aff47b25171ba0858a40c375c7968819a94ca6d9044"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c3-43-eval/evaluation_summary.json",
+    "sha256": "6180e2357fe9e11fc15ea588e1704668854a79fc7b19975abba7c8783bfe209d"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c5-17-eval/evaluation_summary.json",
+    "sha256": "9379d4b60ad6f723820728f3de3ce80acaa4cee03aa353ce8b83748d949f3e02"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c5-29-eval/evaluation_summary.json",
+    "sha256": "2ea9bb6d1ec6ea4284c321277da832b6b4ff4dd1f6b2101ce12349ef953dce32"
+  },
+  {
+    "path": "artifacts/runs/main-phi-c5-43-eval/evaluation_summary.json",
+    "sha256": "1e9ed8f97e667ec98f9f99a6c78af2bcb58f6c5a478ae1fc700afa3adc0bb5c2"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a1-17-eval/evaluation_summary.json",
+    "sha256": "288889178ba3b38235ec03d4442d564b0db2b4fb58a1f4574ea7feea61a63465"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a1-29-eval/evaluation_summary.json",
+    "sha256": "d2787ec6cd538615590cb5608b4a900507a4deed64b26b89b55eeb88097e8425"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a1-43-eval/evaluation_summary.json",
+    "sha256": "11563a9abc564adf13780857fd9164546f36061655e49b231cf3107bcacba10b"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a2-17-eval/evaluation_summary.json",
+    "sha256": "3995d99bb1e7242f68c6e23c1c58189a1c410b1204ab29a4e6dc4b23e0865e28"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a2-29-eval/evaluation_summary.json",
+    "sha256": "6967dc99dd8d19a9c70f56a74bbb23e1f2fbf3a7d69030c46d465a445937c956"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a2-43-eval/evaluation_summary.json",
+    "sha256": "db7cdebfda3890f42123748e3787e7d78452d4ee20c5114e18a03ca0de5a4ba9"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a3-17-eval/evaluation_summary.json",
+    "sha256": "4d3f35d320adc4187c3ea606d0716c535f73d858dfd5383b1708083b9c81ed43"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a3-29-eval/evaluation_summary.json",
+    "sha256": "a269b980b3a42374493db8c55bcbf035983ab64a340ac0cec80d6fdb33082e4b"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-a3-43-eval/evaluation_summary.json",
+    "sha256": "845aa8a4ff1cdeb46a553c16de7f56b5aa9cb10ac43a4d65610fd3262e64d144"
+  },
+  {
     "path": "artifacts/runs/main-qwen-c1-17-eval-format2/evaluation_summary.json",
     "sha256": "36077bb0f19535c15e3aaf051898e264b1a1c4fdda4285c065a7a13ded56dcc7"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c1-29-eval/evaluation_summary.json",
+    "sha256": "1f9eb142b8c30fce5a7aea63d803aaa47428ce955cdd8010c732f7e6faea4e2b"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c1-43-eval/evaluation_summary.json",
+    "sha256": "be67315eabe69f5693926b0c826b67b1634d0d205ae37b83783734c2cc34124d"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c2-17-eval/evaluation_summary.json",
+    "sha256": "369af2003b8654686d0f3751c145a8bedef1adb07eb2f753c4e7ffe4a29af0d4"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c2-29-eval/evaluation_summary.json",
+    "sha256": "e464b9e96c96669e3139adf2cb16ae532c3530fe17516827388fbd59f7766348"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c2-43-eval/evaluation_summary.json",
+    "sha256": "f602000ef0c9398a0b6270e15bc80fc28b5f615f0badfc82be65b6d65e683cbb"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c3-17-eval/evaluation_summary.json",
+    "sha256": "be4b91bd63d2f5507ba41a9660e256eb11e3ebf81ba06ae74928c97df3c2b3f5"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c3-29-eval/evaluation_summary.json",
+    "sha256": "1ae12f05052edde5e4768732c75380824eae59ebf9417be717d2ca97c1eb42b1"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c3-43-eval/evaluation_summary.json",
+    "sha256": "a3609c31b0690a5b7ca746f909f3baab6e13df461746b57b5d5e4d1df9277d15"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c4-17-eval/evaluation_summary.json",
+    "sha256": "32aa2b5f5f77d8f6ed7f0b470237523cb73f8633ffdbffa122f8a039bc384656"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c4-29-eval/evaluation_summary.json",
+    "sha256": "7b16af6c28e2620b1659f3fed8ff91f0b2013db7c825aeff8fcbd9a8722b8712"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c4-43-eval/evaluation_summary.json",
+    "sha256": "4245e4d1b46cc9d9c8f222f8087c433165da0091da710481b584e83fd31670c8"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c5-17-eval/evaluation_summary.json",
+    "sha256": "cfed87a921d3ec9b7a6eb9d31325e9874e3e9a10045db596c5d896514911040e"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c5-29-eval/evaluation_summary.json",
+    "sha256": "44eb8ded6b82ec6305cb3cffc0d763eac1c0dc1e51b72f8442c870eb6a3ec4d4"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c5-43-eval/evaluation_summary.json",
+    "sha256": "92d4f1709281e7214a7301ce29529b4bc204431bfd7e6e0574a984542be6621e"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c6-17-eval/evaluation_summary.json",
+    "sha256": "0e91841c73bbb857d9e957c48fa909701763117464bc5e6329ce90338effc6f5"
+  },
+  {
+    "path": "artifacts/runs/main-qwen-c6-29-eval/evaluation_summary.json",
+    "sha256": "3ed76e4bc18ab333480d3bbf1c421904325d615acbbd69fc0452d762f178a0c9"
   }
 ]
