@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-26T23:50:58.303497+00:00",
+  "inspected_figures": [
+    "task_outcomes.png",
+    "action_channels.png",
+    "trajectories.png",
+    "persistence.png"
+  ],
+  "offline_html_visually_inspected_from_relocated_clean_export": true,
+  "overview_pdf_pages": 1,
+  "pdf_uri_and_annotation_dictionaries_absent": true,
+  "pdf_check_method": "Poppler pdfinfo page count and PDF1.4 byte-level absence of /URI and /Annots; installed Poppler lacks the -url flag. PDF rendered and visually inspected.",
+  "full_html_gzip_matches_regenerated_view": true,
+  "scientific_validation": false
+}

@@ -1,0 +1,15 @@
+"""Reconcile actual reservations and the full exclusive window without double counting."""
+from .common import *
+def main():
+ from pcc.resources import used_seconds
+ from pcc.campaign import jobs,resolve_job,load_overrides
+ from pcc.freeze import verify_freeze
+ from analysis.overnight.monitor import forecast
+ records={p.parent.name:read(p) for p in (ROOT/'artifacts/runs').glob('*/status.json')};stage=[r for n,r in records.items() if n.startswith('edge009-')];reserved=sum(r.get('gpu_reserved_seconds',0) for r in stage)
+ handoff=read(ART/'handoff.json');restored=read(HERE/'reports/CORE_RESUMPTION.json') if (HERE/'reports/CORE_RESUMPTION.json').exists() else None
+ end=datetime.fromisoformat(restored['utc']) if restored else datetime.now(timezone.utc);exclusive=(end-datetime.fromisoformat(handoff['exclusive_start_utc'])).total_seconds();extra=max(0,exclusive-reserved)
+ used=used_seconds(ROOT/'artifacts/run_registry.jsonl');queue=[resolve_job(j,load_overrides(ROOT)) for j in jobs(verify_freeze(ROOT)['plan'])];pred=forecast(queue,records,used);old=read(HERE/'reports/START_RESOURCES.json');prior_extra=old['prior_stage008_unledgered_handoff_margin_seconds'];remaining=pred['conservative_remaining_core_hours']*3600;review=max(0,7200-sum(r.get('gpu_reserved_seconds',0) for n,r in records.items() if n.startswith('review001-')))
+ r={'utc':now(),'stage_run_count':len(stage),'model_run_count':sum(not x.get('accounting_only',False) for x in stage),'model_run_reserved_seconds':sum(x.get('gpu_reserved_seconds',0) for x in stage if not x.get('accounting_only',False)),'accounting_overhead_seconds':sum(x.get('gpu_reserved_seconds',0) for x in stage if x.get('accounting_only',False)),'stage_model_calls':sum(x.get('model_calls',0) for x in stage),'stage_input_tokens':sum(x.get('input_tokens',0) for x in stage),'stage_output_tokens':sum(x.get('output_tokens',0) for x in stage),'stage_ledger_seconds':reserved,'exclusive_handoff_seconds':exclusive,'additional_unledgered_stage009_seconds':extra,'peak_vram_bytes':max([x.get('peak_vram_bytes',0) for x in stage]+[0]),'stage_sampled_busy_seconds':sum(x.get('sampled_gpu_busy_seconds',0) for x in stage),'project_recorded_seconds':used,'prior_unledgered_stage008_seconds':prior_extra,'conservative_remaining_core_seconds':remaining,'review_remaining_reserve_seconds':review,'contingency_seconds':1800,'project_total_with_obligations_hours':(used+prior_extra+extra+remaining+review+1800)/3600,'core_completed':sum(records.get(j['id'],{}).get('status')=='completed' for j in queue),'core_total':len(queue),'native_owner_restored':bool(restored),'runs':[{k:x.get(k) for k in ['run_id','status','model_calls','input_tokens','output_tokens','gpu_reserved_seconds','model_revision','chat_template_sha256','sampled_gpu_busy_seconds']} for x in stage],'known_cost_usd':None,'billed_pod_time':'Unavailable; do not equate reserved execution or sampled utilization with pod uptime.'}
+ assert exclusive<=5400 and r['project_total_with_obligations_hours']<=96
+ write(HERE/'reports/RESOURCES.json',r);print({k:v for k,v in r.items() if k!='runs'})
+if __name__=='__main__':main()

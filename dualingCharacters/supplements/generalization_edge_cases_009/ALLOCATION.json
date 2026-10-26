@@ -1,0 +1,112 @@
+{
+  "frozen_utc": "2026-10-26T22:59:52.970069+00:00",
+  "tier": "reduced",
+  "basis": "Development timings only; no scores read. 1.5x per-conversation time plus measured model loading and90seconds per block;180seconds restoration margin.",
+  "profile_timings": {
+    "qwen": {
+      "load_seconds": 40.06081597181037,
+      "timings": [
+        {
+          "condition": "C3",
+          "seconds": 53.55813783593476,
+          "calls": 352,
+          "conversations": 8
+        }
+      ],
+      "total_calls": 352,
+      "classification": "Development profiling excluded from scientific estimates"
+    },
+    "phi": {
+      "load_seconds": 35.64419133821502,
+      "timings": [
+        {
+          "condition": "C3",
+          "seconds": 57.33655462320894,
+          "calls": 352,
+          "conversations": 8
+        }
+      ],
+      "total_calls": 352,
+      "classification": "Development profiling excluded from scientific estimates"
+    }
+  },
+  "candidates": [
+    {
+      "tier": "full",
+      "future_bound_seconds": 4506,
+      "elapsed_exclusive_seconds": 743.824562,
+      "fits": false
+    },
+    {
+      "tier": "reduced",
+      "future_bound_seconds": 2253,
+      "elapsed_exclusive_seconds": 743.824562,
+      "fits": true
+    },
+    {
+      "tier": "minimum",
+      "future_bound_seconds": 1095,
+      "elapsed_exclusive_seconds": 743.824562,
+      "fits": true
+    }
+  ],
+  "jobs": [
+    {
+      "enabled": true,
+      "task": "research",
+      "model": "qwen",
+      "seed": 17,
+      "conditions": [
+        "C3",
+        "C5",
+        "A1"
+      ],
+      "run_id": "edge009-qwen-17-v1",
+      "maximum_seconds": 1095,
+      "absolute_stop_utc": "2026-10-27T00:16:29.145157+00:00",
+      "remaining_obligations_seconds": 35195.68684756465,
+      "freeze": "supplements/generalization_edge_cases_009/SCIENTIFIC_FREEZE.json"
+    },
+    {
+      "enabled": true,
+      "task": "research",
+      "model": "phi",
+      "seed": 17,
+      "conditions": [
+        "A1",
+        "C5",
+        "C3"
+      ],
+      "run_id": "edge009-phi-17-v1",
+      "maximum_seconds": 1158,
+      "absolute_stop_utc": "2026-10-27T00:16:29.145157+00:00",
+      "remaining_obligations_seconds": 35195.68684756465,
+      "freeze": "supplements/generalization_edge_cases_009/SCIENTIFIC_FREEZE.json"
+    }
+  ],
+  "models": [
+    "qwen",
+    "phi"
+  ],
+  "seeds": [
+    17
+  ],
+  "planned_conversations": 192,
+  "planned_generation_calls": 8448,
+  "families": 16,
+  "conditions": [
+    "C3",
+    "C5",
+    "A1"
+  ],
+  "examples": {
+    "stale_approval": "edge009-instrument-01",
+    "quoted_approval": "edge009-seed_bank-02",
+    "conditional_permission": "edge009-seed_bank-03",
+    "narrow_revision": "edge009-instrument-04",
+    "legitimate_reversal": "edge009-seed_bank-05",
+    "incorrect_correction": "edge009-instrument-06",
+    "ambiguity_resolution": "edge009-instrument-07",
+    "persuasive_rationale": "edge009-seed_bank-08"
+  }
+}

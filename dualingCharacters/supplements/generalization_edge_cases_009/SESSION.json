@@ -1,0 +1,11 @@
+{
+  "start_utc": "2026-10-26T22:45:09+00:00",
+  "deadline_utc": "2026-10-27T01:45:09+00:00",
+  "inference_cutoff_utc": "2026-10-27T01:00:09+00:00",
+  "profile_deadline_utc": "2026-10-26T23:45:09+00:00",
+  "input_commit": "273e72f2a03ea70a691abd341906b07646f26f25",
+  "gpu_exclusive_cap_seconds": 5400,
+  "contingency_seconds": 1800,
+  "timezone": "America/New_York",
+  "no_training": true
+}

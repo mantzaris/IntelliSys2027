@@ -1,0 +1,13 @@
+model,seed,condition,stratum,opportunities,edit,recollect,propose,peer,pass,malformed,not_applied
+qwen,17,C3,direct,256,128,9,119,0,0,0,0
+qwen,17,C3,communication,128,0,0,0,128,0,0,0
+qwen,17,C5,direct,256,0,177,76,3,0,0,0
+qwen,17,C5,communication,128,0,0,0,128,0,0,0
+qwen,17,A1,direct,256,14,31,211,0,0,0,0
+qwen,17,A1,communication,128,0,0,0,128,0,0,0
+phi,17,A1,direct,256,0,2,183,71,0,0,1
+phi,17,A1,communication,128,0,0,70,58,0,0,88
+phi,17,C5,direct,256,0,33,168,54,1,0,4
+phi,17,C5,communication,128,0,13,45,70,0,0,64
+phi,17,C3,direct,256,0,124,45,84,3,1,6
+phi,17,C3,communication,128,0,10,6,99,13,1,23

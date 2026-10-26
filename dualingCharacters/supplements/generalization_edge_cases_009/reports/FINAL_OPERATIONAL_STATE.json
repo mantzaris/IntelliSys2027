@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-26T23:46:06.388986+00:00",
+  "native_owner": "3566458       24:37 python",
+  "current_core_job": "extra-qwen-base-17-horizon128",
+  "remote": {
+    "status": {
+      "run_id": "extra-qwen-base-17-horizon128",
+      "status": "running",
+      "model_calls": 3392,
+      "gpu_reserved_seconds": 221.28930655820295
+    },
+    "gpu": "NVIDIA RTX 6000 Ada Generation, 40118 MiB, 91 %",
+    "compute_processes": "1647838",
+    "free_bytes": 8695091200
+  },
+  "local_free_bytes": 10784223232,
+  "review_owner_unchanged": {
+    "controller_sha256": "5f2524e34fa2635e0403c22dc26fe8a4f3d13a2da525087a5f529c882ae13952",
+    "gpu_operations_started": 0,
+    "pid": 1291869,
+    "status": "waiting_for_core",
+    "updated_utc": "2026-10-24T01:57:32Z"
+  },
+  "no_stage009_waiter": true,
+  "boundary_hold_absent": true
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "edge009-exclusive-overhead-v1",
+  "status": "completed",
+  "accounting_only": true,
+  "stage009": true,
+  "started_utc": "2026-10-26T22:47:29.145157+00:00",
+  "ended_utc": "2026-10-26T23:21:30.617900+00:00",
+  "gpu_reserved_seconds": 701.0052989801422,
+  "model_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "train_tokens": 0,
+  "peak_vram_bytes": 0,
+  "code_commit": "273e72f2a03ea70a691abd341906b07646f26f25",
+  "reason": "Full exclusive handoff window minus all five measured stage009 model/supervisor reservations. No inference or GPU ownership change.",
+  "source_window_seconds": 2041.472743,
+  "already_charged_model_seconds": 1340.4674440198578
+}

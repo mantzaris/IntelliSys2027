@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-26T23:36:15.381151+00:00",
+  "status": "passed",
+  "export_root": "/tmp/edge009-clean-export",
+  "original_artifact_directory_available_to_export": false,
+  "committed_archive_files_verified": 63,
+  "numeric_tables_identical": [
+    "episodes.json",
+    "families.json",
+    "contrasts.json",
+    "summary.json",
+    "behavior_contrasts.json",
+    "opportunity_strata.csv",
+    "decisive_field_exposure.json",
+    "CLARIFICATION_SUMMARY.json",
+    "REPLAY_SUMMARY.json"
+  ],
+  "commands": [
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.analysis",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.report",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.exposure",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.trajectory_details",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.dialogues",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.counterexamples",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.replay_analysis",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "supplements.generalization_edge_cases_009.verify",
+      "--run-root",
+      "/tmp/edge009-clean-export/evidence/runs"
+    ],
+    [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "supplements/generalization_edge_cases_009/tests",
+      "-v"
+    ]
+  ],
+  "local_python_dependencies": "Existing pinned venv executable supplies dependencies; imported study source and all evidence come from clean export. No model cache/GPU/private access required.",
+  "final_packaging_update_utc": "2026-10-26T23:48:35.047857+00:00",
+  "update_reason": "Added zero-call shared-ledger overhead record and final presentation labels; scientific/numerical inputs unchanged. Updated archive rehashed, dialogue rendering and integration checks rerun."
+}

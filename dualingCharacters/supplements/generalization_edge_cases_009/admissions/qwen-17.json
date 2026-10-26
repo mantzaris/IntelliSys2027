@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "task": "research",
+  "model": "qwen",
+  "seed": 17,
+  "conditions": [
+    "C3",
+    "C5",
+    "A1"
+  ],
+  "run_id": "edge009-qwen-17-v1",
+  "maximum_seconds": 1095,
+  "absolute_stop_utc": "2026-10-27T00:16:29.145157+00:00",
+  "remaining_obligations_seconds": 35195.68684756465,
+  "freeze": "supplements/generalization_edge_cases_009/SCIENTIFIC_FREEZE.json"
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "model": "qwen",
+    "comparison": "C5-C3",
+    "complete_unique_families": 16,
+    "family_seed_pairs": 16,
+    "difference": 0.0625,
+    "interval95_family_bootstrap": [
+      -0.125,
+      0.3125
+    ],
+    "transitions": {
+      "10": 2,
+      "11": 12,
+      "00": 1,
+      "01": 1
+    },
+    "qualification": "Families resampled with worlds, methods and repeated seeds retained; backbones fixed. Not population training-seed uncertainty."
+  },
+  {
+    "model": "qwen",
+    "comparison": "C5-A1",
+    "complete_unique_families": 16,
+    "family_seed_pairs": 16,
+    "difference": -0.0625,
+    "interval95_family_bootstrap": [
+      -0.25,
+      0.125
+    ],
+    "transitions": {
+      "11": 13,
+      "10": 1,
+      "01": 2
+    },
+    "qualification": "Families resampled with worlds, methods and repeated seeds retained; backbones fixed. Not population training-seed uncertainty."
+  },
+  {
+    "model": "phi",
+    "comparison": "C5-C3",
+    "complete_unique_families": 16,
+    "family_seed_pairs": 16,
+    "difference": -0.125,
+    "interval95_family_bootstrap": [
+      -0.3125,
+      0.0
+    ],
+    "transitions": {
+      "00": 4,
+      "11": 10,
+      "01": 2
+    },
+    "qualification": "Families resampled with worlds, methods and repeated seeds retained; backbones fixed. Not population training-seed uncertainty."
+  },
+  {
+    "model": "phi",
+    "comparison": "C5-A1",
+    "complete_unique_families": 16,
+    "family_seed_pairs": 16,
+    "difference": -0.125,
+    "interval95_family_bootstrap": [
+      -0.3125,
+      0.0
+    ],
+    "transitions": {
+      "00": 4,
+      "11": 10,
+      "01": 2
+    },
+    "qualification": "Families resampled with worlds, methods and repeated seeds retained; backbones fixed. Not population training-seed uncertainty."
+  }
+]

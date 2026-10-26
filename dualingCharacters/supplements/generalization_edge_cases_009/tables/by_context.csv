@@ -1,0 +1,13 @@
+model,condition,context,paired_success,families
+qwen,C3,seed_bank,7,8
+qwen,C3,instrument,6,8
+qwen,C5,seed_bank,6,8
+qwen,C5,instrument,8,8
+qwen,A1,seed_bank,8,8
+qwen,A1,instrument,7,8
+phi,C3,seed_bank,7,8
+phi,C3,instrument,5,8
+phi,C5,seed_bank,6,8
+phi,C5,instrument,4,8
+phi,A1,seed_bank,7,8
+phi,A1,instrument,5,8

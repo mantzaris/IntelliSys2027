@@ -1,0 +1,218 @@
+{
+  "utc": "2026-10-26T22:59:06.100130+00:00",
+  "core_manifest_hashes": {
+    "data/manifests/pilot.json": "3ac754960a54f4cf27e529d8e44799c087fc3870af01b419d49e19c053791d66",
+    "data/manifests/train.json": "c6d92a9b69dae749df169fd0ed4e34d581af8c9910b85e8b9c3582f2934a190a",
+    "data/manifests/validation.json": "77efc4f3e6e3d690e56f8b68a81e137650f14fcb0639b16197f0f1e7ffbb2ab4",
+    "data/manifests/test.json": "dd637df704922151e3ec73397ecc47d12cca899bb05d69864ebb83383be1d590",
+    "data/manifests/natural.json": "d440dfba4c1dca01c4a9eff9fbd1636b952f5b05d9eb169e2c3030e5f6648d54"
+  },
+  "families_checked_by_split": {
+    "pilot": 32,
+    "train": 300,
+    "validation": 80,
+    "test": 240,
+    "natural": 48
+  },
+  "horizons_checked": [
+    16,
+    32,
+    64,
+    128
+  ],
+  "rows": [
+    {
+      "family": "edge009-seed_bank-01",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-01",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-02",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-02",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-03",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-03",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-04",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-04",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-05",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-05",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-06",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-06",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-07",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-07",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-08",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-seed_bank-08",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-01",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-01",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-02",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-02",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-03",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-03",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-04",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-04",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-05",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-05",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-06",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-06",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-07",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-07",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-08",
+      "world": "authorized",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    },
+    {
+      "family": "edge009-instrument-08",
+      "world": "hypothetical",
+      "exact_source_overlap": false,
+      "exact_decision_sequence_overlap": false
+    }
+  ],
+  "scope": "Exact instantiated source and Event sequence comparison, not a claim of semantic novelty. Both contexts absent in inspected earlier generator source; six categorical fields, tools and conditional dependency remain shared."
+}

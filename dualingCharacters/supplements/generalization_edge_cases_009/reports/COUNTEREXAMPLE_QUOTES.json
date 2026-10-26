@@ -1,0 +1,56 @@
+[
+  {
+    "locator": "edge009-phi-17-v1/C3_characters.jsonl#L151",
+    "field": "claim",
+    "exact_quote": "We need to consider the weather forecast for Thursday, as it might affect our deployment plans. Let's discuss this in our next meeting and adjust our timeline if necessary.",
+    "source_sha256": "ba59e27ef1628cf6db5781e62422e0edaded631f21a83ee3c2c605d389421126"
+  },
+  {
+    "locator": "edge009-phi-17-v1/C5_characters.jsonl#L151",
+    "field": "claim",
+    "exact_quote": "I propose we expand our deployment to include a weatherproofing checklist for Thursday, aligning with the current plan and enhancing our specialists' expertise.",
+    "source_sha256": "6e6bdd097785f5edbc98021bcfd55b31e3a0c388013206ee7c6241e8d1837676"
+  },
+  {
+    "locator": "edge009-phi-17-v1/A1_characters.jsonl#L151",
+    "field": "claim",
+    "exact_quote": "I propose to set the commissioning day for the remote-instrument deployment to Tuesday to ensure ample time for preparation and weatherproofing.",
+    "source_sha256": "3fcf72f5c0d46a9074031640bdf99392d54af8bdc3a4654cbf0e008111cd2d1f"
+  },
+  {
+    "locator": "edge009-qwen-17-v1/C3_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "Adjusting coordination format to hybrid to introduce operational flexibility, leveraging the rule that hybrid mode uses kit-A and allows partial transport optimization.",
+    "source_sha256": "225a0f6c5d7928a09c80619006de37d74cb039cc0357017dfa239e686f7588f1"
+  },
+  {
+    "locator": "edge009-qwen-17-v1/C5_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "Harbor remains optimal for operations base due to rail access and reduced transport risk.",
+    "source_sha256": "03f34d20ea10062069f3321c30b5d48e9bcab70f80a88d5c0d33f2242db7c395"
+  },
+  {
+    "locator": "edge009-qwen-17-v1/A1_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "The operations base is confirmed at Harbor, leveraging rail transport for efficient logistics and cost-effective deployment.",
+    "source_sha256": "6ee549979af7869771995368bc040647552a628ea699cfe39a1573682d84bfac"
+  },
+  {
+    "locator": "edge009-phi-17-v1/C3_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "Shifting operations base to Harbor for rail transport is part of our plan to avoid transport issues.",
+    "source_sha256": "ba59e27ef1628cf6db5781e62422e0edaded631f21a83ee3c2c605d389421126"
+  },
+  {
+    "locator": "edge009-phi-17-v1/C5_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "Harbor as the operations base for the remote-instrument deployment is a strategic choice for maximizing logistics efficiency.",
+    "source_sha256": "6e6bdd097785f5edbc98021bcfd55b31e3a0c388013206ee7c6241e8d1837676"
+  },
+  {
+    "locator": "edge009-phi-17-v1/A1_characters.jsonl#L153",
+    "field": "claim",
+    "exact_quote": "Agree with Rowan's suggestion and propose a meeting to discuss relocating the operations base to Harbor for better logistics.",
+    "source_sha256": "3fcf72f5c0d46a9074031640bdf99392d54af8bdc3a4654cbf0e008111cd2d1f"
+  }
+]

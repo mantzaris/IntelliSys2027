@@ -1,0 +1,50 @@
+# Addendum: context variation and unusual conversational events
+
+## Methods
+
+We conducted a prospectively specified exploratory extension after the earlier characterization and its unfavorable or uncertain results. The extension crossed sixteen new family instances—eight event patterns in each of two contexts—with two minimally different user worlds, three component conditions and two base backbones. A development-timing rule admitted one rollout seed,17, yielding 192 complete conversations. The more conservative two-seed tier did not fit the full ninety-minute handoff allowance. Neither results nor interesting dialogue determined this choice.
+
+The contexts were community seed-bank distribution coordination and remote-instrument deployment. Events included stale quoted approvals, draft versus operative approval, visibly satisfied or unsatisfied permission conditions, narrow revisions, genuine reversals, incorrect corrections, ambiguity followed by resolution, and persuasive third-party rationale without authority. These are new script compositions within the original six-field plan interface, not independent real-world task classes. Exact scripts and decision sequences were checked against the original splits, while shared primitives and schema were explicitly retained.
+
+C3, C5 and A1 used the unchanged component definitions, private action histories, memory tools and communication routing. All conditions had two components plus the responsible answerer,32 user turns and 12 actor opportunities. The model weights were frozen base Qwen or Phi throughout; no study adapter was loaded. Accordingly, the experiment characterizes generalization of a prompted system rather than transfer from character-conditioned training. Changing backbone changes both the actors and answerer.
+
+The primary endpoint required the final executable decisive field and its clarification status to be correct in both worlds of a family. Whole-plan correctness, intermediate trajectories, collateral errors, channel use, valid direct-goal repetition and immediate memory changes were separate measurements. Intervals resampled whole family bundles, retaining worlds and conditions. With sixteen families and one rollout seed, these intervals do not estimate a population of trained policies. Each case-pattern cell contains only two families.
+
+## Results
+
+**Channel selection generalized within Qwen but changed across backbones.** Qwen C3 generated 128 direct edits in 384 allocated opportunities, compared with zero for C5 and 14 for A1. C5 generated 177 recollections, C3 nine and A1 thirty-one. The C5−C3 recollection difference was 43.75 percentage points (95% family interval 35.42–51.82), consistent in direction with the earlier Qwen common-base archive. This is a within-study contextual replication, not a randomized comparison of old and new domains.
+
+Phi showed a different profile. No condition generated a direct edit. C5 generated 46 recollections versus C3’s 134, reversing the contrast to −22.92 points (−27.34 to −18.49). C5 instead generated 213 proposals versus C3’s 51. Part of the overall distribution reflects interface compliance:64/128 C5 and 88/128 A1 reserved communication outputs were not applied, compared with 23/128 C3 outputs. Nevertheless, the recollection reversal persists in direct opportunities: C5 33/256 versus C3 124/256. All allocated opportunities, including rejections and malformed outputs, remain in the unconditional denominators.
+
+These changes cannot be interpreted simply as semantic differences. Recollection and proposal actions both append notes. In the fixed Qwen conditional-permission example, all three conditions propose hybrid coordination, despite the tested user revision concerning the budget. Conversely, a Phi C5 proposal says, “I propose we expand our deployment to include a weatherproofing checklist for Thursday, aligning with the current plan and enhancing our specialists' expertise.” Its typed field is day, but the sentence mainly recommends task work. API type, typed goal, expressed proposition and physical effect remain distinct. Exact source records and matched examples are linked in the dialogue edition.
+
+**Motive-only components remained highly repetitive.** Qwen C5 repeated its typed direct goal in 186/189 eligible transitions and A1 in 189/192, both approximately 98.4%; C3 repeated 129/192. Phi C5 repeated 119/137 transitions (86.9%), A1 117/121 (96.7%) and C3 77/105 (73.3%). The Qwen family-mean C5−C3 difference was 31.25 points (21.35–41.67), while the Phi difference was 11.69 points (−2.62 to 25.64). Biography text was not necessary for high typed persistence in these conditions. The result does not establish equivalent representations or substantive development of a strategy: eligible-pair counts vary with valid action use, and stable goals are expressly encouraged by the prompts.
+
+**Local revision success did not establish reliable whole-plan behavior.** Qwen paired decisive-field success was 13/16 for C3,14/16 for C5 and 15/16 for A1. Phi success was 12/16,10/16 and 12/16, respectively. The C5−C3 contrasts were +6.25 points (−12.5 to 31.25) for Qwen and −12.5 points (−31.25 to 0) for Phi. These small-family comparisons provide no general superiority result. C5 achieved the original full-plan endpoint in 16/32 conversations under each backbone; correct handling of the focal field could coexist with collateral or dependency errors.
+
+The ambiguity cases make the limitation concrete. Both paired ambiguity families ended correctly in every condition/backbone, yet Phi committed to a nonnull decisive value in all 24 observations where the oracle required uncertainty. Qwen did so in 24/24 C3 observations and 14/24 C5/A1 observations. These repeated observations arise from four conversations per condition. Final success therefore misses premature commitments and later recovery. Conversely, C5 Qwen produced unnecessary decisive-field clarification in 40/712 settled observations versus C3’s 12/712; more apparent uncertainty is not uniformly beneficial.
+
+An exposure audit motivated by the fixed examples found that only four of sixteen decisive fields were owned by either actor. Only one family’s live revision moved away from an owned preference. In that family the user says, “After reconsidering, I approve returning operations base to Studio; replace Harbor.” Qwen C5 nevertheless states, “Harbor remains optimal for operations base due to rail access and reduced transport risk.” Its answerer ultimately returns Studio, whereas Phi C5 advocates Harbor and ultimately retains Harbor. Generic and motive-only conditions also show persistence or errors. Continued advocacy and failure to execute an authorized update are distinguishable observations, and their temporal association does not identify persuasion.
+
+## Limited message-availability diagnostic
+
+After the complete main grid, we replayed sixteen saved recipient states under the actual inbox and with one selected message omitted, using two replay seeds. The complete baseline prompts reconstructed exactly from the original prompt builder, transcript, private history and pre-response memory. Selection required the recipient’s prior typed goal to differ from the message goal and did not consult its subsequent output. The deterministic earliest-event tie rule yielded fifteen A1 states and one C5 state; no C3 state was selected.
+
+Across 32 paired state/seed comparisons, the typed goal changed once and the API label seven times. Neither arm adopted the incoming message’s different goal. The recipient continued its earlier goal in 28/32 actual-message and 29/32 omitted-message outputs. These observations concern immediate availability in selected states, with fixed batch seeds but no claim of identical random draws between requests. Removing a message also changes input length. The empirical zero adoption difference and its degenerate bootstrap interval do not establish equivalence, a universal absence of influence or a long-term persuasion effect.
+
+
+
+The clarification breakdown and ownership-exposure audit are post-run descriptive diagnostics; they did not change the frozen primary endpoint or inference.
+
+## Implications and limitations
+
+The extension narrows the account to backbone-dependent tool choices and persistent typed advocacy. The earlier Qwen recollection pattern is not universal: it reverses relative to generic adversaries under Phi. Motive-only persistence survives the context change, but persistence itself does not establish correct user-intent tracking. The events are scripted, explicitly worded and use a small shared schema; contexts, focal fields and pattern composition are not independently replicated at scale. Fixed routing, actor timing, rejected opportunities and condition-specific generated histories remain plausible contributors. The modest replay is predominantly motive-only and cannot rank conditions or replace a full delivery intervention.
+
+No new semantic judge or human annotation was used. Prose readings are illustrations, not validated semantic prevalence. The earlier negative trained C5−C3 comparisons and failed stage 008 judge screens remain intact. These base-model results neither rescue a learning-benefit claim nor establish broad external transfer, psychological agency or sophisticated rivalry.
+
+## Proposed edits to the existing author-review paper
+
+1. Add a bounded generalization subsection reporting both backbones and all three conditions, with the 192-conversation denominator and one-seed limitation.
+2. Qualify the earlier channel finding as robust across these Qwen contexts but backbone-dependent; include the Phi reversal and communication-slot rejection counts.
+3. Retain persistence as a typed observable, include A1 prominently, and add the distinction between advocacy, authorization and final execution.
+4. Add the ambiguity counterexample and limited replay as separate evidence. Preserve all original training tables and failed semantic screens. The stage 008 manuscript remains unchanged; this addendum is proposed text for author review.

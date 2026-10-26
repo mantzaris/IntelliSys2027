@@ -1,0 +1,10 @@
+{
+  "run_id": "edge009-delivery-replay-v1",
+  "states": 16,
+  "planned_calls": 64,
+  "seeds": [
+    17,
+    29
+  ],
+  "admitted_utc": "2026-10-26T23:19:43.729409+00:00"
+}

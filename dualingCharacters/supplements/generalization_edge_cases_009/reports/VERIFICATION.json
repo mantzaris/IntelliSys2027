@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "research_conversations": 192,
+  "research_calls": 8448,
+  "unique_families": 16,
+  "quoted_claims_verified": 33,
+  "replay_calls_verified": 64,
+  "portable_links_verified": 24,
+  "details": [
+    {
+      "run_id": "edge009-qwen-17-v1",
+      "condition": "C3",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1662963,
+      "output_tokens": 86270,
+      "max_input_tokens": 1564,
+      "no_prompt_limit_hit": true
+    },
+    {
+      "run_id": "edge009-qwen-17-v1",
+      "condition": "C5",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1731233,
+      "output_tokens": 89560,
+      "max_input_tokens": 1693,
+      "no_prompt_limit_hit": true
+    },
+    {
+      "run_id": "edge009-qwen-17-v1",
+      "condition": "A1",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1696166,
+      "output_tokens": 87695,
+      "max_input_tokens": 1671,
+      "no_prompt_limit_hit": true
+    },
+    {
+      "run_id": "edge009-phi-17-v1",
+      "condition": "A1",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1625940,
+      "output_tokens": 84520,
+      "max_input_tokens": 1627,
+      "no_prompt_limit_hit": true
+    },
+    {
+      "run_id": "edge009-phi-17-v1",
+      "condition": "C5",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1648121,
+      "output_tokens": 87309,
+      "max_input_tokens": 1785,
+      "no_prompt_limit_hit": true
+    },
+    {
+      "run_id": "edge009-phi-17-v1",
+      "condition": "C3",
+      "conversations": 32,
+      "calls": 1408,
+      "input_tokens": 1655267,
+      "output_tokens": 89727,
+      "max_input_tokens": 1714,
+      "no_prompt_limit_hit": true
+    }
+  ],
+  "scientific_validation": "These are identity, coverage and accounting checks, not semantic or external validation."
+}

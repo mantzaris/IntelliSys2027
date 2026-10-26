@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-26T23:21:30.617900+00:00",
+  "native_owner_pid": 3566458,
+  "previous_pid": 3344307,
+  "same_command": true,
+  "same_queue": true,
+  "no_new_waiter": true,
+  "no_stage009_inference_scheduled": true,
+  "exclusive_handoff_seconds": 2041.472633,
+  "under90minutes": true,
+  "log": "artifacts/generalization_edge_cases_009/core_resume.log"
+}

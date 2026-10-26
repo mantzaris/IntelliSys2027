@@ -1,0 +1,7 @@
+model,condition,episodes,unique_families,paired_success,paired_denominator,edit,recollect,propose,peer,pass,opportunities,direct_state_changes,note_changes,repeat_n,repeat_d,last8_correct,last8_denominator,full_plan_success,collateral_wrong,collateral_denominator,clarification_correct,clarification_denominator,component_deliveries,answerer_notes,cited_source_unavailable,final_decisive_source_visible,input_tokens,output_tokens,never_wrong,recovered,unrecovered
+qwen,C3,32,16,13,16,128,9,119,128,0,384,96,260,129,192,227,256,9,139,1280,637,672,124,4,238,32,1662963,86270,25,2,5
+qwen,C5,32,16,14,16,0,177,76,131,0,384,0,275,186,189,236,256,16,40,1280,628,672,109,22,182,31,1731233,89560,23,7,2
+qwen,A1,32,16,15,16,14,31,211,128,0,384,13,275,189,192,237,256,18,0,1280,612,672,109,19,189,31,1696166,87695,27,2,3
+phi,C3,32,16,12,16,0,134,51,183,16,384,0,222,77,105,224,256,17,8,1280,657,672,117,53,205,32,1655267,89727,28,0,4
+phi,C5,32,16,10,16,0,46,213,124,1,384,0,206,119,137,208,256,16,32,1280,657,672,109,5,195,32,1648121,87309,26,0,6
+phi,A1,32,16,12,16,0,2,253,129,0,384,0,217,117,121,224,256,19,8,1280,657,672,78,32,222,32,1625940,84520,28,0,4

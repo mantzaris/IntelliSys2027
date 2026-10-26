@@ -1,0 +1,21 @@
+{
+  "core": 58,
+  "review001": 21,
+  "supplements/evidence_validation_006/SCIENTIFIC_MANIFEST.json": 17,
+  "supplements/evidence_validation_006/EVENT_REVIEW_FREEZE.json": 10,
+  "supplements/evidence_validation_006/compatibility/FREEZE.json": 62,
+  "supplements/behavior_characterization_004/AMENDMENT_002_MANIFEST.json": 2,
+  "supplements/behavior_characterization_004/AMENDMENT_003_MANIFEST.json": 2,
+  "supplements/behavior_characterization_004/AMENDMENT_001_MANIFEST.json": 3,
+  "protected_historical_forms_and_files": 22,
+  "stage008_manifests": {
+    "FINAL_PROMPT_FREEZE.json": 15,
+    "SCIENTIFIC_FREEZE.json": 29,
+    "CONTINUATION_001_FREEZE.json": 6,
+    "RECOVERY_POLICY_FREEZE.json": 3,
+    "PROFILE_FREEZE.json": 12,
+    "ANALYSIS_AMENDMENT_001_FREEZE.json": 2
+  },
+  "intent002_files": 34,
+  "status": "passed"
+}

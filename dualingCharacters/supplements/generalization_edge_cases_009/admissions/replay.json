@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "task": "replay",
+  "model": "qwen",
+  "seed": 17,
+  "run_id": "edge009-delivery-replay-v1",
+  "maximum_seconds": 300,
+  "absolute_stop_utc": "2026-10-27T00:16:29.145157+00:00",
+  "remaining_obligations_seconds": 35195.68684756465,
+  "freeze": "supplements/generalization_edge_cases_009/REPLAY_FREEZE.json"
+}

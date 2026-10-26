@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-26T23:49:32.786426+00:00",
+  "classification": "Post-run descriptive disaggregation and presentation; no primary freeze or inference change",
+  "files": {
+    "report.py": "2f020d1bd62e2de5ed0f16e941aa6bab0906d567af4fc0f361ce4e7bc5302df1",
+    "exposure.py": "6090e92c9d329e52e6f2be8a48905340ce9ec639011631194e23e8305da4a74a",
+    "trajectory_details.py": "1c5e65a584034e9da43967e6badb6b6ae06409e0e7cf6a897d825e4e284d3715",
+    "counterexamples.py": "a50a34b6236dfa5d4b3f7913c2347c775a6e20b18aa78210906279691a7087e6",
+    "CASE_READINGS.json": "48ddd3f81f44bf7d214c788e9e8cb5d42f19abd4e80f696aab2e45d1b4f0c244",
+    "REPORTING_DETAILS.md": "dc29e3e024b6be56517bb0311716a7cf3638190bb323c1afa93950f2a77b7700"
+  }
+}
