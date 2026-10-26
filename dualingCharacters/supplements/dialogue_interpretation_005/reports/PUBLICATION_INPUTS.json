@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-25T23:54:43.221809+00:00",
+  "selected_statement_spans": 61,
+  "anchor_statement_spans": 48,
+  "total_anchor_actions": 432,
+  "total_selected_actions": 576,
+  "semantic_frequencies": "Not estimated; quoted spans are purposive within a fixed episode sample. Unselected actions are not rated negatives.",
+  "human_ratings": 0,
+  "context_sources": {
+    "supplements/behavior_characterization_004/reports/secondary_defender_results.csv": "6fe7a7f49aa73380547e397953fe7b0ec4cb1c55f87788e13619a0296303c389",
+    "supplements/exploration_003/reports/primary_paired_contrasts.json": "a0ea89044c8df55275ff3cfd72af945cfe5126b01eb2fa33393440b04d1aa8e4"
+  },
+  "outputs": {
+    "API_VERSUS_STATEMENT.csv": "257f1f0f7302f428bbd92385ca203d2532e4aa9bb0349164ee90543f0b0a7230",
+    "PEER_CHAIN.csv": "25beccde6054669dcca6bc06660b189ec9e48068a8cb1b7b613498a48464f77f",
+    "EXPOSURE_TOTALS.csv": "7c2570de4e8a90f16c4889098ca5d8ec826b02ce34c5113673bffa49e04ac8ab",
+    "FAMILY_INPUT_PROVENANCE.json": "34222aa75975beed58a56d564e3c4f7fce334ba8f2c98bf4094fe57de4385155",
+    "PRIOR_DEFENDER_CONTEXT.csv": "74bf8403ffba60b1a5a127bad0caadafba0d22c6d91612ee41129c38c79e06cc",
+    "ANCHOR_API_COUNTS.csv": "de99069006ca63c6c0525dd6a67f2f66cd6987a425287a43662d913adc6a6140",
+    "REPRODUCED_CONTRASTS.json": "6904f8d49c97911bb8a370cec8729ea5089e8ed9504eec62868e965312336563",
+    "FAMILY_NUMERATORS.csv": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+    "SELECTED_ACTIONS.csv": "d6721932dd0a7cfba3ccd2694737349f032bf062f5e0c32d83c5309b801d1ac5",
+    "PRIOR_EXPLORATION_CONTEXT.json": "a0ea89044c8df55275ff3cfd72af945cfe5126b01eb2fa33393440b04d1aa8e4",
+    "KNOWN_BEHAVIOR.csv": "d324fe947ef2dcda0305a5a8c39dbe15c35444b97627072ce96471bdf2d95716",
+    "IMPLEMENTATION_EXPOSURES.csv": "b2e6e081a31b052fc5f4acedd6268e06d201f569cf366e8bf9c541169e39c9c7",
+    "SCHEDULE_AND_EXPOSURE.csv": "ff493c9d08933c4f86c4c14c6e427ef12488426fb3b5e4e582ebbd8decdccc76"
+  }
+}

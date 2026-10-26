@@ -1,0 +1,7 @@
+condition,anchor,allocated_opportunities,reserved_slots,applied,truncated_claims,peer_sent,peer_delivered,peer_observed,no_later_observation,source_unavailable,state_changes,note_changes
+A1,False,48,16,48,0,16,16,16,0,11,0,34
+A1,True,144,48,144,2,48,48,48,0,30,5,100
+C3,False,48,16,48,0,16,16,16,0,9,20,34
+C3,True,144,48,144,1,48,48,48,0,22,60,101
+C5,False,48,16,48,1,16,16,16,0,6,1,35
+C5,True,144,48,144,7,51,51,50,1,20,4,100

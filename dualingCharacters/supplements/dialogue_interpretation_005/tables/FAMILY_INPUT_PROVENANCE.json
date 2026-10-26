@@ -1,0 +1,18 @@
+{
+  "source": "artifacts/behavior_characterization_004/family_rates.csv",
+  "source_sha256": "4b70f895f3becc193492ab0aa5c8f736bd1c64f5da6b49775738920ca0bd512e",
+  "export_sha256": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+  "original_population": "behavior004 common-base round-zero; both worlds aggregated inside family",
+  "metrics": [
+    "channel_edit",
+    "channel_recollect",
+    "channel_propose",
+    "consecutive_direct_goal_repetition",
+    "reference_reference_unavailable",
+    "reference_explicit_current_support",
+    "visible_typed_next_goal_match",
+    "peer_before_goal_match",
+    "peer_after_goal_match"
+  ],
+  "rows": 1350
+}

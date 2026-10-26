@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=src:. .venv/bin/python -m pytest supplements/dialogue_interpretation_005/test_unit.py supplements/dialogue_interpretation_005/test_verification.py supplements/behavior_characterization_004/test_behavior.py supplements/behavior_characterization_004/test_compatibility.py -q",
+  "passed": 34,
+  "elapsed_seconds": 0.51,
+  "fresh_clone_005_tests": 11,
+  "qualification": "One reused behavior004 check requires the original56-item packet; standalone005 tests do not require research artifacts."
+}

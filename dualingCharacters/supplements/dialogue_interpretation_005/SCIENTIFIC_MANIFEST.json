@@ -1,0 +1,24 @@
+{
+  "frozen_utc": "2026-10-25T23:21:04.901846+00:00",
+  "files": {
+    "PROTOCOL.md": "e51166befc2795fb43d40b8f4828b0d12266f187e5ef10fb416f60095e1ce3c4",
+    "SEMANTIC_CODEBOOK.md": "079578edd2976c95a6aab5c823d8c2f06127256935d6a7cb0aa71a54cb2b9518",
+    "SELECTION.json": "06c82ef36c2507f4e62f78a1561934a6fc77ed662b8dc6c8017df560e2dc26c1",
+    "EVIDENCE_CUTOFF.json": "3316080b96bf45216800094eac18638716efe472860798f9b63d1d500c4267b6",
+    "__init__.py": "a74c54c487cac58e7cfe522f5506fc0ff437af9d91ea3df138984c33337028f2",
+    "common.py": "19a01dceb8eb62793ec4eab7c4c03b7c6eb9f179a0655b480dcb3d294ebfa38f",
+    "selection.py": "30a26052dfb3a519daff44d8e6733933847d7245a473af84cf561c68de849eaf",
+    "inventory.py": "a0bfe8163bfdb20764cf8519c484d38f8c8908ce924062c82d2b42a73253e0fb",
+    "extraction.py": "845559073794c18d88d169ec4121cc9aa54fbb9901faec19f647a21d5e75057a",
+    "statistics.py": "062bf4176eaa2db85a84bb77de28f67400fbfb0a66d620768374253aa64836a5",
+    "annotations.py": "9dbdcd7ccb21b1df7634201ee763a04514640f215896a09c1835e98d9bcd17d6",
+    "blinding.py": "9a54334ac15c4af25520badca91e2e8cb1cffa26d3625dfa628ef4d11b08f676",
+    "test_unit.py": "5dcc4ca3b8218e71e1108a96584c6ac15a4f540971920120c94574b39e4ebbf6",
+    "freeze.py": "3ee92f215d3a1cede8724816daf28d6a43464c90f3e270d13a80dd6bdeb95fb2",
+    "tables/FAMILY_NUMERATORS.csv": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+    "tables/FAMILY_INPUT_PROVENANCE.json": "34222aa75975beed58a56d564e3c4f7fce334ba8f2c98bf4094fe57de4385155"
+  },
+  "known_before_new_readings": "Behavior004 channels/persistence/evidence and exploration003 inconclusive breadth; numerical reuse verified. No new comparative semantic readings yet.",
+  "evidence_cutoff": "2026-10-25T23:16:17.394818+00:00",
+  "correction_policy": "Version any scientific correction explicitly; retain original frozen files and prior outputs."
+}

@@ -1,0 +1,35 @@
+{
+  "written_utc": "2026-10-25T23:54:38.767285+00:00",
+  "status": "AI-assisted author interpretation; no independent ratings",
+  "triplet_readings": 16,
+  "selected_statement_spans": 61,
+  "selected_peer_exchanges": 48,
+  "word_counts": {
+    "DI5-656a746695/authorized": 208,
+    "DI5-47908ed9e7/authorized": 208,
+    "DI5-e743bcb1a6/hypothetical": 215,
+    "DI5-e743bcb1a6/authorized": 220,
+    "DI5-425c30dbba/hypothetical": 219,
+    "DI5-425c30dbba/authorized": 213,
+    "DI5-adc5b43b95/authorized": 222,
+    "DI5-30755452e5/hypothetical": 224,
+    "DI5-1913ab3097/hypothetical": 218,
+    "DI5-a4c89ffad4/authorized": 220,
+    "DI5-86513dc132/authorized": 224,
+    "DI5-2e4899b66b/authorized": 218,
+    "DI5-2e4899b66b/hypothetical": 220,
+    "DI5-934e456029/hypothetical": 215,
+    "DI5-ceecfe5fb4/hypothetical": 225,
+    "DI5-ceecfe5fb4/authorized": 224
+  },
+  "episodes_sha256": "6067e1970e8cfb14fe5ff0a67c9100c8a44d078b7ff9bb7461000bdc44b02d9c",
+  "readings_sha256": "8a9e50519759a794a732752ee356ec247ee7d144d76900f5070b4ed87e7a16e2",
+  "authored_sources": {
+    "readings_data.py": "d305c47cd0ede4310a31a1bf6333d4d78036b2bd40778645eb95f917552605a5",
+    "readings_middle.py": "0ba02ffff4f9a85c1a7ff4e99c0ba258d2ac40fd5feec634917b6832c5d4bd2f",
+    "readings_final.py": "4472de5a85c6ac08e82b0d73c9a269a1b3d58bfdbe72cb80cdfe2b3822974997"
+  },
+  "semantic_prevalence": "Not estimated; exact selected-span denominators do not represent all actions.",
+  "new_model_judge_calls": 0,
+  "human_ratings": 0
+}

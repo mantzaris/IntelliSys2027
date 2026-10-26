@@ -1,0 +1,43 @@
+{
+  "verified_utc": "2026-10-26T00:05:24.939813+00:00",
+  "status": "passed",
+  "prior_scientific_files": 144,
+  "prior_amendment_files": 7,
+  "new_scientific_files": 16,
+  "protected_old_review_files_verified": 22,
+  "prior_review_artifacts_missing": [],
+  "quote_entries_exact": 2123,
+  "source_entries_exact": 1584,
+  "temporal_targets_verified": 768,
+  "memory_transitions_reexecuted": 576,
+  "unique_raw_records": 1344,
+  "matched_triplet_readings": 16,
+  "review_items": 36,
+  "forms": [
+    {
+      "rater": 1,
+      "blank": true
+    },
+    {
+      "rater": 2,
+      "blank": true
+    }
+  ],
+  "html": [
+    {
+      "file": "supplements/dialogue_interpretation_005/DIALOGUE_ATLAS.html",
+      "ids": 2428,
+      "local_links": 11504,
+      "external_resources": 0
+    },
+    {
+      "file": "artifacts/dialogue_interpretation_005/human_review/reviewer/REVIEW.html",
+      "ids": 1800,
+      "local_links": 8534,
+      "external_resources": 0
+    }
+  ],
+  "manuscript_word_count": 1974,
+  "manuscript_exact_quoted_spans": 6,
+  "new_model_calls": 0
+}

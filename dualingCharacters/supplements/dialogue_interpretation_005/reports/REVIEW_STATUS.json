@@ -1,0 +1,20 @@
+{
+  "items": 36,
+  "ratings": "pending",
+  "forms_blank": true,
+  "reviewer_path": "artifacts/dialogue_interpretation_005/human_review/reviewer",
+  "private_key_path": "artifacts/dialogue_interpretation_005/human_review/private/mapping.json",
+  "estimated_hours_per_rater_core": 5.11775,
+  "estimated_hours_per_rater_with_targeted_checks": 6.91775,
+  "estimated_hours_per_rater_fully_expanded": 62.48166666666667,
+  "assumption": "200 word-units/minute plus4 coding minutes/item, or plus7 including targeted source/history checks. Fully expanded JSON counts repeat evidence and are a worst-case inventory, not expected workload. Planning estimates, not measured rater times.",
+  "source_of_stimuli": "36 full anchor episodes; expanded context gets new IDs; old ratings never transferred",
+  "reviewer_file_hashes": {
+    "REVIEW.html": "f34ad2f7221294adf28715330047230231b8d3ef174416a4ff52b61f458458d1",
+    "rater_1.csv": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+    "items.json": "2ce0f7cb0a456d8adb0ddf0f75deee0f91cb7d529d9d780f517ce466fde42de4",
+    "rater_2.csv": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+    "CODEBOOK.md": "079578edd2976c95a6aab5c823d8c2f06127256935d6a7cb0aa71a54cb2b9518"
+  },
+  "private_key_sha256": "1b6d72a906fcc1f4d71d2217d62d085bd4f3686dd8ef15adb233c45678b64d44"
+}

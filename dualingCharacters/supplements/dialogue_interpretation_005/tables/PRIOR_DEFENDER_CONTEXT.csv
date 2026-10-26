@@ -1,0 +1,13 @@
+run_id,model,condition,seed,paired_successes,families,paired_rate,conversation_successes,conversations,horizon,checkpoint_sha256,qualification
+base-qwen-eval,qwen,base,17,67,240,0.2791666666666667,195,480,64,,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-a1-17-eval,qwen,A1,17,169,240,0.7041666666666667,369,480,64,2da2115fd9aeb4ffefafc49cb6745c4fbb669ea3ff5acf79569bf2ab54fab3cb,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-a1-29-eval,qwen,A1,29,181,240,0.7541666666666667,384,480,64,ac5e5c5f549dfa1372ae6775fd82f1cf4e210535b5dc6c7e3b2ecf8305dfe0ab,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c1-17-eval-format2,qwen,C1,17,186,240,0.775,390,480,64,24e6c8f7287f1c3133203ab34e947cfce43a22f72ee2ced7ee6d6308b2570edc,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c1-29-eval,qwen,C1,29,138,240,0.575,313,480,64,835c4527c556a78869cee67a00f7ca1ae45fa2f26e674d288707fdb1e0c8f6e5,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c1-43-eval,qwen,C1,43,183,240,0.7625,390,480,64,33ccdc08b3c93e7915b28c2f95f075748614f19e76e09e74aa2ed41c577391ca,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c3-17-eval,qwen,C3,17,177,240,0.7375,381,480,64,bafc11177689961280af9128e0dca86ba94ccb36cf7048bc3667d4bf20a2a306,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c3-29-eval,qwen,C3,29,181,240,0.7541666666666667,382,480,64,a58f538241f5633be66b9623cf34e8a2b5107ebb3a79fd4de19b1ad45aa110aa,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c3-43-eval,qwen,C3,43,190,240,0.7916666666666666,398,480,64,34a38b3515cffdc56ff9e87eeee6c1914bf3ded13aae67b07d6ff533533cc94c,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c5-17-eval,qwen,C5,17,168,240,0.7,362,480,64,7146cb31a3f7a77b56ac8f14b116a177c8e1c8b6f1e07a830386b35b7ac84be0,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c5-29-eval,qwen,C5,29,180,240,0.75,379,480,64,93a72a7b501c2c980ce7b33f4408d31611c2c7e9d75cc17c830ff5c47e1b2b33,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.
+main-qwen-c5-43-eval,qwen,C5,43,172,240,0.7166666666666667,373,480,64,4a53be523ffe69ff2db328e853c8fb62a5de0898ff2a1925741ec18f0cc70a6f,Secondary antagonist-free endpoint; frozen main analysis remains authoritative.

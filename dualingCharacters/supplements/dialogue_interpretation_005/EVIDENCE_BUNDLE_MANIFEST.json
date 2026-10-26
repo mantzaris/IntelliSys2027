@@ -1,0 +1,352 @@
+{
+  "created_utc": "2026-10-26T00:05:27.508357+00:00",
+  "bundle_path": "artifacts/dialogue_interpretation_005/EVIDENCE_BUNDLE.tar.gz",
+  "bundle_sha256": "b782c35b4ca86f55b1354084040f651fb36b043d257a0b905425297759644261",
+  "bundle_bytes": 26311443,
+  "uncompressed_bytes": 79087146,
+  "entries": [
+    {
+      "path": "artifacts/dialogue_interpretation_005/EXTRACTION_CACHE.json",
+      "sha256": "1b3a9c415ad424451d5cbc1add32da393de9a5ab89b744d2f34efcd1b77b5fab",
+      "bytes": 632
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/QUOTATIONS.json",
+      "sha256": "26585bd3b6fe120e9a1bf45e63b0fe3d87b090f2c8dbe3c4bf5861bf14770fee",
+      "bytes": 1156241
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/episodes.json",
+      "sha256": "6067e1970e8cfb14fe5ff0a67c9100c8a44d078b7ff9bb7461000bdc44b02d9c",
+      "bytes": 18046021
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/private/mapping.json",
+      "sha256": "1b6d72a906fcc1f4d71d2217d62d085bd4f3686dd8ef15adb233c45678b64d44",
+      "bytes": 16521
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/CODEBOOK.md",
+      "sha256": "079578edd2976c95a6aab5c823d8c2f06127256935d6a7cb0aa71a54cb2b9518",
+      "bytes": 6205
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/REVIEW.html",
+      "sha256": "f34ad2f7221294adf28715330047230231b8d3ef174416a4ff52b61f458458d1",
+      "bytes": 6686478
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/items.json",
+      "sha256": "2ce0f7cb0a456d8adb0ddf0f75deee0f91cb7d529d9d780f517ce466fde42de4",
+      "bytes": 10257154
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/rater_1.csv",
+      "sha256": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+      "bytes": 961
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/rater_2.csv",
+      "sha256": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+      "bytes": 961
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/selected_records.jsonl.gz",
+      "sha256": "212449272d84eba660382d60fc203efcb2fc15f9977dc97fbbfd7843e940b1cd",
+      "bytes": 267851
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/collection.jsonl.gz",
+      "sha256": "581b33857ba74296e54cb21bb0cee76b280e2ad14cf68777c92ad3addf3c79a1",
+      "bytes": 1200876
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "5a4eb7d0755b320ecce55f3fff9e12df2ddc531a561413dce35d5af88192a595",
+      "bytes": 1111485
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "dd2b180b5ce51d2213262605b736163d7084a3ca6e6a15016321d73ba59e81f5",
+      "bytes": 154320
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/collection_summary.json",
+      "sha256": "b5a679b5d148ca824b71bf1935f6fa3d9bce92aef568140e9e4e6b20cc2ec012",
+      "bytes": 193994
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/source_snapshot.tar.gz",
+      "sha256": "9abb8bae2853723c6e36e47bfaa2894b67d30515a3a2889f432b6e9e192178c1",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-17-r0-collect/status.json",
+      "sha256": "2b51eccdd2f569addbf7a86da8a2293ed3c21fcb363f10fce340301137c9de58",
+      "bytes": 5235
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/collection.jsonl.gz",
+      "sha256": "7b8265c40a1364d98b9eb6b3a19de28171ef08319194fd951f65677d0f220bdc",
+      "bytes": 1199362
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "e63263b89ec6135060c625eb6de63025512f914ffabc2bcd03a34f151f188327",
+      "bytes": 1103137
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "7a6148cd497214479f9e10c6fa60563116d464596e956781f73004e97a8c3a54",
+      "bytes": 153126
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/collection_summary.json",
+      "sha256": "c4eab8538a0494582a3844273459c14523f27b9a656c9013e6e68dd43fe8ae6b",
+      "bytes": 194044
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/source_snapshot.tar.gz",
+      "sha256": "ff78dba0e482ec253d53cc5742d79a08074b66e1251f6d9efc04d85a7dd092f8",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-29-r0-collect/status.json",
+      "sha256": "3c41b5800398626f57756f31fbcfdd928bfe27df6e5d7802b7dcf6f9be7268c3",
+      "bytes": 5236
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/collection.jsonl.gz",
+      "sha256": "7009b0b95cc465b9c2afb45da4fc6a83cd1766790bfa6a53f93f1245ae11650a",
+      "bytes": 1195766
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "d24addc881f054211b5ad8efe07abe0125d4d0484a84540ebae770ea94f5f975",
+      "bytes": 1109080
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "a87577eab5a5b52582c473b4d00304241424be1f59f1bb740fdc772f956c37b2",
+      "bytes": 153413
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/collection_summary.json",
+      "sha256": "32a9b0acda867c4e76958c30dda120e30f4f41211b142b7f19e3aa4be928ff07",
+      "bytes": 193813
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/source_snapshot.tar.gz",
+      "sha256": "3b86dc146b0aac430e7927680061aa96c4b59167cb5add4fc41dd7af5d5f570d",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-a1-43-r0-collect/status.json",
+      "sha256": "ecd8452c593cc5166a798f3bd5f8066d45e3989812440d7f05b35f4d68f7239d",
+      "bytes": 5234
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/collection.jsonl.gz",
+      "sha256": "dc8a3be4bd542e2ff1285dd43281d1468038c6d5f3b96e33ffd4d298c190ff24",
+      "bytes": 1190447
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "e736b6cb67744b2976e24d6ba8fae9112e61f45f73a4ce89b4b6afd73d9643c4",
+      "bytes": 1071692
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "4c14fb6dbe30747af59e3e95e3fcf38b51cd10736b3b4edec5ffcff3293e7071",
+      "bytes": 144433
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/collection_summary.json",
+      "sha256": "474a8008a8936939cdc4f0bbe19d2ce50d058d774ee34e246f54e417f0d2a263",
+      "bytes": 195835
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/source_snapshot.tar.gz",
+      "sha256": "8181f83f10c34b37e6a49cbe648f23f5b9850991581c234a25fb784dfd493369",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-17-r0-collect/status.json",
+      "sha256": "e59b25c27b6828664f524893b2a45d23eb67f328e55d77a48bed1a92ccd6879f",
+      "bytes": 5237
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/collection.jsonl.gz",
+      "sha256": "6094a3ffdcfedb957139d528b9bed911351c3889b84ff228ea911444ef3da9a3",
+      "bytes": 1166875
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "ecfcd78137f30f5943c01edce43055e9b7072c1dd20b6913192945cec48af028",
+      "bytes": 1054542
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "ab5bfee5017be01d3806de2dbf56c506fb4561aed949a5880936331ed8c88373",
+      "bytes": 138826
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/collection_summary.json",
+      "sha256": "93d030d340c0501253bbf899650ffd4e65ff581f7febbe51babef42f0483b418",
+      "bytes": 196142
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/source_snapshot.tar.gz",
+      "sha256": "2f982a99b7f9f2ad26e6bad1b6d4b89a9c55e278dd2ab046e14f6ff3b2bae6c9",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-29-r0-collect/status.json",
+      "sha256": "561c7ba6b86e9c2709de6f46c9035bbd1a2ac1722ba21b4d9dcfa3d2ccd3b017",
+      "bytes": 5234
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/collection.jsonl.gz",
+      "sha256": "23c9b7640a98791e4a5018d1a6836d2622be958c0a58e6d767a50913be473cd9",
+      "bytes": 1187089
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "7b692163007be289f9ce8b6c820571babe6654d6a284065a0d0068bc28157de8",
+      "bytes": 1073527
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "02991328eb3fd1aebf668404987ac325038cb1314386fcf126bdba43f97d2863",
+      "bytes": 143364
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/collection_summary.json",
+      "sha256": "7ddd64a4535bb735789d62305ad8f7e8c14836d799c0a18c7131c260aa985164",
+      "bytes": 196223
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/source_snapshot.tar.gz",
+      "sha256": "d841da23a05aa8717b52945b9cc77197f41bcf33a2262643085dd2653d2fdee6",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c3-43-r0-collect/status.json",
+      "sha256": "b6eba44642359935f417bd202c24fb2f1d6afc667ed712adc39b4917c055573a",
+      "bytes": 5238
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/collection.jsonl.gz",
+      "sha256": "b194868452464a8adad2566eb3dea1272ab97690113829c4b367e36408bb8822",
+      "bytes": 1288758
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "de5fa368c8c853a7ec5e819f5319028a9a3b75a7da7e7ec6317252bcc109f208",
+      "bytes": 1288815
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "3065e5de7e211a1a3d2de28f9eafc6023ba013b0d96e32406e1d9c1846d12dbb",
+      "bytes": 181676
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/collection_summary.json",
+      "sha256": "7b0089b31f68cc7d1511e4c6a0812a08f0a077be69a30ad658b51ef8c7714711",
+      "bytes": 193989
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/source_snapshot.tar.gz",
+      "sha256": "0611c0690515daa371094851dd8de2e337ddb69cebc918e8bdd9633fa534721c",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-17-r0-collect/status.json",
+      "sha256": "bf93fc5a137b3ab11ed2b73e3296be2a1cc0ea1ec7e14c98bffb28e964e97234",
+      "bytes": 5236
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/collection.jsonl.gz",
+      "sha256": "4d5abc946df5bdd07ad8e452c057a7f655ff5c97523a19394040d9d4083c1d8e",
+      "bytes": 1261834
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "8af87f2245ce3dfe165549c22e61d9993698a52e38edb002230fe69ebaf42c6e",
+      "bytes": 1258793
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "4e2190420e5e77f6fbbf0f87648f9ec797936326d69ffc7766418819d170d34a",
+      "bytes": 175574
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/collection_summary.json",
+      "sha256": "1b3172da9cd98d1004d81c8c46ea8e53e1351fff76a938fa2cdafa9ccbf585b7",
+      "bytes": 194084
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/source_snapshot.tar.gz",
+      "sha256": "3b1bc5fbfe53addc7d204cc1a6eb7f01c71b1bacc218491a5d279d73850f43b2",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-29-r0-collect/status.json",
+      "sha256": "67c62c32efccac513154550df78991305991d26483d49a86ea8df8eceacbfa68",
+      "bytes": 5239
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/collection.jsonl.gz",
+      "sha256": "b85d6abb2792daabef3bb4b1f0a544c7eb90090faea0e19bd694404a2c04cde4",
+      "bytes": 1268279
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/collection_characters.jsonl.gz",
+      "sha256": "4f15e7a71f574dff1814b241a85900645212ea7a3626d2af25f07aa7f67d2855",
+      "bytes": 1266994
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/collection_interventions.jsonl.gz",
+      "sha256": "84e565800ccbd090f5ba549455fee97f10ae22baa3c09feb00fd5479051b9062",
+      "bytes": 175830
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/collection_summary.json",
+      "sha256": "a16931748e2787985491bed58835c1b8a29425cb591facb6b9656d8550a89d44",
+      "bytes": 193943
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/source_snapshot.tar.gz",
+      "sha256": "58a71d6fd1350bebdc35296571592e970dc7850b4a258b3303ae25fa95cb67ca",
+      "bytes": 231586
+    },
+    {
+      "path": "artifacts/runs/main-qwen-c5-43-r0-collect/status.json",
+      "sha256": "ce2552136b51d4a24924429f65f2d90d4b801fbcb51ca354a31e7a8a936e77ea",
+      "bytes": 5237
+    },
+    {
+      "path": "supplements/dialogue_interpretation_005/AI_READINGS.json",
+      "sha256": "8a9e50519759a794a732752ee356ec247ee7d144d76900f5070b4ed87e7a16e2",
+      "bytes": 1757572
+    },
+    {
+      "path": "supplements/dialogue_interpretation_005/CASEBOOK.html",
+      "sha256": "75aba4004ef286d36aefa058d5a119b0db3258623effb5aacf87d44cd8b9d44d",
+      "bytes": 32151
+    },
+    {
+      "path": "supplements/dialogue_interpretation_005/DIALOGUE_ATLAS.html",
+      "sha256": "95bdce58a56a2f796d91fe91e337c7437f565a355d6df6b60ca6f03717444f94",
+      "bytes": 10968330
+    },
+    {
+      "path": "supplements/dialogue_interpretation_005/DIALOGUE_ATLAS.md",
+      "sha256": "715bb953b812e328fea4eee1711f29e070b6855de121b5239828b8df39a9501d",
+      "bytes": 3288688
+    }
+  ],
+  "purpose": "Author-only full provenance and renderer inputs. Share only human_review/reviewer with raters; the archive contains private condition keys and AI readings.",
+  "restore": "Verify archive hash; extract only into a separate empty staging directory. Verify each entry before copying a missing file; never overwrite existing artifacts or rating forms.",
+  "no_weights_or_credentials": true
+}

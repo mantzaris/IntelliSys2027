@@ -1,0 +1,13 @@
+{
+  "rendered_utc": "2026-10-26T00:04:25.232065+00:00",
+  "episodes_sha256": "6067e1970e8cfb14fe5ff0a67c9100c8a44d078b7ff9bb7461000bdc44b02d9c",
+  "readings_sha256": "8a9e50519759a794a732752ee356ec247ee7d144d76900f5070b4ed87e7a16e2",
+  "outputs": {
+    "DIALOGUE_ATLAS.html": "95bdce58a56a2f796d91fe91e337c7437f565a355d6df6b60ca6f03717444f94",
+    "DIALOGUE_ATLAS.md": "715bb953b812e328fea4eee1711f29e070b6855de121b5239828b8df39a9501d",
+    "MATCHED_CASES.md": "aa2b32403455ce2fc7e5f3812538c9023871ac821e415a3983fe7d80801e1656"
+  },
+  "casebook_html": "supplements/dialogue_interpretation_005/CASEBOOK.html",
+  "casebook_html_sha256": "75aba4004ef286d36aefa058d5a119b0db3258623effb5aacf87d44cd8b9d44d",
+  "no_external_resources": true
+}

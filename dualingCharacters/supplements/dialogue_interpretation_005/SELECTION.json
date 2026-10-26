@@ -1,0 +1,612 @@
+{
+  "selected_utc": "2026-10-25T23:16:17.250759+00:00",
+  "source": "artifacts/behavior_characterization_004/human_review/private/mapping.json",
+  "source_sha256": "832c0c4165aba24cba42a5d52f5385cc6196c810fb3d717ea2c4442c9fb059a7",
+  "rule": "All twelve inherited anchor pairs; add A1 without substitution. Four opposite worlds and six paper cases use fixed SHA256 rankings.",
+  "unique_families": 11,
+  "anchor_triplets": 12,
+  "anchor_episodes_requested": 36,
+  "opposite_episodes_requested": 12,
+  "cases": [
+    {
+      "case_id": "DI5-656a746695",
+      "seed": 17,
+      "family_id": "train-0003",
+      "anchor_world": "authorized",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-ba28ba28861a",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-c406371fad14",
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-9562c7f19bc1",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-65397fff0ec6",
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-4d8893efbe78",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-47908ed9e7",
+      "seed": 17,
+      "family_id": "train-0074",
+      "anchor_world": "authorized",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-454b2b8264a5",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0074",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-3f808e7c5f23",
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-53d6b4a3f09a",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0074",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-85738a22a02b",
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-896e60e5ac40",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0074",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-e743bcb1a6",
+      "seed": 17,
+      "family_id": "train-0136",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": true,
+      "episodes": [
+        {
+          "episode_id": "D5E-ebf4b97ad036",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-80beea75a6dd",
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-21a41acf9b6d",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-c960841a7bae",
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-651a654b3d17",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-1abd1d8599bc",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-cdb3d232ac51",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-e19d7342a524",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0136",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        }
+      ],
+      "main_paper_theme": "user revision versus hypothetical discussion"
+    },
+    {
+      "case_id": "DI5-425c30dbba",
+      "seed": 17,
+      "family_id": "train-0139",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": true,
+      "episodes": [
+        {
+          "episode_id": "D5E-6785c2c6a487",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-6789c4c5c4de",
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-c7976c5a0f50",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-0f2e08698688",
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-9dee811711d6",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-77a24fcb4bcd",
+          "condition": "C3",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c3-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-7e745f7600f5",
+          "condition": "C5",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c5-17-r0-collect"
+        },
+        {
+          "episode_id": "D5E-176b5538aa57",
+          "condition": "A1",
+          "seed": 17,
+          "family_id": "train-0139",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-17-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-adc5b43b95",
+      "seed": 29,
+      "family_id": "train-0003",
+      "anchor_world": "authorized",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-1f409d0b895e",
+          "condition": "C3",
+          "seed": 29,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-25bf65b14968",
+          "run_id": "main-qwen-c3-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-3dc7dc530b2d",
+          "condition": "C5",
+          "seed": 29,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-328b46271a00",
+          "run_id": "main-qwen-c5-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-7c860aa6e536",
+          "condition": "A1",
+          "seed": 29,
+          "family_id": "train-0003",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-29-r0-collect"
+        }
+      ],
+      "main_paper_theme": "biography removal and expression"
+    },
+    {
+      "case_id": "DI5-30755452e5",
+      "seed": 29,
+      "family_id": "train-0030",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-d1a2d0b50b0e",
+          "condition": "C3",
+          "seed": 29,
+          "family_id": "train-0030",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-50b4496a0871",
+          "run_id": "main-qwen-c3-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-92418fe7884e",
+          "condition": "C5",
+          "seed": 29,
+          "family_id": "train-0030",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-578a80192d24",
+          "run_id": "main-qwen-c5-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-2f9db75f8713",
+          "condition": "A1",
+          "seed": 29,
+          "family_id": "train-0030",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-29-r0-collect"
+        }
+      ],
+      "main_paper_theme": "repetition and little observable interaction"
+    },
+    {
+      "case_id": "DI5-1913ab3097",
+      "seed": 29,
+      "family_id": "train-0054",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-f5e4da0e92dd",
+          "condition": "C3",
+          "seed": 29,
+          "family_id": "train-0054",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-0b50d96fd89d",
+          "run_id": "main-qwen-c3-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-c0ff9237401e",
+          "condition": "C5",
+          "seed": 29,
+          "family_id": "train-0054",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-24533555171f",
+          "run_id": "main-qwen-c5-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-8535bdd53826",
+          "condition": "A1",
+          "seed": 29,
+          "family_id": "train-0054",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-29-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-a4c89ffad4",
+      "seed": 29,
+      "family_id": "train-0110",
+      "anchor_world": "authorized",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-5c28f9ad8e05",
+          "condition": "C3",
+          "seed": 29,
+          "family_id": "train-0110",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-a5af867aee57",
+          "run_id": "main-qwen-c3-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-2fd1ee13eac3",
+          "condition": "C5",
+          "seed": 29,
+          "family_id": "train-0110",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-c5f67b9fe73d",
+          "run_id": "main-qwen-c5-29-r0-collect"
+        },
+        {
+          "episode_id": "D5E-8b4f80f49179",
+          "condition": "A1",
+          "seed": 29,
+          "family_id": "train-0110",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-29-r0-collect"
+        }
+      ],
+      "main_paper_theme": "advocacy versus authorization"
+    },
+    {
+      "case_id": "DI5-86513dc132",
+      "seed": 43,
+      "family_id": "train-0001",
+      "anchor_world": "authorized",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-d7ac5b969b79",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0001",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-fffff7d85564",
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-1dce2a06162b",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0001",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-f0a5b9090026",
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-67e0c87a7815",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0001",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        }
+      ],
+      "main_paper_theme": "peer evidence and prior recipient position"
+    },
+    {
+      "case_id": "DI5-2e4899b66b",
+      "seed": 43,
+      "family_id": "train-0026",
+      "anchor_world": "authorized",
+      "opposite_world_included": true,
+      "episodes": [
+        {
+          "episode_id": "D5E-823614b613d3",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-c17842d25cdf",
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-9192a8b7c88c",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": "BC4-fc5c6ff12289",
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-33115ebeb2c2",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "authorized",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-4d7ab09337b4",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "hypothetical",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-e5b27399a359",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "hypothetical",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-6465d44b3cfb",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0026",
+          "world": "hypothetical",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-934e456029",
+      "seed": 43,
+      "family_id": "train-0094",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": false,
+      "episodes": [
+        {
+          "episode_id": "D5E-cf452ec71cbe",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0094",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-28f9899ac0fa",
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-eaa50038282d",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0094",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-2bee7ef183b8",
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-81d8ba1a8bed",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0094",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        }
+      ],
+      "main_paper_theme": null
+    },
+    {
+      "case_id": "DI5-ceecfe5fb4",
+      "seed": 43,
+      "family_id": "train-0124",
+      "anchor_world": "hypothetical",
+      "opposite_world_included": true,
+      "episodes": [
+        {
+          "episode_id": "D5E-800828f2b0c7",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-baf5191bd830",
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-3efffb9492d9",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": "BC4-384f1010111d",
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-d67ae75bc7de",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "hypothetical",
+          "anchor": true,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-048aaa9c2069",
+          "condition": "C3",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c3-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-9b98baa82582",
+          "condition": "C5",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-c5-43-r0-collect"
+        },
+        {
+          "episode_id": "D5E-859dfd6dfd59",
+          "condition": "A1",
+          "seed": 43,
+          "family_id": "train-0124",
+          "world": "authorized",
+          "anchor": false,
+          "old_window_id": null,
+          "run_id": "main-qwen-a1-43-r0-collect"
+        }
+      ],
+      "main_paper_theme": "tool action versus following answer"
+    }
+  ]
+}

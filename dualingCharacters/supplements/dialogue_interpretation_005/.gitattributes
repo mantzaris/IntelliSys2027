@@ -1,0 +1,2 @@
+# Preserve frozen CSV bytes and recognize the CSV writer's CRLF record endings.
+*.csv -text whitespace=cr-at-eol

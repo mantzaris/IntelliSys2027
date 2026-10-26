@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-25T23:12:45+00:00",
+  "start_America_New_York": "2026-10-25T19:12:45-04:00",
+  "deadline_utc": "2026-10-26T07:12:45+00:00",
+  "useful_work_cutoff_utc": "2026-10-26T06:27:45+00:00",
+  "starting_commit": "8a4815c0d4f291280419f2bd325e2a93decc1cc2",
+  "initial_worktree": "clean",
+  "status": "completed_existing_data_work",
+  "new_model_calls": 0,
+  "new_gpu_reservations": 0,
+  "report_prepared_utc": "2026-10-26T00:06:54.914008+00:00",
+  "extension_execution": "not_admitted_disabled"
+}

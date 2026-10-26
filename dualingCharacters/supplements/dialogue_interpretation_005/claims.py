@@ -1,0 +1,51 @@
+"""Explicit scope and counterexamples for each of four paper findings."""
+from .common import *
+
+def run():
+    claims=[
+      ('F1','direct measurement / reproduced','C5 uses fewer edits than C3; C5 uses more recollect and A1 more propose in common-base round zero.',
+       '150 paired families; generator seeds17/29/43; 10,800 opportunities/condition; C5−C3 edit −45.657pp [−48.204,−43.056].',
+       'tables/FAMILY_NUMERATORS.csv; tables/REPRODUCED_CONTRASTS.json; tables/KNOWN_BEHAVIOR.csv',
+       'DI5-e743bcb1a6; DI5-934e456029','Fixed motive/profile prompts encourage distinct expression. Recollect and propose share note insertion.',
+       'API label does not establish assertion type. Biography removal also changes prompt wording/length and subsequent context.','Biography-specific dishonesty or beneficial performance.'),
+      ('F1-semantic','AI-assisted interpretation / unvalidated','An overt proposal can use recollect; a purported official decision can use propose.',
+       '61 selected statement spans across16 triplets; purposive spans are not semantic prevalence.',
+       'tables/API_VERSUS_STATEMENT.csv; AI_READINGS.json','DI5-e743bcb1a6 hypothetical A1t10; DI5-934e456029 A1t11',
+       'Tool labels and statement meaning are separable.','Matched C5 acknowledges hybrid in the latter case; biographies do not uniquely produce false authority.','Population semantic rates or deliberate lying.'),
+      ('F2','direct measurement plus illustrated association','C5 and A1 repeat typed goals more than C3; unchanged goals can carry stale or revised rationales.',
+       'C3 3623/5400; C5 4831/5224; A1 5093/5364 eligible consecutive direct-action pairs.',
+       'tables/KNOWN_BEHAVIOR.csv; tables/REPRODUCED_CONTRASTS.json; MATCHED_CASES.md',
+       'DI5-30755452e5; DI5-1913ab3097','Fixed owned options explicitly encourage persistence. Maximum five prior history entries in selected16-turn episodes.',
+       'Actor timing, available sources and short opportunity counts constrain interpretation; a C5 audience account reverses.','Strategic development, helpful stability, or biography necessity.'),
+      ('F3','AI-assisted text-supported case contrast','Peer-directed correction language can challenge either a false claim or a true claim.',
+       'Two matched cases with exact source evidence; no prevalence claim.',
+       'tables/API_VERSUS_STATEMENT.csv; MATCHED_CASES.md',
+       'DI5-a4c89ffad4 C5t12; DI5-2e4899b66b authorized C5t12','Rival prompt explicitly permits exposure of inaccurate recollections for credit.',
+       'Different contexts; visible citation can contradict the claim. Typed slot matching misses cross-field criticism.','Intentional deception, coalition, or a causal delivery effect.'),
+      ('F3-availability','reproduced measurement / no equivalence','Unavailable-reference rates are numerically similar; this is not established semantic equivalence.',
+       'C3 1220/10800; C5 1229/10800; A1 1225/10800. C5−C3 +0.083pp [−1.167,1.352].',
+       'tables/KNOWN_BEHAVIOR.csv; tables/REPRODUCED_CONTRASTS.json; DIAGNOSTIC_GALLERY.md',
+       'DI5-adc5b43b95 A1t10; DI5-a4c89ffad4 A1t15','Fixed retrieval can remove an otherwise historically valid source.',
+       'Unavailability is not a false source; same wording can receive a different mechanical descriptor.','Equal evidential competence.'),
+      ('F4','direct measurement / subsequent association','Delivery, memory change and the following answer are different observable links.',
+       '432 anchor opportunities all applied; state changes C3/C5/A1=60/4/5; C5 peer actions51, visible50, no later observation1.',
+       'tables/EXPOSURE_TOTALS.csv; tables/PEER_CHAIN.csv; tables/SCHEDULE_AND_EXPOSURE.csv',
+       'DI5-656a746695; DI5-47908ed9e7; DI5-ceecfe5fb4','Fixed schedule, four reserved slots, routing, 240-character truncation, four shared notes and inbox clearing.',
+       'Missing follow-up is not ignoring; later matches may precede the message. No no-delivery counterfactual executed.','Influence, success of persuasion, or causal explanation of final regressions.'),
+      ('Context-performance','secondary prior measured result','C5 does not demonstrate average task superiority over C3 in the three completed Qwen seeds.',
+       'C5 168/180/172 versus C3 177/181/190 and C1 186/138/183, each/240 paired families.',
+       'tables/PRIOR_DEFENDER_CONTEXT.csv','Antagonist-free64-turn evaluations; separate from generator sample',
+       'Character-conditioned generation and supervised adapter training change curricula.','No causal mediation analysis; matched training seeds differ from frozen-generator contexts.','Behavioral differences rescue an efficacy hypothesis.'),
+      ('Context-breadth','secondary prior measured result','The small common-defender descriptor-breadth comparison was inconclusive.',
+       '8 families; 12 opportunities; C5−C3 mean −0.1875, family interval [−1.625,1.1875].',
+       'tables/PRIOR_EXPLORATION_CONTEXT.json','Separate exploration003 mechanism population',
+       'Descriptor construction and opportunity schedules matter.','Coverage is not semantic strategy breadth; small pilot has limited precision.','Learned exploration or general intelligence.'),
+      ('Missing-control','hypothesis / unexecuted','Same-slot compatibility may change peer response; delivery causation remains separate.',
+       'No observations or reserved GPU time for the proposed extension.',
+       'NEXT_EXPERIMENT.md; EXECUTION_GATE.json','Review001 B and behavior004 antecedent',
+       'Current distinct owned slots are jointly satisfiable.','Human ratings and controlled delivery/compatibility evidence are pending.','Interpersonal rivalry, numerical utility optimization, or equilibrium learning.')
+    ]
+    fields=['claim_id','evidence_level','claim','scope_and_magnitude','numerical_or_source_inputs','traceable_cases','instruction_or_implementation_explanation','limitations_or_counterexample','not_established']
+    csv_write(HERE/'CLAIM_TO_EVIDENCE.csv',[dict(zip(fields,row)) for row in claims],fields)
+
+if __name__=='__main__':run()

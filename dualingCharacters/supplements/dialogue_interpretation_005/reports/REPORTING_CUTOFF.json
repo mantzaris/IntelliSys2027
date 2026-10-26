@@ -1,0 +1,9 @@
+{
+  "report_prepared_utc": "2026-10-26T00:06:54.758293+00:00",
+  "America_New_York": "2026-10-25T20:06:54.758293-04:00",
+  "elapsed_seconds_before_final_commit": 3249.758293,
+  "operational_snapshot_utc": "2026-10-26T00:05:51.124509+00:00",
+  "new_model_calls": 0,
+  "human_ratings": 0,
+  "finish_reason": "Scoped existing-data package complete; controlled inference and human review genuinely pending."
+}

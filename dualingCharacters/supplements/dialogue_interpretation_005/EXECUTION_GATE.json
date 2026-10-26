@@ -1,0 +1,14 @@
+{
+  "enabled": false,
+  "registered_run_ids": [],
+  "new_waiter": false,
+  "new_worker": false,
+  "reserved_gpu_seconds": 0,
+  "model_calls": 0,
+  "reason": "Required core and review work cannot complete within this eight-hour session; the conditional extension is not admitted.",
+  "session_deadline_utc": "2026-10-26T07:12:45+00:00",
+  "future_max_reserved_seconds": 7200,
+  "project_ceiling_hours": 96,
+  "required_contingency_seconds": 1800,
+  "next_experiment": "NEXT_EXPERIMENT.md"
+}

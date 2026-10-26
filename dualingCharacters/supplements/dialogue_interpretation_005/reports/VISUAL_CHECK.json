@@ -1,0 +1,46 @@
+{
+  "browser": "installed Chrome150; offline file URLs; all HTTP(S) resources blocked",
+  "checks": [
+    {
+      "view": "matched",
+      "screenshot": "/tmp/dialogue005-matched-checked.png",
+      "target": true,
+      "top": -0.46875,
+      "visible": true,
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "view": "action",
+      "screenshot": "/tmp/dialogue005-action-checked.png",
+      "target": true,
+      "top": 0.21875,
+      "visible": true,
+      "world": "authorized",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "view": "opposite-mobile",
+      "screenshot": "/tmp/dialogue005-opposite-mobile-checked.png",
+      "target": true,
+      "top": -0.390625,
+      "visible": true,
+      "world": "authorized",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "view": "blinded reviewer",
+      "screenshot": "/tmp/dialogue005-reviewer-checked.png",
+      "target": "D5E-800828f2b0c7-t12",
+      "no_ai_readings": true
+    },
+    {
+      "view": "casebook PDF",
+      "file": "CASEBOOK.pdf",
+      "bytes": 143761
+    }
+  ],
+  "human_visual_inspection": "Screenshots subsequently inspected by the assistant; not human scientific ratings."
+}
