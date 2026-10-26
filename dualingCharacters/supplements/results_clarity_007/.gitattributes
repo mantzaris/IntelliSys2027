@@ -1,0 +1,4 @@
+*.csv -text
+*.pdf binary
+# Preserve deterministic plotting-library SVG path whitespace.
+figures/*.svg whitespace=-blank-at-eol

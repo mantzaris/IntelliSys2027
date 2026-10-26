@@ -1,0 +1,17 @@
+{
+  "frozen_contrasts_reproduced": 72,
+  "family_rows": 1350,
+  "unique_families": 150,
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "input_hashes": {
+    "supplements/dialogue_interpretation_005/tables/FAMILY_NUMERATORS.csv": "afb65b54dc52a08a61c800aafa3d1053404e27420818027554bd0ed08c8f18d3",
+    "supplements/dialogue_interpretation_005/tables/REPRODUCED_CONTRASTS.json": "6904f8d49c97911bb8a370cec8729ea5089e8ed9504eec62868e965312336563",
+    "supplements/behavior_characterization_004/reports/CHANNELS.csv": "6234903d1cd9304fdd38d43e0a7ab5c353a45d61b807e5de4c542c1e34b4467b",
+    "supplements/evidence_validation_006/tables/PERFORMANCE_CONTEXT.csv": "fd4da14e3c7e0c8a6852926fee9df86572bec344fdfdbc95a65faac4a056c5d8"
+  },
+  "no_new_semantic_frequency_or_significance_test": true
+}

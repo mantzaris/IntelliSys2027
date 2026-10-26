@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "export": "/tmp/clarity007_fresh_final",
+  "copied_files": 1698,
+  "original_artifact_and_cache_access": "blocked by Python audit hook",
+  "module_imports": "checked inside clean export",
+  "steps": [
+    {
+      "step": "006 selected evidence and complete atlas",
+      "exit_code": 0,
+      "stdout": "{'status': 'passed', 'episodes': 48, 'original_selected_records': 1344, 'quotes_exact': 2123, 'completed_original_status_records': 9, 'verification_scope': 'Selected-package bytes and included original-record/derived-view identity; not recomputation of omitted whole original archives.'}\nRegenerated all 48 author episodes, seven matched chronological exchanges, and available fixed reviewer views.\n",
+      "stderr": ""
+    },
+    {
+      "step": "007 changed products",
+      "exit_code": 0,
+      "stdout": "Reproduced 72 frozen contrasts; all-opportunity channel sums; per-seed counts.\n72 author-only interpretations; immutable IDs; 64 component and 8 answerer routes retained separately.\n6 matched case groups /18episodes; exact quotation manifest; author HTML+Markdown.\nCPU reproduction complete. PDFs: /usr/bin/python3 supplements/results_clarity_007/pdf_build.py\n",
+      "stderr": "Matplotlib is building the font cache; this may take a moment.\n"
+    },
+    {
+      "step": "007 quotes/forms/selections",
+      "exit_code": 0,
+      "stdout": "{'status': 'passed', 'original_quotes': 2123, 'new_reader_quotation_checks': 106, 'selected_records': 1344, 'episodes': 48, 'fixed_events': 72, 'routes': {'component': 64, 'answerer': 8}, 'author_worksheet_rows': 72, 'human_ratings': 0, 'blank_forms': 2, 'prior006_bound_hashes_unchanged': True, 'scientific_validation': 'not established by software checks; independent human ratings and controlled inference remain pending'}\n",
+      "stderr": ""
+    },
+    {
+      "step": "v2 blinded packet",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "step": "module origins",
+      "exit_code": 0,
+      "stdout": "/tmp/clarity007_fresh_final/dualingCharacters /tmp/clarity007_fresh_final/dualingCharacters/src/pcc/characters.py\n",
+      "stderr": ""
+    },
+    {
+      "step": "PDF regeneration",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "byte_identical_changed_outputs": {
+    "AUTHOR_EVENT_ANALYSIS.csv": true,
+    "READER_EDITION.html": true,
+    "READER_EDITION.md": true,
+    "FINDINGS_BRIEF.md": true,
+    "READER_EDITION.pdf": true,
+    "FINDINGS_BRIEF.pdf": true,
+    "tables/MECHANICAL_COUNTS.csv": true,
+    "tables/CHANNELS_AND_CHANGES.csv": true,
+    "tables/CONTRASTS.json": true,
+    "tables/READER_CONTENT.json": true,
+    "tables/READER_QUOTATIONS.json": true
+  },
+  "scope": "Clean export of tracked plus intended007 files; no original artifacts or cached episodes. Interpreter dependencies reused, not model/data caches."
+}

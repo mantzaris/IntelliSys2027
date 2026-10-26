@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "artifacts/review_001/human_review/pilot_actions/rater_1.csv",
+      "sha256": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940",
+      "rows": 60,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "artifacts/review_001/human_review/pilot_actions/rater_2.csv",
+      "sha256": "504c11a75a9e112d36f8acbf3b1441379ca8a3d229b0f1381a6ac0190fac6940",
+      "rows": 60,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "artifacts/behavior_characterization_004/human_review/reviewer/rater_1.csv",
+      "sha256": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830",
+      "rows": 24,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "artifacts/behavior_characterization_004/human_review/reviewer/rater_2.csv",
+      "sha256": "96a52f1e46df8d080970a5afecb7f9bc8eb6ab62674808a729431f6796655830",
+      "rows": 24,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/rater_1.csv",
+      "sha256": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+      "rows": 36,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "artifacts/dialogue_interpretation_005/human_review/reviewer/rater_2.csv",
+      "sha256": "1f38232a2e54ef3165a2278c43824a98669d7520a4d20f43623eb2068f9d66e1",
+      "rows": 36,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/evidence_validation_006/review/rater_1.csv",
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+      "rows": 72,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/evidence_validation_006/review/rater_2.csv",
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+      "rows": 72,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/evidence_validation_006/extracted/reviewer/rater_1.csv",
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+      "rows": 72,
+      "rows_with_any_nonidentity_field": 0
+    },
+    {
+      "path": "/home/resort/Documents/repos/IntelliSys2027/dualingCharacters/supplements/evidence_validation_006/extracted/reviewer/rater_2.csv",
+      "sha256": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+      "rows": 72,
+      "rows_with_any_nonidentity_field": 0
+    }
+  ],
+  "scope": "Known existing historical and006 review locations. No new submissions supplied by author. Filled nonidentity fields require inspection, not automatic human-authorship acceptance."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "original_quotes": 2123,
+  "new_reader_quotation_checks": 106,
+  "selected_records": 1344,
+  "episodes": 48,
+  "fixed_events": 72,
+  "routes": {
+    "component": 64,
+    "answerer": 8
+  },
+  "author_worksheet_rows": 72,
+  "human_ratings": 0,
+  "blank_forms": 2,
+  "prior006_bound_hashes_unchanged": true,
+  "scientific_validation": "not established by software checks; independent human ratings and controlled inference remain pending"
+}

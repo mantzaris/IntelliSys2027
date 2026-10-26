@@ -1,0 +1,19 @@
+{
+  "planned": 72,
+  "blank_forms": 2,
+  "human_ratings": 0,
+  "component_directed": 64,
+  "answerer_directed": 8,
+  "fixed_primary_text_word_units_sum": 12165,
+  "range": [
+    95,
+    212
+  ],
+  "hours_per_rater_estimate": [
+    4.6137500000000005,
+    7.351666666666667
+  ],
+  "planning_assumptions": "200-to150 whitespace word-units/minute plus3-to5 annotation minutes/event; excludes calibration, breaks, expanded source checks, and full-episode reading. JSON is not ordinary prose and real timing may be slower. Not observed reviewer time.",
+  "required_prior_packets": "none; older full-episode/window forms are not additional required work",
+  "dimensions": "Independent assessment status and complete-set statement assessment; six existing semantic dimensions, no author-only taxonomy imposed."
+}

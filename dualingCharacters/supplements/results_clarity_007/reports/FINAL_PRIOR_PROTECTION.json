@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "core": 58,
+  "review001": 21,
+  "intent002": 34,
+  "exploration003": 14,
+  "behavior004": 17,
+  "dialogue005": 16,
+  "evidence006_freezes": "17scientific/10event/62compatibility verified",
+  "package006_members": 84,
+  "protected": {
+    "verified_present": 31,
+    "missing_original_packet_files": [],
+    "status": "passed"
+  }
+}

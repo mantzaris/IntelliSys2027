@@ -1,0 +1,134 @@
+{
+  "version": "event006-v2",
+  "columns": [
+    "item_id",
+    "response_annotation_status",
+    "response",
+    "response_unratable_reason",
+    "statement_annotation_status",
+    "statement_labels",
+    "statement_unratable_reason",
+    "correctness_annotation_status",
+    "correctness",
+    "correctness_unratable_reason",
+    "citation_annotation_status",
+    "citation_support",
+    "citation_unratable_reason",
+    "authority_annotation_status",
+    "claimed_authority",
+    "authority_unratable_reason",
+    "visibility_annotation_status",
+    "visibility",
+    "visibility_unratable_reason",
+    "confidence",
+    "supporting_turns",
+    "secondary_response_notes",
+    "notes"
+  ],
+  "dimensions": {
+    "response": {
+      "value_field": "response",
+      "status_field": "response_annotation_status",
+      "reason_field": "response_unratable_reason",
+      "allowed_values": [
+        "adopts_new_position",
+        "another_response",
+        "continues_prior_position",
+        "evidence_challenge",
+        "explicit_acknowledgment",
+        "missing_followup",
+        "no_message",
+        "uncertain"
+      ],
+      "multilabel": false
+    },
+    "statement": {
+      "value_field": "statement_labels",
+      "status_field": "statement_annotation_status",
+      "reason_field": "statement_unratable_reason",
+      "allowed_values": [
+        "disagreement",
+        "endorsement",
+        "evidence_challenge",
+        "insufficient_evidence",
+        "open_preference",
+        "paraphrase",
+        "purported_authorization",
+        "repetition",
+        "resurfacing",
+        "substantive_revision",
+        "supported_correction",
+        "unrelated",
+        "unsupported_correction",
+        "unsupported_recollection"
+      ],
+      "multilabel": true
+    },
+    "correctness": {
+      "value_field": "correctness",
+      "status_field": "correctness_annotation_status",
+      "reason_field": "correctness_unratable_reason",
+      "allowed_values": [
+        "contradicted",
+        "mixed",
+        "normative_preference",
+        "not_applicable",
+        "supported",
+        "uncertain"
+      ],
+      "multilabel": false
+    },
+    "citation": {
+      "value_field": "citation_support",
+      "status_field": "citation_annotation_status",
+      "reason_field": "citation_unratable_reason",
+      "allowed_values": [
+        "contradicts",
+        "no_citation",
+        "not_applicable",
+        "supports",
+        "unavailable",
+        "uncertain",
+        "unrelated"
+      ],
+      "multilabel": false
+    },
+    "authority": {
+      "value_field": "claimed_authority",
+      "status_field": "authority_annotation_status",
+      "reason_field": "authority_unratable_reason",
+      "allowed_values": [
+        "mixed",
+        "not_applicable",
+        "own_preference",
+        "peer_statement",
+        "uncertain",
+        "unspecified",
+        "user_approval"
+      ],
+      "multilabel": false
+    },
+    "visibility": {
+      "value_field": "visibility",
+      "status_field": "visibility_annotation_status",
+      "reason_field": "visibility_unratable_reason",
+      "allowed_values": [
+        "not_applicable",
+        "unavailable",
+        "unknown",
+        "visible"
+      ],
+      "multilabel": false
+    }
+  },
+  "assessment_statuses": [
+    "assessed",
+    "not_assessed",
+    "unratable"
+  ],
+  "blank_status": "not_assessed",
+  "assessed_empty_statement": "Explicitly reviewed entire label set; no label applies. Not equivalent to blank/unassessed.",
+  "secondary_response": "Free-text secondary_response_notes only. Never incoming statement_labels.",
+  "selection_sha256": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+  "fixed_items_sha256": "93f5eb7a653a6f037984015a533130582a60ef156596fa2432c8618f24dff3dc"
+}

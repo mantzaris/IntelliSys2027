@@ -1,0 +1,23 @@
+{
+  "READER_EDITION.pdf": {
+    "pages": 8,
+    "annotations_internal": 45,
+    "uri_links": 0,
+    "absolute_file_urls": 0,
+    "destinations_resolve": true,
+    "sha256": "ae9a38b75ddc566942d9037585394b10deba4daee16494995053424a1ce6b8b2",
+    "relocated_destinations_resolve": true,
+    "text_outside_page_bounds": 0
+  },
+  "FINDINGS_BRIEF.pdf": {
+    "pages": 2,
+    "annotations_internal": 0,
+    "uri_links": 0,
+    "absolute_file_urls": 0,
+    "destinations_resolve": true,
+    "sha256": "7e3770414a1fb675db2ebae3d100a83a42a453d27e28b5651a42e357f29e30ee",
+    "relocated_destinations_resolve": true,
+    "text_outside_page_bounds": 0
+  },
+  "displayed_quotes_and_plan_fields": 51
+}

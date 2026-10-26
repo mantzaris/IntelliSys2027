@@ -1,0 +1,7 @@
+{
+  "pdf_python": "3.8.10",
+  "reportlab": "3.5.34",
+  "PyPDF2": "1.26.0",
+  "font": "DejaVuSans.ttf/DejaVuSans-Bold.ttf",
+  "pdf_metadata": "invariant mode; fixed historical timestamp, not session time"
+}

@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-26T14:26:55.023737+00:00",
+  "not_part_of_locked_analysis": true,
+  "completed": 170,
+  "scheduled": 241,
+  "active": "main-qwen-a3-43-r1-fit",
+  "next_ids": [
+    "main-qwen-a3-43-r1-fit",
+    "main-qwen-a3-43-eval",
+    "main-qwen-c2-43-r0-collect"
+  ],
+  "pending_by_model_command": [
+    {
+      "model": "phi",
+      "command": "external",
+      "stages": 4
+    },
+    {
+      "model": "phi",
+      "command": "judge",
+      "stages": 1
+    },
+    {
+      "model": "qwen",
+      "command": "collect",
+      "stages": 4
+    },
+    {
+      "model": "qwen",
+      "command": "evaluate",
+      "stages": 3
+    },
+    {
+      "model": "qwen",
+      "command": "external",
+      "stages": 4
+    },
+    {
+      "model": "qwen",
+      "command": "fit",
+      "stages": 5
+    },
+    {
+      "model": "qwen",
+      "command": "horizon128",
+      "stages": 5
+    },
+    {
+      "model": "qwen",
+      "command": "horizon32",
+      "stages": 5
+    },
+    {
+      "model": "qwen",
+      "command": "judge",
+      "stages": 1
+    },
+    {
+      "model": "qwen",
+      "command": "larger-memory",
+      "stages": 5
+    },
+    {
+      "model": "qwen",
+      "command": "natural",
+      "stages": 3
+    },
+    {
+      "model": "qwen",
+      "command": "recovery",
+      "stages": 13
+    },
+    {
+      "model": "qwen",
+      "command": "short",
+      "stages": 13
+    },
+    {
+      "model": "qwen",
+      "command": "unfamiliar",
+      "stages": 5
+    }
+  ],
+  "core_and_optional_queue_unchanged": true
+}

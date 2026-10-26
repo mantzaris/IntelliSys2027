@@ -1,0 +1,7 @@
+# AI assistance and author responsibility
+
+2026-10-26: this session's assistant inspected existing code and committed selected evidence, reproduced the two reported annotation defects with explicitly synthetic fixtures, implemented event006-v2, and identified the answerer-follow-up display problem. It reproduced existing numerical estimates, read all72 fixed incoming messages and their cited/prior/follow-up evidence, and drafted provisional author interpretations, the reader edition and manuscript revision.
+
+No human assessments, model training, new experimental model generations, paid or external model judging, or controlled interventions occurred. The AI-assisted author readings are not independent ratings, are not supplied in the blinded packet, and are not used to calculate semantic prevalence or inter-rater agreement. Synthetic fixtures never enter research result tables. The retrospective preference-versus-authorization question is author-directed exploratory interpretation, not a new preregistered hypothesis.
+
+The human author must review the scientific interpretations and conclusions, verify submission policy compliance, arrange independent ratings if desired, and retain responsibility for the manuscript. Passing packaging, quote, software or reproduction checks is not scientific validation. No conference submission or acceptance is represented as completed or guaranteed.

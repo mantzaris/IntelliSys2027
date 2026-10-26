@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "relocated_root": "/tmp/clarity007_fresh_final/dualingCharacters/supplements/results_clarity_007",
+  "pages": [
+    {
+      "file": "READER_EDITION.html",
+      "links": 135,
+      "all_relative_targets_exist": true,
+      "network_resources": 0
+    },
+    {
+      "file": "extracted/reviewer_v2_final/REVIEW.html",
+      "links": 144,
+      "all_relative_targets_exist": true,
+      "network_resources": 0
+    },
+    {
+      "file": "extracted/reviewer_v2_final/EPISODES.html",
+      "links": 8498,
+      "all_relative_targets_exist": true,
+      "network_resources": 0
+    }
+  ],
+  "unique_html_documents_parsed": 4
+}

@@ -1,0 +1,11 @@
+{
+  "combined_regression_suite": {
+    "passed": 56,
+    "command": "PYTHONPATH=src:. .venv/bin/python -m pytest supplements/results_clarity_007/tests supplements/evidence_validation_006/test_unit.py tests/test_invariants.py tests/test_protocol.py -q"
+  },
+  "final007_suite_after_dimension_uncertainty_and_provenance_tests": {
+    "passed": 24,
+    "command": "PYTHONPATH=src:. .venv/bin/python -m pytest supplements/results_clarity_007/tests -q"
+  },
+  "interpretation": "Do not sum repeated test executions as distinct tests. Synthetic fixtures are software checks only. No human agreement estimated."
+}

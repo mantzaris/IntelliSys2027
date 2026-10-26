@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-10-26T12:57:50+00:00",
+  "start_America_New_York": "2026-10-26T08:57:50-04:00",
+  "deadline_utc": "2026-10-26T20:57:50+00:00",
+  "useful_work_cutoff_utc": "2026-10-26T20:12:50+00:00",
+  "input_commit": "037d95ec3b3558cbae3abdf88ab9935fabfd6784",
+  "initial_worktree": "clean",
+  "core_controller_pid": 787315,
+  "review_coordinator_pid": 1291869,
+  "new_gpu_seconds": 0,
+  "new_model_calls": 0,
+  "new_human_ratings": 0
+}

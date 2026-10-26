@@ -1,0 +1,15 @@
+{
+  "classification": "SYNTHETIC SOFTWARE FIXTURE ONLY; not research agreement",
+  "defect_A": {
+    "optional_labels_blank": true,
+    "v1_joint_denominator": 1,
+    "labels_incorrectly_counted_both_negative": 14,
+    "negative_agreement_returned": 1.0
+  },
+  "defect_B": {
+    "rubric_instruction": "record other readings in statement_labels and notes",
+    "secondary_response_example": "explicit_acknowledgment",
+    "validator_error": "Unknown statement_labels label in SYNTHETIC_FIXTURE_ONLY: {'explicit_acknowledgment'}"
+  },
+  "actual_human_ratings": 0
+}

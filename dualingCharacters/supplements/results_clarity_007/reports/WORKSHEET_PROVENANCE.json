@@ -1,0 +1,14 @@
+{
+  "version": "author007-v1",
+  "items": 72,
+  "source_selection_sha256": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+  "reading_code_sha256": "f70411b3b545551ba6939cdb89f28f86c3e1076f044dd16667fb49bc0437ae80",
+  "routes": {
+    "component": 64,
+    "answerer": 8
+  },
+  "human_ratings": 0,
+  "semantic_frequency_estimates": "not calculated",
+  "reading_process": "All72 fixed incoming claims, cited visible source and prior/first/second responses inspected in order by the session AI; full source observations retained for audit. Provisional interpretation is not independent semantic validation.",
+  "output_sha256": "664c80942298b72a31948adfffa87e155afa1c175f658bfa82d2764b36ba30c2"
+}

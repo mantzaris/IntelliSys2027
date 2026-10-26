@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "reader_pdf_pages": 8,
+  "brief_pdf_pages": 2,
+  "all_pages_rendered_and_contact_sheets_inspected": true,
+  "full_size_reader_and_brief_pages_inspected": true,
+  "figures_inspected": [
+    1,
+    2,
+    3
+  ],
+  "offline_author_html": "opened in local Chrome with external hostname resolution disabled",
+  "offline_reviewer_html": "Actual page tab inspected through loopback CDP after loading complete; event EV6-1635025b0f00 first/second responses explicitly Answerer(structured); adjacent component response shown separately.",
+  "failed_inspection_attempts": "Initial sandbox Chrome socket was blocked; approved local retry. CLI deep-fragment screenshots were blank and not accepted as validation. Initial CDP selected an extension background, then corrected to actual page tab. All temporary browsers were closed by their owning check.",
+  "artifact_change_required": false,
+  "scientific_validation": "Visual/code checks do not validate semantic interpretations."
+}

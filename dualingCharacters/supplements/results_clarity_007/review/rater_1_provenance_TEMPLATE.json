@@ -1,0 +1,14 @@
+{
+  "annotation_version": "event006-v2",
+  "selection_sha256": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+  "stimulus_items_sha256": "93f5eb7a653a6f037984015a533130582a60ef156596fa2432c8618f24dff3dc",
+  "schema_sha256": "d1aee4921701b9686f5bda94956c553824529f6e04530893ebbb4e291c9fe9c1",
+  "rubric_sha256": "7e6f1c0d0d939e6a608994a030850d3195d7068d14067548a51afca0a18994c0",
+  "human_assessment": null,
+  "source_type": "independent_human",
+  "rater_id": "",
+  "completed_at_utc": "",
+  "form_sha256": "",
+  "notes": "",
+  "ingestion_code_sha256": "290ab18eee614fd00ae5e70d4c90d9b838a889282a1fa7d1d149988c5dc4880b"
+}

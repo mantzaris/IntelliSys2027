@@ -1,0 +1,22 @@
+{
+  "input_commit": "037d95ec3b3558cbae3abdf88ab9935fabfd6784",
+  "stage_evidence_cutoff_utc": "2026-10-26T12:59:22.334481+00:00",
+  "population": "Unchanged event006-v1:72 selected events; unchanged dialogue005:48 episodes. Main round-zero family table remains separate. No later operational results enter this population.",
+  "source_hashes": {
+    "supplements/evidence_validation_006/EVIDENCE_CUTOFF.json": "f7fd8b69dbd82ecdb815713dc1c4fed2d01d2c824bcad33e8a3f41b25fc51aec",
+    "supplements/evidence_validation_006/EVENT_SELECTION.json": "5db31a81cdce19b3cf92f4e002a569cf909153257dd707429110647e0f5ab2b1",
+    "supplements/evidence_validation_006/SCIENTIFIC_MANIFEST.json": "dbb4415cef424556b7ec38fe928904a7769dcc211717be4a37fca5768e995477",
+    "supplements/evidence_validation_006/EVENT_REVIEW_FREEZE.json": "fc8cc301e0806939716ab5f8324c4407626d9a1b1a1a01455bf109b7be23f6b7",
+    "supplements/evidence_validation_006/PACKAGE_MANIFEST.json": "afb633aa97dfc6c2f70b882309d66295e1395d0532bf66aee2633d9078924f79",
+    "supplements/evidence_validation_006/evidence/AUTHOR_MANIFEST.json": "7e0f9eb3d4d8f1ccf106bd0cb9622c49c743aca0a9d81df9c5de7fcddc636828",
+    "supplements/evidence_validation_006/evidence/author_selected_v1.tar.gz": "e829732d85623651dd6c7e79fd28a8e7c56413fd0c1be766d0bd3a16de06ffab",
+    "supplements/evidence_validation_006/evidence/REVIEWER_MANIFEST.json": "dc3d3a91abf8b08795d89797dfc060a285dd18de2dbb1968045a7a93a4741027",
+    "supplements/evidence_validation_006/evidence/reviewer_events_v1.tar.gz": "389e7ba93cc0b068e286420a215a6011f42ae1751625e1315bab0b139190d589",
+    "supplements/evidence_validation_006/ratings.py": "c7067b64b5bc1fff4b707007ad5314691d109ac9d5ea054a616c7af0c9c50e46",
+    "supplements/evidence_validation_006/review/RUBRIC.md": "6fe47f197a838d3436f06bf0d4b25df68794a1e50d60ccda6998552574171375",
+    "supplements/evidence_validation_006/review/rater_1.csv": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+    "supplements/evidence_validation_006/review/rater_2.csv": "6eb2b9c278b3cad704979341004067f397b2e32010b11edf4f0bea26ed897517",
+    "supplements/evidence_validation_006/compatibility/FREEZE.json": "c0b7ee308717af5c3e8f1a3d5596865dc32ae0e9f61e187af5f03c330a47be61",
+    "supplements/evidence_validation_006/compatibility/ADMISSION_DISABLED.json": "f7af5f611617f9537747f41e06d943d4d52112c610dd37c6f88787be8b58768f"
+  }
+}
