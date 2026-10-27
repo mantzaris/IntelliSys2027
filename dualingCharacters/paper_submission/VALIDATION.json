@@ -1,0 +1,65 @@
+{
+  "portable": {
+    "core_cells": 38,
+    "paired_world_rows": 18240,
+    "core_bootstraps_reproduced": 10,
+    "archive_family_seed_condition_rows": 1350,
+    "archive_contrasts_reproduced": 72,
+    "edge_families_per_backbone": 16,
+    "edge_behavior_contrasts_reproduced": 20,
+    "exact_quotes": 9,
+    "references_all_cited": 26,
+    "abstract_words": 203,
+    "figures": 4,
+    "method": "Portable sufficient-statistic reproduction, not an independent raw-archive or semantic validation."
+  },
+  "document": {
+    "main_text_pages": 14,
+    "reference_pages": 2,
+    "total_pages": 16,
+    "external_reference_links": 35,
+    "named_internal_links_checked": 44,
+    "anonymous_metadata": true,
+    "machine_paths_absent": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "limitation": "Automated document checks complement, not replace, page-by-page visual inspection."
+  },
+  "original_sources_optional": {
+    "original_files_sha256_verified": 110,
+    "original_archive_fields_verified": 252,
+    "original_edge_records_verified": 36,
+    "scope": "Entire original listed file hashes plus selected record equality; not an independent semantic assessment."
+  },
+  "new_model_calls": 0,
+  "new_gpu_hours": 0,
+  "new_human_ratings": 0,
+  "original_campaign_touched": false,
+  "visual_review": "All 16 pages rendered; figures revised for label spacing. Final figure-containing pages rechecked.",
+  "clean_build": "Only delivered source/data/styles and installed TeX/Python dependencies; PYTHONPATH cleared and user-site imports disabled. No pcc imports or private artifact access. PDF and figure byte identity checked against in-place build.",
+  "historical_work": "No files outside paper_submission changed by this task.",
+  "scientific_limit": "Software, source and packaging checks are not semantic or causal validation.",
+  "official_template_files_verified": {
+    "svproc.cls": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560",
+    "aliascnt.sty": "8d17979fd3ca18f4ac7a379d039f47bf63ffe0409d19c5399d6f3611ed50f9d5",
+    "remreset.sty": "d8b2679ec5c20723a4766690cd46b6bc0ffd20a6555205cefc1521ecb65794a4"
+  },
+  "controlled": {
+    "reserved_opportunities": 256,
+    "families": 16,
+    "response_contrasts_reproduced": 4,
+    "completed_conversations": 64,
+    "paired_successes": [
+      5,
+      7
+    ],
+    "qualification": "Typed matches and observed plans; no new semantic or causal interpretation."
+  },
+  "pdf_and_figures_byte_identical_after_relocation": true,
+  "verification_completed_utc": "2026-10-27T01:52:59.369880+00:00",
+  "disclosure_words": 93,
+  "manuscript_work_elapsed_minutes": 45.77,
+  "completed_utc": "2026-10-27T01:53:54.269735+00:00",
+  "whitespace_check": "Authored TeX, Markdown, JSON, shell and Python pass. Whole-package diff-check flags original CRLF/trailing whitespace in unmodified official template and copied CSV sources; original bytes deliberately preserved.",
+  "compact_outcomes": "One JSON object per observation; decoded objects exactly equal to the clean-build-verified snapshot."
+}

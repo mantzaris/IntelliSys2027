@@ -1,0 +1,128 @@
+[
+  {
+    "population": "Original Qwen archive\n150 families; 3 seeds",
+    "condition": "C3",
+    "channels": [
+      5408,
+      828,
+      969,
+      3594,
+      1
+    ],
+    "opportunities": 10800,
+    "repeat": 3623,
+    "eligible_transitions": 5400
+  },
+  {
+    "population": "Original Qwen archive\n150 families; 3 seeds",
+    "condition": "C5",
+    "channels": [
+      477,
+      4618,
+      1930,
+      3765,
+      10
+    ],
+    "opportunities": 10800,
+    "repeat": 4831,
+    "eligible_transitions": 5224
+  },
+  {
+    "population": "Original Qwen archive\n150 families; 3 seeds",
+    "condition": "A1",
+    "channels": [
+      938,
+      1397,
+      4830,
+      3617,
+      18
+    ],
+    "opportunities": 10800,
+    "repeat": 5093,
+    "eligible_transitions": 5364
+  },
+  {
+    "population": "Fresh contexts: Qwen\n16 families; 1 seed",
+    "condition": "C3",
+    "channels": [
+      128,
+      9,
+      119,
+      128,
+      0
+    ],
+    "opportunities": 384,
+    "repeat": 129,
+    "eligible_transitions": 192
+  },
+  {
+    "population": "Fresh contexts: Qwen\n16 families; 1 seed",
+    "condition": "C5",
+    "channels": [
+      0,
+      177,
+      76,
+      131,
+      0
+    ],
+    "opportunities": 384,
+    "repeat": 186,
+    "eligible_transitions": 189
+  },
+  {
+    "population": "Fresh contexts: Qwen\n16 families; 1 seed",
+    "condition": "A1",
+    "channels": [
+      14,
+      31,
+      211,
+      128,
+      0
+    ],
+    "opportunities": 384,
+    "repeat": 189,
+    "eligible_transitions": 192
+  },
+  {
+    "population": "Fresh contexts: Phi\n16 families; 1 seed",
+    "condition": "C3",
+    "channels": [
+      0,
+      134,
+      51,
+      183,
+      16
+    ],
+    "opportunities": 384,
+    "repeat": 77,
+    "eligible_transitions": 105
+  },
+  {
+    "population": "Fresh contexts: Phi\n16 families; 1 seed",
+    "condition": "C5",
+    "channels": [
+      0,
+      46,
+      213,
+      124,
+      1
+    ],
+    "opportunities": 384,
+    "repeat": 119,
+    "eligible_transitions": 137
+  },
+  {
+    "population": "Fresh contexts: Phi\n16 families; 1 seed",
+    "condition": "A1",
+    "channels": [
+      0,
+      2,
+      253,
+      129,
+      0
+    ],
+    "opportunities": 384,
+    "repeat": 117,
+    "eligible_transitions": 121
+  }
+]

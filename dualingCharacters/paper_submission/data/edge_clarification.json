@@ -1,0 +1,56 @@
+[
+  {
+    "model": "qwen",
+    "condition": "C3",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 14,
+    "premature_nonnull_commitment": 24,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 12
+  },
+  {
+    "model": "qwen",
+    "condition": "C5",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 6,
+    "premature_nonnull_commitment": 14,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 40
+  },
+  {
+    "model": "qwen",
+    "condition": "A1",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 6,
+    "premature_nonnull_commitment": 14,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 34
+  },
+  {
+    "model": "phi",
+    "condition": "C3",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 21,
+    "premature_nonnull_commitment": 24,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 0
+  },
+  {
+    "model": "phi",
+    "condition": "C5",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 21,
+    "premature_nonnull_commitment": 24,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 0
+  },
+  {
+    "model": "phi",
+    "condition": "A1",
+    "required_clarification_observations": 24,
+    "missed_required_clarification": 21,
+    "premature_nonnull_commitment": 24,
+    "settled_observations": 712,
+    "unnecessary_decisive_clarification": 0
+  }
+]

@@ -1,0 +1,8 @@
+arm,before_relation,after_relation,count
+compatible,different_value_same_slot,different_value_same_slot,6
+compatible,missing_opportunity,same_goal,29
+compatible,other_or_untyped,same_goal,1
+compatible,same_goal,same_goal,77
+incompatible,different_value_same_slot,different_value_same_slot,89
+incompatible,message_untyped,message_untyped,4
+incompatible,missing_opportunity,different_value_same_slot,22

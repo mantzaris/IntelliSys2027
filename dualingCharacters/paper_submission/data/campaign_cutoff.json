@@ -1,0 +1,2412 @@
+[
+  {
+    "run_id": "base-qwen-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "base-phi-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-17-r0-fit-format2",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-17-r1-collect-format2",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-17-r1-fit-format2",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-17-eval-format2",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c1-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c3-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c4-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c5-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a1-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-17-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-17-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-17-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-17-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-17-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-17-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-17-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-17-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-17-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-17-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-17-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-17-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-17-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-17-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-17-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-29-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-29-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-29-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-29-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-29-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-29-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-29-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-29-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-29-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-29-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-29-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-29-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-29-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-29-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-29-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-43-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-43-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-43-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-43-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c1-43-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-43-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-43-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-43-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-43-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c3-43-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-43-r0-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-43-r0-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-43-r1-collect",
+    "task": "collect",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-43-r1-fit",
+    "task": "fit",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-phi-c5-43-eval",
+    "task": "evaluate",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-17-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-17-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-17-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-17-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-17-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-29-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-29-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-29-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-29-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-29-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 29,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a2-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-a3-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "A3",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c2-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C2",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-43-r0-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-43-r0-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-43-r1-collect",
+    "task": "collect",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-43-r1-fit",
+    "task": "fit",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "main-qwen-c6-43-eval",
+    "task": "evaluate",
+    "model": "qwen",
+    "condition": "C6",
+    "seed": 43,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-horizon32",
+    "task": "horizon32",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-horizon32",
+    "task": "horizon32",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-horizon32",
+    "task": "horizon32",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-horizon32",
+    "task": "horizon32",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-horizon32",
+    "task": "horizon32",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-horizon128",
+    "task": "horizon128",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-horizon128",
+    "task": "horizon128",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-horizon128",
+    "task": "horizon128",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "completed",
+    "eligible_before_cutoff": true,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-horizon128",
+    "task": "horizon128",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "running",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-horizon128",
+    "task": "horizon128",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-29-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-43-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-29-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-43-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-29-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-43-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-29-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-43-short",
+    "task": "short",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-larger-memory",
+    "task": "larger-memory",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-larger-memory",
+    "task": "larger-memory",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-larger-memory",
+    "task": "larger-memory",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-larger-memory",
+    "task": "larger-memory",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-larger-memory",
+    "task": "larger-memory",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-unfamiliar",
+    "task": "unfamiliar",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-unfamiliar",
+    "task": "unfamiliar",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-unfamiliar",
+    "task": "unfamiliar",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-unfamiliar",
+    "task": "unfamiliar",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-unfamiliar",
+    "task": "unfamiliar",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-29-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-43-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-29-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-43-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-17-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-29-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c4-43-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C4",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-29-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 29,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-43-recovery",
+    "task": "recovery",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 43,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-base-17-external",
+    "task": "external",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-external",
+    "task": "external",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-external",
+    "task": "external",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-external",
+    "task": "external",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-phi-base-17-external",
+    "task": "external",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-phi-c1-17-external",
+    "task": "external",
+    "model": "phi",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-phi-c3-17-external",
+    "task": "external",
+    "model": "phi",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-phi-c5-17-external",
+    "task": "external",
+    "model": "phi",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c1-17-natural",
+    "task": "natural",
+    "model": "qwen",
+    "condition": "C1",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c3-17-natural",
+    "task": "natural",
+    "model": "qwen",
+    "condition": "C3",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "extra-qwen-c5-17-natural",
+    "task": "natural",
+    "model": "qwen",
+    "condition": "C5",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "judge-phi-001",
+    "task": "judge",
+    "model": "phi",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  },
+  {
+    "run_id": "judge-qwen-001",
+    "task": "judge",
+    "model": "qwen",
+    "condition": "base",
+    "seed": 17,
+    "status_at_snapshot": "not_started",
+    "eligible_before_cutoff": false,
+    "excluded_reason": null
+  }
+]

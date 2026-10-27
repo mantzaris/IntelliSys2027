@@ -1,0 +1,118 @@
+[
+  {
+    "metric": "success",
+    "compatible_sum": 17,
+    "incompatible_sum": 19,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": 0.0625,
+    "family_interval": [
+      -0.125,
+      0.25
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "wrong_final_commitments",
+    "compatible_sum": 9,
+    "incompatible_sum": 8,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": -0.03125,
+    "family_interval": [
+      -0.21875,
+      0.15625
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "trajectory_wrong_commitments",
+    "compatible_sum": 113,
+    "incompatible_sum": 128,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": 0.46875,
+    "family_interval": [
+      -1.21875,
+      2.0625
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "preferred_adoption_after_action",
+    "compatible_sum": 196,
+    "incompatible_sum": 189,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": -0.21875,
+    "family_interval": [
+      -2.21875,
+      1.8125
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "memory_state_changes",
+    "compatible_sum": 5,
+    "incompatible_sum": 0,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": -0.15625,
+    "family_interval": [
+      -0.375,
+      0.0
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "note_changes",
+    "compatible_sum": 259,
+    "incompatible_sum": 244,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": -0.46875,
+    "family_interval": [
+      -1.125,
+      0.15625
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "typed_repeat",
+    "compatible_sum": 174,
+    "incompatible_sum": 167,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": -0.21875,
+    "family_interval": [
+      -0.71875,
+      0.3125
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "switch_value_correct",
+    "compatible_sum": 25,
+    "incompatible_sum": 25,
+    "conversations_per_arm": 32,
+    "families": 16,
+    "difference_per_conversation": 0.0,
+    "family_interval": [
+      -0.15625,
+      0.15625
+    ],
+    "contrast": "incompatible minus compatible"
+  },
+  {
+    "metric": "paired_success",
+    "compatible_sum": 5,
+    "incompatible_sum": 7,
+    "families": 16,
+    "difference": 0.125,
+    "family_interval": [
+      -0.125,
+      0.375
+    ],
+    "contrast": "incompatible minus compatible"
+  }
+]

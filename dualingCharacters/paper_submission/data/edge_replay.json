@@ -1,0 +1,18 @@
+{
+  "states_planned": 16,
+  "complete_state_seed_pairs": 32,
+  "planned_calls": 64,
+  "actual_calls": 64,
+  "typed_goal_changed": 1,
+  "api_changed": 7,
+  "actual_matches_message": 0,
+  "omitted_matches_message": 0,
+  "actual_continues_prior": 28,
+  "omitted_continues_prior": 29,
+  "message_match_difference": 0.0,
+  "ci95_family": [
+    0.0,
+    0.0
+  ],
+  "qualification": "Immediate response under saved pre-response states. Actual versus omitted message also changes input length. Stochastic batch seeds are fixed but paired requests need not share identical random draws. This does not establish lasting persuasion or general rivalry."
+}
